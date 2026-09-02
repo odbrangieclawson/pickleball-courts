@@ -157,6 +157,62 @@ for (const [shape, entries] of shapes) {
   else warn(`Two secondary keywords share shape "${shape}": ${describe}`)
 }
 
+/*
+  COLLISION GUARDS (Phase 3 spec).
+
+  G1  "pickleball courts near me" is never assigned to any URL. It is
+      localised, so a single landing page cannot rank for it and would
+      cannibalise the city pages that can.
+  G2  A filter primary must stay lexically distinct from its parent city
+      primary. If one is a substring-equal match of the other, the two
+      pages compete for the same query and the weaker one wins nothing.
+*/
+const NEAR_ME = /pickleball courts near me/i
+for (const e of map.page_types) {
+  for (const kw of [e.primary, ...(e.secondary ?? [])].filter(Boolean)) {
+    if (NEAR_ME.test(kw)) {
+      err(`${e.page_type}: "${kw}" assigns "pickleball courts near me" to a URL. It is localised and is never assigned (guard G1).`)
+    }
+  }
+}
+/*
+  G2, and a note on reading it.
+
+  The spec says a filter primary must not be "a substring-equal match" of
+  the city primary. Read as plain containment, that fails four of the five
+  filter formulas THE SPEC ITSELF SUPPLIES: "Indoor Pickleball Courts in
+  {City}, {ST}" necessarily contains "Pickleball Courts in {City}, {ST}".
+  Containment is unavoidable in English here, so containment cannot be what
+  the rule means.
+
+  Read instead as: a filter primary must be EQUAL to the city primary (a
+  real collision), or must fail to add its own distinguishing qualifier (a
+  filter that forgot what it filters on). Both are genuine mistakes; mere
+  containment is not.
+*/
+const FILTER_QUALIFIER = {
+  city_filter_indoor: ['indoor'],
+  city_filter_outdoor: ['outdoor'],
+  city_filter_free: ['free'],
+  city_filter_public: ['public'],
+  city_filter_lights: ['light', 'lit', 'lighted'],
+}
+const cityEntry = map.page_types.find(p => p.page_type === 'city')
+if (cityEntry?.primary) {
+  const cityShape = shapeOf(cityEntry.primary)
+  for (const e of map.page_types) {
+    if (!e.page_type.startsWith('city_filter_') || !e.primary) continue
+    if (shapeOf(e.primary) === cityShape) {
+      err(`${e.page_type}: primary "${e.primary}" is identical to the city primary "${cityEntry.primary}" (guard G2).`)
+      continue
+    }
+    const quals = FILTER_QUALIFIER[e.page_type] ?? []
+    if (quals.length && !quals.some(q => e.primary.toLowerCase().includes(q))) {
+      err(`${e.page_type}: primary "${e.primary}" carries none of its distinguishing qualifiers (${quals.join(', ')}), so it does not separate from the city primary (guard G2).`)
+    }
+  }
+}
+
 // Instance-level check. Inactive until a dataset exists.
 let instanceStatus
 if (existsSync(INSTANCES_PATH)) {
