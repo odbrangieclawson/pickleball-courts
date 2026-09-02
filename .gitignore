@@ -47,3 +47,7 @@ data.csv
 # Regenerate with `npm run verify:build`. Filled-in worksheets belong
 # wherever your verification work actually lives, not in a generated dir.
 verification/
+
+# Preview renders. Built from UNVERIFIED rows to judge the template, never
+# deployed and never publishable. Regenerate with `npm run preview:city`.
+reports/preview-*.html
