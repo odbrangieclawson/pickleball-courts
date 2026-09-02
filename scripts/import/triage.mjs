@@ -16,9 +16,10 @@
 
   I3 Consistency  total = indoor + outdoor where all three present;
                 lat/lng present and inside the state box; postal present and
-                agreeing with state. County confidence is a REQUIRED part of
-                I3 that cannot be scored - see derive-county.mjs. So an I3
-                pass here is I3-minus-county, and is labelled as such.
+                agreeing with state; AND derived county confidence at or above
+                the 0.85 review threshold, from derive-county.mjs. If the
+                county file is absent, I3 is scored without it and every
+                heading says "minus county".
 
   I4 Vocabulary  structural pass: no free text leaked into a controlled
                 field. The mapper nulls anything unmappable, so this passes
@@ -27,7 +28,7 @@
                 controlled values the filter pages need.
 */
 
-import {writeFileSync, mkdirSync} from 'node:fs'
+import {writeFileSync, mkdirSync, readFileSync, existsSync} from 'node:fs'
 import {join} from 'node:path'
 import {loadRows, REPO_ROOT} from '../lib/load-csv.mjs'
 import {mapRow} from './mapper.mjs'
@@ -38,6 +39,34 @@ mkdirSync(OUT_DIR, {recursive: true})
 
 const src = loadRows()
 const venues = src.map(r => mapRow(r).venue)
+
+/*
+  County comes from derive-county.mjs, which writes one entry per row in the
+  same order as the source. Indexed positionally, not by slug: 21 slugs are
+  used by more than one row, so a slug key would silently mis-join.
+
+  If the file is absent, I3 is scored WITHOUT the county requirement and
+  every heading says so, rather than quietly reporting a weaker gate as if
+  it were the real one.
+*/
+const COUNTY_PATH = join(OUT_DIR, 'county-per-row.json')
+const countyRows = existsSync(COUNTY_PATH) ? JSON.parse(readFileSync(COUNTY_PATH, 'utf8')) : null
+const COUNTY_AVAILABLE = Array.isArray(countyRows) && countyRows.length === venues.length
+if (countyRows && !COUNTY_AVAILABLE) {
+  console.error(`WARNING: county file has ${countyRows.length} rows but the dataset has ${venues.length}. Ignoring it.`)
+}
+if (COUNTY_AVAILABLE) {
+  venues.forEach((v, i) => {
+    const c = countyRows[i]
+    v.county = c.needs_review ? null : c.county
+    v._county_accepted = !c.needs_review && c.county !== null
+    v._county_fips = c.county_fips
+    v._county_slug = c.county_slug
+  })
+} else {
+  venues.forEach(v => { v._county_accepted = null })
+}
+const I3_LABEL = COUNTY_AVAILABLE ? 'I3 Consistency' : 'I3 Consistency (minus county)'
 
 // Slug uniqueness is a dataset-wide property, computed once.
 const slugCounts = new Map()
@@ -57,6 +86,8 @@ const gateI3 = v => {
   if (isOutsideState(v.state, v.latitude, v.longitude) === true) return false
   if (v.postal_code === null) return false
   if (zipDisagreesWithState(v.state, v.postal_code) === true) return false
+  // Import Gate I3 requires derived county confidence above threshold.
+  if (COUNTY_AVAILABLE && v._county_accepted !== true) return false
   return true
 }
 
@@ -130,6 +161,21 @@ const queue = eligible
   .sort((a, b) => b.pages_unlocked - a.pages_unlocked || b.efficiency - a.efficiency)
   .slice(0, 100)
 
+/* County pages: computed dataset-wide, not per city, because a county
+   spans cities. Rule 8 threshold applies to READY venues. */
+const countyPages = (() => {
+  if (!COUNTY_AVAILABLE) return {eligible: 0, note: 'county data unavailable'}
+  const m = new Map()
+  for (const c of cities.values()) {
+    for (const v of c.ready) {
+      if (!v._county_fips) continue
+      m.set(v._county_fips, (m.get(v._county_fips) ?? 0) + 1)
+    }
+  }
+  const eligible = [...m.values()].filter(n => n >= 3).length
+  return {eligible, distinct: m.size}
+})()
+
 const L = []
 const say = s => L.push(s)
 
@@ -154,15 +200,23 @@ say('')
 say(`# ${eligible.length.toLocaleString()}`)
 say('')
 say(`Out of ${totalCities.toLocaleString()} cities present in the data,`)
-say(`**${eligible.length.toLocaleString()}** have 3 or more rows that already pass I1, I3-minus-county`)
-say('and I4. Those cities need nothing except a real source and a check date')
-say('attached to their rows.')
+say(`**${eligible.length.toLocaleString()}** have 3 or more rows that already pass ${COUNTY_AVAILABLE ? 'I1, I3 and I4 in full' : 'I1, I3-minus-county and I4'}.`)
+say('Those cities need nothing except a real source and a check date attached')
+say('to their rows.')
 say('')
-say(`If every one of those rows were verified, it would unlock **${totalPagesIfVerified.toLocaleString()} pages**`)
+say(`If every one of those rows were verified, it would unlock **${totalPagesIfVerified.toLocaleString()} city, filter and venue pages**`)
 say(`from **${totalEffort.toLocaleString()} row verifications**.`)
 say('')
-say('That figure excludes county pages entirely, because `county` cannot be')
-say('derived yet — see `reports/county-status.md`.')
+if (COUNTY_AVAILABLE) {
+  say(`On top of that, **${countyPages.eligible.toLocaleString()} county pages** clear the 3-venue`)
+  say(`threshold, out of ${countyPages.distinct.toLocaleString()} counties holding at least one ready venue.`)
+  say('')
+  say(`**Total addressable pages: ${(totalPagesIfVerified + countyPages.eligible).toLocaleString()}.**`)
+} else {
+  say('County pages are excluded: `county` is not derived. See `reports/county-status.md`.')
+}
+say('')
+say()
 say('')
 
 say('## Dataset-wide gate pass rates')
@@ -176,7 +230,7 @@ say('| gate | rows passing | rate |')
 say('| --- | ---: | ---: |')
 say(`| I1 Identity | ${p1.toLocaleString()} | ${pctN(p1)} |`)
 say(`| I2 Provenance | **0** | **0.0%** |`)
-say(`| I3 Consistency (minus county) | ${p3.toLocaleString()} | ${pctN(p3)} |`)
+say(`| ${I3_LABEL} | ${p3.toLocaleString()} | ${pctN(p3)} |`)
 say(`| I4 Vocabulary (structural) | ${p4.toLocaleString()} | ${pctN(p4)} |`)
 say(`| I1 + I3 + I4 together | ${pAll.toLocaleString()} | ${pctN(pAll)} |`)
 say(`| **All four gates** | **0** | **0.0%** |`)
@@ -233,7 +287,11 @@ writeFileSync(join(OUT_DIR, 'city-triage.json'), JSON.stringify({
   gated_only_by_provenance: eligible.length,
   pages_if_all_verified: totalPagesIfVerified,
   row_verifications_required: totalEffort,
-  gate_pass: {i1: p1, i2: 0, i3_minus_county: p3, i4_structural: p4, i1_i3_i4: pAll, all_four: 0},
+  county_available: COUNTY_AVAILABLE,
+  county_pages_eligible: countyPages.eligible,
+  counties_with_ready_venues: countyPages.distinct ?? 0,
+  total_addressable_pages: totalPagesIfVerified + countyPages.eligible,
+  gate_pass: {i1: p1, i2: 0, [COUNTY_AVAILABLE ? 'i3' : 'i3_minus_county']: p3, i4_structural: p4, i1_i3_i4: pAll, all_four: 0},
   cities: table,
   work_queue: queue,
 }, null, 2))

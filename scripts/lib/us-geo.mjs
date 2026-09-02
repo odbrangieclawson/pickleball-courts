@@ -109,3 +109,48 @@ export function haversineKm(lat1, lon1, lat2, lon2) {
     Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2
   return 2 * R * Math.asin(Math.sqrt(a))
 }
+
+/*
+  State FIPS to USPS abbreviation. Needed because Census county GEOIDs are
+  a 2-digit state FIPS followed by a 3-digit county FIPS, and a derived
+  county must be cross-checked against the state the row claims.
+*/
+export const FIPS_TO_STATE = {
+  '01': 'AL', '02': 'AK', '04': 'AZ', '05': 'AR', '06': 'CA', '08': 'CO',
+  '09': 'CT', '10': 'DE', '11': 'DC', '12': 'FL', '13': 'GA', '15': 'HI',
+  '16': 'ID', '17': 'IL', '18': 'IN', '19': 'IA', '20': 'KS', '21': 'KY',
+  '22': 'LA', '23': 'ME', '24': 'MD', '25': 'MA', '26': 'MI', '27': 'MN',
+  '28': 'MS', '29': 'MO', '30': 'MT', '31': 'NE', '32': 'NV', '33': 'NH',
+  '34': 'NJ', '35': 'NM', '36': 'NY', '37': 'NC', '38': 'ND', '39': 'OH',
+  '40': 'OK', '41': 'OR', '42': 'PA', '44': 'RI', '45': 'SC', '46': 'SD',
+  '47': 'TN', '48': 'TX', '49': 'UT', '50': 'VT', '51': 'VA', '53': 'WA',
+  '54': 'WV', '55': 'WI', '56': 'WY', '60': 'AS', '66': 'GU', '69': 'MP',
+  '72': 'PR', '78': 'VI',
+}
+
+/*
+  Strip the Census entity suffix to get the bare county name.
+  county.schema.json stores the bare name because the URL pattern appends
+  -county and the keyword template appends County; storing it here too
+  would produce "Tarrant County County".
+
+  Louisiana uses Parish, Alaska uses Borough and Census Area, Puerto Rico
+  uses Municipio. All are handled, and the full NAMELSAD is kept alongside.
+*/
+export function bareCountyName(namelsad) {
+  if (!namelsad) return null
+  return namelsad
+    .replace(/\s+(County|Parish|Borough|Census Area|Municipality|Municipio|City and Borough|city)$/i, '')
+    .trim()
+}
+
+export const slugifyCounty = name =>
+  (name ?? '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    // Drop apostrophes and periods rather than turning them into hyphens, so
+    // "Prince George's" slugs to prince-georges, not prince-george-s.
+    .replace(/['\u2019.]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
