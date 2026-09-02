@@ -1,75 +1,29 @@
 {
-  "name": "pickleball-courts",
+  "name": "deep-pickleball",
   "version": "0.1.0",
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "email": "",
-  "repository": "",
-  "license": "ISC",
-  "browserslist": [
-    ">0.25%",
-    "not ie 11",
-    "not op_mini all"
-  ],
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1",
-    "chalk": "^4",
-    "compression": "^1",
-    "dotenv": "^8",
-    "express": "^4",
-    "helmet": "^4",
-    "nodemon": "^2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7",
-    "@babel/plugin-proposal-class-properties": "^7",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7",
-    "@babel/plugin-proposal-object-rest-spread": "^7",
-    "@babel/plugin-proposal-optional-chaining": "^7",
-    "@babel/plugin-syntax-dynamic-import": "^7",
-    "@babel/preset-env": "^7",
-    "@babel/preset-react": "^7",
-    "@fullhuman/postcss-purgecss": "^4",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5",
-    "autoprefixer": "^10",
-    "babel-loader": "^8",
-    "clean-webpack-plugin": "^3",
-    "core-js": "^3",
-    "cross-env": "^7",
-    "css-declaration-sorter": "^6",
-    "css-loader": "^5",
-    "cssnano": "^4",
-    "file-loader": "^6",
-    "history": "^5",
-    "html-webpack-plugin": "^5",
-    "mini-css-extract-plugin": "^1",
-    "npm-run-all": "^4",
-    "postcss": "^8",
-    "postcss-combine-duplicated-selectors": "^10",
-    "postcss-combine-media-query": "^1",
-    "postcss-loader": "^5",
-    "purgecss-whitelister": "latest",
-    "react": "^17",
-    "react-dom": "^17",
-    "react-router-dom": "^5",
-    "regenerator-runtime": "^0",
-    "sass": "^1",
-    "sass-loader": "^11",
-    "sassyons": "latest",
-    "style-loader": "^2",
-    "terser-webpack-plugin": "^5",
-    "webpack": "^5",
-    "webpack-cli": "^4",
-    "webpack-dev-server": "^3"
+  "private": true,
+  "description": "US pickleball court directory. Verified counts, visible provenance.",
+  "engines": {
+    "node": ">=20.9.0"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --mode production --env prod",
-    "build:dev": "cross-env NODE_ENV=development webpack --mode development --env dev",
-    "local": "npm run server:api",
-    "server:dev": "webpack serve --mode development --progress --env dev",
-    "server:api": "nodemon server.js",
-    "start": "cross-env NODE_ENV=development npm-run-all --parallel server:*"
+    "dev": "next dev",
+    "prebuild": "npm run validate",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-keyword-map.mjs",
+    "check:js-off": "node scripts/check-js-off.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
   }
 }

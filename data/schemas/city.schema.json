@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deeppickleball.invalid/schemas/city.schema.json",
+  "title": "City",
+  "description": "A city that MAY have a page. Existence of a row here does not mean a page exists: Rule 8 requires 3 or more VERIFIED venues, and imported rows never count toward that threshold.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "name", "state", "status"],
+  "x-notes": {
+    "no_counts": "Rule 2: every count comes from getCounts(scope). This entity deliberately stores NO venue_count, court_count or any other tally. A stored count is a second source of truth and would let a page contradict its own schema, which is exactly the CourtSource failure of 45 vs 46 venues and 185 vs 187 courts.",
+    "publishability": "Whether this city renders a page is computed at build time from verified venue rows. It is never stored here."
+  },
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "not": {"pattern": "-[0-9]+$"},
+      "description": "Rule 10: no numeric duplicate suffixes. Two cities of the same name in one state are disambiguated by county or another real qualifier."
+    },
+    "name": {"type": "string", "minLength": 1},
+    "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "county": {
+      "type": ["string", "null"],
+      "description": "Derived. Import Gate I3 confidence threshold applies."
+    },
+    "aliases": {
+      "type": ["array", "null"],
+      "items": {"type": "string"},
+      "description": "Other names locals use. Used for disambiguation and internal search, never to mint a second URL."
+    },
+    "latitude": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+    "longitude": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+    "source_url": {"type": ["string", "null"], "format": "uri"},
+    "date_checked": {"type": ["string", "null"], "format": "date"},
+    "verified_by": {
+      "type": ["string", "null"],
+      "enum": ["municipal_source", "owner_submission", "staff_check", "user_report", null]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "verified", "rejected"],
+      "default": "pending"
+    }
+  }
+}

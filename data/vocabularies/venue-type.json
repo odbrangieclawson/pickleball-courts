@@ -1,0 +1,19 @@
+{
+  "field": "venue_type",
+  "cardinality": "single",
+  "null_means": "Not verified yet (Rule 6).",
+  "note": "Import Gate I4: no free text. venue_type describes WHO OPERATES the venue. It does not describe cost (fee_type) or who may enter (access_type), and it must never be used to derive either.",
+  "values": {
+    "public_park": "Outdoor courts in a municipal, county or state park, operated by a public parks authority.",
+    "community_center": "Publicly operated indoor recreation or community facility.",
+    "dedicated_pickleball_facility": "Purpose-built club or complex where pickleball is the primary sport.",
+    "racquet_club": "Private tennis, squash or racquet club offering pickleball, membership-based.",
+    "fitness_center": "Commercial gym or health club with courts, typically for members.",
+    "school": "School, college or university facility.",
+    "nonprofit_recreation": "Nonprofit recreation operator such as a YMCA, JCC or Boys and Girls Club.",
+    "faith_facility": "Gym or hall operated by a church, synagogue, mosque or other faith organisation.",
+    "residential_community": "HOA, apartment, condominium or retirement community courts, for residents and their guests.",
+    "resort_hotel": "Resort, hotel or campground courts, generally for guests.",
+    "entertainment_venue": "Commercial venue pairing pickleball with food and drink."
+  }
+}

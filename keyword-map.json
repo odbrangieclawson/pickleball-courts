@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "note": "One primary keyword per URL (Rule 9). The build fails on a collision. URL patterns here are LOCKED (decisions.md section 1) and the validator rejects any pattern not on the locked list.",
+  "slots": {
+    "{state_name}": "Full state name, title case. Example: Texas",
+    "{state_abbr}": "USPS two-letter state code, upper case. Example: TX",
+    "{county_name}": "County name WITHOUT the word County. Example: Tarrant",
+    "{city_name}": "City name as locally written, title case. Example: Fort Worth",
+    "{venue_name}": "Venue name as verified, title case. Example: Chisholm Trail Park",
+    "{gear_category_name}": "Gear category as a plural noun phrase. Example: pickleball paddles"
+  },
+  "page_types": [
+    {
+      "page_type": "state",
+      "url_pattern": "/pickleball/us/{state}/",
+      "primary": "pickleball courts in {state_name}",
+      "secondary": [
+        "pickleball courts {state_abbr}",
+        "where to play pickleball in {state_name}",
+        "{state_name} pickleball court directory"
+      ]
+    },
+    {
+      "page_type": "county",
+      "url_pattern": "/pickleball/us/{state}/{county}-county/",
+      "primary": "pickleball courts in {county_name} County, {state_abbr}",
+      "secondary": [
+        "{county_name} County pickleball courts",
+        "pickleball courts {county_name} County"
+      ]
+    },
+    {
+      "page_type": "city",
+      "url_pattern": "/pickleball/us/{state}/{city}/",
+      "primary": "pickleball courts in {city_name}, {state_abbr}",
+      "secondary": [
+        "pickleball courts near {city_name}",
+        "where to play pickleball in {city_name}, {state_abbr}",
+        "{city_name} pickleball court list"
+      ]
+    },
+    {
+      "page_type": "city_filter_indoor",
+      "url_pattern": "/pickleball/us/{state}/{city}/indoor/",
+      "primary": "indoor pickleball courts in {city_name}, {state_abbr}",
+      "secondary": [
+        "indoor pickleball {city_name}",
+        "{city_name} indoor pickleball courts"
+      ]
+    },
+    {
+      "page_type": "city_filter_outdoor",
+      "url_pattern": "/pickleball/us/{state}/{city}/outdoor/",
+      "primary": "outdoor pickleball courts in {city_name}, {state_abbr}",
+      "secondary": [
+        "outdoor pickleball {city_name}",
+        "{city_name} outdoor pickleball courts"
+      ]
+    },
+    {
+      "page_type": "city_filter_free",
+      "url_pattern": "/pickleball/us/{state}/{city}/free/",
+      "primary": "free pickleball courts in {city_name}, {state_abbr}",
+      "secondary": [
+        "free pickleball {city_name}",
+        "{city_name} free pickleball courts"
+      ]
+    },
+    {
+      "page_type": "city_filter_public",
+      "url_pattern": "/pickleball/us/{state}/{city}/public/",
+      "primary": "public pickleball courts in {city_name}, {state_abbr}",
+      "secondary": [
+        "public pickleball {city_name}",
+        "{city_name} public pickleball courts"
+      ]
+    },
+    {
+      "page_type": "city_filter_lights",
+      "url_pattern": "/pickleball/us/{state}/{city}/lights/",
+      "primary": "pickleball courts with lights in {city_name}, {state_abbr}",
+      "secondary": [
+        "lighted pickleball courts {city_name}",
+        "night pickleball {city_name}"
+      ]
+    },
+    {
+      "page_type": "venue",
+      "url_pattern": "/pickleball/us/{state}/{city}/{venue}/",
+      "primary": "{venue_name} pickleball courts",
+      "secondary": [
+        "pickleball at {venue_name}",
+        "{venue_name} {city_name} pickleball",
+        "{venue_name} court hours"
+      ]
+    },
+    {
+      "page_type": "gear_category",
+      "url_pattern": "/pickleball-gear/{category}/",
+      "primary": "{gear_category_name}",
+      "secondary": [
+        "best {gear_category_name}",
+        "{gear_category_name} reviews",
+        "how to choose {gear_category_name}"
+      ]
+    }
+  ]
+}

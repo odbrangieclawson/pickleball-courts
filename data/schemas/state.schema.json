@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deeppickleball.invalid/schemas/state.schema.json",
+  "title": "State",
+  "description": "A US state or state-level jurisdiction with a page at /pickleball/us/{state}/. Page Gate 3 requires Dataset schema on state pages.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "name", "abbr", "status"],
+  "x-notes": {
+    "no_counts": "Rule 2: no stored tallies. State pages carry the largest counts on the site and are the most likely to drift, so this matters most here.",
+    "word_band": "Rule 5: state pages run 3,000 to 5,000 words, the widest band on the site."
+  },
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "not": {"pattern": "-[0-9]+$"}
+    },
+    "name": {"type": "string", "minLength": 1},
+    "abbr": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "fips": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{2}$",
+      "description": "2-digit state FIPS code."
+    },
+    "source_url": {"type": ["string", "null"], "format": "uri"},
+    "date_checked": {"type": ["string", "null"], "format": "date"},
+    "verified_by": {
+      "type": ["string", "null"],
+      "enum": ["municipal_source", "owner_submission", "staff_check", "user_report", null]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "verified", "rejected"],
+      "default": "pending"
+    }
+  }
+}

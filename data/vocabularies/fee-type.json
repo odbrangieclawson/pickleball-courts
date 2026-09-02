@@ -1,0 +1,22 @@
+{
+  "field": "fee_type",
+  "cardinality": "single",
+  "null_means": "Not verified yet (Rule 6). Never render as free, never as 0.",
+  "note": "Import Gate I4: no free text in a filtered field. A row whose fee_type is not one of these values fails I4. A venue can in reality offer several payment routes; this field records the LEAST RESTRICTIVE way a member of the public can play, using the precedence order below. Nuance belongs in pricing_notes, which is not a filtered field. The precedence rule is listed in decisions.md as an OPEN decision awaiting sign-off.",
+  "precedence": [
+    "free",
+    "donation",
+    "permit_required",
+    "drop_in_fee",
+    "reservation_fee",
+    "membership_required"
+  ],
+  "values": {
+    "free": "No charge of any kind to play: no fee, no membership, no reservation charge, no permit. This is the ONLY value that qualifies a venue for the /free/ filter page.",
+    "donation": "No mandatory charge. A voluntary contribution is requested, or a donation box is present. Play is not refused for non-payment.",
+    "permit_required": "Play requires a permit, pass or resident card issued by the operator, whether or not the permit itself costs money.",
+    "drop_in_fee": "A per-session charge paid per visit. No ongoing membership is required to pay it.",
+    "reservation_fee": "Courts are booked and paid for per reservation or per hour, including commercial court rental.",
+    "membership_required": "Play requires an ongoing paid membership. Non-members cannot play, or may play only as a member's guest."
+  }
+}

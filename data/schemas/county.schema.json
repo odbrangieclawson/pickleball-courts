@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deeppickleball.invalid/schemas/county.schema.json",
+  "title": "County",
+  "description": "A county that MAY have a page at /pickleball/us/{state}/{county}-county/. Rule 8 applies: 3 or more VERIFIED venues.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "name", "state", "status"],
+  "x-notes": {
+    "no_counts": "Rule 2: no stored tallies. See city.schema.json for why.",
+    "name_excludes_county": "name and slug hold the BARE county name, without the word County. The URL pattern appends -county and the keyword template appends County. Storing it here as well would produce Tarrant County County."
+  },
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "not": {"pattern": "-[0-9]+$"},
+      "description": "Bare county slug. The -county suffix belongs to the URL pattern, not to this value."
+    },
+    "name": {"type": "string", "minLength": 1},
+    "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "fips": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{5}$",
+      "description": "5-digit county FIPS code. The stable federal identifier, and the safest key for county derivation."
+    },
+    "aliases": {"type": ["array", "null"], "items": {"type": "string"}},
+    "source_url": {"type": ["string", "null"], "format": "uri"},
+    "date_checked": {"type": ["string", "null"], "format": "date"},
+    "verified_by": {
+      "type": ["string", "null"],
+      "enum": ["municipal_source", "owner_submission", "staff_check", "user_report", null]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "verified", "rejected"],
+      "default": "pending"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "field": "play_format",
+  "cardinality": "multiple",
+  "null_means": "Not verified yet (Rule 6). An empty array is NOT the same as null: [] asserts that a verified check found none of these formats offered, null asserts nothing was checked.",
+  "note": "Import Gate I4: every element must be one of these values. Free text fails I4.",
+  "values": {
+    "open_play": "Drop-in sessions with rotating partners. No fixed roster and no advance booking required to join.",
+    "reserved_play": "Courts held in advance for a named individual or group.",
+    "league": "Organised competition over a scheduled season, with standings or divisions.",
+    "tournament": "Bracketed events with an entry process, run as elimination or pool play.",
+    "lessons": "Instruction by a coach, either one-to-one or as a clinic.",
+    "youth_program": "Programming specifically for players under 18."
+  }
+}

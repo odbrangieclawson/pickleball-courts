@@ -1,0 +1,17 @@
+{
+  "field": "surface",
+  "cardinality": "single",
+  "null_means": "Not verified yet (Rule 6).",
+  "note": "Import Gate I4: no free text. Where a venue has courts of more than one surface, record the surface of the majority of its pickleball courts and describe the rest in amenities or pricing_notes. Multi-surface handling is an OPEN decision in decisions.md.",
+  "values": {
+    "asphalt": "Bituminous pavement, usually line-striped, with no acrylic colour coating.",
+    "concrete": "Poured concrete slab with no acrylic colour coating.",
+    "acrylic": "Acrylic colour coating over an asphalt or concrete base. The most common dedicated outdoor pickleball surface.",
+    "cushioned_acrylic": "Acrylic colour coating over a rubberised cushion layer, softer underfoot than plain acrylic.",
+    "modular_tile": "Interlocking polypropylene tiles laid over a hard base.",
+    "wood": "Indoor hardwood, typically a shared gymnasium floor with pickleball lines.",
+    "synthetic_indoor": "Rolled or poured synthetic indoor sport surface such as vinyl or polyurethane.",
+    "clay": "Clay or Har-Tru. Rare, generally a converted tennis facility.",
+    "grass": "Natural grass or artificial turf. Rare and usually temporary."
+  }
+}

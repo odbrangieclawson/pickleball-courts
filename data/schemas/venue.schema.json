@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deeppickleball.invalid/schemas/venue.schema.json",
+  "title": "Venue",
+  "description": "v4 venue record: the 33 imported source columns plus the 10 fields the gates require. NO ROW IS PUBLISHABLE until status is verified, which requires source_url, date_checked, a verified street_address and a verified court count (Rule 12).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "name", "city", "state", "status"],
+  "x-notes": {
+    "tri_state_booleans": "light, restroom, pro_shop, climate_control, covered and nets_provided are TRI-STATE: true, false, or null. Rule 6 forbids coercing null to false. null means nobody checked; false means somebody checked and it is not there.",
+    "legitimate_zero": "Rule 6 says a NULL must never render as 0. It does not forbid a verified 0. indoor_courts: 0 on an outdoor-only venue is a checked fact and renders as 0. indoor_courts: null renders as 'Not verified yet'.",
+    "rule_13": "total_courts must equal indoor_courts + outdoor_courts whenever all three are present. JSON Schema cannot express that; it is enforced by the import gate validator (Import Gate I3), not here.",
+    "rule_14": "covered is not indoor and climate_control is not indoor. Only indoor_courts >= 1 qualifies a venue for the /indoor/ filter page.",
+    "rule_11": "claimed_by_owner is an IDENTITY event. verified_by and status are PROVENANCE events. They never share a field, and a claim never advances status."
+  },
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "not": {"pattern": "-[0-9]+$"},
+      "description": "URL segment. Rule 10: never a numeric duplicate suffix. Collisions are resolved with real disambiguation (a neighbourhood, a road, an operator), never with -2."
+    },
+    "name": {"type": "string", "minLength": 1},
+    "city": {"type": "string", "minLength": 1},
+    "state": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "USPS two-letter code, upper case."
+    },
+    "county": {
+      "type": ["string", "null"],
+      "description": "NEW in v4. Not present in the import. Derived, and Import Gate I3 requires the derivation confidence to clear threshold before it is trusted. null until derived."
+    },
+    "postal_code": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{5}(?:-[0-9]{4})?$"
+    },
+    "street_address": {"type": ["string", "null"]},
+    "latitude": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+    "longitude": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+
+    "total_courts": {"type": ["integer", "null"], "minimum": 1},
+    "indoor_courts": {"type": ["integer", "null"], "minimum": 0},
+    "outdoor_courts": {"type": ["integer", "null"], "minimum": 0},
+    "surface": {
+      "type": ["string", "null"],
+      "enum": ["asphalt", "concrete", "acrylic", "cushioned_acrylic", "modular_tile", "wood", "synthetic_indoor", "clay", "grass", null],
+      "description": "Controlled vocabulary: data/vocabularies/surface.json"
+    },
+    "nets_provided": {
+      "type": ["boolean", "null"],
+      "description": "NEW in v4. Tri-state."
+    },
+    "covered": {
+      "type": ["boolean", "null"],
+      "description": "Roofed but not enclosed. Rule 14: NOT indoor."
+    },
+    "climate_control": {
+      "type": ["boolean", "null"],
+      "description": "Heated or air conditioned. Rule 14: NOT indoor."
+    },
+    "light": {
+      "type": ["boolean", "null"],
+      "description": "Tri-state. Qualifies a venue for the /lights/ filter page only when true."
+    },
+
+    "access_type": {
+      "type": ["string", "null"],
+      "description": "OPEN DECISION: this field drives the /public/ filter page but has NO controlled vocabulary in v4. Until it gets one it is free text, which conflicts with Import Gate I4 for a filtered field. See decisions.md > Open decisions, O1."
+    },
+    "fee_type": {
+      "type": ["string", "null"],
+      "enum": ["free", "donation", "permit_required", "drop_in_fee", "reservation_fee", "membership_required", null],
+      "description": "NEW in v4. Controlled vocabulary: data/vocabularies/fee-type.json. Only 'free' qualifies for the /free/ filter page."
+    },
+    "membership_from_usd": {"type": ["number", "null"], "minimum": 0},
+    "pricing_notes": {"type": ["string", "null"]},
+    "pricing_details": {"type": ["string", "null"]},
+
+    "play_format": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string",
+        "enum": ["open_play", "reserved_play", "league", "tournament", "lessons", "youth_program"]
+      },
+      "uniqueItems": true,
+      "description": "NEW in v4. Controlled vocabulary: data/vocabularies/play-format.json. An empty array and null mean different things - see that file."
+    },
+    "level_of_play": {"type": ["string", "null"]},
+    "court_availability": {"type": ["string", "null"]},
+    "venue_type": {
+      "type": ["string", "null"],
+      "enum": ["public_park", "community_center", "dedicated_pickleball_facility", "racquet_club", "fitness_center", "school", "nonprofit_recreation", "faith_facility", "residential_community", "resort_hotel", "entertainment_venue", null],
+      "description": "Controlled vocabulary: data/vocabularies/venue-type.json"
+    },
+
+    "restroom": {"type": ["boolean", "null"]},
+    "pro_shop": {"type": ["boolean", "null"]},
+    "parking": {
+      "type": ["string", "null"],
+      "description": "Free text in v4. Not a filtered field, so Import Gate I4 does not bind it. Flagged in decisions.md as a candidate for a vocabulary if it ever becomes a filter."
+    },
+    "amenities": {
+      "type": ["array", "null"],
+      "items": {"type": "string"},
+      "description": "Free text list. Not a filtered field."
+    },
+
+    "website": {"type": ["string", "null"], "format": "uri"},
+    "phone": {"type": ["string", "null"]},
+    "hours_of_operation": {"type": ["string", "null"]},
+
+    "rating": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 5,
+      "description": "QUARANTINED. Imported with unknown provenance. Must NOT feed AggregateRating (Page Gate 3) or any published claim until its origin is documented. See decisions.md > Open decisions, O2."
+    },
+    "user_rating": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 5,
+      "description": "QUARANTINED. Same as rating."
+    },
+    "review_count": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "QUARANTINED. Same as rating."
+    },
+
+    "claimed_or_verified": {
+      "type": ["string", "boolean", "null"],
+      "deprecated": true,
+      "description": "LEGACY IMPORT COLUMN. Rule 11 forbids a field that conflates a claim with a verification, and this is that field. Retained ONLY so an imported row can be traced back to its source file. Rendering and gate code must never read it. It is split into claimed_by_owner (identity) and verified_by/status (provenance)."
+    },
+
+    "source_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "NEW in v4. Import Gate I2: must be present and reachable before status can leave pending. Rule 7: rendered visibly wherever the fact it sources is published."
+    },
+    "date_checked": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "NEW in v4. ISO 8601 date. Import Gate I2: must be present and inside cadence. The cadence length is an OPEN decision, O3."
+    },
+    "verified_by": {
+      "type": ["string", "null"],
+      "enum": ["municipal_source", "owner_submission", "staff_check", "user_report", null],
+      "description": "NEW in v4. Import Gate I2. PROVENANCE, never identity."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "verified", "rejected"],
+      "default": "pending",
+      "description": "NEW in v4. Rule 12: every imported row is pending until it has a verified address, a verified court count, a source_url and a date_checked. Rule 8: only verified rows count toward the 3-venue threshold."
+    },
+    "claimed_by_owner": {
+      "type": "boolean",
+      "default": false,
+      "description": "NEW in v4. IDENTITY event. Rule 11: a claim never satisfies a data gate and never advances status."
+    },
+    "claim_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "NEW in v4. Date the owner claim was accepted. Identity, not provenance."
+    }
+  }
+}

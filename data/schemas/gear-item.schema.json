@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deeppickleball.invalid/schemas/gear-item.schema.json",
+  "title": "GearItem",
+  "description": "PROVISIONAL. Gear is the revenue layer and gets its own phase. This schema exists so Phase 0 locks the shape of the file, not so gear can be built now. Expect it to change before any gear page ships.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "name", "category", "status"],
+  "x-notes": {
+    "provisional": "Unlike the venue, city, county and state schemas, this one is NOT locked by decisions.md. It is a placeholder for the gear phase.",
+    "provenance_applies": "Rule 7 binds gear too. A price, a weight or a spec is a published fact and needs a source_url and a date_checked. Prices move faster than court data, so the gear cadence will be shorter than the venue cadence.",
+    "disclosure": "Affiliate links carry a disclosure obligation. Where and how that renders is an OPEN decision, O7."
+  },
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "not": {"pattern": "-[0-9]+$"}
+    },
+    "name": {"type": "string", "minLength": 1},
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Maps to the {category} segment of /pickleball-gear/{category}/. Needs a controlled vocabulary before any gear page ships."
+    },
+    "brand": {"type": ["string", "null"]},
+    "model": {"type": ["string", "null"]},
+    "msrp_usd": {"type": ["number", "null"], "minimum": 0},
+    "retailer_url": {"type": ["string", "null"], "format": "uri"},
+    "affiliate_url": {"type": ["string", "null"], "format": "uri"},
+    "specs": {
+      "type": ["object", "null"],
+      "description": "Free-form spec bag for now. Becomes typed when the gear phase starts.",
+      "additionalProperties": true
+    },
+    "source_url": {"type": ["string", "null"], "format": "uri"},
+    "date_checked": {"type": ["string", "null"], "format": "date"},
+    "verified_by": {
+      "type": ["string", "null"],
+      "enum": ["municipal_source", "owner_submission", "staff_check", "user_report", null]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "verified", "rejected"],
+      "default": "pending"
+    }
+  }
+}
