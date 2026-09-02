@@ -1,0 +1,2290 @@
+{
+  "metros": 100,
+  "venues": 2620,
+  "ready": 0,
+  "metro_detail": [
+    {
+      "metro": "Seattle, WA",
+      "city": "Seattle",
+      "state": "WA",
+      "venues": 63,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 63,
+        "I3": 10,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 59,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (63)",
+        "I2: no date_checked (63)",
+        "I2: no verified_by (63)",
+        "I3: county not derived above confidence threshold (10)"
+      ]
+    },
+    {
+      "metro": "Jacksonville, FL",
+      "city": "Jacksonville",
+      "state": "FL",
+      "venues": 55,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 55,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 58,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (55)",
+        "I2: no date_checked (55)",
+        "I2: no verified_by (55)",
+        "I3: county not derived above confidence threshold (1)"
+      ]
+    },
+    {
+      "metro": "Sacramento, CA",
+      "city": "Sacramento",
+      "state": "CA",
+      "venues": 55,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 4,
+        "I2": 55,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 56,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (55)",
+        "I2: no date_checked (55)",
+        "I2: no verified_by (55)",
+        "I1: slug has a numeric suffix (Rule 10) (4)"
+      ]
+    },
+    {
+      "metro": "Lincoln, NE",
+      "city": "Lincoln",
+      "state": "NE",
+      "venues": 51,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 51,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 55,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (51)",
+        "I2: no date_checked (51)",
+        "I2: no verified_by (51)",
+        "I3: missing lat/lng (2)"
+      ]
+    },
+    {
+      "metro": "Honolulu, HI",
+      "city": "Honolulu",
+      "state": "HI",
+      "venues": 43,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 43,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 48,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (43)",
+        "I2: no date_checked (43)",
+        "I2: no verified_by (43)",
+        "I3: county not derived above confidence threshold (1)"
+      ]
+    },
+    {
+      "metro": "Houston, TX",
+      "city": "Houston",
+      "state": "TX",
+      "venues": 54,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 3,
+        "I2": 54,
+        "I3": 12,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 45,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (54)",
+        "I2: no date_checked (54)",
+        "I2: no verified_by (54)",
+        "I3: county not derived above confidence threshold (10)"
+      ]
+    },
+    {
+      "metro": "Wichita, KS",
+      "city": "Wichita",
+      "state": "KS",
+      "venues": 46,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 3,
+        "I2": 46,
+        "I3": 3,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 45,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (46)",
+        "I2: no date_checked (46)",
+        "I2: no verified_by (46)",
+        "I1: slug has a numeric suffix (Rule 10) (3)"
+      ]
+    },
+    {
+      "metro": "San Diego, CA",
+      "city": "San Diego",
+      "state": "CA",
+      "venues": 39,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 39,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 43,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (39)",
+        "I2: no date_checked (39)",
+        "I2: no verified_by (39)",
+        "I3: missing lat/lng (1)"
+      ]
+    },
+    {
+      "metro": "San Francisco, CA",
+      "city": "San Francisco",
+      "state": "CA",
+      "venues": 39,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 39,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 43,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (39)",
+        "I2: no date_checked (39)",
+        "I2: no verified_by (39)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Washington, DC",
+      "city": "Washington",
+      "state": "DC",
+      "venues": 36,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 36,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 42,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (36)",
+        "I2: no date_checked (36)",
+        "I2: no verified_by (36)"
+      ]
+    },
+    {
+      "metro": "Charlotte, NC",
+      "city": "Charlotte",
+      "state": "NC",
+      "venues": 50,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 2,
+        "I2": 50,
+        "I3": 13,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 41,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (50)",
+        "I2: no date_checked (50)",
+        "I2: no verified_by (50)",
+        "I3: county not derived above confidence threshold (12)"
+      ]
+    },
+    {
+      "metro": "Tucson, AZ",
+      "city": "Tucson",
+      "state": "AZ",
+      "venues": 37,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 37,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 40,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (37)",
+        "I2: no date_checked (37)",
+        "I2: no verified_by (37)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Omaha, NE",
+      "city": "Omaha",
+      "state": "NE",
+      "venues": 41,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 2,
+        "I2": 41,
+        "I3": 5,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 40,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (41)",
+        "I2: no date_checked (41)",
+        "I2: no verified_by (41)",
+        "I3: county not derived above confidence threshold (4)"
+      ]
+    },
+    {
+      "metro": "Las Vegas, NV",
+      "city": "Las Vegas",
+      "state": "NV",
+      "venues": 41,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 41,
+        "I3": 6,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 40,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (41)",
+        "I2: no date_checked (41)",
+        "I2: no verified_by (41)",
+        "I3: no postal_code (6)"
+      ]
+    },
+    {
+      "metro": "Austin, TX",
+      "city": "Austin",
+      "state": "TX",
+      "venues": 45,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 4,
+        "I2": 45,
+        "I3": 12,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 38,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (45)",
+        "I2: no date_checked (45)",
+        "I2: no verified_by (45)",
+        "I3: county not derived above confidence threshold (10)"
+      ]
+    },
+    {
+      "metro": "Denver, CO",
+      "city": "Denver",
+      "state": "CO",
+      "venues": 45,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 2,
+        "I2": 45,
+        "I3": 10,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 38,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (45)",
+        "I2: no date_checked (45)",
+        "I2: no verified_by (45)",
+        "I3: county not derived above confidence threshold (9)"
+      ]
+    },
+    {
+      "metro": "Portland, OR",
+      "city": "Portland",
+      "state": "OR",
+      "venues": 51,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 51,
+        "I3": 18,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 38,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (51)",
+        "I2: no date_checked (51)",
+        "I2: no verified_by (51)",
+        "I3: county not derived above confidence threshold (18)"
+      ]
+    },
+    {
+      "metro": "Boise, ID",
+      "city": "Boise",
+      "state": "ID",
+      "venues": 36,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 36,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 38,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (36)",
+        "I2: no date_checked (36)",
+        "I2: no verified_by (36)",
+        "I3: county not derived above confidence threshold (1)"
+      ]
+    },
+    {
+      "metro": "Colorado Springs, CO",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "venues": 34,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 2,
+        "I2": 34,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 37,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (34)",
+        "I2: no date_checked (34)",
+        "I2: no verified_by (34)",
+        "I1: slug has a numeric suffix (Rule 10) (2)"
+      ]
+    },
+    {
+      "metro": "Dallas, TX",
+      "city": "Dallas",
+      "state": "TX",
+      "venues": 43,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 2,
+        "I2": 43,
+        "I3": 10,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 37,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (43)",
+        "I2: no date_checked (43)",
+        "I2: no verified_by (43)",
+        "I3: county not derived above confidence threshold (7)"
+      ]
+    },
+    {
+      "metro": "Naples, FL",
+      "city": "Naples",
+      "state": "FL",
+      "venues": 38,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 38,
+        "I3": 5,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 37,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (38)",
+        "I2: no date_checked (38)",
+        "I2: no verified_by (38)",
+        "I3: county not derived above confidence threshold (5)"
+      ]
+    },
+    {
+      "metro": "Madison, WI",
+      "city": "Madison",
+      "state": "WI",
+      "venues": 37,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 37,
+        "I3": 4,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 37,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (37)",
+        "I2: no date_checked (37)",
+        "I2: no verified_by (37)",
+        "I3: county not derived above confidence threshold (4)"
+      ]
+    },
+    {
+      "metro": "Knoxville, TN",
+      "city": "Knoxville",
+      "state": "TN",
+      "venues": 34,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 34,
+        "I3": 4,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 35,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (34)",
+        "I2: no date_checked (34)",
+        "I2: no verified_by (34)",
+        "I3: county not derived above confidence threshold (3)"
+      ]
+    },
+    {
+      "metro": "Phoenix, AZ",
+      "city": "Phoenix",
+      "state": "AZ",
+      "venues": 31,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 31,
+        "I3": 3,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 34,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (31)",
+        "I2: no date_checked (31)",
+        "I2: no verified_by (31)",
+        "I3: total_courts 4 != indoor 4 + outdoor 4 (1)"
+      ]
+    },
+    {
+      "metro": "Spokane, WA",
+      "city": "Spokane",
+      "state": "WA",
+      "venues": 30,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 30,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 34,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (30)",
+        "I2: no date_checked (30)",
+        "I2: no verified_by (30)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Mesa, AZ",
+      "city": "Mesa",
+      "state": "AZ",
+      "venues": 32,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 32,
+        "I3": 3,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 33,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (32)",
+        "I2: no date_checked (32)",
+        "I2: no verified_by (32)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Indianapolis, IN",
+      "city": "Indianapolis",
+      "state": "IN",
+      "venues": 46,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 46,
+        "I3": 19,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 32,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (46)",
+        "I2: no date_checked (46)",
+        "I2: no verified_by (46)",
+        "I3: county not derived above confidence threshold (19)"
+      ]
+    },
+    {
+      "metro": "San Antonio, TX",
+      "city": "San Antonio",
+      "state": "TX",
+      "venues": 29,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 29,
+        "I3": 5,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 30,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (29)",
+        "I2: no date_checked (29)",
+        "I2: no verified_by (29)",
+        "I3: county not derived above confidence threshold (5)"
+      ]
+    },
+    {
+      "metro": "St. Louis, MO",
+      "city": "St. Louis",
+      "state": "MO",
+      "venues": 30,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 30,
+        "I3": 8,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 28,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (30)",
+        "I2: no date_checked (30)",
+        "I2: no verified_by (30)",
+        "I3: county not derived above confidence threshold (7)"
+      ]
+    },
+    {
+      "metro": "Alexandria, VA",
+      "city": "Alexandria",
+      "state": "VA",
+      "venues": 31,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 31,
+        "I3": 8,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 28,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (31)",
+        "I2: no date_checked (31)",
+        "I2: no verified_by (31)",
+        "I3: county not derived above confidence threshold (8)"
+      ]
+    },
+    {
+      "metro": "Marietta, GA",
+      "city": "Marietta",
+      "state": "GA",
+      "venues": 24,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 24,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 28,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (24)",
+        "I2: no date_checked (24)",
+        "I2: no verified_by (24)"
+      ]
+    },
+    {
+      "metro": "St. Petersburg, FL",
+      "city": "St. Petersburg",
+      "state": "FL",
+      "venues": 22,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 22,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 26,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (22)",
+        "I2: no date_checked (22)",
+        "I2: no verified_by (22)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Raleigh, NC",
+      "city": "Raleigh",
+      "state": "NC",
+      "venues": 24,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 24,
+        "I3": 4,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 26,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (24)",
+        "I2: no date_checked (24)",
+        "I2: no verified_by (24)",
+        "I3: county not derived above confidence threshold (4)"
+      ]
+    },
+    {
+      "metro": "Atlanta, GA",
+      "city": "Atlanta",
+      "state": "GA",
+      "venues": 55,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 3,
+        "I2": 55,
+        "I3": 31,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 26,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (55)",
+        "I2: no date_checked (55)",
+        "I2: no verified_by (55)",
+        "I3: county not derived above confidence threshold (31)"
+      ]
+    },
+    {
+      "metro": "Fort Worth, TX",
+      "city": "Fort Worth",
+      "state": "TX",
+      "venues": 28,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 28,
+        "I3": 7,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 26,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (28)",
+        "I2: no date_checked (28)",
+        "I2: no verified_by (28)",
+        "I3: county not derived above confidence threshold (7)"
+      ]
+    },
+    {
+      "metro": "Lewes, DE",
+      "city": "Lewes",
+      "state": "DE",
+      "venues": 22,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 22,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 26,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (22)",
+        "I2: no date_checked (22)",
+        "I2: no verified_by (22)"
+      ]
+    },
+    {
+      "metro": "Des Moines, IA",
+      "city": "Des Moines",
+      "state": "IA",
+      "venues": 25,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 25,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 26,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (25)",
+        "I2: no date_checked (25)",
+        "I2: no verified_by (25)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Frederick, MD",
+      "city": "Frederick",
+      "state": "MD",
+      "venues": 24,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 24,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 26,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (24)",
+        "I2: no date_checked (24)",
+        "I2: no verified_by (24)",
+        "I3: no postal_code (2)"
+      ]
+    },
+    {
+      "metro": "Elk Grove, CA",
+      "city": "Elk Grove",
+      "state": "CA",
+      "venues": 21,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 21,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 25,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (21)",
+        "I2: no date_checked (21)",
+        "I2: no verified_by (21)",
+        "I3: missing lat/lng (1)"
+      ]
+    },
+    {
+      "metro": "Chicago, IL",
+      "city": "Chicago",
+      "state": "IL",
+      "venues": 22,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 22,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 25,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (22)",
+        "I2: no date_checked (22)",
+        "I2: no verified_by (22)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Springfield, MO",
+      "city": "Springfield",
+      "state": "MO",
+      "venues": 19,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 19,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 25,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (19)",
+        "I2: no date_checked (19)",
+        "I2: no verified_by (19)"
+      ]
+    },
+    {
+      "metro": "Pittsburgh, PA",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "venues": 19,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 19,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 25,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (19)",
+        "I2: no date_checked (19)",
+        "I2: no verified_by (19)"
+      ]
+    },
+    {
+      "metro": "Virginia Beach, VA",
+      "city": "Virginia Beach",
+      "state": "VA",
+      "venues": 23,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 23,
+        "I3": 4,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 25,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (23)",
+        "I2: no date_checked (23)",
+        "I2: no verified_by (23)",
+        "I3: county not derived above confidence threshold (4)"
+      ]
+    },
+    {
+      "metro": "Melbourne, FL",
+      "city": "Melbourne",
+      "state": "FL",
+      "venues": 20,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 20,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 25,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (20)",
+        "I2: no date_checked (20)",
+        "I2: no verified_by (20)"
+      ]
+    },
+    {
+      "metro": "Reno, NV",
+      "city": "Reno",
+      "state": "NV",
+      "venues": 20,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 20,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 25,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (20)",
+        "I2: no date_checked (20)",
+        "I2: no verified_by (20)"
+      ]
+    },
+    {
+      "metro": "Asheville, NC",
+      "city": "Asheville",
+      "state": "NC",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 18,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 24,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)"
+      ]
+    },
+    {
+      "metro": "Albuquerque, NM",
+      "city": "Albuquerque",
+      "state": "NM",
+      "venues": 21,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 21,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 24,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (21)",
+        "I2: no date_checked (21)",
+        "I2: no verified_by (21)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Palm Desert, CA",
+      "city": "Palm Desert",
+      "state": "CA",
+      "venues": 20,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 20,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 24,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (20)",
+        "I2: no date_checked (20)",
+        "I2: no verified_by (20)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Tulsa, OK",
+      "city": "Tulsa",
+      "state": "OK",
+      "venues": 20,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 20,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 24,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (20)",
+        "I2: no date_checked (20)",
+        "I2: no verified_by (20)",
+        "I3: county not derived above confidence threshold (1)"
+      ]
+    },
+    {
+      "metro": "Tampa, FL",
+      "city": "Tampa",
+      "state": "FL",
+      "venues": 17,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 17,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 23,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)"
+      ]
+    },
+    {
+      "metro": "Fort Wayne, IN",
+      "city": "Fort Wayne",
+      "state": "IN",
+      "venues": 26,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 3,
+        "I2": 26,
+        "I3": 6,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 23,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (26)",
+        "I2: no date_checked (26)",
+        "I2: no verified_by (26)",
+        "I3: county not derived above confidence threshold (6)"
+      ]
+    },
+    {
+      "metro": "Anchorage, AK",
+      "city": "Anchorage",
+      "state": "AK",
+      "venues": 23,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 4,
+        "I2": 23,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 23,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (23)",
+        "I2: no date_checked (23)",
+        "I2: no verified_by (23)",
+        "I1: slug has a numeric suffix (Rule 10) (4)"
+      ]
+    },
+    {
+      "metro": "Ocala, FL",
+      "city": "Ocala",
+      "state": "FL",
+      "venues": 19,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 19,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 23,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (19)",
+        "I2: no date_checked (19)",
+        "I2: no verified_by (19)",
+        "I3: total_courts 3 != indoor 2 + outdoor 0 (1)"
+      ]
+    },
+    {
+      "metro": "Nashville, TN",
+      "city": "Nashville",
+      "state": "TN",
+      "venues": 28,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 28,
+        "I3": 10,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 23,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (28)",
+        "I2: no date_checked (28)",
+        "I2: no verified_by (28)",
+        "I3: county not derived above confidence threshold (8)"
+      ]
+    },
+    {
+      "metro": "San Jose, CA",
+      "city": "San Jose",
+      "state": "CA",
+      "venues": 22,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 22,
+        "I3": 3,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 23,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (22)",
+        "I2: no date_checked (22)",
+        "I2: no verified_by (22)",
+        "I3: missing lat/lng (3)"
+      ]
+    },
+    {
+      "metro": "Scottsdale, AZ",
+      "city": "Scottsdale",
+      "state": "AZ",
+      "venues": 20,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 20,
+        "I3": 4,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (20)",
+        "I2: no date_checked (20)",
+        "I2: no verified_by (20)",
+        "I3: no postal_code (2)"
+      ]
+    },
+    {
+      "metro": "Lexington, KY",
+      "city": "Lexington",
+      "state": "KY",
+      "venues": 22,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 22,
+        "I3": 5,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (22)",
+        "I2: no date_checked (22)",
+        "I2: no verified_by (22)",
+        "I3: county not derived above confidence threshold (4)"
+      ]
+    },
+    {
+      "metro": "Louisville, KY",
+      "city": "Louisville",
+      "state": "KY",
+      "venues": 31,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 31,
+        "I3": 14,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (31)",
+        "I2: no date_checked (31)",
+        "I2: no verified_by (31)",
+        "I3: county not derived above confidence threshold (12)"
+      ]
+    },
+    {
+      "metro": "Bradenton, FL",
+      "city": "Bradenton",
+      "state": "FL",
+      "venues": 19,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 19,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (19)",
+        "I2: no date_checked (19)",
+        "I2: no verified_by (19)",
+        "I3: total_courts 6 != indoor 0 + outdoor 2 (1)"
+      ]
+    },
+    {
+      "metro": "Orlando, FL",
+      "city": "Orlando",
+      "state": "FL",
+      "venues": 23,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 23,
+        "I3": 6,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (23)",
+        "I2: no date_checked (23)",
+        "I2: no verified_by (23)",
+        "I3: county not derived above confidence threshold (5)"
+      ]
+    },
+    {
+      "metro": "Philadelphia, PA",
+      "city": "Philadelphia",
+      "state": "PA",
+      "venues": 20,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 20,
+        "I3": 3,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (20)",
+        "I2: no date_checked (20)",
+        "I2: no verified_by (20)",
+        "I3: county not derived above confidence threshold (3)"
+      ]
+    },
+    {
+      "metro": "Vancouver, WA",
+      "city": "Vancouver",
+      "state": "WA",
+      "venues": 24,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 24,
+        "I3": 7,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (24)",
+        "I2: no date_checked (24)",
+        "I2: no verified_by (24)",
+        "I3: county not derived above confidence threshold (7)"
+      ]
+    },
+    {
+      "metro": "Wilmington, DE",
+      "city": "Wilmington",
+      "state": "DE",
+      "venues": 19,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 19,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (19)",
+        "I2: no date_checked (19)",
+        "I2: no verified_by (19)",
+        "I3: no postal_code (1)"
+      ]
+    },
+    {
+      "metro": "Boston, MA",
+      "city": "Boston",
+      "state": "MA",
+      "venues": 21,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 21,
+        "I3": 3,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 22,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (21)",
+        "I2: no date_checked (21)",
+        "I2: no verified_by (21)",
+        "I3: no postal_code (3)"
+      ]
+    },
+    {
+      "metro": "Charleston, SC",
+      "city": "Charleston",
+      "state": "SC",
+      "venues": 17,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 17,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 21,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Carmel, IN",
+      "city": "Carmel",
+      "state": "IN",
+      "venues": 16,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 16,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 21,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (16)",
+        "I2: no date_checked (16)",
+        "I2: no verified_by (16)"
+      ]
+    },
+    {
+      "metro": "Rochester, NY",
+      "city": "Rochester",
+      "state": "NY",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 18,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 21,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Columbus, OH",
+      "city": "Columbus",
+      "state": "OH",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 18,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 21,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Aurora, CO",
+      "city": "Aurora",
+      "state": "CO",
+      "venues": 28,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 28,
+        "I3": 10,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 21,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (28)",
+        "I2: no date_checked (28)",
+        "I2: no verified_by (28)",
+        "I3: county not derived above confidence threshold (10)"
+      ]
+    },
+    {
+      "metro": "Fort Collins, CO",
+      "city": "Fort Collins",
+      "state": "CO",
+      "venues": 17,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 17,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)",
+        "I3: county not derived above confidence threshold (1)"
+      ]
+    },
+    {
+      "metro": "Gainesville, FL",
+      "city": "Gainesville",
+      "state": "FL",
+      "venues": 19,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 2,
+        "I2": 19,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (19)",
+        "I2: no date_checked (19)",
+        "I2: no verified_by (19)",
+        "I1: slug has a numeric suffix (Rule 10) (2)"
+      ]
+    },
+    {
+      "metro": "Baton Rouge, LA",
+      "city": "Baton Rouge",
+      "state": "LA",
+      "venues": 16,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 16,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (16)",
+        "I2: no date_checked (16)",
+        "I2: no verified_by (16)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Rockville, MD",
+      "city": "Rockville",
+      "state": "MD",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 18,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)",
+        "I3: county not derived above confidence threshold (2)"
+      ]
+    },
+    {
+      "metro": "Myrtle Beach, SC",
+      "city": "Myrtle Beach",
+      "state": "SC",
+      "venues": 15,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 15,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (15)",
+        "I2: no date_checked (15)",
+        "I2: no verified_by (15)"
+      ]
+    },
+    {
+      "metro": "Boynton Beach, FL",
+      "city": "Boynton Beach",
+      "state": "FL",
+      "venues": 17,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 17,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)",
+        "I3: total_courts 6 != indoor 0 + outdoor 4 (1)"
+      ]
+    },
+    {
+      "metro": "Fort Myers, FL",
+      "city": "Fort Myers",
+      "state": "FL",
+      "venues": 17,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 17,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)",
+        "I3: no postal_code (1)"
+      ]
+    },
+    {
+      "metro": "Miami, FL",
+      "city": "Miami",
+      "state": "FL",
+      "venues": 17,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 17,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 20,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)"
+      ]
+    },
+    {
+      "metro": "Greensboro, NC",
+      "city": "Greensboro",
+      "state": "NC",
+      "venues": 14,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 14,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (14)",
+        "I2: no date_checked (14)",
+        "I2: no verified_by (14)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Medford, OR",
+      "city": "Medford",
+      "state": "OR",
+      "venues": 14,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 14,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (14)",
+        "I2: no date_checked (14)",
+        "I2: no verified_by (14)",
+        "I3: total_courts 19 != indoor 0 + outdoor 0 (1)"
+      ]
+    },
+    {
+      "metro": "El Paso, TX",
+      "city": "El Paso",
+      "state": "TX",
+      "venues": 19,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 19,
+        "I3": 5,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (19)",
+        "I2: no date_checked (19)",
+        "I2: no verified_by (19)",
+        "I3: county not derived above confidence threshold (4)"
+      ]
+    },
+    {
+      "metro": "Henderson, NV",
+      "city": "Henderson",
+      "state": "NV",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 18,
+        "I3": 4,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)",
+        "I3: county not derived above confidence threshold (4)"
+      ]
+    },
+    {
+      "metro": "New York, NY",
+      "city": "New York",
+      "state": "NY",
+      "venues": 17,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 2,
+        "I2": 17,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)",
+        "I1: slug has a numeric suffix (Rule 10) (2)"
+      ]
+    },
+    {
+      "metro": "Klamath Falls, OR",
+      "city": "Klamath Falls",
+      "state": "OR",
+      "venues": 14,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 14,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (14)",
+        "I2: no date_checked (14)",
+        "I2: no verified_by (14)"
+      ]
+    },
+    {
+      "metro": "The Woodlands, TX",
+      "city": "The Woodlands",
+      "state": "TX",
+      "venues": 16,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 16,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (16)",
+        "I2: no date_checked (16)",
+        "I2: no verified_by (16)",
+        "I3: no postal_code (2)"
+      ]
+    },
+    {
+      "metro": "Orem, UT",
+      "city": "Orem",
+      "state": "UT",
+      "venues": 16,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 16,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (16)",
+        "I2: no date_checked (16)",
+        "I2: no verified_by (16)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Huntsville, AL",
+      "city": "Huntsville",
+      "state": "AL",
+      "venues": 25,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 7,
+        "I2": 25,
+        "I3": 3,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (25)",
+        "I2: no date_checked (25)",
+        "I2: no verified_by (25)",
+        "I1: slug has a numeric suffix (Rule 10) (7)"
+      ]
+    },
+    {
+      "metro": "Peoria, AZ",
+      "city": "Peoria",
+      "state": "AZ",
+      "venues": 15,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 15,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 19,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (15)",
+        "I2: no date_checked (15)",
+        "I2: no verified_by (15)"
+      ]
+    },
+    {
+      "metro": "Canton, OH",
+      "city": "Canton",
+      "state": "OH",
+      "venues": 13,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 13,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 18,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (13)",
+        "I2: no date_checked (13)",
+        "I2: no verified_by (13)",
+        "I3: no postal_code (1)"
+      ]
+    },
+    {
+      "metro": "Plano, TX",
+      "city": "Plano",
+      "state": "TX",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 18,
+        "I3": 6,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 18,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)",
+        "I3: county not derived above confidence threshold (6)"
+      ]
+    },
+    {
+      "metro": "Redmond, WA",
+      "city": "Redmond",
+      "state": "WA",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 18,
+        "I3": 6,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 18,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)",
+        "I3: county not derived above confidence threshold (6)"
+      ]
+    },
+    {
+      "metro": "Newark, DE",
+      "city": "Newark",
+      "state": "DE",
+      "venues": 15,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 15,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 18,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (15)",
+        "I2: no date_checked (15)",
+        "I2: no verified_by (15)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Tallahassee, FL",
+      "city": "Tallahassee",
+      "state": "FL",
+      "venues": 14,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 14,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 18,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (14)",
+        "I2: no date_checked (14)",
+        "I2: no verified_by (14)",
+        "I3: total_courts 4 != indoor 15 + outdoor 16 (1)"
+      ]
+    },
+    {
+      "metro": "Poughkeepsie, NY",
+      "city": "Poughkeepsie",
+      "state": "NY",
+      "venues": 13,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 13,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 18,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (13)",
+        "I2: no date_checked (13)",
+        "I2: no verified_by (13)"
+      ]
+    },
+    {
+      "metro": "Arlington, TX",
+      "city": "Arlington",
+      "state": "TX",
+      "venues": 16,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 16,
+        "I3": 2,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 18,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (16)",
+        "I2: no date_checked (16)",
+        "I2: no verified_by (16)",
+        "I3: total_courts 2 != indoor 1 + outdoor 0 (1)"
+      ]
+    },
+    {
+      "metro": "Bakersfield, CA",
+      "city": "Bakersfield",
+      "state": "CA",
+      "venues": 13,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 13,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 17,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (13)",
+        "I2: no date_checked (13)",
+        "I2: no verified_by (13)",
+        "I1: slug has a numeric suffix (Rule 10) (1)"
+      ]
+    },
+    {
+      "metro": "Overland Park, KS",
+      "city": "Overland Park",
+      "state": "KS",
+      "venues": 13,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 13,
+        "I3": 1,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 17,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (13)",
+        "I2: no date_checked (13)",
+        "I2: no verified_by (13)",
+        "I3: no postal_code (1)"
+      ]
+    },
+    {
+      "metro": "Silver Spring, MD",
+      "city": "Silver Spring",
+      "state": "MD",
+      "venues": 21,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 21,
+        "I3": 9,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 17,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (21)",
+        "I2: no date_checked (21)",
+        "I2: no verified_by (21)",
+        "I3: county not derived above confidence threshold (9)"
+      ]
+    },
+    {
+      "metro": "Santa Fe, NM",
+      "city": "Santa Fe",
+      "state": "NM",
+      "venues": 12,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 12,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 17,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (12)",
+        "I2: no date_checked (12)",
+        "I2: no verified_by (12)"
+      ]
+    },
+    {
+      "metro": "Salem, OR",
+      "city": "Salem",
+      "state": "OR",
+      "venues": 18,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 1,
+        "I2": 18,
+        "I3": 5,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 17,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (18)",
+        "I2: no date_checked (18)",
+        "I2: no verified_by (18)",
+        "I3: county not derived above confidence threshold (5)"
+      ]
+    },
+    {
+      "metro": "Salt Lake City, UT",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "venues": 12,
+      "passing_all_four": 0,
+      "blocked_by": {
+        "I1": 0,
+        "I2": 12,
+        "I3": 0,
+        "I4": 0
+      },
+      "status": "blocked",
+      "publishable": false,
+      "reason": "0 venue(s) pass all four gates, needs 3",
+      "pages_when_ready": 17,
+      "top_reasons": [
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (12)",
+        "I2: no date_checked (12)",
+        "I2: no verified_by (12)"
+      ]
+    }
+  ]
+}

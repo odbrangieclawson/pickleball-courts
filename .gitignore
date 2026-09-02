@@ -40,3 +40,10 @@ next-env.d.ts
 # whether that belongs in version control is the owner's call, not a default.
 # The import pipeline reads it from the repo root. See reports/import-mapping.md.
 data.csv
+
+# Per-metro verification worksheets are WORKING FILES that humans fill in.
+# The generator is committed; its 200 generated outputs are not, so a
+# regenerated blank does not clobber a half-filled worksheet in a diff.
+# Regenerate with `npm run verify:build`. Filled-in worksheets belong
+# wherever your verification work actually lives, not in a generated dir.
+verification/
