@@ -11,6 +11,8 @@ at the bottom with a date and a reason.
 Sections marked **OPEN** are decisions that have not been made yet. They are
 listed here so that nothing silently defaults.
 
+Phase status lives in [PHASES.md](./PHASES.md), not here.
+
 Machine enforcement, where it exists, is named next to the rule. A rule with
 no named enforcer is currently honoured by review only.
 
