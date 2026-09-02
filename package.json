@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "validate": "node scripts/validate-keyword-map.mjs",
+    "validate": "node scripts/validate-keyword-map.mjs && node scripts/validate-no-bypass.mjs && node scripts/validate-data.mjs",
     "check:js-off": "node scripts/check-js-off.mjs",
     "import:mapping": "node scripts/import/emit-mapping.mjs",
     "import:quality": "node scripts/import/quality-report.mjs",
@@ -22,7 +22,10 @@
     "import:all": "npm run import:mapping && npm run import:quality && npm run import:county && npm run import:triage",
     "verify:build": "node scripts/verify/build-queue.mjs",
     "verify:selftest": "node scripts/verify/selftest.mjs",
-    "verify:all": "npm run verify:selftest && npm run verify:build"
+    "verify:all": "npm run verify:selftest && npm run verify:build",
+    "test": "node --test \"scripts/test/**/*.test.mjs\"",
+    "validate:data": "node scripts/validate-data.mjs",
+    "validate:bypass": "node scripts/validate-no-bypass.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
@@ -33,6 +36,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
     "csv-parse": "^7.0.2",
     "typescript": "^5"
   }

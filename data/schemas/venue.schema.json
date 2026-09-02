@@ -164,6 +164,16 @@
       "type": ["string", "null"],
       "format": "date",
       "description": "NEW in v4. Date the owner claim was accepted. Identity, not provenance."
+    },
+
+    "drop_in_fee_usd": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "MODEL EXTENSION, added in Phase 1. The source dataset carries this column and the v4 spec did not list it. Definition: the per-session charge in USD a non-member pays to play once. Kept because it is the only numeric evidence for fee_type=drop_in_fee, and because Rule 7 needs a figure to attribute to a source."
+    },
+    "source_sport": {
+      "type": ["string", "null"],
+      "description": "MODEL EXTENSION, added in Phase 1. The sport the source record describes, as the source labelled it. 18,017 imported rows say 'pickleball' and 20 say 'both'. Kept because 'both' marks shared tennis/pickleball facilities, which changes how a court count should be read."
     }
   }
 }

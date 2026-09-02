@@ -1,0 +1,50 @@
+{
+  "rows": 18037,
+  "verified": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "type": "C2_schema",
+      "count": 640
+    },
+    {
+      "type": "C5_numeric_suffix",
+      "count": 627
+    },
+    {
+      "type": "C6_court_arithmetic",
+      "count": 266
+    },
+    {
+      "type": "C5_duplicate_slug",
+      "count": 21
+    },
+    {
+      "type": "C5_unresolvable",
+      "count": 1
+    },
+    {
+      "type": "C1_import_gates",
+      "count": 1
+    },
+    {
+      "type": "C7_count_mismatch",
+      "count": 1
+    }
+  ],
+  "gate_reasons": {
+    "status is \"pending\", not \"verified\"": 18037,
+    "source_url points to a competitor directory": 18037,
+    "no date_checked": 18037,
+    "no verified_by": 18037,
+    "no verified court count": 171,
+    "no verified street_address": 1
+  },
+  "slugs": {
+    "distinct": 18016,
+    "numeric_suffix": 627,
+    "collisions": 21,
+    "resolvable": 20,
+    "unresolvable": 1
+  }
+}
