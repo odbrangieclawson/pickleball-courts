@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Source dataset. NOT committed by default - it is ~7.8 MB of records scraped
+# from a competitor directory (every source_url points to courtsource.us), and
+# whether that belongs in version control is the owner's call, not a default.
+# The import pipeline reads it from the repo root. See reports/import-mapping.md.
+data.csv

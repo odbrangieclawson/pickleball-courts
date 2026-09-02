@@ -1,0 +1,26 @@
+{
+  "status": "BLOCKED",
+  "reason": "No county reference dataset available. County is not derivable from the source alone.",
+  "rows": 18037,
+  "derived": 0,
+  "flagged_for_review": 18037,
+  "derivable_with_reference": {
+    "lat_lng": 17792,
+    "postal_code": 17509,
+    "either": 17862,
+    "neither": 175
+  },
+  "confidence_model": {
+    "point_in_polygon": 0.98,
+    "zip_single_county": 0.9,
+    "zip_dominant_county": "0.60-0.85 by share",
+    "nearest_centroid": 0.4,
+    "none": 0
+  },
+  "review_threshold": 0.85,
+  "unblocked_by": [
+    "US Census county boundary file (TIGER/Line or cartographic boundary GeoJSON)",
+    "Census ZCTA-to-county relationship file or HUD USPS ZIP-county crosswalk",
+    "Geocoding API returning county"
+  ]
+}

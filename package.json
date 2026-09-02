@@ -13,7 +13,13 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "validate": "node scripts/validate-keyword-map.mjs",
-    "check:js-off": "node scripts/check-js-off.mjs"
+    "check:js-off": "node scripts/check-js-off.mjs",
+    "import:mapping": "node scripts/import/emit-mapping.mjs",
+    "import:quality": "node scripts/import/quality-report.mjs",
+    "import:county": "node scripts/import/derive-county.mjs",
+    "import:triage": "node scripts/import/triage.mjs",
+    "import:explore": "node scripts/import/explore.mjs",
+    "import:all": "npm run import:mapping && npm run import:quality && npm run import:county && npm run import:triage"
   },
   "dependencies": {
     "next": "16.3.4",
@@ -24,6 +30,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "csv-parse": "^7.0.2",
     "typescript": "^5"
   }
 }
