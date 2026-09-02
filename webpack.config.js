@@ -395,7 +395,7 @@ module.exports = (env, argv) => ({
       template: path.resolve(__dirname, 'src/index.ejs'),
       title: 'Pickleball Courts',
       mobileThemeColor: '#000000',
-      description: '',
+      description: 'Find pickleball courts near you.',
       minify: env.prod
         ? {
             collapseWhitespace: true,
