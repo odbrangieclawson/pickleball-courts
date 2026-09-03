@@ -1,8 +1,10 @@
 /*
-  Two contracts that were unenforced until Portland's data walked into them.
-  Both bugs were invisible for five cities because no earlier city produced
-  the input that triggers them, which is exactly the kind of bug a test is
-  for rather than a code review.
+  Three contracts that were unenforced until a new city's data walked into
+  them. Each was invisible for five or six cities because no earlier city
+  produced the input that triggers it — a venue name one character too long,
+  the first populated access_type, the first pair of cities far enough apart
+  to make "nearest" absurd. That is exactly the kind of bug a test is for
+  rather than a code review.
 
   Run: npm test
 */
@@ -12,6 +14,7 @@ import assert from 'node:assert/strict'
 
 import {venueTitle, TITLE_MAX, TitleError} from '../../lib/page/titles.mjs'
 import {FILTERS, PAGEABLE_FILTERS, qualifyingFilters} from '../../lib/page/city-page.mjs'
+import {nearestCities, NEAREST_CITIES_MAX_KM} from '../../lib/site/links.mjs'
 
 /* ------------------------------------------------------------------ */
 /* A long venue name degrades the title; it does not fail the build.   */
@@ -95,4 +98,50 @@ test('qualifyingFilters respects the three-venue threshold', () => {
     {slug: 'b', outdoor_courts: 2, indoor_courts: null, fee_type: 'free', light: true, access_type: 'public'},
   ]
   assert.deepEqual(qualifyingFilters(two), {}, 'two venues qualify for nothing')
+})
+
+/* ------------------------------------------------------------------ */
+/* "Nearby" must mean nearby, not merely least-distant.                */
+/* ------------------------------------------------------------------ */
+
+test('nearestCities excludes cities beyond the radius, even when nothing else is closer', () => {
+  /*
+    With seven cities in a national directory, the five "closest" spanned
+    the continent: Vancouver, WA's page listed Charlotte NC at 3,669 km,
+    then Cary and Apex at ~3,800 km, under the heading "Nearby cities we
+    publish". Three of five entries were suggestions to drive across
+    America.
+  */
+  const city = (state, slug, name, lat, lng) => [`${state}/${slug}`, {
+    state, slug, city: name,
+    venues: [{slug: 'v', latitude: lat, longitude: lng}],
+  }]
+
+  const graph = {
+    publishedCities: new Map([
+      city('WA', 'vancouver', 'Vancouver', 45.63, -122.55),
+      city('OR', 'portland', 'Portland', 45.52, -122.65),
+      city('WA', 'seattle', 'Seattle', 47.61, -122.33),
+      city('NC', 'charlotte', 'Charlotte', 35.23, -80.84),
+    ]),
+  }
+
+  const near = nearestCities(graph, 'WA', 'vancouver')
+  const labels = near.map(n => n.label)
+  assert.ok(labels.includes('Portland, OR'), 'the city 14 km away is nearby')
+  assert.ok(!labels.some(l => l.endsWith(', NC')), 'a city 3,669 km away is not nearby')
+  assert.ok(near.every(n => n.km <= NEAREST_CITIES_MAX_KM))
+})
+
+test('nearestCities returns nothing rather than the least-distant continent', () => {
+  const graph = {
+    publishedCities: new Map([
+      ['WA/spokane', {state: 'WA', slug: 'spokane', city: 'Spokane',
+        venues: [{slug: 'v', latitude: 47.66, longitude: -117.43}]}],
+      ['NC/charlotte', {state: 'NC', slug: 'charlotte', city: 'Charlotte',
+        venues: [{slug: 'v', latitude: 35.23, longitude: -80.84}]}],
+    ]),
+  }
+  assert.deepEqual(nearestCities(graph, 'WA', 'spokane'), [],
+    'an isolated city gets the empty state the page already has copy for')
 })

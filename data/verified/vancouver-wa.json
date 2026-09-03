@@ -1,0 +1,388 @@
+{
+  "city": "Vancouver",
+  "state": "WA",
+  "retrieved_at": "2026-09-03",
+  "method_note": "Court counts, addresses and attributes are STATED by the City of Vancouver on one pickleball page, and this run asserts the exact sentence is still present in the committed snapshot before publishing anything read from it. Oakbrook Community Park carries the first stated NEGATIVE on lighting in this directory — \"The courts do not have lighting\" — so it reads No rather than \"not verified yet\". Fisher Basin Community Park is listed by the City and excluded here for three independent reasons, chief among them that the pickleball page gives it Oakbrook's address while the City's own park page for it gives a different street and postcode; both snapshots are committed and the run asserts the contradiction still exists rather than assuming it. No fee is claimed for the park courts: the City never calls them free, and this directory does not promote an assumption to a fact.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+      "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/vancouver/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.cityofvancouver.us/parks_trails/oakbrook-park/",
+      "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/vancouver/oakbrook-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.cityofvancouver.us/parks_trails/fisher-basin-community-park/",
+      "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/vancouver/fisher-basin-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/vancouver-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 3,
+    "courts": 14,
+    "outdoor": 4,
+    "indoor": 10
+  },
+  "excluded": [
+    {
+      "name": "Fisher Basin Community Park",
+      "why": [
+        "The pickleball page states no court count for it — only \"shared tennis and pickleball courts\".",
+        "The pickleball page gives its address as \"3103 NE 99th Ave.\", which is Oakbrook Community Park's address, printed two paragraphs above. The City's own park page for Fisher Basin says \"SE 192nd Ave. Vancouver, WA 98607\".",
+        "No published address for it carries a house number, and the Census address geocoder returns no match, so Import Gate I1 could not be satisfied even if a count appeared."
+      ]
+    }
+  ],
+  "venues": {
+    "oakbrook-community-park": {
+      "minted": true,
+      "identity": {
+        "name": "Oakbrook Community Park",
+        "city": "Vancouver",
+        "state": "WA",
+        "county": "Clark",
+        "postal_code": "98662",
+        "latitude": 45.644937713626,
+        "longitude": -122.570766323725,
+        "imported_slug": null,
+        "canonical_slug": "oakbrook-community-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+        "quote": "Nets and poles are permanently installed. The courts do not have lighting.",
+        "basis": "No imported row. Minted from the City of Vancouver Parks, Recreation and Cultural Services pickleball page, which states the count and the street address."
+      },
+      "patch": {
+        "name": "Oakbrook Community Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "3103 NE 99th Ave",
+        "venue_type": "public_park",
+        "county": "Clark",
+        "postal_code": "98662",
+        "nets_provided": true,
+        "light": false,
+        "hours_of_operation": "7 a.m. to 10 p.m. daily",
+        "court_availability": "Open play for all skill levels; cannot be reserved. First come, first served, with players rotating in using the paddle rack system."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Oakbrook Community Park\" by the City of Vancouver Parks, Recreation and Cultural Services on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"Nets and poles are permanently installed. The courts do not have lighting.\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"Nets and poles are permanently installed. The courts do not have lighting.\". Listed under the page's \"Outdoor\" heading. The opposite count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofvancouver.us/parks_trails/oakbrook-park/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3103 NE 99th Ave\" is given on the pickleball page and corroborated by the park's own page, which prints \"3103 NE 99th Ave. Vancouver, WA 98662\". The corroboration matters here: the same pickleball page repeats this address onto Fisher Basin Community Park, which is a different park in a different part of the city."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Vancouver Parks, Recreation and Cultural Services among its parks."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, WA (FIPS 53011). Census address geocoder matched \"3103 NE 99TH AVE, VANCOUVER, WA, 98662\". The geocoder also places it in the incorporated place \"Vancouver city\", which is what allows it to be published under Vancouver rather than an unincorporated area with a Vancouver postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3103 NE 99TH AVE, VANCOUVER, WA, 98662\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"Nets and poles are permanently installed. The courts do not have lighting.\". \"Nets and poles are permanently installed\" is a statement that you need bring nothing."
+        },
+        "light": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"Nets and poles are permanently installed. The courts do not have lighting.\". The City states this outright — \"The courts do not have lighting\" — which is why this reads \"No\" rather than \"not verified yet\". It is the only stated negative on lighting anywhere in this directory."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page: \"Oakbrook Community Park (3103 NE 99th Ave.) has four dedicated pickleball courts that are open daily from 7 a.m. to 10 p.m. These courts are open play for all skill levels and cannot be reserved.\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page: \"Oakbrook Community Park (3103 NE 99th Ave.) has four dedicated pickleball courts that are open daily from 7 a.m. to 10 p.m. These courts are open play for all skill levels and cannot be reserved.\" and, for all its outdoor courts, \"City of Vancouver courts are first come, first served\" and \"All players may rotate in using the paddle rack system.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "firstenburg-community-center": {
+      "minted": false,
+      "identity": {
+        "name": "Firstenburg Community Center",
+        "city": "Vancouver",
+        "state": "WA",
+        "county": "Clark",
+        "postal_code": "98684",
+        "latitude": 45.624969642312,
+        "longitude": -122.534689757733,
+        "imported_slug": "firstenburg-community-center",
+        "canonical_slug": "firstenburg-community-center"
+      },
+      "match": {
+        "source_page": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+        "quote": "There are six courts open during scheduled play on a wood gymnasium floor.",
+        "basis": "Matched to the imported firstenburg-community-center row in Vancouver, WA."
+      },
+      "patch": {
+        "name": "Firstenburg Community Center",
+        "total_courts": 6,
+        "indoor_courts": 6,
+        "street_address": "700 NE 136th Ave",
+        "venue_type": "community_center",
+        "county": "Clark",
+        "postal_code": "98684",
+        "surface": "wood",
+        "fee_type": "drop_in_fee",
+        "pricing_notes": "Free for community center members. Visitors must pay a daily drop-in fee, which the City does not publish an amount for on this page."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Firstenburg Community Center\" by the City of Vancouver Parks, Recreation and Cultural Services on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"There are six courts open during scheduled play on a wood gymnasium floor.\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"There are six courts open during scheduled play on a wood gymnasium floor.\". Listed under the page's \"Indoor\" heading. The opposite count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address the City prints beside the venue name: \"Firstenburg Community Center (700 NE 136th Ave.)\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this a community center and runs its pickleball as a scheduled indoor programme."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, WA (FIPS 53011). Census address geocoder matched \"700 NE 136TH AVE, VANCOUVER, WA, 98684\". The geocoder also places it in the incorporated place \"Vancouver city\", which is what allows it to be published under Vancouver rather than an unincorporated area with a Vancouver postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"700 NE 136TH AVE, VANCOUVER, WA, 98684\"."
+        },
+        "surface": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"There are six courts open during scheduled play on a wood gymnasium floor.\". A gymnasium floor is a material, not a category."
+        },
+        "fee_type": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page: \"Firstenburg Community Center (700 NE 136th Ave.) offers pickleball Monday-Friday for ages 12+. Play is free for community center members; visitors must pay a daily drop-in fee.\". Two routes exist — free for members, a daily fee for visitors — and under the O4 precedence rule the route open to a member of the public is the one recorded. drop_in_fee_usd is left null because the City states that a fee is charged and never states what it is."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page: \"Firstenburg Community Center (700 NE 136th Ave.) offers pickleball Monday-Friday for ages 12+. Play is free for community center members; visitors must pay a daily drop-in fee.\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "marshall-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "Marshall Community Center",
+        "city": "Vancouver",
+        "state": "WA",
+        "county": "Clark",
+        "postal_code": "98663",
+        "latitude": 45.634293116957,
+        "longitude": -122.662216190742,
+        "imported_slug": null,
+        "canonical_slug": "marshall-community-center"
+      },
+      "match": {
+        "source_page": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+        "quote": "The earlier time slot will use all four courts and provide capacity for up to 24 players with a cooler gym environment during summer mornings.",
+        "basis": "No imported row. Minted from the City of Vancouver Parks, Recreation and Cultural Services pickleball page, which states the count and the street address."
+      },
+      "patch": {
+        "name": "Marshall Community Center",
+        "total_courts": 4,
+        "indoor_courts": 4,
+        "street_address": "1009 E McLoughlin Blvd",
+        "venue_type": "community_center",
+        "county": "Clark",
+        "postal_code": "98663",
+        "fee_type": "drop_in_fee",
+        "pricing_notes": "Free for community center members. Visitors must pay a daily drop-in fee, which the City does not publish an amount for on this page."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Marshall Community Center\" by the City of Vancouver Parks, Recreation and Cultural Services on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"The earlier time slot will use all four courts and provide capacity for up to 24 players with a cooler gym environment during summer mornings.\". This is a note about summer opening hours rather than a description of the facility: a centre cannot use all four of its courts unless it has four, so the number is sound, but the weaker sentence is quoted in full rather than reduced to a figure."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"The earlier time slot will use all four courts and provide capacity for up to 24 players with a cooler gym environment during summer mornings.\". Listed under the page's \"Indoor\" heading. The opposite count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address the City prints beside the venue name: \"Marshall Community Center (1009 E. McLoughlin Blvd.)\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this a community center and runs its pickleball as a scheduled indoor programme."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, WA (FIPS 53011). Census address geocoder matched \"1009 E MCLOUGHLIN BLVD, VANCOUVER, WA, 98663\". The geocoder also places it in the incorporated place \"Vancouver city\", which is what allows it to be published under Vancouver rather than an unincorporated area with a Vancouver postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1009 E MCLOUGHLIN BLVD, VANCOUVER, WA, 98663\"."
+        },
+        "fee_type": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page: \"Marshall Community Center (1009 E. McLoughlin Blvd.) offers pickleball Monday-Friday for ages 12+. Play is free for community center members; visitors must pay a daily drop-in fee.\". Two routes exist — free for members, a daily fee for visitors — and under the O4 precedence rule the route open to a member of the public is the one recorded. drop_in_fee_usd is left null because the City states that a fee is charged and never states what it is."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page: \"Marshall Community Center (1009 E. McLoughlin Blvd.) offers pickleball Monday-Friday for ages 12+. Play is free for community center members; visitors must pay a daily drop-in fee.\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

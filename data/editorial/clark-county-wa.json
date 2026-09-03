@@ -1,0 +1,54 @@
+{
+  "county": "Clark",
+  "state": "WA",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Everything verified in Clark County comes from one operator, the City of Vancouver, read from its own pages. This is the smallest county page in the directory and it is deliberately not padded: three venues is what the City has published a court count for, and the fourth site it lists is discussed here rather than quietly omitted.",
+  "slots": {
+    "coverage": "Three venues, 14 pickleball courts, one operator, one city. Everything verified in Clark County so far sits inside the City of Vancouver: four dedicated outdoor courts at Oakbrook Community Park, six indoor at Firstenburg Community Center and four indoor at Marshall Community Center. All three addresses were matched by the Census address geocoder and resolved not only to Clark County but to the incorporated place \"Vancouver city\", so none of them is an unincorporated site with a Vancouver postal address. A fourth City site, Fisher Basin Community Park, is not counted here: the City publishes no court count for it, and the address it gives on its pickleball page belongs to Oakbrook. What is missing is the rest of the county — Camas, Washougal, Battle Ground, Ridgefield and La Center all run their own parks and none has been checked.",
+    "distribution": "The three sites divide the city between them rather than clustering. Marshall Community Center is in the older western half near downtown, on East McLoughlin Boulevard. Oakbrook Community Park is in the centre, just west of Interstate 205. Firstenburg Community Center is out east on NE 136th Avenue. Between them they cover a west-to-east line across Vancouver with roughly the city's own spread, which for a set of three is better luck than most cities manage. The other thing worth knowing about the geography here is what lies immediately south: Vancouver sits on the north bank of the Columbia River directly opposite Portland, Oregon, whose eleven verified venues and 59 courts are a few miles over the bridge and are published on this site. For a player in Vancouver, the nearest large concentration of pickleball is in another state.",
+    "gaps": "This is a thin page and it is worth being precise about why. The first gap is that Clark County is not only Vancouver. Camas, Washougal, Battle Ground and Ridgefield are all incorporated cities with their own parks systems, and none of their pages has been read, so this county is understated by an unknown amount. The second gap is inside Vancouver itself, and it is the City's own: Fisher Basin Community Park has pickleball, and the City has published neither a court count for it nor an address that survives comparison with its own park page. That is one venue that could be on this page tomorrow if a single number and a corrected address appeared. The third is the ordinary one — everything no municipality runs: private clubs, schools, and the courts that show up on player-maintained maps and no public page. And within what we do have, parking is unpublished at all three venues and surface at two of them."
+  },
+  "faqs": [
+    {
+      "q": "Why is every venue on this page in Vancouver?",
+      "a": "Because the City of Vancouver is the only operator in Clark County whose pickleball listing we have read. Camas, Washougal, Battle Ground, Ridgefield and La Center run their own parks and publish their own pages; none has been verified yet. When one is, it appears here without anything on this page changing."
+    },
+    {
+      "q": "Only 14 courts in the whole county?",
+      "a": "Fourteen that a public body has put in writing, which is not the same thing. Clark County has well over four hundred thousand people and certainly has more pickleball than this — on school sites, at private clubs, and in the four other cities nobody has checked. This page counts what has been verified against a named source, and says plainly where it stops."
+    },
+    {
+      "q": "How was each venue assigned to Clark County and to Vancouver?",
+      "a": "By address, through the US Census Bureau geocoder, which returns both the county and the incorporated place. All three matched, all three came back Clark County and \"Vancouver city\". The place check matters as much as the county one: a great many addresses that read \"Vancouver, WA\" are in unincorporated Clark County, and publishing one of those under the city would be wrong in exactly the way a postcode guess is wrong."
+    },
+    {
+      "q": "Which venue should I go to first?",
+      "a": "If it is dry and daylight, Oakbrook Community Park — four dedicated outdoor courts with nets and poles already installed, open play, no booking, 7 a.m. to 10 p.m. It has no lighting, which the City states outright, so the evening half of those hours is seasonal. If it is not, Firstenburg Community Center has the county's largest room at six courts on a wood floor."
+    },
+    {
+      "q": "Are there lit courts anywhere in the county?",
+      "a": "None that we can point to. Oakbrook is stated by the City to have no lighting — the only venue in this entire directory whose lights read No rather than \"not verified yet\" — and the two community centres are indoor rooms where the City says nothing on the subject. So the honest answer for Clark County is one confirmed no and two unknowns."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+      "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "Court counts, addresses and attributes for the three published venues, plus the Fisher Basin entry that states no count and repeats Oakbrook's address. Snapshot: data/sources/vancouver/pickleball.html"
+    },
+    {
+      "id": "E2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["coverage", "distribution"],
+      "evidence": "All three addresses matched and resolved to Clark County, WA (state FIPS 53, county FIPS 011) and to the incorporated place \"Vancouver city\", with coordinates used for the distribution note. \"SE 192nd Ave\", the address the City's park page gives for Fisher Basin, returns no match as it carries no house number. Snapshot: data/sources/vancouver-county-census.json"
+    }
+  ]
+}

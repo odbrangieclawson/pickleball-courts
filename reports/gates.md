@@ -6,7 +6,7 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  4/4 publishable
+COUNTY  —  5/5 publishable
   PASS  /pickleball/us/wa/king-county/
         925 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/multnomah-county/
@@ -15,8 +15,10 @@ COUNTY  —  4/4 publishable
         1261 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/mecklenburg-county/
         1284 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/wa/clark-county/
+        961 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  6/6 publishable
+CITY  —  7/7 publishable
   PASS  /pickleball/us/wa/seattle/
         1605 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/portland/
@@ -29,6 +31,8 @@ CITY  —  6/6 publishable
         1816 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/
         1809 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/wa/vancouver/
+        1749 words · BreadcrumbList, FAQPage, ItemList
 
 FILTER  —  10/10 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
@@ -52,7 +56,7 @@ FILTER  —  10/10 publishable
   PASS  /pickleball/us/nc/cary/outdoor/
         662 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  59/59 publishable
+VENUE  —  62/62 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -171,6 +175,12 @@ VENUE  —  59/59 publishable
         728 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/cary/mccrimmon-park/
         831 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wa/vancouver/firstenburg-community-center/
+        780 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wa/vancouver/oakbrook-community-park/
+        818 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wa/vancouver/marshall-community-center/
+        754 words · BreadcrumbList, SportsActivityLocation, FAQPage
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
@@ -198,6 +208,6 @@ VENUE  —  59/59 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 80/80 pages pass all six gates.
+TOTAL: 85/85 pages pass all six gates.
 
 ```

@@ -1,0 +1,118 @@
+{
+  "city": "Vancouver",
+  "state": "WA",
+  "kind": "venues",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. All three venues are described from the City of Vancouver's own pickleball page, with Oakbrook's address corroborated by the City's park page for it and every address confirmed against the Census address geocoder, which also places all three inside Vancouver's city limits rather than merely inside a Vancouver postal address. Where the City is silent — parking everywhere, surface at two of the three, the amount of the drop-in fee — these pages say so.",
+  "venues": {
+    "oakbrook-community-park": {
+      "slots": {
+        "description": "Four pickleball courts that are pickleball courts and nothing else. Oakbrook Community Park is the only outdoor pickleball site the City of Vancouver publishes a court count for, and it is described in terms that answer almost every practical question in two sentences: four dedicated courts, open daily from 7 a.m. to 10 p.m., open play for all skill levels, and they cannot be reserved. Nets and poles are permanently installed. And then the sentence that makes this venue unusual in this entire directory — \"The courts do not have lighting\" — which is the first time any operator we have read has stated a negative about lights rather than saying nothing at all.",
+        "getting_there": "3103 NE 99th Ave, Vancouver, WA 98662, just west of Interstate 205 in the Oakbrook neighbourhood of central Vancouver. That address is worth pausing on: the City's pickleball page prints the same address again two paragraphs later for Fisher Basin Community Park, which is a different park on the other side of the city. Oakbrook's is the correct one — its own park page prints 3103 NE 99th Ave and the Census geocoder matched it cleanly to Vancouver city, Clark County. The City publishes nothing about parking here. It does publish a number to ring if the court is broken: 360-487-8177, or the Public Works request form for Grounds service.",
+        "what_to_expect": "Turn up with a paddle. Nets and poles are already there, the courts are open play for every skill level, and there is no booking system to negotiate — the City says outright that these courts cannot be reserved, that its courts are first come, first served, and that players rotate in using the paddle rack system. It also notes that scheduling apps like PlayTime Scheduler or Pickleheads may help you find a game but do not reserve court time here. The hours are 7 a.m. to 10 p.m. daily, and the lighting sentence is what turns that from a promise into a season: with no lights, the back half of those hours belongs to summer. Whether there is a restroom is not something we can confirm from what we have snapshotted, so it is left unverified."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Four, and the City calls them \"dedicated\" — they are not tennis courts with pickleball lines added. That makes Oakbrook the only outdoor venue in Vancouver with a published court count."
+        },
+        {
+          "q": "Do the courts have lights?",
+          "a": "No. The City states it plainly: \"The courts do not have lighting.\" This is the only venue anywhere in this directory whose lighting reads No rather than \"not verified yet\", because it is the only one whose operator has said so. Every other venue across seven cities is unverified on lights, which means nobody has told us either way."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "No. Nets and poles are permanently installed. That is not the norm even here — at Fisher Basin, the City's other outdoor pickleball site, nets are not provided at all."
+        },
+        {
+          "q": "Can I book a court?",
+          "a": "No, and not by any route. The City says these courts are open play for all skill levels and cannot be reserved, that its courts are first come first served, and that the scheduling apps players use to organise games do not reserve court time on them."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Unverified. It is a City park with open-play courts and it is very likely free, but the City never says so, and this directory does not print a likelihood as a fact. Compare Portland, ten miles south, where six park sites carry a verified free because Portland Parks & Recreation put the word in writing next to the court count."
+        }
+      ],
+      "sources": ["M1", "M2", "M3"]
+    },
+    "firstenburg-community-center": {
+      "slots": {
+        "description": "Six courts on a wood gymnasium floor — the largest pickleball room in Vancouver and the centre of the city's organised play. Every one of the City's pickleball leagues happens here: adult recreational and competitive leagues for ages 14 and up, and a youth league for ages 10 to 14 with beginner and intermediate teams. Clinics run here too, ninety minutes each, for ages 12 and up. Drop-in pickleball runs Monday to Friday for ages 12 and up, and play is free if you are a community centre member while visitors pay a daily drop-in fee. The City states that the fee exists and never states the amount, so this page does not print one.",
+        "getting_there": "700 NE 136th Ave, Vancouver, WA 98684, in the east of the city — the address the City prints beside the venue name, matched by the Census geocoder to Vancouver city, Clark County. As at every venue in this city, no parking information is published, though a community centre with a gymnasium is a different proposition from a neighbourhood park in that respect.",
+        "what_to_expect": "More structure than anywhere else in this directory, and the City writes it all down. You sign in on the sheet by the front desk — in person, for yourself only, no signing in a friend. Sign-in opens at 6 a.m. for morning pickleball, at noon for the afternoon, and thirty minutes before any other session. You collect a wristband and must wear it on court; without one you will be asked to leave the court and take your paddle out of the queue. When the session reaches its maximum number of players it is marked FULL, and anyone arriving afterwards may pay the drop-in fee to put a paddle on the waitlist, which the City is careful to say does not guarantee a game. On court, paddles queue on the bottom bench, the room is split with competitive play on the right and recreational on the left, you may stack paddles to partner up, forfeiting your turn sends your paddle to the end of the queue, and teams play two games then rotate out regardless of who won."
+      },
+      "faqs": [
+        {
+          "q": "How much does it cost?",
+          "a": "Free if you are a community centre member; a daily drop-in fee if you are not. The City does not publish the amount of that fee on its pickleball page, so we record that a fee is charged and leave the figure unverified rather than guessing at it."
+        },
+        {
+          "q": "How many courts, and what is the floor?",
+          "a": "Six, on a wood gymnasium floor. It is the only venue in Vancouver whose surface the City states — Oakbrook and Marshall say nothing about what they are made of."
+        },
+        {
+          "q": "What if the session is full?",
+          "a": "You can still pay the drop-in fee and put your paddle on the second row of the bleachers for a waitlist spot, but the City is explicit that paying does not guarantee you will play. When an active player with a wristband leaves, waitlisted players join the active queue in the order they were listed."
+        },
+        {
+          "q": "Can I play in a league here?",
+          "a": "Yes — this is where all of them are. Adult recreational and competitive leagues are open to ages 14 and up, and there is a youth league for ages 10 to 14 with beginner and intermediate teams. Every City of Vancouver pickleball league plays at Firstenburg. Clinics, at beginner and Level 2, run here and at Marshall."
+        }
+      ],
+      "sources": ["M1", "M3"]
+    },
+    "marshall-community-center": {
+      "slots": {
+        "description": "Four indoor courts on the west side of Vancouver, running the same arrangement as Firstenburg — Monday to Friday, ages 12 and up, free for community centre members and a daily drop-in fee for visitors — in a smaller room. Marshall is the venue whose court count needed the most care to publish. The City never describes the facility as having four courts; the number appears in a note about summer opening hours, which says the early slot \"will use all four courts and provide capacity for up to 24 players\". A centre cannot use all four of its courts unless it has four, so the figure is sound. It is quoted here in full rather than smoothed into a bare number, because a reader deserves to see which sentence a fact came out of.",
+        "getting_there": "1009 E McLoughlin Blvd, Vancouver, WA 98663, in the older western half of the city near downtown — the address the City prints beside the venue name, matched by the Census geocoder to Vancouver city, Clark County. No parking information is published for it, as for every venue here.",
+        "what_to_expect": "Four courts, indoors, and in summer a genuinely early start. From 22 June to 22 August the City moves Marshall's indoor pickleball to 6 to 7:45 a.m., explaining that the change keeps dedicated court time for the sport without overlapping summer programming and gives players a cooler gym. It also points midday players elsewhere for those weeks — to the outdoor courts or to Firstenburg. Outside summer the schedule is published on the centre's own page rather than the pickleball page, so check before travelling. The surface is not stated, nor is whether nets are provided, and neither has been assumed. Clinics run here as well as at Firstenburg, ninety minutes, for ages 12 and up."
+      },
+      "faqs": [
+        {
+          "q": "How do you know there are four courts?",
+          "a": "From the City's summer hours note: \"The earlier time slot will use all four courts and provide capacity for up to 24 players with a cooler gym environment during summer mornings.\" That is a scheduling sentence rather than a description of the building, which makes it a weaker source than Firstenburg's \"There are six courts\" — but a centre cannot use all four of its courts unless it has four. We publish the number and show you the sentence."
+        },
+        {
+          "q": "Why does it open at 6 a.m. in summer?",
+          "a": "The City says the change is to maintain dedicated court time for pickleball without overlapping with summer activities, and that the earlier slot gives a cooler gym. It runs from 22 June to 22 August and covers 6 to 7:45 a.m. If that does not suit, the City itself suggests the outdoor courts or Firstenburg for midday play."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "Free for community centre members, and a daily drop-in fee for visitors — the same arrangement as Firstenburg. The City does not publish the amount anywhere on this page, so the figure stays unverified."
+        },
+        {
+          "q": "How does it compare with Firstenburg?",
+          "a": "Smaller and quieter on the evidence available. Firstenburg has six courts to Marshall's four, a stated wood floor where Marshall's surface is unstated, and it hosts every one of the City's leagues along with a detailed sign-in, wristband and queue system that Marshall's entry does not describe. Both run clinics."
+        }
+      ],
+      "sources": ["M1", "M3"]
+    }
+  },
+  "sources": [
+    {
+      "id": "M1",
+      "url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+      "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "The City's pickleball page, carrying every quoted sentence above: the Oakbrook entry and its \"Nets and poles are permanently installed. The courts do not have lighting.\"; \"There are six courts open during scheduled play on a wood gymnasium floor.\"; the Firstenburg sign-in, wristband and queue rules; the Marshall summer-hours note and \"all four courts\"; \"Play is free for community center members; visitors must pay a daily drop-in fee.\"; the leagues and clinics descriptions; \"City of Vancouver courts are first come, first served\" and the paddle rack rotation. Snapshot: data/sources/vancouver/pickleball.html"
+    },
+    {
+      "id": "M2",
+      "url": "https://www.cityofvancouver.us/parks_trails/oakbrook-park/",
+      "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Oakbrook Park's own page gives \"3103 NE 99th Ave. Vancouver, WA 98662\", corroborating the pickleball page's address for Oakbrook and establishing that the identical address printed there for Fisher Basin Community Park is the erroneous one. Snapshot: data/sources/vancouver/oakbrook-park.html"
+    },
+    {
+      "id": "M3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Each published street address submitted to the Census address geocoder; all three matched and resolved to Clark County, WA and to the incorporated place \"Vancouver city\", which is what allows them to be published under Vancouver rather than under an unincorporated area that merely carries a Vancouver postal address. Snapshot: data/sources/vancouver-county-census.json"
+    }
+  ]
+}
