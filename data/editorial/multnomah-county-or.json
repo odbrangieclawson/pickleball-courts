@@ -1,0 +1,61 @@
+{
+  "county": "Multnomah",
+  "state": "OR",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Everything verified in this county is run by one operator, Portland Parks & Recreation, and read from one of its pages. That makes this county page unusually consistent and unusually narrow at the same time: the facts are uniform because they come from a single publisher in a single format, and the coverage stops exactly where that publisher's list stops.",
+  "slots": {
+    "coverage": "Eleven venues, 59 pickleball courts, one operator, one city. Everything verified in Multnomah County so far sits inside the City of Portland and is run by Portland Parks & Recreation: six outdoor parks holding 29 free courts, four community centres holding 14 indoor courts at a drop-in fee, and the Portland Tennis Center with 16 outdoor courts available through a summer programme. Every one of the eleven addresses was matched by the Census address geocoder and resolved to Multnomah County, so the county assignment is not inferred from the postcode. What is not here is the rest of the county. Gresham is the second city of Multnomah County and has none of its venues on this page; neither do Troutdale, Fairview or Wood Village. That is not a judgement about them — nobody has checked them yet.",
+    "distribution": "The eleven sites are spread right across Portland rather than clustered, and the spread is legible on the map: two in the north on North Lombard Street — Columbia Park and Pier Park, just under three miles apart, with St. Johns Community Center between them; one in the south-east at Sellwood; two in the inner east at Laurelhurst and the Portland Tennis Center; two more east at Montavilla and East Portland Community Center; two in the south-west at Gabriel Park and Southwest Community Center; and one in the west hills at Hillside. Four of the six free outdoor parks sit in the outer half of the city, which follows directly from the department's own rule that pickleball striping goes where courts are 300 to 600 feet from housing. Space of that kind is easier to find away from the centre. Portland's river also splits the provision in a way worth planning around: everything on this page is on the east side except Gabriel, Hillside and Southwest.",
+    "gaps": "Two gaps, and they are different in kind. The first is geographic: Multnomah County is not only Portland, and no venue outside the city has been verified. Gresham runs its own parks system with its own pages, and until somebody reads them this page understates the county. The second is a gap inside what we have. Portland Parks & Recreation publishes an excellent list and it is still only a list — nothing about lighting at any of the eleven, nothing about parking at any of the eleven, and a surface word at nine of them that names a category rather than a material. There is also everything the department does not run: private clubs, schools, and the courts that appear on player-maintained maps but on no municipal page. A county this size almost certainly has more than 59 pickleball courts. It has 59 that a public body has put in writing."
+  },
+  "faqs": [
+    {
+      "q": "Why is every venue on this page in Portland?",
+      "a": "Because Portland Parks & Recreation is the only operator in Multnomah County whose pickleball list we have read. The county's other cities — Gresham, Troutdale, Fairview, Wood Village — run their own parks and publish their own pages, and none of them has been verified yet. When one is, it appears here without anything on this page changing."
+    },
+    {
+      "q": "How was each venue assigned to Multnomah County?",
+      "a": "By address, not by postcode. All eleven street addresses were submitted to the US Census Bureau address geocoder, all eleven matched, and all eleven resolved to Multnomah County (FIPS 41051). That matters because Portland spills into Washington and Clackamas counties at its edges, so a postcode-based guess would have been wrong sooner or later."
+    },
+    {
+      "q": "Are all of these courts free?",
+      "a": "No — 29 of the 59 are. The six outdoor parks are described as free by the city itself. The four community centres charge $6 for adults and $5 for seniors per drop-in session, covering 14 indoor courts. The Portland Tennis Center's 16 courts run through a registered summer programme whose price the city does not publish, so we have not claimed one."
+    },
+    {
+      "q": "Which venue in the county has the most courts?",
+      "a": "Portland Tennis Center, with sixteen — but its pickleball is seasonal, running from mid June to early September through ActiveNet registration. For year-round play the largest are Columbia Park and Sellwood Park with eight each, both free and both open dawn to dusk."
+    },
+    {
+      "q": "How many of these courts are indoor?",
+      "a": "Fourteen, across four community centres: five at Southwest, four at East Portland, three at Montavilla and two at St. Johns. In a county with Portland's winters that is the number that decides whether the sport is playable between October and May, and it is why the indoor list has a page of its own here."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.portland.gov/parks/recreation/pickleball",
+      "publisher": "Portland Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": [
+        "coverage",
+        "distribution",
+        "gaps"
+      ],
+      "evidence": "Court counts, addresses, indoor/outdoor classification and pricing for all eleven venues. Striping policy: pickleball lines are added \"where we do have adequate distance (at least 300 to 600 feet away from homes)\". Snapshot: data/sources/portland/pickleball.html"
+    },
+    {
+      "id": "E2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": [
+        "coverage",
+        "distribution"
+      ],
+      "evidence": "All eleven addresses matched and resolved to Multnomah County, OR (state FIPS 41, county FIPS 051), with coordinates used for the distribution note. Snapshot: data/sources/portland-county-census.json"
+    }
+  ]
+}

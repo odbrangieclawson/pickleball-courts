@@ -1,0 +1,1457 @@
+{
+  "city": "Portland",
+  "state": "OR",
+  "retrieved_at": "2026-09-03",
+  "method_note": "Every court count, address, cost and net statement is STATED by Portland Parks & Recreation on one page, and this run asserts the exact sentence is still present in the committed HTML snapshot before publishing anything read from it. The comparison ignores whitespace because portland.gov splits words across inline elements. \"hard courts\", stated at nine of eleven venues, is NOT published as a surface: the import vocabulary refuses it as a category rather than a material, and that refusal is applied here even though a tier-1 source said it. Lighting is stated nowhere on the page and is null at all eleven venues, not false. Southwest and St. Johns community centers are listed twice; the second listing supplies surface and restrooms, which are building facts, and its \"nets provided\" is refused because it describes a registered programme rather than drop-in play.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.portland.gov/parks/recreation/pickleball",
+      "publisher": "Portland Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/portland/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/portland-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 11,
+    "courts": 59,
+    "outdoor": 45,
+    "indoor": 14
+  },
+  "venues": {
+    "columbia-park": {
+      "minted": true,
+      "identity": {
+        "name": "Columbia Park",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97203",
+        "latitude": 45.578681989104,
+        "longitude": -122.713559065794,
+        "imported_slug": null,
+        "canonical_slug": "columbia-park"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Columbia Park",
+        "total_courts": 8,
+        "street_address": "4503 N Lombard St",
+        "county": "Multnomah",
+        "outdoor_courts": 8,
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "nets_provided": false,
+        "restroom": true,
+        "amenities": [
+          "Restrooms",
+          "Drinking water"
+        ],
+        "hours_of_operation": "Dawn to dusk",
+        "court_availability": "First come, first served. Limit play to 60 minutes when courts are in demand.",
+        "postal_code": "97203"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Columbia Park\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Columbia Park | 4503 N Lombard St., Portland, OR 97203\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"4503 N LOMBARD ST, PORTLAND, OR, 97203\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\". Listed under the page's \"Outdoor courts\" heading. indoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Portland Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\". The word \"free\" is the city's own, applied to these courts specifically."
+        },
+        "nets_provided": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\". \"bring your own net\" is a statement that nets are not provided, not an absence of information."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The page's outdoor courts section: \"Play from dawn to dusk.\", repeated in its rules as \"Courts are open from Dawn to Dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The outdoor courts are available on a first-come, first-served basis. Please limit play to 60 minutes when courts are in demand as a courtesy to other players.\""
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4503 N LOMBARD ST, PORTLAND, OR, 97203\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "pier-park": {
+      "minted": true,
+      "identity": {
+        "name": "Pier Park",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97203",
+        "latitude": 45.601321641843,
+        "longitude": -122.76317229699,
+        "imported_slug": null,
+        "canonical_slug": "pier-park"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Pier Park",
+        "total_courts": 4,
+        "street_address": "10325 N Lombard St",
+        "county": "Multnomah",
+        "outdoor_courts": 4,
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "surface": "concrete",
+        "nets_provided": false,
+        "restroom": true,
+        "amenities": [
+          "Restrooms"
+        ],
+        "hours_of_operation": "Dawn to dusk",
+        "court_availability": "First come, first served. Limit play to 60 minutes when courts are in demand.",
+        "postal_code": "97203"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Pier Park\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Pier Park | 10325 N Lombard St., Portland OR 97203\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"10325 N LOMBARD ST, PORTLAND, OR, 97203\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.\". Listed under the page's \"Outdoor courts\" heading. indoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Portland Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.\". The word \"free\" is the city's own, applied to these courts specifically."
+        },
+        "surface": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.\". \"concrete\" names a material; the \"hard courts\" used elsewhere on this page names a category and is refused by the surface vocabulary."
+        },
+        "nets_provided": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.\". \"bring your own net\" is a statement that nets are not provided, not an absence of information."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 Outdoor concrete courts, free, permanent lines, bring your own net. Amenities: restrooms.\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The page's outdoor courts section: \"Play from dawn to dusk.\", repeated in its rules as \"Courts are open from Dawn to Dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The outdoor courts are available on a first-come, first-served basis. Please limit play to 60 minutes when courts are in demand as a courtesy to other players.\""
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"10325 N LOMBARD ST, PORTLAND, OR, 97203\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "sellwood-park": {
+      "minted": false,
+      "identity": {
+        "name": "Sellwood Park",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97202",
+        "latitude": 45.465850531162,
+        "longitude": -122.661141715452,
+        "imported_slug": "sellwood-park",
+        "canonical_slug": "sellwood-park"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.",
+        "basis": "Matched to the imported sellwood-park row in Portland, OR."
+      },
+      "patch": {
+        "name": "Sellwood Park",
+        "total_courts": 8,
+        "street_address": "7987 SE Grand Ave",
+        "county": "Multnomah",
+        "outdoor_courts": 8,
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "nets_provided": false,
+        "restroom": true,
+        "amenities": [
+          "Restrooms",
+          "Drinking water"
+        ],
+        "hours_of_operation": "Dawn to dusk",
+        "court_availability": "First come, first served. Limit play to 60 minutes when courts are in demand.",
+        "postal_code": "97202"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Sellwood Park\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Sellwood Park | 7987 SE Grand Ave., Portland, OR 97202\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"7987 SE GRAND AVE, PORTLAND, OR, 97202\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\". Listed under the page's \"Outdoor courts\" heading. indoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Portland Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\". The word \"free\" is the city's own, applied to these courts specifically."
+        },
+        "nets_provided": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\". \"bring your own net\" is a statement that nets are not provided, not an absence of information."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The page's outdoor courts section: \"Play from dawn to dusk.\", repeated in its rules as \"Courts are open from Dawn to Dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The outdoor courts are available on a first-come, first-served basis. Please limit play to 60 minutes when courts are in demand as a courtesy to other players.\""
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"7987 SE GRAND AVE, PORTLAND, OR, 97202\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "laurelhurst-park": {
+      "minted": true,
+      "identity": {
+        "name": "Laurelhurst Park",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97214",
+        "latitude": 45.52034182545,
+        "longitude": -122.624586440039,
+        "imported_slug": null,
+        "canonical_slug": "laurelhurst-park"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "2 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Laurelhurst Park",
+        "total_courts": 2,
+        "street_address": "3789 SE Oak St",
+        "county": "Multnomah",
+        "outdoor_courts": 2,
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "nets_provided": true,
+        "restroom": true,
+        "amenities": [
+          "Restrooms",
+          "Drinking water"
+        ],
+        "hours_of_operation": "Dawn to dusk",
+        "court_availability": "First come, first served. Limit play to 60 minutes when courts are in demand.",
+        "postal_code": "97214"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Laurelhurst Park\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Laurelhurst Park | 3789 SE Oak St., Portland, OR 97214\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"3789 SE OAK ST, PORTLAND, OR, 97214\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\". Listed under the page's \"Outdoor courts\" heading. indoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Portland Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\". The word \"free\" is the city's own, applied to these courts specifically."
+        },
+        "nets_provided": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The page's outdoor courts section: \"Play from dawn to dusk.\", repeated in its rules as \"Courts are open from Dawn to Dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The outdoor courts are available on a first-come, first-served basis. Please limit play to 60 minutes when courts are in demand as a courtesy to other players.\""
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3789 SE OAK ST, PORTLAND, OR, 97214\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "gabriel-park": {
+      "minted": true,
+      "identity": {
+        "name": "Gabriel Park",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97219",
+        "latitude": 45.473554500848,
+        "longitude": -122.723315109436,
+        "imported_slug": null,
+        "canonical_slug": "gabriel-park"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "6 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Gabriel Park",
+        "total_courts": 6,
+        "street_address": "4508 SW Nevada St",
+        "county": "Multnomah",
+        "outdoor_courts": 6,
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "nets_provided": true,
+        "restroom": true,
+        "amenities": [
+          "Restrooms",
+          "Drinking water"
+        ],
+        "hours_of_operation": "Dawn to dusk",
+        "court_availability": "First come, first served. Limit play to 60 minutes when courts are in demand.",
+        "postal_code": "97219"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Gabriel Park\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"6 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Gabriel Park | 4508 SW Nevada St., Portland, OR 97219\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"4508 SW NEVADA ST, PORTLAND, OR, 97219\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"6 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\". Listed under the page's \"Outdoor courts\" heading. indoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Portland Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"6 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\". The word \"free\" is the city's own, applied to these courts specifically."
+        },
+        "nets_provided": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"6 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"6 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"6 Outdoor 'pickleball only' hard courts, free, permanent lines, nets included. Amenities: restrooms and water.\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The page's outdoor courts section: \"Play from dawn to dusk.\", repeated in its rules as \"Courts are open from Dawn to Dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The outdoor courts are available on a first-come, first-served basis. Please limit play to 60 minutes when courts are in demand as a courtesy to other players.\""
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4508 SW NEVADA ST, PORTLAND, OR, 97219\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "hillside-park": {
+      "minted": true,
+      "identity": {
+        "name": "Hillside Park",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97210",
+        "latitude": 45.527416343571,
+        "longitude": -122.708433853476,
+        "imported_slug": null,
+        "canonical_slug": "hillside-park"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "1 outdoor 'pickleball only' hard court, free, bring your own net.",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Hillside Park",
+        "total_courts": 1,
+        "street_address": "653 NW Culpepper Terrace",
+        "county": "Multnomah",
+        "outdoor_courts": 1,
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "nets_provided": false,
+        "hours_of_operation": "Dawn to dusk",
+        "court_availability": "First come, first served. Limit play to 60 minutes when courts are in demand.",
+        "postal_code": "97210"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Hillside Park\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"1 outdoor 'pickleball only' hard court, free, bring your own net.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Hillside Park | 653 NW Culpepper Terrace Portland, OR 97210\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"653 NW CULPEPPER TER, PORTLAND, OR, 97210\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"1 outdoor 'pickleball only' hard court, free, bring your own net.\". Listed under the page's \"Outdoor courts\" heading. indoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Portland Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"1 outdoor 'pickleball only' hard court, free, bring your own net.\". The word \"free\" is the city's own, applied to these courts specifically."
+        },
+        "nets_provided": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"1 outdoor 'pickleball only' hard court, free, bring your own net.\". \"bring your own net\" is a statement that nets are not provided, not an absence of information."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The page's outdoor courts section: \"Play from dawn to dusk.\", repeated in its rules as \"Courts are open from Dawn to Dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The outdoor courts are available on a first-come, first-served basis. Please limit play to 60 minutes when courts are in demand as a courtesy to other players.\""
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"653 NW CULPEPPER TER, PORTLAND, OR, 97210\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "east-portland-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "East Portland Community Center",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97216",
+        "latitude": 45.517885166508,
+        "longitude": -122.553856066191,
+        "imported_slug": null,
+        "canonical_slug": "east-portland-community-center"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "4 courts, $6 for adults/$5 for seniors",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "East Portland Community Center",
+        "total_courts": 4,
+        "street_address": "740 SE 106th Ave",
+        "county": "Multnomah",
+        "indoor_courts": 4,
+        "venue_type": "community_center",
+        "fee_type": "drop_in_fee",
+        "drop_in_fee_usd": 6,
+        "pricing_notes": "$6 for adults, $5 for seniors, per drop-in session.",
+        "postal_code": "97216"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"East Portland Community Center\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 courts, $6 for adults/$5 for seniors\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"East Portland Community Center | 740 SE 106th Ave., Portland, OR 97216\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"740 SE 106TH AVE, PORTLAND, OR, 97216\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 courts, $6 for adults/$5 for seniors\". Listed under the page's \"Indoor Courts\" heading. outdoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Portland Parks & Recreation names this a community center."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 courts, $6 for adults/$5 for seniors\"."
+        },
+        "drop_in_fee_usd": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 courts, $6 for adults/$5 for seniors\". The adult drop-in rate; the senior rate is $5 and is recorded in pricing notes."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"4 courts, $6 for adults/$5 for seniors\"."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"740 SE 106TH AVE, PORTLAND, OR, 97216\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "southwest-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "Southwest Community Center",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97219",
+        "latitude": 45.475847059695,
+        "longitude": -122.723057809647,
+        "imported_slug": null,
+        "canonical_slug": "southwest-community-center"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "5 courts, $6 for adults/$5 for seniors",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Southwest Community Center",
+        "total_courts": 5,
+        "street_address": "6820 SW 45th Ave",
+        "county": "Multnomah",
+        "indoor_courts": 5,
+        "venue_type": "community_center",
+        "fee_type": "drop_in_fee",
+        "drop_in_fee_usd": 6,
+        "pricing_notes": "$6 for adults, $5 for seniors, per drop-in session.",
+        "surface": "wood",
+        "restroom": true,
+        "amenities": [
+          "Restrooms",
+          "Drinking water"
+        ],
+        "postal_code": "97219"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Southwest Community Center\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"5 courts, $6 for adults/$5 for seniors\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Southwest Community Center | 6820 SW 45th Ave., Portland, OR 97219\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"6820 SW 45TH AVE, PORTLAND, OR, 97219\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"5 courts, $6 for adults/$5 for seniors\". Listed under the page's \"Indoor Courts\" heading. outdoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Portland Parks & Recreation names this a community center."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"5 courts, $6 for adults/$5 for seniors\"."
+        },
+        "drop_in_fee_usd": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"5 courts, $6 for adults/$5 for seniors\". The adult drop-in rate; the senior rate is $5 and is recorded in pricing notes."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"5 courts, $6 for adults/$5 for seniors\"."
+        },
+        "surface": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the venue's second listing on the same page: \"Indoor wood courts, permanent lines, nets provided. Registration is required. No court reservations. Amenities: restrooms and water.\"."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the venue's second listing on the same page: \"Indoor wood courts, permanent lines, nets provided. Registration is required. No court reservations. Amenities: restrooms and water.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the venue's second listing on the same page: \"Indoor wood courts, permanent lines, nets provided. Registration is required. No court reservations. Amenities: restrooms and water.\"."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6820 SW 45TH AVE, PORTLAND, OR, 97219\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "st-johns-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "St. Johns Community Center",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97203",
+        "latitude": 45.591623858137,
+        "longitude": -122.751893108302,
+        "imported_slug": null,
+        "canonical_slug": "st-johns-community-center"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "2 courts, $6/Adult and $5 for seniors",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "St. Johns Community Center",
+        "total_courts": 2,
+        "street_address": "8427 N Central St",
+        "county": "Multnomah",
+        "indoor_courts": 2,
+        "venue_type": "community_center",
+        "fee_type": "drop_in_fee",
+        "drop_in_fee_usd": 6,
+        "pricing_notes": "$6 for adults, $5 for seniors, per drop-in session.",
+        "surface": "wood",
+        "restroom": true,
+        "amenities": [
+          "Restrooms",
+          "Drinking water"
+        ],
+        "postal_code": "97203"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"St. Johns Community Center\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 courts, $6/Adult and $5 for seniors\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"St. Johns Community Center | 8427 N Central St., Portland, OR 97203\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"8427 N CENTRAL ST, PORTLAND, OR, 97203\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 courts, $6/Adult and $5 for seniors\". Listed under the page's \"Indoor Courts\" heading. outdoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Portland Parks & Recreation names this a community center."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 courts, $6/Adult and $5 for seniors\"."
+        },
+        "drop_in_fee_usd": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 courts, $6/Adult and $5 for seniors\". The adult drop-in rate; the senior rate is $5 and is recorded in pricing notes."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"2 courts, $6/Adult and $5 for seniors\"."
+        },
+        "surface": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the venue's second listing on the same page: \"Indoor wood courts, permanent lines, nets provided. Registration is required. No court reservations. Amenities: restrooms and water.\"."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the venue's second listing on the same page: \"Indoor wood courts, permanent lines, nets provided. Registration is required. No court reservations. Amenities: restrooms and water.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the venue's second listing on the same page: \"Indoor wood courts, permanent lines, nets provided. Registration is required. No court reservations. Amenities: restrooms and water.\"."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"8427 N CENTRAL ST, PORTLAND, OR, 97203\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "montavilla-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "Montavilla Community Center",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97220",
+        "latitude": 45.526477709012,
+        "longitude": -122.57879482269,
+        "imported_slug": null,
+        "canonical_slug": "montavilla-community-center"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "3 courts, $6 for adults/$5 for seniors",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Montavilla Community Center",
+        "total_courts": 3,
+        "street_address": "8219 NE Glisan St",
+        "county": "Multnomah",
+        "indoor_courts": 3,
+        "venue_type": "community_center",
+        "fee_type": "drop_in_fee",
+        "drop_in_fee_usd": 6,
+        "pricing_notes": "$6 for adults, $5 for seniors, per drop-in session.",
+        "postal_code": "97220"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Montavilla Community Center\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"3 courts, $6 for adults/$5 for seniors\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Montavilla Community Center | 8219 NE Glisan St., Portland, OR 97220\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"8219 NE GLISAN ST, PORTLAND, OR, 97220\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"3 courts, $6 for adults/$5 for seniors\". Listed under the page's \"Indoor Courts\" heading. outdoor_courts is left unverified rather than set to zero."
+        },
+        "venue_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Portland Parks & Recreation names this a community center."
+        },
+        "fee_type": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"3 courts, $6 for adults/$5 for seniors\"."
+        },
+        "drop_in_fee_usd": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"3 courts, $6 for adults/$5 for seniors\". The adult drop-in rate; the senior rate is $5 and is recorded in pricing notes."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"3 courts, $6 for adults/$5 for seniors\"."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"8219 NE GLISAN ST, PORTLAND, OR, 97220\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "portland-tennis-center": {
+      "minted": true,
+      "identity": {
+        "name": "Portland Tennis Center",
+        "city": "Portland",
+        "state": "OR",
+        "county": "Multnomah",
+        "postal_code": "97232",
+        "latitude": 45.525210355367,
+        "longitude": -122.653509195363,
+        "imported_slug": null,
+        "canonical_slug": "portland-tennis-center"
+      },
+      "match": {
+        "source_page": "https://www.portland.gov/parks/recreation/pickleball",
+        "quote": "16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.",
+        "basis": "No imported row. Minted from Portland Parks & Recreation's pickleball page, which states the count and the full postal address on one line."
+      },
+      "patch": {
+        "name": "Portland Tennis Center",
+        "total_courts": 16,
+        "street_address": "324 NE 12th Ave",
+        "county": "Multnomah",
+        "outdoor_courts": 16,
+        "nets_provided": true,
+        "restroom": true,
+        "amenities": [
+          "Restrooms",
+          "Drinking water"
+        ],
+        "court_availability": "Pickleball here runs as a registered summer programme, mid June to early September. Registration required; no court reservations.",
+        "postal_code": "97232"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by Portland Parks & Recreation as \"Portland Tennis Center\" on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed beside the venue name: \"Portland Tennis Center | 324 NE 12th Ave., Portland, OR 97232\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Multnomah County, OR (FIPS 41051). Census address geocoder matched \"324 NE 12TH AVE, PORTLAND, OR, 97232\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.\". Listed under the page's \"Outdoor courts\" heading. indoor_courts is left unverified rather than set to zero."
+        },
+        "nets_provided": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.\"."
+        },
+        "restroom": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.\"."
+        },
+        "amenities": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Portland Parks & Recreation's pickleball page: \"16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.\". Listed under \"Registered Activities\", which the page introduces with \"All pickleball activities will require an ActiveNet account and pre-registration.\""
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"324 NE 12TH AVE, PORTLAND, OR, 97232\". The city prints the same postcode beside the venue name."
+        }
+      },
+      "record": {
+        "source_url": "https://www.portland.gov/parks/recreation/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

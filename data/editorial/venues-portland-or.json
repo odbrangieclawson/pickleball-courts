@@ -1,0 +1,399 @@
+{
+  "city": "Portland",
+  "state": "OR",
+  "kind": "venues",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every venue below is described from one source — Portland Parks & Recreation's pickleball page — plus the Census geocode of the address it prints. Two things follow. First, where the department is silent, these pages say so rather than filling the space: no venue here has verified lighting or parking information, because the department publishes neither for any of them. Second, where a page reads a location out of an address, it is reading Portland's own street grid, which names the sextant in the address itself — N, NE, NW, SE, SW — and nothing more than that.",
+  "venues": {
+    "columbia-park": {
+      "slots": {
+        "description": "Columbia Park holds eight pickleball courts, equal-largest in Portland for year-round play and one of only four sites the parks department names as sanctioned pickleball parks. That designation is worth more here than it sounds. Portland has written down a rule that it stripes pickleball only where courts sit roughly 300 to 600 feet from housing, and it names Columbia, Pier, Sellwood and Gabriel as the parks where that condition is met. Columbia is therefore not a tennis court someone has borrowed — it is one of the handful of places in the city where the department has decided pickleball belongs. The courts are hard-surfaced, described by the city with permanent lines, and free.",
+        "getting_there": "4503 N Lombard St, Portland, OR 97203, in North Portland — the address itself says so, and the Census geocoder places it in Multnomah County. Lombard is a major east-west arterial across the north of the city, which makes the park easy to find and says nothing about where you leave a car. Portland Parks & Recreation publishes no parking information for this site: no lot, no capacity, no permit district, no warning. Columbia Park is a large park with other draws than pickleball, so a busy weekend is a reasonable thing to plan for, but that is our inference and not the department's statement.",
+        "what_to_expect": "Eight free courts, first-come and first-served, open dawn to dusk, and bring your own net — the city says so plainly, and with eight courts that is eight nets between everyone who turns up. The department asks players to limit a session to an hour when others are waiting, and its rules say a single player may not hold a court while a partner is on the way. Restrooms and drinking water are listed. Lighting is not mentioned, here or anywhere else on the city's pickleball page, so we do not know whether these courts can be played after dark and have not guessed."
+      },
+      "faqs": [
+        {
+          "q": "How many pickleball courts does Columbia Park have?",
+          "a": "Eight, stated by Portland Parks & Recreation as \"8 Outdoor hard courts\". That ties Columbia with Sellwood Park as the largest year-round pickleball site in the city; only the Portland Tennis Center has more, and its courts are available for pickleball for part of the year."
+        },
+        {
+          "q": "Is there a charge?",
+          "a": "No. The city describes the courts as free, in the same line as the court count, which is why this is recorded as a verified fact rather than an assumption."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "Yes. The city's entry ends \"bring your own net\". Nets are included at only two Portland park sites, Laurelhurst and Gabriel, and this is not one of them."
+        },
+        {
+          "q": "What are the posted rules on the court?",
+          "a": "Portland publishes a full set. Games are to eleven, win by two. Play is limited to an hour if others are waiting, and a single player may not hold a court until a partner arrives. Water only — no food, gum, other drinks or glass on the courts. Shoes, chairs and anything else that marks the surface are not allowed, and bags and bottles should be kept off the court entirely rather than parked at the back. Skateboards, scooters, bicycles, rollerblades and smoking or vaping are all prohibited. Wait outside the fence for the players ahead of you to finish."
+        },
+        {
+          "q": "How does Columbia compare with Sellwood Park?",
+          "a": "They are the two eight-court sites in the city and they are near-identical on paper: free, hard-surfaced, permanent lines, bring your own net, restrooms and drinking water, dawn to dusk. The difference is geography. Columbia is in North Portland on Lombard Street; Sellwood is at the far southern end of the east side. If you have a choice, take whichever is closer, because nothing the city publishes distinguishes them otherwise."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "pier-park": {
+      "slots": {
+        "description": "Pier Park has four pickleball courts and one distinction no other outdoor site in Portland can claim: the city names what they are made of. Everywhere else the department writes \"hard courts\", which sorts a court into a category without naming a material — asphalt, concrete and acrylic are all hard — and this directory refuses that word as a surface for exactly that reason. Pier Park says \"concrete\", so concrete is what its record says. It is also one of the four parks Portland names as sanctioned pickleball sites, under its rule that striping goes only where courts stand roughly 300 to 600 feet from homes.",
+        "getting_there": "10325 N Lombard St, Portland, OR 97203 — the same street as Columbia Park and a shade under three miles further north-west along it, out towards St. Johns. Both are in the N sextant of Portland's grid and both were matched to Multnomah County by the Census geocoder. As at every other venue on this site, the parks department publishes nothing at all about parking here, so we have nothing verified to tell you about it.",
+        "what_to_expect": "Four free courts on concrete, with permanent lines, open dawn to dusk on a first-come basis, and bring your own net. Four courts is a small site by the standards of Columbia and Sellwood, so the department's one-hour courtesy limit is more likely to matter here on a busy afternoon. The amenities line lists restrooms — and, unlike the other outdoor parks in this set, does not mention drinking water. That is an absence in the city's list rather than a statement that there is none, so we record restrooms and leave water unclaimed. Lighting is not mentioned."
+      },
+      "faqs": [
+        {
+          "q": "What surface are Pier Park's courts?",
+          "a": "Concrete. Portland Parks & Recreation writes \"4 Outdoor concrete courts\", and that is a material rather than a category, so we publish it. It makes Pier Park one of only three Portland venues in this directory with a verified surface — the other two are the wood floors at Southwest and St. Johns community centres."
+        },
+        {
+          "q": "Is there drinking water?",
+          "a": "The city does not say. Its amenities line for Pier Park reads \"Amenities: restrooms\", where the other outdoor parks say \"restrooms and water\". We have recorded restrooms and left water unverified rather than reading a silence as a no."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes — the city says so directly. Four of Portland's twenty-nine free outdoor courts are here."
+        },
+        {
+          "q": "How far is it from Columbia Park?",
+          "a": "About 2.9 miles along North Lombard Street, which the two share. St. Johns Community Center and its two indoor courts sit between them, a little under a mile from Pier. That makes this stretch of North Portland the densest pickleball corridor in the city: twelve free outdoor courts and an indoor room inside three miles of one road."
+        },
+        {
+          "q": "Is four courts enough to turn up unannounced?",
+          "a": "It is half the size of Columbia or Sellwood, so on a dry weekend afternoon it is more exposed to a queue. The city's answer to that is its one-hour rule — limit play to an hour when others are waiting — plus a specific prohibition on a single player holding a court while their partner is on the way. Neither tells you how often the courts are actually full, because Portland publishes nothing about how busy any of its sites get."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "sellwood-park": {
+      "slots": {
+        "description": "Sellwood Park has eight pickleball courts, tying it with Columbia Park as the largest year-round pickleball site in Portland, and it is the third of the four parks the city names as sanctioned pickleball locations. The courts are hard-surfaced with permanent lines and free to play. What makes Sellwood the useful one on the east side is simple arithmetic: it is the only eight-court site south of the river's east bank, and the next largest anywhere in the inner south-east is Laurelhurst's two.",
+        "getting_there": "7987 SE Grand Ave, Portland, OR 97202, in the south-east sextant, out at the southern end of the city's east side. The Census geocoder matched the address and placed it in Multnomah County. Portland Parks & Recreation publishes no parking guidance for the site — no lot, no street-parking note, no permit district — which is the case at all eleven venues in this city and is worth saying every time rather than once.",
+        "what_to_expect": "Eight free courts, dawn to dusk, first come first served, and bring your own net. The city's courtesy rules apply here as everywhere: an hour when others are waiting, no holding a court for an absent partner, and games to eleven, win by two. Restrooms and drinking water are listed among the amenities. Lighting is not stated anywhere on the department's pickleball page, so whether these eight courts can be used after dusk is unverified — and dusk is the operative limit, because the courts are open dawn to dusk rather than to a clock time."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Eight, stated by the city as \"8 Outdoor hard courts\", equal to Columbia Park and more than any other year-round site in Portland."
+        },
+        {
+          "q": "Do I need to book?",
+          "a": "No, and you cannot. Portland's outdoor courts are first-come, first-served; the department's rules say no reservations are taken. It also asks that you limit play to an hour when people are waiting."
+        },
+        {
+          "q": "Why is the surface not listed?",
+          "a": "Because the city calls them \"hard courts\", which names a category rather than a material — asphalt, concrete and acrylic are all hard. Our surface vocabulary refuses the word, so the field reads \"not verified yet\" even though a tier-one source used it. Pier Park, which says \"concrete\", is the exception in this city."
+        },
+        {
+          "q": "What else is nearby on the east side?",
+          "a": "Not much, which is what makes Sellwood useful. Laurelhurst Park's two dedicated courts are about four miles north, and the Portland Tennis Center is further north again and seasonal. Between them and here there is nothing else the parks department lists. For an eight-court site anywhere south-east of the river, this is the only option."
+        },
+        {
+          "q": "What are the court rules here?",
+          "a": "The same city-wide set that applies at every Portland site: games to eleven and win by two, an hour's play when others are waiting, no reservations, and no holding a court for an absent partner. Water only on court, with no food, gum or glass. Nothing that marks the surface, and bags kept clear of the playing area for safety. Bicycles, skateboards, scooters and smoking are all prohibited. The department also warns that the surface is slippery when wet, which on an uncovered court in this city is a rule about when to play rather than how."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "laurelhurst-park": {
+      "slots": {
+        "description": "Two courts, and both of them exist only for pickleball. Laurelhurst Park is one of three Portland sites the city describes as 'pickleball only' — the others are Gabriel Park and Hillside Park — and one of only two where nets are included. That combination is rarer than the court count suggests. Across all six free park sites in this city, twenty-one of the twenty-nine courts require you to bring your own net; Laurelhurst is part of the small remainder where a paddle and a ball are the whole kit list. The courts are hard-surfaced with permanent lines and free.",
+        "getting_there": "3789 SE Oak St, Portland, OR 97214, in the inner south-east, and matched by the Census geocoder to Multnomah County. Oak Street is a residential east-side street rather than an arterial, which is a fact about the address and not a claim about what you will find when you get there — Portland Parks & Recreation publishes no parking information for this venue, as it publishes none for any of the eleven.",
+        "what_to_expect": "Two courts, free, nets included, permanent lines, dawn to dusk, first come first served. Two courts is the second-smallest pickleball site in the city, so the department's request to limit play to an hour when others are waiting is likely to be the difference between playing and watching on a good evening. Restrooms and drinking water are listed. Lighting is not stated. Note that Laurelhurst is not one of the four parks Portland names as its sanctioned pickleball sites — those are Columbia, Pier, Sellwood and Gabriel — which does not make it less official, but is a reminder that the department distinguishes between where pickleball is provided and where it has been formally sited under its noise rule."
+      },
+      "faqs": [
+        {
+          "q": "Are nets provided at Laurelhurst?",
+          "a": "Yes. The city's entry reads \"nets included\", one of only two Portland park sites where it does — Gabriel Park is the other. At Columbia, Pier, Sellwood and Hillside you are told to bring your own."
+        },
+        {
+          "q": "What does 'pickleball only' mean here?",
+          "a": "That the courts are not shared with tennis or anything else. Portland's rules are strict about the boundary in both directions: pickleball play is permitted only on pickleball courts, and painting, taping or chalking your own lines on one of the department's tennis courts is not allowed."
+        },
+        {
+          "q": "Only two courts — is it worth the trip?",
+          "a": "That depends on what you are after. Two courts with nets already up, free, in the inner east side is a very different proposition from eight courts you have to carry a net to. If you want volume rather than convenience, Sellwood Park has eight and is the nearest large site on this side of the river."
+        },
+        {
+          "q": "What is the nearest bigger site?",
+          "a": "Sellwood Park, with eight courts, about four miles south. The Portland Tennis Center is closer at roughly a mile and a half, but its sixteen courts are open to pickleball only from mid June to early September and only through registration, so for most of the year Sellwood is the real alternative."
+        },
+        {
+          "q": "What can I not bring onto the court?",
+          "a": "Portland's posted rules are specific: no food, no gum, no drinks other than water, and no glass containers. No shoes, chairs or anything else that marks the surface. Bags, bottles and equipment should be kept off the court entirely rather than left at the back, which the city frames as a safety point. Bicycles, skateboards, scooters and rollerblades are prohibited, as is smoking or vaping."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "gabriel-park": {
+      "slots": {
+        "description": "Gabriel Park is the best-equipped free pickleball site in Portland on the evidence the city publishes: six courts, described as 'pickleball only', with permanent lines and nets included, at no cost. It is the only venue in the city that is both a named sanctioned pickleball park and a dedicated, nets-included site — Columbia, Pier and Sellwood are sanctioned but shared-kit, Laurelhurst and Hillside are dedicated but smaller. If the question is where to send someone who owns a paddle and nothing else, this is the answer, and it is the largest such site in the city by a factor of three.",
+        "getting_there": "4508 SW Nevada St, Portland, OR 97219, in the south-west sextant — one of only three venues in this set on the west side of the river, along with Hillside Park and Southwest Community Center. The Census geocoder matched the address to Multnomah County. Southwest Community Center, the city's largest indoor site, is about 250 metres away — the closest pairing of an outdoor and an indoor pickleball venue anywhere in this directory. No parking information is published by the parks department for this or any other Portland venue, and Gabriel is a large multi-use park, so arriving with a plan B for the car is sensible rather than pessimistic.",
+        "what_to_expect": "Six free courts with nets already provided, dawn to dusk, first come first served. Six is enough that the one-hour courtesy limit is less likely to bite than at Laurelhurst or Hillside, and the dedicated striping means you are not negotiating with tennis players for the space. Restrooms and drinking water are listed among the amenities. Lighting is not stated — not here and not at any Portland venue — so evening play in the darker half of the year is an open question rather than a no."
+      },
+      "faqs": [
+        {
+          "q": "Why is Gabriel Park the pick of Portland's free courts?",
+          "a": "Because it is the only one that combines size, dedication and equipment: six courts, 'pickleball only', permanent lines, nets included, free. Columbia and Sellwood have eight each but you must bring a net; Laurelhurst has nets but only two courts."
+        },
+        {
+          "q": "What makes it a 'sanctioned' park?",
+          "a": "Portland Parks & Recreation names four parks — Columbia, Pier, Sellwood and Gabriel — as the places it has sanctioned pickleball, under a policy of striping only where courts are roughly 300 to 600 feet from housing so that noise carries less. It is one of the few American cities to publish that constraint in writing."
+        },
+        {
+          "q": "Is there a fee?",
+          "a": "No. The city's own word for these courts is free, alongside the court count, which is what allows us to record a cost here at all rather than leaving it unverified."
+        },
+        {
+          "q": "What else is within reach?",
+          "a": "Southwest Community Center is about 250 metres away, with five indoor courts on a wood floor at $6 for adults and $5 for seniors. That is the closest outdoor-and-indoor pairing anywhere in this directory, and in a city with Portland's winters it is a genuinely useful thing to know: one address for a dry morning, another for the other two hundred days."
+        },
+        {
+          "q": "Will I get a court?",
+          "a": "Unknown, honestly — Portland publishes no information about how busy any of its pickleball sites get. What can be said is that six courts is the second-largest year-round site in the city, that nets are already up so there is no setup delay, and that the city's rules ask players to limit a session to an hour when others are waiting and forbid holding a court for a partner who has not arrived."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "hillside-park": {
+      "slots": {
+        "description": "One court. Hillside Park is the smallest pickleball venue in this directory anywhere, and it is here for the same reason the eight-court sites are: the city states it. The single court is described as 'pickleball only' with the courts at Laurelhurst and Gabriel, and it is free. It is also the only outdoor entry on Portland's pickleball page with no amenities line at all — where the other five parks list restrooms, and four of them water, Hillside's entry simply ends after \"bring your own net\". That silence is recorded as unverified rather than as an absence.",
+        "getting_there": "653 NW Culpepper Terrace, Portland, OR 97210, in the north-west sextant, up in the west hills — the Census geocoder matched the address to Multnomah County. Culpepper Terrace is a hillside residential street, which the address itself tells you, and the parks department publishes no parking guidance here any more than it does elsewhere. A single-court site on a hill street is not somewhere to arrive with a group and no fallback.",
+        "what_to_expect": "One free court, dedicated to pickleball, with your own net required, dawn to dusk, first come first served. With one court, Portland's rule about limiting play to an hour when others are waiting is the whole etiquette of the place, along with its companion rule that a single player may not hold a court while a partner is on the way. No restrooms are listed. No water is listed. No lighting is stated. This is the venue in Portland where what the city does not publish matters most, because there is the least here to absorb a surprise."
+      },
+      "faqs": [
+        {
+          "q": "Is there really only one court?",
+          "a": "Yes — Portland Parks & Recreation writes \"1 outdoor 'pickleball only' hard court\", in the singular. It is the smallest venue in this directory, and it is published for the same reason as every other: the operator stated it."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Unverified. Hillside is the only outdoor venue on the city's pickleball page with no \"Amenities:\" clause at all. We record that as unknown rather than as a no — the city has not said there are none, it has said nothing."
+        },
+        {
+          "q": "Where is the nearest bigger site?",
+          "a": "Gabriel Park, also on the west side, with six dedicated courts and nets included. If you are making a trip rather than walking round the corner, that is the more reliable destination."
+        },
+        {
+          "q": "What if the court is taken?",
+          "a": "There is no second court here, so the city's etiquette rules are the whole system: an hour's play when someone is waiting, no reservations, and no holding the court for a partner still on their way. Waiting outside the fence rather than at the net is the posted convention. If you cannot afford the wait, Gabriel Park is the nearest real alternative at about 3.8 miles south, with six dedicated courts and nets provided."
+        },
+        {
+          "q": "Why publish a one-court venue at all?",
+          "a": "Because the operator stated it, which is the only test this directory applies. A single court in the west hills is a genuinely useful thing for someone who lives near it to be able to find, and leaving it out because it is small would be a judgement about what counts rather than a report of what exists. It is listed with the same three verified facts as everywhere else — count, address, cost — and the same honest blanks for lighting, parking and amenities."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "east-portland-community-center": {
+      "slots": {
+        "description": "Four indoor courts, and one of the four Portland community centres that take drop-in pickleball players at $6 for adults and $5 for seniors. It is the second-largest indoor site in the city after Southwest Community Center's five. In a city whose outdoor courts run dawn to dusk on surfaces the parks department warns are slippery when wet, the fourteen indoor courts spread across these four centres are what makes the sport a year-round proposition, and this is nearly a third of them.",
+        "getting_there": "740 SE 106th Ave, Portland, OR 97216, in the south-east sextant well out towards the city's eastern edge — matched by the Census geocoder to Multnomah County. It is the easternmost venue in this set. As at all eleven Portland venues, the parks department publishes nothing about parking.",
+        "what_to_expect": "Four courts indoors and a published price — $6 for adults, $5 for seniors, per drop-in session — which is the first cost figure any operator in this directory has stated in five cities of trying. What the city does not publish on its pickleball page is the schedule: it lists the count and the price and then directs drop-in players to the community centre's own page for times. So treat four courts as what exists rather than as what is free on a given afternoon, and check the centre before travelling. The surface is not stated here, unlike the wood floors at Southwest and St. Johns. Neither is whether nets are provided, and we have not assumed it."
+      },
+      "faqs": [
+        {
+          "q": "What does it cost?",
+          "a": "$6 for adults and $5 for seniors per drop-in session, stated by Portland Parks & Recreation on the same line as the court count. The same price applies at all four of the city's drop-in community centres."
+        },
+        {
+          "q": "When is drop-in pickleball on?",
+          "a": "The city does not say on its pickleball page — it points drop-in players to the community centre's own page for schedule details, and that page is not part of what we have verified. The four courts are what the city states exists; the timetable is a separate question you should settle before you travel."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Unverified. The city says nothing either way for this centre. Two of the four centres do mention nets, but only when describing their registered programmes rather than drop-in play, so we have left the field empty at all four rather than reading one across to the other."
+        },
+        {
+          "q": "How does it compare with Portland's other indoor sites?",
+          "a": "It is the second largest of the four at four courts, behind Southwest's five and ahead of Montavilla's three and St. Johns's two. All four charge the same $6 adult and $5 senior drop-in rate. Where Southwest and St. Johns publish a wood floor, East Portland's surface is not stated, so we have left it blank rather than assuming a community centre gym is the same as the two that said so."
+        },
+        {
+          "q": "What is ActiveNet?",
+          "a": "The booking system Portland Parks & Recreation uses for its registered activities. The city says all pickleball activities requiring registration go through an ActiveNet account with pre-registration — that applies to the programmes at the Portland Tennis Center, Southwest and St. Johns. Drop-in play, which is what the four-court figure here describes, is paid at the door rather than booked."
+        },
+        {
+          "q": "What is the nearest outdoor pickleball?",
+          "a": "Nothing close. The city lists no outdoor pickleball site in outer east Portland at all — the six free parks are in the north, the south-east, the inner east and the west. For anyone in this part of the city, these four indoor courts are not the winter option, they are the option."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "southwest-community-center": {
+      "slots": {
+        "description": "Five indoor courts on a wood floor — the largest indoor pickleball site in Portland and one of only three venues in this city with a surface we can publish. It appears twice on the city's pickleball page: once under indoor courts with a count and a drop-in price, and again under registered activities as \"Indoor wood courts, permanent lines, nets provided\". From that second listing we take the wood and the restrooms, which are facts about the building and true whichever door you came through, and not the nets, which describe what a particular registered programme puts out.",
+        "getting_there": "6820 SW 45th Ave, Portland, OR 97219, in the south-west sextant, and matched by the Census geocoder to Multnomah County. It is about 250 metres from Gabriel Park's six dedicated courts — near enough to walk between them — which makes this corner of south-west Portland the only part of the city where a large free outdoor site and the largest indoor site sit within easy reach of each other — useful in a city where the weather decides which one you want. No parking information is published.",
+        "what_to_expect": "Five courts indoors, wood floor, permanent lines, $6 for adults and $5 for seniors as a drop-in. There is also a registered pickleball programme here, booked through an ActiveNet account, which the city says takes no court reservations. The schedule for either is on the centre's own page rather than the city's pickleball page, so check before you travel. Restrooms and drinking water are listed. Whether nets are out for drop-in play is not something the city states, and we have declined to infer it from the registered programme's description."
+      },
+      "faqs": [
+        {
+          "q": "What is the floor?",
+          "a": "Wood. The city describes \"Indoor wood courts\" in this venue's second listing on its pickleball page, and a gym floor belongs to the building rather than to a programme, so we record it. Southwest and St. Johns are the only two indoor venues in Portland with a stated surface."
+        },
+        {
+          "q": "Why does it say nets are unverified when the page says 'nets provided'?",
+          "a": "Because that phrase appears only in the description of the centre's registered programme, not of drop-in play. It is very likely the same nets go up for both. Very likely is not a source — it is the reasoning that got an earlier city withdrawn from this directory — so the field stays empty."
+        },
+        {
+          "q": "Is this the biggest indoor venue in Portland?",
+          "a": "Yes, at five courts. East Portland Community Center has four, Montavilla three and St. Johns two, for fourteen indoor courts in the city altogether."
+        },
+        {
+          "q": "Do I have to register?",
+          "a": "Not for drop-in play, which is what the five-court figure and the $6 adult and $5 senior price describe — you pay at the door. The centre also runs a registered pickleball programme, and that does require an ActiveNet account and pre-registration. The city adds that no court reservations are taken there either, so registering signs you up for the programme rather than for a slot on a particular court."
+        },
+        {
+          "q": "What is the nearest outdoor option?",
+          "a": "Gabriel Park, about 250 metres away, with six courts the city describes as 'pickleball only', permanent lines, nets included and no charge at all. The two together make this the best-served corner of Portland for the sport, and the only place in the city where the choice between indoor and outdoor does not involve getting back in the car."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "st-johns-community-center": {
+      "slots": {
+        "description": "Two indoor courts on a wood floor, the smallest of Portland's four drop-in community centres, at the same $6 adult and $5 senior rate as the others. Like Southwest Community Center it is listed twice on the city's pickleball page — once with its court count and price, once under registered activities as \"Indoor wood courts, permanent lines, nets provided\" — and the same narrow reading applies here: the wood floor and the restrooms are properties of the building and are recorded, the nets describe a programme and are not.",
+        "getting_there": "8427 N Central St, Portland, OR 97203, in the north sextant, matched by the Census geocoder to Multnomah County. It shares its postcode with Columbia Park and Pier Park, and sits between the two of them — which makes this stretch of North Portland the one part of the city where twelve free outdoor courts and an indoor room are all within a short distance of each other. Nothing about parking is published.",
+        "what_to_expect": "Two courts, wood floor, permanent lines, drop-in at $6 for adults and $5 for seniors, plus a registered programme booked through ActiveNet that takes no court reservations. Two courts is small enough that the schedule matters more than the count, and the schedule is on the centre's own page rather than the city's pickleball page. Restrooms and drinking water are listed. Nets for drop-in play are unverified."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two — the smallest indoor site in Portland. The city states it as \"2 courts\" alongside the price."
+        },
+        {
+          "q": "What else is nearby?",
+          "a": "More than at any other indoor venue in the city. Columbia Park and Pier Park are both on North Lombard Street in the same postcode, with eight and four free outdoor courts respectively. If the weather is dry, they are a much larger option a short distance away."
+        },
+        {
+          "q": "What does drop-in cost?",
+          "a": "$6 for adults and $5 for seniors, the same as at all four Portland community centres. This venue's line is worded slightly differently on the city's page — \"$6/Adult and $5 for seniors\" — but the figures are identical."
+        },
+        {
+          "q": "Why are there only two courts?",
+          "a": "That is what the city states, and it makes this the smallest indoor site in Portland — half the size of East Portland's four and well behind Southwest's five. The city does not explain the number, and the fourteen indoor courts spread across the four centres are a modest total for a city of this size. It is worth reading alongside the department's own noise policy, which limits where new outdoor courts can go and puts more weight on the indoor rooms than they were built for."
+        },
+        {
+          "q": "How does drop-in differ from the registered programme?",
+          "a": "Drop-in is paid at the door — $6 for adults, $5 for seniors — and the court count here refers to it. The registered programme is booked through an ActiveNet account in advance and takes no court reservations. It is the registered programme's entry that describes the wood floor and permanent lines, which is why those are recorded here and the nets it mentions are not: a floor belongs to the building, nets to whoever puts them out."
+        },
+        {
+          "q": "What are the posted schedule details?",
+          "a": "None that the city publishes on its pickleball page. It gives the count and the price and then directs drop-in players to the community centre's own page for the timetable, which is not part of what has been verified here. Check the centre before travelling, particularly for a two-court room."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "montavilla-community-center": {
+      "slots": {
+        "description": "Three indoor courts at the standard Portland drop-in rate of $6 for adults and $5 for seniors. Montavilla is the plainest entry of the four community centres on the city's pickleball page: a name, an address, a court count and a price, with no second listing under registered activities and so no statement about the floor, the nets or the amenities. That makes it the indoor venue about which we know the least, and the record reflects that rather than borrowing detail from the centres that say more.",
+        "getting_there": "8219 NE Glisan St, Portland, OR 97220, in the north-east sextant on an east-west arterial, matched by the Census geocoder to Multnomah County. It is the only venue in this set in the NE quadrant. The parks department publishes no parking information here, as at every other Portland venue.",
+        "what_to_expect": "Three courts indoors at $6 adult and $5 senior per drop-in session, with the schedule on the community centre's own page rather than the city's pickleball page. Beyond that, the honest answer is that the city has not said: no surface, no note on nets, no amenities line. Unlike Southwest and St. Johns, Montavilla has no registered-programme entry that might have told us about the floor. Three courts is the middle of Portland's indoor range — more than St. Johns, fewer than East Portland and Southwest."
+      },
+      "faqs": [
+        {
+          "q": "What surface are the courts?",
+          "a": "Unverified. Montavilla is the one indoor venue in Portland that appears only once on the city's pickleball page, in the drop-in list, which gives a count and a price and nothing else. Southwest and St. Johns are recorded as wood because their second listings say so; there is no equivalent sentence here."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "$6 for adults and $5 for seniors per drop-in session — the same rate the city publishes for all four of its community centres."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Unverified. The city lists no amenities for this centre. That is a silence in the source, not a statement that there are none."
+        },
+        {
+          "q": "Why is so little recorded for this venue?",
+          "a": "Because so little is published. Montavilla appears exactly once on the city's pickleball page, in the drop-in list, as a name, an address, a court count and a price. Southwest and St. Johns each appear a second time under registered activities, and it is those second entries that state a wood floor and restrooms. There is no equivalent sentence for Montavilla, so its surface, its amenities and its nets are all recorded as unverified. That is a gap in the source, not an assessment of the centre."
+        },
+        {
+          "q": "What is the nearest outdoor pickleball?",
+          "a": "Laurelhurst Park, a little over two miles west, with two courts that are dedicated to pickleball and have nets included, free and open dawn to dusk. The Portland Tennis Center is a similar distance and much larger at sixteen courts, but its pickleball runs only from mid June to early September and requires registration."
+        },
+        {
+          "q": "How does it compare with the other centres?",
+          "a": "Three courts puts it third of four — ahead of St. Johns's two, behind East Portland's four and Southwest's five — at the same $6 adult and $5 senior drop-in rate as all of them. East Portland Community Center is about a mile and a third east, so for anyone in this part of the city the two are realistic alternatives to each other on a day when one is booked out."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    "portland-tennis-center": {
+      "slots": {
+        "description": "Sixteen outdoor courts — the largest single venue in this directory, in any city — and the one where the number needs its sentence read to the end. Portland Parks & Recreation states \"16 outdoor hard courts, permanent lines, nets provided\", and then: \"Available from mid June until early September.\" Pickleball here is a registered summer programme, booked through an ActiveNet account, with no court reservations taken. The courts and their permanent lines are not seasonal; the access to them for pickleball is. We publish the sixteen rather than hiding them, and we publish the season alongside, because a court count without its availability is the kind of true number that misleads.",
+        "getting_there": "324 NE 12th Ave, Portland, OR 97232, in the north-east sextant just across the river from the city centre — the most central venue in this set, and matched by the Census geocoder to Multnomah County. It is about a mile and a half from Laurelhurst Park's two dedicated courts, which is the nearest year-round alternative on this side of the river. No parking information is published for it.",
+        "what_to_expect": "In season, sixteen outdoor hard courts with permanent lines and nets provided, run as mixer activities requiring an ActiveNet account and pre-registration, with no court reservations. Out of season, this is not a pickleball venue. What the city does not state is the price: registration goes through ActiveNet, which prices per activity, and no figure appears on the pickleball page — so the cost here reads \"not verified yet\" rather than free. Restrooms and drinking water are listed. Lighting, as everywhere in Portland, is not mentioned. We have also left the venue type blank: this is a municipal tennis centre, and the nearest options available to us are park, club and community centre, none of which is true."
+      },
+      "faqs": [
+        {
+          "q": "Can I play pickleball here in winter?",
+          "a": "Not on the evidence the city publishes. Its entry says the courts are \"available from mid June until early September\" and lists the venue under registered activities requiring pre-registration. For year-round outdoor play in Portland, the six free park sites are the answer — Columbia and Sellwood have eight courts each."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "The city does not say. Registration runs through an ActiveNet account, which prices activity by activity, and no figure appears on the pickleball page. We record the cost as unverified rather than guessing, and this venue does not appear on Portland's free courts page as a result."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Yes — the city states \"nets provided\" for this venue directly, in the same line as the court count. It is one of only three Portland venues where nets are stated to be supplied, along with Laurelhurst and Gabriel parks."
+        },
+        {
+          "q": "Do I need to book a court?",
+          "a": "You need to register, and you cannot book a court. The city says all pickleball activities require an ActiveNet account and pre-registration, and separately that no court reservations are taken here. Those are two different things: you sign up for the programme, not for a slot on a particular court."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "M1",
+      "url": "https://www.portland.gov/parks/recreation/pickleball",
+      "publisher": "Portland Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "One page carrying every venue line quoted above, e.g. \"Columbia Park | 4503 N Lombard St., Portland, OR 97203 / 8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\"; \"Hillside Park | 653 NW Culpepper Terrace Portland, OR 97210 / 1 outdoor 'pickleball only' hard court, free, bring your own net.\"; \"Portland Tennis Center | 324 NE 12th Ave., Portland, OR 97232 / 16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September.\"; \"Southwest Community Center | 6820 SW 45th Ave., Portland, OR 97219 / Indoor wood courts, permanent lines, nets provided.\" Also the sanctioned-parks sentence (\"PP&R has sanctioned pickleball courts at Columbia, Pier, Sellwood, and Gabriel Park\"), the 300-to-600-feet striping rule, and the posted court rules. Snapshot: data/sources/portland/pickleball.html"
+    },
+    {
+      "id": "M2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Each venue's published street address submitted to the Census address geocoder; all eleven matched and resolved to Multnomah County, OR, supplying the county, the postcode and the coordinates used in the location notes. Snapshot: data/sources/portland-county-census.json"
+    }
+  ]
+}

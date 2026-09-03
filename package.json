@@ -44,7 +44,8 @@
     "verify:raleigh": "node scripts/verify/apply-raleigh-parks.mjs",
     "verify:cary": "node scripts/verify/apply-cary-parks.mjs",
     "verify:apex": "node scripts/verify/apply-apex-parks.mjs",
-    "verify:charlotte": "node scripts/verify/apply-charlotte-parks.mjs"
+    "verify:charlotte": "node scripts/verify/apply-charlotte-parks.mjs",
+    "verify:portland": "node scripts/verify/apply-portland-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

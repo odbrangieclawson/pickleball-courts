@@ -6,17 +6,21 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  3/3 publishable
+COUNTY  —  4/4 publishable
   PASS  /pickleball/us/wa/king-county/
         925 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/or/multnomah-county/
+        922 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/wake-county/
         1261 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/mecklenburg-county/
         1284 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  5/5 publishable
+CITY  —  6/6 publishable
   PASS  /pickleball/us/wa/seattle/
         1605 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/or/portland/
+        1859 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/
         1857 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/apex/
@@ -26,11 +30,17 @@ CITY  —  5/5 publishable
   PASS  /pickleball/us/nc/cary/
         1809 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  7/7 publishable
+FILTER  —  10/10 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
         694 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/or/portland/indoor/
+        649 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/or/portland/outdoor/
+        681 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/or/portland/free/
+        714 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/outdoor/
         702 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/lights/
@@ -42,7 +52,7 @@ FILTER  —  7/7 publishable
   PASS  /pickleball/us/nc/cary/outdoor/
         662 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  48/48 publishable
+VENUE  —  59/59 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -91,6 +101,28 @@ VENUE  —  48/48 publishable
         718 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/greenwood-park-pickleball-courts-seattle/
         709 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/columbia-park/
+        835 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/east-portland-community-center/
+        810 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/gabriel-park/
+        793 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/laurelhurst-park/
+        784 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/sellwood-park/
+        749 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/pier-park/
+        760 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/hillside-park/
+        770 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/southwest-community-center/
+        774 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/st-johns-community-center/
+        788 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/montavilla-community-center/
+        777 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/or/portland/portland-tennis-center/
+        714 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/raleigh/north-hills-park/
         714 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/raleigh/tarboro-road-park/
@@ -142,9 +174,7 @@ VENUE  —  48/48 publishable
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, outdoor, lights, outdoor, lights, outdoor
-  indoor: not published — no lawful data driver or fewer than 3 matches
-  free: not published — no lawful data driver or fewer than 3 matches
+  built for Seattle: outdoor, lights, indoor, outdoor, free, outdoor, lights, outdoor, lights, outdoor
   public: not published — no lawful data driver or fewer than 3 matches
 
 === NOINDEX QUERY PARAMETERS ===
@@ -168,6 +198,6 @@ VENUE  —  48/48 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 64/64 pages pass all six gates.
+TOTAL: 80/80 pages pass all six gates.
 
 ```

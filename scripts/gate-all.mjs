@@ -89,6 +89,18 @@ for (const entry of sitemapEntries()) {
        reason. */
     /* Match on slug, not href: an unpublished venue has a null href and
        matching on it silently drops it from the filter's own count. */
+    /*
+      The sitemap advertised this path and the renderer will not produce
+      it. That is a gate failure about the site, not a crash in the
+      checker — this line used to throw on fv being null and take the
+      whole run down, so a single inconsistent filter hid the results for
+      all 89 pages. Report it and carry on.
+    */
+    if (!fv) {
+      results.push({path, type, missing: true,
+        note: 'in the sitemap, but filterView() refuses to render it'})
+      continue
+    }
     const matching = new Set(fv.venues.map(x => x.slug))
     venues = c.venues.filter(v => matching.has(v.slug))
     counts = getCounts({type: 'city', city: c.city, state: c.state}, venues)

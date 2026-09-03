@@ -1,0 +1,110 @@
+{
+  "city": "Portland",
+  "state": "OR",
+  "kind": "filters",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Portland gets three filter pages of the five, and it is the first city in this directory to earn either the indoor one or the free one. That is not because Portland is the first city with indoor or free courts — it is because Portland is the first operator to write either fact down. Five cities came before it and not one of their parks departments put a price, or the absence of one, in publishable form. The lights page does not exist here: Portland Parks & Recreation says nothing about lighting at any of its eleven venues, and an unchecked light is not an unlit one.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Outdoor is the default in most of this directory and a live decision in Portland. Seven of the eleven verified venues have outdoor courts and they hold 45 of the city's 59 — but they are open dawn to dusk in a city where dusk is half past four in December, on surfaces the parks department itself warns are slippery when wet. Six of the seven are free, which no other city in this directory can say of a single venue. The seventh, Portland Tennis Center, is the largest venue we have verified anywhere at sixteen courts, and its pickleball runs only from mid June to early September. So this page is really two lists: 29 courts you can walk onto for nothing on any dry morning of the year, and 16 more that exist for one summer programme.",
+        "what_qualifies": "A venue appears here when a source places its courts outdoors. For all seven, Portland Parks & Recreation does it twice over — it lists them under a heading reading \"Outdoor courts\" (or, for the tennis centre, describes \"16 outdoor hard courts\") and uses the word outdoor in the venue's own line. Nothing is inferred from a park being a park. The four community centres are absent because their courts are indoor. No venue is here on an assumption that a court must be outdoors because nobody said otherwise: the city's outdoor count is what puts a venue on this list, and where that count is unverified the venue stays off."
+      },
+      "faqs": [
+        {
+          "q": "How many outdoor pickleball courts does Portland have?",
+          "a": "We have verified 45 across seven venues. Twenty-nine of those are the free park courts — eight each at Columbia and Sellwood, six at Gabriel, four at Pier, two at Laurelhurst and one at Hillside. The other sixteen are at the Portland Tennis Center and are available for pickleball only through a summer programme."
+        },
+        {
+          "q": "Are the outdoor courts open all year?",
+          "a": "The six park sites are, dawn to dusk, first-come and first-served, with the city asking players to limit a session to an hour when others are waiting. There is no winter closure published. What changes is daylight and weather — Portland's rules include the line that the surface is slippery when wet, which is worth taking seriously here. The Portland Tennis Center is the exception: its pickleball runs mid June to early September."
+        },
+        {
+          "q": "Do the outdoor courts have lights?",
+          "a": "We do not know, at any of them. Portland Parks & Recreation does not mention lighting for a single one of its eleven pickleball venues, so every venue on this site reads \"not verified yet\" for lights rather than \"no\". Some of these parks very likely do have lit courts. That is a belief, and this directory does not print beliefs as facts, which is also why Portland has no lights page."
+        },
+        {
+          "q": "Which outdoor site should I pick?",
+          "a": "For volume, Columbia Park or Sellwood Park, eight courts each and free, at opposite ends of the city. For turning up with nothing but a paddle, Gabriel Park, whose six dedicated courts include nets. For a short game near the inner east side, Laurelhurst's two. Hillside's single court is for people who live near it. And the Portland Tennis Center's sixteen are the largest by far and available for pickleball only between mid June and early September."
+        }
+      ],
+      "sources": [
+        "E1"
+      ]
+    },
+    "indoor": {
+      "slots": {
+        "why_this_filter": "This is the first indoor page in the directory, and Portland is the right city to have earned it. Between October and May the free outdoor courts are a few hours of grey daylight on a wet hard surface, and the fourteen indoor courts across four community centres are the difference between playing and not. They are also the only pickleball in the city with a published price: $6 for adults and $5 for seniors per drop-in session, which is the first cost figure any operator in this directory has stated. Five courts at Southwest, four at East Portland, three at Montavilla, two at St. Johns — a small number for a city of Portland's size, and the honest one.",
+        "what_qualifies": "A venue is here only if a source states that it has indoor courts — indoor_courts above zero, nothing else. All four are listed by Portland Parks & Recreation under a heading reading \"Indoor Courts\" with a court count on the same line. Covered courts do not qualify and climate control does not qualify: a roof over an outdoor court is not an indoor court, and in a city with this much winter that distinction is the entire purpose of the page. No Portland venue was excluded on those grounds, because the city describes no covered courts at all — but the rule is what it is whether or not it costs us anything here."
+      },
+      "faqs": [
+        {
+          "q": "How much does indoor pickleball cost in Portland?",
+          "a": "$6 for adults and $5 for seniors per drop-in session at all four community centres. That is the city's own published figure and it is the only price any operator in this directory has stated. It covers drop-in play; the registered programmes at Southwest and St. Johns are booked through an ActiveNet account and the city does not publish their price on this page, so we have not printed one."
+        },
+        {
+          "q": "When can I actually play indoors?",
+          "a": "That we cannot tell you. The city lists the court count and the drop-in price for each centre and then sends you to that centre's own page for the schedule, and those pages are not part of what we have verified. Treat the four counts here as what exists, not as what is free at four o'clock on a Tuesday, and check the centre before you travel."
+        },
+        {
+          "q": "What are the indoor courts made of?",
+          "a": "Wood at Southwest and St. Johns — the city describes both as \"Indoor wood courts\" in the entry for their registered programmes, and a gym floor is a property of the building rather than of a programme, so we record it. At East Portland and Montavilla the surface is not stated anywhere and is left unverified."
+        },
+        {
+          "q": "Are nets provided indoors?",
+          "a": "Unverified at all four, which is a deliberately narrow reading. Southwest and St. Johns do say \"nets provided\", but only in the description of their registered programmes, not of drop-in play. It is very likely the same nets go up either way. Very likely is not a source, so the field stays empty rather than being filled with a reasonable guess."
+        }
+      ],
+      "sources": [
+        "E1"
+      ]
+    },
+    "free": {
+      "slots": {
+        "why_this_filter": "Six venues, 29 courts, and the first time this directory has been able to publish a free page at all. Every city before Portland had parks whose courts were almost certainly free to walk onto, and not one of their operators said so in writing — so fee_type stayed null and the page could not lawfully exist. Portland Parks & Recreation puts the word \"free\" in the same line as the court count for all six of its outdoor park sites, which turns a universal assumption into a verified fact. That is the whole argument for this page: it is not a list of courts we think you can play on for nothing, it is a list of courts the city has said so about.",
+        "what_qualifies": "fee_type of free, and no membership price above zero. Nothing else counts. A drop-in session with a door fee is not free, which keeps all four Portland community centres off this list at $6 and $5 — a low price is still a price. The Portland Tennis Center is off it too, for the opposite reason: its pickleball runs through registration and the city publishes no figure, so its cost is unverified rather than free, and unverified never qualifies. What is emphatically not enough to appear here is being a public park. Five other cities in this directory are full of municipal courts nobody charges for, and none of them is on a free page, because their operators never wrote it down."
+      },
+      "faqs": [
+        {
+          "q": "Which Portland pickleball courts are free?",
+          "a": "All six outdoor park sites: Columbia Park and Sellwood Park with eight courts each, Gabriel Park with six, Pier Park with four, Laurelhurst Park with two and Hillside Park with one. Twenty-nine courts in total, each described as free by Portland Parks & Recreation on the same line as its court count."
+        },
+        {
+          "q": "Is anything else in the city free?",
+          "a": "Not that the city has said. The four community centres charge $6 for adults and $5 for seniors per drop-in session. The Portland Tennis Center states no price for its summer pickleball programme, which is not the same as being free — we record its cost as unverified and it does not appear here."
+        },
+        {
+          "q": "Do I still need to bring anything?",
+          "a": "A net, at four of the six. Columbia, Pier, Sellwood and Hillside all say bring your own — that is 21 of the 29 free courts. Laurelhurst and Gabriel include nets, and both are courts the city describes as 'pickleball only', so at those two a paddle and a ball are genuinely all you need."
+        },
+        {
+          "q": "Why does it matter that the city wrote 'free' down?",
+          "a": "Because the alternative is guessing, and this directory does not. Municipal park courts across America are overwhelmingly free to walk onto, and on that reasoning we could have marked hundreds of venues free in five earlier cities. We did not, because none of those operators said so, and a fact everyone assumes is still not a fact anyone published. Portland put the word in writing next to the court count, so here it is a verified figure rather than a safe assumption."
+        },
+        {
+          "q": "Are the free courts lit?",
+          "a": "Unverified, at every one of them. Portland Parks & Recreation says nothing about lighting anywhere on its pickleball page, so all six sites read “not verified yet” rather than “no”. Since the courts are open dawn to dusk rather than to a clock time, that gap matters most between October and March."
+        }
+      ],
+      "sources": [
+        "E1"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.portland.gov/parks/recreation/pickleball",
+      "publisher": "Portland Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": [
+        "outdoor",
+        "indoor",
+        "free"
+      ],
+      "evidence": "Venue lines carrying count, address, indoor/outdoor and cost, e.g. \"8 Outdoor hard courts, free, permanent lines, bring your own net\" (Columbia Park); \"4 courts, $6 for adults/$5 for seniors\" (East Portland Community Center); \"16 outdoor hard courts, permanent lines, nets provided. Available from mid June until early September\" (Portland Tennis Center). Section headings \"Outdoor courts\" and \"Indoor Courts\". Rules: \"Courts are open from Dawn to Dusk\", \"Limit play to one hour if others are waiting\", \"Be aware surface is slippery when wet\". No lighting statement appears anywhere on the page. Snapshot: data/sources/portland/pickleball.html"
+    }
+  ]
+}
