@@ -127,7 +127,7 @@ state   3,000 - 5,000
 | 7 | Import Gate I2 in `lib/data/promote.mjs`; Page Gate 6 in `lib/page/gates.mjs` | **Active** |
 | 8 | Page Gate 1 in `lib/page/gates.mjs` (`MIN_VERIFIED_VENUES`) | **Active** |
 | 9 | `scripts/validate-keyword-map.mjs` | **Active** (template level); instance level inactive until data exists |
-| 10 | `slug` pattern in all schemas | **Active** in schema |
+| 10 | `slug` pattern in all schemas; `scripts/identity/audit.mjs` + `lib/data/identity.mjs`; Import Gate I1 refuses a quarantined identity | **Active** — 549 numeric suffixes canonicalised, 172 in-city collisions held for review |
 | 11 | Separate fields in `venue.schema.json` | **Active** in schema |
 | 12 | `status` default `pending` | **Active** in schema |
 | 13 | Import Gate I3 in `lib/data/promote.mjs`; `scripts/validate-data.mjs` C6 | **Active** |
@@ -324,3 +324,4 @@ silently.
 | 2026-09-03 | **§8 filled and locked.** The eight decisions were supplied and are now reproduced verbatim, D1-D8, with an enforcement map. The section is no longer a blocking gap. | The owner supplied strategy §8a (D1-D6) and the v4 changelog items 4 and 5 (D7-D8). Nothing was invented; the D-numbering that §8 reserved is now allocated. |
 | 2026-09-03 | Enforcement columns in §4, §5, §6 and §7 refreshed against the code that now exists. | The tables were written at Phase 0 and said "not built" for eleven things that Phases 1, 1B and 2 built. A constitution that misreports its own enforcement is worse than one with none. |
 | 2026-09-03 | **O8 closed.** | The word-band checker and its counting definition shipped in `lib/page/words.mjs`. |
+| 2026-09-03 | Identity pass run over all 18,037 rows. 549 slugs canonicalised, 203 rows held back on identity grounds. | §3 makes URLs permanent at launch and nothing is published yet, so this is the last moment a slug is free to change. Verification cannot fix identity — no source states a slug. |

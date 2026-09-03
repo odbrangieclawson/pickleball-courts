@@ -5,6 +5,7 @@ import {join} from 'node:path'
 import {loadRows, REPO_ROOT} from './lib/load-csv.mjs'
 import {mapRow} from './import/mapper.mjs'
 import {loadVerifiedOverlay, applyVerifiedOverlay} from '../lib/data/verified.mjs'
+import {loadIdentity, applyIdentity} from '../lib/data/identity.mjs'
 import {promoteAll} from '../lib/data/promote.mjs'
 import {getCounts} from '../lib/data/counts.mjs'
 import {checkPageGates, formatGateReport} from '../lib/page/gates.mjs'
@@ -22,8 +23,12 @@ const county = JSON.parse(readFileSync(join(REPO_ROOT, 'reports', 'county-per-ro
 all.forEach((v, i) => { v.county = county[i].needs_review ? null : county[i].county })
 
 /* Phase 1B facts, laid over the imported rows before anything is promoted. */
+const identity = loadIdentity(REPO_ROOT)
+const {venues: identified, renamed: idRenamed, quarantined: idHeld} = applyIdentity(all, identity)
+if (idRenamed || idHeld) console.log(`identity: ${idRenamed} slug(s) canonicalised, ${idHeld} row(s) held back`)
+
 const overlay = loadVerifiedOverlay(REPO_ROOT)
-const {venues: withFacts, applied, fieldsWritten, fieldsCleared, cleared, skipped} = applyVerifiedOverlay(all, overlay.bySlug)
+const {venues: withFacts, applied, fieldsWritten, fieldsCleared, cleared, skipped} = applyVerifiedOverlay(identified, overlay.bySlug)
 if (applied) console.log(`verified overlay: ${fieldsWritten} sourced field(s) across ${applied} venue(s) from ${overlay.files.join(", ")}`)
 if (fieldsCleared) console.log(`  ${fieldsCleared} unsourced field(s) cleared to null on those venues (Rule 7): ${[...new Set(cleared.map(c => c.field))].join(", ")}`)
 for (const s of skipped) console.log(`  SKIPPED ${s.slug}.${s.field} — ${s.why}`)

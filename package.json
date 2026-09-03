@@ -27,7 +27,8 @@
     "validate:data": "node scripts/validate-data.mjs",
     "validate:bypass": "node scripts/validate-no-bypass.mjs",
     "preview:city": "node scripts/preview-city.mjs",
-    "page:gates": "node scripts/build-city.mjs"
+    "page:gates": "node scripts/build-city.mjs",
+    "identity:audit": "node scripts/identity/audit.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

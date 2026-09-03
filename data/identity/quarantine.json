@@ -1,0 +1,1467 @@
+{
+  "generated": "2026-09-03",
+  "note": "Rows held back from publication on identity grounds. Not a data-quality opinion — an unresolved question about which venue this is or where it is.",
+  "rows": {
+    "guerneville": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 38.5020445,-122.9987407 fall outside AZ"
+    },
+    "shady-oaks-park": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 38.6785145,-121.2257818 fall outside AZ"
+    },
+    "beale-park-13179": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/bakersfield claim the slug \"beale-park\"",
+      "wanted_slug": "beale-park",
+      "peers": [
+        "beale-park"
+      ]
+    },
+    "beale-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/bakersfield claim the slug \"beale-park\"",
+      "wanted_slug": "beale-park",
+      "peers": [
+        "beale-park-13179"
+      ]
+    },
+    "anderson-valley-high-school": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 37.4761991,-83.6749145 fall outside CA"
+    },
+    "burbank-tennis-center-14271": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/burbank claim the slug \"burbank-tennis-center\"",
+      "wanted_slug": "burbank-tennis-center",
+      "peers": [
+        "burbank-tennis-center"
+      ]
+    },
+    "burbank-tennis-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/burbank claim the slug \"burbank-tennis-center\"",
+      "wanted_slug": "burbank-tennis-center",
+      "peers": [
+        "burbank-tennis-center-14271"
+      ]
+    },
+    "fritz-burns-park-6637": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/la-quinta claim the slug \"fritz-burns-park\"",
+      "wanted_slug": "fritz-burns-park",
+      "peers": [
+        "fritz-burns-park"
+      ]
+    },
+    "fritz-burns-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/la-quinta claim the slug \"fritz-burns-park\"",
+      "wanted_slug": "fritz-burns-park",
+      "peers": [
+        "fritz-burns-park-6637"
+      ]
+    },
+    "lafayette-community-center-11908": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/lafayette claim the slug \"lafayette-community-center\"",
+      "wanted_slug": "lafayette-community-center",
+      "peers": [
+        "lafayette-community-center"
+      ]
+    },
+    "lafayette-community-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/lafayette claim the slug \"lafayette-community-center\"",
+      "wanted_slug": "lafayette-community-center",
+      "peers": [
+        "lafayette-community-center-11908"
+      ]
+    },
+    "chaparral-country-club": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/palm-desert claim the slug \"chaparral-country-club\"",
+      "wanted_slug": "chaparral-country-club",
+      "peers": [
+        "chaparral-country-club-622"
+      ]
+    },
+    "chaparral-country-club-622": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/palm-desert claim the slug \"chaparral-country-club\"",
+      "wanted_slug": "chaparral-country-club",
+      "peers": [
+        "chaparral-country-club"
+      ]
+    },
+    "curtis-park-666": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/sacramento claim the slug \"curtis-park\"",
+      "wanted_slug": "curtis-park",
+      "peers": [
+        "curtis-park"
+      ]
+    },
+    "curtis-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/sacramento claim the slug \"curtis-park\"",
+      "wanted_slug": "curtis-park",
+      "peers": [
+        "curtis-park-666"
+      ]
+    },
+    "heritage-park-667": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/sacramento claim the slug \"heritage-park\"",
+      "wanted_slug": "heritage-park",
+      "peers": [
+        "heritage-park"
+      ]
+    },
+    "heritage-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CA/sacramento claim the slug \"heritage-park\"",
+      "wanted_slug": "heritage-park",
+      "peers": [
+        "heritage-park-667"
+      ]
+    },
+    "highland-hollow-park-763": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/aurora claim the slug \"highland-hollow-park\"",
+      "wanted_slug": "highland-hollow-park",
+      "peers": [
+        "highland-hollow-park"
+      ]
+    },
+    "highland-hollow-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/aurora claim the slug \"highland-hollow-park\"",
+      "wanted_slug": "highland-hollow-park",
+      "peers": [
+        "highland-hollow-park-763"
+      ]
+    },
+    "vista-park-pickleball-courts-13226": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/colorado-springs claim the slug \"vista-park-pickleball-courts\"",
+      "wanted_slug": "vista-park-pickleball-courts",
+      "peers": [
+        "vista-park-pickleball-courts"
+      ]
+    },
+    "vista-park-pickleball-courts": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/colorado-springs claim the slug \"vista-park-pickleball-courts\"",
+      "wanted_slug": "vista-park-pickleball-courts",
+      "peers": [
+        "vista-park-pickleball-courts-13226"
+      ]
+    },
+    "northfield-high-school-9503": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/denver claim the slug \"northfield-high-school\"",
+      "wanted_slug": "northfield-high-school",
+      "peers": [
+        "northfield-high-school"
+      ]
+    },
+    "northfield-high-school": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/denver claim the slug \"northfield-high-school\"",
+      "wanted_slug": "northfield-high-school",
+      "peers": [
+        "northfield-high-school-9503"
+      ]
+    },
+    "stapleton-rec-center": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 32.9644062,-102.8249611 fall outside CO"
+    },
+    "eagle-valley-elementary": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/eagle claim the slug \"eagle-valley-elementary\"",
+      "wanted_slug": "eagle-valley-elementary",
+      "peers": [
+        "eagle-valley-elementary-7509"
+      ]
+    },
+    "eagle-valley-elementary-7509": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/eagle claim the slug \"eagle-valley-elementary\"",
+      "wanted_slug": "eagle-valley-elementary",
+      "peers": [
+        "eagle-valley-elementary"
+      ]
+    },
+    "town-park-meeker": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 45.0785112,-94.3104409 fall outside CO"
+    },
+    "norwood-public-high-school-gym": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 40.9988582,-73.958649 fall outside CO"
+    },
+    "south-yamaguchi-park-13171": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/pagosa-springs claim the slug \"south-yamaguchi-park\"",
+      "wanted_slug": "south-yamaguchi-park",
+      "peers": [
+        "south-yamaguchi-park"
+      ]
+    },
+    "south-yamaguchi-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/pagosa-springs claim the slug \"south-yamaguchi-park\"",
+      "wanted_slug": "south-yamaguchi-park",
+      "peers": [
+        "south-yamaguchi-park-13171"
+      ]
+    },
+    "ymca-of-pueblo": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 34.0380198,-118.3673282 fall outside CO"
+    },
+    "prospect-park-13789": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/wheat-ridge claim the slug \"prospect-park\"",
+      "wanted_slug": "prospect-park",
+      "peers": [
+        "prospect-park"
+      ]
+    },
+    "prospect-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CO/wheat-ridge claim the slug \"prospect-park\"",
+      "wanted_slug": "prospect-park",
+      "peers": [
+        "prospect-park-13789"
+      ]
+    },
+    "fairfield-hills-10840": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CT/newtown claim the slug \"fairfield-hills\"",
+      "wanted_slug": "fairfield-hills",
+      "peers": [
+        "fairfield-hills"
+      ]
+    },
+    "fairfield-hills": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CT/newtown claim the slug \"fairfield-hills\"",
+      "wanted_slug": "fairfield-hills",
+      "peers": [
+        "fairfield-hills-10840"
+      ]
+    },
+    "rye-street-park-12047": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CT/south-windsor claim the slug \"rye-street-park\"",
+      "wanted_slug": "rye-street-park",
+      "peers": [
+        "rye-street-park"
+      ]
+    },
+    "rye-street-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CT/south-windsor claim the slug \"rye-street-park\"",
+      "wanted_slug": "rye-street-park",
+      "peers": [
+        "rye-street-park-12047"
+      ]
+    },
+    "cummings-park-10855": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CT/stamford claim the slug \"cummings-park\"",
+      "wanted_slug": "cummings-park",
+      "peers": [
+        "cummings-park"
+      ]
+    },
+    "cummings-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in CT/stamford claim the slug \"cummings-park\"",
+      "wanted_slug": "cummings-park",
+      "peers": [
+        "cummings-park-10855"
+      ]
+    },
+    "public-court-millsboro": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 39.981102,-80.0013245 fall outside DE"
+    },
+    "bill-keller-park-1045": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/debary claim the slug \"bill-keller-park\"",
+      "wanted_slug": "bill-keller-park",
+      "peers": [
+        "bill-keller-park"
+      ]
+    },
+    "bill-keller-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/debary claim the slug \"bill-keller-park\"",
+      "wanted_slug": "bill-keller-park",
+      "peers": [
+        "bill-keller-park-1045"
+      ]
+    },
+    "tom-petty-park-11984": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/gainesville claim the slug \"tom-petty-park\"",
+      "wanted_slug": "tom-petty-park",
+      "peers": [
+        "tom-petty-park"
+      ]
+    },
+    "tom-petty-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/gainesville claim the slug \"tom-petty-park\"",
+      "wanted_slug": "tom-petty-park",
+      "peers": [
+        "tom-petty-park-11984"
+      ]
+    },
+    "isle-of-palms-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/jacksonville claim the slug \"isle-of-palms-park\"",
+      "wanted_slug": "isle-of-palms-park",
+      "peers": [
+        "isle-of-palms-park-1112"
+      ]
+    },
+    "isle-of-palms-park-1112": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/jacksonville claim the slug \"isle-of-palms-park\"",
+      "wanted_slug": "isle-of-palms-park",
+      "peers": [
+        "isle-of-palms-park"
+      ]
+    },
+    "jupiter-community-park-12529": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/jupiter claim the slug \"jupiter-community-park\"",
+      "wanted_slug": "jupiter-community-park",
+      "peers": [
+        "jupiter-community-park"
+      ]
+    },
+    "jupiter-community-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/jupiter claim the slug \"jupiter-community-park\"",
+      "wanted_slug": "jupiter-community-park",
+      "peers": [
+        "jupiter-community-park-12529"
+      ]
+    },
+    "pear-park-1140": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/leesburg claim the slug \"pear-park\"",
+      "wanted_slug": "pear-park",
+      "peers": [
+        "pear-park"
+      ]
+    },
+    "pear-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/leesburg claim the slug \"pear-park\"",
+      "wanted_slug": "pear-park",
+      "peers": [
+        "pear-park-1140"
+      ]
+    },
+    "cuyler-community-center-1162": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/mims claim the slug \"cuyler-community-center\"",
+      "wanted_slug": "cuyler-community-center",
+      "peers": [
+        "cuyler-community-center"
+      ]
+    },
+    "cuyler-community-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/mims claim the slug \"cuyler-community-center\"",
+      "wanted_slug": "cuyler-community-center",
+      "peers": [
+        "cuyler-community-center-1162"
+      ]
+    },
+    "taylor-county-sports-complex": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/perry claim the slug \"taylor-county-sports-complex\"",
+      "wanted_slug": "taylor-county-sports-complex",
+      "peers": [
+        "taylor-county-sports-complex-1227"
+      ]
+    },
+    "taylor-county-sports-complex-1227": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/perry claim the slug \"taylor-county-sports-complex\"",
+      "wanted_slug": "taylor-county-sports-complex",
+      "peers": [
+        "taylor-county-sports-complex"
+      ]
+    },
+    "gilchrist-park-1249": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/punta-gorda claim the slug \"gilchrist-park\"",
+      "wanted_slug": "gilchrist-park",
+      "peers": [
+        "gilchrist-park"
+      ]
+    },
+    "gilchrist-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/punta-gorda claim the slug \"gilchrist-park\"",
+      "wanted_slug": "gilchrist-park",
+      "peers": [
+        "gilchrist-park-1249"
+      ]
+    },
+    "tanglewood-1268": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/sebring claim the slug \"tanglewood\"",
+      "wanted_slug": "tanglewood",
+      "peers": [
+        "tanglewood"
+      ]
+    },
+    "tanglewood": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in FL/sebring claim the slug \"tanglewood\"",
+      "wanted_slug": "tanglewood",
+      "peers": [
+        "tanglewood-1268"
+      ]
+    },
+    "peachtree-hills-park-12157": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/atlanta claim the slug \"peachtree-hills-park\"",
+      "wanted_slug": "peachtree-hills-park",
+      "peers": [
+        "peachtree-hills-park"
+      ]
+    },
+    "peachtree-hills-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/atlanta claim the slug \"peachtree-hills-park\"",
+      "wanted_slug": "peachtree-hills-park",
+      "peers": [
+        "peachtree-hills-park-12157"
+      ]
+    },
+    "dacula-park-10191": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/dacula claim the slug \"dacula-park\"",
+      "wanted_slug": "dacula-park",
+      "peers": [
+        "dacula-park"
+      ]
+    },
+    "dacula-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/dacula claim the slug \"dacula-park\"",
+      "wanted_slug": "dacula-park",
+      "peers": [
+        "dacula-park-10191"
+      ]
+    },
+    "mt-tabor-park-1364": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/dallas claim the slug \"mt-tabor-park\"",
+      "wanted_slug": "mt-tabor-park",
+      "peers": [
+        "mt-tabor-park"
+      ]
+    },
+    "mt-tabor-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/dallas claim the slug \"mt-tabor-park\"",
+      "wanted_slug": "mt-tabor-park",
+      "peers": [
+        "mt-tabor-park-1364"
+      ]
+    },
+    "boundary-waters-activity-center-12896": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/douglasville claim the slug \"boundary-waters-activity-center\"",
+      "wanted_slug": "boundary-waters-activity-center",
+      "peers": [
+        "boundary-waters-activity-center"
+      ]
+    },
+    "boundary-waters-activity-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/douglasville claim the slug \"boundary-waters-activity-center\"",
+      "wanted_slug": "boundary-waters-activity-center",
+      "peers": [
+        "boundary-waters-activity-center-12896"
+      ]
+    },
+    "woodie-fite-senior-center-6391": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/douglasville claim the slug \"woodie-fite-senior-center\"",
+      "wanted_slug": "woodie-fite-senior-center",
+      "peers": [
+        "woodie-fite-senior-center"
+      ]
+    },
+    "woodie-fite-senior-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in GA/douglasville claim the slug \"woodie-fite-senior-center\"",
+      "wanted_slug": "woodie-fite-senior-center",
+      "peers": [
+        "woodie-fite-senior-center-6391"
+      ]
+    },
+    "southbridge-racquet-club": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 43.1560785,-77.6923497 fall outside GA"
+    },
+    "hale-iwa-beach-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/hale-iwa claim the slug \"hale-iwa-beach-park\"",
+      "wanted_slug": "hale-iwa-beach-park",
+      "peers": []
+    },
+    "sunset-beach-neighborhood-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/hale-iwa claim the slug \"sunset-beach-neighborhood-park\"",
+      "wanted_slug": "sunset-beach-neighborhood-park",
+      "peers": []
+    },
+    "hau-ula-community-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/hau-ula claim the slug \"hau-ula-community-park\"",
+      "wanted_slug": "hau-ula-community-park",
+      "peers": []
+    },
+    "swanzy-beach-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "3 rows in HI/ka-a-awa claim the slug \"swanzy-beach-park\"",
+      "wanted_slug": "swanzy-beach-park",
+      "peers": [
+        "swanzy-beach-park-10938",
+        "swanzy-beach-park-10938"
+      ]
+    },
+    "swanzy-beach-park-10938": {
+      "reason": "in_city_slug_collision",
+      "detail": "3 rows in HI/ka-a-awa claim the slug \"swanzy-beach-park\"",
+      "wanted_slug": "swanzy-beach-park",
+      "peers": [
+        "swanzy-beach-park"
+      ]
+    },
+    "kapunahala-neighborhood-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/k-ne-ohe claim the slug \"kapunahala-neighborhood-park\"",
+      "wanted_slug": "kapunahala-neighborhood-park",
+      "peers": []
+    },
+    "laenani-neighborhood-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/k-ne-ohe claim the slug \"laenani-neighborhood-park\"",
+      "wanted_slug": "laenani-neighborhood-park",
+      "peers": []
+    },
+    "k-ne-ohe-community-senior-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/kne-ohe claim the slug \"k-ne-ohe-community-senior-center\"",
+      "wanted_slug": "k-ne-ohe-community-senior-center",
+      "peers": []
+    },
+    "k-ne-ohe-district-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/kne-ohe claim the slug \"k-ne-ohe-district-park\"",
+      "wanted_slug": "k-ne-ohe-district-park",
+      "peers": []
+    },
+    "kahalu-u-community-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/kne-ohe claim the slug \"kahalu-u-community-park\"",
+      "wanted_slug": "kahalu-u-community-park",
+      "peers": []
+    },
+    "kalani-anaole-beach-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/wai-anae claim the slug \"kalani-anaole-beach-park\"",
+      "wanted_slug": "kalani-anaole-beach-park",
+      "peers": []
+    },
+    "m-kaha-community-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/wai-anae claim the slug \"m-kaha-community-park\"",
+      "wanted_slug": "m-kaha-community-park",
+      "peers": []
+    },
+    "wai-anae-district-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in HI/wai-anae claim the slug \"wai-anae-district-park\"",
+      "wanted_slug": "wai-anae-district-park",
+      "peers": []
+    },
+    "sunnyside-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/atlantic claim the slug \"sunnyside-park\"",
+      "wanted_slug": "sunnyside-park",
+      "peers": [
+        "sunnyside-park-1482"
+      ]
+    },
+    "sunnyside-park-1482": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/atlantic claim the slug \"sunnyside-park\"",
+      "wanted_slug": "sunnyside-park",
+      "peers": [
+        "sunnyside-park"
+      ]
+    },
+    "cole-park": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 47.6144219,-122.192337 fall outside IA"
+    },
+    "tower-park-1506": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/des-moines claim the slug \"tower-park\"",
+      "wanted_slug": "tower-park",
+      "peers": [
+        "tower-park"
+      ]
+    },
+    "tower-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/des-moines claim the slug \"tower-park\"",
+      "wanted_slug": "tower-park",
+      "peers": [
+        "tower-park-1506"
+      ]
+    },
+    "grimes-sports-complex-6647": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/grimes claim the slug \"grimes-sports-complex\"",
+      "wanted_slug": "grimes-sports-complex",
+      "peers": [
+        "grimes-sports-complex"
+      ]
+    },
+    "grimes-sports-complex": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/grimes claim the slug \"grimes-sports-complex\"",
+      "wanted_slug": "grimes-sports-complex",
+      "peers": [
+        "grimes-sports-complex-6647"
+      ]
+    },
+    "city-park-ida-gove": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 42.3650133,-71.0343185 fall outside IA"
+    },
+    "oviatt-elementary-norwalk": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 40.4704666,-79.7202708 fall outside IA"
+    },
+    "caldwell-park-6472": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/pella claim the slug \"caldwell-park\"",
+      "wanted_slug": "caldwell-park",
+      "peers": [
+        "caldwell-park"
+      ]
+    },
+    "caldwell-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/pella claim the slug \"caldwell-park\"",
+      "wanted_slug": "caldwell-park",
+      "peers": [
+        "caldwell-park-6472"
+      ]
+    },
+    "sergeant-bluff-community-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/sergeant-bluff claim the slug \"sergeant-bluff-community-center\"",
+      "wanted_slug": "sergeant-bluff-community-center",
+      "peers": [
+        "sergeant-bluff-community-center-2"
+      ]
+    },
+    "sergeant-bluff-community-center-2": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IA/sergeant-bluff claim the slug \"sergeant-bluff-community-center\"",
+      "wanted_slug": "sergeant-bluff-community-center",
+      "peers": [
+        "sergeant-bluff-community-center"
+      ]
+    },
+    "raymond-park-1594": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in ID/pocatello claim the slug \"raymond-park\"",
+      "wanted_slug": "raymond-park",
+      "peers": [
+        "raymond-park"
+      ]
+    },
+    "raymond-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in ID/pocatello claim the slug \"raymond-park\"",
+      "wanted_slug": "raymond-park",
+      "peers": [
+        "raymond-park-1594"
+      ]
+    },
+    "lakeview-memorial-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in ID/sandpoint claim the slug \"lakeview-memorial-park\"",
+      "wanted_slug": "lakeview-memorial-park",
+      "peers": [
+        "lakeview-memorial-park-6753"
+      ]
+    },
+    "lakeview-memorial-park-6753": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in ID/sandpoint claim the slug \"lakeview-memorial-park\"",
+      "wanted_slug": "lakeview-memorial-park",
+      "peers": [
+        "lakeview-memorial-park"
+      ]
+    },
+    "tamarack": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 42.1866344,-83.7230966 fall outside ID"
+    },
+    "south-shores-park-1649": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/decatur claim the slug \"south-shores-park\"",
+      "wanted_slug": "south-shores-park",
+      "peers": [
+        "south-shores-park"
+      ]
+    },
+    "south-shores-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/decatur claim the slug \"south-shores-park\"",
+      "wanted_slug": "south-shores-park",
+      "peers": [
+        "south-shores-park-1649"
+      ]
+    },
+    "mitchell-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/east-moline claim the slug \"mitchell-park\"",
+      "wanted_slug": "mitchell-park",
+      "peers": [
+        "mitchell-park-10406"
+      ]
+    },
+    "mitchell-park-10406": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/east-moline claim the slug \"mitchell-park\"",
+      "wanted_slug": "mitchell-park",
+      "peers": [
+        "mitchell-park"
+      ]
+    },
+    "galena-arts-and-recreation": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/galena claim the slug \"galena-arts-and-recreation\"",
+      "wanted_slug": "galena-arts-and-recreation",
+      "peers": [
+        "galena-arts-and-recreation-7516"
+      ]
+    },
+    "galena-arts-and-recreation-7516": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/galena claim the slug \"galena-arts-and-recreation\"",
+      "wanted_slug": "galena-arts-and-recreation",
+      "peers": [
+        "galena-arts-and-recreation"
+      ]
+    },
+    "underwood-park-13719": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/normal claim the slug \"underwood-park\"",
+      "wanted_slug": "underwood-park",
+      "peers": [
+        "underwood-park"
+      ]
+    },
+    "underwood-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/normal claim the slug \"underwood-park\"",
+      "wanted_slug": "underwood-park",
+      "peers": [
+        "underwood-park-13719"
+      ]
+    },
+    "hesse-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/o-fallon claim the slug \"hesse-park\"",
+      "wanted_slug": "hesse-park",
+      "peers": []
+    },
+    "o-fallon-community-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/o-fallon claim the slug \"o-fallon-community-park\"",
+      "wanted_slug": "o-fallon-community-park",
+      "peers": []
+    },
+    "o-fallon-il-ymca": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/o-fallon claim the slug \"o-fallon-il-ymca\"",
+      "wanted_slug": "o-fallon-il-ymca",
+      "peers": []
+    },
+    "sinnissippi-park-1751": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/rockford claim the slug \"sinnissippi-park\"",
+      "wanted_slug": "sinnissippi-park",
+      "peers": [
+        "sinnissippi-park"
+      ]
+    },
+    "sinnissippi-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/rockford claim the slug \"sinnissippi-park\"",
+      "wanted_slug": "sinnissippi-park",
+      "peers": [
+        "sinnissippi-park-1751"
+      ]
+    },
+    "springfield-ymca": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/springfield claim the slug \"springfield-ymca\"",
+      "wanted_slug": "springfield-ymca",
+      "peers": [
+        "springfield-ymca-7111"
+      ]
+    },
+    "springfield-ymca-7111": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in IL/springfield claim the slug \"springfield-ymca\"",
+      "wanted_slug": "springfield-ymca",
+      "peers": [
+        "springfield-ymca"
+      ]
+    },
+    "woodson-bend-resort-11331": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in KY/bronston claim the slug \"woodson-bend-resort\"",
+      "wanted_slug": "woodson-bend-resort",
+      "peers": [
+        "woodson-bend-resort"
+      ]
+    },
+    "woodson-bend-resort": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in KY/bronston claim the slug \"woodson-bend-resort\"",
+      "wanted_slug": "woodson-bend-resort",
+      "peers": [
+        "woodson-bend-resort-11331"
+      ]
+    },
+    "carlyss-park-sulphur-parks-and-recreation": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 34.3096359,-118.5318392 fall outside LA"
+    },
+    "fish-park-1997": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/athol claim the slug \"fish-park\"",
+      "wanted_slug": "fish-park",
+      "peers": [
+        "fish-park"
+      ]
+    },
+    "fish-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/athol claim the slug \"fish-park\"",
+      "wanted_slug": "fish-park",
+      "peers": [
+        "fish-park-1997"
+      ]
+    },
+    "belmont-town-field-2006": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/belmont claim the slug \"belmont-town-field\"",
+      "wanted_slug": "belmont-town-field",
+      "peers": [
+        "belmont-town-field"
+      ]
+    },
+    "belmont-town-field": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/belmont claim the slug \"belmont-town-field\"",
+      "wanted_slug": "belmont-town-field",
+      "peers": [
+        "belmont-town-field-2006"
+      ]
+    },
+    "boylston-town-center-park": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 43.6603467,-75.9646414 fall outside MA"
+    },
+    "king-street-memorial-park-7653": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/franklin claim the slug \"king-street-memorial-park\"",
+      "wanted_slug": "king-street-memorial-park",
+      "peers": [
+        "king-street-memorial-park"
+      ]
+    },
+    "king-street-memorial-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/franklin claim the slug \"king-street-memorial-park\"",
+      "wanted_slug": "king-street-memorial-park",
+      "peers": [
+        "king-street-memorial-park-7653"
+      ]
+    },
+    "lancaster-community-center-gym-2040": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/lancaster claim the slug \"lancaster-community-center-gym\"",
+      "wanted_slug": "lancaster-community-center-gym",
+      "peers": [
+        "lancaster-community-center-gym"
+      ]
+    },
+    "lancaster-community-center-gym": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/lancaster claim the slug \"lancaster-community-center-gym\"",
+      "wanted_slug": "lancaster-community-center-gym",
+      "peers": [
+        "lancaster-community-center-gym-2040"
+      ]
+    },
+    "doyle-field-2041": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/leominster claim the slug \"doyle-field\"",
+      "wanted_slug": "doyle-field",
+      "peers": [
+        "doyle-field"
+      ]
+    },
+    "doyle-field": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/leominster claim the slug \"doyle-field\"",
+      "wanted_slug": "doyle-field",
+      "peers": [
+        "doyle-field-2041"
+      ]
+    },
+    "kingsbury-club-medfield-8761": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/medfield claim the slug \"kingsbury-club-medfield\"",
+      "wanted_slug": "kingsbury-club-medfield",
+      "peers": [
+        "kingsbury-club-medfield"
+      ]
+    },
+    "kingsbury-club-medfield": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MA/medfield claim the slug \"kingsbury-club-medfield\"",
+      "wanted_slug": "kingsbury-club-medfield",
+      "peers": [
+        "kingsbury-club-medfield-8761"
+      ]
+    },
+    "st-james-parish-center-gym-grafton": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 39.3370361,-80.020355 fall outside MA"
+    },
+    "nelson-ball-pb-courts": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 40.5347196,-95.3191476 fall outside MA"
+    },
+    "winchester-recreation-department": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 39.3221636,-95.2668995 fall outside MA"
+    },
+    "cove-point-park-6387": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MD/lusby claim the slug \"cove-point-park\"",
+      "wanted_slug": "cove-point-park",
+      "peers": [
+        "cove-point-park"
+      ]
+    },
+    "cove-point-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MD/lusby claim the slug \"cove-point-park\"",
+      "wanted_slug": "cove-point-park",
+      "peers": [
+        "cove-point-park-6387"
+      ]
+    },
+    "hallowing-point-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MD/prince-frederick claim the slug \"hallowing-point-park\"",
+      "wanted_slug": "hallowing-point-park",
+      "peers": [
+        "hallowing-point-park-13876"
+      ]
+    },
+    "hallowing-point-park-13876": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MD/prince-frederick claim the slug \"hallowing-point-park\"",
+      "wanted_slug": "hallowing-point-park",
+      "peers": [
+        "hallowing-point-park"
+      ]
+    },
+    "guayabitos-pickleball-club": {
+      "reason": "geography_contradiction",
+      "detail": "postal code 63724 does not belong to ME and there are no coordinates to settle it"
+    },
+    "canton-summit-on-the-park": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 32.612602,-90.0367512 fall outside MI"
+    },
+    "freedom-park-2313": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 32.612602,-90.0367512 fall outside MI"
+    },
+    "clay-township-splash-pad-park": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 39.3187409,-94.4046405 fall outside MI"
+    },
+    "jackson-ella-sharp-park": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 39.0282521,-94.5034622 fall outside MI"
+    },
+    "lake-odessa-picklebowl": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MI/lake-odessa claim the slug \"lake-odessa-picklebowl\"",
+      "wanted_slug": "lake-odessa-picklebowl",
+      "peers": [
+        "lake-odessa-picklebowl-5312"
+      ]
+    },
+    "lake-odessa-picklebowl-5312": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MI/lake-odessa claim the slug \"lake-odessa-picklebowl\"",
+      "wanted_slug": "lake-odessa-picklebowl",
+      "peers": [
+        "lake-odessa-picklebowl"
+      ]
+    },
+    "plym-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MI/niles claim the slug \"plym-park\"",
+      "wanted_slug": "plym-park",
+      "peers": [
+        "plym-park-13100"
+      ]
+    },
+    "plym-park-13100": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MI/niles claim the slug \"plym-park\"",
+      "wanted_slug": "plym-park",
+      "peers": [
+        "plym-park"
+      ]
+    },
+    "petoskey-high-school-tennis-courts-2439": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MI/petoskey claim the slug \"petoskey-high-school-tennis-courts\"",
+      "wanted_slug": "petoskey-high-school-tennis-courts",
+      "peers": [
+        "petoskey-high-school-tennis-courts"
+      ]
+    },
+    "petoskey-high-school-tennis-courts": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MI/petoskey claim the slug \"petoskey-high-school-tennis-courts\"",
+      "wanted_slug": "petoskey-high-school-tennis-courts",
+      "peers": [
+        "petoskey-high-school-tennis-courts-2439"
+      ]
+    },
+    "prairie-park-9999": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/otsego claim the slug \"prairie-park\"",
+      "wanted_slug": "prairie-park",
+      "peers": [
+        "prairie-park"
+      ]
+    },
+    "prairie-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/otsego claim the slug \"prairie-park\"",
+      "wanted_slug": "prairie-park",
+      "peers": [
+        "prairie-park-9999"
+      ]
+    },
+    "cooke-park-10959": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/rochester claim the slug \"cooke-park\"",
+      "wanted_slug": "cooke-park",
+      "peers": [
+        "cooke-park"
+      ]
+    },
+    "cooke-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/rochester claim the slug \"cooke-park\"",
+      "wanted_slug": "cooke-park",
+      "peers": [
+        "cooke-park-10959"
+      ]
+    },
+    "val-smith-park-5528": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/sartell claim the slug \"val-smith-park\"",
+      "wanted_slug": "val-smith-park",
+      "peers": [
+        "val-smith-park"
+      ]
+    },
+    "val-smith-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/sartell claim the slug \"val-smith-park\"",
+      "wanted_slug": "val-smith-park",
+      "peers": [
+        "val-smith-park-5528"
+      ]
+    },
+    "whitney-recreation-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/st-cloud claim the slug \"whitney-recreation-center\"",
+      "wanted_slug": "whitney-recreation-center",
+      "peers": [
+        "whitney-recreation-center-2584"
+      ]
+    },
+    "whitney-recreation-center-2584": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/st-cloud claim the slug \"whitney-recreation-center\"",
+      "wanted_slug": "whitney-recreation-center",
+      "peers": [
+        "whitney-recreation-center"
+      ]
+    },
+    "all-world-pickleball": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MN/woodbury claim the slug \"all-world-pickleball\"",
+      "wanted_slug": "all-world-pickleball",
+      "peers": []
+    },
+    "community-christian-church-2608": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/camdenton claim the slug \"community-christian-church\"",
+      "wanted_slug": "community-christian-church",
+      "peers": [
+        "community-christian-church"
+      ]
+    },
+    "community-christian-church": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/camdenton claim the slug \"community-christian-church\"",
+      "wanted_slug": "community-christian-church",
+      "peers": [
+        "community-christian-church-2608"
+      ]
+    },
+    "spellman-park-6451": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/crestwood claim the slug \"spellman-park\"",
+      "wanted_slug": "spellman-park",
+      "peers": [
+        "spellman-park"
+      ]
+    },
+    "spellman-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/crestwood claim the slug \"spellman-park\"",
+      "wanted_slug": "spellman-park",
+      "peers": [
+        "spellman-park-6451"
+      ]
+    },
+    "jokerst-memorial-park-5589": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/festus claim the slug \"jokerst-memorial-park\"",
+      "wanted_slug": "jokerst-memorial-park",
+      "peers": [
+        "jokerst-memorial-park"
+      ]
+    },
+    "jokerst-memorial-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/festus claim the slug \"jokerst-memorial-park\"",
+      "wanted_slug": "jokerst-memorial-park",
+      "peers": [
+        "jokerst-memorial-park-5589"
+      ]
+    },
+    "lincoln-university-tennis-courts-9063": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/jefferson-city claim the slug \"lincoln-university-tennis-courts\"",
+      "wanted_slug": "lincoln-university-tennis-courts",
+      "peers": [
+        "lincoln-university-tennis-courts"
+      ]
+    },
+    "lincoln-university-tennis-courts": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/jefferson-city claim the slug \"lincoln-university-tennis-courts\"",
+      "wanted_slug": "lincoln-university-tennis-courts",
+      "peers": [
+        "lincoln-university-tennis-courts-9063"
+      ]
+    },
+    "the-pickleball-warehouse-13743": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/marionville claim the slug \"the-pickleball-warehouse\"",
+      "wanted_slug": "the-pickleball-warehouse",
+      "peers": [
+        "the-pickleball-warehouse"
+      ]
+    },
+    "the-pickleball-warehouse": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/marionville claim the slug \"the-pickleball-warehouse\"",
+      "wanted_slug": "the-pickleball-warehouse",
+      "peers": [
+        "the-pickleball-warehouse-13743"
+      ]
+    },
+    "mountain-view-family-youth-center": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates -37.8817219,145.2942221 fall outside MO"
+    },
+    "westhoff-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in MO/o-fallon claim the slug \"westhoff-park\"",
+      "wanted_slug": "westhoff-park",
+      "peers": []
+    },
+    "greensboro-sportsplex": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NC/greensboro claim the slug \"greensboro-sportsplex\"",
+      "wanted_slug": "greensboro-sportsplex",
+      "peers": [
+        "greensboro-sportsplex-2819"
+      ]
+    },
+    "greensboro-sportsplex-2819": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NC/greensboro claim the slug \"greensboro-sportsplex\"",
+      "wanted_slug": "greensboro-sportsplex",
+      "peers": [
+        "greensboro-sportsplex"
+      ]
+    },
+    "freedom-academy": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NC/reidsville claim the slug \"freedom-academy\"",
+      "wanted_slug": "freedom-academy",
+      "peers": [
+        "freedom-academy-13976"
+      ]
+    },
+    "freedom-academy-13976": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NC/reidsville claim the slug \"freedom-academy\"",
+      "wanted_slug": "freedom-academy",
+      "peers": [
+        "freedom-academy"
+      ]
+    },
+    "william-g-white-ymca-11885": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NC/winston-salem claim the slug \"william-g-white-ymca\"",
+      "wanted_slug": "william-g-white-ymca",
+      "peers": [
+        "william-g-white-ymca"
+      ]
+    },
+    "william-g-white-ymca": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NC/winston-salem claim the slug \"william-g-white-ymca\"",
+      "wanted_slug": "william-g-white-ymca",
+      "peers": [
+        "william-g-white-ymca-11885"
+      ]
+    },
+    "north-platte-rec-center-10882": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NE/north-platte claim the slug \"north-platte-rec-center\"",
+      "wanted_slug": "north-platte-rec-center",
+      "peers": [
+        "north-platte-rec-center"
+      ]
+    },
+    "north-platte-rec-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NE/north-platte claim the slug \"north-platte-rec-center\"",
+      "wanted_slug": "north-platte-rec-center",
+      "peers": [
+        "north-platte-rec-center-10882"
+      ]
+    },
+    "halleck-park-2969": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NE/papillion claim the slug \"halleck-park\"",
+      "wanted_slug": "halleck-park",
+      "peers": [
+        "halleck-park"
+      ]
+    },
+    "halleck-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NE/papillion claim the slug \"halleck-park\"",
+      "wanted_slug": "halleck-park",
+      "peers": [
+        "halleck-park-2969"
+      ]
+    },
+    "papillon-landing-papillon-ne": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 45.1010162,5.0667672 fall outside NE"
+    },
+    "mystic-pickles": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 39.7837304,-100.445882 fall outside NY"
+    },
+    "south-acres-park-3287": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NY/plattsburgh claim the slug \"south-acres-park\"",
+      "wanted_slug": "south-acres-park",
+      "peers": [
+        "south-acres-park"
+      ]
+    },
+    "south-acres-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in NY/plattsburgh claim the slug \"south-acres-park\"",
+      "wanted_slug": "south-acres-park",
+      "peers": [
+        "south-acres-park-3287"
+      ]
+    },
+    "fruitful-oaks-private-pickleball-court": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 34.1526815,-89.6318551 fall outside OK"
+    },
+    "summer-lake-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in OR/tigard claim the slug \"summer-lake-park\"",
+      "wanted_slug": "summer-lake-park",
+      "peers": [
+        "summer-lake-park-10004"
+      ]
+    },
+    "summer-lake-park-10004": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in OR/tigard claim the slug \"summer-lake-park\"",
+      "wanted_slug": "summer-lake-park",
+      "peers": [
+        "summer-lake-park"
+      ]
+    },
+    "phoenixville-civic-center-11040": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in PA/phoenixville claim the slug \"phoenixville-civic-center\"",
+      "wanted_slug": "phoenixville-civic-center",
+      "peers": [
+        "phoenixville-civic-center"
+      ]
+    },
+    "phoenixville-civic-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in PA/phoenixville claim the slug \"phoenixville-civic-center\"",
+      "wanted_slug": "phoenixville-civic-center",
+      "peers": [
+        "phoenixville-civic-center-11040"
+      ]
+    },
+    "boys-girls-club-if-western-pa": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 18.3396851,-64.9423643 fall outside PA"
+    },
+    "crush-yard-charleston-f10035": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in SC/mt-pleasant claim the slug \"crush-yard-charleston-f10035\"",
+      "wanted_slug": "crush-yard-charleston-f10035",
+      "peers": []
+    },
+    "floresville-event-center": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in TX/floresville claim the slug \"floresville-event-center\"",
+      "wanted_slug": "floresville-event-center",
+      "peers": [
+        "floresville-event-center-12431"
+      ]
+    },
+    "floresville-event-center-12431": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in TX/floresville claim the slug \"floresville-event-center\"",
+      "wanted_slug": "floresville-event-center",
+      "peers": [
+        "floresville-event-center"
+      ]
+    },
+    "the-picklr-bluffdale": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in UT/herriman claim the slug \"the-picklr-bluffdale\"",
+      "wanted_slug": "the-picklr-bluffdale",
+      "peers": []
+    },
+    "north-logan-the-picklr-north-logan-ut": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in UT/logan claim the slug \"north-logan-the-picklr-north-logan-ut\"",
+      "wanted_slug": "north-logan-the-picklr-north-logan-ut",
+      "peers": []
+    },
+    "amelia-war-memorial": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 32.5450882,-94.3768936 fall outside VA"
+    },
+    "scott-pickleball-center-at-rockwood-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in VA/north-chesterfield claim the slug \"scott-pickleball-center-at-rockwood-park\"",
+      "wanted_slug": "scott-pickleball-center-at-rockwood-park",
+      "peers": []
+    },
+    "rappahannock-county-park-washington-va": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 41.060043,-73.7321261 fall outside VA"
+    },
+    "willow-park-2": {
+      "reason": "geography_contradiction",
+      "detail": "coordinates 43.7068369,-79.3761976 fall outside VT"
+    },
+    "hillaire-park": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in WA/bellevue claim the slug \"hillaire-park\"",
+      "wanted_slug": "hillaire-park",
+      "peers": [
+        "hillaire-park-4484"
+      ]
+    },
+    "hillaire-park-4484": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in WA/bellevue claim the slug \"hillaire-park\"",
+      "wanted_slug": "hillaire-park",
+      "peers": [
+        "hillaire-park"
+      ]
+    },
+    "oshkosh-community-ymca": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in WI/oshkosh claim the slug \"oshkosh-community-ymca\"",
+      "wanted_slug": "oshkosh-community-ymca",
+      "peers": [
+        "oshkosh-community-ymca-4682"
+      ]
+    },
+    "oshkosh-community-ymca-4682": {
+      "reason": "in_city_slug_collision",
+      "detail": "2 rows in WI/oshkosh claim the slug \"oshkosh-community-ymca\"",
+      "wanted_slug": "oshkosh-community-ymca",
+      "peers": [
+        "oshkosh-community-ymca"
+      ]
+    }
+  }
+}
