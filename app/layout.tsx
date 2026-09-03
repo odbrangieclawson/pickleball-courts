@@ -76,8 +76,8 @@ import {navView} from '../lib/site/views.mjs'
 export const metadata: Metadata = {
   metadataBase: new URL(ORIGIN),
   title: {
-    default: 'Deep Pickleball — verified courts, with sources',
-    template: '%s | Deep Pickleball',
+    default: 'Find Pickleball Courts',
+    template: '%s | Find Pickleball Courts',
   },
   description:
     'A US pickleball court directory that shows you where every fact came from and when it was last checked.',
@@ -97,7 +97,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
           <div className="wrap">
             <a className="brand" href="/">
               <span className="dot" aria-hidden="true" />
-              Deep Pickleball
+              Find Pickleball Courts
             </a>
             {/*
               A <details> disclosure, not a scripted dropdown. Rule 1 says
@@ -145,7 +145,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
         <footer className="site-foot">
           <div className="wrap">
             <p>
-              <strong>Deep Pickleball.</strong> Every published fact carries a
+              <strong>Find Pickleball Courts.</strong> Every published fact carries a
               source and the date it was checked. Where we have not verified
               something, we say so rather than guessing or printing a zero.
             </p>

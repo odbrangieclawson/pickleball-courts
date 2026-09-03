@@ -71,7 +71,7 @@ Do not trust an HTTP 200. A client-side shell returns 200 for every path,
 including ones that do not exist. Check for content:
 
 ```
-curl -s https://<host>/ | grep -c "Deep Pickleball"     # expect > 0
+curl -s https://<host>/ | grep -c "Find Pickleball Courts"     # expect > 0
 curl -s https://<host>/pickleball/us/nc/charlotte/ | wc -c   # expect ~25KB, not 589
 curl -s https://<host>/sitemap.xml | grep -c "<loc>"    # expect one per published page
 curl -s https://<host>/ | grep -c "example.invalid"     # expect 0 once SITE_ORIGIN is set

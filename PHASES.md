@@ -1,6 +1,6 @@
 # PHASES.md
 
-Phase status for the Deep Pickleball directory.
+Phase status for the Find Pickleball Courts directory.
 
 This file records **where the work is**. [`decisions.md`](./decisions.md)
 records **what the rules are**. When they disagree, `decisions.md` wins.

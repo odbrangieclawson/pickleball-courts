@@ -187,7 +187,7 @@ write('venue_faqs.csv', ['venue_slug', 'position', 'question', 'answer'], faqRow
 /* ---- 6. the schema ---- */
 
 const sql = `--
--- Deep Pickleball — Supabase schema for the verified set.
+-- Find Pickleball Courts — Supabase schema for the verified set.
 --
 -- The rules this project runs on are enforced here as CONSTRAINTS, not left
 -- as conventions in application code. A directory whose value is that its

@@ -13,7 +13,7 @@ const breadcrumbLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    {'@type': 'ListItem', position: 1, name: 'Deep Pickleball', item: 'https://example.invalid/'},
+    {'@type': 'ListItem', position: 1, name: 'Find Pickleball Courts', item: 'https://example.invalid/'},
     {'@type': 'ListItem', position: 2, name: 'How we verify', item: 'https://example.invalid/how-we-verify/'},
   ],
 })

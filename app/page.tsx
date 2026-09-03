@@ -27,7 +27,7 @@ import {homeView} from '../lib/site/views.mjs'
 */
 
 export const metadata: Metadata = {
-  title: 'Deep Pickleball — verified courts, with sources',
+  title: 'Find Pickleball Courts',
   description:
     'Pickleball courts with a named source and a checked date on every fact. We publish what we have verified, and we publish the gaps too.',
   robots: {index: false, follow: false},
@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className="wrap hero-inner">
           <p className="hero-eyebrow">A US pickleball court directory</p>
-          <h1 className="hero-title">Find a court someone has actually checked</h1>
+          <h1 className="hero-title">Find Pickleball Courts Near You</h1>
           <p className="hero-sub">
             Every court count, every set of lights, every address here carries
             the source it came from and the date we checked it.

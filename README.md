@@ -1,4 +1,4 @@
-# Deep Pickleball
+# Find Pickleball Courts
 
 A US pickleball court directory. Deep state/county/city/venue hierarchy, a
 verified count as the headline promise, and visible provenance on every fact.
