@@ -86,6 +86,26 @@ export default async function CityPage({params}: Params) {
         </table>
       </div>
 
+      {v.hasEditorial && (
+        <>
+          <h2>Playing here</h2>
+          {v.editorial.map(e => (
+            <section key={e.key}>
+              <h3>{e.heading}</h3>
+              <p>{e.text}</p>
+              <p className="provenance">
+                {e.sources.map((s, i) => (
+                  <span key={s.url}>
+                    {i > 0 && ' · '}
+                    <a href={s.url}>{s.publisher}</a>, checked {s.retrieved}
+                  </span>
+                ))}
+              </p>
+            </section>
+          ))}
+        </>
+      )}
+
       <div className="note is-gap">
         <h3>What we have not verified</h3>
         <p>

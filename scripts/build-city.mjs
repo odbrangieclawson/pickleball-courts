@@ -11,6 +11,7 @@ import {getCounts} from '../lib/data/counts.mjs'
 import {checkPageGates, formatGateReport} from '../lib/page/gates.mjs'
 import {renderCityPage} from '../lib/page/city-page.mjs'
 import {findTemplatedSentences} from '../lib/page/editorial.mjs'
+import {loadEditorial, editorialFor} from '../lib/data/editorial-store.mjs'
 import {countWords} from '../lib/page/words.mjs'
 import {slugifyCounty} from './lib/us-geo.mjs'
 
@@ -23,6 +24,10 @@ const county = JSON.parse(readFileSync(join(REPO_ROOT, 'reports', 'county-per-ro
 all.forEach((v, i) => { v.county = county[i].needs_review ? null : county[i].county })
 
 /* Phase 1B facts, laid over the imported rows before anything is promoted. */
+const editorialDoc = editorialFor(loadEditorial(REPO_ROOT).byCity, city, state)
+const editorialNotes = editorialDoc?.slots ?? null
+if (editorialDoc) console.log(`editorial: ${Object.keys(editorialNotes).length} slot(s) from ${editorialDoc.file}, ${editorialDoc.sources.length} source(s)`)
+
 const identity = loadIdentity(REPO_ROOT)
 const {venues: identified, renamed: idRenamed, quarantined: idHeld} = applyIdentity(all, identity)
 if (idRenamed || idHeld) console.log(`identity: ${idRenamed} slug(s) canonicalised, ${idHeld} row(s) held back`)
@@ -51,14 +56,14 @@ try {
     citySlug: city.toLowerCase().replace(/\s+/g, '-'),
     county: onPage[0]?.county ?? null,
     countySlug: onPage[0]?.county ? slugifyCounty(onPage[0].county) : null,
-    counts, venues: onPage, editorial: null, faqs: null,
+    counts, venues: onPage, editorial: editorialNotes, faqs: null,
   })
   html = rendered.html; title = rendered.title; meta = rendered.meta; graph = [rendered.graph]
 } catch (e) {
   console.log(`RENDER REFUSED: ${e.message}\n`)
 }
 
-const gates = checkPageGates({pageType: 'city', counts, html, editorial: null, schema: graph, venues: onPage})
+const gates = checkPageGates({pageType: 'city', counts, html, editorial: editorialNotes, schema: graph, venues: onPage})
 console.log(formatGateReport(gates))
 
 console.log(`\n--- word count ---`)

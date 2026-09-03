@@ -1,0 +1,40 @@
+{
+  "city": "Seattle",
+  "state": "WA",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Every claim below is drawn from a named source listed in `sources`, not from personal experience of these courts. Nobody working on this has played on them. Where a source is silent — surface condition above all — the note says so rather than filling the gap, which is Decision D6 applied to prose instead of to a data field. Counts in this copy describe the Seattle Parks source dataset as it stood on its 2026-08-31 edit, not this site's published set, so they do not drift when our publication decisions change.",
+
+  "slots": {
+    "parking": "Seattle Parks records a parking type at every one of these court locations, and the split is almost even: twelve have a dedicated lot, thirteen are street parking only. The distinction matters less than it looks, because a dedicated lot at Green Lake Park East, Bitter Lake Playfield, Rainier Beach Playfield or Delridge Playfield serves the whole park rather than the courts, so a lot existing is not the same as a space being free when you arrive. The street-parking sites include Beacon Hill Park, Observatory Courts, Kinnear Park and Gilman Playground, all on residential blocks. The city publishes no capacity, time limit or permit information for any of them, and we have not checked restrictions on the ground, so read the posted signs before you leave the car for two hours.",
+
+    "peak_hours": "Three of these courts now close at night by order of the city, which is the single most useful thing to know before driving across Seattle for an evening game. After noise studies run with the Seattle Department of Construction and Inspections found play exceeding the limits set in Seattle Municipal Code chapter 25.08, Gilman Playground, Laurelhurst Playfield and Mt. Baker Park moved to 7 a.m. to 10 p.m. on weekdays and 9 a.m. to 10 p.m. on Saturdays, Sundays and city-observed holidays, effective 15 September 2025. Enforcement is real rather than advisory: a violation captured on timestamped photo or video gets a lock fitted to the courts for at least thirty days, and repeat violations make that lock permanent, after which the courts open only when staff are on site to unlock them. Seattle Parks publishes no crowding or peak-time data for any location, so we cannot tell you when a given court fills.",
+
+    "surface_condition": "Nobody working on this directory has inspected a court surface in Seattle, and Seattle Parks publishes no surface type, resurfacing date or condition assessment for any of these locations, which is why every venue page here shows surface as not verified rather than guessing at asphalt or acrylic. What the city does record is what each court is shared with, and that is the thing worth knowing before you go: of the twenty-five locations in the dataset, eighteen are striped for tennis and pickleball together, so expect tennis lines underfoot and, on a busy afternoon, a conversation about whose court it is. Only four are dedicated pickleball, and three of those are a single court — Maple Leaf Reservoir Park, South Park Playground and Laurelhurst Playfield. Montlake Playfield and Greenwood Park share their court with basketball, and Lakeridge Park shares with badminton. If you have played on these and can tell us which are well kept, the help-us-verify link on any venue page reaches a real queue.",
+
+    "local_scene": "Seattle Parks launched a one-year open-play pilot at the Green Lake East courts on 1 October 2025, and it is the easiest way into a game here if you do not already have three people. You turn up in the scheduled window — Monday 8 to 10 a.m., Wednesday 1 to 3 p.m., Saturday 9 to 11 a.m., or Sunday 4 to 6 p.m. — and ambassadors on site organise games and run a paddle stacking system so players rotate in rather than having to book a court as a group. The pilot was scheduled to run for one year from that October start, which puts its end around autumn 2026, so confirm it is still going before planning a trip around it. Nets are the other practical detail: the city records nets provided at seventeen of the twenty-five locations and says nothing either way about the remaining eight, so a portable net is worth having in the car."
+  },
+
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://parkways.seattle.gov/2025/09/09/seattle-parks-and-recreation-implements-new-racquet-sports-court-hours-and-open-play-pickleball-pilot/",
+      "publisher": "Seattle Parks and Recreation (Parkways)",
+      "tier": 1,
+      "published": "2025-09-09",
+      "retrieved": "2026-09-03",
+      "supports": ["peak_hours", "local_scene"],
+      "evidence": "New racquet court hours at Gilman Playground, Laurelhurst Playfield and Mt. Baker Park effective 15 September 2025: 7:00 a.m. to 10:00 p.m. weekdays, 9:00 a.m. to 10:00 p.m. Saturday, Sunday and City-observed holidays. Noise studies with SDCI found sound levels exceeding Seattle Municipal Code Chapter 25.08. Violations outside posted hours supported with timestamped visual evidence result in temporary lock installation for a minimum of 30 days; subsequent violations trigger permanent locks. Green Lake East open-play pickleball pilot launches 1 October 2025 for one year, Monday 8-10 a.m., Wednesday 1-3 p.m., Saturday 9-11 a.m., Sunday 4-6 p.m., with ambassadors who help organize games and assist participants with the paddle stacking system."
+    },
+    {
+      "id": "S1",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "published": "2026-08-31",
+      "retrieved": "2026-09-03",
+      "supports": ["parking", "surface_condition", "local_scene"],
+      "evidence": "25 court locations. PARKING: Dedicated 12, Street 13. USETYPE: Tennis/Pickleball 18, Pickleball 4, Basketball/Pickleball 2, Badminton/Pickleball 1. NETS: Yes 17, unrecorded 8. NEARBYRESTROOM: All Year 11, Seasonal 11, No 3. No surface, resurfacing or condition field exists in the layer."
+    }
+  ]
+}

@@ -60,6 +60,13 @@ export type CityVenueRow = {
   source: string | null
 }
 
+export type EditorialNote = {
+  key: string
+  heading: string
+  text: string
+  sources: {url: string; publisher: string; retrieved: string}[]
+}
+
 export type CityView = {
   city: string
   state: string
@@ -76,6 +83,9 @@ export type CityView = {
   litLine: string
   freeLine: string
   lastChecked: string
+  hasEditorial: boolean
+  editorialDate: string | null
+  editorial: EditorialNote[]
   hasFilters: boolean
   filters: CityFilterLink[]
   venues: CityVenueRow[]
