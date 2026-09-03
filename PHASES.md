@@ -201,6 +201,111 @@ Seattle has no covered or indoor verified court at all.
 
 ---
 
+## Phase 4 — Hubs and internal linking ✅ COMPLETE
+
+**Tagged `phase-4`.** County pages, the linking rules, the sitemap, and a
+crawl report that reads the built HTML rather than asking the code that
+generates the links.
+
+| Delivered | Where |
+| --- | --- |
+| County template + King County, WA | `app/.../CountyPage.tsx`, `data/editorial/king-county-wa.json` |
+| The link graph — every href minted from one place | `lib/site/links.mjs` |
+| XML sitemap, lastmod from `date_checked` | `app/sitemap.ts`, `lib/site/sitemap.mjs` |
+| Crawl report over the built files | `scripts/crawl-report.mjs` |
+
+**The state page does not publish, and that is the decision.** The brief sets
+a threshold for city, county and filter pages but names none for a state. A
+state with one published city has no document to be that its city page is not
+already, and Rule 9 forbids two URLs competing for one intent. So
+`STATE_MIN_CITIES = 3`, `/pickleball/us/wa/` 404s, and nothing links to it.
+Recorded as **O13**.
+
+**The crawl report failed three ways on its first run**, and none of it was
+visible from inside the code that generates the links: the King County page
+was an orphan, `/pickleball/us/wa/` was building but not published, and there
+were **30 dead links from a single hard-coded `<a href>` in the site nav** —
+one line, broken on every page at once, the moment the state page stopped
+publishing. That is the argument for reading the rendered files.
+
+---
+
+## Phase 5 — Venue and filter templates ✅ COMPLETE
+
+**Tagged `phase-5`.** The 21-field fact panel, the trust ladder, the claim
+call-to-action, and the five-filter rule enforced narrowly.
+
+| Delivered | Where |
+| --- | --- |
+| Venue template, full fact panel | `app/.../[slug]/page.tsx`, `lib/site/views.mjs` |
+| Filter template, per-filter sourced intros | `app/.../[slug]/FilterPage.tsx` |
+| Membership rules, deliberately strict | `filterView()` in `lib/site/views.mjs` |
+| 14 noindex facets, 28 robots directives | `lib/site/facets.mjs`, `app/robots.ts` |
+| Six-gate report by page type | `scripts/gate-all.mjs` |
+
+**No AggregateRating is emitted anywhere.** `rating` and `user_rating` both
+arrived with the import with undocumented origin and are quarantined under
+O2. A node is emitted only from first-party ratings above a count of 3, which
+today is nothing — the correct outcome, and it still beats three competitors
+who ship none.
+
+**Three filters do not exist, for two different reasons.** `/indoor/` has zero
+matching venues: Seattle has no verified indoor court at all. `/free/` and
+`/public/` have no lawful data driver, because `fee_type` and `access_type`
+are unverified everywhere (**O1**). Neither borrows another filter's number to
+manufacture a page.
+
+**Gate 1 was wrong for venue pages** and had been since it was written. It
+applied the 3-verified-venue city rule to venues, which would have failed
+every venue page ever built for the crime of being one venue. §7 says a venue
+needs a verified address and a verified court count; it now checks that, and
+checks both carry provenance rather than merely existing.
+
+---
+
+## Phase 6 — Technical SEO and schema ✅ COMPLETE
+
+**Tagged `phase-6`.** The layer none of the competitors are trying at, plus CI
+that refuses to ship a broken one.
+
+| Delivered | Where |
+| --- | --- |
+| Schema validation + AggregateRating negative test | `scripts/validate-schema.mjs` |
+| Permanent CI: JS-off, gates, schema, crawl, 404 | `.github/workflows/ci.yml` |
+| Import + page gates with a summary table | `scripts/gates-ci.mjs` |
+| 404 monitor with an append-only URL ledger | `scripts/monitor-404.mjs` |
+| Provenance audit, per fact, internal only | `app/internal/provenance/`, `lib/site/provenance.mjs` |
+| Canonicals; hreflang scaffolded and inactive | `app/layout.tsx` |
+
+**The validator is local, not Google Rich Results** — that needs a public URL
+and this build is noindex on `example.invalid`. Claiming otherwise would be
+the exact failure this project exists to avoid.
+
+**The CI rule immediately caught a contradiction:** the sitemap was
+advertising 20 venue pages that failed Gate 4 — a directory promising a
+crawler pages it had already judged unfit. Fixed at the root with
+`venuePagePublishes()`, one predicate the route, the sitemap and every link
+renderer all ask.
+
+**The 404 monitor keeps an append-only ledger**, which is the part that
+matters: a page that quietly disappears also disappears from the sitemap, so a
+monitor reading only today's sitemap can never catch the failure it exists
+for. A 301 counts as a pass — §3 permits exactly that one response.
+
+---
+
+## Phase 7 — Proof checkpoint 🔴 BLOCKED, AND NOT BY CODE
+
+This is the one gate in the whole document that cannot be passed by building.
+It needs the site on a real hostname (**O10** — everything currently says
+`example.invalid`) and then time in the index. Nothing in this repository
+advances it.
+
+Per the sequencing rules below, phases 8 through 12 do not start until it
+passes.
+
+---
+
 ## Blockers still open
 
 Phases 0 through 2 are complete. What stops Phase 3 from publishing is not
