@@ -1,0 +1,409 @@
+{
+  "city": "Raleigh",
+  "state": "NC",
+  "kind": "venues",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on any of these courts. Every sentence below is drawn from a source listed in this file — Raleigh Parks' pickleball page, each park's own page on raleighnc.gov, the department's published guidelines and status alerts, and its GIS inventories. Where a source is silent the note says so rather than guessing, and where two city sources disagree the disagreement is written into the venue's own page instead of being resolved quietly.",
+  "venues": {
+    "baileywick-park": {
+      "slots": {
+        "description": "Baileywick Park is the only place in this directory's Raleigh set where you can play pickleball under a roof, and the only one where the city's two inventories disagree about how much pickleball there is. The park's own page lists three hard courts — Court A covered, Court B covered centre, Court C uncovered — and the weekly schedule puts pickleball on Courts A and B. Raleigh Parks' pickleball page says the park has six pickleball courts; the GIS Athletic Courts layer, which holds polygons for A and B and none for C, adds up to four. We publish six, because the pickleball page is the department speaking directly to players and its figure reconciles with the citywide total of 44 that the same page states, and we have flagged the venue for a re-check rather than pretending the question is settled. The courts are lit. They are also genuinely shared: basketball open play, a youth basketball league and futsal all appear on the same three courts across the week, which is why pickleball here runs to published windows rather than whenever you turn up.",
+        "getting_there": "Baileywick is in the far north of the city at 9501 Baileywick Road, and it is one of very few Raleigh park pages that tells you where to park: the page names a lot at that same address. A paved walking trail runs from the Baileywick Road entrance, loops behind the playground and comes out at the parking lot. There is a restroom facility on site. The park also carries the .6-mile Baileywick Greenway Trail, which connects Strickland Road to Baileywick Road through the park.",
+        "what_to_expect": "Check the clock and the closure notice before you go. Pickleball has Courts A and B on Monday to Friday from noon to 4 p.m., Saturday from 3 to 9 p.m. and Sunday from 7 a.m. to 2 p.m.; outside those windows the courts belong to basketball or futsal. Walk-up play is first-come, first-served, but Raleigh Parks is explicit that walk-up use is not allowed on courts scheduled for a league or programmed activity and that the scheduled activity has priority. The closure matters more here than it usually would: the department posted on 24 August 2026 that Baileywick Park Pavilion-Court A is closed for repairs, with no reopening date given, and Court A is one of the two courts pickleball uses. Nothing published says whether nets are provided, so take one if you have one, and nothing published gives a surface."
+      },
+      "faqs": [
+        {
+          "q": "Are the pickleball courts at Baileywick Park covered?",
+          "a": "Partly. The park page lists Court A as covered and Court B as covered centre, and pickleball is scheduled on Courts A and B, so yes — though we still count these as outdoor courts, because a roof is not the same as being indoors. Court C, which pickleball does not normally use, is uncovered."
+        },
+        {
+          "q": "When can I play pickleball at Baileywick?",
+          "a": "Raleigh Parks publishes the windows: Monday to Friday noon to 4 p.m., Saturday 3 to 9 p.m., and Sunday 7 a.m. to 2 p.m. Outside those hours the same courts are scheduled for basketball open play, a youth basketball league or futsal. The park page also asks you to check its holiday schedule."
+        },
+        {
+          "q": "Is Baileywick Park open right now?",
+          "a": "Court A was closed for repairs as of 24 August 2026 and Raleigh Parks published no reopening date. Since pickleball at this park runs on Courts A and B, that is half the pickleball surface. The rest of the park was not reported closed. Check the park's page before travelling."
+        },
+        {
+          "q": "Does Baileywick Park have six pickleball courts or four?",
+          "a": "The city's two records disagree, and we would rather show you that than pick quietly. Raleigh Parks' pickleball page says six; its GIS court inventory holds polygons for Court A and Court B totalling four, and has no polygon for Court C. We publish six and have flagged the venue for a re-check."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PB", "A2"]
+    },
+    "carolina-pines-park": {
+      "slots": {
+        "description": "Carolina Pines is a full neighbourhood park in south Raleigh with a community centre attached, and its pickleball is painted onto its tennis courts rather than built for the purpose. Raleigh Parks lists four pickleball courts here and marks them lit; the department's note for this location is unusually direct about what that means in practice — \"Tennis courts with pickleball lines - need to bring of borrow a net\". The park's own page records three tennis courts with push-button lighting from dusk to 10 p.m. and no backboards, which is the surface the pickleball lines sit on. This is the second location in Raleigh where the city's two inventories differ: the GIS Athletic Courts layer records three pickleball courts against the pickleball page's four. We publish four, for the same reason as at Baileywick — the pickleball page reconciles with the citywide total of 44 — and the venue is flagged for a re-check. Around the courts the park also holds two unlit volleyball courts, three lit ball fields, and a new accessible playground.",
+        "getting_there": "The park is at 2305 Lake Wheeler Road, postcode 27603, south-west of downtown. Raleigh Parks publishes no parking guidance for these courts, so we cannot tell you where the lot is, how big it is, or whether it fills — only that the park page does not say. There is a restroom on site, recorded in the city's park amenities inventory. The community centre keeps its own hours, Monday to Friday 10 a.m. to 9 p.m., Saturday 9 a.m. to 3 p.m. and Sunday 1 to 6 p.m., which are not the same thing as the court hours.",
+        "what_to_expect": "Bring a net, because the city tells you to. Beyond that, expect a shared surface: pickleball lines over tennis courts means the lines you are playing to are not the only lines on the ground, and it means the courts can be in use for tennis when you arrive. The lighting is push-button rather than on a timer, according to the park page's court entry, so you switch it on rather than waiting for it — and it runs to 10 p.m. like the rest of the city's lit courts. Raleigh Parks' guidelines apply here as everywhere: sign in or place a paddle, games to 11 and win by 2, and all four players come off at the end of each game so the next four can go on. No source states a surface material for these courts, and none states a fee either way."
+      },
+      "faqs": [
+        {
+          "q": "Do I need to bring a net to Carolina Pines Park?",
+          "a": "Yes. Raleigh Parks' note for this location says you need to bring or borrow a net. It is one of only two Raleigh locations where the department says so outright — the other is Southgate Park."
+        },
+        {
+          "q": "Are the courts at Carolina Pines dedicated to pickleball?",
+          "a": "No. Raleigh Parks describes them as tennis courts with pickleball lines. The park's own page records three tennis courts at this site, with no backboards and push-button lighting from dusk to 10 p.m."
+        },
+        {
+          "q": "How many pickleball courts does Carolina Pines have?",
+          "a": "Raleigh Parks says four and its GIS court inventory says three. We publish the department's four, because that page states a citywide total of 44 courts which its own per-location figures add up to, and we have flagged this venue for a re-check."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PC"]
+    },
+    "fred-fletcher-park": {
+      "slots": {
+        "description": "Fred Fletcher Park sits just north-west of downtown Raleigh on ground with a history the city publishes: it is the former campus of the Methodist Home for Children, bought by the City in 1982. For pickleball it is one of the smaller and plainer entries in the Raleigh set — two courts, lines painted on the park's tennis courts, and no lights. The absence of lights is stated rather than merely missing: Raleigh Parks marks this location No in the Lights column of its pickleball table, and the park's own page independently records its tennis courts as having no lights and no backboard. That makes it one of only two daylight-only pickleball locations in the city, alongside Southgate Park. The rest of the park is a well-equipped neighbourhood green: an outdoor basketball court, a picnic shelter with capacity for 36 to 60, a softball field, a multipurpose field of 300 by 195 feet, a playground for ages 2 to 12 on a sand surface, a water garden and wetland, and walking paths.",
+        "getting_there": "The park has two frontages and the city uses both. Its own page gives the address as 820 Clay Street and 805 Washington Street, postcode 27605, and notes entrances off St. Mary's Street and Glenwood Avenue; the city's park amenities inventory records 805 Washington Street. We publish 820 Clay Street and list the other as an alternative rather than treating either as wrong. Be careful with a third address: Raleigh Parks' pickleball table lists this park at \"514 Method Road\", which is the address of Method Community Park in the row below it — a duplicated cell, not a second location. No parking guidance is published, and no restroom is recorded here.",
+        "what_to_expect": "Daylight play only, on tennis courts. There are two pickleball courts' worth of lines here and no floodlights, so in winter the usable window is short. Nothing published says whether nets are provided, so assume you are bringing one. Nothing published gives a surface material or its condition. The park is central enough that the courts share the site with a good deal else — basketball, a softball field, a large multipurpose field and a playground — so the hard courts are one small part of a busy neighbourhood park rather than a destination for pickleball in the way Sanderford Road is. Raleigh Parks' sign-up guidelines apply: place a paddle or sign in, games to 11 and win by 2, and the whole four come off at the end of each game."
+      },
+      "faqs": [
+        {
+          "q": "Does Fred Fletcher Park have lights?",
+          "a": "No, and that is a verified no rather than a gap. Raleigh Parks marks the location as unlit in its pickleball table, and the park's own page records its tennis courts as having no lights. It is one of two daylight-only pickleball locations in the city."
+        },
+        {
+          "q": "What is the address of Fred Fletcher Park?",
+          "a": "The park's own page gives two frontages, 820 Clay Street and 805 Washington Street, Raleigh 27605, with entrances off St. Mary's Street and Glenwood Avenue. Ignore the \"514 Method Road\" that appears against this park in the city's pickleball table — that is Method Community Park's address, duplicated from the row below."
+        },
+        {
+          "q": "Are the pickleball courts here dedicated?",
+          "a": "No. Raleigh Parks describes them as tennis courts with pickleball lines. The park page records two tennis courts with no backboard, which is the surface those lines are on."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PF"]
+    },
+    "jaycee-park": {
+      "slots": {
+        "description": "Jaycee Park is a community park on Wade Avenue, west of downtown, and its pickleball is two courts of lines on the park's tennis courts. Raleigh Parks marks the location as lit, so unlike Fred Fletcher it is usable in the evening — the city's lit courts run on a timer to 10 p.m. The park is best known locally for other things: its dog run is described at length on the city's page, with an accessible sidewalk connecting it to the parking lot on Wade Avenue and benches, trash cans and a dog waste station inside. A community centre shares the site and keeps its own hours. For a player, the honest summary is that this is a neighbourhood park where pickleball is one of several things happening rather than the main event, and where the two courts are shared with tennis. It is one of nine lit Raleigh locations, and one of six where the pickleball is painted onto tennis courts.",
+        "getting_there": "2405 Wade Avenue, postcode 27607. This is one of the few Raleigh park pages that mentions parking at all, though it does so while describing the route to the dog run rather than to the courts: it notes a parking lot on Wade Avenue and says ample parking is provided on both sides of the dog run. No capacity, time limit or permit information is published. A restroom is recorded on site in the city's park amenities inventory.",
+        "what_to_expect": "Two courts, lit, shared with tennis. Nothing published states whether nets are provided at this location, so bring one rather than assume — the city says so explicitly at only two of its eleven locations and this is not one of them. Nothing published gives the surface material or when it was last done. Raleigh Parks' rotation guidelines apply here as at every city facility: there is a sign-up procedure, each player signs in or places a paddle, games are singles or doubles to 11 and win by 2, and at the end of each game all four players leave the court so the next four on the list can play. If you are coming as a group and want to stay together, the guidelines ask you to skip to the next fully open quadrant on the sign-up rather than break into an existing one."
+      },
+      "faqs": [
+        {
+          "q": "Can I play at Jaycee Park in the evening?",
+          "a": "Raleigh Parks marks this location as lit, and says its outdoor court lighting runs on a timer until 10 p.m. Nothing published states what time the lights come on beyond dusk, or whether the timer changes with the season."
+        },
+        {
+          "q": "Are the courts at Jaycee Park pickleball-only?",
+          "a": "No. The department lists them as tennis courts with pickleball lines, so tennis players may have them when you arrive and you will be playing over tennis lines."
+        },
+        {
+          "q": "Is there parking at Jaycee Park?",
+          "a": "The park page mentions a parking lot on Wade Avenue and says ample parking is provided on both sides of the dog run, but it is describing access to the dog run rather than to the courts. No capacity, time limit or fee is published."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PJ"]
+    },
+    "method-community-park": {
+      "slots": {
+        "description": "Method Community Park holds six permanent pickleball courts, which puts it joint second in Raleigh behind Sanderford Road, and it is one of only three locations in the city where the courts are built for pickleball rather than painted onto something else. Both of the city's inventories agree on the number, which is not true everywhere in this set. The park's own page states it plainly — \"6 courts\", \"Lighting on timer from dusk to 10 p.m.\", \"Has backboards\" — and adds that players are asked to follow all posted rules regarding rotating courts. Raleigh Parks marks the location \"Drop in only, no reservations\", which is worth more than it sounds: at locations that do take bookings you can arrive to find the courts already claimed, and here you cannot. The park shares its address with the Method Road Community Centre, one of the thirteen sites running the city's indoor pickleball programme, and the centre's gym can be rented for what the city's page describes as three pickle courts and one volleyball court at $85 an hour.",
+        "getting_there": "514 Method Road, postcode 27607, west of downtown near the NC State campus. Raleigh Parks publishes no parking guidance for the courts, and no restroom is recorded for the park in the city's amenities inventory — though the community centre on the same site keeps public hours of its own. If you are navigating, note that the city's pickleball table also lists Fred Fletcher Park at this address by mistake; Fred Fletcher is a different park about two miles away.",
+        "what_to_expect": "Six permanent courts with backboards, lit on a timer from dusk to 10 p.m., and no way for anyone to book them out from under you. Raleigh Parks' sign-up system is the thing to understand before arriving alone: there is a game sign-up procedure at each facility, players sign in or place a paddle, games are singles or doubles to 11 points and win by 2, and at the conclusion of every game all four players leave the court and the next four on the sign-up go on. That is what makes a permanent-court site like this one workable for a single player in a way a shared tennis court usually is not. What the city does not publish here is a surface material, whether nets are provided on the outdoor courts, or any fee — the $3 session and $15 four-month pass it advertises are for the indoor programme in the gym, not for these courts."
+      },
+      "faqs": [
+        {
+          "q": "Can I reserve a court at Method Community Park?",
+          "a": "No. Raleigh Parks marks this location \"Drop in only, no reservations\". Other Raleigh locations do take bookings through the department's pickleball court reservation form, but this is not one of them."
+        },
+        {
+          "q": "How late are the lights on at Method?",
+          "a": "The park's own page says the lighting is on a timer from dusk to 10 p.m., which matches the department's statement that its outdoor courts run on a lighting timer to 10 p.m."
+        },
+        {
+          "q": "Is there indoor pickleball at Method Road?",
+          "a": "The community centre on this site is one of thirteen running Raleigh's indoor open-play programme, at $3 a session or $15 for a four-month pass, with nets and balls provided. The city does not publish how many courts the gym holds for open play, so we have not verified it as a venue. The gym rental listing mentions three pickle courts and one volleyball court at $85 an hour."
+        },
+        {
+          "q": "Are Method's six courts real pickleball courts?",
+          "a": "Yes — Raleigh Parks describes them as permanent courts, and the park page lists six with backboards. Both the department's pickleball page and its GIS court inventory give the same figure of six, which is not the case at every Raleigh location."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PM"]
+    },
+    "north-hills-park": {
+      "slots": {
+        "description": "North Hills Park has six permanent pickleball courts in north Raleigh, and along with Method Community Park it is one of the two locations the city marks \"Drop in only, no reservations\" — the courts cannot be booked out ahead of you. The city's pickleball page and its GIS court inventory agree on the count, and so does the commercial dataset this directory started from, which is a rarer alignment than it ought to be. The park page carries a pickleball section of its own and gives an email address, pickleball@raleighnc.gov, for questions; it also states that court reservations are not offered during open play. The courts are lit, though that is the one thing about this venue that may not be true on the day you read it. Raleigh Parks began a lighting upgrade here on 24 August 2026 and closed the courts; daytime play reopened on Wednesday 2 September and the department targeted 8 September for completion, with night play unavailable until the work finishes.",
+        "getting_there": "100 Chowan Circle, postcode 27609, in the North Hills area north of the Beltline. No parking guidance is published for the courts. A restroom is recorded at this park in the city's amenities inventory, which is not the case at most of the Raleigh locations in this set. Do not confuse this park with the private North Hills Club nearby, which is a different venue and is not verified here.",
+        "what_to_expect": "Six permanent courts, drop-in only, and — assuming the upgrade has finished — lights on a timer to 10 p.m. The department's sign-up rules apply: sign in or place a paddle, games to 11 and win by 2, and all four players come off at the end of each game so the next four can go on. The park page's own note that reservations are not offered during open play is worth reading alongside that: the rotation is the queueing system, so a group of four cannot hold a court indefinitely. What is not published is the surface material, whether nets are provided outdoors, or any fee. Before an evening trip, check the park's status page — the lighting work was still listed as incomplete when we last read it on 3 September 2026."
+      },
+      "faqs": [
+        {
+          "q": "Are North Hills Park's pickleball courts open?",
+          "a": "Daytime play reopened on 2 September 2026 after a lighting upgrade that began on 24 August. Night play was still closed when we checked on 3 September, with Raleigh Parks targeting 8 September for completion. Check the park's page before an evening visit."
+        },
+        {
+          "q": "Can I book a court at North Hills Park?",
+          "a": "No. Raleigh Parks marks the location \"Drop in only, no reservations\", and the park's own page states that court reservations are not offered during open play."
+        },
+        {
+          "q": "How many courts are there, and do the sources agree?",
+          "a": "Six, and unusually for this set every record we have says the same: the department's pickleball page, its GIS court inventory and the commercial dataset we started from all give six. Two other Raleigh venues do not have that luxury."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PN", "A1"]
+    },
+    "powell-drive-park": {
+      "slots": {
+        "description": "Powell Drive Park is a neighbourhood park in south-west Raleigh with two pickleball courts, lines painted on its tennis courts, and lights. It is one of the six Raleigh locations where pickleball shares a tennis surface, and one of nine that are lit, so it works in the evening in a way Fred Fletcher and Southgate do not. Both the department's pickleball page and its GIS court inventory record two courts here, so there is no dispute about the number. The park page describes an outdoor basketball court with a concrete surface among its facilities, but publishes no surface for the tennis courts the pickleball lines sit on, so we do not state one. This is a small, ordinary, useful piece of municipal pickleball provision: two courts, lit, free of any published booking requirement, in a residential part of the city — and the city publishes very little else about it, which we would rather say than pad out.",
+        "getting_there": "740 Powell Drive, postcode 27606. Raleigh Parks publishes no parking guidance for this park, and no restroom is recorded here in the city's park amenities inventory. If facilities matter to you, the nearest verified restrooms in this set are at Carolina Pines Park and Jaycee Park.",
+        "what_to_expect": "Two courts of pickleball lines over tennis, lit to 10 p.m. on the city's timer. Expect to share: a tennis player has as much claim on the surface as you do, and with only two courts a queue builds quickly. Raleigh Parks' guidelines are the arbiter — a sign-up procedure at each facility, sign in or place your paddle, games singles or doubles to 11 and win by 2, and all four players off at the end of each game. Groups who want to stay together are asked to skip to the next fully open quadrant on the sign-up rather than split an existing one. Nothing published says whether nets are provided at this location, and unlike Carolina Pines and Southgate the department does not tell you to bring your own either, so this is genuinely unknown rather than a hint — take a net if you can. No fee is published for the outdoor courts."
+      },
+      "faqs": [
+        {
+          "q": "Are there lights at Powell Drive Park?",
+          "a": "Yes. Raleigh Parks marks the location as lit in its pickleball table and its GIS court inventory records lighting on the pickleball courts here. The city's outdoor court lights run on a timer until 10 p.m."
+        },
+        {
+          "q": "Do I need to bring a net to Powell Drive Park?",
+          "a": "The city does not say, either way. It tells you to bring a net at Carolina Pines and Southgate and says nothing about nets at the other nine locations, so we record nets here as not verified rather than guessing. Bringing one is the safe assumption."
+        },
+        {
+          "q": "Is there a restroom at Powell Drive Park?",
+          "a": "None is recorded in the city's park amenities inventory for this park. That inventory does record restrooms at five of the eleven Raleigh pickleball locations, so its silence here is meaningful, though we publish it as unverified rather than as a confirmed absence."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PP"]
+    },
+    "roberts-park": {
+      "slots": {
+        "description": "Roberts Park is in south-east Raleigh, close to the centre on East Martin Street, and it offers two lit pickleball courts painted onto its tennis courts. The department's pickleball page and its GIS court inventory agree on the count. What makes Roberts more useful than its two courts suggest is that it is one of only five locations in the Raleigh set where the city's park amenities inventory records a restroom, and it is close in — a genuinely central option in a city whose largest pickleball sites are all some way out. The park also has an outdoor basketball court. As at the other tennis-striped locations, the pickleball lines share a surface with tennis, so the courts are not reserved for one sport and the lines under your feet are not all yours. Nothing published tells us the surface material or its condition, and nothing published states a fee for the outdoor courts.",
+        "getting_there": "1300 E. Martin Street, postcode 27610. No parking guidance is published for this park. A restroom is recorded on site in the city's park amenities inventory. A community centre shares the site and keeps its own published hours, which are not the same as court hours.",
+        "what_to_expect": "Two lit courts, shared with tennis, on the city's standard terms. The lights run on a timer to 10 p.m. Raleigh Parks' rotation guidelines apply: a sign-up procedure at each facility, sign in or place your paddle, games to 11 and win by 2, and the full four come off at the end of each game so the next four can go on. With two courts and a central location, expect that queue to matter more here than at a ten-court site. The city does not publish whether nets are provided, so bring one. It does not publish a surface. And it does not publish a fee for outdoor play — the $3 and $15 prices Raleigh advertises are for the indoor community-centre programme, which is a different thing at different sites and does not apply to walking up to these courts."
+      },
+      "faqs": [
+        {
+          "q": "Is there a restroom at Roberts Park?",
+          "a": "Yes. The city's park amenities inventory records a restroom here, which is true at only five of the eleven Raleigh pickleball locations."
+        },
+        {
+          "q": "Are Roberts Park's pickleball courts dedicated?",
+          "a": "No. Raleigh Parks lists them as tennis courts with pickleball lines, so you are sharing the surface with tennis and playing over tennis markings."
+        },
+        {
+          "q": "Does it cost anything to play at Roberts Park?",
+          "a": "No fee is published for the outdoor courts, and no source states that they are free either, so we record cost as not verified. The prices Raleigh Parks does publish — $3 a session, $15 for four months — are for indoor open play at its community centres."
+        },
+        {
+          "q": "How does getting a game work here?",
+          "a": "By the city's sign-up rules, which apply at every Raleigh facility. Players sign in or place a paddle in a quadrant of four, games are singles or doubles to 11 points and win by 2, and at the end of each game all four players leave the court so the next four on the list can play. Groups who want to stay together are asked to skip to the next fully open quadrant rather than break an existing one up. With two courts at a central park, that queue is the thing most likely to decide how long you wait."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PR"]
+    },
+    "sanderford-road-park": {
+      "slots": {
+        "description": "Sanderford Road Park is the largest pickleball site in Raleigh and the largest in this directory's Wake County coverage: ten permanent courts, lit, on a single site in the south-east of the city. That is nearly a quarter of the city's 44 outdoor courts in one park. Everything we can check agrees on the number — Raleigh Parks' pickleball page, the department's GIS court inventory, and independent pickleball listings all give ten — which is worth saying because two other Raleigh venues in this set do not have that agreement. The department marks the location as permanent courts rather than lines on a tennis surface, and unlike Method and North Hills it does not mark it drop-in only; the park's own page states that court reservations are available here, so some of the ten may be booked when you arrive. The park also holds an outdoor basketball court with four hoops on a concrete surface. If you are new to the city and want the best odds of getting a game, this is the site to try first.",
+        "getting_there": "2623 Sanderford Road, postcode 27610, in south-east Raleigh. Both of the city's records give that address; note that some third-party listings show 2823, which does not match either city source. Raleigh Parks publishes no parking guidance for the courts, and no restroom is recorded for this park in the city's amenities inventory — worth planning around at a site where you may be staying for several games.",
+        "what_to_expect": "Ten permanent courts is enough that the sign-up system does real work. Raleigh Parks' guidelines describe a game sign-up procedure at each facility: players sign in or place a paddle in a quadrant of four, games are singles or doubles to 11 points and win by 2, and at the conclusion of each game all four players leave the court and the next four go on. Groups wanting to stay together are asked to skip to the next fully open quadrant rather than break one up. Because reservations are available at this location, check the department's monthly pickleball calendar before travelling — a booked court is a court you cannot rotate onto. The lights run on the city's timer to 10 p.m. No surface material is published for these courts, no fee is published, and the city does not state whether nets are provided, so take one."
+      },
+      "faqs": [
+        {
+          "q": "How many pickleball courts does Sanderford Road Park have?",
+          "a": "Ten, and it is the largest pickleball site in Raleigh. The department's pickleball page and its GIS court inventory both give ten, and they are permanent pickleball courts rather than lines on a tennis surface."
+        },
+        {
+          "q": "Can I reserve a court at Sanderford Road Park?",
+          "a": "The park's own page says court reservations are available here, and Raleigh Parks publishes a pickleball court reservation form. That is different from Method Community Park and North Hills Park, which are marked drop-in only. Check the department's monthly pickleball calendar before you travel."
+        },
+        {
+          "q": "Is there a restroom at Sanderford Road Park?",
+          "a": "None is recorded for this park in the city's park amenities inventory. We publish that as unverified rather than as a confirmed absence, but plan for it at a ten-court site where you may be there a while."
+        },
+        {
+          "q": "What is the correct address for Sanderford Road Park?",
+          "a": "2623 Sanderford Road, Raleigh 27610. Both Raleigh Parks' pickleball page and its park amenities inventory give that number. Some third-party listings show 2823 Sanderford Road; that does not match either city record."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PS"]
+    },
+    "southgate-park": {
+      "slots": {
+        "description": "Southgate Park is the outlier in Raleigh's set, and the one place where the city publishes a surface. Its two pickleball courts are lines painted on basketball courts rather than on tennis courts — the only location in the city where that is true — and the GIS court inventory records the surface as asphalt, the single populated surface value across every pickleball court polygon in all eleven Raleigh parks. It is also one of only two unlit locations, along with Fred Fletcher Park, so play here is a daylight proposition. Raleigh Parks is direct about the practical consequence of painting pickleball onto a basketball court: its note for this location says you need to bring your own net. Between the shared basketball surface, the absence of lights and the missing net, this is the most improvised pickleball in the Raleigh set, and it is listed here because the city lists it rather than because it is anyone's first choice.",
+        "getting_there": "1801 Proctor Street, postcode 27610, in south-east Raleigh. Two city sources — the department's pickleball page and the park's own page — give the street as Proctor Street, while the city's GIS park amenities inventory records it as Proctor Rd; we publish what the two park-facing pages say. No parking guidance is published, and no restroom is recorded for this park in the city's amenities inventory.",
+        "what_to_expect": "Bring a net, and come in daylight. Those are the two things the city tells you outright about this location, and both are unusual enough to be worth repeating: Raleigh Parks says to bring your own net here, and marks the location unlit. The surface is asphalt, which the GIS inventory states and which is a harder, rougher surface than the acrylic most dedicated courts use. The lines sit on basketball courts, so expect to share with basketball rather than tennis. Raleigh Parks' sign-up guidelines apply here as everywhere — sign in or place a paddle, games to 11 and win by 2, all four players off at the end of each game — though with two courts and no lights the practical constraint is more likely to be the daylight than the queue. No fee is published for these courts."
+      },
+      "faqs": [
+        {
+          "q": "Do I need to bring a net to Southgate Park?",
+          "a": "Yes. Raleigh Parks' note for this location says you need to bring your own net. It is one of only two Raleigh locations where the department says so, the other being Carolina Pines Park."
+        },
+        {
+          "q": "Are there lights at Southgate Park?",
+          "a": "No. Raleigh Parks marks this location No in the Lights column of its pickleball table. It is one of two unlit pickleball locations in the city, with Fred Fletcher Park, so play here is limited to daylight."
+        },
+        {
+          "q": "What surface are the courts at Southgate Park?",
+          "a": "Asphalt, according to the city's GIS court inventory. Southgate is the only one of the eleven Raleigh locations where that field is filled in — everywhere else it is empty, which is why every other Raleigh venue here shows its surface as not verified."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PSO"]
+    },
+    "tarboro-road-park": {
+      "slots": {
+        "description": "Tarboro Road Park sits close to downtown Raleigh on North Tarboro Street and offers two lit pickleball courts, painted onto the park's tennis courts. The department's pickleball page, its GIS court inventory and the commercial dataset this directory started from all give the same count of two, so there is nothing in dispute here. The site is busier than its two courts suggest: a community centre shares the park, and so does the Saint Monica Teen Center, each keeping its own published hours. That makes Tarboro Road one of the more central places to play in a city whose biggest pickleball sites are all further out, and one of nine lit Raleigh locations, so it is usable after work. The trade-off is the one common to six of the eleven Raleigh locations — the courts belong to tennis as much as to pickleball, and with only two of them a queue forms quickly.",
+        "getting_there": "121 N. Tarboro Street, postcode 27610, just east of downtown. Raleigh Parks publishes no parking guidance for the courts. No restroom is recorded for the park itself in the city's amenities inventory, though the community centre and teen centre on the same site keep public hours of their own. Note that the park's page carries several separate sets of opening hours — for the park, the community centre and the teen centre — and none of them is a statement of when the outdoor courts are available, so we do not publish court hours here.",
+        "what_to_expect": "Two lit courts over tennis lines, on the city's usual terms. The lights run on a timer until 10 p.m. Raleigh Parks' rotation guidelines govern play: a sign-up procedure at each facility, sign in or place your paddle, games singles or doubles to 11 points and win by 2, and all four players leave the court at the end of each game so the next four can go on. Groups are asked to skip to the next fully open quadrant on the sign-up rather than break one up. The city does not state whether nets are provided at this location, so bring one. It does not publish a surface material for these courts, or a fee — the $3 session and $15 four-month pass it advertises are for indoor open play at its community centres, and the centre on this site is one of the thirteen that runs it."
+      },
+      "faqs": [
+        {
+          "q": "Is Tarboro Road Park a good central option?",
+          "a": "It is one of the closest verified pickleball locations to downtown Raleigh, and it is lit, so it works after work. It has only two courts and they are shared with tennis, so it is a convenient option rather than a spacious one."
+        },
+        {
+          "q": "What are the opening hours for the courts?",
+          "a": "The city does not publish them. The park's page carries hours for the park, for the community centre and for the Saint Monica Teen Center, none of which is a statement about when the outdoor courts are available, so we leave court hours unverified rather than repeating a centre's opening times as if they were the courts'."
+        },
+        {
+          "q": "How many pickleball courts are at Tarboro Road Park?",
+          "a": "Two, and every record we have agrees — Raleigh Parks' pickleball page, its GIS court inventory, and the commercial dataset this directory started from. They are pickleball lines on the park's tennis courts rather than dedicated courts."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4", "PT"]
+    }
+  },
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://raleighnc.gov/pickleball",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Outdoor court table giving each of eleven locations its court count, lighting and a notes column, plus the statement \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\" and \"These courts are open from dusk until 10 p.m. with lighting on a timer.\" Baileywick 6 lit, available Monday-Friday 12-4 p.m., Saturday 3-9 p.m., Sunday 7 a.m.-2 p.m.; Carolina Pines 4 lit, \"Tennis courts with pickleball lines - need to bring of borrow a net\"; Fred Fletcher 2 unlit, tennis courts with pickleball lines; Jaycee 2 lit, tennis courts with pickleball lines; Method Community Park 6 lit, \"Permanent courts - Drop in only, no reservations\"; North Hills 6 lit, \"Permanent courts - Drop in only, no reservations\"; Powell Drive 2 lit; Roberts 2 lit; Sanderford Road 10 lit, \"Permanent courts\"; Southgate 2 unlit, \"Basketball courts with pickleball lines - need to bring your own net\"; Tarboro Road 2 lit. Indoor open play is $3 a session or $15 for a four-month pass across thirteen community centres with nets and pickleballs provided. Links a monthly pickleball calendar and a court reservation form."
+    },
+    {
+      "id": "E2",
+      "url": "https://raleighnc.gov/parks-and-recreation/services/pickleball/raleigh-parks-pickleball-guidelines",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "published": "2026-06-12",
+      "retrieved": "2026-09-03",
+      "evidence": "\"There will be a game sign-up procedure for courts at each facility.\" Games are singles or 2 vs 2, to 11 points, win by 2; at the conclusion of each game all four players exit the court and the next four on the sign-up enter. Sign-up runs in quadrants of four; each player must sign in or place a paddle; players must finish their previous game before signing up again; groups wanting to stay together must skip to the next fully available quadrant. Indoor play requires a $3 daily or $15 four-month pass."
+    },
+    {
+      "id": "E3",
+      "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Parks_Athletic_Courts_and_Fields/FeatureServer/0",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
+      "tier": 2,
+      "retrieved": "2026-09-03",
+      "evidence": "Athletic Courts feature service, one polygon per court surface with a Pickleball field giving the number of pickleball courts on it. Per-park sums agree with E1 at nine locations and differ at Baileywick, where it gives 4 against E1's 6, and Carolina Pines, where it gives 3 against E1's 4. IndoorOutdoor is Outdoor on every pickleball polygon in the set, and Outdoor Covered at Baileywick. Lighting is Yes at all nine locations E1 marks as lit and empty at Southgate. Surface is populated only at Southgate Park, where it reads \"asphalt\"."
+    },
+    {
+      "id": "E4",
+      "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
+      "tier": 2,
+      "retrieved": "2026-09-03",
+      "evidence": "Park Amenities feature service, one point per park. Supplies the structured ADDRESS and WEBSITE for each of the eleven parks and a RESTROOMS flag, which reads 1 at Baileywick, Carolina Pines, Jaycee, North Hills and Roberts, and 0 at Fred Fletcher, Method, Powell Drive, Sanderford Road, Southgate and Tarboro Road. Records Southgate Park's address as 1801 Proctor Rd and Fred Fletcher Park's as 805 Washington St."
+    },
+    {
+      "id": "A1",
+      "url": "https://raleighnc.gov/status-alerts/method-road-park-and-north-hills-park-pickleball-courts-closures",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "published": "2026-09-02",
+      "retrieved": "2026-09-03",
+      "evidence": "\"Lighting upgrades continue on the pickleball courts at North Hills Park.\" Work began 24 August 2026 with completion targeted for 8 September 2026; daytime play resumed Wednesday 2 September 2026, with night play closed until the lighting work finishes. Notice updated 2 September 2026 at 9:52 a.m."
+    },
+    {
+      "id": "A2",
+      "url": "https://raleighnc.gov/status-alerts/baileywick-court-closure",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "published": "2026-08-24",
+      "retrieved": "2026-09-03",
+      "evidence": "\"Due to repairs, Baileywick Park Pavilion-Court A is currently closed.\" Posted 24 August 2026 at 9:55 a.m. No reopening date given."
+    },
+    {
+      "id": "PB",
+      "url": "https://raleighnc.gov/places/baileywick-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Lists Court A as Covered, Court B as Covered Center, Court C as Uncovered. Weekly schedule places Pickleball on Courts A and B Monday-Friday noon-4 p.m., Saturday 3-9 p.m. and Sunday 7 a.m.-2 p.m., with Basketball Open Play, a Youth Basketball League and Futsal on the same courts at other times. \"Walk-up play is first-come, first-served.\" \"Walkup use is not allowed on courts scheduled for a Raleigh Parks league or programmed activities.\" \"The scheduled activity has priority court usage over any alternative walk-up use.\" \"Parking is at 9501 Baileywick Rd, Raleigh, NC 27615\", Lot. \"There is a restroom facility.\" A paved walking trail runs from the Baileywick Road entrance behind the playground to the parking lot; the .6-mile Baileywick Greenway Trail passes through the park."
+    },
+    {
+      "id": "PC",
+      "url": "https://raleighnc.gov/places/carolina-pines-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Tennis Courts section reads \"3 courts\", \"Push button lighting from dusk to 10 p.m.\", \"No backboards\". Volleyball Courts \"2 unlit courts\". Three ball fields, each Lighting: Yes. New accessible playground plus playgrounds for ages 2-5 and 5-12 on sand. Community Center Hours Monday-Friday 10 a.m.-9 p.m., Saturday 9 a.m.-3 p.m., Sunday 1-6 p.m. Address 2305 Lake Wheeler Rd, Raleigh, NC 27603."
+    },
+    {
+      "id": "PF",
+      "url": "https://raleighnc.gov/places/fred-fletcher-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Address given as 820 Clay Street and 805 Washington Street, Raleigh, NC 27605. \"The park is the former campus of the Methodist Home for Children and was purchased by the City in 1982. There are entrances to the park off of St. Mary's Street and Glenwood Avenue.\" Tennis courts: 2 courts, no lights, no backboard. Outdoor basketball court. Picnic shelter with capacity 36-60. Softball field, no lights. Multipurpose field 300' x 195'. Playground ages 2-12, sand surface. Water garden and wetland, walking paths. The page does not mention pickleball, restrooms or general lighting."
+    },
+    {
+      "id": "PJ",
+      "url": "https://raleighnc.gov/places/jaycee-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Address 2405 Wade Ave, Raleigh, NC 27607. \"The dog run is located just south of the parking area on Wade Avenue, close to the playground and tennis courts.\" \"There is an accessible sidewalk connecting the dog run from the parking lot on Wade Avenue.\" \"Ample parking is provided on both sides of the dog run.\" The dog run includes benches, trash cans and a dog waste station. Community Center Hours are published separately from park facilities."
+    },
+    {
+      "id": "PM",
+      "url": "https://raleighnc.gov/places/method-community-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Pickleball Courts section reads \"6 courts\", \"Lighting on timer from dusk to 10 p.m.\", \"Has backboards\", \"Players are asked to follow all posted rules regarding rotating courts\". Outdoor Basketball Court, concrete surface. \"Indoor court available in the gym\". Gym rental listing: capacity 250, \"3 pickle courts & 1 volleyball court\", $85/hr with a $30/hr after-hours supervision fee. Address 514 Method Road, Raleigh, NC 27607."
+    },
+    {
+      "id": "PN",
+      "url": "https://raleighnc.gov/places/north-hills-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Carries a Pickleball Courts section and a \"North Hills Park Pickleball Courts Reopen\" notice, updated 15 July 2026. \"Court reservations are not offered during open play.\" Gives pickleball@raleighnc.gov as the contact and links the department's pickleball page. Address 100 Chowan Circle, Raleigh, NC 27609."
+    },
+    {
+      "id": "PP",
+      "url": "https://raleighnc.gov/places/powell-drive-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Address 740 Powell Drive, Raleigh, NC 27606. Lists a Basketball Court, described as an outdoor court with a concrete surface. No surface, parking or restroom information is published for the tennis courts that carry the pickleball lines."
+    },
+    {
+      "id": "PR",
+      "url": "https://raleighnc.gov/places/roberts-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Address 1300 E. Martin St., Raleigh, NC 27610. Lists an Outdoor Basketball Court. Community Center Hours are published for the centre sharing the site. No parking guidance is published for the courts."
+    },
+    {
+      "id": "PS",
+      "url": "https://raleighnc.gov/places/sanderford-road-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Address 2623 Sanderford Road, Raleigh, NC 27610. Carries a Pickleball Courts section stating \"Court reservations are available\" and linking the department's pickleball page. Outdoor Basketball Court described as an outdoor basketball court with four hoops on a concrete surface. No parking guidance is published for the courts."
+    },
+    {
+      "id": "PSO",
+      "url": "https://raleighnc.gov/places/southgate-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Address 1801 Proctor Street, Raleigh, NC 27610 — the same street name Raleigh Parks' pickleball page uses, against the GIS park amenities inventory's \"1801 Proctor Rd\". Lists an Outdoor Basketball Court. Community Center Hours are published for the centre sharing the site."
+    },
+    {
+      "id": "PT",
+      "url": "https://raleighnc.gov/places/tarboro-road-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "evidence": "Address 121 N. Tarboro Street, Raleigh, NC 27610. The page publishes three separate sets of opening hours — an Hours block, Community Center Hours and Saint Monica Teen Center Hours — none of which is stated to be the hours of the outdoor courts."
+    }
+  ]
+}

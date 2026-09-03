@@ -1,0 +1,63 @@
+{
+  "county": "Wake",
+  "state": "NC",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "This page covers what we have verified inside Wake County, which at the moment is the City of Raleigh's park courts and nothing else. Everything below is drawn from the sources listed; where a claim is about the limits of our own coverage rather than about a court, it says so. County assignment is not assumed from the city name — each park's coordinates were resolved against the US Census Bureau geocoder, because Raleigh is not wholly inside Wake County.",
+  "slots": {
+    "coverage": "Everything we have verified in Wake County sits inside the Raleigh city limits: eleven parks holding 44 outdoor pickleball courts, all of them operated by Raleigh Parks, Recreation and Cultural Resources. The court counts come from the department's own pickleball page, which lists each location and then states the citywide total in prose; the eleven listed counts add up to exactly 44, so the source agrees with itself. Each park's county was resolved individually from its coordinates through the US Census Bureau geocoder rather than assumed from the postcode or the city name. That distinction is not pedantry here: Raleigh straddles a county line, with its Brier Creek area falling inside Durham County, so \"a Raleigh park is a Wake County park\" is a statement that needed checking. All eleven came back Wake, FIPS 37183.",
+    "distribution": "The courts are not spread evenly, and the concentration is the most useful thing to know about this county. Sanderford Road Park alone holds 10 of the 44, and together with Method Community Park and North Hills Park at six apiece it accounts for 22 courts — exactly half the county's verified total at three of its eleven sites. Those same three are the only permanent pickleball courts we have verified in Wake County; the other eight locations are pickleball lines painted on tennis courts at six parks, on basketball courts at Southgate Park, and on shared hard courts at Baileywick Park. Geographically the eleven range from Baileywick in the far north of the city down to Carolina Pines and Sanderford Road in the south, with Fred Fletcher, Roberts and Tarboro Road close to the centre. Nine of the eleven are lit; Fred Fletcher Park and Southgate Park are not.",
+    "gaps": "The honest summary is that this page covers one city in a county of many. Wake County contains Cary, Apex, Holly Springs, Garner, Wake Forest, Morrisville, Fuquay-Varina and Knightdale, and we have verified no courts in any of them — not because they have none, but because we have not yet found a source in which those operators state their own court counts, which is the bar this directory holds everything to. Inside Raleigh the gaps are narrower but real. We have no verified fee information for any of the 44 courts, because the department publishes prices only for its indoor community-centre programme. We have a surface for one location out of eleven. We have nets confirmed at none and explicitly absent at two. And two of the eleven counts are disputed between the city's own pickleball page and its own GIS inventory, which we have published rather than quietly resolved. Every one of those holes has a link on the venue page asking you to tell us what we have wrong."
+  },
+  "faqs": [
+    {
+      "q": "Does this page cover all of Wake County?",
+      "a": "No, and we would rather be plain about it. Everything verified here is inside the City of Raleigh. Cary, Apex, Wake Forest, Garner, Holly Springs, Morrisville, Fuquay-Varina and Knightdale are all in Wake County and none of them appears here yet. A town is added when we find its operator publishing its own court counts, not when we find a listing of it somewhere else."
+    },
+    {
+      "q": "How do you know these parks are in Wake County?",
+      "a": "Each park's coordinates were sent to the US Census Bureau geocoder, which returned the county containing that point. All eleven came back Wake County, FIPS 37183. We check rather than assume because Raleigh crosses a county boundary — the Brier Creek part of the city lies in Durham County — so a rule like \"Raleigh means Wake\" would be wrong for some Raleigh addresses."
+    },
+    {
+      "q": "Where are the most courts in Wake County?",
+      "a": "Sanderford Road Park, at 10 permanent lit courts, is the largest single site we have verified in the county. Method Community Park and North Hills Park follow with six each. Those three hold 22 of the county's 44 verified courts between them and are the only permanent pickleball courts in the set; everywhere else is lines shared with tennis or basketball."
+    },
+    {
+      "q": "Is there indoor pickleball in Wake County?",
+      "a": "Yes, and none of it is verified here. Raleigh Parks runs indoor open play at thirteen community centres, priced at $3 for a single session or $15 for a four-month pass, with nets and pickleballs provided and a limited number of paddles to borrow at each site. What the department does not publish is how many courts are laid out in any of those gyms, and a venue does not publish on this directory without a court count from a source. So the indoor programme is real, we can tell you what it costs, and we cannot yet tell you how big it is."
+    },
+    {
+      "q": "What does verified mean on this page?",
+      "a": "That a named source stated the fact and we recorded which source, on what date. For these eleven parks the court counts, lighting and addresses come from Raleigh Parks and its GIS division, and the county from the US Census Bureau. Anything no source stated is left as \"Not verified yet\" rather than filled in from a plausible guess — which is why you will see far more blanks here than on a directory that infers them."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://raleighnc.gov/pickleball",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "States \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\" and tabulates each location with its court count and lighting. Sanderford Road Park 10, Method Community Park 6, North Hills Park 6, Baileywick Park 6, Carolina Pines Park 4, and 2 each at Fred Fletcher, Jaycee, Powell Drive, Roberts, Southgate and Tarboro Road. Method, North Hills and Sanderford Road are marked as permanent courts; the rest are described as tennis or basketball courts with pickleball lines. Fred Fletcher and Southgate are marked unlit. Prices are published for indoor community-centre open play only."
+    },
+    {
+      "id": "E2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Coordinates for each of the eleven parks, taken from the City of Raleigh park amenities layer, resolved against the Census county boundaries. All eleven return Wake County, North Carolina, state FIPS 37, county FIPS 183."
+    },
+    {
+      "id": "E3",
+      "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Parks_Athletic_Courts_and_Fields/FeatureServer/0",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
+      "tier": 2,
+      "retrieved": "2026-09-03",
+      "supports": ["gaps", "distribution"],
+      "evidence": "Athletic Courts feature service. Its per-polygon Pickleball counts agree with E1 at nine of the eleven locations and disagree at two: Baileywick, where it gives 4 against E1's 6, and Carolina Pines, where it gives 3 against E1's 4. Its Surface field is populated for Southgate Park only, reading \"asphalt\", and is empty on every other pickleball polygon in the set."
+    }
+  ]
+}

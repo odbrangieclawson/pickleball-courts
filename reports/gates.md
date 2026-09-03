@@ -6,21 +6,29 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  1/1 publishable
+COUNTY  —  2/2 publishable
   PASS  /pickleball/us/wa/king-county/
         905 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/wake-county/
+        1001 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  1/1 publishable
+CITY  —  2/2 publishable
   PASS  /pickleball/us/wa/seattle/
-        1681 words · BreadcrumbList, FAQPage, ItemList
+        1645 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/raleigh/
+        1927 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  2/2 publishable
+FILTER  —  4/4 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
         694 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/raleigh/outdoor/
+        702 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/raleigh/lights/
+        680 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  24/24 publishable
+VENUE  —  35/35 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -69,10 +77,32 @@ VENUE  —  24/24 publishable
         718 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/greenwood-park-pickleball-courts-seattle/
         709 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/north-hills-park/
+        714 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/tarboro-road-park/
+        766 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/baileywick-park/
+        860 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/carolina-pines-park/
+        763 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/fred-fletcher-park/
+        770 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/jaycee-park/
+        728 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/method-community-park/
+        827 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/powell-drive-park/
+        721 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/roberts-park/
+        771 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/sanderford-road-park/
+        784 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/raleigh/southgate-park/
+        709 words · BreadcrumbList, SportsActivityLocation, FAQPage
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights
+  built for Seattle: outdoor, lights, outdoor, lights
   indoor: not published — no lawful data driver or fewer than 3 matches
   free: not published — no lawful data driver or fewer than 3 matches
   public: not published — no lawful data driver or fewer than 3 matches
@@ -98,6 +128,6 @@ VENUE  —  24/24 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 28/28 pages pass all six gates.
+TOTAL: 43/43 pages pass all six gates.
 
 ```

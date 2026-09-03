@@ -12,7 +12,7 @@ still free to change. That is why it goes first.
 | | rows |
 | --- | ---: |
 | Slugs carrying a numeric row-id suffix | 628 |
-| **Renamed automatically** | **8680** |
+| **Renamed automatically** | **8678** |
 | Held back — two rows want one URL in one city | 620 |
 | Held back — state, coordinates and postal code disagree | 30 |
 | **Total held back** | **650** |

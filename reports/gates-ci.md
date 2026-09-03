@@ -4,13 +4,13 @@
 
 === IMPORT GATES — census over every imported row ===
 
-rows examined:            18,041
-rows passing all four:    24
+rows examined:            18,050
+rows passing all four:    35
 
 gate  what it checks                                        failing
 ----  ----------------------------------------------------  -------
 I1    identity: slug shape, name, city, state, address           719
-I2    provenance: source_url, date_checked, verified_by        18017
+I2    provenance: source_url, date_checked, verified_by        18015
 I3    consistency: court arithmetic, county, court count        4398
 I4    vocabulary: controlled values in filtered fields             0
 
@@ -24,10 +24,10 @@ rows marked published while failing a gate (bypass): 0
 
 page type   pages  pass   G1    G2    G3    G4    G5    G6
 ---------   -----  ----   ---   ---   ---   ---   ---   ---
-county          1     1     1     1     1     1     1     1
-city            1     1     1     1     1     1     1     1
-filter          2     2     2     2     2     2     2     2
-venue          24    24    24    24    24    24    24    24
+county          2     2     2     2     2     2     2     2
+city            2     2     2     2     2     2     2     2
+filter          4     4     4     4     4     4     4     4
+venue          35    35    35    35    35    35    35    35
 
-published pages passing all six: 28/28
+published pages passing all six: 43/43
 ```

@@ -2852,15 +2852,11 @@
     },
     "lewis-park-6944": {
       "canonical": "lewis-park",
-      "basis": "built from the verified name \"Lewis Park\""
+      "basis": "dropped trailing \"-6944\" (an import row id, not part of the name \"Lewis Park\")"
     },
     "lincoln-village-park-tennis-courts": {
       "canonical": "lincoln-village-park",
       "basis": "dropped trailing \"-tennis-courts\" (this is a pickleball directory)"
-    },
-    "mcclatchy-park": {
-      "canonical": "c-k-mcclatchy-park",
-      "basis": "built from the verified name \"C.K. McClatchy Park\""
     },
     "sacramento-central-ymca": {
       "canonical": "central-ymca",
@@ -2869,10 +2865,6 @@
     "sacramento-japanese-united-methodist-church": {
       "canonical": "japanese-united-methodist-church",
       "basis": "dropped leading \"sacramento-\" (already in the path)"
-    },
-    "southside-park-courts": {
-      "canonical": "southside-park",
-      "basis": "built from the verified name \"Southside Park\""
     },
     "valley-oak-park-n-natomas-ca": {
       "canonical": "valley-oak-park-n-natomas",
@@ -15295,8 +15287,8 @@
       "basis": "dropped leading \"raleigh-\" (already in the path)"
     },
     "tarboro-road-community-center-outdoor-courts-raleigh-nc": {
-      "canonical": "tarboro-road-community-center-outdoor-courts",
-      "basis": "dropped trailing \"-raleigh-nc\" (already in the path)"
+      "canonical": "tarboro-road-park",
+      "basis": "built from the verified name \"Tarboro Road Park\""
     },
     "walltown-park-pickleball-courts": {
       "canonical": "walltown-park",

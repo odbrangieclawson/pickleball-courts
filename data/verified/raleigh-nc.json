@@ -1,0 +1,1214 @@
+{
+  "city": "Raleigh",
+  "state": "NC",
+  "retrieved_at": "2026-09-03",
+  "method_note": "Court counts are STATED by Raleigh Parks, not derived. The operator publishes a per-location table and, in prose on the same page, the total across all locations; this run refuses to write anything unless the table sums to the stated total. Where the tier-2 GIS inventory disagrees with the tier-1 page, the conflict is recorded and the venue flagged for re-check.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://raleighnc.gov/pickleball",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/raleigh-pickleball-page.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Parks_Athletic_Courts_and_Fields/FeatureServer/0",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
+      "tier": 2,
+      "format": "arcgis",
+      "snapshot": "data/sources/raleigh-athletic-courts.arcgis.json"
+    },
+    {
+      "id": "S3",
+      "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
+      "tier": 2,
+      "format": "arcgis",
+      "snapshot": "data/sources/raleigh-park-amenities.arcgis.json"
+    },
+    {
+      "id": "S4",
+      "url": "https://raleighnc.gov/places/",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/raleigh-parks/"
+    },
+    {
+      "id": "S5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/raleigh-county-census.json"
+    }
+  ],
+  "venues": {
+    "baileywick-park": {
+      "minted": true,
+      "identity": {
+        "name": "Baileywick Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27615",
+        "latitude": 35.907584,
+        "longitude": -78.668482,
+        "imported_slug": null,
+        "canonical_slug": "baileywick-park"
+      },
+      "match": {
+        "s1_location": "Baileywick Park 9501 Baileywick Road",
+        "s1_courts": 6,
+        "s1_lights": "Yes",
+        "s1_notes": "Available Monday - Friday 12 - 4 p.m., Saturday 3 - 9 p.m., Sunday 7 a.m. - 2 p.m. Please check the Baileywick Park page for Holiday schedules",
+        "s2_courts": 4,
+        "s2_polygons": 2,
+        "basis": "No imported row. Raleigh Parks lists Baileywick Park among its eleven outdoor pickleball locations."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/baileywick-park",
+        "restroom": true,
+        "name": "Baileywick Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "9501 Baileywick Road",
+        "covered": true,
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Baileywick Park\" is listed with 6 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/baileywick-park: \"9501 Baileywick Road\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=156, WEBSITE=\"https://raleighnc.gov/places/baileywick-park\"."
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=156, RESTROOMS=1."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Baileywick Park 9501 Baileywick Road\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 6 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Baileywick Park."
+        },
+        "covered": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park page lists \"Court A - Covered\" and \"Court B - Covered Center\", and schedules pickleball on Courts A and B. Rule 14: covered is not indoor, and these courts are counted as outdoor."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.907584,-78.668482 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "carolina-pines-park": {
+      "minted": true,
+      "identity": {
+        "name": "Carolina Pines Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27603",
+        "latitude": 35.748567,
+        "longitude": -78.667273,
+        "imported_slug": null,
+        "canonical_slug": "carolina-pines-park"
+      },
+      "match": {
+        "s1_location": "Carolina Pines Park 2305 Lake Wheeler Rd",
+        "s1_courts": 4,
+        "s1_lights": "Yes",
+        "s1_notes": "Tennis courts with pickleball lines - need to bring of borrow a net Carolina Pines Schedule",
+        "s2_courts": 3,
+        "s2_polygons": 3,
+        "basis": "No imported row."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/carolina-pines-park",
+        "restroom": true,
+        "name": "Carolina Pines Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "venue_type": "public_park",
+        "light": true,
+        "nets_provided": false,
+        "street_address": "2305 Lake Wheeler Rd",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Carolina Pines Park\" is listed with 4 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/carolina-pines-park: \"2305 Lake Wheeler Rd\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=145, WEBSITE=\"https://raleighnc.gov/places/carolina-pines-park\"."
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=145, RESTROOMS=1."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Carolina Pines Park 2305 Lake Wheeler Rd\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 4 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Carolina Pines Park."
+        },
+        "nets_provided": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Notes for Carolina Pines Park: \"Tennis courts with pickleball lines - need to bring of borrow a net Carolina Pines Schedule\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.748567,-78.667273 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "fred-fletcher-park": {
+      "minted": true,
+      "identity": {
+        "name": "Fred Fletcher Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27605",
+        "latitude": 35.792646,
+        "longitude": -78.649569,
+        "imported_slug": null,
+        "canonical_slug": "fred-fletcher-park"
+      },
+      "match": {
+        "s1_location": "Fred Fletcher Park 514 Method Road",
+        "s1_courts": 2,
+        "s1_lights": "No",
+        "s1_notes": "Tennis courts with pickleball lines Fred Fletcher Park Schedule",
+        "s2_courts": 2,
+        "s2_polygons": 2,
+        "basis": "No imported row."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/fred-fletcher-park",
+        "name": "Fred Fletcher Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "venue_type": "public_park",
+        "light": false,
+        "street_address": "820 Clay Street",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Fred Fletcher Park\" is listed with 2 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/fred-fletcher-park: \"820 Clay Street\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=85, WEBSITE=\"https://raleighnc.gov/places/fred-fletcher-park\"."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Fred Fletcher Park 514 Method Road\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 2 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"No\" for Fred Fletcher Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.792646,-78.649569 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "jaycee-park": {
+      "minted": true,
+      "identity": {
+        "name": "Jaycee Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27607",
+        "latitude": 35.799268,
+        "longitude": -78.66366,
+        "imported_slug": null,
+        "canonical_slug": "jaycee-park"
+      },
+      "match": {
+        "s1_location": "Jaycee Park 2405 Wade Ave",
+        "s1_courts": 2,
+        "s1_lights": "Yes",
+        "s1_notes": "Tennis courts with pickleball lines Jaycee Park Schedule",
+        "s2_courts": 2,
+        "s2_polygons": 2,
+        "basis": "No imported row."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/jaycee-park",
+        "restroom": true,
+        "name": "Jaycee Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "2405 Wade Ave",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Jaycee Park\" is listed with 2 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/jaycee-park: \"2405 Wade Ave\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=90, WEBSITE=\"https://raleighnc.gov/places/jaycee-park\"."
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=90, RESTROOMS=1."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Jaycee Park 2405 Wade Ave\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 2 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Jaycee Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.799268,-78.66366 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "method-community-park": {
+      "minted": true,
+      "identity": {
+        "name": "Method Community Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27607",
+        "latitude": 35.792729,
+        "longitude": -78.694752,
+        "imported_slug": null,
+        "canonical_slug": "method-community-park"
+      },
+      "match": {
+        "s1_location": "Method Community Park 514 Method Road",
+        "s1_courts": 6,
+        "s1_lights": "Yes",
+        "s1_notes": "Permanent courts - Drop in only, no reservations Method Community Park Schedule",
+        "s2_courts": 6,
+        "s2_polygons": 6,
+        "basis": "NOT matched to the imported \"Method Road Community Center\" row, which shares this address. That row is the indoor community centre and claims 9 courts; this venue is the park's 6 outdoor courts. Merging them would publish an outdoor court count under an indoor venue's name, or add three unsourced courts to an outdoor one. They stay separate and the community centre stays pending."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/method-community-park",
+        "name": "Method Community Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "514 Method Road",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Method Community Park\" is listed with 6 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/method-community-park: \"514 Method Road\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=40, WEBSITE=\"https://raleighnc.gov/places/method-community-park\"."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Method Community Park 514 Method Road\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 6 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Method Community Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.792729,-78.694752 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "north-hills-park": {
+      "minted": false,
+      "identity": {
+        "name": "North Hills Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27609",
+        "latitude": 35.838403,
+        "longitude": -78.657788,
+        "imported_slug": "north-hills-park",
+        "canonical_slug": "north-hills-park"
+      },
+      "match": {
+        "s1_location": "North Hills Park 100 Chowan Circle",
+        "s1_courts": 6,
+        "s1_lights": "Yes",
+        "s1_notes": "Permanent courts - Drop in only, no reservations North Hills Park Schedule",
+        "s2_courts": 6,
+        "s2_polygons": 6,
+        "basis": "Same site. The imported row is \"North Hills Park\" at 100 Chowan Circle with 6 courts, which agrees with Raleigh Parks on both address and count. Agreement with an unsourced row is not corroboration, but it is not a conflict either."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/north-hills-park",
+        "restroom": true,
+        "name": "North Hills Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "100 Chowan Circle",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"North Hills Park\" is listed with 6 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/north-hills-park: \"100 Chowan Circle\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=41, WEBSITE=\"https://raleighnc.gov/places/north-hills-park\"."
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=41, RESTROOMS=1."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"North Hills Park 100 Chowan Circle\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 6 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for North Hills Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.838403,-78.657788 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "powell-drive-park": {
+      "minted": true,
+      "identity": {
+        "name": "Powell Drive Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27606",
+        "latitude": 35.779002,
+        "longitude": -78.714361,
+        "imported_slug": null,
+        "canonical_slug": "powell-drive-park"
+      },
+      "match": {
+        "s1_location": "Powell Drive Park 740 Powell Drive",
+        "s1_courts": 2,
+        "s1_lights": "Yes",
+        "s1_notes": "Tennis courts with pickleball lines Powell Drive Park Schedule",
+        "s2_courts": 2,
+        "s2_polygons": 2,
+        "basis": "No imported row."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/powell-drive-park",
+        "name": "Powell Drive Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "740 Powell Drive",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Powell Drive Park\" is listed with 2 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/powell-drive-park: \"740 Powell Drive\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=92, WEBSITE=\"https://raleighnc.gov/places/powell-drive-park\"."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Powell Drive Park 740 Powell Drive\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 2 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Powell Drive Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.779002,-78.714361 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "roberts-park": {
+      "minted": true,
+      "identity": {
+        "name": "Roberts Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27610",
+        "latitude": 35.775527,
+        "longitude": -78.618303,
+        "imported_slug": null,
+        "canonical_slug": "roberts-park"
+      },
+      "match": {
+        "s1_location": "Roberts Park 1300 E. Martin St.",
+        "s1_courts": 2,
+        "s1_lights": "Yes",
+        "s1_notes": "Tennis courts with pickleball lines Roberts Park Schedule",
+        "s2_courts": 2,
+        "s2_polygons": 2,
+        "basis": "No imported row."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/roberts-park",
+        "restroom": true,
+        "name": "Roberts Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "1300 E. Martin St.",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Roberts Park\" is listed with 2 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/roberts-park: \"1300 E. Martin St.\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=43, WEBSITE=\"https://raleighnc.gov/places/roberts-park\"."
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=43, RESTROOMS=1."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Roberts Park 1300 E. Martin St.\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 2 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Roberts Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.775527,-78.618303 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "sanderford-road-park": {
+      "minted": true,
+      "identity": {
+        "name": "Sanderford Road Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27610",
+        "latitude": 35.743195,
+        "longitude": -78.611284,
+        "imported_slug": null,
+        "canonical_slug": "sanderford-road-park"
+      },
+      "match": {
+        "s1_location": "Sanderford Road Park 2623 Sanderford Road",
+        "s1_courts": 10,
+        "s1_lights": "Yes",
+        "s1_notes": "Permanent courts Sanderford Road Schedule",
+        "s2_courts": 10,
+        "s2_polygons": 10,
+        "basis": "No imported row. Raleigh's largest pickleball site at 10 courts."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/sanderford-road-park",
+        "name": "Sanderford Road Park",
+        "total_courts": 10,
+        "outdoor_courts": 10,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "2623 Sanderford Road",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Sanderford Road Park\" is listed with 10 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/sanderford-road-park: \"2623 Sanderford Road\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=33, WEBSITE=\"https://raleighnc.gov/places/sanderford-road-park\"."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Sanderford Road Park 2623 Sanderford Road\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 10 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Sanderford Road Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.743195,-78.611284 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "southgate-park": {
+      "minted": true,
+      "identity": {
+        "name": "Southgate Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27610",
+        "latitude": 35.755666,
+        "longitude": -78.607309,
+        "imported_slug": null,
+        "canonical_slug": "southgate-park"
+      },
+      "match": {
+        "s1_location": "Southgate Park 1801 Proctor Street",
+        "s1_courts": 2,
+        "s1_lights": "No",
+        "s1_notes": "Basketball courts with pickleball lines - need to bring your own net",
+        "s2_courts": 2,
+        "s2_polygons": 2,
+        "basis": "No imported row."
+      },
+      "patch": {
+        "surface": "asphalt",
+        "website": "https://raleighnc.gov/places/southgate-park",
+        "name": "Southgate Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "venue_type": "public_park",
+        "light": false,
+        "nets_provided": false,
+        "street_address": "1801 Proctor Street",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Southgate Park\" is listed with 2 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "surface": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Parks_Athletic_Courts_and_Fields/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Athletic Courts layer, Surface=\"asphalt\" on every pickleball polygon at \"Southgate\"."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/southgate-park: \"1801 Proctor Street\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=118, WEBSITE=\"https://raleighnc.gov/places/southgate-park\"."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Southgate Park 1801 Proctor Street\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 2 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"No\" for Southgate Park."
+        },
+        "nets_provided": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Notes for Southgate Park: \"Basketball courts with pickleball lines - need to bring your own net\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.755666,-78.607309 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "tarboro-road-community-center-outdoor-courts-raleigh-nc": {
+      "minted": false,
+      "identity": {
+        "name": "Tarboro Road Park",
+        "city": "Raleigh",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27610",
+        "latitude": 35.781301,
+        "longitude": -78.622863,
+        "imported_slug": "tarboro-road-community-center-outdoor-courts-raleigh-nc",
+        "canonical_slug": "tarboro-road-park"
+      },
+      "match": {
+        "s1_location": "Tarboro Road Park 121 N. Tarboro Street",
+        "s1_courts": 2,
+        "s1_lights": "Yes",
+        "s1_notes": "Tennis courts with pickleball lines Tarboro Road Schedule",
+        "s2_courts": 2,
+        "s2_polygons": 2,
+        "basis": "Same courts. The imported row is named \"Tarboro Road Community Center outdoor courts\", sits at 121 N Tarboro St and claims 2 courts, which is what Raleigh Parks says the park has. The row names the outdoor courts explicitly, so unlike Method there is no indoor/outdoor ambiguity to preserve."
+      },
+      "patch": {
+        "website": "https://raleighnc.gov/places/tarboro-road-park",
+        "name": "Tarboro Road Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "venue_type": "public_park",
+        "light": true,
+        "street_address": "121 N. Tarboro Street",
+        "county": "Wake"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table: \"Tarboro Road Park\" is listed with 2 in the Courts column. The same page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the eleven listed locations sum to exactly 44."
+        },
+        "street_address": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Address block on the park's own page, https://raleighnc.gov/places/tarboro-road-park: \"121 N. Tarboro Street\"."
+        },
+        "website": {
+          "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Park_Amenities/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Park Amenities layer, PARK_ID=87, WEBSITE=\"https://raleighnc.gov/places/tarboro-road-park\"."
+        },
+        "name": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Location cell \"Tarboro Road Park 121 N. Tarboro Street\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table is the city's list of OUTDOOR courts and the page states \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". All 2 of this venue's courts are outdoor."
+        },
+        "venue_type": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by City of Raleigh Parks, Recreation and Cultural Resources as one of its public park pickleball locations."
+        },
+        "light": {
+          "source_url": "https://raleighnc.gov/pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Outdoor court table, Lights column reads \"Yes\" for Tarboro Road Park."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder, coordinates 35.781301,-78.622863 fall in Wake County, NC (FIPS 37183). Resolved per park rather than assumed: the Brier Creek part of Raleigh lies in Durham County."
+        }
+      },
+      "record": {
+        "source_url": "https://raleighnc.gov/pickleball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

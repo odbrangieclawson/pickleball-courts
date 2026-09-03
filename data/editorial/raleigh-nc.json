@@ -1,0 +1,123 @@
+{
+  "city": "Raleigh",
+  "state": "NC",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Every claim below comes from a named source in `sources`, not from having played on these courts. Nobody working on this has. Raleigh is unusual among the cities we have looked at in that its parks department publishes a court count for each location AND the total across all of them, and the two reconcile; where the department's own page disagrees with its GIS inventory, the page wins and the disagreement is on the venue page rather than smoothed away. Where a source is silent — surface condition above all — the note says so instead of filling the gap. That is Decision D6 applied to prose.",
+  "slots": {
+    "parking": "Raleigh Parks publishes almost nothing about parking at its pickleball courts, and we would rather tell you that than invent it. Across the eleven locations exactly one park page states where to leave a car: Baileywick, whose page gives the lot at 9501 Baileywick Road. Two others describe access in passing rather than as guidance — Fred Fletcher Park's page notes entrances off St. Mary's Street and Glenwood Avenue, and Jaycee Park's page mentions a parking lot on Wade Avenue, though it is describing the route to the dog run rather than to the courts. The remaining eight publish nothing usable. None of the eleven states a capacity, a time limit, a permit requirement or a fee, and none distinguishes parking that serves the courts from parking that serves the whole park. Several of these sites are neighbourhood parks with ballfields, playgrounds and, in five cases, a community centre sharing the same lot, so a space existing is not the same as a space being free when a league is running. Read the posted signs, and tell us what you find.",
+    "peak_hours": "Two things shape when Raleigh's courts are busy, and both are published. The first is that only three sites are permanent pickleball courts — Method Community Park, North Hills Park and Sanderford Road Park, which between them hold 22 of the city's 44 courts. Method and North Hills are marked \"Drop in only, no reservations\", so they cannot be booked out from under you; a reservation form exists for other locations, which means at those you can arrive to find a court already claimed. The second is the rotation system. Raleigh Parks' pickleball guidelines set out a sign-up procedure at each facility: players sign in or place a paddle, games are singles or doubles to 11 and win by 2, and at the end of every game all four players leave the court and the next four go on. Groups wanting to stay together are asked to skip to the next fully open quadrant rather than break up a queue. Baileywick is the one site with published pickleball windows — Monday to Friday noon to 4 p.m., Saturday 3 to 9 p.m., Sunday 7 a.m. to 2 p.m. — because its courts are shared with basketball open play, a youth basketball league and futsal, and pickleball does not have them the rest of the week. At the nine lit locations the lights run on a timer to 10 p.m., so the evening ends at a fixed hour rather than when the light goes.",
+    "surface_condition": "This is the weakest part of Raleigh's public data and we are not going to pretend otherwise. The city's Athletic Courts inventory carries a surface field, and across every pickleball court polygon in the eleven parks it is filled in exactly once: Southgate Park, asphalt. For the other ten locations the field is empty, so every one of them reads \"Not verified yet\" here rather than a guess dressed up as a fact. What the city does publish is work in progress, and two jobs were live when we checked on 3 September 2026. North Hills Park's pickleball courts were closed for a lighting upgrade from 24 August; daytime play reopened on 2 September and the notice targets 8 September for completion, so night play may still be off when you read this. At Baileywick, the Pavilion-Court A is closed for repairs with no reopening date given — which matters more than a single closure usually would, because Baileywick's pickleball runs on Courts A and B, so half the pickleball surface at that park is out. Beyond those two notices, nothing published tells you whether a court was resurfaced last year or a decade ago.",
+    "local_scene": "Raleigh Parks runs pickleball as a programme rather than just a set of painted lines, and most of it is visible from one page. Outdoors there are 44 courts at 11 locations, which the department states in exactly those words; 22 of them, at Method, North Hills and Sanderford Road, are permanent pickleball courts and the other 22 are lines on tennis courts at six parks, on basketball courts at Southgate, and on the shared hard courts at Baileywick. Indoors is a separate operation: thirteen community centres run open-play sessions, a single session costs $3 and a four-month pass $15, nets and balls are provided and each site keeps a limited number of paddles to borrow. Sessions are scheduled rather than continuous, and the department publishes a fresh pickleball calendar as a PDF each month. Clinics are bookable through RecLink, there is a pickleball court reservation form for locations that take bookings, and the department runs a pickleball mailing list and a pickleball@raleighnc.gov address. Raleigh Parks also states plainly that it has no official relationship with USA Pickleball while adopting its code of conduct for play, which is a more careful piece of writing than most city recreation pages manage."
+  },
+  "best_for": [
+    {
+      "key": "beginners",
+      "heading": "Best if you are new, or turning up on your own",
+      "venue_slug": "sanderford-road-park",
+      "text": "Sanderford Road Park, on weight of courts. It is the largest pickleball site in the city at 10 permanent courts, all lit, and permanent courts are where the sign-up rotation Raleigh Parks describes actually works: paddles go on the board, games run to 11, and four players come off at the end of each one, so a single arrival gets into a game without needing to bring three friends. We have not verified whether nets are provided here — the city does not say — so take one if you have one.",
+      "supports": ["peak_hours", "local_scene"]
+    },
+    {
+      "key": "evening",
+      "heading": "Best after work",
+      "venue_slug": "method-community-park",
+      "text": "Method Community Park: six permanent courts, lit, and explicitly drop-in only with no reservations, so nobody can have booked the place out before you arrive. Its own park page says the lighting is on a timer from dusk to 10 p.m. Two of the eleven Raleigh locations have no lights at all — Fred Fletcher Park and Southgate Park — so those are daylight only."
+    },
+    {
+      "key": "shelter",
+      "heading": "Best when the weather is against you",
+      "venue_slug": "baileywick-park",
+      "text": "Baileywick Park is the only location in this set with covered courts: its park page lists Court A as covered and Court B as covered centre, and pickleball is scheduled on Courts A and B. Two cautions. Court A was closed for repairs when we last checked and no reopening date has been published, and pickleball only has these courts inside set windows because basketball and futsal have them the rest of the week."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Raleigh?",
+      "a": "Raleigh Parks states that it has 44 outdoor pickleball courts at 11 locations, and the per-location counts on its own page add up to exactly 44. Twenty-two of those are permanent pickleball courts at Method Community Park, North Hills Park and Sanderford Road Park. The other 22 are pickleball lines painted on tennis or basketball courts. This count covers city park courts only; it does not include the community centres' indoor sessions, private clubs or commercial venues, none of which we have verified."
+    },
+    {
+      "q": "Are Raleigh's outdoor pickleball courts free to play?",
+      "a": "We have not verified it, so we do not claim it. Raleigh Parks publishes prices for its indoor open-play programme — $3 for a single session, $15 for a four-month pass — but that is a different programme at community centres. For the outdoor park courts the department publishes no fee information either way, so every venue here reads \"Not verified yet\" on cost rather than \"free\"."
+    },
+    {
+      "q": "Which Raleigh courts have lights?",
+      "a": "Nine of the eleven. Raleigh Parks marks Fred Fletcher Park and Southgate Park as unlit; the other nine locations are lit, and the lights run on a timer until 10 p.m. One caveat that will date: North Hills Park's lights were being upgraded when we checked, with night play closed from 24 August 2026 and completion targeted for 8 September."
+    },
+    {
+      "q": "Do I need to bring my own net?",
+      "a": "At two locations, yes, and the city says so outright: Carolina Pines Park's note reads that you need to bring or borrow a net, and Southgate Park's says to bring your own. At the other nine the department does not state it one way or the other, so we leave nets unverified rather than assuming. Indoors is different — nets and balls are provided at the community centre sessions."
+    },
+    {
+      "q": "Can I book a court in advance?",
+      "a": "It depends where. Method Community Park and North Hills Park are marked \"Drop in only, no reservations\". For other locations Raleigh Parks publishes a pickleball court reservation form, and Baileywick's page warns that walk-up play is not allowed on courts scheduled for a Raleigh Parks league or programmed activity, with the scheduled activity taking priority. Check the monthly pickleball calendar before travelling."
+    },
+    {
+      "q": "Is anything closed right now?",
+      "a": "Two things were, on 3 September 2026. Baileywick Park's Pavilion-Court A is closed for repairs with no reopening date published, which matters because pickleball at Baileywick uses Courts A and B. North Hills Park's courts reopened for daytime play on 2 September after a lighting upgrade, with night play still pending and completion targeted for 8 September. Both notices come from Raleigh Parks' own status alerts and both will go stale; check the park's page before you set out."
+    },
+    {
+      "q": "Why does your court count differ from other pickleball sites?",
+      "a": "Usually because we are reading the operator rather than another directory, and occasionally because the operator disagrees with itself. Raleigh publishes two inventories: its pickleball page, and a GIS layer of court polygons maintained by its GIS division. They agree at nine of the eleven locations. At Baileywick the pickleball page says 6 and the GIS says 4, and at Carolina Pines the page says 4 and the GIS says 3. We publish the pickleball page's figure because it is the department speaking directly to players and it reconciles with the stated citywide total of 44, and we have flagged both venues for a re-check rather than hiding the disagreement."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://raleighnc.gov/pickleball",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["peak_hours", "local_scene"],
+      "evidence": "States \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\" and tabulates each location with its court count and whether it is lit. Notes mark Method Community Park and North Hills Park as \"Permanent courts - Drop in only, no reservations\", Sanderford Road Park as \"Permanent courts\", Carolina Pines as \"Tennis courts with pickleball lines - need to bring of borrow a net\", Southgate as \"Basketball courts with pickleball lines - need to bring your own net\", and Baileywick as available Monday-Friday 12-4 p.m., Saturday 3-9 p.m., Sunday 7 a.m.-2 p.m. Indoor open play is priced at $3 a session or $15 for a four-month pass across 13 community centres, with nets and pickleballs provided and paddles available to borrow. Links a monthly pickleball calendar PDF, a court reservation form, RecLink clinics and a pickleball mailing list."
+    },
+    {
+      "id": "E2",
+      "url": "https://raleighnc.gov/parks-and-recreation/services/pickleball/raleigh-parks-pickleball-guidelines",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "published": "2026-06-12",
+      "retrieved": "2026-09-03",
+      "supports": ["peak_hours", "local_scene"],
+      "evidence": "\"There will be a game sign-up procedure for courts at each facility.\" Games are singles or 2 vs 2, to 11 points, win by 2; at the conclusion of each game all four players exit and the next four on the sign-up enter. Sign-up works in quadrants of four; each player must sign in or place a paddle; groups wanting to stay together must skip to the next fully available quadrant. Indoor play requires a session or daily pass ($3 daily, $15 for four months). Raleigh Parks states it has no official or implied relationship with USA Pickleball while acknowledging its role in establishing governing rules, and adopts its code of conduct."
+    },
+    {
+      "id": "E3",
+      "url": "https://raleighnc.gov/status-alerts/method-road-park-and-north-hills-park-pickleball-courts-closures",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "published": "2026-09-02",
+      "retrieved": "2026-09-03",
+      "supports": ["surface_condition", "local_scene"],
+      "evidence": "\"Lighting upgrades continue on the pickleball courts at North Hills Park.\" Work began 24 August 2026 with completion targeted for 8 September 2026; daytime play resumed Wednesday 2 September 2026, with night play closed until the lighting work finishes. Notice updated 2 September 2026 at 9:52 a.m."
+    },
+    {
+      "id": "E4",
+      "url": "https://raleighnc.gov/status-alerts/baileywick-court-closure",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "published": "2026-08-24",
+      "retrieved": "2026-09-03",
+      "supports": ["surface_condition"],
+      "evidence": "\"Due to repairs, Baileywick Park Pavilion-Court A is currently closed.\" Posted 24 August 2026 at 9:55 a.m. No reopening date is given."
+    },
+    {
+      "id": "E5",
+      "url": "https://raleighnc.gov/places/baileywick-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["parking", "peak_hours", "surface_condition"],
+      "evidence": "Park pages for the eleven locations. Baileywick states \"Parking is at 9501 Baileywick Rd, Raleigh, NC 27615\" and lists Court A as covered, Court B as covered centre and Court C as uncovered, with a weekly schedule placing pickleball on Courts A and B and basketball open play, a youth basketball league and futsal on the same courts; walk-up play is first-come, first-served and is not allowed on courts scheduled for a league or programmed activity. Fred Fletcher Park's page notes entrances off St. Mary's Street and Glenwood Avenue and gives 820 Clay Street and 805 Washington Street as its frontages. Jaycee Park's page mentions a parking lot on Wade Avenue while describing the dog run. Method Community Park's page states \"6 courts\" with \"Lighting on timer from dusk to 10 p.m.\" The remaining park pages publish no parking guidance for the courts."
+    },
+    {
+      "id": "E6",
+      "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Parks_Athletic_Courts_and_Fields/FeatureServer/0",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
+      "tier": 2,
+      "retrieved": "2026-09-03",
+      "supports": ["surface_condition"],
+      "evidence": "Athletic Courts feature service, one polygon per court surface with a Pickleball field giving the number of pickleball courts on it. Across every pickleball polygon in the eleven parks the Surface field is populated only for Southgate Park, where it reads \"asphalt\"; it is empty everywhere else. This layer is also the source of the two count disagreements with E1, giving Baileywick 4 against E1's 6 and Carolina Pines 3 against E1's 4."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "city": "Raleigh",
+  "state": "NC",
+  "kind": "filters",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "A filter page exists here only where a source states the thing being filtered on. Raleigh gets two of the five because Raleigh Parks publishes, for every one of its eleven locations, whether the courts are outdoor and whether they are lit. It gets no /free/ page, no /indoor/ page and no /public/ page, because nothing we have read states those for these courts and a filter built on an assumption is worse than no filter at all.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Every verified pickleball court in Raleigh is outdoor, so this page and the city page list the same eleven venues. That is not a bug and it is worth a sentence of explanation. Raleigh Parks publishes its court inventory in two halves that are run as different things: 44 outdoor courts at 11 park locations, free to walk up to as far as anything published says, and a separate indoor open-play programme at thirteen community centres that costs $3 a session or $15 for a four-month pass and runs to a schedule. The department states the outdoor total in words — \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\" — and the per-location table adds up to exactly that. What it does not publish is a court count for any individual community centre gym. So the indoor half of Raleigh pickleball is real, and we cannot yet put a number on it, which is why there is no companion /indoor/ page here.",
+        "what_qualifies": "A venue appears on this page when a source states that its courts are outdoor, and only then. For all eleven Raleigh locations that statement is explicit twice over: the department's court table is headed as its outdoor list and the accompanying sentence says \"44 outdoor pickleball courts\", while the city's GIS Athletic Courts layer independently records each of these court polygons as Outdoor. We record the number of outdoor courts as equal to the venue's total court count on that basis. We do not, however, record zero indoor courts at any of them, and the distinction matters at two sites: Method Community Park and Tarboro Road Park each share their address with a community centre that runs indoor sessions, so writing \"0 indoor\" would be a false statement about the site even though it is true of the park courts this page lists. Baileywick Park is the one entry that needs a second look. Its park page describes Court A as covered and Court B as covered centre, and pickleball is scheduled on Courts A and B — so some of Raleigh's outdoor pickleball is played under a roof. Rule 14 of this directory holds that covered is not the same as indoor: a covered court is still outdoors, still subject to wind and cold, and still listed here."
+      },
+      "faqs": [
+        {
+          "q": "Are all of Raleigh's pickleball courts outdoor?",
+          "a": "All 44 courts we have verified are, across eleven city parks. Raleigh Parks also runs indoor open play at thirteen community centres, but it does not publish how many courts each of those gyms holds, so none of them is verified here and none appears in our counts."
+        },
+        {
+          "q": "Is there anywhere covered to play in Raleigh?",
+          "a": "Baileywick Park. Its park page lists Court A as covered and Court B as covered centre, and the weekly schedule puts pickleball on Courts A and B. We still count these as outdoor courts, per Rule 14. Note that Court A was closed for repairs when we last checked, with no reopening date published."
+        },
+        {
+          "q": "Why is there no indoor page for Raleigh?",
+          "a": "Because a court count is required before a venue publishes, and Raleigh Parks does not state one for its indoor sessions. It names thirteen community centres and gives the price — $3 a session, $15 for four months, nets and balls provided — but not how many courts are laid out in each gym. Until an operator states that, those venues stay unverified."
+        }
+      ],
+      "sources": ["E1", "E2", "E3"]
+    },
+    "lights": {
+      "slots": {
+        "why_this_filter": "Lights decide whether a court is usable after work for most of the year, and Raleigh is one of the few cities where the operator states the answer for every location rather than leaving you to guess from photographs. Nine of the eleven park locations are lit and two are not: Fred Fletcher Park and Southgate Park are marked No in the department's own table, so those two are daylight-only and are absent from this page. The lit courts do not stay on indefinitely. Raleigh Parks says the lighting runs on a timer until 10 p.m., and Method Community Park's own page repeats it as \"Lighting on timer from dusk to 10 p.m.\" Carolina Pines is more specific again, describing push-button lighting from dusk to 10 p.m., which means the lights there are switched on by players rather than running automatically. One entry on this page carries a caveat that will date: North Hills Park's lights were being upgraded through late August 2026, with night play closed and completion targeted for 8 September.",
+        "what_qualifies": "A venue publishes here when a source states that its courts are lit. For all nine on this page the statement is a Yes in the Lights column of Raleigh Parks' own pickleball table, which is the department telling players directly rather than an inventory built for asset management. The city's GIS Athletic Courts layer agrees on every one of the nine, recording Lighting as Yes on each pickleball polygon at those parks, so this is one of the few fields in this dataset where two independent municipal sources say the same thing. The two absent venues are absent for different reasons worth separating. Fred Fletcher Park is stated as unlit in both sources, so its lights are verified false rather than unknown — the park page's tennis court entry likewise records no lights. Southgate Park is stated as No by the department while its GIS record leaves the lighting field empty, so the department's statement is what we publish. Neither is a case of missing data: in both, a source has told us there are no lights, which is a checkable negative and a different thing from silence. What no source states anywhere is the hour the lights come on, beyond \"dusk\", or whether a timer is seasonal."
+      },
+      "faqs": [
+        {
+          "q": "How late can I play under lights in Raleigh?",
+          "a": "Until 10 p.m. at the lit locations. Raleigh Parks states the lights run on a timer, and Method Community Park's page gives it as dusk to 10 p.m. Carolina Pines Park describes push-button lighting on the same dusk-to-10 p.m. window, so there you switch them on yourself rather than waiting for a timer."
+        },
+        {
+          "q": "Which Raleigh courts have no lights?",
+          "a": "Fred Fletcher Park and Southgate Park. Raleigh Parks marks both as No in the Lights column of its pickleball table, so this is a verified absence rather than a gap in our data, and neither appears on this page."
+        },
+        {
+          "q": "Are the lights at North Hills Park working?",
+          "a": "They may not be. Raleigh Parks posted that lighting upgrades at North Hills Park began on 24 August 2026 with completion targeted for 8 September; daytime play reopened on 2 September but night play was still closed when we checked on 3 September. Check the park's page before making an evening trip."
+        }
+      ],
+      "sources": ["E1", "E2", "E4", "E5"]
+    }
+  },
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://raleighnc.gov/pickleball",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Outdoor court table listing all eleven locations with a Courts count and a Lights column, headed as the department's outdoor courts and accompanied by the sentence \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\". Lights read Yes at nine locations and No at Fred Fletcher Park and Southgate Park. \"These courts are open from dusk until 10 p.m. with lighting on a timer.\" Indoor open play is listed separately across thirteen community centres at $3 a session or $15 for a four-month pass, with nets and pickleballs provided, and no per-centre court count anywhere on the page."
+    },
+    {
+      "id": "E2",
+      "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Raleigh_Parks_Athletic_Courts_and_Fields/FeatureServer/0",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
+      "tier": 2,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Athletic Courts feature service. Every pickleball court polygon across the eleven parks records IndoorOutdoor as Outdoor, with Baileywick's recorded as Outdoor Covered. Lighting reads Yes on the pickleball polygons at all nine locations the department marks as lit, and at Southgate Park the Lighting field is empty."
+    },
+    {
+      "id": "E3",
+      "url": "https://raleighnc.gov/places/baileywick-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Lists Court A as Covered, Court B as Covered Center and Court C as Uncovered, with a weekly schedule placing pickleball on Courts A and B and basketball open play, a youth basketball league and futsal on the same courts."
+    },
+    {
+      "id": "E4",
+      "url": "https://raleighnc.gov/places/method-community-park",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Pickleball Courts section reads \"6 courts\", \"Lighting on timer from dusk to 10 p.m.\", \"Has backboards\" and \"Players are asked to follow all posted rules regarding rotating courts\". Carolina Pines Park's page records its tennis courts as \"3 courts\" with \"Push button lighting from dusk to 10 p.m.\" and \"No backboards\"."
+    },
+    {
+      "id": "E5",
+      "url": "https://raleighnc.gov/status-alerts/method-road-park-and-north-hills-park-pickleball-courts-closures",
+      "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
+      "tier": 1,
+      "published": "2026-09-02",
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "\"Lighting upgrades continue on the pickleball courts at North Hills Park.\" Work began 24 August 2026, completion targeted 8 September 2026; daytime play resumed 2 September 2026 with night play closed until the work finishes."
+    }
+  ]
+}
