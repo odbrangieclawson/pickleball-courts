@@ -25,10 +25,12 @@ export function generateStaticParams() {
 export async function generateMetadata({params}: Params): Promise<Metadata> {
   const {state, city, slug} = await params
   const f = filterView(state, city, slug)
-  if (f) return {title: f.title, description: f.meta, robots: {index: false, follow: false}}
+  if (f) return {title: f.title, description: f.meta, robots: {index: false, follow: false},
+    alternates: {canonical: `/pickleball/us/${state}/${city}/${slug}/`}}
   const meta = venueView(state, city, slug)
   if (!meta) return {title: 'Not found', robots: {index: false, follow: false}}
-  return {title: meta.title, description: meta.meta, robots: {index: false, follow: false}}
+  return {title: meta.title, description: meta.meta, robots: {index: false, follow: false},
+    alternates: {canonical: `/pickleball/us/${state}/${city}/${slug}/`}}
 }
 
 export default async function LeafPage({params}: Params) {

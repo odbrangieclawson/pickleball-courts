@@ -87,8 +87,10 @@ for (const entry of sitemapEntries()) {
     /* A filter page's counts must be the venues ON it, or Gate 5 compares
        the page's list against the city's total and fails for the wrong
        reason. */
-    const matching = new Set(fv.venues.map(x => x.href))
-    venues = c.venues.filter(v => matching.has(`/pickleball/us/${st}/${cs}/${v.slug}/`))
+    /* Match on slug, not href: an unpublished venue has a null href and
+       matching on it silently drops it from the filter's own count. */
+    const matching = new Set(fv.venues.map(x => x.slug))
+    venues = c.venues.filter(v => matching.has(v.slug))
     counts = getCounts({type: 'city', city: c.city, state: c.state}, venues)
     editorial = editorialForFilter(ed.byFilter, c.city, c.state, fslug)?.slots ?? null
   } else if (type === 'venue') {

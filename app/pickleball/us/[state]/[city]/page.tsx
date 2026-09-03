@@ -19,11 +19,13 @@ export async function generateMetadata({params}: Params): Promise<Metadata> {
   if (city.endsWith('-county')) {
     const co = countyView(state, city)
     if (!co) return {title: 'Not found', robots: {index: false, follow: false}}
-    return {title: co.title, description: co.meta, robots: {index: false, follow: false}}
+    return {title: co.title, description: co.meta, robots: {index: false, follow: false},
+      alternates: {canonical: `/pickleball/us/${state}/${city}/`}}
   }
   const v = cityView(state, city)
   if (!v) return {title: 'Not found', robots: {index: false, follow: false}}
-  return {title: v.title, description: v.meta, robots: {index: false, follow: false}}
+  return {title: v.title, description: v.meta, robots: {index: false, follow: false},
+    alternates: {canonical: `/pickleball/us/${state}/${city}/`}}
 }
 
 export default async function CityOrCountyPage({params}: Params) {
@@ -93,7 +95,7 @@ export default async function CityOrCountyPage({params}: Params) {
           <tbody>
             {v.venues.map(x => (
               <tr key={x.href}>
-                <td><a href={x.href}>{x.name}</a></td>
+                <td>{x.href ? <a href={x.href}>{x.name}</a> : x.name}</td>
                 <td className="num">{x.courts}</td>
                 <td>{x.indoorOutdoor}</td>
                 <td>{x.lights}</td>
@@ -106,10 +108,17 @@ export default async function CityOrCountyPage({params}: Params) {
       </div>
 
       <h2 data-prose>Every venue, with the detail</h2>
+      <p data-prose>
+        {v.venuePagesN} of these have a page of their own. The rest are
+        verified to exactly the same standard — every fact above and below
+        comes from the same city records — but nobody has written them up
+        yet, and a venue page here needs a couple of paragraphs about the
+        actual place before it earns a URL. Their facts are all on this page.
+      </p>
       <ul className="cards">
         {v.venues.map(x => (
-          <li className="card" key={`card-${x.href}`}>
-            <h3><a href={x.href}>{x.name}</a></h3>
+          <li className="card" key={`card-${x.name}`}>
+            <h3>{x.href ? <a href={x.href}>{x.name}</a> : x.name}</h3>
             <p className="meta">{x.detail}</p>
             <p>{x.address}</p>
             <span className="trust">Checked {x.checked}</span>

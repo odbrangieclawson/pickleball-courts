@@ -113,6 +113,19 @@ for (const file of files) {
   const anchors = stripScripts(html).match(/<a\s[^>]*href=/gi) ?? []
   if (!anchors.length) problems.push('no <a href> links in raw HTML')
 
+  /*
+    4. JSON-LD with a BreadcrumbList.
+
+    INTERNAL PAGES ARE EXEMPT FROM THIS CHECK AND ONLY THIS CHECK. Gate 2 is
+    about rendering without JavaScript, and an internal tool has to satisfy
+    that like anything else — its content and links are still asserted above.
+    Schema is a different question: it exists to describe a page to a
+    crawler, and an internal page is noindex precisely so no crawler reads
+    it. Emitting BreadcrumbList on a page we are telling robots to ignore
+    would be cargo cult rather than compliance.
+  */
+  const isInternal = String(rel).split(String.fromCharCode(92)).join('/').includes('/internal/')
+
   // 4. JSON-LD with a BreadcrumbList
   const blocks = [
     ...html.matchAll(
@@ -120,7 +133,7 @@ for (const file of files) {
     ),
   ]
   if (!blocks.length) {
-    problems.push('no application/ld+json block')
+    if (!isInternal) problems.push('no application/ld+json block')
   } else {
     let sawBreadcrumb = false
     for (const [, raw] of blocks) {

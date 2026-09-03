@@ -48,7 +48,7 @@ export type StateView = {
 export type CityFilterLink = {slug: string; href: string; label: string}
 
 export type CityVenueRow = {
-  href: string
+  href: string | null
   name: string
   courts: string
   indoorOutdoor: string
@@ -96,6 +96,7 @@ export type CityView = {
   bestFor: {key: string; heading: string; text: string; href: string | null}[]
   hasFaqs: boolean
   faqs: {q: string; a: string}[]
+  venuePagesN: string
   hasFilters: boolean
   filters: CityFilterLink[]
   venues: CityVenueRow[]
@@ -149,7 +150,8 @@ export type VenueView = {
 }
 
 export type FilterVenue = {
-  href: string
+  slug: string
+  href: string | null
   name: string
   meta: string
   address: string
@@ -214,7 +216,7 @@ export type CountyView = {
   faqs: {q: string; a: string}[]
   hasEditorial: boolean
   editorial: EditorialNote[]
-  venues: {href: string; name: string; city: string; courts: string; lights: string; checked: string | null}[]
+  venues: {href: string | null; name: string; city: string; courts: string; lights: string; checked: string | null}[]
   jsonLd: string
 }
 
@@ -222,3 +224,23 @@ export function countyView(stateSlug: string, countySlug: string): CountyView | 
 export function allCountyParams(): {state: string; city: string}[]
 
 export function navView(): {href: string; label: string}[]
+
+export function venuePagePublishes(slug: string): boolean
+
+export type ProvenanceView = {
+  totalN: string
+  venuesN: string
+  freshN: string
+  dueN: string
+  staleN: string
+  cadenceSummary: string
+  sources: {url: string; facts: string}[]
+  verifiers: {by: string; facts: string}[]
+  rows: {
+    slug: string; venue: string; field: string; value: string | null
+    date_checked: string | null; age: string; cadence: string
+    staleness: string; verified_by: string
+  }[]
+}
+
+export function provenanceView(): ProvenanceView

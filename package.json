@@ -34,7 +34,11 @@
     "gates:county": "node scripts/gate-shipped.mjs king-county wa",
     "phase4": "npm run build && npm run gates:shipped && npm run gates:county && npm run crawl",
     "gates:all": "node scripts/gate-all.mjs",
-    "phase5": "npm run build && npm run gates:all && npm run crawl"
+    "phase5": "npm run build && npm run gates:all && npm run crawl",
+    "validate:schema": "node scripts/validate-schema.mjs",
+    "gates:ci": "node scripts/gates-ci.mjs",
+    "monitor:404": "node scripts/monitor-404.mjs",
+    "phase6": "npm run build && npm run check:js-off && npm run gates:ci && npm run validate:schema && npm run crawl && npm run monitor:404"
   },
   "dependencies": {
     "next": "16.3.4",

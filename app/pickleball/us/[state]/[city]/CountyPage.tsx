@@ -76,7 +76,7 @@ export default function CountyPage({v}: {v: CountyView}) {
           <tbody>
             {v.venues.map(x => (
               <tr key={x.href}>
-                <td><a href={x.href}>{x.name}</a></td>
+                <td>{x.href ? <a href={x.href}>{x.name}</a> : x.name}</td>
                 <td>{x.city}</td>
                 <td className="num">{x.courts}</td>
                 <td>{x.lights}</td>

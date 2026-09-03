@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   description:
     'Pickleball courts with a named source and a checked date on every fact. We publish what we have verified, and we publish the gaps too.',
   robots: {index: false, follow: false},
+  alternates: {canonical: '/'},
 }
 
 export default function Home() {

@@ -73,8 +73,8 @@ export default function FilterPage({f}: {f: FilterView}) {
       <h2 data-prose>The {f.n} venues</h2>
       <ul className="cards">
         {f.venues.map(x => (
-          <li className="card" key={x.href}>
-            <h3><a href={x.href}>{x.name}</a></h3>
+          <li className="card" key={x.name}>
+            <h3>{x.href ? <a href={x.href}>{x.name}</a> : x.name}</h3>
             <p className="meta">{x.meta}</p>
             <p>{x.address}</p>
             <span className="trust">Checked {x.checked}</span>

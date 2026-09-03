@@ -12,83 +12,24 @@ COUNTY  —  1/1 publishable
 
 CITY  —  1/1 publishable
   PASS  /pickleball/us/wa/seattle/
-        1619 words · BreadcrumbList, FAQPage, ItemList
+        1681 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  2/2 publishable
+FILTER  —  1/2 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
-  PASS  /pickleball/us/wa/seattle/lights/
+  FAIL  /pickleball/us/wa/seattle/lights/
         694 words · BreadcrumbList, FAQPage, ItemList
+        G1: ONLY 1 verified venue(s). Rule 8 requires 3. This page must not exist.
 
-VENUE  —  4/24 publishable
-  FAIL  /pickleball/us/wa/seattle/bitter-lake-playfield/
-        340 words · BreadcrumbList, SportsActivityLocation
-        G4: 340 words, 360 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/delridge-playfield/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
+VENUE  —  4/4 publishable
   PASS  /pickleball/us/wa/seattle/green-lake-park-east-courts/
         796 words · BreadcrumbList, SportsActivityLocation, FAQPage
-  FAIL  /pickleball/us/wa/seattle/alki-playground/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/beacon-hill-park/
-        340 words · BreadcrumbList, SportsActivityLocation
-        G4: 340 words, 360 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/brighton-playfield/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/dearborn-park/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/discovery-park/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/georgetown-playfield/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
   PASS  /pickleball/us/wa/seattle/gilman-playground/
         731 words · BreadcrumbList, SportsActivityLocation, FAQPage
-  FAIL  /pickleball/us/wa/seattle/kinnear-park/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/lakeridge-park/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
   PASS  /pickleball/us/wa/seattle/laurelhurst-playfield/
         729 words · BreadcrumbList, SportsActivityLocation, FAQPage
-  FAIL  /pickleball/us/wa/seattle/miller-playfield/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/montlake-playfield/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
   PASS  /pickleball/us/wa/seattle/mt-baker-park/
         744 words · BreadcrumbList, SportsActivityLocation, FAQPage
-  FAIL  /pickleball/us/wa/seattle/observatory-courts/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/rainier-beach-playfield/
-        340 words · BreadcrumbList, SportsActivityLocation
-        G4: 340 words, 360 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/soundview-playfield/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/south-park-playground/
-        340 words · BreadcrumbList, SportsActivityLocation
-        G4: 340 words, 360 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/maple-leaf-reservoir-park-pickleball-courts-seattle/
-        344 words · BreadcrumbList, SportsActivityLocation
-        G4: 344 words, 356 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/west-magnolia-playfield-pickleball-courts-seattle/
-        340 words · BreadcrumbList, SportsActivityLocation
-        G4: 340 words, 360 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/walt-hundley-playfield-pickleball-courts-seattle/
-        340 words · BreadcrumbList, SportsActivityLocation
-        G4: 340 words, 360 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
-  FAIL  /pickleball/us/wa/seattle/greenwood-park-pickleball-courts-seattle/
-        336 words · BreadcrumbList, SportsActivityLocation
-        G4: 336 words, 364 SHORT of the 700-word minimum; editorial slot "description" is empty — Two or three paragraphs 
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
@@ -118,6 +59,6 @@ VENUE  —  4/24 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 8/28 pages pass all six gates.
+TOTAL: 7/8 pages pass all six gates.
 
 ```

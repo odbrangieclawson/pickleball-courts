@@ -45,6 +45,13 @@
   --shadow: 0 1px 2px rgba(20, 24, 31, .05), 0 4px 16px rgba(20, 24, 31, .05);
   --wrap: 1080px;
 
+  /*
+    System font stack on purpose: zero network requests, so no FOUT, no
+    FOIT, no font-display decision to get wrong, and no CLS from a fallback
+    metric mismatch. The fastest webfont is the one you do not load. If a
+    brand face is ever added it goes in with font-display: optional and a
+    size-adjust tuned to this stack.
+  */
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
@@ -77,6 +84,9 @@
 * { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
+
+/* Reserve the banner and header height so nothing below them shifts. */
+.demo-banner { min-height: 40px; }
 
 body {
   margin: 0;
@@ -320,7 +330,26 @@ strong { font-weight: 630; }
 /* ---------------------------------------------------------------- */
 
 .table-scroll { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: var(--radius); }
-table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+/*
+  CORE WEB VITALS — the venue table is the largest element on the highest
+  traffic template, so it is the LCP candidate and the biggest CLS risk.
+
+  table-layout: fixed is the fix. With `auto`, the browser cannot compute
+  column widths until it has parsed every row, so a 24-row table reflows
+  once at parse end — that reflow is the layout shift. Fixed widths come
+  from the first row and nothing moves afterwards. The explicit col widths
+  below mean the header alone determines the layout.
+
+  No images anywhere on the site yet, so there is no image sizing or lazy
+  loading to do. When venue photos arrive the rule is: width and height
+  attributes on every img so the box is reserved before the bytes land, and
+  loading="lazy" ONLY below the fold — a lazy LCP image is a slower LCP.
+*/
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; table-layout: fixed; }
+th, td { overflow-wrap: anywhere; }
+/* Column widths so the table cannot reflow as rows parse. */
+table th:first-child { width: 30%; }
+table th:not(:first-child) { width: auto; }
 th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
 thead th {
   background: var(--bg-2);

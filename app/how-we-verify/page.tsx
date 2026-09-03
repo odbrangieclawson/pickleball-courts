@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description:
     'Every published fact has a named source and a date it was checked. Here is the ladder we work down, and what we refuse to do.',
   robots: {index: false, follow: false},
+  alternates: {canonical: '/how-we-verify/'},
 }
 
 /* Gate 3: BreadcrumbList on every page, editorial pages included. */

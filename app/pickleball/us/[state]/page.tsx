@@ -12,7 +12,8 @@ export async function generateMetadata({params}: Params): Promise<Metadata> {
   const {state} = await params
   const v = stateView(state)
   if (!v) return {title: 'Not found', robots: {index: false, follow: false}}
-  return {title: v.title, description: v.meta, robots: {index: false, follow: false}}
+  return {title: v.title, description: v.meta, robots: {index: false, follow: false},
+    alternates: {canonical: `/pickleball/us/${state}/`}}
 }
 
 export default async function StatePage({params}: Params) {

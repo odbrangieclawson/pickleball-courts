@@ -16,7 +16,30 @@ import {navView} from '../lib/site/views.mjs'
   belongs with the commit that makes the page pass.
 */
 
+/*
+  CANONICALS AND HREFLANG (Phase 6 deliverable 5).
+
+  metadataBase turns every relative canonical below into an absolute URL, so
+  each route declares `alternates: {canonical: '<its own path>'}` and Next
+  emits <link rel="canonical">. That is what makes the noindex query
+  parameters safe: a crawler that reaches /seattle/?sort=courts is told the
+  canonical is /seattle/, so even a parameter URL that escapes robots.txt
+  consolidates rather than competing.
+
+  HREFLANG IS SCAFFOLDING AND IS DELIBERATELY INACTIVE. Phase 11 adds /ca/,
+  /au/ and /uk/ under the same locked pattern, and the day it does, every
+  page needs reciprocal hreflang or the alternates are worse than useless.
+  The shape is here and commented; emitting hreflang now — pointing at
+  locales that do not exist — would be declaring alternates for pages that
+  404, which is the same class of error as linking to an unpublished page.
+
+  O10: example.invalid until a real hostname is minted. Everything below
+  becomes correct the moment SITE_ORIGIN is set.
+*/
+const ORIGIN = process.env.SITE_ORIGIN ?? 'https://example.invalid'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(ORIGIN),
   title: {
     default: 'Deep Pickleball — verified courts, with sources',
     template: '%s | Deep Pickleball',

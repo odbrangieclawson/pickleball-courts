@@ -89,7 +89,21 @@ while (queue.length) {
   }
 }
 
-/* ---- 4. The four answers. ---- */
+/* ---- 4. The answers. ---- */
+
+/*
+  Pages that are built on purpose and deliberately absent from the sitemap:
+  internal tools. They are excluded from the "extra page" and orphan checks
+  because both would be false positives — but the exclusion is not free.
+  An internal page must actually BE internal, so each one is asserted to
+  carry noindex. A tool that is merely unlinked is one stray link away from
+  being public.
+*/
+const INTERNAL_PREFIX = '/internal/'
+const internal = [...pages.keys()].filter(p => p.startsWith(INTERNAL_PREFIX))
+const leaky = internal.filter(p => !/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(pages.get(p)))
+
+
 
 const published = sitemapEntries()
 const publishedPaths = new Set(published.map(e => e.path))
@@ -99,6 +113,8 @@ const tooDeep = [...publishedPaths].filter(p => depth.has(p) && depth.get(p) > 3
 
 const linkedFromSomewhere = new Set([...linksFrom.values()].flatMap(s => [...s]))
 const orphans = [...publishedPaths].filter(p => p !== '/' && !linkedFromSomewhere.has(p))
+/* An internal page linked from a public one is a leak, not a feature. */
+const internalLinked = internal.filter(p => linkedFromSomewhere.has(p))
 
 const dead = []
 for (const [from, set] of linksFrom) {
@@ -107,7 +123,8 @@ for (const [from, set] of linksFrom) {
   }
 }
 
-const builtNotInSitemap = [...pages.keys()].filter(p => !publishedPaths.has(p))
+const builtNotInSitemap = [...pages.keys()]
+  .filter(p => !publishedPaths.has(p) && !p.startsWith(INTERNAL_PREFIX))
 const sitemapNotBuilt = [...publishedPaths].filter(p => !pages.has(p))
 
 /* ---- 5. Report. ---- */
@@ -123,12 +140,16 @@ console.log(line('Every published page reachable from home', unreachable.length 
 console.log(line('Reachable within three clicks', tooDeep.length ? `${tooDeep.length} deeper than 3` : 'all', tooDeep.length === 0))
 console.log(line('No orphans', orphans.length ? `${orphans.length} orphaned` : 'none', orphans.length === 0))
 console.log(line('No link points at a page that does not exist', dead.length ? `${dead.length} dead link(s)` : 'none', dead.length === 0))
+console.log(line('Internal pages carry noindex', leaky.length ? `${leaky.length} leaking` : `${internal.length} internal, all noindex`, leaky.length === 0))
+console.log(line('No public page links to an internal page', internalLinked.length ? `${internalLinked.length} linked` : 'none', internalLinked.length === 0))
 console.log(line('Sitemap matches the pages that shipped', (builtNotInSitemap.length + sitemapNotBuilt.length) ? `${builtNotInSitemap.length} extra, ${sitemapNotBuilt.length} missing` : 'exact', builtNotInSitemap.length + sitemapNotBuilt.length === 0))
 
 if (unreachable.length) problems.push(['Unreachable', unreachable])
 if (tooDeep.length) problems.push(['Deeper than three clicks', tooDeep.map(p => `${p} (${depth.get(p)})`)])
 if (orphans.length) problems.push(['Orphans', orphans])
 if (dead.length) problems.push(['Dead links', dead.map(d => `${d.from} -> ${d.href}`)])
+if (leaky.length) problems.push(['Internal pages missing noindex', leaky])
+if (internalLinked.length) problems.push(['Internal pages linked from the public site', internalLinked])
 if (builtNotInSitemap.length) problems.push(['Built but not in the sitemap', builtNotInSitemap])
 if (sitemapNotBuilt.length) problems.push(['In the sitemap but not built', sitemapNotBuilt])
 
@@ -150,6 +171,6 @@ for (const k of [...byDepth.keys()].sort((a, b) => String(a).localeCompare(Strin
 }
 
 const pass = !unreachable.length && !tooDeep.length && !orphans.length && !dead.length &&
-  !builtNotInSitemap.length && !sitemapNotBuilt.length
+  !builtNotInSitemap.length && !sitemapNotBuilt.length && !leaky.length && !internalLinked.length
 console.log(pass ? '\nCRAWL OK\n' : '\nCRAWL FAILED\n')
 process.exit(pass ? 0 : 1)

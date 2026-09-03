@@ -1,0 +1,116 @@
+name: CI
+
+# Phase 6 deliverables 2 and 3: PERMANENT CI, not a one-off test.
+#
+# Every check here is one a competitor currently fails. PlayPickleball
+# renders nothing with JavaScript disabled across 25,245 pages, and
+# Pickleheads serves hard 404s on pages worth 1,475 and 463 visits a month.
+# Both are the kind of failure that ships quietly and is expensive to
+# discover from analytics months later, which is exactly what a build step
+# is for.
+#
+# The ordering is deliberate: cheap checks that can fail fast come first,
+# and everything that needs a build comes after it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # The 404 monitor and freshness sweep want a heartbeat, not just a push.
+    - cron: '17 6 * * *'
+
+jobs:
+  build-and-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # ---- cheap, no build needed ----
+
+      - name: Keyword map — one primary keyword per URL (Rule 9)
+        run: node scripts/validate-keyword-map.mjs
+
+      - name: Count bypass scan — no page computes its own number (D2)
+        run: node scripts/validate-no-bypass.mjs
+
+      - name: Data validator over every imported row
+        run: node scripts/validate-data.mjs
+
+      - name: Unit tests
+        run: npm test
+
+      # ---- build, then everything that reads the built HTML ----
+
+      - name: Build
+        run: npm run build
+
+      # DELIVERABLE 2. Permanent, not a one-off. Fetches every built page
+      # and fails if primary content, internal links or schema are missing
+      # from the raw HTML. This is the check PlayPickleball would fail on
+      # every page it serves.
+      - name: Gate 2 — JavaScript-off render on every page type
+        run: npm run check:js-off
+
+      # DELIVERABLE 3. Four import gates over every row, six page gates over
+      # every published page, summary table, non-zero exit on any failure
+      # that should block a deploy.
+      - name: Import gates and page gates
+        run: npm run gates:ci
+
+      - name: Structured data validation, including the AggregateRating negative test
+        run: npm run validate:schema
+
+      - name: Internal linking, orphans, dead links, sitemap agreement
+        run: npm run crawl
+
+      # DELIVERABLE 6. Against the built output in CI; the scheduled run
+      # below is what watches production.
+      - name: 404 monitor
+        run: npm run monitor:404
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/
+          retention-days: 30
+
+  # DELIVERABLE 6, production half. Runs on the schedule above against the
+  # live origin once one exists. Skipped until SITE_ORIGIN is configured,
+  # rather than silently passing against nothing.
+  monitor-production:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+
+      - name: Skip if no live origin yet
+        id: check
+        run: |
+          if [ -z "${{ vars.SITE_ORIGIN }}" ]; then
+            echo "No SITE_ORIGIN configured (decisions.md O10 is still open)."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 404 monitor against production
+        if: steps.check.outputs.skip == 'false'
+        run: node scripts/monitor-404.mjs --live "${{ vars.SITE_ORIGIN }}"
