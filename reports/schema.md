@@ -13,10 +13,10 @@ editorial       1       1   BreadcrumbList
 county          1       1   BreadcrumbList, FAQPage, ItemList
 city            1       1   BreadcrumbList, FAQPage, ItemList
 filter          2       2   BreadcrumbList, FAQPage, ItemList
-venue           4       4   BreadcrumbList, SportsActivityLocation, FAQPage
+venue          24      24   BreadcrumbList, SportsActivityLocation, FAQPage
 
 === NEGATIVE TEST: AggregateRating ===
-  venue pages checked:            4
+  venue pages checked:            24
   AggregateRating nodes emitted:  0
   first-party ratings in dataset: 0 (rating and user_rating are QUARANTINED, decisions.md O2)
   PASS — no venue emits AggregateRating, and none has first-party ratings to justify one.

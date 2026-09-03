@@ -124,8 +124,13 @@ const MATCHES = [
    basis: 'Address 923 NW 54th St matches the Parks record exactly.'},
   {slug: 'delridge-pickleball-and-tennis-courts', park: 'Delridge Playfield', pma: 450,
    basis: 'Same site on Delridge Way SW; the imported street number is off by a block and is corrected. NOT the "Delridge Community Center" indoor row.'},
-  {slug: 'seattle-kinnear-park-queen-anne-seattle-wa', park: 'Kinnear Park', pma: 314,
-   basis: 'Same name, address 899 W Olympic Pl matches (the Parks record misspells it "Olumpic").'},
+  {
+    slug: 'seattle-kinnear-park-queen-anne-seattle-wa',
+    park: 'Kinnear Park',
+    pma: 314,
+    addressFix: '899 W Olympic Pl',
+    basis: 'Same name, same site. The Parks record gives the street as "899 W Olumpic Pl", which is a typo for Olympic Place in the municipal data itself. Publishing it verbatim would republish a misspelled street name as a verified fact, so the spelling is corrected and the correction is recorded here rather than made silently. Same treatment as the "Greenwod" park name.',
+  },
   {slug: 'seattle-montlake-playfield-multisport-court-seattle-wa', park: 'Montlake Playfield', pma: 376,
    basis: 'Address 1618 E Calhoun St matches the Parks record exactly. Both describe a single shared-use court.'},
   {
@@ -264,7 +269,7 @@ for (const m of MATCHES) {
     doc1.fact('restroom', restroomOf(pb.NEARBYRESTROOM), {evidence: `NEARBYRESTROOM="${pb.NEARBYRESTROOM}"`}),
     doc1.fact('parking', pb.PARKING && pb.PARKING !== '-' ? pb.PARKING : null, {evidence: `PARKING="${pb.PARKING}"`}),
     doc1.fact('venue_type', 'public_park', {evidence: `Published by Seattle Parks and Recreation as a park facility; Parks record OWNER="${addr.OWNER}"`}),
-    doc2.fact('street_address', addr.ADDRESS, {evidence: `Parks layer PMA=${addr.PMA}, NAME="${addr.NAME}", ADDRESS="${addr.ADDRESS}"`}),
+    doc2.fact('street_address', m.addressFix ?? addr.ADDRESS, {evidence: `Parks layer PMA=${addr.PMA}, NAME="${addr.NAME}", ADDRESS="${addr.ADDRESS}"`}),
     /*
       County. The Phase 1 backfill derives county from postal_code and flags
       the ambiguous ones for review - Lakeridge came back low-confidence and

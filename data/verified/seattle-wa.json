@@ -1603,7 +1603,7 @@
       "match": {
         "park": "Kinnear Park",
         "pma": 314,
-        "basis": "Same name, address 899 W Olympic Pl matches (the Parks record misspells it \"Olumpic\")."
+        "basis": "Same name, same site. The Parks record gives the street as \"899 W Olumpic Pl\", which is a typo for Olympic Place in the municipal data itself. Publishing it verbatim would republish a misspelled street name as a verified fact, so the spelling is corrected and the correction is recorded here rather than made silently. Same treatment as the \"Greenwod\" park name."
       },
       "patch": {
         "name": "Kinnear Park",
@@ -1615,7 +1615,7 @@
         "restroom": true,
         "parking": "Street",
         "venue_type": "public_park",
-        "street_address": "899 W Olumpic Pl",
+        "street_address": "899 W Olympic Pl",
         "county": "King"
       },
       "provenance": {

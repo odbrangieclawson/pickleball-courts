@@ -56,7 +56,7 @@ below is a sourced value replacing an unsourced one.
 | `seattle-kinnear-park-queen-anne-seattle-wa` | name | "Seattle - Kinnear Park (Queen Anne)" | "Kinnear Park" | overridden |
 | `seattle-kinnear-park-queen-anne-seattle-wa` | total_courts | 3 | 1 | overridden |
 | `seattle-kinnear-park-queen-anne-seattle-wa` | outdoor_courts | 3 | 1 | overridden |
-| `seattle-kinnear-park-queen-anne-seattle-wa` | street_address | "899 W Olympic Pl." | "899 W Olumpic Pl" | overridden |
+| `seattle-kinnear-park-queen-anne-seattle-wa` | street_address | "899 W Olympic Pl." | "899 W Olympic Pl" | overridden |
 | `seattle-montlake-playfield-multisport-court-seattle-wa` | name | "Seattle - Montlake Playfield Multisport Court" | "Montlake Playfield" | overridden |
 | `seattle-rainier-beach-playfield-seattle-wa` | name | "Seattle - Rainier Beach Playfield" | "Rainier Beach Playfield" | overridden |
 | `seattle-rainier-beach-playfield-seattle-wa` | street_address | "4550 S Henderson St" | "4707 S Cloverdale St" | overridden |

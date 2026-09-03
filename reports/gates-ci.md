@@ -27,7 +27,7 @@ page type   pages  pass   G1    G2    G3    G4    G5    G6
 county          1     1     1     1     1     1     1     1
 city            1     1     1     1     1     1     1     1
 filter          2     2     2     2     2     2     2     2
-venue           4     4     4     4     4     4     4     4
+venue          24    24    24    24    24    24    24    24
 
-published pages passing all six: 8/8
+published pages passing all six: 28/28
 ```

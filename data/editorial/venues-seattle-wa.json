@@ -4,7 +4,7 @@
   "kind": "venues",
   "date_checked": "2026-09-03",
   "written_by": "staff_research",
-  "note_on_method": "Only four Seattle venues appear here, and that is the whole point of the file. A venue page needs two or three paragraphs about that specific place, and the only Seattle venues a source says anything specific about are the three whose hours the city changed by order and the one running an open-play pilot. The other twenty verified venues have their fact row and nothing else, so they get no editorial, fail Gate 4, and do not publish. Writing plausible paragraphs about a court nobody has stood on would be the single most damaging thing on this site: venue-name searches are read by people who already know the venue.",
+  "note_on_method": "These notes are researched, not visited. Nobody working on this directory has played on a Seattle court, and none of the writing below pretends otherwise: there is no crowding, no surface condition, no sense of the place on a Saturday morning, because no source states any of that and inventing it would be the most damaging thing this site could ship. Venue-name searches are read by the people who already know the venue. What each note does contain is what Seattle Parks records about that specific site, where it sits among the twenty-four venues we have verified, and its own correction history: what the imported commercial record claimed and what the city says instead. That last part is genuinely particular to each venue and is the most useful thing we can honestly say about it. Where a reader wants to know what it is actually like to play there, the page says we do not know and points at the correction link.",
   "venues": {
     "green-lake-park-east-courts": {
       "slots": {
@@ -116,6 +116,590 @@
           "q": "Where do I park?",
           "a": "Street parking — Seattle Parks records no dedicated lot here. No permit or time-limit information is published and we have not checked restrictions on the ground, so read the posted signs."
         }
+      ]
+    },
+    "bitter-lake-playfield": {
+      "slots": {
+        "description": "Bitter Lake Playfield holds eight courts striped for tennis and pickleball under lights, which makes it one of exactly two sites in Seattle offering both the largest court count and evening play. Between it and Rainier Beach Playfield sit sixteen of the ninety-two verified courts in the city, and they carry most of the practical capacity for playing here once the light goes. It is also the venue our imported data handled worst. The commercial dataset we started from held two separate Bitter Lake entries: a community centre with three indoor courts, and a second row claiming eleven courts of which three were indoor. Seattle Parks records one pickleball site at this address, with eight courts, all outdoor. We matched the outdoor row and left the community centre alone, because the centre is a building with its own indoor courts and merging the two would have invented a fifteen-court complex that does not exist anywhere except in a spreadsheet.",
+        "getting_there": "Seattle Parks records the address as 13035 Linden Ave N and gives this site dedicated parking rather than street parking, which among the twenty-four verified venues puts it in the better-served half. The restroom is recorded as seasonal, so it is not something to count on outside the warm months. No capacity, permit or time-limit information is published for the parking, and none of it has been checked on the ground.",
+        "what_to_expect": "Eight courts, nets provided, and lights: the fullest combination available in Seattle on the city's own record. The courts are shared with tennis, so expect tennis lines underfoot and the possibility of a booked court, which is true of eighteen of the twenty-five sites Seattle Parks lists. There is no posted-hours order against this location in the records we have checked, unlike Gilman, Laurelhurst and Mt. Baker, so the lights are not capped by a curfew. Seattle Parks publishes no crowding or peak-time data for any venue, so we cannot tell you when it fills."
+      },
+      "faqs": [
+        {
+          "q": "Is this the same place as Bitter Lake Community Center?",
+          "a": "No, and keeping them apart mattered. The community centre is a building with three indoor courts of its own; this record is the outdoor playfield with eight. They share a campus. Our imported data blurred the two into a single eleven-court entry, which the city records do not support."
+        },
+        {
+          "q": "Can I play here in the evening?",
+          "a": "The city records lighting here, and no restricted-hours order applies to this site in the records we have checked. What Seattle Parks does not publish is when the lights actually run or whether they are switched on seasonally, so treat evening play as possible rather than guaranteed."
+        },
+        {
+          "q": "Are the courts dedicated to pickleball?",
+          "a": "No. This is a shared tennis and pickleball surface, which is the norm in Seattle. Only four of the twenty-five locations the city records are dedicated pickleball, and three of those are single courts."
+        },
+        {
+          "q": "How does it compare with Rainier Beach?",
+          "a": "They are the two eight-court lit sites in Seattle and between them hold sixteen of the city's ninety-two verified courts. Rainier Beach has an all-year restroom where Bitter Lake's is seasonal; both have dedicated parking and nets. On the city's record the two are close to interchangeable, and the deciding factor for most people will be which end of Seattle they are starting from."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "rainier-beach-playfield": {
+      "slots": {
+        "description": "Rainier Beach Playfield carries eight lit courts striped for tennis and pickleball, tying it with Bitter Lake for the largest lit site in the verified Seattle set. It is also the one venue where our imported record and the city agreed exactly, which is rare enough here to be worth stating: the commercial dataset said eight outdoor courts and Seattle Parks says eight outdoor courts. Across the twenty matched Seattle venues, sixty-two imported values were overwritten by the municipal record, so exact agreement on a court count is the exception rather than the rule. The match still needed a decision, because the same import also held a Rainier Beach Community Center row claiming three indoor courts. That is a different venue, a building with its own courts, and it is not published here.",
+        "getting_there": "Seattle Parks gives the address as 4707 S Cloverdale St and records dedicated parking and an all-year restroom, the better of the two restroom categories the city uses. Eleven of the twenty-five sites in the dataset have an all-year restroom, eleven are seasonal, and three have none recorded at all. No permit or time-limit detail is published, and none of it has been verified on the ground.",
+        "what_to_expect": "Eight courts with nets provided and lights, shared with tennis. No restricted-hours order is recorded against this site, so unlike Mt. Baker the lights are not paired with a 10 p.m. curfew. Combined with dedicated parking and an all-year restroom, this is one of the better-equipped venues in the city on the record, though equipped is not the same as quiet and nothing is published about how busy any court gets. The gaps are the standard Seattle ones: no surface type, no fee and no published hours for the site, so those rows read as unverified rather than being filled from a commercial record that had no source behind them either."
+      },
+      "faqs": [
+        {
+          "q": "Is this the community centre?",
+          "a": "No. Seattle Parks records the playfield and the community centre separately, and this page is the playfield: eight outdoor courts. The community centre entry in our import claims three indoor courts and has not been verified, so it does not appear on this site at all."
+        },
+        {
+          "q": "Did anything change from the original data?",
+          "a": "Almost nothing, which is unusual here. The court count and the outdoor split both matched the city record exactly. The address was corrected, and everything the city does not state, including surface, fees and hours, was cleared to unverified."
+        },
+        {
+          "q": "Are there lights and a restroom?",
+          "a": "Both are recorded by the city: lighting present, and an all-year restroom rather than a seasonal one. What is not recorded anywhere is the hours those lights operate."
+        },
+        {
+          "q": "How does it compare with Bitter Lake?",
+          "a": "They are the only two eight-court lit venues in the city and are near-identical on the record: nets, dedicated parking, lights, tennis-shared. The one difference Seattle Parks records is the restroom, all-year here and seasonal at Bitter Lake, which is a small thing in July and a real one in January. Neither carries a posted-hours order."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "west-magnolia-playfield-pickleball-courts-seattle": {
+      "slots": {
+        "description": "West Magnolia Playfield is one of four venues on this site that our imported dataset did not contain at all. Eight courts striped for tennis and pickleball, dedicated parking, an all-year restroom: a substantial site by any reading, and the commercial directory we started from had no row for it. It exists here only because we went to the city's own pickleball dataset rather than trusting the import, and that is the argument for municipal sourcing in a single example. It is the largest unlit site in Seattle, sharing the eight-court tier with Bitter Lake, Rainier Beach and Green Lake East but without their evening option. We deliberately did not match it to Magnolia Community Center, which is a nearby indoor building with three courts of its own and a genuinely different venue.",
+        "getting_there": "The Parks record gives 2518 34th Ave W, with dedicated parking and an all-year restroom. Because this venue was minted from municipal data rather than matched to an imported row, every fact on this page including the address comes from the city, and nothing at all came from the commercial import. No capacity or restriction information is published and none has been checked in person.",
+        "what_to_expect": "Eight courts, nets provided, no lights recorded. That combination makes it the largest daylight-only site in the city: plenty of capacity, and nothing to extend it past dusk, which in a Seattle December means play ends before half past four. Shared with tennis, like most Seattle courts. No crowding data is published for this or any other venue, so we cannot tell you whether eight courts is enough on a Saturday. As a minted venue its gaps are the city's gaps: no surface type, no fee, no hours and no indication of demand on what is jointly the largest court count in Seattle. Eight courts with no lighting is a specific and slightly awkward combination, offering the most capacity in the city during hours when capacity is least likely to be the binding constraint. We have not been to see whether that plays out."
+      },
+      "faqs": [
+        {
+          "q": "Why was this venue missing from other directories?",
+          "a": "We can only speak for the commercial dataset we imported, which had no row for it. Seattle Parks does record it. That gap is the reason this project treats a municipal source as the starting point rather than as a cross-check on someone else's list."
+        },
+        {
+          "q": "Is this Magnolia Community Center?",
+          "a": "No. The community centre is an indoor building nearby with three courts, recorded separately. We deliberately did not merge them, because merging a playfield with a building is how a directory ends up publishing a court count that belongs to neither."
+        },
+        {
+          "q": "Are there lights?",
+          "a": "No. Seattle Parks records no lighting here, and unlike a venue where the city is simply silent, this is a positive record of absence."
+        },
+        {
+          "q": "Is eight courts a lot for Seattle?",
+          "a": "It is the joint maximum. Four sites in the city have eight courts and nothing has more: this one, Bitter Lake, Rainier Beach and Green Lake East. Of those four, two are lit and two are not, and West Magnolia is in the unlit half. So this is as much daytime capacity as Seattle offers in one place."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "miller-playfield": {
+      "slots": {
+        "description": "Miller Playfield on Capitol Hill carries five courts under lights, which makes it the largest lit site in the centre of the city. The other four lit venues sit in Ballard, Rainier Beach, West Seattle and at Mt. Baker. Seattle Parks names the parcel Pendleton Miller Playfield. Our imported record claimed four courts; the city says five, and on a five-court site a missing court is a twenty per cent error on the single number people most want. The match also needed care, because the same import held a separate Miller Community Center row at the same 330 19th Ave E address, claiming seven courts of which three were indoor. That is the building beside the playfield, not these courts, and we did not merge them. Doing so would have produced a twelve-court Capitol Hill complex out of two records describing different things.",
+        "getting_there": "The address is 330 19th Ave E, which the import and the city agreed on. Dedicated parking and an all-year restroom are both recorded. The playfield sits inside a dense residential grid, and while the city records a dedicated lot it publishes nothing about its size or its restrictions, and we have not looked.",
+        "what_to_expect": "Five courts, nets provided, lights, shared with tennis. No restricted-hours order applies here in the records we have checked, so the lights are not capped by a curfew the way Mt. Baker's are. For anyone in the centre of Seattle this is the only lit option that is not a substantial drive, which is a statement about the city's provision rather than about this venue. As everywhere, no peak-time or crowding information is published. The remaining gaps are the ones Seattle carries everywhere: no surface type, no fee and no published hours for this site, so those rows read as unverified above."
+      },
+      "faqs": [
+        {
+          "q": "Is this the same as Miller Community Center?",
+          "a": "No, and they share an address, which is exactly why the distinction matters. The community centre is the indoor building; this is the outdoor playfield with five courts. Our import held both, and treating them as one venue would have doubled the apparent capacity of the block."
+        },
+        {
+          "q": "How many courts are there, really?",
+          "a": "Five. The imported record said four. Seattle Parks, which operates the site, records five, and a city record wins on a fact about its own facility."
+        },
+        {
+          "q": "Why is it called Pendleton Miller Playfield on some maps?",
+          "a": "That is the name on the city's parcel record. The pickleball dataset calls the same site Miller Playfield, and we use the shorter form the pickleball layer uses."
+        },
+        {
+          "q": "Why does the court count matter so much here?",
+          "a": "Because the site is small enough that one court is a large fraction of it. Our imported record said four and the city says five; on an eight-court playfield that would be a rounding error, but on a five-court site it is twenty per cent of the capacity. Venue-name searches are read by people who already know the venue, and they are exactly the readers who would notice."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "delridge-playfield": {
+      "slots": {
+        "description": "Delridge Playfield holds four courts striped for tennis and pickleball in West Seattle, and it is a good example of how far an unverified record can drift. Our imported dataset claimed seven courts here, three of them indoor. Seattle Parks records four courts, all outdoor, and there is no verified indoor pickleball at this site or anywhere else in the city. So the import overstated the capacity by three courts and invented an indoor facility. The address was wrong as well, by roughly a block on the same street. Neither error is dramatic on its own; together they are the reason this page is built from the city record rather than from the import. We also kept this separate from the Delridge Community Center row, which is the indoor building nearby.",
+        "getting_there": "Seattle Parks gives 4458 Delridge Way SW; our imported record had 4501, about a block north. The city record is the property owner describing its own parcel, so it wins. Dedicated parking is recorded, along with a seasonal restroom, which means present in the warm months and not something to plan around in February. No restrictions have been checked on the ground.",
+        "what_to_expect": "Four courts, nets provided, no lights. Shared with tennis, so expect tennis lines and the possibility of a booked court. With no lighting recorded, play here is bounded by daylight, and Seattle daylight in midwinter ends before half past four. There is no crowding data published for this venue any more than for the others. What we cannot tell you about Delridge is anything the city does not record, and on this venue that list is long: no surface type, no resurfacing history, no fee, no opening hours, and nothing about whether four courts is enough on a Saturday. The corrected court count and the corrected address came from Seattle Parks; everything the commercial record asserted beyond those was cleared rather than carried over, because a value with no source behind it is worse than an admitted gap. If you play here regularly, the surface condition and the busy hours are exactly the two things a reader would most want and exactly the two we have no honest way to supply."
+      },
+      "faqs": [
+        {
+          "q": "Are there indoor courts at Delridge?",
+          "a": "Not at this venue. Our imported record claimed three and the city records none. There is a Delridge Community Center nearby which is an indoor building, but it has not been verified against a named source, so it does not appear on this site."
+        },
+        {
+          "q": "How many courts are there?",
+          "a": "Four, all outdoor, per Seattle Parks. The imported record said seven. That is the largest single court-count correction in the Seattle set after Green Lake."
+        },
+        {
+          "q": "Which address is right?",
+          "a": "4458 Delridge Way SW, from the city's parcel record. Our import had 4501 Delridge Way SW, about a block away."
+        },
+        {
+          "q": "Is there anywhere lit nearby in West Seattle?",
+          "a": "Alki Playground is the lit option in West Seattle, with four courts and street parking. Walt Hundley Playfield is also close and also unlit. Of the twenty-four verified Seattle venues only five have lighting recorded at all, so the choice in any one part of the city is usually narrow."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "alki-playground": {
+      "slots": {
+        "description": "Alki Playground carries four lit courts striped for tennis and pickleball, one of only five lit venues among the twenty-four verified in Seattle. It sits in West Seattle above the Alki shoreline. The correction here is not about numbers, which is unusual in this set: the court count and the address both matched the city record exactly. It is about classification. Our imported record typed this venue as a dedicated pickleball facility. Seattle Parks records it as a park whose courts are shared between tennis and pickleball, which is a materially different thing to arrive at with a paddle and an expectation. The city's typing is the one published here, and the imported claim is the kind of small upgrade that unsourced directory data applies to itself without anyone deciding to.",
+        "getting_there": "The address is 5817 SW Lander St, which the import and the city agreed on exactly. Seattle Parks records street parking rather than a dedicated lot, and a seasonal restroom. Street parking near a shoreline destination is worth knowing about in principle; in practice the city publishes no capacity or restriction data for it and we have not checked, so read the posted signs rather than trusting an assumption.",
+        "what_to_expect": "Four courts, nets provided, lights, shared with tennis. No posted-hours order is recorded against this site. Among the five lit Seattle venues this is the only one with street rather than dedicated parking, which is the practical trade-off to weigh against Bitter Lake or Rainier Beach if you are driving to an evening game. No crowding information is published for any of them, here included. Beyond the recorded facts we know very little about Alki. The city publishes no surface type, no fee, no hours and no indication of how the courts fill on a summer weekend at a beachfront park, which is the one question a reader arriving here would most want answered. We have not been. The imported record did carry claims on some of those fields, and we cleared them rather than republishing them under a municipal badge they had not earned, which is why several rows above read as unverified on a venue that is otherwise well documented."
+      },
+      "faqs": [
+        {
+          "q": "Is this a dedicated pickleball facility?",
+          "a": "No, despite what some listings say. Our imported record classified it that way; Seattle Parks records a shared tennis and pickleball surface. Expect tennis lines and shared use."
+        },
+        {
+          "q": "Is there parking at the courts?",
+          "a": "The city records street parking rather than a dedicated lot here. It publishes nothing about capacity, permits or time limits, and we have not verified any of that in person."
+        },
+        {
+          "q": "Are there lights?",
+          "a": "Yes, recorded by Seattle Parks, making this one of five lit venues in the verified Seattle set. The city does not publish what hours those lights run."
+        },
+        {
+          "q": "Is it the best lit option in West Seattle?",
+          "a": "It is the only one. Seattle Parks records five lit venues across the city and Alki is the West Seattle entry; Delridge and Walt Hundley, the other two West Seattle sites we have verified, both have no lighting recorded. The trade-off is parking, which is street here rather than the dedicated lots at Bitter Lake and Rainier Beach."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "beacon-hill-park": {
+      "slots": {
+        "description": "Beacon Hill Park holds four courts striped for tennis and pickleball. Its distinguishing feature in our records is a naming disagreement inside the city's own data: Seattle Parks calls the parcel BEACON HILL PLAYGROUND in its property record while the pickleball layer calls the same site Beacon Hill Park. Both are the city, both describe the same courts at the same address, and they do not agree with each other. We publish the pickleball layer's name because that is the record describing these courts specifically, and we note the disagreement rather than picking silently. Our imported record offered a third variation, Beacon Hill Playground Tennis Courts, which drops pickleball from the name of a pickleball venue entirely.",
+        "getting_there": "The address is 1902 13th Ave S, which the import and both city records agree on. Seattle Parks records street parking and a seasonal restroom. The courts sit inside a dense residential neighbourhood; the city publishes no parking capacity or restriction detail and nobody here has checked the signs.",
+        "what_to_expect": "Four courts, nets provided, no lights recorded, shared with tennis. With no lighting this is a daylight venue, which for a large part of the Seattle year makes it a lunchtime and weekend court rather than an after-work one. Nothing is published about how busy it gets, and we will not guess. The gaps on this venue are the usual ones and worth naming rather than leaving as blank rows. Seattle Parks records no surface type for any of its pickleball courts, so we cannot tell you whether the asphalt here is recent or cracked. It records no fee, so the cost line reads as unverified even though a municipal park court is very likely free. It records no hours for this site, and nothing at all about how busy four shared courts get on a weekday evening in a dense neighbourhood. Those are real questions and we have no sourced answer to any of them."
+      },
+      "faqs": [
+        {
+          "q": "Is it Beacon Hill Park or Beacon Hill Playground?",
+          "a": "Both, depending on which city record you read. The Parks property record says playground; the pickleball dataset says park. We use the pickleball dataset name because it is the record specifically describing these courts, and we flag the disagreement rather than hiding it."
+        },
+        {
+          "q": "Are there lights?",
+          "a": "No. Seattle Parks positively records no lighting at this site, which is a different statement from the city simply being silent about it."
+        },
+        {
+          "q": "Is the restroom open all year?",
+          "a": "No, the city records it as seasonal. Eleven of the twenty-five Seattle sites have seasonal restrooms, eleven are all-year and three have none recorded."
+        },
+        {
+          "q": "What is nearby if this is busy?",
+          "a": "Dearborn Park is the closest other verified venue, also four courts and also unlit, though it has no restroom recorded where this site has a seasonal one. Neither has lights. The nearest lit courts are at Mt. Baker Park, which carries a 10 p.m. curfew imposed by the city after noise studies."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "brighton-playfield": {
+      "slots": {
+        "description": "Brighton Playfield carries four courts striped for tennis and pickleball in south Seattle. It is one of the quieter entries in this set, in the sense that almost nothing needed correcting: the name, the address and the court count all came through the import intact and the city record confirmed each one. That is worth stating because it is unusual. Across the twenty Seattle venues matched to imported rows, only about a quarter of the non-null values survived contact with the municipal record; the rest were either overwritten or cleared for having no source behind them. Brighton is on the good side of that ratio, and the practical consequence for a reader is that everything on this page was confirmed rather than repaired.",
+        "getting_there": "Seattle Parks gives 6000 39th Ave S, matching the imported address exactly. The city records street parking and an all-year restroom, which is the better of the two restroom categories it uses. As everywhere in this set, no parking capacity, permit or time-limit information is published and none has been verified on the ground.",
+        "what_to_expect": "Four courts, nets provided, no lights recorded, shared with tennis. An all-year restroom and four courts make this a reasonable daylight option in south Seattle; the absence of lighting is the constraint, and it is a positively recorded absence rather than an unknown. No crowding or peak-time data exists for this venue. What is missing here is what is missing across the city. There is no surface record, no fee record and no hours record for Brighton, so three of the rows above read as unverified. Nothing is published about how the four courts fill, and we have not visited to find out. The unusual thing about this venue is how little needed correcting rather than how much is known: an accurate import is not the same as a complete one, and the fields the commercial record never held are still empty now."
+      },
+      "faqs": [
+        {
+          "q": "Was anything corrected on this venue?",
+          "a": "Very little, which is unusual in this set. The name, address and court count all matched the city record. What did change is that unsourced fields, including surface, fees and hours, were cleared to unverified rather than published on the strength of a commercial record."
+        },
+        {
+          "q": "Is there a restroom?",
+          "a": "Yes, and the city records it as all-year rather than seasonal. That puts it among the eleven Seattle pickleball sites with a year-round restroom."
+        },
+        {
+          "q": "Can I play in the evening?",
+          "a": "Not under lights. Seattle Parks records no lighting here, so play is bounded by daylight."
+        },
+        {
+          "q": "What else is verified in south Seattle?",
+          "a": "Rainier Beach Playfield is the substantial one, with eight lit courts, dedicated parking and an all-year restroom. Lakeridge Park is further south with two badminton-shared courts. Brighton sits between them in size at four courts, and unlike Rainier Beach it has no lighting recorded."
+        },
+        {
+          "q": "Is the court count reliable here?",
+          "a": "As reliable as anything on this site gets. Four courts is what Seattle Parks records and what the imported data said, and where an operator and an independent record agree on a fact about the operator's own facility, that is about as good as verification gets short of standing on the court. It is worth contrasting with Green Lake, where the two sources disagreed by a factor of two."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "dearborn-park": {
+      "slots": {
+        "description": "Dearborn Park holds four courts striped for tennis and pickleball, and it is the clearest case in the Seattle set of an imported record understating rather than overstating a venue. The commercial dataset claimed two courts. Seattle Parks records four. Most corrections in this city ran the other way, with Green Lake going from four up to eight and Delridge from seven down to four, and Dearborn is a useful reminder that unsourced data is not reliably optimistic or reliably conservative. It is simply unreliable, in both directions, and the only way to know which way it went on any given venue is to check. Dearborn is also one of only three verified Seattle venues where the city records no nearby restroom at all, which is a practical detail worth more than most of the fields on this page.",
+        "getting_there": "The address is 2919 S Brandon St, agreed between the import and the city. Seattle Parks records street parking, and records the restroom as absent rather than seasonal, which is a positive statement that there is none rather than silence on the question. No parking capacity or restriction information is published and we have not checked it.",
+        "what_to_expect": "Four courts, no lights recorded, shared with tennis, and the city does not state whether nets are provided here, so that field shows as unverified rather than as a no. Combined with no restroom on site, this is a venue to arrive at prepared. Seattle Parks publishes nothing about how busy it gets. Two of the gaps here are unusually consequential. The city does not record whether nets are provided, and it does record that there is no nearby restroom, so a reader planning a session has one certainty and one unknown on the two most practical questions. Beyond that the usual absences apply: no surface type, no fee, no hours, no sense of how four courts hold up under demand. The court count itself was corrected upward from the imported two, which at least means the capacity is better than the unverified data suggested."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Four, per Seattle Parks. Our imported record said two, so this is one of the few Seattle venues where the unverified data undercounted rather than overcounted."
+        },
+        {
+          "q": "Is there a restroom?",
+          "a": "No. The city records no nearby restroom at this site, which is a positive record of absence rather than a gap in the data. Only three of the twenty-five Seattle locations are recorded this way."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Unknown. Seattle Parks records nets at seventeen of its twenty-five pickleball locations and says nothing either way about the other eight, of which this is one. Bring a portable net if you have one."
+        },
+        {
+          "q": "What should I bring?",
+          "a": "A net, on the balance of what the city records: Seattle Parks does not state whether nets are provided here, and it does positively record that there is no nearby restroom. Four courts and no facilities recorded makes this a venue where turning up self-sufficient is the safer assumption, though we have not been to check."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "discovery-park": {
+      "slots": {
+        "description": "Discovery Park is the largest park in Seattle, and the four courts recorded inside it are striped for tennis and pickleball. The correction here is cosmetic rather than factual, but it tells you something about the import: the commercial record carried the name as Discovery Park? Tennis and Pickleball Courts, complete with an encoding artefact where a character failed to survive a file conversion. Eighty-four names in the wider dataset carry the same kind of damage. We take the venue name from the city record instead, which is both correct and shorter, and that artefact is one of several reasons venue names on this site come from a municipal source rather than from the spreadsheet we started with.",
+        "getting_there": "Seattle Parks gives the address as 3801 Discovery Park Blvd, matching the imported record exactly, and records dedicated parking with an all-year restroom. Discovery Park is large and its parking serves the whole park rather than the courts, so a dedicated lot existing is not the same as a space being free near the courts when you get there. The city publishes no capacity detail and we have not checked it.",
+        "what_to_expect": "Four courts, no lights recorded, shared with tennis. Nets are not recorded either way by the city, so that field shows as unverified rather than as an absence. Being inside a large park with an all-year restroom and a dedicated lot puts the practical basics in place; what is missing is any lighting, which bounds play to daylight. No crowding data is published. The unknowns here are mostly about scale. Discovery Park is enormous, and while Seattle Parks records a dedicated lot it says nothing about how far that lot is from the courts, how many spaces it holds, or whether it fills on a clear weekend. It also records no surface type, no fee, no hours and no net provision. For a venue in the city's largest park those are meaningful gaps, and we would rather list them than let a reader assume that a well-known park implies a well-documented court."
+      },
+      "faqs": [
+        {
+          "q": "Are nets provided?",
+          "a": "The city does not say. Seattle Parks records nets at seventeen of twenty-five locations and is silent about eight, including this one, so the page shows nets as unverified rather than guessing in either direction."
+        },
+        {
+          "q": "Is parking easy?",
+          "a": "We do not know and will not guess. The city records a dedicated lot, but Discovery Park is the largest park in Seattle and that lot serves all of it. No capacity or restriction data is published."
+        },
+        {
+          "q": "Why did the venue name change?",
+          "a": "The imported name carried an encoding artefact, a character that did not survive a file conversion. We use the name from the city record instead."
+        },
+        {
+          "q": "Is it worth the trip for four courts?",
+          "a": "We cannot answer that, and any directory that does is guessing. What the record supports is this: four shared courts, no lights, an all-year restroom and a dedicated lot, inside the largest park in the city. Four courts is the median size in the verified Seattle set, so this is a typical site in an atypical setting."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "georgetown-playfield": {
+      "slots": {
+        "description": "Georgetown Playfield carries four courts striped for tennis and pickleball in the industrial south of the city. Like Discovery Park and Soundview, its imported name arrived damaged, as Georgetown ?Playfield Tennis and Pickleball Courts, with an encoding artefact sitting in the middle of it. Eighty-four venue names in the wider dataset carry the same corruption, and it is a small thing that reveals a large one: a name that has passed through a broken conversion has probably passed through other transformations nobody logged either. The court count and address both matched the city record, so the substance here was sound; it is the packaging that needed replacing, and the name published above comes from Seattle Parks.",
+        "getting_there": "Seattle Parks gives 750 S Homer St, matching the import exactly. The city records street parking and an all-year restroom. Georgetown is a mixed industrial and residential neighbourhood, and while street parking there is a different proposition from street parking on Queen Anne, the city publishes no capacity or restriction data for either and we have checked neither.",
+        "what_to_expect": "Four courts, no lights recorded, shared with tennis. The city does not state whether nets are provided at this site, so that field reads as unverified rather than as an absence. An all-year restroom is recorded, which puts it among the better-served eleven of twenty-five on that one measure. No crowding or peak-time information exists for any Seattle venue, this one included. Georgetown is one of the less fully recorded venues in the set. The city does not state whether nets are provided, does not record a surface type, does not publish a fee and does not publish hours, so four of the rows above read as unverified. What it does record is the court count, the outdoor split, the absence of lighting, street parking and an all-year restroom. That is enough to decide whether to travel and not nearly enough to describe the experience of playing here, and we are not going to close the difference with invention. The correction link on this page reaches a real queue, and a note from someone who plays here would be worth more than anything we could infer from a spreadsheet."
+      },
+      "faqs": [
+        {
+          "q": "Are nets provided?",
+          "a": "The city does not say. Seattle Parks records nets at seventeen of its twenty-five pickleball locations and is silent about eight, and Georgetown is one of the eight. Silence is not a no, so the page says unverified."
+        },
+        {
+          "q": "Why is the name different from other listings?",
+          "a": "The imported name carried an encoding artefact from a broken file conversion. We use the name Seattle Parks uses for the site instead."
+        },
+        {
+          "q": "Is there lighting?",
+          "a": "No. The city positively records no lighting here, so play is bounded by daylight."
+        },
+        {
+          "q": "Should I expect to share the courts?",
+          "a": "Almost certainly. This is a tennis and pickleball surface, which describes eighteen of the twenty-five Seattle locations the city records, so shared use is the norm here rather than the exception. What we cannot tell you is how often it is actually contested, because Seattle Parks publishes no booking or usage data for any of its courts and we have not observed this one."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "soundview-playfield": {
+      "slots": {
+        "description": "Soundview Playfield holds four courts striped for tennis and pickleball in Crown Hill, in the north-west of the city. Its imported name arrived as Soundview ?Playfield Tennis and Pickleball Courts (Crown Hill), carrying both an encoding artefact and a neighbourhood in brackets. Neither belongs in a venue name on a site whose URLs already carry the city, so the name published here is the city's. The underlying facts came through accurately: four courts, and an address that matched. What did not come through is anything the city does not record, which on this venue includes whether nets are provided, and those fields read as unverified rather than being filled from the commercial record they arrived in.",
+        "getting_there": "Seattle Parks gives 1590 NW 90th St, matching the imported address exactly. The city records street parking and a seasonal restroom, meaning present in the warm months and not something to depend on in winter. No capacity or restriction detail is published for the parking and none has been checked in person.",
+        "what_to_expect": "Four courts, no lights recorded, shared with tennis, and nets unrecorded either way. In a city where nineteen of twenty-four verified venues have no lighting, the daylight constraint here is the norm rather than a mark against the venue, but it is worth planning around between October and March. Nothing is published about how busy the courts get. Soundview is another of the eight Seattle sites where the city says nothing about nets, so that row reads as unverified rather than as an absence. There is also no surface record, no fee and no published hours, and nothing at all about how four shared courts in Crown Hill fill through the week. The court count and the address were confirmed against the city record, and the venue name was taken from it too, replacing an imported name that carried an encoding artefact and a bracketed neighbourhood. What survives is accurate and incomplete, and the page says which is which on every row. Four courts is the median size in the verified Seattle set, so on capacity alone this is a typical city venue rather than a large or a small one."
+      },
+      "faqs": [
+        {
+          "q": "Are nets provided?",
+          "a": "Unknown. Seattle Parks does not record nets at this location, and we treat an absent record as unknown rather than as a no. A portable net is cheap insurance for the eight Seattle sites in this category."
+        },
+        {
+          "q": "Where exactly is it?",
+          "a": "1590 NW 90th St, in Crown Hill. The imported record put the neighbourhood inside the venue name; we keep it out, because the URL and the page already say which city and county you are in."
+        },
+        {
+          "q": "Is there an all-year restroom?",
+          "a": "No, the city records this one as seasonal."
+        },
+        {
+          "q": "What else is verified in north-west Seattle?",
+          "a": "Gilman Playground in Ballard has four courts and carries a city-imposed 10 p.m. curfew after noise studies; Bitter Lake Playfield further north has eight courts under lights. Soundview sits between them in size with four unlit courts and no posted-hours order recorded against it."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "walt-hundley-playfield-pickleball-courts-seattle": {
+      "slots": {
+        "description": "Walt Hundley Playfield carries four courts striped for tennis and pickleball in West Seattle, and it is one of four venues on this site that our imported dataset had no row for at all. It also sits at the sharpest edge of the matching problem that runs through this whole city. The playfield shares its address, 6920 34th Ave SW, with High Point Community Center, and the import did hold a row for the community centre claiming three indoor courts. A name-similarity match would have looked at one address and merged them into a single seven-court venue with an indoor wing. They are two facilities: a building with its own courts, and an outdoor playfield with four. We published the playfield from the city record and left the community centre unverified, which is why the match table in this repository is written by hand rather than computed.",
+        "getting_there": "The address Seattle Parks records is 6920 34th Ave SW, the same address as the community centre next to it, which is worth knowing if you are navigating by postcode. Dedicated parking is recorded, along with a seasonal restroom. As with every venue here, the city publishes no capacity or restriction information for the parking and none of it has been verified on the ground.",
+        "what_to_expect": "Four courts, nets provided, no lights recorded, shared with tennis. Because this venue was minted from municipal data rather than matched to an imported row, every fact above came from the city and none of it from a commercial record. What the city does not publish, including surface, fees, hours and how busy it gets, is shown as unverified. Because this venue was minted from the city record rather than matched to an imported row, its gaps are exactly the city's gaps and nothing more. Seattle Parks publishes no surface type, no fee and no hours for it, and nothing about demand. What it does publish is the court count, the outdoor split, the absence of lighting, nets, dedicated parking and a seasonal restroom. There is no commercial claim to reconcile here at all, which makes this one of the cleaner records in the set even though it is not one of the fuller ones."
+      },
+      "faqs": [
+        {
+          "q": "Is this High Point Community Center?",
+          "a": "No, though they share an address. The community centre is an indoor building with its own courts; this is the outdoor playfield with four. We deliberately did not merge them, because a shared address is exactly the circumstance in which an automated match produces a venue that does not exist."
+        },
+        {
+          "q": "Why is this venue not on other directories?",
+          "a": "We can only speak for the commercial dataset we imported, which had no row for it. Seattle Parks records it, and this page exists because we read the city's data rather than trusting the import to be complete."
+        },
+        {
+          "q": "Are there lights?",
+          "a": "No, the city records none here."
+        },
+        {
+          "q": "Are there lights?",
+          "a": "No. Seattle Parks records no lighting here, so play is bounded by daylight, and the nearest lit courts in West Seattle are at Alki Playground."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "lakeridge-park": {
+      "slots": {
+        "description": "Lakeridge Park holds two courts in the far south of Seattle, and it is the only verified venue in the city whose courts are shared with badminton rather than tennis or basketball. That single fact makes it the most unusual entry in the set: of twenty-five locations Seattle Parks records, eighteen share with tennis, two with basketball, one with badminton, and four are dedicated. Lakeridge is the one. It is also the venue that broke our own identity checker and taught it something. The imported row carried a postal code of 10145, which is not a Seattle postcode and not a postcode at all: it is the street number from 10145 Rainier Ave S, leaked into the wrong column by the import. Our first geography check flagged the venue as being in the wrong state and held it back from publication. The coordinates said otherwise, and the rule was corrected so that coordinates decide.",
+        "getting_there": "Seattle Parks gives 10145 Rainier Ave S and records dedicated parking with a seasonal restroom. The postal code field on the imported record is garbage, as described above, and is not published anywhere on this site. No parking capacity or restriction data exists and none has been checked.",
+        "what_to_expect": "Two courts, nets provided, no lights, shared with badminton. Two courts is a small site, and being shared with a sport that uses a different net height and court marking is worth knowing before you drive to the south end of the city for it. As everywhere, the city publishes nothing about availability or how busy it gets. The badminton sharing is recorded; almost nothing else about the playing surface is. Seattle Parks publishes no surface type, no fee, no hours and no information about how two courts hold up against demand at the south end of the city. Nets are recorded as provided, which on a badminton-shared court is a more useful fact than usual, since the two sports do not use the same net height and a shared surface does not tell you which one is set up. We have not been to look, and the city's record does not say."
+      },
+      "faqs": [
+        {
+          "q": "Is this really a badminton court?",
+          "a": "It is recorded by Seattle Parks as shared badminton and pickleball use, and it is the only site in the city recorded that way. Expect markings for both."
+        },
+        {
+          "q": "Why did the postcode look wrong?",
+          "a": "Because it was. The imported record had 10145 in the postal code field, which is the street number from the address rather than a postcode. We do not publish it, and the episode is the reason our geography check now lets coordinates decide rather than postcodes."
+        },
+        {
+          "q": "How many courts?",
+          "a": "Two, per the city record, with nets provided."
+        },
+        {
+          "q": "What else is nearby in south Seattle?",
+          "a": "Rainier Beach Playfield is the substantial option, with eight lit courts, dedicated parking and an all-year restroom. Brighton Playfield has four unlit courts. Against those, Lakeridge is small and unusual rather than convenient, and its distinguishing feature is the badminton sharing rather than anything about capacity."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "observatory-courts": {
+      "slots": {
+        "description": "Observatory Courts sits on Queen Anne with two courts striped for tennis and pickleball. The imported record claimed four. Seattle Parks records two, so the commercial data doubled the capacity of the site, and on a two-court venue that is not a rounding difference: it is the difference between turning up expecting to wait and turning up expecting not to. Halvings and doublings of this kind are the most common failure in the imported Seattle data, and they are also the least visible, because a court count looks equally plausible whatever number sits in the field. Observatory is also one of only three verified Seattle venues where the city records no nearby restroom.",
+        "getting_there": "Seattle Parks gives 1405 Warren Ave N, which the imported record matched. The city records street parking, on a dense residential part of Queen Anne, and no restroom. No capacity, permit or time-limit detail is published for the parking, and nobody here has checked the signs.",
+        "what_to_expect": "Two courts, no lights, shared with tennis, and nets not recorded either way by the city. With no restroom and no lighting recorded, this is a daylight venue to arrive at prepared. The city publishes no crowding data, though two shared courts is a small enough site that the arithmetic speaks for itself. This is one of the thinnest records in the verified Seattle set, and the page reflects that rather than disguising it. The city records two courts, tennis sharing, street parking, no lighting and no restroom. It does not record whether nets are provided, what the surface is, what it costs, when it is open, or how two courts on Queen Anne cope with a summer evening. Set against an imported record that claimed four courts, the useful thing this page does is correct a doubled capacity figure and then decline to fill the remaining silence with plausible guesses. A venue with two shared courts, no restroom and no lights is a specific proposition, and knowing that accurately is worth more than knowing a fuller-sounding version of it that happens to be wrong. Set against the city as a whole, two shared courts puts this in the smallest third of Seattle venues, and eight sites in the verified set are smaller still."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two. Our imported record said four. On a site this size that is a doubling, and it is the kind of error that is invisible until someone checks it against the operator's own record."
+        },
+        {
+          "q": "Is there a restroom?",
+          "a": "No. The city records none at this site, one of only three Seattle pickleball locations recorded that way."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Unknown. Seattle Parks does not record nets here, and we do not treat an absent record as a no."
+        },
+        {
+          "q": "What is the other Queen Anne option?",
+          "a": "Kinnear Park, which has one shared court and a seasonal restroom. Between the two sites Queen Anne has three shared courts and no lighting recorded at either, and Observatory is the one without a restroom. Neither is a large venue, and the imported data overstated both of them."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "maple-leaf-reservoir-park-pickleball-courts-seattle": {
+      "slots": {
+        "description": "Maple Leaf Reservoir Park holds two courts, and they are dedicated pickleball courts rather than tennis courts with extra lines on them. That is rarer here than it sounds: of the twenty-five locations Seattle Parks records, only four are dedicated, and this is the largest of them, the other three being single courts. It is also one of the four venues our imported dataset had no row for at all. A commercial directory missing a dedicated pickleball site in a major city is a reasonable summary of why this project starts from municipal data. Every fact on this page came from the city; none of it came from the spreadsheet, because there was nothing in the spreadsheet to come from.",
+        "getting_there": "Seattle Parks gives 1020 NE 82nd St and records street parking with an all-year restroom. An all-year restroom puts it among the better-served eleven of the twenty-five sites on that measure. As with every venue here, no parking capacity or restriction information is published and none of it has been checked on the ground.",
+        "what_to_expect": "Two courts, nets provided, no lights, and no tennis lines to share the surface with. For a two-court site that combination is unusually clean: dedicated markings, nets on site, and a restroom that works in February. What it does not have is lighting, so play is bounded by daylight, and it does not have the capacity of the eight-court playfields. Nothing is published about how busy it gets. The gaps here are narrower than at most Seattle venues but they are the same gaps: no surface record, no fee, no hours, no demand data. What lifts this page above the others is that the two facts most often missing elsewhere, dedicated markings and nets on site, are both positively recorded. That is a real advantage for a two-court site and it comes from the city rather than from us."
+      },
+      "faqs": [
+        {
+          "q": "Are these dedicated pickleball courts?",
+          "a": "Yes. Seattle Parks records the use type here as pickleball rather than shared, which applies to only four of the twenty-five locations in the city dataset, and this is the largest of the four."
+        },
+        {
+          "q": "Why is this venue missing from other directories?",
+          "a": "We can only speak for the commercial dataset we imported, which had no row for it. Seattle Parks does record it, and it is here because we read the city's data rather than assuming the import was complete."
+        },
+        {
+          "q": "Is there a restroom?",
+          "a": "Yes, and the city records it as all-year rather than seasonal."
+        },
+        {
+          "q": "How does it compare with the other dedicated courts?",
+          "a": "There are four dedicated pickleball sites in the city and this is the only one with two courts; South Park Playground and Laurelhurst Playfield have one each, and the fourth is an SDOT street-end court we have not published for want of a sourced address. So on the city's record this is the largest dedicated pickleball venue in Seattle, which says more about the city's provision than about the site."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "kinnear-park": {
+      "slots": {
+        "description": "Kinnear Park on Queen Anne holds a single court shared with tennis. The imported record claimed three, so the commercial data tripled a one-court venue, which is the largest proportional court-count error anywhere in the Seattle set. Arriving expecting three courts and finding one is the exact experience this directory exists to prevent. Kinnear also produced the only case in Seattle where we corrected the city rather than the import. The Parks record gives the street as 899 W Olumpic Pl, a misspelling of Olympic Place in the municipal data itself. Publishing it verbatim would have republished a typo as a verified fact, so the spelling is corrected here and the original wording is preserved in the evidence behind the address, the same treatment we gave the park the city spells Greenwod.",
+        "getting_there": "The address is 899 W Olympic Pl, corrected as described above from the city's own record. Seattle Parks records street parking and a seasonal restroom. Queen Anne is dense and residential; the city publishes nothing about parking capacity, permits or time limits, and we have not checked.",
+        "what_to_expect": "One court, no lights, shared with tennis, and nets not recorded either way. A single shared court is the smallest unit of provision in this directory, and there are seven other Seattle venues in the same position. It means one game at a time and whatever rotation the people present agree on. The city publishes no availability data. For a single-court venue the gaps matter more, because there is no second court to fall back on if the first is occupied. The city does not record whether nets are provided here, does not publish a surface type, a fee or any hours, and publishes nothing about demand. So the honest summary is that we can tell you there is one shared court at a corrected address on Queen Anne, and we cannot tell you whether you will get on it. The imported record's claim of three courts would have made that question feel less pressing, which is exactly why an unverified court count is not a harmless error. If you play here, the correction link is the fastest way to fill the rest in."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "One. The imported record said three. Proportionally that is the worst court-count error in the Seattle data, and on a single-court site it changes whether a trip is worth making."
+        },
+        {
+          "q": "Is the address right?",
+          "a": "It is now. The city's own record misspells the street as Olumpic Place; we publish the corrected spelling and keep the original in the evidence attached to the address, rather than either republishing a typo or fixing it silently."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Unknown. Seattle Parks does not record nets here, and an absent record is not a no."
+        },
+        {
+          "q": "Is one court worth the trip?",
+          "a": "That depends entirely on where you are starting from and who else turns up, and we have no data on the second. What we can say is that Observatory Courts is the other Queen Anne site, with two shared courts and no restroom recorded, so the immediate area offers three shared courts in total across two venues. Neither is lit."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "montlake-playfield": {
+      "slots": {
+        "description": "Montlake Playfield holds a single court, and it is one of only two verified Seattle venues where the pickleball surface is shared with basketball rather than tennis. That matters more than the usual tennis sharing does: a tennis court with pickleball lines is at least a racquet-sport surface with a net post in roughly the right place, whereas a basketball court with pickleball markings is a different proposition, and the city records nothing about how nets are handled on it. The court count and address both matched the imported record, so nothing needed correcting on the numbers here. What needed correcting was everything the import asserted without a source, which was cleared.",
+        "getting_there": "Seattle Parks gives 1618 E Calhoun St and records dedicated parking with a seasonal restroom. Dedicated parking on a single-court site is unusual in this set; it reflects the parking serving the whole playfield rather than the court. No capacity or restriction detail is published and we have not checked it.",
+        "what_to_expect": "One court, no lights, shared with basketball, and nets not recorded either way by the city. Given the shared use and the silence on nets, this is a venue to bring a portable net to unless you have been before and know otherwise. One court means one game. The city publishes no availability or crowding information. Almost everything a player would want to know here is unrecorded. The city does not state whether nets are provided on a court it shares with basketball, which is the single most consequential gap on this page: a basketball surface with pickleball lines and no net is not a pickleball court in any useful sense, and we cannot tell you which of those you would find. It also publishes no surface type, no fee, no hours and nothing about demand on a single court. What we can say is that the court count and address both matched the imported record and were confirmed by the city, and that dedicated parking and a seasonal restroom are recorded. The rest is honestly blank, and a note from anyone who has played here would improve this page more than any further desk research could."
+      },
+      "faqs": [
+        {
+          "q": "Is this a proper pickleball court?",
+          "a": "It is a shared-use court recorded by Seattle Parks as basketball and pickleball. Only two Seattle venues are recorded that way. Expect basketball markings and pickleball lines on the same surface."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Unknown. The city does not record nets here, and on a basketball-shared surface that is a question worth resolving before you travel. We will not guess at it."
+        },
+        {
+          "q": "Is there parking?",
+          "a": "The city records dedicated parking, though it serves the whole playfield rather than the court specifically. No capacity or restriction data is published."
+        },
+        {
+          "q": "Is there a better option nearby?",
+          "a": "Miller Playfield is the closest substantial venue, with five courts under lights on Capitol Hill, and it is a tennis-shared surface rather than a basketball-shared one. For anyone deciding between them on the record alone, Miller offers more courts, lights and a confirmed net; Montlake offers one court whose net provision the city does not state."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "south-park-playground": {
+      "slots": {
+        "description": "South Park Playground holds a single dedicated pickleball court, one of only four dedicated sites in the city and one of three that consist of exactly one court. It is also the venue with the largest address disagreement in the Seattle set. The imported record placed it at 8319 8th Ave S. Seattle Parks places its own parcel at 738 S Sullivan St. Those are not neighbouring numbers on one street; they are different streets, and only one of them is where the city says its land is. We publish the municipal address, because the city is describing property it owns, and the imported address stays visible in the change log rather than being quietly replaced.",
+        "getting_there": "The address is 738 S Sullivan St, corrected from the imported 8319 8th Ave S as described above. Seattle Parks records dedicated parking and an all-year restroom, which for a one-court site is better provision than most. No capacity or restriction detail is published and none has been checked on the ground.",
+        "what_to_expect": "One court, nets provided, no lights, dedicated to pickleball rather than shared. For a single court that is a good specification: real markings, a net on site, parking and a year-round restroom. The constraint is simply that there is one of it, so a busy afternoon is a queue. The city publishes nothing about how busy it gets. What we cannot tell you is what the surface is, what it costs, when it is open, and whether one court is enough on any given afternoon. Those rows read as unverified above. The address correction is the substantive thing this page contributes: an imported record placing a venue on the wrong street is not a small error for a single-court site somebody has to find. One court puts this among the eight smallest venues in the city, though it is one of only four with dedicated pickleball markings rather than borrowed ones."
+      },
+      "faqs": [
+        {
+          "q": "Which address is correct?",
+          "a": "738 S Sullivan St, from the city's parcel record. Our imported record had 8319 8th Ave S, which is a different street. Where a city describes land it owns and a commercial dataset disagrees, the city wins."
+        },
+        {
+          "q": "Is this a dedicated pickleball court?",
+          "a": "Yes. Seattle Parks records the use type as pickleball rather than shared. Only four of the twenty-five locations in the city dataset are recorded that way."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Yes, the city records nets at this location."
+        },
+        {
+          "q": "Why does the address correction matter so much here?",
+          "a": "Because a single-court venue is hard enough to find without being sent to the wrong street. Our imported record placed this site at 8319 8th Ave S; Seattle Parks places its own parcel at 738 S Sullivan St. On an eight-court playfield an address error is an inconvenience. On one dedicated court it is the difference between a session and a wasted trip, and it is the kind of error that never surfaces in a spreadsheet because both values look equally plausible until someone checks one of them against the operator's own record."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    "greenwood-park-pickleball-courts-seattle": {
+      "slots": {
+        "description": "Greenwood Park holds a single court shared with basketball, and it arrived here through the back door. Our imported dataset had no row for it at all, so like Maple Leaf, West Magnolia and Walt Hundley it exists on this site only because we read the city's pickleball dataset directly. It then produced the one naming problem we had to solve against the city rather than against the import: the pickleball layer spells the park Greenwod, dropping a letter, while the Parks property record for the same parcel spells it GREENWOOD PARK. Two municipal records, one park, two spellings. We publish the Parks spelling and record the correction, on the same principle that governs the misspelled street at Kinnear Park.",
+        "getting_there": "Seattle Parks gives 602 N 87th St and records street parking with a seasonal restroom. Because this venue was minted from municipal data rather than matched to an imported row, the address and every other fact above came from the city. No parking capacity or restriction information is published and none has been checked.",
+        "what_to_expect": "One court, no lights, shared with basketball, and nets not recorded either way. That is the same specification as Montlake Playfield, and the same advice applies: on a basketball-shared surface with no net recorded, a portable net is worth having. One court means one game at a time. The city publishes no availability data for this or any other Seattle venue. Beyond the corrected name, this is a thin record and the page does not pretend otherwise. Seattle Parks does not state whether nets are provided on a basketball-shared court, which is the gap that matters most here for the same reason it matters at Montlake. It publishes no surface type, no fee, no hours and nothing about demand. One shared court with no net recorded is a venue to check on before travelling, and we have no way to check it for you from a desk. One shared court puts this at the smallest end of the Seattle set, alongside Kinnear Park, Montlake Playfield, Laurelhurst Playfield and South Park Playground, which are the other single-court sites we have verified."
+      },
+      "faqs": [
+        {
+          "q": "Is it Greenwood or Greenwod?",
+          "a": "Greenwood. The city's pickleball dataset spells it Greenwod, dropping a letter; the Parks property record for the same parcel spells it correctly. We publish the correct spelling and record that we corrected it."
+        },
+        {
+          "q": "Why is this venue not on other directories?",
+          "a": "We can only speak for the commercial dataset we imported, which had no row for it. It is here because the city records it."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Unknown. Seattle Parks does not record nets at this location, and we do not read an absent record as a no."
+        },
+        {
+          "q": "What else is nearby?",
+          "a": "Bitter Lake Playfield is the substantial northern option, with eight courts under lights, nets, dedicated parking and a seasonal restroom. Against that, Greenwood is a single basketball-shared court with no net recorded, and the honest comparison is that the two are not really in the same category."
+        }
+      ],
+      "sources": [
+        "S1",
+        "S2"
       ]
     }
   },
