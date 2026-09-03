@@ -51,3 +51,7 @@ verification/
 # Preview renders. Built from UNVERIFIED rows to judge the template, never
 # deployed and never publishable. Regenerate with `npm run preview:city`.
 reports/preview-*.html
+
+# Supabase export is generated — regenerate with `npm run export:supabase`.
+# Committed anyway: it is small, it is the handoff artefact, and a diff on it
+# is a readable record of what changed in the verified set.
