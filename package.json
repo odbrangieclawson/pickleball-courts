@@ -32,7 +32,9 @@
     "gates:shipped": "node scripts/gate-shipped.mjs",
     "crawl": "node scripts/crawl-report.mjs",
     "gates:county": "node scripts/gate-shipped.mjs king-county wa",
-    "phase4": "npm run build && npm run gates:shipped && npm run gates:county && npm run crawl"
+    "phase4": "npm run build && npm run gates:shipped && npm run gates:county && npm run crawl",
+    "gates:all": "node scripts/gate-all.mjs",
+    "phase5": "npm run build && npm run gates:all && npm run crawl"
   },
   "dependencies": {
     "next": "16.3.4",

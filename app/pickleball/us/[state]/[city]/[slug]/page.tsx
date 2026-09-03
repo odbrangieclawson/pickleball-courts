@@ -1,6 +1,7 @@
 import type {Metadata} from 'next'
 import {notFound} from 'next/navigation'
 import {venueView, filterView, allLeafParams} from '../../../../../../lib/site/views.mjs'
+import FilterPage from './FilterPage'
 
 /*
   One route serves two page types, because the locked URL pattern gives them
@@ -25,49 +26,16 @@ export async function generateMetadata({params}: Params): Promise<Metadata> {
   const {state, city, slug} = await params
   const f = filterView(state, city, slug)
   if (f) return {title: f.title, description: f.meta, robots: {index: false, follow: false}}
-  const v = venueView(state, city, slug)
-  if (!v) return {title: 'Not found', robots: {index: false, follow: false}}
-  return {title: v.title, description: v.meta, robots: {index: false, follow: false}}
+  const meta = venueView(state, city, slug)
+  if (!meta) return {title: 'Not found', robots: {index: false, follow: false}}
+  return {title: meta.title, description: meta.meta, robots: {index: false, follow: false}}
 }
 
 export default async function LeafPage({params}: Params) {
   const {state, city, slug} = await params
 
   const f = filterView(state, city, slug)
-  if (f) {
-    return (
-      <div className="wrap page">
-        <nav aria-label="Breadcrumb" className="crumbs">
-          {/* No state link: the state page does not publish below the
-              three-city threshold, and a breadcrumb into a 404 is the
-              §3 failure this project exists to avoid. */}
-          <a href="/">Home</a> › <a href={f.cityHref}>{f.city}</a> › {f.filter}
-        </nav>
-
-        <h1>{f.title}</h1>
-        <p className="lede">{f.meta}</p>
-        <p>Across every verified {f.city} venue, {f.coverage} match this filter.</p>
-
-        <ul className="cards">
-          {f.venues.map(x => (
-            <li className="card" key={x.href}>
-              <h3><a href={x.href}>{x.name}</a></h3>
-              <p className="meta">{x.meta}</p>
-              <p>{x.address}</p>
-              <span className="trust">Checked {x.checked}</span>
-            </li>
-          ))}
-        </ul>
-
-        <p className="provenance">
-          This list exists only because at least three verified venues match
-          it. <a href={f.cityHref}>Back to all {f.city} venues</a>.
-        </p>
-
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: f.jsonLd}} />
-      </div>
-    )
-  }
+  if (f) return <FilterPage f={f} />
 
   const v = venueView(state, city, slug)
   if (!v) notFound()
@@ -75,27 +43,76 @@ export default async function LeafPage({params}: Params) {
   return (
     <div className="wrap page">
       <nav aria-label="Breadcrumb" className="crumbs">
-        <a href="/">Home</a> › <a href={v.cityHref}>{v.city}</a> › {v.name}
+        <a href="/">Home</a> ›{' '}
+        {v.countyLink ? <><a href={v.countyLink.href}>{v.countyLink.label}</a> › </> : null}
+        <a href={v.cityHref}>{v.city}</a> › {v.name}
       </nav>
 
-      <h1>{v.name}</h1>
-      <p className="lede">
+      <h1 data-prose>{v.name}</h1>
+      <p className="lede" data-prose>
         Pickleball at {v.name} in {v.city}, {v.state}. Every fact below shows
-        where it came from and when we checked it.
+        where it came from and when we checked it — {v.knownFactsN} of{' '}
+        {v.totalFactsN} fields are confirmed, and the rest say so rather than
+        guessing.
       </p>
-      <p><span className="trust">{v.verifiedBy}</span></p>
 
-      <h2>The facts</h2>
+      <p><span className="trust">{v.trust}</span></p>
+
+      <h2 data-prose>The facts</h2>
       <div className="facts">
         {v.facts.map(x => (
-          <div key={x.label}>
+          <div key={x.key}>
             <div className="k">{x.label}</div>
-            <div className="v">{x.value}</div>
+            <div className="v">
+              {x.value === 'Not verified yet'
+                ? <span className="unverified">Not verified yet</span>
+                : x.value}
+            </div>
           </div>
         ))}
       </div>
 
-      <h2>Where each fact came from</h2>
+      {v.hasNotes ? (
+        v.notes.map(nt => (
+          <section key={nt.key} data-prose>
+            <h2>{nt.heading}</h2>
+            <p>{nt.text}</p>
+          </section>
+        ))
+      ) : (
+        <div className="note is-gap" data-prose>
+          <h2>We have not written about this venue yet</h2>
+          <p>
+            Everything above is confirmed against a named source, but nobody
+            has been to {v.name} and written it up. A venue page on this site
+            needs two or three paragraphs about the specific place — what it
+            is like, where you park, whether you will get on a court — and we
+            do not generate that from a spreadsheet. Inventing it would be
+            worse than leaving it out, because the people searching a court by
+            name already know the court and would spot the invention
+            immediately. So this page carries the facts and stops there.
+          </p>
+          <p>
+            If you play at {v.name}, the correction link below reaches a real
+            queue and your note would go in with a source and a date attached,
+            the same as everything else here.
+          </p>
+        </div>
+      )}
+
+      {v.hasNotes && (
+        <p className="provenance" data-not-prose>
+          Sources for the above:{' '}
+          {v.noteSources.map((s, i) => (
+            <span key={s.url}>
+              {i > 0 && ' · '}
+              <a href={s.url}>{s.publisher}</a>, checked {s.retrieved}
+            </span>
+          ))}
+        </p>
+      )}
+
+      <h2 data-prose>Where each fact came from</h2>
       <div className="table-scroll">
         <table>
           <thead>
@@ -103,10 +120,12 @@ export default async function LeafPage({params}: Params) {
           </thead>
           <tbody>
             {v.facts.map(x => (
-              <tr key={x.label}>
+              <tr key={x.key}>
                 <td>{x.label}</td>
                 <td>{x.value}</td>
-                <td>{x.source ? <a href={x.source}>Seattle Parks open data</a> : <span className="unverified">No source yet</span>}</td>
+                <td>{x.source
+                  ? <a href={x.source}>Seattle Parks open data</a>
+                  : <span className="unverified">No source yet</span>}</td>
                 <td>{x.checked ?? '—'}</td>
               </tr>
             ))}
@@ -114,17 +133,51 @@ export default async function LeafPage({params}: Params) {
         </table>
       </div>
 
-      <div className="note is-gap">
-        <h3>Something wrong here?</h3>
+      {v.hasFaqs && (
+        <>
+          <h2 data-prose>Questions about {v.name}</h2>
+          {v.faqs.map(q => (
+            <section key={q.q} data-prose>
+              <h3>{q.q}</h3>
+              <p>{q.a}</p>
+            </section>
+          ))}
+        </>
+      )}
+
+      {v.claimable && (
+        <div className="note" data-prose>
+          <h2>Do you run {v.name}?</h2>
+          <p>
+            You can claim this listing and correct anything on it. To be clear
+            about what claiming does and does not do: it gives you control of
+            your own facts and a channel to reach us, and it is shown on the
+            page as confirmed by the venue with the date you confirmed it.
+          </p>
+          <p>
+            It does not mark the listing verified, because a claim tells us
+            who you are rather than checking what is here, and those are
+            different things. It also buys no ranking, no sorting and no
+            placement advantage over an unclaimed venue. The moment claiming
+            bought position this would be an advertising product rather than a
+            directory, and the whole promise would be gone.
+          </p>
+        </div>
+      )}
+
+      <div className="note is-gap" data-prose>
+        <h2>Something wrong here?</h2>
         <p>
           If you play here and this is out of date, tell us. Corrections come
-          with a source and a date attached, the same as everything else.
+          with a source and a date attached, the same as everything else, and
+          a correction that changes a court count gets checked against the
+          city record before it goes live.
         </p>
       </div>
 
       {v.hasAlternatives && (
         <>
-          <h2>Other courts nearby</h2>
+          <h2 data-prose>Other courts in {v.city}</h2>
           <ul className="cards">
             {v.alternatives.map(a => (
               <li className="card" key={a.href}>

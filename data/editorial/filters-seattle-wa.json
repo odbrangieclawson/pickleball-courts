@@ -1,0 +1,84 @@
+{
+  "city": "Seattle",
+  "state": "WA",
+  "kind": "filters",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Only the two filters that actually qualify in Seattle are written. /indoor/ has no entry because Seattle has zero verified indoor courts; /free/ and /public/ have none because fee_type and access_type are unverified on every venue. Writing intros for pages that cannot exist would be writing for a URL nobody can reach.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "In Seattle this list is not a filter so much as the entire directory, and that is worth saying plainly rather than hiding behind a page that looks like a choice. All twenty-four verified venues in the city are outdoor, every one of the ninety-two courts is open to the sky, and not a single one is covered or climate controlled. The city that gave the sport its rainiest reputation has, in the records we have been able to confirm, no verified indoor pickleball at all. Indoor courts do exist in Seattle inside community centres and private clubs — several appear in our unverified import — but none has been checked against a named source, so none is listed anywhere on this site including here. What that means practically is that pickleball in Seattle is a weather-dependent activity, and this page is the honest version of a page that on most other city directories would quietly imply otherwise.",
+        "what_qualifies": "A venue appears here when Seattle Parks records at least one outdoor court at it. That is the whole test. Venues whose outdoor court count we have not verified do not appear, because we do not assume a court is outdoor just because nobody told us it was indoor. Since every verified Seattle venue happens to qualify, this list and the city page currently hold the same twenty-four venues — when the first verified indoor venue arrives, the two will diverge and this page will start earning its separate URL. It is worth being precise about what outdoor does not tell you here, because the word does a lot of quiet work on directory sites. Eighteen of the twenty-five locations Seattle Parks records are striped for tennis and pickleball on the same surface, three share with basketball or badminton, and only four are dedicated pickleball. So an outdoor court in Seattle is usually a tennis court with extra lines on it, shared with whoever booked it, and that is a materially different experience from a dedicated outdoor complex even though both sit under the same filter. The city publishes no surface type and no condition assessment for any of them, so we cannot tell you whether the asphalt is fresh or cracked at any location on this list, and we do not pretend to."
+      },
+      "sources": [
+        "S1"
+      ],
+      "faqs": [
+        {
+          "q": "Is there anywhere indoors to play in Seattle?",
+          "a": "Not that we have verified. Our unverified import lists several community centres and private clubs with indoor courts, and they are very probably real, but none has been checked against a named source so none appears on this site. If you know of one and can point at a source, the correction link on any page reaches a real queue."
+        },
+        {
+          "q": "What happens when it rains?",
+          "a": "You do not play, at any of these twenty-four venues. None is covered and none is climate controlled. That is the single biggest gap in Seattle pickleball as this directory currently records it, and no amount of filtering fixes it."
+        },
+        {
+          "q": "Do I need to book an outdoor court?",
+          "a": "Seattle Parks publishes no reservation information in the pickleball dataset, so we do not claim one way or the other. What we can say is that eighteen of these sites share their surface with tennis, and tennis courts in the city are bookable, so arriving to find a booked court is a real possibility."
+        }
+      ]
+    },
+    "lights": {
+      "slots": {
+        "why_this_filter": "Seattle loses the light early. In late December sunset is before half past four, which means that for a large part of the year an unlit court is a court you can use at lunchtime and not after work. Five of the twenty-four verified venues have lighting recorded by the city: Bitter Lake Playfield and Rainier Beach Playfield with eight courts each, Miller Playfield with five, and Alki Playground and Mt. Baker Park with four each. That is the entire evening capacity of verified pickleball in Seattle, and between them they hold twenty-nine of the city's ninety-two verified courts. One caveat matters more here than on any other page: Mt. Baker Park is lit but also carries a city-imposed 10 p.m. curfew after noise studies found play exceeding Seattle Municipal Code chapter 25.08, so its lights are less useful late than the raw fact suggests. Bitter Lake and Rainier Beach carry no such order in the records we have checked.",
+        "what_qualifies": "A venue appears here only where Seattle Parks has positively recorded lighting as present. Where the city says nothing about lighting, the venue is absent from this list and shows lights as not verified on its own page, because an unchecked court and a dark court are different things and only one of them should keep you at home. Nineteen of the twenty-four verified Seattle venues are recorded as having no lights, so in this city the absence is usually real rather than unknown — but the distinction is preserved anyway. There is a second thing this list cannot tell you, and it is worth stating rather than leaving as an assumption. Seattle Parks records that lighting exists; it does not record what hours the lights actually run, whether they are on a timer, or whether they are switched on at all outside the tennis season. We have not found a source that states any of that for any of the five venues, so the honest reading of this page is that these are the five places where evening play is possible in principle, not five places where the lights are guaranteed to be on when you arrive in February. Three of the five — Bitter Lake, Rainier Beach and Miller Playfield — also carry dedicated parking and all-year restrooms, which makes them the more practical winter options of the group."
+      },
+      "sources": [
+        "S1",
+        "E1"
+      ],
+      "faqs": [
+        {
+          "q": "Which of the five is best for a winter evening?",
+          "a": "On the recorded facts, Bitter Lake Playfield or Rainier Beach Playfield — eight courts each, lights, nets, dedicated parking and an all-year restroom, and neither carries the 10 p.m. curfew that applies at Mt. Baker Park. We have not played at any of them, so this is a reading of the city's data rather than a recommendation from experience."
+        },
+        {
+          "q": "Do the lights stay on until the park closes?",
+          "a": "Unknown. Seattle Parks records that lighting exists but publishes nothing about operating hours, timers or seasonal switching, and we have not found another source that states it. Treat these as places where evening play is possible rather than guaranteed."
+        },
+        {
+          "q": "Why are only five venues listed when nineteen others exist?",
+          "a": "Because the city records no lighting at those nineteen. Most of them are genuinely unlit rather than unchecked, but we keep the two ideas separate everywhere on this site: a venue only reaches this list when lighting is positively recorded, never when it is merely not ruled out."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "published": "2026-08-31",
+      "retrieved": "2026-09-03",
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
+      "evidence": "LIGHTED = Yes at Bitter Lake Playfield (8), Rainier Beach Playfield (8), Miller Playfield (5), Alki Playground (4) and Mt. Baker Park (4). INDOOROUTDOOR = Outdoor at all 25 recorded locations; no covered or climate-control field exists in the layer."
+    },
+    {
+      "id": "E1",
+      "url": "https://parkways.seattle.gov/2025/09/09/seattle-parks-and-recreation-implements-new-racquet-sports-court-hours-and-open-play-pickleball-pilot/",
+      "publisher": "Seattle Parks and Recreation (Parkways)",
+      "tier": 1,
+      "published": "2025-09-09",
+      "retrieved": "2026-09-03",
+      "supports": [
+        "why_this_filter"
+      ],
+      "evidence": "Mt. Baker Park is one of three sites limited to 7 a.m.-10 p.m. weekdays and 9 a.m.-10 p.m. weekends from 15 September 2025, after noise studies with SDCI found levels exceeding Seattle Municipal Code Chapter 25.08."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "city": "Seattle",
+  "state": "WA",
+  "kind": "venues",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Only four Seattle venues appear here, and that is the whole point of the file. A venue page needs two or three paragraphs about that specific place, and the only Seattle venues a source says anything specific about are the three whose hours the city changed by order and the one running an open-play pilot. The other twenty verified venues have their fact row and nothing else, so they get no editorial, fail Gate 4, and do not publish. Writing plausible paragraphs about a court nobody has stood on would be the single most damaging thing on this site: venue-name searches are read by people who already know the venue.",
+  "venues": {
+    "green-lake-park-east-courts": {
+      "slots": {
+        "description": "Green Lake Park East is the largest pickleball site Seattle Parks records, with eight courts striped for tennis and pickleball on the east side of the lake, and it is the only one in the city running an organised open-play programme. That programme is what makes it different from every other entry in this directory. Since 1 October 2025 the city has staffed scheduled sessions here with ambassadors who arrange games and run a paddle stacking system, which is a rotation queue: you put your paddle in the stack and get called into the next game rather than needing to arrive as a group of four. It was set up as a one-year pilot, so its future beyond autumn 2026 is not something we can tell you. The courts sit inside Green Lake Park, which is one of the busiest parks in Seattle, and the parking that serves them serves the whole lake path rather than the courts specifically. It is also the venue where our imported record was most wrong, which is worth stating on the page rather than quietly fixing. The commercial dataset we started from listed Green Lake as four courts, two of them indoor. Seattle Parks records eight courts, all outdoor, and there is no indoor pickleball at Green Lake at all. That is a doubling of the court count and the invention of two indoor courts in a city that has none verified, and it is the clearest single illustration of why nothing here publishes until a named source has confirmed it.",
+        "getting_there": "Seattle Parks records dedicated parking at this site and gives the address as 7201 E Green Lake Dr N. Be careful with that: the lot belongs to Green Lake Park as a whole, and the park draws walkers, runners and rowers all day, so a dedicated lot existing is not the same as a space being free when you arrive. The city publishes no capacity or time-limit information for it and we have not checked restrictions on the ground, so read the posted signs. An all-year restroom is recorded on site.",
+        "what_to_expect": "Eight courts with nets provided, no lights, and tennis lines under your feet. If you are coming alone or as a pair, come inside one of the open-play windows — Monday 8 to 10 a.m., Wednesday 1 to 3 p.m., Saturday 9 to 11 a.m., or Sunday 4 to 6 p.m. — because that is when the rotation runs and when getting into a game does not depend on who you brought. Outside those hours it is first come, first served like everywhere else. With no lighting recorded here, play ends when the light does, which in a Seattle December is early."
+      },
+      "sources": [
+        "E1",
+        "S1",
+        "S2"
+      ],
+      "faqs": [
+        {
+          "q": "Can I turn up alone and get a game?",
+          "a": "Yes, during the open-play windows, and this is the only Seattle venue where that is a designed feature rather than luck. Ambassadors run a paddle stacking system in those sessions so single players rotate in. Outside those hours you are on your own like anywhere else."
+        },
+        {
+          "q": "Are these courts indoor?",
+          "a": "No. All eight are outdoor, and there is no covered or climate-controlled pickleball recorded anywhere in Seattle. An earlier commercial record claimed two indoor courts here; the city's own data does not, and we have removed the claim."
+        },
+        {
+          "q": "Is there a fee?",
+          "a": "Not verified. Seattle Parks publishes no fee information for its pickleball courts, so we show cost as unverified here as everywhere else on this site rather than assuming it is free."
+        }
+      ]
+    },
+    "gilman-playground": {
+      "slots": {
+        "description": "Gilman Playground in Ballard carries four courts striped for tennis and pickleball, and it is one of three Seattle sites where the city has formally restricted when you may play. In September 2025 Seattle Parks, working with the Seattle Department of Construction and Inspections, ran noise studies at this location and found play producing sound levels above the limits set in Seattle Municipal Code chapter 25.08. The result was a posted schedule with real enforcement behind it rather than a request for consideration. That history is worth knowing before you turn up, because it shapes both when the courts are open and how the neighbours are likely to feel about a loud evening game.",
+        "getting_there": "The address Seattle Parks records is 923 NW 54th St, and the city records street parking rather than a dedicated lot — this is a residential Ballard block, and no capacity, permit or time-limit information is published for it. A seasonal restroom is recorded, which means do not count on it out of season. We have not verified parking restrictions on the ground; read the signs.",
+        "what_to_expect": "Four courts, nets provided, and no lights recorded, which matters more here than elsewhere because the posted hours run to 10 p.m. and nothing illuminates the court after dusk. Play is permitted 7 a.m. to 10 p.m. on weekdays and 9 a.m. to 10 p.m. at weekends and city-observed holidays. Those hours are enforced: a violation captured on timestamped photo or video results in a lock fitted to the courts for at least thirty days, and repeat violations make the lock permanent, after which the courts open only when staff are on site to unlock them. For context on how unusual that is: of the twenty-four verified Seattle venues, only three carry a city-imposed curfew, and Gilman is the smallest of them by court count. Nineteen of the twenty-four have no lighting recorded at all, so for most of the city the limit on evening play is the sunset rather than the council."
+      },
+      "sources": [
+        "E1",
+        "S1",
+        "S2"
+      ],
+      "faqs": [
+        {
+          "q": "What time do the courts close?",
+          "a": "10 p.m. every day, with opening at 7 a.m. on weekdays and 9 a.m. at weekends and city-observed holidays. These hours took effect on 15 September 2025."
+        },
+        {
+          "q": "Why does this park have hours when most do not?",
+          "a": "Noise studies run by Seattle Parks with the Seattle Department of Construction and Inspections found play here producing sound levels above the limits in Seattle Municipal Code chapter 25.08. Gilman is one of three Seattle sites given posted hours as a result."
+        },
+        {
+          "q": "What happens if people play after 10 p.m.?",
+          "a": "The city fits a lock. A violation documented outside posted hours with timestamped visual evidence results in a temporary lock for at least thirty days; repeat violations lead to a permanent lock, after which the courts open only when staff are on site to unlock them."
+        },
+        {
+          "q": "Are nets provided?",
+          "a": "Yes. Seattle Parks records nets at this location, which is not universal — the city records nets at seventeen of its twenty-five pickleball sites and says nothing either way about the other eight, so a portable net is worth carrying if you also play elsewhere in the city."
+        }
+      ]
+    },
+    "laurelhurst-playfield": {
+      "slots": {
+        "description": "Laurelhurst Playfield holds a single dedicated pickleball court — one of only three dedicated courts among the twenty-four Seattle venues we have verified, with every other site striped over tennis or shared with basketball or badminton. Being dedicated is the good news and being one court is the bad news, and the second is the more useful fact when you are deciding whether to drive here. It is also one of three Seattle locations where the city imposed restricted hours in September 2025 after noise studies with the Seattle Department of Construction and Inspections found play exceeding the limits in Seattle Municipal Code chapter 25.08. There is one more thing worth knowing, and it is a correction rather than a feature. Our imported record placed this venue at 4339 NE 43rd St. The city's own parcel record puts it at 4544 NE 41st St, two blocks away, and the city is describing land it owns. We have taken the municipal address and left the imported one visible in our change log rather than overwriting history, because a directory that silently corrects itself is asking to be trusted on exactly the thing it just got wrong.",
+        "getting_there": "Seattle Parks records the address as 4544 NE 41st St, which corrects the address our imported record carried — it had this venue two blocks away on NE 43rd St. Dedicated parking is recorded on site, along with an all-year restroom. The city publishes no capacity or restriction detail, and we have not checked it in person.",
+        "what_to_expect": "One court, nets provided, no lights. A single court means one game at a time, so on a good weekend afternoon expect either a wait or a rotation negotiated between whoever is there. Play is permitted 7 a.m. to 10 p.m. on weekdays and 9 a.m. to 10 p.m. at weekends and city-observed holidays, and those hours carry the same enforcement as the other two restricted sites: timestamped evidence of play outside them leads to a lock for a minimum of thirty days, permanent on repeat."
+      },
+      "sources": [
+        "E1",
+        "S1",
+        "S2"
+      ],
+      "faqs": [
+        {
+          "q": "Is this a dedicated pickleball court?",
+          "a": "Yes, and that is rare here. Seattle Parks records only four dedicated pickleball locations in the city and three of them, including this one, have a single court. Every other verified Seattle venue shares its surface with tennis, basketball or badminton."
+        },
+        {
+          "q": "Only one court — will I get on?",
+          "a": "That depends entirely on who else turns up, and we have no crowding data for any Seattle venue so we will not guess. One court means one game at a time and an informal rotation with whoever is waiting."
+        },
+        {
+          "q": "What time does it close?",
+          "a": "10 p.m., opening 7 a.m. on weekdays and 9 a.m. at weekends and city-observed holidays, in force since 15 September 2025 after noise studies found levels above Seattle Municipal Code chapter 25.08."
+        },
+        {
+          "q": "Are nets provided, and is there a restroom?",
+          "a": "Nets yes, and an all-year restroom is recorded on site, which matters more than it sounds — eleven of the twenty-five Seattle pickleball locations have only a seasonal restroom and three have none recorded at all. Dedicated parking is also recorded here rather than street parking."
+        }
+      ]
+    },
+    "mt-baker-park": {
+      "slots": {
+        "description": "Mt. Baker Park carries four courts striped for tennis and pickleball, and it is the only one of the three restricted-hours sites that also has lights — which is an odd combination worth understanding before you plan an evening around it. The city recorded lighting here, and then in September 2025 capped play at 10 p.m. after noise studies with the Seattle Department of Construction and Inspections found sound levels above the limits in Seattle Municipal Code chapter 25.08. So the lights exist and the clock still stops. Of the five lit venues among our twenty-four verified Seattle sites, this is the one where the lights are least useful late. Our imported record also had this venue's address as a street with no number — just Lake Park Dr S — which is the kind of gap that looks harmless until someone tries to drive to it. The city's parcel record supplied 2521, and that is the number shown above.",
+        "getting_there": "The address Seattle Parks records is 2521 Lake Park Dr S; our imported record had the street with no number, and the city's own parcel record supplied it. Street parking rather than a dedicated lot, on a residential block above Lake Washington, with an all-year restroom recorded on site. No permit or time-limit information is published and we have not verified restrictions in person.",
+        "what_to_expect": "Four courts with nets provided and lights, open 7 a.m. to 10 p.m. on weekdays and 9 a.m. to 10 p.m. at weekends and city-observed holidays. The enforcement here is the same as at Gilman and Laurelhurst: play documented outside posted hours with timestamped visual evidence results in a lock for at least thirty days, and further violations make it permanent. If you want lit courts without a curfew, Bitter Lake Playfield and Rainier Beach Playfield are the two larger lit sites with no restricted-hours order recorded against them. One practical note on the curfew that applies to all three restricted sites: the enforcement trigger is documented evidence rather than a complaint, so it is timestamped photos and video that lead to a lock, not annoyance on its own. That distinction is in the city's own announcement and it is the reason the posted hours are worth taking literally here in a way they are not at an unlit park that empties at dusk anyway."
+      },
+      "sources": [
+        "E1",
+        "S1",
+        "S2"
+      ],
+      "faqs": [
+        {
+          "q": "It has lights — can I play late?",
+          "a": "Until 10 p.m. and no later. This is the only Seattle venue that is both lit and curfewed, so the lights are genuinely useful in winter afternoons and genuinely capped at night. For lit courts without a posted curfew, Bitter Lake Playfield and Rainier Beach Playfield carry no such order in the records we have checked."
+        },
+        {
+          "q": "Why is there a curfew at a lit park?",
+          "a": "The two are unrelated. The lighting is recorded by Seattle Parks as a facility; the hours were imposed in September 2025 after noise studies with the Seattle Department of Construction and Inspections found play exceeding Seattle Municipal Code chapter 25.08."
+        },
+        {
+          "q": "Where do I park?",
+          "a": "Street parking — Seattle Parks records no dedicated lot here. No permit or time-limit information is published and we have not checked restrictions on the ground, so read the posted signs."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://parkways.seattle.gov/2025/09/09/seattle-parks-and-recreation-implements-new-racquet-sports-court-hours-and-open-play-pickleball-pilot/",
+      "publisher": "Seattle Parks and Recreation (Parkways)",
+      "tier": 1,
+      "published": "2025-09-09",
+      "retrieved": "2026-09-03",
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
+      "evidence": "Updated racquet court hours at Gilman Playground, Laurelhurst Playfield and Mt. Baker Park effective 15 September 2025: 7:00 a.m. to 10:00 p.m. weekdays, 9:00 a.m. to 10:00 p.m. Saturday, Sunday and City-observed holidays. Noise studies with SDCI found levels exceeding Seattle Municipal Code Chapter 25.08. Violations outside posted hours supported with timestamped visual evidence result in temporary lock installation for a minimum of 30 days; subsequent violations trigger permanent locks. Green Lake East open-play pilot from 1 October 2025 for one year: Monday 8-10 a.m., Wednesday 1-3 p.m., Saturday 9-11 a.m., Sunday 4-6 p.m., with ambassadors and a paddle stacking system."
+    },
+    {
+      "id": "S1",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "published": "2026-08-31",
+      "retrieved": "2026-09-03",
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
+      "evidence": "Per-venue court counts, indoor/outdoor, lights, nets, nearby restroom, parking and shared use type."
+    },
+    {
+      "id": "S2",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundary_(details)/FeatureServer/2",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "published": "2026-08-31",
+      "retrieved": "2026-09-03",
+      "supports": [
+        "getting_there"
+      ],
+      "evidence": "Street addresses per park parcel, including the Laurelhurst and Mt. Baker corrections."
+    }
+  ]
+}

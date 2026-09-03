@@ -110,7 +110,17 @@ export type FactRow = {
   evidence: string | null
 }
 
+export type VenueFact = {
+  key: string
+  label: string
+  value: string
+  verified: boolean
+  source: string | null
+  checked: string | null
+}
+
 export type VenueView = {
+  slug: string
   name: string
   city: string
   state: string
@@ -118,11 +128,21 @@ export type VenueView = {
   title: string
   meta: string
   cityHref: string
-  stateHref: string
-  verifiedBy: string
+  countyLink: {href: string; label: string; venues: number} | null
+  stateLink: {href: string; label: string} | null
+  trust: string
+  trustRank: number
+  claimable: boolean
   checked: string | null
   source: string | null
-  facts: FactRow[]
+  facts: VenueFact[]
+  knownFactsN: string
+  totalFactsN: string
+  hasNotes: boolean
+  notes: {key: string; heading: string; text: string}[]
+  hasFaqs: boolean
+  faqs: {q: string; a: string}[]
+  noteSources: {url: string; publisher: string; retrieved: string}[]
   hasAlternatives: boolean
   alternatives: {href: string; name: string; meta: string}[]
   jsonLd: string
@@ -138,15 +158,26 @@ export type FilterVenue = {
 
 export type FilterView = {
   filter: string
+  filterLabel: string
   city: string
   state: string
   stateName: string
   title: string
   meta: string
+  h1: string
+  predicate: string
+  exclusions: string
   cityHref: string
-  stateHref: string
   n: string
+  venueWord: string
+  courtsN: string
+  cityVenuesN: string
   coverage: string
+  hasEditorial: boolean
+  editorial: {key: string; heading: string; text: string}[]
+  editorialSources: {url: string; publisher: string; retrieved: string}[]
+  hasFaqs: boolean
+  faqs: {q: string; a: string}[]
   venues: FilterVenue[]
   jsonLd: string
 }
