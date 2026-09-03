@@ -171,10 +171,26 @@ body {
 
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 main { display: block; }
-.page { padding: 40px 0 24px; max-width: 78ch; }
+/*
+  The page is NOT capped, but its prose is.
 
-/* Pages that are mostly table want the full measure. */
-.page.is-wide { max-width: none; }
+  A single max-width on the container would drag the card grid and the tables
+  down to reading width, which is why the venue grid was coming out two
+  across when it wants three. So the measure lives on the text elements and
+  the media breaks out to the full column — narrow text, wide plates, which
+  is how a printed reference sets a page and the reason its figures can be
+  read across a spread.
+*/
+.page { padding: 40px 0 24px; }
+/* The measure applies to PROSE lists, not to layout lists. .cards, .filters,
+   .results and .quicklinks are grids and rows; capping them at reading width
+   is what was holding the venue grid to two columns. */
+.page > h1, .page > h2, .page > h3,
+.page > p, .page > ol,
+.page > ul:not(.cards):not(.filters):not(.results):not(.quicklinks),
+.page > section > p, .page > section > h2, .page > section > h3,
+.page > .note { max-width: var(--measure); }
+.page > .lede { max-width: 60ch; }
 
 /* ================================================================
    MASTHEAD — a masthead, not a product navbar
@@ -540,12 +556,79 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 }
 
 /* ================================================================
+   VENUE PHOTOGRAPHY
+   ================================================================
+   aspect-ratio reserves the box before the bytes arrive, which is the whole
+   Cumulative Layout Shift story for a grid of images. Every img also carries
+   real width and height attributes so the ratio is known even with CSS
+   disabled.
+
+   The placeholder marker is not decoration. One stock photograph standing in
+   for twenty-four different courts would otherwise read as a photograph of
+   each of them, which is a claim we cannot source — and this site renders an
+   unknown court count as "not verified yet" rather than guessing, so it can
+   hardly let an image imply what a sentence would refuse to.
+*/
+
+.shot {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--paper-3);
+  border-radius: var(--radius);
+  margin: 0 0 12px;
+}
+.shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Muted, so a stock photo never competes with the verified facts beside
+     it. Restored on hover so it is legible when someone looks at it. */
+  filter: saturate(.72) contrast(.96);
+  transition: filter .2s ease, transform .3s ease;
+}
+.card:hover .shot img, .shot:hover img { filter: saturate(1) contrast(1); }
+
+.shot .placeholder-mark {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-weight: 640;
+  color: #fff;
+  background: rgba(20, 20, 15, .74);
+  padding: 4px 8px;
+  border-radius: 2px;
+  backdrop-filter: saturate(1.2) blur(2px);
+}
+
+/* Venue page hero shot: wider, with a real caption rather than a chip. */
+.shot.is-hero { aspect-ratio: 21 / 9; margin: 4px 0 10px; border-radius: var(--radius); }
+figure.venue-shot { margin: 24px 0 30px; }
+figure.venue-shot figcaption {
+  font-size: 12.5px;
+  color: var(--ink-3);
+  border-top: 1px solid var(--rule);
+  padding-top: 9px;
+  max-width: 62ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shot img { transition: none; }
+}
+
+/* ================================================================
    CARDS — entries in an index, not floating tiles
    ================================================================ */
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+  max-width: none;
   gap: 0;
   margin: 24px 0 34px;
   padding: 0;
@@ -559,6 +642,10 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
   background: none;
   transition: background .18s ease;
 }
+/* A card with a picture reads as a plate in a catalogue: image flush to the
+   top of the cell, rules still doing the separating. */
+.card.has-shot { padding-top: 0; padding-right: 18px; }
+.card.has-shot .shot { border-radius: 0; }
 .card:hover { background: var(--paper-2); }
 .card h3 {
   margin: 0 0 6px;
@@ -663,9 +750,11 @@ table td a:hover { border-bottom-color: var(--accent); }
 
 .facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  column-gap: 44px;
-  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* `gap: 0` after `column-gap` resets it — that shorthand collapsed the
+     columns together and ran each value into the next label ("8Indoor
+     courts"). Row gap zero, column gap real, in one declaration. */
+  gap: 0 48px;
   border-top: 2px solid var(--ink);
   border-bottom: 1px solid var(--rule);
   margin: 26px 0 32px;

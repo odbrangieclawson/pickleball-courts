@@ -11,6 +11,15 @@
   Decision D2 expressed in the type system as well as in the build scan.
 */
 
+export type Photo = {
+  src: string
+  width: number
+  height: number
+  alt: string
+  isPlaceholder: boolean
+  caption: string
+}
+
 export type CardLink = {
   href: string
   title: string
@@ -51,6 +60,7 @@ export type StateView = {
 export type CityFilterLink = {slug: string; href: string; label: string}
 
 export type CityVenueRow = {
+  photo: Photo
   href: string | null
   name: string
   courts: string
@@ -134,6 +144,7 @@ export type VenueView = {
   cityHref: string
   countyLink: {href: string; label: string; venues: number} | null
   stateLink: {href: string; label: string} | null
+  photo: Photo
   trust: string
   trustRank: number
   claimable: boolean
@@ -148,11 +159,12 @@ export type VenueView = {
   faqs: {q: string; a: string}[]
   noteSources: {url: string; publisher: string; retrieved: string}[]
   hasAlternatives: boolean
-  alternatives: {href: string; name: string; meta: string}[]
+  alternatives: {href: string; photo: Photo; name: string; meta: string}[]
   jsonLd: string
 }
 
 export type FilterVenue = {
+  photo: Photo
   slug: string
   href: string | null
   name: string

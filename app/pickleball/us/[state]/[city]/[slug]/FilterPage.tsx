@@ -72,8 +72,22 @@ export default function FilterPage({f}: {f: FilterView}) {
 
       <h2 data-prose>The {f.n} venues</h2>
       <ul className="cards">
-        {f.venues.map(x => (
-          <li className="card" key={x.name}>
+        {f.venues.map((x, i) => (
+          <li className="card has-shot" key={x.name}>
+            <span className="shot">
+              <img
+                src={x.photo.src}
+                alt={x.photo.alt}
+                width={x.photo.width}
+                height={x.photo.height}
+                loading={i === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+                fetchPriority={i === 0 ? 'high' : 'auto'}
+              />
+              {x.photo.isPlaceholder && (
+                <span className="placeholder-mark">No photo yet</span>
+              )}
+            </span>
             <h3>{x.href ? <a href={x.href}>{x.name}</a> : x.name}</h3>
             <p className="meta">{x.meta}</p>
             <p>{x.address}</p>

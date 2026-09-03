@@ -60,6 +60,28 @@ export default async function LeafPage({params}: Params) {
 
       <p><span className="trust">{v.trust}</span></p>
 
+      <figure className="venue-shot">
+        <span className="shot is-hero">
+          <img
+            src={v.photo.src}
+            alt={v.photo.alt}
+            width={v.photo.width}
+            height={v.photo.height}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+          />
+          {v.photo.isPlaceholder && (
+            <span className="placeholder-mark">No photo yet</span>
+          )}
+        </span>
+        <figcaption data-not-prose>
+          {v.photo.caption} We have not photographed {v.name}, and we would
+          rather show a marked stand-in than a picture that implies we have.
+          The correction link below reaches the same queue a photograph would.
+        </figcaption>
+      </figure>
+
       <h2 data-prose>The facts</h2>
       <div className="facts">
         {v.facts.map(x => (
@@ -182,7 +204,20 @@ export default async function LeafPage({params}: Params) {
           <h2 data-prose>Other courts in {v.city}</h2>
           <ul className="cards">
             {v.alternatives.map(a => (
-              <li className="card" key={a.href}>
+              <li className="card has-shot" key={a.href}>
+                <span className="shot">
+                  <img
+                    src={a.photo.src}
+                    alt={a.photo.alt}
+                    width={a.photo.width}
+                    height={a.photo.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {a.photo.isPlaceholder && (
+                    <span className="placeholder-mark">No photo yet</span>
+                  )}
+                </span>
                 <h3><a href={a.href}>{a.name}</a></h3>
                 <p className="meta">{a.meta}</p>
               </li>

@@ -116,8 +116,24 @@ export default async function CityOrCountyPage({params}: Params) {
         actual place before it earns a URL. Their facts are all on this page.
       </p>
       <ul className="cards">
-        {v.venues.map(x => (
-          <li className="card" key={`card-${x.name}`}>
+        {v.venues.map((x, i) => (
+          <li className="card has-shot" key={`card-${x.name}`}>
+            <span className="shot">
+              <img
+                src={x.photo.src}
+                alt={x.photo.alt}
+                width={x.photo.width}
+                height={x.photo.height}
+                /* The first card is the likely LCP element, so it must not
+                   be lazy. Everything below the fold is. */
+                loading={i === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+                fetchPriority={i === 0 ? 'high' : 'auto'}
+              />
+              {x.photo.isPlaceholder && (
+                <span className="placeholder-mark">No photo yet</span>
+              )}
+            </span>
             <h3>{x.href ? <a href={x.href}>{x.name}</a> : x.name}</h3>
             <p className="meta">{x.detail}</p>
             <p>{x.address}</p>
