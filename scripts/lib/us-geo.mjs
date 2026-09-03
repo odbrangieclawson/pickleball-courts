@@ -20,6 +20,35 @@
 */
 
 /** [latMin, latMax, lonMin, lonMax] */
+/*
+  Abbreviation to full state name, all fifty plus DC.
+
+  There were two of these. lib/site/search.mjs had the complete list;
+  lib/site/data.mjs had eight states — WA, FL, TX, CA, NY, AZ, CO, OR — and a
+  fallback that returned the abbreviation for anything else. Nothing failed
+  when a ninth state arrived. Every North Carolina page simply rendered "NC"
+  wherever a Washington page rendered "Washington": in the breadcrumb, in the
+  state page heading, in its <title>, and in the Dataset name in its
+  structured data. It read as a design choice rather than a missing row,
+  which is why it survived four cities.
+
+  So there is one table. A state that is not in it is a bug in this file,
+  not a silent abbreviation on a page.
+*/
+export const STATE_NAMES = Object.freeze({
+  AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California',
+  CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware', FL: 'Florida', GA: 'Georgia',
+  HI: 'Hawaii', ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', IA: 'Iowa',
+  KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine', MD: 'Maryland',
+  MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi',
+  MO: 'Missouri', MT: 'Montana', NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire',
+  NJ: 'New Jersey', NM: 'New Mexico', NY: 'New York', NC: 'North Carolina',
+  ND: 'North Dakota', OH: 'Ohio', OK: 'Oklahoma', OR: 'Oregon', PA: 'Pennsylvania',
+  RI: 'Rhode Island', SC: 'South Carolina', SD: 'South Dakota', TN: 'Tennessee',
+  TX: 'Texas', UT: 'Utah', VT: 'Vermont', VA: 'Virginia', WA: 'Washington',
+  WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming', DC: 'District of Columbia',
+})
+
 export const STATE_BBOX = {
   AL: [30.1, 35.1, -88.6, -84.8], AK: [51.0, 71.6, -179.2, -129.9],
   AZ: [31.3, 37.1, -114.9, -109.0], AR: [32.9, 36.6, -94.7, -89.6],

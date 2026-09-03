@@ -10,6 +10,7 @@ page type   pages   clean   nodes emitted
 ---------   -----   -----   -------------
 home            1       1   WebSite, BreadcrumbList
 editorial       1       1   BreadcrumbList
+state           1       1   BreadcrumbList, Dataset, FAQPage
 county          2       2   BreadcrumbList, FAQPage, ItemList
 city            4       4   BreadcrumbList, FAQPage, ItemList
 filter          7       7   BreadcrumbList, FAQPage, ItemList

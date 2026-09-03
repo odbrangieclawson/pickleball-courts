@@ -54,7 +54,12 @@ export type StateView = {
   cityCount: string
   cityWord: string
   litLine: string
+  lastChecked: string
   cities: CardLink[]
+  hasEditorial: boolean
+  editorial: EditorialNote[]
+  hasFaqs: boolean
+  faqs: {q: string; a: string}[]
   jsonLd: string
 }
 

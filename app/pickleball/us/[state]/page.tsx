@@ -27,8 +27,8 @@ export default async function StatePage({params}: Params) {
         <a href="/">Home</a> › {v.stateName}
       </nav>
 
-      <h1>Pickleball Courts in {v.stateName}</h1>
-      <p className="lede">{v.meta}</p>
+      <h1 data-prose>Pickleball Courts in {v.stateName}</h1>
+      <p className="lede" data-prose>{v.meta} Last checked {v.lastChecked}.</p>
 
       <div className="stats">
         <div className="stat"><span className="n">{v.venues}</span><span className="k">Verified venues</span></div>
@@ -36,9 +36,9 @@ export default async function StatePage({params}: Params) {
         <div className="stat"><span className="n">{v.cityCount}</span><span className="k">{v.cityWord}</span></div>
       </div>
 
-      <p>Across {v.stateName}, {v.litLine} have lit courts for evening play.</p>
+      <p data-prose>Across {v.stateName}, {v.litLine} have lit courts for evening play.</p>
 
-      <h2>Cities</h2>
+      <h2 data-prose>Cities</h2>
       <ul className="cards">
         {v.cities.map(c => (
           <li className="card" key={c.href}>
@@ -48,6 +48,39 @@ export default async function StatePage({params}: Params) {
           </li>
         ))}
       </ul>
+
+      {/*
+        The written state note. Without it this page does not publish at all —
+        statePagePublishes() requires every slot filled, because a state page
+        with three city cards and a stats strip is a directory of directories
+        rather than a document, and its word band says so at 3,000.
+      */}
+      {v.hasEditorial && v.editorial.map(e => (
+        <section key={e.key} data-prose>
+          <h2>{e.heading}</h2>
+          {e.text.split('\n\n').map((para, i) => <p key={i}>{para}</p>)}
+          <p className="provenance" data-not-prose>
+            {e.sources.map((s, i) => (
+              <span key={s.url}>
+                {i > 0 && ' · '}
+                <a href={s.url}>{s.publisher}</a>, checked {s.retrieved}
+              </span>
+            ))}
+          </p>
+        </section>
+      ))}
+
+      {v.hasFaqs && (
+        <>
+          <h2 data-prose>Questions about pickleball in {v.stateName}</h2>
+          {v.faqs.map(f => (
+            <section key={f.q} data-prose>
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </section>
+          ))}
+        </>
+      )}
 
       <div className="note is-gap">
         <h3>Why so few cities?</h3>
