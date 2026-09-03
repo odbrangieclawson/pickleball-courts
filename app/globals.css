@@ -344,6 +344,111 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 .crumbs a:hover { color: var(--accent-ink); border-bottom-color: var(--accent); }
 
 /* ================================================================
+   SEARCH
+   ================================================================
+   A plain GET form. No JavaScript, so it works with scripting disabled,
+   the results are linkable, and the back button behaves.
+
+   Styled as a single ruled field rather than a pill with a coloured
+   button, because a rounded gradient search pill is the most recognisable
+   generated-hero component there is. This reads as the search line of a
+   catalogue: a heavy rule under an oversized input, and a plain word for
+   the action.
+*/
+
+.searchbar {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 30px 0 14px;
+  max-width: 34rem;
+  border-bottom: 2px solid var(--ink);
+}
+.searchbar input {
+  flex: 1 1 auto;
+  min-width: 0;
+  font: inherit;
+  font-size: 17px;
+  padding: 12px 4px;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  border-radius: 0;
+  appearance: none;
+}
+.searchbar input::placeholder { color: var(--ink-3); }
+.searchbar input:focus { outline: none; }
+/* The focus ring belongs on the whole field, not the bare input. */
+.searchbar:focus-within { border-bottom-color: var(--accent); }
+.searchbar:focus-within input::placeholder { color: var(--ink-2); }
+.searchbar button {
+  flex: none;
+  font: inherit;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .085em;
+  font-weight: 600;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 12px 2px 12px 18px;
+  cursor: pointer;
+  min-height: 44px;
+}
+.searchbar button:hover { color: var(--accent-ink); }
+.searchbar.is-page { margin-top: 8px; }
+
+.quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  font-size: 13.5px;
+}
+.quicklinks a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.quicklinks a:hover { color: var(--accent-ink); border-bottom-color: var(--accent); }
+
+.results { list-style: none; padding: 0; margin: 26px 0 34px; border-top: 2px solid var(--ink); }
+.results li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--rule-2);
+}
+.results li a {
+  font-family: var(--serif);
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--ink);
+  flex: 1 1 16rem;
+}
+.results li a:hover { color: var(--accent-ink); }
+.results-type {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-weight: 600;
+  color: var(--ink-3);
+  flex: none;
+}
+.results-meta { font-size: 13px; color: var(--ink-3); flex: none; font-variant-numeric: tabular-nums; }
+
+/* Accessible label that is present for screen readers and not for eyes. */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ================================================================
    THE LEDGER — the count IS the value proposition
    ================================================================
    findswimmingholes leads with "1,216 verified places". Same idea, set as

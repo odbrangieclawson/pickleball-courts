@@ -27,6 +27,9 @@ export type HomeView = {
   cityWord: string
   lastChecked: string
   gapSentence: string
+  cityWordLower: string
+  hasQuickLinks: boolean
+  quickLinks: {href: string; label: string}[]
   jsonLd: string
   cities: CardLink[]
 }
@@ -244,3 +247,18 @@ export type ProvenanceView = {
 }
 
 export function provenanceView(): ProvenanceView
+
+export type SearchHit = {type: string; label: string; href: string; meta: string}
+
+export type SearchView = {
+  query: string
+  kind: string
+  heading: string
+  note: string
+  hasResults: boolean
+  results: SearchHit[]
+  hasSuggestions: boolean
+  suggestions: SearchHit[]
+}
+
+export function searchView(q: string): SearchView

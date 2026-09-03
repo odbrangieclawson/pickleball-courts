@@ -65,10 +65,29 @@ const normalise = href => {
   return clean.endsWith('/') || /\.[a-z0-9]+$/i.test(clean) ? clean : `${clean}/`
 }
 
+/*
+  Routes that exist but are rendered on demand, so there is no HTML file on
+  disk for them. A link to one is NOT a dead link, and treating it as one
+  would either produce a permanent false failure or force this check to be
+  loosened until it caught nothing. Listing them explicitly keeps the dead
+  link check strict everywhere else. /search/ has its own Gate 2 coverage in
+  scripts/check-search.mjs, which asks a running server what it renders.
+*/
+const DYNAMIC_ROUTES = new Set(['/search/'])
+
 const linksFrom = new Map()
 for (const [path, html] of pages) {
   const set = new Set()
   for (const m of html.matchAll(/<a\b[^>]*\bhref=["']([^"']+)["']/gi)) {
+    const n = normalise(m[1])
+    if (n) set.add(n)
+  }
+  /*
+    Form actions count as links. A form posting to a URL that does not exist
+    fails a visitor exactly as hard as a dead anchor does, and this report
+    missed the home page search form entirely until forms were added here.
+  */
+  for (const m of html.matchAll(/<form\b[^>]*\baction=["']([^"']+)["']/gi)) {
     const n = normalise(m[1])
     if (n) set.add(n)
   }
@@ -82,7 +101,7 @@ const queue = ['/']
 while (queue.length) {
   const cur = queue.shift()
   for (const next of linksFrom.get(cur) ?? []) {
-    if (!pages.has(next)) continue
+    if (!pages.has(next)) continue  /* dynamic routes have no file to walk into */
     if (depth.has(next)) continue
     depth.set(next, depth.get(cur) + 1)
     queue.push(next)
@@ -119,7 +138,7 @@ const internalLinked = internal.filter(p => linkedFromSomewhere.has(p))
 const dead = []
 for (const [from, set] of linksFrom) {
   for (const href of set) {
-    if (!pages.has(href)) dead.push({from, href})
+    if (!pages.has(href) && !DYNAMIC_ROUTES.has(href)) dead.push({from, href})
   }
 }
 

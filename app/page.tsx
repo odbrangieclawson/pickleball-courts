@@ -38,11 +38,33 @@ export default function Home() {
       <p className="eyebrow">A US pickleball court directory</p>
       <h1>{v.headline}</h1>
       <p className="lede">
-        Every court count, every set of lights, every address on this site
-        carries the source it came from and the date we checked it. Where a
-        fact has not been verified, we say &ldquo;not verified yet&rdquo; —
-        never a zero, never a guess.
+        {v.venues} verified pickleball venues across {v.cityCount}{' '}
+        {v.cityWordLower}, every fact checked against a named source before it
+        earns a page here. Where something has not been verified, we say
+        &ldquo;not verified yet&rdquo; — never a zero, never a guess.
       </p>
+
+      <form className="searchbar" action="/search/" method="get" role="search">
+        <label className="visually-hidden" htmlFor="q">
+          City, state, ZIP code or court name
+        </label>
+        <input
+          id="q"
+          name="q"
+          type="search"
+          placeholder="City, state, ZIP code, or court name"
+          autoComplete="off"
+        />
+        <button type="submit">Find courts</button>
+      </form>
+
+      {v.hasQuickLinks && (
+        <ul className="quicklinks">
+          {v.quickLinks.map(l => (
+            <li key={l.href}><a href={l.href}>{l.label}</a></li>
+          ))}
+        </ul>
+      )}
 
       <div className="stats">
         <div className="stat">

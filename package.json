@@ -38,7 +38,8 @@
     "validate:schema": "node scripts/validate-schema.mjs",
     "gates:ci": "node scripts/gates-ci.mjs",
     "monitor:404": "node scripts/monitor-404.mjs",
-    "phase6": "npm run build && npm run check:js-off && npm run gates:ci && npm run validate:schema && npm run crawl && npm run monitor:404"
+    "phase6": "npm run build && npm run check:js-off && npm run gates:ci && npm run validate:schema && npm run crawl && npm run monitor:404",
+    "check:search": "node scripts/check-search.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
