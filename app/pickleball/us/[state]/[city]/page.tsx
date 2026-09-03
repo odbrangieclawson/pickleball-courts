@@ -50,22 +50,25 @@ export default async function CityOrCountyPage({params}: Params) {
       <h1 data-prose>{v.h1}</h1>
       <p className="lede" data-prose>
         We have verified {v.venuesN} pickleball venues in {v.city}, covering{' '}
-        {v.courtsN} courts. Every figure on this page comes from {v.city}&rsquo;s
-        own parks records, and every venue below carries the source it came
-        from and the date we checked it. Last checked {v.lastChecked}.
+        {v.courtsN} courts. Every figure on this page comes from the parks
+        records of the authority that runs them, and every venue below carries
+        the source it came from and the date we checked it. Last checked{' '}
+        {v.lastChecked}.
       </p>
 
       <div className="stats">
         <div className="stat"><span className="n">{v.venuesN}</span><span className="k">Verified venues</span></div>
         <div className="stat"><span className="n">{v.courtsN}</span><span className="k">Courts</span></div>
-        <div className="stat"><span className="n">{v.outdoorN}</span><span className="k">Outdoor courts</span></div>
-        <div className="stat"><span className="n">{v.indoorN}</span><span className="k">Indoor courts</span></div>
+        {/* Only shown where at least one venue actually reported it. A "0"
+            here would be the exact thing the footer promises we never do. */}
+        {v.outdoorN && <div className="stat"><span className="n">{v.outdoorN}</span><span className="k">Outdoor courts</span></div>}
+        {v.indoorN && <div className="stat"><span className="n">{v.indoorN}</span><span className="k">Indoor courts</span></div>}
       </div>
 
       <p data-prose>
         On lighting, {v.litLine} have lit courts for evening play. On cost,{" "}
-        {v.freeLine} are free to play — the city&rsquo;s open pickleball data
-        does not state fees, so we have not claimed one either way.
+        {v.freeLine} are free to play. Where an operator does not state a
+        fee we have not claimed one either way.
       </p>
 
       {v.hasFilters && (
@@ -114,7 +117,7 @@ export default async function CityOrCountyPage({params}: Params) {
             behind every fact and the date it was checked. </>
           : <>{v.venuePagesN} of these have a page of their own. The rest are
             verified to exactly the same standard — every fact above and
-            below comes from the same city records — but nobody has written
+            below comes from the same records — but nobody has written
             them up yet, and a venue page here needs a couple of paragraphs
             about the actual place before it earns a URL. Their facts are
             all on this page. </>}
@@ -182,10 +185,10 @@ export default async function CityOrCountyPage({params}: Params) {
       <div className="note is-gap" data-prose>
         <h3>What we have not verified</h3>
         <p>
-          Surface type, fees and opening hours are not in the city&rsquo;s
-          pickleball dataset, so they show as &ldquo;not verified yet&rdquo;
-          rather than being guessed at. These courts are very probably free to
-          play — but a belief is not a source, so we do not print it as one.
+          Anything an operator does not publish shows as &ldquo;not verified
+          yet&rdquo; rather than being guessed at — most often surface, fees
+          and opening hours. Many of these courts are very probably free to
+          play, but a belief is not a source, so we do not print it as one.
         </p>
       </div>
 
@@ -239,12 +242,24 @@ export default async function CityOrCountyPage({params}: Params) {
         </p>
       )}
 
+      {/*
+        Built from the venues' own field provenance, never asserted. This
+        block used to name Seattle's two datasets on every city page, which
+        was a false source line on four cities — the one error this site
+        cannot afford, since naming the source IS the product.
+      */}
       <h2>Sources</h2>
       <p className="provenance">
-        Court counts, lights, nets, restrooms and parking: Seattle Parks and
-        Recreation, Pickleball Courts open dataset. Addresses: Seattle Parks
-        and Recreation, Park Boundary (details). Both retrieved and checked{' '}
-        {v.lastChecked}. <a href="/how-we-verify/">How we verify</a>.
+        Every fact on this page comes from one of these, and each venue names
+        the source behind each of its own fields:{' '}
+        {v.sources.map((s, i) => (
+          <span key={s.url}>
+            {i > 0 && ' · '}
+            <a href={s.url}>{s.publisher}</a>
+            {s.checked ? `, checked ${s.checked}` : ''}
+          </span>
+        ))}
+        . <a href="/how-we-verify/">How we verify</a>.
       </p>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: v.jsonLd}} />

@@ -98,8 +98,8 @@ export type CityView = {
   stateHref: string
   venuesN: string
   courtsN: string
-  outdoorN: string
-  indoorN: string
+  outdoorN: string | null
+  indoorN: string | null
   litLine: string
   freeLine: string
   lastChecked: string
@@ -117,6 +117,7 @@ export type CityView = {
   faqs: {q: string; a: string}[]
   venuePagesN: string
   allVenuesHavePages: boolean
+  sources: {publisher: string; url: string; checked: string | null; tier: number | null}[]
   hasFilters: boolean
   filters: CityFilterLink[]
   venues: CityVenueRow[]

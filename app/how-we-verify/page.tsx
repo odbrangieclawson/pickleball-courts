@@ -58,17 +58,19 @@ export default function HowWeVerify() {
       <h2>What this build actually is</h2>
       <div className="note is-warn">
         <p>
-          <strong>This is a demonstration build, and it is not published.</strong>{' '}
-          The 24 Seattle venues in it are real, and every fact on them comes
-          from Seattle Parks and Recreation&rsquo;s own open data, retrieved on
-          3 September 2026.
+          <strong>A small directory that would rather be right than big.</strong>{' '}
+          Every venue on it is real and every fact carries the name of the
+          organisation that published it and the date we read it. The
+          operators are city and county parks departments, and they differ by
+          city — each page names its own.
         </p>
         <p>
-          But the Seattle page does not yet pass our own fourth quality gate:
-          it is short of the 1,200-word floor and it has no local editorial
-          written yet. Under our rules that means it does not ship. We are
-          showing it to you anyway, with the failure stated, because a
-          directory that hides its own gates is not worth trusting.
+          What you will notice most is how much is blank. Surface, fees and
+          opening hours are missing far more often than not, because most
+          operators do not publish them. Those show as &ldquo;not verified
+          yet&rdquo;. We would rather show a hole than fill it, and where two
+          of an operator&rsquo;s own records disagree we publish the
+          disagreement rather than quietly picking one.
         </p>
       </div>
 

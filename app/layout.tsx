@@ -32,13 +32,22 @@ import {navView} from '../lib/site/views.mjs'
   Root layout. Server Component — no 'use client' anywhere in the content
   render path, or Rule 1 / Page Gate 2 breaks.
 
-  THE DEMO BANNER
+  THE DEMO BANNER IS GONE, AND ITS REMOVAL WAS OVERDUE
 
-  This build is a local demonstration. Every venue fact in it is real and
-  sourced from Seattle Parks and Recreation, but the city page does not yet
-  pass Page Gate 4, so under the project's own rules it is not publishable.
-  The banner says so on every page. Removing it is a deliberate act that
-  belongs with the commit that makes the page pass.
+  It read: "DEMONSTRATION BUILD. The venue data is real and sourced from
+  Seattle Parks and Recreation. The directory is not published — pages here
+  have not passed all six quality gates."
+
+  Written in Phase 3, when the Seattle city page failed Gate 4 and nothing
+  could lawfully publish. Its own comment said removing it "is a deliberate
+  act that belongs with the commit that makes the page pass" — and then five
+  cities passed and nobody removed it. It shipped to a live deployment
+  announcing on all 64 pages that the directory was unpublishable, while
+  every one of those pages was passing all six gates, and crediting Seattle
+  for courts in Charlotte.
+
+  Nothing replaces it. The site being noindex is a deployment decision that
+  belongs in robots and metadata, not a banner claiming the pages are unfit.
 */
 
 /*
@@ -84,12 +93,6 @@ export default function RootLayout({children}: {children: ReactNode}) {
   return (
     <html lang="en-US" className={display.variable}>
       <body>
-        <div className="demo-banner" role="alert">
-          <strong>DEMONSTRATION BUILD.</strong> The venue data is real and sourced
-          from Seattle Parks and Recreation. The directory is not published —
-          pages here have not passed all six quality gates.
-        </div>
-
         <header className="site-head">
           <div className="wrap">
             <a className="brand" href="/">
@@ -113,9 +116,19 @@ export default function RootLayout({children}: {children: ReactNode}) {
               source and the date it was checked. Where we have not verified
               something, we say so rather than guessing or printing a zero.
             </p>
+            {/*
+              This used to read "Court data on this build comes from Seattle
+              Parks and Recreation". It was true when Seattle was the only
+              city and false on every page of the four that followed — a
+              wrong source credit sitting directly under a promise that every
+              fact carries its source. The footer no longer names a source at
+              all, because the sources differ per page and each page lists
+              its own.
+            */}
             <p>
-              Court data on this build comes from Seattle Parks and Recreation
-              open data, retrieved 3 September 2026.
+              Sources differ by city and are named on every page, beside the
+              date each fact was checked.{' '}
+              <a href="/how-we-verify/">How we verify</a>.
             </p>
           </div>
         </footer>
