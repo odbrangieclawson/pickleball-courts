@@ -37,6 +37,7 @@ export type HomeView = {
   lastChecked: string
   gapSentence: string
   cityWordLower: string
+  sourcesPerVenue: string
   hasQuickLinks: boolean
   quickLinks: {href: string; label: string}[]
   jsonLd: string

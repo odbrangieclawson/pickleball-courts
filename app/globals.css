@@ -360,6 +360,213 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 .crumbs a:hover { color: var(--accent-ink); border-bottom-color: var(--accent); }
 
 /* ================================================================
+   HERO
+   ================================================================
+   A photographic opening over the search field, with the verified count as
+   the proof line beneath it — the number is the value proposition, so it
+   belongs above the fold rather than below it.
+
+   The image is the LCP element, so it is a real <img> rather than a CSS
+   background: a background-image cannot be preloaded, cannot take
+   fetchpriority, and is discovered late by the browser. It is also
+   deliberately soft-focused behind a heavy veil, which is both a design
+   choice and an honest accommodation — the placeholder is 630px wide and
+   would look upscaled at full width without it. A larger file will look
+   sharper here with no code change.
+
+   The veil is not decoration either. White text over a mid-blue photograph
+   fails contrast badly; the gradient below takes the backdrop dark enough
+   for body text to clear 4.5:1 across the whole area, not just where the
+   photo happens to be dark.
+*/
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #0d1512;
+  padding: clamp(56px, 8vw, 104px) 0 clamp(40px, 5vw, 64px);
+  margin-bottom: 8px;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+  z-index: -2;
+  /* Softened on purpose: the subject is a headline, not the photograph. */
+  filter: saturate(.85) blur(1.5px);
+  /*
+    Mirrored. The photograph has its subject on the left and the headline is
+    also on the left, so unflipped the ball sits directly behind the type and
+    both lose. Flipping moves the subject to the empty right-hand side.
+
+    This is only acceptable because the image is decorative: it contains no
+    text, no signage and no claim about a specific venue. A photograph of a
+    real court would never be mirrored — that would be editing evidence.
+  */
+  transform: scale(1.06) scaleX(-1);
+}
+.hero-veil {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /*
+    Two gradients doing two jobs. The vertical one seats the header and the
+    page below it. The horizontal one weights the left side dark so the
+    headline and the search field clear 4.5:1 over any part of the picture,
+    while the right stays open enough to actually see the photograph.
+  */
+  background:
+    linear-gradient(90deg, rgba(8, 16, 13, .92) 0%, rgba(8, 16, 13, .82) 38%, rgba(8, 16, 13, .48) 72%, rgba(8, 16, 13, .42) 100%),
+    linear-gradient(180deg, rgba(8, 16, 13, .55) 0%, rgba(8, 16, 13, .18) 45%, rgba(8, 16, 13, .70) 100%);
+}
+.hero-inner { position: relative; color: #f4f2ec; max-width: var(--wrap); }
+
+.hero-eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 600;
+  color: #9ed9bd;
+  margin: 0 0 16px;
+}
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.3rem, 1.3rem + 3.4vw, 3.9rem);
+  line-height: 1.05;
+  letter-spacing: -.022em;
+  color: #fff;
+  margin: 0 0 16px;
+  max-width: 19ch;
+  text-wrap: balance;
+}
+.hero-sub {
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, .98rem + .4vw, 1.24rem);
+  line-height: 1.5;
+  color: #dcd9d0;
+  max-width: 52ch;
+  margin: 0 0 30px;
+}
+
+/* ---- the search field ---- */
+
+.hero-search {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  max-width: 40rem;
+  margin: 0 0 18px;
+}
+.hero-search input {
+  flex: 1 1 auto;
+  min-width: 0;
+  font: inherit;
+  font-size: 16.5px;
+  padding: 15px 18px;
+  border: 1px solid rgba(255, 255, 255, .26);
+  background: rgba(255, 255, 255, .96);
+  color: var(--ink);
+  border-radius: var(--radius);
+  appearance: none;
+}
+.hero-search input::placeholder { color: #6f6c63; }
+.hero-search input:focus-visible {
+  outline: 3px solid #9ed9bd;
+  outline-offset: 2px;
+  border-color: transparent;
+}
+/*
+  A solid button with a word on it. Icon-only search controls are a
+  convention rather than an affordance: they fail screen readers without a
+  label, and they are the single most common "where do I click" complaint on
+  a hero. Icon AND word costs nothing.
+*/
+.hero-search button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 640;
+  letter-spacing: .01em;
+  color: #08150f;
+  background: #9ed9bd;
+  border: 1px solid #9ed9bd;
+  border-radius: var(--radius);
+  padding: 15px 24px;
+  min-height: 44px;
+  cursor: pointer;
+  transition: background .16s ease, transform .16s ease;
+}
+.hero-search button:hover { background: #b6e6ce; }
+.hero-search button:active { transform: translateY(1px); }
+.hero-search button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.hero-search button svg { flex: none; }
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 34px;
+  font-size: 14px;
+}
+.hero-links a {
+  color: #cfe8dc;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(207, 232, 220, .38);
+  padding-bottom: 2px;
+}
+.hero-links a:hover { color: #fff; border-bottom-color: #fff; }
+
+/* ---- the proof line ---- */
+
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 clamp(28px, 5vw, 64px);
+  margin: 0;
+  padding: 22px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  max-width: 46rem;
+}
+.hero-proof > div { display: flex; flex-direction: column-reverse; }
+.hero-proof dd {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 1.3rem + 1.4vw, 2.3rem);
+  line-height: 1.05;
+  color: #fff;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.hero-proof dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-weight: 580;
+  color: #a9b5ad;
+  margin-top: 7px;
+}
+
+@media (max-width: 640px) {
+  .hero { padding-top: 40px; }
+  .hero-search { flex-direction: column; gap: 10px; }
+  .hero-search button { justify-content: center; }
+  .hero-proof { gap: 0 28px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-search button { transition: none; }
+}
+
+/* ================================================================
    SEARCH
    ================================================================
    A plain GET form. No JavaScript, so it works with scripting disabled,
