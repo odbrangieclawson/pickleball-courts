@@ -63,6 +63,7 @@ import {join} from 'node:path'
 import {SourceDocument} from './provenance.mjs'
 import {applyFacts, changelogToRows} from './conflict.mjs'
 import {loadRows, REPO_ROOT} from '../lib/load-csv.mjs'
+import {PUBLISHED_FACT_FIELDS} from '../../lib/data/verified.mjs'
 import {mapRow} from '../import/mapper.mjs'
 
 /* The date these sources were READ. Not the date they were published. */
@@ -78,36 +79,88 @@ const PUBLISHER = 'Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)'
   with it without reading code.
 */
 const MATCHES = [
+  /* ---- matched to an imported row (address agreement unless noted) ---- */
   {
     slug: 'seattle-miller-playfield-pickleball-courts-capitol-hill',
     park: 'Miller Playfield',
     pma: 373,
     basis: 'Same site. The Parks record names it PENDLETON MILLER PLAYFIELD at 330 19th Ave E, the address the imported row already carries. NOT matched to the separate "Miller Community Center" row, which is the indoor building on the same block and is a different venue.',
   },
-  {
-    slug: 'seattle-alki-playground-pickleball-and-tennis-courts',
-    park: 'Alki Playground',
-    pma: 446,
-    basis: 'Same site, same name, and the imported address 5817 SW Lander St matches the Parks record exactly.',
-  },
-  {
-    slug: 'seattle-brighton-playfield-seattle-wa',
-    park: 'Brighton Playfield',
-    pma: 402,
-    basis: 'Same site, same name, and the imported address 6000 39th Ave S matches the Parks record exactly.',
-  },
+  {slug: 'seattle-alki-playground-pickleball-and-tennis-courts', park: 'Alki Playground', pma: 446,
+   basis: 'Same name, and the imported address 5817 SW Lander St matches the Parks record exactly.'},
+  {slug: 'seattle-brighton-playfield-seattle-wa', park: 'Brighton Playfield', pma: 402,
+   basis: 'Same name, and the imported address 6000 39th Ave S matches the Parks record exactly.'},
   {
     slug: 'green-lake-pickleball-courts-seattle',
     park: 'Green Lake Park (East Courts)',
     pma: 307,
     basis: 'The only pickleball courts Seattle Parks records at Green Lake Park, and the only Green Lake row in the import. The municipal record is specific about WHICH courts (East); the imported row is not, so the municipal name describes the same courts more precisely.',
   },
+  {slug: 'seattle-laurelhurst-pickleball-court-seattle-wa', park: 'Laurelhurst Playfield', pma: 340,
+   basis: 'Same site, both a single court at Laurelhurst. The imported address is wrong by two blocks and is corrected.'},
+  {slug: 'seattle-discovery-park-tennis-and-pickleball-courts', park: 'Discovery Park', pma: 310,
+   basis: 'Address 3801 Discovery Park Blvd matches the Parks record exactly.'},
+  {slug: 'seattle-beacon-hill-playground-tennis-courts-seattle-wa', park: 'Beacon Hill Park', pma: 400,
+   basis: 'Address 1902 13th Ave S matches the Parks record exactly. The Parks record names it BEACON HILL PLAYGROUND; the pickleball layer calls the same site "Beacon Hill Park".'},
+  {slug: 'seattle-observatory-courts-queen-anne-seattle-wa', park: 'Observatory Courts', pma: 322,
+   basis: 'Same name, address 1405 Warren Ave N matches the Parks record.'},
   {
-    slug: 'seattle-laurelhurst-pickleball-court-seattle-wa',
-    park: 'Laurelhurst Playfield',
-    pma: 340,
-    basis: 'Same site. Both describe a single pickleball court at Laurelhurst. The imported address is wrong by two blocks and is corrected below.',
+    slug: 'bitter-lake-pickleball-and-tennis-courts',
+    park: 'Bitter Lake Playfield',
+    pma: 288,
+    basis: 'The OUTDOOR courts row, not the "Bitter Lake Community Center" row. The community centre row records 3 indoor courts and is the building; this municipal record is 8 outdoor courts under lights, which is the playfield. They share a campus and are not the same venue.',
   },
+  {slug: 'seattle-georgetown-playfield-tennis-and-pickleball-courts', park: 'Georgetown Playfield', pma: 410,
+   basis: 'Address 750 S Homer St matches the Parks record exactly.'},
+  {slug: 'seattle-dearborn-park-seattle-wa', park: 'Dearborn Park', pma: 408,
+   basis: 'Address 2919 S Brandon St matches the Parks record exactly.'},
+  {
+    slug: 'seattle-south-park-playground-tennis-and-pickleball-courts',
+    park: 'South Park Playground',
+    pma: 467,
+    basis: 'Same named site. The imported address (8319 8th Ave S) and the Parks record (738 S Sullivan St) disagree; the Parks record is the property owner describing its own parcel, so it wins and the address is corrected.',
+  },
+  {slug: 'seattle-gilman-playground-pickleball-and-tennis-courts', park: 'Gilman Playground', pma: 242,
+   basis: 'Address 923 NW 54th St matches the Parks record exactly.'},
+  {slug: 'delridge-pickleball-and-tennis-courts', park: 'Delridge Playfield', pma: 450,
+   basis: 'Same site on Delridge Way SW; the imported street number is off by a block and is corrected. NOT the "Delridge Community Center" indoor row.'},
+  {slug: 'seattle-kinnear-park-queen-anne-seattle-wa', park: 'Kinnear Park', pma: 314,
+   basis: 'Same name, address 899 W Olympic Pl matches (the Parks record misspells it "Olumpic").'},
+  {slug: 'seattle-montlake-playfield-multisport-court-seattle-wa', park: 'Montlake Playfield', pma: 376,
+   basis: 'Address 1618 E Calhoun St matches the Parks record exactly. Both describe a single shared-use court.'},
+  {
+    slug: 'seattle-rainier-beach-playfield-seattle-wa',
+    park: 'Rainier Beach Playfield',
+    pma: 422,
+    basis: 'The PLAYFIELD row, not the "Rainier Beach Community Center" row. The imported playfield row already records 8 outdoor courts, which is exactly what the municipal record states. The community centre row records 3 indoor courts and is a different venue.',
+  },
+  {slug: 'seattle-soundview-playfield-tennis-and-pickleball-courts', park: 'Soundview Playfield', pma: 251,
+   basis: 'Address 1590 NW 90th St matches the Parks record exactly.'},
+  {slug: 'seattle-lakeridge-playfield-pickleball-and-badminton-courts', park: 'Lakeridge Park', pma: 3972,
+   basis: 'Address 10145 Rainier Ave S matches the Parks record exactly.'},
+  {slug: 'seattle-mount-baker-pickleball-and-tennis-courts-seattle-wa', park: 'Mt. Baker Park', pma: 419,
+   basis: 'Same site on Lake Park Dr S; the imported row has the street with no number, and the Parks record supplies 2521.'},
+
+  /* ---- no imported row exists: minted from the municipal source alone ---- */
+  {slug: 'maple-leaf-reservoir-park-pickleball-courts-seattle', park: 'Maple Leaf Reservoir Park', pma: 3881, mint: true,
+   basis: 'Seattle Parks records dedicated pickleball courts here. The import has no row for it at all.'},
+  {slug: 'west-magnolia-playfield-pickleball-courts-seattle', park: 'West Magnolia Playfield', pma: 319, mint: true,
+   basis: 'No imported row. Deliberately NOT matched to "Magnolia Community Center", which is the indoor building nearby with 3 indoor courts.'},
+  {slug: 'walt-hundley-playfield-pickleball-courts-seattle', park: 'Walt Hundley Playfield', pma: 3941, mint: true,
+   basis: 'No imported row. Deliberately NOT matched to "High Point Community Center", which shares the 6920 34th Ave SW address but is the indoor building.'},
+  {slug: 'greenwood-park-pickleball-courts-seattle', park: 'Greenwod Park', pma: 4408, mint: true,
+   basis: 'No imported row. The pickleball layer misspells the park as "Greenwod"; the Parks record for the same parcel spells it GREENWOOD PARK, and that spelling is used for the name.'},
+
+  /*
+    EXCLUDED: "5th & Taylor Ave (SDOT)", 2 courts.
+
+    A Seattle Department of Transportation street-end court, so it has no
+    Parks PMA and therefore no address in the Parks layer, and no imported
+    row to borrow one from. Import Gate I1 requires a street_address. Rather
+    than compose one from the intersection in its name, it is left out. It
+    is a real venue and belongs on the site the day a source states its
+    address.
+  */
 ]
 
 /* ---------------------------------------------------------------- */
@@ -129,6 +182,7 @@ const doc1 = new SourceDocument({url: S1_URL, retrieved_at: RETRIEVED_AT, tier: 
 const doc2 = new SourceDocument({url: S2_URL, retrieved_at: RETRIEVED_AT, tier: 2, publisher: PUBLISHER, format: 'arcgis'})
 
 const pbByName = new Map(s1.features.map(f => [f.attributes.PARKNAME, f.attributes]))
+const pbGeom = new Map(s1.features.map(f => [f.attributes.PARKNAME, f.geometry ?? null]))
 const addrByPma = new Map()
 for (const f of s2.features) {
   const a = f.attributes
@@ -143,10 +197,37 @@ const bySlug = new Map(allRows.map(v => [v.slug, v]))
 const overlay = {}
 const allChanges = []
 
+/*
+  A venue the import never had. Everything factual about it comes from the
+  two municipal sources below; this only supplies the identity shell the
+  facts attach to, with every fact field null so applyFacts is the sole
+  writer.
+
+  county is King for all of these. Seattle lies wholly within King County,
+  which is the same Census county reference the Phase 1 backfill uses -
+  data/reference/2023_Gaz_counties_national.txt - rather than a guess.
+*/
+function mintVenue(slug, park, pb) {
+  const shell = {
+    slug, name: park, city: 'Seattle', state: 'WA', county: 'King',
+    postal_code: null, street_address: null,
+    latitude: null, longitude: null,
+    status: 'pending', source_url: null, date_checked: null, verified_by: null,
+    claimed_by_owner: false, claim_date: null,
+    rating: null, user_rating: null, review_count: null, claimed_or_verified: null,
+    source_sport: 'pickleball',
+  }
+  for (const f of PUBLISHED_FACT_FIELDS) shell[f] = null
+  return shell
+}
+
 for (const m of MATCHES) {
-  const venue = bySlug.get(m.slug)
+  const pbRec = pbByName.get(m.park)
+  const venue = m.mint
+    ? mintVenue(m.slug, (addrByPma.get(m.pma)?.NAME ?? m.park), pbRec)
+    : bySlug.get(m.slug)
   if (!venue) throw new Error(`No imported row with slug ${m.slug}`)
-  const pb = pbByName.get(m.park)
+  const pb = pbRec
   if (!pb) throw new Error(`No municipal pickleball record named "${m.park}"`)
   const addr = addrByPma.get(m.pma)
   if (!addr) throw new Error(`No Parks address record for PMA ${m.pma}`)
@@ -165,10 +246,22 @@ for (const m of MATCHES) {
     doc1.fact('parking', pb.PARKING && pb.PARKING !== '-' ? pb.PARKING : null, {evidence: `PARKING="${pb.PARKING}"`}),
     doc1.fact('venue_type', 'public_park', {evidence: `Published by Seattle Parks and Recreation as a park facility; Parks record OWNER="${addr.OWNER}"`}),
     doc2.fact('street_address', addr.ADDRESS, {evidence: `Parks layer PMA=${addr.PMA}, NAME="${addr.NAME}", ADDRESS="${addr.ADDRESS}"`}),
+    /*
+      County. The Phase 1 backfill derives county from postal_code and flags
+      the ambiguous ones for review - Lakeridge came back low-confidence and
+      was therefore refused by Import Gate I3. It does not need deriving
+      here: the Parks record establishes the parcel is City of Seattle parks
+      property, and Seattle lies wholly inside King County per the Census
+      county file already in data/reference/.
+    */
+    doc2.fact('county', 'King', {evidence: `Parks layer PMA=${addr.PMA} is City of Seattle parks property (OWNER="${addr.OWNER}"); the City of Seattle lies wholly within King County`}),
   ]
 
   const res = applyFacts(venue, facts)
   overlay[m.slug] = {
+    minted: !!m.mint,
+    identity: m.mint ? {name: venue.name, city: venue.city, state: venue.state, county: venue.county,
+      latitude: pbGeom.get(m.park)?.y ?? null, longitude: pbGeom.get(m.park)?.x ?? null} : null,
     match: {park: m.park, pma: m.pma, basis: m.basis},
     patch: Object.fromEntries(facts.map(f => [f.field, f.value])),
     provenance: res.provenance,
