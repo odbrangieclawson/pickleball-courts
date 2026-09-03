@@ -1,0 +1,52 @@
+{
+  "pleasant-park": {
+    "lat": 35.702042,
+    "lon": -78.881011,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "town_address": "3400 Pleasant Plains Rd",
+    "wake_address": "3400 PLEASANT PLAINS RD",
+    "basis": "Wake County GIS Address Points holds \"3400 PLEASANT PLAINS RD\" at 35.702042,-78.881011; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+  },
+  "seymour-athletic-fields": {
+    "lat": 35.720224,
+    "lon": -78.90616,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "town_address": "2500 Evans Road",
+    "wake_address": "2500 EVANS RD",
+    "basis": "Wake County GIS Address Points holds \"2500 EVANS RD\" at 35.720224,-78.90616; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+  },
+  "apex-community-park": {
+    "lat": 35.751147,
+    "lon": -78.822095,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "town_address": "2200 Laura Duncan Road",
+    "wake_address": "2200 LAURA DUNCAN RD",
+    "basis": "Wake County GIS Address Points holds \"2200 LAURA DUNCAN RD\" at 35.751147,-78.822095; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+  },
+  "kelly-road-park": {
+    "lat": 35.73172,
+    "lon": -78.894821,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "town_address": "1609 Kelly Road",
+    "wake_address": "1609 KELLY RD",
+    "basis": "Wake County GIS Address Points holds \"1609 KELLY RD\" at 35.73172,-78.894821; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+  },
+  "john-m-brown-community-center": {
+    "lat": 35.734055,
+    "lon": -78.846446,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "town_address": "53 Hunter Street",
+    "wake_address": "53 HUNTER ST",
+    "basis": "Wake County GIS Address Points holds \"53 HUNTER ST\" at 35.734055,-78.846446; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+  }
+}

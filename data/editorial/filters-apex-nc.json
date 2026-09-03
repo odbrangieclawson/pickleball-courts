@@ -1,0 +1,81 @@
+{
+  "city": "Apex",
+  "state": "NC",
+  "kind": "filters",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Apex gets two of the five filter pages, and it gets them on better evidence than any other city here: the town's court table has an explicit Indoor / Outdoor column and an explicit Lights column, so both filters rest on a stated value rather than on a reading of the setting. There is no /indoor/ page despite Apex having the only verified indoor courts in the directory, because a filter page needs three qualifying venues and Apex has one. There is no /free/ page because the town never says these courts are free.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Apex is the first city in this directory where outdoor is a stated fact rather than an inference. Everywhere else we have read the setting — sunrise-to-sunset hours, a features list full of playgrounds and trails — and concluded the courts must be outdoors. The Town of Apex simply prints a column headed Indoor / Outdoor and fills it in for every facility, so this page carries the four it marks Outdoor and excludes the one it marks Indoor. That exclusion is worth a sentence, because the venue it removes is genuinely notable: the John M. Brown Community Center holds the only verified indoor pickleball courts anywhere on this site. It does not appear here, and it does not get an /indoor/ page of its own either, because a filter page needs three qualifying venues to be a document rather than a redirect with extra steps. One indoor venue is a fact on a city page, not a category.",
+        "what_qualifies": "A venue appears here when the Town of Apex's own court table marks it Outdoor. Four do: Pleasant Park, Kelly Road Park, the Seymour Athletic Fields and Apex Community Park. For each of them the outdoor court count is recorded as equal to the total, because the table gives one figure per facility and states that figure's setting in the same row. What is deliberately not recorded is a zero for indoor courts at any of these four. The table says what each facility's pickleball is, not that the site has no indoor court of any kind — and at Pleasant Park that distinction is real, because the park has a field house with rentable rooms. An absence of evidence is not a checked zero. The one venue this page excludes is excluded on the same authority that includes the others: the town marks the John M. Brown Community Center Indoor, and lists it once, so its four courts are recorded as four indoor and zero outdoor. That is the town's own inventory rather than our reading of it, and it is the only place in this directory where a zero outdoor count is published at all."
+      },
+      "faqs": [
+        {
+          "q": "Are all of Apex's pickleball courts outdoor?",
+          "a": "No, and Apex is the only city here where we can say that with a citation. The town's court table marks four facilities Outdoor and one, the John M. Brown Community Center, Indoor. Those four indoor courts are the only verified indoor pickleball courts in this directory."
+        },
+        {
+          "q": "Which outdoor Apex court is biggest?",
+          "a": "Pleasant Park, with six. It is also the only unlit one, and its published court hours are sunrise to thirty minutes after sunset, so its size and its usefulness after work point in opposite directions."
+        },
+        {
+          "q": "Can I book an outdoor court in Apex?",
+          "a": "No. The town states that courts cannot be reserved by players or groups, only by its Parks, Recreation and Cultural Resources department for sponsored programmes, and that organised league play and private lessons outside town programming are not allowed per Town Ordinance."
+        }
+      ],
+      "sources": ["E1", "E2", "E3"]
+    },
+    "lights": {
+      "slots": {
+        "why_this_filter": "In Apex the lighting question has an unusually sharp answer, because the biggest site is the dark one. Pleasant Park holds six of the town's twenty-one verified courts — more than anywhere else — and the town marks it No for lights and publishes its court hours as sunrise to thirty minutes after sunset. So the obvious choice on a summer afternoon is the wrong choice on a January evening, and this page is where that inverts: it carries Kelly Road Park, Apex Community Park and the Seymour Athletic Fields, all lit, all running 6:30 a.m. to 10 p.m. year round, and the indoor courts at the John M. Brown Community Center. Between them those four hold fifteen courts that work after dark, against six that do not. None of them can be reserved, so the lit sites are first-come, first-served in the hours when everyone wants them.",
+        "what_qualifies": "A venue publishes here when the Town of Apex's court table reads Yes in its Lights column. Four do, and three of the four are corroborated on the venue's own page: Apex Community Park's features list says \"3 lighted pickleball courts\", the Seymour Athletic Fields entry says \"Lighted pickleball courts\", and both are the town describing its own site a second time in a different place. Kelly Road Park is marked Yes in the table and its page describes its softball field as lighted without saying the same of its courts, so that one rests on the table alone. The John M. Brown Community Center is marked Yes and is indoors, where lighting is not really the same question — it is on this page because the town says it is lit, and excluding it would mean overriding a stated value with our own idea of what the column ought to mean. The single venue absent from this page is Pleasant Park, marked No. That is a verified negative rather than missing data: the town has told us there are no lights, and its published court hours agree with it. An unlit court and an unmentioned one are different things, and only one of them is a fact."
+      },
+      "faqs": [
+        {
+          "q": "How late can I play under lights in Apex?",
+          "a": "Until 10 p.m. at Kelly Road Park, Apex Community Park and the Seymour Athletic Fields, all of which the town publishes as open 6:30 a.m. to 10 p.m. year round. The town does not state what time the lights come on, or whether they run on a timer or a switch."
+        },
+        {
+          "q": "Which Apex court has no lights?",
+          "a": "Pleasant Park, the biggest of the five. The town marks it No in the Lights column and publishes its basketball and pickleball court hours as sunrise to thirty minutes after sunset. It is a verified absence, not a gap in our data."
+        },
+        {
+          "q": "Is the indoor venue really a lighting result?",
+          "a": "It is on this page because the town's own table marks the John M. Brown Community Center Yes for lights. Indoors that is a slightly odd column to fill in, but it is filled in, and we would rather carry a stated value than quietly override it with our own view of what the question means. Its courts are for ages 55 and over during designated open gym hours."
+        }
+      ],
+      "sources": ["E1", "E2", "E3"]
+    }
+  },
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.apexnc.org/1877/Pickleball",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Court table with columns Facility / Park, Indoor / Outdoor, Lights, Number of Courts. Apex Community Park, Outdoor, Yes, 3. John M. Brown Community Center, Indoor, Yes, 4 (available only for ages 55+, during designated open gym hours). Kelly Road Park, Outdoor, Yes, 4 (also used for Junior Tennis). Pleasant Park, Outdoor, No, 6 (open sunrise to 30 minutes after sunset). Seymour Athletic Fields at Apex Nature Park, Outdoor, Yes, 4 (also used for Junior Tennis). Also states that courts cannot be reserved by players or groups other than by the department for sponsored programs, and that organised league play and private lessons outside Town programming are not currently allowed per Town Ordinance."
+    },
+    {
+      "id": "E2",
+      "url": "https://www.apexnc.org/1163/Pleasant-Park",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "\"Basketball and Pickleball Court Hours: Sunrise to 30 minutes after Sunset\" and \"Park Hours: 5:30 am* - 10:00 pm *fields/courts/restrooms open at 6:30 am\". Features include \"6 Pickleball courts (view real-time court occupancy)\", a Field House Office with two rentable meeting rooms, and restroom facilities. No lighting is claimed for the courts anywhere on the page."
+    },
+    {
+      "id": "E3",
+      "url": "https://www.apexnc.org/795/Apex-Community-Park",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Apex Community Park's features list states \"3 lighted pickleball courts\" and its hours as \"6:30 am - 10:00 pm (year round)\". The Apex Nature Park & Seymour Athletic Fields page separately lists \"Lighted pickleball courts\" among the Seymour Athletic Fields features at 2500 Evans Road, with hours of 5:30 am to 10:00 pm and courts opening at 6:30 am. Kelly Road Park's page gives its hours as 6:30 am - 10 pm year round and describes \"4 junior tennis / pickleball courts\" and a lighted softball field, without stating lighting for the courts themselves."
+    }
+  ]
+}

@@ -262,7 +262,8 @@ export function allCountyParams(): {state: string; city: string}[]
 
 export function navView(): {href: string; label: string}[]
 
-export function venuePagePublishes(slug: string): boolean
+export function venuePagePublishes(state: string, city: string, slug: string): boolean
+export function statePagePublishes(state: string): boolean
 
 export type ProvenanceView = {
   totalN: string

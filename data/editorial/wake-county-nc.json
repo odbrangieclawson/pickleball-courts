@@ -3,36 +3,36 @@
   "state": "NC",
   "date_checked": "2026-09-03",
   "written_by": "staff_research",
-  "note_on_method": "This page covers what we have verified inside Wake County, which is now two of its municipalities and not the rest. Everything below is drawn from the sources listed; where a claim is about the limits of our own coverage rather than about a court, it says so. County assignment is not assumed from the city name — each park was resolved against the US Census Bureau geocoder, because Raleigh is not wholly inside Wake County. This page was rewritten when Cary was added; the previous version said every verified court in the county was inside Raleigh, which stopped being true the day it stopped being true.",
+  "note_on_method": "This page covers what we have verified inside Wake County, which is now three of its municipalities and not the rest. Everything below is drawn from the sources listed; where a claim is about the limits of our own coverage rather than about a court, it says so. County assignment is never taken from the town name — every park is resolved individually, because two of the three towns here straddle a county line. This page has been rewritten twice as towns were added; the version before this one said the county's verified courts were split between Raleigh and Cary, which stopped being true the day Apex was added.",
   "slots": {
-    "coverage": "Wake County is the first county in this directory covered by more than one operator. Fourteen parks hold 56 verified outdoor pickleball courts across two municipalities: eleven parks and 44 courts run by Raleigh Parks, Recreation and Cultural Resources, and three parks and 12 courts run by the Town of Cary. Both publish their own court counts, which is the bar a venue has to clear here. Raleigh states each location's count on a single pickleball page and then states the citywide total in prose, and the parts add up to the whole. Cary has no such page and states each count instead in the features list on the facility's own page — \"Three pickleball courts\" at Ed Yerha, \"Basketball & 3 Pickleball Courts\" at Carpenter Park — so those counts are published here quoted sentence by sentence. Every park's county was resolved individually rather than assumed from the postcode or the town name: Raleigh straddles a county line, with its Brier Creek area falling inside Durham County, so \"a Raleigh park is a Wake County park\" needed checking. All fourteen came back Wake, FIPS 37183.",
-    "distribution": "The courts cluster, and the clustering is the most useful thing to know here. Sanderford Road Park in south-east Raleigh alone holds 10 of the 56, and four more sites hold six apiece — Method Community Park, North Hills Park and Baileywick Park in Raleigh, and the Neighborhood Park on McCrimmon Parkway in north-west Cary. Those five sites account for 34 courts, well over half the county's verified total, at barely a third of its verified locations. The rest is twos and threes: six Raleigh parks with two courts each, Southgate with two, and Cary's Ed Yerha and Carpenter parks with three apiece. Dedicated pickleball is rarer still. Only Method, North Hills and Sanderford Road are permanent pickleball courts in Raleigh's own description, and only McCrimmon is described as lighted pickleball courts by Cary; everywhere else the game is played on lines painted over tennis or basketball. Geographically the set runs from Baileywick in far north Raleigh across to Carpenter Park in north-west Cary and down to Carolina Pines and Sanderford Road in the south.",
-    "gaps": "Two municipalities is not a county. Apex, Holly Springs, Garner, Wake Forest, Morrisville, Fuquay-Varina, Knightdale, Zebulon and Rolesville are all in Wake County and none of them appears here — not because they have no courts, but because we have not yet found their operators publishing their own court counts, which is the bar everything here has to clear. Inside the two towns we do cover, the gaps are narrower and specific. Two Cary venues are verified in everything but one field and are still not published: Cary Tennis Park, where the town states four lighted pickleball courts and hosts professional tour events, and Middle Creek Community Center, with three indoor courts to rent at $10 an hour. Neither publishes a street address, and a venue does not get a page here without one. We have no verified fee for any of the 56 courts. We have a surface for one of the fourteen sites. And two of Raleigh's counts are disputed between the city's own pickleball page and its own GIS inventory, which we publish rather than quietly resolve."
+    "coverage": "Wake County is the most thoroughly covered county in this directory, and the only one with more than one operator. Nineteen sites hold 77 verified pickleball courts across three municipalities: eleven parks and 44 courts run by Raleigh Parks, Recreation and Cultural Resources, five facilities and 21 courts run by the Town of Apex, and three parks and 12 courts run by the Town of Cary. All three publish their own court counts, which is the bar a venue has to clear here, and they do it three different ways. Raleigh states each location's count on a single pickleball page and the citywide total in prose, and the parts add up to the whole. Apex publishes a table with a column each for indoor or outdoor, lights and number of courts, then repeats most of those counts on the venue's own page. Cary states each count in the features list of the facility's page and nowhere else. Every park's county was resolved individually rather than assumed: Raleigh reaches into Durham County at Brier Creek and the town of Apex spans Wake and Chatham, so \"a Raleigh address\" and \"an Apex address\" are both unsafe shorthand for Wake. All nineteen came back Wake, FIPS 37183.",
+    "distribution": "The courts cluster hard, and the clustering is the most useful thing to know here. Sanderford Road Park in south-east Raleigh holds 10 of the 77 on its own. Five more sites hold six apiece — Method Community Park, North Hills Park and Baileywick Park in Raleigh, McCrimmon Park in Cary and Pleasant Park in Apex — so six sites out of nineteen account for 40 courts, more than half the county at under a third of its locations. The rest is threes and fours. Dedicated pickleball is rarer than the totals suggest: Raleigh describes only Method, North Hills and Sanderford Road as permanent courts, Cary describes only McCrimmon's as lighted pickleball courts in their own right, and in Apex two of the five sites share their surface with junior tennis. The county also holds the only verified indoor pickleball in this directory — four courts at the John M. Brown Community Center in Apex, for players aged 55 and over during designated open gym hours. And it holds an instructive inversion: the largest site in Apex, Pleasant Park's six courts, is the only unlit one in that town, closing thirty minutes after sunset while smaller lit sites run to 10 p.m.",
+    "gaps": "Three municipalities is not a county. Holly Springs, Garner, Wake Forest, Morrisville, Fuquay-Varina, Knightdale, Zebulon and Rolesville are all in Wake County and none appears here. Two of those we have actually looked at and turned down, which is worth saying plainly. Holly Springs publishes four outdoor courts at one complex and indoor open play with \"up to three nets\" at another, which is one countable venue where a city page needs three. Wake Forest reconciles beautifully — three indoor courts at Flaherty Park Community Center, three at Joyner Park Community Center, eight shared outdoor at Flaherty Park Tennis Courts and four dedicated at Flaherty Park, summing to the 18 active courts the town states — but three of those four entries are at Flaherty Park, so counting them as three venues to clear a three-venue threshold would be gaming the threshold rather than meeting it. Inside the three towns we do cover, the gaps are specific: two Cary venues with stated court counts are unpublished because the town prints no street address for them, one of which hosts professional tour events; Apex Elementary School's four courts are unpublished because it is not a town facility and the records disagree about the number; we have no verified fee for any of the 77 courts; and we have a surface for exactly one of the nineteen sites."
   },
   "faqs": [
     {
       "q": "Does this page cover all of Wake County?",
-      "a": "No, and we would rather be plain about it. Everything verified here is inside Raleigh or Cary. Apex, Holly Springs, Garner, Wake Forest, Morrisville, Fuquay-Varina, Knightdale, Zebulon and Rolesville are all in Wake County and none of them appears yet. A town is added when we find its operator publishing its own court counts, not when we find a listing of it somewhere else."
+      "a": "No. Everything verified here is inside Raleigh, Apex or Cary. Holly Springs, Garner, Wake Forest, Morrisville, Fuquay-Varina, Knightdale, Zebulon and Rolesville are all in Wake County and none of them appears yet. Two we have already assessed and declined: Holly Springs has one countable venue where three are needed, and Wake Forest's courts are concentrated at a single park under several names."
     },
     {
       "q": "How do you know these parks are in Wake County?",
-      "a": "Each park was resolved against the US Census Bureau geocoder — by address where the geocoder matched the street as the town writes it, and otherwise from the coordinates the town itself publishes for that park. All fourteen came back Wake County, FIPS 37183. We check rather than assume because Raleigh crosses a county boundary: the Brier Creek part of the city lies in Durham County, so a rule like \"Raleigh means Wake\" would be wrong for some Raleigh addresses."
+      "a": "Each one was resolved individually against Census county boundaries — by address where the geocoder matched, otherwise from coordinates published by the town or held in Wake County's own GIS address file. All nineteen return Wake County, FIPS 37183. The checking is not ceremonial: Raleigh crosses into Durham County at Brier Creek, and the town of Apex genuinely spans Wake and Chatham, with both its postcodes straddling the same line. \"An Apex address is a Wake address\" is false in general and happened to be true for all five Apex venues."
     },
     {
       "q": "Where are the most courts in Wake County?",
-      "a": "Sanderford Road Park in Raleigh, at 10 permanent lit courts, is the largest single site verified in the county. Four sites follow with six each: Method Community Park, North Hills Park and Baileywick Park in Raleigh, and the Neighborhood Park on McCrimmon Parkway in Cary. Those five hold 34 of the county's 56 verified courts between them."
-    },
-    {
-      "q": "Why is Cary Tennis Park not listed?",
-      "a": "Because the Town of Cary publishes no street address for it. The town states the venue has four lighted pickleball courts, it is the best-known racquet facility in the county and it hosts professional tour events — and a venue still does not get a page here without an address, because an address is how a reader finds the place and how we can tell two venues apart. It goes in the day the town publishes one. The same applies to Middle Creek Community Center and its three indoor rental courts."
+      "a": "Sanderford Road Park in Raleigh, at 10 permanent lit courts, is the largest single site. Five sites follow with six each: Method Community Park, North Hills Park and Baileywick Park in Raleigh, McCrimmon Park in Cary and Pleasant Park in Apex. Those six hold 40 of the county's 77 verified courts between them."
     },
     {
       "q": "Is there indoor pickleball in Wake County?",
-      "a": "Yes, and almost none of it is verified here. Raleigh Parks runs indoor open play at thirteen community centres at $3 a session or $15 for a four-month pass, and Cary rents three indoor courts at Middle Creek Community Center for $10 an hour per court. Raleigh publishes no court count for any of its thirteen gyms and Cary publishes no address for Middle Creek, so none of them publishes as a venue. We can tell you what indoor play costs in this county; we cannot yet tell you how big it is."
+      "a": "Yes, and only one of it is verified. The John M. Brown Community Center in Apex has four indoor courts, the only verified indoor pickleball in this directory, restricted to players aged 55 and over during designated open gym hours. Raleigh runs indoor open play at thirteen community centres at $3 a session or $15 for four months, and Cary rents three indoor courts at Middle Creek at $10 an hour, but Raleigh publishes no per-centre court count and Cary publishes no address, so neither publishes as a venue."
+    },
+    {
+      "q": "Which courts have no lights?",
+      "a": "Three sites, and one of them is a surprise. Fred Fletcher Park and Southgate Park in Raleigh are marked unlit by the city. So is Pleasant Park in Apex — which is the biggest pickleball site in that town at six courts, with published court hours of sunrise to thirty minutes after sunset. In Cary, only McCrimmon Park's courts are stated as lit; the other two say nothing either way, which we record as unverified rather than as unlit."
     },
     {
       "q": "What does verified mean on this page?",
-      "a": "That a named source stated the fact and we recorded which source, on what date. For these fourteen parks the court counts, addresses and lighting come from Raleigh Parks, its GIS division and the Town of Cary, and the county from the US Census Bureau. Anything no source stated is left as \"Not verified yet\" rather than filled in from a plausible guess — which is why you will see far more blanks here than on a directory that infers them."
+      "a": "That a named source stated the fact and we recorded which source, on what date. For these nineteen sites the court counts, addresses and lighting come from Raleigh Parks and its GIS division, the Town of Apex and the Town of Cary, and the county from the US Census Bureau and Wake County GIS. Anything no source stated is left as \"Not verified yet\" rather than filled in from a plausible guess — which is why you will see far more blanks here than on a directory that infers them."
     }
   ],
   "sources": [
@@ -42,7 +42,11 @@
       "publisher": "City of Raleigh Parks, Recreation and Cultural Resources",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["coverage", "distribution", "gaps"],
+      "supports": [
+        "coverage",
+        "distribution",
+        "gaps"
+      ],
       "evidence": "States \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\" and tabulates each location with its court count and lighting. Sanderford Road Park 10, Method Community Park 6, North Hills Park 6, Baileywick Park 6, Carolina Pines Park 4, and 2 each at Fred Fletcher, Jaycee, Powell Drive, Roberts, Southgate and Tarboro Road. Method, North Hills and Sanderford Road are marked as permanent courts; the rest are described as tennis or basketball courts with pickleball lines. Fred Fletcher and Southgate are marked unlit. Indoor open play is priced at $3 a session or $15 for a four-month pass across thirteen community centres, with no per-centre court count published."
     },
     {
@@ -51,7 +55,10 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["coverage", "gaps"],
+      "supports": [
+        "coverage",
+        "gaps"
+      ],
       "evidence": "County resolved for all fourteen parks. Raleigh's eleven and Cary's McCrimmon Parkway park matched by coordinates or address directly; Ed Yerha Park and Carpenter Park did not match by street as the Town of Cary writes them, so their county was resolved from the coordinates the town publishes for each park in its own open data. All fourteen return Wake County, North Carolina, state FIPS 37, county FIPS 183."
     },
     {
@@ -60,7 +67,10 @@
       "publisher": "City of Raleigh Parks, Recreation and Cultural Resources, GIS Division",
       "tier": 2,
       "retrieved": "2026-09-03",
-      "supports": ["gaps", "distribution"],
+      "supports": [
+        "gaps",
+        "distribution"
+      ],
       "evidence": "Athletic Courts feature service. Its per-polygon Pickleball counts agree with E1 at nine of Raleigh's eleven locations and disagree at two: Baileywick, where it gives 4 against E1's 6, and Carolina Pines, where it gives 3 against E1's 4. Its Surface field is populated for Southgate Park only, reading \"asphalt\", and is empty on every other pickleball polygon in the set."
     },
     {
@@ -69,8 +79,36 @@
       "publisher": "Town of Cary, Parks, Recreation & Cultural Resources",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["coverage", "distribution", "gaps"],
+      "supports": [
+        "coverage",
+        "distribution",
+        "gaps"
+      ],
       "evidence": "Ed Yerha Park, 1216 Jenks Carpenter Road, features list reads \"Three pickleball courts\"; status \"Pickleball Courts Open - First Come, First Served\"; park hours sunrise to sunset. Carpenter Park, 4420 Louis Stephens Drive, features list reads \"Multi-Sport Courts: Basketball & 3 Pickleball Courts\" and \"Parking for 30 Cars\". Neighborhood Park on McCrimmon Parkway, 3870 Cary Glen Blvd, features list reads \"Lighted Pickleball Courts: Non-reservable, first-come, first-served\"; the Cary Tennis Park page's satellite list gives its count as \"Six Lighted Tennis Courts and Six Lighted Pickleball Courts\". Cary Tennis Park is stated to have \"four lighted pickleball courts\" and Middle Creek Community Center that \"Three (3) courts are available to rent\" at \"$10 per hour/per court\", neither with a published street address."
+    },
+    {
+      "id": "E5",
+      "url": "https://www.apexnc.org/1877/Pickleball",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": [
+        "coverage",
+        "distribution",
+        "gaps"
+      ],
+      "evidence": "Court table with columns Facility / Park, Indoor / Outdoor, Lights, Number of Courts. Apex Community Park, Outdoor, Yes, 3. Apex Elementary School, Outdoor, Yes, 4 (available only on weekends and after 6 pm on school days). John M. Brown Community Center, Indoor, Yes, 4 (available only for ages 55+, during designated open gym hours). Kelly Road Park, Outdoor, Yes, 4 (also used for Junior Tennis). Pleasant Park, Outdoor, No, 6 (open sunrise to 30 minutes after sunset). Seymour Athletic Fields at Apex Nature Park, Outdoor, Yes, 4 (also used for Junior Tennis). Pleasant Park's own page gives court hours as sunrise to 30 minutes after sunset; Apex Community Park's states \"3 lighted pickleball courts\"."
+    },
+    {
+      "id": "E6",
+      "url": "https://www.wakeforestnc.gov/parks-recreation-cultural-resources/youth-adult-athletics/adult-leagues/pickleball",
+      "publisher": "Town of Wake Forest, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": [
+        "gaps"
+      ],
+      "evidence": "\"Pickleball began in Wake Forest in 2009 on one chalked tennis court. Today, the sport has grown to include three shared use (basketball, volleyball, tennis) indoor courts at Flaherty Park Community Center, three shared use indoor courts at Joyner Park Community Center, eight shared use outdoor courts at Flaherty Park Tennis Courts, and four dedicated outdoor courts at Flaherty Park.\" \"Wake Forest currently offers 18 shared use and/or dedicated active courts at Town-owned facilities.\" Three of the four named entries are at Flaherty Park. Holly Springs, separately, states that \"The four outdoor pickleball courts at North Main Athletic Complex (NMAC) are available on a first-come, first-served basis at no charge\" and offers indoor open play at the W.E. Hunt Center with \"up to three nets\" available."
     }
   ]
 }

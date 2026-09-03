@@ -1,0 +1,129 @@
+{
+  "city": "Apex",
+  "state": "NC",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every claim below comes from a named Town of Apex source in `sources`. Apex is the best-documented town in this directory so far: it publishes a court table giving each facility's indoor/outdoor status, lighting and court count, and then most venues repeat their own count on their own page. Where the town is silent — surface everywhere, nets everywhere, fees everywhere — the note says so rather than filling the gap.",
+  "slots": {
+    "parking": "Apex publishes less about parking than it does about almost anything else, and what it does publish is about getting into the park rather than about leaving a car near the courts. Apex Nature Park is the clearest: the town states there are parking lots at both entrances and a paved walkway connecting the two sides of the park, which matters because the pickleball is on the Seymour Athletic Fields side at 2500 Evans Road while the dog park, disc golf and amphitheatre are at 2600 Evans Road. Apex Community Park likewise has two published entrances — the park entrance at 2200 Laura Duncan Road and a separate Lake Trail entrance at 1808 Lake Pine Drive — so the address you navigate to decides how far you walk. Pleasant Park's own FAQ list includes the question \"Can I park along Pleasant Plains Road?\", which tells you the question comes up often enough for the town to answer it; we have not read the answer and are not going to guess at it. Beyond that, no Apex page states a capacity, a time limit, a permit requirement or a fee for parking at any of these five venues.",
+    "peak_hours": "The most useful thing to know about Apex is that its biggest pickleball site closes earliest. Pleasant Park has six courts, more than anywhere else in town, and it is the only one of the five with no lights: the town publishes its basketball and pickleball court hours as \"Sunrise to 30 minutes after Sunset\", so on a winter evening it is shut while the smaller lit sites are still going. Kelly Road Park, Apex Community Park and the Seymour Athletic Fields all run 6:30 a.m. to 10 p.m. year round and all three are lit. The indoor courts at the John M. Brown Community Center are a different proposition again — four of them, but available only to players aged 55 and over, during designated open gym hours, for which the town publishes a separate Senior 55+ Indoor Pickleball Calendar. Nothing anywhere in Apex can be booked. The town states that courts cannot be reserved by players or groups, only by its own Parks, Recreation and Cultural Resources department for sponsored programmes, so every court in this town is first-come, first-served by policy rather than by custom. Pleasant Park publishes a live court occupancy feed, which is the only real-time availability data any operator in this directory offers.",
+    "surface_condition": "Nothing. Not one of the five venues has a published surface material, let alone a condition or a resurfacing date, so every Apex venue reads \"Not verified yet\" on surface. That is worth stating plainly because Apex is otherwise the most forthcoming town here — it will tell you how many courts, whether they are lit, whether they are indoors and what hours they keep, and then say nothing at all about what you will be standing on. The town does publish maintenance and project status, but for other things: an ADA accessibility renovation of the playground at Apex Community Park and a renovation of the KidsTowne playground at Kelly Road Park were both in the design phase when we checked on 3 September 2026, and Splashlantis, the splash pad at Pleasant Park, was closed for maintenance with no reopening date given. None of those touches a pickleball court. What we can tell you about court condition is the shape of the provision: Pleasant Park's six and Apex Community Park's three are described as pickleball courts in their own right, while Kelly Road Park's four and Seymour's four are shared with junior tennis, so at those two the lines under your feet are not all yours.",
+    "local_scene": "Apex runs pickleball on an unusually tight rein, and says so in the plainest language of any town we have read. Courts cannot be reserved by players or groups, only by the Parks, Recreation and Cultural Resources department for its own sponsored programmes — and beyond that, the town states that organised league play and private lessons outside any Town programming are not currently allowed, per Town Ordinance. That is a genuine constraint rather than boilerplate: if you were planning to run a ladder or sell coaching on an Apex court, the answer published on the town's own pickleball page is no. What the town does offer, it runs itself, through its programme guides. The clearest example is the indoor operation at the John M. Brown Community Center, four courts reserved for players 55 and over during designated open gym hours, with its own published Senior 55+ Indoor Pickleball Calendar. The other distinctive thing here is technical rather than social: Pleasant Park publishes real-time court occupancy, so you can see whether the six courts are busy before you drive out. No other operator in this directory does that."
+  },
+  "best_for": [
+    {
+      "key": "space",
+      "heading": "Best if you just want a court",
+      "venue_slug": "pleasant-park",
+      "text": "Pleasant Park, on weight of courts — six of them, the most in Apex, at the town's newest park. It is also the only Apex venue that publishes live court occupancy, so you can check whether they are busy before setting off. The catch is the light: this is the one unlit pickleball site in town, and its court hours are sunrise to thirty minutes after sunset, so it is useless to you after work in winter.",
+      "supports": ["peak_hours", "local_scene"]
+    },
+    {
+      "key": "evening",
+      "heading": "Best after work",
+      "venue_slug": "kelly-road-park",
+      "text": "Kelly Road Park, Apex Community Park or the Seymour Athletic Fields — all three are lit and all three run to 10 p.m. year round. Kelly Road's four and Seymour's four are shared with junior tennis; Apex Community Park's three are described as pickleball courts in their own right, so it is the smallest of the three but the least shared. None of them can be booked, by town policy."
+    },
+    {
+      "key": "indoor",
+      "heading": "Best when the weather is against you, if you are 55 or over",
+      "venue_slug": "john-m-brown-community-center",
+      "text": "The John M. Brown Community Center has the only indoor pickleball courts verified anywhere in this directory: four of them, on the Town Hall campus at 53 Hunter Street. Read the restriction before you go — they are available only for ages 55 and over, and only during designated open gym hours, for which the town publishes a separate calendar."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does Apex have?",
+      "a": "We have verified 21 across five town facilities: six at Pleasant Park, four each at Kelly Road Park, the Seymour Athletic Fields and the John M. Brown Community Center, and three at Apex Community Park. The town's table also lists four lighted courts at Apex Elementary School, which we do not publish — see below. Private clubs and neighbourhood facilities are not included, because none of them publishes a court count we can cite."
+    },
+    {
+      "q": "Can I reserve a court in Apex?",
+      "a": "No, and the town is unusually direct about it. Its pickleball page states that courts cannot be reserved by players or groups other than by the Apex Parks, Recreation and Cultural Resources Department for their sponsored programs. It goes further: organised league play and private lessons outside of any Town programming are not currently allowed, per Town Ordinance. Every Apex court is first-come, first-served as a matter of policy."
+    },
+    {
+      "q": "Which Apex courts have lights?",
+      "a": "Four of the five. Kelly Road Park, Apex Community Park and the Seymour Athletic Fields are all lit and run to 10 p.m. year round, and the indoor courts at the John M. Brown Community Center are lit by definition. Pleasant Park is the exception and it is the biggest site in town: six courts, no lights, and published court hours of sunrise to thirty minutes after sunset."
+    },
+    {
+      "q": "Is there indoor pickleball in Apex?",
+      "a": "Yes — four courts at the John M. Brown Community Center, 53 Hunter Street, and they are the only verified indoor pickleball courts in this entire directory. The restriction is real, though: the town's table says they are available only for ages 55 and over, during designated open gym hours. A separate Senior 55+ Indoor Pickleball Calendar is published for them."
+    },
+    {
+      "q": "Why is Apex Elementary School not listed?",
+      "a": "Three reasons, any one of which would be enough. It is not a town facility but a Wake County public school; the town publishes no street address for it; and the commercial dataset this directory started from says three courts where the town says four, which is a disagreement nobody has resolved. The town does list it, with four lighted outdoor courts available only on weekends and after 6 p.m. on school days, so the courts are real — they are just not something we can publish a page about yet."
+    },
+    {
+      "q": "Does it cost anything to play?",
+      "a": "No fee is published for any of the five, and no source states that they are free either, so we record cost as not verified rather than guessing. Apex publishes plenty of prices — room rentals at the John M. Brown Community Center run from $24 to $101 an hour depending on room and day — but nothing about the cost of walking onto a pickleball court."
+    },
+    {
+      "q": "Which county is Apex in?",
+      "a": "Wake, for all five of these venues — but that needed checking rather than assuming, and the checking changed nothing while nearly changing everything. The town of Apex actually spans two counties: intersecting its boundary against Census county lines returns Wake and Chatham, and both Apex postcodes straddle the same line. So each venue's county was resolved from its own coordinates rather than from the town name, and all five came back Wake County, FIPS 37183."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.apexnc.org/1877/Pickleball",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["peak_hours", "local_scene", "surface_condition"],
+      "evidence": "Court table with columns Facility / Park, Indoor / Outdoor, Lights, Number of Courts. Apex Community Park, Outdoor, Yes, 3. Apex Elementary School, Outdoor, Yes, 4 (available only on weekends and after 6 pm on school days). John M. Brown Community Center, Indoor, Yes, 4 (available only for ages 55+, during designated open gym hours). Kelly Road Park, Outdoor, Yes, 4 (also used for Junior Tennis). Pleasant Park, Outdoor, No, 6 (open sunrise to 30 minutes after sunset). Seymour Athletic Fields at Apex Nature Park, Outdoor, Yes, 4 (also used for Junior Tennis). Prose: \"The Town offers open-play pickleball courts at many of our parks. Due to the popularity of these amenities, courts cannot be reserved by players or groups other than by Apex Parks, Recreation and Cultural Resources Department for their sponsored programs. Organized league play and private lessons outside of any Town programming are not currently allowed per Town Ordinance.\" Links a Senior 55+ Indoor Pickleball Calendar and programme guides. Also carries a maintenance notice that Splashlantis at Pleasant Park is closed with no reopening date determined."
+    },
+    {
+      "id": "E2",
+      "url": "https://www.apexnc.org/1163/Pleasant-Park",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["parking", "peak_hours", "surface_condition"],
+      "evidence": "3400 Pleasant Plains Rd., Apex, NC 27502. \"Park Hours: 5:30 am* - 10:00 pm *fields/courts/restrooms open at 6:30 am\" and separately \"Basketball and Pickleball Court Hours: Sunrise to 30 minutes after Sunset\". Features include \"6 Pickleball courts (view real-time court occupancy)\", 4 tennis courts, 4 basketball courts, 6 lighted rentable multi-purpose fields, a 1.5 acre Enchanted Forest playground, restroom facilities and the Splashlantis splash pad. The page carries a \"Pickleball Court Availability (Live)\" section and an FAQ list that includes the question \"Can I park along Pleasant Plains Road?\" No surface, nets or fee is stated."
+    },
+    {
+      "id": "E3",
+      "url": "https://www.apexnc.org/795/Apex-Community-Park",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["parking", "peak_hours", "surface_condition"],
+      "evidence": "\"Park Entrance: 2200 Laura Duncan Road\", \"Lake Trail Entrance: 1808 Lake Pine Drive\", \"Hours of Operation: 6:30 am - 10:00 pm (year round)\". Features include \"3 lighted pickleball courts\", 6 tennis courts, 2 basketball courts, 3 sand volleyball courts, 2 street hockey rinks, restroom facilities and a 50+ acre lake. A playground ADA accessibility renovation project was in the design phase as of 8/20/2026. No court surface is stated."
+    },
+    {
+      "id": "E4",
+      "url": "https://www.apexnc.org/799/Kelly-Road-Park",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["peak_hours", "surface_condition"],
+      "evidence": "\"Park Address: 1609 Kelly Road\", \"Hours of Operation: 6:30 am - 10 pm (year round)\". Features include \"4 junior tennis / pickleball courts\", 1 full-size tennis court, 1 basketball court, a lighted softball field, two playgrounds, a picnic shelter, restroom facilities and a trailhead to Beaver Creek Greenway. The KidsTowne playground renovation was in the design phase as of 8/20/2026. No court surface is stated."
+    },
+    {
+      "id": "E5",
+      "url": "https://www.apexnc.org/800/Apex-Nature-Park-Seymour-Athletic-Fields",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["parking", "peak_hours", "surface_condition"],
+      "evidence": "\"Over 160 acres of active and passive play await in two distinct sections of this park. There are parking lots at both entrances and a paved walkway the connects both sides of the park.\" Park Entrance 2600 Evans Road; Seymour Athletic Fields Entrance 2500 Evans Road. \"Hours of Operation: 5:30 am* - 10:00 pm (year round) *fields/courts/restrooms open at 6:30 am\". Section 1, Seymour Athletic fields, lists lighted tennis courts, \"Lighted pickleball courts\", lighted multipurpose fields, sand volleyball courts and a restroom facility. Section 2, Apex Nature Park, holds the amphitheatre, disc golf, dog park and a second restroom. No court count or surface is stated on this page."
+    },
+    {
+      "id": "E6",
+      "url": "https://www.apexnc.org/514/Facilities-and-Rentals",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["local_scene", "peak_hours"],
+      "evidence": "\"The John M. Brown Community Center (formerly known as Apex Community Center) is located on the Town Hall Campus at 53 Hunter Street.\" Building hours: Monday through Friday 8am - 9pm, Saturday 9am - 6pm, Sunday 1pm - 6pm (closed Sundays June through Labor Day). Room rental fees run from $24 per hour for the Arts & Crafts Room to $101 per hour for a main room at non-resident primetime rates. Quotes Section 15-7 of the Town Code of Ordinances requiring a permit for any organised athletic league or commercial activity in a town park or greenway."
+    },
+    {
+      "id": "E7",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["local_scene"],
+      "evidence": "County resolved per venue from coordinates held in Wake County GIS Address Points. All five Apex venues return Wake County, FIPS 37183. Resolved individually because a TIGERweb intersect of the Apex town polygon against Census county boundaries returns two counties, Wake and Chatham, and the ZCTA-to-county file shows both Apex postcodes, 27502 and 27523, spanning the same pair."
+    }
+  ]
+}

@@ -10,17 +10,19 @@ COUNTY  —  2/2 publishable
   PASS  /pickleball/us/wa/king-county/
         925 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/wake-county/
-        1211 words · BreadcrumbList, FAQPage, ItemList
+        1298 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  3/3 publishable
+CITY  —  4/4 publishable
   PASS  /pickleball/us/wa/seattle/
         1603 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/
         1885 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/apex/
+        1810 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/
         1837 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  5/5 publishable
+FILTER  —  7/7 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
@@ -29,10 +31,14 @@ FILTER  —  5/5 publishable
         702 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/lights/
         680 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/apex/outdoor/
+        631 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/apex/lights/
+        670 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/outdoor/
         662 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  38/38 publishable
+VENUE  —  43/43 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -103,6 +109,16 @@ VENUE  —  38/38 publishable
         784 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/raleigh/southgate-park/
         709 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/apex/john-m-brown-community-center/
+        834 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/apex/seymour-athletic-fields/
+        732 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/apex/kelly-road-park/
+        783 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/apex/pleasant-park/
+        753 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/apex/apex-community-park/
+        721 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/cary/carpenter-park/
         701 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/cary/ed-yerha-park/
@@ -112,7 +128,7 @@ VENUE  —  38/38 publishable
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, outdoor, lights, outdoor
+  built for Seattle: outdoor, lights, outdoor, lights, outdoor, lights, outdoor
   indoor: not published — no lawful data driver or fewer than 3 matches
   free: not published — no lawful data driver or fewer than 3 matches
   public: not published — no lawful data driver or fewer than 3 matches
@@ -138,6 +154,6 @@ VENUE  —  38/38 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 48/48 pages pass all six gates.
+TOTAL: 56/56 pages pass all six gates.
 
 ```

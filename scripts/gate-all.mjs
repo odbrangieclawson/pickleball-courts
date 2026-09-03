@@ -17,7 +17,7 @@ import {join} from 'node:path'
 import {REPO_ROOT} from './lib/load-csv.mjs'
 import {checkPageGates} from '../lib/page/gates.mjs'
 import {countWords} from '../lib/page/words.mjs'
-import {loadEditorial, editorialFor, editorialForCounty, editorialForVenue, editorialForFilter} from '../lib/data/editorial-store.mjs'
+import {loadEditorial, editorialFor, editorialForCounty, editorialForVenue, editorialForFilter, editorialForState} from '../lib/data/editorial-store.mjs'
 import {buildLinkGraph, countyCounts} from '../lib/site/links.mjs'
 import {slugifyCounty} from './lib/us-geo.mjs'
 import {getCounts} from '../lib/data/counts.mjs'
@@ -93,6 +93,21 @@ for (const entry of sitemapEntries()) {
     venues = c.venues.filter(v => matching.has(v.slug))
     counts = getCounts({type: 'city', city: c.city, state: c.state}, venues)
     editorial = editorialForFilter(ed.byFilter, c.city, c.state, fslug)?.slots ?? null
+  } else if (type === 'state') {
+    /*
+      State pages were unreachable by this runner: pageType stayed undefined
+      and checkBand threw "No word band defined for page type undefined",
+      crashing the whole run rather than failing one page. A page type the
+      gates cannot see is a page type that can ship anything.
+    */
+    pageType = 'state'
+    const [, , , st] = path.split('/')
+    const stateAbbr = String(st).toUpperCase()
+    venues = site.publishedCities()
+      .filter(c => String(c.state).toUpperCase() === stateAbbr)
+      .flatMap(c => site.city(c.state, c.slug).venues)
+    counts = getCounts({type: 'state', state: stateAbbr}, venues)
+    editorial = editorialForState(ed.byCity, stateAbbr)?.slots ?? null
   } else if (type === 'venue') {
     pageType = 'venue'
     const [, , , st, cs, vslug] = path.split('/')

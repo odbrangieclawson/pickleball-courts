@@ -1,0 +1,551 @@
+{
+  "city": "Apex",
+  "state": "NC",
+  "retrieved_at": "2026-09-03",
+  "method_note": "Court counts are STATED by the Town of Apex in a published table, and three of the five are stated a second time on the venue's own page. This run asserts every quoted sentence is still present in the snapshot before publishing the number inside it. County is resolved per venue and not from the town name: a TIGERweb intersect shows the town of Apex spans Wake and Chatham counties, and both Apex postcodes straddle the same line, so each address was located in Wake County GIS Address Points and each point put through the Census geocoder.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.apexnc.org/1877/Pickleball",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/apex-parks/pickleball.txt"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.apexnc.org/710/Parks",
+      "publisher": "Town of Apex, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/apex-parks/parks.txt"
+    },
+    {
+      "id": "S3",
+      "url": "https://maps.wake.gov/arcgis/rest/services/Property/Addresses/MapServer/0",
+      "publisher": "Wake County Government, GIS",
+      "tier": 2,
+      "format": "arcgis",
+      "snapshot": "data/sources/apex-county-census.json"
+    },
+    {
+      "id": "S4",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/apex-county-census.json"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Apex Elementary School",
+      "courts": 4,
+      "why": "Four lighted outdoor courts per the town's table, \"available only on weekends and after 6 pm on school days\". Not a town facility but a Wake County public school; the town publishes no address for it; and the commercial import says 3 courts against the town's 4."
+    }
+  ],
+  "venues": {
+    "pleasant-park": {
+      "minted": true,
+      "identity": {
+        "name": "Pleasant Park",
+        "city": "Apex",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": null,
+        "latitude": 35.702042,
+        "longitude": -78.881011,
+        "imported_slug": null,
+        "canonical_slug": "pleasant-park"
+      },
+      "match": {
+        "table_row": "Pleasant Park | Outdoor | No | 6 (open sunrise to 30 minutes after sunset)",
+        "page": "https://www.apexnc.org/1163/Pleasant-Park",
+        "basis": "No imported row. Apex's newest and largest pickleball site, and the only unlit one."
+      },
+      "patch": {
+        "name": "Pleasant Park",
+        "total_courts": 6,
+        "street_address": "3400 Pleasant Plains Rd",
+        "venue_type": "public_park",
+        "light": false,
+        "county": "Wake",
+        "outdoor_courts": 6,
+        "hours_of_operation": "Sunrise to 30 minutes after Sunset",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.apexnc.org/1163/Pleasant-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The facility's own page on apexnc.org is titled \"Pleasant Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, row: \"Pleasant Park | Outdoor | No | 6 (open sunrise to 30 minutes after sunset)\". Corroborated on the venue's own page, which states \"6 Pickleball courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.apexnc.org/1163/Pleasant-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address published on the facility's own page: \"3400 Pleasant Plains Rd\". Wake County GIS Address Points holds the same address at 35.702042,-78.881011."
+        },
+        "venue_type": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by the Town of Apex, Parks, Recreation & Cultural Resources among its public parks."
+        },
+        "light": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, Lights column reads \"No\" for this venue: \"Pleasant Park | Outdoor | No | 6 (open sunrise to 30 minutes after sunset)\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County GIS Address Points holds \"3400 PLEASANT PLAINS RD\" at 35.702042,-78.881011; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table's Indoor / Outdoor column reads \"Outdoor\" for this venue: \"Pleasant Park | Outdoor | No | 6 (open sunrise to 30 minutes after sunset)\". indoor_courts is left unverified rather than set to zero."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.apexnc.org/1163/Pleasant-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published on the venue's own page: \"Basketball and Pickleball Court Hours: Sunrise to 30 minutes after Sunset\"."
+        },
+        "restroom": {
+          "source_url": "https://www.apexnc.org/1163/Pleasant-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The venue's own features list includes \"Restroom facilities\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.apexnc.org/1163/Pleasant-Park",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "kelly-road-park-apex-nc": {
+      "minted": false,
+      "identity": {
+        "name": "Kelly Road Park",
+        "city": "Apex",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": null,
+        "latitude": 35.73172,
+        "longitude": -78.894821,
+        "imported_slug": "kelly-road-park-apex-nc",
+        "canonical_slug": "kelly-road-park"
+      },
+      "match": {
+        "table_row": "Kelly Road Park | Outdoor | Yes | 4 (also used for Junior Tennis)",
+        "page": "https://www.apexnc.org/799/Kelly-Road-Park",
+        "basis": "Matched to the imported \"Kelly Road Park\" row at 4 courts, which agrees with the town. NOTE: the import also holds a second row, \"Apex Kelly Rd Park\" (apex-kelly-rd-park), for the same park with the same count. That duplicate is left pending — two rows for one park is an identity problem for the import to resolve, not something to fix by publishing one of them and hoping."
+      },
+      "patch": {
+        "name": "Kelly Road Park",
+        "total_courts": 4,
+        "street_address": "1609 Kelly Road",
+        "venue_type": "public_park",
+        "light": true,
+        "county": "Wake",
+        "outdoor_courts": 4,
+        "hours_of_operation": "6:30 am - 10 pm (year round)",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.apexnc.org/799/Kelly-Road-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The facility's own page on apexnc.org is titled \"Kelly Road Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, row: \"Kelly Road Park | Outdoor | Yes | 4 (also used for Junior Tennis)\". Corroborated on the venue's own page, which states \"4 junior tennis / pickleball courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.apexnc.org/799/Kelly-Road-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address published on the facility's own page: \"1609 Kelly Road\". Wake County GIS Address Points holds the same address at 35.73172,-78.894821."
+        },
+        "venue_type": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by the Town of Apex, Parks, Recreation & Cultural Resources among its public parks."
+        },
+        "light": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, Lights column reads \"Yes\" for this venue: \"Kelly Road Park | Outdoor | Yes | 4 (also used for Junior Tennis)\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County GIS Address Points holds \"1609 KELLY RD\" at 35.73172,-78.894821; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table's Indoor / Outdoor column reads \"Outdoor\" for this venue: \"Kelly Road Park | Outdoor | Yes | 4 (also used for Junior Tennis)\". indoor_courts is left unverified rather than set to zero."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.apexnc.org/799/Kelly-Road-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published on the venue's own page: \"Hours of Operation: 6:30 am - 10 pm (year round)\"."
+        },
+        "restroom": {
+          "source_url": "https://www.apexnc.org/799/Kelly-Road-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The venue's own features list includes \"Restroom facilities\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.apexnc.org/799/Kelly-Road-Park",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "apex-seymour-athletic-fields-apex-nc": {
+      "minted": false,
+      "identity": {
+        "name": "Seymour Athletic Fields",
+        "city": "Apex",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": null,
+        "latitude": 35.720224,
+        "longitude": -78.90616,
+        "imported_slug": "apex-seymour-athletic-fields-apex-nc",
+        "canonical_slug": "seymour-athletic-fields"
+      },
+      "match": {
+        "table_row": "Seymour Athletic Fields at Apex Nature Park | Outdoor | Yes | 4 (also used for Junior Tennis)",
+        "page": "https://www.apexnc.org/800/Apex-Nature-Park-Seymour-Athletic-Fields",
+        "basis": "Matched to the imported \"Apex Seymour Athletic fields\" row at 4 courts, which agrees with the town. The park's own page confirms lighted pickleball courts but gives no number, so the count comes from the town's table."
+      },
+      "patch": {
+        "name": "Seymour Athletic Fields",
+        "total_courts": 4,
+        "street_address": "2500 Evans Road",
+        "venue_type": "public_park",
+        "light": true,
+        "county": "Wake",
+        "outdoor_courts": 4,
+        "hours_of_operation": "6:30 am - 10:00 pm",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.apexnc.org/800/Apex-Nature-Park-Seymour-Athletic-Fields",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The town's pickleball table names this venue \"Seymour Athletic Fields at Apex Nature Park\"; the park's own page heads the section \"Seymour Athletic fields\". The shorter form is published because the full one overruns the 65-character page-title limit, and the full name is on the venue page."
+        },
+        "total_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, row: \"Seymour Athletic Fields at Apex Nature Park | Outdoor | Yes | 4 (also used for Junior Tennis)\". The venue's own page confirms the courts exist (\"Lighted pickleball courts\") without giving a number."
+        },
+        "street_address": {
+          "source_url": "https://www.apexnc.org/800/Apex-Nature-Park-Seymour-Athletic-Fields",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address published on the facility's own page: \"2500 Evans Road\". Wake County GIS Address Points holds the same address at 35.720224,-78.90616."
+        },
+        "venue_type": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by the Town of Apex, Parks, Recreation & Cultural Resources among its public parks."
+        },
+        "light": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, Lights column reads \"Yes\" for this venue: \"Seymour Athletic Fields at Apex Nature Park | Outdoor | Yes | 4 (also used for Junior Tennis)\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County GIS Address Points holds \"2500 EVANS RD\" at 35.720224,-78.90616; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table's Indoor / Outdoor column reads \"Outdoor\" for this venue: \"Seymour Athletic Fields at Apex Nature Park | Outdoor | Yes | 4 (also used for Junior Tennis)\". indoor_courts is left unverified rather than set to zero."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.apexnc.org/800/Apex-Nature-Park-Seymour-Athletic-Fields",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published on the venue's own page: \"*fields/courts/restrooms open at 6:30 am\"."
+        },
+        "restroom": {
+          "source_url": "https://www.apexnc.org/800/Apex-Nature-Park-Seymour-Athletic-Fields",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The venue's own features list includes \"Restroom facility\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.apexnc.org/800/Apex-Nature-Park-Seymour-Athletic-Fields",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "apex-community-park": {
+      "minted": true,
+      "identity": {
+        "name": "Apex Community Park",
+        "city": "Apex",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": null,
+        "latitude": 35.751147,
+        "longitude": -78.822095,
+        "imported_slug": null,
+        "canonical_slug": "apex-community-park"
+      },
+      "match": {
+        "table_row": "Apex Community Park | Outdoor | Yes | 3",
+        "page": "https://www.apexnc.org/795/Apex-Community-Park",
+        "basis": "No imported row for the park. A 160-acre park whose page states the count and the lighting in one line."
+      },
+      "patch": {
+        "name": "Apex Community Park",
+        "total_courts": 3,
+        "street_address": "2200 Laura Duncan Road",
+        "venue_type": "public_park",
+        "light": true,
+        "county": "Wake",
+        "outdoor_courts": 3,
+        "hours_of_operation": "6:30 am - 10:00 pm (year round)",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.apexnc.org/795/Apex-Community-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The facility's own page on apexnc.org is titled \"Apex Community Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, row: \"Apex Community Park | Outdoor | Yes | 3\". Corroborated on the venue's own page, which states \"3 lighted pickleball courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.apexnc.org/795/Apex-Community-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address published on the facility's own page: \"2200 Laura Duncan Road\". Wake County GIS Address Points holds the same address at 35.751147,-78.822095."
+        },
+        "venue_type": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by the Town of Apex, Parks, Recreation & Cultural Resources among its public parks."
+        },
+        "light": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, Lights column reads \"Yes\" for this venue: \"Apex Community Park | Outdoor | Yes | 3\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County GIS Address Points holds \"2200 LAURA DUNCAN RD\" at 35.751147,-78.822095; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table's Indoor / Outdoor column reads \"Outdoor\" for this venue: \"Apex Community Park | Outdoor | Yes | 3\". indoor_courts is left unverified rather than set to zero."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.apexnc.org/795/Apex-Community-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published on the venue's own page: \"Hours of Operation: 6:30 am - 10:00 pm (year round)\"."
+        },
+        "restroom": {
+          "source_url": "https://www.apexnc.org/795/Apex-Community-Park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The venue's own features list includes \"Restroom facilities\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.apexnc.org/795/Apex-Community-Park",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "apex-community-center": {
+      "minted": false,
+      "identity": {
+        "name": "John M. Brown Community Center",
+        "city": "Apex",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": null,
+        "latitude": 35.734055,
+        "longitude": -78.846446,
+        "imported_slug": "apex-community-center",
+        "canonical_slug": "john-m-brown-community-center"
+      },
+      "match": {
+        "table_row": "John M. Brown Community Center | Indoor | Yes | 4 (available only for ages 55+, during designated open gym hours)",
+        "page": "https://www.apexnc.org/514/Facilities-and-Rentals",
+        "basis": "Matched to the imported \"Apex Community Center\" row at 4 courts. The town states this facility was \"formerly known as Apex Community Center\", which is what ties the two records together, and the counts agree. This is the first venue in the directory with VERIFIED INDOOR courts."
+      },
+      "patch": {
+        "name": "John M. Brown Community Center",
+        "total_courts": 4,
+        "street_address": "53 Hunter Street",
+        "venue_type": "community_center",
+        "light": true,
+        "county": "Wake",
+        "indoor_courts": 4,
+        "outdoor_courts": 0
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.apexnc.org/514/Facilities-and-Rentals",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The facility's own page on apexnc.org is titled \"John M. Brown Community Center\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, row: \"John M. Brown Community Center | Indoor | Yes | 4 (available only for ages 55+, during designated open gym hours)\". Corroborated on the venue's own page, which states \"located on the Town Hall Campus at 53 Hunter Street\"."
+        },
+        "street_address": {
+          "source_url": "https://www.apexnc.org/514/Facilities-and-Rentals",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address published on the facility's own page: \"53 Hunter Street\". Wake County GIS Address Points holds the same address at 35.734055,-78.846446."
+        },
+        "venue_type": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by the Town of Apex, Parks, Recreation & Cultural Resources among its rentable community facilities, on the Town Hall Campus."
+        },
+        "light": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Town of Apex pickleball court table, Lights column reads \"Yes\" for this venue: \"John M. Brown Community Center | Indoor | Yes | 4 (available only for ages 55+, during designated open gym hours)\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County GIS Address Points holds \"53 HUNTER ST\" at 35.734055,-78.846446; the Census geocoder places that point in Wake County (FIPS 37183). Resolved per venue because the town of Apex spans two counties: a TIGERweb intersect of the Apex town polygon returns Wake County and Chatham County."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table's Indoor / Outdoor column reads \"Indoor\" for this facility: \"John M. Brown Community Center | Indoor | Yes | 4 (available only for ages 55+, during designated open gym hours)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.apexnc.org/1877/Pickleball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The town lists this facility once, as Indoor. Its pickleball is indoors, so it has no outdoor pickleball courts."
+        }
+      },
+      "record": {
+        "source_url": "https://www.apexnc.org/514/Facilities-and-Rentals",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}
