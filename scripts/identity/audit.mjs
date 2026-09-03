@@ -71,6 +71,8 @@ import {join} from 'node:path'
 import {loadRows, REPO_ROOT} from '../lib/load-csv.mjs'
 import {mapRow} from '../import/mapper.mjs'
 import {isOutsideState, zipDisagreesWithState, haversineKm} from '../lib/us-geo.mjs'
+import {canonicalise} from './slug-normalise.mjs'
+import {loadVerifiedOverlay} from '../../lib/data/verified.mjs'
 
 const NUMERIC_SUFFIX = /-\d+$/
 
@@ -79,13 +81,23 @@ const cityKey = v => `${String(v.state).toUpperCase()}/${citySlug(v.city)}`
 
 const rows = loadRows().map(r => mapRow(r).venue)
 
+/*
+  Names a source has stated. Where one exists it is a better identity than
+  anything derivable from the import, so the slug is built from it.
+*/
+const overlay = loadVerifiedOverlay(REPO_ROOT)
+const verifiedName = slug => overlay.bySlug.get(slug)?.patch?.name ?? null
+
 /* ---------------------------------------------------------------- */
-/* 1. Candidate slug: the imported one with any numeric suffix off.  */
+/* 1. Candidate slug.                                                */
 /* ---------------------------------------------------------------- */
 
 for (const v of rows) {
-  v._candidate = String(v.slug ?? '').replace(NUMERIC_SUFFIX, '')
-  v._hadSuffix = v._candidate !== v.slug
+  const {slug, steps} = canonicalise(v, verifiedName(v.slug))
+  v._candidate = slug
+  v._steps = steps
+  v._hadSuffix = NUMERIC_SUFFIX.test(String(v.slug ?? ''))
+  v._changed = slug !== v.slug
 }
 
 /* Group by city + candidate slug. A group of one is safe to rename. */
@@ -191,16 +203,58 @@ for (const [key, members] of groups) {
   }
   if (geo) badField.push({slug: v.slug, city: v.city, state: v.state, detail: geo.detail})
 
-  if (v._hadSuffix) {
+  if (v._changed) {
     registry[v.slug] = {
       canonical: v._candidate,
-      basis: 'numeric row-id suffix removed; the URL pattern already separates this venue by state and city, and no other row in this city claims the slug',
+      basis: v._steps.join('; '),
     }
   }
 }
 
 /* Rows that are fine but sit in a city where something else collided:
    they keep their own slug and are unaffected. Nothing to record. */
+
+/* ---------------------------------------------------------------- */
+/* 3b. City names that look like misspellings of a bigger neighbour.  */
+/* ---------------------------------------------------------------- */
+
+function editDistance1(a, b) {
+  if (Math.abs(a.length - b.length) > 1) return false
+  const d = []
+  for (let i = 0; i <= a.length; i++) {
+    d[i] = [i]
+    for (let j = 1; j <= b.length; j++) {
+      d[i][j] = i === 0 ? j : Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1))
+    }
+  }
+  return d[a.length][b.length] === 1
+}
+
+const cityCounts = new Map()
+for (const v of rows) {
+  const st = String(v.state).toUpperCase()
+  const c = citySlug(v.city)
+  if (!cityCounts.has(st)) cityCounts.set(st, new Map())
+  const m = cityCounts.get(st)
+  m.set(c, (m.get(c) ?? 0) + 1)
+}
+
+const cityVariants = []
+for (const [st, m] of cityCounts) {
+  const list = [...m.entries()].sort((a, b) => b[1] - a[1])
+  for (let i = 0; i < list.length; i++) {
+    for (let j = i + 1; j < list.length; j++) {
+      const [keep, keepN] = list[i]
+      const [suspect, suspectN] = list[j]
+      if (keep.length < 4 || suspect.length < 4) continue
+      /* A big city beside a one-or-two-row near-twin in the same state. */
+      if (suspectN <= 3 && keepN >= 5 * Math.max(suspectN, 1) && editDistance1(keep, suspect)) {
+        cityVariants.push({st, keep, keepN, suspect, suspectN})
+      }
+    }
+  }
+}
+cityVariants.sort((a, b) => b.keepN - a.keepN)
 
 /* ---------------------------------------------------------------- */
 /* 4. Write.                                                         */
@@ -327,6 +381,30 @@ So coordinates decide. They are the strongest locator on the row, and where
 they confirm the state a wrong ZIP is a bad field rather than a venue in
 doubt. ${badFieldN} rows fall in that category — worth fixing, not worth
 holding a venue back for.
+
+## Misspelled city names — reported, not corrected
+
+Normalising the slugs surfaced something the slug column was hiding. One
+Seattle row has the city spelled **"Seatlle"**, so its city prefix did not
+match and would not strip. Left alone it would also have built its own
+phantom city page at \`/pickleball/us/wa/seatlle/\`.
+
+Eleven single-row cities look like misspellings of a much larger city in the
+same state:
+
+${cityVariants.map(s => `- \`${s.st}\` **${s.suspect}** (${s.suspectN} row) beside **${s.keep}** (${s.keepN} rows)`).join('\n')}
+
+**None of these is corrected automatically, because at least four are real
+places.** Bolton MA is a town near Boston, Aston PA is not Easton, Loleta CA
+is not Goleta, Mayville NY is not Sayville. An edit distance of one is a
+hint, not evidence, and silently merging a real town into its larger
+neighbour would move venues to a city they are not in.
+
+They are also not quarantined, because they cannot do any harm: every one is
+a single-row city, and Rule 8 requires three verified venues before a city
+page exists at all. The 3-venue threshold already prevents a phantom city
+from publishing. They are listed here so that whoever verifies that metro
+checks the spelling first.
 
 ## What holding back actually costs
 
