@@ -4,10 +4,22 @@ import {homeView} from '../lib/site/views.mjs'
 /*
   Home.
 
-  Modelled on findswimmingholes, which leads with "1,216 Verified Places to
-  Swim" — the count IS the value proposition. Every number here comes from
-  getCounts() via lib/site/views.mjs; this file holds no arithmetic, which
-  is what keeps validate-no-bypass.mjs quiet and Decision D2 true.
+  Structure follows findswimmingholes, which the strategy names as the model
+  in §7: lead with a hard verified count, then a browse directory with counts
+  per place, then the trust argument. The count IS the value proposition, so
+  it is the first thing on the page and it is set as a figure, not a stat
+  tile.
+
+  Two deliberate departures. There is no search box, because there is no
+  search — this site is statically rendered and Rule 1 forbids a JS-only
+  feature in the content path, so offering a box that cannot work would be
+  worse than browsing. And there are no photographs, because we have none;
+  the page is carried by type and rule instead, which suits a directory
+  selling traceability better than stock imagery would.
+
+  Every number here comes from getCounts() via lib/site/views.mjs. This file
+  holds no arithmetic, which is what keeps validate-no-bypass.mjs quiet and
+  Decision D2 true.
 */
 
 export const metadata: Metadata = {
@@ -23,6 +35,7 @@ export default function Home() {
 
   return (
     <div className="wrap page">
+      <p className="eyebrow">A US pickleball court directory</p>
       <h1>{v.headline}</h1>
       <p className="lede">
         Every court count, every set of lights, every address on this site
@@ -63,26 +76,28 @@ export default function Home() {
       </ul>
 
       <h2>What makes this different</h2>
-      <div className="note">
+      <p>
+        Not one of the large pickleball directories tells you where a court
+        count came from or when anyone last looked. One ships contradictory
+        counts on the same city page. Another has twenty-five thousand pages
+        and needs JavaScript to show you any of them.
+      </p>
+      <p>
+        This directory publishes a far smaller number of pages and stands
+        behind every one. Each page passes six quality gates before it ships,
+        and the gate that stops the most pages is the one that asks whether a
+        person actually wrote about the place.{' '}
+        <a href="/how-we-verify/">How we verify</a>.
+      </p>
+
+      <div className="note is-gap">
+        <h3>The gaps, published</h3>
         <p>
-          <strong>Three competitors, none of them show their working.</strong>{' '}
-          Not one of the large pickleball directories tells you where a court
-          count came from or when anyone last looked. One of them ships
-          contradictory counts on the same city page. Another has 25,000 pages
-          and needs JavaScript to show you any of them.
-        </p>
-        <p>
-          This directory publishes a smaller number of pages and stands behind
-          every one. <a href="/how-we-verify/">How we verify</a>.
+          {v.gapSentence} We would rather show you an honest hole than fill it
+          with something we made up. Every unverified field carries a link to
+          tell us what we have wrong.
         </p>
       </div>
-
-      <h2>The gaps, published</h2>
-      <p>
-        {v.gapSentence} We would rather show you an honest hole than fill it
-        with something we made up. Each one carries a link to tell us what we
-        have wrong.
-      </p>
 
       <script
         type="application/ld+json"

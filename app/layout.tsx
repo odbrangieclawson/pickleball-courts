@@ -1,6 +1,30 @@
 import type {Metadata, Viewport} from 'next'
 import type {ReactNode} from 'react'
+import {Newsreader} from 'next/font/google'
 import './globals.css'
+
+/*
+  ONE typeface, loaded for headings and figures only.
+
+  next/font self-hosts the file and generates a size-adjusted fallback, so
+  there is no third-party request, no FOIT and no metric-mismatch shift —
+  which is what the Phase 6 CWV note asked for from any face we did add.
+  Body text stays on the system stack: free, instant, and better at small
+  sizes than anything we would download for it.
+
+  Newsreader rather than the obvious choice. A directory of verified facts
+  should read like a reference work — a gazetteer, an almanac — and a text
+  serif with real editorial voice does that. Setting everything in one
+  geometric sans is the house style of every generated template on the
+  internet, and this product's whole claim is that a person checked things.
+*/
+const display = Newsreader({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-display',
+})
 import {navView} from '../lib/site/views.mjs'
 
 /*
@@ -56,7 +80,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({children}: {children: ReactNode}) {
   return (
-    <html lang="en-US">
+    <html lang="en-US" className={display.variable}>
       <body>
         <div className="demo-banner" role="alert">
           <strong>DEMONSTRATION BUILD.</strong> The venue data is real and sourced
