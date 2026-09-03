@@ -1,0 +1,499 @@
+{
+  "city": "Seattle",
+  "state": "WA",
+  "retrieved_at": "2026-09-03",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "format": "arcgis",
+      "snapshot": "data/sources/seattle-parks-pickleball-courts.arcgis.json"
+    },
+    {
+      "id": "S2",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundary_(details)/FeatureServer/2",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "format": "arcgis",
+      "snapshot": "data/sources/seattle-parks-boundary-details.arcgis.json"
+    }
+  ],
+  "venues": {
+    "seattle-miller-playfield-pickleball-courts-capitol-hill": {
+      "match": {
+        "park": "Miller Playfield",
+        "pma": 373,
+        "basis": "Same site. The Parks record names it PENDLETON MILLER PLAYFIELD at 330 19th Ave E, the address the imported row already carries. NOT matched to the separate \"Miller Community Center\" row, which is the indoor building on the same block and is a different venue."
+      },
+      "patch": {
+        "total_courts": 5,
+        "indoor_courts": 0,
+        "outdoor_courts": 5,
+        "light": true,
+        "nets_provided": true,
+        "restroom": true,
+        "parking": "Dedicated",
+        "venue_type": "public_park",
+        "street_address": "330 19th Ave E"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Miller Playfield\": NUMBEROFCOURTS=\"5\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "indoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Miller Playfield\": NUMBEROFCOURTS=\"5\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "outdoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Miller Playfield\": NUMBEROFCOURTS=\"5\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "light": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Miller Playfield\": NUMBEROFCOURTS=\"5\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "nets_provided": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Miller Playfield\": NUMBEROFCOURTS=\"5\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "NEARBYRESTROOM=\"All Year\""
+        },
+        "parking": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "PARKING=\"Dedicated\""
+        },
+        "venue_type": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Published by Seattle Parks and Recreation as a park facility; Parks record OWNER=\"DPR\""
+        },
+        "street_address": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundary_(details)/FeatureServer/2",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Parks layer PMA=373, NAME=\"PENDLETON MILLER PLAYFIELD\", ADDRESS=\"330 19th Ave E\""
+        }
+      },
+      "record": {
+        "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "seattle-alki-playground-pickleball-and-tennis-courts": {
+      "match": {
+        "park": "Alki Playground",
+        "pma": 446,
+        "basis": "Same site, same name, and the imported address 5817 SW Lander St matches the Parks record exactly."
+      },
+      "patch": {
+        "total_courts": 4,
+        "indoor_courts": 0,
+        "outdoor_courts": 4,
+        "light": true,
+        "nets_provided": true,
+        "restroom": true,
+        "parking": "Street",
+        "venue_type": "public_park",
+        "street_address": "5817 SW Lander St"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Alki Playground\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "indoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Alki Playground\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "outdoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Alki Playground\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "light": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Alki Playground\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "nets_provided": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Alki Playground\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"Yes\", NETS=\"Yes\""
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "NEARBYRESTROOM=\"Seasonal\""
+        },
+        "parking": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "PARKING=\"Street\""
+        },
+        "venue_type": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Published by Seattle Parks and Recreation as a park facility; Parks record OWNER=\"DPR\""
+        },
+        "street_address": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundary_(details)/FeatureServer/2",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Parks layer PMA=446, NAME=\"ALKI PLAYGROUND\", ADDRESS=\"5817 SW Lander St\""
+        }
+      },
+      "record": {
+        "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "seattle-brighton-playfield-seattle-wa": {
+      "match": {
+        "park": "Brighton Playfield",
+        "pma": 402,
+        "basis": "Same site, same name, and the imported address 6000 39th Ave S matches the Parks record exactly."
+      },
+      "patch": {
+        "total_courts": 4,
+        "indoor_courts": 0,
+        "outdoor_courts": 4,
+        "light": false,
+        "nets_provided": true,
+        "restroom": true,
+        "parking": "Street",
+        "venue_type": "public_park",
+        "street_address": "6000 39th Ave S"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Brighton Playfield\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "indoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Brighton Playfield\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "outdoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Brighton Playfield\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "light": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Brighton Playfield\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "nets_provided": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Brighton Playfield\": NUMBEROFCOURTS=\"4\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "NEARBYRESTROOM=\"All Year\""
+        },
+        "parking": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "PARKING=\"Street\""
+        },
+        "venue_type": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Published by Seattle Parks and Recreation as a park facility; Parks record OWNER=\"DPR\""
+        },
+        "street_address": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundary_(details)/FeatureServer/2",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Parks layer PMA=402, NAME=\"BRIGHTON PLAYFIELD\", ADDRESS=\"6000 39th Ave S\""
+        }
+      },
+      "record": {
+        "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "green-lake-pickleball-courts-seattle": {
+      "match": {
+        "park": "Green Lake Park (East Courts)",
+        "pma": 307,
+        "basis": "The only pickleball courts Seattle Parks records at Green Lake Park, and the only Green Lake row in the import. The municipal record is specific about WHICH courts (East); the imported row is not, so the municipal name describes the same courts more precisely."
+      },
+      "patch": {
+        "total_courts": 8,
+        "indoor_courts": 0,
+        "outdoor_courts": 8,
+        "light": false,
+        "nets_provided": true,
+        "restroom": true,
+        "parking": "Dedicated",
+        "venue_type": "public_park",
+        "street_address": "7201 E Green Lake Dr N"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Green Lake Park (East Courts)\": NUMBEROFCOURTS=\"8\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "indoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Green Lake Park (East Courts)\": NUMBEROFCOURTS=\"8\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "outdoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Green Lake Park (East Courts)\": NUMBEROFCOURTS=\"8\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "light": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Green Lake Park (East Courts)\": NUMBEROFCOURTS=\"8\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "nets_provided": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Green Lake Park (East Courts)\": NUMBEROFCOURTS=\"8\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "NEARBYRESTROOM=\"All Year\""
+        },
+        "parking": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "PARKING=\"Dedicated\""
+        },
+        "venue_type": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Published by Seattle Parks and Recreation as a park facility; Parks record OWNER=\"DPR\""
+        },
+        "street_address": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundary_(details)/FeatureServer/2",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Parks layer PMA=307, NAME=\"GREEN LAKE PARK\", ADDRESS=\"7201 E Green Lake Dr N\""
+        }
+      },
+      "record": {
+        "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "indoor_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "seattle-laurelhurst-pickleball-court-seattle-wa": {
+      "match": {
+        "park": "Laurelhurst Playfield",
+        "pma": 340,
+        "basis": "Same site. Both describe a single pickleball court at Laurelhurst. The imported address is wrong by two blocks and is corrected below."
+      },
+      "patch": {
+        "total_courts": 1,
+        "indoor_courts": 0,
+        "outdoor_courts": 1,
+        "light": false,
+        "nets_provided": true,
+        "restroom": true,
+        "parking": "Dedicated",
+        "venue_type": "public_park",
+        "street_address": "4544 NE 41st St"
+      },
+      "provenance": {
+        "total_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Laurelhurst Playfield\": NUMBEROFCOURTS=\"1\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "indoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Laurelhurst Playfield\": NUMBEROFCOURTS=\"1\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "outdoor_courts": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Laurelhurst Playfield\": NUMBEROFCOURTS=\"1\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "light": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Laurelhurst Playfield\": NUMBEROFCOURTS=\"1\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "nets_provided": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer, PARKNAME=\"Laurelhurst Playfield\": NUMBEROFCOURTS=\"1\", INDOOROUTDOOR=\"Outdoor\", LIGHTED=\"No\", NETS=\"Yes\""
+        },
+        "restroom": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "NEARBYRESTROOM=\"All Year\""
+        },
+        "parking": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "PARKING=\"Dedicated\""
+        },
+        "venue_type": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Published by Seattle Parks and Recreation as a park facility; Parks record OWNER=\"DPR\""
+        },
+        "street_address": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundary_(details)/FeatureServer/2",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Parks layer PMA=340, NAME=\"LAURELHURST PLAYFIELD\", ADDRESS=\"4544 NE 41st St\""
+        }
+      },
+      "record": {
+        "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "light"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    }
+  }
+}
