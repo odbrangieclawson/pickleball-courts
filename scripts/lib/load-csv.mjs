@@ -1,6 +1,11 @@
 /*
   Shared loader for the source dataset.
 
+  Carries DECISION D6 - HONEST GAPS, NEVER FAKE ZEROS (decisions.md §8).
+  An empty cell parses to null and stays null through every report. It is
+  never coerced to 0, to false or to "N/A", because "no lights" and "we do
+  not know about lights" are different claims and one of them is a lie.
+
   Everything in scripts/import/ reads through here so that every report is
   looking at exactly the same parse of the same bytes. Hand-rolled comma
   splitting misaligns on quoted fields containing commas - this dataset has

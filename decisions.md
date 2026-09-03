@@ -1,6 +1,6 @@
 # decisions.md
 
-**Status: Phase 0. Locked sections are IMMUTABLE.**
+**Status: Phases 0-2 complete. Locked sections are IMMUTABLE.**
 
 This file is the constitution of the project. Sections marked **IMMUTABLE**
 are reproduced verbatim from the project brief and are not editable by
@@ -76,8 +76,9 @@ filter    600 - 1,000
 state   3,000 - 5,000
 ```
 
-> **Enforced by:** nothing yet. A word-band checker is required before the
-> first content page ships. Tracked as **O8**.
+> **Enforced by:** `lib/page/words.mjs`, which holds `WORD_BANDS` and the
+> definition of what counts as a word. Page Gate 4 in `lib/page/gates.mjs`
+> fails any page outside its band. This closed **O8**.
 
 ## 5. The fourteen rules — IMMUTABLE
 
@@ -118,19 +119,19 @@ state   3,000 - 5,000
 | Rule | Enforced by | Status |
 | --- | --- | --- |
 | 1 | `scripts/check-js-off.mjs` | **Active** |
-| 2 | `getCounts()` module | Not built yet |
+| 2 | `lib/data/counts.mjs` + `lib/data/store.mjs` + `scripts/validate-no-bypass.mjs` | **Active** — Count objects, no countable collection, build-time scan |
 | 3 | Review | Manual |
 | 4 | `LOCKED_URL_PATTERNS` | **Active** |
-| 5 | Word-band checker | Not built (**O8**) |
-| 6 | Tri-state types in `venue.schema.json` | Schema only; renderer not built |
-| 7 | Import gate validator | Not built |
-| 8 | Import gate validator | Not built |
+| 5 | `lib/page/words.mjs`, Page Gate 4 | **Active** (O8 closed) |
+| 6 | Tri-state types in `venue.schema.json`; `scripts/lib/load-csv.mjs`; `countUnknown()` | **Active** through the data layer; renderer honours it in `lib/page/city-page.mjs` |
+| 7 | Import Gate I2 in `lib/data/promote.mjs`; Page Gate 6 in `lib/page/gates.mjs` | **Active** |
+| 8 | Page Gate 1 in `lib/page/gates.mjs` (`MIN_VERIFIED_VENUES`) | **Active** |
 | 9 | `scripts/validate-keyword-map.mjs` | **Active** (template level); instance level inactive until data exists |
 | 10 | `slug` pattern in all schemas | **Active** in schema |
 | 11 | Separate fields in `venue.schema.json` | **Active** in schema |
 | 12 | `status` default `pending` | **Active** in schema |
-| 13 | Import gate validator | Not built |
-| 14 | Filter derivation from `indoor_courts` only | Not built |
+| 13 | Import Gate I3 in `lib/data/promote.mjs`; `scripts/validate-data.mjs` C6 | **Active** |
+| 14 | `scripts/import/mapper.mjs` keeps `covered` and `climate_control` off the indoor axis; filters derive from `indoor_courts` only | **Active** |
 
 ## 6. The four import gates — IMMUTABLE
 
@@ -150,11 +151,17 @@ county confidence above threshold.
 **I4. Vocabulary:** fee_type, play_format, surface and venue_type all hold
 values from the controlled sets. No free text in a filtered field.
 
-> **Enforced by:** nothing yet. The import gate validator is the first
-> deliverable of the import phase. `data/schemas/venue.schema.json` encodes
-> what it can; I1 slug shape, I2 field presence and enum membership, and I4
-> for the four controlled fields. It cannot express I3 arithmetic or
-> reachability, which need the validator.
+> **Enforced by:** `lib/data/promote.mjs`, which is the only path from
+> `status=pending` to `status=published` and refuses on any of I1-I4 with a
+> per-gate reason. `scripts/validate-data.mjs` runs the same checks across
+> the whole dataset in prebuild. `data/schemas/venue.schema.json` still
+> encodes what a schema can: I1 slug shape, I2 field presence and enum
+> membership, I4 for the four controlled fields.
+>
+> **The one thing still not machine-checkable:** I1 requires a
+> street_address that RESOLVES and I2 requires a source_url that is
+> REACHABLE. Neither is verified without a geocoder and a fetcher. Both are
+> currently presence checks, and that limit is stated rather than hidden.
 
 ## 7. The six page gates — IMMUTABLE
 
@@ -171,21 +178,123 @@ Every page passes all six before it ships.
    getCounts(), and every count is a verified count.
 6. **Source and freshness:** source_url and date_checked on every fact.
 
-> **Enforced by:** Gate 2 is active via `scripts/check-js-off.mjs`, which
-> also asserts the BreadcrumbList half of Gate 3. Gates 1, 4, 5, 6 and the
-> rest of Gate 3 need data and content and are not built.
-
-## 8. The eight decisions — NOT SUPPLIED
-
-> **BLOCKING GAP.** The Phase 0 brief said "Include the eight decisions I am
-> pasting below." No decisions followed the instruction in the message that
-> requested this file. Nothing has been invented to fill the space.
+> **Enforced by:** all six run in `lib/page/gates.mjs` via
+> `checkPageGates()`, which no page bypasses; `scripts/build-city.mjs`
+> refuses to emit a page that fails any of them. Gate 2 additionally has a
+> standalone run in `scripts/check-js-off.mjs` against built HTML.
 >
-> This section is reserved. When the eight arrive they are pasted here
-> verbatim, numbered D1 to D8, and marked IMMUTABLE. Until then, any code
-> comment or document that needs to cite one refers to a section name in this
-> file rather than a D-number, so that the D-numbering stays free for the
-> owner's use.
+> **Gate 1 is what stops everything today.** With zero verified venues no
+> city, county or filter page can lawfully exist, so the other five have
+> nothing to run against in production. They are exercised on preview
+> renders, which are marked unpublishable by construction.
+
+## 8. The eight decisions — IMMUTABLE
+
+**NEVER PROPOSE A CHANGE.** Reproduced verbatim from the strategy file
+(v3 §8a for D1–D6; v4 §1 changelog items 4 and 5 for D7–D8, which v4 added
+after the dataset arrived). These are the decisions made once and never
+revisited. The fourteen rules in §5 are the operational restatement of
+these eight; where the two are read together, the decision is the intent
+and the rule is the instruction.
+
+### D1 — URL PATTERN, LOCKED BEFORE LAUNCH
+
+> ```
+> /pickleball/us/{state}/{city}/{venue}/
+> /pickleball/us/{state}/{city}/
+> /pickleball/us/{state}/{city}/{indoor|outdoor|free|public|lights}/
+> /pickleball/us/{state}/{county}-county/
+> /pickleball/us/{state}/
+> /pickleball-gear/{category}/
+> ```
+> The "us" segment exists so phase 11 can add /ca/, /au/, /uk/ without a
+> migration. Once live, every change is a 301 that you maintain forever.
+> Write this into decisions.md and treat it as immutable.
+
+### D2 — EVERY COUNT COMES FROM ONE QUERY
+
+> A single module, getCounts(scope), returns venue count, court count,
+> indoor count, free count and lit count. Titles, meta, headings, body and
+> schema all call it. No page ever computes its own number.
+> Why: CourtSource ships 45-vs-46 and 185-vs-187 contradictions on the same
+> city. It is the fastest way to look untrustworthy.
+
+### D3 — TEMPLATE THE SENTENCE, NOT THE PARAGRAPH
+
+> Allowed: a sentence with slots - "{Venue} has {N} {surface} courts,
+> {lit or unlit}, and is {free or paid}."
+> Not allowed: a whole paragraph of boilerplate with a city name swapped in.
+> Each page needs at least three sentences of genuinely specific,
+> non-templatable detail: a parking note, a peak-hours note, a surface
+> condition note, a local quirk.
+> This is the exact line between Pickleheads' readable copy and
+> CourtSource's AI notes.
+
+### D4 — FIVE INDEXABLE FILTERS, EVERYTHING ELSE NOINDEX
+
+> Indexable, real URLs: /indoor/, /outdoor/, /free/, /public/, /lights/
+> Everything else (surface, court count, sort order, distance radius) is a
+> query parameter with noindex. Five is the whole list. Do not add a sixth
+> without deleting one.
+
+### D5 — WORD BANDS, ENFORCED BY THE BUILD
+
+> ```
+> City page      1,200 - 2,000 words
+> Venue page       700 - 1,200 words
+> County page      900 - 1,500 words
+> Filter page      600 - 1,000 words
+> State page     3,000 - 5,000 words
+> ```
+> Under the floor means the page does not publish. Pickleheads' court pages
+> sit at 656 words; your floor of 700 is deliberately just above it.
+
+### D6 — HONEST GAPS, NEVER FAKE ZEROS
+
+> A null renders as "Not verified yet" with a "help us verify this" link -
+> never as 0, never as "N/A", never as a guess. Every published fact carries
+> a source URL and a date-checked value, both visible on the page.
+
+### D7 — CLAIMED IS NOT VERIFIED
+
+> The listing product means owners will claim venues. A claim is an
+> identity event; a verification is a provenance event. They never share a
+> field. If a claim can flip the verified flag, then the headline verified
+> count - the entire value proposition, exactly as findswimmingholes uses
+> "1,216 Verified Places" - becomes whatever venue owners type in.
+
+### D8 — VERIFIED COUNTS ONLY IN TITLES
+
+> A city with 22 imported rows and 6 verified venues has a title that says
+> 6. The imported row count never appears anywhere a user or crawler can
+> see it. Holding 18,038 rows creates constant pressure to publish the
+> bigger number, which is precisely how PlayPickleball ended up with 5,750
+> dead city pages.
+
+### Where each decision is enforced
+
+The decision is the authority. The rule is how it is written as an
+instruction, and the enforcer is the code that makes it non-optional.
+
+| Decision | Rules | Enforced by | Status |
+| --- | --- | --- | --- |
+| **D1** URL pattern | §1, R4 | `scripts/validate-keyword-map.mjs` (`LOCKED_URL_PATTERNS`) | **Active** |
+| **D2** One count query | R2 | `lib/data/counts.mjs` (Count symbol) + `lib/data/store.mjs` (no countable collection) + `scripts/validate-no-bypass.mjs` | **Active**, 3 layers |
+| **D3** Sentence not paragraph | R3 | `lib/page/editorial.mjs` + Page Gate 4 in `lib/page/gates.mjs` (3 specific sentences, cross-page duplicate detection) | **Active** |
+| **D4** Five filters | §2, R4 | `LOCKED_URL_PATTERNS`; a sixth filter URL fails the validator | **Active** |
+| **D5** Word bands | §4, R5 | `lib/page/words.mjs` (`WORD_BANDS` + the counting definition that closed O8) | **Active** |
+| **D6** Honest gaps | R6 | tri-state types in `data/schemas/venue.schema.json`; `countUnknown()` in `lib/data/counts.mjs`; null-preservation in `scripts/lib/load-csv.mjs` | **Active** |
+| **D7** Claimed ≠ verified | R11 | `claimed_by_owner` and `data_verified` are separate fields in the schema; `lib/data/promote.mjs` never reads a claim | **Active** |
+| **D8** Verified counts only | R8, R12 | `getCounts()` draws its denominator from verified venues only; `lib/page/titles.mjs` accepts Count objects, never raw totals | **Active** |
+
+Two decisions carry a standing pressure that no code can remove, so they
+are named here rather than assumed away:
+
+- **D4** — the imported dataset offers tempting sixth filters (surface,
+  climate_control, covered, pro_shop, venue_type, price band). All are
+  query parameters. Adding a sixth means deleting one.
+- **D8** — 18,038 rows sit behind a published count that today is zero.
+  Every request to show the larger number is refused, not negotiated.
 
 ## 9. Open decisions — NOT YET MADE
 
@@ -201,7 +310,7 @@ silently.
 | **O5** | Multi-surface venues | `surface` field | Proposed: record the surface of the majority of pickleball courts, describe the rest in `amenities`. Needs sign-off. |
 | **O6** | Rendering mode: SSG vs static export | Freshness workflow | Currently plain static generation, NOT `output: 'export'`, so incremental revalidation stays available for re-verification without a full rebuild. Both satisfy Rule 1. Reversible, but cheaper to settle now. |
 | **O7** | Affiliate disclosure placement | Gear phase | Gear is the revenue layer. Disclosure obligations affect page template and schema. |
-| **O8** | Word-band checker | Rule 5, Page Gate 4 | Needs to exist before the first content page. Also needs a definition of what counts as a word: does boilerplate navigation count, does the provenance line count. |
+| ~~**O8**~~ | ~~Word-band checker~~ | — | **CLOSED 2026-09-03.** `lib/page/words.mjs` holds both the bands and the definition of a word: body prose counts; navigation, footer, JSON-LD, the provenance line, venue names and addresses, and bare table numbers do not. |
 | **O9** | The 404 page | Rule/competitive | Pickleheads bleeds traffic through hard 404s. A 404 that routes a lost visitor to the nearest live city page is a cheap, direct win. Currently the Next.js default. |
 | **O10** | Canonical hostname | Schema `@id`, sitemap, breadcrumb `item`, canonical tags | Everything currently uses `example.invalid` as an obvious placeholder. Real values cannot be minted until the domain is fixed. |
 | **O11** | Where verification data comes from | Everything | 18,038 rows hold no `source_url` and no `date_checked`, so by Rule 12 all 18,038 are `pending` and by Rule 8 the publishable inventory is **zero**. The verification pipeline is the real Phase 1, not page building. |
@@ -212,3 +321,6 @@ silently.
 | Date | Change | Reason |
 | --- | --- | --- |
 | 2026-09-02 | File created at Phase 0. Sections 1-7 locked. | Foundation. |
+| 2026-09-03 | **§8 filled and locked.** The eight decisions were supplied and are now reproduced verbatim, D1-D8, with an enforcement map. The section is no longer a blocking gap. | The owner supplied strategy §8a (D1-D6) and the v4 changelog items 4 and 5 (D7-D8). Nothing was invented; the D-numbering that §8 reserved is now allocated. |
+| 2026-09-03 | Enforcement columns in §4, §5, §6 and §7 refreshed against the code that now exists. | The tables were written at Phase 0 and said "not built" for eleven things that Phases 1, 1B and 2 built. A constitution that misreports its own enforcement is worse than one with none. |
+| 2026-09-03 | **O8 closed.** | The word-band checker and its counting definition shipped in `lib/page/words.mjs`. |

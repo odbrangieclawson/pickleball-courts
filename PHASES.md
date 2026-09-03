@@ -38,6 +38,14 @@ whose built `index.html` was an empty `<div id="app">`, with a `vercel.json`
 rewriting every URL to that shell. It failed Rule 1 on every page,
 permanently. That was replaced, not patched.
 
+**Amended 2026-09-03 — Phase 0 is only now actually complete.** The brief
+said "include the eight decisions I am pasting below" and no decisions
+followed, so `decisions.md` §8 shipped as a reserved, BLOCKING section with
+nothing invented to fill it. The eight arrived on 2026-09-03 and are now
+pasted verbatim as D1–D8 with an enforcement map. The D-numbering that §8
+had been holding open is allocated, and the modules that implement a
+decision now cite it by number.
+
 **Gate status at tag:** Page Gate 2 PASS (automated). Page Gate 3 PARTIAL —
 BreadcrumbList enforced, the rest have nothing to attach to. Gates 1, 4, 5, 6
 are N/A with no data. Import Gates I1–I4: none enforced; partially encoded in
@@ -45,32 +53,134 @@ the schemas.
 
 ---
 
-## Phase 1 and onward — NOT YET DEFINED
+## Phase 1 — Import and triage ✅ COMPLETE
 
-**The owner has not specified phases 1 through 6.** They are deliberately
-left blank rather than guessed at. Two things are known about them:
+**Shipped 2026-09-02.** Strategy §H (P1-R), which replaced v3 Phase 1 once
+the dataset arrived. No new data was collected; the 18,037 parsed rows were
+mapped, measured and triaged.
 
-**Phase 7 is the proof checkpoint**, named in the sequencing rules. Scaling
-past 50–100 metros before it passes is a rule violation, not a judgement
-call.
+| Delivered | Where |
+| --- | --- |
+| Import mapper, 37 source columns, 37 dispositions, 0 silently discarded | `scripts/import/mapper.mjs`, `reports/import-mapping.md` |
+| Controlled vocabularies applied at import | `scripts/import/vocab.mjs`, `data/vocabularies/` |
+| Data quality report over every row | `scripts/import/quality-report.mjs`, `reports/quality-report.md` |
+| County backfill, per-row method and confidence | `scripts/import/derive-county.mjs`, `reports/county-status.md` |
+| City triage and the verification work queue | `scripts/import/triage.mjs`, `reports/city-triage.md` |
 
-**Whatever Phase 1 is, it is bounded by O11.** All 18,038 imported rows lack
-`source_url` and `date_checked`. Rule 12 therefore makes every row
-`status=pending`, and Rule 8 keeps pending rows out of the 3-verified-venue
-threshold. **Publishable inventory is currently zero.** No city, county or
-filter page can lawfully exist until verification work happens, so page
-building cannot come first regardless of how the phases are numbered.
+**The two numbers this phase produced.**
 
-### Known entry blockers
+- **Publishable cities today: 0.** Not one row carries a qualifying
+  `source_url` or any `date_checked`, so Rule 12 holds all 18,037 at
+  `status=pending` and Rule 8 admits none to the 3-verified threshold.
+- **Cities gated ONLY by provenance: 1,475** of 6,585. Those rows already
+  pass I1, I3 and I4 in full. Attaching real sources to 8,458 of them would
+  unlock 12,786 city, filter and venue pages, plus 961 county pages.
+
+That gap between 0 and 1,475 is the whole project. It did not close
+**O11** — where verification data actually comes from is still the owner's
+decision — but it sized it exactly, and it settled that the real Phase 1 was
+never page building.
+
+**County** was derived from `postal_code` → ZCTA → county against two
+public-domain Census files, with proximity as the multi-county tiebreak.
+77.1% accepted at confidence ≥ 0.85, 16.7% flagged for manual review. The
+tiebreak choice mattered: it changed the answer on 24.8% of multi-county
+rows, and land-area weighting had been putting Anchorage addresses in Bethel.
+
+---
+
+## Phase 1B — Verification pipeline ✅ COMPLETE
+
+**Shipped 2026-09-02.** The sprint that turns pending rows into verified
+ones. Built, self-tested, and waiting on human source attachment.
+
+| Delivered | Where |
+| --- | --- |
+| Per-metro verification packets, 100 metros, 2,620 venues | `verification/*-plan.md`, `verification/*-worksheet.csv` |
+| Prioritised source ladder (municipal first, competitors never) | `scripts/verify/source-ladder.mjs` |
+| Provenance test — what does and does not satisfy Import Gate I2 | `scripts/verify/provenance.mjs` |
+| Conflict handling when a source disagrees with the row | `scripts/verify/conflict.mjs` |
+| Completeness dashboard, re-runnable as work lands | `reports/completeness.md` |
+| Pipeline self-test | `scripts/verify/selftest.mjs` |
+
+**Metros ready to publish: 0 of 100**, every one blocked on I2 alone. The
+dashboard exists to be re-run; that number is the one to watch.
+
+**The hard rule is in code, not prose.** `metroStatus()` returns
+`blocked` until 3+ venues pass all four import gates, and there is no
+partial-publish state for it to return instead.
+
+---
+
+## Phase 2 — The data layer ✅ COMPLETE
+
+**Shipped 2026-09-02.** Decision **D2** made structural: one query, and no
+route around it.
+
+| Delivered | Where |
+| --- | --- |
+| `getCounts(scope)` returning Count objects with denominators | `lib/data/counts.mjs` |
+| The venue store that hands out no countable collection | `lib/data/store.mjs` |
+| Slug registry, numeric-suffix ban, real disambiguation | `lib/data/slugs.mjs` |
+| `promoteToVerified()` — the only pending → published path | `lib/data/promote.mjs` |
+| Whole-dataset validator, wired into `prebuild` | `scripts/validate-data.mjs` |
+| Build-time bypass scan over `app/` | `scripts/validate-no-bypass.mjs` |
+| 61 tests | `scripts/test/` |
+
+**Four layers stop a page inventing a number**, and the fourth is stated
+rather than hidden:
+
+1. A count is not a number — `getCounts` returns Count objects carrying a
+   private Symbol. A bare `15` throws.
+2. The store returns a `VenueList` with no `.length`, no `.filter`, no
+   iterator. There is nothing to count.
+3. `validate-no-bypass.mjs` fails the build on `.length`, `.filter().length`
+   or a bare numeric literal inside a title, description or heading.
+4. **The honest limit.** This is JavaScript. Someone determined can import
+   the raw loader and hard-code a string. What layers 1–3 guarantee is that
+   every *accidental* bypass is a throw or a build failure, and every
+   deliberate one requires visibly reaching around the data layer.
+
+**Denominators ship with every count.** A Count carries `value`,
+`denominator` (verified venues in scope) and `known` (those that state the
+field), so a page says "12 of 15 venues report lighting" rather than
+implying the other three are unlit. `venues_unverified` is rendered, not
+hidden — Section G, and the trust move no competitor makes.
+
+**Current validator state:** 18,037 rows, **0 verified**, 0 errors,
+1,557 warnings. Warnings are findings about the source data, not build
+failures; the largest are 640 schema deviations, 627 numeric-suffix slugs
+(Rule 10) and 266 court-arithmetic mismatches (Rule 13).
+
+---
+
+## Phase 3 — City template 🔶 BUILT, NOT PUBLISHABLE
+
+**Not tagged.** The §8c anatomy, titles, schema and the six page gates are
+built (`lib/page/`, `scripts/build-city.mjs`). A Seattle render exists at
+`reports/preview-seattle-wa.html` and is **unpublishable by construction**
+— Gate 1 fails on 0 verified venues, and the preview is marked as such
+rather than dressed up as a page.
+
+Phase 3 closes when a real metro clears Gate 1, which requires Phase 1B
+source attachment, which requires **O11**.
+
+---
+
+## Blockers still open
+
+Phases 0 through 2 are complete. What stops Phase 3 from publishing is not
+missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| The eight decisions were never supplied | `decisions.md` §8 | Section reserved and BLOCKING. D1–D8 left unused across the codebase. |
-| O11 — where verification data comes from | `decisions.md` §9 | Gates all publishing. |
-| O1 — no controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a LOCKED filter slug with no lawful data driver. |
-| O10 — canonical hostname | `decisions.md` §9 | Schema `@id`, canonicals and sitemap all still use `example.invalid`. |
+| **O11** — where verification data comes from | `decisions.md` §9 | Gates all publishing. 0 of 18,037 rows carry a source; 1,475 cities are waiting on nothing else. |
+| **O10** — canonical hostname | `decisions.md` §9 | Schema `@id`, canonicals, breadcrumb `item` and the sitemap still emit `example.invalid`. |
+| **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
+| **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
----
+Resolved since Phase 0: **§8** (the eight decisions, supplied and locked
+2026-09-03) and **O8** (word-band checker and its counting definition).
 
 ## The sequencing rules that bound every phase
 

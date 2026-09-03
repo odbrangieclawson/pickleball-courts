@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 /*
+  DECISIONS D1 (URL pattern, locked) and D4 (five indexable filters)
+  live in LOCKED_URL_PATTERNS below. See decisions.md §8.
+
   Rule 9: one primary keyword per URL, enforced by keyword-map.json at build
   time. The build fails on a collision.
 

@@ -1,0 +1,1763 @@
+==========================================================================
+PICKLEBALL COURT DIRECTORY - STRATEGY & BUILD PLAN
+Version 3 | File 1 of 2 (companion file: pickleball-directory-PROMPTS-v3.txt)
+==========================================================================
+
+WHAT THIS FILE IS
+This is the strategy, research and phase-by-phase build flow. Every phase
+points to a numbered prompt block (P0-P9) that lives in the PROMPTS file.
+Read this file to understand WHAT to build and WHY. Open the PROMPTS file
+when you are ready to actually execute a phase.
+
+SOURCES BEHIND THIS PLAN
+- Your niche-criteria and competitive-analysis sheet (Niche ID 5, pickleball)
+- Ahrefs Keywords Explorer, "pickleball", US
+- Six competitor keyword exports (Lightshot): playpickleball, courtsource,
+  pickleheads, pickleball-courts.net, whatyoudink, playyourcourt
+- Structural teardown of findswimmingholes.com (1,267 URLs, Next.js)
+- Your pasted competitor teardown (traffic, DR, backlink and page-count data)
+
+==========================================================================
+SECTION 1 - CHANGELOG: WHAT CHANGED IN V3 AND WHY
+==========================================================================
+
+1. THE WICHITA CORRECTION - I WAS WRONG IN V2.
+   V2 said: a small number of flagship city pages could capture the national
+   "pickleball courts near me" term (85,000/mo).
+   Correct read: two unrelated sites (playpickleball and pickleheads) both
+   show a Wichita page ranking for that term. Two unrelated sites, same city,
+   is not a Wichita miracle - it is an Ahrefs location sampling artifact.
+   "Near me" SERPs are localised; Ahrefs samples from one location.
+   THEREFORE: that 85,000/mo is split across every city in the country. There
+   is no single page to win. The strategy is broad, high-quality city
+   coverage - many good city pages, not a few flagship ones.
+
+2. PICKLEHEADS IS THE LEADER, NOT PLAYPICKLEBALL.
+   Pickleheads: DR 73, ~134,000 US visits/mo, 18,879 keywords, 5,423 real
+   referring domains, 44,322 pages, 3.0 visits per page.
+   PlayPickleball: 25,245 pages, ~43,000 US visits/mo, 1.7 visits per page.
+   PlayPickleball is your SEO template (URL and page architecture).
+   Pickleheads is your product template (what the page should feel like).
+
+3. GEAR IS THE REVENUE ENGINE - V2 TOLD YOU TO DEFER IT. REVERSED.
+   Pickleheads' single biggest page is not a court page. It is
+   /pickleball-gear/pickleball-paddles at 8,212 visits/mo. Gear reviews take
+   5 of their top 12 pages.
+   Courts drive retention. Affiliate gear drives revenue. Plan both from day
+   one, even if gear ships in phase 8.
+
+4. FILTER PAGES ARE REAL INDEXABLE URLS - V2 USED QUERY PARAMETERS. REVERSED.
+   Exactly five indexable filters per city: /indoor/, /outdoor/, /free/,
+   /public/, /lights/. Everything else stays a noindex query parameter.
+
+5. URL PATTERN LOCKED BEFORE LAUNCH.
+   /pickleball/us/{state}/{city}/{venue}/ - decided in Phase 0, 301s forever
+   after. No exceptions, no later "improvements".
+
+6. WORD COUNTS LOWERED TO REALISTIC BANDS.
+   City 1,200-2,000 | Venue 700-1,200 | County 900-1,500 | Filter 600-1,000 |
+   State 3,000-5,000. V2 was inflated.
+
+7. LAUNCH SEQUENCE IS NOW THE SPINE OF THE PLAN.
+   50-100 metros with complete data first. Prove the template ranks. Then
+   scale to thousands. All three main competitors scaled before proving,
+   which is exactly why 20,000+ pages produce so little for two of them.
+
+8. DESCRIPTION RULE: TEMPLATE THE SENTENCE, NOT THE PARAGRAPH.
+   That is the difference between Pickleheads' readable copy and
+   CourtSource's obvious AI notes.
+
+9. ONE QUERY FOR EVERY COUNT.
+   All venue/court counts come from one shared module. CourtSource ships two
+   pages claiming 45 vs 46 venues and 185 vs 187 courts on the same city.
+
+10. SIX QUALITY GATES.
+   Every page passes six explicit gates before it is allowed to go live.
+   Listed in Section 8.
+
+==========================================================================
+SECTION 2 - ONE-PAGE SUMMARY
+==========================================================================
+
+THE OPPORTUNITY
+Pickleball court search is a large, growing, evergreen, location-based
+market. The incumbents are beatable for specific, documented reasons:
+- CourtSource does ~9,236 US visits/mo on DR 8 with an entirely spam
+  backlink profile. They rank on page quality alone. That means you can too.
+- PlayPickleball has 25,245 pages and 1.7 visits per page. Volume without
+  quality.
+- Pickleheads is genuinely strong but has hard 404s on pages worth 1,475 and
+  463 visits/mo, thin 656-word court pages, no BreadcrumbList /
+  AggregateRating / Dataset schema, a signup wall on games and groups, and
+  shows "0 nearby courts, 0 local coaches" to any non-US visitor.
+- Nobody serves non-US markets properly.
+
+THE STRATEGY IN ONE SENTENCE
+Build a small number of metros to a quality standard none of them meet,
+prove the template ranks, then scale the exact same template nationwide -
+and monetise with affiliate gear content, not display ads.
+
+THE THREE NUMBERS THAT MATTER
+- Traffic per page: target 3.0+ (Pickleheads 3.0, PlayPickleball 1.7,
+  CourtSource 0.45)
+- Single-URL dependency: ceiling 15% (CourtSource 73%, PlayPickleball 28%,
+  Pickleheads 6%)
+- Verified venues per city page: minimum 3, or the page does not exist
+
+THE NON-NEGOTIABLES
+- Complete content in raw HTML with JavaScript disabled (only
+  PlayPickleball fails this test; do not join them)
+- Never buy a link (CourtSource has 1,345 referring domains and all of it is
+  junk; whatyoudink has 343 referring domains and 1 visit/mo)
+- Never publish a number without a source URL and a date-checked field
+- Never render a null as 0 or "N/A" - render an honest gap with a
+  "help us verify this" link
+- No signup wall on anything indexable
+
+==========================================================================
+SECTION 3 - NICHE VALIDATION AGAINST YOUR OWN CRITERIA
+==========================================================================
+
+Your sheet defines the pass/fail bar. Here is pickleball scored against it.
+
+CRITERION                              TARGET          PICKLEBALL      VERDICT
+US search volume                       min 100k        very high       PASS
+Keyword difficulty                     KD 0-20         0-20 on the
+                                                       city and near-me
+                                                       tail             PASS
+Competitor age                         over 6 months   all 2+ years     PASS
+Directory site on Google page 1        required        yes - all three
+                                                       incumbents rank  PASS
+Competitor DR                          under 50        CourtSource 8,
+                                                       playpickleball
+                                                       mid, PICKLEHEADS
+                                                       IS DR 73         PARTIAL
+Competitor organic traffic             min 10k         9.2k-134k        PASS
+Quality backlinks                      required        CourtSource has
+                                                       none and still
+                                                       ranks            PASS
+Google Ads potential                   min $500/mo     gear + coaching
+                                                       + travel         PASS
+Outscraper / data cost                 max $200        marked FALSE in
+                                                       your sheet       UNMET
+Evergreen, non-seasonal                required        evergreen with a
+                                                       spring-summer
+                                                       lift             PASS
+Location based                          required        yes             PASS
+Keyword includes city                   required        yes             PASS
+"Near me" volume                        30k-100k        ~85k            PASS
+Tier 1 countries                        required        US/CA/AU/UK/NZ  PASS
+Update cadence                          every 6 months  courts change
+                                                        slowly          PASS
+
+TWO HONEST FLAGS
+1. DR 73. Pickleheads breaks your "competitor DR under 50" rule. Do not
+   pretend otherwise. The reason to proceed anyway: CourtSource proves the
+   city-level SERPs are winnable at DR 8. You are not fighting Pickleheads
+   for their brand and gear terms in year one. You are fighting CourtSource
+   and PlayPickleball for city terms, and both are beatable on page quality.
+2. Data cost is your real gate, not SEO. Your sheet already marks the
+   scraping budget as unmet. Solve data acquisition in Phase 1 or the whole
+   plan stalls. This is why the launch sequence starts at 50-100 metros -
+   it is the largest set you can populate to a high standard on a small
+   budget.
+
+==========================================================================
+SECTION 4 - COMPETITOR TEARDOWN
+==========================================================================
+
+--------------------------------------------------------------------------
+4a. PICKLEHEADS - THE PRODUCT TEMPLATE (study this one hardest)
+--------------------------------------------------------------------------
+Domain Rating          73
+US traffic             ~134,000 visits/mo
+Organic keywords       18,879
+Referring domains      5,423, and they are real
+Indexed pages          44,322
+Traffic per page       3.0
+Single-URL dependency  6% - the healthiest number of any competitor
+
+WHY THEY WIN
+- Editorially earned links. Wikipedia links to them 14 times. NYT, Forbes,
+  WebMD and Apple have all cited them. You cannot buy this, you have to be
+  the reference source people cite.
+- Real product, not just pages. 5,387 user-created group pages. Court
+  pages, games, groups, coaches, gear - courts bring people in, the
+  community keeps them.
+- Revenue comes from gear, not courts. Their number one page overall is
+  /pickleball-gear/pickleball-paddles at 8,212 visits/mo. Gear reviews
+  occupy 5 of their top 12 pages.
+- Copy reads like a human wrote it. Sentences are templated; paragraphs
+  are not.
+
+THEIR EXPLOITABLE WEAKNESSES - THIS IS YOUR ENTRY LIST
+- /courts/kansas/wichita is a hard 404 while still pulling 1,475 visits/mo
+- a /United path 404s while still pulling 463 visits/mo
+- No BreadcrumbList, no AggregateRating, no Dataset schema anywhere
+- Court pages average only 656 words
+- Games and groups sit behind a signup wall, so that content cannot rank
+- From a non-US IP the homepage renders "0 nearby courts, 0 local coaches" -
+  the entire non-US market is unserved
+Every one of those is a page you can build better this quarter.
+
+--------------------------------------------------------------------------
+4b. PLAYPICKLEBALL - THE SEO TEMPLATE, AND THE CAUTIONARY TALE
+--------------------------------------------------------------------------
+Indexed pages          25,245
+US traffic             ~43,000 visits/mo
+Traffic per page       1.7
+Single-URL dependency  28% - one Wichita city page is 28% of all traffic
+US city pages          5,751, and 5,750 of them produce almost nothing
+
+WHAT TO COPY
+Their URL and page architecture. Clean state / city / venue hierarchy,
+predictable slugs, sensible internal linking between geographic levels.
+This is the skeleton worth borrowing.
+
+WHAT TO NEVER COPY
+They scaled to 25,245 pages before proving the template converted a single
+city. The result is 5,750 near-dead city pages and a business resting on one
+URL. They also fail the JavaScript-disabled test - content does not render
+in raw HTML. Of the three, they are the only ones who fail it.
+
+READ THE WICHITA NUMBER CORRECTLY
+Both PlayPickleball and Pickleheads show a Wichita page ranking for
+"pickleball courts near me". Two unrelated sites, same city, is an Ahrefs
+location-sampling artifact, not a real phenomenon. "Near me" is localised
+per searcher. The ~85,000/mo is distributed across the whole country. Do not
+build a Wichita strategy. Build a many-good-cities strategy.
+
+--------------------------------------------------------------------------
+4c. COURTSOURCE - PROOF THAT PAGE QUALITY ALONE CAN RANK
+--------------------------------------------------------------------------
+Domain Rating          8
+US traffic             ~9,236 visits/mo
+Referring domains      1,345, and effectively zero are real
+Traffic per page       0.45
+Single-URL dependency  73% - dangerously fragile
+
+THEIR BACKLINK PROFILE IS ENTIRELY SPAM
+buybacklinks.agency, fiverr SEO gigs, zero-traffic PBNs. They rank at DR 8
+with a purchased profile that adds nothing. The conclusion is not "buy
+links" - it is the opposite. They rank on page quality alone. That means
+you can too, without spending a cent on links.
+
+WHAT THEY DO RIGHT
+They are the only competitor shipping schema on city pages. Copy the
+approach, then go further with BreadcrumbList, AggregateRating and Dataset.
+
+WHAT THEY DO WRONG
+Two pages on the same city claim 45 vs 46 venues and 185 vs 187 courts.
+Their descriptions read like raw AI notes. 73% of traffic sits on one URL.
+
+--------------------------------------------------------------------------
+4d. THE THREE SMALLER SITES - USEFUL NEGATIVE EXAMPLES
+--------------------------------------------------------------------------
+pickleball-courts.net  Thin templated city pages. Ranks for a handful of
+                       long-tail terms. Shows what the floor looks like.
+whatyoudink            343 referring domains and roughly 1 visit/mo. The
+                       clearest possible evidence that links without content
+                       do nothing.
+playyourcourt          Has martz-field-2, waldstein-park-2 and vista-ridge-2
+                       live in production. Duplicate slugs with numeric
+                       suffixes are a data-integrity failure users can see.
+                       Your slug registry must ban them outright.
+
+==========================================================================
+SECTION 5 - COMPARISON MATRIX
+==========================================================================
+
+METRIC                    PICKLEHEADS  PLAYPICKLEBALL  COURTSOURCE  YOUR TARGET
+Domain Rating             73           mid             8            grow slowly
+US traffic / mo           ~134,000     ~43,000         ~9,236       -
+Organic keywords          18,879       -               -            -
+Referring domains         5,423 real   -               1,345 junk   real only
+Indexed pages             44,322       25,245          ~20,000      few, then many
+Traffic per page          3.0          1.7             0.45         3.0+
+Single-URL dependency     6%           28%             73%          under 15%
+Renders without JS        yes          NO              yes          yes, always
+City-page schema          no           no              yes          yes, plus more
+BreadcrumbList schema     no           no              partial      yes
+AggregateRating schema    no           no              no           yes
+Dataset schema            no           no              no           yes
+Court page word count     656          thin            thin         700-1,200
+Signup wall on content    yes          no              no           never
+Serves non-US markets     no           no              no           yes, phase 11
+Count consistency         ok           ok              BROKEN       one query only
+
+HOW TO READ THIS TABLE
+Three sites, three different failure modes. Pickleheads has authority and a
+product but neglects technical SEO and locks content behind signup.
+PlayPickleball has architecture but no quality and no server-rendered HTML.
+CourtSource has neither authority nor consistency and still earns 9,236
+visits a month, which tells you the bar on city pages is low.
+
+The right-hand column is your specification. Print it. Every phase in
+Section 10 exists to move one of those rows.
+
+==========================================================================
+SECTION 6 - KEYWORD ARCHITECTURE AND THE SEO PLAN
+==========================================================================
+
+--------------------------------------------------------------------------
+6a. THE FIVE KEYWORD LAYERS
+--------------------------------------------------------------------------
+
+LAYER 1 - THE LOCALISED HEAD TERM
+"pickleball courts near me" and its variants, roughly 85,000/mo nationally.
+Do NOT target this with one page. It resolves to a different city for every
+searcher. You win slices of it by having a strong page for each city. This
+is the single most important strategic correction in v3.
+
+LAYER 2 - CITY TERMS (your bread and butter)
+Patterns:
+  pickleball courts {city}
+  pickleball courts in {city}
+  pickleball {city} {state-abbrev}
+  indoor pickleball courts {city}
+  free pickleball courts {city}
+  public pickleball courts {city}
+Volume per city ranges from about 50 to several thousand. KD is typically
+0-15. This is where a new site with no links can rank, which is exactly
+what CourtSource proves at DR 8.
+Target: one city page per metro, plus up to five indexable filter pages.
+
+LAYER 3 - VENUE NAME TERMS (the cheapest wins in the whole niche)
+Real examples pulled from the competitor exports, with monthly volume:
+  winter haven tennis center            200
+  martz field                           150
+  pickleball courts jacksonville fl     150
+  winter haven tennis courts            100
+  waldstein park brookline               50
+  erie tennis courts                     50
+Each one is tiny. There are tens of thousands of them. KD is effectively
+zero because the only competition is the venue's own thin page or nothing.
+A venue page that is genuinely better than the parks department PDF wins.
+This layer is how you get from zero to your first few thousand visits.
+
+LAYER 4 - COUNTY AND STATE TERMS
+  pickleball courts in {state}
+  pickleball courts {county} county
+Lower volume, but they are the hub pages that pass internal link equity
+down to cities and venues, and they rank for the broad research queries.
+
+LAYER 5 - GEAR AND INFORMATIONAL TERMS (the money layer)
+Pickleheads' top page is /pickleball-gear/pickleball-paddles at 8,212
+visits/mo, and gear takes 5 of their top 12 pages. Also in this layer:
+  best pickleball paddles
+  pickleball paddles for beginners
+  pickleball rules
+  how to play pickleball
+  pickleball court dimensions
+  pickleball vs tennis
+Courts drive retention. Gear drives revenue. Build courts first because
+they are your defensible moat, but do not postpone gear past phase 8.
+
+--------------------------------------------------------------------------
+6b. ONE PRIMARY KEYWORD PER URL - ENFORCED AT BUILD TIME
+--------------------------------------------------------------------------
+Maintain keyword-map.json. Every page type maps to exactly one primary
+keyword and up to three secondaries. The build fails if two URLs claim the
+same primary keyword. This single rule prevents the cannibalisation that is
+strangling PlayPickleball's 5,751 city pages.
+
+--------------------------------------------------------------------------
+6c. TITLE AND META FORMULAS
+--------------------------------------------------------------------------
+City page
+  Title: Pickleball Courts in {City}, {ST} - {N} Verified Locations ({Year})
+  Meta:  Find all {N} pickleball courts in {City}, {ST}. Indoor and outdoor,
+         free and paid, with hours, surface type and lighting. Updated
+         {Month Year}.
+
+Venue page
+  Title: {Venue Name} - Pickleball Courts in {City}, {ST}
+  Meta:  {N} pickleball courts at {Venue Name} in {City}. {Surface},
+         {indoor/outdoor}, {lights/no lights}. Hours, fees and directions.
+
+Filter page
+  Title: Indoor Pickleball Courts in {City}, {ST} - {N} Locations
+  Meta:  {N} indoor pickleball courts in {City}, {ST}. Play year-round.
+         Hours, fees and booking details for each facility.
+
+County page
+  Title: Pickleball Courts in {County} County, {ST} - {N} Locations
+State page
+  Title: Pickleball Courts in {State} - {N} Locations Across {M} Cities
+
+RULES
+- Year token only where the content is genuinely refreshed annually
+- Never let a title exceed 60 characters after token substitution; the
+  build should warn
+- Counts in titles come from the same shared count module as the body
+
+--------------------------------------------------------------------------
+6d. WHAT NOT TO DO
+--------------------------------------------------------------------------
+- Do not create a city page for a city with fewer than 3 verified venues
+- Do not create a filter page unless 3+ venues match that filter
+- Do not buy links, guest post at scale, or touch a PBN. CourtSource has
+  1,345 spam referring domains and 9,236 visits. whatyoudink has 343 and
+  1 visit. The correlation is zero.
+- Do not chase "pickleball courts near me" with a landing page
+
+==========================================================================
+SECTION 7 - THE FINDSWIMMINGHOLES MODEL (your structural base)
+==========================================================================
+
+WHAT I FOUND WHEN I TORE IT DOWN
+- 1,267 URLs in the sitemap - deliberately bounded, not sprawling
+- Built on Next.js, server-rendered, content present with JS disabled
+- Homepage leads with a hard verified count ("1,216 Verified Places to
+  Swim") - the number IS the value proposition
+- State pages are substantial: one measured 7,131 words
+- Listing pages measured 1,784 words with TouristAttraction and
+  BreadcrumbList schema
+- Clean hierarchy: home -> state -> region/county -> individual place
+- Heavy, deliberate internal linking between geographic levels
+- Editorial voice on every page; nothing reads auto-generated
+
+THE SEVEN THINGS TO COPY EXACTLY
+1. Bounded scope. 1,267 URLs, all good, beats 25,245 pages at 1.7 visits
+   each. This is the same lesson as your launch sequence.
+2. The verified count as the headline promise. "1,216 Verified Places" is
+   a trust claim and a keyword at the same time.
+3. Server-rendered HTML. Everything readable with JS off.
+4. Deep hub pages. State pages that are genuinely useful documents, not
+   link lists.
+5. Full schema on listing pages, including BreadcrumbList.
+6. Rich cross-linking up and down the geography.
+7. Editorial voice. Templated sentences, human paragraphs.
+
+THE MAPPING TO YOUR SITE
+findswimmingholes            your directory
+-----------------------      ------------------------------------------
+home                         /
+state page                   /pickleball/us/{state}/
+region / county page         /pickleball/us/{state}/{county}-county/
+individual place page        /pickleball/us/{state}/{city}/{venue}/
+(no equivalent)              /pickleball/us/{state}/{city}/
+(no equivalent)              /pickleball/us/{state}/{city}/indoor/ etc
+(no equivalent)              /pickleball-gear/{category}/
+
+You are adding two levels they do not have - the city page and the five
+indexable filter pages - because pickleball search intent is city-level and
+filter-driven ("indoor", "free", "lights") in a way swimming holes are not.
+
+==========================================================================
+SECTION 8 - TEMPLATE SPECIFICATION
+==========================================================================
+
+--------------------------------------------------------------------------
+8a. THE SIX DECISIONS YOU MAKE ONCE, IN PHASE 0, AND NEVER REVISIT
+--------------------------------------------------------------------------
+
+DECISION 1 - URL PATTERN, LOCKED BEFORE LAUNCH
+  /pickleball/us/{state}/{city}/{venue}/
+  /pickleball/us/{state}/{city}/
+  /pickleball/us/{state}/{city}/{indoor|outdoor|free|public|lights}/
+  /pickleball/us/{state}/{county}-county/
+  /pickleball/us/{state}/
+  /pickleball-gear/{category}/
+  The "us" segment exists so phase 11 can add /ca/, /au/, /uk/ without a
+  migration. Once live, every change is a 301 that you maintain forever.
+  Write this into decisions.md and treat it as immutable.
+
+DECISION 2 - EVERY COUNT COMES FROM ONE QUERY
+  A single module, getCounts(scope), returns venue count, court count,
+  indoor count, free count and lit count. Titles, meta, headings, body and
+  schema all call it. No page ever computes its own number.
+  Why: CourtSource ships 45-vs-46 and 185-vs-187 contradictions on the same
+  city. It is the fastest way to look untrustworthy.
+
+DECISION 3 - TEMPLATE THE SENTENCE, NOT THE PARAGRAPH
+  Allowed: a sentence with slots - "{Venue} has {N} {surface} courts,
+  {lit or unlit}, and is {free or paid}."
+  Not allowed: a whole paragraph of boilerplate with a city name swapped in.
+  Each page needs at least three sentences of genuinely specific,
+  non-templatable detail: a parking note, a peak-hours note, a surface
+  condition note, a local quirk.
+  This is the exact line between Pickleheads' readable copy and
+  CourtSource's AI notes.
+
+DECISION 4 - FIVE INDEXABLE FILTERS, EVERYTHING ELSE NOINDEX
+  Indexable, real URLs: /indoor/, /outdoor/, /free/, /public/, /lights/
+  Everything else (surface, court count, sort order, distance radius) is a
+  query parameter with noindex. Five is the whole list. Do not add a sixth
+  without deleting one.
+
+DECISION 5 - WORD BANDS, ENFORCED BY THE BUILD
+  City page      1,200 - 2,000 words
+  Venue page       700 - 1,200 words
+  County page      900 - 1,500 words
+  Filter page      600 - 1,000 words
+  State page     3,000 - 5,000 words
+  Under the floor means the page does not publish. Pickleheads' court pages
+  sit at 656 words; your floor of 700 is deliberately just above it.
+
+DECISION 6 - HONEST GAPS, NEVER FAKE ZEROS
+  A null renders as "Not verified yet" with a "help us verify this" link -
+  never as 0, never as "N/A", never as a guess. Every published fact carries
+  a source URL and a date-checked value, both visible on the page.
+
+--------------------------------------------------------------------------
+8b. THE SIX QUALITY GATES - EVERY PAGE PASSES ALL SIX OR IT DOES NOT SHIP
+--------------------------------------------------------------------------
+
+GATE 1 - DATA THRESHOLD
+  3 or more verified venues for a city, county or filter page to exist.
+  A venue page requires a verified address and at least one verified court
+  count.
+
+GATE 2 - JAVASCRIPT-OFF RENDER
+  Fetch the raw HTML. All primary content, all internal links and all
+  schema must be present. If it needs JS, it fails. PlayPickleball fails
+  this test; it is the only one of the three that does.
+
+GATE 3 - SCHEMA COMPLETENESS
+  Required per page type: BreadcrumbList everywhere, SportsActivityLocation
+  or LocalBusiness on venues, ItemList on city and filter pages,
+  AggregateRating where real ratings exist, Dataset on state pages.
+  Must validate clean. No competitor ships all of this.
+
+GATE 4 - WORD BAND AND SPECIFICITY
+  Inside the band from Decision 5, and containing at least three
+  non-templatable specific sentences.
+
+GATE 5 - COUNT CONSISTENCY
+  Every number on the page traces to getCounts(). An automated check
+  compares title, meta, H1, body and schema counts and fails on mismatch.
+
+GATE 6 - SOURCE AND FRESHNESS
+  Every factual claim has a source URL and a date-checked field. Nothing
+  older than the review cadence is displayed without a stale flag.
+
+--------------------------------------------------------------------------
+8c. PAGE ANATOMY - CITY PAGE (1,200-2,000 words)
+--------------------------------------------------------------------------
+1. H1: Pickleball Courts in {City}, {ST}
+2. Lead paragraph with the verified count, the last-updated date, and one
+   genuinely local sentence
+3. Quick-answer block: total venues, total courts, how many indoor, how
+   many free, how many lit
+4. The five filter links (indoor, outdoor, free, public, lights) as real
+   internal links to real pages
+5. Venue table: name, courts, surface, indoor/outdoor, lights, fee, link
+6. Venue cards below the table with the specific detail
+7. "Best for beginners / best for competitive play / best when it rains"
+   editorial section
+8. Local context: peak times, seasonality, parking, local league or club
+9. FAQ block with 5-8 real questions, marked up as FAQPage
+10. Nearby cities and the parent county and state links
+11. Sources and date-checked footer
+
+--------------------------------------------------------------------------
+8d. PAGE ANATOMY - VENUE PAGE (700-1,200 words)
+--------------------------------------------------------------------------
+1. H1: {Venue Name} - Pickleball Courts in {City}, {ST}
+2. Fact panel: courts, surface, indoor/outdoor, lights, nets, fee, hours,
+   reservation policy, address, source URL, date checked
+3. Two to three paragraphs of specific, human description
+4. Getting there: parking, transit, access notes
+5. What to expect: peak hours, skill level, open play schedule
+6. Nearby alternatives - three other venues in the same city
+7. Breadcrumb up to city, county, state
+8. FAQ if there are real questions
+9. Sources and date-checked footer
+
+==========================================================================
+SECTION 9 - DATA MODEL
+==========================================================================
+
+VENUE
+  id, slug, name, aliases[]
+  address_line, city, county, state, postal_code, country
+  lat, lng
+  court_count, surface, indoor (bool), lights (bool), nets_provided (bool)
+  fee_type (free | paid | member), fee_notes
+  hours (structured), reservation_required (bool), booking_url
+  phone, website
+  amenities[] (restrooms, water, shade, seating, parking)
+  rating_value, rating_count
+  source_url, date_checked, verified_by
+  status (published | pending | closed)
+
+CITY
+  slug, name, state, county, lat, lng, population
+  venue_ids[], computed counts via getCounts()
+  editorial_intro, local_context, faq[]
+  last_reviewed
+
+COUNTY / STATE
+  slug, name, child_ids[], editorial body, last_reviewed
+
+GEAR ITEM (phase 8)
+  slug, name, category, brand, price_band, affiliate_url
+  specs{}, verdict, pros[], cons[], best_for, date_tested
+
+HARD RULES ON THE DATA
+- Slug registry bans numeric duplicate suffixes. playyourcourt has
+  martz-field-2, waldstein-park-2 and vista-ridge-2 live in production.
+  Collisions must be resolved with real disambiguation
+  (venue-name-neighbourhood), never with -2.
+- Nulls stay null. No zero-filling, ever.
+- date_checked is mandatory on every published fact.
+- Counts are never stored denormalised on the page; always computed.
+
+==========================================================================
+SECTION 10 - THE BUILD: PHASE BY PHASE (0 through 12)
+==========================================================================
+
+THE SHAPE OF THE WHOLE THING
+Phases 0-2 are foundation. Phase 3-6 build and prove ONE metro, then 50-100.
+Phase 7 is the proof checkpoint - you do not pass it until the template
+ranks. Phases 8-12 are scale and monetisation. The checkpoint at phase 7 is
+the single most important gate in this document, because skipping it is the
+exact mistake all three competitors made.
+
+--------------------------------------------------------------------------
+PHASE 0 - DECISIONS AND SKELETON (week 1)
+--------------------------------------------------------------------------
+GOAL: Nothing is built. Everything is decided and written down.
+DO:
+- Buy the domain. Prefer something that reads as a directory, not a brand
+  you will have to explain.
+- Stack: Next.js with static generation, server-rendered HTML, file-based
+  or lightweight DB content, deployed on a platform with instant rollback.
+  The only hard requirement is that pages render fully without JS.
+- Write decisions.md containing: the URL pattern from 8a Decision 1, the
+  five filter slugs, the word bands, the six quality gates verbatim, and a
+  line saying URLs are immutable after launch.
+- Create keyword-map.json with the page-type-to-keyword mapping from 6b.
+- Create the empty schema for the data model in Section 9.
+DONE WHEN: decisions.md exists, the repo builds an empty site, and the URL
+pattern is committed.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P0
+
+--------------------------------------------------------------------------
+PHASE 1 - DATA ACQUISITION (weeks 1-3) - YOUR REAL BOTTLENECK
+--------------------------------------------------------------------------
+GOAL: Complete, sourced data for 50-100 metros. Not partial. Complete.
+DO:
+- Pick the metro list first: population-weighted, spread across states, and
+  biased toward cities where the incumbents are visibly weak.
+- Source in this order: municipal parks department pages and PDFs (most
+  authoritative and free), state and city open-data portals, YMCA and rec
+  centre sites, club and league sites, then commercial scraping last.
+- For every venue capture: address, court count, surface, indoor/outdoor,
+  lights, fee type, hours, source_url, date_checked.
+- Anything you cannot source stays null. Do not fill gaps with guesses.
+- Track cost. Your sheet already flags the scraping budget as unmet, so
+  free municipal sources have to carry most of the load.
+DONE WHEN: 50-100 metros each have 3+ fully sourced venues, and every row
+has a source_url and a date_checked.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P1
+
+--------------------------------------------------------------------------
+PHASE 2 - DATA LAYER AND THE COUNT MODULE (week 3)
+--------------------------------------------------------------------------
+GOAL: One source of truth for every number on the site.
+DO:
+- Implement the Section 9 schema.
+- Implement getCounts(scope) returning venues, courts, indoor, free, lit.
+- Implement the slug registry with the numeric-suffix ban.
+- Implement the validator: null handling, required-field checks, count
+  cross-checks, duplicate-slug detection.
+- Write the build-time gate that fails on any keyword-map collision.
+DONE WHEN: the validator runs clean on the phase 1 dataset and getCounts()
+is the only path to a number.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P2
+
+--------------------------------------------------------------------------
+PHASE 3 - THE CITY TEMPLATE, BUILT ONCE, PROVEN ON ONE CITY (week 4)
+--------------------------------------------------------------------------
+GOAL: One city page so good you would link to it yourself.
+DO:
+- Build the 8c anatomy as a template.
+- Ship it for a single mid-size metro with strong data.
+- Run all six quality gates manually, then automate them.
+- Read the page out loud. If any paragraph sounds templated, fix Decision 3
+  compliance before continuing.
+DONE WHEN: one city page passes all six gates and reads like a person wrote
+it.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P3
+
+--------------------------------------------------------------------------
+PHASE 4 - HUBS: STATE, COUNTY, AND INTERNAL LINKING (week 5)
+--------------------------------------------------------------------------
+GOAL: The geographic skeleton, modelled on findswimmingholes' state pages.
+DO:
+- Build state pages at 3,000-5,000 words with Dataset schema.
+- Build county pages at 900-1,500 words.
+- Implement the internal linking rules: state links to all its cities,
+  city links up to county and state and across to nearby cities, venue
+  links up to city and across to three alternatives.
+- Generate the sitemap. Keep it bounded and honest - only published pages.
+DONE WHEN: every published page is reachable within three clicks of the
+homepage and the sitemap matches the published set exactly.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P4
+
+--------------------------------------------------------------------------
+PHASE 5 - VENUE PAGES AND THE FIVE FILTER PAGES (weeks 5-6)
+--------------------------------------------------------------------------
+GOAL: The long tail that Layer 3 keywords live on.
+DO:
+- Build the 8d venue anatomy. This is where the cheap wins are - remember
+  "winter haven tennis center" at 200/mo and "martz field" at 150/mo with
+  effectively zero competition.
+- Build the five filter templates: indoor, outdoor, free, public, lights.
+  Real URLs, real content, 600-1,000 words, ItemList schema, 3+ venue
+  threshold or the page does not exist.
+- Make sure every other facet is a noindex query parameter.
+DONE WHEN: venue and filter pages pass all six gates and the filter set is
+exactly five.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P5
+
+--------------------------------------------------------------------------
+PHASE 6 - TECHNICAL SEO AND SCHEMA (week 6)
+--------------------------------------------------------------------------
+GOAL: Beat every competitor on the technical layer, because none of them
+are trying.
+DO:
+- BreadcrumbList on every page. No competitor has it site-wide.
+- SportsActivityLocation or LocalBusiness on venues.
+- ItemList on city and filter pages. AggregateRating only where real.
+- Dataset on state pages.
+- FAQPage where the FAQ is real.
+- Core Web Vitals, image handling, canonical tags, robots.txt, XML sitemap
+  with lastmod driven by date_checked.
+- Run the JS-off check as a CI step, not a one-time test.
+DONE WHEN: schema validates clean site-wide and the JS-off check is in CI.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P6
+
+--------------------------------------------------------------------------
+PHASE 7 - THE PROOF CHECKPOINT (weeks 7-14) - DO NOT SKIP THIS
+--------------------------------------------------------------------------
+GOAL: Establish that the template ranks BEFORE you build thousands of pages.
+This is the phase all three competitors skipped, and it is why 20,000+ pages
+produce so little for two of them.
+DO:
+- Ship the 50-100 metros from phase 1. Nothing more.
+- Submit the sitemap. Wait. Do not add pages.
+- Track weekly: indexation rate, impressions and clicks per city page,
+  average position for "pickleball courts {city}", and traffic per page.
+- Fix the template based on what you learn. Republish the whole set.
+PASS CRITERIA - all three must be true before phase 8:
+  1. 80%+ of published city pages indexed
+  2. Median city page in the top 20 for its primary keyword
+  3. Traffic per page trending toward 1.0 and rising
+IF YOU FAIL: do not scale. Improve the template and wait another cycle.
+Scaling a template that does not rank just multiplies the problem by
+thousands. That is the entire PlayPickleball story.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P7
+
+--------------------------------------------------------------------------
+PHASE 8 - GEAR CONTENT: THE REVENUE ENGINE (weeks 10-16, parallel)
+--------------------------------------------------------------------------
+GOAL: Revenue, because courts alone do not pay.
+WHY HERE: Pickleheads' number one page is /pickleball-gear/pickleball-paddles
+at 8,212 visits/mo, and gear takes 5 of their top 12 pages. Courts drive
+retention; affiliate gear drives revenue. This was deferred in v2 and that
+was wrong.
+DO:
+- Build /pickleball-gear/{category}/ - paddles first, then balls, shoes,
+  nets, bags, apparel.
+- Paddles is the anchor. Beat 8,212 visits/mo by being more specific:
+  by skill level, by playing style, by budget band, by grip size.
+- Include real specs, real comparison tables, real verdicts, date_tested.
+- Affiliate disclosure on every page. Nofollow or sponsored on every
+  affiliate link.
+- Cross-link gear to courts and courts to gear - that is the retention loop.
+DONE WHEN: the paddles hub plus five category pages are live, each inside
+its word band, with real comparison data.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P8
+
+--------------------------------------------------------------------------
+PHASE 9 - SCALE THE PROVEN TEMPLATE (months 4-9)
+--------------------------------------------------------------------------
+GOAL: National coverage, using the template phase 7 proved.
+DO:
+- Expand in waves of 100-200 metros. Every wave passes all six gates.
+- Never lower the 3-venue threshold to increase page count. That is how you
+  end up with 5,750 dead city pages.
+- Re-run the validator and the JS-off check on every wave.
+- Watch traffic per page after each wave. If it drops, stop and fix before
+  the next wave.
+DONE WHEN: national city coverage exists and traffic per page is still
+holding above 1.5 and rising.
+>>> PROMPT FOR THIS PHASE: see the PROMPTS file, block P9
+
+--------------------------------------------------------------------------
+PHASE 10 - AUTHORITY AND LINKS THE HONEST WAY (ongoing from month 3)
+--------------------------------------------------------------------------
+GOAL: Real referring domains. Pickleheads has 5,423 real ones and Wikipedia
+links them 14 times. CourtSource has 1,345 purchased ones and it did
+nothing for them.
+DO:
+- Publish original data nobody else has: courts per capita by metro, growth
+  in court counts year over year, indoor availability by climate zone.
+  Data is what gets cited by NYT, Forbes and WebMD - that is exactly how
+  Pickleheads earned their profile.
+- Be the source parks departments and local news link to. Offer them a
+  correct, free listing.
+- Local news, local clubs, tourism boards, state pickleball associations.
+- Never buy a link. Never touch a PBN.
+NEVER: guest post farms, link exchanges, fiverr gigs, buybacklinks-type
+services. You now have direct evidence from two competitors that it does
+not work.
+
+--------------------------------------------------------------------------
+PHASE 11 - INTERNATIONAL (months 9-12)
+--------------------------------------------------------------------------
+GOAL: The market literally nobody is serving.
+WHY: Pickleheads' homepage renders "0 nearby courts, 0 local coaches" from a
+non-US IP. All three competitors are US-only. The /us/ segment in your URL
+pattern exists for exactly this moment.
+DO: Canada first, then Australia, then UK and New Zealand. Same template,
+same gates, localised spelling and units, hreflang implemented properly.
+Never geo-block or geo-degrade content.
+
+--------------------------------------------------------------------------
+PHASE 12 - COMMUNITY AND PRODUCT (months 12+)
+--------------------------------------------------------------------------
+GOAL: The retention layer that makes the directory a destination.
+WHY: Pickleheads has 5,387 user-created group pages. That is their moat.
+But they put games and groups behind a signup wall, so none of it ranks.
+DO: open play schedules, groups, leagues, court reviews, verification
+contributions.
+THE RULE THAT MATTERS: no signup wall on anything indexable. Let people read
+everything; ask for signup only to post or join.
+
+==========================================================================
+SECTION 11 - PROMPTS
+==========================================================================
+
+All prompts live in the companion file:
+
+    pickleball-directory-PROMPTS-v3.txt
+
+It contains the MASTER context prompt (paste this first, every session),
+phase prompts P0 through P9, and a quick prompt library A through J for
+recurring tasks. Several blocks ask you to paste a section from THIS file -
+the PROMPTS file has a lookup table at the top telling you exactly which.
+
+==========================================================================
+SECTION 12 - SEQUENCE, KPIS AND THE THINGS THAT KILL THIS PROJECT
+==========================================================================
+
+THE SEQUENCE ON ONE LINE
+Decide (P0) -> get complete data for 50-100 metros (P1) -> build one honest
+count layer (P2) -> prove one city page (P3) -> build the hubs (P4) -> build
+venues and five filters (P5) -> win the technical layer (P6) -> STOP AND
+PROVE IT RANKS (P7) -> add gear revenue (P8) -> only then scale (P9) ->
+earn real links (P10) -> go international (P11) -> build community (P12).
+
+KPIS, AND WHAT GOOD LOOKS LIKE
+Traffic per page            target 3.0+   (Pickleheads 3.0, PPB 1.7, CS 0.45)
+Single-URL dependency       under 15%     (CS 73%, PPB 28%, PH 6%)
+Indexation rate             80%+
+Median city page position   top 20 by end of phase 7
+Pages failing a gate        zero, always
+Real referring domains      slow and steady; zero purchased
+Non-US traffic share        above 0% by month 12, which beats all three
+
+MONTHLY REVIEW - FIVE QUESTIONS
+1. Did traffic per page go up or down?
+2. Is any single URL over 15% of traffic?
+3. Did anything ship that failed a gate?
+4. How many pages have a date_checked older than the cadence?
+5. Did we add a purchased link? (The answer must be no.)
+
+THE FIVE WAYS THIS PROJECT DIES
+1. Scaling before phase 7 passes. This is the most likely failure and the
+   one all three competitors committed.
+2. Lowering the 3-venue threshold to hit a page-count target.
+3. Letting counts drift out of getCounts() and shipping contradictions.
+4. Buying links because organic growth feels slow.
+5. Building only courts and never shipping gear, so there is no revenue and
+   the project runs out of runway before phase 9.
+
+THE ONE THING TO REMEMBER
+CourtSource earns 9,236 visits a month at DR 8 with a backlink profile made
+entirely of spam. They rank on page quality alone. That means you can too -
+and you can do it without the spam.
+
+==========================================================================
+END OF FILE 1 - STRATEGY
+Companion: pickleball-directory-PROMPTS-v3.txt
+==========================================================================
+
+
+
+
+
+
+
+
+
+
+V4
+PICKLEBALL COURT DIRECTORY - DATA ADDENDUM
+Version 3.1 | File 3 of 3
+Companions: pickleball-directory-STRATEGY-v3.txt
+            pickleball-directory-PROMPTS-v3.txt
+Brand/support entity: Deep Pickleball
+==========================================================================
+
+WHAT THIS FILE IS
+
+v3 was written assuming data was the bottleneck. It is not any more. You
+hold 18,038 venue rows with 33 fields. This file reconciles that dataset
+with the Section 9 data model, records the four fields you are missing and
+what breaks without them, adds the claim/verify layer your listing product
+needs, and replaces Phase 1.
+
+Nothing in this file overrides the ten rules, the six gates, the word bands
+or the locked URL pattern. It only tells you how your actual columns feed
+them.
+
+==========================================================================
+SECTION A - WHAT YOU NOW HAVE
+==========================================================================
+
+18,038 venues. 33 columns:
+
+slug, name, city, state, postal_code, street_address, total_courts,
+indoor_courts, outdoor_courts, surface, access_type, membership_from_usd,
+pricing_notes, pricing_details, rating, light, restroom, pro_shop,
+climate_control, covered, amenities, website, latitude, longitude, phone,
+hours_of_operation, venue_type, parking, level_of_play,
+court_availability, user_rating, review_count, claimed_or_verified
+
+Read that against the numbers in Section 5 of the strategy file. 18,038
+venues is a national-scale asset - roughly the same order as what the
+incumbents hold. It is NOT permission to publish 18,038 pages. The
+sequencing rule is unchanged: 50-100 metros, proven, then waves. The
+dataset simply means Phase 9 no longer needs a collection project behind
+it.
+
+==========================================================================
+SECTION B - COLUMN MAPPING TO THE SECTION 9 MODEL
+==========================================================================
+
+YOUR COLUMN            SECTION 9 FIELD          NOTES
+---------------------  -----------------------  -------------------------
+slug                   slug                     must pass the registry;
+                                                see Section D
+name                   name                     -
+city                   city                     -
+state                  state                    -
+postal_code            postal_code              -
+street_address         address_line             -
+total_courts           court_count              cross-check rule below
+indoor_courts          (new, court-level)       feeds getCounts
+outdoor_courts         (new, court-level)       feeds getCounts
+surface                surface                  controlled vocab needed
+access_type            fee_type                 see mapping in Section F
+membership_from_usd    (extends fee_notes)      currency-typed, not string
+pricing_notes          fee_notes                -
+pricing_details        (new)                    clarify vs pricing_notes
+rating                 rating_value             see Section E - two
+                                                rating fields is a
+                                                schema hazard
+light                  lights                   boolean, tri-state
+restroom               amenities[]              promote to boolean too
+pro_shop               amenities[]              -
+climate_control        (new)                    indoor quality signal
+covered                (new)                    NOT the same as indoor
+amenities              amenities[]              free-text -> vocab
+website                website                  -
+latitude               lat                      -
+longitude              lng                      -
+phone                  phone                    -
+hours_of_operation     hours                    must become structured
+venue_type             (new)                    drives /public/ filter
+parking                (new)                    feeds the parking slot
+level_of_play          (new)                    feeds "best for" section
+court_availability     (partly reservation_*)   clarify semantics
+user_rating            rating_value             pick ONE authority
+review_count           rating_count             -
+claimed_or_verified    SPLIT INTO TWO FIELDS    see Section D
+
+FIELDS IN THE MODEL YOU DO NOT HAVE - all four are gate-critical:
+
+  county          Gate: the URL pattern has
+                  /pickleball/us/{state}/{county}-county/. Without county
+                  you cannot build Phase 4 hubs at all. Backfillable from
+                  lat/lng or postal_code; see prompt [M].
+
+  source_url      Gate 6. Every published fact needs one, visible. No
+                  source_url means no publishable page, full stop.
+
+  date_checked    Gate 6 and the sitemap lastmod. Also drives prompt [F].
+
+  nets_provided   Not gate-critical, but it is in the venue fact panel
+                  (8d item 2) and it is the single most asked question
+                  about a public court.
+
+Also absent, lower priority: aliases[], country (default "us"),
+booking_url, reservation_required, verified_by, status.
+
+==========================================================================
+SECTION C - RULES 11 THROUGH 14 (additions to THE TEN RULES)
+==========================================================================
+
+11. CLAIMED IS NOT VERIFIED. An owner claim is an identity event. A
+    verification is a provenance event. They never share a field and a
+    claim never satisfies Gate 1 or Gate 6.
+
+12. EVERY IMPORTED ROW IS UNVERIFIED UNTIL IT HAS A source_url AND A
+    date_checked. Import status defaults to "pending", never "published".
+    18,038 rows of unsourced data is a liability, not an inventory.
+
+13. total_courts MUST EQUAL indoor_courts + outdoor_courts WHENEVER ALL
+    THREE ARE PRESENT. The build fails on mismatch. This is the
+    45-vs-46 CourtSource failure mode arriving through the front door.
+
+14. covered != indoor, AND climate_control != indoor. A covered outdoor
+    court is not year-round play in Minnesota. The /indoor/ filter uses
+    indoor only. Covered and climate_control are disclosed in the fact
+    panel and used in the "best when it rains" editorial section.
+
+==========================================================================
+SECTION D - THE CLAIM LAYER (new, because your product has one)
+==========================================================================
+
+Your claimed_or_verified column is doing two incompatible jobs. Split it:
+
+  claimed_by_owner        bool     an owner completed the claim flow
+  claim_date              date
+  claimed_by_contact      string   internal only, never rendered
+  data_verified           bool     derived: source_url AND date_checked
+                                   both present and inside cadence
+  verified_by             enum     municipal_source | owner_submission |
+                                   staff_check | user_report
+
+WHY THIS MATTERS MORE THAN IT LOOKS
+
+An owner-claimed listing is a source, and a good one - but it is an
+interested source. Treat it as verified_by = owner_submission with its own
+date, and render it honestly: "Confirmed by the venue, {date}" rather than
+the generic verified badge. If you let a claim flip data_verified to true,
+you have built a mechanism where anyone who claims a venue can write
+whatever court count they like into your headline number. That is Gate 5
+and Gate 6 failing simultaneously, silently, at scale.
+
+TRUST DISPLAY LADDER - render exactly one, highest applicable:
+  1. Verified from municipal source, {date_checked}
+  2. Confirmed by the venue, {claim_date}
+  3. Listed from public data, not yet verified   [help us verify this]
+  4. Not verified yet                            [help us verify this]
+
+RULE: a claimed listing gets no ranking, sorting or placement advantage
+over an unclaimed one. The moment claiming buys position, the directory is
+an ad product and the editorial promise is gone. Claiming buys the owner
+control of THEIR facts, a response channel, and nothing else.
+
+SUPPORT (Deep Pickleball): a real support route is a genuine competitive
+edge here - none of the three competitors offer a correction channel worth
+using. Every page carries the help-us-verify link required by Decision 6,
+and that link, the claim flow and support all resolve to one queue.
+Corrections received through it are inbound Gate 6 material, so log
+source, date and handler on every one.
+
+==========================================================================
+SECTION E - THE TWO RATING FIELDS
+==========================================================================
+
+You have rating, user_rating and review_count. Gate 3 allows
+AggregateRating ONLY where real ratings exist, and the strategy file bans
+fabricated review counts.
+
+Decide once, write it into decisions.md:
+
+  - If rating is a third-party aggregate (Google, Apple), it may NOT be
+    emitted as your AggregateRating. Attributing someone else's ratings to
+    your site is the fastest structured-data penalty available. Display it
+    with attribution, exclude it from schema.
+  - If user_rating and review_count are ratings collected on YOUR site,
+    those - and only those - go in AggregateRating, and only when
+    review_count is above a floor you set now (suggest 3).
+  - Both null -> emit no AggregateRating node. Not a zero, not an empty
+    object. No node.
+
+Until you have your own reviews, expect AggregateRating on almost no
+pages. That is the correct outcome, and it still beats all three
+competitors, who ship none.
+
+==========================================================================
+SECTION F - CONTROLLED VOCABULARIES YOU MUST FIX BEFORE IMPORT
+==========================================================================
+
+Free-text in these fields will break the filters and the validator.
+
+access_type -> you listed free | drop-in | fee-based. These are not the
+same axis. Drop-in describes FORMAT (turn up and play, no booking); free
+and fee-based describe PRICE. Split:
+
+  fee_type        free | paid | member | donation | unknown
+  play_format     drop_in | reservation | league_only | mixed | unknown
+
+The /free/ filter reads fee_type = free ONLY. A drop-in session with a $5
+door fee is not free, and putting it on the free page is the kind of small
+lie that costs you the trust the whole directory is built on.
+
+venue_type -> drives /public/. Suggested closed set:
+  public_park | municipal_rec | school | college | ymca | private_club |
+  hoa | church | resort | commercial | other
+The /public/ filter reads public_park, municipal_rec and school-with-
+public-access only. Not "free", not "unlocked gate".
+
+surface -> asphalt | concrete | acrylic_cushion | post_tension_concrete |
+  sport_tile | wood | synthetic | other | unknown
+
+light, restroom, pro_shop, climate_control, covered, nets_provided ->
+tri-state: true | false | null. Null renders "Not verified yet" per
+Decision 6. Never coerce null to false; "no lights" and "we don't know
+about lights" are different claims and one of them is a lie.
+
+court_availability and level_of_play and parking -> tell me what values
+actually appear in your data before I write vocabularies for these. I am
+not going to guess at what your rows contain.
+
+==========================================================================
+SECTION G - getCounts(scope), REVISED FOR YOUR SCHEMA
+==========================================================================
+
+Decision 2 stands unchanged: one module, no page computes its own number.
+Your columns let it return more, and the split between venue-level and
+court-level counts must be explicit or your titles will contradict your
+tables.
+
+getCounts(scope) returns:
+  venues                 count of published venues in scope
+  courts                 SUM(total_courts) where verified
+  indoor_courts          SUM(indoor_courts)
+  outdoor_courts         SUM(outdoor_courts)
+  venues_indoor          venues with indoor_courts > 0
+  venues_outdoor         venues with outdoor_courts > 0
+  venues_free            venues with fee_type = free
+  venues_lit             venues with light = true
+  venues_covered         venues with covered = true
+  venues_climate         venues with climate_control = true
+  venues_unverified      published venues lacking full verification
+
+Two hard rules on top:
+  - A count NEVER silently includes rows where the underlying field is
+    null. getCounts returns the count AND the denominator it was drawn
+    from, so the page can say "12 of 15 venues report lighting" instead
+    of implying 3 venues are unlit.
+  - venues_unverified is rendered, not hidden. Publishing your own gap
+    count is the trust move none of the competitors will make.
+
+Title formulas in Section 6c say "{N} Verified Locations". With this
+dataset, N is the VERIFIED venue count, not the imported row count. If a
+city has 22 rows and 6 verified, the title says 6. Never 22.
+
+==========================================================================
+SECTION H - P1-R: REPLACES PROMPT BLOCK P1
+==========================================================================
+
+Use this instead of P1. P1 assumed you had no data.
+
+"""
+Phase 1, revised. I have an existing dataset of 18,038 pickleball venues
+with these columns: [paste column list]. Do not collect new data yet.
+Build me the import and triage pipeline.
+
+Deliver:
+
+1. An import mapper from my columns to the Section 9 data model, using the
+   mapping table in the DATA ADDENDUM. Every unmapped column is either
+   added to the model with a written definition or explicitly dropped with
+   a reason. Nothing is silently discarded.
+
+2. A data quality report over all 18,038 rows covering: null rate per
+   field, rows where total_courts != indoor_courts + outdoor_courts, rows
+   with zero-looking values that are probably nulls, duplicate slug
+   candidates, duplicate venue candidates by name-and-proximity, rows with
+   missing or implausible lat/lng, states and cities with suspicious
+   spellings, and free-text values in the fields that need controlled
+   vocabularies.
+
+3. County backfill for every row, from lat/lng or postal_code, with the
+   method and its confidence recorded per row. Flag every low-confidence
+   result for manual review. County is not optional - the URL pattern
+   depends on it.
+
+4. A city-level triage table: venues per city, verified venues per city,
+   and which cities clear the 3-verified-venue threshold. Sort by
+   publishable venue count. Then tell me how many cities I can actually
+   publish today, and how many are gated only by missing source_url and
+   date_checked rather than by missing venues.
+
+5. A verification work queue: the 50-100 metros with the strongest data,
+   ordered so that the smallest amount of source-URL work unlocks the
+   largest number of publishable pages. This is my Phase 3 to 7 set.
+
+Hard rules: every row imports as status=pending. A row becomes publishable
+only when it has a verified address, a verified court count, a source_url
+and a date_checked. Nulls stay null - never zero-fill, never infer. Do not
+invent a source_url for any row, ever. If my data has no provenance, say
+so plainly and tell me how much of it that affects.
+"""
+
+==========================================================================
+SECTION I - THE HONEST PROBLEM WITH 18,038 UNSOURCED ROWS
+==========================================================================
+
+Rule 7 and Gate 6 require a source_url and a date_checked on every
+published fact, both visible. Your column list has neither. So unless
+provenance exists somewhere outside the CSV, today's publishable page
+count is zero.
+
+That is not a reason to weaken the rule. It is the rule doing its job. The
+whole thesis in Section 12 of the strategy file is that CourtSource earns
+9,236 visits a month on page quality alone at DR 8, and the specific
+quality you are selling is that your numbers are traceable. Drop the
+source requirement and you are PlayPickleball with better columns.
+
+The realistic path: the dataset is a superb SKELETON. It tells you where
+the venues are, so verification becomes confirmation rather than
+discovery, which is perhaps ten times faster than P1's original workflow.
+Point the P1-R work queue at 50-100 metros, attach municipal source URLs
+to those rows only, and let the remaining 17,000-odd rows sit at
+status=pending, unpublished and unindexed, until the Phase 9 waves reach
+them. They cost nothing while they wait.
+
+If provenance DOES exist - if these rows came from a named source with a
+date - tell me what it was, because that changes the timeline
+dramatically. A single documented bulk source with a capture date is
+legitimately citable as source_url plus date_checked, provided you
+disclose it as a bulk source rather than dressing it up as a per-venue
+municipal check.
+
+==========================================================================
+SECTION J - FILTER PAGES, MAPPED TO YOUR ACTUAL FIELDS
+==========================================================================
+
+Still exactly five per city (Decision 4), still 3+ matching venues or the
+page does not exist.
+
+  /indoor/    indoor_courts > 0. Not covered, not climate_control.
+  /outdoor/   outdoor_courts > 0
+  /free/      fee_type = free. Excludes drop-in-with-fee and
+              membership_from_usd > 0.
+  /public/    venue_type in the public set from Section F
+  /lights/    light = true
+
+Everything else stays a noindex query parameter, and your new columns add
+tempting candidates - surface, climate_control, covered, pro_shop,
+restroom, level_of_play, court_availability, parking, venue_type,
+price band. All of them are parameters. Five is the whole list. Adding a
+sixth means deleting one.
+
+The one I would argue about: climate_control has real search intent in hot
+states, and covered has real intent in wet ones. Neither earns a sixth
+slot. Serve both inside the /indoor/ page's intro and the city page's
+"best when it rains" section.
+
+==========================================================================
+SECTION K - ADDITIONS TO THE MASTER CONTEXT PROMPT
+==========================================================================
+
+Append this to the MASTER block so every session knows about the data.
+
+"""
+DATA CONTEXT: I hold 18,038 imported venue rows. Additional rules:
+
+- An imported row is not a publishable venue. status=pending until it has
+  a verified address, a verified court count, a source_url and a
+  date_checked.
+- claimed_by_owner and data_verified are separate fields. An owner claim
+  never satisfies a verification gate and never buys ranking, sorting or
+  placement advantage.
+- total_courts must equal indoor_courts + outdoor_courts when all three
+  are present. Fail the build otherwise.
+- covered and climate_control are never treated as indoor.
+- Tri-state booleans only. Never coerce a null to false.
+- Third-party ratings are displayed with attribution and excluded from
+  AggregateRating. Only ratings collected on my own site may be emitted,
+  and only above a review_count floor of 3.
+- Counts in titles are verified counts, never imported row counts.
+- If I ask you to publish pages from unsourced rows to hit a page count,
+  refuse and remind me that traceable numbers are the entire product
+  differentiator.
+"""
+
+==========================================================================
+SECTION L - NEW QUICK PROMPTS
+==========================================================================
+
+[K] PROCESS AN OWNER CLAIM
+"""
+An owner has claimed {Venue}. Show me every field they are changing,
+old value against new value, and flag any change that alters a number
+feeding getCounts(). Set verified_by=owner_submission and claim_date, but
+do not set data_verified. Regenerate the venue page, re-run the six gates,
+and confirm the trust badge renders as venue-confirmed rather than
+source-verified. List anything they submitted that I should independently
+check before it goes live.
+"""
+
+[L] BACKFILL A MISSING FIELD ACROSS THE DATASET
+"""
+Field {field} is null on {N} rows. Group the nulls by city and sort by
+projected page value so I fix the highest-leverage gaps first. For each
+group tell me the cheapest legitimate source, and where no free source
+exists, say so instead of proposing an inference. Never write a value you
+cannot cite.
+"""
+
+[M] COUNTY BACKFILL AND AUDIT
+"""
+Derive county for every row from lat/lng, falling back to postal_code.
+Record the method and a confidence score per row. List every county that
+would clear the 3-verified-venue threshold, every low-confidence
+assignment for manual review, and every row where the derived county
+conflicts with the stated city.
+"""
+
+==========================================================================
+SECTION M - REVISED SEQUENCE ON ONE LINE
+==========================================================================
+
+Decide (P0) -> IMPORT AND TRIAGE THE 18,038 (P1-R) -> backfill county (M)
+-> one honest count layer (P2) -> verify the top 50-100 metros only ->
+prove one city page (P3) -> hubs (P4) -> venues and five filters (P5) ->
+technical layer (P6) -> STOP AND PROVE IT RANKS (P7) -> gear revenue (P8)
+-> claim flow live (K) -> only then scale into the pending rows in waves
+(P9) -> real links (P10) -> international (P11) -> community (P12).
+
+==========================================================================
+END OF FILE 3 - DATA ADDENDUM
+==========================================================================
+
+Four things I need from you before this is executable, and I've deliberately not guessed at any of them. First, provenance: where did the 18,038 rows come from, and is there a capture date? That single answer decides whether your publishable count today is zero or several hundred cities. Second, rating versus user_rating — which one is third-party and which is yours? Third, what pricing_notes holds that pricing_details doesn't, since right now they look like the same field twice. Fourth, the actual distinct values in court_availability, level_of_play and parking, so I can write real vocabularies rather than inventing plausible-looking ones.
+
+One flag on your own stated plan: you described the claim flow as making a listing "become true" once the owner claims it. That conflicts with rule 7 and Gate 6, so I've written it as a separate trust tier rather than a verification. An owner confirming their own court count is useful and worth displaying prominently, but if a claim can flip your verified flag, then your headline verified count becomes whatever venue owners type in — and that number is the entire promise the directory rests on.
+
+can you now give me a version 4 for my prompts and strategy.txt
+
+Here are both files, v4, with the addendum folded in rather than bolted on. The main structural change: page gates and data gates are now separate things, because your bottleneck moved from "do I have venues" to "can I prove anything about them."
+
+==========================================================================
+PICKLEBALL COURT DIRECTORY - STRATEGY & BUILD PLAN
+Version 4 | File 1 of 2 (companion: pickleball-directory-PROMPTS-v4.txt)
+Project entity / support brand: Deep Pickleball
+==========================================================================
+
+WHAT THIS FILE IS
+
+The strategy, the research behind it, and the phase-by-phase build. Read
+this to understand WHAT to build and WHY. Open the PROMPTS file when you
+are ready to execute a phase. Every phase points to a prompt block.
+
+WHAT CHANGED AT V4, IN ONE LINE
+
+v3 was written when data acquisition was the bottleneck. It no longer is -
+18,038 venue rows exist. The bottleneck is now PROVENANCE, and the whole
+plan reorganises around that single fact.
+
+SOURCES BEHIND THIS PLAN
+
+- Niche-criteria and competitive-analysis sheet (Niche ID 5, pickleball)
+- Ahrefs Keywords Explorer, "pickleball", US
+- Six competitor keyword exports: playpickleball, courtsource, pickleheads,
+  pickleball-courts.net, whatyoudink, playyourcourt
+- Structural teardown of findswimmingholes.com (1,267 URLs, Next.js)
+- Competitor teardown: traffic, DR, backlinks, page counts
+- NEW IN V4: the 18,038-row, 33-column venue dataset
+
+==========================================================================
+SECTION 1 - CHANGELOG: WHAT CHANGED IN V4 AND WHY
+==========================================================================
+
+1. THE DATASET ARRIVED, AND IT MOVES THE BOTTLENECK.
+   18,038 venues, 33 columns. Section 3 of v3 flagged data cost as the one
+   unmet criterion. That is resolved. But the dataset has no source_url and
+   no date_checked column, which means Rule 7 and Gate 6 currently block
+   every single row from publishing. The constraint did not disappear; it
+   moved one step downstream, from "find venues" to "prove venues". That is
+   a far better problem, because confirmation is roughly ten times faster
+   than discovery.
+
+2. PHASE 1 IS REWRITTEN. ACQUISITION BECOMES IMPORT, TRIAGE, VERIFY.
+   Prompt P1 in v3 built a collection workflow. P1 in v4 builds an import
+   mapper, a data-quality report, a county backfill and a verification work
+   queue ordered by leverage. New block P1B runs the verification sprint.
+
+3. DATA GATES ARE NOW SEPARATE FROM PAGE GATES.
+   v3 had six quality gates, all of which fire at page-build time. With
+   18,038 imported rows there needs to be an earlier checkpoint, at the
+   row. Four IMPORT GATES now sit in front of the six page gates. See 8b.
+   The six page gates are UNCHANGED and remain verbatim-immutable.
+
+4. CLAIMED IS NOT VERIFIED. NEW DECISION 7.
+   The listing product means owners will claim venues. A claim is an
+   identity event; a verification is a provenance event. They never share a
+   field. If a claim can flip the verified flag, then the headline verified
+   count - the entire value proposition, exactly as findswimmingholes uses
+   "1,216 Verified Places" - becomes whatever venue owners type in.
+
+5. VERIFIED COUNTS ONLY IN TITLES. NEW DECISION 8.
+   A city with 22 imported rows and 6 verified venues has a title that says
+   6. The imported row count never appears anywhere a user or crawler can
+   see it. Holding 18,038 rows creates constant pressure to publish the
+   bigger number, which is precisely how PlayPickleball ended up with 5,750
+   dead city pages.
+
+6. COVERED AND CLIMATE-CONTROLLED ARE NOT INDOOR.
+   The dataset distinguishes indoor_courts, covered and climate_control.
+   Only indoor_courts drives the /indoor/ filter. A covered outdoor court
+   is not year-round play in a cold state, and saying otherwise is the kind
+   of small inaccuracy that destroys the trust the directory sells.
+
+7. ACCESS TYPE SPLITS INTO TWO AXES.
+   The source column mixes free, drop-in and fee-based. Free versus paid is
+   PRICE. Drop-in versus reservation is FORMAT. Split into fee_type and
+   play_format. The /free/ filter reads fee_type only - a drop-in session
+   with a door fee is not free.
+
+8. TWO RATING FIELDS FORCE AN AGGREGATERATING DECISION.
+   rating and user_rating cannot both be authoritative. Third-party ratings
+   display with attribution and are excluded from schema. Only ratings
+   collected on our own site may be emitted, above a review_count floor.
+   Expect almost no AggregateRating markup at launch. That is correct, and
+   it still beats three competitors who ship none.
+
+9. getCounts() RETURNS DENOMINATORS, NOT JUST NUMERATORS.
+   With this much null-bearing data, "3 venues have lights" implies the
+   rest do not. The module now returns the population each count was drawn
+   from, so pages can say "12 of 15 venues report lighting". It also
+   returns venues_unverified, and that number is rendered, not hidden.
+
+10. COUNTY IS A BLOCKING GAP, NOT A NICE-TO-HAVE.
+   The locked URL pattern contains a county level. The dataset has no
+   county column. It must be derived from lat/lng with postal_code
+   fallback, with per-row confidence, before Phase 4 can exist at all.
+
+11. THE CORRECTION CHANNEL IS A COMPETITIVE EDGE, NOT OVERHEAD.
+   None of the three competitors offer a correction route worth using. The
+   Decision 6 help-us-verify link, the owner claim flow and Deep Pickleball
+   support all resolve to one queue, and every item in it is inbound Gate 6
+   material with a source and a date attached.
+
+12. EVERYTHING ELSE FROM V3 STANDS.
+   The Wichita correction, the URL pattern, the five filters, the word
+   bands, the sequencing rule, the six page gates, the no-bought-links
+   rule, gear as the revenue layer. None of it is reopened by having data.
+
+==========================================================================
+SECTION 2 - ONE-PAGE SUMMARY
+==========================================================================
+
+THE OPPORTUNITY
+
+Pickleball court search is large, growing, evergreen and location-based,
+and the incumbents are beatable for documented reasons:
+
+- CourtSource does ~9,236 US visits/mo at DR 8 on an entirely spam backlink
+  profile. They rank on page quality alone, which means so can you.
+- PlayPickleball has 25,245 pages at 1.7 visits per page. Volume, no
+  quality, and it fails the JavaScript-off test.
+- Pickleheads is genuinely strong but 404s pages worth 1,475 and 463
+  visits/mo, runs 656-word court pages, ships no BreadcrumbList,
+  AggregateRating or Dataset schema, walls games and groups behind signup,
+  and shows "0 nearby courts" to non-US visitors.
+- Nobody serves non-US markets, and nobody offers a usable correction
+  channel.
+
+THE STRATEGY IN ONE SENTENCE
+
+Verify a small set of metros to a standard none of them meet, prove the
+template ranks, then release the rest of the 18,038 rows in gated waves -
+and monetise with affiliate gear, not display ads.
+
+THE FOUR NUMBERS THAT MATTER
+
+- Traffic per page: target 3.0+ (Pickleheads 3.0, PPB 1.7, CS 0.45)
+- Single-URL dependency: ceiling 15% (CS 73%, PPB 28%, PH 6%)
+- Verified venues per city page: minimum 3, or the page does not exist
+- Verified share of published rows: 100%. Pending rows are not published.
+
+THE NON-NEGOTIABLES
+
+- Full content in raw HTML with JavaScript disabled
+- Never buy a link
+- Never publish a number without a visible source_url and date_checked
+- Never render a null as 0 or "N/A" - render an honest gap with a
+  help-us-verify link
+- Never let an owner claim satisfy a verification gate
+- Never put an imported row count where a verified count belongs
+- No signup wall on anything indexable
+
+==========================================================================
+SECTION 3 - NICHE VALIDATION AGAINST YOUR OWN CRITERIA
+==========================================================================
+
+CRITERION                    TARGET         PICKLEBALL           VERDICT
+US search volume             min 100k       very high            PASS
+Keyword difficulty           KD 0-20        0-20 on city and
+                                            near-me tail         PASS
+Competitor age               over 6 months  all 2+ years         PASS
+Directory on Google page 1   required       all three rank       PASS
+Competitor DR                under 50       CourtSource 8,
+                                            Pickleheads 73       PARTIAL
+Competitor organic traffic   min 10k        9.2k - 134k          PASS
+Quality backlinks            required       CourtSource has
+                                            none and ranks       PASS
+Google Ads potential         min $500/mo    gear, coaching,
+                                            travel               PASS
+Data cost                    max $200       18,038 rows held     RESOLVED
+Evergreen, non-seasonal      required       evergreen, spring
+                                            and summer lift      PASS
+Location based               required       yes                  PASS
+Keyword includes city        required       yes                  PASS
+"Near me" volume             30k-100k       ~85k                 PASS
+Tier 1 countries             required       US/CA/AU/UK/NZ       PASS
+Update cadence               6 months       courts change slowly PASS
+
+THREE HONEST FLAGS
+
+1. DR 73. Pickleheads breaks the under-50 rule. Proceed anyway, because
+   CourtSource proves city SERPs are winnable at DR 8. Year one fights
+   CourtSource and PlayPickleball for city terms, not Pickleheads for brand
+   and gear terms.
+
+2. Data cost is resolved; data PROVENANCE is not. The 33 columns contain no
+   source_url and no date_checked. Until that is fixed per row, the
+   publishable page count is zero. This is now the project's critical path.
+
+3. Holding 18,038 rows is a psychological risk as much as a technical one.
+   Every competitor failure mode in Section 4 comes from publishing more
+   than could be stood behind. The dataset makes that failure one config
+   change away, permanently.
+
+==========================================================================
+SECTION 4 - COMPETITOR TEARDOWN
+==========================================================================
+
+--------------------------------------------------------------------------
+4a. PICKLEHEADS - THE PRODUCT TEMPLATE
+--------------------------------------------------------------------------
+DR 73 | ~134,000 US visits/mo | 18,879 keywords | 5,423 real referring
+domains | 44,322 pages | 3.0 visits per page | 6% single-URL dependency
+
+WHY THEY WIN
+- Editorially earned links: 14 Wikipedia citations, plus NYT, Forbes,
+  WebMD and Apple. Unbuyable. You have to be the reference source.
+- A real product, not just pages: 5,387 user-created group pages. Courts
+  acquire, community retains.
+- Revenue from gear: /pickleball-gear/pickleball-paddles at 8,212
+  visits/mo, and gear takes 5 of their top 12 pages.
+- Copy reads human. Sentences templated, paragraphs not.
+
+EXPLOITABLE WEAKNESSES - YOUR ENTRY LIST
+- /courts/kansas/wichita hard 404s while pulling 1,475 visits/mo
+- a /United path 404s while pulling 463 visits/mo
+- No BreadcrumbList, no AggregateRating, no Dataset schema anywhere
+- Court pages average 656 words
+- Games and groups behind a signup wall, so that content cannot rank
+- Non-US IPs see "0 nearby courts, 0 local coaches"
+- No visible provenance on any fact, and no correction channel
+
+--------------------------------------------------------------------------
+4b. PLAYPICKLEBALL - THE SEO TEMPLATE AND THE CAUTIONARY TALE
+--------------------------------------------------------------------------
+25,245 pages | ~43,000 US visits/mo | 1.7 visits per page | 28%
+single-URL dependency | 5,751 city pages, ~5,750 producing almost nothing
+
+COPY: their URL and page architecture. Clean state/city/venue hierarchy,
+predictable slugs, sensible cross-level linking.
+
+NEVER COPY: scaling to 25,245 pages before proving one city converted, and
+failing the JavaScript-disabled test. They are the only one of the three
+that fails it.
+
+READ THE WICHITA NUMBER CORRECTLY: both PlayPickleball and Pickleheads show
+a Wichita page ranking for "pickleball courts near me". Two unrelated sites,
+same city, is an Ahrefs location-sampling artifact. "Near me" is localised
+per searcher, so the ~85,000/mo is spread across the country. Build a
+many-good-cities strategy, never a Wichita strategy, never a single
+near-me landing page.
+
+--------------------------------------------------------------------------
+4c. COURTSOURCE - PROOF THAT PAGE QUALITY ALONE RANKS
+--------------------------------------------------------------------------
+DR 8 | ~9,236 US visits/mo | 1,345 referring domains, effectively all
+spam | 0.45 visits per page | 73% single-URL dependency
+
+Their profile is buybacklinks.agency, fiverr gigs and zero-traffic PBNs,
+and it contributes nothing. They rank on page quality alone at DR 8. The
+conclusion is the opposite of "buy links".
+
+RIGHT: the only competitor shipping schema on city pages.
+WRONG: two pages on the same city claiming 45 vs 46 venues and 185 vs 187
+courts; descriptions that read like raw AI notes; 73% of traffic on one URL.
+
+--------------------------------------------------------------------------
+4d. THE THREE SMALLER SITES - NEGATIVE EXAMPLES
+--------------------------------------------------------------------------
+pickleball-courts.net   Thin templated city pages. The floor.
+whatyoudink             343 referring domains, ~1 visit/mo. Links without
+                        content do nothing.
+playyourcourt           martz-field-2, waldstein-park-2 and vista-ridge-2
+                        live in production. Numeric duplicate suffixes are
+                        a visible data-integrity failure. Ban them.
+
+==========================================================================
+SECTION 5 - COMPARISON MATRIX
+==========================================================================
+
+METRIC                   PICKLEHEADS PLAYPICKLEBALL COURTSOURCE YOUR TARGET
+Domain Rating            73          mid            8           grow slowly
+US traffic / mo          ~134,000    ~43,000        ~9,236      -
+Organic keywords         18,879      -              -           -
+Referring domains        5,423 real  -              1,345 junk  real only
+Indexed pages            44,322      25,245         ~20,000     few, then
+                                                                many
+Traffic per page         3.0         1.7            0.45        3.0+
+Single-URL dependency    6%          28%            73%         under 15%
+Renders without JS       yes         NO             yes         yes, always
+City-page schema         no          no             yes         yes, plus
+BreadcrumbList           no          no             partial     yes
+AggregateRating          no          no             no          only if real
+Dataset schema           no          no             no          yes
+Court page words         656         thin           thin        700-1,200
+Signup wall on content   yes         no             no          never
+Serves non-US            no          no             no          phase 11
+Count consistency        ok          ok             BROKEN      one query
+Visible source per fact  no          no             no          YES - v4
+Visible date_checked     no          no             no          YES - v4
+Owner claim flow         partial     no             no          YES - v4
+Public correction route  no          no             no          YES - v4
+
+HOW TO READ THIS TABLE
+
+The bottom four rows are new in v4 and they are the widest open gap on the
+board. Pickleheads has authority and a product but neglects technical SEO
+and walls content. PlayPickleball has architecture and nothing else.
+CourtSource has neither authority nor internal consistency and still earns
+9,236 visits a month, which tells you how low the bar is on city pages.
+Not one of the three shows a user where a fact came from or when it was
+checked. That is the product you are selling, and the 18,038-row dataset is
+only an asset to the extent you can answer those two questions per row.
+
+==========================================================================
+SECTION 6 - KEYWORD ARCHITECTURE AND THE SEO PLAN
+==========================================================================
+
+--------------------------------------------------------------------------
+6a. THE FIVE KEYWORD LAYERS
+--------------------------------------------------------------------------
+
+LAYER 1 - THE LOCALISED HEAD TERM
+"pickleball courts near me" and variants, ~85,000/mo nationally. Never
+target with one page. It resolves differently for every searcher. You win
+slices by having a strong page per city.
+
+LAYER 2 - CITY TERMS (bread and butter)
+  pickleball courts {city}
+  pickleball courts in {city}
+  pickleball {city} {state-abbrev}
+  indoor pickleball courts {city}
+  free pickleball courts {city}
+  public pickleball courts {city}
+Volume 50 to several thousand per city, KD typically 0-15. One city page
+per metro plus up to five indexable filter pages.
+
+LAYER 3 - VENUE NAME TERMS (the cheapest wins, and now your biggest asset)
+Real examples with monthly volume:
+  winter haven tennis center   200
+  martz field                  150
+  pickleball courts jacksonville fl  150
+  winter haven tennis courts   100
+  waldstein park brookline      50
+  erie tennis courts            50
+Each tiny, tens of thousands of them, KD effectively zero because the only
+competition is the venue's own thin page or nothing. THIS is what 18,038
+rows is really worth - it is a map of Layer 3 at national scale. It is also
+the layer where publishing unverified rows does the most damage, because a
+venue-name page with a wrong court count is seen by the people who know
+the venue best.
+
+LAYER 4 - COUNTY AND STATE TERMS
+  pickleball courts in {state}
+  pickleball courts {county} county
+Lower volume, but these hubs pass internal equity down and rank for broad
+research queries. Blocked until county backfill completes.
+
+LAYER 5 - GEAR AND INFORMATIONAL (the money layer)
+  best pickleball paddles / pickleball paddles for beginners /
+  pickleball rules / how to play pickleball / pickleball court dimensions /
+  pickleball vs tennis
+Pickleheads' top page is paddles at 8,212 visits/mo and gear takes 5 of
+their top 12. Courts retain, gear pays. Ships in Phase 8, planned from
+day one.
+
+--------------------------------------------------------------------------
+6b. ONE PRIMARY KEYWORD PER URL - ENFORCED AT BUILD TIME
+--------------------------------------------------------------------------
+keyword-map.json maps every page type to exactly one primary keyword and up
+to three secondaries. The build fails if two URLs claim the same primary.
+This one rule prevents the cannibalisation strangling PlayPickleball's
+5,751 city pages - and with 18,038 rows behind you, collision risk is
+higher, not lower.
+
+--------------------------------------------------------------------------
+6c. TITLE AND META FORMULAS
+--------------------------------------------------------------------------
+City page
+  Title: Pickleball Courts in {City}, {ST} - {N} Verified Locations ({Year})
+  Meta:  Find all {N} pickleball courts in {City}, {ST}. Indoor and
+         outdoor, free and paid, with hours, surface type and lighting.
+         Updated {Month Year}.
+Venue page
+  Title: {Venue Name} - Pickleball Courts in {City}, {ST}
+  Meta:  {N} pickleball courts at {Venue Name} in {City}. {Surface},
+         {indoor/outdoor}, {lights/no lights}. Hours, fees and directions.
+Filter page
+  Title: Indoor Pickleball Courts in {City}, {ST} - {N} Locations
+  Meta:  {N} indoor pickleball courts in {City}, {ST}. Play year-round.
+         Hours, fees and booking details for each facility.
+County page
+  Title: Pickleball Courts in {County} County, {ST} - {N} Locations
+State page
+  Title: Pickleball Courts in {State} - {N} Locations Across {M} Cities
+
+RULES
+- {N} IS ALWAYS THE VERIFIED COUNT FROM getCounts(). Never the imported row
+  count. New in v4 and non-negotiable.
+- Year token only where content is genuinely refreshed annually.
+- Never exceed 60 characters after substitution; the build warns.
+- Title counts and body counts come from the same module.
+
+--------------------------------------------------------------------------
+6d. WHAT NOT TO DO
+--------------------------------------------------------------------------
+- No city page under 3 VERIFIED venues. Imported rows do not count.
+- No filter page unless 3+ verified venues match that filter.
+- No bought links, no guest-post farms, no PBNs. CourtSource: 1,345 spam
+  domains, 9,236 visits. whatyoudink: 343 domains, 1 visit. Correlation
+  zero.
+- No landing page for "pickleball courts near me".
+- No sixth indexable filter, however tempting the new columns are.
+
+==========================================================================
+SECTION 7 - THE FINDSWIMMINGHOLES MODEL
+==========================================================================
+
+WHAT THE TEARDOWN SHOWED
+- 1,267 sitemap URLs - deliberately bounded, not sprawling
+- Next.js, server-rendered, content present with JS disabled
+- Homepage leads with a hard verified count ("1,216 Verified Places to
+  Swim") - the number IS the value proposition
+- State pages substantial; one measured 7,131 words
+- Listing pages ~1,784 words with TouristAttraction and BreadcrumbList
+- Clean hierarchy: home -> state -> region/county -> place
+- Heavy deliberate internal linking between geographic levels
+- Editorial voice everywhere; nothing reads auto-generated
+
+THE SEVEN THINGS TO COPY
+1. Bounded scope. 1,267
