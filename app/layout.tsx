@@ -99,8 +99,41 @@ export default function RootLayout({children}: {children: ReactNode}) {
               <span className="dot" aria-hidden="true" />
               Deep Pickleball
             </a>
+            {/*
+              A <details> disclosure, not a scripted dropdown. Rule 1 says
+              every page renders and works with JavaScript off, and Gate 2
+              checks it — so the menu has to be HTML that opens by itself.
+              <details> also gets keyboard support and the right ARIA for
+              free, which a div-and-CSS :hover menu does not, and :hover
+              menus are unusable on touch.
+
+              Every link stays in the markup while the menu is shut, so the
+              crawl report still sees the whole site three clicks from home.
+            */}
             <nav className="site-nav" aria-label="Main">
-              {navView().map(n => (
+              <details className="nav-menu">
+                <summary>Browse</summary>
+                <div className="nav-panel">
+                  {navView().groups.map(g => (
+                    <section key={g.state}>
+                      <h2>
+                        {g.href ? <a href={g.href}>{g.label}</a> : g.label}
+                      </h2>
+                      <ul>
+                        {g.cities.map(c => (
+                          <li key={c.href}><a href={c.href}>{c.label}</a></li>
+                        ))}
+                      </ul>
+                      <ul className="nav-counties">
+                        {g.counties.map(c => (
+                          <li key={c.href}><a href={c.href}>{c.label}</a></li>
+                        ))}
+                      </ul>
+                    </section>
+                  ))}
+                </div>
+              </details>
+              {navView().links.map(n => (
                 <a key={n.href} href={n.href}>{n.label}</a>
               ))}
             </nav>

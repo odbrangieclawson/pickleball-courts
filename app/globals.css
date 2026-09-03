@@ -269,6 +269,115 @@ main { display: block; }
 }
 .site-nav a:hover { color: var(--accent-ink); border-bottom-color: var(--accent); }
 
+/*
+  THE BROWSE MENU.
+
+  A <details> disclosure — no JavaScript, per Rule 1. The old nav was one
+  flat row of every published page and wrapped mid-phrase ("KING / COUNTY")
+  by the fifth city, so nothing here is allowed to wrap.
+*/
+.site-nav a,
+.site-nav summary { white-space: nowrap; }
+
+.nav-menu { position: relative; }
+
+.nav-menu > summary {
+  cursor: pointer;
+  color: var(--ink-2);
+  padding: 12px 0;                 /* same 44px target as the links */
+  border-bottom: 2px solid transparent;
+  list-style: none;                /* the default triangle sits badly here */
+  user-select: none;
+}
+.nav-menu > summary::-webkit-details-marker { display: none; }
+.nav-menu > summary::after {
+  content: "";
+  display: inline-block;
+  width: .42em; height: .42em;
+  margin-left: .55em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-.15em) rotate(45deg);
+  transition: transform .18s ease;
+}
+.nav-menu[open] > summary::after { transform: translateY(.05em) rotate(-135deg); }
+.nav-menu > summary:hover,
+.nav-menu[open] > summary { color: var(--accent-ink); border-bottom-color: var(--accent); }
+.nav-menu > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.nav-panel {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: 0;
+  z-index: 40;
+  min-width: min(30rem, 88vw);
+  display: flex;
+  gap: 34px;
+  padding: 22px 26px 20px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(27, 26, 23, .10);
+}
+.nav-panel section { min-width: 8.5rem; }
+.nav-panel h2 {
+  margin: 0 0 10px;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+}
+/*
+  A state heading is a link only where that state's page publishes, so one
+  heading is an <a> and the next is bare text. They must still look
+  identical — otherwise "North Carolina" and "WASHINGTON" render in
+  different cases and sizes, and the menu looks broken rather than
+  meaningful. Everything the generic .nav-panel a rule would impose is
+  handed back to the heading.
+*/
+.nav-panel h2 a {
+  font: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  font-weight: inherit;
+  color: inherit;
+  display: inline;
+  padding: 0;
+  border: 0;
+}
+.nav-panel h2 a:hover { color: var(--accent-ink); border: 0; text-decoration: underline; }
+.nav-panel ul { list-style: none; margin: 0; padding: 0; }
+.nav-panel li { margin: 0 0 2px; }
+.nav-panel a {
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 500;
+  color: var(--ink);
+  border-bottom: 0;
+}
+.nav-panel a:hover { color: var(--accent-ink); border-bottom: 0; text-decoration: underline; }
+/* Counties are the secondary way in, so they read quieter. */
+.nav-panel .nav-counties { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule-2); }
+.nav-panel .nav-counties a { font-size: 13px; color: var(--ink-2); }
+
+@media (max-width: 640px) {
+  /* No room to float a panel: let it push the page down instead. */
+  .nav-menu { position: static; }
+  .nav-panel {
+    position: static;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+    min-width: 0;
+    box-shadow: none;
+  }
+}
+
 .site-foot {
   border-top: 1px solid var(--rule);
   margin-top: 80px;

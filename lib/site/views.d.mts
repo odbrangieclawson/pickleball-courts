@@ -266,7 +266,18 @@ export type CountyVenueRow = {
 export function countyView(stateSlug: string, countySlug: string): CountyView | null
 export function allCountyParams(): {state: string; city: string}[]
 
-export function navView(): {href: string; label: string}[]
+export type NavGroup = {
+  state: string
+  label: string
+  href: string | null
+  cities: {href: string; label: string}[]
+  counties: {href: string; label: string}[]
+}
+
+export function navView(): {
+  groups: NavGroup[]
+  links: {href: string; label: string}[]
+}
 
 export function venuePagePublishes(state: string, city: string, slug: string): boolean
 export function statePagePublishes(state: string): boolean
