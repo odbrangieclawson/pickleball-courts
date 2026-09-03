@@ -1,0 +1,410 @@
+/*
+  Deep Pickleball — stylesheet.
+
+  Closes O12, which deferred CSS through Phase 0 on purpose so that no
+  framework decision got made before the content shape was known.
+
+  THE ONE IDEA
+
+  The product is traceability, so provenance is styled as content, not as
+  small print. The trust ladder from decisions.md §D renders as a visible
+  badge on every venue, an unverified gap renders as an honest amber note
+  rather than being hidden, and the sources footer is a real part of the
+  page. If a competitor screenshots a page, the difference should be
+  obvious without reading a word.
+
+  No framework, no build step, no JS. Rule 1 means the page must be whole
+  in raw HTML, and a stylesheet is the only layer that can add polish
+  without threatening that.
+*/
+
+:root {
+  --ink: #14181f;
+  --ink-2: #3d4654;
+  --ink-3: #6b7688;
+  --line: #e2e6ec;
+  --line-2: #eef1f5;
+  --bg: #ffffff;
+  --bg-2: #f7f9fb;
+  --bg-3: #eef3f8;
+
+  /* Court green. Used sparingly - it is a directory, not a brand site. */
+  --brand: #1c6b4a;
+  --brand-ink: #12482f;
+  --brand-wash: #eaf4ef;
+
+  --verified: #1c6b4a;
+  --verified-wash: #eaf4ef;
+  --gap: #8a5a00;
+  --gap-wash: #fdf5e4;
+  --warn: #9a2828;
+  --warn-wash: #fdeeee;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgba(20, 24, 31, .05), 0 4px 16px rgba(20, 24, 31, .05);
+  --wrap: 1080px;
+
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e9edf3;
+    --ink-2: #b3bccb;
+    --ink-3: #8592a5;
+    --line: #2a323e;
+    --line-2: #222a34;
+    --bg: #0f1319;
+    --bg-2: #151b23;
+    --bg-3: #1b232d;
+    --brand: #5cc294;
+    --brand-ink: #8ad9b5;
+    --brand-wash: #14261f;
+    --verified: #5cc294;
+    --verified-wash: #14261f;
+    --gap: #e0b055;
+    --gap-wash: #2a2115;
+    --warn: #e88b8b;
+    --warn-wash: #2c1a1a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 4px 16px rgba(0, 0, 0, .3);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------------------------------------------------------------- */
+/* Demo banner. Deliberately impossible to miss.                     */
+/* ---------------------------------------------------------------- */
+
+.demo-banner {
+  background: var(--gap-wash);
+  border-bottom: 1px solid var(--gap);
+  color: var(--gap);
+  padding: 10px 20px;
+  font-size: 13.5px;
+  text-align: center;
+}
+.demo-banner strong { font-weight: 650; letter-spacing: .01em; }
+
+/* ---------------------------------------------------------------- */
+/* Chrome                                                            */
+/* ---------------------------------------------------------------- */
+
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+
+.site-head {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-head .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 62px;
+  flex-wrap: wrap;
+}
+.brand {
+  font-weight: 680;
+  font-size: 17px;
+  letter-spacing: -.015em;
+  color: var(--ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.brand .dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 0 3px var(--brand-wash);
+}
+.site-nav { display: flex; gap: 22px; font-size: 14.5px; }
+.site-nav a { color: var(--ink-2); text-decoration: none; }
+.site-nav a:hover { color: var(--brand); }
+
+.site-foot {
+  border-top: 1px solid var(--line);
+  margin-top: 64px;
+  padding: 32px 0 56px;
+  color: var(--ink-3);
+  font-size: 13.5px;
+  background: var(--bg-2);
+}
+.site-foot p { margin: 0 0 8px; max-width: 62ch; }
+
+main { display: block; }
+.page { padding: 36px 0 8px; }
+
+/* ---------------------------------------------------------------- */
+/* Type                                                              */
+/* ---------------------------------------------------------------- */
+
+h1 {
+  font-size: clamp(28px, 4.2vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -.024em;
+  margin: 0 0 14px;
+  font-weight: 690;
+}
+h2 {
+  font-size: clamp(20px, 2.4vw, 25px);
+  line-height: 1.25;
+  letter-spacing: -.016em;
+  margin: 44px 0 14px;
+  font-weight: 660;
+}
+h3 {
+  font-size: 17px;
+  margin: 26px 0 8px;
+  font-weight: 640;
+  letter-spacing: -.008em;
+}
+p { margin: 0 0 15px; max-width: 72ch; }
+a { color: var(--brand); text-underline-offset: 2px; }
+a:hover { color: var(--brand-ink); }
+ul, ol { max-width: 72ch; }
+li { margin-bottom: 5px; }
+strong { font-weight: 630; }
+
+.lede { font-size: 18.5px; line-height: 1.6; color: var(--ink-2); max-width: 68ch; }
+
+/* Breadcrumbs */
+.crumbs, nav[aria-label="Breadcrumb"] {
+  font-size: 13.5px;
+  color: var(--ink-3);
+  margin-bottom: 18px;
+}
+.crumbs a, nav[aria-label="Breadcrumb"] a { color: var(--ink-3); text-decoration: none; }
+.crumbs a:hover, nav[aria-label="Breadcrumb"] a:hover { color: var(--brand); text-decoration: underline; }
+
+/* ---------------------------------------------------------------- */
+/* Stat strip — the verified count IS the value proposition          */
+/* ---------------------------------------------------------------- */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 26px 0;
+}
+.stat { background: var(--bg); padding: 18px 20px; }
+.stat .n {
+  display: block;
+  font-size: 30px;
+  font-weight: 690;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.stat .k {
+  display: block;
+  font-size: 12.5px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-top: 5px;
+  font-weight: 560;
+}
+.stat.is-gap .n { color: var(--gap); }
+
+/* ---------------------------------------------------------------- */
+/* Trust ladder                                                      */
+/* ---------------------------------------------------------------- */
+
+.trust, .tier {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 560;
+  padding: 3px 9px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.trust, .tier-1, .tier-2 {
+  background: var(--verified-wash);
+  color: var(--verified);
+  border-color: color-mix(in srgb, var(--verified) 26%, transparent);
+}
+.tier-3, .tier-4 {
+  background: var(--gap-wash);
+  color: var(--gap);
+  border-color: color-mix(in srgb, var(--gap) 26%, transparent);
+}
+.unverified, .slot-empty {
+  background: var(--gap-wash);
+  color: var(--gap);
+  border: 1px solid color-mix(in srgb, var(--gap) 22%, transparent);
+  border-radius: var(--radius-sm);
+  padding: 2px 7px;
+  font-size: 13px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Cards and lists                                                   */
+/* ---------------------------------------------------------------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 17px 18px;
+  background: var(--bg);
+  transition: border-color .12s ease, box-shadow .12s ease;
+}
+.card:hover { border-color: color-mix(in srgb, var(--brand) 42%, var(--line)); box-shadow: var(--shadow); }
+.card h3 { margin: 0 0 7px; font-size: 16px; }
+.card h3 a { text-decoration: none; }
+.card p { margin: 0 0 9px; font-size: 14px; color: var(--ink-2); }
+.card .meta { font-size: 13px; color: var(--ink-3); margin: 0 0 10px; }
+
+.venues { list-style: none; padding: 0; margin: 20px 0; }
+.venues > li {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 17px 18px;
+  margin-bottom: 12px;
+  background: var(--bg);
+}
+.venues h3 { margin-top: 0; }
+
+/* Filter chips */
+.filters { display: flex; flex-wrap: wrap; gap: 9px; margin: 18px 0 6px; padding: 0; list-style: none; }
+.filters a {
+  display: inline-block;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  border-radius: 100px;
+  padding: 7px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--ink-2);
+}
+.filters a:hover { border-color: var(--brand); color: var(--brand); background: var(--brand-wash); }
+
+/* ---------------------------------------------------------------- */
+/* Tables                                                            */
+/* ---------------------------------------------------------------- */
+
+.table-scroll { overflow-x: auto; margin: 20px 0; border: 1px solid var(--line); border-radius: var(--radius); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+thead th {
+  background: var(--bg-2);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--ink-3);
+  font-weight: 600;
+  white-space: nowrap;
+}
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: var(--bg-2); }
+td.num { font-variant-numeric: tabular-nums; }
+
+/* ---------------------------------------------------------------- */
+/* Fact panel (venue pages)                                          */
+/* ---------------------------------------------------------------- */
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin: 24px 0;
+  overflow: hidden;
+  background: var(--line);
+  gap: 1px;
+}
+.facts > div { background: var(--bg); padding: 14px 16px; }
+.facts dt, .facts .k {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--ink-3);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.facts dd, .facts .v { margin: 0; font-size: 15px; font-weight: 520; }
+
+/* ---------------------------------------------------------------- */
+/* Provenance                                                        */
+/* ---------------------------------------------------------------- */
+
+.provenance {
+  font-size: 13px;
+  color: var(--ink-3);
+  border-top: 1px solid var(--line-2);
+  margin-top: 12px;
+  padding-top: 10px;
+}
+.provenance a { color: var(--ink-3); }
+.provenance code, code { font-family: var(--mono); font-size: .92em; }
+
+.note {
+  border-left: 3px solid var(--brand);
+  background: var(--bg-2);
+  padding: 14px 18px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 22px 0;
+}
+.note.is-gap { border-left-color: var(--gap); background: var(--gap-wash); }
+.note.is-warn { border-left-color: var(--warn); background: var(--warn-wash); }
+.note p:last-child { margin-bottom: 0; }
+.note h3 { margin-top: 0; }
+
+/* Gate report */
+.gates { list-style: none; padding: 0; margin: 16px 0; font-size: 14.5px; }
+.gates li { display: flex; gap: 10px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--line-2); }
+.gates .g-pass { color: var(--verified); font-weight: 640; min-width: 52px; }
+.gates .g-fail { color: var(--warn); font-weight: 640; min-width: 52px; }
+
+.preview-banner {
+  background: var(--warn-wash);
+  border: 1px solid var(--warn);
+  color: var(--warn);
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  margin: 0 0 24px;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .site-head .wrap { min-height: 0; padding-top: 12px; padding-bottom: 12px; }
+  .site-nav { gap: 16px; font-size: 14px; }
+  .page { padding-top: 24px; }
+}

@@ -30,6 +30,7 @@
         "basis": "Same site. The Parks record names it PENDLETON MILLER PLAYFIELD at 330 19th Ave E, the address the imported row already carries. NOT matched to the separate \"Miller Community Center\" row, which is the indoor building on the same block and is a different venue."
       },
       "patch": {
+        "name": "Miller Playfield",
         "total_courts": 5,
         "indoor_courts": 0,
         "outdoor_courts": 5,
@@ -42,6 +43,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Miller Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -138,6 +146,7 @@
         "basis": "Same name, and the imported address 5817 SW Lander St matches the Parks record exactly."
       },
       "patch": {
+        "name": "Alki Playground",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -150,6 +159,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Alki Playground\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -238,6 +254,7 @@
         "basis": "Same name, and the imported address 6000 39th Ave S matches the Parks record exactly."
       },
       "patch": {
+        "name": "Brighton Playfield",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -250,6 +267,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Brighton Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -338,6 +362,7 @@
         "basis": "The only pickleball courts Seattle Parks records at Green Lake Park, and the only Green Lake row in the import. The municipal record is specific about WHICH courts (East); the imported row is not, so the municipal name describes the same courts more precisely."
       },
       "patch": {
+        "name": "Green Lake Park (East Courts)",
         "total_courts": 8,
         "indoor_courts": 0,
         "outdoor_courts": 8,
@@ -350,6 +375,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Green Lake Park (East Courts)\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -447,6 +479,7 @@
         "basis": "Same site, both a single court at Laurelhurst. The imported address is wrong by two blocks and is corrected."
       },
       "patch": {
+        "name": "Laurelhurst Playfield",
         "total_courts": 1,
         "indoor_courts": 0,
         "outdoor_courts": 1,
@@ -459,6 +492,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Laurelhurst Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -554,6 +594,7 @@
         "basis": "Address 3801 Discovery Park Blvd matches the Parks record exactly."
       },
       "patch": {
+        "name": "Discovery Park",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -566,6 +607,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Discovery Park\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -654,6 +702,7 @@
         "basis": "Address 1902 13th Ave S matches the Parks record exactly. The Parks record names it BEACON HILL PLAYGROUND; the pickleball layer calls the same site \"Beacon Hill Park\"."
       },
       "patch": {
+        "name": "Beacon Hill Park",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -666,6 +715,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Beacon Hill Park\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -754,6 +810,7 @@
         "basis": "Same name, address 1405 Warren Ave N matches the Parks record."
       },
       "patch": {
+        "name": "Observatory Courts",
         "total_courts": 2,
         "indoor_courts": 0,
         "outdoor_courts": 2,
@@ -766,6 +823,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Observatory Courts\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -862,6 +926,7 @@
         "basis": "The OUTDOOR courts row, not the \"Bitter Lake Community Center\" row. The community centre row records 3 indoor courts and is the building; this municipal record is 8 outdoor courts under lights, which is the playfield. They share a campus and are not the same venue."
       },
       "patch": {
+        "name": "Bitter Lake Playfield",
         "total_courts": 8,
         "indoor_courts": 0,
         "outdoor_courts": 8,
@@ -874,6 +939,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Bitter Lake Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -970,6 +1042,7 @@
         "basis": "Address 750 S Homer St matches the Parks record exactly."
       },
       "patch": {
+        "name": "Georgetown Playfield",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -982,6 +1055,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Georgetown Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1070,6 +1150,7 @@
         "basis": "Address 2919 S Brandon St matches the Parks record exactly."
       },
       "patch": {
+        "name": "Dearborn Park",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -1082,6 +1163,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Dearborn Park\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1178,6 +1266,7 @@
         "basis": "Same named site. The imported address (8319 8th Ave S) and the Parks record (738 S Sullivan St) disagree; the Parks record is the property owner describing its own parcel, so it wins and the address is corrected."
       },
       "patch": {
+        "name": "South Park Playground",
         "total_courts": 1,
         "indoor_courts": 0,
         "outdoor_courts": 1,
@@ -1190,6 +1279,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"South Park Playground\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1286,6 +1382,7 @@
         "basis": "Address 923 NW 54th St matches the Parks record exactly."
       },
       "patch": {
+        "name": "Gilman Playground",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -1298,6 +1395,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Gilman Playground\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1386,6 +1490,7 @@
         "basis": "Same site on Delridge Way SW; the imported street number is off by a block and is corrected. NOT the \"Delridge Community Center\" indoor row."
       },
       "patch": {
+        "name": "Delridge Playfield",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -1398,6 +1503,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Delridge Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1494,6 +1606,7 @@
         "basis": "Same name, address 899 W Olympic Pl matches (the Parks record misspells it \"Olumpic\")."
       },
       "patch": {
+        "name": "Kinnear Park",
         "total_courts": 1,
         "indoor_courts": 0,
         "outdoor_courts": 1,
@@ -1506,6 +1619,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Kinnear Park\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1602,6 +1722,7 @@
         "basis": "Address 1618 E Calhoun St matches the Parks record exactly. Both describe a single shared-use court."
       },
       "patch": {
+        "name": "Montlake Playfield",
         "total_courts": 1,
         "indoor_courts": 0,
         "outdoor_courts": 1,
@@ -1614,6 +1735,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Montlake Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1702,6 +1830,7 @@
         "basis": "The PLAYFIELD row, not the \"Rainier Beach Community Center\" row. The imported playfield row already records 8 outdoor courts, which is exactly what the municipal record states. The community centre row records 3 indoor courts and is a different venue."
       },
       "patch": {
+        "name": "Rainier Beach Playfield",
         "total_courts": 8,
         "indoor_courts": 0,
         "outdoor_courts": 8,
@@ -1714,6 +1843,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Rainier Beach Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1802,6 +1938,7 @@
         "basis": "Address 1590 NW 90th St matches the Parks record exactly."
       },
       "patch": {
+        "name": "Soundview Playfield",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -1814,6 +1951,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Soundview Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -1902,6 +2046,7 @@
         "basis": "Address 10145 Rainier Ave S matches the Parks record exactly."
       },
       "patch": {
+        "name": "Lakeridge Park",
         "total_courts": 2,
         "indoor_courts": 0,
         "outdoor_courts": 2,
@@ -1914,6 +2059,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Lakeridge Park\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -2002,6 +2154,7 @@
         "basis": "Same site on Lake Park Dr S; the imported row has the street with no number, and the Parks record supplies 2521."
       },
       "patch": {
+        "name": "Mt. Baker Park",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -2014,6 +2167,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Mt. Baker Park\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -2109,6 +2269,7 @@
         "basis": "Seattle Parks records dedicated pickleball courts here. The import has no row for it at all."
       },
       "patch": {
+        "name": "Maple Leaf Reservoir Park",
         "total_courts": 2,
         "indoor_courts": 0,
         "outdoor_courts": 2,
@@ -2121,6 +2282,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Maple Leaf Reservoir Park\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -2216,6 +2384,7 @@
         "basis": "No imported row. Deliberately NOT matched to \"Magnolia Community Center\", which is the indoor building nearby with 3 indoor courts."
       },
       "patch": {
+        "name": "West Magnolia Playfield",
         "total_courts": 8,
         "indoor_courts": 0,
         "outdoor_courts": 8,
@@ -2228,6 +2397,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"West Magnolia Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -2323,6 +2499,7 @@
         "basis": "No imported row. Deliberately NOT matched to \"High Point Community Center\", which shares the 6920 34th Ave SW address but is the indoor building."
       },
       "patch": {
+        "name": "Walt Hundley Playfield",
         "total_courts": 4,
         "indoor_courts": 0,
         "outdoor_courts": 4,
@@ -2335,6 +2512,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Walt Hundley Playfield\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",
@@ -2430,6 +2614,7 @@
         "basis": "No imported row. The pickleball layer misspells the park as \"Greenwod\"; the Parks record for the same parcel spells it GREENWOOD PARK, and that spelling is used for the name."
       },
       "patch": {
+        "name": "Greenwood Park",
         "total_courts": 1,
         "indoor_courts": 0,
         "outdoor_courts": 1,
@@ -2442,6 +2627,13 @@
         "county": "King"
       },
       "provenance": {
+        "name": {
+          "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Pickleball Courts layer PARKNAME=\"Greenwod Park\"; spelling corrected against the Parks layer NAME=\"GREENWOOD PARK\""
+        },
         "total_courts": {
           "source_url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
           "date_checked": "2026-09-03",

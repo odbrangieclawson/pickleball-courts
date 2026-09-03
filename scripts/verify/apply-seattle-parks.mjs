@@ -148,7 +148,7 @@ const MATCHES = [
    basis: 'No imported row. Deliberately NOT matched to "Magnolia Community Center", which is the indoor building nearby with 3 indoor courts.'},
   {slug: 'walt-hundley-playfield-pickleball-courts-seattle', park: 'Walt Hundley Playfield', pma: 3941, mint: true,
    basis: 'No imported row. Deliberately NOT matched to "High Point Community Center", which shares the 6920 34th Ave SW address but is the indoor building.'},
-  {slug: 'greenwood-park-pickleball-courts-seattle', park: 'Greenwod Park', pma: 4408, mint: true,
+  {slug: 'greenwood-park-pickleball-courts-seattle', park: 'Greenwod Park', pma: 4408, mint: true, displayName: 'Greenwood Park',
    basis: 'No imported row. The pickleball layer misspells the park as "Greenwod"; the Parks record for the same parcel spells it GREENWOOD PARK, and that spelling is used for the name.'},
 
   /*
@@ -237,6 +237,25 @@ for (const m of MATCHES) {
   const ev = `Pickleball Courts layer, PARKNAME="${pb.PARKNAME}": NUMBEROFCOURTS="${pb.NUMBEROFCOURTS}", INDOOROUTDOOR="${pb.INDOOROUTDOOR}", LIGHTED="${pb.LIGHTED}", NETS="${pb.NETS}"`
 
   const facts = [
+    /*
+      The venue NAME comes from the source too.
+
+      The imported names are the city stamped onto a description -
+      "Seattle - Laurelhurst Pickleball Court", "Seattle - Miller Playfield
+      Pickleball Courts (Capitol Hill)". Fed into the venue title formula
+      those produce "Seattle - Laurelhurst Pickleball Court - Pickleball
+      Courts in Seattle, WA": 73 characters, the city twice, the sport
+      twice. The title assembler refuses it rather than truncating, which is
+      how this surfaced.
+
+      Seattle Parks names its own parks, so the fix is the same as every
+      other field: take the name from the source. displayName overrides it
+      only where the pickleball layer has a typo the Parks layer does not.
+    */
+    doc1.fact('name', m.displayName ?? pb.PARKNAME, {
+      evidence: `Pickleball Courts layer PARKNAME="${pb.PARKNAME}"` +
+        (m.displayName ? `; spelling corrected against the Parks layer NAME="${addr.NAME}"` : ''),
+    }),
     doc1.fact('total_courts', n, {evidence: ev}),
     doc1.fact('indoor_courts', outdoor ? 0 : n, {evidence: ev}),
     doc1.fact('outdoor_courts', outdoor ? n : 0, {evidence: ev}),
