@@ -419,6 +419,32 @@ h3 {
   margin: 30px 0 7px;
 }
 
+/* ================================================================
+   SECTION HEADINGS — a section H2 should read as a section start
+   ================================================================
+
+   Content H2s share the serif and the weight of every other heading on
+   the page, so at a glance a section boundary looked the same as a
+   paragraph that happened to be short. This gives the top-level section
+   headings on a content page a hairline accent rule above them and sets
+   them in the accent ink, which is how a printed reference marks a new
+   section without shouting.
+
+   Scoped to `.page` children on purpose, the same way the measure rule
+   above is: `.nav-panel h2` is a menu group label and `.note h2` already
+   takes its colour from the note's own state (gap / warn), and neither
+   is a section start.
+*/
+.page > h2,
+.page > section > h2 {
+  color: var(--accent-ink);
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+/* The first heading in a section follows the section's own opening, so it
+   does not need the rule pushing it a further 52px down the page. */
+.page > section > h2:first-child { margin-top: 0; }
+
 /* An eyebrow — the standfirst line above a headline in a print feature. */
 .eyebrow {
   font-size: 12px;
@@ -1261,4 +1287,7 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .table-scroll { overflow: visible; }
   a { text-decoration: none; color: #000; }
+  /* The section-heading accent is a screen device; on paper the hairline
+     rule is enough and green ink is not. */
+  .page > h2, .page > section > h2 { color: #000; }
 }
