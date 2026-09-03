@@ -1,6 +1,7 @@
 import type {Metadata, Viewport} from 'next'
 import type {ReactNode} from 'react'
 import {Newsreader} from 'next/font/google'
+import {ORIGIN} from '../lib/site/origin.mjs'
 import './globals.css'
 
 /*
@@ -57,10 +58,11 @@ import {navView} from '../lib/site/views.mjs'
   locales that do not exist — would be declaring alternates for pages that
   404, which is the same class of error as linking to an unpublished page.
 
-  O10: example.invalid until a real hostname is minted. Everything below
-  becomes correct the moment SITE_ORIGIN is set.
+  O10: the origin comes from lib/site/origin.mjs, which reads SITE_ORIGIN and
+  falls back to example.invalid. Setting that one variable now fixes the
+  canonical tags, the sitemap AND every URL in the JSON-LD, which was not
+  true while four files each defined the origin for themselves.
 */
-const ORIGIN = process.env.SITE_ORIGIN ?? 'https://example.invalid'
 
 export const metadata: Metadata = {
   metadataBase: new URL(ORIGIN),
