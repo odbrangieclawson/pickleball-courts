@@ -109,11 +109,15 @@ export default async function CityOrCountyPage({params}: Params) {
 
       <h2 data-prose>Every venue, with the detail</h2>
       <p data-prose>
-        {v.venuePagesN} of these have a page of their own. The rest are
-        verified to exactly the same standard — every fact above and below
-        comes from the same city records — but nobody has written them up
-        yet, and a venue page here needs a couple of paragraphs about the
-        actual place before it earns a URL. Their facts are all on this page.
+        {v.allVenuesHavePages
+          ? <>All {v.venuePagesN} have a page of their own, with the source
+            behind every fact and the date it was checked. </>
+          : <>{v.venuePagesN} of these have a page of their own. The rest are
+            verified to exactly the same standard — every fact above and
+            below comes from the same city records — but nobody has written
+            them up yet, and a venue page here needs a couple of paragraphs
+            about the actual place before it earns a URL. Their facts are
+            all on this page. </>}
       </p>
       <ul className="cards">
         {v.venues.map((x, i) => (

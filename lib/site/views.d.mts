@@ -111,6 +111,7 @@ export type CityView = {
   hasFaqs: boolean
   faqs: {q: string; a: string}[]
   venuePagesN: string
+  allVenuesHavePages: boolean
   hasFilters: boolean
   filters: CityFilterLink[]
   venues: CityVenueRow[]
@@ -232,8 +233,28 @@ export type CountyView = {
   faqs: {q: string; a: string}[]
   hasEditorial: boolean
   editorial: EditorialNote[]
-  venues: {href: string | null; name: string; city: string; courts: string; lights: string; checked: string | null}[]
+  venuePagesN: string
+  allVenuesHavePages: boolean
+  venues: CountyVenueRow[]
   jsonLd: string
+}
+
+/*
+  The county table row and its card are the same row rendered twice, so they
+  are one type. `city` is what a county row has that a city row does not:
+  a county spans several, and which one a venue is in is the fact that
+  decides whether it is worth the drive.
+*/
+export type CountyVenueRow = {
+  href: string | null
+  name: string
+  city: string
+  courts: string
+  lights: string
+  checked: string | null
+  address: string
+  photo: Photo
+  detail: string
 }
 
 export function countyView(stateSlug: string, countySlug: string): CountyView | null

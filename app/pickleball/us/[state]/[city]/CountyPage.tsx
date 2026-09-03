@@ -87,6 +87,46 @@ export default function CountyPage({v}: {v: CountyView}) {
         </table>
       </div>
 
+      <h2 data-prose>Every venue, with the detail</h2>
+      <p data-prose>
+        {v.allVenuesHavePages
+          ? <>All {v.venuePagesN} have a page of their own, with the source
+            behind every fact and the date it was checked. </>
+          : <>{v.venuePagesN} of these have a page of their own. The rest are
+            verified to exactly the same standard — every fact above and
+            below comes from the same records — but nobody has written them
+            up yet, and a venue page here needs a couple of paragraphs about
+            the actual place before it earns a URL. Their facts are all on
+            this page. </>}
+      </p>
+      <ul className="cards">
+        {v.venues.map((x, i) => (
+          <li className="card has-shot" key={`card-${x.city}-${x.name}`}>
+            <span className="shot">
+              <img
+                src={x.photo.src}
+                alt={x.photo.alt}
+                width={x.photo.width}
+                height={x.photo.height}
+                /* The first card is the likely LCP element on this page, so
+                   it must not be lazy. Everything below the fold is. */
+                loading={i === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+                fetchPriority={i === 0 ? 'high' : 'auto'}
+              />
+              {x.photo.isPlaceholder && (
+                <span className="placeholder-mark">No photo yet</span>
+              )}
+            </span>
+            <h3>{x.href ? <a href={x.href}>{x.name}</a> : x.name}</h3>
+            <p className="meta">{x.detail}</p>
+            <p>{x.address}</p>
+            <p className="meta">{x.city}, {v.state}</p>
+            <span className="trust">Checked {x.checked}</span>
+          </li>
+        ))}
+      </ul>
+
       {v.hasFaqs && (
         <>
           <h2 data-prose>Questions about {v.county} County</h2>

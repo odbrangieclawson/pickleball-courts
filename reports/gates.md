@@ -8,15 +8,15 @@ Generated from the built HTML.
 
 COUNTY  —  2/2 publishable
   PASS  /pickleball/us/wa/king-county/
-        905 words · BreadcrumbList, FAQPage, ItemList
+        925 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/wake-county/
-        1001 words · BreadcrumbList, FAQPage, ItemList
+        1021 words · BreadcrumbList, FAQPage, ItemList
 
 CITY  —  2/2 publishable
   PASS  /pickleball/us/wa/seattle/
-        1645 words · BreadcrumbList, FAQPage, ItemList
+        1603 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/
-        1927 words · BreadcrumbList, FAQPage, ItemList
+        1885 words · BreadcrumbList, FAQPage, ItemList
 
 FILTER  —  4/4 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
