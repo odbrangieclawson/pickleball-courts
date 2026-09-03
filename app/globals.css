@@ -777,10 +777,13 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
    hardly let an image imply what a sentence would refuse to.
 */
 
+/* 4:3 rather than 3:2 for the cards: a portrait source loses less to the
+   crop in a slightly taller box, and the grid still reads as a row of
+   plates rather than a column of posters. */
 .shot {
   position: relative;
   display: block;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--paper-3);
   border-radius: var(--radius);
@@ -791,6 +794,17 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
   height: 100%;
   object-fit: cover;
   display: block;
+  /*
+    The placeholder is PORTRAIT (408x612) inside landscape boxes, so cover
+    crops top and bottom hard. The subject — paddle and ball — sits low in
+    the frame, around 60% down, so centring the crop would cut it out
+    entirely and leave an empty stretch of court. This pins the visible band
+    to the subject.
+
+    If a landscape photograph replaces it, this line wants revisiting; it is
+    tuned to one image rather than being a general rule.
+  */
+  object-position: center 62%;
   /* Muted, so a stock photo never competes with the verified facts beside
      it. Restored on hover so it is legible when someone looks at it. */
   filter: saturate(.72) contrast(.96);
@@ -814,7 +828,11 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 }
 
 /* Venue page hero shot: wider, with a real caption rather than a chip. */
-.shot.is-hero { aspect-ratio: 21 / 9; margin: 4px 0 10px; border-radius: var(--radius); }
+/* 21:9 was set for a landscape source. Against a portrait file it is a
+   letterbox slot cut from the middle of a tall picture, which shows almost
+   nothing. 16:9 is still wide enough to read as a header and keeps the
+   paddle in frame. */
+.shot.is-hero { aspect-ratio: 16 / 9; margin: 4px 0 10px; border-radius: var(--radius); }
 figure.venue-shot { margin: 24px 0 30px; }
 figure.venue-shot figcaption {
   font-size: 12.5px;
