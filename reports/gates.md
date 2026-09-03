@@ -20,7 +20,7 @@ FILTER  —  2/2 publishable
   PASS  /pickleball/us/wa/seattle/lights/
         694 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  20/24 publishable
+VENUE  —  24/24 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -53,26 +53,22 @@ VENUE  —  20/24 publishable
         726 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/mt-baker-park/
         744 words · BreadcrumbList, SportsActivityLocation, FAQPage
-  FAIL  /pickleball/us/wa/seattle/observatory-courts/
-        692 words · BreadcrumbList, SportsActivityLocation, FAQPage
-        G4: 692 words, 8 SHORT of the 700-word minimum
+  PASS  /pickleball/us/wa/seattle/observatory-courts/
+        721 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/rainier-beach-playfield/
         717 words · BreadcrumbList, SportsActivityLocation, FAQPage
-  FAIL  /pickleball/us/wa/seattle/soundview-playfield/
-        684 words · BreadcrumbList, SportsActivityLocation, FAQPage
-        G4: 684 words, 16 SHORT of the 700-word minimum
-  FAIL  /pickleball/us/wa/seattle/south-park-playground/
-        690 words · BreadcrumbList, SportsActivityLocation, FAQPage
-        G4: 690 words, 10 SHORT of the 700-word minimum
+  PASS  /pickleball/us/wa/seattle/soundview-playfield/
+        713 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wa/seattle/south-park-playground/
+        717 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/maple-leaf-reservoir-park-pickleball-courts-seattle/
         706 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/west-magnolia-playfield-pickleball-courts-seattle/
         745 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/walt-hundley-playfield-pickleball-courts-seattle/
         718 words · BreadcrumbList, SportsActivityLocation, FAQPage
-  FAIL  /pickleball/us/wa/seattle/greenwood-park-pickleball-courts-seattle/
-        676 words · BreadcrumbList, SportsActivityLocation, FAQPage
-        G4: 676 words, 24 SHORT of the 700-word minimum
+  PASS  /pickleball/us/wa/seattle/greenwood-park-pickleball-courts-seattle/
+        709 words · BreadcrumbList, SportsActivityLocation, FAQPage
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
@@ -102,6 +98,6 @@ VENUE  —  20/24 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 24/28 pages pass all six gates.
+TOTAL: 28/28 pages pass all six gates.
 
 ```

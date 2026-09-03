@@ -59,7 +59,7 @@ if (haveImport) {
   const imported = loadRows().map(r => mapRow(r).venue)
   imported.forEach((v, i) => { v.county = county[i].needs_review ? null : county[i].county })
   const {venues: identified} = applyIdentity(imported, loadIdentity(REPO_ROOT))
-  rows = applyVerifiedOverlay(identified, loadVerifiedOverlay(REPO_ROOT).bySlug).venues
+  rows = applyVerifiedOverlay(identified, loadVerifiedOverlay(REPO_ROOT).byKey).venues
 }
 
 const tally = {I1: 0, I2: 0, I3: 0, I4: 0}
@@ -178,7 +178,7 @@ for (const entry of sitemapEntries()) {
     const v = c.venues.find(x => x.slug === vslug)
     venues = [v]
     counts = getCounts({type: 'city', city: c.city, state: c.state}, [v])
-    editorial = editorialForVenue(ed.byVenue, vslug)?.slots ?? null
+    editorial = editorialForVenue(ed.byVenue, c.city, c.state, vslug)?.slots ?? null
   }
 
   const g = checkPageGates({pageType, counts, html, editorial, schema: schemaIn(html), venues})

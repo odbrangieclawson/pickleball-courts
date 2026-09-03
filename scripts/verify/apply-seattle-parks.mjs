@@ -207,7 +207,15 @@ const identityRegistry = loadIdentity(REPO_ROOT)
 const county = JSON.parse(readFileSync(join(REPO_ROOT, 'reports/county-per-row.json'), 'utf8'))
 const allRows = loadRows().map(r => mapRow(r).venue)
 allRows.forEach((v, i) => { v.county = county[i].needs_review ? null : county[i].county })
-const bySlug = new Map(allRows.map(v => [v.slug, v]))
+/*
+  Scoped to this city. `allRows` is every row in the country and slugs
+  repeat across cities, so an unscoped Map here would hand the match table
+  a same-named park in another state and write this city's court count onto
+  it. Same reason the overlay is keyed state|city|slug.
+*/
+const bySlug = new Map(
+  allRows.filter(v => v.city === 'Seattle' && String(v.state).toUpperCase() === 'WA')
+    .map(v => [v.slug, v]))
 
 const overlay = {}
 const allChanges = []

@@ -33,7 +33,7 @@ const {venues: identified, renamed: idRenamed, quarantined: idHeld} = applyIdent
 if (idRenamed || idHeld) console.log(`identity: ${idRenamed} slug(s) canonicalised, ${idHeld} row(s) held back`)
 
 const overlay = loadVerifiedOverlay(REPO_ROOT)
-const {venues: withFacts, applied, fieldsWritten, fieldsCleared, cleared, skipped} = applyVerifiedOverlay(identified, overlay.bySlug)
+const {venues: withFacts, applied, fieldsWritten, fieldsCleared, cleared, skipped} = applyVerifiedOverlay(identified, overlay.byKey)
 if (applied) console.log(`verified overlay: ${fieldsWritten} sourced field(s) across ${applied} venue(s) from ${overlay.files.join(", ")}`)
 if (fieldsCleared) console.log(`  ${fieldsCleared} unsourced field(s) cleared to null on those venues (Rule 7): ${[...new Set(cleared.map(c => c.field))].join(", ")}`)
 for (const s of skipped) console.log(`  SKIPPED ${s.slug}.${s.field} — ${s.why}`)

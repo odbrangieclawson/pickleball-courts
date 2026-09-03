@@ -12,12 +12,12 @@ still free to change. That is why it goes first.
 | | rows |
 | --- | ---: |
 | Slugs carrying a numeric row-id suffix | 628 |
-| **Renamed automatically** | **8298** |
-| Held back — two rows want one URL in one city | 408 |
-| Held back — state, coordinates and postal code disagree | 31 |
-| **Total held back** | **439** |
+| **Renamed automatically** | **8680** |
+| Held back — two rows want one URL in one city | 620 |
+| Held back — state, coordinates and postal code disagree | 30 |
+| **Total held back** | **650** |
 
-## Numeric suffixes: 628 in, 8298 fixed
+## Numeric suffixes: 628 in, 602 stripped, 26 kept
 
 The source used one flat global slug namespace, so two venues with the same
 name anywhere in the country had to fight over one string. Three separate
@@ -34,7 +34,7 @@ question this URL pattern does not ask, so it comes off wherever nothing in
 the same city claims the same slug. Rule 10 is satisfied by the hierarchy
 rather than by inventing a disambiguator.
 
-## Held back: 408 rows still collide inside one city
+## Held back: 620 rows still collide inside one city
 
 Strip the suffixes and these rows still land on the same slug in the same
 city. Each pair is either one park recorded twice or two parks sharing a
@@ -45,8 +45,8 @@ name, and the two cases need opposite treatment:
   counted twice, which is exactly the CourtSource failure this project
   exists to beat
 
-Proximity is a hint, not an answer. 174 of these rows sit within 250 m of
-their twin, which usually means one park recorded twice. 106 sit 2 km or
+Proximity is a hint, not an answer. 204 of these rows sit within 250 m of
+their twin, which usually means one park recorded twice. 189 sit 2 km or
 more apart, which usually means two different places.
 
 Worked example, both real:
@@ -60,7 +60,7 @@ Worked example, both real:
 No rule separates those. Review queue: `reports/identity-duplicates.csv`,
 sorted by city so a reviewer sees both members of a pair together.
 
-## Held back: 31 rows whose location contradicts itself
+## Held back: 30 rows whose location contradicts itself
 
 These rows have coordinates that fall outside the state they claim. The row
 does not agree with itself about where it is, and nothing available says

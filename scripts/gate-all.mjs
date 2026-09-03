@@ -100,7 +100,7 @@ for (const entry of sitemapEntries()) {
     const v = c.venues.find(x => x.slug === vslug)
     venues = [v]
     counts = getCounts({type: 'city', city: c.city, state: c.state}, [v])
-    editorial = editorialForVenue(ed.byVenue, vslug)?.slots ?? null
+    editorial = editorialForVenue(ed.byVenue, c.city, c.state, vslug)?.slots ?? null
   }
 
   const g = checkPageGates({

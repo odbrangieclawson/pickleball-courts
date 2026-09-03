@@ -72,7 +72,7 @@ import {loadRows, REPO_ROOT} from '../lib/load-csv.mjs'
 import {mapRow} from '../import/mapper.mjs'
 import {isOutsideState, zipDisagreesWithState, haversineKm} from '../lib/us-geo.mjs'
 import {canonicalise} from './slug-normalise.mjs'
-import {loadVerifiedOverlay} from '../../lib/data/verified.mjs'
+import {loadVerifiedOverlay, overlayKey} from '../../lib/data/verified.mjs'
 
 const NUMERIC_SUFFIX = /-\d+$/
 
@@ -86,14 +86,19 @@ const rows = loadRows().map(r => mapRow(r).venue)
   anything derivable from the import, so the slug is built from it.
 */
 const overlay = loadVerifiedOverlay(REPO_ROOT)
-const verifiedName = slug => overlay.bySlug.get(slug)?.patch?.name ?? null
+/*
+  City-scoped, like every other overlay lookup: a bare slug is not unique
+  nationally, and reading a Sacramento name onto an Oregon row would build
+  the wrong canonical slug — permanently, since §3 freezes URLs at launch.
+*/
+const verifiedName = v => overlay.byKey.get(overlayKey(v.state, v.city, v.slug))?.patch?.name ?? null
 
 /* ---------------------------------------------------------------- */
 /* 1. Candidate slug.                                                */
 /* ---------------------------------------------------------------- */
 
 for (const v of rows) {
-  const {slug, steps} = canonicalise(v, verifiedName(v.slug))
+  const {slug, steps} = canonicalise(v, verifiedName(v))
   v._candidate = slug
   v._steps = steps
   v._hadSuffix = NUMERIC_SUFFIX.test(String(v.slug ?? ''))
@@ -288,6 +293,14 @@ const quarantined = Object.keys(quarantine).length
 const collisionRows = Object.values(quarantine).filter(q => q.reason === 'in_city_slug_collision').length
 const geoRows = Object.values(quarantine).filter(q => q.reason === 'geography_contradiction').length
 const suffixTotal = rows.filter(v => v._hadSuffix).length
+/*
+  Counted separately from `renamed`, which counts every rename for any
+  reason. This line used to print `renamed` and so reported 8,298 suffixes
+  fixed out of 628 — a number that could not be true and was on the report
+  for weeks. A count must be of the thing its label names.
+*/
+const suffixFixed = rows.filter(v => v._hadSuffix && !NUMERIC_SUFFIX.test(v._candidate)).length
+const suffixKept = suffixTotal - suffixFixed
 
 /* How many of the collision pairs are probably the same place? Proximity is
    evidence, not proof, so it is reported as a hint for the reviewer. */
@@ -314,7 +327,7 @@ still free to change. That is why it goes first.
 | Held back — state, coordinates and postal code disagree | ${geoRows} |
 | **Total held back** | **${quarantined}** |
 
-## Numeric suffixes: ${suffixTotal} in, ${renamed} fixed
+## Numeric suffixes: ${suffixTotal} in, ${suffixFixed} stripped, ${suffixKept} kept
 
 The source used one flat global slug namespace, so two venues with the same
 name anywhere in the country had to fight over one string. Three separate
@@ -435,7 +448,7 @@ hand would be work destroyed on contact with a real source.
 writeFileSync(join(REPO_ROOT, 'reports/identity.md'), md)
 
 console.log(`\nIdentity audit — ${rows.length.toLocaleString('en-US')} rows`)
-console.log(`  numeric suffixes found      ${suffixTotal}`)
+console.log(`  numeric suffixes found      ${suffixTotal} (${suffixFixed} stripped, ${suffixKept} kept as part of a name)`)
 console.log(`  renamed automatically       ${renamed}`)
 console.log(`  held back (slug collision)  ${collisionRows}`)
 console.log(`  held back (geography)       ${geoRows}`)

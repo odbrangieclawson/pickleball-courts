@@ -115,6 +115,45 @@ function dropPrefix(slug, prefix, city) {
 }
 
 /**
+ * Is a trailing number the venue's name, or the import's row id?
+ *
+ * 628 slugs end in digits and almost all of them are row ids -
+ * lewis-park-6944, curtis-park-666, heritage-park-667. Left on, they make
+ * a permanent URL out of a number from someone else's spreadsheet, and
+ * Import Gate I1 refuses the venue outright (Rule 10), so the venue simply
+ * never publishes.
+ *
+ * But some of those digits are the name. "Elks #6" is a lodge number, and
+ * a court called "Court 1" is called that. Stripping those is the same
+ * silent identity loss the guards above exist to prevent.
+ *
+ * The row itself settles it: if the venue's NAME contains that number, the
+ * number is part of the name and stays. If the name does not mention it,
+ * it came from the import and goes. Where there is no name to consult the
+ * suffix stays, because a slug that is merely ugly still identifies the
+ * place and a wrong one does not.
+ */
+function rowIdSuffix(slug, name, city) {
+  if (!name) return slug
+  const nameTokens = parts(tokenise(name))
+  /*
+    Iterated, because the trailing digits are not always one group.
+    "santa-fe-family-life-center-405-840" is a phone number that leaked into
+    the slug of a venue plainly named "Santa Fe Family Life Center"; taking
+    off one group leaves the other half of the phone number behind.
+  */
+  let out = slug
+  for (;;) {
+    const m = /-(\d+)$/.exec(out)
+    if (!m) return out
+    if (nameTokens.includes(m[1])) return out
+    const next = out.slice(0, -m[0].length)
+    if (!usable(next, city)) return out
+    out = next
+  }
+}
+
+/**
  * @param {object} v         venue record (needs city, state, slug)
  * @param {string|null} verifiedName  name from a source, if the venue has one
  * @returns {{slug: string, steps: string[]}}
@@ -133,11 +172,18 @@ export function canonicalise(v, verifiedName = null) {
   }
 
   /*
+    The row id comes off before anything else. It is the outermost token
+    and nothing else can be judged past it.
+  */
+  let next = rowIdSuffix(slug, v.name, city)
+  if (next !== slug) { steps.push(`dropped trailing "${slug.slice(next.length)}" (an import row id, not part of the name "${v.name}")`); slug = next }
+
+  /*
     Suffixes first. "-huntsville-al" has to come off before the leading
     "john-hunt-park" can be judged, and removing "-co" from "palmer-lake-co"
     is what exposes the city prefix that must then be refused.
   */
-  let next = dropSuffix(slug, `${city}-${state}`, city)
+  next = dropSuffix(slug, `${city}-${state}`, city)
   if (next !== slug) { steps.push(`dropped trailing "-${city}-${state}" (already in the path)`); slug = next }
 
   next = dropSuffix(slug, state, city)

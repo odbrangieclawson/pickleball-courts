@@ -157,7 +157,9 @@ write('sources.csv', ['url', 'publisher', 'tier', 'kind', 'retrieved'], [...sour
 /* ---- 4. venue_editorial ---- */
 
 const edRows = []
-for (const [slug, doc] of ed.byVenue) {
+/* Venue notes are keyed STATE/city/slug; the export joins on the slug. */
+for (const [noteKey, doc] of ed.byVenue) {
+  const slug = noteKey.split('/').pop()
   for (const [field, text] of Object.entries(doc.slots ?? {})) {
     edRows.push({
       venue_slug: slug,
@@ -173,7 +175,9 @@ write('venue_editorial.csv', ['venue_slug', 'slot', 'body', 'date_checked', 'sou
 /* ---- 5. venue_faqs ---- */
 
 const faqRows = []
-for (const [slug, doc] of ed.byVenue) {
+/* Venue notes are keyed STATE/city/slug; the export joins on the slug. */
+for (const [noteKey, doc] of ed.byVenue) {
+  const slug = noteKey.split('/').pop()
   ;(doc.faqs ?? []).forEach((f, i) => {
     faqRows.push({venue_slug: slug, position: i + 1, question: f.q, answer: f.a})
   })
