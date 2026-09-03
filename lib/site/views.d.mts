@@ -88,8 +88,10 @@ export type CityView = {
   editorialDate: string | null
   editorial: EditorialNote[]
   countyName: string | null
-  countyPublished: boolean
-  nearbyPublished: {href: string; title: string}[]
+  countyLink: {href: string; label: string; venues: number} | null
+  stateLink: {href: string; label: string} | null
+  hasNearby: boolean
+  nearbyPublished: {href: string; label: string; venues: number; kmAway: string}[]
   hasBestFor: boolean
   bestFor: {key: string; heading: string; text: string; href: string | null}[]
   hasFaqs: boolean
@@ -159,3 +161,33 @@ export function triWord(v: boolean | null | undefined, yes?: string, no?: string
 export function allStateParams(): {state: string}[]
 export function allCityParams(): {state: string; city: string}[]
 export function allLeafParams(): {state: string; city: string; slug: string}[]
+
+export type CountyView = {
+  county: string
+  state: string
+  stateName: string
+  slug: string
+  title: string
+  meta: string
+  h1: string
+  venuesN: string
+  courtsN: string
+  cityCountN: string
+  cityWord: string
+  litLine: string
+  lastChecked: string
+  stateLink: {href: string; label: string} | null
+  stateHrefFallback: string
+  cities: {city: string; slug: string; venues: number; courts: number; link: {href: string; label: string; venues: number}}[]
+  hasFaqs: boolean
+  faqs: {q: string; a: string}[]
+  hasEditorial: boolean
+  editorial: EditorialNote[]
+  venues: {href: string; name: string; city: string; courts: string; lights: string; checked: string | null}[]
+  jsonLd: string
+}
+
+export function countyView(stateSlug: string, countySlug: string): CountyView | null
+export function allCountyParams(): {state: string; city: string}[]
+
+export function navView(): {href: string; label: string}[]

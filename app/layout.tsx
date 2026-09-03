@@ -1,6 +1,7 @@
 import type {Metadata, Viewport} from 'next'
 import type {ReactNode} from 'react'
 import './globals.css'
+import {navView} from '../lib/site/views.mjs'
 
 /*
   Root layout. Server Component — no 'use client' anywhere in the content
@@ -47,9 +48,9 @@ export default function RootLayout({children}: {children: ReactNode}) {
               Deep Pickleball
             </a>
             <nav className="site-nav" aria-label="Main">
-              <a href="/pickleball/us/wa/">Washington</a>
-              <a href="/pickleball/us/wa/seattle/">Seattle</a>
-              <a href="/how-we-verify/">How we verify</a>
+              {navView().map(n => (
+                <a key={n.href} href={n.href}>{n.label}</a>
+              ))}
             </nav>
           </div>
         </header>

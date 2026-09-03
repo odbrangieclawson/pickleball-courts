@@ -31,12 +31,15 @@ import {join} from 'node:path'
 import {REPO_ROOT} from './lib/load-csv.mjs'
 import {checkPageGates, formatGateReport} from '../lib/page/gates.mjs'
 import {countWords} from '../lib/page/words.mjs'
-import {loadEditorial, editorialFor} from '../lib/data/editorial-store.mjs'
+import {loadEditorial, editorialFor, editorialForCounty} from '../lib/data/editorial-store.mjs'
+import {buildLinkGraph, countyCounts} from '../lib/site/links.mjs'
+import {slugifyCounty} from './lib/us-geo.mjs'
 import * as site from '../lib/site/data.mjs'
 
 const city = process.argv[2] ?? 'Seattle'
 const state = (process.argv[3] ?? 'WA').toUpperCase()
-const slug = site.citySlug(city)
+const isCounty = city.endsWith('-county')
+const slug = isCounty ? city : site.citySlug(city)
 
 const htmlPath = join(REPO_ROOT, '.next', 'server', 'app', 'pickleball', 'us', state.toLowerCase(), `${slug}.html`)
 if (!existsSync(htmlPath)) {
@@ -57,21 +60,44 @@ for (const m of html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)
   } catch { /* a malformed block fails Gate 3 by being absent */ }
 }
 
-const c = site.city(state, slug)
-if (!c) {
-  console.error(`\n${city}, ${state} is not published — nothing to gate.\n`)
-  process.exit(1)
+/*
+  City and county pages share a URL segment, so they share this script.
+  The page type matters: Gate 3 wants ItemList on both but Gate 4 asks each
+  for a different set of editorial slots — a county is not somewhere you
+  park.
+*/
+let counts, venues, editorial
+
+if (isCounty) {
+  const graph = buildLinkGraph(
+    site.publishedCities().flatMap(x => site.city(x.state, x.slug).venues))
+  const entry = [...graph.publishedCounties.values()]
+    .find(x => x.state === state && slug === `${slugifyCounty(x.county)}-county`)
+  if (!entry) {
+    console.error(`\n${slug} is not published — nothing to gate.\n`)
+    process.exit(1)
+  }
+  counts = countyCounts(graph, state, entry.county)
+  venues = entry.venues
+  editorial = editorialForCounty(loadEditorial(REPO_ROOT).byCity, entry.county, state)?.slots ?? null
+} else {
+  const c = site.city(state, slug)
+  if (!c) {
+    console.error(`\n${city}, ${state} is not published — nothing to gate.\n`)
+    process.exit(1)
+  }
+  counts = c.counts
+  venues = c.venues
+  editorial = editorialFor(loadEditorial(REPO_ROOT).byCity, city, state)?.slots ?? null
 }
 
-const editorial = editorialFor(loadEditorial(REPO_ROOT).byCity, city, state)
-
 const gates = checkPageGates({
-  pageType: 'city',
-  counts: c.counts,
+  pageType: isCounty ? 'county' : 'city',
+  counts,
   html,
-  editorial: editorial?.slots ?? null,
+  editorial,
   schema,
-  venues: c.venues,
+  venues,
 })
 
 console.log(`\n=== SHIPPED PAGE — ${city}, ${state} ===`)

@@ -1,0 +1,61 @@
+{
+  "county": "King",
+  "state": "WA",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Two different kinds of claim appear below and they are deliberately kept apart. Claims about the world — how many courts a park has, when it closes — come from Seattle Parks and Recreation and are cited. Claims about our own inventory — how many rows we hold, how many are unverified — are facts about this dataset, not about King County, and are worded so a reader cannot mistake one for the other. 'We hold 151 imported records for King County' is true and checkable; 'King County has 151 pickleball venues' would be neither.",
+
+  "slots": {
+    "coverage": "One city in King County is published here: Seattle, with twenty-four venues verified against Seattle Parks and Recreation's own records. That is the whole of it, and the county is far larger than that. We hold a hundred and fifty-one imported records spanning twenty-eight King County cities, and not one row outside Seattle has been checked against a named source, so not one of them appears on this site. Fifteen of those twenty-eight cities already hold three or more records, which means they clear the venue threshold on volume alone and are waiting on provenance rather than on discovery — Bellevue and Redmond with twelve records each, Kent with nine, Auburn with seven, Issaquah and Mercer Island with six.",
+
+    "distribution": "What we can verify is concentrated in one place, and that is a fact about our coverage rather than about the county. Within Seattle the ninety-two verified courts cluster in the north and south rather than the centre: the three largest sites — Green Lake Park East, Bitter Lake Playfield and Rainier Beach Playfield — hold eight courts each and sit at opposite ends of the city, while central and Capitol Hill provision runs to Miller Playfield's five. Eleven of the twenty-four verified locations carry one or two courts, so a great deal of King County pickleball as we have recorded it happens on single shared courts rather than at dedicated complexes.",
+
+    "gaps": "The honest position is that this is a Seattle page wearing a county heading, and it will stay that way until someone verifies a second city. The obstacle is specific and worth naming: Seattle publishes a dedicated pickleball dataset through its GIS portal, which is why twenty-four venues could be confirmed in an afternoon, and no other King County city appears to publish an equivalent. Bellevue, Redmond, Kent and Renton will each need their parks pages read individually rather than a file downloaded, which is slower work per venue. Until that happens this page reports twenty-four venues and says plainly that the county holds far more."
+  },
+
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in King County?",
+      "a": "We do not know, and no honest page can tell you. What we can tell you is what we have checked: ninety-two courts across twenty-four venues, all of them in Seattle, every one confirmed against Seattle Parks and Recreation's own records on 3 September 2026. The true county figure is certainly much higher — our own unverified import holds a hundred and fifty-one records spread over twenty-eight King County cities — but an imported record is not a confirmed court, and we will not publish the bigger number just because it is more impressive."
+    },
+    {
+      "q": "Why is only Seattle listed when King County has thirty-nine cities?",
+      "a": "Because Seattle is the only one whose courts we have been able to confirm against a named source. A city appears here once three or more of its venues carry a source and a date we can show you. Bellevue, Redmond, Kent, Auburn, Issaquah and nine other King County cities already hold enough imported records to clear that bar on volume — what they lack is provenance, not venues, and until someone does that work they stay off the site rather than going on it unverified."
+    },
+    {
+      "q": "What made Seattle possible and the rest of the county harder?",
+      "a": "Seattle publishes a dedicated pickleball dataset through its GIS portal, listing court counts, lights, nets, restrooms and parking per location, refreshed weekly. That let twenty-four venues be confirmed from one authoritative file. No other King County city appears to publish an equivalent, so the next cities will need their parks pages read one at a time — slower per venue, and the reason this county page currently covers one city."
+    },
+    {
+      "q": "Are the courts on this page free to use?",
+      "a": "Not confirmed. Seattle Parks publishes locations, counts, lights and nets but no fee information, so every venue here shows cost as not verified rather than free. They are municipal park courts and are very likely free, but we do not print a likelihood as a fact. If you know otherwise and can point at a source, the help-us-verify link on any venue page reaches a real queue."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "The underlying Seattle dataset is refreshed weekly by the city and was last edited on 31 August 2026; we read it on 3 September 2026, and that date appears on every venue. We have not yet set a re-check cadence — how long a court count stays trustworthy before it needs looking at again is an open decision on this project, and until it is settled we show you the date and let you judge."
+    }
+  ],
+
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "published": "2026-08-31",
+      "retrieved": "2026-09-03",
+      "supports": ["coverage", "distribution"],
+      "evidence": "Court counts and locations for every Seattle Parks pickleball site. Green Lake Park (East Courts), Bitter Lake Playfield and Rainier Beach Playfield each record 8 courts; Miller Playfield records 5."
+    },
+    {
+      "id": "D1",
+      "url": "https://github.com/odbrangieclawson/pickleball-courts/blob/main/reports/city-triage.md",
+      "publisher": "Deep Pickleball import triage (own dataset)",
+      "tier": 2,
+      "published": "2026-09-03",
+      "retrieved": "2026-09-03",
+      "supports": ["coverage", "gaps"],
+      "evidence": "151 imported rows carry a derived county of King, WA, across 28 distinct cities. 15 of those cities hold 3 or more rows. Seattle 53, Bellevue 12, Redmond 12, Kent 9, Auburn 7, Issaquah 6, Mercer Island 6, Renton 5. No row outside Seattle carries a qualifying source_url or a date_checked. This is a statement about the contents of our own import, not a census of King County."
+    }
+  ]
+}

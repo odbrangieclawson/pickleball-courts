@@ -38,8 +38,10 @@ export default async function LeafPage({params}: Params) {
     return (
       <div className="wrap page">
         <nav aria-label="Breadcrumb" className="crumbs">
-          <a href="/">Home</a> › <a href={f.stateHref}>{f.stateName}</a> ›{' '}
-          <a href={f.cityHref}>{f.city}</a> › {f.filter}
+          {/* No state link: the state page does not publish below the
+              three-city threshold, and a breadcrumb into a 404 is the
+              §3 failure this project exists to avoid. */}
+          <a href="/">Home</a> › <a href={f.cityHref}>{f.city}</a> › {f.filter}
         </nav>
 
         <h1>{f.title}</h1>
@@ -73,8 +75,7 @@ export default async function LeafPage({params}: Params) {
   return (
     <div className="wrap page">
       <nav aria-label="Breadcrumb" className="crumbs">
-        <a href="/">Home</a> › <a href={v.stateHref}>{v.stateName}</a> ›{' '}
-        <a href={v.cityHref}>{v.city}</a> › {v.name}
+        <a href="/">Home</a> › <a href={v.cityHref}>{v.city}</a> › {v.name}
       </nav>
 
       <h1>{v.name}</h1>
