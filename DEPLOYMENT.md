@@ -75,6 +75,13 @@ curl -s https://<host>/ | grep -c "Deep Pickleball"     # expect > 0
 curl -s https://<host>/pickleball/us/nc/charlotte/ | wc -c   # expect ~25KB, not 589
 curl -s https://<host>/sitemap.xml | grep -c "<loc>"    # expect one per published page
 curl -s https://<host>/ | grep -c "example.invalid"     # expect 0 once SITE_ORIGIN is set
+curl -o /dev/null -w "%{http_code}" https://<host>/pickleball/us/zz/   # expect 404, NEVER 500
+
+The second check is not pedantry. Every unmatched URL under
+/pickleball/us/ once returned 500 instead of 404, because the dynamic
+routes did not pin `dynamicParams = false`. A 500 tells a crawler to keep
+a dead URL and come back; a 404 retires it. Check a deliberately wrong
+URL on every deployment, not just a right one.
 ```
 
 The whole site is `noindex, nofollow` with `Disallow: /` in robots.txt, which

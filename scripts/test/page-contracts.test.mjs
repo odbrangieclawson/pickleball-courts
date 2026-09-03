@@ -145,3 +145,35 @@ test('nearestCities returns nothing rather than the least-distant continent', ()
   assert.deepEqual(nearestCities(graph, 'WA', 'spokane'), [],
     'an isolated city gets the empty state the page already has copy for')
 })
+
+/* ------------------------------------------------------------------ */
+/* A URL we did not build must 404, not 500.                           */
+/* ------------------------------------------------------------------ */
+
+test('every dynamic route pins dynamicParams = false', async () => {
+  /*
+    Without it, Next renders any param outside generateStaticParams() on
+    demand, and in production that render failed: /pickleball/us/zz/,
+    /pickleball/us/or/nosuchcity/, a mistyped venue slug and
+    /{city}/public/ all returned 500 instead of 404. A 500 tells a crawler
+    the page is temporarily broken and to keep the URL; a 404 retires it.
+
+    This is a source check rather than an HTTP one because asserting it
+    needs a built server, and the property worth protecting is the export
+    itself — it is one line, in three files, and deleting any of them
+    silently reopens the whole dynamic tree.
+  */
+  const {readFile} = await import('node:fs/promises')
+  const routes = [
+    'app/pickleball/us/[state]/page.tsx',
+    'app/pickleball/us/[state]/[city]/page.tsx',
+    'app/pickleball/us/[state]/[city]/[slug]/page.tsx',
+  ]
+  for (const r of routes) {
+    const src = await readFile(new URL(`../../${r}`, import.meta.url), 'utf8')
+    assert.match(src, /export const dynamicParams = false/,
+      `${r} must pin dynamicParams = false, or unbuilt URLs under it 500 instead of 404`)
+    assert.match(src, /export function generateStaticParams/,
+      `${r} enumerates its own pages`)
+  }
+})

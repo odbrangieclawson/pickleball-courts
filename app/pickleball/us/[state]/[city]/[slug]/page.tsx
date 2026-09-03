@@ -18,6 +18,33 @@ import FilterPage from './FilterPage'
 
 type Params = {params: Promise<{state: string; city: string; slug: string}>}
 
+/*
+  ONLY THE PAGES WE BUILT EXIST.
+
+  Without this, Next treats any param outside generateStaticParams() as a
+  page to render on demand, and in production that render died: every
+  unmatched URL under /pickleball/us/ returned a 500 rather than a 404 —
+  /pickleball/us/zz/, /pickleball/us/or/nosuchcity/, a mistyped venue slug,
+  and /{city}/public/, the filter page decision O1 keeps unpublished. The
+  static /nonexistent/ 404 worked fine; only the dynamic tree failed.
+
+  A 500 is materially worse than a 404 for a directory. Search engines read
+  it as "broken, come back later" and KEEP the URL; a 404 retires it. That
+  is the same traffic leak decisions.md O9 records against a competitor,
+  with the error class that keeps the dead URL alive instead of clearing it.
+
+  dynamicParams = false is also the honest semantics for this site. The set
+  of publishable pages is decided at build time by the link graph and the
+  six gates, and §3 makes those URLs permanent. A page that did not clear a
+  gate must not be conjurable by typing its address.
+
+  This does NOT foreclose the incremental revalidation next.config.ts asks
+  for (O6): dynamicParams governs params generateStaticParams never
+  returned. Re-verifying one venue and refreshing that one prerendered page
+  is untouched.
+*/
+export const dynamicParams = false
+
 export function generateStaticParams() {
   return allLeafParams()
 }
