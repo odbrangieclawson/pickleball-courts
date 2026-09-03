@@ -985,6 +985,24 @@ figure.venue-shot figcaption {
    CARDS — entries in an index, not floating tiles
    ================================================================ */
 
+/*
+  THE GRID IS A BOX, AND THE DIVIDERS ARE SHADOWS.
+
+  This was a border-top on the list plus a border-right and border-bottom
+  on every card, which draws a clean table ONLY when the last row is full.
+  It never is: seven cities across a four-column auto-fill leaves an empty
+  fourth cell, so the bottom rule stopped dead after the third card and the
+  right edge was ragged — the grid read as an unfinished table rather than
+  a panel.
+
+  Closing it with a border on the list and keeping the card borders would
+  double the line at the outer right and bottom edges (card rule + list
+  rule, 2px). So the separators are box-shadows instead: a shadow takes no
+  layout space, and `overflow: hidden` on the list clips the ones that fall
+  on the outer edge. Every interior division is exactly 1px, the outer
+  border is exactly 1px, and an empty trailing cell is simply paper inside
+  the box rather than a hole in it.
+*/
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
@@ -993,20 +1011,39 @@ figure.venue-shot figcaption {
   margin: 24px 0 34px;
   padding: 0;
   list-style: none;
-  border-top: 1px solid var(--rule);
+  border: 1px solid var(--rule);
+  overflow: hidden;
 }
+/*
+  PADDING ON ALL FOUR SIDES.
+
+  The left padding was 0. Every card but the first in a row therefore set
+  its heading and text hard against the divider it shares with the card
+  before it, while carrying 22px of air on the right — so the column looked
+  shunted left and the hover tint bled into the rule. Symmetric 20px gives
+  each cell the same gutter on both sides and lets the hover read as the
+  cell it belongs to.
+*/
 .card {
-  border-bottom: 1px solid var(--rule-2);
-  border-right: 1px solid var(--rule-2);
-  padding: 18px 22px 20px 0;
+  padding: 18px 20px 20px;
   background: none;
-  transition: background .18s ease;
+  box-shadow: 1px 0 0 var(--rule-2), 0 1px 0 var(--rule-2);
+  transition: background .18s ease, box-shadow .18s ease;
 }
 /* A card with a picture reads as a plate in a catalogue: image flush to the
    top of the cell, rules still doing the separating. */
-.card.has-shot { padding-top: 0; padding-right: 18px; }
-.card.has-shot .shot { border-radius: 0; }
-.card:hover { background: var(--paper-2); }
+.card.has-shot { padding-top: 0; }
+.card.has-shot .shot { border-radius: 0; margin: 0 -20px 14px; }
+/*
+  HOVER: the tint, plus the accent picking out the cell's leading edge.
+  An inset shadow rather than a border, so nothing reflows by a pixel and
+  the neighbouring dividers stay put.
+*/
+.card:hover {
+  background: var(--paper-2);
+  box-shadow: 1px 0 0 var(--rule-2), 0 1px 0 var(--rule-2),
+              inset 3px 0 0 var(--accent);
+}
 .card h3 {
   margin: 0 0 6px;
   font-family: var(--serif);
@@ -1277,7 +1314,9 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
   .stat { padding-right: 14px; }
   .stat:nth-child(2n) { border-right: 0; }
   .cards { grid-template-columns: 1fr; }
-  .card { padding-right: 0; border-right: 0; }
+  /* One column: the vertical divider has nothing to divide. */
+  .card { box-shadow: 0 1px 0 var(--rule-2); }
+  .card:hover { box-shadow: 0 1px 0 var(--rule-2), inset 3px 0 0 var(--accent); }
   h2 { margin-top: 40px; }
 }
 
