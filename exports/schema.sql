@@ -1,5 +1,5 @@
 --
--- Deep Pickleball — Supabase schema for the verified set.
+-- Find Pickleball Courts — Supabase schema for the verified set.
 --
 -- The rules this project runs on are enforced here as CONSTRAINTS, not left
 -- as conventions in application code. A directory whose value is that its

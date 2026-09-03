@@ -128,13 +128,37 @@ write('venue_facts.csv',
 
 /* ---- 3. sources ---- */
 
+/*
+  THE PUBLISHER IS LOOKED UP, NEVER ASSUMED.
+
+  This block used to hardcode 'Seattle Parks and Recreation
+  (SeattleParks_SeattleCityGIS)' as the publisher of every data-tier
+  source. Seattle was the only city in the set when it was written, and it
+  stayed hardcoded through six more. The exported provenance table
+  therefore credited Seattle Parks for raleighnc.gov, apexnc.org,
+  carync.gov, portland.gov, cityofvancouver.us and the Census geocoder.
+
+  That is the exact failure this directory exists to not commit — a
+  provenance record that names the wrong publisher is worse than no
+  provenance record, because it survives review by looking complete.
+
+  Every verified city file already carries a `sources` array with the
+  correct publisher per URL, and site.sourceList() hands them over
+  de-duplicated. So: look the URL up. If it is absent, the publisher is
+  NULL — an empty CSV field, the same honest gap the rest of this export
+  uses — because a guessed attribution is a published lie (D6).
+*/
+const publisherByUrl = new Map(
+  site.sourceList().map(s => [s.url, s.publisher ?? null]),
+)
+
 const sourceMap = new Map()
 for (const v of venues) {
   for (const p of Object.values(v.field_provenance ?? {})) {
     if (p.source_url && !sourceMap.has(p.source_url)) {
       sourceMap.set(p.source_url, {
         url: p.source_url,
-        publisher: 'Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)',
+        publisher: publisherByUrl.get(p.source_url) ?? null,
         tier: p.source_tier ?? null,
         kind: 'data',
         retrieved: p.date_checked ?? null,
