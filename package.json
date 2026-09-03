@@ -41,7 +41,8 @@
     "phase6": "npm run build && npm run check:js-off && npm run gates:ci && npm run validate:schema && npm run crawl && npm run monitor:404",
     "check:search": "node scripts/check-search.mjs",
     "export:supabase": "node scripts/export-supabase.mjs",
-    "verify:raleigh": "node scripts/verify/apply-raleigh-parks.mjs"
+    "verify:raleigh": "node scripts/verify/apply-raleigh-parks.mjs",
+    "verify:cary": "node scripts/verify/apply-cary-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

@@ -1,0 +1,69 @@
+{
+  "city": "Cary",
+  "state": "NC",
+  "kind": "filters",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Cary gets one filter page of the five, because outdoor is the only one of the five things a Cary source states for at least three of its venues. There is no /lights/ page here even though one Cary park is explicitly lit, because a filter page needs three qualifying venues and Cary has one. There is no /free/ page because the town never says these courts are free. A filter built on an assumption is worse than no filter.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Every verified pickleball court in Cary is outdoor, so this page lists the same three venues the city page does. That is worth a sentence rather than an apology, because the indoor half of Cary pickleball is real and deliberately absent. The Town of Cary rents three indoor courts in the South Gym at Middle Creek Community Center — $10 per hour per court, $15 with a ball machine, eight players maximum, social play only — on a seasonal timetable that runs Thursday and Friday afternoons and Saturday lunchtimes from March to October, and shorter hours through the winter. We can quote all of that. What the town does not print on that page is a street address, and a venue does not publish here without one, so Cary has an indoor pickleball programme and no indoor venue page. The same rule keeps Cary Tennis Park and its four lighted courts off the site. Neither absence is a gap in Cary's provision; both are gaps in what Cary publishes.",
+        "what_qualifies": "A venue appears here when a source places its courts outdoors. For all three Cary parks that rests on the setting the town describes rather than on the word \"outdoor\", and we would rather say so than imply a quotation that does not exist. Each is a public park whose hours the town gives as sunrise to sunset — Ed Yerha Park flatly, Carpenter Park and the McCrimmon Parkway park with an extension for approved activities in lighted areas — and each lists its courts among features like playgrounds, picnic shelters, paved loop trails and open play fields. Sunrise-to-sunset hours are not a thing an indoor court has. On that basis the outdoor court count for each venue is recorded as equal to its total. What is not recorded is a zero for indoor courts at any of them, because none of these pages says there are none, and writing zero would turn an absence of evidence into a checked fact. The distinction matters more in Cary than it might elsewhere: the town runs indoor pickleball a few miles away at Middle Creek, so \"no indoor courts here\" and \"no indoor courts published\" are genuinely different claims about the same town."
+      },
+      "faqs": [
+        {
+          "q": "Are all of Cary's pickleball courts outdoor?",
+          "a": "All 12 that we have verified are, across three town parks. Cary also rents three indoor courts at Middle Creek Community Center, which we have not verified as a venue because the town publishes no street address for it."
+        },
+        {
+          "q": "Which outdoor Cary court is lit?",
+          "a": "Only the Neighborhood Park on McCrimmon Parkway, whose features list heads its entry \"Lighted Pickleball Courts\". Ed Yerha Park and Carpenter Park state nothing about lighting on their courts, so we record it as not verified rather than absent. That is why Cary has no /lights/ page: a filter page needs three qualifying venues and Cary has one."
+        },
+        {
+          "q": "Is there a covered court in Cary?",
+          "a": "Not among the three parks here. Cary Tennis Park has seven covered courts, but they are tennis courts, and that venue does not publish on this site anyway for want of an address. None of the three verified parks states a covered or sheltered court."
+        }
+      ],
+      "sources": ["E1", "E2", "E3", "E4"]
+    }
+  },
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+      "publisher": "Town of Cary, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Ed Yerha Park, 1216 Jenks Carpenter Road. Features: \"One basketball slab\", \"Three pickleball courts\", \"One open play field\", playground, picnic shelter, picnic tables, restrooms. \"Park Hours: Sunrise to Sunset.\" No lighting is stated for the courts."
+    },
+    {
+      "id": "E2",
+      "url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+      "publisher": "Town of Cary, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Carpenter Park, 4420 Louis Stephens Drive. Features include \"Multi-Sport Courts: Basketball & 3 Pickleball Courts\", \"Parking for 30 Cars\", a restroom structure, a community garden and pedestrian trails. \"Park Hours: Sunrise to Sunset. In lighted areas where visitors are participating in an approved extended-use activity, hours are extended until 30 minutes after the activity ends or 11 p.m., whichever comes first.\""
+    },
+    {
+      "id": "E3",
+      "url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+      "publisher": "Town of Cary, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Neighborhood Park on McCrimmon Parkway, 3870 Cary Glen Blvd, a 20-acre site. Features: \"Lighted Tennis Court: Reservable 16 hours in advance\", \"Lighted Pickleball Courts: Non-reservable, first-come, first-served\", playground, picnic shelter, picnic tables, restrooms, public art, paved loop trails. Park hours sunrise to sunset with the extended-activity clause. The Cary Tennis Park satellite list gives the count as \"Six Lighted Tennis Courts and Six Lighted Pickleball Courts\"."
+    },
+    {
+      "id": "E4",
+      "url": "https://www.carync.gov/recreation-enjoyment/facilities/middle-creek-community-center",
+      "publisher": "Town of Cary, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["why_this_filter"],
+      "evidence": "\"Pickleball court reservations are available in the South Gym: March-October - Thursday, Friday from 2 - 5 p.m., Saturday noon - 2p.m. November-February - Thursday, Friday from noon - 2 p.m. Three (3) courts are available to rent. Fees are $10 per hour/per court or $15 per hour/per court with the ball machine (if available).\" \"Social Play ONLY.\" \"Maximum of 8 people per court.\" No street address is printed. Cary Tennis Park's facility page separately lists \"seven covered courts\" among its 32 championship tennis courts and \"Four permanent 36' QuickStart/Pickleball Courts\"."
+    }
+  ]
+}

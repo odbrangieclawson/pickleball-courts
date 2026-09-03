@@ -10,15 +10,17 @@ COUNTY  —  2/2 publishable
   PASS  /pickleball/us/wa/king-county/
         925 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/wake-county/
-        1021 words · BreadcrumbList, FAQPage, ItemList
+        1211 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  2/2 publishable
+CITY  —  3/3 publishable
   PASS  /pickleball/us/wa/seattle/
         1603 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/
         1885 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/cary/
+        1837 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  4/4 publishable
+FILTER  —  5/5 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
@@ -27,8 +29,10 @@ FILTER  —  4/4 publishable
         702 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/lights/
         680 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/cary/outdoor/
+        662 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  35/35 publishable
+VENUE  —  38/38 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -99,10 +103,16 @@ VENUE  —  35/35 publishable
         784 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/raleigh/southgate-park/
         709 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/cary/carpenter-park/
+        701 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/cary/ed-yerha-park/
+        728 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/cary/mccrimmon-park/
+        831 words · BreadcrumbList, SportsActivityLocation, FAQPage
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, outdoor, lights
+  built for Seattle: outdoor, lights, outdoor, lights, outdoor
   indoor: not published — no lawful data driver or fewer than 3 matches
   free: not published — no lawful data driver or fewer than 3 matches
   public: not published — no lawful data driver or fewer than 3 matches
@@ -128,6 +138,6 @@ VENUE  —  35/35 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 43/43 pages pass all six gates.
+TOTAL: 48/48 pages pass all six gates.
 
 ```

@@ -1,0 +1,320 @@
+{
+  "city": "Cary",
+  "state": "NC",
+  "retrieved_at": "2026-09-03",
+  "method_note": "Court counts are STATED by the Town of Cary on each facility's own page, and this run asserts that the exact sentence is still present in the snapshot before publishing the number it contains. Snapshots are extracted page text rather than raw HTML because carync.gov refuses scripted fetches; see data/sources/cary-parks/README.md. Cary Tennis Park and Middle Creek Community Center are excluded despite stated court counts, because neither publishes a street address and Import Gate I1 requires one.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks",
+      "publisher": "Town of Cary, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/cary-parks/"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.carync.gov/recreation-enjoyment/facilities/cary-tennis-park",
+      "publisher": "Town of Cary, Parks, Recreation & Cultural Resources",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/cary-parks/cary-tennis-park.txt"
+    },
+    {
+      "id": "S3",
+      "url": "https://data.townofcary.org/api/v2/catalog/datasets/parks-and-recreation-feature-map",
+      "publisher": "Town of Cary open data",
+      "tier": 2,
+      "format": "json",
+      "snapshot": "data/sources/cary-county-census.json"
+    },
+    {
+      "id": "S4",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/cary-county-census.json"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Cary Tennis Park",
+      "courts": 4,
+      "why": "The town states \"four lighted pickleball courts\" but publishes no street address. Import Gate I1 requires one."
+    },
+    {
+      "name": "Middle Creek Community Center",
+      "courts": 3,
+      "why": "Indoor rental courts, \"Three (3) courts are available to rent\". No published street address."
+    }
+  ],
+  "venues": {
+    "ed-yerha-park": {
+      "minted": true,
+      "identity": {
+        "name": "Ed Yerha Park",
+        "city": "Cary",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": null,
+        "latitude": 35.774713,
+        "longitude": -78.860447,
+        "imported_slug": null,
+        "canonical_slug": "ed-yerha-park"
+      },
+      "match": {
+        "source_page": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+        "quote": "Three pickleball courts",
+        "basis": "No imported row. Formerly White Oak Park; the town renamed it for a former councilmember, and its own page still says so."
+      },
+      "patch": {
+        "name": "Ed Yerha Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "1216 Jenks Carpenter Road",
+        "venue_type": "public_park",
+        "county": "Wake",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page on carync.gov is titled \"Ed Yerha Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the town's page: \"Three pickleball courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Open-air courts in a public park; the page gives the park's hours as sunrise to sunset and lists the courts among outdoor features. The town does not use the word \"outdoor\" here, so this reads the setting rather than quoting a label. indoor_courts is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed at the head of the park's own page: \"1216 Jenks Carpenter Road\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Town of Cary, Parks, Recreation & Cultural Resources among its parks."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County, NC (FIPS 37183). The Census address geocoder did not match this street as written by the town, so the county comes from the point the Town of Cary itself publishes for this park in its open data (http://www.townofcary.org/recreation-enjoyment/parks-greenways-environment/parks/white-oak-park), resolved against Census county boundaries."
+        },
+        "restroom": {
+          "source_url": "https://data.townofcary.org/api/v2/catalog/datasets/parks-and-recreation-feature-map",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Town of Cary parks and recreation feature map, restroom = \"Yes\" for this park. The park's own page lists restrooms among its features."
+        }
+      },
+      "record": {
+        "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/ed-yerha-park",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "carpenter-park": {
+      "minted": false,
+      "identity": {
+        "name": "Carpenter Park",
+        "city": "Cary",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": null,
+        "latitude": 35.822779,
+        "longitude": -78.863294,
+        "imported_slug": "carpenter-park",
+        "canonical_slug": "carpenter-park"
+      },
+      "match": {
+        "source_page": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+        "quote": "Multi-Sport Courts: Basketball & 3 Pickleball Courts",
+        "basis": "No imported row. The courts are multi-sport, shared with basketball, which the features list states outright."
+      },
+      "patch": {
+        "name": "Carpenter Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "4420 Louis Stephens Drive",
+        "venue_type": "public_park",
+        "county": "Wake",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page on carync.gov is titled \"Carpenter Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the town's page: \"Multi-Sport Courts: Basketball & 3 Pickleball Courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Open-air courts in a public park; the page gives the park's hours as sunrise to sunset and lists the courts among outdoor features. The town does not use the word \"outdoor\" here, so this reads the setting rather than quoting a label. indoor_courts is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed at the head of the park's own page: \"4420 Louis Stephens Drive\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Town of Cary, Parks, Recreation & Cultural Resources among its parks."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County, NC (FIPS 37183). The Census address geocoder did not match this street as written by the town, so the county comes from the point the Town of Cary itself publishes for this park in its open data (http://www.townofcary.org/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park), resolved against Census county boundaries."
+        },
+        "restroom": {
+          "source_url": "https://data.townofcary.org/api/v2/catalog/datasets/parks-and-recreation-feature-map",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Town of Cary parks and recreation feature map, restroom = \"Yes\" for this park. The park's own page lists restrooms among its features."
+        }
+      },
+      "record": {
+        "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "mccrimmon-park": {
+      "minted": true,
+      "identity": {
+        "name": "McCrimmon Park",
+        "city": "Cary",
+        "state": "NC",
+        "county": "Wake",
+        "postal_code": "27519",
+        "latitude": 35.81214,
+        "longitude": -78.914431,
+        "imported_slug": null,
+        "canonical_slug": "mccrimmon-park"
+      },
+      "match": {
+        "source_page": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+        "quote": "Six Lighted Tennis Courts and Six Lighted Pickleball Courts",
+        "basis": "No imported row. The town calls this \"Neighborhood Park on McCrimmon Parkway\" on its own page and \"McCrimmon Park\" on the Cary Tennis Park page; the park's own name is used and the short form is treated as an alias."
+      },
+      "patch": {
+        "name": "McCrimmon Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "3870 Cary Glen Blvd",
+        "venue_type": "public_park",
+        "county": "Wake",
+        "light": true,
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The town uses two names for this park: \"Neighborhood Park on McCrimmon Parkway\" on the park's own page and \"McCrimmon Park\" on its Cary Tennis Park page. Both are the town's own words; the shorter is published because the longer overruns the 65-character page-title limit, and the full name is given on the venue page."
+        },
+        "total_courts": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/facilities/cary-tennis-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the town's page: \"Six Lighted Tennis Courts and Six Lighted Pickleball Courts\". Listed there under \"McCrimmon Park (3870 Cary Glen Blvd.)\", in the Cary Tennis Park satellite court list; the park's own page confirms the courts exist but states no number."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Open-air courts in a public park; the page gives the park's hours as sunrise to sunset and lists the courts among outdoor features. The town does not use the word \"outdoor\" here, so this reads the setting rather than quoting a label. indoor_courts is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The address printed at the head of the park's own page: \"3870 Cary Glen Blvd\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Town of Cary, Parks, Recreation & Cultural Resources among its parks."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Wake County, NC (FIPS 37183). Census address geocoder matched \"3870 CARY GLEN BLVD, CARY, NC, 27519\"."
+        },
+        "light": {
+          "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's features list heads the entry \"Lighted Pickleball Courts: Non-reservable, first-come, first-served\"."
+        },
+        "restroom": {
+          "source_url": "https://data.townofcary.org/api/v2/catalog/datasets/parks-and-recreation-feature-map",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Town of Cary parks and recreation feature map, restroom = \"Yes\" for this park. The park's own page lists restrooms among its features."
+        }
+      },
+      "record": {
+        "source_url": "https://www.carync.gov/recreation-enjoyment/parks-greenways-environment/parks/mccrimmon-parkway-park",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

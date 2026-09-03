@@ -1,0 +1,33 @@
+{
+  "ed-yerha-park": {
+    "lat": 35.774713,
+    "lon": -78.860447,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "postal_code": null,
+    "restroom": "Yes",
+    "basis": "The Census address geocoder did not match this street as written by the town, so the county comes from the point the Town of Cary itself publishes for this park in its open data (http://www.townofcary.org/recreation-enjoyment/parks-greenways-environment/parks/white-oak-park), resolved against Census county boundaries."
+  },
+  "carpenter-park": {
+    "lat": 35.822779,
+    "lon": -78.863294,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "postal_code": null,
+    "restroom": "Yes",
+    "basis": "The Census address geocoder did not match this street as written by the town, so the county comes from the point the Town of Cary itself publishes for this park in its open data (http://www.townofcary.org/recreation-enjoyment/parks-greenways-environment/parks/carpenter-park), resolved against Census county boundaries."
+  },
+  "mccrimmon-park": {
+    "matched": "3870 CARY GLEN BLVD, CARY, NC, 27519",
+    "lat": 35.81214,
+    "lon": -78.914431,
+    "county": "Wake",
+    "state_fips": "37",
+    "county_fips": "183",
+    "basis": "Census address geocoder matched \"3870 CARY GLEN BLVD, CARY, NC, 27519\".",
+    "postal_code": "27519",
+    "restroom": "Yes"
+  }
+}
