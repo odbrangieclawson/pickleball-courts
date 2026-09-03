@@ -927,7 +927,13 @@ th, td {
   padding: 11px 16px 11px 0;
   border-bottom: 1px solid var(--rule-2);
   vertical-align: top;
-  overflow-wrap: anywhere;
+  /*
+    break-word, not anywhere. `anywhere` will split a word at any character
+    the moment a column is tight, and on a narrow screen it turned the venue
+    table into "8 cour ts" and "Lind en Ave N" — one letter per line in
+    places. break-word only breaks a word that genuinely cannot fit.
+  */
+  overflow-wrap: break-word;
 }
 thead th {
   font-size: 11.5px;
@@ -1077,8 +1083,39 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
   .facts { grid-template-columns: 1fr; column-gap: 0; }
 }
 
+/*
+  NARROW SCREENS AND THE VENUE TABLE
+
+  .table-scroll has always had overflow-x: auto, but `table { width: 100% }`
+  meant the table dutifully squeezed itself into 340px instead of ever
+  overflowing — so the scroll container had nothing to scroll and the
+  columns crushed instead. A min-width makes the table refuse to shrink past
+  the point of legibility, which is what finally lets the horizontal scroll
+  do its job.
+
+  A six-column reference table is the right shape for this data and the
+  wrong shape for a phone. Scrolling it beats stacking it into cards,
+  because the whole value of the table is comparing venues down a column.
+*/
+@media (max-width: 760px) {
+  .table-scroll { position: relative; }
+  .table-scroll table { min-width: 34rem; }
+  .table-scroll::after {
+    content: "Scroll for the rest of the table →";
+    display: block;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--ink-3);
+    padding: 8px 0 2px;
+  }
+}
+
 @media (max-width: 640px) {
   body { font-size: 16px; }
+  /* The banner is important, not a headline. Four lines of it above the
+     masthead pushes the actual page off a phone screen. */
+  .demo-banner { font-size: 12px; padding: 8px 16px; line-height: 1.4; text-align: left; }
   .wrap { padding: 0 18px; }
   .page { padding-top: 26px; }
   .site-head .wrap { padding-top: 14px; padding-bottom: 6px; gap: 10px; }
