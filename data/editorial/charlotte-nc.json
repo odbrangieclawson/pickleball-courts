@@ -1,0 +1,98 @@
+{
+  "city": "Charlotte",
+  "state": "NC",
+  "date_checked": "2026-09-03",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every claim below comes from a named source in `sources`. Charlotte is the first city in this directory whose operator publishes no court count at all — Mecklenburg County lists individual numbered courts instead, and the counts here are the number of distinct court numbers it names at each park. Where the county is silent, and it is silent about a great deal, the note says so rather than filling the gap.",
+  "slots": {
+    "parking": "Mecklenburg County publishes one sentence about parking across its entire park system, and it is a warning rather than a guide: local parks, meaning neighbourhood parks, \"do not typically have parking or restroom features as these locations are small to medium parks that are meant to provide open space for residents near their homes\". That is a statement about a category, not about any particular park, so we have not written it to any venue's parking or restroom field — but it is worth knowing how the county thinks about its own estate. None of the five pickleball parks here is classified as a neighbourhood park. Freedom Park and Colonel Francis J. Beatty Park are Regional parks in the county's own typing; Clarks Creek Park, Clanton Park and Martin Luther King Jr. Park are Community parks. So the warning most likely does not apply to any of them, and \"most likely\" is exactly why we have not recorded it as a fact. What the county does not publish is any capacity, time limit, permit requirement or fee for parking at a single one of the five. If you want to know where to leave a car at Freedom Park on a Saturday, this directory cannot tell you and neither can the county's website.",
+    "peak_hours": "Charlotte is the only city in this directory where the operator splits each park's courts between bookable and not, court by court, and publishing that split is the most useful thing this page can do. Mecklenburg County says that \"Some courts can be reserved for a small fee\" and that \"Any courts not listed are non-reservable and open to the public on a first come, first serve basis\". Then it lists exactly which numbered courts fall on which side.\n\nAcross the five parks, 19 of the 29 courts are reservable and 10 are always open play. Every single park keeps some back: Clarks Creek reserves courts 1 to 5 and leaves 6, 7 and 8 open; Clanton reserves 1 to 4 and leaves 5 and 6; Freedom reserves 11, 12, 14 and 15 and leaves 13 and 16; Martin Luther King Jr. reserves 2, 3, 5 and 6 and leaves 1 and 4; Beatty reserves 2 and 3 and leaves 1. That is a deliberate policy rather than an accident of scheduling, and it means a player who turns up without a booking is never locked out of a park entirely — but at Beatty it means competing for a single court.\n\nWhat the county does not publish is opening hours for any of them. It says local park courts \"are always open for play\", which is a statement about access rather than a timetable, and it publishes no lighting information at all, so we cannot tell you whether any Charlotte court is usable after dark. Every venue here reads \"Not verified yet\" on lights. That is a gap in the county's publishing, not an implication that the courts are unlit.",
+    "surface_condition": "Nothing at all. Mecklenburg County publishes no surface material, no condition, no resurfacing date and no court-level closure information for any of the five parks, so every Charlotte venue reads \"Not verified yet\" on surface. The county does run a closure notice system and does use it — the large playground at Nevin Park was closed until further notice when we checked on 3 September 2026 — so the absence here is not because the county never publishes maintenance news. It is that court condition is not among the things it publishes. What the county does tell you about each park is its size class, which is a weak proxy for what you will find: Freedom Park and Colonel Francis J. Beatty Park are Regional parks, the largest category, and the other three are Community parks. All five are recorded as Developed rather than planned or undeveloped, which at least confirms the courts exist as built facilities rather than as proposals.",
+    "local_scene": "The Mecklenburg County Park and Recreation Department runs 290 parks and facilities across more than 23,000 acres, and its pickleball is a small, precisely documented corner of that. What makes Charlotte distinctive in this directory is not scale but bookkeeping: it is the only operator that identifies courts individually, by number, and tells you which of them can be reserved.\n\nThat precision produces one genuinely interesting artefact. At Freedom Park the pickleball courts are numbered 11 to 16, because courts 1 to 10 at the same park are tennis courts, listed separately higher up the same page. The county is not maintaining two independent numbering schemes at one site; it is running one series across both sports. You can read the history of the conversion straight out of the numbering.\n\nThere is also a category on that page we have deliberately not published: Hybrid Courts, six each at Latta Park and Tuckaseegee Park. The county lists them under their own heading rather than under Pickleball Courts and never says what a hybrid court is. It is very probably a shared tennis-and-pickleball surface, and probably is not a source, so twelve courts sit just outside this page waiting on one sentence of definition. The same caution applies to fees: the county says reservations cost \"a small fee\" without naming a price, so every venue here reads \"Not verified yet\" on cost rather than free."
+  },
+  "best_for": [
+    {
+      "key": "space",
+      "heading": "Best if you want the most courts",
+      "venue_slug": "clarks-creek-park",
+      "text": "Clarks Creek Park, with eight — the largest pickleball site verified in Charlotte, in the north of the city off Hucks Road. Courts 1 to 5 are reservable and 6, 7 and 8 are always open play, so three courts are available to walk-ups no matter what has been booked. Do not confuse it with Clarks Creek Nature Preserve directly across the road, or Clarks Creek Greenway Park on Mallard Creek Road; the county's parks layer holds all three as separate records.",
+      "supports": ["peak_hours", "local_scene"]
+    },
+    {
+      "key": "dropin",
+      "heading": "Best odds without a booking",
+      "venue_slug": "clarks-creek-park",
+      "text": "Again Clarks Creek, on arithmetic: three of its eight courts are permanently open play, more than any other Charlotte park. Clanton, Freedom and Martin Luther King Jr. each keep two back, and Colonel Francis J. Beatty Park keeps exactly one of its three. If you are turning up unannounced at Beatty you are competing for a single court."
+    },
+    {
+      "key": "central",
+      "heading": "Best known park on the list",
+      "venue_slug": "freedom-park",
+      "text": "Freedom Park, one of the county's Regional parks and a Charlotte landmark in its own right. Six pickleball courts, numbered 11 to 16 because courts 1 to 10 there are tennis. Four are reservable and two — 13 and 16 — are always open play. The county publishes nothing about lighting, surface or hours for them."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does Charlotte have?",
+      "a": "We have verified 29 across five Mecklenburg County parks: eight at Clarks Creek Park, six each at Clanton Park, Freedom Park and Martin Luther King Jr. Park, and three at Colonel Francis J. Beatty Park. The county also lists six \"hybrid\" courts each at Latta Park and Tuckaseegee Park, which we do not publish because it never says what a hybrid court is. Private clubs and commercial venues are not included, because none of them publishes a court count we can cite."
+    },
+    {
+      "q": "Where does your court count come from, if the county never states one?",
+      "a": "From the county's own numbering. Mecklenburg does not write \"Clarks Creek Park: 8 courts\" anywhere. It writes \"Clarks Creek Park: Courts 1-5\" under reservable courts and \"Clarks Creek Park: Courts 6-8\" under open play, so it is naming court 1, court 2 and so on individually. The count is how many distinct court numbers it names. Our check is that every park's numbers form one complete run with no gaps and no number appearing in both lists — Clarks Creek 1-8, Clanton 1-6, Freedom 11-16, MLK 1-6, Beatty 1-3 — and a park that fails that check does not publish at all."
+    },
+    {
+      "q": "Can I reserve a court in Charlotte?",
+      "a": "At most of them, yes, and the county tells you exactly which. Nineteen of the 29 courts are reservable for what it calls \"a small fee\"; the other ten are always open play on a first-come, first-served basis. Every park keeps at least one court back for drop-in play. The county does not publish what the fee is, so we record cost as not verified rather than guessing."
+    },
+    {
+      "q": "Which Charlotte courts have lights?",
+      "a": "We do not know, and neither does anyone reading the county's website. Mecklenburg publishes nothing about lighting on its courts page, so every Charlotte venue here reads \"Not verified yet\" on lights. That is an absence of information rather than an absence of floodlights, and it is the biggest single gap in this city's data — in Raleigh and Apex the operator states lighting for every location."
+    },
+    {
+      "q": "Why are Latta Park and Tuckaseegee Park missing?",
+      "a": "Because the county files them under \"Hybrid Courts\", a heading of its own, separate from \"Pickleball Courts\", and never defines the term. Both have six numbered courts. A hybrid court is very likely a surface lined for both tennis and pickleball, but we do not publish very likely. Twelve courts are waiting on one sentence from Mecklenburg County."
+    },
+    {
+      "q": "Is Colonel Francis J. Beatty Park in Charlotte or Matthews?",
+      "a": "Charlotte, though the records disagree and it took a third source to settle. Its postcode is 28105, which is a Matthews mailing ZIP, while the City of Charlotte parks layer labels its city as Charlotte. We put the park's published coordinates through the US Census geocoder, which places the point inside the incorporated place of Charlotte, in Mecklenburg County. A mailing address and a municipal boundary are different things and they disagree here."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+      "publisher": "Mecklenburg County Park and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["peak_hours", "local_scene", "parking"],
+      "evidence": "\"Local park courts are always open for play. Local parks (neighborhood parks) do not typically have parking or restroom features as these locations are small to medium parks that are meant to provide open space for residents near their homes.\" \"Some courts can be reserved for a small fee. Any courts not listed are non-reservable and open to the public on a first come, first serve basis.\" Reservable Pickleball Courts: Clarks Creek Park Courts 1-5; Clanton Park Courts 1-4; Colonel Francis J. Beatty Park Courts 2&3; Freedom Park Courts 11, 12, 14, 15; MLK Park Courts 2,3,5,6. Open Play Pickleball Courts: Clarks Creek Park Courts 6-8; Clanton Park Courts 5&6; Colonel Francis J. Beatty Park Court 1; Freedom Park Courts 13&16; MLK Park Courts 1&4. Hybrid Courts, listed under a separate heading and undefined: Latta Park Courts 1-4 reservable and 5&6 open play; Tuckaseegee Park the same. Freedom Park also appears under Tennis Courts with Courts 1-6 reservable and 7-10 open play. No lighting, surface, hours or fee amount is published."
+    },
+    {
+      "id": "E2",
+      "url": "https://parkandrec.mecknc.gov/Places-to-Visit/Parks",
+      "publisher": "Mecklenburg County Park and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["local_scene", "surface_condition"],
+      "evidence": "\"The Mecklenburg County Park and Recreation Department is home to 290 parks and facilities located on more than 23,000 acres of parkland throughout Mecklenburg County.\" Closure notice at the time of reading: \"The large playground in Nevin Park is closed until further notice.\" No court-level condition or closure information is published."
+    },
+    {
+      "id": "E3",
+      "url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+      "publisher": "City of Charlotte Open Data",
+      "tier": 2,
+      "retrieved": "2026-09-03",
+      "supports": ["parking", "surface_condition", "local_scene"],
+      "evidence": "Parks layer, 376 records covering Mecklenburg County parks including those run by the surrounding towns. Clarks Creek Park, 5435 HUCKS RD, Charlotte NC 28269, PRKTYPE Community, PRKSTATUS Developed. Clanton Park, 1520 CLANTON RD, 28217, Community, Developed. Freedom Park, 2435 CUMBERLAND AV, 28203, Regional, Developed. Martin Luther King Jr. Park, 2600 RAVENCROFT DR, 28208, Community, Developed. Colonel Francis J. Beatty Park, 4330 WEDDINGTON RD, 28105, Regional, Developed. Latta Park, 601 E PARK AV, 28203, Community. Tuckaseegee Park, 4820 TUCKASEEGEE RD, 28208, Neighborhood. Separate records also exist for Clarks Creek Nature Preserve (5434 Hucks Rd), Clarks Creek Greenway Park (9715 Mallard Creek Rd), Clanton Park Community Garden and Martin Luther King Jr. Middle School."
+    },
+    {
+      "id": "E4",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": ["local_scene"],
+      "evidence": "Each park's published coordinates resolved against Census county and incorporated-place boundaries. All five return Mecklenburg County, FIPS 37119, and the incorporated place of Charlotte — including Colonel Francis J. Beatty Park, whose postcode 28105 is a Matthews mailing ZIP."
+    }
+  ]
+}

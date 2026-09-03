@@ -1,0 +1,106 @@
+{
+  "source": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+  "publisher": "City of Charlotte Open Data (Parks; covers Mecklenburg County parks)",
+  "retrieved": "2026-09-03",
+  "note": "Trimmed to the seven parks the Mecklenburg pickleball page names. Full layer holds 376 parks.",
+  "parks": [
+    {
+      "PRKNAME": "Colonel Francis J. Beatty Park",
+      "PRKADDR": "4330 WEDDINGTON RD",
+      "CITY": "CHARLOTTE",
+      "STATE": "NC",
+      "ZIP": "28105",
+      "PRKTYPE": "Regional",
+      "PRKSTATUS": "Developed",
+      "PRKSIZE": null,
+      "geometry": [
+        -80.72865181590767,
+        35.06737010652028
+      ]
+    },
+    {
+      "PRKNAME": "Martin Luther King Jr. Park",
+      "PRKADDR": "2600 RAVENCROFT DR",
+      "CITY": "CHARLOTTE",
+      "STATE": "NC",
+      "ZIP": "28208",
+      "PRKTYPE": "Community",
+      "PRKSTATUS": "Developed",
+      "PRKSIZE": null,
+      "geometry": [
+        -80.87149510673324,
+        35.2457764134867
+      ]
+    },
+    {
+      "PRKNAME": "Clarks Creek Park",
+      "PRKADDR": "5435 HUCKS RD",
+      "CITY": "CHARLOTTE",
+      "STATE": "NC",
+      "ZIP": "28269",
+      "PRKTYPE": "Community",
+      "PRKSTATUS": "Developed",
+      "PRKSIZE": null,
+      "geometry": [
+        -80.81121414063047,
+        35.351636845529676
+      ]
+    },
+    {
+      "PRKNAME": "Latta Park",
+      "PRKADDR": "601 E PARK AV",
+      "CITY": "CHARLOTTE",
+      "STATE": "NC",
+      "ZIP": "28203",
+      "PRKTYPE": "Community",
+      "PRKSTATUS": "Developed",
+      "PRKSIZE": null,
+      "geometry": [
+        -80.85094354274963,
+        35.20953631750455
+      ]
+    },
+    {
+      "PRKNAME": "Clanton Park",
+      "PRKADDR": "1520 CLANTON RD",
+      "CITY": "CHARLOTTE",
+      "STATE": "NC",
+      "ZIP": "28217",
+      "PRKTYPE": "Community",
+      "PRKSTATUS": "Developed",
+      "PRKSIZE": null,
+      "geometry": [
+        -80.89333170435035,
+        35.20808709971985
+      ]
+    },
+    {
+      "PRKNAME": "Tuckaseegee Park",
+      "PRKADDR": "4820 TUCKASEEGEE RD",
+      "CITY": "CHARLOTTE",
+      "STATE": "NC",
+      "ZIP": "28208",
+      "PRKTYPE": "Neighborhood",
+      "PRKSTATUS": "Developed",
+      "PRKSIZE": null,
+      "geometry": [
+        -80.90792309066266,
+        35.24840734316208
+      ]
+    },
+    {
+      "PRKNAME": "Freedom Park",
+      "PRKADDR": "2435 CUMBERLAND AV",
+      "CITY": "CHARLOTTE",
+      "STATE": "NC",
+      "ZIP": "28203",
+      "PRKTYPE": "Regional",
+      "PRKSTATUS": "Developed",
+      "PRKSIZE": null,
+      "geometry": [
+        -80.84476232576625,
+        35.19172073561238
+      ]
+    }
+  ]
+}

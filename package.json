@@ -43,7 +43,8 @@
     "export:supabase": "node scripts/export-supabase.mjs",
     "verify:raleigh": "node scripts/verify/apply-raleigh-parks.mjs",
     "verify:cary": "node scripts/verify/apply-cary-parks.mjs",
-    "verify:apex": "node scripts/verify/apply-apex-parks.mjs"
+    "verify:apex": "node scripts/verify/apply-apex-parks.mjs",
+    "verify:charlotte": "node scripts/verify/apply-charlotte-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

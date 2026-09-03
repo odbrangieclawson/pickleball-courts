@@ -1,0 +1,490 @@
+{
+  "city": "Charlotte",
+  "state": "NC",
+  "retrieved_at": "2026-09-03",
+  "method_note": "Mecklenburg County enumerates individual numbered pickleball courts rather than publishing a total, so each count here is the number of distinct court numbers the county names at that park, parsed from the snapshot at run time rather than typed into the script. Every park is required to produce one complete consecutive run of court numbers with no gaps and no number in both the reservable and open-play lists; a venue that fails that check does not publish. Municipality was resolved through the Census rather than taken from the parks layer, because Beatty Park carries a Matthews postcode while the layer labels it Charlotte.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+      "publisher": "Mecklenburg County Park and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/charlotte-parks/mecknc-courts.txt"
+    },
+    {
+      "id": "S2",
+      "url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+      "publisher": "City of Charlotte Open Data",
+      "tier": 2,
+      "format": "geojson",
+      "snapshot": "data/sources/charlotte-parks/charlotte-parks-opendata.json"
+    },
+    {
+      "id": "S3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/charlotte-county-census.json"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Latta Park",
+      "courts": 6,
+      "why": "Listed by the county under \"Hybrid Courts\" rather than \"Pickleball Courts\". The county does not define a hybrid court. Six numbered courts, 1-6."
+    },
+    {
+      "name": "Tuckaseegee Park",
+      "courts": 6,
+      "why": "Also listed under \"Hybrid Courts\", six numbered courts, 1-6. Same reason."
+    }
+  ],
+  "venues": {
+    "clarks-creek-park": {
+      "minted": true,
+      "identity": {
+        "name": "Clarks Creek Park",
+        "city": "Charlotte",
+        "state": "NC",
+        "county": "Mecklenburg",
+        "postal_code": "28269",
+        "latitude": 35.351637,
+        "longitude": -80.811214,
+        "imported_slug": null,
+        "canonical_slug": "clarks-creek-park"
+      },
+      "match": {
+        "county_lines": [
+          "Clarks Creek Park: Courts 1-5",
+          "Clarks Creek Park: Courts 6-8"
+        ],
+        "court_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "park_record": "Clarks Creek Park",
+        "basis": "No imported row. The county names eight numbered pickleball courts here, the most at any Charlotte park in this set. Not to be confused with Clarks Creek Nature Preserve across the road at 5434 Hucks Rd, or Clarks Creek Greenway Park on Mallard Creek Rd, both of which are separate records in the parks layer."
+      },
+      "patch": {
+        "name": "Clarks Creek Park",
+        "total_courts": 8,
+        "street_address": "5435 Hucks Rd",
+        "postal_code": "28269",
+        "venue_type": "public_park",
+        "county": "Mecklenburg"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Clarks Creek Park\" in the City of Charlotte parks layer; Mecklenburg County writes it \"Clarks Creek Park\" in its court lists."
+        },
+        "total_courts": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Mecklenburg County lists individual numbered pickleball courts rather than a total. At this park it names \"Clarks Creek Park: Courts 1-5\" and \"Clarks Creek Park: Courts 6-8\", which is courts 1-8 — 8 distinct courts, forming one complete run with no gaps and no number listed twice."
+        },
+        "street_address": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Clarks Creek Park\", PRKADDR=\"5435 HUCKS RD\", CHARLOTTE NC 28269. Title-cased for display, with the street type expanded."
+        },
+        "postal_code": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Clarks Creek Park\", ZIP=\"28269\"."
+        },
+        "venue_type": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by Mecklenburg County Park and Recreation; the parks layer records it as PRKTYPE=\"Community\", PRKSTATUS=\"Developed\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder: the point 35.351637,-80.811214 published for this park by City of Charlotte Open Data falls in Mecklenburg County (FIPS 37119) and inside the incorporated place of Charlotte."
+        }
+      },
+      "record": {
+        "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "clanton-park": {
+      "minted": false,
+      "identity": {
+        "name": "Clanton Park",
+        "city": "Charlotte",
+        "state": "NC",
+        "county": "Mecklenburg",
+        "postal_code": "28217",
+        "latitude": 35.208087,
+        "longitude": -80.893332,
+        "imported_slug": "clanton-park",
+        "canonical_slug": "clanton-park"
+      },
+      "match": {
+        "county_lines": [
+          "Clanton Park: Courts 1-4",
+          "Clanton Park: Courts 5&6"
+        ],
+        "court_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "park_record": "Clanton Park",
+        "basis": "No imported row. Distinct from the Clanton Park Community Garden, a separate record in the parks layer at a different address."
+      },
+      "patch": {
+        "name": "Clanton Park",
+        "total_courts": 6,
+        "street_address": "1520 Clanton Rd",
+        "postal_code": "28217",
+        "venue_type": "public_park",
+        "county": "Mecklenburg"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Clanton Park\" in the City of Charlotte parks layer; Mecklenburg County writes it \"Clanton Park\" in its court lists."
+        },
+        "total_courts": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Mecklenburg County lists individual numbered pickleball courts rather than a total. At this park it names \"Clanton Park: Courts 1-4\" and \"Clanton Park: Courts 5&6\", which is courts 1-6 — 6 distinct courts, forming one complete run with no gaps and no number listed twice."
+        },
+        "street_address": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Clanton Park\", PRKADDR=\"1520 CLANTON RD\", CHARLOTTE NC 28217. Title-cased for display, with the street type expanded."
+        },
+        "postal_code": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Clanton Park\", ZIP=\"28217\"."
+        },
+        "venue_type": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by Mecklenburg County Park and Recreation; the parks layer records it as PRKTYPE=\"Community\", PRKSTATUS=\"Developed\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder: the point 35.208087,-80.893332 published for this park by City of Charlotte Open Data falls in Mecklenburg County (FIPS 37119) and inside the incorporated place of Charlotte."
+        }
+      },
+      "record": {
+        "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "freedom-park": {
+      "minted": true,
+      "identity": {
+        "name": "Freedom Park",
+        "city": "Charlotte",
+        "state": "NC",
+        "county": "Mecklenburg",
+        "postal_code": "28203",
+        "latitude": 35.191721,
+        "longitude": -80.844762,
+        "imported_slug": null,
+        "canonical_slug": "freedom-park"
+      },
+      "match": {
+        "county_lines": [
+          "Freedom Park: Courts 11, 12, 14, 15",
+          "Freedom Park: Courts 13&16"
+        ],
+        "court_numbers": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "park_record": "Freedom Park",
+        "basis": "No imported row. Its pickleball courts are numbered 11-16 because courts 1-10 at this park are tennis, listed separately on the same page."
+      },
+      "patch": {
+        "name": "Freedom Park",
+        "total_courts": 6,
+        "street_address": "2435 Cumberland Ave",
+        "postal_code": "28203",
+        "venue_type": "public_park",
+        "county": "Mecklenburg"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Freedom Park\" in the City of Charlotte parks layer; Mecklenburg County writes it \"Freedom Park\" in its court lists."
+        },
+        "total_courts": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Mecklenburg County lists individual numbered pickleball courts rather than a total. At this park it names \"Freedom Park: Courts 11, 12, 14, 15\" and \"Freedom Park: Courts 13&16\", which is courts 11-16 — 6 distinct courts, forming one complete run with no gaps and no number listed twice."
+        },
+        "street_address": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Freedom Park\", PRKADDR=\"2435 CUMBERLAND AV\", CHARLOTTE NC 28203. Title-cased for display, with the street type expanded."
+        },
+        "postal_code": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Freedom Park\", ZIP=\"28203\"."
+        },
+        "venue_type": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by Mecklenburg County Park and Recreation; the parks layer records it as PRKTYPE=\"Regional\", PRKSTATUS=\"Developed\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder: the point 35.191721,-80.844762 published for this park by City of Charlotte Open Data falls in Mecklenburg County (FIPS 37119) and inside the incorporated place of Charlotte."
+        }
+      },
+      "record": {
+        "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "martin-luther-king-jr-park": {
+      "minted": true,
+      "identity": {
+        "name": "Martin Luther King Jr. Park",
+        "city": "Charlotte",
+        "state": "NC",
+        "county": "Mecklenburg",
+        "postal_code": "28208",
+        "latitude": 35.245776,
+        "longitude": -80.871495,
+        "imported_slug": null,
+        "canonical_slug": "martin-luther-king-jr-park"
+      },
+      "match": {
+        "county_lines": [
+          "MLK Park: Courts 2,3,5,6",
+          "MLK Park: Courts 1&4"
+        ],
+        "court_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "park_record": "Martin Luther King Jr. Park",
+        "basis": "No imported row. The county writes \"MLK Park\" in its court lists and \"Martin Luther King Jr. Park\" in the parks layer; the full name is published. Distinct from Martin Luther King Jr. Middle School, a separate record in the layer."
+      },
+      "patch": {
+        "name": "Martin Luther King Jr. Park",
+        "total_courts": 6,
+        "street_address": "2600 Ravencroft Dr",
+        "postal_code": "28208",
+        "venue_type": "public_park",
+        "county": "Mecklenburg"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Martin Luther King Jr. Park\" in the City of Charlotte parks layer; Mecklenburg County writes it \"MLK Park\" in its court lists."
+        },
+        "total_courts": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Mecklenburg County lists individual numbered pickleball courts rather than a total. At this park it names \"MLK Park: Courts 2,3,5,6\" and \"MLK Park: Courts 1&4\", which is courts 1-6 — 6 distinct courts, forming one complete run with no gaps and no number listed twice."
+        },
+        "street_address": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Martin Luther King Jr. Park\", PRKADDR=\"2600 RAVENCROFT DR\", CHARLOTTE NC 28208. Title-cased for display, with the street type expanded."
+        },
+        "postal_code": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Martin Luther King Jr. Park\", ZIP=\"28208\"."
+        },
+        "venue_type": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by Mecklenburg County Park and Recreation; the parks layer records it as PRKTYPE=\"Community\", PRKSTATUS=\"Developed\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder: the point 35.245776,-80.871495 published for this park by City of Charlotte Open Data falls in Mecklenburg County (FIPS 37119) and inside the incorporated place of Charlotte."
+        }
+      },
+      "record": {
+        "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "colonel-francis-j-beatty-park": {
+      "minted": true,
+      "identity": {
+        "name": "Col. Francis J. Beatty Park",
+        "city": "Charlotte",
+        "state": "NC",
+        "county": "Mecklenburg",
+        "postal_code": "28105",
+        "latitude": 35.06737,
+        "longitude": -80.728652,
+        "imported_slug": null,
+        "canonical_slug": "colonel-francis-j-beatty-park"
+      },
+      "match": {
+        "county_lines": [
+          "Colonel Francis J. Beatty Park: Courts 2&3",
+          "Colonel Francis J. Beatty Park: Court 1"
+        ],
+        "court_numbers": [
+          1,
+          2,
+          3
+        ],
+        "park_record": "Colonel Francis J. Beatty Park",
+        "basis": "No imported row. Published as \"Col.\" rather than \"Colonel\" because the full name produces a page title over the 65-character limit and titles.mjs refuses to truncate mid-word. Its postcode 28105 is a Matthews mailing ZIP, but the Census places the park inside the city of Charlotte."
+      },
+      "patch": {
+        "name": "Col. Francis J. Beatty Park",
+        "total_courts": 3,
+        "street_address": "4330 Weddington Rd",
+        "postal_code": "28105",
+        "venue_type": "public_park",
+        "county": "Mecklenburg"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park is \"Colonel Francis J. Beatty Park\" in the City of Charlotte parks layer. Published in the shortened form because the full name overruns the 65-character page-title limit."
+        },
+        "total_courts": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Mecklenburg County lists individual numbered pickleball courts rather than a total. At this park it names \"Colonel Francis J. Beatty Park: Courts 2&3\" and \"Colonel Francis J. Beatty Park: Court 1\", which is courts 1-3 — 3 distinct courts, forming one complete run with no gaps and no number listed twice."
+        },
+        "street_address": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Colonel Francis J. Beatty Park\", PRKADDR=\"4330 WEDDINGTON RD\", CHARLOTTE NC 28105. Title-cased for display, with the street type expanded."
+        },
+        "postal_code": {
+          "source_url": "https://opendata.arcgis.com/datasets/735a6bce6306442face38657b50fc7b7_10.geojson",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "City of Charlotte Open Data parks layer, PRKNAME=\"Colonel Francis J. Beatty Park\", ZIP=\"28105\"."
+        },
+        "venue_type": {
+          "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by Mecklenburg County Park and Recreation; the parks layer records it as PRKTYPE=\"Regional\", PRKSTATUS=\"Developed\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-03",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census geocoder: the point 35.06737,-80.728652 published for this park by City of Charlotte Open Data falls in Mecklenburg County (FIPS 37119) and inside the incorporated place of Charlotte."
+        }
+      },
+      "record": {
+        "source_url": "https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball",
+        "date_checked": "2026-09-03",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

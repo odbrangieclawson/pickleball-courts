@@ -6,19 +6,23 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  2/2 publishable
+COUNTY  —  3/3 publishable
   PASS  /pickleball/us/wa/king-county/
         925 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/wake-county/
         1261 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/mecklenburg-county/
+        1284 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  4/4 publishable
+CITY  —  5/5 publishable
   PASS  /pickleball/us/wa/seattle/
         1603 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/
         1855 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/apex/
         1780 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nc/charlotte/
+        1814 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/
         1807 words · BreadcrumbList, FAQPage, ItemList
 
@@ -38,7 +42,7 @@ FILTER  —  7/7 publishable
   PASS  /pickleball/us/nc/cary/outdoor/
         662 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  43/43 publishable
+VENUE  —  48/48 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -119,6 +123,16 @@ VENUE  —  43/43 publishable
         753 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/apex/apex-community-park/
         721 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/charlotte/clanton-park/
+        788 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/charlotte/colonel-francis-j-beatty-park/
+        740 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/charlotte/freedom-park/
+        710 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/charlotte/martin-luther-king-jr-park/
+        821 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nc/charlotte/clarks-creek-park/
+        845 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/cary/carpenter-park/
         701 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/cary/ed-yerha-park/
@@ -154,6 +168,6 @@ VENUE  —  43/43 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 57/57 pages pass all six gates.
+TOTAL: 64/64 pages pass all six gates.
 
 ```

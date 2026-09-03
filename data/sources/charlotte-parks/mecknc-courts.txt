@@ -1,0 +1,103 @@
+URL: https://parkandrec.mecknc.gov/Activities/tennis-pickleball-volleyball
+TITLE: Pickleball, Tennis, and Volleyball Courts | Park and Recreation
+PUBLISHER: Mecklenburg County Park and Recreation
+RETRIEVED: 2026-09-03
+METHOD: read in a browser; parkandrec.mecknc.gov returns 403 to scripted fetches,
+        as does meckgis.mecklenburgcountync.gov. The page is public and loads
+        normally in a browser. See README.md.
+
+NOTE ON HOW THE COUNTS ARE READ
+        This page does not print a court count. It enumerates INDIVIDUAL NUMBERED
+        COURTS at each park, split between reservable and open-play. The count for
+        a park is the number of distinct court numbers the county names there.
+        That is a list of identified courts, not an inference from geometry: the
+        county is stating that court 1, court 2 and so on exist.
+        Every park's numbers form one complete consecutive run with no gaps and no
+        overlap between the two lists — Clarks Creek 1-8, Clanton 1-6, Freedom
+        11-16, MLK 1-6, Beatty 1-3 — which is the internal check that the reading
+        is right.
+---
+
+Pickleball, Tennis, and Volleyball Courts
+
+Local park courts are always open for play. Local parks (neighborhood parks) do not typically have parking or restroom features as these locations are small to medium parks that are meant to provide open space for residents near their homes.
+
+Some courts can be reserved for a small fee. Any courts not listed are non-reservable and open to the public on a first come, first serve basis.
+
+Reservable Courts
+
+These courts are available for open play unless they are reserved. To make a reservation for one of these courts, visit here.
+
+Tennis Courts
+
+Alexander Street Park: Courts 1-4
+Colonel Francis J. Beatty Park: Courts 5&6
+Freedom Park: Courts 1-6
+Hornets Nest Park: Courts 1-8
+Jeff Adams Tennis Center: Courts 5-12
+Mason Wallace Park: Courts 2,3,4,7,8
+Park Road Park: Courts 5-12
+Sugaw Creek Park: Courts 1-4
+Veterans Park: Courts 3-6
+
+Pickleball Courts
+
+Clarks Creek Park: Courts 1-5
+Clanton Park: Courts 1-4
+Colonel Francis J. Beatty Park: Courts 2&3
+Freedom Park: Courts 11, 12, 14, 15
+MLK Park: Courts 2,3,5,6
+
+Hybrid Courts
+
+Latta Park: Courts 1-4
+Tuckaseegee Park: Courts 1-4
+
+Open Play Courts
+
+Open Play Courts are always open with the exception of full event closures. To view any event closures, visit here.
+
+Tennis Courts
+
+Alexander Street Park: 5&6
+Colonel Francis J. Beatty Park: Court 4
+Freedom Park: Courts 7-10
+Hornets Nest Park: Courts 9-12
+Jeff Adams Tennis Center: Courts 1-4 & 13
+Marion Diehl Park: Courts 1-4
+Mason Wallace Park: Courts 1, 5, & 6
+Park Road Park: Courts 1-4
+Sugaw Creek Park: Courts 5&6
+Veterans Park: Courts 1&2
+
+Pickleball Courts
+
+Clarks Creek Park: Courts 6-8
+Clanton Park: Courts 5&6
+Colonel Francis J. Beatty Park: Court 1
+Freedom Park: Courts 13&16
+MLK Park: Courts 1&4
+
+Hybrid Courts
+
+Latta Park: Courts 5&6
+Tuckaseegee Park: Courts 5&6
+
+Volleyball Courts
+
+These courts are available for open play unless they are reserved.
+
+Blythe Landing Park: 4 courts (are reservable online)
+Jeff Adams Tennis Center: Courts 1-9 can be reserved online
+Renaissance Park: Courts 1-7 can be reserved online
+
+---
+ALSO READ, same retrieval:
+
+URL: https://parkandrec.mecknc.gov/Places-to-Visit/Parks
+"The Mecklenburg County Park and Recreation Department is home to 290 parks and
+facilities located on more than 23,000 acres of parkland throughout Mecklenburg
+County."
+Free public Wi-Fi is available in six neighborhood parks: Druid Hills Park, Grier
+Heights Park, Kilborne Park, Reid Park, Tryon Hills Park, Fred Alexander Park.
+Closure notice: "The large playground in Nevin Park is closed until further notice."
