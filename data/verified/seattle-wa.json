@@ -23,7 +23,17 @@
   "venues": {
     "seattle-miller-playfield-pickleball-courts-capitol-hill": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Miller Playfield Pickleball Courts (Capitol Hill)",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98112",
+        "latitude": 47.621854,
+        "longitude": -122.3069193,
+        "imported_slug": "seattle-miller-playfield-pickleball-courts-capitol-hill",
+        "canonical_slug": "miller-playfield"
+      },
       "match": {
         "park": "Miller Playfield",
         "pma": 373,
@@ -139,7 +149,17 @@
     },
     "seattle-alki-playground-pickleball-and-tennis-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Alki Playground Pickleball and Tennis Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98116",
+        "latitude": 47.578971,
+        "longitude": -122.4073133,
+        "imported_slug": "seattle-alki-playground-pickleball-and-tennis-courts",
+        "canonical_slug": "alki-playground"
+      },
       "match": {
         "park": "Alki Playground",
         "pma": 446,
@@ -247,7 +267,17 @@
     },
     "seattle-brighton-playfield-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Brighton Playfield",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98118",
+        "latitude": 47.5487767,
+        "longitude": -122.2832712,
+        "imported_slug": "seattle-brighton-playfield-seattle-wa",
+        "canonical_slug": "brighton-playfield"
+      },
       "match": {
         "park": "Brighton Playfield",
         "pma": 402,
@@ -355,7 +385,17 @@
     },
     "green-lake-pickleball-courts-seattle": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Green Lake Pickleball Courts - Seattle",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98101",
+        "latitude": 47.6815308,
+        "longitude": -122.3283887,
+        "imported_slug": "green-lake-pickleball-courts-seattle",
+        "canonical_slug": "green-lake-park-east-courts"
+      },
       "match": {
         "park": "Green Lake Park (East Courts)",
         "pma": 307,
@@ -472,7 +512,17 @@
     },
     "seattle-laurelhurst-pickleball-court-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Laurelhurst Pickleball Court",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98105",
+        "latitude": 47.6596823,
+        "longitude": -122.279564,
+        "imported_slug": "seattle-laurelhurst-pickleball-court-seattle-wa",
+        "canonical_slug": "laurelhurst-playfield"
+      },
       "match": {
         "park": "Laurelhurst Playfield",
         "pma": 340,
@@ -587,7 +637,17 @@
     },
     "seattle-discovery-park-tennis-and-pickleball-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Discovery Park? Tennis and Pickleball Courts (Magnolia)",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98199",
+        "latitude": 47.6576374,
+        "longitude": -122.4063471,
+        "imported_slug": "seattle-discovery-park-tennis-and-pickleball-courts",
+        "canonical_slug": "discovery-park"
+      },
       "match": {
         "park": "Discovery Park",
         "pma": 310,
@@ -695,7 +755,17 @@
     },
     "seattle-beacon-hill-playground-tennis-courts-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Beacon Hill Playground Tennis Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98144",
+        "latitude": 47.5860405,
+        "longitude": -122.3158558,
+        "imported_slug": "seattle-beacon-hill-playground-tennis-courts-seattle-wa",
+        "canonical_slug": "beacon-hill-park"
+      },
       "match": {
         "park": "Beacon Hill Park",
         "pma": 400,
@@ -803,7 +873,17 @@
     },
     "seattle-observatory-courts-queen-anne-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Observatory Courts (Queen Anne)",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98109",
+        "latitude": 47.6313907,
+        "longitude": -122.3550632,
+        "imported_slug": "seattle-observatory-courts-queen-anne-seattle-wa",
+        "canonical_slug": "observatory-courts"
+      },
       "match": {
         "park": "Observatory Courts",
         "pma": 322,
@@ -919,7 +999,17 @@
     },
     "bitter-lake-pickleball-and-tennis-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Bitter Lake Pickleball and Tennis Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98133",
+        "latitude": 47.7235023,
+        "longitude": -122.3498622,
+        "imported_slug": "bitter-lake-pickleball-and-tennis-courts",
+        "canonical_slug": "bitter-lake-playfield"
+      },
       "match": {
         "park": "Bitter Lake Playfield",
         "pma": 288,
@@ -1035,7 +1125,17 @@
     },
     "seattle-georgetown-playfield-tennis-and-pickleball-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Georgetown ?Playfield Tennis and Pickleball Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98108",
+        "latitude": 47.5512128,
+        "longitude": -122.3219976,
+        "imported_slug": "seattle-georgetown-playfield-tennis-and-pickleball-courts",
+        "canonical_slug": "georgetown-playfield"
+      },
       "match": {
         "park": "Georgetown Playfield",
         "pma": 410,
@@ -1143,7 +1243,17 @@
     },
     "seattle-dearborn-park-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Dearborn Park",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98108",
+        "latitude": 47.5533634,
+        "longitude": -122.2945864,
+        "imported_slug": "seattle-dearborn-park-seattle-wa",
+        "canonical_slug": "dearborn-park"
+      },
       "match": {
         "park": "Dearborn Park",
         "pma": 408,
@@ -1259,7 +1369,17 @@
     },
     "seattle-south-park-playground-tennis-and-pickleball-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - South Park ?Playground Tennis and Pickleball Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98108",
+        "latitude": 47.5283823,
+        "longitude": -122.3240541,
+        "imported_slug": "seattle-south-park-playground-tennis-and-pickleball-courts",
+        "canonical_slug": "south-park-playground"
+      },
       "match": {
         "park": "South Park Playground",
         "pma": 467,
@@ -1375,7 +1495,17 @@
     },
     "seattle-gilman-playground-pickleball-and-tennis-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Gilman Playground Pickleball and Tennis Courts (Ballard)",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98107",
+        "latitude": 47.667077,
+        "longitude": -122.3696816,
+        "imported_slug": "seattle-gilman-playground-pickleball-and-tennis-courts",
+        "canonical_slug": "gilman-playground"
+      },
       "match": {
         "park": "Gilman Playground",
         "pma": 242,
@@ -1483,7 +1613,17 @@
     },
     "delridge-pickleball-and-tennis-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Delridge Pickleball and Tennis Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98155",
+        "latitude": 47.5633072,
+        "longitude": -122.3643528,
+        "imported_slug": "delridge-pickleball-and-tennis-courts",
+        "canonical_slug": "delridge-playfield"
+      },
       "match": {
         "park": "Delridge Playfield",
         "pma": 450,
@@ -1599,7 +1739,17 @@
     },
     "seattle-kinnear-park-queen-anne-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Kinnear Park (Queen Anne)",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98119",
+        "latitude": 47.628605,
+        "longitude": -122.368736,
+        "imported_slug": "seattle-kinnear-park-queen-anne-seattle-wa",
+        "canonical_slug": "kinnear-park"
+      },
       "match": {
         "park": "Kinnear Park",
         "pma": 314,
@@ -1715,7 +1865,17 @@
     },
     "seattle-montlake-playfield-multisport-court-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Montlake Playfield Multisport Court",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98112",
+        "latitude": 47.6416972,
+        "longitude": -122.3100373,
+        "imported_slug": "seattle-montlake-playfield-multisport-court-seattle-wa",
+        "canonical_slug": "montlake-playfield"
+      },
       "match": {
         "park": "Montlake Playfield",
         "pma": 376,
@@ -1823,7 +1983,17 @@
     },
     "seattle-rainier-beach-playfield-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Rainier Beach Playfield",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98118",
+        "latitude": 47.5236057,
+        "longitude": -122.2743914,
+        "imported_slug": "seattle-rainier-beach-playfield-seattle-wa",
+        "canonical_slug": "rainier-beach-playfield"
+      },
       "match": {
         "park": "Rainier Beach Playfield",
         "pma": 422,
@@ -1931,7 +2101,17 @@
     },
     "seattle-soundview-playfield-tennis-and-pickleball-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Soundview ?Playfield Tennis and Pickleball Courts (Crown Hill)",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98117",
+        "latitude": 47.6947677,
+        "longitude": -122.3778335,
+        "imported_slug": "seattle-soundview-playfield-tennis-and-pickleball-courts",
+        "canonical_slug": "soundview-playfield"
+      },
       "match": {
         "park": "Soundview Playfield",
         "pma": 251,
@@ -2039,7 +2219,17 @@
     },
     "seattle-lakeridge-playfield-pickleball-and-badminton-courts": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Lakeridge Playfield Pickleball and Badminton Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": null,
+        "postal_code": "10145",
+        "latitude": 47.5108055,
+        "longitude": -122.2445081,
+        "imported_slug": "seattle-lakeridge-playfield-pickleball-and-badminton-courts",
+        "canonical_slug": "lakeridge-park"
+      },
       "match": {
         "park": "Lakeridge Park",
         "pma": 3972,
@@ -2147,7 +2337,17 @@
     },
     "seattle-mount-baker-pickleball-and-tennis-courts-seattle-wa": {
       "minted": false,
-      "identity": null,
+      "identity": {
+        "name": "Seattle - Mount Baker Pickleball and Tennis Courts",
+        "city": "Seattle",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98144",
+        "latitude": 47.5808807,
+        "longitude": -122.2880659,
+        "imported_slug": "seattle-mount-baker-pickleball-and-tennis-courts-seattle-wa",
+        "canonical_slug": "mt-baker-park"
+      },
       "match": {
         "park": "Mt. Baker Park",
         "pma": 419,
@@ -2260,8 +2460,11 @@
         "city": "Seattle",
         "state": "WA",
         "county": "King",
+        "postal_code": null,
         "latitude": 47.69093129168872,
-        "longitude": -122.31700919680567
+        "longitude": -122.31700919680567,
+        "imported_slug": null,
+        "canonical_slug": "maple-leaf-reservoir-park-pickleball-courts-seattle"
       },
       "match": {
         "park": "Maple Leaf Reservoir Park",
@@ -2375,8 +2578,11 @@
         "city": "Seattle",
         "state": "WA",
         "county": "King",
+        "postal_code": null,
         "latitude": 47.64091773063457,
-        "longitude": -122.40029766441451
+        "longitude": -122.40029766441451,
+        "imported_slug": null,
+        "canonical_slug": "west-magnolia-playfield-pickleball-courts-seattle"
       },
       "match": {
         "park": "West Magnolia Playfield",
@@ -2490,8 +2696,11 @@
         "city": "Seattle",
         "state": "WA",
         "county": "King",
+        "postal_code": null,
         "latitude": 47.54025273069967,
-        "longitude": -122.37471219516154
+        "longitude": -122.37471219516154,
+        "imported_slug": null,
+        "canonical_slug": "walt-hundley-playfield-pickleball-courts-seattle"
       },
       "match": {
         "park": "Walt Hundley Playfield",
@@ -2605,8 +2814,11 @@
         "city": "Seattle",
         "state": "WA",
         "county": "King",
+        "postal_code": null,
         "latitude": 47.692693047458086,
-        "longitude": -122.35020591231304
+        "longitude": -122.35020591231304,
+        "imported_slug": null,
+        "canonical_slug": "greenwood-park-pickleball-courts-seattle"
       },
       "match": {
         "park": "Greenwod Park",

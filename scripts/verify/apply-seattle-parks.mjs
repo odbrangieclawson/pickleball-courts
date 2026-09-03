@@ -65,6 +65,7 @@ import {applyFacts, changelogToRows} from './conflict.mjs'
 import {loadRows, REPO_ROOT} from '../lib/load-csv.mjs'
 import {PUBLISHED_FACT_FIELDS} from '../../lib/data/verified.mjs'
 import {mapRow} from '../import/mapper.mjs'
+import {loadIdentity} from '../../lib/data/identity.mjs'
 
 /* The date these sources were READ. Not the date they were published. */
 const RETRIEVED_AT = process.env.RETRIEVED_AT ?? '2026-09-03'
@@ -194,6 +195,15 @@ for (const f of s2.features) {
   if (a.ADDRESS && !addrByPma.has(a.PMA)) addrByPma.set(a.PMA, a)
 }
 
+/*
+  The canonical slug registry. It has to be recorded in the overlay, because
+  a venue built from the overlay alone never passes through applyIdentity
+  and would otherwise keep its imported slug — giving one set of URLs when
+  data.csv is present and a different set when it is not. That silent fork
+  cost twenty venue pages the first time CI built without the CSV.
+*/
+const identityRegistry = loadIdentity(REPO_ROOT)
+
 const county = JSON.parse(readFileSync(join(REPO_ROOT, 'reports/county-per-row.json'), 'utf8'))
 const allRows = loadRows().map(r => mapRow(r).venue)
 allRows.forEach((v, i) => { v.county = county[i].needs_review ? null : county[i].county })
@@ -284,8 +294,34 @@ for (const m of MATCHES) {
   const res = applyFacts(venue, facts)
   overlay[m.slug] = {
     minted: !!m.mint,
-    identity: m.mint ? {name: venue.name, city: venue.city, state: venue.state, county: venue.county,
-      latitude: pbGeom.get(m.park)?.y ?? null, longitude: pbGeom.get(m.park)?.x ?? null} : null,
+    /*
+      IDENTITY IS WRITTEN FOR EVERY VENUE, not only the minted ones.
+
+      It used to be minted-only, which quietly made the published site
+      depend on data.csv: twenty of these venues took their city, state,
+      coordinates and postcode from the imported row at build time. data.csv
+      is 7.8 MB of unsourced commercial records and is gitignored on
+      purpose, so CI could never build the site at all — it failed on the
+      first run for exactly this reason.
+
+      Recording identity here makes the verified set self-contained. The
+      published directory is then buildable from data/verified/,
+      data/editorial/ and data/sources/ alone, all of which are committed
+      and small. The 18,037-row CSV goes back to being what it always should
+      have been: a staging pile for import and triage, not a build
+      dependency for twenty-four published pages.
+    */
+    identity: {
+      name: venue.name,
+      city: venue.city,
+      state: venue.state,
+      county: venue.county,
+      postal_code: venue.postal_code ?? null,
+      latitude: venue.latitude ?? pbGeom.get(m.park)?.y ?? null,
+      longitude: venue.longitude ?? pbGeom.get(m.park)?.x ?? null,
+      imported_slug: m.mint ? null : m.slug,
+      canonical_slug: identityRegistry.renames[m.slug]?.canonical ?? m.slug,
+    },
     match: {park: m.park, pma: m.pma, basis: m.basis},
     patch: Object.fromEntries(facts.map(f => [f.field, f.value])),
     provenance: res.provenance,

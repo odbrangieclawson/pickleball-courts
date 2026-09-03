@@ -44,7 +44,25 @@ const warn = (type, msg, ctx = null) => warnings.push({type, msg, ctx})
 
 const DATA = join(REPO_ROOT, 'data.csv')
 if (!existsSync(DATA)) {
-  console.log('validate-data: no data.csv present, nothing to validate. (Not an error - the dataset is gitignored.)')
+  /*
+    Said loudly on purpose. The old message was a mild one-liner and CI
+    rendered it as a green tick beside "Data validator over every imported
+    row" — a step that had examined nothing at all. A pass that means
+    "nothing was checked" reads as assurance, which is the exact failure
+    this project already fixed once in Gate 6.
+  */
+  console.log([
+    '',
+    '  SKIPPED — no data.csv, so NOTHING WAS VALIDATED.',
+    '',
+    '  The dataset is 7.8 MB of unsourced records and is gitignored on',
+    '  purpose, so CI never has it. This is expected, and it is stated',
+    '  plainly rather than passing quietly.',
+    '',
+    '  Nothing shipping depends on it: the published set is built from',
+    '  data/verified/, and the page gates are what block a deploy.',
+    '',
+  ].join('\n'))
   process.exit(0)
 }
 

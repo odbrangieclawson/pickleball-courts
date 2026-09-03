@@ -4,21 +4,15 @@
 
 === IMPORT GATES — census over every imported row ===
 
-rows examined:            18,041
-rows passing all four:    24
+SKIPPED — data.csv is not present, so NO ROW WAS EXAMINED.
 
-gate  what it checks                                        failing
-----  ----------------------------------------------------  -------
-I1    identity: slug shape, name, city, state, address          1104
-I2    provenance: source_url, date_checked, verified_by        18017
-I3    consistency: court arithmetic, county, court count        4398
-I4    vocabulary: controlled values in filtered fields             0
+That is expected: the file is gitignored on purpose and CI never has
+it. It is said plainly because a silent skip reads as a pass, and a
+green tick meaning "nothing was checked" is the exact failure this
+project already fixed once in Gate 6.
 
-I2 dominates and that is the known state of the project, not a
-regression: no imported row carries provenance until someone verifies
-it. These are reported, not enforced. What IS enforced is below.
-
-rows marked published while failing a gate (bypass): 0
+This census reports on the staging pile. It gates nothing. The page
+gates below gate everything, and they ran.
 
 === PAGE GATES — every page in the sitemap ===
 

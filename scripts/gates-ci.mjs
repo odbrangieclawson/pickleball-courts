@@ -42,11 +42,25 @@ const say = s => { lines.push(s); console.log(s) }
 
 /* ================= IMPORT GATES, over every row ================= */
 
-const county = JSON.parse(readFileSync(join(REPO_ROOT, 'reports/county-per-row.json'), 'utf8'))
-const imported = loadRows().map(r => mapRow(r).venue)
-imported.forEach((v, i) => { v.county = county[i].needs_review ? null : county[i].county })
-const {venues: identified} = applyIdentity(imported, loadIdentity(REPO_ROOT))
-const {venues: rows} = applyVerifiedOverlay(identified, loadVerifiedOverlay(REPO_ROOT).bySlug)
+/*
+  The import census needs data.csv, which is 7.8 MB of unsourced records,
+  gitignored on purpose, and therefore absent in CI. Its absence is reported
+  loudly rather than skipped quietly. The PAGE gates below are what actually
+  block a deploy, and they run either way, because the published set no
+  longer depends on the staging pile.
+*/
+const csvPath = join(REPO_ROOT, 'data.csv')
+const countyPath = join(REPO_ROOT, 'reports/county-per-row.json')
+const haveImport = existsSync(csvPath) && existsSync(countyPath)
+
+let rows = []
+if (haveImport) {
+  const county = JSON.parse(readFileSync(countyPath, 'utf8'))
+  const imported = loadRows().map(r => mapRow(r).venue)
+  imported.forEach((v, i) => { v.county = county[i].needs_review ? null : county[i].county })
+  const {venues: identified} = applyIdentity(imported, loadIdentity(REPO_ROOT))
+  rows = applyVerifiedOverlay(identified, loadVerifiedOverlay(REPO_ROOT).bySlug).venues
+}
 
 const tally = {I1: 0, I2: 0, I3: 0, I4: 0}
 let publishable = 0
@@ -65,21 +79,33 @@ for (const v of rows) {
 }
 
 say('\n=== IMPORT GATES — census over every imported row ===\n')
-say(`rows examined:            ${rows.length.toLocaleString('en-US')}`)
-say(`rows passing all four:    ${publishable.toLocaleString('en-US')}`)
-say('')
-say('gate  what it checks                                        failing')
-say('----  ----------------------------------------------------  -------')
-say(`I1    identity: slug shape, name, city, state, address       ${String(tally.I1).padStart(7)}`)
-say(`I2    provenance: source_url, date_checked, verified_by      ${String(tally.I2).padStart(7)}`)
-say(`I3    consistency: court arithmetic, county, court count     ${String(tally.I3).padStart(7)}`)
-say(`I4    vocabulary: controlled values in filtered fields       ${String(tally.I4).padStart(7)}`)
-say('')
-say('I2 dominates and that is the known state of the project, not a')
-say('regression: no imported row carries provenance until someone verifies')
-say('it. These are reported, not enforced. What IS enforced is below.')
-say(`\nrows marked published while failing a gate (bypass): ${bypassed.length}`)
-for (const b of bypassed.slice(0, 10)) say(`  ${b.slug}: ${b.reasons.join('; ')}`)
+if (!haveImport) {
+  say('SKIPPED — data.csv is not present, so NO ROW WAS EXAMINED.')
+  say('')
+  say('That is expected: the file is gitignored on purpose and CI never has')
+  say('it. It is said plainly because a silent skip reads as a pass, and a')
+  say('green tick meaning "nothing was checked" is the exact failure this')
+  say('project already fixed once in Gate 6.')
+  say('')
+  say('This census reports on the staging pile. It gates nothing. The page')
+  say('gates below gate everything, and they ran.')
+} else {
+  say(`rows examined:            ${rows.length.toLocaleString('en-US')}`)
+  say(`rows passing all four:    ${publishable.toLocaleString('en-US')}`)
+  say('')
+  say('gate  what it checks                                        failing')
+  say('----  ----------------------------------------------------  -------')
+  say(`I1    identity: slug shape, name, city, state, address       ${String(tally.I1).padStart(7)}`)
+  say(`I2    provenance: source_url, date_checked, verified_by      ${String(tally.I2).padStart(7)}`)
+  say(`I3    consistency: court arithmetic, county, court count     ${String(tally.I3).padStart(7)}`)
+  say(`I4    vocabulary: controlled values in filtered fields       ${String(tally.I4).padStart(7)}`)
+  say('')
+  say('I2 dominates and that is the known state of the project, not a')
+  say('regression: no imported row carries provenance until someone verifies')
+  say('it. These are reported, not enforced. What IS enforced is below.')
+  say(`\nrows marked published while failing a gate (bypass): ${bypassed.length}`)
+  for (const b of bypassed.slice(0, 10)) say(`  ${b.slug}: ${b.reasons.join('; ')}`)
+}
 
 /* ================= PAGE GATES, over every published page ================= */
 
