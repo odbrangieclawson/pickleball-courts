@@ -1,4 +1,5 @@
 import type {Metadata} from 'next'
+import {ORIGIN} from '../../lib/site/origin.mjs'
 
 export const metadata: Metadata = {
   title: 'How we verify',
@@ -13,8 +14,15 @@ const breadcrumbLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    {'@type': 'ListItem', position: 1, name: 'Find Pickleball Courts', item: 'https://example.invalid/'},
-    {'@type': 'ListItem', position: 2, name: 'How we verify', item: 'https://example.invalid/how-we-verify/'},
+    /*
+      These two items hardcoded https://example.invalid, so this page kept
+      emitting the placeholder origin in its JSON-LD on a deployment where
+      SITE_ORIGIN was set correctly and every other page had a real host.
+      lib/site/origin.mjs exists precisely so the origin is defined once
+      (O10); this page was the one that never got wired to it.
+    */
+    {'@type': 'ListItem', position: 1, name: 'Find Pickleball Courts', item: `${ORIGIN}/`},
+    {'@type': 'ListItem', position: 2, name: 'How we verify', item: `${ORIGIN}/how-we-verify/`},
   ],
 })
 
