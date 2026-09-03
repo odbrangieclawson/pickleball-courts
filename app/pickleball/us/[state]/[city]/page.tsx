@@ -26,8 +26,8 @@ export default async function CityPage({params}: Params) {
         <a href="/">Home</a> › <a href={v.stateHref}>{v.stateName}</a> › {v.city}
       </nav>
 
-      <h1>{v.h1}</h1>
-      <p className="lede">
+      <h1 data-prose>{v.h1}</h1>
+      <p className="lede" data-prose>
         We have verified {v.venuesN} pickleball venues in {v.city}, covering{' '}
         {v.courtsN} courts. Every figure on this page comes from {v.city}&rsquo;s
         own parks records, and every venue below carries the source it came
@@ -41,7 +41,7 @@ export default async function CityPage({params}: Params) {
         <div className="stat"><span className="n">{v.indoorN}</span><span className="k">Indoor courts</span></div>
       </div>
 
-      <p>
+      <p data-prose>
         On lighting, {v.litLine} have lit courts for evening play. On cost,{" "}
         {v.freeLine} are free to play — the city&rsquo;s open pickleball data
         does not state fees, so we have not claimed one either way.
@@ -86,14 +86,39 @@ export default async function CityPage({params}: Params) {
         </table>
       </div>
 
+      <h2 data-prose>Every venue, with the detail</h2>
+      <ul className="cards">
+        {v.venues.map(x => (
+          <li className="card" key={`card-${x.href}`}>
+            <h3><a href={x.href}>{x.name}</a></h3>
+            <p className="meta">{x.detail}</p>
+            <p>{x.address}</p>
+            <span className="trust">Checked {x.checked}</span>
+          </li>
+        ))}
+      </ul>
+
+      {v.hasBestFor && (
+        <>
+          <h2 data-prose>Where to play, depending on what you want</h2>
+          {v.bestFor.map(b => (
+            <section key={b.key} data-prose>
+              <h3>{b.heading}</h3>
+              <p>{b.text}</p>
+              {b.href && <p><a href={b.href}>See the venue</a></p>}
+            </section>
+          ))}
+        </>
+      )}
+
       {v.hasEditorial && (
         <>
-          <h2>Playing here</h2>
+          <h2 data-prose>Playing here</h2>
           {v.editorial.map(e => (
-            <section key={e.key}>
+            <section key={e.key} data-prose>
               <h3>{e.heading}</h3>
               <p>{e.text}</p>
-              <p className="provenance">
+              <p className="provenance" data-not-prose>
                 {e.sources.map((s, i) => (
                   <span key={s.url}>
                     {i > 0 && ' · '}
@@ -106,7 +131,7 @@ export default async function CityPage({params}: Params) {
         </>
       )}
 
-      <div className="note is-gap">
+      <div className="note is-gap" data-prose>
         <h3>What we have not verified</h3>
         <p>
           Surface type, fees and opening hours are not in the city&rsquo;s
@@ -115,6 +140,28 @@ export default async function CityPage({params}: Params) {
           play — but a belief is not a source, so we do not print it as one.
         </p>
       </div>
+
+      {v.hasFaqs && (
+        <>
+          <h2 data-prose>Questions people actually ask</h2>
+          {v.faqs.map(f => (
+            <section key={f.q} data-prose>
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </section>
+          ))}
+        </>
+      )}
+
+      <h2 data-prose>Wider area</h2>
+      <p data-prose>
+        {v.city} sits in {v.countyName} County. We have not built the{' '}
+        {v.countyName} County page yet, and no other {v.stateName} city has
+        enough verified venues to publish, so there is nothing honest to link
+        across to. Both arrive when more of the state is verified — until
+        then, <a href={v.stateHref}>{v.stateName}</a> is the level above this
+        page.
+      </p>
 
       <h2>Sources</h2>
       <p className="provenance">

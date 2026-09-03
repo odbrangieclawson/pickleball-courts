@@ -58,6 +58,7 @@ export type CityVenueRow = {
   address: string
   checked: string | null
   source: string | null
+  detail: string
 }
 
 export type EditorialNote = {
@@ -86,6 +87,13 @@ export type CityView = {
   hasEditorial: boolean
   editorialDate: string | null
   editorial: EditorialNote[]
+  countyName: string | null
+  countyPublished: boolean
+  nearbyPublished: {href: string; title: string}[]
+  hasBestFor: boolean
+  bestFor: {key: string; heading: string; text: string; href: string | null}[]
+  hasFaqs: boolean
+  faqs: {q: string; a: string}[]
   hasFilters: boolean
   filters: CityFilterLink[]
   venues: CityVenueRow[]

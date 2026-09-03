@@ -15,6 +15,65 @@
     "local_scene": "Seattle Parks launched a one-year open-play pilot at the Green Lake East courts on 1 October 2025, and it is the easiest way into a game here if you do not already have three people. You turn up in the scheduled window — Monday 8 to 10 a.m., Wednesday 1 to 3 p.m., Saturday 9 to 11 a.m., or Sunday 4 to 6 p.m. — and ambassadors on site organise games and run a paddle stacking system so players rotate in rather than having to book a court as a group. The pilot was scheduled to run for one year from that October start, which puts its end around autumn 2026, so confirm it is still going before planning a trip around it. Nets are the other practical detail: the city records nets provided at seventeen of the twenty-five locations and says nothing either way about the remaining eight, so a portable net is worth having in the car."
   },
 
+  "best_for": [
+    {
+      "key": "beginners",
+      "heading": "Best if you are new, or turning up alone",
+      "venue_slug": "green-lake-park-east-courts",
+      "text": "Green Lake Park East, because it is the only place in the city with an organised way in. Seattle Parks runs a scheduled open-play programme there with ambassadors on site who arrange games and work a paddle stacking system, so a single player rotates into matches instead of needing to arrive with three friends. It is also eight courts with nets provided and a dedicated lot. Check the pilot is still running before you rely on it — it was funded for one year from October 2025.",
+      "supports": ["local_scene"]
+    },
+    {
+      "key": "competitive",
+      "heading": "Best for a serious game, or an evening one",
+      "venue_slug": "bitter-lake-playfield",
+      "text": "Bitter Lake Playfield and Rainier Beach Playfield are the two biggest sites that also have lights — eight courts each, nets provided, dedicated parking, and the only pair on this list where a game can carry on after dark without falling foul of the new court hours. Only five of the twenty-four verified venues have lights at all, so on a Seattle winter evening the choice is genuinely these two, Miller Playfield, Alki Playground or Mt. Baker Park."
+    },
+    {
+      "key": "rain",
+      "heading": "Best when it rains — and the honest answer",
+      "venue_slug": null,
+      "text": "There isn't one. Every single verified pickleball court in Seattle is outdoor, none is covered, and none is climate controlled, so there is no wet-weather option on this page at all. That is a real gap in a city that rains, and we would rather say so than point you at a court that is merely sheltered. Indoor pickleball in Seattle does exist inside community centres and private clubs; none of those has been verified against a named source yet, so none of them is listed here."
+    }
+  ],
+
+  "faqs": [
+    {
+      "q": "Are Seattle's public pickleball courts free to play?",
+      "a": "We have not verified it, so we do not claim it. Seattle Parks publishes court locations, counts, lights and nets in its open data, but no fee field, and the pickleball pages on seattle.gov require JavaScript so we could not read a fee statement from them. Every venue on this page therefore shows cost as not verified. These are municipal park courts and are very likely free to use, but a likelihood is not a source.",
+      "supports": ["surface_condition"]
+    },
+    {
+      "q": "What time do the courts close?",
+      "a": "At most locations Seattle Parks does not publish court hours. Three are the exception and they are now explicitly limited: Gilman Playground, Laurelhurst Playfield and Mt. Baker Park run 7 a.m. to 10 p.m. on weekdays and 9 a.m. to 10 p.m. at weekends and city-observed holidays, in force since 15 September 2025 after noise studies found play exceeding Seattle Municipal Code chapter 25.08.",
+      "supports": ["peak_hours"]
+    },
+    {
+      "q": "What happens if people play outside those hours?",
+      "a": "The city locks the courts. A violation documented outside posted hours with timestamped visual evidence results in a temporary lock fitted for a minimum of thirty days, and repeat violations lead to a permanent lock, after which access depends on staff being available to unlock and lock the courts each day.",
+      "supports": ["peak_hours"]
+    },
+    {
+      "q": "Do I need to bring a net?",
+      "a": "Probably not, but check the venue page. Seattle Parks records nets provided at seventeen of the twenty-five court locations in its dataset and records nothing either way for the remaining eight. Where the city is silent we show nets as not verified rather than assuming there are none, so a portable net in the car is cheap insurance for the eight unknowns.",
+      "supports": ["local_scene"]
+    },
+    {
+      "q": "Which Seattle courts have lights?",
+      "a": "Five of the twenty-four verified venues: Bitter Lake Playfield, Rainier Beach Playfield, Miller Playfield, Alki Playground and Mt. Baker Park. The lighted-courts page lists them. For the other nineteen the city records no lighting, which on this site means unlit rather than unknown only where Seattle Parks has positively recorded a No.",
+      "supports": ["peak_hours"]
+    },
+    {
+      "q": "Are these dedicated pickleball courts?",
+      "a": "Mostly not. Eighteen of the twenty-five locations in the city dataset are striped for tennis and pickleball on the same surface, three share with basketball or badminton, and only four are dedicated pickleball — three of which are a single court. Expect tennis lines underfoot at most sites and expect to share.",
+      "supports": ["surface_condition"]
+    },
+    {
+      "q": "Why are there only 24 venues here when other directories list more?",
+      "a": "Because we only publish a venue once a named source has confirmed it and we record the date we checked. We hold sixty-three imported rows for Seattle from a commercial directory with no provenance at all; twenty-four of them, plus four venues that import never had, have been matched against Seattle Parks and Recreation's own records. The other thirty-nine are not deleted, they are simply not published yet."
+    }
+  ],
+
   "sources": [
     {
       "id": "E1",
