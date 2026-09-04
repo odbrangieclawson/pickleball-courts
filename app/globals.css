@@ -305,14 +305,31 @@ main { display: block; }
 .nav-menu[open] > summary { color: var(--accent-ink); border-bottom-color: var(--accent); }
 .nav-menu > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
+/*
+  A GRID, BECAUSE A ROW RAN OFF BOTH ENDS OF THE SCREEN.
+
+  This was `display: flex` pinned to `right: 0`. One column per published
+  state, laid in a single row, growing leftward as states were added — so
+  at seven states the panel was wider than the viewport and North Carolina
+  sat off the left edge with no way to reach it. Nothing warned, because
+  every link was still in the markup and the crawl report reads markup.
+
+  auto-fit wraps the columns into rows instead, and the max-width keeps
+  the panel inside the page whatever the state count reaches. The three
+  layout facts that matter are all stated here rather than emerging from
+  a count: how narrow a column may get, how wide the panel may get, and
+  that it may never exceed the viewport.
+*/
 .nav-panel {
   position: absolute;
   top: calc(100% + 1px);
   right: 0;
   z-index: 40;
-  min-width: min(30rem, 88vw);
-  display: flex;
-  gap: 34px;
+  width: max-content;
+  max-width: min(52rem, calc(100vw - 2rem));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 22px 34px;
   padding: 22px 26px 20px;
   background: var(--paper);
   border: 1px solid var(--rule);
@@ -320,6 +337,19 @@ main { display: block; }
   box-shadow: 0 14px 34px rgba(27, 26, 23, .10);
 }
 .nav-panel section { min-width: 8.5rem; }
+/*
+  The counties list sits under the cities with a rule between them and no
+  label, which reads as a second unexplained list. It is a different kind
+  of page, so it says so.
+*/
+.nav-panel .nav-sub {
+  margin: 12px 0 6px;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+}
 .nav-panel h2 {
   margin: 0 0 10px;
   font-size: 11px;
@@ -362,7 +392,8 @@ main { display: block; }
 }
 .nav-panel a:hover { color: var(--accent-ink); border-bottom: 0; text-decoration: underline; }
 /* Counties are the secondary way in, so they read quieter. */
-.nav-panel .nav-counties { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule-2); }
+.nav-panel .nav-sub { border-top: 1px solid var(--rule-2); padding-top: 10px; }
+.nav-panel .nav-counties { margin-top: 0; }
 .nav-panel .nav-counties a { font-size: 13px; color: var(--ink-2); }
 
 @media (max-width: 640px) {
@@ -370,10 +401,11 @@ main { display: block; }
   .nav-menu { position: static; }
   .nav-panel {
     position: static;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 18px;
     margin-top: 10px;
-    min-width: 0;
+    width: auto;
+    max-width: none;
     box-shadow: none;
   }
 }
@@ -644,22 +676,49 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 .hero-search button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
 .hero-search button svg { flex: none; }
 
-.hero-links {
+/*
+  FOUR CATEGORY BUTTONS UNDER THE SEARCH BOX.
+
+  This block has had two earlier shapes, both of which put every city in
+  the hero: first one link per city-and-filter in a single wrapping row,
+  then the same links grouped under filter headings. The grouping fixed
+  the ordering and left the underlying problem, which is that ten city
+  names above the fold is a directory index, not an entry point.
+
+  These are anchors, deliberately, even though they read as buttons. Each
+  one navigates, and Rule 1 says the site works with JavaScript off — an
+  anchor does, is middle-clickable, and is followed by the crawl report.
+  A <button> here would need a form or a script to go anywhere.
+
+  The 44px minimum height is the same touch target the masthead links
+  use, and it is a floor rather than a fixed height so a label that wraps
+  on a narrow screen grows the button instead of spilling out of it.
+*/
+.hero-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 22px;
-  list-style: none;
-  padding: 0;
+  gap: 10px;
   margin: 0 0 34px;
-  font-size: 14px;
 }
-.hero-links a {
-  color: #cfe8dc;
+.hero-filters a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 18px;
+  font-size: 14.5px;
+  color: #eaf5ef;
   text-decoration: none;
-  border-bottom: 1px solid rgba(207, 232, 220, .38);
-  padding-bottom: 2px;
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(207, 232, 220, .34);
+  border-radius: 999px;
+  transition: background .16s ease, border-color .16s ease;
 }
-.hero-links a:hover { color: #fff; border-bottom-color: #fff; }
+.hero-filters a:hover {
+  background: rgba(255, 255, 255, .16);
+  border-color: rgba(255, 255, 255, .72);
+  color: #fff;
+}
+.hero-filters a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
 
 /* ---- the proof line ---- */
 

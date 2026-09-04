@@ -124,11 +124,16 @@ export default function RootLayout({children}: {children: ReactNode}) {
                           <li key={c.href}><a href={c.href}>{c.label}</a></li>
                         ))}
                       </ul>
-                      <ul className="nav-counties">
-                        {g.counties.map(c => (
-                          <li key={c.href}><a href={c.href}>{c.label}</a></li>
-                        ))}
-                      </ul>
+                      {g.hasCounties && (
+                        <>
+                          <p className="nav-sub">Counties</p>
+                          <ul className="nav-counties">
+                            {g.counties.map(c => (
+                              <li key={c.href}><a href={c.href}>{c.label}</a></li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
                     </section>
                   ))}
                 </div>

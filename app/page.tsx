@@ -90,12 +90,18 @@ export default function Home() {
             </button>
           </form>
 
-          {v.hasQuickLinks && (
-            <ul className="hero-links">
-              {v.quickLinks.map(l => (
-                <li key={l.href}><a href={l.href}>{l.label}</a></li>
+          {/*
+            Anchors styled as buttons, not <button>s. Each one navigates,
+            and a thing that navigates is a link — which is also what
+            makes it work with JavaScript off, open in a new tab, and be
+            followed by the crawl report.
+          */}
+          {v.hasFilterButtons && (
+            <nav className="hero-filters" aria-label="Browse by court type">
+              {v.filterButtons.map(b => (
+                <a key={b.filter} href={b.href}>{b.label}</a>
               ))}
-            </ul>
+            </nav>
           )}
 
           <dl className="hero-proof">

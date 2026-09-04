@@ -23,11 +23,17 @@ export const metadata: Metadata = {
   robots: {index: false, follow: true},
 }
 
-type Props = {searchParams: Promise<{q?: string}>}
+type Props = {searchParams: Promise<{q?: string; filter?: string}>}
 
+/*
+  ?filter= is the home page's category buttons landing here. It is a
+  separate parameter from ?q= rather than a canned query string, so the
+  button is answered by the category itself and cannot start matching a
+  venue whose name happens to contain the word. See lib/site/search.mjs.
+*/
 export default async function SearchPage({searchParams}: Props) {
-  const {q} = await searchParams
-  const v = searchView(q ?? '')
+  const {q, filter} = await searchParams
+  const v = searchView(q ?? '', filter ?? null)
 
   return (
     <div className="wrap page">
@@ -45,7 +51,7 @@ export default async function SearchPage({searchParams}: Props) {
           id="q"
           name="q"
           type="search"
-          defaultValue={v.query}
+          defaultValue={v.inputValue}
           placeholder="City, state, ZIP code, or court name"
           autoComplete="off"
         />
@@ -59,7 +65,7 @@ export default async function SearchPage({searchParams}: Props) {
           {v.results.map(r => (
             <li key={r.href}>
               <a href={r.href}>{r.label}</a>
-              <span className="results-type">{r.type}</span>
+              {v.showResultType && <span className="results-type">{r.typeLabel}</span>}
               <span className="results-meta">{r.meta}</span>
             </li>
           ))}
@@ -70,15 +76,15 @@ export default async function SearchPage({searchParams}: Props) {
         <>
           <h2>Everything we publish</h2>
           <p>
-            One city is verified so far, so the whole directory fits on this
-            page. It will not always, and we would rather show you the real
-            extent of it than pad a results list.
+            Every city and county page on the site, in full. We would rather
+            show you the real extent of the directory than pad a results list
+            with near-misses.
           </p>
           <ul className="results">
             {v.suggestions.map(r => (
               <li key={r.href}>
                 <a href={r.href}>{r.label}</a>
-                <span className="results-type">{r.type}</span>
+                <span className="results-type">{r.typeLabel}</span>
                 <span className="results-meta">{r.meta}</span>
               </li>
             ))}
@@ -90,10 +96,8 @@ export default async function SearchPage({searchParams}: Props) {
         <h3>Why a search here returns so little</h3>
         <p>
           Search only ever returns pages that exist, and a page only exists
-          once its facts have been checked against a named source. We hold
-          eighteen thousand imported venue records and have verified
-          twenty-four of them, so the gap between what is searchable and what
-          is out there is enormous and entirely deliberate.{' '}
+          once its facts have been checked against a named source.{' '}
+          {v.scaleSentence}{' '}
           <a href="/how-we-verify/">How we verify</a> explains the standard a
           record has to meet.
         </p>

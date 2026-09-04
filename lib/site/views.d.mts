@@ -38,8 +38,8 @@ export type HomeView = {
   gapSentence: string
   cityWordLower: string
   sourcesPerVenue: string
-  hasQuickLinks: boolean
-  quickLinks: {href: string; label: string}[]
+  hasFilterButtons: boolean
+  filterButtons: {filter: string; label: string; href: string}[]
   jsonLd: string
   cities: CardLink[]
 }
@@ -272,6 +272,7 @@ export type NavGroup = {
   href: string | null
   cities: {href: string; label: string}[]
   counties: {href: string; label: string}[]
+  hasCounties: boolean
 }
 
 export function navView(): {
@@ -300,17 +301,26 @@ export type ProvenanceView = {
 
 export function provenanceView(): ProvenanceView
 
-export type SearchHit = {type: string; label: string; href: string; meta: string}
+export type SearchHit = {
+  type: string
+  typeLabel: string
+  label: string
+  href: string
+  meta: string
+}
 
 export type SearchView = {
   query: string
   kind: string
   heading: string
+  inputValue: string
   note: string
   hasResults: boolean
   results: SearchHit[]
+  showResultType: boolean
   hasSuggestions: boolean
   suggestions: SearchHit[]
+  scaleSentence: string
 }
 
-export function searchView(q: string): SearchView
+export function searchView(q: string, filter?: string | null): SearchView
