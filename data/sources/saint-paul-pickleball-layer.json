@@ -1,0 +1,484 @@
+{
+  "objectIdFieldName": "objectid",
+  "uniqueIdField": {
+    "name": "objectid",
+    "isSystemMaintained": true
+  },
+  "globalIdFieldName": "globalid",
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+  },
+  "fields": [
+    {
+      "name": "objectid",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "sitename",
+      "type": "esriFieldTypeString",
+      "alias": "SiteName",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "type",
+      "type": "esriFieldTypeString",
+      "alias": "Type",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "address",
+      "type": "esriFieldTypeString",
+      "alias": "Address",
+      "sqlType": "sqlTypeOther",
+      "length": 150,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "details",
+      "type": "esriFieldTypeString",
+      "alias": "Details",
+      "sqlType": "sqlTypeOther",
+      "length": 150,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "phone",
+      "type": "esriFieldTypeString",
+      "alias": "Phone",
+      "sqlType": "sqlTypeOther",
+      "length": 15,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "website",
+      "type": "esriFieldTypeString",
+      "alias": "Website",
+      "sqlType": "sqlTypeOther",
+      "length": 150,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "created_user",
+      "type": "esriFieldTypeString",
+      "alias": "created_user",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "created_date",
+      "type": "esriFieldTypeDate",
+      "alias": "created_date",
+      "sqlType": "sqlTypeOther",
+      "length": 8,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "last_edited_user",
+      "type": "esriFieldTypeString",
+      "alias": "last_edited_user",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "last_edited_date",
+      "type": "esriFieldTypeDate",
+      "alias": "last_edited_date",
+      "sqlType": "sqlTypeOther",
+      "length": 8,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "globalid",
+      "type": "esriFieldTypeGlobalID",
+      "alias": "GlobalID",
+      "sqlType": "sqlTypeOther",
+      "length": 38,
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "objectid": 1,
+        "sitename": "Arlington/Arkwright Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "7e2a79e2-5621-4f35-8f09-dfc0b6479d49"
+      },
+      "geometry": {
+        "x": -93.0832592730521,
+        "y": 44.98276447004187
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 2,
+        "sitename": "Baker Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "a6862a0c-4151-4c8e-9a65-36e8357d8865"
+      },
+      "geometry": {
+        "x": -93.09305136032901,
+        "y": 44.925055902749236
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 3,
+        "sitename": "Carty Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "65c3c3f4-ae78-4e75-92c1-f1c545175e4e"
+      },
+      "geometry": {
+        "x": -93.1307638831684,
+        "y": 44.94982900661899
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 5,
+        "sitename": "Duluth & Case Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "197d9b22-32f9-4372-a7ab-238c2ef739c7"
+      },
+      "geometry": {
+        "x": -93.05037891685059,
+        "y": 44.97182199421391
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 6,
+        "sitename": "Eastview Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "8714127c-39a4-4cad-b79c-c9605f124f48"
+      },
+      "geometry": {
+        "x": -93.0299387295379,
+        "y": 44.96053904957662
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 7,
+        "sitename": "Hazel Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "17c2a6f1-cec7-4b79-bb1b-14e719af5207"
+      },
+      "geometry": {
+        "x": -93.02070475196187,
+        "y": 44.96890228628987
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 8,
+        "sitename": "Hazel Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "31fdea0c-4cf6-47c2-819e-e5789bcfc288"
+      },
+      "geometry": {
+        "x": -93.02050300697377,
+        "y": 44.96890020898923
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 9,
+        "sitename": "Homecroft Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "624c0ef0-3364-4718-86a8-95b01512cb9e"
+      },
+      "geometry": {
+        "x": -93.17780524362834,
+        "y": 44.90112536059164
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 10,
+        "sitename": "Homecroft Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "2c7239b0-434d-46a1-8313-d69c5cbf62ff"
+      },
+      "geometry": {
+        "x": -93.1776174889445,
+        "y": 44.901125360243455
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 11,
+        "sitename": "Mattocks Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "ae36abab-beb1-42f1-8862-8cc78ab4f1d5"
+      },
+      "geometry": {
+        "x": -93.17173292682757,
+        "y": 44.92828830082998
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 12,
+        "sitename": "Mattocks Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "79e5fa32-b281-46b2-bcc7-dd06050dae43"
+      },
+      "geometry": {
+        "x": -93.17156931264886,
+        "y": 44.928231330801275
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 13,
+        "sitename": "Orchard Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "2991d40d-e7ad-40ce-9d41-e8712034e7f2"
+      },
+      "geometry": {
+        "x": -93.1381669936751,
+        "y": 44.97269123860299
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 14,
+        "sitename": "Rice Rec Center Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "33da3b50-ea47-4f7a-9e98-9e1916f74bc9"
+      },
+      "geometry": {
+        "x": -93.1091364616413,
+        "y": 44.972843831244774
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 15,
+        "sitename": "Rice Rec Center Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "b70677c3-062c-4f45-bf6f-b954504044f7"
+      },
+      "geometry": {
+        "x": -93.10895407221516,
+        "y": 44.972842881840045
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 402,
+        "sitename": null,
+        "type": null,
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "33488da6-faf0-4844-873d-371ebe910053"
+      },
+      "geometry": {
+        "x": -93.17156931264886,
+        "y": 44.928231330801275
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 801,
+        "sitename": "Orchard Park Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "26d026b7-65a8-4705-9475-6e6b7092551f"
+      },
+      "geometry": {
+        "x": -93.13799540131323,
+        "y": 44.972696131936246
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 1201,
+        "sitename": "MLK Rec Center Pickleball Court",
+        "type": null,
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "7b1ca4f4-a42b-413a-9847-cc0ee7e48277"
+      },
+      "geometry": {
+        "x": -93.12194326658002,
+        "y": 44.94970507053912
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 1202,
+        "sitename": "Prosperity Heights Pickleball Court",
+        "type": "Outdoor",
+        "address": null,
+        "details": null,
+        "phone": null,
+        "website": null,
+        "created_user": "CityofSaintPaul",
+        "created_date": 1653082559860,
+        "last_edited_user": "CityofSaintPaul",
+        "last_edited_date": 1653082559860,
+        "globalid": "763b32fe-92c2-47bc-a4ba-81b5c5536a84"
+      },
+      "geometry": {
+        "x": -93.03069270442307,
+        "y": 44.98156139591088
+      }
+    }
+  ]
+}

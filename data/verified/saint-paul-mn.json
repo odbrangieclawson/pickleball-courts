@@ -1,0 +1,692 @@
+{
+  "city": "Saint Paul",
+  "state": "MN",
+  "retrieved_at": "2026-09-04",
+  "method_note": "Saint Paul publishes no list of its pickleball venues. Its pickleball page links an interactive map and a PDF and says only that \"outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium\", so the venue set had to be assembled: candidate site names from the City's own pickleball GIS layer, then a court count and a street address from each candidate's facility page, in the City's amenity format \"(2) Pickleball Courts\". Nothing publishes on the layer alone — it is one point per court with no count and no address, and counting map points to produce a court total is the derivation this project falsified for Sacramento. The City's two records disagree in both directions: eight sites the layer marks for pickleball state no count on their facility pages, and two that do state a count, Clayland Park and Edgcumbe Recreation Center, are absent from the layer. Every published court is outdoor on the City's own evidence — at the two recreation centres the pickleball line sits under \"Outdoor Amenities:\", which this run checks rather than assumes. Assembly Union Park, whose three courts the City calls the first dedicated pickleball courts in the park system, is refused because its address does not resolve.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.stpaul.gov/departments/parks-and-recreation/recreation-centers/pickleball",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/arlington-arkwright-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.stpaul.gov/facilities/clayland-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/clayland-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/duluth-and-case-recreation-center.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/edgcumbe-recreation-center.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.stpaul.gov/facilities/homecroft-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/homecroft-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.stpaul.gov/facilities/orchard-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/orchard-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.stpaul.gov/facilities/assembly-union-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/assembly-union-park.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.stpaul.gov/facilities/mattocks-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/saint-paul/mattocks-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://services1.arcgis.com/9meaaHE3uiba0zr8/arcgis/rest/services/Amenities_Parks/FeatureServer/17",
+      "publisher": "City of Saint Paul (CityofSaintPaul_BI)",
+      "tier": 2,
+      "format": "json",
+      "snapshot": "data/sources/saint-paul-pickleball-layer.json"
+    },
+    {
+      "id": "S11",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/saint-paul-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 6,
+    "courts": 13,
+    "outdoor": 13,
+    "indoor": 0
+  },
+  "excluded": [
+    {
+      "name": "Assembly Union Park",
+      "why": [
+        "The Census address geocoder returns no match for \"875 Mount Curve Boulevard\", the address the City prints on the park's own page. Import Gate I1 requires a street address that resolves.",
+        "This is the most costly exclusion in the run: the City describes these as the first dedicated pickleball courts in the Saint Paul park system, and dedicated courts are rarer in this city than anywhere else published so far."
+      ]
+    },
+    {
+      "name": "Mattocks Park",
+      "why": [
+        "The City lists \"Pickleball (Outdoor)\" among the park's amenities and states no number. Page Gate 1 requires a verified court count and there is none to verify."
+      ]
+    }
+  ],
+  "layer_only_sites": [
+    "Baker Park",
+    "Carty Park",
+    "Eastview Park",
+    "Hazel Park",
+    "Prosperity Heights Park",
+    "Rice Recreation Center",
+    "Martin Luther King Recreation Center"
+  ],
+  "venues": {
+    "arlington-arkwright-park": {
+      "minted": true,
+      "identity": {
+        "name": "Arlington/Arkwright Park",
+        "city": "Saint Paul",
+        "state": "MN",
+        "county": "Ramsey",
+        "postal_code": "55130",
+        "latitude": 44.984536853345,
+        "longitude": -93.08110919168,
+        "imported_slug": null,
+        "canonical_slug": "arlington-arkwright-park"
+      },
+      "match": {
+        "source_page": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+        "quote": "1 Pickleball court (striped tennis court)",
+        "basis": "No imported row under this slug. The site name came from the City's own pickleball GIS layer; the count and the address come from this facility page, which is what makes the venue publishable."
+      },
+      "patch": {
+        "name": "Arlington/Arkwright Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "400 Arlington Ave. E.",
+        "venue_type": "public_park",
+        "court_availability": "One pickleball court, striped onto a tennis court — the City says so in the amenity line itself, \"1 Pickleball court (striped tennis court)\". It is the smallest published venue in Saint Paul, and being a single overlaid court it is also the least reliable: a tennis match takes the whole venue.",
+        "county": "Ramsey",
+        "postal_code": "55130"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Arlington/Arkwright Park\" by the City of Saint Paul Parks and Recreation on its own facility page."
+        },
+        "total_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"1 Pickleball court (striped tennis court)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"1 Pickleball court (striped tennis court)\". The City's pickleball page states the rule this rests on: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\" These courts are striped on the park's tennis courts. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"400 Arlington Ave. E.\" is the address the City prints on this venue's facility page."
+        },
+        "venue_type": {
+          "source_url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Saint Paul Parks and Recreation among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"1 Pickleball court (striped tennis court)\". The City's pickleball page adds: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Ramsey County, MN (FIPS 27123). Census address geocoder matched \"400 ARLINGTON AVE E, SAINT PAUL, MN, 55130\". The geocoder also places it in the incorporated place \"St. Paul city\", which is what allows it to be published under Saint Paul."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"400 ARLINGTON AVE E, SAINT PAUL, MN, 55130\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "clayland-park": {
+      "minted": true,
+      "identity": {
+        "name": "Clayland Park",
+        "city": "Saint Paul",
+        "state": "MN",
+        "county": "Ramsey",
+        "postal_code": "55104",
+        "latitude": 44.968206731882,
+        "longitude": -93.177281050511,
+        "imported_slug": null,
+        "canonical_slug": "clayland-park"
+      },
+      "match": {
+        "source_page": "https://www.stpaul.gov/facilities/clayland-park",
+        "quote": "(2) Pickleball Courts",
+        "basis": "No imported row under this slug. The site name came from the City's own pickleball GIS layer; the count and the address come from this facility page, which is what makes the venue publishable."
+      },
+      "patch": {
+        "name": "Clayland Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "901 Fairview Ave. N.",
+        "venue_type": "public_park",
+        "court_availability": "Two pickleball courts striped onto the park's two tennis courts, which the City describes in prose as well as counting in its amenity list. The park also has two designated handball courts and sits adjacent to Newell Park.",
+        "county": "Ramsey",
+        "postal_code": "55104"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.stpaul.gov/facilities/clayland-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Clayland Park\" by the City of Saint Paul Parks and Recreation on its own facility page."
+        },
+        "total_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/clayland-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/clayland-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\". The City's pickleball page states the rule this rests on: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\" These courts are striped on the park's tennis courts. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.stpaul.gov/facilities/clayland-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"901 Fairview Ave. N.\" is the address the City prints on this venue's facility page."
+        },
+        "venue_type": {
+          "source_url": "https://www.stpaul.gov/facilities/clayland-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Saint Paul Parks and Recreation among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.stpaul.gov/facilities/clayland-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\", and the park description: \"Clayland Park, adjacent to Newell Park, features two tennis courts striped for pickleball as well as two designated handball courts.\". The City's pickleball page adds: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Ramsey County, MN (FIPS 27123). Census address geocoder matched \"901 FAIRVIEW AVE N, SAINT PAUL, MN, 55104\". The geocoder also places it in the incorporated place \"St. Paul city\", which is what allows it to be published under Saint Paul."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"901 FAIRVIEW AVE N, SAINT PAUL, MN, 55104\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.stpaul.gov/facilities/clayland-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "duluth-and-case-recreation-center": {
+      "minted": true,
+      "identity": {
+        "name": "Duluth and Case Recreation Center",
+        "city": "Saint Paul",
+        "state": "MN",
+        "county": "Ramsey",
+        "postal_code": "55106",
+        "latitude": 44.972061696889,
+        "longitude": -93.050668323279,
+        "imported_slug": null,
+        "canonical_slug": "duluth-and-case-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+        "quote": "(2) Pickleball Courts",
+        "basis": "No imported row under this slug. The site name came from the City's own pickleball GIS layer; the count and the address come from this facility page, which is what makes the venue publishable."
+      },
+      "patch": {
+        "name": "Duluth and Case Recreation Center",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1020 Duluth St.",
+        "venue_type": "community_center",
+        "court_availability": "Two pickleball courts, listed under the recreation centre's Outdoor Amenities rather than its Indoor ones — so these are outside the building, alongside a football field, a soccer field, a playground and three Kato/Sepak Takraw courts. The centre itself has a small gym, and no pickleball count is published for it.",
+        "county": "Ramsey",
+        "postal_code": "55106"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Duluth and Case Recreation Center\" by the City of Saint Paul Parks and Recreation on its own facility page."
+        },
+        "total_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\". The line sits under this recreation centre's \"Outdoor Amenities:\" heading rather than its \"Indoor Amenities:\" one, which is what makes these outdoor courts rather than gym courts. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1020 Duluth St.\" is the address the City prints on this venue's facility page."
+        },
+        "venue_type": {
+          "source_url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City runs this as a recreation centre; the pickleball courts are among its outdoor amenities."
+        },
+        "court_availability": {
+          "source_url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\". The City's pickleball page adds: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Ramsey County, MN (FIPS 27123). Census address geocoder matched \"1020 DULUTH ST, SAINT PAUL, MN, 55106\". The geocoder also places it in the incorporated place \"St. Paul city\", which is what allows it to be published under Saint Paul."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1020 DULUTH ST, SAINT PAUL, MN, 55106\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "edgcumbe-recreation-center": {
+      "minted": true,
+      "identity": {
+        "name": "Edgcumbe Recreation Center",
+        "city": "Saint Paul",
+        "state": "MN",
+        "county": "Ramsey",
+        "postal_code": "55105",
+        "latitude": 44.93213776919,
+        "longitude": -93.151630354759,
+        "imported_slug": null,
+        "canonical_slug": "edgcumbe-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+        "quote": "(4) Pickleball Courts",
+        "basis": "No imported row under this slug. The site name came from the City's own pickleball GIS layer; the count and the address come from this facility page, which is what makes the venue publishable."
+      },
+      "patch": {
+        "name": "Edgcumbe Recreation Center",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "320 Griggs St. S.",
+        "venue_type": "community_center",
+        "court_availability": "Four pickleball courts — the largest published count in Saint Paul — listed under the recreation centre's Outdoor Amenities. The building beside them holds a medium gym, a fitness centre, two racquetball/walleyball courts and a warming room, and the City publishes no pickleball count for any indoor space here.",
+        "county": "Ramsey",
+        "postal_code": "55105"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Edgcumbe Recreation Center\" by the City of Saint Paul Parks and Recreation on its own facility page."
+        },
+        "total_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(4) Pickleball Courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(4) Pickleball Courts\". The line sits under this recreation centre's \"Outdoor Amenities:\" heading rather than its \"Indoor Amenities:\" one, which is what makes these outdoor courts rather than gym courts. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"320 Griggs St. S.\" is the address the City prints on this venue's facility page."
+        },
+        "venue_type": {
+          "source_url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City runs this as a recreation centre; the pickleball courts are among its outdoor amenities."
+        },
+        "court_availability": {
+          "source_url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(4) Pickleball Courts\". The City's pickleball page adds: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Ramsey County, MN (FIPS 27123). Census address geocoder matched \"320 GRIGGS ST S, SAINT PAUL, MN, 55105\". The geocoder also places it in the incorporated place \"St. Paul city\", which is what allows it to be published under Saint Paul."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"320 GRIGGS ST S, SAINT PAUL, MN, 55105\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "homecroft-park": {
+      "minted": true,
+      "identity": {
+        "name": "Homecroft Park",
+        "city": "Saint Paul",
+        "state": "MN",
+        "county": "Ramsey",
+        "postal_code": "55116",
+        "latitude": 44.90160061635,
+        "longitude": -93.17988530836,
+        "imported_slug": null,
+        "canonical_slug": "homecroft-park"
+      },
+      "match": {
+        "source_page": "https://www.stpaul.gov/facilities/homecroft-park",
+        "quote": "(2) Pickleball Courts",
+        "basis": "No imported row under this slug. The site name came from the City's own pickleball GIS layer; the count and the address come from this facility page, which is what makes the venue publishable."
+      },
+      "patch": {
+        "name": "Homecroft Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1850 Sheridan Ave.",
+        "venue_type": "public_park",
+        "court_availability": "Two pickleball courts listed alongside two tennis courts and a tennis backboard, which is the ordinary Saint Paul arrangement: pickleball striped onto the tennis surface. The park also has open space and, per the City's amenity list, nothing else that competes for the courts.",
+        "county": "Ramsey",
+        "postal_code": "55116"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.stpaul.gov/facilities/homecroft-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Homecroft Park\" by the City of Saint Paul Parks and Recreation on its own facility page."
+        },
+        "total_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/homecroft-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/homecroft-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\". The City's pickleball page states the rule this rests on: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\" These courts are striped on the park's tennis courts. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.stpaul.gov/facilities/homecroft-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1850 Sheridan Ave.\" is the address the City prints on this venue's facility page."
+        },
+        "venue_type": {
+          "source_url": "https://www.stpaul.gov/facilities/homecroft-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Saint Paul Parks and Recreation among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.stpaul.gov/facilities/homecroft-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"(2) Pickleball Courts\". The City's pickleball page adds: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Ramsey County, MN (FIPS 27123). Census address geocoder matched \"1850 W SHERIDAN AVE, SAINT PAUL, MN, 55116\". The geocoder also places it in the incorporated place \"St. Paul city\", which is what allows it to be published under Saint Paul."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1850 W SHERIDAN AVE, SAINT PAUL, MN, 55116\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.stpaul.gov/facilities/homecroft-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "orchard-park": {
+      "minted": true,
+      "identity": {
+        "name": "Orchard Park",
+        "city": "Saint Paul",
+        "state": "MN",
+        "county": "Ramsey",
+        "postal_code": "55103",
+        "latitude": 44.972506527203,
+        "longitude": -93.13724524951,
+        "imported_slug": null,
+        "canonical_slug": "orchard-park"
+      },
+      "match": {
+        "source_page": "https://www.stpaul.gov/facilities/orchard-park",
+        "quote": "2 Pickleball Courts",
+        "basis": "No imported row under this slug. The site name came from the City's own pickleball GIS layer; the count and the address come from this facility page, which is what makes the venue publishable."
+      },
+      "patch": {
+        "name": "Orchard Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "875 Orchard Ave.",
+        "venue_type": "public_park",
+        "court_availability": "Two pickleball courts, and separately one tennis court with pickleball lines on it — the City lists both. Only the stated pickleball count is published as the court number; the lined tennis court is a third surface you may be able to use and is not added to the total, because the City counts it as a tennis court.",
+        "county": "Ramsey",
+        "postal_code": "55103"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.stpaul.gov/facilities/orchard-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Orchard Park\" by the City of Saint Paul Parks and Recreation on its own facility page."
+        },
+        "total_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/orchard-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"2 Pickleball Courts\". The same list separately carries \"1 Tennis Court (w/ pickleball lines)\", which is counted by the City as a tennis court and is therefore not added to this number."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.stpaul.gov/facilities/orchard-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"2 Pickleball Courts\". The City's pickleball page states the rule this rests on: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\" These courts are striped on the park's tennis courts. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.stpaul.gov/facilities/orchard-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"875 Orchard Ave.\" is the address the City prints on this venue's facility page."
+        },
+        "venue_type": {
+          "source_url": "https://www.stpaul.gov/facilities/orchard-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Saint Paul Parks and Recreation among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.stpaul.gov/facilities/orchard-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Saint Paul Parks and Recreation's facility page for this venue, in its amenity list: \"2 Pickleball Courts\". The City's pickleball page adds: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Ramsey County, MN (FIPS 27123). Census address geocoder matched \"875 ORCHARD AVE W, SAINT PAUL, MN, 55103\". The geocoder also places it in the incorporated place \"St. Paul city\", which is what allows it to be published under Saint Paul."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"875 ORCHARD AVE W, SAINT PAUL, MN, 55103\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.stpaul.gov/facilities/orchard-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

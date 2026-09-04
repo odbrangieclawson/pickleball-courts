@@ -1,0 +1,294 @@
+{
+  "city": "Saint Paul",
+  "state": "MN",
+  "kind": "venues",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Every court count and address below is quoted from that venue's own facility page on stpaul.gov, in the City's amenity format. The City publishes no list of its pickleball venues, so the candidate names came from its own pickleball GIS layer and each one was then verified against a page. Where a page says nothing — about lighting, cost, hours or surface, which is most of what a player wants — these notes say so. Nobody working on this has played on these courts.",
+  "venues": {
+    "arlington-arkwright-park": {
+      "slots": {
+        "description": "One pickleball court, and the City is unusually direct about what kind: its amenity list reads \"1 Pickleball court (striped tennis court)\". That parenthesis is the whole venue in five words — a tennis court with pickleball lines on it, on the East Side of Saint Paul at Arlington and Arkwright. It is the smallest published venue in the city, and among the smallest anywhere in this directory.\n\nSingle-court overlay venues are the least reliable proposition this site publishes, and it is worth being blunt about why: there is one playing surface, it is primarily a tennis court, and if anyone is using it for tennis there is no pickleball here at all. That is different from a two-court venue where you might wait, and very different from Edgcumbe's four courts across town.\n\nOne court also makes this venue a useful illustration of how thin Saint Paul's published record is compared with its actual provision. The City's pickleball map shows eight further sites — Baker, Carty, Eastview, Hazel Park, Mattocks, Prosperity Heights, Rice and Martin Luther King — none of which states a court count on its own facility page. Arlington/Arkwright makes this page only because somebody wrote a number, and a parenthesis, into an amenity list.",
+        "getting_there": "400 Arlington Ave. E., Saint Paul, MN 55130, which the Census geocoder matched to St. Paul city, Ramsey County. This is the East Side, north of Phalen. The City publishes no parking guidance for any of its pickleball venues, and on a neighbourhood park the realistic expectation is the street.",
+        "what_to_expect": "One court, shared with tennis, and almost nothing else on the record. Saint Paul's facility pages are amenity inventories: they list what is at a site and say nothing about opening hours, cost, lighting or surface. So this page can tell you there is one striped court at this address and cannot tell you when it is open, what it costs, whether it is lit or what it is made of — because the City states none of those things, here or at any of its other pickleball venues."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "One, striped onto a tennis court. The City's amenity list reads \"1 Pickleball court (striped tennis court)\" — the only venue in Saint Paul where it spells out the overlay in the count line itself."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. No Saint Paul facility page states lighting for a pickleball court either way, so all six published venues read \"not verified yet\" on the point."
+        },
+        {
+          "q": "What if someone is playing tennis?",
+          "a": "Then there is no pickleball here. With one court and no dedicated surface, tennis and pickleball cannot both happen — which is why a single-court overlay venue is worth reading carefully rather than counting as \"has pickleball\"."
+        },
+        {
+          "q": "Where else can I play nearby?",
+          "a": "Duluth and Case Recreation Center has two courts on the East Side. Across the city, Edgcumbe Recreation Center's four are the largest published count in Saint Paul."
+        },
+        {
+          "q": "How was this verified?",
+          "a": "From the City of Saint Paul's own facility page for the park, snapshotted on 4 September 2026, and from the Census address geocoder, which placed 400 Arlington Ave. E. inside St. Paul city, Ramsey County. Our build re-checks the quoted count against that snapshot every time it runs."
+        },
+        {
+          "q": "Is this really the smallest venue in the city?",
+          "a": "Of the six published, yes — one court against two at four venues and four at Edgcumbe. It is also among the smallest venues anywhere in this directory, alongside single-court sites in Madison, Austin and Saint Paul's own park system."
+        }
+      ],
+      "sources": [
+        "V1",
+        "V7"
+      ]
+    },
+    "clayland-park": {
+      "slots": {
+        "description": "Two pickleball courts striped onto the park's two tennis courts, in the Hamline-Midway area adjacent to Newell Park. Clayland is the one Saint Paul venue where the City writes a sentence about the place rather than only listing what is in it: the park \"features two tennis courts striped for pickleball as well as two designated handball courts\". Designated handball courts are rare enough in a municipal park inventory to be worth noting, and they tell you this is a site built for racquet and ball sports generally rather than for pickleball in particular.\n\nTwo courts is the typical Saint Paul venue — four of the six published here have exactly two. What is not typical is that Clayland appears nowhere on the City's own pickleball map, despite its facility page carrying a count. It is one of two venues on this page that the City's two records disagree about.\n\nClayland is one of the two venues that expose the disagreement between the City's own records. It carries a pickleball count on its facility page and appears nowhere in the pickleball GIS layer that feeds the City's interactive map; Edgcumbe Recreation Center is in exactly the same position. A player using the City's map would not find this park, and a player using its facility pages would. Both are the City of Saint Paul.",
+        "getting_there": "901 Fairview Ave. N., Saint Paul, MN 55104, matched by the Census geocoder to St. Paul city, Ramsey County. Fairview Avenue runs north-south through Hamline-Midway, and the park sits beside Newell Park, which the City names in its description. No parking guidance is published.",
+        "what_to_expect": "Two courts on two tennis courts, so the competing use is tennis and the surface is a tennis surface — which the City does not name. Nothing is published about hours, lighting or cost. What you do get, unusually for Saint Paul, is a description of the site: alongside the tennis and pickleball there are two designated handball courts, which means a busy afternoon here is a busy afternoon for several sports at once."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, from the amenity list: \"(2) Pickleball Courts\". The City's park description says the same thing in words — \"two tennis courts striped for pickleball\"."
+        },
+        {
+          "q": "Is this park on the City's pickleball map?",
+          "a": "No, and that is worth knowing. Clayland states a pickleball count on its own facility page and appears nowhere in the City's pickleball GIS layer. Edgcumbe Recreation Center is in the same position. We publish from the pages, because the pages are what state a number."
+        },
+        {
+          "q": "What else is at the park?",
+          "a": "Two tennis courts — the same courts, striped — and two designated handball courts, per the City's description. The park is adjacent to Newell Park."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not verified. Saint Paul publishes no cost for any of its pickleball venues. They are municipal park courts and are very likely free; this site does not publish \"very likely\"."
+        },
+        {
+          "q": "How was this verified?",
+          "a": "From the City's facility page for Clayland Park, snapshotted on 4 September 2026, and from the Census geocoder, which placed 901 Fairview Ave. N. inside St. Paul city, Ramsey County."
+        },
+        {
+          "q": "What does the handball detail tell me?",
+          "a": "That the site is built for several court sports rather than for pickleball specifically — two tennis courts carrying the pickleball lines, plus two designated handball courts. On a busy afternoon the park has more than one queue."
+        }
+      ],
+      "sources": [
+        "V2",
+        "V7"
+      ]
+    },
+    "duluth-and-case-recreation-center": {
+      "slots": {
+        "description": "Two pickleball courts at an East Side recreation centre — and, importantly, outside it. The City splits this facility's amenities into Indoor and Outdoor, and the pickleball line sits under \"Outdoor Amenities:\", alongside a football field, a flag football field, a soccer field, a playground, a picnic area, two baseball fields and three Kato/Sepak Takraw courts. The building itself holds a small gym, a small kitchen and a multipurpose room, and the City publishes no pickleball count for any of them.\n\nThose Kato courts are worth a note of their own: Kato, or Sepak Takraw, is a kick-volleyball game played widely in the Hmong community, and Saint Paul is one of very few American cities whose parks department builds courts for it. This venue's amenity list is a fair picture of who the East Side park system serves.\n\nTwo courts is the Saint Paul standard — four of the six published venues have exactly two — and what distinguishes this one is the company it keeps. A recreation centre site with staff, a building and several fields is a different proposition from a bare neighbourhood park, even when the court count is identical. It is also on the East Side, which alongside Arlington/Arkwright's single court gives that half of the city three published courts in total.",
+        "getting_there": "1020 Duluth St., Saint Paul, MN 55106, matched by the Census geocoder to St. Paul city, Ramsey County. This is the East Side, and Arlington/Arkwright Park's single court is the nearest other published venue. As everywhere in Saint Paul, no parking information is published — though a staffed recreation centre with several sports fields will have some.",
+        "what_to_expect": "Two outdoor courts on the grounds of a recreation centre, which is a slightly better prospect than a bare park: there is a building, staff and other facilities on site. What the City does not publish is when any of it is open to pickleball, what it costs, or whether the courts are lit — the same silence that covers all six Saint Paul venues on this site."
+      },
+      "faqs": [
+        {
+          "q": "Are the courts indoors?",
+          "a": "No. The City lists them under \"Outdoor Amenities:\" rather than \"Indoor Amenities:\", and our build checks that placement every time it runs. The centre's indoor space is a small gym, a kitchen and a multipurpose room, with no pickleball count published for any of it."
+        },
+        {
+          "q": "How many courts are there?",
+          "a": "Two: \"(2) Pickleball Courts\" in the outdoor amenity list."
+        },
+        {
+          "q": "What else is on the site?",
+          "a": "A football field, a flag football field, a soccer field, two baseball fields, a playground, a picnic area, a bike rack, a garden for children and three Kato/Sepak Takraw courts."
+        },
+        {
+          "q": "What is a Kato court?",
+          "a": "Kato, or Sepak Takraw, is a kick-volleyball game played widely in the Hmong community. Saint Paul is one of very few American parks departments that builds courts for it, and three of them sit alongside the pickleball here."
+        },
+        {
+          "q": "How was this verified?",
+          "a": "From the City's facility page for the recreation centre, snapshotted on 4 September 2026, including the placement of the pickleball line under Outdoor Amenities, and from the Census geocoder for the county and postcode."
+        },
+        {
+          "q": "Is the recreation centre open when the courts are?",
+          "a": "Not published. The City states no hours for the building or the courts on this page, which is true of every Saint Paul venue on this site. The courts are outdoors, so building hours and court access are not necessarily the same question."
+        }
+      ],
+      "sources": [
+        "V3",
+        "V7"
+      ]
+    },
+    "edgcumbe-recreation-center": {
+      "slots": {
+        "description": "Four pickleball courts, the largest published count in Saint Paul and double what a typical venue here offers. They are outdoor — the City lists them under \"Outdoor Amenities:\" — beside a baseball field and a hockey rink, at a staffed recreation centre in the Macalester-Groveland area whose indoor space runs to a medium gym, a fitness centre, a craft room, a game room, a preschool room, two racquetball/walleyball courts and a warming room.\n\nFour courts matters in a city where the median venue has two and the smallest has one. This is the only published Saint Paul venue where eight players can rotate without waiting on a single surface, and the only one that reads like a facility rather than a park with lines on it. It is also, like Clayland Park, absent from the City's own pickleball map despite carrying a count on its page.\n\nFour courts is not many by the standards of the larger cities on this site — Austin has an eight-court venue, Scottsdale a ten — but in Saint Paul it is double the median and the only place where capacity is not the binding constraint. It is worth reading against what the city lacks: no published lighting anywhere, no published hours anywhere, and no dedicated pickleball courts published at all, because the three that exist are at a park whose address will not resolve.",
+        "getting_there": "320 Griggs St. S., Saint Paul, MN 55105, matched by the Census geocoder to St. Paul city, Ramsey County. Macalester-Groveland, in the south-west of the city. No parking guidance is published, though the site has a staffed building, a ball field and a hockey rink and is not a pocket park.",
+        "what_to_expect": "The best odds in Saint Paul of getting on a court. Four outdoor courts, a building with facilities beside them, and — as at every Saint Paul venue — no published hours, no published cost, no lighting statement and no named surface. The warming room in the indoor list is a reminder of the climate: nothing on the City's pages says what happens to these courts between November and March."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Four: \"(4) Pickleball Courts\", the largest published count in Saint Paul. The next largest venues have two."
+        },
+        {
+          "q": "Are they indoors?",
+          "a": "No — they sit under the centre's \"Outdoor Amenities:\" heading. The indoor space includes a medium gym and two racquetball/walleyball courts, and the City publishes no pickleball count for either."
+        },
+        {
+          "q": "Is this venue on the City's pickleball map?",
+          "a": "No. Edgcumbe states a pickleball count on its facility page and does not appear in the City's pickleball GIS layer — the same discrepancy as Clayland Park, in a city whose two records of its own courts do not match."
+        },
+        {
+          "q": "Can I play here in winter?",
+          "a": "Nothing is published either way. These are outdoor courts in Minnesota and the centre has a warming room for its hockey rink, which tells you about the season without telling you about the courts. We publish what the City states, and it states nothing about this."
+        },
+        {
+          "q": "How was this verified?",
+          "a": "From the City's facility page for Edgcumbe Recreation Center, snapshotted on 4 September 2026, and from the Census geocoder, which placed 320 Griggs St. S. inside St. Paul city, Ramsey County."
+        },
+        {
+          "q": "How does this compare with the rest of the city?",
+          "a": "It is the largest published venue in Saint Paul by a factor of two. Clayland, Duluth and Case, Homecroft and Orchard each have two courts, and Arlington/Arkwright has one — thirteen courts across six sites in total."
+        }
+      ],
+      "sources": [
+        "V4",
+        "V7"
+      ]
+    },
+    "homecroft-park": {
+      "slots": {
+        "description": "Two pickleball courts in the Highland area of south-west Saint Paul, listed in the City's amenity inventory alongside two tennis courts and a tennis backboard — which is as clear a picture of the arrangement as an inventory can give without a sentence: the pickleball is on the tennis courts, and there is a backboard for practising against when nobody else is about.\n\nTwo courts is the standard Saint Paul venue. What Homecroft has that most do not is a short amenity list with nothing much competing for the space: open space, the courts, the backboard. At several other venues on this page the courts sit among ball fields and playgrounds that draw their own crowds.\n\nHomecroft sits in the south-west of the city with Edgcumbe Recreation Center a short distance away, which makes that quarter the best-served part of published Saint Paul: six of the city's thirteen verified courts are in those two venues. What the City does not publish for either — hours, lighting, cost, surface — is the same list it does not publish anywhere, so choosing between them comes down to the count.",
+        "getting_there": "1850 Sheridan Ave., Saint Paul, MN 55116, matched by the Census geocoder to St. Paul city, Ramsey County. Highland, in the south-west of the city, not far from Edgcumbe Recreation Center's four courts — which is the obvious alternative when two are not enough. The City publishes no parking guidance.",
+        "what_to_expect": "Two courts striped on tennis courts, a tennis backboard, and open space. Nothing is published about hours, cost, lighting or surface, which is true of every Saint Paul venue on this site. The realistic read: a quiet neighbourhood venue for a pair or two, with the city's largest venue a short distance away for anything bigger."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two: \"(2) Pickleball Courts\" in the City's amenity list, alongside \"(2) Tennis Courts\"."
+        },
+        {
+          "q": "Are they shared with tennis?",
+          "a": "Almost certainly — the City lists two tennis courts and two pickleball courts at a park whose pickleball page rule says outdoor pickleball courts are located on tennis courts. It does not spell out the overlay for this venue specifically, as it does at Arlington/Arkwright and Clayland."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "A tennis backboard and open space, per the City's amenity list. It is a short list by the standards of the other venues on this page."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified — no Saint Paul facility page states lighting for a pickleball court."
+        },
+        {
+          "q": "How was this verified?",
+          "a": "From the City's facility page for Homecroft Park, snapshotted on 4 September 2026, and from the Census geocoder, which placed 1850 Sheridan Ave. inside St. Paul city, Ramsey County."
+        },
+        {
+          "q": "What is a tennis backboard?",
+          "a": "A solid wall for practising strokes against alone. The City lists one here alongside the two tennis courts and two pickleball courts — a small detail, and the kind of thing an amenity inventory is actually good at recording."
+        },
+        {
+          "q": "How was this venue verified?",
+          "a": "From the City of Saint Paul's own facility page for Homecroft Park, read and snapshotted on 4 September 2026, and from the US Census address geocoder, which matched 1850 Sheridan Ave. and placed it inside the incorporated place \"St. Paul city\" in Ramsey County. The court count quoted here is re-checked against that committed snapshot every time this site is rebuilt, so if the City edits the amenity list the build fails rather than leaving a stale number on this page."
+        }
+      ],
+      "sources": [
+        "V5",
+        "V7"
+      ]
+    },
+    "orchard-park": {
+      "slots": {
+        "description": "Two pickleball courts — and, listed separately in the same amenity inventory, \"1 Tennis Court (w/ pickleball lines)\". Orchard Park is the only venue in Saint Paul where the City's own list implies more playable pickleball than the number it gives, and this page publishes the smaller, stated figure: two. The lined tennis court is a third surface you may well be able to use if it is free, and it is not added to the count because the City counts it as a tennis court.\n\nThat distinction is worth making rather than smoothing over. A directory that quietly turned three surfaces into a count of three would be guessing about how the City categorises its own courts; one that ignored the third entirely would be hiding something a player would want. So the number is two and the sentence is here.\n\nOrchard is the only venue in Saint Paul where the City's amenity list implies more playable pickleball than the number it states, and the way this page handles that is deliberate. We publish two, because two is what the City calls pickleball courts, and we describe the third surface because a player would want to know it is there. Inventing a count of three would mean deciding how the City categorises its own courts, which is not ours to decide.",
+        "getting_there": "875 Orchard Ave., Saint Paul, MN 55103, matched by the Census geocoder to St. Paul city, Ramsey County — the North End. The City publishes no parking guidance for this or any other Saint Paul pickleball venue.",
+        "what_to_expect": "Two counted courts plus a lined tennis court, all outdoor, with nothing published about hours, cost, lighting or surface. If the two pickleball courts are busy it is worth looking at the tennis court — the City has put pickleball lines on it, which is as close to an invitation as an amenity list gets."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, as the City counts them: \"2 Pickleball Courts\". Its list separately shows \"1 Tennis Court (w/ pickleball lines)\", which we describe here but do not add to the count, because the City counts it as a tennis court."
+        },
+        {
+          "q": "So can I play on three courts or two?",
+          "a": "Two are pickleball courts. The third is a tennis court with pickleball lines on it, which you may be able to use when it is free. We publish the City's count and tell you about the third rather than choosing a number the City did not state."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. No Saint Paul venue on this site has a lighting statement either way."
+        },
+        {
+          "q": "Where is it?",
+          "a": "875 Orchard Ave. in the North End of Saint Paul, in the 55103 postcode, which the Census geocoder confirmed sits inside St. Paul city, Ramsey County."
+        },
+        {
+          "q": "How was this verified?",
+          "a": "From the City's facility page for Orchard Park, snapshotted on 4 September 2026, with both amenity lines quoted, and from the Census geocoder for the county and postcode."
+        },
+        {
+          "q": "Is the North End well served for pickleball?",
+          "a": "On the published record, thinly: Orchard's two courts are the only verified pickleball in that part of the city. The City's map shows further sites nearby, including Rice Recreation Center, whose facility page states no court count."
+        }
+      ],
+      "sources": [
+        "V6",
+        "V7"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "V1",
+      "url": "https://www.stpaul.gov/facilities/arlington-arkwright-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"1 Pickleball court (striped tennis court)\" at 400 Arlington Ave. E. Snapshot: data/sources/saint-paul/arlington-arkwright-park.html"
+    },
+    {
+      "id": "V2",
+      "url": "https://www.stpaul.gov/facilities/clayland-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"(2) Pickleball Courts\" and \"Clayland Park, adjacent to Newell Park, features two tennis courts striped for pickleball as well as two designated handball courts.\" at 901 Fairview Ave. N. Snapshot: data/sources/saint-paul/clayland-park.html"
+    },
+    {
+      "id": "V3",
+      "url": "https://www.stpaul.gov/facilities/duluth-and-case-recreation-center",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"(2) Pickleball Courts\" under \"Outdoor Amenities:\", alongside football, flag football and soccer fields, two baseball fields and \"(3) Kato/Sepak Takraw Courts\", at 1020 Duluth St. Snapshot: data/sources/saint-paul/duluth-and-case-recreation-center.html"
+    },
+    {
+      "id": "V4",
+      "url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"(4) Pickleball Courts\" under \"Outdoor Amenities:\" at 320 Griggs St. S., with indoor amenities including a medium gym, fitness centre, two racquetball/walleyball courts and a warming room. Snapshot: data/sources/saint-paul/edgcumbe-recreation-center.html"
+    },
+    {
+      "id": "V5",
+      "url": "https://www.stpaul.gov/facilities/homecroft-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"(2) Pickleball Courts\" alongside \"(2) Tennis Courts\", a tennis backboard and open space, at 1850 Sheridan Ave. Snapshot: data/sources/saint-paul/homecroft-park.html"
+    },
+    {
+      "id": "V6",
+      "url": "https://www.stpaul.gov/facilities/orchard-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"2 Pickleball Courts\" and, separately, \"1 Tennis Court (w/ pickleball lines)\", at 875 Orchard Ave. Snapshot: data/sources/saint-paul/orchard-park.html"
+    },
+    {
+      "id": "V7",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Every address above was matched by the Census address geocoder and placed in the incorporated place \"St. Paul city\", Ramsey County, MN, with the postal code the geocoder returned. Snapshot: data/sources/saint-paul-county-census.json"
+    }
+  ]
+}

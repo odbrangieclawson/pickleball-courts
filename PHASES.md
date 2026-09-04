@@ -332,8 +332,9 @@ passes all six gates against the built HTML; the totals are the ones
 | 9 | Madison, WI | 21 | 53 | City of Madison park pages, count and surface per venue | 2026-09-04 |
 | 10 | Austin, TX | 21 | 60 | Austin PARD pickleball page, count + hours + lighting per venue | 2026-09-04 |
 | 11 | Scottsdale, AZ | 3 | 21 | Scottsdale pickleball page + park pages; count, lighting, price, etiquette | 2026-09-04 |
+| 12 | Saint Paul, MN | 6 | 13 | Saint Paul facility pages, assembled from the City's own pickleball map layer | 2026-09-04 |
 
-**158 published pages:** 11 city, 119 venue, 18 filter, 8 county, 2 state.
+**167 published pages:** 12 city, 125 venue, 19 filter, 9 county, 2 state.
 
 **Two state pages exist because two states have three published cities.**
 North Carolina since Apex; Washington since Bellevue. `STATE_MIN_CITIES = 3`
@@ -399,6 +400,35 @@ to roller derby on Tuesday and Thursday evenings and weekend mornings from
 this directory has published. Austin High follows the school calendar under
 an AISD sharing agreement. Hancock closes for four hours in the middle of a
 term-time weekday.
+
+**Saint Paul is the first city that publishes no list.** Every operator
+before it had a page naming its pickleball venues. Saint Paul's pickleball
+page links an interactive map and a PDF and names nothing, so the venue set
+had to be assembled: candidate site names from the City's own pickleball GIS
+layer, then a court count and a street address from each candidate's facility
+page. Nothing publishes on the layer alone — it is one point per court with
+no count and no address, and counting map points to produce a court total is
+the derivation this project falsified for Sacramento.
+
+**The City's two records of its own courts disagree, in both directions.**
+Eight sites the layer marks for pickleball — Baker, Carty, Eastview, Hazel
+Park, Mattocks, Prosperity Heights, Rice and Martin Luther King — state no
+count on their facility pages. Two that do state one, Clayland Park and
+Edgcumbe Recreation Center, appear nowhere in the layer. The pages decide
+what publishes, because the pages are what state a number, and the
+disagreement is written onto the city and county pages rather than resolved
+silently.
+
+**The most interesting venue in the city could not be published.** Assembly
+Union Park's three courts are, in the City's words, the first dedicated
+pickleball courts in the Saint Paul park system — and the Census geocoder
+returns no match for 875 Mount Curve Boulevard. Everything that did publish
+is an overlay on a tennis court.
+
+**Outdoor is proven, not assumed.** At the two recreation centres the
+pickleball line sits under the page's "Outdoor Amenities:" heading rather
+than "Indoor Amenities:", and the run checks that placement on every build
+rather than remembering it.
 
 **Scottsdale is the first operator that says how to share a court.** Every
 other city in this directory answers "how many courts" and stops. Each
@@ -515,12 +545,12 @@ page as an open gap rather than left as a silence.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and eleven cities are published. What stands
+Phases 0 through 6 are complete and twelve cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered eleven times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and nine sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last three took twenty-three refusals between them. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered twelve times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and ten sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last four took thirty-four refusals between them. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -543,14 +573,14 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**11 of 50.** The sequencing rule above is the whole plan, and this is the
+**12 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last eleven were: find a parks
+The next city is chosen the same way the last twelve were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
-never a qualification. Twenty-three cities were refused
-across the runs for cities #9, #10 and #11, and the reasons are worth keeping
+never a qualification. Thirty-four cities were refused
+across the runs for cities #9 through #12, and the reasons are worth keeping
 so nobody re-treads them:
 
 | City | Refused because |
@@ -563,6 +593,11 @@ so nobody re-treads them:
 | Round Rock, Lakeway-area TX | Names its pickleball locations and states no court counts. |
 | Gilbert, Plano, Overland Park | HTTP 403, same as the eleven above. |
 | Sacramento, Chandler, Ann Arbor, Knoxville | Sites respond, but the parks pages did not resolve where expected; not pursued further once Scottsdale was found. |
+| Salt Lake City, Colorado Springs | Publish court counts and no street addresses on the pages that carry them. Colorado Springs also contradicts itself: its tennis-and-pickleball list gives John Venezia Community Park eight courts and the park's own page says four. |
+| Frisco TX, Lexington KY, Jacksonville NC, Milwaukee County | Have a park layer with addresses and a pickleball FLAG rather than a count — "Pickleball"/"Yes"/"No". A flag is not a number. |
+| Gresham OR, Lake Oswego OR | Two venues and one venue respectively, against a three-venue threshold. |
+| Wake Forest NC | Three court sets and only two publishable venues: Joyner Park Community Center sits outside the town's corporate limits per the Census, the same test that excluded Scottsdale Community College. |
+| Hillsboro OR, Minneapolis | HTTP 403. |
 
 Honolulu remains the one worth returning to: its court data is the best found anywhere and only its addresses are missing.
 
@@ -574,6 +609,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-11-scottsdale`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-12-saint-paul`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

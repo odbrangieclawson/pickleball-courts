@@ -1,0 +1,135 @@
+{
+  "city": "Saint Paul",
+  "state": "MN",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Saint Paul is the first city on this site that publishes no list of its pickleball venues — its pickleball page links an interactive map and a PDF and names nothing. So this page was assembled rather than read: candidate site names came from the City's own pickleball GIS layer, and every published count and address came from that venue's facility page on stpaul.gov. Nothing publishes on the map layer alone. Two sites the City lists are named below rather than dropped, and so are the seven that appear on the City's map with no count on their own page.",
+  "slots": {
+    "parking": "Nothing is published about parking at any of the six, and in Saint Paul that is part of a wider pattern rather than a one-off gap. The City's facility pages are amenity inventories: they tell you what exists at a site and almost nothing about using it. No hours, no cost, no surface, no lighting, no parking. What you get is a name, an address, and a line like \"(2) Pickleball Courts\" — which is genuinely more than several cities manage, and much less than the better ones. Four of the six are neighbourhood parks where street parking is the obvious expectation; the two recreation centres, Edgcumbe and Duluth and Case, are staffed buildings with their own grounds. Neither of those observations is a fact from the City.",
+    "peak_hours": "Not published, anywhere, for any venue — and unusually, neither are opening hours. Saint Paul states no times at all for its outdoor courts, which puts it at the opposite end of the range from Austin, where every venue carries an open-play schedule, and Scottsdale, which publishes both hours and the times its courts are busiest. What can be said about turning up here is structural rather than temporal: five of the six venues are pickleball striped onto tennis courts, so the competing use is tennis, and at Arlington/Arkwright — a single court on a single tennis court — one tennis match takes the whole venue. Edgcumbe's four courts are the only place in the city with enough capacity for a group to rotate.",
+    "surface_condition": "No surface is stated at any Saint Paul venue. What the City does state, repeatedly, is what the courts are drawn on: \"1 Pickleball court (striped tennis court)\" at Arlington/Arkwright, \"two tennis courts striped for pickleball\" at Clayland, \"1 Tennis Court (w/ pickleball lines)\" alongside the two counted courts at Orchard. Its pickleball page makes the same point as a rule for the whole city — \"outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium\". So the honest answer to what you will be playing on is: a tennis court, in five cases out of six, made of something the City has not named.",
+    "local_scene": "The most interesting thing about pickleball in Saint Paul is not on this page, and that is worth saying plainly. Assembly Union Park opened three courts that the City describes as the first dedicated pickleball courts in the Saint Paul park system — not lines on a tennis court, but courts built for the sport — and they are absent here because the Census geocoder cannot resolve the address the City prints for the park. Everything that did publish is an overlay. The second thing worth knowing is that the City keeps two records of its own courts and they disagree: eight sites appear on its pickleball map with no court count on their facility pages, and two sites that do state a count, Clayland Park and Edgcumbe Recreation Center, appear nowhere on the map. We published from the pages, because pages are what state a number."
+  },
+  "best_for": [
+    {
+      "key": "biggest",
+      "heading": "Best if you want more than one court",
+      "venue_slug": "edgcumbe-recreation-center",
+      "text": "Edgcumbe Recreation Center has four pickleball courts, the largest count published in Saint Paul and double the city's typical two. They sit under the centre's Outdoor Amenities rather than in the gym, beside a baseball field and a hockey rink, with a staffed building alongside holding a medium gym, a fitness centre and two racquetball courts. For a group of eight this is the only venue in the city that works without a wait.",
+      "supports": ["E2"]
+    },
+    {
+      "key": "described",
+      "heading": "Best if you want to know what you are walking onto",
+      "venue_slug": "clayland-park",
+      "text": "Clayland Park is the one venue where the City writes a sentence rather than an inventory line: it \"features two tennis courts striped for pickleball as well as two designated handball courts\", adjacent to Newell Park. Two courts, on tennis courts, in the Hamline-Midway area. That description is more than most Saint Paul venues get, and it tells you the thing that matters — you are sharing with tennis.",
+      "supports": ["E3"]
+    },
+    {
+      "key": "extra",
+      "heading": "Best if you might get a third court",
+      "venue_slug": "orchard-park",
+      "text": "Orchard Park lists two pickleball courts and, separately, \"1 Tennis Court (w/ pickleball lines)\". We publish the count as two, because that is what the City counts as pickleball — but the lined tennis court is a third surface you may well be able to use if it is free. It is the only venue in the city where the City's own list implies more playable space than the number it gives.",
+      "supports": ["E4"]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does Saint Paul have?",
+      "a": "We have verified 13 across six City of Saint Paul venues, all outdoor: four at Edgcumbe Recreation Center, two each at Clayland Park, Duluth and Case Recreation Center, Homecroft Park and Orchard Park, and one at Arlington/Arkwright Park. The City certainly has more — several sites appear on its pickleball map without a court count anywhere we could read, and one park with three dedicated courts could not be published at all."
+    },
+    {
+      "q": "Why is there no list of Saint Paul's pickleball courts here or anywhere?",
+      "a": "Because the City does not publish one. Its pickleball page links an interactive map and a PDF and names no venues in text. We assembled the set from the City's own pickleball GIS layer — the data behind that map — and then verified each candidate against its facility page for a count and an address. A venue only appears here when a page states a number."
+    },
+    {
+      "q": "Why isn't Assembly Union Park listed? It has dedicated courts.",
+      "a": "Because its address does not resolve. The City's page for the park states three pickleball courts and describes them as the first dedicated pickleball courts in the Saint Paul park system, and the Census address geocoder returns no match for 875 Mount Curve Boulevard. This site requires a street address that resolves before it will publish a venue, so the most notable pickleball in the city is the venue we cannot list. It goes up the day the address resolves."
+    },
+    {
+      "q": "What about Baker, Carty, Eastview, Hazel Park, Mattocks, Prosperity Heights, Rice and MLK?",
+      "a": "All eight appear on the City's pickleball map. None of their facility pages states a pickleball court count — several do not mention pickleball at all, and Mattocks lists \"Pickleball (Outdoor)\" with no number. A venue needs a verified court count to exist on this site, so none of them is published. That is a gap in the City's records rather than a claim that the courts are not there."
+    },
+    {
+      "q": "Are the courts indoor or outdoor?",
+      "a": "All six published venues are outdoor, and on the City's own evidence rather than ours. At Edgcumbe and Duluth and Case — both recreation centres — the pickleball line sits under \"Outdoor Amenities:\" rather than \"Indoor Amenities:\", which our build checks every time it runs. The four parks describe their courts as striping on tennis courts, and the City's pickleball page ties that to outdoor explicitly. Saint Paul does run indoor pickleball in gymnasiums; none of it carries a published count."
+    },
+    {
+      "q": "Is it free to play?",
+      "a": "Not verified. Saint Paul publishes no cost for any of these venues — its facility pages list amenities and say nothing about price, hours, lighting or surface. They are municipal park courts and are very likely free; \"very likely\" is not a fact and does not go in a field on this site."
+    },
+    {
+      "q": "Are any courts lit?",
+      "a": "Not verified anywhere in Saint Paul. No facility page states lighting for a pickleball court either way, so all six read \"not verified yet\" — which means nobody has told us, not that the courts are dark."
+    },
+    {
+      "q": "How do you know all this?",
+      "a": "From the City of Saint Paul's own facility pages, snapshotted on 4 September 2026 and committed to the repository that builds this site, plus the City's pickleball GIS layer for the candidate names and the US Census geocoder for counties and postcodes. Every count on this page is quoted from a page you can check, and our build re-asserts each quote against the committed snapshot every time it runs."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.stpaul.gov/departments/parks-and-recreation/recreation-centers/pickleball",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["parking", "peak_hours", "surface_condition", "local_scene"],
+      "evidence": "The City's pickleball page, which names no venues and states: \"Use our pickleball maps to find indoor and outdoor pickleball courts in Saint Paul. Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\" Snapshot: data/sources/saint-paul/pickleball.html"
+    },
+    {
+      "id": "E2",
+      "url": "https://www.stpaul.gov/facilities/edgcumbe-recreation-center",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["parking", "peak_hours", "biggest"],
+      "evidence": "\"(4) Pickleball Courts\" under the centre's \"Outdoor Amenities:\" heading, at 320 Griggs St. S., alongside indoor amenities including a medium gym, a fitness centre, two racquetball/walleyball courts and a warming room. Snapshot: data/sources/saint-paul/edgcumbe-recreation-center.html"
+    },
+    {
+      "id": "E3",
+      "url": "https://www.stpaul.gov/facilities/clayland-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["surface_condition", "described"],
+      "evidence": "\"(2) Pickleball Courts\" and the description: \"Clayland Park, adjacent to Newell Park, features two tennis courts striped for pickleball as well as two designated handball courts.\" at 901 Fairview Ave. N. Snapshot: data/sources/saint-paul/clayland-park.html"
+    },
+    {
+      "id": "E4",
+      "url": "https://www.stpaul.gov/facilities/orchard-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["surface_condition", "extra"],
+      "evidence": "\"2 Pickleball Courts\" and, separately in the same amenity list, \"1 Tennis Court (w/ pickleball lines)\", at 875 Orchard Ave. Snapshot: data/sources/saint-paul/orchard-park.html"
+    },
+    {
+      "id": "E5",
+      "url": "https://www.stpaul.gov/facilities/assembly-union-park",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["local_scene"],
+      "evidence": "\"3 pickleball courts\" at 875 Mount Curve Boulevard, which the City describes as the first dedicated courts of their kind in Saint Paul's park system. The Census geocoder returns no match for that address, which is why the venue is not published. Snapshot: data/sources/saint-paul/assembly-union-park.html"
+    },
+    {
+      "id": "E6",
+      "url": "https://services1.arcgis.com/9meaaHE3uiba0zr8/arcgis/rest/services/Amenities_Parks/FeatureServer/17",
+      "publisher": "City of Saint Paul (CityofSaintPaul_BI)",
+      "tier": 2,
+      "retrieved": "2026-09-04",
+      "supports": ["local_scene"],
+      "evidence": "The City's pickleball GIS layer, 18 point features, one per court, with a site name and no address or count. It names Baker, Carty, Eastview, Hazel Park, Mattocks, Prosperity Heights, Rice Recreation Center and Martin Luther King Recreation Center, none of which states a pickleball count on its facility page, and it omits Clayland Park and Edgcumbe Recreation Center, which do. Snapshot: data/sources/saint-paul-pickleball-layer.json"
+    },
+    {
+      "id": "E7",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["parking", "local_scene"],
+      "evidence": "All six published addresses were matched by the Census address geocoder and placed in the incorporated place \"St. Paul city\", Ramsey County, MN. 875 Mount Curve Boulevard returned no match, which is why Assembly Union Park is not published. Snapshot: data/sources/saint-paul-county-census.json"
+    }
+  ]
+}

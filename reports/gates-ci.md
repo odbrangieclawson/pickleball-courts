@@ -4,8 +4,8 @@
 
 === IMPORT GATES — census over every imported row ===
 
-rows examined:            18,091
-rows passing all four:    119
+rows examined:            18,097
+rows passing all four:    125
 
 gate  what it checks                                        failing
 ----  ----------------------------------------------------  -------
@@ -25,10 +25,10 @@ rows marked published while failing a gate (bypass): 0
 page type   pages  pass   G1    G2    G3    G4    G5    G6
 ---------   -----  ----   ---   ---   ---   ---   ---   ---
 state           2     2     2     2     2     2     2     2
-county          8     8     8     8     8     8     8     8
-city           11    11    11    11    11    11    11    11
-filter         18    18    18    18    18    18    18    18
-venue         119   119   119   119   119   119   119   119
+county          9     9     9     9     9     9     9     9
+city           12    12    12    12    12    12    12    12
+filter         19    19    19    19    19    19    19    19
+venue         125   125   125   125   125   125   125   125
 
-published pages passing all six: 158/158
+published pages passing all six: 167/167
 ```

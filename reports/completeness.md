@@ -9,8 +9,8 @@
 
 **Metros ready to publish: 8 of 100.**
 
-**Published on the site: 11 cities.** 8 of them are in
-this queue and 3 are not — Apex, NC, Bellevue, WA, Cary, NC.
+**Published on the site: 12 cities.** 8 of them are in
+this queue and 4 are not — Apex, NC, Bellevue, WA, Cary, NC, Saint Paul, MN.
 
 The queue is ordered by how many pages a metro would unlock, and cities are
 published by finding an operator that states its court counts. Those are
@@ -26,7 +26,7 @@ asks for, not the whole city.
 | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
 | 1 | Seattle, WA | 67 | 19 | 0 | 43 | 14 | 0 | **ready** | 59 |
 | 2 | Jacksonville, FL | 55 | 0 | 1 | 55 | 2 | 0 | blocked | 58 |
-| 3 | Sacramento, CA | 55 | 0 | 4 | 55 | 0 | 0 | blocked | 56 |
+| 3 | Sacramento, CA | 55 | 0 | 5 | 55 | 0 | 0 | blocked | 56 |
 | 4 | Lincoln, NE | 51 | 0 | 1 | 51 | 2 | 0 | blocked | 55 |
 | 5 | Honolulu, HI | 43 | 0 | 0 | 43 | 1 | 0 | blocked | 48 |
 | 6 | Houston, TX | 54 | 0 | 3 | 54 | 12 | 0 | blocked | 45 |

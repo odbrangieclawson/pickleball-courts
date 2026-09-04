@@ -1,0 +1,77 @@
+{
+  "county": "Ramsey",
+  "state": "MN",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world — how many courts a park has, what it is striped on — come from the City of Saint Paul's own facility pages and are cited. Claims about our own coverage are facts about this dataset rather than about Ramsey County. This page also has to describe an unusual situation honestly: the City keeps two records of its pickleball courts and they do not agree, so what is missing here is partly a gap in the source rather than only a gap in our work.",
+  "slots": {
+    "coverage": "One city in Ramsey County is published here: Saint Paul, with six venues and thirteen courts verified against the City's own facility pages. Ramsey is the most densely populated county in Minnesota and holds Roseville, Maplewood, White Bear Lake, Shoreview, New Brighton, North St. Paul and a dozen more suburbs alongside the capital, none of which has been checked against a named source. Within Saint Paul itself the coverage is incomplete in a way worth naming precisely: eight sites appear on the City's own pickleball map with no court count on their facility pages, one park lists pickleball with no number, and Assembly Union Park — whose three courts the City describes as the first dedicated pickleball courts in the Saint Paul park system — could not be published because the Census geocoder does not resolve the address the City prints for it.",
+    "distribution": "The thirteen verified courts are spread thinly and evenly, which is characteristic of a park system that added pickleball by painting lines rather than by building facilities. Four of the six venues have exactly two courts, one has a single court, and Edgcumbe Recreation Center in Macalester-Groveland has four — the only site in the county where a group can rotate. Geographically they reach most of the city: Arlington/Arkwright and Duluth and Case on the East Side, Orchard in the North End, Clayland in Hamline-Midway, Homecroft and Edgcumbe in the south-west. Five of the six are pickleball striped onto tennis courts, and none of the thirteen courts has a published lighting statement, which in a Minnesota park system means the season is short and the evenings are unverified.",
+    "gaps": "This is a Saint Paul page wearing a county heading, and the county is the densest in the state. What would change it is a second Ramsey municipality with a parks department that publishes court counts — Roseville, Maplewood and White Bear Lake are the obvious candidates and none has been read. But the more interesting gap is inside Saint Paul, and it is the City's own: its pickleball map and its facility pages describe different sets of parks in both directions. Eight mapped sites carry no count; two counted sites, Clayland Park and Edgcumbe Recreation Center, are missing from the map. Somebody at the City could close most of the hole on this page by adding court numbers to eight facility pages, and until they do, a directory that only publishes stated counts will keep showing thirteen courts in a city that plainly has more."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Ramsey County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 13 courts across six venues, all in Saint Paul, each with a source and a date you can see. The City itself maps more sites than that without publishing counts for them, and the county holds a dozen other municipalities we have not read at all."
+    },
+    {
+      "q": "Why is only Saint Paul listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Roseville, Maplewood, White Bear Lake, Shoreview and the rest have not been read."
+    },
+    {
+      "q": "Why does Saint Paul show only thirteen courts?",
+      "a": "Because that is what the City states in numbers. Its facility pages give a count for six venues; eight more sites appear on the City's pickleball map with no count anywhere we could read, and one lists \"Pickleball (Outdoor)\" without a number. This site publishes stated counts only, so the difference between thirteen and whatever the real figure is sits in the City's records rather than in our judgement."
+    },
+    {
+      "q": "What is the largest venue?",
+      "a": "Edgcumbe Recreation Center in Macalester-Groveland, with four outdoor courts. Four of the other five venues have two, and Arlington/Arkwright Park has one."
+    },
+    {
+      "q": "Are the courts free?",
+      "a": "Not confirmed. Saint Paul publishes no cost, hours, lighting or surface for any of its pickleball venues — its facility pages are amenity inventories. The courts are municipal and very likely free; this site does not publish \"very likely\"."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "These pages were read on 4 September 2026 and each one is snapshotted into the repository that builds this site, then re-asserted on every build. If the City edits a court count, adds one to a page that lacks one, or fixes the address at Assembly Union Park, our build fails rather than continuing to serve a number nobody has looked at. That last one is the change most likely to matter here: three dedicated courts are a page edit away from publishing."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.stpaul.gov/departments/parks-and-recreation/recreation-centers/pickleball",
+      "publisher": "City of Saint Paul Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": [
+        "coverage",
+        "distribution",
+        "gaps"
+      ],
+      "evidence": "The City's pickleball page, which names no venues and directs readers to an interactive map and a PDF, stating: \"Unless otherwise noted, outdoor pickleball courts are located on tennis courts and indoor pickleball courts are located in the gymnasium.\" Snapshot: data/sources/saint-paul/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://services1.arcgis.com/9meaaHE3uiba0zr8/arcgis/rest/services/Amenities_Parks/FeatureServer/17",
+      "publisher": "City of Saint Paul (CityofSaintPaul_BI)",
+      "tier": 2,
+      "retrieved": "2026-09-04",
+      "supports": [
+        "coverage",
+        "gaps"
+      ],
+      "evidence": "The City's pickleball GIS layer, 18 point features with site names and no counts or addresses. It names eight sites whose facility pages state no pickleball count, and omits Clayland Park and Edgcumbe Recreation Center, which do state one. Snapshot: data/sources/saint-paul-pickleball-layer.json"
+    },
+    {
+      "id": "S3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": [
+        "coverage",
+        "distribution"
+      ],
+      "evidence": "The six published addresses were matched and placed in the incorporated place \"St. Paul city\", Ramsey County, MN. 875 Mount Curve Boulevard, the address the City gives for Assembly Union Park, returned no match. Snapshot: data/sources/saint-paul-county-census.json"
+    }
+  ]
+}

@@ -51,7 +51,8 @@
     "verify:bellevue": "node scripts/verify/apply-bellevue-parks.mjs",
     "verify:madison": "node scripts/verify/apply-madison-parks.mjs",
     "verify:austin": "node scripts/verify/apply-austin-parks.mjs",
-    "verify:scottsdale": "node scripts/verify/apply-scottsdale-parks.mjs"
+    "verify:scottsdale": "node scripts/verify/apply-scottsdale-parks.mjs",
+    "verify:saint-paul": "node scripts/verify/apply-saint-paul-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
