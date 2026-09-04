@@ -1,7 +1,7 @@
 {
   "metros": 100,
-  "venues": 2688,
-  "ready": 9,
+  "venues": 2690,
+  "ready": 10,
   "metro_detail": [
     {
       "metro": "Seattle, WA",
@@ -581,22 +581,22 @@
       "metro": "Mesa, AZ",
       "city": "Mesa",
       "state": "AZ",
-      "venues": 32,
-      "passing_all_four": 0,
+      "venues": 34,
+      "passing_all_four": 3,
       "blocked_by": {
         "I1": 0,
-        "I2": 32,
+        "I2": 31,
         "I3": 3,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 33,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (32)",
-        "I2: no date_checked (32)",
-        "I2: no verified_by (32)",
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (31)",
+        "I2: no date_checked (31)",
+        "I2: no verified_by (31)",
         "I3: county not derived above confidence threshold (2)"
       ]
     },

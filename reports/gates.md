@@ -6,9 +6,9 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  10/10 publishable
+COUNTY  —  11/11 publishable
   PASS  /pickleball/us/wa/king-county/
-        937 words · BreadcrumbList, FAQPage, ItemList
+        1097 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/dane-county/
         961 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/tx/travis-county/
@@ -19,6 +19,8 @@ COUNTY  —  10/10 publishable
         1261 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/mn/ramsey-county/
         938 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/fl/lee-county/
+        1264 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/mecklenburg-county/
         1284 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/maricopa-county/
@@ -28,7 +30,7 @@ COUNTY  —  10/10 publishable
   PASS  /pickleball/us/wa/clark-county/
         923 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  15/15 publishable
+CITY  —  16/16 publishable
   PASS  /pickleball/us/wa/seattle/
         1574 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/madison/
@@ -45,6 +47,8 @@ CITY  —  15/15 publishable
         1623 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/apex/
         1782 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/fl/cape-coral/
+        1948 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/charlotte/
         1816 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/
@@ -60,7 +64,7 @@ CITY  —  15/15 publishable
   PASS  /pickleball/us/wa/vancouver/
         1731 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  20/20 publishable
+FILTER  —  22/22 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
@@ -91,6 +95,10 @@ FILTER  —  20/20 publishable
         631 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/apex/lights/
         670 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/fl/cape-coral/free/
+        880 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/fl/cape-coral/lights/
+        846 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/outdoor/
         690 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/free/
@@ -102,7 +110,7 @@ FILTER  —  20/20 publishable
   PASS  /pickleball/us/ne/lincoln/outdoor/
         770 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  138/138 publishable
+VENUE  —  142/143 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -331,6 +339,17 @@ VENUE  —  138/138 publishable
         753 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/apex/apex-community-park/
         721 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/cape-coral/camelot-park/
+        770 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/cape-coral/giuffrida-park/
+        725 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/cape-coral/jim-jeffers-park/
+        747 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  FAIL  /pickleball/us/fl/cape-coral/joe-stonis-park/
+        662 words · BreadcrumbList, SportsActivityLocation, FAQPage
+        G4: 662 words, 38 SHORT of the 700-word minimum
+  PASS  /pickleball/us/fl/cape-coral/sands-park/
+        749 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/charlotte/clanton-park/
         788 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/charlotte/colonel-francis-j-beatty-park/
@@ -382,7 +401,7 @@ VENUE  —  138/138 publishable
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, outdoor, outdoor, lights, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, outdoor, lights, outdoor, free, lights, outdoor, outdoor
+  built for Seattle: outdoor, lights, outdoor, outdoor, lights, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, outdoor, lights, free, lights, outdoor, free, lights, outdoor, outdoor
   public: not published — no lawful data driver or fewer than 3 matches
 
 === NOINDEX QUERY PARAMETERS ===
@@ -406,6 +425,6 @@ VENUE  —  138/138 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 185/185 pages pass all six gates.
+TOTAL: 193/194 pages pass all six gates.
 
 ```

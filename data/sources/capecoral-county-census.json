@@ -1,0 +1,77 @@
+{
+  "camelot-park": {
+    "matched": "1718, Southwest 52nd Terrace, Cape Coral, Lee County, Florida, 33914, United States",
+    "resolver": "osm",
+    "lat": 26.5542475,
+    "lon": -82.0095538,
+    "county": "Lee",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Cape Coral",
+    "place_matches_city": true,
+    "postal_code": "33914",
+    "basis": "OpenStreetMap (Nominatim) matched \"1718, Southwest 52nd Terrace, Cape Coral, Lee County, Florida, 33914, United States\" at house-number level. The Census address geocoder answered \"1718 SW 52ND ST, CAPE CORAL, FL, 33914\", changing the street type from TER to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail.",
+    "county_citation": "Lee County, FL. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Lee County."
+  },
+  "gator-trails-park": {
+    "matched": false,
+    "query": "3628 Garden Blvd, Cape Coral, FL",
+    "resolver": null
+  },
+  "giuffrida-park": {
+    "matched": "1044 NE 4TH ST, CAPE CORAL, FL, 33909",
+    "resolver": "census",
+    "lat": 26.658769866243,
+    "lon": -81.953332838334,
+    "county": "Lee",
+    "state_fips": "12",
+    "county_fips": "071",
+    "place": "Cape Coral city",
+    "place_matches_city": true,
+    "postal_code": "33909",
+    "basis": "Census address geocoder matched \"1044 NE 4TH ST, CAPE CORAL, FL, 33909\".",
+    "county_citation": "Lee County, FL (FIPS 12071). Census address geocoder matched \"1044 NE 4TH ST, CAPE CORAL, FL, 33909\"."
+  },
+  "jim-jeffers-park": {
+    "matched": "Oasis Elementary North, 2817, Southwest 3rd Lane, Cape Coral, Lee County, Florida, 33991, United States",
+    "resolver": "osm",
+    "lat": 26.6463299,
+    "lon": -82.0338923,
+    "county": "Lee",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Cape Coral",
+    "place_matches_city": true,
+    "postal_code": "33991",
+    "basis": "OpenStreetMap (Nominatim) matched \"Oasis Elementary North, 2817, Southwest 3rd Lane, Cape Coral, Lee County, Florida, 33991, United States\" at house-number level. The Census address geocoder answered \"2817 SW 3RD ST, CAPE CORAL, FL, 33991\", changing the street type from LN to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail.",
+    "county_citation": "Lee County, FL. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Lee County."
+  },
+  "joe-stonis-park": {
+    "matched": "3444, Ceitus Parkway, Cape Coral, Lee County, Florida, 33991, United States",
+    "resolver": "osm",
+    "lat": 26.6422801,
+    "lon": -82.0453307,
+    "county": "Lee",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Cape Coral",
+    "place_matches_city": true,
+    "postal_code": "33991",
+    "basis": "OpenStreetMap (Nominatim) matched \"3444, Ceitus Parkway, Cape Coral, Lee County, Florida, 33991, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Lee County, FL. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Lee County."
+  },
+  "sands-park": {
+    "matched": "2718, Southwest 43rd Terrace, Cape Coral, Lee County, Florida, 33914, United States",
+    "resolver": "osm",
+    "lat": 26.571194,
+    "lon": -82.0305247,
+    "county": "Lee",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Cape Coral",
+    "place_matches_city": true,
+    "postal_code": "33914",
+    "basis": "OpenStreetMap (Nominatim) matched \"2718, Southwest 43rd Terrace, Cape Coral, Lee County, Florida, 33914, United States\" at house-number level. The Census address geocoder answered \"2718 SW 43RD ST, CAPE CORAL, FL, 33914\", changing the street type from TER to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail.",
+    "county_citation": "Lee County, FL. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Lee County."
+  }
+}

@@ -155,18 +155,53 @@ const throttle = async () => {
 const norm = s => String(s ?? '').toLowerCase().replace(/\b(city|town|village|cdp)\b/g, '').replace(/[^a-z]/g, '')
 const placeMatches = resolved => (resolved ? norm(resolved) === norm(city) : false)
 
+/*
+  ORDINALS ARE SPELLING, NOT DATA.
+
+  Cape Coral writes "1718 SW 52 Terrace" and "2817 SW 3 Lane". Nominatim
+  finds neither, and finds both instantly as "52nd Terrace" and "3rd Lane".
+  Without this, the street-type check above would report "OpenStreetMap has
+  no record of the address as written" and let a Census match for the WRONG
+  STREET stand — which is the exact failure the check exists to prevent.
+
+  Only the ordinal suffix is added, and only to a bare number sitting
+  directly before a street type. Nothing else about the address is altered:
+  the house number, the direction and the street type are all left as the
+  operator wrote them, and the result still has to match at house-number
+  level to count.
+*/
+const ordinal = n => {
+  const v = Number(n)
+  if (v % 100 >= 11 && v % 100 <= 13) return `${v}th`
+  return `${v}${['th', 'st', 'nd', 'rd'][v % 10] ?? 'th'}`
+}
+
+const withOrdinals = street => String(street).replace(
+  /\b(\d+)\s+(Street|St|Terrace|Ter|Lane|Ln|Court|Ct|Place|Pl|Avenue|Ave|Road|Rd|Way|Circle|Cir|Drive|Dr)\b/gi,
+  (_, n, type) => `${ordinal(n)} ${type}`)
+
 async function geocodeOSM(street) {
   const wantedNumber = (String(street).match(/^\s*(\d+)/) ?? [])[1] ?? null
-  await throttle()
-  const url = new URL(NOMINATIM)
-  url.searchParams.set('q', `${street}, ${city}, ${state}`)
-  url.searchParams.set('format', 'jsonv2')
-  url.searchParams.set('addressdetails', '1')
-  url.searchParams.set('limit', '1')
 
-  const res = await fetch(url, {headers: {'User-Agent': NOMINATIM_UA}})
-  if (!res.ok) return null
-  const [hit] = await res.json()
+  /* As written first; then the same street with its ordinal spelled out. */
+  const variants = [street]
+  const ord = withOrdinals(street)
+  if (ord !== street) variants.push(ord)
+
+  let hit = null
+  for (const variant of variants) {
+    await throttle()
+    const url = new URL(NOMINATIM)
+    url.searchParams.set('q', `${variant}, ${city}, ${state}`)
+    url.searchParams.set('format', 'jsonv2')
+    url.searchParams.set('addressdetails', '1')
+    url.searchParams.set('limit', '1')
+
+    const res = await fetch(url, {headers: {'User-Agent': NOMINATIM_UA}})
+    if (!res.ok) continue
+    const [candidate] = await res.json()
+    if (candidate) { hit = candidate; break }
+  }
   if (!hit) return null
 
   const a = hit.address ?? {}
@@ -199,9 +234,83 @@ async function geocodeOSM(street) {
   }
 }
 
+/* ---------------------------------------------------------------- */
+/* THE STREET TYPE IS PART OF THE ADDRESS                            */
+/* ---------------------------------------------------------------- */
+
+/*
+  WHY THIS CHECK EXISTS
+
+  The Census geocoder will silently change a street's TYPE and still report
+  a confident match. Asked for "1718 SW 52 Terrace, Cape Coral" it answers
+  "1718 SW 52ND ST" — and in Cape Coral those are two different streets,
+  seventy-seven metres apart, both carrying a house number 1718. The
+  postcode agreed, the county agreed, the place agreed. Nothing downstream
+  could have caught it, and three Cape Coral venues would have published
+  coordinates for the wrong street.
+
+  An audit of the 85 addresses resolved across the whole project found four
+  type mismatches: three in Cape Coral and one in Austin. The Austin one is
+  the reason this check is not simply "reject the mismatch". The City writes
+  "9201 North Lake Creek Blvd" and the Census answers "N LAKE CREEK PKWY";
+  OpenStreetMap has no Lake Creek Blvd in Austin at all. There is one street
+  there under one name, and the Census normalised an outdated label
+  correctly. Rejecting that would refuse a venue over a naming quibble.
+
+  So the rule is: a differing street type is not a refusal, it is a reason
+  to STOP TRUSTING THE FIRST RESOLVER SILENTLY. Ask OpenStreetMap for the
+  address exactly as the operator wrote it. If OSM finds it at house-number
+  level, the operator's own street type wins and that result is used. If OSM
+  has no record of the address as written, the Census answer stands and the
+  normalisation is recorded in the basis rather than hidden.
+*/
+const STREET_TYPES = Object.freeze({
+  STREET: 'ST', ST: 'ST', TERRACE: 'TER', TER: 'TER', LANE: 'LN', LN: 'LN',
+  COURT: 'CT', CT: 'CT', PARKWAY: 'PKWY', PKWY: 'PKWY', BOULEVARD: 'BLVD', BLVD: 'BLVD',
+  DRIVE: 'DR', DR: 'DR', AVENUE: 'AVE', AVE: 'AVE', ROAD: 'RD', RD: 'RD',
+  PLACE: 'PL', PL: 'PL', WAY: 'WAY', CIRCLE: 'CIR', CIR: 'CIR', TRAIL: 'TRL', TRL: 'TRL',
+})
+
+/** The last recognised street-type token in a string, canonicalised. */
+const streetType = s => {
+  const words = String(s ?? '').toUpperCase().replace(/[.,]/g, ' ').split(/\s+/).filter(Boolean)
+  for (let i = words.length - 1; i >= 0; i--) {
+    if (STREET_TYPES[words[i]]) return STREET_TYPES[words[i]]
+  }
+  return null
+}
+
 const result = {}
 for (const [slug, street] of Object.entries(addresses)) {
   let rec = await geocode(street)
+
+  if (rec.matched) {
+    const asked = streetType(street)
+    const got = streetType(String(rec.matched).split(',')[0])
+    if (asked && got && asked !== got) {
+      const osm = await geocodeOSM(street)
+      if (osm) {
+        /* The operator's own street type exists. It wins. */
+        rec = {
+          ...osm,
+          basis:
+            `OpenStreetMap (Nominatim) matched "${osm.matched}" at house-number level. ` +
+            `The Census address geocoder answered "${rec.matched}", changing the street type from ` +
+            `${asked} to ${got}; OpenStreetMap finds the address as the operator writes it, so that is ` +
+            'the one published. A street type is part of an address, not a formatting detail.',
+        }
+      } else {
+        rec = {
+          ...rec,
+          basis:
+            `${rec.basis} The operator writes the street type as ${asked} and the Census normalised it ` +
+            `to ${got}; OpenStreetMap has no record of the address as written, so there is one street ` +
+            'here under one name and the Census answer stands.',
+        }
+      }
+    }
+  }
+
   if (!rec.matched) {
     const osm = await geocodeOSM(street)
     if (osm) rec = osm

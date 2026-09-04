@@ -1,0 +1,100 @@
+{
+  "city": "Cape Coral",
+  "state": "FL",
+  "kind": "filters",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Two of the five filter slugs have a lawful data driver in Cape Coral, and both are unusually well supported for this directory. Free does, because the City states in one sentence that its park pickleball courts cost nothing. Lights does, because the City marks lighting venue by venue - and marks its absence too, which is what makes the marks trustworthy. Indoor and outdoor have no driver: the City never uses either word about the five published venues, and the one venue it does call indoor states no court count. Public has none anywhere on this site, because access_type has no controlled vocabulary yet.",
+  "filters": {
+    "free": {
+      "slots": {
+        "why_this_filter": "Every verified pickleball court in Cape Coral is free, so this page holds the same five venues as the city page, and it is worth saying that plainly rather than dressing it up as a filter. Twenty courts at Camelot Park, Giuffrida Park, Jim Jeffers Park, Joe Stonis Park and Sands Park, none of which costs anything to play on. What makes the page worth reading is how rare that sentence is. This directory records a price only when an operator publishes one, and most do not: across fifteen other cities, the great majority of venues carry no fee answer at all, because a parks department that has never charged for a court rarely thinks to write down that it is free. Cape Coral thought to. Its Park Sports/Games page states that the City's tennis and pickleball courts are \"available for public use at no charge and open from sunrise to sunset (or later for locations with lighting)\", which prices every venue on this page in a single clause and sets their hours in the same breath. That makes Cape Coral one of only two cities on this whole site with a verified free court. The other thing this page can tell you, because the same sentence carries it, is when free actually means available. Three of the five - Camelot, Jim Jeffers and Joe Stonis - have lights and stay open until 9:00 p.m. daily. Giuffrida has no lights and closes at sunset, which the City states outright. Sands is unmarked either way. In south-west Florida, where a summer afternoon is not a serious option, that distinction decides which of these free courts you can actually use after work.",
+        "what_qualifies": "A venue appears here when the City of Cape Coral states that it costs nothing to play. All five published venues qualify under the City's blanket sentence about its park tennis and pickleball courts, so nothing is excluded from this page that appears on the city page. What does not qualify is more interesting than what does. Four Freedoms Park is the City's own indoor pickleball, at 4818 Tarpon Court, and it is explicitly not free - \"$5 per person (maximum of 4 players at a time) to reserve 2 hours of playtime\". It would be excluded from this page on price even if it published, which it does not, because the City never says how many courts it has. The Courts is the harder case and it is excluded from the whole site rather than just this page. The City lists it among the court locations covered by that \"no charge\" sentence, with \"32 dedicated pickleball courts and 12 tennis courts\" - the largest count this project has read anywhere. On its own operator's account it is a paid facility. Two tier-one-ish records disagree about whether it is free, the City publishes no address for it at all, and a venue this site cannot locate does not publish regardless of price. The disagreement is recorded on the city page rather than resolved by picking the tidier answer."
+      },
+      "faqs": [
+        {
+          "q": "Are these courts really free?",
+          "a": "Yes, on the City's own statement: its park tennis and pickleball courts are \"available for public use at no charge\". This site does not describe a venue as free unless an operator publishes it, which is why only two cities here have a free page at all."
+        },
+        {
+          "q": "Do I need to book or pay for a permit?",
+          "a": "The City states no charge and no permit for these five park venues. It does not publish a booking system for them either, so they are turn-up-and-play within the posted hours."
+        },
+        {
+          "q": "Which free courts can I use in the evening?",
+          "a": "Camelot Park, Jim Jeffers Park and Joe Stonis Park, all lit and open until 9:00 p.m. daily. Giuffrida Park has no lights and closes at sunset. Sands Park is not marked either way by the City."
+        },
+        {
+          "q": "Is the indoor court free?",
+          "a": "No. Four Freedoms Park charges $5 per person for two hours, up to four players. It does not appear on this site at all, because the City never states how many courts it has."
+        },
+        {
+          "q": "Which of these are real pickleball courts rather than tennis courts?",
+          "a": "Giuffrida Park's two and Sands Park's four are dedicated pickleball courts in the City's own words. Camelot, Jim Jeffers and Joe Stonis are tennis slabs that convert - the City writes each as \"Two (2) tennis courts -OR- Four (4) pickleball courts\"."
+        }
+      ],
+      "sources": ["F1", "F2"]
+    },
+    "lights": {
+      "slots": {
+        "why_this_filter": "Three Cape Coral venues have lights and fourteen of the city's twenty verified courts are at them: four at Camelot Park, six at Jim Jeffers Park and four at Joe Stonis Park. All three stay open until 9:00 p.m. daily, and all three are free. In south-west Florida that combination is close to the whole point. A court that closes at sunset is a court you use before work or at the weekend; a lit court until nine is one you can use after a working day, in the months when the middle of the day is not a serious option. What makes this page trustworthy rather than merely populated is a venue that is not on it. Giuffrida Park's entry on the City's page reads \"Two (2) dedicated pickleball courts  - no lights\", and that stated negative is the second in this entire directory, after Vancouver's Oakbrook Community Park. An operator that writes down the absence of lighting when it is true is an operator whose positive marks mean something. It also means the one remaining silence is a real one: Sands Park is marked neither lit nor unlit, and rather than infer from the pattern, this site records its lighting as unverified and keeps it off this page. So the honest shape of the page is three venues confirmed lit, one confirmed unlit and named on the city page, and one unknown - out of five. That is a better lighting record than any city on this site except Seattle, which has a dataset field for it, and Scottsdale, where every venue is lit.",
+        "what_qualifies": "A venue appears here when the City of Cape Coral states that its pickleball courts have lights. Three qualify, and the City's phrasing does the work: Camelot, Jim Jeffers and Joe Stonis each read \"Four (4) pickleball courts with lights - open until 9:00 p.m. daily\". The lighting and the closing time arrive in the same clause, so the claim is not merely that lamps exist but that the courts stay usable until nine. Two venues do not qualify, for opposite reasons. Giuffrida Park is excluded because the City says it has no lights, which is a stated answer rather than a gap. Sands Park is excluded because the City says nothing at all about its lighting, and this site does not promote a silence into a yes on the strength of a house style. One further venue would be on this page if it could be located: Gator Trails Park, which the City describes as \"Two (2) dedicated pickleball courts with lights\". It is refused from the whole site because neither the US Census address file nor OpenStreetMap can find \"3628 Garden Blvd\", the address the City publishes for it. There is also a caveat inside a qualifying venue that belongs here rather than buried. At Jim Jeffers Park the City's \"with lights\" attaches to the four courts on the convertible tennis slabs; the two warm-up courts it counts separately on the same line carry no lighting statement. The venue publishes six courts and a lighting answer that the City made about four of them, and its own page says so."
+      },
+      "faqs": [
+        {
+          "q": "How late can I play under lights in Cape Coral?",
+          "a": "Until 9:00 p.m., daily, at Camelot Park, Jim Jeffers Park and Joe Stonis Park. The City states the closing time in the same clause as the lighting."
+        },
+        {
+          "q": "Do the lit courts cost anything?",
+          "a": "No. All three are covered by the City's statement that its park tennis and pickleball courts are available at no charge."
+        },
+        {
+          "q": "Why is Giuffrida Park not on this page?",
+          "a": "Because the City states it has no lights: \"Two (2) dedicated pickleball courts  - no lights\". That is a real answer, not a gap, and it is why the lighting marks on the other venues can be trusted."
+        },
+        {
+          "q": "Why is Sands Park not on this page?",
+          "a": "Because the City says nothing about its lighting either way. This site publishes a lighting answer only when an operator states one, so Sands is recorded as unverified rather than assumed unlit."
+        },
+        {
+          "q": "Are all six courts at Jim Jeffers lit?",
+          "a": "The City's \"with lights\" applies to the four courts on the convertible tennis slabs. It says nothing about the two warm-up courts it counts separately on the same line."
+        }
+      ],
+      "sources": ["F1", "F3"]
+    }
+  },
+  "sources": [
+    {
+      "id": "F1",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "The City's Park Sports/Games page. The pricing and hours sentence: \"There are several parks within the City of Cape Coral that have tennis/pickleball courts which are available for public use at no charge and open from sunrise to sunset (or later for locations with lighting).\" Court locations: Camelot Park, Jim Jeffers Park and Joe Stonis Park each \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily\", Jim Jeffers adding \"and two (2) warm-up pickleball courts\"; Giuffrida Park \"Two (2) dedicated pickleball courts  - no lights\"; Sands Park \"Four (4) dedicated pickleball courts\" with no lighting statement; Gator Trails Park \"Two (2) dedicated pickleball courts with lights\"; The Courts \"32 dedicated pickleball courts and 12 tennis courts\". Four Freedoms Park is priced at \"$5 per person (maximum of 4 players at a time) to reserve 2 hours of playtime\". Snapshot: data/sources/capecoral/park-sports-games.html",
+      "not_stated": "Any address for The Courts, a court count for Four Freedoms Park, and any lighting answer for Sands Park."
+    },
+    {
+      "id": "F2",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/giuffrida_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["what_qualifies"],
+      "evidence": "Giuffrida Park's own page, which states \"Two Pickleball Courts\" in its amenity list - the only Cape Coral park page that counts its pickleball courts independently of the sports page - at \"1044 NE 4 Street, Cape Coral, FL 33909\". Snapshot: data/sources/capecoral/giuffrida-park.html",
+      "not_stated": "Any price or lighting answer; both come from the sports page."
+    },
+    {
+      "id": "F3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["what_qualifies"],
+      "evidence": "The five published addresses matched at house-number level and were placed in the incorporated place \"Cape Coral\", Lee County, FL. \"3628 Garden Blvd\", the address the City publishes for Gator Trails Park and its two lighted dedicated courts, is found by neither the Census address file nor OpenStreetMap, which is why that venue does not appear on this page. Snapshot: data/sources/capecoral-county-census.json",
+      "not_stated": "Anything about lighting."
+    }
+  ]
+}

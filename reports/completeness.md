@@ -1,16 +1,16 @@
 # Completeness dashboard
 
-100 metros in the verification queue, 2,688 venues.
+100 metros in the verification queue, 2,690 venues.
 
 ## The hard rule
 
 > A metro is not done until it has at least 3 venues passing all four import
 > gates. A partially verified metro does not publish partially — it waits.
 
-**Metros ready to publish: 9 of 100.**
+**Metros ready to publish: 10 of 100.**
 
-**Published on the site: 13 cities.** 9 of them are in
-this queue and 4 are not — Apex, NC, Bellevue, WA, Cary, NC, Saint Paul, MN.
+**Published on the site: 15 cities.** 10 of them are in
+this queue and 5 are not — Apex, NC, Bellevue, WA, Cary, NC, Kirkland, WA, Saint Paul, MN.
 
 The queue is ordered by how many pages a metro would unlock, and cities are
 published by finding an operator that states its court counts. Those are
@@ -49,7 +49,7 @@ asks for, not the whole city.
 | 23 | Knoxville, TN | 34 | 0 | 1 | 34 | 4 | 0 | blocked | 35 |
 | 24 | Phoenix, AZ | 31 | 0 | 0 | 31 | 3 | 0 | blocked | 34 |
 | 25 | Spokane, WA | 30 | 0 | 0 | 30 | 2 | 0 | blocked | 34 |
-| 26 | Mesa, AZ | 32 | 0 | 0 | 32 | 3 | 0 | blocked | 33 |
+| 26 | Mesa, AZ | 34 | 3 | 0 | 31 | 3 | 0 | **ready** | 33 |
 | 27 | Indianapolis, IN | 46 | 0 | 0 | 46 | 19 | 0 | blocked | 32 |
 | 28 | San Antonio, TX | 29 | 0 | 0 | 29 | 5 | 0 | blocked | 30 |
 | 29 | St. Louis, MO | 30 | 0 | 0 | 30 | 8 | 0 | blocked | 28 |
@@ -129,9 +129,9 @@ asks for, not the whole city.
 
 | blocker | venue-occurrences |
 | --- | ---: |
-| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,583 |
-| I2: no date_checked | 2,583 |
-| I2: no verified_by | 2,583 |
+| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,582 |
+| I2: no date_checked | 2,582 |
+| I2: no verified_by | 2,582 |
 | I3: county not derived above confidence threshold | 280 |
 | I1: slug has a numeric suffix (Rule 10) | 32 |
 | I3: no postal_code | 31 |

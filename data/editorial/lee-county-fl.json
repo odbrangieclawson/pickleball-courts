@@ -1,0 +1,74 @@
+{
+  "county": "Lee",
+  "state": "FL",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a park has, what it costs, whether it is lit - come from the City of Cape Coral and are cited. Claims about our own coverage are facts about this dataset rather than about Lee County, and are worded so a reader cannot mistake one for the other. This is the first county in Florida this directory has published in, and one city of it is on this page.",
+  "slots": {
+    "coverage": "One city in Lee County is published here: Cape Coral, with five venues and twenty courts verified against the City's own pages. Lee County also contains Fort Myers, Bonita Springs, Estero, Lehigh Acres, Sanibel and Fort Myers Beach, and not one of those has been checked against a named source, so none appears anywhere on this site. Cape Coral is the largest of them by population and, on any reasonable estimate, holds a large share of the county's public pickleball - but that estimate is not what this page reports. What it reports is five parks whose court counts, addresses, prices and lighting the City of Cape Coral publishes and we have read. Three venues inside Cape Coral itself are absent and named on the city page rather than quietly dropped, and between them they are worth more courts than the twenty published here. The Courts holds thirty-two dedicated pickleball courts, the largest count this project has read anywhere in the country, and the City publishes no address for it. Gator Trails Park has two lighted dedicated courts at an address neither of this site's resolvers can find. Four Freedoms Park has the county's only municipally named indoor pickleball and no court count. Each is one missing fact away from being here.",
+    "distribution": "What is verified in this county is concentrated in one city and, within it, spread evenly across five neighbourhood and community parks rather than gathered into a complex. Jim Jeffers Park is the largest with six courts on an 18.7-acre site in north-west Cape Coral; Camelot, Joe Stonis and Sands hold four each; Giuffrida holds two. Nothing here is a destination facility, and that is a fact about what the City documents rather than about what Lee County has: the destination facility exists, it is called The Courts, and it is absent for want of a published address. The useful pattern in the published five is the split between dedicated and convertible. Six of the twenty courts - Giuffrida's two and Sands's four - are dedicated pickleball courts in the City's own words. The other fourteen sit on tennis slabs the City writes as \"Two (2) tennis courts -OR- Four (4) pickleball courts\", which means what you find on arrival depends on the configuration and on who got there first. Lighting splits the same set a different way: fourteen courts across three venues are lit and open until 9:00 p.m., two are stated unlit, and four carry no lighting answer at all. In a county where the summer middle of the day is unusable outdoors, that fourteen is the number that decides how much of this inventory is really available to someone with a job.",
+    "gaps": "The honest position is that this is a Cape Coral page wearing the heading of a county of eight hundred thousand people, and the gap will not close by accident. Fort Myers is the obvious next city and it has not been read. Neither have Bonita Springs, Estero or Lehigh Acres. The threshold has not moved - three venues with a named source and a date - and nothing about Florida makes it easier or harder than anywhere else until a parks department's page has actually been loaded. What this county does supply is an unusually clear example of the difference between a court existing and a court being publishable. Cape Coral's own inventory is a natural experiment: the same City, in the same document, publishes five venues completely enough to be listed and three that are not. The missing facts are all boring ones - an address, a resolvable address, a number - and none of them is about the courts being real. Every one of those three is a place people are certainly playing today. Nothing outside a municipal parks department appears on this page at all. Lee County is retirement and resort country, and clubs, HOAs, gated communities and commercial venues almost certainly hold more pickleball courts here than the City does. None of them publishes a source we could read, so none is listed, and that absence is about who writes things down rather than about where the game is played."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Lee County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 20 courts across five venues, all in Cape Coral, each with a source and a date you can see. The City of Cape Coral alone names three further pickleball sites we cannot publish, one of them with 32 courts."
+    },
+    {
+      "q": "Why is only Cape Coral listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Fort Myers, Bonita Springs, Estero and Lehigh Acres have not been read."
+    },
+    {
+      "q": "What made Cape Coral possible?",
+      "a": "One unusually complete page. The City's Park Sports/Games page states a court count for every venue it lists, marks which have lights and which do not, and prices all of them in a single sentence - they are \"available for public use at no charge\". Only Scottsdale has previously given this directory a count, a lighting answer and a price in one document."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Yes, and confirmed rather than assumed. The City states that its park tennis and pickleball courts are available for public use at no charge. That makes Cape Coral one of only two cities on this site with a verified free court."
+    },
+    {
+      "q": "Which venues here have lights?",
+      "a": "Camelot Park, Jim Jeffers Park and Joe Stonis Park, all open until 9:00 p.m. daily. Giuffrida Park is stated to have no lights. Sands Park carries no lighting answer either way, so we record it as unverified."
+    },
+    {
+      "q": "What is The Courts, and why is it not listed?",
+      "a": "It is a Cape Coral facility the City credits with 32 dedicated pickleball courts and 12 tennis courts - the largest count this project has read anywhere. The City publishes no address for it and gives it no park page, and this site requires a street address that resolves. It is also listed under the City's \"no charge\" sentence while being a paid facility on its operator's own account."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "These pages were read on 4 September 2026, and every one of them is snapshotted into the repository that builds this site and re-asserted on every build. If the City changes a count, removes the \"no lights\" note at Giuffrida, or publishes an address for The Courts, the build fails and someone reads the page again."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's Park Sports/Games page, which states a pickleball count for every venue it lists, marks lighting venue by venue, and prices them all: the City's park tennis and pickleball courts are \"available for public use at no charge and open from sunrise to sunset (or later for locations with lighting)\". It also names The Courts with \"32 dedicated pickleball courts and 12 tennis courts\" and no address, Gator Trails Park with \"Two (2) dedicated pickleball courts with lights\", and Four Freedoms Park with \"the portable indoor court\" at $5 per person. Snapshot: data/sources/capecoral/park-sports-games.html",
+      "not_stated": "Anything about any other municipality in Lee County."
+    },
+    {
+      "id": "L2",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/jim_jeffers_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["distribution"],
+      "evidence": "Jim Jeffers Park's page, the largest published venue in the county: \"Set on 18.7  acres in NW Cape Coral\", with \"Two (lighted) Tennis Courts that include court lines for Pickleball\", a 3-acre lake, lighted basketball courts, four lighted soccer fields, restrooms and walking paths, at \"2817 SW 3 Lane, Cape Coral, FL 33991\". Snapshot: data/sources/capecoral/jim-jeffers-park.html",
+      "not_stated": "Parking, surface, and the two warm-up pickleball courts, which appear only on the sports page."
+    },
+    {
+      "id": "L3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "gaps"],
+      "evidence": "The five published addresses matched at house-number level and were placed in the incorporated place \"Cape Coral\", Lee County, FL. Four resolved through OpenStreetMap rather than the Census address file - three because the Census changed the street type, Cape Coral having parallel Streets, Terraces and Lanes at the same house number, and one because the Census holds no record of Ceitus Parkway. \"3628 Garden Blvd\", the address the City publishes for Gator Trails Park, is found by neither resolver. Snapshot: data/sources/capecoral-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

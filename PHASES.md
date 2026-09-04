@@ -598,12 +598,12 @@ are committed and every assertion reads those rather than the network.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and fifteen cities are published. What stands
+Phases 0 through 6 are complete and sixteen cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered fourteen times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and twelve sets of municipal web pages. No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered fifteen times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and thirteen sets of municipal web pages. No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -626,10 +626,10 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**15 of 50.** The sequencing rule above is the whole plan, and this is the
+**16 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last fourteen were: find a parks
+The next city is chosen the same way the last fifteen were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
 never a qualification. Thirty-four cities were refused
@@ -654,8 +654,17 @@ so nobody re-treads them:
 | Gresham OR, Lake Oswego OR | Two venues and one venue respectively, against a three-venue threshold. |
 | Wake Forest NC | Three court sets and only two publishable venues: Joyner Park Community Center sits outside the town's corporate limits per the Census, the same test that excluded Scottsdale Community College. |
 | Hillsboro OR, Minneapolis | HTTP 403. |
+| Fort Collins CO | **Reachable, and refused on its records.** Its Park Features page is a Telerik/ASP.NET application that paints the amenities in by script, so a snapshot of it contains no pickleball at all, and guessed park-page URLs 404. The City's own pickleball page publishes city-wide AGGREGATES — "(8) dedicated outdoor pickleball courts", "(44) striped for pickleball on outdoor multi-use courts" — and no per-venue count. A total is not a venue. |
+| Phoenix | Publishes a "Tennis Courts and Pickleball" layer: 163 rows across 36 properties, one row per court, no address field and no count field. Counting the rows is the derivation falsified for Sacramento. Would need Saint Paul's treatment and the park pages have not been read. |
 
-Honolulu remains the one worth returning to: its court data is the best found anywhere and only its addresses are missing.
+Honolulu was re-checked on 2026-09-04 against the City & County's own GIS
+rather than against memory, and it is **still blocked for the same reason**.
+Its five park layers — Regional, District, Community, Neighborhood and Beach
+Parks — carry `PARK_NAME`, `PARK_TYPE`, `LEGAL_ACRE` and a tax map key, and
+no street address field of any kind. The second resolver added on
+2026-09-04 does not help, because there is no address string to resolve.
+Honolulu needs an address SOURCE, not a better geocoder, and none has been
+found.
 
 ## A 403 is a fact about one day
 
@@ -672,7 +681,8 @@ and the whole bucket has now been retested.
 Four of sixteen, and two of the four published: **Mesa as city #14 and
 Kirkland as city #15**. Durham was reachable and then refused on its data
 instead - two publishable venues against a three-venue threshold. Fort
-Collins is reachable and unread.
+Collins was then read and refused as well, so the bucket is fully worked
+out: see the refusals table.
 
 The tidy explanation was the wrong one. Lincoln shipped
 `scripts/verify/fetch/lincoln.sh` to defeat an Akamai 403 with a browser
@@ -702,6 +712,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-15-kirkland`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-16-cape-coral`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

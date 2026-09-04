@@ -1,0 +1,695 @@
+{
+  "city": "Cape Coral",
+  "state": "FL",
+  "retrieved_at": "2026-09-04",
+  "method_note": "Cape Coral states a pickleball count, a lighting answer and a price on one City page, which only Scottsdale has previously managed in this directory. Its Park Sports/Games page counts every venue it lists - \"Four (4) pickleball courts with lights\", \"Two (2) dedicated pickleball courts  - no lights\" - and prices all of them in one sentence: the City's park pickleball courts are \"available for public use at no charge and open from sunrise to sunset (or later for locations with lighting)\". Giuffrida Park carries the second stated lighting NEGATIVE in this directory after Vancouver's Oakbrook Community Park, which is what makes the silence at Sands Park a real silence rather than an implied no. Three venues are written as \"Two (2) tennis courts -OR- Four (4) pickleball courts\", one slab in two configurations, and their pages say so; Jim Jeffers adds \"two (2) warm-up pickleball courts\" for six, the City's own arithmetic. Three refusals, and two of them cost real courts: Gator Trails Park has two lighted dedicated courts and an address neither resolver can find, and The Courts has thirty-two dedicated pickleball courts - the largest count this project has read anywhere - and no address published by the City at all, plus a price its own operator states and the City's page contradicts. Four Freedoms Park publishes an address and a $5 fee and never says how many courts. This run also shipped a fix to Import Gate I1's first resolver: the Census geocoder had been silently changing a street's TYPE and still reporting a match, which in Cape Coral means a different street seventy-seven metres away, and three venues here would have published the wrong coordinates.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/capecoral/park-sports-games.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/camelot_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/capecoral/camelot-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/giuffrida_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/capecoral/giuffrida-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/jim_jeffers_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/capecoral/jim-jeffers-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/joe_stonis_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/capecoral/joe-stonis-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/sands_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/capecoral/sands-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/gator_trails_park.php",
+      "publisher": "City of Cape Coral Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/capecoral/gator-trails-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/capecoral-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 5,
+    "courts": 20,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": 14,
+    "dedicated_courts": 6,
+    "free_venues": 5
+  },
+  "excluded": [
+    {
+      "name": "Gator Trails Park",
+      "why": [
+        "Neither address resolver finds \"3628 Garden Blvd\", the address the City publishes on the park's own page: the US Census address file returns no match, and OpenStreetMap returns nothing at house-number level for it either. Import Gate I1 requires a street address that resolves.",
+        "This is the expensive refusal of the run. The City states both a count and a lighting answer for it - \"Two (2) dedicated pickleball courts with lights\" - which is more than it states for Sands Park, which does publish. The venue fails on its address alone."
+      ]
+    },
+    {
+      "name": "The Courts",
+      "why": [
+        "The City publishes no address for it. It appears in the list on the Park Sports/Games page and has no page of its own among the City's parks and facilities, so there is no municipal record of where it is. Import Gate I1 requires a street address, and this project has never taken one from a source outside the operator.",
+        "Its thirty-two dedicated courts are the largest count this project has read anywhere, which is a reason for more care rather than less.",
+        "It also sits underneath the City's sentence that these courts are \"available for public use at no charge\", while being a paid facility on its own operator's account. Publishing it would mean inheriting a price the City's own page contradicts. The contradiction is recorded here rather than resolved."
+      ]
+    },
+    {
+      "name": "Four Freedoms Park",
+      "why": [
+        "The City states no court count. It offers \"indoor pickleball in air-conditioned comfort on the portable indoor court at Four Freedoms Park\", which names a facility rather than counting courts, and Page Gate 1 requires a stated count.",
+        "Everything else about it is unusually well published: the address, 4818 Tarpon Court, the price of $5 per person for two hours, a maximum of four players, and that paddles and balls can be borrowed. It is the only indoor pickleball the City names, and it does not publish for want of a number."
+      ]
+    }
+  ],
+  "venues": {
+    "camelot-park": {
+      "minted": false,
+      "identity": {
+        "name": "Camelot Park",
+        "city": "Cape Coral",
+        "state": "FL",
+        "county": "Lee",
+        "postal_code": "33914",
+        "latitude": 26.5542475,
+        "longitude": -82.0095538,
+        "imported_slug": "camelot-park-cape-coral",
+        "canonical_slug": "camelot-park"
+      },
+      "match": {
+        "source_page": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "quote": "Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily",
+        "basis": "Matched to the imported camelot-park-cape-coral row in Cape Coral, FL, published under the canonical slug camelot-park (the identity pass dropped the trailing \"-cape-coral\", which is already in the path)."
+      },
+      "patch": {
+        "name": "Camelot Park",
+        "total_courts": 4,
+        "street_address": "1718 SW 52 Terrace",
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "hours_of_operation": "Open sunrise to 9:00 p.m. daily.",
+        "court_availability": "Four pickleball courts with lights, open until 9:00 p.m. daily, and free - the City says so for all of its park courts in one sentence. The \"-OR-\" in the City's own line is worth reading rather than skipping: \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights\". This is one pair of tennis slabs that becomes four pickleball courts, not four courts standing alongside two. The park's own page describes the same thing from the other direction - \"Two (lighted) Tennis Courts that include court lines for Pickleball\" - so what you find on arrival depends on how the courts are set up and who got there first. Camelot is a 6.4 acre neighbourhood park with a paved perimeter walking path, picnic pavilions, horseshoe pits and a playground.",
+        "county": "Lee",
+        "postal_code": "33914",
+        "restroom": true,
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Camelot Park\" by the City of Cape Coral Parks & Recreation in the court-locations list on its Park Sports/Games page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Sports/Games page: \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily\". The \"-OR-\" is the City's: one pair of tennis slabs configured as four pickleball courts, not four courts in addition to two."
+        },
+        "street_address": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/camelot_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1718 SW 52 Terrace, Cape Coral, FL 33914\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Cape Coral Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states it for all of its park pickleball courts in one sentence: \"There are several parks within the City of Cape Coral that have tennis/pickleball courts which are available for public use at no charge and open from sunrise to sunset (or later for locations with lighting).\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's page gives \"open until 9:00 p.m. daily\" for this venue, within its rule that the courts are open \"from sunrise to sunset (or later for locations with lighting)\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Sports/Games page: \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily\", and the park's own page: \"Two (lighted) Tennis Courts that include court lines for Pickleball\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Lee County, FL. OpenStreetMap (Nominatim) matched \"1718, Southwest 52nd Terrace, Cape Coral, Lee County, Florida, 33914, United States\" at house-number level. The Census address geocoder answered \"1718 SW 52ND ST, CAPE CORAL, FL, 33914\", changing the street type from TER to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail. The resolver also places it in the incorporated place \"Cape Coral\", which is what allows it to be published under Cape Coral."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"1718, Southwest 52nd Terrace, Cape Coral, Lee County, Florida, 33914, United States\" at house-number level. The Census address geocoder answered \"1718 SW 52ND ST, CAPE CORAL, FL, 33914\", changing the street type from TER to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail."
+        },
+        "restroom": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/camelot_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Restrooms\" among the park's amenities on its own page."
+        },
+        "light": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City writes \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily\" - \"with lights\" is its own phrase, applied to the pickleball courts, and it is the reason this venue stays open until 9:00 p.m. rather than closing at sunset."
+        }
+      },
+      "record": {
+        "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "giuffrida-park": {
+      "minted": false,
+      "identity": {
+        "name": "Giuffrida Park",
+        "city": "Cape Coral",
+        "state": "FL",
+        "county": "Lee",
+        "postal_code": "33909",
+        "latitude": 26.658769866243,
+        "longitude": -81.953332838334,
+        "imported_slug": "giuffrida-park-cape-coral",
+        "canonical_slug": "giuffrida-park"
+      },
+      "match": {
+        "source_page": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "quote": "Two (2) dedicated pickleball courts  - no lights",
+        "basis": "Matched to the imported giuffrida-park-cape-coral row in Cape Coral, FL, published under the canonical slug giuffrida-park (the identity pass dropped the trailing \"-cape-coral\", which is already in the path)."
+      },
+      "patch": {
+        "name": "Giuffrida Park",
+        "total_courts": 2,
+        "street_address": "1044 NE 4 Street",
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "hours_of_operation": "Open sunrise to sunset.",
+        "court_availability": "Two dedicated pickleball courts - not tennis courts wearing a second set of lines - and the only venue in Cape Coral where the City states outright that there is no lighting: \"Two (2) dedicated pickleball courts  - no lights\". That answer is worth as much as a yes. It means these courts run sunrise to sunset rather than to 9 p.m. like the lit ones across the city, and it means the silence at Sands Park is a genuine silence rather than a quiet no. This is also the one Cape Coral venue the City counts twice: the park's own page lists \"Two Pickleball Courts\" independently of the sports page. Free, like every City park court here.",
+        "county": "Lee",
+        "postal_code": "33909",
+        "restroom": true,
+        "light": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Giuffrida Park\" by the City of Cape Coral Parks & Recreation in the court-locations list on its Park Sports/Games page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Sports/Games page: \"Two (2) dedicated pickleball courts  - no lights\". The park's own page states it again, as \"Two Pickleball Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/giuffrida_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1044 NE 4 Street, Cape Coral, FL 33909\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Cape Coral Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states it for all of its park pickleball courts in one sentence: \"There are several parks within the City of Cape Coral that have tennis/pickleball courts which are available for public use at no charge and open from sunrise to sunset (or later for locations with lighting).\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's rule that its park courts are open \"from sunrise to sunset (or later for locations with lighting)\". This venue is not among those the City marks as lit."
+        },
+        "court_availability": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Sports/Games page: \"Two (2) dedicated pickleball courts  - no lights\", and the park's own page: \"Two Pickleball Courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Lee County, FL (FIPS 12071). Census address geocoder matched \"1044 NE 4TH ST, CAPE CORAL, FL, 33909\". The resolver also places it in the incorporated place \"Cape Coral city\", which is what allows it to be published under Cape Coral."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1044 NE 4TH ST, CAPE CORAL, FL, 33909\"."
+        },
+        "restroom": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/giuffrida_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Restrooms\" among the park's amenities on its own page."
+        },
+        "light": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's own words: \"Two (2) dedicated pickleball courts  - no lights\". Cape Coral marks the absence of lighting as deliberately as its presence, which is what makes this a No rather than an unknown."
+        }
+      },
+      "record": {
+        "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "jim-jeffers-park": {
+      "minted": false,
+      "identity": {
+        "name": "Jim Jeffers Park",
+        "city": "Cape Coral",
+        "state": "FL",
+        "county": "Lee",
+        "postal_code": "33991",
+        "latitude": 26.6463299,
+        "longitude": -82.0338923,
+        "imported_slug": "jim-jeffers-park-cape-coral",
+        "canonical_slug": "jim-jeffers-park"
+      },
+      "match": {
+        "source_page": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "quote": "Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily; and two (2) warm-up pickleball courts",
+        "basis": "Matched to the imported jim-jeffers-park-cape-coral row in Cape Coral, FL, published under the canonical slug jim-jeffers-park (the identity pass dropped the trailing \"-cape-coral\", which is already in the path)."
+      },
+      "patch": {
+        "name": "Jim Jeffers Park",
+        "total_courts": 6,
+        "street_address": "2817 SW 3 Lane",
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "hours_of_operation": "Open sunrise to 9:00 p.m. daily.",
+        "court_availability": "Six pickleball courts, and the six is the City's own arithmetic rather than ours. Its line reads \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily; and two (2) warm-up pickleball courts\" - four on the convertible tennis slabs, plus two warm-up courts counted separately. That makes Jim Jeffers the largest published pickleball venue in Cape Coral. The lights the City names belong to the four; it says nothing either way about the two warm-up courts. The park is lit until 9 p.m. and free, and the park's own page adds a second, quieter description of the same courts: \"Two (lighted) Tennis Courts that include court lines for Pickleball\".",
+        "county": "Lee",
+        "postal_code": "33991",
+        "restroom": true,
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Jim Jeffers Park\" by the City of Cape Coral Parks & Recreation in the court-locations list on its Park Sports/Games page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Sports/Games page: \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily; and two (2) warm-up pickleball courts\". Six is the City's own arithmetic - four on the convertible tennis slabs, plus the two warm-up courts it counts separately on the same line."
+        },
+        "street_address": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/jim_jeffers_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2817 SW 3 Lane, Cape Coral, FL 33991\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Cape Coral Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states it for all of its park pickleball courts in one sentence: \"There are several parks within the City of Cape Coral that have tennis/pickleball courts which are available for public use at no charge and open from sunrise to sunset (or later for locations with lighting).\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's page gives \"open until 9:00 p.m. daily\" for this venue, within its rule that the courts are open \"from sunrise to sunset (or later for locations with lighting)\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Sports/Games page: \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily; and two (2) warm-up pickleball courts\", and the park's own page: \"Two (lighted) Tennis Courts that include court lines for Pickleball\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Lee County, FL. OpenStreetMap (Nominatim) matched \"Oasis Elementary North, 2817, Southwest 3rd Lane, Cape Coral, Lee County, Florida, 33991, United States\" at house-number level. The Census address geocoder answered \"2817 SW 3RD ST, CAPE CORAL, FL, 33991\", changing the street type from LN to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail. The resolver also places it in the incorporated place \"Cape Coral\", which is what allows it to be published under Cape Coral."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"Oasis Elementary North, 2817, Southwest 3rd Lane, Cape Coral, Lee County, Florida, 33991, United States\" at house-number level. The Census address geocoder answered \"2817 SW 3RD ST, CAPE CORAL, FL, 33991\", changing the street type from LN to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail."
+        },
+        "restroom": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/jim_jeffers_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Restrooms\" among the park's amenities on its own page."
+        },
+        "light": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City writes \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily; and two (2) warm-up pickleball courts\" - \"with lights\" is its own phrase, applied to the pickleball courts, and it is the reason this venue stays open until 9:00 p.m. rather than closing at sunset."
+        }
+      },
+      "record": {
+        "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "joe-stonis-park": {
+      "minted": false,
+      "identity": {
+        "name": "Joe Stonis Park",
+        "city": "Cape Coral",
+        "state": "FL",
+        "county": "Lee",
+        "postal_code": "33991",
+        "latitude": 26.6422801,
+        "longitude": -82.0453307,
+        "imported_slug": "joe-stonis-park-cape-coral",
+        "canonical_slug": "joe-stonis-park"
+      },
+      "match": {
+        "source_page": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "quote": "Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily",
+        "basis": "Matched to the imported joe-stonis-park-cape-coral row in Cape Coral, FL, published under the canonical slug joe-stonis-park (the identity pass dropped the trailing \"-cape-coral\", which is already in the path)."
+      },
+      "patch": {
+        "name": "Joe Stonis Park",
+        "total_courts": 4,
+        "street_address": "3444 Ceitus Parkway",
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "hours_of_operation": "Open sunrise to 9:00 p.m. daily.",
+        "court_availability": "Four pickleball courts with lights, open until 9:00 p.m. daily, free. As at Camelot the City writes it as a configuration - \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights\" - so the four exist when the courts are set up for pickleball rather than in addition to the tennis. Joe Stonis sits in north-west Cape Coral on Ceitus Parkway. Its address is one of three here that the US Census address file has no record of; OpenStreetMap resolves it at house-number level, which is what allows it to publish.",
+        "county": "Lee",
+        "postal_code": "33991",
+        "restroom": true,
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Joe Stonis Park\" by the City of Cape Coral Parks & Recreation in the court-locations list on its Park Sports/Games page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Sports/Games page: \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily\". The \"-OR-\" is the City's: one pair of tennis slabs configured as four pickleball courts, not four courts in addition to two."
+        },
+        "street_address": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/joe_stonis_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3444 Ceitus Parkway, Cape Coral, FL 33991\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Cape Coral Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states it for all of its park pickleball courts in one sentence: \"There are several parks within the City of Cape Coral that have tennis/pickleball courts which are available for public use at no charge and open from sunrise to sunset (or later for locations with lighting).\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's page gives \"open until 9:00 p.m. daily\" for this venue, within its rule that the courts are open \"from sunrise to sunset (or later for locations with lighting)\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Sports/Games page: \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily\", and the park's own page: \"Two (lighted) Tennis Courts that include court lines for Pickleball\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Lee County, FL. OpenStreetMap (Nominatim) matched \"3444, Ceitus Parkway, Cape Coral, Lee County, Florida, 33991, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in the incorporated place \"Cape Coral\", which is what allows it to be published under Cape Coral."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"3444, Ceitus Parkway, Cape Coral, Lee County, Florida, 33991, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        },
+        "restroom": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/joe_stonis_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Restrooms\" among the park's amenities on its own page."
+        },
+        "light": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City writes \"Two (2) tennis courts -OR- Four (4) pickleball courts with lights - open until 9:00 p.m. daily\" - \"with lights\" is its own phrase, applied to the pickleball courts, and it is the reason this venue stays open until 9:00 p.m. rather than closing at sunset."
+        }
+      },
+      "record": {
+        "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "sands-park": {
+      "minted": true,
+      "identity": {
+        "name": "Sands Park",
+        "city": "Cape Coral",
+        "state": "FL",
+        "county": "Lee",
+        "postal_code": "33914",
+        "latitude": 26.571194,
+        "longitude": -82.0305247,
+        "imported_slug": null,
+        "canonical_slug": "sands-park"
+      },
+      "match": {
+        "source_page": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "quote": "Four (4) dedicated pickleball courts",
+        "basis": "No imported row under this slug. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Sands Park",
+        "total_courts": 4,
+        "street_address": "2718 SW 43rd Terrace",
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "hours_of_operation": "Open sunrise to sunset.",
+        "court_availability": "Four dedicated pickleball courts, free, in a park that also carries walking paths, a putting green, a burrowing owl habitat area, a butterfly garden, a playground, and courts for basketball, tennis, bocce and cornhole. Dedicated means these are pickleball courts rather than tennis courts lent to the game, which puts Sands alongside Giuffrida and apart from the three convertible venues. Lighting is the open question and the City has not answered it: it marks lights at four Cape Coral venues and marks their absence at Giuffrida, and about Sands it says nothing at all. Because the City is willing to write \"no lights\" when it means it, that silence is recorded as unverified rather than read as a no.",
+        "county": "Lee",
+        "postal_code": "33914"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Sands Park\" by the City of Cape Coral Parks & Recreation in the court-locations list on its Park Sports/Games page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Sports/Games page: \"Four (4) dedicated pickleball courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/parks_facilities/sands_park.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2718 SW 43rd Terrace, Cape Coral, FL 33914\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Cape Coral Parks & Recreation among its parks."
+        },
+        "fee_type": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states it for all of its park pickleball courts in one sentence: \"There are several parks within the City of Cape Coral that have tennis/pickleball courts which are available for public use at no charge and open from sunrise to sunset (or later for locations with lighting).\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's rule that its park courts are open \"from sunrise to sunset (or later for locations with lighting)\". This venue is not among those the City marks as lit."
+        },
+        "court_availability": {
+          "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Sports/Games page: \"Four (4) dedicated pickleball courts\", and the park's own page: \"Pickleball, Basketball & Bocce Courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Lee County, FL. OpenStreetMap (Nominatim) matched \"2718, Southwest 43rd Terrace, Cape Coral, Lee County, Florida, 33914, United States\" at house-number level. The Census address geocoder answered \"2718 SW 43RD ST, CAPE CORAL, FL, 33914\", changing the street type from TER to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail. The resolver also places it in the incorporated place \"Cape Coral\", which is what allows it to be published under Cape Coral."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"2718, Southwest 43rd Terrace, Cape Coral, Lee County, Florida, 33914, United States\" at house-number level. The Census address geocoder answered \"2718 SW 43RD ST, CAPE CORAL, FL, 33914\", changing the street type from TER to ST; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type is part of an address, not a formatting detail."
+        }
+      },
+      "record": {
+        "source_url": "https://www.capecoral.gov/departments/parks_recreation/athletics/park_sports_games.php",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}
