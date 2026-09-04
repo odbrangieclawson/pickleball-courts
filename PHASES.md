@@ -331,8 +331,9 @@ passes all six gates against the built HTML; the totals are the ones
 | 8 | Bellevue, WA | 12 | 38 | City of Bellevue pickleball page + park pages | 2026-09-04 |
 | 9 | Madison, WI | 21 | 53 | City of Madison park pages, count and surface per venue | 2026-09-04 |
 | 10 | Austin, TX | 21 | 60 | Austin PARD pickleball page, count + hours + lighting per venue | 2026-09-04 |
+| 11 | Scottsdale, AZ | 3 | 21 | Scottsdale pickleball page + park pages; count, lighting, price, etiquette | 2026-09-04 |
 
-**150 published pages:** 10 city, 116 venue, 15 filter, 7 county, 2 state.
+**158 published pages:** 11 city, 119 venue, 18 filter, 8 county, 2 state.
 
 **Two state pages exist because two states have three published cities.**
 North Carolina since Apex; Washington since Bellevue. `STATE_MIN_CITIES = 3`
@@ -398,6 +399,42 @@ to roller derby on Tuesday and Thursday evenings and weekend mornings from
 this directory has published. Austin High follows the school calendar under
 an AISD sharing agreement. Hancock closes for four hours in the middle of a
 term-time weekday.
+
+**Scottsdale is the first operator that says how to share a court.** Every
+other city in this directory answers "how many courts" and stops. Each
+Scottsdale park page publishes the rule — standard game to 11, win by two, a
+30-minute limit, "at which time players should rotate off the court with any
+waiting players" — and then states something no operator had published
+anywhere in eleven cities: **a peak time.** "Mornings are typically the
+busiest time for pickleball play at Cholla." The peak_hours slot on every
+city page before this one was written out of rules and inference because
+there was nothing else to write it from.
+
+**Every published Scottsdale court is lit and free,** stated at every venue —
+the first city here where count, lighting and cost are all answered
+everywhere, and only the second city with any verified `free` at all after
+Portland. It also gives the directory its second `/free/` filter page and a
+`/lights/` page where all three venues qualify.
+
+**A venue is published closed.** Thompson Peak Park's three courts were shut
+for resurfacing from 17 August to 11 September 2026, and this run was made on
+4 September. The closure sentence is asserted, so when the City takes it down
+the build fails — a directory carrying a stale closure is worse than one
+carrying none.
+
+**Two of five refused, for different reasons.** Ashler Hills Park has eight
+courts and an address the Census geocoder cannot resolve. Scottsdale
+Community College has six lighted courts hosting a free City-run public
+programme, and the geocoder places its address in **no incorporated place at
+all** — it is not inside Scottsdale. A city operating a programme somewhere
+does not move that somewhere into the city, which is the same test that kept
+a THPRD set out of Beaverton. That leaves exactly three venues, the minimum a
+city may publish on.
+
+**Two City park pages print a malformed postcode** — "Scottsdale, AZ 32220"
+at Ashler Hills and "Scottsdale, AZ 20199" at Thompson Peak, the street
+number where the postcode belongs. Recorded because it is the City's own
+record, not because it changed what we published.
 
 **Two structural things this city forced:**
 
@@ -478,12 +515,12 @@ page as an open gap rather than left as a silence.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and ten cities are published. What stands
+Phases 0 through 6 are complete and eleven cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered ten times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and eight sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last two took seventeen refusals between them. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered eleven times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and nine sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last three took twenty-three refusals between them. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -506,15 +543,15 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**10 of 50.** The sequencing rule above is the whole plan, and this is the
+**11 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last ten were: find a parks
+The next city is chosen the same way the last eleven were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
-never a qualification. Seventeen cities were refused
-across the runs for cities #9 and #10, and the reasons are worth keeping so
-nobody re-treads them:
+never a qualification. Twenty-three cities were refused
+across the runs for cities #9, #10 and #11, and the reasons are worth keeping
+so nobody re-treads them:
 
 | City | Refused because |
 | --- | --- |
@@ -522,8 +559,12 @@ nobody re-treads them:
 | Bellingham, Tacoma, Lexington KY, Jacksonville NC | The operator publishes pickleball locations and no court counts. A venue needs a verified count to exist here. |
 | Boise | Counts for only two venues — Eagle Rock and Hobble Creek — against a three-venue threshold. Boise also has the best story of any city refused so far: twelve dedicated courts at Willow Lane and Manitou were converted back to six tennis-only courts in September 2025 after a noise lawsuit settlement. |
 | Honolulu | The best court data found anywhere — 192 courts at 93 parks with counts, shared-use type and lighting in one table — and no address source. Its parks GIS layer carries names and acreage but no street addresses, so Import Gate I1 cannot be satisfied without another pass. |
+| San Diego | Publishes exactly the right document — one PDF with addresses, counts and hours — as a scanned image. `pdftotext` extracts nothing from it, so no verify run could assert a quote against it. A source this project cannot re-read is a source it cannot use. |
+| Round Rock, Lakeway-area TX | Names its pickleball locations and states no court counts. |
+| Gilbert, Plano, Overland Park | HTTP 403, same as the eleven above. |
+| Sacramento, Chandler, Ann Arbor, Knoxville | Sites respond, but the parks pages did not resolve where expected; not pursued further once Scottsdale was found. |
 
-Honolulu is the one worth returning to.
+Honolulu remains the one worth returning to: its court data is the best found anywhere and only its addresses are missing.
 
 ## Tagging convention
 
@@ -533,6 +574,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-10-austin`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-11-scottsdale`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

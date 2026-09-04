@@ -6,7 +6,7 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  7/7 publishable
+COUNTY  —  8/8 publishable
   PASS  /pickleball/us/wa/king-county/
         937 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/tx/travis-county/
@@ -19,10 +19,12 @@ COUNTY  —  7/7 publishable
         1261 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/mecklenburg-county/
         1284 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/az/maricopa-county/
+        983 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/clark-county/
         923 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  10/10 publishable
+CITY  —  11/11 publishable
   PASS  /pickleball/us/wa/seattle/
         1574 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/tx/austin/
@@ -41,10 +43,12 @@ CITY  —  10/10 publishable
         1816 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/
         1809 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/az/scottsdale/
+        1675 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/vancouver/
         1731 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  15/15 publishable
+FILTER  —  18/18 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
@@ -75,8 +79,14 @@ FILTER  —  15/15 publishable
         670 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/outdoor/
         662 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/az/scottsdale/outdoor/
+        689 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/az/scottsdale/free/
+        681 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/az/scottsdale/lights/
+        717 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  116/116 publishable
+VENUE  —  119/119 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -303,6 +313,12 @@ VENUE  —  116/116 publishable
         728 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/cary/mccrimmon-park/
         831 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/az/scottsdale/cholla-park/
+        796 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/az/scottsdale/horizon-park/
+        727 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/az/scottsdale/thompson-peak-park/
+        797 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/vancouver/firstenburg-community-center/
         780 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/vancouver/oakbrook-community-park/
@@ -312,7 +328,7 @@ VENUE  —  116/116 publishable
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, outdoor, lights, outdoor, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, lights, outdoor
+  built for Seattle: outdoor, lights, outdoor, lights, outdoor, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, lights, outdoor, outdoor, free, lights
   public: not published — no lawful data driver or fewer than 3 matches
 
 === NOINDEX QUERY PARAMETERS ===
@@ -336,6 +352,6 @@ VENUE  —  116/116 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 150/150 pages pass all six gates.
+TOTAL: 158/158 pages pass all six gates.
 
 ```

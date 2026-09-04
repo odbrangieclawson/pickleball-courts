@@ -1,7 +1,7 @@
 {
   "metros": 100,
   "venues": 2683,
-  "ready": 7,
+  "ready": 8,
   "metro_detail": [
     {
       "metro": "Seattle, WA",
@@ -1264,21 +1264,21 @@
       "city": "Scottsdale",
       "state": "AZ",
       "venues": 20,
-      "passing_all_four": 0,
+      "passing_all_four": 3,
       "blocked_by": {
         "I1": 0,
-        "I2": 20,
-        "I3": 4,
+        "I2": 17,
+        "I3": 3,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 22,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (20)",
-        "I2: no date_checked (20)",
-        "I2: no verified_by (20)",
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
+        "I2: no date_checked (17)",
+        "I2: no verified_by (17)",
         "I3: no postal_code (2)"
       ]
     },

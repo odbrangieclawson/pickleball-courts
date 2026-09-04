@@ -7,9 +7,9 @@
 > A metro is not done until it has at least 3 venues passing all four import
 > gates. A partially verified metro does not publish partially — it waits.
 
-**Metros ready to publish: 7 of 100.**
+**Metros ready to publish: 8 of 100.**
 
-**Published on the site: 10 cities.** 7 of them are in
+**Published on the site: 11 cities.** 8 of them are in
 this queue and 3 are not — Apex, NC, Bellevue, WA, Cary, NC.
 
 The queue is ordered by how many pages a metro would unlock, and cities are
@@ -79,7 +79,7 @@ asks for, not the whole city.
 | 53 | Ocala, FL | 19 | 0 | 0 | 19 | 1 | 0 | blocked | 23 |
 | 54 | Nashville, TN | 28 | 0 | 0 | 28 | 10 | 0 | blocked | 23 |
 | 55 | San Jose, CA | 22 | 0 | 0 | 22 | 3 | 0 | blocked | 23 |
-| 56 | Scottsdale, AZ | 20 | 0 | 0 | 20 | 4 | 0 | blocked | 22 |
+| 56 | Scottsdale, AZ | 20 | 3 | 0 | 17 | 3 | 0 | **ready** | 22 |
 | 57 | Lexington, KY | 22 | 0 | 1 | 22 | 5 | 0 | blocked | 22 |
 | 58 | Louisville, KY | 31 | 0 | 1 | 31 | 14 | 0 | blocked | 22 |
 | 59 | Bradenton, FL | 19 | 0 | 1 | 19 | 1 | 0 | blocked | 22 |
@@ -129,9 +129,9 @@ asks for, not the whole city.
 
 | blocker | venue-occurrences |
 | --- | ---: |
-| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,587 |
-| I2: no date_checked | 2,587 |
-| I2: no verified_by | 2,587 |
+| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,584 |
+| I2: no date_checked | 2,584 |
+| I2: no verified_by | 2,584 |
 | I3: county not derived above confidence threshold | 280 |
 | I1: slug has a numeric suffix (Rule 10) | 32 |
 | I3: no postal_code | 31 |

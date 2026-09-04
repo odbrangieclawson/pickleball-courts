@@ -1,0 +1,100 @@
+{
+  "city": "Scottsdale",
+  "state": "AZ",
+  "kind": "venues",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Counts, addresses, lighting and hours come from the City of Scottsdale's pickleball page, checked against each venue's own entry rather than against the page as a whole. Cost, the sharing rule and the peak-time statement come from each park's own page. Counties and postcodes come from the Census geocoder. Nobody working on this has played on these courts.",
+  "venues": {
+    "cholla-park": {
+      "slots": {
+        "description": "Eight outdoor lighted pickleball courts in east Scottsdale, free to use, drop-in and not reservable. What sets this venue apart from almost every other one in this directory is not the count but the documentation: the City of Scottsdale publishes not just how many courts there are but how to share them. Its page for Cholla states the rule in full — play is standard game format, first side to 11 points or leading by at least two, with a 30-minute time limit, at which point players \"should rotate off the court with any waiting players\". It then adds the sentence that no other operator in this directory has published anywhere: \"Mornings are typically the busiest time for pickleball play at Cholla.\"\n\nEight courts puts Cholla second in Scottsdale behind Horizon Park's ten, and above Thompson Peak's three. Between them the three published venues hold twenty-one courts, all lit, all free, all open the same hours — an unusually uniform set by the standards of this site, where a city's venues usually differ on at least one of those three.",
+        "getting_there": "11320 E. Via Linda, Scottsdale, AZ 85259, which the Census geocoder matched to Scottsdale city, Maricopa County. Via Linda runs through east Scottsdale below the McDowell Mountains, and this is a suburban park rather than a street-grid site. As at every Scottsdale venue, the City publishes nothing about parking — the pages here are unusually generous about rules and hours and say nothing at all about arriving.",
+        "what_to_expect": "Turn up, put your paddle in the queue, expect to wait in the morning. The courts are lit and open from sunrise to 10:30 p.m. daily, there is no booking system anywhere in Scottsdale, and no amplified sound is permitted at any of the City's pickleball locations. Games run to 11, win by two, and a 30-minute clock applies when people are waiting. Nothing is published about the surface, about nets, or about restrooms, and the price is the one thing you do not need to check: the City states plainly that the courts are free to use."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Eight. The City's pickleball page lists \"Eight outdoor lighted courts\" and the park's own page confirms it: \"There are eight pickleball courts at Cholla Park, which are available for drop in public use and are not reservable.\""},
+        {"q": "Is it free?", "a": "Yes, and the City writes it down: \"They are free to use.\" This directory does not record a court as free unless an operator has stated it, so the fact that Scottsdale says so is what puts a price on this page at all."},
+        {"q": "Are the courts lit?", "a": "Yes. \"Lighted\" is part of the count itself on the City's pickleball page — \"Eight outdoor lighted courts\" — and the courts run from sunrise to 10:30 p.m. daily."},
+        {"q": "Can I reserve a court?", "a": "No. The City states that its pickleball courts are available on a first come, first served basis and that no reservation is required. That applies at all three published Scottsdale venues."},
+        {"q": "When should I arrive to get on?", "a": "Not in the morning, if you can avoid it — the City states that mornings are typically the busiest time for pickleball play here. It is the only operator in this directory to have published a peak time at all, so this is the rare case where that advice is sourced rather than guessed."},
+        {"q": "What is the surface?", "a": "Not verified. Scottsdale states no surface at any of its venues, so this reads \"not verified yet\" rather than being filled with a guess."}
+      ],
+      "sources": ["S1", "S2", "S5"]
+    },
+    "horizon-park": {
+      "slots": {
+        "description": "Ten outdoor lighted pickleball courts — the largest count in Scottsdale, and one of the larger single-site counts anywhere in this directory. Free to use, drop-in, not reservable, open sunrise to 10:30 p.m. daily. Horizon Park sits in north-east Scottsdale off 100th Street, and like the City's other pickleball venues it comes with the rule for sharing a court published alongside the count: standard game to 11, win by two, a 30-minute limit, then rotate off for whoever is waiting.\n\nTen courts changes what a busy session feels like. At a two-court venue a queue is a wait; at ten it is a rotation, and the City's 30-minute clock is what makes that work. The City also states, as it does at each of its parks, that mornings are typically the busiest time for pickleball play here — which on ten courts is worth knowing rather than worth avoiding, since ten courts turning over on a half-hour clock will absorb a lot of people.",
+        "getting_there": "15444 N. 100th St., Scottsdale, AZ 85260, matched by the Census geocoder to Scottsdale city, Maricopa County. This is the north-east of the city, a few miles from Cholla Park's eight courts, which is the nearest published alternative if ten courts are somehow all busy. Nothing is published about parking at any Scottsdale venue.",
+        "what_to_expect": "The best odds in Scottsdale of getting on a court, and the same rules as everywhere else in the city: no booking, first come first served, games to 11 with a 30-minute limit when people are waiting, no amplified sound. Lit until 10:30 p.m., which in a Phoenix-area summer is not a detail but the whole basis on which the venue is usable. Surface, nets and restrooms are not published; the price is, and it is nothing."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Ten — \"10 outdoor lighted courts\" on the City's pickleball page, and \"There are ten pickleball courts at Horizon Park\" on the park's own page. It is the largest count in the city."},
+        {"q": "Is it free?", "a": "Yes. The park page states \"They are free to use\", which is why this venue carries a verified price rather than an assumption."},
+        {"q": "Are the courts lit?", "a": "Yes, and so are all three published Scottsdale venues. Lighting is stated as part of the court count itself, and the courts are open from sunrise to 10:30 p.m. daily."},
+        {"q": "When is it busiest?", "a": "Mornings. The City states \"Mornings are typically the busiest time for pickleball play at Horizon\" on the park's own page — one of only three venues in this entire directory where a peak time has been published by the operator, and all three are in Scottsdale."},
+        {"q": "Do I need to bring a net?", "a": "Not verified. Scottsdale mentions portable nets only at Thompson Peak Park, and says nothing either way here, so treat it as unknown."},
+        {"q": "Can I book for a group?", "a": "No. The City's pickleball page states that no reservation is required and courts are first come, first served. For a group, the practical approach is the City's own rotation rule: games to 11, win by two, 30-minute limit, rotate off for waiting players."}
+      ],
+      "sources": ["S1", "S3", "S5"]
+    },
+    "thompson-peak-park": {
+      "slots": {
+        "description": "Three outdoor lighted pickleball courts with three portable nets in north Scottsdale — and, at the time this page was last checked, closed. The City states that all pickleball courts at Thompson Peak Park were shut from Monday 17 August to Friday 11 September 2026 for resurfacing, and are expected to reopen on Saturday 12 September, weather permitting. We checked on 4 September, inside that window, so the venue is published with its closure rather than as though it were open.\n\nWhen open, it is the smallest of Scottsdale's three published venues and carries the same terms as the other two: free to use, drop-in, not reservable, open sunrise to 10:30 p.m. daily, with the City's rotation rule — standard game to 11, win by two, 30-minute limit, rotate off for waiting players — and the same statement that mornings are typically busiest. The park around the courts is notable for an inclusive playground the City describes at length, with an accessible whirl, harnessed swings and a poured-in-place rubber surface.",
+        "getting_there": "20199 N. 78th Pl., Scottsdale, AZ 85255, matched by the Census geocoder to Scottsdale city, Maricopa County. One thing worth flagging for anyone checking against the City's own record: the park's page prints its postcode as \"Scottsdale, AZ 20199\" — the street number in the postcode's place. The City's pickleball page has it right, and the postcode published here comes from the geocoder, as it does at every venue on this site. Ashler Hills Park's page carries the same malformation.",
+        "what_to_expect": "First, check whether it has reopened. After that: three lit courts, free, no booking, and three portable nets that the City lists as a feature of the venue without saying who sets them up — so bring one if you have one. The resurfacing is the reason the courts were shut, which means whenever they do reopen the surface will be new, and that is the only thing approaching a surface fact anywhere in Scottsdale. Mornings are the busiest time, per the City."
+      },
+      "faqs": [
+        {"q": "Is it open?", "a": "It was closed when we checked on 4 September 2026. The City states the courts were closed from 17 August to 11 September for resurfacing and expected to reopen on Saturday 12 September, weather permitting. Our build checks that notice is still on the City's page, so this answer cannot quietly go stale."},
+        {"q": "How many courts are there?", "a": "Three, plus three portable nets which the City lists alongside them. The pickleball page reads \"Three outdoor lighted courts / Three portable nets\", and the park page confirms \"There are three pickleball courts at Thompson Peak Park\"."},
+        {"q": "Do I need to bring a net?", "a": "Not verified. The City lists three portable nets as a feature of the venue but never says whether they are provided for public use or who sets them up — the same ambiguity that left Bellevue's \"portable nets\" venues unanswered. Bring one if you have one."},
+        {"q": "Is it free?", "a": "Yes — \"They are free to use\", per the park's own page, the same as at Cholla and Horizon."},
+        {"q": "Why does the City's page show the wrong postcode?", "a": "We do not know, but it does: the park page prints \"Scottsdale, AZ 20199\", repeating the street number where the postcode belongs. The pickleball page gives 85255 and the Census geocoder agrees, so 85255 is what we publish. Ashler Hills Park's page has the same fault."},
+        {"q": "When is it busiest?", "a": "Mornings, per the City — \"Mornings are typically the busiest time for pickleball play at Thompson Peak.\" On three courts that matters more than it does at Horizon's ten."}
+      ],
+      "sources": ["S1", "S4", "S5"]
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "The City's pickleball page, giving each venue's address, court count, lighting and hours — \"Eight outdoor lighted courts\", \"10 outdoor lighted courts\", \"Three outdoor lighted courts / Three portable nets\", each \"Open sunrise to 10:30 p.m.\" — plus the city-wide rule: \"Courts are available on a first come, first served basis. No reservation is required. No amplified sound is permitted at these locations.\" Snapshot: data/sources/scottsdale/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/cholla-park",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"There are eight pickleball courts at Cholla Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\"; the rotation rule in full; and \"Mornings are typically the busiest time for pickleball play at Cholla.\" Snapshot: data/sources/scottsdale/cholla-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/horizon-park",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"There are ten pickleball courts at Horizon Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\"; the rotation rule; and \"Mornings are typically the busiest time for pickleball play at Horizon.\" Snapshot: data/sources/scottsdale/horizon-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/thompson-peak-park",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"There are three pickleball courts at Thompson Peak Park...They are free to use, and are open from sunrise until 10:30 p.m. daily.\"; the rotation rule; \"Mornings are typically the busiest time for pickleball play at Thompson Peak.\"; the closure notice — \"All pickleball courts at Thompson Peak Park will be closed Monday, Aug. 17 through Friday, Sept. 11, 2026, for resurfacing. Courts are expected to reopen Saturday, Sept. 12, weather permitting.\" — the inclusive playground description, and the malformed postcode \"Scottsdale, AZ 20199\". Snapshot: data/sources/scottsdale/thompson-peak-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Each published address was matched by the Census address geocoder and placed in the incorporated place \"Scottsdale city\", Maricopa County, AZ, with the postal code the geocoder returned. Snapshot: data/sources/scottsdale-county-census.json"
+    }
+  ]
+}
