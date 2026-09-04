@@ -598,12 +598,12 @@ are committed and every assertion reads those rather than the network.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and thirteen cities are published. What stands
+Phases 0 through 6 are complete and fourteen cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered twelve times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and ten sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last four took thirty-four refusals between them. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered thirteen times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and eleven sets of municipal web pages. No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -626,10 +626,10 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**12 of 50.** The sequencing rule above is the whole plan, and this is the
+**14 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last twelve were: find a parks
+The next city is chosen the same way the last thirteen were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
 never a qualification. Thirty-four cities were refused
@@ -638,7 +638,7 @@ so nobody re-treads them:
 
 | City | Refused because |
 | --- | --- |
-| Spokane, Redmond, Wichita, Durham, Greensboro, Eugene, Olympia, Kirkland, Mesa, Tucson, Fort Collins | The parks site refuses both of our fetchers with an HTTP 403. This project does not publish from a page it cannot snapshot and re-check. Most are CivicPlus sites. |
+| Spokane, Redmond, Wichita, Greensboro, Eugene, Olympia, Kirkland, Tucson, Fort Collins | The parks site refuses both of our fetchers with an HTTP 403. This project does not publish from a page it cannot snapshot and re-check. Most are CivicPlus sites. **These nine have not been retested since — see "A 403 is a fact about one day" below.** |
 | Bellingham, Tacoma, Lexington KY, Jacksonville NC | The operator publishes pickleball locations and no court counts. A venue needs a verified count to exist here. |
 | Boise | Counts for only two venues — Eagle Rock and Hobble Creek — against a three-venue threshold. Boise also has the best story of any city refused so far: twelve dedicated courts at Willow Lane and Manitou were converted back to six tennis-only courts in September 2025 after a noise lawsuit settlement. |
 | Honolulu | The best court data found anywhere — 192 courts at 93 parks with counts, shared-use type and lighting in one table — and no address source. Its parks GIS layer carries names and acreage but no street addresses, so Import Gate I1 cannot be satisfied without another pass. |
@@ -646,6 +646,9 @@ so nobody re-treads them:
 | Round Rock, Lakeway-area TX | Names its pickleball locations and states no court counts. |
 | Gilbert, Plano, Overland Park | HTTP 403, same as the eleven above. |
 | Sacramento, Chandler, Ann Arbor, Knoxville | Sites respond, but the parks pages did not resolve where expected; not pursued further once Scottsdale was found. |
+| Durham NC | **Retested and reachable — refused on the data instead.** Piney Wood Park states twelve dedicated courts and Bethesda enumerates six, but Garrett Road and Sherwood carry only an amenity flag, Morreene Road carries none at all despite being named on the pickleball page, and Forest Hills states "Court Number 4 - This is the first outdoor DPR site to offer Pickleball lines", which names a tennis court rather than counting pickleball ones. Two publishable venues against a three-venue threshold, which is Boise's failure mode. |
+| Phoenix | Publishes a "Tennis Courts and Pickleball" layer: 163 rows across 36 properties, one row per court, with no address field and no count field. Counting the rows is the derivation this project falsified for Sacramento. Would need Saint Paul's treatment — layer for candidate names, park pages for counts and addresses — and the park pages have not been read. |
+| Overland Park KS, Minneapolis | Retested alongside Mesa and Durham and still HTTP 403 to a plain request. |
 | Salt Lake City, Colorado Springs | Publish court counts and no street addresses on the pages that carry them. Colorado Springs also contradicts itself: its tennis-and-pickleball list gives John Venezia Community Park eight courts and the park's own page says four. |
 | Frisco TX, Lexington KY, Jacksonville NC, Milwaukee County | Have a park layer with addresses and a pickleball FLAG rather than a count — "Pickleball"/"Yes"/"No". A flag is not a number. |
 | Gresham OR, Lake Oswego OR | Two venues and one venue respectively, against a three-venue threshold. |
@@ -653,6 +656,26 @@ so nobody re-treads them:
 | Hillsboro OR, Minneapolis | HTTP 403. |
 
 Honolulu remains the one worth returning to: its court data is the best found anywhere and only its addresses are missing.
+
+## A 403 is a fact about one day
+
+Sixteen cities in the table above were refused because a parks site answered
+our fetcher with HTTP 403 — by a wide margin the largest single refusal
+group, and the one that looked most like a permanent property of those
+operators. It was not.
+
+Four of them were retested while choosing city #14. **Mesa and Durham both
+returned 200**, and not because of better tooling: Lincoln shipped
+`scripts/verify/fetch/lincoln.sh` to defeat an Akamai 403 with a browser
+header set, and it would be tidy to credit that, but a **bare curl** with no
+special headers reaches both sites today. Overland Park and Minneapolis
+still refuse. Mesa went on to publish as city #14 and Durham was refused on
+its data instead, which is the point: neither verdict was knowable while the
+door was shut.
+
+Nine cities in that bucket have still never been retested. A 403 recorded
+against a site should be read as a dated observation, not a verdict, and
+re-testing the bucket is the cheapest lead this file currently holds.
 
 ## Tagging convention
 
@@ -662,6 +685,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-13-lincoln`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-14-mesa`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

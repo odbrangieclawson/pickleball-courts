@@ -22,13 +22,13 @@ COUNTY  —  10/10 publishable
   PASS  /pickleball/us/nc/mecklenburg-county/
         1284 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/maricopa-county/
-        972 words · BreadcrumbList, FAQPage, ItemList
+        1174 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ne/lancaster-county/
         1024 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/clark-county/
         923 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  13/13 publishable
+CITY  —  14/14 publishable
   PASS  /pickleball/us/wa/seattle/
         1574 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/madison/
@@ -48,11 +48,13 @@ CITY  —  13/13 publishable
   PASS  /pickleball/us/nc/charlotte/
         1816 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/
-        1941 words · BreadcrumbList, FAQPage, ItemList
+        1905 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/
         1809 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ne/lincoln/
         1778 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/az/mesa/
+        1936 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/vancouver/
         1731 words · BreadcrumbList, FAQPage, ItemList
 
@@ -98,7 +100,7 @@ FILTER  —  20/20 publishable
   PASS  /pickleball/us/ne/lincoln/outdoor/
         770 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  132/132 publishable
+VENUE  —  135/135 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -357,6 +359,12 @@ VENUE  —  132/132 publishable
         829 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/ne/lincoln/densmore-park/
         953 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/az/mesa/kleinman-park/
+        849 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/az/mesa/tennis-center-at-gene-autry-park/
+        1001 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/az/mesa/chaparral-park/
+        842 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/vancouver/firstenburg-community-center/
         780 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/vancouver/oakbrook-community-park/
@@ -390,6 +398,6 @@ VENUE  —  132/132 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 177/177 pages pass all six gates.
+TOTAL: 181/181 pages pass all six gates.
 
 ```

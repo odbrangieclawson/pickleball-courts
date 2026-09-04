@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+<head>
+	<!-- Published by OpenCities, 1.37.6.1 -->
+
+    
+        
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="theme-color" content="#FFFFFF"/>
+    <title>Kleinman Park - City of Mesa</title>
+	<meta name="generator" content="OpenCities - https://granicus.com/product/opencities" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using mobile-web-app-capable for now to enable full-screen experience on supported platforms -->
+    <!-- Note: This tag works mainly on Android Chrome. It does NOT enable full-screen mode on iOS Safari. -->
+    <!-- For iOS, the correct tag is: <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <!-- TODO: Monitor for updated meta tag standards from Apple or other browser vendors -->
+    <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="description" content="West of Extension Rd. and North of 8th Ave." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park" />
+    <meta property="og:title" content="Kleinman Park" />
+    <meta property="og:description" content="West of Extension Rd. and North of 8th Ave." />
+    <meta property="og:image" content="https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-images/kleinman-park-04.jpg?w=1200" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Kleinman Park" />
+    <meta property="twitter:description" content="West of Extension Rd. and North of 8th Ave." />
+    <meta property="twitter:image" content="https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-images/kleinman-park-04.jpg?w=1080" />
+    <meta name="google-site-verification" content="Di9ejdq9i7kNS8AmbSIsHkQcgYtfE4vPhT0Zmd1jd4g" />
+    <link rel="canonical" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park" />
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/files/ocfavicon/Public/apple-touch-icon.png?V=638484259912743905">
+<link rel="icon" type="image/png" sizes="32x32" href="/files/ocfavicon/Public/favicon-32x32.png?V=638484259912743905">
+<link rel="icon" type="image/png" sizes="16x16" href="/files/ocfavicon/Public/favicon-16x16.png?V=638484259912743905">
+<link rel="manifest" href="/files/ocfavicon/Public/site.webmanifest?V=638484259912743905">
+<link rel="shortcut icon" href="/files/ocfavicon/Public/favicon.ico?V=638484259912743905">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-config" content="/files/ocfavicon/Public/browserconfig.xml?V=638484259912743905">
+    <script>
+        (function () {
+            if (window.__UNLOAD_LAZY_PATCH__) return;
+            window.__UNLOAD_LAZY_PATCH__ = true;
+
+            var supportsPageHide = ("onpagehide" in window);
+            var mappedType = supportsPageHide ? "pagehide" : "beforeunload";
+            var nativeAdd = window.addEventListener;
+            var nativeRemove = window.removeEventListener;
+            var unloadMap = null;
+            var patched = false;
+
+            function ensurePatched() {
+                if (patched) return;
+                unloadMap = new WeakMap();
+
+                window.addEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = function (evt) {
+                            if (supportsPageHide && evt.persisted) return;
+                            listener.call(this, evt);
+                        };
+                        unloadMap.set(listener, wrapped);
+                        return nativeAdd.call(this, mappedType, wrapped, options);
+                    }
+                    return nativeAdd.call(this, type, listener, options);
+                };
+
+                window.removeEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = unloadMap.get(listener);
+                        if (wrapped) {
+                            nativeRemove.call(this, mappedType, wrapped, options);
+                            unloadMap.delete(listener);
+                        }
+                        return;
+                    }
+                    return nativeRemove.call(this, type, listener, options);
+                };
+
+                var orig = null;
+                Object.defineProperty(window, "onunload", {
+                    configurable: true, enumerable: true,
+                    get: function () { return orig; },
+                    set: function (h) {
+                        orig = h;
+                        if (typeof h === "function") window.addEventListener("unload", h);
+                    }
+                });
+                patched = true;
+            }
+
+            window.addEventListener = function (type, listener, options) {
+                if (type === "unload") {
+                    ensurePatched();
+                    return window.addEventListener(type, listener, options);
+                }
+                return nativeAdd.call(this, type, listener, options);
+            };
+
+            window.removeEventListener = function (type, listener, options) {
+                if (type === "unload" && !patched) {
+                    return;
+                }
+                return nativeRemove.call(this, type, listener, options);
+            };
+
+            function patchTelerik() {
+                ensurePatched();
+                var ns = window.RadAjaxNamespace;
+                if (!ns || !ns.EventManager || !ns.EventManager.Add || ns.EventManager.__UnloadPatched) return;
+                var origAdd = ns.EventManager.Add;
+                ns.EventManager.Add = function (el, evtName, handler, clientId) {
+                    if (el === window && evtName === "unload") {
+                        return window.addEventListener("unload", handler);
+                    }
+                    return origAdd.call(this, el, evtName, handler, clientId);
+                };
+                ns.EventManager.__UnloadPatched = true;
+            }
+
+            if (window.RadAjaxNamespace)
+                patchTelerik();
+            else (window.requestIdleCallback || function (cb)
+            {
+                setTimeout(cb, 120);
+            })(patchTelerik);
+        })();
+    </script>
+    <!-- Preconnecting to Google Fonts servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Defer Roboto font loading to avoid render-blocking -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const robotoLink = document.createElement('link');
+            robotoLink.rel = 'stylesheet';
+            robotoLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap';
+            document.head.appendChild(robotoLink);
+        });
+    </script>
+
+    <style>
+        .gm-style, .gm-style * {
+            font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Arial, sans-serif !important;
+        }
+    </style>
+
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, "js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        
+            <script type="text/javascript">
+                window.__oc_flags_ImprovedBreakpointEventHandling = true;
+            </script>
+            
+        
+    
+    
+    
+        <script type="text/javascript">
+            var __metaQueryBreakpoints = {
+                'sc-size-4': '(max-width: 480px)',
+                'sc-size-3': '(min-width: 480px) and (max-width: 768px)',
+                'sc-size-2': '(min-width: 768px) and (max-width: 992px)',
+                'sc-size-1': '(min-width: 992px)'
+            }
+
+            var __ocSizePoints = [
+                { min: 0, name: 'sc-size-4' },
+                { min: 480, name: 'sc-size-3' },
+                { min: 768, name: 'sc-size-2' },
+                { min: 992, name: 'sc-size-1' }
+            ];
+
+        </script>
+    
+
+    <!-- Framework Section -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/files/templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/jquery-3.7.1.min.js?seamlessts=639233005025180030" ><\/script>')</script>
+
+    <!--Google Maps API Loader – Improved Version to avoid Warning
+    This script loads the Google Maps JavaScript API using a dynamic and async method.
+    It replaces the old static <script> tag to avoid performance warnings from Google.
+
+    Dynamically creates the <script> tag with loading = async for better performance
+    Builds the API URL with required libraries(places, geometry, marker, geocoding)
+    Uses a Promise and callback(google.maps.__ib__) to confirm when the script is ready
+
+    It Avoids Google’s warning about direct script loading
+    Improves page load speed by loading the API asynchronously-->
+
+    
+        <script>
+            (function (root) {
+                root.OpenCities = root.OpenCities || {};
+                if (!root.OpenCities.GoogleMapsLoader) {
+                    root.OpenCities.GoogleMapsLoader = {
+                        _cbs: [],
+                        _ready: false,
+                        onReady: function (cb) {
+                            if (this._ready) { try { cb(); } catch (e) { console.error(e); } }
+                            else if (typeof cb === 'function') this._cbs.push(cb);
+                        },
+                        _fire: function () {
+                            if (this._ready) return;
+                            this._ready = true;
+                            var q = this._cbs.splice(0);
+                            for (var i = 0; i < q.length; i++) {
+                                try { q[i](); } catch (e) { console.error(e); }
+                            }
+                        }
+                    };
+                }
+            })(window);
+
+            (g => {
+                var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__",
+                    m = document, b = window;
+                b = b[c] || (b[c] = {});
+                var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+                    u = () => h || (h = new Promise(async (resolve, reject) => {
+                        a = m.createElement("script");
+                        e.set("libraries", [...r] + "");
+                        for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+                        e.set("callback", c + ".maps." + q);
+                        a.src = "https://maps." + c + "apis.com/maps/api/js?" + e.toString();
+                        a.loading = "async";
+                        a.async = true;
+                        a.defer = true;
+                        d[q] = resolve;
+                        a.onerror = () => reject(Error(p + " could not load."));
+                        a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                        m.head.append(a);
+                    }));
+                if (d[l]) {
+                    console.warn(p + " only loads once. Ignoring duplicate load.");
+                } else {
+                    d[l] = (f, ...n) => (r.add(f), u().then(() => d[l](f, ...n)));
+                }
+            })({
+                key: "AIzaSyDLTcLtX5-tugOeanwIZoj641aaq6wg9Bg",
+                v: "3.65"
+            });
+
+            (async () => {
+                try {
+                    if (!google?.maps?.importLibrary) return;
+
+                    if (!window.OpenCities.__mapsLibsPromise) {
+                        window.OpenCities.__mapsLibsPromise = Promise.all([
+                            google.maps.importLibrary('maps'),
+                            google.maps.importLibrary('places'),
+                            google.maps.importLibrary('geocoding'),
+                            google.maps.importLibrary('marker'),
+                            google.maps.importLibrary('geometry')
+                        ]);
+                    }
+                    await window.OpenCities.__mapsLibsPromise;
+
+                    if (window.OpenCities?.GoogleMapsLoader) {
+                        window.OpenCities.GoogleMapsLoader._fire();
+                    }
+                } catch (err) {
+                    console.error('Google Maps failed to initialise', err);
+                }
+            })();
+        </script>
+    
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/modernizr.custom.710f3bf.js?seamlessts=639233005025180030" defer></script>
+    
+    <!--// End Framework Section -->
+    <!-- OpenCities Section -->
+    <script>
+        var OpenCities = OpenCities || {};
+        OpenCities.Paths = {
+            SiteTemplate: '/files/templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/',
+            ThemePath: '/files/templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/'
+        };
+    </script>
+    <script src='/ocapi/ab1a908a-b6ab-4a6c-8077-4008dc8ab99e/en-US/websitesettings.js'></script>
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/oc_head.js?applied=20260611044735"></script>
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/oc_grid.css~oc_style.css~oc_wizard_style.css~oc_main.css~oc_forms.css~oc_wizard.css~oc_wizard_menu.css~oc_main_s1.css~oc_wizard_s1.css~oc_wizard_menu_s1.css~oc_grid_s1.css~OcScriptCombine_Minify0?uniqueid=20260611044735" rel="stylesheet" type="text/css">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/client_style.css~client.css~client_menu.css~client_s1.css~client_menu_s1.css~client_forms.css~OcScriptCombine_Minify0?uniqueid=20260611044735" rel="stylesheet" type="text/css">
+    <script>
+(function (BackgroundSettings, $, undefined) {
+    BackgroundSettings.initialise = function () {
+        this.Application = {"CSSSelector":".content-outer-container","EnableFade":false};
+    };
+} (OpenCities.BackgroundSettings = OpenCities.BackgroundSettings || {}, jQuery));
+OpenCities.BackgroundSettings.initialise();
+</script>
+    
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/oc_print.css~client_print.css~OcScriptCombine_Minify0?uniqueid=20260611044735" rel="stylesheet" type="text/css" media="print">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<script src="/files/oc-templates/00000000-0000-0000-0000-000000000000/768f11c2-1137-434f-bdbb-efb7148318a3/v/248/external_plugins.js~oc_form_helper.js~oc_main.js~plugins.js~oc_main_init.js~OcScriptCombine_Minify0?uniqueid=20260611044735" defer="true"></script>
+    <script async src="https://docaccess.com/docbox.js"></script>
+    
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="DYTCK-JM9C8-ED4EP-C3GGK-Z575H",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"DYTCK-JM9C8-ED4EP-C3GGK-Z575H";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eaauiuqby7cqaiabiriaaebqd5vjva2e-f-ebd6e36dd-clienttons-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"41","ak.cp":"1728391","ak.ai":parseInt("1075935",10),"ak.ol":"0","ak.cr":22,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"139c655c","ak.r":52173,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.cport":19293,"ak.gh":"122.2.184.93","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1788511044","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==4nd2Q3F5HxQGkkf13a+Acj3cnBC6fC5dFwrsKVPn6Qg4tS3TGYnpBQMp6Z7I9P0lJeeZSAkce40fHVdG+MAqfJZMJeLuraiYd3m/YI+BfKDql34vCb06abIf55LH8fUB15Pa18/WEONEdDdUPmTphk4SP8QjwWh4Tih7UjGJMrAcWn8vrdSYfZN2WOqaUcfEBMQL8HgmwbaOdlmhKl3hcDeYLdNw3yLvtKVnn6yh+nLwrmpEvXQSOwwMsp2stnt1B5y4wXwyRplojoRFkOd3iWKorp6y30gcVSIDSYIWyrVRkUHXIhmZBm481BggEZVH2o2i1WKRU/3Y76wDqqgAA05CbzvB/DT4MmENubee29qUqpPuqIJBm6G+2Y6tmUEbBhL4HfIQ/D95OMGPR2vlYGYecaoHECwEqFXmnz17kiM=","ak.pv":"333","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body class="body layout-modern side-menu side-menu-left site-search-always-visble  content-type-oc-park content-template-oc-with-full-width-image group-template-oc-full-width-with-default-header page-name-kleinman-park page-sequence-39 page-depth-4 page-section-2 website-type-primary device-desktop featured-site-section   department-profile parks-department" id="body-top">
+    <div id="skip-to-content-container">
+        <a href="#main-content" class="visuallyhidden focusable" id="skip-to-content-link">Skip to main content</a>
+    </div>
+    <script>
+        // OCNOW-11988 (Cursor): Proactively focus skip link when returning from browser chrome.
+        // Must run inline (not deferred oc_main.js) so focus is intercepted before NVDA speaks footer.
+        (function () {
+            var awaitingReentry = false;
+            var inertSupported = 'inert' in HTMLElement.prototype;
+
+            function isExplicitlyOutsideDocument(node) {
+                return node != null && !document.documentElement.contains(node);
+            }
+
+            function getSkipContainer() {
+                return document.getElementById('skip-to-content-container');
+            }
+
+            function getSkipLink() {
+                return document.getElementById('skip-to-content-link');
+            }
+
+            function applyGuard() {
+                awaitingReentry = true;
+                if (!inertSupported) {
+                    return;
+                }
+                var skipContainer = getSkipContainer();
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    if (children[i] !== skipContainer) {
+                        children[i].setAttribute('inert', '');
+                    }
+                }
+            }
+
+            function clearGuard() {
+                awaitingReentry = false;
+                if (!inertSupported) {
+                    return;
+                }
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].removeAttribute('inert');
+                }
+            }
+
+            function isSkipLinkElement(target) {
+                if (!target) {
+                    return false;
+                }
+                var skipContainer = getSkipContainer();
+                return target.id === 'skip-to-content-link' ||
+                    (skipContainer && skipContainer.contains(target));
+            }
+
+            function focusSkipLink() {
+                var skipLink = getSkipLink();
+                if (!skipLink) {
+                    return;
+                }
+                if (window.scrollY > 0) {
+                    window.scrollTo(0, 0);
+                }
+                skipLink.focus({ preventScroll: true });
+            }
+
+            function scheduleGuardIfDocumentLostFocus() {
+                window.setTimeout(function () {
+                    if (!document.hasFocus()) {
+                        applyGuard();
+                    }
+                }, 0);
+            }
+
+            document.addEventListener('focusout', function (e) {
+                if (isExplicitlyOutsideDocument(e.relatedTarget)) {
+                    applyGuard();
+                }
+            }, true);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Tab') {
+                    scheduleGuardIfDocumentLostFocus();
+                } else if (e.key === 'F6' || (e.key === 'l' && e.ctrlKey)) {
+                    scheduleGuardIfDocumentLostFocus();
+                }
+            }, true);
+
+            window.addEventListener('focus', function () {
+                if (!awaitingReentry) {
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+            }, true);
+
+            document.addEventListener('focusin', function (e) {
+                var reentryFromChrome = awaitingReentry || isExplicitlyOutsideDocument(e.relatedTarget);
+                if (!reentryFromChrome) {
+                    return;
+                }
+                if (isSkipLinkElement(e.target)) {
+                    clearGuard();
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+                clearGuard();
+            }, true);
+        })();
+    </script>
+    <form name="mainForm" method="post" action="/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park" id="mainForm">
+<input type="hidden" name="ctl04_seamless_script_manager_TSM" id="ctl04_seamless_script_manager_TSM" value="" />
+<input type="hidden" name="__SEAMLESSVIEWSTATE" id="__SEAMLESSVIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl04_seamless_script_manager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-GB%3add3ac3d5-1e29-4112-8fed-529caffa8f24%3aea597d4b%3bOpenCities.CustomControls%3aen-GB%3a8875e443-f2ef-457b-94fb-857d92f72782%3a8e1d32bf" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Dgt4HF_ft_aJ1oNhpkWrMiNDmBLKt_DsvWnSAz2w6tEELqoI6U0la4w2SXOqY6aKSQopJdYQ7QqurDo6luOWtmOtc0ilepv84Pn5KcIhMMrgeTsEf5EuV8_Sa3cCDWfG--Hnf94oO4VdVbckSgJaVhayxbZ7XIfk_l5vwX8rf1j3PHHLVdsirYnSQi7H-FBaAoI8vrsBRaLWZaSMhQbjtYYKqDWglhIGGk6W571YqSk-uulGq2FPvDWIH4jcRJViiV9xArPU8giGtZPgZuzgazGDA9l8J7QQlNhfdKhxD-RT-xq7lTMNzZtN4P2818X2kcTOPsVXuC5sJXLwZ_95djU3-fBGudmoTPxL2612tOyiZZah_zDS4uE2zWSOvuEiX7jWqffsB-AvNOYbMeUCVMkDWwxm4SnM9P_FzJ7I9RNhaF2SxAANL2e2AV_KOoQt0" type="text/javascript"></script>
+    
+<script type="text/javascript">
+    try{
+        function SeamlessEndRequestHandler(sender, args) {
+            try {
+                var dataItems = args.get_dataItems();
+                if(dataItems.ctl04_seamless_script_manager)
+                    document.getElementById('__SEAMLESSVIEWSTATE').value = dataItems.ctl04_seamless_script_manager;
+            }
+            catch (e) { }
+        }
+
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(SeamlessEndRequestHandler);
+    }
+    catch (e) { }
+</script>
+
+    <div class="unsupported-browser-warning js-element"></div>
+    
+    <div hidden>
+        <span id="new-window-0">opens in new tab or window </span>
+    </div>
+    <div class="overlay-container"></div>
+    
+    <div class="background-container">
+        <div class="page-container">
+            <!-- OC Layout Element GROUP TEMPLATE -->
+            <!--groupTemplateStart--><header>
+            <div class="toolbar-outer-container">
+  <div class="toolbar-inner-container clearfix">
+    <div class="toolbar-item toolbar-quicklinks toolbar-display-dropdown">
+	<button type="button" aria-controls="toolbar-quicklinks-drop-down" aria-expanded="false" class="toolbar-button toolbar-button-quicklinks js-element"><span>Quick Links</span><i aria-hidden="true"></i></button>	
+	<div id="toolbar-quicklinks-drop-down" class="toolbar-drop-down toolbar-quicklinks-drop-down clearfix">
+		<ul>
+		  <li><a href="https://www.facebook.com/CityofMesa" class="oc-icon-b oc-i-facebook link-type-external link-hide-text" target="_blank"><span>Facebook</span></a></li><li><a href="http://www.instagram.com/cityofmesa" class="oc-icon-b oc-i-instagram link-type-external link-hide-text" target="_blank"><span>Instagram</span></a></li><li><a href="https://twitter.com/cityofmesa" class="oc-icon-b oc-i-twitter link-type-external link-hide-text" target="_blank"><span>X</span></a></li><li><a href="https://www.linkedin.com/company/22048/" class="oc-icon-b oc-i-linkedin link-type-external link-hide-text" target="_blank"><span>LinkedIn</span></a></li><li><a href="https://nextdoor.com/agency-detail/az/mesa/city-of-mesa/?i=hbnffynjtxhbmpxnsbtq" class="oc-icon-b oc-i-nextdoor link-type-external link-hide-text" target="_blank"><span>NextDoor</span></a></li>
+		</ul>
+	</div>
+</div><div class="toolbar-item toolbar-language notranslate toolbar-display-dropdown"><div class="no-js-element">
+		  <ul>
+		    <li id="toolbar-language-option-en-us-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English (US)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-es-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ar-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ar" class="lang-item lang-ar" data-translate-to="ar" lang="en">Arabic<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-zh-cn-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-zh-tw-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=zh-TW" class="lang-item lang-zh-tw" data-translate-to="zh-tw" lang="en">Chinese (Traditional)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ko-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ko" class="lang-item lang-ko" data-translate-to="ko" lang="en">Korean<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ro-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ro" class="lang-item lang-ro" data-translate-to="ro" lang="en">Romanian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ru-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-tl-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=tl" class="lang-item lang-tl" data-translate-to="tl" lang="en">Tagalog (Filipino)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-vi-noscript"><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+          </ul>
+		</div>
+	<button type="button" role="combobox" aria-controls="toolbar-language-drop-down" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="none" aria-labelledby="toolbar-language-label" class="toolbar-button toolbar-button-language js-element">  
+        <span class="toolbar-language-globe-icon" aria-hidden="true"></span>
+        <span id="toolbar-language-label" class="current-language">
+            Select a language to translate to
+		</span>
+		<i aria-hidden="true"></i>
+	</button>
+	<div id="toolbar-language-drop-down" role="listbox" aria-label="Available languages" class="toolbar-drop-down toolbar-language-drop-down js-element clearfix">
+		<ul role="group">
+		    <li role="presentation"><a id="toolbar-language-option-en-us" role="option" aria-selected="true" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English (US)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-es" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ar" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ar" class="lang-item lang-ar" data-translate-to="ar" lang="en">Arabic<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-zh-cn" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-zh-tw" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=zh-TW" class="lang-item lang-zh-tw" data-translate-to="zh-tw" lang="en">Chinese (Traditional)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ko" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ko" class="lang-item lang-ko" data-translate-to="ko" lang="en">Korean<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ro" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ro" class="lang-item lang-ro" data-translate-to="ro" lang="en">Romanian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ru" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-tl" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=tl" class="lang-item lang-tl" data-translate-to="tl" lang="en">Tagalog (Filipino)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-vi" role="option" aria-selected="false" href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+        </ul>
+	</div></div>
+  </div>
+</div>
+            <div class="header-outer-container clearfix">
+		    <div class="side-menu-btn js-element">
+		    <button type="button" aria-expanded="false" aria-controls="nav"><i aria-hidden="true"></i><span class="side-menu-btn-text">Menu</span></button>
+		    </div>
+ 	<div class="header-container header-layout-2  clearfix">
+			<div class="header-site-logo">
+				<a href="https://www.mesaaz.gov/Home" lang="en-US" aria-label="City of Mesa - Home - Logo">
+				</a>
+			</div>
+		    <div class="mobile-search-btn js-element">
+		        <button><i aria-hidden="true"></i><span class="mobile-search-btn-text"><span class="visuallyhidden">Open </span>Search</span></button>
+		    </div>			
+			<div class="header-search-control-container" id="header-search">
+				<div class="search-inner-container">
+					<div class="sc-search-panel">
+	<label for="ctl07_txtSearch" id="ctl07_lblSearch" class="sc-search-label">Search</label><input name="ctl07$txtSearch" type="text" id="ctl07_txtSearch" class="sc-search-text" placeholder="What can we help you find?" /><input type="submit" name="ctl07$btnSearch" value="Search" id="ctl07_btnSearch" class="sc-search-button" />
+</div>
+					<div role="status" id="predictiveResults"></div>
+				</div>
+			</div>
+	</div>
+</div>
+<div class="navigation-outer-container">
+	<div id="nav" role="navigation" class="navigation-container" data-menu-type="offscreen" data-offscreen-position="left" aria-label="primary">
+		<div class="grid">
+			<div class="col-xs-12">              
+                <ul class="sf-menu" id="sc-main-menu"><li class="nav-section-quarters-1 nav-active-path  first-item nav-item-seq-1">
+<a href="https://www.mesaaz.gov/Activities-Culture" class="nav-level-1 nav-has-children"  target="">
+	<i class="item-icon" aria-hidden="true"></i><span class="item-text">Activities & Culture</span>
+</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-1">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-1">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/America-250" class="nav-has-children"  target="">Mesa Celebrates America 250</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-1-nav-item-seq-1"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-1-nav-item-seq-1">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/America-250/America250-Neighborhood-Celebration"  target="">America250: Neighborhood Celebration</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/Arts-Culture" class="nav-has-children"  target="">Arts & Culture</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-1-nav-item-seq-2"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-1-nav-item-seq-2">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Arts-Culture/Arizona-Museum-of-Natural-History"  target="_blank">Arizona Museum of Natural History</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Arts-Culture/idea-Museum"  target="_blank">idea Museum</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Arts-Culture/Mesa-Arts-Center"  target="_self">Mesa Arts Center</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Arts-Culture/Public-Art-Program"  target="">Public Art Program</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/City-Calendar" class="nav-has-children"  target="">City Calendar</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-1-nav-item-seq-3"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-1-nav-item-seq-3">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/City-Calendar/Monthly-Childhood-Immunization-Clinic"  target="">Monthly Childhood Immunization Clinic</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/Dobson-Ranch-Golf-Course" class=""  target="_blank">Dobson Ranch Golf Course</a></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/Downtown-Mesa" class=""  target="_blank">Downtown Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/Mesa-Historical-Museum" class=""  target="_blank">Mesa Historical Museum</a></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/Mesa-Public-Library" class=""  target="_blank">Mesa Public Library</a></li><li class="nav-active-path "><a  href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities" class="nav-has-children"  target="">Parks, Recreation and Community Facilities</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-1-nav-item-seq-8"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-1-nav-item-seq-8">
+          
+            <li  class="nav-active-path "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities"  target="">Parks & Facilities</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Registration-Playbook-and-Discounts"  target="">Registration for Activities & Memberships</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Park-Rules"  target="">Park Rules</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities"  target="">Recreation Facilities</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Pools-and-Aquatics"  target="">Pools and Aquatics</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Adaptive-Recreation"  target="">Adaptive Recreation</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Athletics"  target="">Athletics</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Hobbies-Special-Interest"  target="">Hobbies & Special Interest</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Outdoor-Education-and-Programs"  target="">Outdoor Education and Programs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/School-Break-Camps"  target="">School Break Camps</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Inclusion-Services"  target="">Inclusion Services</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Volunteers-and-Internships"  target="">Volunteers and Internships</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Special-Events"  target="">Special Events</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Memorial-Honorary-Donations"  target="">Memorial & Honorary Donations</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Who-We-Are"  target="">Who We Are</a></li><li  class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/H.Y.P.E.-Teen-Programs"  target="">H.Y.P.E Teen Programs</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/Shop-Mesa" class=""  target="">Shop Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Activities-Culture/Visit-Mesa" class=""  target="_blank">Visit Mesa</a></li></ul></li>
+          
+            <li class="nav-section-quarters-1   nav-item-seq-2">
+<a href="https://www.mesaaz.gov/Business-Development" class="nav-level-1 nav-has-children"  target="">Business & Development</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-2">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-2">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Business-Development/ADA-for-Business" class=""  target="">ADA for Business</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Development-Services" class="nav-has-children"  target="">Development Services</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-2-nav-item-seq-2"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-2-nav-item-seq-2">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Development-Services/Planning"  target="">Planning</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Development-Services/Building-Permit-Plan-Review"  target="">Building Permit & Plan Review</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Development-Services/Development-Codes-Ordinances-Regulations"  target="">Development Codes, Ordinances, Regulations & Standards</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Development-Services/Construction-Inspections"  target="">Construction Inspections</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Development-Services/Small-Business-Assistance"  target="">Small Business Assistance</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Development-Services/Development-Services-Management"  target="">Development Services Management Team</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Development-Services/Preapproved-Housing-Design-Plan-Program"  target="">Preapproved Housing Design Plan Program</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Economic-Development" class=""  target="_blank">Economic Development</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Engineering" class="nav-has-children"  target="">Engineering</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-2-nav-item-seq-4"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-2-nav-item-seq-4">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Engineering/Architectural-Engineering-Design-Opportunities"  target="">Architectural / Engineering Design Opportunities</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Engineering/Construction-Bid-Opportunities-and-Results"  target="">Construction Bid Opportunities and Results</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Engineering/Construction-Manager-at-Risk-Job-Order-Contracting-Opportunities"  target="">Construction Manager at Risk & Job Order Contracting Opportunities</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Engineering/Design-Build-Opportunities"  target="">Design-Build Opportunities</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Engineering/Engineering-Contracts"  target="">Engineering Contracts</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Engineering/JOC-Notifications"  target="">Job Order Contract Notifications</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Engineering/Mesa-Design-Standards"  target="">Mesa Design Standards</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Falcon-Field-Airport" class=""  target="_blank">Falcon Field Airport</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Film-Mesa" class=""  target="">Film Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Licensing" class="nav-has-children"  target="">Licensing</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-2-nav-item-seq-7"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-2-nav-item-seq-7">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Licensing/Liquor-License"  target="">Liquor License</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Licensing/Mesa-General-Business-License"  target="">Mesa General Business License</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Licensing/Mobile-Food-Vendor-License"  target="">Mobile Food Vendor License</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Licensing/Short-Term-Rental-License"  target="">Short-Term Rental License</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Licensing/Specialty-Business-License"  target="">Specialty Business License</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Permits-Licenses" class=""  target="">Permits & Licenses</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Procurement-Services" class="nav-has-children"  target="">Procurement Services</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-2-nav-item-seq-9"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-2-nav-item-seq-9">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Procurement-Services/How-to-Do-Business-with-Mesa"  target="">How to Do Business with Mesa</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Procurement-Services/Vendor-Self-Service"  target="_blank">Vendor Self Service</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Procurement-Services/Bid-Opportunities"  target="_blank">Bid Opportunities</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Procurement-Services/Contract-Search"  target="_blank">Contract Search</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Procurement-Services/Other-Procurement-Opportunities"  target="">Other Procurement Opportunities</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Real-Estate-Services" class=""  target="">Real Estate Services</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Right-of-Way-Management-Group" class="nav-has-children"  target="">Right of Way Management Group</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-2-nav-item-seq-11"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-2-nav-item-seq-11">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Right-of-Way-Management-Group/Local-Franchising-Authority"  target="">Local Franchising Authority</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Right-of-Way-Management-Group/Small-Wireless-Facility-Installations"  target="">Small Wireless Facility Installations in Right of Way</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Special-Event-License" class=""  target="">Special Event License</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Start-or-Grow-Your-Business" class=""  target="_blank">Start or Grow Your Business</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Temporary-Traffic-Control-Permits" class=""  target="">Temporary Traffic Control Permits</a></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Transaction-Privilege-TPT-Tax" class="nav-has-children"  target="">Transaction Privilege (TPT) Tax</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-2-nav-item-seq-15"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-2-nav-item-seq-15">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Transaction-Privilege-TPT-Tax/Business-Codes"  target="">Business Codes</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Transaction-Privilege-TPT-Tax/TPT-Taxable-Activities-Details"  target="">TPT Taxable Activities Details</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Transaction-Privilege-TPT-Tax/Transient-Lodging-Tax"  target="">Transient Lodging Tax</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Business-Development/Urban-Transformation" class="nav-has-children"  target="">Urban Transformation</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-2-nav-item-seq-16"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-2-nav-item-seq-16">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Urban-Transformation/Downtown-Incentives"  target="">Downtown Incentives</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Urban-Transformation/Transformation-Projects"  target="">Transformation Projects</a></li><li  class=" "><a href="https://www.mesaaz.gov/Business-Development/Urban-Transformation/Redevelopment"  target="">Redevelopment, Adaptive Reuse & Infill</a></li></ul></li></ul></li>
+          
+            <li class="nav-section-quarters-1   nav-item-seq-3">
+<a href="https://www.mesaaz.gov/Careers-Benefits" class="nav-level-1 nav-has-children"  target="">Careers & Benefits</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-3">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-3">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Careers-Benefits/City-Job-Opportunities" class="nav-has-children"  target="_blank">City Job Opportunities</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-3-nav-item-seq-1"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-3-nav-item-seq-1">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/City-Job-Opportunities/Important-Application-Information"  target="">Important Application Information</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/City-Job-Opportunities/Employment-Opportunities-with-Partner-Agencies"  target="">Employment Opportunities with Partner Agencies</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits" class="nav-has-children"  target="">Employee Benefits</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-3-nav-item-seq-2"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-3-nav-item-seq-2">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/Active"  target="">Active</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/Retiree"  target="">Retiree</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/New-Employee"  target="">New Employee</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/Health-Wellness-Programs"  target="">Health & Wellness Programs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/Legal-ID-Shield"  target="_blank">Legal / ID Shield</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/United-Pet-Care"  target="">United Pet Care</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/Eligibility"  target="">Eligibility</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/Qualifying-EventSpecial-Enrollment"  target="">Qualifying Event/Special Enrollment</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/ACA-IRS-Form-1095"  target="">ACA / IRS Form 1095</a></li><li  class=" "><a href="https://www.mesaaz.gov/Careers-Benefits/Employee-Benefits/Retirement-Programs"  target="">Retirement Programs</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Careers-Benefits/Human-Resources" class=""  target="">Human Resources</a></li><li class=" "><a  href="https://www.mesaaz.gov/Careers-Benefits/Job-Descriptions-Pay-Plans" class=""  target="_blank">Job Descriptions & Pay Plans</a></li><li class=" "><a  href="https://www.mesaaz.gov/Careers-Benefits/Management-Analyst-Program" class=""  target="">Management Analyst Program</a></li><li class=" "><a  href="https://www.mesaaz.gov/Careers-Benefits/Workers-Compensation-Provider-Information" class=""  target="">Workers' Compensation Provider Information</a></li></ul></li>
+          
+            <li class="nav-section-quarters-2   nav-item-seq-4">
+<a href="https://www.mesaaz.gov/Workforce-Education-Development" class="nav-level-1 nav-has-children"  target="">Workforce & Education Development</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-4">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-4">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/Mesa-College-Promise" class=""  target="">Mesa College Promise</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/Mesa-Family-Resource-Center" class=""  target="">Mesa Family Resource Center</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/City-Job-Opportunities" class=""  target="_blank">City Job Opportunities</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/Job-Connect-Mesa" class=""  target="_blank">Job Connect Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/Workforce-Center-Mesa" class=""  target="">Workforce Center @ Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/AARP-Experience-Corp-Mesa" class=""  target="">AARP Foundation Experience Corp Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/Read-On-Mesa" class=""  target="">Read On Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/Mesa-K-Ready" class=""  target="_self">Mesa K-Ready and Beyond</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/FAFSA-Resources" class=""  target="">FAFSA Resources</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/GED-Classes" class=""  target="_blank">GED Classes</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/Business-Education-Partnership-Opportunities" class=""  target="">Business Education Partnership Opportunities</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/ElevateMesa" class=""  target="">Elevate Mesa: Learning. Leading. Working</a></li><li class=" "><a  href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship" class="nav-has-children"  target="">Mesa Internship Opportunities</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-4-nav-item-seq-13"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-4-nav-item-seq-13">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/AZMNHIntern"  target="">Arizona Museum of Natural History Internships</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/AttorneyIntern"  target="">City Attorney's Office Internship Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/DevSvcsIntern"  target="">Development Services Internship Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/EngineeringIntern"  target="">Engineering Student Internship Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/EnvironIntern"  target="">Environmental and Sustainability Division Internship Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/MFRCIntern"  target="">Mesa Family Resource Center Internship</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/MFMDIntern"  target="">Mesa Fire and Medical Department Internship Programs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/MPSSForensicIntern"  target="">Mesa Public Safety Support Forensic Internships</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/ParksIntern"  target="">Parks, Recreation & Community Facilities Internship Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Workforce-Education-Development/COMInternship/PIOIntern"  target="">Public Information & Communications Internships</a></li></ul></li></ul></li>
+          
+            <li class="nav-section-quarters-2   nav-item-seq-5">
+<a href="https://www.mesaaz.gov/Environment-Sustainability" class="nav-level-1 nav-has-children"  target="">Environment & Sustainability</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-5">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-5">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Environment-Sustainability/Environmental" class="nav-has-children"  target="">Environmental Programs</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-5-nav-item-seq-1"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-5-nav-item-seq-1">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Environmental/Air-Quality"  target="">Air Quality</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Environmental/DrainBackwash-Pool"  target="">Drain or Backwash Your Pool or Spa</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Environmental/Environmental-Requirements-for-Construction"  target="">Environmental Requirements for Construction</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Environmental/Stormwater"  target="">Stormwater</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Environment-Sustainability/Living-Green" class="nav-has-children"  target="">Living Green</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-5-nav-item-seq-2"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-5-nav-item-seq-2">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Living-Green/Mesa-Youth-Climate-Action-Fund"  target="">Mesa Youth Climate Action Fund</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Living-Green/Sustainability-Savings-Tips"  target="">Sustainability Savings Tips</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Environment-Sustainability/MCRP" class=""  target="">Coming Soon: Mesa Conservation and Resilience Plan</a></li><li class=" "><a  href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation" class="nav-has-children"  target="">Water Conservation</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-5-nav-item-seq-4"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-5-nav-item-seq-4">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Convert-to-Xeriscape"  target="">Top 10 Reasons to Convert to Xeriscape</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Order-Conservation-Publications"  target="">Order Conservation Publications</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Residential-Grass-to-Xeriscape-Program"  target="">Residential Grass-to-Xeriscape and Tree Bonus Incentive Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Save-Water-Indoors-and-Out"  target="">Save Water Indoors and Out</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Water-Management-for-Commercial-Customers"  target="">Water Management for Commercial Customers</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Water-Management-for-HOAs"  target="">Water Management for HOAs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Your-Water-Your-Impact"  target="">Your Water. Your Impact.</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/MesaWaterfluence"  target="">Waterfluence for Mesa HOAs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/WaterSense"  target="_self">Look for WaterSense</a></li><li  class=" "><a href="https://www.mesaaz.gov/Environment-Sustainability/Water-Conservation/Fix-Leaks"  target="">Find and Fix Leaks</a></li></ul></li></ul></li>
+          
+            <li class="nav-section-quarters-2   nav-item-seq-6">
+<a href="https://www.mesaaz.gov/Government" class="nav-level-1 nav-has-children"  target="">Government</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-6">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-6">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Government/All-America-City" class=""  target="">All-America City Award</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Mayor-City-Council" class="nav-has-children"  target="">Mayor & City Council</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-2"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-2">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Mayor-City-Council/Mayor-Mark-Freeman"  target="">Mayor Mark Freeman</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Mayor-City-Council/Councilmember-Rich-Adams"  target="">Councilmember Rich Adams</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Mayor-City-Council/Councilmember-Dorean-Taylor"  target="">Councilmember Dorean Taylor</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Mayor-City-Council/Councilmember-Francisco-Heredia"  target="">Councilmember Francisco Heredia</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Mayor-City-Council/Councilmember-Jenn-Duff"  target="">Councilmember Jenn Duff</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Mayor-City-Council/Councilmember-Alicia-Goforth"  target="">Councilmember Alicia Goforth</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Mayor-City-Council/Vice-Mayor-Scott-Somers"  target="">Vice Mayor Scott Somers</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/City-Manager" class=""  target="">City Manager Scott Butler</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/About-Mesa" class="nav-has-children"  target="">About Mesa</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-4"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-4">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/About-Mesa/Mesa-History"  target="">A Brief History of Mesa</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees" class="nav-has-children"  target="">Advisory Boards & Committees</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-5"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-5">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Board-of-Adjustment"  target="">Board of Adjustment</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Building-Board-of-Appeals"  target="">Building Board of Appeals</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Design-Review-Board"  target="">Design Review Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Development-Advisory-Forum"  target="">Development Advisory Forum</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Economic-Development-Advisory-Board"  target="">Economic Development Advisory Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Education-Workforce-Development-Roundtable"  target="">Education & Workforce Development Roundtable</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Historic-Preservation-Board"  target="">Historic Preservation Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Housing-Community-Development-Advisory-Board"  target="">Housing & Community Development Advisory Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Human-Relations-Advisory-Board"  target="">Human Relations Advisory Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Judicial-Advisory-Board"  target="">Judicial Advisory Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Mesa-Local-Fire-and-Police-Pension-Boards"  target="">Mesa Local Fire and Police Pension Boards</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Merit-System-Board"  target="">Merit System Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Museum-and-Cultural-Advisory-Board"  target="">Museum and Cultural Advisory Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Parks-Recreation-Advisory-Board"  target="">Parks & Recreation Advisory Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Personnel-Appeals-Board"  target="">Personnel Appeals Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Planning-Zoning-Board"  target="">Planning & Zoning Board</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Planning-Zoning-Hearings"  target="">Planning / Zoning Hearings</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Self-Insurance-Board-of-Trustees"  target="">Self-Insurance Board of Trustees</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Advisory-Boards-Committees/Transportation-Advisory-Board"  target="">Transportation Advisory Board</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Bonds-Obligations" class=""  target="">Bonds & Obligations</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Capital-Improvement-Program" class=""  target="">Capital Improvement Program</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/City-Attorney" class="nav-has-children"  target="">City Attorney</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-8"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-8">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/City-Attorney/Civil-Office"  target="">Civil Office</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Attorney/Community-Involvement"  target="">Community Involvement</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Attorney/Legal-Resources"  target="">Legal Resources</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/City-Auditor" class="nav-has-children"  target="">City Auditor</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-9"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-9">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/City-Auditor/Audits"  target="">Audits</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Auditor/Audit-Plan"  target="">Audit Plan</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Auditor/Fraud-Ethics-Hotline"  target="">Fraud & Ethics Hotline</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/City-Clerk" class="nav-has-children"  target="">City Clerk</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-10"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-10">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/City-Clerk/Elections"  target="">Elections</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Clerk/Campaign-Finance-Reporting"  target="">Campaign Finance & Reporting</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Clerk/City-Charter"  target="_blank">City Charter</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Clerk/City-Code"  target="_blank">City Code</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Clerk/Introduced-Ordinances"  target="_blank">Introduced Ordinances</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Clerk/Ordinances-Resolutions"  target="_blank">Ordinances & Resolutions</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Clerk/Public-Meeting-Notices"  target="_blank">Public Meeting Notices</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/City-Council-Meetings" class="nav-has-children"  target="">City Council Meetings</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-11"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-11">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/City-Council-Meetings/City-Council-Meeting-Comment-Card"  target="_blank">City Council Meeting Comment Card</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/City-Projects" class="nav-has-children"  target="">City Projects & Initiatives</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-12"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-12">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/2025-2029-HUD-Consolidated-Plan"  target="">2025-2029 HUD Consolidated Plan</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Aripine-Park-Playground-Project"  target="">Aripine Park Playground Project - CP1182CAP</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Broadway-Road-Improvements"  target="">Broadway Road Improvements - CP0666CAP</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Countryside-Dog-Park-Project"  target="">Countryside Dog Park - CP0933</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Eastern-Canal-Shared-Use-Path"  target="">Eastern Canal Shared Use Path - CP0673 / CP0730CAP / CP1060</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Elliot-Road-Roadway-Improvements"  target="">Elliot Road Roadway Improvements - CP0982</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Ellsworth-Road-Project"  target="">Ellsworth Road Improvements - CP0969 / CP1015 / CP0620NP17</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Food-Waste-to-Energy"  target="">Food Waste to Energy Initiative</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Lehi-Crossing-Shared-Use-Path"  target="">Lehi Crossing Shared Use Path - CP0672</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/McKellips-Relief-Sewer-Project"  target="">McKellips Relief Sewer Project No. CP0619NS12</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Ray-Rd.-Connection-to-Ellsworth"  target="">Ray Rd. Connection to Ellsworth - CP0983CAP</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Red-Mountain-Shared-Use-Path"  target="">Red Mountain Shared Use Path - CP0733</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Signal-Butte-Park-Project"  target="">Signal Butte Park Phase II - CP0707</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Sirrine-House-Project"  target="">Sirrine House Project - CP1171SIRR</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Smart-City"  target="">Smart City</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Smart-Meters"  target="">Smart Meters</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/University-Stapley-Intersection"  target="">University & Stapley Intersection - C05041CAP</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Val-Vista-Drive"  target="">Val Vista Drive - CP0062</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Whitman-Park-Playground-Project-LF0596CAP"  target="">Whitman Park Playground Project - LF0596CAP</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/The-Courts-at-Eastmark"  target="">The Courts at Eastmark</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Brady-Dog-Park-Project"  target="">Brady Dog Park - CP1304BRDY</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Augusta-Ranch-Park-Playground-Project-CP1175AURN"  target="">Augusta Ranch Park Playground Project - CP1175AURN</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Sheepherders-Park-Playground-Project-CP1175SHEP"  target="">Sheepherders Park Playground Project - CP1175SHEP</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Fire-Station-224-C10128"  target="">Fire Station 224 - C10128</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Fire-Station-205-Rebuild-C10120"  target="">Fire Station 205 Rebuild - C10120</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Carriage-Lane-Park-Project-CP1175CALN"  target="">Carriage Lane Park Project - CP1175CALN</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Heritage-Park-Playground-Project-CP1175HERT"  target="">Heritage Park Playground Project - CP1175HERT</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Mesa-Arts-Center-Campus-Updates"  target="_blank">Mesa Arts Center Campus Updates</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Woodglen-Park-Playground-Project-CP1175WOOD"  target="">Woodglen Park Playground Project - CP1175WOOD</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/Meadowgreen-Park-Playground-Project-CP1175MEGR"  target="">Meadowgreen Park Playground Project - CP1175MEGR</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/City-Projects/East-Mesa-Interconnect-Pipe-EMIP-CP1050EM01"  target="">East Mesa Interconnect Pipe (EMIP) CP1050EM01</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Innovation-Efficiency" class=""  target="">Innovation & Efficiency</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Together-Mesa" class="nav-has-children"  target="">Together Mesa</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-14"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-14">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Together-Mesa/Accessibility"  target="">Accessibility</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Together-Mesa/Alston-House"  target="">Alston House</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Together-Mesa/Civil-Rights-Protections"  target="">Civil Rights Protections</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Together-Mesa/Land-Acknowledgment"  target="">Land Acknowledgment</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Together-Mesa/Non-Discrimination-Ordinance"  target="">Non-Discrimination Ordinance</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Together-Mesa/Programs-Activities"  target="">Together Mesa Programs & Activities</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Finance" class="nav-has-children"  target="">Finance</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-15"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-15">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Finance/Accounting"  target="">Accounting</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Finance/Collections"  target="">Collections</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Finance/Financial-Transparency-Data"  target="_blank">Financial Transparency Data</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Finance/Financial-Policies"  target="">Financial Policies</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Government-Property-Lease-Excise-Tax" class=""  target="_blank">Government Property Lease Excise Tax</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Grants" class="nav-has-children"  target="">Grants</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-17"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-17">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Grants/Community-Development-Grants"  target="">Community Development Grants</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Grants/Opioid-Grant"  target="">Opioid Settlement Community Grant Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Grants/Tribal-Gaming-Prop-202-Funding"  target="">Tribal Gaming - Prop 202 Funding</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Innovation-Technology" class=""  target="">Innovation & Technology</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Management-Budget" class="nav-has-children"  target="">Office of Management & Budget</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-19"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-19">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Management-Budget/Budget"  target="">Budget</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Management-Budget/Citywide-Fees-Charges"  target="">Citywide Fees & Charges</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Management-Budget/Financial-Status-Reports"  target="">Financial Status Reports</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Management-Budget/Presentations-Reports"  target="">Presentations & Reports</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Management-Budget/Notice-of-Proposed-Taxes-or-Fees"  target="">Notice of Proposed Taxes or Fees</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Management-Budget/Utility-Rates"  target="">Utility Rates</a></li><li  class=" "><a href="https://www.mesaaz.gov/Government/Management-Budget/Valley-Cities-Affordability-and-Homeowners-Comparisons"  target="">Valley Cities Affordability and Homeowner's Comparisons</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Maps" class="nav-has-children"  target="_blank">Maps</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-20"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-20">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Maps/Request-a-Quarter-Section-Map"  target="">Request a Quarter Section Map</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Mesa-General-Plan" class=""  target="_self">Mesa General Plan</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Public-Information-Communication" class=""  target="">Public Information & Communication</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Public-Notices" class=""  target="">Public Notices</a></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Public-Records-Requests" class="nav-has-children"  target="">Public Records Requests</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-6-nav-item-seq-24"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-6-nav-item-seq-24">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Government/Public-Records-Requests/Environmental-Site-Assessment-Records"  target="">Environmental Site Assessment Records</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Government/Surplus-Property-Sales" class=""  target="">Surplus Property Sales</a></li></ul></li>
+          
+            <li class="nav-section-quarters-3   nav-item-seq-7">
+<a href="https://www.mesaaz.gov/Public-Safety" class="nav-level-1 nav-has-children"  target="">Public Safety</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-7">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-7">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Public-Safety/City-Prosecutor" class="nav-has-children"  target="">City Prosecutor</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-7-nav-item-seq-1"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-7-nav-item-seq-1">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/City-Prosecutor/City-Prosecutor-Victim-Services"  target="">City Prosecutor Victim Services</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/City-Prosecutor/Domestic-Violence-Awareness"  target="">Domestic Violence Awareness</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/City-Prosecutor/DUI-Awareness"  target="">DUI Awareness</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Public-Safety/Court" class="nav-has-children"  target="">Mesa Municipal Court</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-7-nav-item-seq-2"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-7-nav-item-seq-2">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Online-Case-Access-Payments"  target="_blank">Online Court Case Access & Payments</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Tickets"  target="">Tickets</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Court-Forms"  target="">Court Forms</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Protective-Orders"  target="">Protective Orders</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Warrants"  target="">Warrants</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Past-Due-Delinquent-Case-Information"  target="">Past Due & Delinquent Case Information</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Hearing-Information"  target="">Hearing Information</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Jury-Information"  target="">Jury Information</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Jurisdiction"  target="">Jurisdiction</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Judges"  target="">Judges</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Community-Court"  target="">Community Court</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Court/Veterans-Treatment-Court"  target="">Veterans Treatment Court</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Public-Safety/Emergencies" class="nav-has-children"  target="">Emergencies</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-7-nav-item-seq-3"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-7-nav-item-seq-3">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Emergencies/Sandbags"  target="">Sandbags</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Emergencies/Severe-Weather-Preparation"  target="">Severe Weather Preparation</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Emergencies/Disaster-Preparedness"  target="">Disaster Preparedness</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical" class="nav-has-children"  target="">Mesa Fire & Medical Department</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-7-nav-item-seq-4"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-7-nav-item-seq-4">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/About-Us"  target="">About Us</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Emergency-Response-Services"  target="">Emergency Response</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Fire-Prevention"  target="">Fire Prevention</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Community-Outreach"  target="">Community Outreach</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Job-Opportunities"  target="">Fire & Medical Job Opportunities</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Fire-FAQs"  target="">Fire FAQs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Records-Reports"  target="">Records & Reports</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Public-Safety/Mesa-Police" class="nav-has-children"  target="">Mesa Police Department</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-7-nav-item-seq-5"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-7-nav-item-seq-5">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Police/Services"  target="">Police Services</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Police/Community"  target="">Police in the Community</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Police/Crime-Safety"  target="">Crime & Safety</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/Mesa-Police/About-Mesa-Police"  target="">About Mesa Police</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Public-Safety/MPSS" class="nav-has-children"  target="">Mesa Public Safety Support</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-7-nav-item-seq-6"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-7-nav-item-seq-6">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/MPSS/CallServices911"  target="">Call Services / 9-1-1</a></li><li  class=" "><a href="https://www.mesaaz.gov/Public-Safety/MPSS/ForensicServices"  target="">Forensic Services</a></li></ul></li></ul></li>
+          
+            <li class="nav-section-quarters-3   nav-item-seq-8">
+<a href="https://www.mesaaz.gov/Resident-Resources" class="nav-level-1 nav-has-children"  target="">Resident Resources</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-8">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-8">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/A-Tu-Servicio-en-Español" class=""  target="">A Tu Servicio en Español</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Alarm-Permits" class=""  target="">Alarm Permits</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Alleys-Gates" class=""  target="">Alleys & Gates</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Animal-Control" class="nav-has-children"  target="">Animal Control</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-4"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-4">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Animal-Control/Animal-Noise-Disturbance-Complaint"  target="">Animal Noise Disturbance Complaint</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Animal-Control/Cat-Resources"  target="">Cat Resources</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Animal-Control/Fowl-Rodents-Livestock"  target="">Fowl, Rodents & Livestock</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Block-Party-Guidelines" class=""  target="">Block Party Guidelines</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Code-Compliance" class="nav-has-children"  target="">Code Compliance</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-6"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-6">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Code-Compliance/Report-a-Code-Violation"  target="">Report a Code Violation</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Code-Compliance/Check-Status-of-a-Complaint"  target="_blank">Check Status of a Complaint</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Code-Compliance/Most-Common-Violations"  target="">Most Common Violations</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Code-Compliance/Civil-Citations"  target="">Civil Citations</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Community-Support-Programs" class=""  target="">Community Resources and Support Programs</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Community-Residences" class=""  target="">Community Residences</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Heat-Safety" class="nav-has-children"  target="">Heat Safety</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-9"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-9">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Heat-Safety/Hydration-Donation"  target="">Hydration Donation</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/EBikes" class=""  target="">E-Bikes, E-Scooters & Motorized Devices</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/High-Speed-Internet-in-Mesa" class=""  target="">High Speed Internet in Mesa</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Housing" class="nav-has-children"  target="">Housing</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-12"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-12">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Housing/Human-Services"  target="">Human Services</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Housing/Application-Wait-List"  target="">Application & Wait List - Section 8 Housing Choice Voucher</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Housing/Current-Participants"  target="">Current Participants - Section 8 Housing Choice Voucher</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Housing/Landlords"  target="">Landlords -Section 8 Housing Choice Voucher</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Housing/Portability"  target="">Portability - Section 8 Housing Choice Voucher</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Housing/Project-Based-Voucher-Program"  target="">Project-Based Voucher Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Housing/Emergency-Rehab-Program"  target="">Emergency Rehabilitation Program</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Mesa-Cemetery" class=""  target="">Mesa Cemetery</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Neighborhoods-Community-Engagement" class="nav-has-children"  target="">Neighborhoods & Community Engagement</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-14"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-14">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Neighborhoods-Community-Engagement/Residents-Guide-to-Mesa"  target="">Resident's Guide to Mesa</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Neighborhoods-Community-Engagement/Neighborhood-Registration"  target="">Neighborhood Registration</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Neighborhoods-Community-Engagement/Mesa-Little-Libraries"  target="">Mesa Little Libraries</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Neighborhoods-Community-Engagement/Cleanup-Resources"  target="">Cleanup Resources</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Neighborhoods-Community-Engagement/Neighbors-Trees-Shared-Walls"  target="">Neighbor's Trees & Shared Walls</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Neighborhoods-Community-Engagement/Neighborhood-Contacts-Records-Request"  target="_blank">Neighborhood Contacts Records Request</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Pests" class="nav-has-children"  target="">Pests</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-15"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-15">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Pests/Bees"  target="">Bees</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Pests/Mosquitoes"  target="">Mosquitoes</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Pests/Roof-Rats"  target="">Roof Rats</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Pests/Manhole-Roach-Control"  target="_self">Manhole Roach Control</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Property-Tax" class="nav-has-children"  target="">Property Tax</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-16"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-16">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Property-Tax/Community-Facility-Districts"  target="">Community Facility Districts</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation" class="nav-has-children"  target="">Streets & Transportation</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-8-nav-item-seq-17"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-8-nav-item-seq-17">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Bike-Pedestrian-Program"  target="_self">Bike & Pedestrian Program</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Report-Graffiti"  target="">Report Graffiti</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Landscape-Storm-Drain-Maintenance"  target="">Landscape &  Storm Drain Maintenance</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Mesa-Safer-Streets"  target="">Mesa Safer Streets</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Street-Maintenance"  target="">Street Maintenance</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Street-Sweeping"  target="">Street Sweeping</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Street-Planning"  target="">Street Planning</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Streetlights-Signs-Striping"  target="">Streetlights, Signs & Striping</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Traffic-Restrictions"  target="_blank">Traffic Restrictions</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Traffic-Signal-Operation-Maintenance"  target="">Traffic Signal Operation & Maintenance</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/Request-a-Traffic-Control-Study"  target="">Request a Traffic Control Study</a></li><li  class=" "><a href="https://www.mesaaz.gov/Resident-Resources/Streets-Transportation/MesaMoves"  target="">MesaMoves</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Public-Transit" class=""  target="">Public Transit</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Veterans-Resources" class=""  target="">Mesa Vets Connect - Veterans Resources</a></li><li class=" "><a  href="https://www.mesaaz.gov/Resident-Resources/Citywide-Volunteer-Program" class=""  target="">Citywide Volunteer Program</a></li></ul></li>
+          
+            <li class="nav-section-quarters-3   nav-item-seq-9">
+<a href="https://www.mesaaz.gov/Utilities" class="nav-level-1 nav-has-children"  target="">Utilities</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-9">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-9">
+
+          
+            <li class=" "><a  href="https://www.mesaaz.gov/Utilities/Pay-Bill-or-Access-Account" class=""  target="_blank">Pay Bill or Access Account</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/StartCancel-Residential-Service" class=""  target="">Start/Cancel Residential Service</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/StartCancel-Commercial-Service" class=""  target="">Start/Cancel Commercial Service</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Report-a-Utility-Emergency" class=""  target="">Report a Utility Emergency</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Reading-your-Utility-Meter" class=""  target="">Reading your Utility Meter & Identifying Leaks</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Payment-Extension" class=""  target="">Utility Bill Payment Extension</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Power-Outage" class=""  target="">Power Outage</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Report-Utility-Theft" class=""  target="_blank">Report Utility Theft</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Savings-Rebates" class=""  target="">Savings & Rebates</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Budget-Payment-Plan" class=""  target="">Budget Payment Plan</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Limited-Income-Senior-Rate-Program" class=""  target="">Limited Income Senior Rate Program</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Service-Line-Warranty-Program" class=""  target="">Service Line Warranty Program</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Ways-to-Pay-Your-Bill" class=""  target="">Ways to Pay Your Bill</a></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Energy" class="nav-has-children"  target="">Energy</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-9-nav-item-seq-14"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-9-nav-item-seq-14">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Utilities/Energy/Electric"  target="">Electric</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Energy/Natural-Gas"  target="">Natural Gas</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Energy/Energy-Factors"  target="">Energy Factors</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Energy/Energy-Information-for-Gas-Electric-Construction"  target="">Energy Information for Gas & Electric Construction</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Energy/Energy-Safety-Education"  target="">Energy Safety & Education</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Energy/Energy-Supply-Conservation"  target="">Energy Supply & Conservation</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Energy/Mesa-Electric-and-Gas-Service-Area-Maps"  target="">Electric and Gas Service Area Maps</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Trash-Recycling" class="nav-has-children"  target="">Trash & Recycling</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-9-nav-item-seq-15"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-9-nav-item-seq-15">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Appliance-Recycling"  target="">Appliance Recycling</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Bulk-Item-Pick-up"  target="">Bulk Item Pick-up</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Business-Programs"  target="">Business Trash & Recycling Programs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Resident-Programs"  target="">Resident Trash & Recycling Programs</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Barrel-Collection-Schedule"  target="_blank">Barrel Collection Schedule</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Barrel-Repair-or-Replacement"  target="_blank">Barrel Repair or Replacement</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Missed-Barrel"  target="">Missed Barrel</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Mesa-Recycles"  target="">Mesa Recycles</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Roll-off-Container-Rentals"  target="">Roll-off Container Rentals</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Private-Waste-Hauler-Permit"  target="">Private Waste Hauler Permit</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Trash-Recycling/Trash-Recycling-Education"  target="">Trash & Recycling Education</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/Water-Wastewater" class="nav-has-children"  target="">Water & Wastewater</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-9-nav-item-seq-16"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-9-nav-item-seq-16">
+          
+            <li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/Mesas-Water-Reliability-and-Preparedness"  target="">Mesa's Water Reliability and Preparedness</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/Backflow-Prevention"  target="">Backflow Prevention</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/Irrigation-Service"  target="">Irrigation Service</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/IndustrialPretreat"  target="_self">Industrial Pretreatment</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/Wastewater"  target="">Wastewater</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/Water-Quality"  target="">Water Quality</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/Work-in-Water"  target="">Work in Water</a></li><li  class=" "><a href="https://www.mesaaz.gov/Utilities/Water-Wastewater/WWCapacityFee"  target="">Water and Wastewater Capacity Fee</a></li></ul></li><li class=" "><a  href="https://www.mesaaz.gov/Utilities/PaperBillingFee" class=""  target="">Paper Utility Bill Mailing Fee</a></li></ul></li>
+          
+            </ul>
+			</div>
+		</div>
+	</div>
+</div>
+            </header>
+            <div class="content-outer-container">
+                <div id="main" role="main" class="main-outer-container clearfix">
+                        
+                        <div class="content-main-container">
+                            <div class="grid">
+					            <div class="col-xs-12">
+						            <nav id="breadcrumbs-container" aria-label="You Are Here :">
+							            <span role="list">
+<span role="listitem">
+	<a href="https://www.mesaaz.gov/Home"  lang="en-US">Home</a>
+	<span class="nav-separator" aria-hidden="true" role="presentation">/</span>
+</span>
+          <span role="listitem"><a href="https://www.mesaaz.gov/Activities-Culture" >Activities & Culture</a><span class='nav-separator' aria-hidden="true" role="presentation">/</span></span><span role="listitem">
+	<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities" >
+		Parks, Recreation and Community Facilities
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities" >
+		Parks & Facilities
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span class="current-page" role="listitem" aria-current="page" >Kleinman Park</span>
+          
+          </span>
+						            </nav>
+					            </div>
+                      <div class='col-xs-12'>
+                                                <div class='featured-section-header-outer clearfix'><div class='featured-section-header-inner clearfix'><div class='featured-section-header-logo'><a href='https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities' class='featured-section-header-logo-link'><picture>
+  <source media="(min-width:992px)" srcset ="/files/ocwebsite/dd8de675-b162-422f-b88d-493832a0c10f/yp2p logo retool_v2018_white and color-02-02.png?w=100" >
+        <source media="(min-width:768px)" srcset ="/files/ocwebsite/dd8de675-b162-422f-b88d-493832a0c10f/yp2p logo retool_v2018_white and color-02-02.png?w=100" >
+        <source srcset="/files/ocwebsite/dd8de675-b162-422f-b88d-493832a0c10f/yp2p logo retool_v2018_white and color-02-02.png?w=100" >
+            <img src="/files/ocwebsite/dd8de675-b162-422f-b88d-493832a0c10f/yp2p logo retool_v2018_white and color-02-02.png?w=100" alt="" />
+        </picture><span class='featured-section-header-logo-text'>Parks, Recreation and Community Facilities</span></a></div><div class="section-menu-btn js-element" >
+		    <button><i aria-hidden="true"></i><span class="section-menu-btn-text" >Menu</span></button>
+		    </div></div></div><div class="section-nav-outer-container clearfix" ><div id="section-nav" role ="navigation" class="navigation-container" aria-label="secondary"><ul class="featured-section-menu" id="fs-menu"><li class="nav-active-path  nav-item-seq-1">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities" class="nav-level-1 nav-has-children"   target="">Parks & Facilities</a>
+<button class="fs-nav-subarrow"><i aria-hidden="true"></i><span class="visuallyhidden text">Sub-menu</span></button>
+<ul>
+          
+          <li class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Facility-Reservations" class="" >Facility Reservations</a></li><li class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Park-Open-Spaces-and-Basins" class="" >Park Open Spaces and Basins</a></li><li class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Trails" class="" >Trails</a></li></ul></li>
+          
+          <li class="  nav-item-seq-2">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Registration-Playbook-and-Discounts" class="nav-level-1 "   target="">Registration for Activities & Memberships</a>
+</li>
+          
+          <li class="  nav-item-seq-3">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Park-Rules" class="nav-level-1 "   target="">Park Rules</a>
+</li>
+          
+          <li class="  nav-item-seq-4">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities" class="nav-level-1 "   target="">Recreation Facilities</a>
+</li>
+          
+          <li class="  nav-item-seq-5">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Pools-and-Aquatics" class="nav-level-1 nav-has-children"   target="">Pools and Aquatics</a>
+<button class="fs-nav-subarrow"><i aria-hidden="true"></i><span class="visuallyhidden text">Sub-menu</span></button>
+<ul>
+          
+          <li class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Pools-and-Aquatics/Aquatics-Certification-and-Employment" class="" >Aquatics Certifications and Employment</a></li><li class=" "><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Pools-and-Aquatics/Junior-Lifeguarding" class="" >Junior Lifeguarding</a></li></ul></li>
+          
+          <li class="  nav-item-seq-6">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Adaptive-Recreation" class="nav-level-1 "   target="">Adaptive Recreation</a>
+</li>
+          
+          <li class="  nav-item-seq-7">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Athletics" class="nav-level-1 "   target="">Athletics</a>
+</li>
+          
+          <li class="  nav-item-seq-8">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Hobbies-Special-Interest" class="nav-level-1 "   target="">Hobbies & Special Interest</a>
+</li>
+          
+          <li class="  nav-item-seq-9">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Outdoor-Education-and-Programs" class="nav-level-1 "   target="">Outdoor Education and Programs</a>
+</li>
+          
+          <li class="  nav-item-seq-10">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/School-Break-Camps" class="nav-level-1 "   target="">School Break Camps</a>
+</li>
+          
+          <li class="  nav-item-seq-11">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Inclusion-Services" class="nav-level-1 "   target="">Inclusion Services</a>
+</li>
+          
+          <li class="  nav-item-seq-12">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Volunteers-and-Internships" class="nav-level-1 "   target="">Volunteers and Internships</a>
+</li>
+          
+          <li class="  nav-item-seq-13">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Special-Events" class="nav-level-1 "   target="">Special Events</a>
+</li>
+          
+          <li class="  nav-item-seq-14">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Memorial-Honorary-Donations" class="nav-level-1 "   target="">Memorial & Honorary Donations</a>
+</li>
+          
+          <li class="  nav-item-seq-15">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Who-We-Are" class="nav-level-1 "   target="">Who We Are</a>
+</li>
+          
+          <li class="  nav-item-seq-16">
+<a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/H.Y.P.E.-Teen-Programs" class="nav-level-1 "   target="">H.Y.P.E Teen Programs</a>
+</li>
+          
+          </ul></div></div> </div>
+					            <div class="col-xs-12">
+						            <div class="main-inner-container">
+							            <div id="main-content" class="main-container clearfix">
+							              
+                            <!-- OC Layout Element Conent Template -->
+							              <!--normalTemplateStart--><div class="grid obj-parks">
+	<div class="col-xs-12 col-m-8">
+		<h1 class='oc-page-title '>Kleinman Park</h1>
+		
+		
+       <picture>
+  <source media="(min-width: 992px)" srcset="/files/assets/public/v/1/activities-culture/prcf/parks/park-images/kleinman-park-04.jpg?dimension=pageimagefullwidth&w=1140">
+  <source media="(min-width: 768px)" srcset="/files/assets/public/v/1/activities-culture/prcf/parks/park-images/kleinman-park-04.jpg?dimension=pageimagefullwidth&w=992">
+  <source srcset="/files/assets/public/v/1/activities-culture/prcf/parks/park-images/kleinman-park-04.jpg?dimension=pageimagefullwidth&w=768">
+  <img class="main-page-image full-width" src="/files/assets/public/v/1/activities-culture/prcf/parks/park-images/kleinman-park-04.jpg?dimension=pageimagefullwidth&w=1140" alt="decorative" title="decorative"/>
+</picture> 
+		<h3>Additional Features</h3>
+<ul>
+<li>24.6 acres</li>
+<li>Four square court</li>
+<li><a title="decorative" href="/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/klienmanparkaerialmapnew060722.pdf" target="_blank" class="document ext-pdf"><i aria-hidden="true"></i>Kleinman Park Aerial Map<span class="file-info">(PDF,&nbsp;1MB)</span></a></li>
+<li><a title="decorative" href="/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/klienmanparkbasemapnew072722.pdf" target="_blank" class="document ext-pdf"><i aria-hidden="true"></i>Kleinman Park Base Map<span class="file-info">(PDF,&nbsp;426KB)</span></a></li>
+</ul>
+<p><span class="emphasis-box-1">The following areas at Kleinman Park are available for reserving. You can reserve Kleinman Park courts online by clicking Facility Reservations to the right OR by calling the Mesa Tennis &amp; Pickleball Center (MTPC) at 480-644-3874 at least 24 hours before your reservation date/time.</span></p>
+<h4><span style="font-size: 100%; font-weight: 600; color: inherit;" class="">Reservable Spaces:</span></h4>
+<ul>
+<li>Lighted Softball Fields</li>
+<li>Lighted Tennis Courts (3)</li>
+<li>Pickleball Courts (4)</li>
+<li>Lighted Sand Volleyball Courts (4)</li>
+<li>Tennis &amp; Pickleball Courts Map&nbsp;</li>
+</ul>
+
+
+		<div class="clearfix"></div>
+		<h2 class="sub-title">Location</h2><p>710 S. Extension Rd.,&nbsp;Mesa, AZ&nbsp;85210 &nbsp;<a href="https://maps.google.com?q=%20710%20S.%20Extension%20Rd.%20Mesa%2C%20AZ%2085210" target="_blank">View Map</a>
+      </p>
+		<div id="skip-map-container-top" class="skip-map-container rs_skip">
+    <a href='#map-bottom' class="visuallyhidden focusable skip-map-link" id="map-top">Skip to below map</a>
+</div>
+<div class="gmap rs_skip" data-params='{"zoom" : 14, "autoOpenInfoWindow" : false, "hideControls" : true, "autoBounds" : true, "centerPoint" : "33.3981563,-111.8482361"}'>
+    <div class="gmap-marker hidden">
+        <div class="gmap-latlong">
+          33.3981563,-111.8482361
+        </div>
+        <div class="gmap-address">
+          710 S. Extension Rd.&nbsp;,
+          Mesa, AZ&nbsp;85210
+        </div>
+        <div class="gmap-info">
+            
+            <p>
+          710 S. Extension Rd.&nbsp;,
+          Mesa, AZ&nbsp;85210</p>
+        </div>
+		<div class="gmap-title">
+	        Kleinman Park
+        </div>
+    </div>
+    <div class="map-canvas gmap-container">
+        <div class="gmap-target">
+           <img src="https://maps.google.com/maps/api/staticmap?center=710 S. Extension Rd.,Mesa, AZ,85210&amp;zoom=14&amp;size=340x202&amp;maptype=road&amp;markers=color:red|33.3981563,-111.8482361&amp;key=AIzaSyDLTcLtX5-tugOeanwIZoj641aaq6wg9Bg" alt="Google Map" />
+        </div>
+    </div>
+</div>
+<div id="skip-map-container-bottom" class="skip-map-container rs_skip">
+    <a href='#map-top' class="visuallyhidden focusable skip-map-link" id="map-bottom">Skip to above map</a>
+</div>
+		
+		<div class="categories-list-container"><span role="heading" aria-level="2">Tagged as:</span><ul class="categories-list clearfix">
+	<li><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities?dlv_OC CL Public Parks Reserves Listing=(dd_OC Park Categories=Park)">Park</a></li></ul></div>
+	</div>
+	<div class="col-xs-12 col-m-4">
+		
+		<div class="side-box park-snapshot">
+			<h2 class="side-box-title">
+				Facility Snapshot
+			</h2>
+			<div class="side-box-content">
+				<div class="side-box-section park-features">
+<h3>Features</h3>
+<ul class="park-feature-list"><li>Basketball Court - Lighted</li><li>Pickleball Court</li><li>Picnic Tables</li><li>Playground</li><li>Ramada (non-reservable)</li><li>Ramada (reservable)</li><li>Restrooms</li><li>Softball Complex</li><li>Tennis Court</li><li>Volleyball Courts (sand) - Lighted</li><li>Walking Path (unpaved)</li></ul></div>
+			    
+			        <div class="side-box-section contact-details">
+			            <h3>Contact</h3>
+			            
+			            <div class="contact-phone">480-644-7529</div>
+			            <div class="contact-phone-alternate">480-644-3874</div>
+			            <div class="contact-email"><a href="mailto:parksrecinfo@mesaaz.gov">parksrecinfo@mesaaz.gov</a></div>
+			            
+			        </div>
+			    
+                
+                    <div class="side-box-section hours-details">
+                        <h3>Hours</h3>
+                        
+                        <p>Sunrise to 10 PM or as posted</p>
+                    </div>
+                
+
+			</div>
+		</div>
+        <div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Additional Resources
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p><p><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Park-Rules" class="styled-button-calltoaction">Park Rules</a></p>
+<p><a href="https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Facility-Reservations" class="styled-button-calltoaction">Facility Reservations</a></p>
+<p>&nbsp;</p>
+
+</p>
+
+
+			</div>
+		</div>
+		
+	</div>
+			
+	</div>
+	<div class="col-xs-12 col-m-8">
+        <div class="grid" >
+            
+            
+             
+            
+        </div>
+	</div>
+</div><!--normalTemplateEnd-->
+                            
+                            
+                            
+							            </div>
+						            </div>
+					            </div>
+                        <div class="col-xs-12">
+					            	<div class="share-page-container share-page-link-right share-page-link-small share-page-link-rounded share-page-link-no-labels" data-item-id="ab1a908a-b6ab-4a6c-8077-4008dc8ab99e" id="share-page-container clearfix">
+                                        <section aria-labelledby="share-page-info-label">
+                                            <span id="share-page-info-label" class="share-page-info">Share</span><ul class="share-page-links no-translate"><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.mesaaz.gov%2fActivities-Culture%2fParks-Recreation-and-Community-Facilities%2fParks-Facilities%2fKleinman-Park" target="{ShareTarget}" class="share-page-link share-page-link-facebook" data-channel="facebook" data-channel-id="1"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-facebook">Facebook</span></a></li><li><a href="https://twitter.com/share?url=https%3a%2f%2fwww.mesaaz.gov%2fActivities-Culture%2fParks-Recreation-and-Community-Facilities%2fParks-Facilities%2fKleinman-Park" target="_blank" class="share-page-link share-page-link-x" data-channel="x" data-channel-id="2"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-x">X</span></a></li><li><a href="mailto:?Body=https%3a%2f%2fwww.mesaaz.gov%2fActivities-Culture%2fParks-Recreation-and-Community-Facilities%2fParks-Facilities%2fKleinman-Park" target="_self" class="share-page-link share-page-link-email" data-channel="email" data-channel-id="3"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-email">Email</span></a></li><li><a href="#" target="_self" class="share-page-link share-page-link-print" data-channel="print" data-channel-id="5"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-print">Print</span></a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.mesaaz.gov%2fActivities-Culture%2fParks-Recreation-and-Community-Facilities%2fParks-Facilities%2fKleinman-Park" target="_blank" class="share-page-link share-page-link-linkedin" data-channel="linkedin" data-channel-id="7"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-linkedin">LinkedIn</span></a></li></ul>
+                                        </section>
+                                    </div></div>
+                            </div>
+                        </div>
+                        <div class="back-to-top-container text-center">
+                            <a href="#body-top" id="back-to-top"><i aria-hidden="true"></i><span class="js-visuallyhidden">Back to top</span></a>
+                        </div>
+                </div>
+            </div><!--groupTemplateEnd-->
+            <footer>
+                
+                    <div class="footer-outer-container footer-first-row">
+                        <div class="footer-container clearfix">
+                            <div class="grid grid-pad">
+                                <div class="col-xs-12 col-s-12 col-m-10 col-lg-10 footer-links" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Footer Links</h3>
+			
+	
+	<ul class="footer-links with-icons ">  <li class="footer-link-">
+	<a href="https://mesaaz.citysourced.com/" target="_blank"  >
+<i aria-hidden="true"></i>CityLink
+</a>
+</li>
+          <li class="footer-link-">
+	<a href="https://www.mesaaz.gov/Government/ADA-Policies-Disclaimer" target="_self"  >
+<i aria-hidden="true"></i>ADA, Policy & Disclaimer
+</a>
+</li>
+          <li class="footer-link-">
+	<a href="https://www.mesaaz.gov/Government/Together-Mesa/Civil-Rights-Protections" target="_self"  >
+<i aria-hidden="true"></i>Civil Rights Protections
+</a>
+</li>
+          <li class="footer-link-">
+	<a href="https://www.mesaaz.gov/Government/Management-Budget/Notice-of-Proposed-Taxes-or-Fees" target="_self"  >
+<i aria-hidden="true"></i>Notice of Proposed Taxes/Fees
+</a>
+</li>
+           </ul>
+	
+</div><div class="col-xs-12 col-s-12 col-m-2 col-lg-2 footer-social" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Footer Social</h3>
+			
+	
+	<ul class="footer-links with-icons ">   </ul>
+	
+</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="footer-outer-container footer-second-row">
+                    <div class="footer-container clearfix">
+                        <div class="grid grid-pad footer-secondary-links">
+                            <div class="col-xs-12 col-m-7">
+                                
+                                    <div><a href="https://public.govdelivery.com/accounts/AZMESA/subscriber/new" target="_blank"  >eNotifications</a>&nbsp;| <a href="tel:711" target="_blank"  >AzRelay 7-1-1</a></div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-m-5 powered-by">
+                                <div class="right">
+                                    &copy; 2026 City of Mesa&nbsp;|&nbsp;<span class="powered-by">Powered by <a href="https://granicus.com/solution/govaccess/opencities/" target="_blank">Granicus</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/files/oc-resources/b9015858-988c-48a4-9473-7c193df083e4/JsTextSnippets.js?ocsvclang=en-US" type="text/javascript"></script><script></script>
+    
+    <script type="text/javascript">
+    window._monsido = window._monsido || {
+        token: "ZZ4PYpgtYAfeL6QT-f0s8w",
+        statistics: {
+            enabled: true,
+            cookieLessTracking: false,
+            documentTracking: {
+                enabled: true,
+                documentCls: "monsido_download",
+                documentIgnoreCls: "monsido_ignore_download",
+                documentExt: ["pdf","PDF","doc","docx","xlsx","xls","ppt"],
+            },
+        },
+        heatmap: {
+            enabled: true,
+        },
+        pageCorrect: {
+            enabled: true,
+        },
+        pageAssistV2: {
+            enabled: true,
+            theme: "light",
+            mainColor: "#2A6EBB",
+            textColor: "#ffffff",
+            linkColor: "#2A6EBB",
+            buttonHoverColor: "#2A6EBB",
+            mainDarkColor: "#2A6EBB",
+            textDarkColor: "#ffffff",
+            linkColorDark: "#ECCA11",
+            buttonHoverDarkColor: "#FFCF4B",
+            greeting: "Discover your personalization options",
+            direction: "rightbottom",
+            coordinates: "unset 65 5 unset",
+            iconShape: "circle",
+            title: "Personalization Options",
+            titleText: "Welcome to PageAssist™ toolbar! Adjust the options below to cater the website to your accessibility needs.",
+            iconPictureUrl: "logo",
+            logoPictureUrl: "https://www.mesaaz.gov/files/assets/public/v/1/stock-images/mesalogo-white.png",
+            logoPictureBase64: "",
+            languages: ["en-US", "es-MX", "zh-CN"],
+            defaultLanguage: "en-US",
+            skipTo: false,
+            alwaysOnTop: false,
+        },
+    };
+</script>
+<script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+
+
+
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.usw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-usw2',
+    deploymentId: '5307652e-a9a5-4543-885b-a35d99dd02ee'
+  });
+</script>
+    <!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-22L3TR0546"></script> 
+<script> 
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'G-22L3TR0546'); 
+</script>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl04_seamless_script_manager_TSM');//]]>
+</script>
+</form>
+</body>
+</html>

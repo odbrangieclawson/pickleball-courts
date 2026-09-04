@@ -1,0 +1,44 @@
+{
+  "tennis-center-at-gene-autry-park": {
+    "matched": "4125 E MCKELLIPS RD, MESA, AZ, 85215",
+    "resolver": "census",
+    "lat": 33.451788200877,
+    "lon": -111.741547666299,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Mesa city",
+    "place_matches_city": true,
+    "postal_code": "85215",
+    "basis": "Census address geocoder matched \"4125 E MCKELLIPS RD, MESA, AZ, 85215\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"4125 E MCKELLIPS RD, MESA, AZ, 85215\"."
+  },
+  "kleinman-park": {
+    "matched": "710 S EXTENSION RD, MESA, AZ, 85210",
+    "resolver": "census",
+    "lat": 33.403060472859,
+    "lon": -111.848523391741,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Mesa city",
+    "place_matches_city": true,
+    "postal_code": "85210",
+    "basis": "Census address geocoder matched \"710 S EXTENSION RD, MESA, AZ, 85210\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"710 S EXTENSION RD, MESA, AZ, 85210\"."
+  },
+  "chaparral-park": {
+    "matched": "1635 N GILBERT RD, MESA, AZ, 85203",
+    "resolver": "census",
+    "lat": 33.445126705333,
+    "lon": -111.787684355533,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Mesa city",
+    "place_matches_city": true,
+    "postal_code": "85203",
+    "basis": "Census address geocoder matched \"1635 N GILBERT RD, MESA, AZ, 85203\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"1635 N GILBERT RD, MESA, AZ, 85203\"."
+  }
+}

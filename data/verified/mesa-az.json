@@ -1,0 +1,491 @@
+{
+  "city": "Mesa",
+  "state": "AZ",
+  "retrieved_at": "2026-09-04",
+  "method_note": "Mesa states a pickleball count in exactly two places and this run reads only those two. The Mesa Tennis & Pickleball Center says it in prose - \"16 lighted tennis courts, 21 lighted pickleball courts and 4 sand volleyball courts\" - and two park pages say it in a parenthesis inside a Reservable Spaces list, \"Pickleball Courts (4)\" at Kleinman and \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\" at Chaparral. Twenty-one is the largest single-venue count in this directory. Six more Mesa parks carry the words \"Pickleball Court\" in a Features list with no number anywhere on the page, and none of them publishes: that label is printed identically whether a park has one court or several, and Sheepherders Park prints it in both singular and plural on the same page. Gene Autry Park is refused twice over - it states no count, and it shares a street address with the Center, which stands inside it. Mesa never says whether any of these courts are indoor or outdoor, so no Mesa venue appears on the indoor or outdoor filter pages. Lighting publishes true only at the Center, which uses the word itself; Mesa marks lighting by appending it to an amenity name and does not mark the pickleball courts at Kleinman or Chaparral, but a house style is not a statement and those two stay unverified. Chaparral Park carries the run's one source conflict: the City prints postcode 85213 and the Census address file returns 85203 for the same street address. The Census value publishes and the disagreement is printed on the venue page.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/mtpc.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/kleinman-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/chaparral-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Gene-Autry-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/gene-autry-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Christopher-J.-Brady-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/brady-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Red-Mountain-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/red-mountain-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Augusta-Ranch-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/augusta-ranch-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Sheepherders-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/sheepherders-park.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Washington-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mesa/washington-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/mesa-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 3,
+    "courts": 26,
+    "outdoor": null,
+    "indoor": null,
+    "lighted_courts": 21
+  },
+  "excluded": [
+    {
+      "name": "Gene Autry Park",
+      "why": [
+        "It shares a street address with the Mesa Tennis & Pickleball Center, which does publish here. The park page prints \"4125 E Mckellips Rd\" and the Center's page prints \"4125 E McKellips Rd\" - the same address, differing only in one capital letter. Publishing both would put two venues at one address.",
+        "Three independent records place the Center in this park: the shared address, the \"Additional Resources\" link from the Center's page to Gene Autry Park, and the imported dataset's own slug for the Center, \"mesa-tennis-center-at-gene-autry-park\".",
+        "Independently of all that, the park page states no pickleball count. Its Features list carries the label \"Pickleball Court\" and no number, which is the same ground the five parks below are refused on."
+      ]
+    },
+    {
+      "name": "Christopher J. Brady Park",
+      "why": [
+        "The City states no pickleball count. The page says \"Pickleball courts reservable online OR call the main line at 480-644-7529\", which is a statement about booking, not a number, and the Features list carries the bare label \"Pickleball Court\".",
+        "The City does publish a per-court weekly calendar PDF for this park, headed \"Christopher J. Brady Pickleball Court 01 at Christopher J. Brady Park\". Counting how many such PDFs exist would produce a number, and that is a derivation rather than a stated count - the same shape as counting points in a map layer, which this project falsified for Sacramento and refused again for Saint Paul."
+      ]
+    },
+    {
+      "name": "Red Mountain Park",
+      "why": [
+        "The City states no pickleball count. It describes the courts - \"Pickleball Court - Lines on Basketball court (requires personal net)\" - and gives no number. The description tells you the kind of court and what to bring, which is more than most, and it still does not say how many."
+      ]
+    },
+    {
+      "name": "Augusta Ranch Park",
+      "why": [
+        "The City states no pickleball count: \"Pickleball Court lines (shared with basketball court, requires personal net).\" As at Red Mountain, this describes the courts without counting them."
+      ]
+    },
+    {
+      "name": "Sheepherders Park",
+      "why": [
+        "The City states no pickleball count. \"Pickleball Courts\" appears in the reservable list and \"Pickleball Court\" in the Features list on the same page, which is the clearest demonstration in this city that the label's singular and plural carry no information."
+      ]
+    },
+    {
+      "name": "Washington Park",
+      "why": [
+        "The City states no pickleball count, in exactly the same shape as Sheepherders Park: \"Pickleball Courts\" in the reservable list, \"Pickleball Court\" in Features, no number on the page."
+      ]
+    }
+  ],
+  "venues": {
+    "tennis-center-at-gene-autry-park": {
+      "minted": false,
+      "identity": {
+        "name": "Mesa Tennis & Pickleball Center",
+        "city": "Mesa",
+        "state": "AZ",
+        "county": "Maricopa",
+        "postal_code": "85215",
+        "latitude": 33.451788200877,
+        "longitude": -111.741547666299,
+        "imported_slug": "mesa-tennis-center-at-gene-autry-park",
+        "canonical_slug": "tennis-center-at-gene-autry-park"
+      },
+      "match": {
+        "source_page": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+        "quote": "21 lighted pickleball courts",
+        "basis": "Matched to the imported mesa-tennis-center-at-gene-autry-park row in Mesa, AZ, published under the canonical slug tennis-center-at-gene-autry-park (the identity pass dropped the leading \"mesa-\", which is already in the path)."
+      },
+      "patch": {
+        "name": "Mesa Tennis & Pickleball Center",
+        "total_courts": 21,
+        "street_address": "4125 E McKellips Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open 5:30 a.m. to 11:30 a.m. daily, and again 5:00 p.m. to 10:00 p.m. Monday through Friday. Closed evenings at the weekend.",
+        "court_availability": "Twenty-one lighted pickleball courts, the largest count at any single venue in this directory, alongside sixteen lighted tennis courts and four sand volleyball courts. This is a staffed City facility with a pro shop rather than a park with lines painted on it: courts are reservable online up to two weeks ahead, and the City writes that \"Court fees must be paid inside pro shop before using the facility.\" Play costs $9.00 per court per hour before 5 PM and $13.00 after. The Center stands inside Gene Autry Park and shares its street address, which is why the park itself is not listed separately here. The City does not say whether these courts are indoor or outdoor, so this directory does not say either.",
+        "county": "Maricopa",
+        "postal_code": "85215",
+        "light": true,
+        "fee_type": "reservation_fee",
+        "pricing_notes": "Court rental is $9.00 per court per hour daytime (8 AM-5 PM) and $13.00 per court per hour nighttime (5 PM-9 PM). The City states that \"Court fees must be paid inside pro shop before using the facility\", so there is no free play here.",
+        "restroom": true,
+        "pro_shop": true,
+        "phone": "480-644-3874"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Mesa Tennis & Pickleball Center\" by the City of Mesa Parks, Recreation and Community Facilities on its own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Center's page: \"The Mesa Tennis & Pickleball Center (MTPC) is open to the public and features 16 lighted tennis courts, 21 lighted pickleball courts and 4 sand volleyball courts available for rental.\" Twenty-one is the largest single-venue pickleball count in this directory."
+        },
+        "street_address": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4125 E McKellips Rd, Mesa, AZ 85215\" is the address in the Location block of the City's page for this venue."
+        },
+        "venue_type": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by the City of Mesa Parks, Recreation and Community Facilities. The Center is a staffed City facility standing inside Gene Autry Park, and it shares that park's street address."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the Hours block on the City's page, which reads \"05:30 AM\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page for this venue: \"21 lighted pickleball courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"4125 E MCKELLIPS RD, MESA, AZ, 85215\". The resolver also places it in the incorporated place \"Mesa city\", which is what allows it to be published under Mesa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4125 E MCKELLIPS RD, MESA, AZ, 85215\"."
+        },
+        "light": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City writes \"21 lighted pickleball courts\" - the word \"lighted\" is its own, applied to the pickleball courts specifically, alongside \"16 lighted tennis courts\"."
+        },
+        "fee_type": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Courts are rented by the hour and reservable online: \"$9.00/court per hour\" daytime, \"$13.00/court per hour\" nighttime. The City states that \"Court fees must be paid inside pro shop before using the facility\", so no free route to play is published here."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Court Rental Fees\" table on the Center's page, under its \"Pickleball Fees\" heading."
+        },
+        "restroom": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Restrooms\" in the Features list on the City's page for this venue."
+        },
+        "pro_shop": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's page refers to the facility's pro shop: \"Court fees must be paid inside pro shop before using the facility.\""
+        },
+        "phone": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published in the Contact block on the Center's own page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "fee_type"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "kleinman-park": {
+      "minted": false,
+      "identity": {
+        "name": "Kleinman Park",
+        "city": "Mesa",
+        "state": "AZ",
+        "county": "Maricopa",
+        "postal_code": "85210",
+        "latitude": 33.403060472859,
+        "longitude": -111.848523391741,
+        "imported_slug": "kleinman-park",
+        "canonical_slug": "kleinman-park"
+      },
+      "match": {
+        "source_page": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+        "quote": "Pickleball Courts (4)",
+        "basis": "Matched to the imported kleinman-park row in Mesa, AZ."
+      },
+      "patch": {
+        "name": "Kleinman Park",
+        "total_courts": 4,
+        "street_address": "710 S. Extension Rd.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open sunrise to 10 p.m., or as posted.",
+        "court_availability": "Four pickleball courts, which the City counts in its own list of reservable spaces: \"Pickleball Courts (4)\". Courts here are booked through the Mesa Tennis & Pickleball Center. The park is open sunrise to 10 p.m. and also holds lighted softball fields, three lighted tennis courts, four lighted sand volleyball courts, a lighted basketball court, restrooms and an unpaved walking path. Whether the pickleball courts themselves are lit is not something the City says: it marks lighting by writing it into the amenity name, and every lighted thing in this park carries that mark except the pickleball courts, which carry no mark either way.",
+        "county": "Maricopa",
+        "postal_code": "85210",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Kleinman Park\" by the City of Mesa Parks, Recreation and Community Facilities on its own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the park's own \"Reservable Spaces\" list, where Mesa writes its counts in a parenthesis: \"Pickleball Courts (4)\". Indoor and outdoor are left unverified rather than guessed: Mesa never uses either word about these courts."
+        },
+        "street_address": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"710 S. Extension Rd., Mesa, AZ 85210\" is the address in the Location block of the City's page for this venue."
+        },
+        "venue_type": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by the City of Mesa Parks, Recreation and Community Facilities."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the Hours block on the City's page, which reads \"Sunrise to 10 PM or as posted\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page for this venue: \"Pickleball Courts (4)\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"710 S EXTENSION RD, MESA, AZ, 85210\". The resolver also places it in the incorporated place \"Mesa city\", which is what allows it to be published under Mesa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"710 S EXTENSION RD, MESA, AZ, 85210\"."
+        },
+        "restroom": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Restrooms\" in the Features list on the City's page for this venue."
+        }
+      },
+      "record": {
+        "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "chaparral-park": {
+      "minted": true,
+      "identity": {
+        "name": "Chaparral Park",
+        "city": "Mesa",
+        "state": "AZ",
+        "county": "Maricopa",
+        "postal_code": "85203",
+        "latitude": 33.445126705333,
+        "longitude": -111.787684355533,
+        "imported_slug": null,
+        "canonical_slug": "chaparral-park"
+      },
+      "match": {
+        "source_page": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+        "quote": "Pickleball Court (1 lined court shared with basketball use, bring your own portable net)",
+        "basis": "No imported row under this slug. The venue is minted here from the City's own park page, which states the count, the address and the hours."
+      },
+      "patch": {
+        "name": "Chaparral Park",
+        "total_courts": 1,
+        "street_address": "1635 N Gilbert Road",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open sunrise to 10 p.m.",
+        "court_availability": "One court, and the City is unusually straight about what that means: \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\". So it is lines on a basketball court, it is shared, and no net is provided - bring one. The park is open sunrise to 10 p.m. and also has a lighted basketball court, a BBQ grill, horseshoes, picnic tables, a playground and a non-reservable ramada. One thing to know about the address: the City prints this park at 85213 and the US Census address file places the same street address in 85203. This directory publishes the Census postcode, and records that the two disagree.",
+        "county": "Maricopa",
+        "postal_code": "85203",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Chaparral Park\" by the City of Mesa Parks, Recreation and Community Facilities on its own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the park's own \"Reservable Spaces\" list, where Mesa writes its counts in a parenthesis: \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\". Indoor and outdoor are left unverified rather than guessed: Mesa never uses either word about these courts."
+        },
+        "street_address": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1635 N Gilbert Road, Mesa, AZ 85213\" is the address in the Location block of the City's page for this venue."
+        },
+        "venue_type": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Operated by the City of Mesa Parks, Recreation and Community Facilities."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the Hours block on the City's page, which reads \"Sunrise - 10 PM\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's page for this venue: \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"1635 N GILBERT RD, MESA, AZ, 85203\". The resolver also places it in the incorporated place \"Mesa city\", which is what allows it to be published under Mesa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1635 N GILBERT RD, MESA, AZ, 85203\". The City's own page prints 85213 for this address. The two tier-1 sources disagree; the Census value is published, because that is the resolver Import Gate I3 checks against, and the disagreement is stated on the venue page rather than resolved silently."
+        },
+        "nets_provided": {
+          "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative, in the City's own parenthesis: \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\". \"Bring your own portable net\" is a statement that no net is provided."
+        }
+      },
+      "record": {
+        "source_url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

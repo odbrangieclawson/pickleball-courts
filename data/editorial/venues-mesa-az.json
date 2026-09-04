@@ -1,0 +1,142 @@
+{
+  "city": "Mesa",
+  "state": "AZ",
+  "kind": "venues",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Each venue page below rests on one City of Mesa page, named in its sources, plus the US Census address geocoder for the county and the postcode. Where the City says nothing - parking at all three, surface at all three, lighting at two of the three - these pages say that it says nothing, rather than filling the space.",
+  "venues": {
+    "tennis-center-at-gene-autry-park": {
+      "slots": {
+        "description": "Twenty-one lighted pickleball courts, which is the largest count at any single venue in this directory and roughly the size of the next four biggest put together. The City's description is one sentence and it carries all of it: \"The Mesa Tennis & Pickleball Center (MTPC) is open to the public and features 16 lighted tennis courts, 21 lighted pickleball courts and 4 sand volleyball courts available for rental.\"\n\nThis is a staffed racquet-sports centre, not a park that happens to have lines painted on it, and almost everything about visiting it follows from that. There is a pro shop, and the City's rules state that \"Court fees must be paid inside pro shop before using the facility. Unauthorized use of the facility is considered trespassing.\" There is a front desk you check in at to be told which court you have been given. There are ball machines for hire, one for pickleball and two for tennis, at $18.00 per hour. Non-marking shoes are required, food and glass are banned from the courts, and coaching for money is prohibited unless you are one of the Center's own authorised teaching professionals.\n\nThe Center stands inside Gene Autry Park and shares its street address, which is why that park has no separate page here. Three separate records say so: the two City pages print the same address, the Center's page links to the park under \"Additional Resources\", and the imported dataset this site was built from files the Center under the slug \"mesa-tennis-center-at-gene-autry-park\" without knowing about either page.",
+        "getting_there": "4125 E McKellips Rd, Mesa, AZ 85215, in north-east Mesa. The Census address geocoder matched the address at house-number level and placed it in the incorporated place \"Mesa city\", Maricopa County. The City publishes a phone number for the Center directly, 480-644-3874, and an email address, which is more contact detail than most venues in this directory carry.\n\nOn parking the City says nothing at all - no lot, no space count, no fee - and this site will not invent it. What the City does make clear is that arriving here is not a walk-on: you check in at the front desk before your reservation to be assigned a court, and you pay at the pro shop before you play.",
+        "what_to_expect": "Check the clock before you set out, because the Center's hours have a hole in the middle of the day. It is open 5:30 a.m. to 11:30 a.m. every day of the week, and then again 5:00 p.m. to 10:00 p.m. Monday through Friday. On Saturday and Sunday it does not reopen at all after 11:30 in the morning. That is roughly six hours of play on a weekday and six on a weekend day, from twenty-one courts.\n\nPlay costs $9.00 per court per hour before 5 p.m. and $13.00 per court per hour after, and courts can be booked online up to two weeks ahead, with a request form for anything further out. The City also warns that \"Tournaments, league and lesson programming, special events, or maintenance may limit court space for the general public\", so the published hours are an outer limit rather than a guarantee that a court is free.\n\nThe courts are lit - that word is the City's own, applied to the pickleball courts specifically alongside the sixteen lighted tennis courts - which is what makes the 5 p.m. to 10 p.m. weekday block usable. What the City never says, here or anywhere in Mesa, is whether these courts are indoor or outdoor, so this site does not say either."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Twenty-one pickleball courts, all of them lit, plus sixteen lighted tennis courts and four sand volleyball courts. The City states the figure in its own sentence about the facility."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "$9.00 per court per hour daytime, between 8 a.m. and 5 p.m., and $13.00 per court per hour at night, between 5 p.m. and 9 p.m. League reservations are priced separately. Fees must be paid at the pro shop before you use the facility."
+        },
+        {
+          "q": "What are the opening hours?",
+          "a": "5:30 a.m. to 11:30 a.m. every day, and 5:00 p.m. to 10:00 p.m. Monday to Friday only. There is no weekend evening session and no midday session on any day."
+        },
+        {
+          "q": "Can I book a court in advance?",
+          "a": "Yes, online, up to two weeks ahead. For anything more than two weeks out the City asks you to fill in a reservation request form. Check in at the front desk when you arrive to get your court number."
+        },
+        {
+          "q": "Is this the same place as Gene Autry Park?",
+          "a": "The Center stands inside Gene Autry Park and shares its street address, 4125 E McKellips Rd. That is why the park is not listed separately on this site."
+        }
+      ],
+      "sources": ["M1", "M5"]
+    },
+    "kleinman-park": {
+      "slots": {
+        "description": "Four pickleball courts in a City park in central Mesa, counted by the City in the plainest way it counts anything: its list of reservable spaces at this park reads \"Pickleball Courts (4)\", and the number in the bracket is the whole claim.\n\nThe courts sit on a busy municipal site rather than on their own. The same list offers lighted softball fields, three lighted tennis courts and four lighted sand volleyball courts, and the park's Features add a lighted basketball court, restrooms, picnic tables, a playground, an unpaved walking path and ramadas both reservable and not. It is a neighbourhood sports park with a pickleball allocation, and it is the middle option in Mesa between a paid facility with twenty-one courts and a single shared court in a park across town.\n\nOne detail is worth carrying: although these courts sit in a public park, reserving one is handled by the Mesa Tennis & Pickleball Center rather than at the park. The City gives the Center's number for that purpose alongside the general parks line.",
+        "getting_there": "710 S. Extension Rd., Mesa, AZ 85210. The Census address geocoder matched the address at house-number level and placed it in the incorporated place \"Mesa city\", Maricopa County, agreeing with the City on the postcode.\n\nThe City publishes nothing about parking here. The park has a softball complex, reservable ramadas and restrooms, which in practice implies somewhere to leave a car, but the City does not say so and this site does not turn an inference into a fact. The park is open sunrise to 10 p.m., \"or as posted\" - the City's own qualification, which is worth taking literally at a site that hosts booked softball and volleyball.",
+        "what_to_expect": "Four courts, open from sunrise until 10 p.m., in a park with a good deal else going on around them. The City publishes no price for them, and that is not the same as publishing that they are free, so this site records no fee either way for Kleinman.\n\nWhether the courts are lit is the open question here, and the answer is that Mesa has not given one. The City marks lighting by writing it into the name of the amenity - this park's own list contains \"Basketball Court - Lighted\", \"Lighted Tennis Courts (3)\", \"Lighted Softball Fields\" and \"Lighted Sand Volleyball Courts (4)\" - and the pickleball entry alone carries no such mark, while lit amenities sit directly above and below it. That is a strong hint and it is still only a hint. This directory publishes a lighting answer when an operator states one, and Mesa has stated one here neither way, so the field is left unverified rather than being filled from a house style.\n\nThe City also never says whether these courts are indoor or outdoor. Given a sunrise-to-10 p.m. park that is not much of a mystery, but it is not a statement, so it is not published."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Four. The City lists \"Pickleball Courts (4)\" among the park's reservable spaces."
+        },
+        {
+          "q": "Is it free?",
+          "a": "The City publishes no price for these courts. It also never says they are free, so this site does not describe them as free - only as having no stated fee."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not stated. The City marks its lighted amenities by name at this park - the tennis courts, the softball fields, the sand volleyball courts and the basketball court are all labelled lighted - and the pickleball courts carry no such label either way."
+        },
+        {
+          "q": "Can I reserve a court?",
+          "a": "Yes. The courts are listed among the park's reservable spaces, and the City directs bookings to the Mesa Tennis & Pickleball Center rather than to the park itself."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "Sunrise to 10 p.m., or as posted. The City includes that qualification itself, and this is a park that also hosts booked softball and volleyball."
+        }
+      ],
+      "sources": ["M2", "M5"]
+    },
+    "chaparral-park": {
+      "slots": {
+        "description": "One court, and the City of Mesa describes it more honestly than most operators describe anything: \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\".\n\nEvery clause of that sentence is doing work. It is one court rather than an unspecified several. It is a lined court - pickleball lines painted on a surface built for something else - rather than a pickleball court. The basketball use has not been retired to make room for it, so the court is shared in the plainest sense, and whether it is available depends on who got there first. And no net is provided, which is the detail that decides whether a trip here is worth making at all.\n\nThe rest of the park is an ordinary and pleasant neighbourhood one: a lighted basketball court, a BBQ grill, horseshoes, picnic tables, a playground and a non-reservable ramada, open sunrise to 10 p.m. This is a place to get a hit in, not a destination, and the City's own wording is what makes that clear rather than anything added here.",
+        "getting_there": "The City prints the address as 1635 N Gilbert Road, Mesa, AZ 85213. There is a wrinkle in that, and it is worth knowing before you post anything to it: the US Census address geocoder matches the same street address and returns postcode 85203, not 85213. Both are tier-one government sources and they cannot both be right. This site publishes the Census postcode, because that is the resolver its import gates check addresses against, and records the disagreement here rather than quietly choosing one. The street address itself is not in doubt, and the geocoder places it in the incorporated place \"Mesa city\", Maricopa County.\n\nOn parking the City says nothing at all, as it does at every Mesa venue on this site.",
+        "what_to_expect": "Bring a net. That is the first thing, it is the City's own instruction, and without one there is no pickleball to be had here regardless of what the lines say.\n\nAfter that, expect a single court that is also a basketball court, in a park open sunrise to 10 p.m. If someone is shooting hoops, that is the court. The City publishes no fee, which is not the same as publishing that it is free, so no price is recorded here either way.\n\nThe basketball court in this park is explicitly labelled \"Basketball Court - Lighted\" by the City. The pickleball entry, which describes the very same surface, carries no lighting label at all. That is Mesa's labelling convention rather than a statement about the courts, and this site does not convert it into one: lighting here is recorded as unverified. Nor does the City say whether the court is indoor or outdoor, though it lists it among BBQ grills, horseshoes and a playground."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "One, and it is shared with basketball. The City writes \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\"."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "Yes. The City states it directly: bring your own portable net. No net is provided at this court."
+        },
+        {
+          "q": "Is the court lit?",
+          "a": "Not stated. The park's basketball court - the same surface the pickleball lines are painted on - is labelled lighted by the City, but the pickleball entry carries no such label, and this site does not infer a lighting answer from a labelling habit."
+        },
+        {
+          "q": "Why does the postcode here differ from the City's?",
+          "a": "Because the two sources disagree. The City of Mesa prints 85213 for this park and the US Census address geocoder returns 85203 for the same street address. This site publishes the Census value, which is the resolver its address checks use, and states the disagreement rather than hiding it."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "Sunrise to 10 p.m."
+        }
+      ],
+      "sources": ["M3", "M5"]
+    }
+  },
+  "sources": [
+    {
+      "id": "M1",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Recreational-Facilities/Mesa-Tennis-Pickleball-Center",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["description", "getting_there", "what_to_expect"],
+      "evidence": "The Center's own page: \"16 lighted tennis courts, 21 lighted pickleball courts and 4 sand volleyball courts available for rental\"; \"Pickleball Court Daytime Fee: $9.00/court per hour\"; \"Pickleball Court Nighttime Fee: $13.00/court per hour\"; \"Court fees must be paid inside pro shop before using the facility. Unauthorized use of the facility is considered trespassing\"; \"MTPC has 1 pickleball and 2 tennis ball machines available for rent.\"; \"Tournaments, league and lesson programming, special events, or maintenance may limit court space for the general public\"; hours 05:30 AM-11:30 AM daily plus 05:00 PM-10:00 PM Monday to Friday; contact 480-644-3874; \"Additional Resources: Gene Autry Park\"; address 4125 E McKellips Rd. Snapshot: data/sources/mesa/mtpc.html",
+      "not_stated": "Parking, surface, and whether the courts are indoor or outdoor."
+    },
+    {
+      "id": "M2",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Kleinman-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["description", "getting_there", "what_to_expect"],
+      "evidence": "Kleinman Park's page. Reservable Spaces: \"Lighted Softball Fields\", \"Lighted Tennis Courts (3)\", \"Pickleball Courts (4)\", \"Lighted Sand Volleyball Courts (4)\", with reservations directed to the Mesa Tennis & Pickleball Center on 480-644-3874. Features include \"Basketball Court - Lighted\", \"Pickleball Court\", \"Restrooms\", \"Picnic Tables\", \"Playground\", \"Ramada (non-reservable)\", \"Ramada (reservable)\", \"Softball Complex\", \"Walking Path (unpaved)\". Hours \"Sunrise to 10 PM or as posted\". Address 710 S. Extension Rd., Mesa, AZ 85210. Snapshot: data/sources/mesa/kleinman-park.html",
+      "not_stated": "Parking, surface, lighting on the pickleball courts, and any fee."
+    },
+    {
+      "id": "M3",
+      "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Chaparral-Park",
+      "publisher": "City of Mesa Parks, Recreation and Community Facilities",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["description", "getting_there", "what_to_expect"],
+      "evidence": "Chaparral Park's page: \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\". Features: \"Basketball Court - Lighted\", \"BBQ Grill\", \"Horseshoes\", \"Pickleball Court\", \"Picnic Tables\", \"Playground\", \"Ramada (non-reservable)\". Hours \"Sunrise - 10 PM\". The City prints the address as \"1635 N Gilbert Road, Mesa, AZ 85213\". Snapshot: data/sources/mesa/chaparral-park.html",
+      "not_stated": "Parking, surface, lighting on the pickleball court, and any fee."
+    },
+    {
+      "id": "M5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["getting_there"],
+      "evidence": "All three addresses matched at house-number level and were placed in the incorporated place \"Mesa city\", Maricopa County, AZ: \"4125 E MCKELLIPS RD, MESA, AZ, 85215\", \"710 S EXTENSION RD, MESA, AZ, 85210\" and \"1635 N GILBERT RD, MESA, AZ, 85203\". The last of those disagrees with the City's printed 85213 for Chaparral Park. Snapshot: data/sources/mesa-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}
