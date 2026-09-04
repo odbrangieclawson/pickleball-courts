@@ -130,6 +130,7 @@ const BASE = 'https://www.cityofmadison.com/parks'
 const LIST_PAGE = `${BASE}/find-a-park/athletics/courts/pickleball`
 const WPCRC_PAGE = `${BASE}/wpcrc/wpcrc-id/fitness-center-pickleball-membership`
 const CENSUS_URL = 'https://geocoding.geo.census.gov/geocoder/geographies'
+const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search'
 
 /* The city-wide sentences every venue below is read against. */
 const DUAL_STRIPED =
@@ -151,6 +152,18 @@ const VENUES = [
   {slug: 'brittingham-park', name: 'Brittingham Park', page: 'brittingham', courts: 4, surface: 'asphalt', address: '388 S. Bassett St.',
     /* The courts have their own address, away from the park's main one. */
     courtAddressNote: true},
+  /*
+    Door Creek and Rennebohm were both refused when Madison first published,
+    because the Census address file has no record of either address. On
+    2026-09-04 Import Gate I1 gained a second resolver — OpenStreetMap,
+    consulted only where the Census has nothing and accepted only when it
+    returns the house number asked for — and both resolve at that level.
+    Reindahl Park does not, and is still refused.
+  */
+  {slug: 'door-creek-park', name: 'Door Creek Park', page: 'door-creek', courts: 8, surface: 'asphalt', address: '7035 Littlemore Dr.', viaOSM: true},
+  {slug: 'rennebohm-park', name: 'Rennebohm Park', page: 'rennebohm', courts: 6, surface: 'asphalt', address: '115 N. Eau Claire Ave.', viaOSM: true,
+    /* The City's own note, kept because it dates the courts people will find. */
+    courtNote: 'Update October 20, 2025: West court construction is substantially completed and courts are open for play!'},
   {slug: 'elver-park', name: 'Elver Park', page: 'elver', courts: 3, surface: 'asphalt', address: '1250 McKenna Blvd.'},
   {slug: 'garner-park', name: 'Garner Park', page: 'garner', courts: 6, surface: 'asphalt', address: '333 S. Rosa Rd.', dedicated: true},
   {slug: 'heritage-heights-park', name: 'Heritage Heights Park', page: 'heritage-heights', courts: 2, surface: 'asphalt', address: '701 Meadowlark Dr.'},
@@ -185,9 +198,7 @@ const WPCRC = {
 }
 
 const EXCLUDED = [
-  {name: 'Door Creek Park', line: 'Courts: 8, asphalt', address: '7035 Littlemore Dr.'},
   {name: 'Reindahl (Amund) Park', line: REINDAHL_LINE, address: '1818 Portage Rd.'},
-  {name: 'Rennebohm Park', line: 'Courts: 6, asphalt', address: '115 N. Eau Claire Ave.'},
 ]
 
 /* ---------------------------------------------------------------- */
@@ -208,7 +219,7 @@ const squeeze = s => s.replace(/\s+/g, '')
 const PAGES = [...new Set([
   'pickleball',
   'wpcrc-fitness-center-pickleball-membership', 'wpcrc-wpcrc',
-  'door-creek', 'reindahl', 'rennebohm',
+  'reindahl',
   ...VENUES.map(v => v.page),
 ])]
 
@@ -305,9 +316,14 @@ const record = (slug, name, facts, res, quote, basisWhenMinted) => {
 
 const geoCheck = (slug, who) => {
   const geo = counties[slug]
-  if (!geo?.matched) throw new Error(`${who}: the Census geocoder did not match its address`)
-  if (geo.place !== 'Madison city') {
-    throw new Error(`${who}: Census places this at "${geo.place}", not Madison city.`)
+  if (!geo?.matched) throw new Error(`${who}: no address resolver matched its address`)
+  /*
+    Resolver-agnostic since 2026-09-04. The Census writes "Madison city" and
+    OpenStreetMap writes "Madison"; geocode.mjs settles that comparison so no
+    apply run has to guess at suffixes.
+  */
+  if (!geo.place_matches_city) {
+    throw new Error(`${who}: the resolver places this at "${geo.place}", not Madison.`)
   }
   return geo
 }
@@ -319,6 +335,7 @@ for (const p of VENUES) {
   const heading = p.dedicated ? 'Pickleball' : 'Tennis & Pickleball'
 
   must(p.page, p.slug, courtsLine, 'court count and surface')
+  if (p.courtNote) must(p.page, p.slug, p.courtNote, 'dated court note')
   must('pickleball', p.slug, p.address, 'street address')
 
   const geo = geoCheck(p.slug, p.slug)
@@ -329,9 +346,20 @@ for (const p of VENUES) {
   const docList = new SourceDocument({
     url: LIST_PAGE, retrieved_at: RETRIEVED_AT, tier: 1, publisher: CITY, format: 'html',
   })
-  const docCensus = new SourceDocument({
-    url: CENSUS_URL, retrieved_at: RETRIEVED_AT, tier: 1, publisher: 'US Census Bureau', format: 'json',
-  })
+  /*
+    Door Creek and Rennebohm were resolved by OpenStreetMap, because the
+    Census address file holds no record of either. Citing the Census for a
+    fact the Census did not supply would be a false provenance in the one
+    place this project cannot afford one.
+  */
+  const docCensus = geo.resolver === 'osm'
+    ? new SourceDocument({
+        url: NOMINATIM_URL, retrieved_at: RETRIEVED_AT, tier: 2,
+        publisher: 'OpenStreetMap contributors (Nominatim)', format: 'json',
+      })
+    : new SourceDocument({
+        url: CENSUS_URL, retrieved_at: RETRIEVED_AT, tier: 1, publisher: 'US Census Bureau', format: 'json',
+      })
 
   const venue = bySlug.get(p.slug) ?? shellFor(p.slug)
   const quoted = `Quoted from ${p.name}'s page on cityofmadison.com, under the "${heading}" heading: "${courtsLine}"`
@@ -355,11 +383,16 @@ for (const p of VENUES) {
       evidence: `${quoted}. The City states the surface in the same line as the count.${p.surfaceWords ? ` Its words are "${p.surfaceWords}", recorded here under the controlled value modular_tile.` : ''}`,
     }),
     doc.fact('venue_type', 'public_park', {evidence: `Published by the ${CITY} among its parks.`}),
-    docList.fact('court_availability', p.dedicated ? DEDICATED_NOTE : SHARED_NOTE, {
-      evidence: `From the City's pickleball page: "${DUAL_STRIPED}" and "${FIRST_COME} ${LEAGUES_RESERVE}".`,
-    }),
+    docList.fact(
+      'court_availability',
+      (p.dedicated ? DEDICATED_NOTE : SHARED_NOTE) +
+        (p.courtNote ? ` The City adds a note on this park's own page: "${p.courtNote}"` : ''),
+      {
+        evidence: `From the City's pickleball page: "${DUAL_STRIPED}" and "${FIRST_COME} ${LEAGUES_RESERVE}".` +
+          (p.courtNote ? ` The dated note is from ${p.name}'s own park page.` : ''),
+      }),
     docCensus.fact('county', geo.county, {
-      evidence: `${geo.county} County, WI (FIPS ${geo.state_fips}${geo.county_fips}). ${geo.basis} The geocoder also places it in the incorporated place "${geo.place}", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address.`,
+      evidence: `${geo.county} County, WI${geo.county_fips ? ` (FIPS ${geo.state_fips}${geo.county_fips})` : ''}. ${geo.basis} The resolver also places it in the incorporated place "${geo.place}", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address.`,
     }),
     docCensus.fact('postal_code', geo.postal_code, {evidence: geo.basis}),
   ]
@@ -439,7 +472,7 @@ mkdirSync(join(REPO_ROOT, 'data/verified'), {recursive: true})
 writeFileSync(join(REPO_ROOT, 'data/verified/madison-wi.json'), JSON.stringify({
   city: 'Madison', state: 'WI', retrieved_at: RETRIEVED_AT,
   method_note:
-    'Madison Parks states a court count AND a surface for every pickleball venue it lists, in a structured block on each park\'s own page: "Tennis & Pickleball / Courts: 2, asphalt". Surface is the field this directory has been worst at — five verified surfaces across the seventy-four venues published before this city — and Madison supplies twenty in one reading. An unqualified count under a "Tennis & Pickleball" heading is a count of courts you can play pickleball on, and we know that because Reindahl Park is the exception that says so: "Courts: 8, asphalt; 4 striped for pickleball". Three venues the City lists are excluded because the Census address geocoder does not resolve their addresses, which costs eighteen courts including the city\'s largest outdoor count. Warner Park and the Warner Park Community Recreation Center share a street address and are published as two venues, because the City runs them as two facilities with different access, different booking and different cost — unlike Bellevue\'s Hidden Valley, where one park page carried both and neither had rules of its own. No fee is claimed at any outdoor court: Madison never calls them free.',
+    'Madison Parks states a court count AND a surface for every pickleball venue it lists, in a structured block on each park\'s own page: "Tennis & Pickleball / Courts: 2, asphalt". Surface is the field this directory has been worst at — five verified surfaces across the seventy-four venues published before this city — and Madison supplies twenty in one reading. An unqualified count under a "Tennis & Pickleball" heading is a count of courts you can play pickleball on, and we know that because Reindahl Park is the exception that says so: "Courts: 8, asphalt; 4 striped for pickleball". One venue the City lists is excluded, Reindahl Park, because no address resolver places 1818 Portage Rd at a house number; that costs eight courts, four of them striped. Door Creek and Rennebohm were refused on the same ground until 2026-09-04, when a second resolver was added, and their fourteen courts - including Door Creek\'s eight, the largest outdoor count in the city - publish from that date. Warner Park and the Warner Park Community Recreation Center share a street address and are published as two venues, because the City runs them as two facilities with different access, different booking and different cost — unlike Bellevue\'s Hidden Valley, where one park page carried both and neither had rules of its own. No fee is claimed at any outdoor court: Madison never calls them free.',
   sources: [
     {url: LIST_PAGE, publisher: CITY, tier: 1, format: 'html', snapshot: snapshotPath('pickleball')},
         ...VENUES.map(p => ({
@@ -448,9 +481,9 @@ writeFileSync(join(REPO_ROOT, 'data/verified/madison-wi.json'), JSON.stringify({
     {url: WPCRC_PAGE, publisher: CITY, tier: 1, format: 'html', snapshot: snapshotPath(WPCRC.page)},
     {url: `${BASE}/wpcrc`, publisher: CITY, tier: 1, format: 'html', snapshot: snapshotPath('wpcrc-wpcrc')},
     ...EXCLUDED.map((e, i) => ({
-      url: `${BASE}/find-a-park/${['door-creek', 'reindahl', 'rennebohm'][i]}`,
+      url: `${BASE}/find-a-park/${['reindahl'][i]}`,
       publisher: CITY, tier: 1, format: 'html',
-      snapshot: snapshotPath(['door-creek', 'reindahl', 'rennebohm'][i]),
+      snapshot: snapshotPath(['reindahl'][i]),
     })),
     {url: CENSUS_URL, publisher: 'US Census Bureau', tier: 1, format: 'json', snapshot: 'data/sources/madison-county-census.json'},
   ].map((s, i) => ({id: `S${i + 1}`, ...s})),
@@ -476,7 +509,7 @@ const surfaces = VENUES.reduce((m, p) => {
 writeFileSync(join(REPO_ROOT, 'reports', 'madison-conflicts.md'), [
   '# Madison verification - the first city that states its surfaces', '',
   `Run ${RETRIEVED_AT}. ${venueCount} venues published, ${totalCourts} courts ` +
-  `(${outdoorCourts} outdoor, ${indoorCourts} indoor). 3 venues excluded.`, '',
+  `(${outdoorCourts} outdoor, ${indoorCourts} indoor). ${EXCLUDED.length} venue excluded.`, '',
   'Madison Parks publishes a court count and a surface on each park page, in one line under a',
   '"Tennis & Pickleball" or "Pickleball" heading. Before this city, five of the seventy-four venues',
   'in this directory had a verified surface. Madison adds twenty.', '',
@@ -498,13 +531,17 @@ writeFileSync(join(REPO_ROOT, 'reports', 'madison-conflicts.md'), [
   '',
   '## Excluded', '',
   ...EXCLUDED.flatMap(e => [
-    `**${e.name}** - "${e.line}" at ${e.address}. The Census address geocoder returns no match, so`,
-    'Import Gate I1 cannot be satisfied. The City states the courts; this is an identity failure',
-    'rather than a data one, and it publishes the day the address resolves.', '',
+    `**${e.name}** - "${e.line}" at ${e.address}. Neither address resolver places this at a house`,
+    'number, so Import Gate I1 cannot be satisfied. The City states the courts; this is an identity',
+    'failure rather than a data one, and it publishes the day the address resolves.', '',
   ]),
-  'That is eighteen courts refused, including Door Creek\'s eight - the largest outdoor count in the',
-  'city. It is the same rule that excluded Highland Community Park in Bellevue, and a directory that',
-  'waives its identity gate when the loss is large does not have an identity gate.',
+  'Three venues were refused when Madison first published - Door Creek, Reindahl and Rennebohm, on',
+  'eighteen courts between them - because the Census address file has no record of any of the three',
+  'addresses. On 2026-09-04 Import Gate I1 gained a second resolver, OpenStreetMap, consulted only',
+  'where the Census has nothing and accepted only when it returns the house number asked for. Door',
+  'Creek and Rennebohm resolve at that level and now publish, which adds fourteen courts including',
+  'the largest outdoor count in the city. Reindahl still does not, and is still refused. A rule that',
+  'had admitted all three would have been a rule written to reach a wanted answer.',
   '',
   '## One address, two venues', '',
   'Warner Park has three outdoor courts. The Warner Park Community Recreation Center, at the same',
@@ -531,5 +568,5 @@ for (const [slug, o] of Object.entries(overlay)) {
     ` | ${o.patch.county} County`)
 }
 console.log(`\n  excluded: ${EXCLUDED.map(e => e.name).join(', ')} - ${EXCLUDED.length} venues,`)
-console.log('            18 courts, all on addresses the Census geocoder cannot resolve.')
+console.log('            8 courts, on an address neither resolver can place at house-number level.')
 console.log('\nWrote data/verified/madison-wi.json and reports/madison-conflicts.md\n')

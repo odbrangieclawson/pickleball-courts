@@ -1,245 +1,329 @@
 {
   "bordner-park": {
     "matched": "5610 ELDER PL, MADISON, WI, 53705",
+    "resolver": "census",
     "lat": 43.071323381107,
     "lon": -89.478354549683,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53705",
-    "basis": "Census address geocoder matched \"5610 ELDER PL, MADISON, WI, 53705\"."
+    "basis": "Census address geocoder matched \"5610 ELDER PL, MADISON, WI, 53705\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5610 ELDER PL, MADISON, WI, 53705\"."
   },
   "brittingham-park": {
     "matched": "388 S BASSETT ST, MADISON, WI, 53703",
+    "resolver": "census",
     "lat": 43.067472005211,
     "lon": -89.387317608933,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53703",
-    "basis": "Census address geocoder matched \"388 S BASSETT ST, MADISON, WI, 53703\"."
+    "basis": "Census address geocoder matched \"388 S BASSETT ST, MADISON, WI, 53703\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"388 S BASSETT ST, MADISON, WI, 53703\"."
   },
   "door-creek-park": {
-    "matched": false,
-    "query": "7035 Littlemore Dr, Madison, WI"
+    "matched": "7035, Littlemore Drive, Sprecher East, Madison, Dane County, Wisconsin, 53718, United States",
+    "resolver": "osm",
+    "lat": 43.0983586,
+    "lon": -89.2538162,
+    "county": "Dane",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Madison",
+    "place_matches_city": true,
+    "postal_code": "53718",
+    "basis": "OpenStreetMap (Nominatim) matched \"7035, Littlemore Drive, Sprecher East, Madison, Dane County, Wisconsin, 53718, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Dane County, WI. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Dane County."
   },
   "elver-park": {
     "matched": "1250 MCKENNA BLVD, MADISON, WI, 53719",
+    "resolver": "census",
     "lat": 43.041020667252,
     "lon": -89.505059843816,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53719",
-    "basis": "Census address geocoder matched \"1250 MCKENNA BLVD, MADISON, WI, 53719\"."
+    "basis": "Census address geocoder matched \"1250 MCKENNA BLVD, MADISON, WI, 53719\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1250 MCKENNA BLVD, MADISON, WI, 53719\"."
   },
   "garner-park": {
     "matched": "333 S ROSA RD, MADISON, WI, 53705",
+    "resolver": "census",
     "lat": 43.062848955931,
     "lon": -89.478361520264,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53705",
-    "basis": "Census address geocoder matched \"333 S ROSA RD, MADISON, WI, 53705\"."
+    "basis": "Census address geocoder matched \"333 S ROSA RD, MADISON, WI, 53705\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"333 S ROSA RD, MADISON, WI, 53705\"."
   },
   "heritage-heights-park": {
     "matched": "701 MEADOWLARK DR, MADISON, WI, 53714",
+    "resolver": "census",
     "lat": 43.087528821228,
     "lon": -89.296883541568,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53714",
-    "basis": "Census address geocoder matched \"701 MEADOWLARK DR, MADISON, WI, 53714\"."
+    "basis": "Census address geocoder matched \"701 MEADOWLARK DR, MADISON, WI, 53714\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"701 MEADOWLARK DR, MADISON, WI, 53714\"."
   },
   "huegel-park": {
     "matched": "5902 WILLIAMSBURG WAY, MADISON, WI, 53719",
+    "resolver": "census",
     "lat": 43.023526375745,
     "lon": -89.484656042015,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53719",
-    "basis": "Census address geocoder matched \"5902 WILLIAMSBURG WAY, MADISON, WI, 53719\"."
+    "basis": "Census address geocoder matched \"5902 WILLIAMSBURG WAY, MADISON, WI, 53719\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5902 WILLIAMSBURG WAY, MADISON, WI, 53719\"."
   },
   "kennedy-park": {
     "matched": "5202 RETANA DR, MADISON, WI, 53714",
+    "resolver": "census",
     "lat": 43.092203856461,
     "lon": -89.292136364689,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53714",
-    "basis": "Census address geocoder matched \"5202 RETANA DR, MADISON, WI, 53714\"."
+    "basis": "Census address geocoder matched \"5202 RETANA DR, MADISON, WI, 53714\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5202 RETANA DR, MADISON, WI, 53714\"."
   },
   "nakoma-park": {
     "matched": "3801 CHEROKEE DR, MADISON, WI, 53711",
+    "resolver": "census",
     "lat": 43.047984768407,
     "lon": -89.439139581878,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53711",
-    "basis": "Census address geocoder matched \"3801 CHEROKEE DR, MADISON, WI, 53711\"."
+    "basis": "Census address geocoder matched \"3801 CHEROKEE DR, MADISON, WI, 53711\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3801 CHEROKEE DR, MADISON, WI, 53711\"."
   },
   "norman-clayton-park": {
     "matched": "6401 SHOREHAM DR, MADISON, WI, 53711",
+    "resolver": "census",
     "lat": 43.04392876394,
     "lon": -89.490942646631,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53711",
-    "basis": "Census address geocoder matched \"6401 SHOREHAM DR, MADISON, WI, 53711\"."
+    "basis": "Census address geocoder matched \"6401 SHOREHAM DR, MADISON, WI, 53711\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6401 SHOREHAM DR, MADISON, WI, 53711\"."
   },
   "northland-manor-park": {
     "matched": "902 NORTHLAND DR, MADISON, WI, 53704",
+    "resolver": "census",
     "lat": 43.146011872607,
     "lon": -89.381385597621,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53704",
-    "basis": "Census address geocoder matched \"902 NORTHLAND DR, MADISON, WI, 53704\"."
+    "basis": "Census address geocoder matched \"902 NORTHLAND DR, MADISON, WI, 53704\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"902 NORTHLAND DR, MADISON, WI, 53704\"."
   },
   "olbrich-park": {
     "matched": "3527 ATWOOD AVE, MADISON, WI, 53714",
+    "resolver": "census",
     "lat": 43.089893658798,
     "lon": -89.330818237661,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53714",
-    "basis": "Census address geocoder matched \"3527 ATWOOD AVE, MADISON, WI, 53714\"."
+    "basis": "Census address geocoder matched \"3527 ATWOOD AVE, MADISON, WI, 53714\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3527 ATWOOD AVE, MADISON, WI, 53714\"."
   },
   "reindahl-park": {
     "matched": false,
-    "query": "1818 Portage Rd, Madison, WI"
+    "query": "1818 Portage Rd, Madison, WI",
+    "resolver": null
   },
   "rennebohm-park": {
-    "matched": false,
-    "query": "115 N Eau Claire Ave, Madison, WI"
+    "matched": "115, North Eau Claire Avenue, Hill Farms, Madison, Dane County, Wisconsin, 53705, United States",
+    "resolver": "osm",
+    "lat": 43.0702727,
+    "lon": -89.4635355,
+    "county": "Dane",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Madison",
+    "place_matches_city": true,
+    "postal_code": "53705",
+    "basis": "OpenStreetMap (Nominatim) matched \"115, North Eau Claire Avenue, Hill Farms, Madison, Dane County, Wisconsin, 53705, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Dane County, WI. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Dane County."
   },
   "reynolds-park": {
     "matched": "810 E MIFFLIN ST, MADISON, WI, 53703",
+    "resolver": "census",
     "lat": 43.082095114616,
     "lon": -89.376110392665,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53703",
-    "basis": "Census address geocoder matched \"810 E MIFFLIN ST, MADISON, WI, 53703\"."
+    "basis": "Census address geocoder matched \"810 E MIFFLIN ST, MADISON, WI, 53703\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"810 E MIFFLIN ST, MADISON, WI, 53703\"."
   },
   "richmond-hill-park": {
     "matched": "6117 COTTONTAIL TRL, MADISON, WI, 53718",
+    "resolver": "census",
     "lat": 43.078454758625,
     "lon": -89.274854142932,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53718",
-    "basis": "Census address geocoder matched \"6117 COTTONTAIL TRL, MADISON, WI, 53718\"."
+    "basis": "Census address geocoder matched \"6117 COTTONTAIL TRL, MADISON, WI, 53718\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6117 COTTONTAIL TRL, MADISON, WI, 53718\"."
   },
   "tenney-park": {
     "matched": "1414 E JOHNSON ST, MADISON, WI, 53703",
+    "resolver": "census",
     "lat": 43.090998773454,
     "lon": -89.367044096243,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53703",
-    "basis": "Census address geocoder matched \"1414 E JOHNSON ST, MADISON, WI, 53703\"."
+    "basis": "Census address geocoder matched \"1414 E JOHNSON ST, MADISON, WI, 53703\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1414 E JOHNSON ST, MADISON, WI, 53703\"."
   },
   "walnut-grove-park": {
     "matched": "202 N WESTFIELD RD, MADISON, WI, 53717",
+    "resolver": "census",
     "lat": 43.069466309846,
     "lon": -89.509571126804,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53717",
-    "basis": "Census address geocoder matched \"202 N WESTFIELD RD, MADISON, WI, 53717\"."
+    "basis": "Census address geocoder matched \"202 N WESTFIELD RD, MADISON, WI, 53717\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"202 N WESTFIELD RD, MADISON, WI, 53717\"."
   },
   "warner-park": {
     "matched": "2930 N SHERMAN AVE, MADISON, WI, 53704",
+    "resolver": "census",
     "lat": 43.128475401467,
     "lon": -89.363605353914,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53704",
-    "basis": "Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\"."
+    "basis": "Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\"."
   },
   "waunona-park": {
     "matched": "5323 RAYWOOD RD, MADISON, WI, 53713",
+    "resolver": "census",
     "lat": 43.048756437168,
     "lon": -89.354496355962,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53713",
-    "basis": "Census address geocoder matched \"5323 RAYWOOD RD, MADISON, WI, 53713\"."
+    "basis": "Census address geocoder matched \"5323 RAYWOOD RD, MADISON, WI, 53713\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5323 RAYWOOD RD, MADISON, WI, 53713\"."
   },
   "westhaven-trails-park": {
     "matched": "3020 CIMARRON TRL, MADISON, WI, 53719",
+    "resolver": "census",
     "lat": 43.019686739388,
     "lon": -89.509091915615,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53719",
-    "basis": "Census address geocoder matched \"3020 CIMARRON TRL, MADISON, WI, 53719\"."
+    "basis": "Census address geocoder matched \"3020 CIMARRON TRL, MADISON, WI, 53719\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3020 CIMARRON TRL, MADISON, WI, 53719\"."
   },
   "westmorland-park": {
     "matched": "4114 TOKAY BLVD, MADISON, WI, 53711",
+    "resolver": "census",
     "lat": 43.05352035098,
     "lon": -89.444541375832,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53711",
-    "basis": "Census address geocoder matched \"4114 TOKAY BLVD, MADISON, WI, 53711\"."
+    "basis": "Census address geocoder matched \"4114 TOKAY BLVD, MADISON, WI, 53711\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"4114 TOKAY BLVD, MADISON, WI, 53711\"."
   },
   "wexford-park": {
     "matched": "1201 N WESTFIELD RD, MADISON, WI, 53717",
+    "resolver": "census",
     "lat": 43.082255250874,
     "lon": -89.510456377424,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53717",
-    "basis": "Census address geocoder matched \"1201 N WESTFIELD RD, MADISON, WI, 53717\"."
+    "basis": "Census address geocoder matched \"1201 N WESTFIELD RD, MADISON, WI, 53717\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1201 N WESTFIELD RD, MADISON, WI, 53717\"."
   },
   "warner-park-community-recreation-center": {
     "matched": "2930 N SHERMAN AVE, MADISON, WI, 53704",
+    "resolver": "census",
     "lat": 43.128475401467,
     "lon": -89.363605353914,
     "county": "Dane",
     "state_fips": "55",
     "county_fips": "025",
     "place": "Madison city",
+    "place_matches_city": true,
     "postal_code": "53704",
-    "basis": "Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\"."
+    "basis": "Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\".",
+    "county_citation": "Dane County, WI (FIPS 55025). Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\"."
   }
 }

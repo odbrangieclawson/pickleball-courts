@@ -328,13 +328,18 @@ passes all six gates against the built HTML; the totals are the ones
 | 5 | Charlotte, NC | 5 | 29 | Mecklenburg County park pages | 2026-09-03 |
 | 6 | Portland, OR | 11 | 59 | Portland Parks pickleball page | 2026-09-03 |
 | 7 | Vancouver, WA | 3 | 14 | City of Vancouver pickleball page | 2026-09-03 |
-| 8 | Bellevue, WA | 12 | 38 | City of Bellevue pickleball page + park pages | 2026-09-04 |
-| 9 | Madison, WI | 21 | 53 | City of Madison park pages, count and surface per venue | 2026-09-04 |
+| 8 | Bellevue, WA | 13 | 42 | City of Bellevue pickleball page + park pages | 2026-09-04 |
+| 9 | Madison, WI | 23 | 67 | City of Madison park pages, count and surface per venue | 2026-09-04 |
 | 10 | Austin, TX | 21 | 60 | Austin PARD pickleball page, count + hours + lighting per venue | 2026-09-04 |
-| 11 | Scottsdale, AZ | 3 | 21 | Scottsdale pickleball page + park pages; count, lighting, price, etiquette | 2026-09-04 |
+| 11 | Scottsdale, AZ | 4 | 29 | Scottsdale pickleball page + park pages; count, lighting, price, etiquette | 2026-09-04 |
 | 12 | Saint Paul, MN | 6 | 13 | Saint Paul facility pages, assembled from the City's own pickleball map layer | 2026-09-04 |
 
-**167 published pages:** 12 city, 125 venue, 19 filter, 9 county, 2 state.
+**171 published pages:** 12 city, 129 venue, 19 filter, 9 county, 2 state.
+
+**Six of those venues publish on a second address resolver,** added 2026-09-04:
+Bellevue's Highland Park, Madison's Door Creek and Rennebohm, and Scottsdale's
+Ashler Hills Park — 26 courts that the US Census address file cannot place. See
+the I1 resolver-set note in `decisions.md` §6.
 
 **Two state pages exist because two states have three published cities.**
 North Carolina since Apex; Washington since Bellevue. `STATE_MIN_CITIES = 3`
@@ -366,11 +371,14 @@ count of courts you can play on. Reindahl is not published — its address does
 not resolve — but its snapshot is committed and the run asserts that line
 still exists, because every other count in the city rests on it.
 
-**Three venues refused, eighteen courts lost.** Door Creek, Reindahl and
-Rennebohm are all on the City's pickleball list with counts and surfaces, and
-the Census geocoder resolves none of their addresses. That includes Door
-Creek's eight, the largest outdoor count in Madison. Same rule as Bellevue's
-Highland Community Park.
+**Three venues were refused for eighteen courts; two came back.** Door Creek,
+Reindahl and Rennebohm are all on the City's pickleball list with counts and
+surfaces, and the Census geocoder resolves none of their addresses. On
+2026-09-04 Import Gate I1 gained a second resolver and Door Creek and
+Rennebohm resolved at house-number level, publishing fourteen courts including
+Door Creek's eight — the largest outdoor count in Madison. Reindahl still does
+not resolve, and its eight courts are still refused. A rule that had admitted
+all three would have been written to reach a wanted answer.
 
 **Warner Park is two venues where Bellevue's Hidden Valley was one,** and the
 difference is the operator rather than convenience: the Warner Park Community
@@ -440,11 +448,14 @@ busiest time for pickleball play at Cholla." The peak_hours slot on every
 city page before this one was written out of rules and inference because
 there was nothing else to write it from.
 
-**Every published Scottsdale court is lit and free,** stated at every venue —
-the first city here where count, lighting and cost are all answered
-everywhere, and only the second city with any verified `free` at all after
-Portland. It also gives the directory its second `/free/` filter page and a
-`/lights/` page where all three venues qualify.
+**Every published Scottsdale court is lit; three of four are free.** All four
+venues carry "lighted" in the City's court count and again in their own park
+page's feature list. Three also carry "They are free to use" on their park
+pages, which makes Scottsdale only the second city with any verified `free`
+at all after Portland; Ashler Hills' page names its courts and never mentions
+cost, so it publishes with the price unstated. That gives the directory its
+second `/free/` filter page, carrying three of the city's four venues, and a
+`/lights/` page carrying all four.
 
 **A venue is published closed.** Thompson Peak Park's three courts were shut
 for resurfacing from 17 August to 11 September 2026, and this run was made on
@@ -452,14 +463,14 @@ for resurfacing from 17 August to 11 September 2026, and this run was made on
 the build fails — a directory carrying a stale closure is worse than one
 carrying none.
 
-**Two of five refused, for different reasons.** Ashler Hills Park has eight
-courts and an address the Census geocoder cannot resolve. Scottsdale
-Community College has six lighted courts hosting a free City-run public
-programme, and the geocoder places its address in **no incorporated place at
-all** — it is not inside Scottsdale. A city operating a programme somewhere
-does not move that somewhere into the city, which is the same test that kept
-a THPRD set out of Beaverton. That leaves exactly three venues, the minimum a
-city may publish on.
+**Two of five were refused; one came back.** Ashler Hills Park has eight
+courts and an address the Census address file has no record of; it publishes
+from 2026-09-04 on the second resolver, which places 32220 N. 74th Way at its
+house number. Scottsdale Community College has six lighted courts hosting a
+free City-run public programme, and the geocoder places its address in **no
+incorporated place at all** — it is not inside Scottsdale. A city operating a
+programme somewhere does not move that somewhere into the city, which is the
+same test that kept a THPRD set out of Beaverton. That leaves four venues.
 
 **Two City park pages print a malformed postcode** — "Scottsdale, AZ 32220"
 at Ashler Hills and "Scottsdale, AZ 20199" at Thompson Peak, the street

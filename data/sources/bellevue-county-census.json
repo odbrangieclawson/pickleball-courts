@@ -1,138 +1,184 @@
 {
   "cherry-crest-mini-park": {
     "matched": "2532 127TH AVE NE, BELLEVUE, WA, 98005",
+    "resolver": "census",
     "lat": 47.632880169681,
     "lon": -122.170347651803,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98005",
-    "basis": "Census address geocoder matched \"2532 127TH AVE NE, BELLEVUE, WA, 98005\"."
+    "basis": "Census address geocoder matched \"2532 127TH AVE NE, BELLEVUE, WA, 98005\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"2532 127TH AVE NE, BELLEVUE, WA, 98005\"."
   },
   "crossroads-park": {
     "matched": "999 164TH AVE NE, BELLEVUE, WA, 98008",
+    "resolver": "census",
     "lat": 47.618322220369,
     "lon": -122.121785637315,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98008",
-    "basis": "Census address geocoder matched \"999 164TH AVE NE, BELLEVUE, WA, 98008\"."
+    "basis": "Census address geocoder matched \"999 164TH AVE NE, BELLEVUE, WA, 98008\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"999 164TH AVE NE, BELLEVUE, WA, 98008\"."
   },
   "eastgate-park": {
     "matched": "14500 SE NEWPORT WAY, BELLEVUE, WA, 98006",
+    "resolver": "census",
     "lat": 47.570034388313,
     "lon": -122.144719462502,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98006",
-    "basis": "Census address geocoder matched \"14500 SE NEWPORT WAY, BELLEVUE, WA, 98006\"."
+    "basis": "Census address geocoder matched \"14500 SE NEWPORT WAY, BELLEVUE, WA, 98006\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"14500 SE NEWPORT WAY, BELLEVUE, WA, 98006\"."
   },
   "hidden-valley-park": {
     "matched": "1903 112TH AVE NE, BELLEVUE, WA, 98004",
+    "resolver": "census",
     "lat": 47.627588805837,
     "lon": -122.191038103294,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98004",
-    "basis": "Census address geocoder matched \"1903 112TH AVE NE, BELLEVUE, WA, 98004\"."
+    "basis": "Census address geocoder matched \"1903 112TH AVE NE, BELLEVUE, WA, 98004\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"1903 112TH AVE NE, BELLEVUE, WA, 98004\"."
   },
   "highland-park": {
-    "matched": false,
-    "query": "14224 Bel-Red Road, Bellevue, WA"
+    "matched": "14224, Bel-Red Road, Bellevue, King County, Washington, 98007, United States",
+    "resolver": "osm",
+    "lat": 47.6255798,
+    "lon": -122.1505281,
+    "county": "King",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Bellevue",
+    "place_matches_city": true,
+    "postal_code": "98007",
+    "basis": "OpenStreetMap (Nominatim) matched \"14224, Bel-Red Road, Bellevue, King County, Washington, 98007, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "King County, WA. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in King County."
   },
   "hillaire-park": {
     "matched": "15803 NE 6TH ST, BELLEVUE, WA, 98008",
+    "resolver": "census",
     "lat": 47.615139908232,
     "lon": -122.129638497866,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98008",
-    "basis": "Census address geocoder matched \"15803 NE 6TH ST, BELLEVUE, WA, 98008\"."
+    "basis": "Census address geocoder matched \"15803 NE 6TH ST, BELLEVUE, WA, 98008\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"15803 NE 6TH ST, BELLEVUE, WA, 98008\"."
   },
   "lakemont-community-park": {
     "matched": "5170 VILLAGE PARK DR SE, BELLEVUE, WA, 98006",
+    "resolver": "census",
     "lat": 47.556870450747,
     "lon": -122.116455580365,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98006",
-    "basis": "Census address geocoder matched \"5170 VILLAGE PARK DR SE, BELLEVUE, WA, 98006\"."
+    "basis": "Census address geocoder matched \"5170 VILLAGE PARK DR SE, BELLEVUE, WA, 98006\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"5170 VILLAGE PARK DR SE, BELLEVUE, WA, 98006\"."
   },
   "lewis-creek-park": {
     "matched": "5808 LAKEMONT BLVD SE, BELLEVUE, WA, 98006",
+    "resolver": "census",
     "lat": 47.553867504494,
     "lon": -122.124115032604,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98006",
-    "basis": "Census address geocoder matched \"5808 LAKEMONT BLVD SE, BELLEVUE, WA, 98006\"."
+    "basis": "Census address geocoder matched \"5808 LAKEMONT BLVD SE, BELLEVUE, WA, 98006\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"5808 LAKEMONT BLVD SE, BELLEVUE, WA, 98006\"."
   },
   "norwood-village-neighborhood-park": {
     "matched": "12309 SE 23RD PL, BELLEVUE, WA, 98005",
+    "resolver": "census",
     "lat": 47.589849182157,
     "lon": -122.173271678664,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98005",
-    "basis": "Census address geocoder matched \"12309 SE 23RD PL, BELLEVUE, WA, 98005\"."
+    "basis": "Census address geocoder matched \"12309 SE 23RD PL, BELLEVUE, WA, 98005\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"12309 SE 23RD PL, BELLEVUE, WA, 98005\"."
   },
   "spiritridge-park": {
     "matched": "16100 SE 33RD PL, BELLEVUE, WA, 98008",
+    "resolver": "census",
     "lat": 47.58054065795,
     "lon": -122.1265555843,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98008",
-    "basis": "Census address geocoder matched \"16100 SE 33RD PL, BELLEVUE, WA, 98008\"."
+    "basis": "Census address geocoder matched \"16100 SE 33RD PL, BELLEVUE, WA, 98008\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"16100 SE 33RD PL, BELLEVUE, WA, 98008\"."
   },
   "crossroads-community-center": {
     "matched": "16000 SE 10TH ST, BELLEVUE, WA, 98008",
+    "resolver": "census",
     "lat": 47.60180401173,
     "lon": -122.126469361799,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98008",
-    "basis": "Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\"."
+    "basis": "Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\"."
   },
   "north-bellevue-community-center": {
     "matched": "4063 148TH AVE NE, BELLEVUE, WA, 98007",
+    "resolver": "census",
     "lat": 47.648011827768,
     "lon": -122.143225821039,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98007",
-    "basis": "Census address geocoder matched \"4063 148TH AVE NE, BELLEVUE, WA, 98007\"."
+    "basis": "Census address geocoder matched \"4063 148TH AVE NE, BELLEVUE, WA, 98007\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"4063 148TH AVE NE, BELLEVUE, WA, 98007\"."
   },
   "south-bellevue-community-center": {
     "matched": "14509 SE NEWPORT WAY, BELLEVUE, WA, 98006",
+    "resolver": "census",
     "lat": 47.571391967846,
     "lon": -122.157116378101,
     "county": "King",
     "state_fips": "53",
     "county_fips": "033",
     "place": "Bellevue city",
+    "place_matches_city": true,
     "postal_code": "98006",
-    "basis": "Census address geocoder matched \"14509 SE NEWPORT WAY, BELLEVUE, WA, 98006\"."
+    "basis": "Census address geocoder matched \"14509 SE NEWPORT WAY, BELLEVUE, WA, 98006\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"14509 SE NEWPORT WAY, BELLEVUE, WA, 98006\"."
   }
 }

@@ -74,17 +74,17 @@
   the conflicts report, and on the venue page itself.
 
   ============================================================
-  HIGHLAND PARK IS EXCLUDED, ON THREE GROUNDS
+  HIGHLAND PARK WAS EXCLUDED ON THREE GROUNDS; ONE HAS GONE
   ============================================================
 
   The pickleball page lists "Highland Community Park: 4 courts (portable
-  nets)". It is not published, for three independent reasons:
+  nets)". This run refused it on three independent grounds:
 
-  1. The Census address geocoder returns NO MATCH for 14224 Bel-Red Road —
+  1. The Census address geocoder returned NO MATCH for 14224 Bel-Red Road —
      the address the City's own park page gives — and no match for four
      spelling variants of it either. Import Gate I1 requires a street address
-     that resolves. This one does not resolve against the only resolver this
-     project has.
+     that resolves, and the Census was then the only resolver this project
+     had.
   2. The park's own page never mentions pickleball. It lists "two tennis
      courts" in its description and "Tennis Courts" in its amenity list, with
      no pickleball anywhere, so the count has no corroboration on the City's
@@ -92,11 +92,26 @@
   3. The two City pages do not agree on its name: the pickleball page calls
      it "Highland Community Park" and the park page calls it "Highland Park".
 
-  Any one of these would be survivable. Together they describe a venue this
-  run cannot place on a map, cannot corroborate, and cannot name with
-  confidence. The run asserts all three still hold, so the day the address
-  resolves this file fails rather than quietly continuing to exclude a venue
-  for a reason that has expired.
+  On 2026-09-04 ground 1 went away. Import Gate I1 gained a second resolver,
+  consulted only where the Census has no record and accepted only at
+  house-number level, and OpenStreetMap resolves 14224 Bel-Red Road. The
+  venue publishes from that date, and the other two grounds are published
+  with it rather than quietly dropped:
+
+  - Ground 2 is a null corroboration, which five other published Bellevue
+    venues already carry. It is also not a contradiction: four courts played
+    with portable nets over two tennis courts is exactly what the rest of
+    this city looks like, and the park page's "two tennis courts" is
+    consistent with it. What it is not is confirmation, so the venue page
+    says so in as many words.
+  - Ground 3 is settled the way this run settles it everywhere else. Three
+    published Bellevue venues carry two City names; the venue's own page
+    wins and the pickleball page's name is recorded as the alias. Highland
+    is the fourth, not an exception.
+
+  Both remaining grounds are still asserted. If the park page starts naming
+  pickleball, or the names converge, this run fails rather than going on
+  publishing a caveat that has expired.
 
   ============================================================
   WHAT IS NOT CLAIMED
@@ -186,6 +201,13 @@ const INDOOR_FEE_NOTE =
   `address` and the corroborating quotes are asserted against the venue's own
   page. Nothing below is published that is not one of those two things.
 */
+/*
+  Published from 2026-09-04, when Import Gate I1 gained a second address
+  resolver. The two caveats that outlived the exclusion are carried on the
+  venue itself rather than dropped — see the header.
+*/
+const HIGHLAND_SPEC = 'Highland Community Park: 4 courts (portable nets)'
+
 const VENUES = [
   {
     slug: 'cherry-crest-mini-park', name: 'Cherry Crest Mini Park', page: 'cherry-crest-mini-park',
@@ -229,6 +251,17 @@ const VENUES = [
     availability: `Two outdoor courts on shared-use tennis courts with portable nets, plus three indoor courts in the Hidden Valley Fieldhouse, which the City lists as a separate entry at the same park. ${SHARED_USE}`,
     restroom: true,
     alias: 'Hidden Valley Fieldhouse, and Hidden Valley Sports Park',
+  },
+  {
+    slug: 'highland-park', name: 'Highland Park', page: 'highland-park',
+    spec: HIGHLAND_SPEC,
+    courts: {outdoor: 4}, venueType: 'public_park',
+    address: '14224 Bel-Red Road',
+    alias: 'Highland Community Park',
+    /* The park page names two tennis courts and no pickleball. See header. */
+    corroboration: null,
+    availability: 'Four courts played with portable nets, per the City\'s pickleball page. Two things about this venue are worth knowing before you go, and both are the City\'s own doing rather than ours. Its park page never mentions pickleball at all — it describes "two tennis courts" and lists "Tennis Courts" among the amenities — so the count published here rests on the pickleball page alone, with no confirmation on the park\'s own record card. And the two pages call the park different things: "Highland Community Park" on the pickleball page, "Highland Park" on the park page. Four courts on two tennis courts with portable nets is the ordinary Bellevue arrangement and nothing here contradicts it; it is simply stated once rather than twice.',
+    restroom: true,
   },
   {
     slug: 'hillaire-park', name: 'Hillaire Park', page: 'hillaire-park',
@@ -320,16 +353,6 @@ const VENUES = [
   },
 ]
 
-/* The venue the City lists and this run refuses. */
-const EXCLUDED = {
-  name: 'Highland Community Park',
-  spec: 'Highland Community Park: 4 courts (portable nets)',
-  reasons: [
-    'The Census address geocoder returns no match for "14224 Bel-Red Road", the address the City\'s own park page gives, and no match for four spelling variants of it. Import Gate I1 requires a street address that resolves.',
-    'The park\'s own page never mentions pickleball: its description lists "two tennis courts" and its amenity list carries "Tennis Courts", with no pickleball anywhere. The court count has no corroboration on the City\'s record card for the park.',
-    'The City\'s two pages disagree on its name. The pickleball page says "Highland Community Park"; the park page says "Highland Park".',
-  ],
-}
 
 /* ---------------------------------------------------------------- */
 
@@ -416,16 +439,16 @@ must('eastgate-conversion-news', 'city-wide',
   this run fails rather than going on excluding a venue for a reason that has
   expired.
 */
-must('pickleball', 'highland-park', EXCLUDED.spec, 'excluded venue')
+must('pickleball', 'highland-park', HIGHLAND_SPEC, 'court count')
 must('highland-park', 'highland-park', 'Highland Park', 'park-page name')
 mustNot('highland-park', 'highland-park', 'pickleball', 'absence of pickleball on the park page')
 
 const counties = JSON.parse(
   readFileSync(join(REPO_ROOT, 'data/sources/bellevue-county-census.json'), 'utf8'))
 
-if (counties['highland-park']?.matched) {
+if (counties['highland-park']?.resolver !== 'osm') {
   throw new Error(
-    'Highland Park now geocodes. One of the three reasons it is excluded has changed; re-read the source and revisit the exclusion.')
+    'Highland Park no longer resolves through OpenStreetMap. It was published on 2026-09-04 on the strength of that match; re-read the address before this run publishes it again.')
 }
 
 const identityRegistry = loadIdentity(REPO_ROOT)
@@ -454,8 +477,13 @@ for (const p of VENUES) {
     addresses reading "Bellevue, WA" sit in unincorporated King County, and a
     postal address is not a jurisdiction.
   */
-  if (geo.place !== 'Bellevue city') {
-    throw new Error(`${p.slug}: Census places this at "${geo.place}", not Bellevue city.`)
+  /*
+    Resolver-agnostic since 2026-09-04. The Census writes "Bellevue city" and
+    OpenStreetMap writes "Bellevue"; geocode.mjs settles that comparison so no
+    apply run has to guess at suffixes.
+  */
+  if (!geo.place_matches_city) {
+    throw new Error(`${p.slug}: the resolver places this at "${geo.place}", not Bellevue.`)
   }
 
   const doc = new SourceDocument({
@@ -628,7 +656,7 @@ writeFileSync(join(REPO_ROOT, 'data/verified/bellevue-wa.json'), JSON.stringify(
     {url: CENSUS_URL, publisher: 'US Census Bureau', tier: 1, format: 'json', snapshot: 'data/sources/bellevue-county-census.json'},
   ].map((s, i) => ({id: `S${i + 1}`, ...s})),
   totals: {venues: VENUES.length, courts: totalCourts, outdoor: outdoorCourts, indoor: indoorCourts},
-  excluded: [{name: EXCLUDED.name, why: EXCLUDED.reasons}],
+  excluded: [],
   venues: overlay,
 }, null, 2) + '\n')
 
@@ -653,13 +681,23 @@ writeFileSync(join(REPO_ROOT, 'reports', 'bellevue-conflicts.md'), [
       `${p.spec_indoor ? ` and "${p.spec_indoor.split(': ')[1]}"` : ''} |`
   }),
   '',
-  '## Excluded', '',
-  `**${EXCLUDED.name}** - "${EXCLUDED.spec.split(': ')[1]}" - three independent reasons:`, '',
-  ...EXCLUDED.reasons.map((r, i) => `${i + 1}. ${r}`),
+  '## The venue that was excluded, and now is not', '',
+  `**Highland Park** - "${HIGHLAND_SPEC.split(': ')[1]}" - was refused on three independent grounds:`, '',
+  '1. The Census address geocoder returned no match for "14224 Bel-Red Road", the address the',
+  "   City's own park page gives, and no match for four spelling variants of it.",
+  "2. The park's own page never mentions pickleball: its description lists \"two tennis courts\"",
+  '   and its amenity list carries "Tennis Courts", with no pickleball anywhere.',
+  "3. The City's two pages disagree on its name. The pickleball page says \"Highland Community",
+  '   Park"; the park page says "Highland Park".',
   '',
-  'The run asserts all three still hold. The day the address resolves, or the park page starts',
-  'naming pickleball, this run fails rather than continuing to exclude a venue for a reason that',
-  'has expired.',
+  'On 2026-09-04 the first ground went away: Import Gate I1 gained a second address resolver,',
+  'consulted only where the Census has no record and accepted only at house-number level, and',
+  'OpenStreetMap resolves 14224 Bel-Red Road. The venue publishes from that date with the other',
+  'two grounds carried onto its own page rather than dropped. Neither is a gate: five other',
+  'published Bellevue venues have no corroborating park-page description, and three carry two',
+  'City names, settled the same way - the park page names the venue and the pickleball page',
+  'name is recorded as the alias. The run still asserts both, so if the park page starts naming',
+  'pickleball, or the names converge, it fails rather than serving a caveat that has expired.',
   '',
   '## One park listed twice', '',
   'The City lists `Hidden Valley Fieldhouse: 3 courts` under Indoor and `Hidden Valley Sports Park:',
@@ -704,7 +742,7 @@ for (const p of VENUES) {
     ` | ${String(o.patch.fee_type ?? 'fee not stated').padEnd(14)}` +
     ` | ${o.patch.county} County`)
 }
-console.log(`\n  excluded: ${EXCLUDED.name} - its address does not resolve in the`)
-console.log('            Census geocoder, its park page never mentions pickleball,')
-console.log("            and the City's two pages disagree about its name.")
+console.log('\n  Highland Park publishes from 2026-09-04 via the second address resolver.')
+console.log("            Its park page still never mentions pickleball and the City's two")
+console.log('            pages still disagree about its name; both are on the venue page.')
 console.log('\nWrote data/verified/bellevue-wa.json and reports/bellevue-conflicts.md\n')

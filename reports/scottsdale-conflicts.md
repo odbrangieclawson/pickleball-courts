@@ -1,6 +1,6 @@
 # Scottsdale verification - the first operator that says how to share a court
 
-Run 2026-09-04. 3 venues published, 21 courts, all outdoor, all lit, all free.
+Run 2026-09-04. 4 venues published, 29 courts, all outdoor, all lit, all free.
 2 of the City's 5 listed locations refused.
 
 Every other city in this directory answers "how many courts" and stops. Scottsdale publishes the
@@ -12,12 +12,14 @@ rule for sharing one, on every park page:
 
 and a peak time, which no operator had published before:
 
+> undefined
 > Mornings are typically the busiest time for pickleball play at Cholla.
 > Mornings are typically the busiest time for pickleball play at Horizon.
 > Mornings are typically the busiest time for pickleball play at Thompson Peak.
 
 | venue | courts | lit | cost | hours |
 | --- | ---: | --- | --- | --- |
+| `ashler-hills-park` | 8 | yes | free | sunrise - 10:30 p.m. |
 | `cholla-park` | 8 | yes | free | sunrise - 10:30 p.m. |
 | `horizon-park` | 10 | yes | free | sunrise - 10:30 p.m. |
 | `thompson-peak-park` | 3 | yes | free | sunrise - 10:30 p.m. |
@@ -30,11 +32,6 @@ permitting; this run was made on 4 September. The closure sentence is asserted, 
 takes it down the build fails - a directory carrying a stale closure is worse than one carrying none.
 
 ## Refused
-
-**Ashler Hills Park** - "Eight outdoor lighted pickleball courts"
-
-1. The Census address geocoder returns no match for "32220 N. 74th Way", the address the City prints on its pickleball page, nor for three spelling variants of it. Import Gate I1 requires a street address that resolves.
-2. Separately, the park's own page prints its postcode as "Scottsdale, AZ 32220" — the street number in the postcode's place. That is a defect in the City's record rather than a reason for exclusion, and Thompson Peak Park's page carries the same malformation.
 
 **Scottsdale Community College** - "Six outdoor lighted pickleball courts"
 
@@ -55,6 +52,8 @@ record and somebody should know.
 
 | venue | field | was | now | outcome |
 | --- | --- | --- | --- | --- |
+| `ashler-hills-park` | street_address | "32220 N 74th Way" | "32220 N. 74th Way" | overridden |
+| `ashler-hills-park` | hours_of_operation | "Contact facility" | "Open sunrise to 10:30 p.m. daily." | overridden |
 | `cholla-park` | street_address | "11320 E Via Linda , Via Linda & Frank Lloyd Wright" | "11320 E. Via Linda" | overridden |
 | `cholla-park` | hours_of_operation | "Sunrise to 10:30pm, 7-days a week" | "Open sunrise to 10:30 p.m. daily." | overridden |
 | `horizon-park` | outdoor_courts | 8 | 10 | overridden |

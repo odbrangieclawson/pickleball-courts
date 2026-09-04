@@ -422,6 +422,44 @@
         "M3",
         "M2"
       ]
+    },
+    "highland-park": {
+      "slots": {
+        "description": "Four courts played with portable nets, per the City's pickleball page, in a park that also holds the Highland Community Center and the Bellevue Skate Park. This is the most lightly evidenced venue in Bellevue, and the shape of the gap is worth knowing before you drive there. The City's pickleball page lists \"Highland Community Park: 4 courts (portable nets)\". The park's own page — the record card the City keeps for the site — never mentions pickleball at all: it describes \"a lighted baseball field, a lighted softball field, two tennis courts, a play area, and picnic tables\", and lists \"Tennis Courts\" among the amenities.\n\nNothing there contradicts the count. Four courts with portable nets over two tennis courts is the ordinary arrangement at half the venues in this city, and Lakemont Community Park is documented doing exactly that. But it is stated once rather than twice, and this page says so rather than presenting a single-source count as if it were corroborated.",
+        "getting_there": "14224 Bel-Red Road, Bellevue, WA 98007, in the Bel-Red corridor. This address is why the venue took until 4 September 2026 to appear here. The US Census address geocoder returns no match for it, nor for four spelling variants of it, and Import Gate I1 requires an address that resolves; until that date this site had exactly one resolver. It now consults OpenStreetMap where the Census has no record and accepts the result only when it comes back with the house number asked for. This address meets that test, so the county and postcode published here come from OpenStreetMap rather than from the Census.\n\nParking and restrooms are both listed among the park's amenities, which is more than most Bellevue park pages offer, and the site is shared with a community center, so it is set up for people arriving by car.",
+        "what_to_expect": "Four courts, portable nets, no published cost and no published hours — the same as almost everywhere else in Bellevue, where the City states counts and very little else. Bring a net: \"portable nets\" says the nets are portable, not who brings them, and that ambiguity is unresolved at every Bellevue venue except South Bellevue Community Center. Restrooms are listed. Lighting is not verified for the courts: the park page calls the baseball and softball fields lighted and says nothing about lighting on the tennis courts the pickleball shares.\n\nOne more thing to expect, which is a naming problem rather than a playing one. The City calls this park two different things on two of its own pages — \"Highland Community Park\" where it counts the courts, \"Highland Park\" where it describes the site. This directory publishes the name from the venue's own page, as it does at Crossroads, Norwood Village and Hidden Valley, and records the other as an alias. If you are searching the City's site, try both."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Four, with portable nets. The City's pickleball page reads \"Highland Community Park: 4 courts (portable nets)\". That is the only City page that states a pickleball count for this site."
+        },
+        {
+          "q": "Why doesn't the park's own page mention pickleball?",
+          "a": "We do not know, and we are not going to guess. Its description lists \"a lighted baseball field, a lighted softball field, two tennis courts, a play area, and picnic tables\", and its amenity list carries \"Tennis Courts\" with no pickleball. Both pages are the City of Bellevue. Our build asserts that the park page still says nothing about pickleball, so on the day the City adds it, this run fails and someone re-reads the venue rather than leaving a caveat here that has expired."
+        },
+        {
+          "q": "Why does the City call it two different names?",
+          "a": "Also unexplained. The pickleball page says \"Highland Community Park\"; the park page says \"Highland Park\". This site publishes the name on the venue's own page and records the other as an alias — the same rule it applies at Crossroads Park, Norwood Village Neighborhood Park and Hidden Valley Park, which each carry two City names."
+        },
+        {
+          "q": "Why did this venue only appear recently?",
+          "a": "Because of the address. The Census address geocoder has no match for 14224 Bel-Red Road, or for four spelling variants of it, and this site will not publish a venue whose address does not resolve. On 4 September 2026 it added a second resolver — OpenStreetMap, consulted only where the Census has nothing and accepted only when it returns the house number asked for. It resolves this address. That was one of three reasons this venue was refused; the other two are on this page rather than dropped."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not verified. The park page describes a lighted baseball field and a lighted softball field, and says nothing about lighting on the tennis courts. Lighting on one facility is not lighting on another, so this reads \"not verified yet\" rather than Yes."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Yes — the park page lists \"Restrooms\" among its amenities, along with parking, a playground, a tot lot, picnic tables, an AED and public Wi-Fi. The site also holds the Highland Community Center and the Bellevue Skate Park."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M18",
+        "M19"
+      ]
     }
   },
   "sources": [
@@ -560,6 +598,22 @@
       "tier": 1,
       "retrieved": "2026-09-04",
       "evidence": "\"14509 SE Newport Way\", Bellevue, WA 98006, in the centre's contact block. Snapshot: data/sources/bellevue/south-bellevue-community-center.html"
+    },
+    {
+      "id": "M18",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/highland-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Highland Park's own page: \"Highland Park is home to Highland Community Center and the Bellevue Skate Park. In addition, it features a lighted baseball field, a lighted softball field, two tennis courts, a play area, and picnic tables.\", the amenity list including \"Parking\", \"Restrooms\" and \"Tennis Courts\" and no pickleball, and the address \"14224 Bel-Red Road, Bellevue, WA 98007\". The page names the site \"Highland Park\" where the City's pickleball page names it \"Highland Community Park\". Snapshot: data/sources/bellevue/highland-park.html"
+    },
+    {
+      "id": "M19",
+      "url": "https://nominatim.openstreetmap.org/search",
+      "publisher": "OpenStreetMap contributors (Nominatim)",
+      "tier": 2,
+      "retrieved": "2026-09-04",
+      "evidence": "The second address resolver, added 2026-09-04 and consulted only where the US Census address file holds no record, accepted only when it returns the house number asked for. It resolves 14224 Bel-Red Road at that level, which is what allows Highland Park to publish; the Census returns no match for that address or for four spelling variants of it. Snapshot: data/sources/bellevue-county-census.json"
     }
   ]
 }

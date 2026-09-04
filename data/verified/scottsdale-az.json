@@ -2,7 +2,7 @@
   "city": "Scottsdale",
   "state": "AZ",
   "retrieved_at": "2026-09-04",
-  "method_note": "Scottsdale is the first operator in this directory to publish how a court is shared and when it is busy. Each park page carries the same rule — standard game to 11, win by two, a 30-minute limit, then rotate off for anyone waiting — and each one states that mornings are typically the busiest time for pickleball there. Eleven cities in, no operator had published a peak time at all. Every published venue is also stated lighted on the City's pickleball page and \"free to use\" on its own park page, which makes Scottsdale the first city here where all three of count, lighting and cost are answered everywhere. Two of the City's five listed locations are refused: Ashler Hills Park, whose address the Census geocoder cannot resolve, and Scottsdale Community College, which the geocoder places in no incorporated place — the City runs a free public drop-in programme on the college's courts, and that does not put them inside the city. Thompson Peak Park is published with its courts closed for resurfacing until 11 September 2026, because that is what the City says on the day this was checked.",
+  "method_note": "Scottsdale is the first operator in this directory to publish how a court is shared and when it is busy. Three of its four park pages carry the same rule — standard game to 11, win by two, a 30-minute limit, then rotate off for anyone waiting — and each one states that mornings are typically the busiest time for pickleball there. Eleven cities in, no operator had published a peak time at all. Every one of the four published venues is stated lighted on the City's pickleball page and again in its own park page's feature list, and three of the four are \"free to use\" in their park pages' own words; the fourth, Ashler Hills Park, is named in its feature list and described nowhere else on that page, so its price is unstated rather than free. Ashler Hills publishes from 4 September 2026, when Import Gate I1 gained a second address resolver: the Census address file has no record of 32220 N. 74th Way and OpenStreetMap resolves it at house-number level. One of the City's five listed locations is still refused — Scottsdale Community College, which the geocoder places in no incorporated place at all; the City runs a free public drop-in programme on the college's courts, and that does not put them inside the city. Thompson Peak Park is published with its courts closed for resurfacing until 11 September 2026, because that is what the City says on the day this was checked.",
   "sources": [
     {
       "id": "S1",
@@ -14,30 +14,6 @@
     },
     {
       "id": "S2",
-      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/cholla-park",
-      "publisher": "City of Scottsdale Parks and Recreation",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/scottsdale/cholla-park.html"
-    },
-    {
-      "id": "S3",
-      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/horizon-park",
-      "publisher": "City of Scottsdale Parks and Recreation",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/scottsdale/horizon-park.html"
-    },
-    {
-      "id": "S4",
-      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/thompson-peak-park",
-      "publisher": "City of Scottsdale Parks and Recreation",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/scottsdale/thompson-peak-park.html"
-    },
-    {
-      "id": "S5",
       "url": "https://www.scottsdaleaz.gov/parks/find-a-park/ashler-hills-park",
       "publisher": "City of Scottsdale Parks and Recreation",
       "tier": 1,
@@ -45,7 +21,39 @@
       "snapshot": "data/sources/scottsdale/ashler-hills-park.html"
     },
     {
+      "id": "S3",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/cholla-park",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/scottsdale/cholla-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/horizon-park",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/scottsdale/horizon-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/thompson-peak-park",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/scottsdale/thompson-peak-park.html"
+    },
+    {
       "id": "S6",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/ashler-hills-park",
+      "publisher": "City of Scottsdale Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/scottsdale/ashler-hills-park.html"
+    },
+    {
+      "id": "S7",
       "url": "https://geocoding.geo.census.gov/geocoder/geographies",
       "publisher": "US Census Bureau",
       "tier": 1,
@@ -54,21 +62,14 @@
     }
   ],
   "totals": {
-    "venues": 3,
-    "courts": 21,
-    "outdoor": 21,
+    "venues": 4,
+    "courts": 29,
+    "outdoor": 29,
     "indoor": 0,
-    "lit": 3,
+    "lit": 4,
     "free": 3
   },
   "excluded": [
-    {
-      "name": "Ashler Hills Park",
-      "why": [
-        "The Census address geocoder returns no match for \"32220 N. 74th Way\", the address the City prints on its pickleball page, nor for three spelling variants of it. Import Gate I1 requires a street address that resolves.",
-        "Separately, the park's own page prints its postcode as \"Scottsdale, AZ 32220\" — the street number in the postcode's place. That is a defect in the City's record rather than a reason for exclusion, and Thompson Peak Park's page carries the same malformation."
-      ]
-    },
     {
       "name": "Scottsdale Community College",
       "why": [
@@ -78,6 +79,124 @@
     }
   ],
   "venues": {
+    "ashler-hills-park": {
+      "minted": false,
+      "identity": {
+        "name": "Ashler Hills Park",
+        "city": "Scottsdale",
+        "state": "AZ",
+        "county": "Maricopa",
+        "postal_code": "85266",
+        "latitude": 33.7785351,
+        "longitude": -111.9208003,
+        "imported_slug": "ashler-hills-park",
+        "canonical_slug": "ashler-hills-park"
+      },
+      "match": {
+        "source_page": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+        "quote": "Eight outdoor lighted pickleball courts",
+        "basis": "Matched to the imported ashler-hills-park row in Scottsdale, AZ."
+      },
+      "patch": {
+        "name": "Ashler Hills Park",
+        "total_courts": 8,
+        "outdoor_courts": 8,
+        "street_address": "32220 N. 74th Way",
+        "venue_type": "public_park",
+        "light": true,
+        "restroom": true,
+        "hours_of_operation": "Open sunrise to 10:30 p.m. daily.",
+        "court_availability": "Eight lighted courts, first come and not reservable like every Scottsdale court. Its own park page lists \"8 lighted pickleball courts\" among the park's features, which corroborates the count and the lighting, but carries none of the prose the City's other three pickleball venues do - so the price and the sharing rule published for those three are simply not stated here.",
+        "county": "Maricopa",
+        "postal_code": "85266"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Ashler Hills Park\" by the City of Scottsdale Parks and Recreation on its pickleball page and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page, in this venue's own entry: \"Eight outdoor lighted pickleball courts\". Corroborated on the park's own page, which lists \"8 lighted pickleball courts\" among the park's features and says nothing further about pickleball."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Both sources call these outdoor courts. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"32220 N. 74th Way\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Scottsdale Parks and Recreation among its parks."
+        },
+        "light": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry on the City's pickleball page reads \"Eight outdoor lighted pickleball courts\" — the word \"lighted\" is part of the count itself. All four published Scottsdale venues carry it, and each park page repeats it in its own feature list."
+        },
+        "restroom": {
+          "source_url": "https://www.scottsdaleaz.gov/parks/find-a-park/ashler-hills-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among the park's features, alongside \"8 lighted pickleball courts\". Both live in the page's data-features attribute, which is why neither was read until 2026-09-04."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open sunrise to 10:30 p.m.\" The park page words it as \"open from sunrise until 10:30 p.m. daily\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Eight outdoor lighted pickleball courts\", \"Open sunrise to 10:30 p.m.\" and the city-wide rule \"Courts are available on a first come, first served basis. No reservation is required. No amplified sound is permitted at these locations.\" This park's own page lists \"8 lighted pickleball courts\" among the park's features and says nothing further about pickleball, which is why no price and no sharing rule is recorded for it."
+        },
+        "county": {
+          "source_url": "https://nominatim.openstreetmap.org/search",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Maricopa County, AZ. OpenStreetMap (Nominatim) matched \"32220, North 74th Way, Scottsdale, Maricopa County, Arizona, 85266, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in the incorporated place \"Scottsdale\", which is what allows it to be published under Scottsdale."
+        },
+        "postal_code": {
+          "source_url": "https://nominatim.openstreetmap.org/search",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "OpenStreetMap (Nominatim) matched \"32220, North 74th Way, Scottsdale, Maricopa County, Arizona, 85266, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        }
+      },
+      "record": {
+        "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
     "cholla-park": {
       "minted": false,
       "identity": {
@@ -104,6 +223,7 @@
         "venue_type": "public_park",
         "light": true,
         "fee_type": "free",
+        "restroom": true,
         "hours_of_operation": "Open sunrise to 10:30 p.m. daily.",
         "court_availability": "Eight lighted courts, drop-in and not reservable, on a first come, first served basis. Scottsdale publishes the sharing rule as well as the count: play is standard format to 11, win by 2, with a 30-minute time limit after which players \"should rotate off the court with any waiting players\". The City also states that mornings are typically the busiest time here.",
         "county": "Maricopa",
@@ -122,7 +242,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Quoted from the City's pickleball page, in this venue's own entry: \"Eight outdoor lighted courts\". Corroborated on the park's own page: \"There are eight pickleball courts at Cholla Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\""
+          "evidence": "Quoted from the City's pickleball page, in this venue's own entry: \"Eight outdoor lighted courts\". Corroborated on the park's own page, which lists \"Eight Pickleball Courts (Lighted)\" among the park's features and states: \"There are eight pickleball courts at Cholla Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\""
         },
         "outdoor_courts": {
           "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
@@ -150,7 +270,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "This venue's entry on the City's pickleball page reads \"Eight outdoor lighted courts\" — the word \"lighted\" is part of the count itself. All three published Scottsdale venues carry it."
+          "evidence": "This venue's entry on the City's pickleball page reads \"Eight outdoor lighted courts\" — the word \"lighted\" is part of the count itself. All four published Scottsdale venues carry it, and each park page repeats it in its own feature list."
         },
         "fee_type": {
           "source_url": "https://www.scottsdaleaz.gov/parks/find-a-park/cholla-park",
@@ -158,6 +278,13 @@
           "verified_by": "municipal_source",
           "source_tier": 1,
           "evidence": "From the park's own page: \"There are eight pickleball courts at Cholla Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\" The City writes \"They are free to use\", which is a stated price rather than an assumption about municipal courts."
+        },
+        "restroom": {
+          "source_url": "https://www.scottsdaleaz.gov/parks/find-a-park/cholla-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restroom\" among the park's features, alongside \"Eight Pickleball Courts (Lighted)\". Both live in the page's data-features attribute, which is why neither was read until 2026-09-04."
         },
         "hours_of_operation": {
           "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
@@ -178,7 +305,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"11320 E VIA LINDA, SCOTTSDALE, AZ, 85259\". The geocoder also places it in the incorporated place \"Scottsdale city\", which is what allows it to be published under Scottsdale — and is what excluded Scottsdale Community College, whose courts the City runs a programme on and which the geocoder places in no incorporated place at all."
+          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"11320 E VIA LINDA, SCOTTSDALE, AZ, 85259\". The resolver also places it in the incorporated place \"Scottsdale city\", which is what allows it to be published under Scottsdale. The same check excluded Scottsdale Community College, whose courts the City runs a programme on and which the Census places in no incorporated place at all."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -222,6 +349,7 @@
         "venue_type": "public_park",
         "light": true,
         "fee_type": "free",
+        "restroom": true,
         "hours_of_operation": "Open sunrise to 10:30 p.m. daily.",
         "court_availability": "Ten lighted courts — the largest count in Scottsdale — drop-in and not reservable, first come first served. The same sharing rule applies as at every Scottsdale court: standard game to 11, win by two, a 30-minute limit, then rotate off for anyone waiting. The City states that mornings are typically the busiest time here.",
         "county": "Maricopa",
@@ -240,7 +368,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Quoted from the City's pickleball page, in this venue's own entry: \"10 outdoor lighted courts\". Corroborated on the park's own page: \"There are ten pickleball courts at Horizon Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\""
+          "evidence": "Quoted from the City's pickleball page, in this venue's own entry: \"10 outdoor lighted courts\". Corroborated on the park's own page, which lists \"Ten Pickleball Courts (Lighted)\" among the park's features and states: \"There are ten pickleball courts at Horizon Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\""
         },
         "outdoor_courts": {
           "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
@@ -268,7 +396,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "This venue's entry on the City's pickleball page reads \"10 outdoor lighted courts\" — the word \"lighted\" is part of the count itself. All three published Scottsdale venues carry it."
+          "evidence": "This venue's entry on the City's pickleball page reads \"10 outdoor lighted courts\" — the word \"lighted\" is part of the count itself. All four published Scottsdale venues carry it, and each park page repeats it in its own feature list."
         },
         "fee_type": {
           "source_url": "https://www.scottsdaleaz.gov/parks/find-a-park/horizon-park",
@@ -276,6 +404,13 @@
           "verified_by": "municipal_source",
           "source_tier": 1,
           "evidence": "From the park's own page: \"There are ten pickleball courts at Horizon Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\" The City writes \"They are free to use\", which is a stated price rather than an assumption about municipal courts."
+        },
+        "restroom": {
+          "source_url": "https://www.scottsdaleaz.gov/parks/find-a-park/horizon-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among the park's features, alongside \"Ten Pickleball Courts (Lighted)\". Both live in the page's data-features attribute, which is why neither was read until 2026-09-04."
         },
         "hours_of_operation": {
           "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
@@ -296,7 +431,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"15444 N 100TH ST, SCOTTSDALE, AZ, 85260\". The geocoder also places it in the incorporated place \"Scottsdale city\", which is what allows it to be published under Scottsdale — and is what excluded Scottsdale Community College, whose courts the City runs a programme on and which the geocoder places in no incorporated place at all."
+          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"15444 N 100TH ST, SCOTTSDALE, AZ, 85260\". The resolver also places it in the incorporated place \"Scottsdale city\", which is what allows it to be published under Scottsdale. The same check excluded Scottsdale Community College, whose courts the City runs a programme on and which the Census places in no incorporated place at all."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -347,6 +482,7 @@
         "venue_type": "public_park",
         "light": true,
         "fee_type": "free",
+        "restroom": true,
         "hours_of_operation": "Open sunrise to 10:30 p.m. daily.",
         "court_availability": "CLOSED FOR RESURFACING at the time of checking: the City states that all pickleball courts here are shut from 17 August to 11 September 2026 and are expected to reopen on Saturday 12 September, weather permitting. When open: three lighted courts with three portable nets, drop-in and not reservable, first come first served, standard game to 11 with a 30-minute limit and rotation for waiting players. Mornings are typically the busiest time.",
         "county": "Maricopa",
@@ -365,7 +501,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Quoted from the City's pickleball page, in this venue's own entry: \"Three outdoor lighted courts\". Corroborated on the park's own page: \"There are three pickleball courts at Thompson Peak Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\""
+          "evidence": "Quoted from the City's pickleball page, in this venue's own entry: \"Three outdoor lighted courts\". Corroborated on the park's own page, which lists \"Three Pickleball Courts (Lighted)\" among the park's features and states: \"There are three pickleball courts at Thompson Peak Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\""
         },
         "outdoor_courts": {
           "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
@@ -393,7 +529,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "This venue's entry on the City's pickleball page reads \"Three outdoor lighted courts\" — the word \"lighted\" is part of the count itself. All three published Scottsdale venues carry it."
+          "evidence": "This venue's entry on the City's pickleball page reads \"Three outdoor lighted courts\" — the word \"lighted\" is part of the count itself. All four published Scottsdale venues carry it, and each park page repeats it in its own feature list."
         },
         "fee_type": {
           "source_url": "https://www.scottsdaleaz.gov/parks/find-a-park/thompson-peak-park",
@@ -401,6 +537,13 @@
           "verified_by": "municipal_source",
           "source_tier": 1,
           "evidence": "From the park's own page: \"There are three pickleball courts at Thompson Peak Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.\" The City writes \"They are free to use\", which is a stated price rather than an assumption about municipal courts."
+        },
+        "restroom": {
+          "source_url": "https://www.scottsdaleaz.gov/parks/find-a-park/thompson-peak-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among the park's features, alongside \"Three Pickleball Courts (Lighted)\". Both live in the page's data-features attribute, which is why neither was read until 2026-09-04."
         },
         "hours_of_operation": {
           "source_url": "https://www.scottsdaleaz.gov/adult-sports/pickleball",
@@ -421,7 +564,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"20199 N 78TH PL, SCOTTSDALE, AZ, 85255\". The geocoder also places it in the incorporated place \"Scottsdale city\", which is what allows it to be published under Scottsdale — and is what excluded Scottsdale Community College, whose courts the City runs a programme on and which the geocoder places in no incorporated place at all."
+          "evidence": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"20199 N 78TH PL, SCOTTSDALE, AZ, 85255\". The resolver also places it in the incorporated place \"Scottsdale city\", which is what allows it to be published under Scottsdale. The same check excluded Scottsdale Community College, whose courts the City runs a programme on and which the Census places in no incorporated place at all."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",

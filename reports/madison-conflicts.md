@@ -1,6 +1,6 @@
 # Madison verification - the first city that states its surfaces
 
-Run 2026-09-04. 21 venues published, 53 courts (48 outdoor, 5 indoor). 3 venues excluded.
+Run 2026-09-04. 23 venues published, 67 courts (62 outdoor, 5 indoor). 1 venue excluded.
 
 Madison Parks publishes a court count and a surface on each park page, in one line under a
 "Tennis & Pickleball" or "Pickleball" heading. Before this city, five of the seventy-four venues
@@ -10,6 +10,8 @@ in this directory had a verified surface. Madison adds twenty.
 | --- | ---: | --- | --- | --- |
 | `bordner-park` | 2 | asphalt | not stated | "Courts: 2, asphalt" |
 | `brittingham-park` | 4 | asphalt | not stated | "Courts: 4, asphalt" |
+| `door-creek-park` | 8 | asphalt | not stated | "Courts: 8, asphalt" |
+| `rennebohm-park` | 6 | asphalt | not stated | "Courts: 6, asphalt" |
 | `elver-park` | 3 | asphalt | not stated | "Courts: 3, asphalt" |
 | `garner-park` | 6 | asphalt | not stated | "Courts: 6, asphalt" |
 | `heritage-heights-park` | 2 | asphalt | not stated | "Courts: 2, asphalt" |
@@ -30,7 +32,7 @@ in this directory had a verified surface. Madison adds twenty.
 | `wexford-park` | 2 | asphalt | not stated | "Courts: 2, asphalt" |
 | `warner-park-community-recreation-center` | 5 | not stated | not stated | "Blue Gym: 2 courts - 20ft x 44ft"; "Green Gym: 3 courts - 20ft x 44ft" |
 
-Surfaces: 18 asphalt, 2 modular_tile.
+Surfaces: 20 asphalt, 2 modular_tile.
 
 ## What "Courts: N" means
 
@@ -46,21 +48,17 @@ because every other count in this city depends on it.
 
 ## Excluded
 
-**Door Creek Park** - "Courts: 8, asphalt" at 7035 Littlemore Dr.. The Census address geocoder returns no match, so
-Import Gate I1 cannot be satisfied. The City states the courts; this is an identity failure
-rather than a data one, and it publishes the day the address resolves.
+**Reindahl (Amund) Park** - "Courts: 8, asphalt; 4 striped for pickleball" at 1818 Portage Rd.. Neither address resolver places this at a house
+number, so Import Gate I1 cannot be satisfied. The City states the courts; this is an identity
+failure rather than a data one, and it publishes the day the address resolves.
 
-**Reindahl (Amund) Park** - "Courts: 8, asphalt; 4 striped for pickleball" at 1818 Portage Rd.. The Census address geocoder returns no match, so
-Import Gate I1 cannot be satisfied. The City states the courts; this is an identity failure
-rather than a data one, and it publishes the day the address resolves.
-
-**Rennebohm Park** - "Courts: 6, asphalt" at 115 N. Eau Claire Ave.. The Census address geocoder returns no match, so
-Import Gate I1 cannot be satisfied. The City states the courts; this is an identity failure
-rather than a data one, and it publishes the day the address resolves.
-
-That is eighteen courts refused, including Door Creek's eight - the largest outdoor count in the
-city. It is the same rule that excluded Highland Community Park in Bellevue, and a directory that
-waives its identity gate when the loss is large does not have an identity gate.
+Three venues were refused when Madison first published - Door Creek, Reindahl and Rennebohm, on
+eighteen courts between them - because the Census address file has no record of any of the three
+addresses. On 2026-09-04 Import Gate I1 gained a second resolver, OpenStreetMap, consulted only
+where the Census has nothing and accepted only when it returns the house number asked for. Door
+Creek and Rennebohm resolve at that level and now publish, which adds fourteen courts including
+the largest outdoor count in the city. Reindahl still does not, and is still refused. A rule that
+had admitted all three would have been a rule written to reach a wanted answer.
 
 ## One address, two venues
 

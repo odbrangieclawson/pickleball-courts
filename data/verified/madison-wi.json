@@ -2,7 +2,7 @@
   "city": "Madison",
   "state": "WI",
   "retrieved_at": "2026-09-04",
-  "method_note": "Madison Parks states a court count AND a surface for every pickleball venue it lists, in a structured block on each park's own page: \"Tennis & Pickleball / Courts: 2, asphalt\". Surface is the field this directory has been worst at — five verified surfaces across the seventy-four venues published before this city — and Madison supplies twenty in one reading. An unqualified count under a \"Tennis & Pickleball\" heading is a count of courts you can play pickleball on, and we know that because Reindahl Park is the exception that says so: \"Courts: 8, asphalt; 4 striped for pickleball\". Three venues the City lists are excluded because the Census address geocoder does not resolve their addresses, which costs eighteen courts including the city's largest outdoor count. Warner Park and the Warner Park Community Recreation Center share a street address and are published as two venues, because the City runs them as two facilities with different access, different booking and different cost — unlike Bellevue's Hidden Valley, where one park page carried both and neither had rules of its own. No fee is claimed at any outdoor court: Madison never calls them free.",
+  "method_note": "Madison Parks states a court count AND a surface for every pickleball venue it lists, in a structured block on each park's own page: \"Tennis & Pickleball / Courts: 2, asphalt\". Surface is the field this directory has been worst at — five verified surfaces across the seventy-four venues published before this city — and Madison supplies twenty in one reading. An unqualified count under a \"Tennis & Pickleball\" heading is a count of courts you can play pickleball on, and we know that because Reindahl Park is the exception that says so: \"Courts: 8, asphalt; 4 striped for pickleball\". One venue the City lists is excluded, Reindahl Park, because no address resolver places 1818 Portage Rd at a house number; that costs eight courts, four of them striped. Door Creek and Rennebohm were refused on the same ground until 2026-09-04, when a second resolver was added, and their fourteen courts - including Door Creek's eight, the largest outdoor count in the city - publish from that date. Warner Park and the Warner Park Community Recreation Center share a street address and are published as two venues, because the City runs them as two facilities with different access, different booking and different cost — unlike Bellevue's Hidden Valley, where one park page carried both and neither had rules of its own. No fee is claimed at any outdoor court: Madison never calls them free.",
   "sources": [
     {
       "id": "S1",
@@ -30,166 +30,6 @@
     },
     {
       "id": "S4",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/elver",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/elver.html"
-    },
-    {
-      "id": "S5",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/garner",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/garner.html"
-    },
-    {
-      "id": "S6",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/heritage-heights.html"
-    },
-    {
-      "id": "S7",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/huegel-park.html"
-    },
-    {
-      "id": "S8",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/kennedy.html"
-    },
-    {
-      "id": "S9",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/nakoma-park.html"
-    },
-    {
-      "id": "S10",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/norman-clayton-park.html"
-    },
-    {
-      "id": "S11",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/northland-manor-park.html"
-    },
-    {
-      "id": "S12",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/olbrich.html"
-    },
-    {
-      "id": "S13",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/reynolds-park.html"
-    },
-    {
-      "id": "S14",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/richmond-hill-park.html"
-    },
-    {
-      "id": "S15",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/tenney.html"
-    },
-    {
-      "id": "S16",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/walnut-grove.html"
-    },
-    {
-      "id": "S17",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/warner",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/warner.html"
-    },
-    {
-      "id": "S18",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/waunona-park.html"
-    },
-    {
-      "id": "S19",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/westhaven-trails-park.html"
-    },
-    {
-      "id": "S20",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/westmorland.html"
-    },
-    {
-      "id": "S21",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/wexford.html"
-    },
-    {
-      "id": "S22",
-      "url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/wpcrc-fitness-center-pickleball-membership.html"
-    },
-    {
-      "id": "S23",
-      "url": "https://www.cityofmadison.com/parks/wpcrc",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/wpcrc-wpcrc.html"
-    },
-    {
-      "id": "S24",
       "url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
       "publisher": "City of Madison Parks Division",
       "tier": 1,
@@ -197,20 +37,180 @@
       "snapshot": "data/sources/madison/door-creek.html"
     },
     {
-      "id": "S25",
-      "url": "https://www.cityofmadison.com/parks/find-a-park/reindahl",
-      "publisher": "City of Madison Parks Division",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/madison/reindahl.html"
-    },
-    {
-      "id": "S26",
+      "id": "S5",
       "url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
       "publisher": "City of Madison Parks Division",
       "tier": 1,
       "format": "html",
       "snapshot": "data/sources/madison/rennebohm.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/elver.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/garner.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/heritage-heights.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/huegel-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/kennedy.html"
+    },
+    {
+      "id": "S11",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/nakoma-park.html"
+    },
+    {
+      "id": "S12",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/norman-clayton-park.html"
+    },
+    {
+      "id": "S13",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/northland-manor-park.html"
+    },
+    {
+      "id": "S14",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/olbrich.html"
+    },
+    {
+      "id": "S15",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/reynolds-park.html"
+    },
+    {
+      "id": "S16",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/richmond-hill-park.html"
+    },
+    {
+      "id": "S17",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/tenney.html"
+    },
+    {
+      "id": "S18",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/walnut-grove.html"
+    },
+    {
+      "id": "S19",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/warner.html"
+    },
+    {
+      "id": "S20",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/waunona-park.html"
+    },
+    {
+      "id": "S21",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/westhaven-trails-park.html"
+    },
+    {
+      "id": "S22",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/westmorland.html"
+    },
+    {
+      "id": "S23",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/wexford.html"
+    },
+    {
+      "id": "S24",
+      "url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/wpcrc-fitness-center-pickleball-membership.html"
+    },
+    {
+      "id": "S25",
+      "url": "https://www.cityofmadison.com/parks/wpcrc",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/wpcrc-wpcrc.html"
+    },
+    {
+      "id": "S26",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/reindahl",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/reindahl.html"
     },
     {
       "id": "S27",
@@ -222,31 +222,17 @@
     }
   ],
   "totals": {
-    "venues": 21,
-    "courts": 53,
-    "outdoor": 48,
+    "venues": 23,
+    "courts": 67,
+    "outdoor": 62,
     "indoor": 5
   },
   "excluded": [
-    {
-      "name": "Door Creek Park",
-      "why": [
-        "The Census address geocoder returns no match for \"7035 Littlemore Dr.\", the address the City prints, or for the spelling variants tried. Import Gate I1 requires a street address that resolves.",
-        "The City does state its courts — \"Courts: 8, asphalt\" — so this is an identity failure, not a data one. It publishes the moment the address resolves."
-      ]
-    },
     {
       "name": "Reindahl (Amund) Park",
       "why": [
         "The Census address geocoder returns no match for \"1818 Portage Rd.\", the address the City prints, or for the spelling variants tried. Import Gate I1 requires a street address that resolves.",
         "The City does state its courts — \"Courts: 8, asphalt; 4 striped for pickleball\" — so this is an identity failure, not a data one. It publishes the moment the address resolves."
-      ]
-    },
-    {
-      "name": "Rennebohm Park",
-      "why": [
-        "The Census address geocoder returns no match for \"115 N. Eau Claire Ave.\", the address the City prints, or for the spelling variants tried. Import Gate I1 requires a street address that resolves.",
-        "The City does state its courts — \"Courts: 6, asphalt\" — so this is an identity failure, not a data one. It publishes the moment the address resolves."
       ]
     }
   ],
@@ -335,7 +321,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5610 ELDER PL, MADISON, WI, 53705\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5610 ELDER PL, MADISON, WI, 53705\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -437,7 +423,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"388 S BASSETT ST, MADISON, WI, 53703\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"388 S BASSETT ST, MADISON, WI, 53703\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -449,6 +435,210 @@
       },
       "record": {
         "source_url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "door-creek-park": {
+      "minted": true,
+      "identity": {
+        "name": "Door Creek Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53718",
+        "latitude": 43.0983586,
+        "longitude": -89.2538162,
+        "imported_slug": null,
+        "canonical_slug": "door-creek-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 8, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Door Creek Park",
+        "total_courts": 8,
+        "outdoor_courts": 8,
+        "street_address": "7035 Littlemore Dr.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53718"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Door Creek Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Door Creek Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 8, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Door Creek Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 8, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"7035 Littlemore Dr.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Door Creek Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 8, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://nominatim.openstreetmap.org/search",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Dane County, WI. OpenStreetMap (Nominatim) matched \"7035, Littlemore Drive, Sprecher East, Madison, Dane County, Wisconsin, 53718, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in the incorporated place \"Madison\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://nominatim.openstreetmap.org/search",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "OpenStreetMap (Nominatim) matched \"7035, Littlemore Drive, Sprecher East, Madison, Dane County, Wisconsin, 53718, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "rennebohm-park": {
+      "minted": true,
+      "identity": {
+        "name": "Rennebohm Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53705",
+        "latitude": 43.0702727,
+        "longitude": -89.4635355,
+        "imported_slug": null,
+        "canonical_slug": "rennebohm-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 6, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Rennebohm Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "115 N. Eau Claire Ave.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance. The City adds a note on this park's own page: \"Update October 20, 2025: West court construction is substantially completed and courts are open for play!\"",
+        "county": "Dane",
+        "postal_code": "53705"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Rennebohm Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Rennebohm Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 6, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Rennebohm Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 6, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"115 N. Eau Claire Ave.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Rennebohm Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 6, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\". The dated note is from Rennebohm Park's own park page."
+        },
+        "county": {
+          "source_url": "https://nominatim.openstreetmap.org/search",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "Dane County, WI. OpenStreetMap (Nominatim) matched \"115, North Eau Claire Avenue, Hill Farms, Madison, Dane County, Wisconsin, 53705, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in the incorporated place \"Madison\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://nominatim.openstreetmap.org/search",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 2,
+          "evidence": "OpenStreetMap (Nominatim) matched \"115, North Eau Claire Avenue, Hill Farms, Madison, Dane County, Wisconsin, 53705, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
         "date_checked": "2026-09-04",
         "verified_by": "municipal_source"
       },
@@ -539,7 +729,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1250 MCKENNA BLVD, MADISON, WI, 53719\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1250 MCKENNA BLVD, MADISON, WI, 53719\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -641,7 +831,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"333 S ROSA RD, MADISON, WI, 53705\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"333 S ROSA RD, MADISON, WI, 53705\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -743,7 +933,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"701 MEADOWLARK DR, MADISON, WI, 53714\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"701 MEADOWLARK DR, MADISON, WI, 53714\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -845,7 +1035,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5902 WILLIAMSBURG WAY, MADISON, WI, 53719\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5902 WILLIAMSBURG WAY, MADISON, WI, 53719\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -947,7 +1137,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5202 RETANA DR, MADISON, WI, 53714\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5202 RETANA DR, MADISON, WI, 53714\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1049,7 +1239,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3801 CHEROKEE DR, MADISON, WI, 53711\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3801 CHEROKEE DR, MADISON, WI, 53711\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1151,7 +1341,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6401 SHOREHAM DR, MADISON, WI, 53711\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6401 SHOREHAM DR, MADISON, WI, 53711\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1260,7 +1450,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"902 NORTHLAND DR, MADISON, WI, 53704\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"902 NORTHLAND DR, MADISON, WI, 53704\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1362,7 +1552,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3527 ATWOOD AVE, MADISON, WI, 53714\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3527 ATWOOD AVE, MADISON, WI, 53714\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1464,7 +1654,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"810 E MIFFLIN ST, MADISON, WI, 53703\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"810 E MIFFLIN ST, MADISON, WI, 53703\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1566,7 +1756,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6117 COTTONTAIL TRL, MADISON, WI, 53718\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6117 COTTONTAIL TRL, MADISON, WI, 53718\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1669,7 +1859,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1414 E JOHNSON ST, MADISON, WI, 53703\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1414 E JOHNSON ST, MADISON, WI, 53703\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1786,7 +1976,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"202 N WESTFIELD RD, MADISON, WI, 53717\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"202 N WESTFIELD RD, MADISON, WI, 53717\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1888,7 +2078,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1990,7 +2180,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5323 RAYWOOD RD, MADISON, WI, 53713\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5323 RAYWOOD RD, MADISON, WI, 53713\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -2092,7 +2282,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3020 CIMARRON TRL, MADISON, WI, 53719\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3020 CIMARRON TRL, MADISON, WI, 53719\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -2194,7 +2384,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"4114 TOKAY BLVD, MADISON, WI, 53711\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"4114 TOKAY BLVD, MADISON, WI, 53711\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -2296,7 +2486,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1201 N WESTFIELD RD, MADISON, WI, 53717\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1201 N WESTFIELD RD, MADISON, WI, 53717\". The resolver also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",

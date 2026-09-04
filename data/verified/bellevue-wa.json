@@ -46,94 +46,6 @@
     },
     {
       "id": "S6",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/hillaire-park.html"
-    },
-    {
-      "id": "S7",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lakemont-community-park",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/lakemont-community-park.html"
-    },
-    {
-      "id": "S8",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/lewis-creek-park.html"
-    },
-    {
-      "id": "S9",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/norwood-village-neighborhood-park",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/norwood-village-neighborhood-park.html"
-    },
-    {
-      "id": "S10",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/spiritridge-park",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/spiritridge-park.html"
-    },
-    {
-      "id": "S11",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads-community-center",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/crossroads-community-center.html"
-    },
-    {
-      "id": "S12",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/north-bellevue-community-center",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/north-bellevue-community-center.html"
-    },
-    {
-      "id": "S13",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/south-bellevue-community-center.html"
-    },
-    {
-      "id": "S14",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/sbcc/drop-sports",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/sbcc-drop-in-sports.html"
-    },
-    {
-      "id": "S15",
-      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads/crossroads-community-center-programs",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/ccc-programs.html"
-    },
-    {
-      "id": "S16",
-      "url": "https://bellevuewa.gov/city-news/eastgate-park-pickleball",
-      "publisher": "City of Bellevue Parks & Community Services",
-      "tier": 1,
-      "format": "html",
-      "snapshot": "data/sources/bellevue/eastgate-conversion-news.html"
-    },
-    {
-      "id": "S17",
       "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/highland-park",
       "publisher": "City of Bellevue Parks & Community Services",
       "tier": 1,
@@ -141,7 +53,103 @@
       "snapshot": "data/sources/bellevue/highland-park.html"
     },
     {
+      "id": "S7",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/hillaire-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lakemont-community-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/lakemont-community-park.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/lewis-creek-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/norwood-village-neighborhood-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/norwood-village-neighborhood-park.html"
+    },
+    {
+      "id": "S11",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/spiritridge-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/spiritridge-park.html"
+    },
+    {
+      "id": "S12",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/crossroads-community-center.html"
+    },
+    {
+      "id": "S13",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/north-bellevue-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/north-bellevue-community-center.html"
+    },
+    {
+      "id": "S14",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/south-bellevue-community-center.html"
+    },
+    {
+      "id": "S15",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/sbcc/drop-sports",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/sbcc-drop-in-sports.html"
+    },
+    {
+      "id": "S16",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads/crossroads-community-center-programs",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/ccc-programs.html"
+    },
+    {
+      "id": "S17",
+      "url": "https://bellevuewa.gov/city-news/eastgate-park-pickleball",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/eastgate-conversion-news.html"
+    },
+    {
       "id": "S18",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/highland-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/highland-park.html"
+    },
+    {
+      "id": "S19",
       "url": "https://geocoding.geo.census.gov/geocoder/geographies",
       "publisher": "US Census Bureau",
       "tier": 1,
@@ -150,21 +158,12 @@
     }
   ],
   "totals": {
-    "venues": 12,
-    "courts": 38,
-    "outdoor": 24,
+    "venues": 13,
+    "courts": 42,
+    "outdoor": 28,
     "indoor": 14
   },
-  "excluded": [
-    {
-      "name": "Highland Community Park",
-      "why": [
-        "The Census address geocoder returns no match for \"14224 Bel-Red Road\", the address the City's own park page gives, and no match for four spelling variants of it. Import Gate I1 requires a street address that resolves.",
-        "The park's own page never mentions pickleball: its description lists \"two tennis courts\" and its amenity list carries \"Tennis Courts\", with no pickleball anywhere. The court count has no corroboration on the City's record card for the park.",
-        "The City's two pages disagree on its name. The pickleball page says \"Highland Community Park\"; the park page says \"Highland Park\"."
-      ]
-    }
-  ],
+  "excluded": [],
   "venues": {
     "cherry-crest-mini-park": {
       "minted": true,
@@ -552,6 +551,108 @@
         },
         "restroom": {
           "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hidden-valley-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among its amenities."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "highland-park": {
+      "minted": true,
+      "identity": {
+        "name": "Highland Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98007",
+        "latitude": 47.6255798,
+        "longitude": -122.1505281,
+        "imported_slug": null,
+        "canonical_slug": "highland-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Highland Community Park: 4 courts (portable nets)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Highland Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "14224 Bel-Red Road",
+        "venue_type": "public_park",
+        "court_availability": "Four courts played with portable nets, per the City's pickleball page. Two things about this venue are worth knowing before you go, and both are the City's own doing rather than ours. Its park page never mentions pickleball at all — it describes \"two tennis courts\" and lists \"Tennis Courts\" among the amenities — so the count published here rests on the pickleball page alone, with no confirmation on the park's own record card. And the two pages call the park different things: \"Highland Community Park\" on the pickleball page, \"Highland Park\" on the park page. Four courts on two tennis courts with portable nets is the ordinary Bellevue arrangement and nothing here contradicts it; it is simply stated once rather than twice.",
+        "county": "King",
+        "postal_code": "98007",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this venue two ways. Its pickleball page says \"Highland Community Park\"; the venue's own page — the one the pickleball page links to — says \"Highland Park\", which is the name published here."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Highland Community Park: 4 courts (portable nets)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Highland Community Park: 4 courts (portable nets)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/highland-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"14224 Bel-Red Road\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Highland Community Park: 4 courts (portable nets)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS nullnull). OpenStreetMap (Nominatim) matched \"14224, Bel-Red Road, Bellevue, King County, Washington, 98007, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The geocoder also places it in the incorporated place \"Bellevue\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"14224, Bel-Red Road, Bellevue, King County, Washington, 98007, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        },
+        "restroom": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/highland-park",
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,

@@ -25,25 +25,37 @@
   inference because there was nothing else to write it from.
 
   ============================================================
-  EVERY PUBLISHED COURT IS LIT AND FREE
+  EVERY PUBLISHED COURT IS LIT; THREE OF FOUR ARE FREE
   ============================================================
 
-  All three venues carry "outdoor lighted courts" on the City's pickleball
-  page and "They are free to use" on their own park pages. That makes
-  Scottsdale the first city here where every published venue answers both
-  questions, and the second city with any verified `free` at all — Portland
-  was the first, and Portland only got there because it wrote the word down.
+  All four venues carry "outdoor lighted courts" on the City's pickleball
+  page. Three of them also carry "They are free to use" on their own park
+  pages, which makes Scottsdale the second city in this directory with any
+  verified `free` at all — Portland was the first, and Portland only got
+  there because it wrote the word down. Ashler Hills Park's own page lists
+  "8 lighted pickleball courts" among the park's features and carries none
+  of the prose the other three carry, so its price is simply not stated.
 
   ============================================================
-  TWO OF FIVE ARE REFUSED, AND FOR DIFFERENT REASONS
+  ASHLER HILLS PARK, ADDED 2026-09-04
   ============================================================
 
-  ASHLER HILLS PARK has eight courts and an address the Census geocoder
-  cannot resolve, on the spelling the City prints and on three variants.
-  Import Gate I1 requires a street address that resolves. Its park page also
-  prints "Scottsdale, AZ 32220" — the street number in the postcode's place —
-  which is not why it is excluded but is worth recording as a source defect,
-  and Thompson Peak Park's page carries the same malformation.
+  It was refused when this city first published, because the Census address
+  file has no record of 32220 N. 74th Way and the Census was then the only
+  resolver Import Gate I1 had. The gate now consults OpenStreetMap where the
+  Census has nothing, and accepts the answer only when it is address-level —
+  a house number present and equal to the one asked for. OSM resolves this
+  one to 32220 North 74th Way, Scottsdale, Maricopa County, so the venue and
+  its eight lighted courts publish.
+
+  Its park page still prints "Scottsdale, AZ 32220" — the street number in
+  the postcode's place — and Thompson Peak Park's carries the same fault.
+  Neither changes what is published, because postcodes come from a resolver,
+  and both are still asserted so the defect stays on the record.
+
+  ============================================================
+  ONE OF FIVE IS STILL REFUSED
+  ============================================================
 
   SCOTTSDALE COMMUNITY COLLEGE has six lighted courts that Scottsdale Parks
   and Recreation runs a free public drop-in programme on, and the geocoder
@@ -54,8 +66,11 @@
   that kept a THPRD set out of Beaverton and unincorporated Clark County
   addresses out of Vancouver.
 
-  That leaves three venues, which is exactly the threshold. A city at the
-  minimum is still a city; a city below it is not published at all.
+  That leaves four venues, one above the threshold. Note what the second
+  resolver did NOT do: it also finds Chandler's Tumbleweed and Arbuckle
+  addresses, at street level with no house number, and the address-level
+  rule refuses both — which is the test of whether a rule was written to
+  reach a wanted answer.
 
   ============================================================
   ONE VENUE IS CLOSED RIGHT NOW
@@ -82,8 +97,13 @@
               court count. That is more than most cities say and still not
               an answer to who brings them, so nets_provided stays null on
               the same reasoning that left Bellevue's "portable nets" alone.
-  restroom,   Not published for any of the three on the pages read here.
-  parking
+  parking     Not published for any of the four on the pages read here.
+              (restroom IS published, on every park page's feature list, and
+              was missed until 2026-09-04 for the reason mustFeature explains.)
+  the price   Not stated at Ashler Hills Park. Its park page names the courts
+  at Ashler   in its feature list and says nothing else about them - no cost,
+              no rotation rule, no peak time. The other three say "They are
+              free to use" in as many words.
 */
 
 import {readFileSync, writeFileSync, mkdirSync} from 'node:fs'
@@ -101,6 +121,7 @@ const CITY = 'City of Scottsdale Parks and Recreation'
 const PAGE = 'https://www.scottsdaleaz.gov/adult-sports/pickleball'
 const PARK_BASE = 'https://www.scottsdaleaz.gov/parks/find-a-park'
 const CENSUS_URL = 'https://geocoding.geo.census.gov/geocoder/geographies'
+const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search'
 
 /* The city-wide rules, from the pickleball page. */
 const FIRST_COME =
@@ -115,9 +136,27 @@ const CLOSURE =
 
 const VENUES = [
   {
+    /*
+      Published from 2026-09-04, when Import Gate I1 gained a second address
+      resolver. The Census address file has no record of 32220 N. 74th Way;
+      OpenStreetMap resolves it to that house number in Scottsdale, Maricopa
+      County. Its own park page lists "8 lighted pickleball courts" among the
+      park's features - corroborating the count and the lighting - and carries
+      none of the prose the other three do, so it publishes without the price
+      and the sharing rule they state.
+    */
+    slug: 'ashler-hills-park', name: 'Ashler Hills Park', page: 'ashler-hills-park',
+    address: '32220 N. 74th Way', courts: 8,
+    spec: 'Eight outdoor lighted pickleball courts',
+    feature: '8 lighted pickleball courts', restroomFeature: 'Restrooms',
+    noParkProse: true,
+    availability: "Eight lighted courts, first come and not reservable like every Scottsdale court. Its own park page lists \"8 lighted pickleball courts\" among the park's features, which corroborates the count and the lighting, but carries none of the prose the City's other three pickleball venues do - so the price and the sharing rule published for those three are simply not stated here.",
+  },
+  {
     slug: 'cholla-park', name: 'Cholla Park', page: 'cholla-park',
     address: '11320 E. Via Linda', courts: 8,
     spec: 'Eight outdoor lighted courts',
+    feature: 'Eight Pickleball Courts (Lighted)', restroomFeature: 'Restroom',
     parkQuote: 'There are eight pickleball courts at Cholla Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.',
     busiest: 'Mornings are typically the busiest time for pickleball play at Cholla.',
     availability: 'Eight lighted courts, drop-in and not reservable, on a first come, first served basis. Scottsdale publishes the sharing rule as well as the count: play is standard format to 11, win by 2, with a 30-minute time limit after which players "should rotate off the court with any waiting players". The City also states that mornings are typically the busiest time here.',
@@ -126,6 +165,7 @@ const VENUES = [
     slug: 'horizon-park', name: 'Horizon Park', page: 'horizon-park',
     address: '15444 N. 100th St.', courts: 10,
     spec: '10 outdoor lighted courts',
+    feature: 'Ten Pickleball Courts (Lighted)', restroomFeature: 'Restrooms',
     parkQuote: 'There are ten pickleball courts at Horizon Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.',
     busiest: 'Mornings are typically the busiest time for pickleball play at Horizon.',
     availability: 'Ten lighted courts — the largest count in Scottsdale — drop-in and not reservable, first come first served. The same sharing rule applies as at every Scottsdale court: standard game to 11, win by two, a 30-minute limit, then rotate off for anyone waiting. The City states that mornings are typically the busiest time here.',
@@ -134,6 +174,7 @@ const VENUES = [
     slug: 'thompson-peak-park', name: 'Thompson Peak Park', page: 'thompson-peak-park',
     address: '20199 N. 78th Pl.', courts: 3,
     spec: 'Three outdoor lighted courts',
+    feature: 'Three Pickleball Courts (Lighted)', restroomFeature: 'Restrooms',
     parkQuote: 'There are three pickleball courts at Thompson Peak Park, which are available for drop in public use and are not reservable. They are free to use, and are open from sunrise until 10:30 p.m. daily.',
     busiest: 'Mornings are typically the busiest time for pickleball play at Thompson Peak.',
     closed: true,
@@ -142,14 +183,6 @@ const VENUES = [
 ]
 
 const EXCLUDED = [
-  {
-    name: 'Ashler Hills Park',
-    spec: 'Eight outdoor lighted pickleball courts',
-    reasons: [
-      'The Census address geocoder returns no match for "32220 N. 74th Way", the address the City prints on its pickleball page, nor for three spelling variants of it. Import Gate I1 requires a street address that resolves.',
-      'Separately, the park\'s own page prints its postcode as "Scottsdale, AZ 32220" — the street number in the postcode\'s place. That is a defect in the City\'s record rather than a reason for exclusion, and Thompson Peak Park\'s page carries the same malformation.',
-    ],
-  },
   {
     name: 'Scottsdale Community College',
     spec: 'Six outdoor lighted pickleball courts',
@@ -223,6 +256,30 @@ const mustPark = (page, who, needle, what) => {
   }
 }
 
+/*
+  THE FEATURE LIST LIVES IN AN ATTRIBUTE, NOT IN THE TEXT
+
+  Every Scottsdale park page carries its amenities in
+  <ul class="parkFeatures" data-features="..."> and paints them in with
+  JavaScript on DOMContentLoaded. linesOf() turns tags into newlines, so it
+  never saw any of it, and the first reading of these pages concluded that
+  Ashler Hills Park said nothing about pickleball. It says "8 lighted
+  pickleball courts".
+
+  That matters twice. It is a second, independent statement of the count and
+  the lighting on each park's own page, and at Ashler Hills it is the only
+  thing that park page says about pickleball at all - which is a different
+  claim from the one this file made before, and a better one.
+*/
+const parkRaw = name => readFileSync(join(REPO_ROOT, snapshotPath(name)), 'utf8')
+const mustFeature = (page, who, needle) => {
+  const attr = (parkRaw(page).match(/data-features="([^"]*)"/) ?? [])[1]
+  if (!attr) throw new Error(`${who}: the ${page} park page no longer carries a data-features list.`)
+  if (!squeeze(attr).toLowerCase().includes(squeeze(needle).toLowerCase())) {
+    throw new Error(`${who}: the ${page} park page's feature list no longer contains "${needle}". It reads: ${attr}`)
+  }
+}
+
 /* The city-wide rule every venue's availability rests on. */
 if (!squeeze(pickleballLines.join(' ')).includes(squeeze(FIRST_COME))) {
   throw new Error(`The Scottsdale pickleball page no longer states the first-come rule: "${FIRST_COME}"`)
@@ -232,16 +289,20 @@ if (!squeeze(pickleballLines.join(' ')).includes(squeeze(FIRST_COME))) {
 mustBlock('Thompson Peak Park', 'Three outdoor lighted courts', 'court count')
 mustPark('thompson-peak-park', 'thompson-peak-park', CLOSURE, 'closure')
 
-/* The two exclusions, asserted rather than assumed. */
+/* The exclusion, asserted rather than assumed. */
 for (const e of EXCLUDED) mustBlock(e.name, e.spec, 'excluded venue count')
+
+/*
+  The City's postcode defect, still recorded now that Ashler Hills publishes:
+  its park page prints the street number where the postcode belongs, and so
+  does Thompson Peak's. Published postcodes come from a resolver, so this
+  changes nothing on the site - and somebody should know.
+*/
 mustPark('ashler-hills-park', 'ashler-hills-park', 'Scottsdale, AZ 32220', 'malformed postcode')
 
 const counties = JSON.parse(
   readFileSync(join(REPO_ROOT, 'data/sources/scottsdale-county-census.json'), 'utf8'))
 
-if (counties['ashler-hills-park']?.matched) {
-  throw new Error('Ashler Hills Park now geocodes. The reason it is excluded has changed; revisit the exclusion.')
-}
 if (counties['scottsdale-community-college']?.place) {
   throw new Error(
     'Scottsdale Community College now geocodes into an incorporated place. The reason it is excluded has changed; revisit it.')
@@ -260,14 +321,31 @@ for (const p of VENUES) {
   mustBlock(p.name, p.address, 'street address')
   mustBlock(p.name, p.spec, 'court count and lighting')
   mustBlock(p.name, 'Open sunrise to 10:30 p.m.', 'hours')
-  mustPark(p.page, p.slug, p.parkQuote, 'court count, cost and hours')
-  mustPark(p.page, p.slug, ROTATION, 'rotation rule')
-  mustPark(p.page, p.slug, p.busiest, 'peak time')
+  /* The park page's own statement of the same count, from its feature list. */
+  mustFeature(p.page, p.slug, p.feature)
+  mustFeature(p.page, p.slug, p.restroomFeature)
+  if (p.noParkProse) {
+    /* Asserted as an ABSENCE: the day this park page gains a pickleball
+       section, its price and sharing rule become publishable and this venue
+       needs re-reading rather than continuing to say they are unstated. */
+    if (parkText(p.page).includes(squeeze('pickleball courts at'))) {
+      throw new Error(`${p.slug}: its park page NOW carries pickleball prose. Re-read it: the price and the sharing rule may now be publishable.`)
+    }
+  } else {
+    mustPark(p.page, p.slug, p.parkQuote, 'court count, cost and hours')
+    mustPark(p.page, p.slug, ROTATION, 'rotation rule')
+    mustPark(p.page, p.slug, p.busiest, 'peak time')
+  }
 
   const geo = counties[p.slug]
   if (!geo?.matched) throw new Error(`${p.slug}: the Census geocoder did not match its address`)
-  if (geo.place !== 'Scottsdale city') {
-    throw new Error(`${p.slug}: Census places this at "${geo.place}", not Scottsdale city.`)
+  /*
+    Resolver-agnostic. The Census writes "Scottsdale city" and OpenStreetMap
+    writes "Scottsdale"; both mean inside Scottsdale, and geocode.mjs settles
+    that comparison so no apply run has to guess at suffixes.
+  */
+  if (!geo.place_matches_city) {
+    throw new Error(`${p.slug}: the resolver places this at "${geo.place}", not Scottsdale.`)
   }
 
   const doc = new SourceDocument({
@@ -276,9 +354,22 @@ for (const p of VENUES) {
   const docPark = new SourceDocument({
     url: `${PARK_BASE}/${p.page}`, retrieved_at: RETRIEVED_AT, tier: 1, publisher: CITY, format: 'html',
   })
-  const docCensus = new SourceDocument({
-    url: CENSUS_URL, retrieved_at: RETRIEVED_AT, tier: 1, publisher: 'US Census Bureau', format: 'json',
-  })
+  /*
+    The geo document names the resolver that actually answered. Ashler Hills
+    was resolved by OpenStreetMap because the Census address file has no
+    record of it, and citing the Census for a fact the Census did not supply
+    would be a false provenance in the one place this project cannot afford
+    one.
+  */
+  const viaOSM = geo.resolver === 'osm'
+  const docCensus = viaOSM
+    ? new SourceDocument({
+        url: NOMINATIM_URL, retrieved_at: RETRIEVED_AT, tier: 2,
+        publisher: 'OpenStreetMap contributors (Nominatim)', format: 'json',
+      })
+    : new SourceDocument({
+        url: CENSUS_URL, retrieved_at: RETRIEVED_AT, tier: 1, publisher: 'US Census Bureau', format: 'json',
+      })
 
   const shell = {
     slug: p.slug, name: null, city: 'Scottsdale', state: 'AZ', county: null,
@@ -294,7 +385,8 @@ for (const p of VENUES) {
   const facts = [
     doc.fact('name', p.name, {evidence: `Named "${p.name}" by the ${CITY} on its pickleball page and on the park's own page.`}),
     doc.fact('total_courts', p.courts, {
-      evidence: `Quoted from the City's pickleball page, in this venue's own entry: "${p.spec}". Corroborated on the park's own page: "${p.parkQuote}"`,
+      evidence: `Quoted from the City's pickleball page, in this venue's own entry: "${p.spec}". Corroborated on the park's own page, which lists "${p.feature}" among the park's features` +
+        (p.parkQuote ? ` and states: "${p.parkQuote}"` : ' and says nothing further about pickleball.'),
     }),
     doc.fact('outdoor_courts', p.courts, {
       evidence: `Both sources call these outdoor courts. The indoor count is left unverified rather than set to zero.`,
@@ -304,21 +396,26 @@ for (const p of VENUES) {
     }),
     doc.fact('venue_type', 'public_park', {evidence: `Published by the ${CITY} among its parks.`}),
     doc.fact('light', true, {
-      evidence: `This venue's entry on the City's pickleball page reads "${p.spec}" — the word "lighted" is part of the count itself. All three published Scottsdale venues carry it.`,
+      evidence: `This venue's entry on the City's pickleball page reads "${p.spec}" — the word "lighted" is part of the count itself. All four published Scottsdale venues carry it, and each park page repeats it in its own feature list.`,
     }),
-    docPark.fact('fee_type', 'free', {
+    ...(p.noParkProse ? [] : [docPark.fact('fee_type', 'free', {
       evidence: `From the park's own page: "${p.parkQuote}" The City writes "They are free to use", which is a stated price rather than an assumption about municipal courts.`,
+    })]),
+    docPark.fact('restroom', true, {
+      evidence: `The park's own page lists "${p.restroomFeature}" among the park's features, alongside "${p.feature}". Both live in the page's data-features attribute, which is why neither was read until 2026-09-04.`,
     }),
     doc.fact('hours_of_operation', 'Open sunrise to 10:30 p.m. daily.', {
       evidence: `From this venue's entry on the City's pickleball page: "Open sunrise to 10:30 p.m." The park page words it as "open from sunrise until 10:30 p.m. daily".`,
     }),
-    docPark.fact('court_availability', p.availability, {
-      evidence: `From the park's own page: "${p.parkQuote}", the rotation rule — "${ROTATION} 2 points wins. This comes with a 30 minute time limit, at which time players should rotate off the court with any waiting players." — and "${p.busiest}"` +
-        (p.closed ? ` Plus the closure notice: "${CLOSURE}"` : '') +
-        ` The City's pickleball page adds: "${FIRST_COME}"`,
+    (p.noParkProse ? doc : docPark).fact('court_availability', p.availability, {
+      evidence: p.noParkProse
+        ? `From the City's pickleball page: "${p.spec}", "Open sunrise to 10:30 p.m." and the city-wide rule "${FIRST_COME}" This park's own page lists \"${p.feature}\" among the park's features and says nothing further about pickleball, which is why no price and no sharing rule is recorded for it.`
+        : `From the park's own page: "${p.parkQuote}", the rotation rule — "${ROTATION} 2 points wins. This comes with a 30 minute time limit, at which time players should rotate off the court with any waiting players." — and "${p.busiest}"` +
+          (p.closed ? ` Plus the closure notice: "${CLOSURE}"` : '') +
+          ` The City's pickleball page adds: "${FIRST_COME}"`,
     }),
     docCensus.fact('county', geo.county, {
-      evidence: `${geo.county} County, AZ (FIPS ${geo.state_fips}${geo.county_fips}). ${geo.basis} The geocoder also places it in the incorporated place "${geo.place}", which is what allows it to be published under Scottsdale — and is what excluded Scottsdale Community College, whose courts the City runs a programme on and which the geocoder places in no incorporated place at all.`,
+      evidence: `${geo.county} County, AZ${geo.county_fips ? ` (FIPS ${geo.state_fips}${geo.county_fips})` : ''}. ${geo.basis} The resolver also places it in the incorporated place "${geo.place}", which is what allows it to be published under Scottsdale.${viaOSM ? '' : ' The same check excluded Scottsdale Community College, whose courts the City runs a programme on and which the Census places in no incorporated place at all.'}`,
     }),
     docCensus.fact('postal_code', geo.postal_code, {evidence: geo.basis}),
   ]
@@ -368,7 +465,7 @@ mkdirSync(join(REPO_ROOT, 'data/verified'), {recursive: true})
 writeFileSync(join(REPO_ROOT, 'data/verified/scottsdale-az.json'), JSON.stringify({
   city: 'Scottsdale', state: 'AZ', retrieved_at: RETRIEVED_AT,
   method_note:
-    'Scottsdale is the first operator in this directory to publish how a court is shared and when it is busy. Each park page carries the same rule — standard game to 11, win by two, a 30-minute limit, then rotate off for anyone waiting — and each one states that mornings are typically the busiest time for pickleball there. Eleven cities in, no operator had published a peak time at all. Every published venue is also stated lighted on the City\'s pickleball page and "free to use" on its own park page, which makes Scottsdale the first city here where all three of count, lighting and cost are answered everywhere. Two of the City\'s five listed locations are refused: Ashler Hills Park, whose address the Census geocoder cannot resolve, and Scottsdale Community College, which the geocoder places in no incorporated place — the City runs a free public drop-in programme on the college\'s courts, and that does not put them inside the city. Thompson Peak Park is published with its courts closed for resurfacing until 11 September 2026, because that is what the City says on the day this was checked.',
+    `Scottsdale is the first operator in this directory to publish how a court is shared and when it is busy. Three of its four park pages carry the same rule — standard game to 11, win by two, a 30-minute limit, then rotate off for anyone waiting — and each one states that mornings are typically the busiest time for pickleball there. Eleven cities in, no operator had published a peak time at all. Every one of the four published venues is stated lighted on the City's pickleball page and again in its own park page's feature list, and three of the four are "free to use" in their park pages' own words; the fourth, Ashler Hills Park, is named in its feature list and described nowhere else on that page, so its price is unstated rather than free. Ashler Hills publishes from 4 September 2026, when Import Gate I1 gained a second address resolver: the Census address file has no record of 32220 N. 74th Way and OpenStreetMap resolves it at house-number level. One of the City's five listed locations is still refused — Scottsdale Community College, which the geocoder places in no incorporated place at all; the City runs a free public drop-in programme on the college's courts, and that does not put them inside the city. Thompson Peak Park is published with its courts closed for resurfacing until 11 September 2026, because that is what the City says on the day this was checked.`,
   sources: [
     {url: PAGE, publisher: CITY, tier: 1, format: 'html', snapshot: snapshotPath('pickleball')},
     ...VENUES.map(p => ({
@@ -377,7 +474,10 @@ writeFileSync(join(REPO_ROOT, 'data/verified/scottsdale-az.json'), JSON.stringif
     {url: `${PARK_BASE}/ashler-hills-park`, publisher: CITY, tier: 1, format: 'html', snapshot: snapshotPath('ashler-hills-park')},
     {url: CENSUS_URL, publisher: 'US Census Bureau', tier: 1, format: 'json', snapshot: 'data/sources/scottsdale-county-census.json'},
   ].map((s, i) => ({id: `S${i + 1}`, ...s})),
-  totals: {venues: VENUES.length, courts: totalCourts, outdoor: totalCourts, indoor: 0, lit: VENUES.length, free: VENUES.length},
+  totals: {
+    venues: VENUES.length, courts: totalCourts, outdoor: totalCourts, indoor: 0,
+    lit: VENUES.length, free: VENUES.filter(p => !p.noParkProse).length,
+  },
   excluded: EXCLUDED.map(e => ({name: e.name, why: e.reasons})),
   venues: overlay,
 }, null, 2) + '\n')
@@ -430,9 +530,9 @@ for (const p of VENUES) {
   const o = overlay[p.slug]
   console.log(
     `  ${o.patch.name.padEnd(22)} ${String(o.patch.total_courts).padStart(2)}` +
-    ` | lights ${o.patch.light} | ${o.patch.fee_type} | ${o.patch.county} County` +
+    ` | lights ${o.patch.light} | ${String(o.patch.fee_type ?? 'price not stated').padEnd(15)} | ${o.patch.county} County` +
     (p.closed ? ' | CLOSED for resurfacing until 11 Sep' : ''))
 }
-console.log('\n  refused: Ashler Hills Park (address does not resolve),')
-console.log('           Scottsdale Community College (Census places it in no incorporated place).')
+console.log('\n  refused: Scottsdale Community College - the geocoder places it in no incorporated place.')
+console.log('  Ashler Hills Park publishes from 2026-09-04 via the second address resolver.')
 console.log('\nWrote data/verified/scottsdale-az.json and reports/scottsdale-conflicts.md\n')

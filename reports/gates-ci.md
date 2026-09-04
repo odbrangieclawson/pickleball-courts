@@ -5,13 +5,13 @@
 === IMPORT GATES — census over every imported row ===
 
 rows examined:            18,097
-rows passing all four:    125
+rows passing all four:    129
 
 gate  what it checks                                        failing
 ----  ----------------------------------------------------  -------
 I1    identity: slug shape, name, city, state, address           717
-I2    provenance: source_url, date_checked, verified_by        17972
-I3    consistency: court arithmetic, county, court count        4387
+I2    provenance: source_url, date_checked, verified_by        17968
+I3    consistency: court arithmetic, county, court count        4386
 I4    vocabulary: controlled values in filtered fields             0
 
 I2 dominates and that is the known state of the project, not a
@@ -28,7 +28,7 @@ state           2     2     2     2     2     2     2     2
 county          9     9     9     9     9     9     9     9
 city           12    12    12    12    12    12    12    12
 filter         19    19    19    19    19    19    19    19
-venue         125   125   125   125   125   125   125   125
+venue         129   129   129   129   129   129   129   129
 
-published pages passing all six: 167/167
+published pages passing all six: 171/171
 ```

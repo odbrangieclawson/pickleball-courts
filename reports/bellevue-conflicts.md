@@ -1,6 +1,6 @@
 # Bellevue verification - one page, fourteen counts, and the one that could not be placed
 
-Run 2026-09-04. 12 venues published, 38 courts (24 outdoor, 14 indoor). 1 venue excluded.
+Run 2026-09-04. 13 venues published, 42 courts (28 outdoor, 14 indoor). 1 venue excluded.
 
 The City of Bellevue publishes a court count for every pickleball venue it lists, indoor and
 outdoor, on a single page - the richest municipal source read for this directory so far. It also
@@ -14,6 +14,7 @@ states its own default, which is rarer than the counts:
 | `crossroads-park` | 4 | outdoor | "4 courts (portable nets)" |
 | `eastgate-park` | 4 | outdoor | "4 courts (dedicated)" |
 | `hidden-valley-park` | 5 | both | "2 courts (portable nets)" and "3 courts" |
+| `highland-park` | 4 | outdoor | "4 courts (portable nets)" |
 | `hillaire-park` | 3 | outdoor | "3 courts (1 dedicated, 2 portable nets)" |
 | `lakemont-community-park` | 4 | outdoor | "4 courts (portable nets)" |
 | `lewis-creek-park` | 2 | outdoor | "2 courts (basketball court overlay, portable nets)" |
@@ -23,25 +24,33 @@ states its own default, which is rarer than the counts:
 | `north-bellevue-community-center` | 2 | indoor | "2 courts (with low ceiling)" |
 | `south-bellevue-community-center` | 6 | indoor | "6 courts" |
 
-## Excluded
+## The venue that was excluded, and now is not
 
-**Highland Community Park** - "4 courts (portable nets)" - three independent reasons:
+**Highland Park** - "4 courts (portable nets)" - was refused on three independent grounds:
 
-1. The Census address geocoder returns no match for "14224 Bel-Red Road", the address the City's own park page gives, and no match for four spelling variants of it. Import Gate I1 requires a street address that resolves.
-2. The park's own page never mentions pickleball: its description lists "two tennis courts" and its amenity list carries "Tennis Courts", with no pickleball anywhere. The court count has no corroboration on the City's record card for the park.
-3. The City's two pages disagree on its name. The pickleball page says "Highland Community Park"; the park page says "Highland Park".
+1. The Census address geocoder returned no match for "14224 Bel-Red Road", the address the
+   City's own park page gives, and no match for four spelling variants of it.
+2. The park's own page never mentions pickleball: its description lists "two tennis courts"
+   and its amenity list carries "Tennis Courts", with no pickleball anywhere.
+3. The City's two pages disagree on its name. The pickleball page says "Highland Community
+   Park"; the park page says "Highland Park".
 
-The run asserts all three still hold. The day the address resolves, or the park page starts
-naming pickleball, this run fails rather than continuing to exclude a venue for a reason that
-has expired.
+On 2026-09-04 the first ground went away: Import Gate I1 gained a second address resolver,
+consulted only where the Census has no record and accepted only at house-number level, and
+OpenStreetMap resolves 14224 Bel-Red Road. The venue publishes from that date with the other
+two grounds carried onto its own page rather than dropped. Neither is a gate: five other
+published Bellevue venues have no corroborating park-page description, and three carry two
+City names, settled the same way - the park page names the venue and the pickleball page
+name is recorded as the alias. The run still asserts both, so if the park page starts naming
+pickleball, or the names converge, it fails rather than serving a caveat that has expired.
 
 ## One park listed twice
 
 The City lists `Hidden Valley Fieldhouse: 3 courts` under Indoor and `Hidden Valley Sports Park:
 2 courts (portable nets)` under Outdoor, and links both names to the same park page at
-1903 112th Ave NE. They are published as one venue with 3 indoor and 2 outdoor courts - the first
-venue in this directory to carry both - rather than two venue pages sharing a street address and
-competing for the same search.
+1903 112th Ave NE. They are published as one venue with 3 indoor and 2 outdoor courts - the only
+venue in this directory with both numbers above zero - rather than two venue pages sharing a
+street address and competing for the same search.
 
 ## A count with a date on it
 

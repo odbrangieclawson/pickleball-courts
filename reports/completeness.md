@@ -1,6 +1,6 @@
 # Completeness dashboard
 
-100 metros in the verification queue, 2,683 venues.
+100 metros in the verification queue, 2,685 venues.
 
 ## The hard rule
 
@@ -45,7 +45,7 @@ asks for, not the whole city.
 | 19 | Colorado Springs, CO | 34 | 0 | 2 | 34 | 1 | 0 | blocked | 37 |
 | 20 | Dallas, TX | 43 | 0 | 2 | 43 | 10 | 0 | blocked | 37 |
 | 21 | Naples, FL | 38 | 0 | 1 | 38 | 5 | 0 | blocked | 37 |
-| 22 | Madison, WI | 50 | 18 | 4 | 29 | 3 | 0 | **ready** | 37 |
+| 22 | Madison, WI | 52 | 20 | 4 | 29 | 3 | 0 | **ready** | 37 |
 | 23 | Knoxville, TN | 34 | 0 | 1 | 34 | 4 | 0 | blocked | 35 |
 | 24 | Phoenix, AZ | 31 | 0 | 0 | 31 | 3 | 0 | blocked | 34 |
 | 25 | Spokane, WA | 30 | 0 | 0 | 30 | 2 | 0 | blocked | 34 |
@@ -79,7 +79,7 @@ asks for, not the whole city.
 | 53 | Ocala, FL | 19 | 0 | 0 | 19 | 1 | 0 | blocked | 23 |
 | 54 | Nashville, TN | 28 | 0 | 0 | 28 | 10 | 0 | blocked | 23 |
 | 55 | San Jose, CA | 22 | 0 | 0 | 22 | 3 | 0 | blocked | 23 |
-| 56 | Scottsdale, AZ | 20 | 3 | 0 | 17 | 3 | 0 | **ready** | 22 |
+| 56 | Scottsdale, AZ | 20 | 4 | 0 | 16 | 3 | 0 | **ready** | 22 |
 | 57 | Lexington, KY | 22 | 0 | 1 | 22 | 5 | 0 | blocked | 22 |
 | 58 | Louisville, KY | 31 | 0 | 1 | 31 | 14 | 0 | blocked | 22 |
 | 59 | Bradenton, FL | 19 | 0 | 1 | 19 | 1 | 0 | blocked | 22 |
@@ -129,9 +129,9 @@ asks for, not the whole city.
 
 | blocker | venue-occurrences |
 | --- | ---: |
-| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,584 |
-| I2: no date_checked | 2,584 |
-| I2: no verified_by | 2,584 |
+| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,583 |
+| I2: no date_checked | 2,583 |
+| I2: no verified_by | 2,583 |
 | I3: county not derived above confidence threshold | 280 |
 | I1: slug has a numeric suffix (Rule 10) | 32 |
 | I3: no postal_code | 31 |

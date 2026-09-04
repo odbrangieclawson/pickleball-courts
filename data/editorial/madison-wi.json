@@ -5,7 +5,7 @@
   "written_by": "staff_research",
   "note_on_method": "Nobody working on this has played on these courts. Every court count and every surface below is from the City of Madison Parks Division's own page for that park, and every address from the City's pickleball courts list. Three parks the City lists are missing from this page because their addresses do not resolve in the Census geocoder; they are named below rather than left out silently.",
   "slots": {
-    "parking": "Madison publishes nothing about parking at any of these twenty-one venues, and that is a genuine gap rather than a shrug — its park pages are otherwise the most structured we have read. What the pages do tell you is the size of the park you are heading into, which is a rougher but real signal: Elver Park is 250 acres and Warner Park 213, both with substantial internal road networks; Norman Clayton is 3.44 acres, Reynolds 3.58, and Waunona 5.13, which are city blocks with a court on them. At the small end, treat parking as street parking. The one venue with a published answer of a sort is the Warner Park Community Recreation Center, where you are checking in at a front desk in a building with its own entrance — but even there the City does not say where to leave the car.",
+    "parking": "Madison publishes nothing about parking at any of these twenty-three venues, and that is a genuine gap rather than a shrug — its park pages are otherwise the most structured we have read. What the pages do tell you is the size of the park you are heading into, which is a rougher but real signal: Elver Park is 250 acres and Warner Park 213, both with substantial internal road networks; Norman Clayton is 3.44 acres, Reynolds 3.58, and Waunona 5.13, which are city blocks with a court on them. At the small end, treat parking as street parking. The one venue with a published answer of a sort is the Warner Park Community Recreation Center, where you are checking in at a front desk in a building with its own entrance — but even there the City does not say where to leave the car.",
     "peak_hours": "No demand figures are published, but Madison states the rule that decides your afternoon: \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance.\" So an outdoor court can be gone from under you by booking, and the City does not publish where those bookings are. Nineteen of the twenty outdoor venues are shared with tennis, which adds a second sport competing for the same asphalt, and the one exception — Garner Park's six dedicated courts — is therefore the only place in the city where every court on site is yours to queue for. Indoors is the reverse: the five courts at the Warner Park Community Recreation Center are reservable through the City's WebTrac system, so the question there is not who turned up first but whether you booked.",
     "surface_condition": "Madison is the first city in this directory that answers the surface question at all, and it answers it for every outdoor venue. Eighteen of the twenty are asphalt. Two — Reynolds Park and Westmorland Park — are what the City calls \"sport court tile\", a modular surface laid over a base, which plays faster and drains differently from asphalt and is a genuinely different game underfoot. To put that in context: across the seventy-four venues published on this site before Madison, five had a verified playing surface. Madison adds twenty in a single reading, because it prints the material in the same line as the count. What the City does not publish is condition — no resurfacing dates, no crack notes, no assessment of which court is best kept — so this page can tell you what a court is made of and not what state it is in.",
     "local_scene": "Two dates tell the story. Madison's first dedicated pickleball courts opened at Garner Park in 2016, and they are still the city's only dedicated outdoor courts a decade later: six courts on a 42-acre park that also hosts Opera in the Park. Everything else outdoors is a tennis court with lines added — and Madison is unusually straight about what that means, publishing the detail that dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\". Nobody else in this directory has mentioned it, and it is the difference between a dink that clears and one that does not. The second date is the expansion of the Warner Park Community Recreation Center, which added five indoor courts across two gyms and, with them, the first bookable pickleball court anywhere on this site. Nine cities in, every other verified court in the directory has been first come, first served."
@@ -16,34 +16,44 @@
       "heading": "Best if you want a court that is not a tennis court",
       "venue_slug": "garner-park",
       "text": "Garner Park, and only Garner Park. Six dedicated outdoor pickleball courts on asphalt — the City states plainly that Garner \"offers Madison's only dedicated outdoor pickleball courts\", and its page dates them to 2016 as the city's first. That means a proper pickleball net at the proper height, no tennis lines to read through, and no chance of arriving to find the court booked for a tennis lesson. It is on the west side, off S. Rosa Rd, on a park whose greater part rises along a knoll to an overlook.",
-      "supports": ["E1", "E2"]
+      "supports": [
+        "E1",
+        "E2"
+      ]
     },
     {
       "key": "indoor",
       "heading": "Best if you want to book a court in advance",
       "venue_slug": "warner-park-community-recreation-center",
       "text": "The Warner Park Community Recreation Center is the only venue in this entire directory you can reserve. Five indoor courts — two in the Blue Gym, three in the Green Gym, each 20ft by 44ft — booked through the City's WebTrac account system. It is also the only one that asks something of you first: an active WPCRC ID card, plus either a Fitness Center/Pickleball membership or a Daily Admission. Neither price is published on the page we read, so ring ahead if the cost matters.",
-      "supports": ["E3"]
+      "supports": [
+        "E3"
+      ]
     },
     {
       "key": "lights",
       "heading": "Best if you are playing after dark",
       "venue_slug": "tenney-park",
       "text": "Tenney Park is the only outdoor venue in Madison whose courts the City marks as lit: \"Courts: 3, asphalt, lighted\". Three courts on 38 acres along the Yahara River on the near east side, in a park the City describes for its \"storybook scenery\" and boat-watching. Every other outdoor venue in the city reads \"not verified yet\" on lighting, which means Madison has not said either way rather than that the courts are dark.",
-      "supports": ["E4"]
+      "supports": [
+        "E4"
+      ]
     },
     {
       "key": "biggest",
       "heading": "Best if you are bringing a group",
       "venue_slug": "brittingham-park",
       "text": "Brittingham Park has four courts on asphalt, the largest shared-court count still standing in Madison after three larger sites fell out on address checks. It stretches along Monona Bay just west of downtown, with a beach, boat rentals and an accessible playground, and its courts have their own address — 388 S. Bassett St. — separate from the park's main entrance at 829 W. Washington Ave. If four is not enough, Garner's six are the only larger set in the city.",
-      "supports": ["E1", "E5"]
+      "supports": [
+        "E1",
+        "E5"
+      ]
     }
   ],
   "faqs": [
     {
       "q": "How many pickleball courts does Madison have?",
-      "a": "We have verified 53 across twenty-one City of Madison venues: 48 outdoor and 5 indoor. That makes Madison the second-largest city in this directory by venue count, behind Seattle. The City lists three more parks with courts — Door Creek, Reindahl and Rennebohm — which are not on this page, and the reason is below."
+      "a": "We have verified 67 across twenty-three City of Madison venues: 62 outdoor and 5 indoor. That makes Madison the second-largest city in this directory by venue count, behind Seattle. The City lists one more park with courts — Reindahl — which is not on this page, and the reason is below."
     },
     {
       "q": "What are the courts made of?",
@@ -66,8 +76,8 @@
       "a": "Tenney Park's three, and no others that we can confirm. Madison marks the lit courts rather than the unlit ones — Tenney's line ends \"asphalt, lighted\" and no other park's does — so the rest are unknown rather than dark."
     },
     {
-      "q": "Why are Door Creek, Reindahl and Rennebohm missing?",
-      "a": "Because their addresses do not resolve. The Census address geocoder returns no match for 7035 Littlemore Dr, 1818 Portage Rd or 115 N Eau Claire Ave, on the spellings the City prints or the variants we tried, and this directory requires a street address that resolves before it will publish a venue. It costs eighteen courts, including Door Creek's eight — the largest outdoor count in the city — and we would rather lose them than publish a venue we cannot place on a map. They go up the day the address resolves."
+      "q": "Why is Reindahl Park missing, and why did Door Creek and Rennebohm arrive late?",
+      "a": "All three for the same reason, and two of them have now been cleared. This directory requires a street address that resolves before it will publish a venue, and the US Census address file — the only resolver this site had until 4 September 2026 — returns no match for 7035 Littlemore Dr, 1818 Portage Rd or 115 N Eau Claire Ave, on the spellings the City prints or the variants we tried. On that date a second resolver was added: OpenStreetMap, consulted only where the Census has no record, and accepted only when it returns the house number asked for. It resolves Door Creek and Rennebohm, so their fourteen courts — including Door Creek's eight, the largest outdoor count in the city — publish from that date. It does not resolve 1818 Portage Rd, so Reindahl Park and its eight courts are still refused. A rule that had admitted all three would have been a rule written to reach a wanted answer."
     },
     {
       "q": "How do you know \"Courts: 8\" means eight pickleball courts?",
@@ -81,7 +91,14 @@
       "publisher": "City of Madison Parks Division",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["parking", "peak_hours", "surface_condition", "local_scene", "dedicated", "biggest"],
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene",
+        "dedicated",
+        "biggest"
+      ],
       "evidence": "The City's pickleball page, listing every venue with its street address, and carrying the statements this page is built on: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\\\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\". Snapshot: data/sources/madison/pickleball.html"
     },
     {
@@ -90,7 +107,11 @@
       "publisher": "City of Madison Parks Division",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["surface_condition", "local_scene", "dedicated"],
+      "supports": [
+        "surface_condition",
+        "local_scene",
+        "dedicated"
+      ],
       "evidence": "Garner Park's page: \"Pickleball / Courts: 6, asphalt\" and \"Madison's first dedicated pickleball courts, located in Garner Park, opened in 2016.\" Snapshot: data/sources/madison/garner.html"
     },
     {
@@ -99,7 +120,12 @@
       "publisher": "City of Madison Parks Division",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["parking", "peak_hours", "local_scene", "indoor"],
+      "supports": [
+        "parking",
+        "peak_hours",
+        "local_scene",
+        "indoor"
+      ],
       "evidence": "Warner Park Community Recreation Center: \"Blue Gym: 2 courts - 20ft x 44ft\"; \"Green Gym: 3 courts - 20ft x 44ft\"; \"To play pickleball, an active WPCRC ID and Fitness Center/Pickleball Membership is required.\"; \"If you don't have a Fitness Center Membership, you're welcome to play by paying a Daily Admission and an active WPCRC ID is still required.\"; and the WebTrac reservation checklist. Snapshot: data/sources/madison/wpcrc-fitness-center-pickleball-membership.html"
     },
     {
@@ -108,7 +134,10 @@
       "publisher": "City of Madison Parks Division",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["surface_condition", "lights"],
+      "supports": [
+        "surface_condition",
+        "lights"
+      ],
       "evidence": "Tenney Park's page: \"Tennis & Pickleball / Courts: 3, asphalt, lighted\", the only venue on Madison's pickleball list whose court line ends in \"lighted\". Snapshot: data/sources/madison/tenney.html"
     },
     {
@@ -117,7 +146,11 @@
       "publisher": "City of Madison Parks Division",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["parking", "surface_condition", "biggest"],
+      "supports": [
+        "parking",
+        "surface_condition",
+        "biggest"
+      ],
       "evidence": "Brittingham Park's page, which prints its courts at a different address from the park itself: \"Tennis & Pickleball / 388 S. Bassett St. / Courts: 4, asphalt\", alongside the park description at 829 W. Washington Ave. Snapshot: data/sources/madison/brittingham.html"
     },
     {
@@ -126,8 +159,10 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["parking"],
-      "evidence": "Every published address was matched by the Census address geocoder and placed in the incorporated place \"Madison city\", Dane County, WI. 7035 Littlemore Dr, 1818 Portage Rd and 115 N Eau Claire Ave returned no match, which is why Door Creek, Reindahl and Rennebohm are not published. Snapshot: data/sources/madison-county-census.json"
+      "supports": [
+        "parking"
+      ],
+      "evidence": "Twenty-one of the twenty-three published addresses were matched by the Census address geocoder and placed in the incorporated place \"Madison city\", Dane County, WI. 7035 Littlemore Dr, 1818 Portage Rd and 115 N Eau Claire Ave returned no match; the first two resolve through OpenStreetMap at house-number level and publish on that basis, and Reindahl Park at 1818 Portage Rd does not and is not published. Snapshot: data/sources/madison-county-census.json"
     }
   ]
 }

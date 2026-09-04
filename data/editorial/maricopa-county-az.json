@@ -5,14 +5,14 @@
   "written_by": "staff_research",
   "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world — how many courts a park has, what it costs, when it is busy — come from the City of Scottsdale and are cited. Claims about our own coverage are facts about this dataset rather than about Maricopa County, and are worded so a reader cannot mistake one for the other. Maricopa is by some distance the largest county this directory has published in, and one city of it is on this page.",
   "slots": {
-    "coverage": "One city in Maricopa County is published here: Scottsdale, with three venues and twenty-one courts verified against the City's own pages. Maricopa County contains Phoenix, Mesa, Chandler, Glendale, Gilbert, Tempe, Peoria, Surprise, Goodyear and Avondale as well — some four and a half million people, and on any reasonable estimate several hundred public pickleball courts — and not one of those cities has been checked against a named source, so none appears anywhere on this site. Two locations inside Scottsdale itself are also absent and named on the city page: Ashler Hills Park, whose address the Census geocoder cannot resolve, and Scottsdale Community College, whose six lighted courts host a free City-run public programme at an address the geocoder places in no incorporated place at all.",
-    "distribution": "What we can verify is concentrated in one suburb of one city, and that is a fact about our coverage rather than about the county. Within Scottsdale the twenty-one courts sit at three parks spread across the north and east of the city: ten at Horizon Park in the north-east, eight at Cholla Park in the east, and three at Thompson Peak Park in the north. Every one of them is lit, every one is free, and every one runs from sunrise to 10:30 p.m. — a uniformity no other city in this directory manages. In a county where the summer daytime is unusable for outdoor sport, that lighting is the whole of what makes twenty-one courts into a usable inventory.",
+    "coverage": "One city in Maricopa County is published here: Scottsdale, with four venues and twenty-nine courts verified against the City's own pages. Maricopa County contains Phoenix, Mesa, Chandler, Glendale, Gilbert, Tempe, Peoria, Surprise, Goodyear and Avondale as well — some four and a half million people, and on any reasonable estimate several hundred public pickleball courts — and not one of those cities has been checked against a named source, so none appears anywhere on this site. One location inside Scottsdale itself is also absent and named on the city page: Scottsdale Community College, whose six lighted courts host a free City-run public programme at an address the geocoder places in no incorporated place at all.",
+    "distribution": "What we can verify is concentrated in one suburb of one city, and that is a fact about our coverage rather than about the county. Within Scottsdale the twenty-nine courts sit at four parks spread across the north and east of the city: ten at Horizon Park in the north-east, eight at Cholla Park in the east, and three at Thompson Peak Park in the north. Every one of them is lit, every one is free, and every one runs from sunrise to 10:30 p.m. — a uniformity no other city in this directory manages. In a county where the summer daytime is unusable for outdoor sport, that lighting is the whole of what makes twenty-nine courts into a usable inventory.",
     "gaps": "The honest position is that this is a Scottsdale page wearing the heading of the fourth-largest county in the United States. The gap is not subtle and it will not close by accident. What would change it is a second Maricopa city whose parks department publishes court counts on a page a browser with JavaScript off can read — and the early evidence is that this will be harder here than elsewhere: of the Arizona cities looked at while choosing this one, Gilbert, Mesa and Tucson all refused our fetcher outright and Chandler's parks pages did not resolve where expected. Scottsdale was reachable, and it was reachable and unusually well documented, which is why it is the one that got published. Nothing outside a municipal parks department appears here at all — no clubs, resorts, HOAs or commercial venues in the county carry a source we could read, which in a retirement-and-resort county is a large and specific hole."
   },
   "faqs": [
     {
       "q": "How many pickleball courts are there in Maricopa County?",
-      "a": "We do not know, and no honest page can tell you. Maricopa is the fourth most populous county in the United States and includes Phoenix, Mesa, Chandler, Glendale, Gilbert and Tempe. What we have checked is 21 courts across three venues, all of them in Scottsdale, each with a source and a date you can see."
+      "a": "We do not know, and no honest page can tell you. Maricopa is the fourth most populous county in the United States and includes Phoenix, Mesa, Chandler, Glendale, Gilbert and Tempe. What we have checked is 29 courts across four venues, all of them in Scottsdale, each with a source and a date you can see."
     },
     {
       "q": "Why is only Scottsdale listed?",
@@ -28,7 +28,7 @@
     },
     {
       "q": "How often is this checked again?",
-      "a": "These pages were read on 4 September 2026 and each one is snapshotted into the repository that builds this site, then re-asserted on every build. One of the three venues, Thompson Peak Park, was closed for resurfacing at the time of checking — our build will fail when the City removes that notice, which is how a closure on this site stops being true rather than quietly persisting."
+      "a": "These pages were read on 4 September 2026 and each one is snapshotted into the repository that builds this site, then re-asserted on every build. One of the four venues, Thompson Peak Park, was closed for resurfacing at the time of checking — our build will fail when the City removes that notice, which is how a closure on this site stops being true rather than quietly persisting."
     },
     {
       "q": "Which Maricopa city is likely next?",
@@ -69,7 +69,7 @@
       "supports": [
         "coverage"
       ],
-      "evidence": "The three published addresses were matched and placed in the incorporated place \"Scottsdale city\", Maricopa County, AZ. 32220 N. 74th Way returned no match and 9000 E Chaparral Rd matched but returned no incorporated place, which is why Ashler Hills Park and Scottsdale Community College are not published. Snapshot: data/sources/scottsdale-county-census.json"
+      "evidence": "Three of the four published addresses were matched and placed in the incorporated place \"Scottsdale city\", Maricopa County, AZ. 32220 N. 74th Way returned no match, so Ashler Hills Park is published on the strength of a second resolver, OpenStreetMap, which matches it at house-number level. 9000 E Chaparral Rd matched but returned no incorporated place, which is why Scottsdale Community College is not published. Snapshot: data/sources/scottsdale-county-census.json"
     }
   ]
 }

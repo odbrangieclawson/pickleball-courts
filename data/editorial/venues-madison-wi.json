@@ -896,6 +896,82 @@
         "M24",
         "M3"
       ]
+    },
+    "door-creek-park": {
+      "slots": {
+        "description": "Eight courts on asphalt, the largest outdoor pickleball count in Madison, in a 160-acre community park on the far east side. The City's line under \"Tennis & Pickleball\" reads \"Courts: 8, asphalt\", and the park's own description says what kind of courts they are: \"tennis courts with shared pickleball courts\". So this is the ordinary Madison arrangement at an unusual scale — eight courts of it, where the city's median venue has two.\n\nDoor Creek was first acquired in 1990 and got its master plan in 2008. Alongside the courts the park carries a reservable shelter, a large playground, basketball courts, hiking trails and multipurpose fields, and it backs onto Dane County's Blooming Grove Drumlins Natural Resource Area. New for the 2025-26 winter, the City added an ice rink and a staffed pavilion renting cross-country skis, skates and snowshoes.",
+        "getting_there": "7035 Littlemore Dr., Madison, WI 53718, on the far east side in the Door Creek neighbourhood. This address is the reason the venue took until 4 September 2026 to appear here: the US Census address file has no record of it, and until that date this site had exactly one address resolver. It now consults OpenStreetMap where the Census has nothing and accepts the answer only at house-number level, which this address meets. The county and postcode published here come from OpenStreetMap rather than the Census.\n\nThe City lists five alternate access points for the park — 6901 Bluff Point Drive, 851 Harrington Drive, 7202 Cottage Grove Rd., 625 Highcliff Trail and a point between 533 and 601 Highcliff Trail — which is worth knowing in a park this size. It publishes nothing about parking, here or at any Madison venue.",
+        "what_to_expect": "Eight shared courts is the most pickleball capacity outdoors anywhere in Madison, and the practical consequence is that this is the venue least likely to have you waiting. The courts are tennis courts striped for pickleball, so the net you play over is a tennis net, which the City notes is \"about 2\\\" taller than a standard pickleball net\". Individuals play first come, first served; leagues and lessons must reserve in advance. Lighting is not stated, and neither are nets — bring a paddle and expect to bring a net."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Eight, on asphalt. The City's line reads \"Courts: 8, asphalt\" under the \"Tennis & Pickleball\" heading — the largest outdoor count in Madison."
+        },
+        {
+          "q": "Are they dedicated pickleball courts?",
+          "a": "No. The park description says \"tennis courts with shared pickleball courts\", and the heading is \"Tennis & Pickleball\". Garner Park has the only dedicated outdoor pickleball courts in the city."
+        },
+        {
+          "q": "Why did this park only appear recently?",
+          "a": "Because of the address, not the courts. This site will not publish a venue whose street address does not resolve, and the Census address file has no record of 7035 Littlemore Dr. On 4 September 2026 a second resolver was added — OpenStreetMap, consulted only where the Census has nothing and accepted only when it returns the house number asked for. It resolves this address, so eight courts that had been refused now publish."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not stated. Madison marks its lit courts by ending the line in \"lighted\", and only Tenney Park's does. Door Creek's does not, so lighting here reads \"not verified yet\" rather than No."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count. Madison is the only city in this directory that publishes a surface for every one of its venues."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "A great deal: 160 acres with a reservable shelter, a large playground, basketball courts, hiking trails, multipurpose fields, and from winter 2025-26 an ice rink with a staffed pavilion renting skis, skates and snowshoes. A cross-country ski permit is required."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M25",
+        "M27"
+      ]
+    },
+    "rennebohm-park": {
+      "slots": {
+        "description": "Six courts on asphalt on the west side, behind Hilldale Mall, in a 20-acre park. The City's line reads \"Courts: 6, asphalt\" under \"Tennis & Pickleball\", and the park description fills in what they are: \"six tennis courts, three with lighting\". Read the two together and this is six tennis courts striped for pickleball, of which three carry lights — but the lighting statement is made about the tennis courts in the park's prose and not in the court line the City uses to mark its lit pickleball venues, so lighting is left unverified here rather than published on an inference.\n\nThe City also carries a dated note on this park's page: \"Update October 20, 2025: West court construction is substantially completed and courts are open for play!\" That is the most recent statement Madison makes about any of its pickleball surfaces, and it is why the courts you find here are newer than most in the city.",
+        "getting_there": "115 N. Eau Claire Ave., Madison, WI 53705, on the west side behind Hilldale Mall; the City gives 518 North Segoe Road as an alternate address. Like Door Creek, this venue waited on an address: the US Census address file has no record of 115 N. Eau Claire Ave., and it publishes here from 4 September 2026, when this site added OpenStreetMap as a second resolver for addresses the Census cannot find. The county and postcode come from that resolver.",
+        "what_to_expect": "Six shared courts, recently rebuilt on the west side, first come and first served for individuals; leagues and lessons reserve in advance. The net is a tennis net, taller than a pickleball net by the City's own account. Three of the park's six tennis courts have lighting according to the park description, so evening play may be possible — but the City does not say it about the pickleball courts in the line where it says it elsewhere, so treat that as the park's own words rather than as a verified fact on this page. The park also holds a large reservable shelter, a climbing-net playground, a free-to-use disc golf basket, a concrete ping pong table and a checkers table, and the Jeff Erlanger sprayground, which opened in 2025."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Six, on asphalt. The City's line reads \"Courts: 6, asphalt\" under the \"Tennis & Pickleball\" heading."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not verified, and the reason is worth stating. The park description says the park has \"six tennis courts, three with lighting\". But Madison marks a lit pickleball venue by ending its court line in \"lighted\" — only Tenney Park's does — and Rennebohm's does not. Rather than convert a sentence about tennis courts into a published fact about pickleball lighting, this site records lighting as unverified and prints the City's sentence here so you can judge."
+        },
+        {
+          "q": "Were these courts rebuilt?",
+          "a": "The west courts were. The City's page carries the note \"Update October 20, 2025: West court construction is substantially completed and courts are open for play!\" — the only recent construction statement Madison makes about any of its court surfaces."
+        },
+        {
+          "q": "Why did this park only appear recently?",
+          "a": "The Census address file has no record of 115 N. Eau Claire Ave., and this site will not publish a venue whose address does not resolve. On 4 September 2026 it added OpenStreetMap as a second resolver, consulted only where the Census has nothing and accepted only at house-number level. It resolves this one."
+        },
+        {
+          "q": "Are these dedicated pickleball courts?",
+          "a": "No — six tennis courts striped for pickleball, so the net is a tennis net, which Madison notes is \"about 2\\\" taller than a standard pickleball net\". Garner Park has the city's only dedicated outdoor pickleball courts."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "20 acres behind Hilldale Mall with a large reservable shelter, a climbing-net playground, a free disc golf basket, a concrete ping pong table and checkers table, a community garden, and the Jeff Erlanger accessible playground and sprayground, which opened in 2025."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M26",
+        "M27"
+      ]
     }
   },
   "sources": [
@@ -1090,6 +1166,30 @@
       "tier": 1,
       "retrieved": "2026-09-04",
       "evidence": "\"Blue Gym: 2 courts - 20ft x 44ft\"; \"Green Gym: 3 courts - 20ft x 44ft\"; \"To play pickleball, an active WPCRC ID and Fitness Center/Pickleball Membership is required.\"; \"If you don't have a Fitness Center Membership, you're welcome to play by paying a Daily Admission and an active WPCRC ID is still required.\"; \"Annual and 6-month membership and 20-visit passes are available and include use of the fitness center and pickleball courts.\"; the WebTrac reservation checklist; the non-marking shoe rule; and the youth age rules. Snapshot: data/sources/madison/wpcrc-fitness-center-pickleball-membership.html"
+    },
+    {
+      "id": "M25",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+      "publisher": "City of Madison Parks",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Door Creek Park's own page: \"Acres: 160.00\", the description \"this park features a reservable shelter, tennis courts with shared pickleball courts, a large playground, basketball courts, hiking trails and multipurpose fields\", the court line \"Courts: 8, asphalt\" under \"Tennis & Pickleball\", the five alternate access addresses, and the 2025-26 winter recreation note. Snapshot: data/sources/madison/door-creek.html"
+    },
+    {
+      "id": "M26",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
+      "publisher": "City of Madison Parks",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Rennebohm Park's own page: \"Acres: 20.12\", the description \"This park features a large reservable shelter, play equipment with a unique climbing net, free-to-use disc golf basket, a concrete ping pong table and checkers table, and six tennis courts, three with lighting\", the court line \"Courts: 6, asphalt\" under \"Tennis & Pickleball\", and the dated note \"Update October 20, 2025: West court construction is substantially completed and courts are open for play!\" Snapshot: data/sources/madison/rennebohm.html"
+    },
+    {
+      "id": "M27",
+      "url": "https://nominatim.openstreetmap.org/search",
+      "publisher": "OpenStreetMap contributors (Nominatim)",
+      "tier": 2,
+      "retrieved": "2026-09-04",
+      "evidence": "The second address resolver, added 2026-09-04 and consulted only where the US Census address file holds no record, accepted only when it returns the house number asked for. It resolves 7035 Littlemore Dr. and 115 N. Eau Claire Ave. at that level, which is what allows Door Creek Park and Rennebohm Park to publish. It does not resolve 1818 Portage Rd., so Reindahl Park is still refused. Snapshot: data/sources/madison-county-census.json"
     }
   ]
 }

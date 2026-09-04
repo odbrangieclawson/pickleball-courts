@@ -1,6 +1,6 @@
 {
   "metros": 100,
-  "venues": 2683,
+  "venues": 2685,
   "ready": 8,
   "metro_detail": [
     {
@@ -489,8 +489,8 @@
       "metro": "Madison, WI",
       "city": "Madison",
       "state": "WI",
-      "venues": 50,
-      "passing_all_four": 18,
+      "venues": 52,
+      "passing_all_four": 20,
       "blocked_by": {
         "I1": 4,
         "I2": 29,
@@ -1264,10 +1264,10 @@
       "city": "Scottsdale",
       "state": "AZ",
       "venues": 20,
-      "passing_all_four": 3,
+      "passing_all_four": 4,
       "blocked_by": {
         "I1": 0,
-        "I2": 17,
+        "I2": 16,
         "I3": 3,
         "I4": 0
       },
@@ -1276,9 +1276,9 @@
       "reason": null,
       "pages_when_ready": 22,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
-        "I2: no date_checked (17)",
-        "I2: no verified_by (17)",
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (16)",
+        "I2: no date_checked (16)",
+        "I2: no verified_by (16)",
         "I3: no postal_code (2)"
       ]
     },

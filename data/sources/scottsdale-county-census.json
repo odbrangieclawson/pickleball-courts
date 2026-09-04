@@ -1,50 +1,72 @@
 {
   "ashler-hills-park": {
-    "matched": false,
-    "query": "32220 N 74th Way, Scottsdale, AZ"
+    "matched": "32220, North 74th Way, Scottsdale, Maricopa County, Arizona, 85266, United States",
+    "resolver": "osm",
+    "lat": 33.7785351,
+    "lon": -111.9208003,
+    "county": "Maricopa",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Scottsdale",
+    "place_matches_city": true,
+    "postal_code": "85266",
+    "basis": "OpenStreetMap (Nominatim) matched \"32220, North 74th Way, Scottsdale, Maricopa County, Arizona, 85266, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Maricopa County, AZ. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Maricopa County."
   },
   "cholla-park": {
     "matched": "11320 E VIA LINDA, SCOTTSDALE, AZ, 85259",
+    "resolver": "census",
     "lat": 33.588909767399,
     "lon": -111.836856538158,
     "county": "Maricopa",
     "state_fips": "04",
     "county_fips": "013",
     "place": "Scottsdale city",
+    "place_matches_city": true,
     "postal_code": "85259",
-    "basis": "Census address geocoder matched \"11320 E VIA LINDA, SCOTTSDALE, AZ, 85259\"."
+    "basis": "Census address geocoder matched \"11320 E VIA LINDA, SCOTTSDALE, AZ, 85259\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"11320 E VIA LINDA, SCOTTSDALE, AZ, 85259\"."
   },
   "horizon-park": {
     "matched": "15444 N 100TH ST, SCOTTSDALE, AZ, 85260",
+    "resolver": "census",
     "lat": 33.626279203475,
     "lon": -111.875099401978,
     "county": "Maricopa",
     "state_fips": "04",
     "county_fips": "013",
     "place": "Scottsdale city",
+    "place_matches_city": true,
     "postal_code": "85260",
-    "basis": "Census address geocoder matched \"15444 N 100TH ST, SCOTTSDALE, AZ, 85260\"."
+    "basis": "Census address geocoder matched \"15444 N 100TH ST, SCOTTSDALE, AZ, 85260\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"15444 N 100TH ST, SCOTTSDALE, AZ, 85260\"."
   },
   "scottsdale-community-college": {
     "matched": "9000 E CHAPARRAL RD, SCOTTSDALE, AZ, 85250",
+    "resolver": "census",
     "lat": 33.509509160236,
     "lon": -111.881890890321,
     "county": "Maricopa",
     "state_fips": "04",
     "county_fips": "013",
     "place": null,
+    "place_matches_city": false,
     "postal_code": "85250",
-    "basis": "Census address geocoder matched \"9000 E CHAPARRAL RD, SCOTTSDALE, AZ, 85250\"."
+    "basis": "Census address geocoder matched \"9000 E CHAPARRAL RD, SCOTTSDALE, AZ, 85250\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"9000 E CHAPARRAL RD, SCOTTSDALE, AZ, 85250\"."
   },
   "thompson-peak-park": {
     "matched": "20199 N 78TH PL, SCOTTSDALE, AZ, 85255",
+    "resolver": "census",
     "lat": 33.668332041152,
     "lon": -111.910784775907,
     "county": "Maricopa",
     "state_fips": "04",
     "county_fips": "013",
     "place": "Scottsdale city",
+    "place_matches_city": true,
     "postal_code": "85255",
-    "basis": "Census address geocoder matched \"20199 N 78TH PL, SCOTTSDALE, AZ, 85255\"."
+    "basis": "Census address geocoder matched \"20199 N 78TH PL, SCOTTSDALE, AZ, 85255\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"20199 N 78TH PL, SCOTTSDALE, AZ, 85255\"."
   }
 }
