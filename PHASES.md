@@ -330,8 +330,9 @@ passes all six gates against the built HTML; the totals are the ones
 | 7 | Vancouver, WA | 3 | 14 | City of Vancouver pickleball page | 2026-09-03 |
 | 8 | Bellevue, WA | 12 | 38 | City of Bellevue pickleball page + park pages | 2026-09-04 |
 | 9 | Madison, WI | 21 | 53 | City of Madison park pages, count and surface per venue | 2026-09-04 |
+| 10 | Austin, TX | 21 | 60 | Austin PARD pickleball page, count + hours + lighting per venue | 2026-09-04 |
 
-**125 published pages:** 9 city, 95 venue, 13 filter, 6 county, 2 state.
+**150 published pages:** 10 city, 116 venue, 15 filter, 7 county, 2 state.
 
 **Two state pages exist because two states have three published cities.**
 North Carolina since Apex; Washington since Bellevue. `STATE_MIN_CITIES = 3`
@@ -375,6 +376,59 @@ Recreation Center has its own pages, ID card, membership and booking system,
 and the outdoor courts have none of those. Its five indoor courts are also the
 first bookable pickleball courts anywhere in this directory — nine cities in,
 every other verified court is first come, first served.
+
+**Austin is the city that answers the lighting question.** Eleven of its
+twenty-one venues carry the words "Lighted during park hours" on the City's
+own page. Before Austin, forty-three of the ninety-five venues in this
+directory had a lighting answer either way and more than half of those came
+from one Seattle GIS layer with a column for it — so Austin is the first
+operator to state it venue by venue in prose at any scale, and its /lights/
+page is the first in the directory built from sentences rather than a
+database field.
+
+**It is also the first operator anywhere to say a net is NOT provided.**
+Brentwood, Rosewood and Springwoods carry "bring your own portable net" or
+"Nets not included." Every other city across nine cities has left that field
+unknown, which is a different answer from no.
+
+**Austin publishes hours for every venue, and the exceptions are the
+product.** Fifteen run 7 a.m. to 10 p.m. daily. Pan American loses its courts
+to roller derby on Tuesday and Thursday evenings and weekend mornings from
+9 a.m. — a named competing use with exact times, which no other operator in
+this directory has published. Austin High follows the school calendar under
+an AISD sharing agreement. Hancock closes for four hours in the middle of a
+term-time weekday.
+
+**Two structural things this city forced:**
+
+- **Assertions had to become per venue rather than per page.** "Lighted
+  during park hours" appears eleven times on one page and the standard
+  open-play line fifteen. Checking that a string exists somewhere in the
+  snapshot would have proved nothing about which park it belonged to — a
+  lighting claim could have survived being moved between parks. The run
+  splits the list into one block per venue, cut at the venue names, and
+  asserts every fact inside its own block.
+- **`venueTitle()` could not fit a real venue's name.** "Austin Tennis and
+  Pickleball Center at Walnut Creek Sports Park" is 63 characters; with the
+  fixed " - Pickleball Courts" suffix the title was 83 with both location
+  tokens already dropped, and the build failed on the largest venue in the
+  city. The suffix is now droppable too and, because the assembler takes the
+  rightmost droppable first, it goes last: state, then city, then suffix.
+  A title that is just the venue's name is weaker and honest; refusing to
+  publish a venue because its operator gave it a long name is neither. This
+  is the second time that module has been widened by a real name — Portland's
+  East Portland Community Center was the first.
+
+**Two counties, one city.** Nineteen Austin venues are in Travis County and
+two are in Williamson, so Travis gets a county page and Williamson does not.
+The county comes from the geocoder per venue rather than from an assumption
+that a city sits in one — the first time in this directory that has mattered.
+
+**What Austin publishes and this run did not take.** The same page carries a
+second section, "Pickleball Programming at Rec Centers", listing indoor
+courts at eight recreation centres with session times and addresses without
+postcodes. It is real, sourced and unverified, and it is named on the city
+page as an open gap rather than left as a silence.
 
 **Two more things Madison broke:**
 
@@ -424,12 +478,12 @@ every other verified court is first come, first served.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and nine cities are published. What stands
+Phases 0 through 6 are complete and ten cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered nine times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and seven sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last one took five refusals before Madison. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered ten times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and eight sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last two took seventeen refusals between them. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -452,16 +506,24 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**9 of 50.** The sequencing rule above is the whole plan, and this is the
+**10 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last nine were: find a parks
+The next city is chosen the same way the last ten were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
-never a qualification. Spokane, WA is first in the queue on both counts and
-is blocked on something small and specific — the City's pickleball page
-refused our fetcher with an HTTP 403 on 2026-09-04, and this project does not
-publish from a page it cannot snapshot and re-check.
+never a qualification. Seventeen cities were refused
+across the runs for cities #9 and #10, and the reasons are worth keeping so
+nobody re-treads them:
+
+| City | Refused because |
+| --- | --- |
+| Spokane, Redmond, Wichita, Durham, Greensboro, Eugene, Olympia, Kirkland, Mesa, Tucson, Fort Collins | The parks site refuses both of our fetchers with an HTTP 403. This project does not publish from a page it cannot snapshot and re-check. Most are CivicPlus sites. |
+| Bellingham, Tacoma, Lexington KY, Jacksonville NC | The operator publishes pickleball locations and no court counts. A venue needs a verified count to exist here. |
+| Boise | Counts for only two venues — Eagle Rock and Hobble Creek — against a three-venue threshold. Boise also has the best story of any city refused so far: twelve dedicated courts at Willow Lane and Manitou were converted back to six tennis-only courts in September 2025 after a noise lawsuit settlement. |
+| Honolulu | The best court data found anywhere — 192 courts at 93 parks with counts, shared-use type and lighting in one table — and no address source. Its parks GIS layer carries names and acreage but no street addresses, so Import Gate I1 cannot be satisfied without another pass. |
+
+Honolulu is the one worth returning to.
 
 ## Tagging convention
 
@@ -471,6 +533,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-9-madison`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-10-austin`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

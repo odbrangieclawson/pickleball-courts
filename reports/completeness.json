@@ -1,7 +1,7 @@
 {
   "metros": 100,
-  "venues": 2662,
-  "ready": 6,
+  "venues": 2683,
+  "ready": 7,
   "metro_detail": [
     {
       "metro": "Seattle, WA",
@@ -328,17 +328,17 @@
       "metro": "Austin, TX",
       "city": "Austin",
       "state": "TX",
-      "venues": 45,
-      "passing_all_four": 0,
+      "venues": 66,
+      "passing_all_four": 21,
       "blocked_by": {
         "I1": 4,
         "I2": 45,
         "I3": 12,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 38,
       "top_reasons": [
         "I2: source_url points to CourtSource, a competitor directory, which is not a source (45)",

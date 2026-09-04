@@ -1,0 +1,2300 @@
+{
+  "city": "Austin",
+  "state": "TX",
+  "retrieved_at": "2026-09-04",
+  "method_note": "Austin Parks and Recreation publishes one page listing what it calls the official Department pickleball locations, with a full street address, a court count and opening hours for each, and the words \"Lighted during park hours\" against eleven of the twenty-one published here. Lighting is a field most operators skip: forty-three of the ninety-five venues published before this city had a verified answer either way, more than half of them from one Seattle GIS layer. Austin is also the first operator anywhere in this directory to state that a net is NOT provided, at three venues. Where the City gives two numbers — \"2 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\" — the pickleball figure is the one recorded. Assertions in this run are made per venue against its own block of the page rather than against the page as a whole, because \"Lighted during park hours\" appears eleven times and a page-wide check would let a lighting claim survive being moved between parks. Balcones District Park is listed by the City and excluded on two grounds: it states no pickleball court count, and its address does not geocode. Nineteen venues are in Travis County and two in Williamson; the county is taken per venue. Fees and surfaces are stated nowhere and are published nowhere.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.austintexas.gov/department/pickleball",
+      "publisher": "Austin Parks and Recreation Department",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/austin/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/austin-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 21,
+    "courts": 60,
+    "outdoor": 60,
+    "indoor": 0,
+    "lit": 11,
+    "by_county": {
+      "Travis": 19,
+      "Williamson": 2
+    }
+  },
+  "excluded": [
+    {
+      "name": "Balcones District Park",
+      "why": [
+        "The City states no pickleball court count for it. Its entry reads \"striping for Pickleball\" where every other multi-purpose entry on the page gives a figure — \"striping for 4 Pickleball Courts\", \"striping for 2 Pickleball Courts\". Page Gate 1 requires a verified court count and there is none to verify.",
+        "The Census address geocoder returns no match for \"12017 Amherst Dr\", so Import Gate I1 could not be satisfied either."
+      ]
+    }
+  ],
+  "venues": {
+    "austin-high-tennis-center": {
+      "minted": true,
+      "identity": {
+        "name": "Austin High Tennis Center",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78703",
+        "latitude": 30.273239435383,
+        "longitude": -97.765369579837,
+        "imported_slug": null,
+        "canonical_slug": "austin-high-tennis-center"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "3 Dedicated Outdoor Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Austin High Tennis Center",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "2001 W. Cesar Chavez Austin",
+        "venue_type": "school",
+        "hours_of_operation": "Monday to Friday, 5:30 p.m. to 10 p.m. during the school year; 7 Days a Week, 7 a.m. to 10 p.m. during the summer months.",
+        "court_availability": "Three dedicated outdoor pickleball courts, lit during park hours. The courts are shared under an agreement between the City of Austin and Austin Independent School District, and the hours change with the school calendar: weekday evenings only from 5:30 p.m. during term, and seven days a week from 7 a.m. through the summer.",
+        "county": "Travis",
+        "postal_code": "78703",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Austin High Tennis Center\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"3 Dedicated Outdoor Courts\". A single figure, already a pickleball count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"3 Dedicated Outdoor Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2001 W. Cesar Chavez Austin, Texas 78703\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The courts sit at Austin High School and are shared under an agreement with Austin Independent School District, which the City states on this page."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Monday to Friday, 5:30 p.m. to 10 p.m. during the school year\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"3 Dedicated Outdoor Courts\", with the hours the City publishes for it: \"Monday to Friday, 5:30 p.m. to 10 p.m. during the school year\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"2001 W CESAR CHAVEZ ST, AUSTIN, TX, 78703\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2001 W CESAR CHAVEZ ST, AUSTIN, TX, 78703\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "austin-tennis-and-pickleball-center": {
+      "minted": true,
+      "identity": {
+        "name": "Austin Tennis and Pickleball Center at Walnut Creek Sports Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78724",
+        "latitude": 30.311454456517,
+        "longitude": -97.638689641217,
+        "imported_slug": null,
+        "canonical_slug": "austin-tennis-and-pickleball-center"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "8 Outdoor Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Austin Tennis and Pickleball Center at Walnut Creek Sports Park",
+        "total_courts": 8,
+        "outdoor_courts": 8,
+        "street_address": "7800 Johnny Morris Rd.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Monday to Friday, 8:30 a.m. to 10:00 p.m.; Saturday and Sunday, 8:30 a.m. to 9:00 p.m.",
+        "court_availability": "Eight outdoor pickleball courts, lit during park hours, and the only venue on Austin's list that must be booked: the City marks it \"Reservations Required\" where every other entry says Open Play. It is the largest pickleball count in the city by some distance.",
+        "county": "Travis",
+        "postal_code": "78724",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Austin Tennis and Pickleball Center at Walnut Creek Sports Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"8 Outdoor Pickleball Courts\". A single figure, already a pickleball count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"8 Outdoor Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"7800 Johnny Morris Rd., Austin, Texas 78724\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Monday to Friday, 8:30 a.m. to 10:00 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"8 Outdoor Pickleball Courts\", with the hours the City publishes for it: \"Monday to Friday, 8:30 a.m. to 10:00 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"7800 JOHNNY MORRIS RD, AUSTIN, TX, 78724\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"7800 JOHNNY MORRIS RD, AUSTIN, TX, 78724\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "beverly-s-sheffield-northwest-district-park": {
+      "minted": true,
+      "identity": {
+        "name": "Beverly S. Sheffield Northwest District Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78757",
+        "latitude": 30.34827088685,
+        "longitude": -97.739936308418,
+        "imported_slug": null,
+        "canonical_slug": "beverly-s-sheffield-northwest-district-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "2 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Beverly S. Sheffield Northwest District Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "7000 Ardath St",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "4 pickleball courts striped onto 2 multi-purpose courts, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78757",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Beverly S. Sheffield Northwest District Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 4, striped onto 2 multi-purpose courts."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"7000 Ardath St, Austin, TX 78757\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"7000 ARDATH ST, AUSTIN, TX, 78757\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"7000 ARDATH ST, AUSTIN, TX, 78757\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "brentwood-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Brentwood Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78757",
+        "latitude": 30.339943705307,
+        "longitude": -97.730776064173,
+        "imported_slug": null,
+        "canonical_slug": "brentwood-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts, bring your own portable net",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Brentwood Neighborhood Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "6710 Arroyo Seco",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "2 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78757",
+        "light": true,
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Brentwood Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts, bring your own portable net\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 2, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts, bring your own portable net\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"6710 Arroyo Seco, Austin, Texas 78757\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts, bring your own portable net\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"6710 ARROYO SECO, AUSTIN, TX, 78757\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6710 ARROYO SECO, AUSTIN, TX, 78757\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        },
+        "nets_provided": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry says \"bring your own portable net\" — a statement that a net is NOT provided, which is why this reads No rather than \"not verified yet\". Three Austin venues say it and no other city in this directory says it anywhere."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "delta-pocket-park": {
+      "minted": true,
+      "identity": {
+        "name": "Delta Pocket Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78758",
+        "latitude": 30.38934871877,
+        "longitude": -97.715680042426,
+        "imported_slug": null,
+        "canonical_slug": "delta-pocket-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "One dedicated pickleball court",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Delta Pocket Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "2325 Donley Dr.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "1 dedicated pickleball court — pickleball and nothing else. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78758"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Delta Pocket Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"One dedicated pickleball court\". A single figure, already a pickleball count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"One dedicated pickleball court\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2325 Donley Dr., Austin, Texas, 78758\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"One dedicated pickleball court\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"2325 DONLEY DR, AUSTIN, TX, 78758\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2325 DONLEY DR, AUSTIN, TX, 78758\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "dick-nichols-district-park": {
+      "minted": true,
+      "identity": {
+        "name": "Dick Nichols District Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78749",
+        "latitude": 30.215133614481,
+        "longitude": -97.863187222548,
+        "imported_slug": null,
+        "canonical_slug": "dick-nichols-district-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "2 Multi-purpose Outdoor Courts with striping for 5 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Dick Nichols District Park",
+        "total_courts": 5,
+        "outdoor_courts": 5,
+        "street_address": "8011 Beckett Rd.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "5 pickleball courts striped onto 2 multi-purpose courts, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78749",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Dick Nichols District Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Multi-purpose Outdoor Courts with striping for 5 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 5, striped onto 2 multi-purpose courts."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Multi-purpose Outdoor Courts with striping for 5 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"8011 Beckett Rd., Austin, Texas 78749\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Multi-purpose Outdoor Courts with striping for 5 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"8011 BECKETT RD, AUSTIN, TX, 78749\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"8011 BECKETT RD, AUSTIN, TX, 78749\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "don-baylor-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Don Baylor Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78703",
+        "latitude": 30.286401747677,
+        "longitude": -97.764699287227,
+        "imported_slug": null,
+        "canonical_slug": "don-baylor-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor with striping for 2 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Don Baylor Neighborhood Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "2008 Enfield Rd.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "2 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78703"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Don Baylor Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor with striping for 2 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 2, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor with striping for 2 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2008 Enfield Rd., Austin, Texas 78703\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor with striping for 2 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"2008 ENFIELD RD, AUSTIN, TX, 78703\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2008 ENFIELD RD, AUSTIN, TX, 78703\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "eastside-pocket-park": {
+      "minted": true,
+      "identity": {
+        "name": "Eastside Pocket Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78721",
+        "latitude": 30.283882768571,
+        "longitude": -97.671645690027,
+        "imported_slug": null,
+        "canonical_slug": "eastside-pocket-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Dedicated Court",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Eastside Pocket Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "4617 Tannehill Lane",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "1 dedicated pickleball court — pickleball and nothing else. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78721"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Eastside Pocket Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Dedicated Court\". A single figure, already a pickleball count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Dedicated Court\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4617 Tannehill Lane, 78702\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Dedicated Court\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"4617 TANNEHILL LN, AUSTIN, TX, 78721\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4617 TANNEHILL LN, AUSTIN, TX, 78721\". NOTE: the City prints 78702 for this venue and the geocoder returns 78721 for the same street address. The geocoder's answer is published, as it is for every venue in this directory, and the disagreement is recorded rather than hidden."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "gus-garcia-district-park": {
+      "minted": true,
+      "identity": {
+        "name": "Gustavo \"Gus\" L. Garcia District Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78753",
+        "latitude": 30.354434957548,
+        "longitude": -97.682216899573,
+        "imported_slug": null,
+        "canonical_slug": "gus-garcia-district-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Gustavo \"Gus\" L. Garcia District Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1201 E Rundberg Ln.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "2 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78753"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Gustavo \"Gus\" L. Garcia District Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 2, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1201 E Rundberg Ln., Austin, Texas 78753\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"1201 E RUNDBERG LN, AUSTIN, TX, 78753\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1201 E RUNDBERG LN, AUSTIN, TX, 78753\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "hancock-recreation-center": {
+      "minted": true,
+      "identity": {
+        "name": "Hancock Recreation Center",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78751",
+        "latitude": 30.300450647805,
+        "longitude": -97.723985248001,
+        "imported_slug": null,
+        "canonical_slug": "hancock-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Hancock Recreation Center",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "811 E 41st St.",
+        "venue_type": "community_center",
+        "hours_of_operation": "Open Play School Year: Monday-Friday 7 a.m. to 2:30 p.m and 6:30-8:30 p.m., Saturday-Sunday 7 a.m. to 8:30 p.m. Open Play Summer/School Year Camp Days: Monday-Friday 6:30-8:30 p.m., Saturday-Sunday 7 a.m. to 8:30 p.m.",
+        "court_availability": "One multi-purpose outdoor court striped for two pickleball courts, at a recreation centre rather than in a park — which is why the hours are the most restricted of any Austin venue and change twice a year. Term-time weekday play stops at 2:30 p.m. and resumes at 6:30 p.m.; in summer and on camp days the daytime window closes entirely.",
+        "county": "Travis",
+        "postal_code": "78751"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Hancock Recreation Center\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 2, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"811 E 41st St., Austin, Texas 78751\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City runs this as a recreation centre rather than a park; its pickleball court is outdoor, and its hours follow the centre rather than park hours."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play School Year: Monday-Friday 7 a.m. to 2:30 p.m and 6:30-8:30 p.m., Saturday-Sunday 7 a.m. to 8:30 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\", with the hours the City publishes for it: \"Open Play School Year: Monday-Friday 7 a.m. to 2:30 p.m and 6:30-8:30 p.m., Saturday-Sunday 7 a.m. to 8:30 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"811 E 41ST ST, AUSTIN, TX, 78751\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"811 E 41ST ST, AUSTIN, TX, 78751\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "little-zilker-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Little Zilker Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78704",
+        "latitude": 30.251503504826,
+        "longitude": -97.774291934247,
+        "imported_slug": null,
+        "canonical_slug": "little-zilker-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Little Zilker Neighborhood Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "2016 Bluebonnet Ln.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "4 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78704",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Little Zilker Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 4, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2016 Bluebonnet Ln., Austin, Texas 78704\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"2016 BLUEBONNET LN, AUSTIN, TX, 78704\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2016 BLUEBONNET LN, AUSTIN, TX, 78704\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "mary-frances-baylor-clarksville-pocket-park": {
+      "minted": true,
+      "identity": {
+        "name": "Mary Frances Baylor Clarksville Pocket Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78703",
+        "latitude": 30.281690971681,
+        "longitude": -97.763314484206,
+        "imported_slug": null,
+        "canonical_slug": "mary-frances-baylor-clarksville-pocket-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Dedicated Outdoor Court",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Mary Frances Baylor Clarksville Pocket Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "1811 W 11th St.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "1 dedicated pickleball court — pickleball and nothing else. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78703"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Mary Frances Baylor Clarksville Pocket Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Dedicated Outdoor Court\". A single figure, already a pickleball count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Dedicated Outdoor Court\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1811 W 11th St., Austin, Texas 78703\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Dedicated Outdoor Court\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"1811 W 11TH ST, AUSTIN, TX, 78703\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1811 W 11TH ST, AUSTIN, TX, 78703\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "mary-moore-searight-metro-park": {
+      "minted": true,
+      "identity": {
+        "name": "Mary Moore Searight Metro Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78748",
+        "latitude": 30.173865403024,
+        "longitude": -97.806553533047,
+        "imported_slug": null,
+        "canonical_slug": "mary-moore-searight-metro-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Mary Moore Searight Metro Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "907 W Slaughter Ln.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "4 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78748"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Mary Moore Searight Metro Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 4, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"907 W Slaughter Ln., Austin, Texas 78748\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"907 W SLAUGHTER LN, AUSTIN, TX, 78748\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"907 W SLAUGHTER LN, AUSTIN, TX, 78748\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "mountain-view-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Mountain View Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78750",
+        "latitude": 30.429304224963,
+        "longitude": -97.790736524066,
+        "imported_slug": null,
+        "canonical_slug": "mountain-view-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Mountain View Neighborhood Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "8900 Westerkirk Dr.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "4 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78750"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Mountain View Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 4, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"8900 Westerkirk Dr., Austin, Texas 78750\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"8900 WESTERKIRK DR, AUSTIN, TX, 78750\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"8900 WESTERKIRK DR, AUSTIN, TX, 78750\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "north-lake-creek-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "North Lake Creek Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Williamson",
+        "postal_code": "78717",
+        "latitude": 30.481633283723,
+        "longitude": -97.795921095214,
+        "imported_slug": null,
+        "canonical_slug": "north-lake-creek-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "North Lake Creek Neighborhood Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "9201 North Lake Creek",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "1 pickleball court striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Williamson",
+        "postal_code": "78717"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"North Lake Creek Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 1, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"9201 North Lake Creek, Austin, Texas 78753\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Williamson County, TX (FIPS 48491). Census address geocoder matched \"9201 N LAKE CREEK PKWY, AUSTIN, TX, 78717\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"9201 N LAKE CREEK PKWY, AUSTIN, TX, 78717\". NOTE: the City prints 78753 for this venue and the geocoder returns 78717 for the same street address. The geocoder's answer is published, as it is for every venue in this directory, and the disagreement is recorded rather than hidden."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "pan-american-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Pan American Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78702",
+        "latitude": 30.259011725776,
+        "longitude": -97.72366627922,
+        "imported_slug": null,
+        "canonical_slug": "pan-american-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "3 Dedicated Outdoor Courts, 1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Pan American Neighborhood Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "307 Chicon St.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Monday, Wednesday, Friday, 7 a.m. to 10 p.m.; Tuesday and Thursday, 7 a.m. to 7 p.m.; Saturday and Sunday, 7 a.m. to 9 a.m.",
+        "court_availability": "Four courts — three dedicated plus one striped multi-purpose court — and the most complicated schedule in Austin, because the courts are shared with roller derby. The City states it outright: \"Courts unavailable on Tuesday and Thursday from 7 to 10 p.m. and Saturday and Sunday from 9 a.m. to 12 p.m. for roller derby practice.\" Weekend play therefore ends at 9 a.m.",
+        "county": "Travis",
+        "postal_code": "78702",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Pan American Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"3 Dedicated Outdoor Courts, 1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 4, 3 dedicated courts plus 1 striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"3 Dedicated Outdoor Courts, 1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"307 Chicon St., Austin, Texas 78702\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Monday, Wednesday, Friday, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"3 Dedicated Outdoor Courts, 1 Multi-purpose Outdoor Court with striping for 1 Pickleball Court\", with the hours the City publishes for it: \"Monday, Wednesday, Friday, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"307 CHICON ST, AUSTIN, TX, 78702\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"307 CHICON ST, AUSTIN, TX, 78702\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "patterson-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Patterson Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78722",
+        "latitude": 30.296378873252,
+        "longitude": -97.709461261932,
+        "imported_slug": null,
+        "canonical_slug": "patterson-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Patterson Neighborhood Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "4200 Brookview Rd.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "2 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78722",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Patterson Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 2, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4200 Brookview Rd., Austin, Texas 78722\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-purpose Outdoor Court with striping for 2 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"4200 BROOKVIEW RD, AUSTIN, TX, 78722\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4200 BROOKVIEW RD, AUSTIN, TX, 78722\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "rosewood-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Rosewood Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78702",
+        "latitude": 30.270408149639,
+        "longitude": -97.715002438593,
+        "imported_slug": null,
+        "canonical_slug": "rosewood-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "2 Dedicated Outdoor Courts, 1 Multi-Purpose Court with striping for 2 Pickleball Courts. Nets not included.",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Rosewood Neighborhood Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "2300 Rosewood Ave.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "4 courts — 2 dedicated courts plus 2 striped onto 1 multi-purpose court — open play, first come.",
+        "county": "Travis",
+        "postal_code": "78702",
+        "light": true,
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Rosewood Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Dedicated Outdoor Courts, 1 Multi-Purpose Court with striping for 2 Pickleball Courts. Nets not included.\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 4, 2 dedicated courts plus 2 striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Dedicated Outdoor Courts, 1 Multi-Purpose Court with striping for 2 Pickleball Courts. Nets not included.\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2300 Rosewood Ave., Austin, Texas 78702\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Dedicated Outdoor Courts, 1 Multi-Purpose Court with striping for 2 Pickleball Courts. Nets not included.\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"2300 ROSEWOOD AVE, AUSTIN, TX, 78702\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2300 ROSEWOOD AVE, AUSTIN, TX, 78702\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        },
+        "nets_provided": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry says \"Nets not included.\" — a statement that a net is NOT provided, which is why this reads No rather than \"not verified yet\". Three Austin venues say it and no other city in this directory says it anywhere."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "shipe-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Shipe Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78751",
+        "latitude": 30.306735581011,
+        "longitude": -97.727229585503,
+        "imported_slug": null,
+        "canonical_slug": "shipe-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Shipe Neighborhood Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "4400 Avenue G",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "2 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78751",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Shipe Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 2, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4400 Avenue G, Austin, TX 78751\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"4400 AVE G, AUSTIN, TX, 78751\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4400 AVE G, AUSTIN, TX, 78751\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "south-austin-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "South Austin Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Travis",
+        "postal_code": "78704",
+        "latitude": 30.2409356564,
+        "longitude": -97.768579044756,
+        "imported_slug": null,
+        "canonical_slug": "south-austin-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "2 Dedicated Outdoor Courts",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "South Austin Neighborhood Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1100 Cumberland Rd.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 8 a.m. to 10 p.m.",
+        "court_availability": "2 dedicated pickleball courts — pickleball and nothing else. Open play, first come.",
+        "county": "Travis",
+        "postal_code": "78704",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"South Austin Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Dedicated Outdoor Courts\". A single figure, already a pickleball count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Dedicated Outdoor Courts\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1100 Cumberland Rd., Austin, Texas 78704\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 8 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"2 Dedicated Outdoor Courts\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 8 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Travis County, TX (FIPS 48453). Census address geocoder matched \"1100 CUMBERLAND RD, AUSTIN, TX, 78704\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1100 CUMBERLAND RD, AUSTIN, TX, 78704\"."
+        },
+        "light": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry carries the words \"Lighted during park hours\". Austin marks its lit venues individually — eleven of the twenty-one on this list — so the mark belongs to this park rather than to the page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "springwoods-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Springwoods Neighborhood Park",
+        "city": "Austin",
+        "state": "TX",
+        "county": "Williamson",
+        "postal_code": "78729",
+        "latitude": 30.451636948542,
+        "longitude": -97.781102658965,
+        "imported_slug": null,
+        "canonical_slug": "springwoods-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://www.austintexas.gov/department/pickleball",
+        "quote": "1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts. Nets not included.",
+        "basis": "No imported row under this slug. Minted from the Austin Parks and Recreation Department pickleball page, which states the name, the address, the court count and the hours in one entry."
+      },
+      "patch": {
+        "name": "Springwoods Neighborhood Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "9117 Anderson Mill Rd.",
+        "venue_type": "public_park",
+        "hours_of_operation": "Open Play: 7 Days a Week, 7 a.m. to 10 p.m.",
+        "court_availability": "2 pickleball courts striped onto 1 multi-purpose court, so the court is shared with whatever else it is marked for. Open play, first come.",
+        "county": "Williamson",
+        "postal_code": "78729",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Springwoods Neighborhood Park\" by the Austin Parks and Recreation Department on its pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts. Nets not included.\". Austin gives two numbers where a court is shared: the physical slabs and the pickleball courts striped onto them. The pickleball figure is what is recorded here — 2, striped onto 1 multi-purpose court."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts. Nets not included.\". Every venue on this list is outdoor; the City's indoor courts are in a separate section of the same page and are not published here. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"9117 Anderson Mill Rd., Austin, Texas 78729\" is the address the City prints beside this venue on its pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the Austin Parks and Recreation Department among its parks."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From this venue's entry on the City's pickleball page: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Austin Parks and Recreation Department's pickleball page, in this venue's own entry: \"1 Multi-Purpose Outdoor with striping for 2 Pickleball Courts. Nets not included.\", with the hours the City publishes for it: \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Williamson County, TX (FIPS 48491). Census address geocoder matched \"9117 ANDERSON MILL RD, AUSTIN, TX, 78729\". The geocoder also places it in the incorporated place \"Austin city\". Austin spans more than one county, so the county is taken per venue rather than assumed from the city."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"9117 ANDERSON MILL RD, AUSTIN, TX, 78729\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.austintexas.gov/department/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "This venue's entry says \"Nets not included.\" — a statement that a net is NOT provided, which is why this reads No rather than \"not verified yet\". Three Austin venues say it and no other city in this directory says it anywhere."
+        }
+      },
+      "record": {
+        "source_url": "https://www.austintexas.gov/department/pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

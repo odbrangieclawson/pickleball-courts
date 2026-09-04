@@ -6,9 +6,11 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  6/6 publishable
+COUNTY  —  7/7 publishable
   PASS  /pickleball/us/wa/king-county/
         937 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/tx/travis-county/
+        965 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/dane-county/
         926 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/multnomah-county/
@@ -20,9 +22,11 @@ COUNTY  —  6/6 publishable
   PASS  /pickleball/us/wa/clark-county/
         923 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  9/9 publishable
+CITY  —  10/10 publishable
   PASS  /pickleball/us/wa/seattle/
         1574 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/tx/austin/
+        1819 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/madison/
         1798 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/
@@ -40,11 +44,15 @@ CITY  —  9/9 publishable
   PASS  /pickleball/us/wa/vancouver/
         1731 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  13/13 publishable
+FILTER  —  15/15 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
         694 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/tx/austin/outdoor/
+        710 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/tx/austin/lights/
+        706 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/madison/outdoor/
         639 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/indoor/
@@ -68,7 +76,7 @@ FILTER  —  13/13 publishable
   PASS  /pickleball/us/nc/cary/outdoor/
         662 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  94/94 publishable
+VENUE  —  116/116 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -117,6 +125,48 @@ VENUE  —  94/94 publishable
         718 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/greenwood-park-pickleball-courts-seattle/
         709 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/beverly-s-sheffield-northwest-district-park/
+        703 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/hancock-recreation-center/
+        745 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/austin-high-tennis-center/
+        817 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/austin-tennis-and-pickleball-center/
+        785 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/brentwood-neighborhood-park/
+        883 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/delta-pocket-park/
+        728 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/dick-nichols-district-park/
+        712 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/don-baylor-neighborhood-park/
+        852 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/eastside-pocket-park/
+        891 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/gus-garcia-district-park/
+        864 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/little-zilker-neighborhood-park/
+        863 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/mary-frances-baylor-clarksville-pocket-park/
+        858 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/mary-moore-searight-metro-park/
+        864 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/mountain-view-neighborhood-park/
+        822 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/north-lake-creek-neighborhood-park/
+        714 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/pan-american-neighborhood-park/
+        722 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/patterson-neighborhood-park/
+        826 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/rosewood-neighborhood-park/
+        724 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/shipe-neighborhood-park/
+        803 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/south-austin-neighborhood-park/
+        885 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/tx/austin/springwoods-neighborhood-park/
+        837 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wi/madison/brittingham-park/
         751 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wi/madison/garner-park/
@@ -135,6 +185,8 @@ VENUE  —  94/94 publishable
         784 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wi/madison/richmond-hill-park/
         764 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/tenney-park/
+        826 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wi/madison/walnut-grove-park/
         717 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wi/madison/waunona-park/
@@ -260,7 +312,7 @@ VENUE  —  94/94 publishable
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, outdoor, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, lights, outdoor
+  built for Seattle: outdoor, lights, outdoor, lights, outdoor, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, lights, outdoor
   public: not published — no lawful data driver or fewer than 3 matches
 
 === NOINDEX QUERY PARAMETERS ===
@@ -284,6 +336,6 @@ VENUE  —  94/94 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 124/124 pages pass all six gates.
+TOTAL: 150/150 pages pass all six gates.
 
 ```

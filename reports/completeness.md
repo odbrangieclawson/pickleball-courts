@@ -1,15 +1,15 @@
 # Completeness dashboard
 
-100 metros in the verification queue, 2,662 venues.
+100 metros in the verification queue, 2,683 venues.
 
 ## The hard rule
 
 > A metro is not done until it has at least 3 venues passing all four import
 > gates. A partially verified metro does not publish partially — it waits.
 
-**Metros ready to publish: 6 of 100.**
+**Metros ready to publish: 7 of 100.**
 
-**Published on the site: 9 cities.** 6 of them are in
+**Published on the site: 10 cities.** 7 of them are in
 this queue and 3 are not — Apex, NC, Bellevue, WA, Cary, NC.
 
 The queue is ordered by how many pages a metro would unlock, and cities are
@@ -38,7 +38,7 @@ asks for, not the whole city.
 | 12 | Tucson, AZ | 37 | 0 | 1 | 37 | 2 | 0 | blocked | 40 |
 | 13 | Omaha, NE | 41 | 0 | 2 | 41 | 5 | 0 | blocked | 40 |
 | 14 | Las Vegas, NV | 41 | 0 | 1 | 41 | 6 | 0 | blocked | 40 |
-| 15 | Austin, TX | 45 | 0 | 4 | 45 | 12 | 0 | blocked | 38 |
+| 15 | Austin, TX | 66 | 21 | 4 | 45 | 12 | 0 | **ready** | 38 |
 | 16 | Denver, CO | 45 | 0 | 2 | 45 | 10 | 0 | blocked | 38 |
 | 17 | Portland, OR | 61 | 8 | 3 | 50 | 18 | 0 | **ready** | 38 |
 | 18 | Boise, ID | 36 | 0 | 1 | 36 | 1 | 0 | blocked | 38 |

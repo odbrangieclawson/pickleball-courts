@@ -1,0 +1,101 @@
+{
+  "city": "Austin",
+  "state": "TX",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every court count, address, opening time and lighting mark below comes from one page published by the Austin Parks and Recreation Department, which calls it the list of official Department pickleball locations. The same page carries a separate section of indoor courts inside recreation centres; that section is real and is not yet verified, and it is named below rather than left as a silence.",
+  "slots": {
+    "parking": "Austin publishes nothing about parking at any of these twenty-one venues, which is the same gap every city in this directory has. What Austin does publish, and almost nobody else does, is opening hours for every single venue — so the useful planning information here is temporal rather than spatial. Two venues are worth knowing about before you drive: the Austin Tennis and Pickleball Center requires a reservation, so arriving without one is a wasted trip regardless of parking, and Hancock Recreation Center closes its court to open play between 2:30 p.m. and 6:30 p.m. on term-time weekdays. For the rest, the pocket parks — Delta, Eastside, Mary Frances Baylor Clarksville — are small neighbourhood sites where street parking is the realistic expectation, and the district and metro parks have their own approaches. None of that is stated by the City, and none of it is published as fact on the venue pages.",
+    "peak_hours": "Fifteen of the twenty-one venues run the same schedule — \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\" — and the exceptions are where the useful information is. Pan American Neighborhood Park shares its courts with roller derby: the City states that courts are unavailable Tuesday and Thursday from 7 to 10 p.m. and at weekends from 9 a.m. to noon, which makes weekend play a two-hour window ending at 9 a.m. Austin High Tennis Center is on the school calendar, weekday evenings only from 5:30 p.m. during term and seven days a week in summer, because the courts are shared with Austin Independent School District. Hancock closes midday on term-time weekdays. And the Austin Tennis and Pickleball Center takes reservations rather than open play, which is the only venue in the city where turning up is not the mechanism.",
+    "surface_condition": "Not one surface is stated anywhere in Austin, and the reason is structural rather than careless: this City describes what a court is striped FOR, not what it is made of. \"2 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\" tells you the geometry precisely and the material not at all. Thirty-nine of Austin's sixty verified courts are lines painted onto a multi-purpose slab shared with other sports, and twenty-one are dedicated pickleball. What that means underfoot — asphalt, concrete, an acrylic coat — the City does not say at any of the twenty-one venues, so every one of them reads \"not verified yet\" on surface. What it does say, at three venues, is that you must bring your own net.",
+    "local_scene": "Austin is the first city in this directory whose operator answers the lighting question at scale in prose. Eleven of these twenty-one venues carry the words \"Lighted during park hours\" — and in a city where summer play sensibly happens after sunset, that is the single most useful fact on the page. Before Austin, forty-three of the ninety-five venues on this site had a verified lighting answer either way, and more than half of those came from one Seattle GIS layer with a column for it; Austin supplies eleven more from a web page. It is also the first operator anywhere in this directory to state that a net is NOT provided: Brentwood and Balcones say \"bring your own portable net\", and Rosewood and Springwoods say \"Nets not included.\" Every other city has left that field unknown, which is a different answer from no."
+  },
+  "best_for": [
+    {
+      "key": "biggest",
+      "heading": "Best if you want a real pickleball facility",
+      "venue_slug": "austin-tennis-and-pickleball-center",
+      "text": "The Austin Tennis and Pickleball Center at Walnut Creek Sports Park has eight outdoor pickleball courts — by some distance the largest count in the city, and more than three times the Austin average. It is lit during park hours and open Monday to Friday 8:30 a.m. to 10 p.m., weekends 8:30 a.m. to 9 p.m. It is also the only Austin venue the City marks \"Reservations Required\" rather than Open Play, so book before you go. No price is published on the pickleball page.",
+      "supports": ["E1"]
+    },
+    {
+      "key": "lights",
+      "heading": "Best if you are playing after dark",
+      "venue_slug": "dick-nichols-district-park",
+      "text": "Eleven of Austin's twenty-one venues are lit, so this is a real choice rather than a single option. Dick Nichols District Park is the pick on count: five pickleball courts striped onto two multi-purpose courts, lit during park hours, open seven days a week from 7 a.m. to 10 p.m. If you are closer to the centre, Pan American and Rosewood are lit too — but check Pan American's roller derby schedule first.",
+      "supports": ["E1"]
+    },
+    {
+      "key": "dedicated",
+      "heading": "Best if you want pickleball and nothing else",
+      "venue_slug": "pan-american-neighborhood-park",
+      "text": "Twenty-one of Austin's sixty courts are dedicated pickleball rather than lines on a shared slab. Pan American Neighborhood Park has three of them plus one striped court, lit, close to downtown on Chicon St. The catch is on the same page: the courts are unavailable Tuesday and Thursday evenings and weekend mornings from 9 a.m. for roller derby practice. South Austin Neighborhood Park's two dedicated courts, also lit, are the simpler option if that schedule does not suit.",
+      "supports": ["E1"]
+    },
+    {
+      "key": "net",
+      "heading": "Best to know before you pack",
+      "venue_slug": "rosewood-neighborhood-park",
+      "text": "Three Austin venues tell you outright that a net is not provided — Brentwood and Balcones say bring your own portable net, and Rosewood and Springwoods say \"Nets not included.\" Rosewood is the one worth knowing about because it is otherwise among the better venues in the city: four courts, two of them dedicated, lit during park hours, open 7 a.m. to 10 p.m. daily. Bring a net and it is one of Austin's best. For the other eighteen venues the City says nothing about nets either way.",
+      "supports": ["E1"]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does Austin have?",
+      "a": "We have verified 60 across twenty-one City of Austin venues, all outdoor. That makes Austin the largest city in this directory by court count after Seattle's 92. The City lists a twenty-second outdoor location, Balcones District Park, which is not on this page for reasons set out below, and it also runs indoor pickleball inside recreation centres which we have not yet verified."
+    },
+    {
+      "q": "What does \"2 courts with striping for 4 pickleball courts\" mean?",
+      "a": "Two physical court slabs, with lines painted on them yielding four pickleball courts. Austin gives both numbers, which is unusually precise, and the figure we publish is the pickleball one — four. Thirty-nine of Austin's sixty courts are striped like this onto shared multi-purpose slabs; the other twenty-one are dedicated pickleball courts."
+    },
+    {
+      "q": "Which courts have lights?",
+      "a": "Eleven of the twenty-one: Austin High Tennis Center, the Austin Tennis and Pickleball Center, Beverly S. Sheffield Northwest District Park, Brentwood, Dick Nichols, Little Zilker, Pan American, Patterson, Rosewood, Shipe and South Austin. The City marks each one \"Lighted during park hours\". The other ten carry no lighting statement, which means unknown rather than dark."
+    },
+    {
+      "q": "Do I need to bring a net?",
+      "a": "At Brentwood, Rosewood and Springwoods, yes — the City says so in words: \"bring your own portable net\" and \"Nets not included.\" Austin is the only city in this directory whose operator has ever stated that a net is not provided. At the other eighteen venues it says nothing either way, so treat those as unknown and carry one if you have it."
+    },
+    {
+      "q": "Can I book a court?",
+      "a": "At one venue only. The Austin Tennis and Pickleball Center at Walnut Creek Sports Park is marked \"Reservations Required\"; every other entry on the City's list says Open Play. Across the whole of this directory only two other venues take bookings, both indoors, so an Austin reservation is a genuinely unusual thing."
+    },
+    {
+      "q": "Is it free to play?",
+      "a": "Not verified. Austin never states a price on its pickleball page — not for the open-play park courts, and not for the reservation-only tennis and pickleball centre. Municipal park courts on open play are very likely free; \"very likely\" is not a fact, so all twenty-one read \"not verified yet\" on cost."
+    },
+    {
+      "q": "Why isn't Balcones District Park listed?",
+      "a": "Two reasons. Its entry reads \"1 Multi-purpose outdoor court with striping for Pickleball\" — striping for pickleball, with no number, where every other multi-purpose entry on the page gives a figure. A venue needs a verified court count to exist here and there is none to verify. Separately, the Census address geocoder returns no match for 12017 Amherst Dr, so it fails the identity gate too. Either would be enough."
+    },
+    {
+      "q": "Are there indoor courts in Austin?",
+      "a": "Yes, and we have not verified them. The City's pickleball page carries a second section, \"Pickleball Programming at Rec Centers\", listing indoor courts at Austin, Dittmar, Dove Springs, Gus Garcia, Montopolis, Northwest, Parque Zaragoza and South Austin recreation centres, with open-play session times. Those entries give a street address without a postcode and describe scheduled programming rather than a facility, so they need their own verification pass. Until that happens this page says Austin has 60 outdoor courts and stays silent on the indoor ones rather than implying there are none."
+    },
+    {
+      "q": "Is Austin all in one county?",
+      "a": "No, and the venue pages reflect it. Nineteen of these venues are in Travis County and two — North Lake Creek and Springwoods, both in the far north — are in Williamson County. We take the county from the Census geocoder per venue rather than assuming a city sits in one, which is why Travis County has a page on this site and Williamson does not: two venues is below the three-venue threshold."
+    }
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://www.austintexas.gov/department/pickleball",
+      "publisher": "Austin Parks and Recreation Department",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["parking", "peak_hours", "surface_condition", "local_scene", "biggest", "lights", "dedicated", "net"],
+      "evidence": "The City's pickleball page, introduced as \"The list below represents official Austin Parks and Recreation Department pickleball locations:\" and carrying, per venue, a street address, a court count, opening hours and — at eleven venues — \"Lighted during park hours\". Also \"Reservations Required\" at the Austin Tennis and Pickleball Center; \"bring your own portable net\" at Brentwood and Balcones; \"Nets not included.\" at Rosewood and Springwoods; \"Courts unavailable on Tuesday and Thursday from 7 to 10 p.m. and Saturday and Sunday from 9 a.m. to 12 p.m. for roller derby practice\" at Pan American; the AISD sharing agreement at Austin High; and the separate \"Pickleball Programming at Rec Centers\" section. Snapshot: data/sources/austin/pickleball.html"
+    },
+    {
+      "id": "E2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["parking", "local_scene"],
+      "evidence": "Every published address was matched by the Census address geocoder and placed in the incorporated place \"Austin city\" — nineteen in Travis County and two in Williamson. 12017 Amherst Dr returned no match, which is one of the two grounds for excluding Balcones District Park. The geocoder also returns a different postcode from the City's page at two venues: 78721 against the City's 78702 at Eastside Pocket Park, and 78717 against 78753 at North Lake Creek. Snapshot: data/sources/austin-county-census.json"
+    }
+  ]
+}

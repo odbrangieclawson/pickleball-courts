@@ -1,0 +1,54 @@
+{
+  "county": "Travis",
+  "state": "TX",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world — how many courts a park has, when it opens, whether it is lit — come from the Austin Parks and Recreation Department and are cited. Claims about our own coverage are facts about this dataset rather than about Travis County, and are worded so a reader cannot mistake one for the other. Note also that this county page does not cover the whole of one city: two Austin venues sit in Williamson County and are published under Austin, not here.",
+  "slots": {
+    "coverage": "One city in Travis County is published here: Austin, with nineteen venues verified against the Parks and Recreation Department's own pickleball page. Austin has twenty-one published venues in total — the other two, North Lake Creek and Springwoods Neighborhood Parks, are inside the Austin city limits but across the county line in Williamson, which is why they appear on the Austin city page and not on this one. Travis County holds a good deal more than that: Pflugerville, Lakeway, Bee Cave, Manor, Lago Vista, West Lake Hills and unincorporated county parkland are all inside it, and not one of them has been checked against a named source, so none appears anywhere on this site. Within Austin itself the coverage is also incomplete in two named ways: Balcones District Park is listed by the City and excluded here because it states no pickleball court count and its address does not resolve, and the City's indoor recreation-centre programme has not yet been verified at all.",
+    "distribution": "The nineteen Travis County venues hold fifty-seven of Austin's sixty verified courts, and they are spread rather than concentrated: eight of them carry one or two courts, and only three carry five or more. The Austin Tennis and Pickleball Center at Walnut Creek Sports Park in the north-east is the outlier with eight, followed by Dick Nichols in the south-west with five. Ten venues sit inside or close to the central city — Pan American, Rosewood, Patterson, Shipe, Hancock, Little Zilker, Don Baylor, Mary Frances Baylor Clarksville, Austin High and Eastside — which is an unusually dense inner-city cluster by the standards of this directory. Eleven of the nineteen are lit, and that is the number that shapes how the county's courts actually get used in a Texas summer.",
+    "gaps": "The honest position is that this is an Austin page wearing a county heading, and the county is large. What would change it is a second Travis County municipality with a parks department that publishes court counts — Pflugerville and Lakeway are the obvious candidates and neither has been read. Two smaller gaps are worth naming rather than leaving implicit. The first is that Austin's own indoor courts, inside eight recreation centres, are listed by the City on the same page we used and have not been verified: they give a street address without a postcode and describe open-play sessions rather than a facility, so they need a pass of their own. The second is that nothing outside a municipal parks department appears here at all — no clubs, schools, HOAs or commercial venues in the county carry a source we could read, which is a limit of what operators publish rather than a judgement about where people play."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Travis County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 57 courts across nineteen venues, all of them run by Austin Parks and Recreation, each with a source and a date you can see. Travis County contains several other cities and a good deal of unincorporated land, none of which we have verified."
+    },
+    {
+      "q": "Why does Austin show twenty-one venues and this page nineteen?",
+      "a": "Because two of Austin's venues are not in Travis County. North Lake Creek and Springwoods Neighborhood Parks are inside the Austin city limits but across the line in Williamson County, which the Census geocoder confirms per venue. We take the county from the geocoder rather than assuming a city sits in one, so those two appear on the Austin city page and on no county page at all — two venues is below the three-venue threshold Williamson would need."
+    },
+    {
+      "q": "Why is only Austin listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Pflugerville, Lakeway, Bee Cave and Manor are all in Travis County and none has been read."
+    },
+    {
+      "q": "What made Austin possible?",
+      "a": "One well-made page. Austin Parks and Recreation publishes what it calls the official Department pickleball locations with, for each venue, a full street address, a court count that distinguishes dedicated courts from striped ones, opening hours, and — at eleven of them — the words \"Lighted during park hours\". Very few operators publish hours at all, and fewer still publish lighting venue by venue."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Not confirmed. Austin publishes counts, hours and lighting but never a price, so every venue here shows cost as not verified rather than free. They are municipal park courts on open play and are very likely free; \"very likely\" does not go in a field. The one venue that is clearly not simply turn-up-and-play, the Austin Tennis and Pickleball Center, requires a reservation and still has no published price."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.austintexas.gov/department/pickleball",
+      "publisher": "Austin Parks and Recreation Department",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's pickleball locations page, carrying every court count, address, opening time and lighting mark quoted above, plus the separate \"Pickleball Programming at Rec Centers\" section that this project has not yet verified. Snapshot: data/sources/austin/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "distribution"],
+      "evidence": "The county for each venue, taken per venue rather than per city: nineteen Austin venues in Travis County and two in Williamson, all of them placed in the incorporated place \"Austin city\". Snapshot: data/sources/austin-county-census.json"
+    }
+  ]
+}
