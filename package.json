@@ -53,7 +53,8 @@
     "verify:austin": "node scripts/verify/apply-austin-parks.mjs",
     "verify:scottsdale": "node scripts/verify/apply-scottsdale-parks.mjs",
     "verify:saint-paul": "node scripts/verify/apply-saint-paul-parks.mjs",
-    "verify:mesa": "node scripts/verify/apply-mesa-parks.mjs"
+    "verify:mesa": "node scripts/verify/apply-mesa-parks.mjs",
+    "verify:kirkland": "node scripts/verify/apply-kirkland-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

@@ -598,12 +598,12 @@ are committed and every assertion reads those rather than the network.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and fourteen cities are published. What stands
+Phases 0 through 6 are complete and fifteen cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered thirteen times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and eleven sets of municipal web pages. No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered fourteen times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and twelve sets of municipal web pages. No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -626,10 +626,10 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**14 of 50.** The sequencing rule above is the whole plan, and this is the
+**15 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last thirteen were: find a parks
+The next city is chosen the same way the last fourteen were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
 never a qualification. Thirty-four cities were refused
@@ -638,7 +638,7 @@ so nobody re-treads them:
 
 | City | Refused because |
 | --- | --- |
-| Spokane, Redmond, Wichita, Greensboro, Eugene, Olympia, Kirkland, Tucson, Fort Collins | The parks site refuses both of our fetchers with an HTTP 403. This project does not publish from a page it cannot snapshot and re-check. Most are CivicPlus sites. **These nine have not been retested since — see "A 403 is a fact about one day" below.** |
+| Spokane, Redmond, Wichita, Greensboro, Eugene, Olympia, Tucson | The parks site refuses our fetchers with an HTTP 403, **re-confirmed 2026-09-04**. This project does not publish from a page it cannot snapshot and re-check. Most are CivicPlus sites. Spokane is the expensive one — see below. |
 | Bellingham, Tacoma, Lexington KY, Jacksonville NC | The operator publishes pickleball locations and no court counts. A venue needs a verified count to exist here. |
 | Boise | Counts for only two venues — Eagle Rock and Hobble Creek — against a three-venue threshold. Boise also has the best story of any city refused so far: twelve dedicated courts at Willow Lane and Manitou were converted back to six tennis-only courts in September 2025 after a noise lawsuit settlement. |
 | Honolulu | The best court data found anywhere — 192 courts at 93 parks with counts, shared-use type and lighting in one table — and no address source. Its parks GIS layer carries names and acreage but no street addresses, so Import Gate I1 cannot be satisfied without another pass. |
@@ -659,23 +659,40 @@ Honolulu remains the one worth returning to: its court data is the best found an
 
 ## A 403 is a fact about one day
 
-Sixteen cities in the table above were refused because a parks site answered
-our fetcher with HTTP 403 — by a wide margin the largest single refusal
-group, and the one that looked most like a permanent property of those
-operators. It was not.
+Sixteen cities were refused because a parks site answered our fetcher with
+HTTP 403 - by a wide margin the largest single refusal group, and the one
+that looked most like a permanent property of those operators. It was not,
+and the whole bucket has now been retested.
 
-Four of them were retested while choosing city #14. **Mesa and Durham both
-returned 200**, and not because of better tooling: Lincoln shipped
+| result | cities |
+| --- | --- |
+| **reachable now** | Mesa, Durham, Kirkland, Fort Collins |
+| still refusing | Spokane, Greensboro, Redmond, Wichita, Eugene, Olympia, Overland Park, Minneapolis, Tucson |
+
+Four of sixteen, and two of the four published: **Mesa as city #14 and
+Kirkland as city #15**. Durham was reachable and then refused on its data
+instead - two publishable venues against a three-venue threshold. Fort
+Collins is reachable and unread.
+
+The tidy explanation was the wrong one. Lincoln shipped
 `scripts/verify/fetch/lincoln.sh` to defeat an Akamai 403 with a browser
-header set, and it would be tidy to credit that, but a **bare curl** with no
-special headers reaches both sites today. Overland Park and Minneapolis
-still refuse. Mesa went on to publish as city #14 and Durham was refused on
-its data instead, which is the point: neither verdict was knowable while the
-door was shut.
+header set, and it would have been satisfying to credit that tool. A **bare
+curl** with no special headers reaches Mesa, Durham and Kirkland today;
+neither published city needed a fetch script. Whatever refused us in the
+earlier runs simply stopped.
 
-Nine cities in that bucket have still never been retested. A 403 recorded
-against a site should be read as a dated observation, not a verdict, and
-re-testing the bucket is the cheapest lead this file currently holds.
+**Spokane is the residue and it is the expensive one.** It publishes a court
+count and a street address for twelve parks - A.M. Cannon, Comstock, Corbin,
+Franklin, Friendship, Grant, Mission, Peaceful Valley, Sky Prairie,
+Underhill, Westgate and Coeur d'Alene - which is among the best municipal
+pickleball data found anywhere in this project. It refuses a bare curl, and
+it refuses a full browser header set. It is the most valuable page in
+Washington that we cannot read, and it stays refused.
+
+The lead is now spent: the cheap half of that bucket has been taken. What
+remains is nine sites that genuinely will not answer, and the lesson worth
+keeping is the general one - a refusal recorded against a site is a dated
+observation, not a verdict.
 
 ## Tagging convention
 
@@ -685,6 +702,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-14-mesa`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-15-kirkland`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

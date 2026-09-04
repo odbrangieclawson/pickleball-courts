@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+<head>
+	<!-- Published by OpenCities, 1.37.6.1 -->
+
+    
+        
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="theme-color" content="#FFFFFF"/>
+    <title>Pickleball in Kirkland – City of Kirkland</title>
+	<meta name="generator" content="OpenCities - https://granicus.com/product/opencities" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using mobile-web-app-capable for now to enable full-screen experience on supported platforms -->
+    <!-- Note: This tag works mainly on Android Chrome. It does NOT enable full-screen mode on iOS Safari. -->
+    <!-- For iOS, the correct tag is: <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <!-- TODO: Monitor for updated meta tag standards from Apple or other browser vendors -->
+    <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="description" content="Learn about pickleball and where to play this popular pastime in Kirkland." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball" />
+    <meta property="og:title" content="Pickleball in Kirkland" />
+    <meta property="og:description" content="Learn about pickleball and where to play this popular pastime in Kirkland." />
+    <meta property="og:image" content="https://www.kirklandwa.gov/files/sharedassets/public/v/2/parks-amp-comm-services/recreation/images/pickleball-league-2019.png?w=1200" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Pickleball in Kirkland" />
+    <meta property="twitter:description" content="Learn about pickleball and where to play this popular pastime in Kirkland." />
+    <meta property="twitter:image" content="https://www.kirklandwa.gov/files/sharedassets/public/v/2/parks-amp-comm-services/recreation/images/pickleball-league-2019.png?w=1080" />
+    <meta name="google-site-verification" content="cNzxR1q1lx3T03D4MR5BZJklPX7Omls_g2S0Xr8ME90" />
+    <meta name="id" content="9437c627-ec3f-44f5-ba7c-ede59bfa694e" />
+    <link rel="canonical" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball" />
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/files/ocfavicon/Public/apple-touch-icon.png?V=637413249530223392">
+<link rel="icon" type="image/png" sizes="32x32" href="/files/ocfavicon/Public/favicon-32x32.png?V=637413249530223392">
+<link rel="icon" type="image/png" sizes="16x16" href="/files/ocfavicon/Public/favicon-16x16.png?V=637413249530223392">
+<link rel="manifest" href="/files/ocfavicon/Public/site.webmanifest?V=637413249530223392">
+<link rel="shortcut icon" href="/files/ocfavicon/Public/favicon.ico?V=637413249530223392">
+<meta name="msapplication-TileColor" content="#2B4E72">
+<meta name="msapplication-config" content="/files/ocfavicon/Public/browserconfig.xml?V=637413249530223392">
+    <script>
+        (function () {
+            if (window.__UNLOAD_LAZY_PATCH__) return;
+            window.__UNLOAD_LAZY_PATCH__ = true;
+
+            var supportsPageHide = ("onpagehide" in window);
+            var mappedType = supportsPageHide ? "pagehide" : "beforeunload";
+            var nativeAdd = window.addEventListener;
+            var nativeRemove = window.removeEventListener;
+            var unloadMap = null;
+            var patched = false;
+
+            function ensurePatched() {
+                if (patched) return;
+                unloadMap = new WeakMap();
+
+                window.addEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = function (evt) {
+                            if (supportsPageHide && evt.persisted) return;
+                            listener.call(this, evt);
+                        };
+                        unloadMap.set(listener, wrapped);
+                        return nativeAdd.call(this, mappedType, wrapped, options);
+                    }
+                    return nativeAdd.call(this, type, listener, options);
+                };
+
+                window.removeEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = unloadMap.get(listener);
+                        if (wrapped) {
+                            nativeRemove.call(this, mappedType, wrapped, options);
+                            unloadMap.delete(listener);
+                        }
+                        return;
+                    }
+                    return nativeRemove.call(this, type, listener, options);
+                };
+
+                var orig = null;
+                Object.defineProperty(window, "onunload", {
+                    configurable: true, enumerable: true,
+                    get: function () { return orig; },
+                    set: function (h) {
+                        orig = h;
+                        if (typeof h === "function") window.addEventListener("unload", h);
+                    }
+                });
+                patched = true;
+            }
+
+            window.addEventListener = function (type, listener, options) {
+                if (type === "unload") {
+                    ensurePatched();
+                    return window.addEventListener(type, listener, options);
+                }
+                return nativeAdd.call(this, type, listener, options);
+            };
+
+            window.removeEventListener = function (type, listener, options) {
+                if (type === "unload" && !patched) {
+                    return;
+                }
+                return nativeRemove.call(this, type, listener, options);
+            };
+
+            function patchTelerik() {
+                ensurePatched();
+                var ns = window.RadAjaxNamespace;
+                if (!ns || !ns.EventManager || !ns.EventManager.Add || ns.EventManager.__UnloadPatched) return;
+                var origAdd = ns.EventManager.Add;
+                ns.EventManager.Add = function (el, evtName, handler, clientId) {
+                    if (el === window && evtName === "unload") {
+                        return window.addEventListener("unload", handler);
+                    }
+                    return origAdd.call(this, el, evtName, handler, clientId);
+                };
+                ns.EventManager.__UnloadPatched = true;
+            }
+
+            if (window.RadAjaxNamespace)
+                patchTelerik();
+            else (window.requestIdleCallback || function (cb)
+            {
+                setTimeout(cb, 120);
+            })(patchTelerik);
+        })();
+    </script>
+    <!-- Preconnecting to Google Fonts servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Defer Roboto font loading to avoid render-blocking -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const robotoLink = document.createElement('link');
+            robotoLink.rel = 'stylesheet';
+            robotoLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap';
+            document.head.appendChild(robotoLink);
+        });
+    </script>
+
+    <style>
+        .gm-style, .gm-style * {
+            font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Arial, sans-serif !important;
+        }
+    </style>
+
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, "js");
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+        
+            <script type="text/javascript">
+                window.__oc_flags_ImprovedBreakpointEventHandling = true;
+            </script>
+            
+        
+    
+    
+    
+        <script type="text/javascript">
+            var __metaQueryBreakpoints = {
+                'sc-size-4': '(max-width: 480px)',
+                'sc-size-3': '(min-width: 480px) and (max-width: 768px)',
+                'sc-size-2': '(min-width: 768px) and (max-width: 992px)',
+                'sc-size-1': '(min-width: 992px)'
+            }
+
+            var __ocSizePoints = [
+                { min: 0, name: 'sc-size-4' },
+                { min: 480, name: 'sc-size-3' },
+                { min: 768, name: 'sc-size-2' },
+                { min: 992, name: 'sc-size-1' }
+            ];
+
+        </script>
+    
+
+    <!-- Framework Section -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/jquery-3.7.1.min.js?seamlessts=639233009123263245" ><\/script>')</script>
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/jquery-migrate-3.4.0.js?seamlessts=639233009123263245"></script>
+
+    <!--Google Maps API Loader – Improved Version to avoid Warning
+    This script loads the Google Maps JavaScript API using a dynamic and async method.
+    It replaces the old static <script> tag to avoid performance warnings from Google.
+
+    Dynamically creates the <script> tag with loading = async for better performance
+    Builds the API URL with required libraries(places, geometry, marker, geocoding)
+    Uses a Promise and callback(google.maps.__ib__) to confirm when the script is ready
+
+    It Avoids Google’s warning about direct script loading
+    Improves page load speed by loading the API asynchronously-->
+
+    
+        <script>
+            (function (root) {
+                root.OpenCities = root.OpenCities || {};
+                if (!root.OpenCities.GoogleMapsLoader) {
+                    root.OpenCities.GoogleMapsLoader = {
+                        _cbs: [],
+                        _ready: false,
+                        onReady: function (cb) {
+                            if (this._ready) { try { cb(); } catch (e) { console.error(e); } }
+                            else if (typeof cb === 'function') this._cbs.push(cb);
+                        },
+                        _fire: function () {
+                            if (this._ready) return;
+                            this._ready = true;
+                            var q = this._cbs.splice(0);
+                            for (var i = 0; i < q.length; i++) {
+                                try { q[i](); } catch (e) { console.error(e); }
+                            }
+                        }
+                    };
+                }
+            })(window);
+
+            (g => {
+                var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__",
+                    m = document, b = window;
+                b = b[c] || (b[c] = {});
+                var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+                    u = () => h || (h = new Promise(async (resolve, reject) => {
+                        a = m.createElement("script");
+                        e.set("libraries", [...r] + "");
+                        for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+                        e.set("callback", c + ".maps." + q);
+                        a.src = "https://maps." + c + "apis.com/maps/api/js?" + e.toString();
+                        a.loading = "async";
+                        a.async = true;
+                        a.defer = true;
+                        d[q] = resolve;
+                        a.onerror = () => reject(Error(p + " could not load."));
+                        a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                        m.head.append(a);
+                    }));
+                if (d[l]) {
+                    console.warn(p + " only loads once. Ignoring duplicate load.");
+                } else {
+                    d[l] = (f, ...n) => (r.add(f), u().then(() => d[l](f, ...n)));
+                }
+            })({
+                key: "AIzaSyAwAUpp9CwhCgb4B2ppUs_m_tES9UPPla8",
+                v: "3.65"
+            });
+
+            (async () => {
+                try {
+                    if (!google?.maps?.importLibrary) return;
+
+                    if (!window.OpenCities.__mapsLibsPromise) {
+                        window.OpenCities.__mapsLibsPromise = Promise.all([
+                            google.maps.importLibrary('maps'),
+                            google.maps.importLibrary('places'),
+                            google.maps.importLibrary('geocoding'),
+                            google.maps.importLibrary('marker'),
+                            google.maps.importLibrary('geometry')
+                        ]);
+                    }
+                    await window.OpenCities.__mapsLibsPromise;
+
+                    if (window.OpenCities?.GoogleMapsLoader) {
+                        window.OpenCities.GoogleMapsLoader._fire();
+                    }
+                } catch (err) {
+                    console.error('Google Maps failed to initialise', err);
+                }
+            })();
+        </script>
+    
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/modernizr.custom.710f3bf.js?seamlessts=639233009123263245" defer></script>
+    
+    <!--// End Framework Section -->
+    <!-- OpenCities Section -->
+    <script>
+        var OpenCities = OpenCities || {};
+        OpenCities.Paths = {
+            SiteTemplate: '/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/',
+            ThemePath: '/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/'
+        };
+    </script>
+    <script src='/ocapi/9437c627-ec3f-44f5-ba7c-ede59bfa694e/en-US/websitesettings.js'></script>
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/oc_head.js?applied=20250311064812"></script>
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/oc_grid.css~oc_style.css~oc_wizard_style.css~oc_main.css~oc_forms.css~oc_wizard.css~oc_wizard_menu.css~oc_main_s1.css~oc_wizard_s1.css~oc_wizard_menu_s1.css~oc_grid_s1.css~OcScriptCombine_Minify0?uniqueid=20250311064812" rel="stylesheet" type="text/css">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/client_style.css~client.css~client_menu.css~client_s1.css~client_menu_s1.css~client_forms.css~OcScriptCombine_Minify0?uniqueid=20250311064812" rel="stylesheet" type="text/css">
+    <script>
+(function (BackgroundSettings, $, undefined) {
+    BackgroundSettings.initialise = function () {
+        this.Application = {"CSSSelector":".background-container","EnableFade":false};
+    };
+} (OpenCities.BackgroundSettings = OpenCities.BackgroundSettings || {}, jQuery));
+OpenCities.BackgroundSettings.initialise();
+</script>
+    
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/oc_print.css~client_print.css~OcScriptCombine_Minify0?uniqueid=20250311064812" rel="stylesheet" type="text/css" media="print">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<script src="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/external_plugins.js~oc_form_helper.js~oc_main.js~plugins.js~oc_main_init.js~OcScriptCombine_Minify0?uniqueid=20250311064812" defer="true"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3DNLC3');</script>
+<!-- End Google Tag Manager -->
+<!-- GreenRubino Tag -->
+<script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+    ttd_dom_ready( function() {
+        if (typeof TTDUniversalPixelApi === 'function') {
+            var universalPixelApi = new TTDUniversalPixelApi();
+            universalPixelApi.init("tlbv843", ["em2xhf7"], "https://insight.adsrvr.org/track/up");
+        }
+    });
+</script>
+<!-- End GreenRubino Tag -->
+
+<script src="https://api.repd.us/video-guide-embed/282.js" async crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="DYTCK-JM9C8-ED4EP-C3GGK-Z575H",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"DYTCK-JM9C8-ED4EP-C3GGK-Z575H";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eaauiuqby7cqajqacqlqabaaabvjvcev-f-b158b2d0b-clienttons-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"41","ak.cp":"1699383","ak.ai":parseInt("1075935",10),"ak.ol":"0","ak.cr":18,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"5b216f04","ak.r":52240,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.cport":60937,"ak.gh":"122.2.208.215","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1788512405","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==4yD77VxZuEDyBWKNd6YYX0OOWXOiStyDqsC07OES2kBMomAJN/R/0u/VbRHUq8gfFWpLsMywyLd6G/krZVpO/E0QnKm1Yb0jxV5uXX3O/UHDNfVoXvVBZzaw8RKPAoVWlICYSYQJaQeNZ+8qj/l6hdAGyMoAGPhJRffvIwDF+drsKQJ0xD8ge354JIN0/bkG/jGcaFQZCtK2cYoXT/zDuvn52ntD5h7u0NrmOOBMTgPerC6FtbewZQvHErf8XdvKnR5+nESlUjxls8G9AhXKD4gprwlygUKeaIAPo429HfIkkF381nflhlN+alyrLYIl95Ffss8nw0ggGzS3XYqPOmE3e9orAVkeSc24Isqob7YuRLmVWS01QaGsTCrO7XuJ0/b1lKKveZGUP8hjr8sttvxl4q1f0kAgiVzL1JJyfeI=","ak.pv":"333","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body class="body layout-modern oc-two-level-menu site-search-always-visble  content-type-oc-general content-template-oc-full-width group-template-oc-full-width-with-default-header page-name-pickleball page-sequence-12 page-depth-5 page-section-7 website-type-primary device-desktop " id="body-top">
+    <div id="skip-to-content-container">
+        <a href="#main-content" class="visuallyhidden focusable" id="skip-to-content-link">Skip to main content</a>
+    </div>
+    <script>
+        // OCNOW-11988 (Cursor): Proactively focus skip link when returning from browser chrome.
+        // Must run inline (not deferred oc_main.js) so focus is intercepted before NVDA speaks footer.
+        (function () {
+            var awaitingReentry = false;
+            var inertSupported = 'inert' in HTMLElement.prototype;
+
+            function isExplicitlyOutsideDocument(node) {
+                return node != null && !document.documentElement.contains(node);
+            }
+
+            function getSkipContainer() {
+                return document.getElementById('skip-to-content-container');
+            }
+
+            function getSkipLink() {
+                return document.getElementById('skip-to-content-link');
+            }
+
+            function applyGuard() {
+                awaitingReentry = true;
+                if (!inertSupported) {
+                    return;
+                }
+                var skipContainer = getSkipContainer();
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    if (children[i] !== skipContainer) {
+                        children[i].setAttribute('inert', '');
+                    }
+                }
+            }
+
+            function clearGuard() {
+                awaitingReentry = false;
+                if (!inertSupported) {
+                    return;
+                }
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].removeAttribute('inert');
+                }
+            }
+
+            function isSkipLinkElement(target) {
+                if (!target) {
+                    return false;
+                }
+                var skipContainer = getSkipContainer();
+                return target.id === 'skip-to-content-link' ||
+                    (skipContainer && skipContainer.contains(target));
+            }
+
+            function focusSkipLink() {
+                var skipLink = getSkipLink();
+                if (!skipLink) {
+                    return;
+                }
+                if (window.scrollY > 0) {
+                    window.scrollTo(0, 0);
+                }
+                skipLink.focus({ preventScroll: true });
+            }
+
+            function scheduleGuardIfDocumentLostFocus() {
+                window.setTimeout(function () {
+                    if (!document.hasFocus()) {
+                        applyGuard();
+                    }
+                }, 0);
+            }
+
+            document.addEventListener('focusout', function (e) {
+                if (isExplicitlyOutsideDocument(e.relatedTarget)) {
+                    applyGuard();
+                }
+            }, true);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Tab') {
+                    scheduleGuardIfDocumentLostFocus();
+                } else if (e.key === 'F6' || (e.key === 'l' && e.ctrlKey)) {
+                    scheduleGuardIfDocumentLostFocus();
+                }
+            }, true);
+
+            window.addEventListener('focus', function () {
+                if (!awaitingReentry) {
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+            }, true);
+
+            document.addEventListener('focusin', function (e) {
+                var reentryFromChrome = awaitingReentry || isExplicitlyOutsideDocument(e.relatedTarget);
+                if (!reentryFromChrome) {
+                    return;
+                }
+                if (isSkipLinkElement(e.target)) {
+                    clearGuard();
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+                clearGuard();
+            }, true);
+        })();
+    </script>
+    <form name="mainForm" method="post" action="/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball" id="mainForm">
+<input type="hidden" name="ctl04_seamless_script_manager_TSM" id="ctl04_seamless_script_manager_TSM" value="" />
+<input type="hidden" name="__SEAMLESSVIEWSTATE" id="__SEAMLESSVIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl04_seamless_script_manager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3add3ac3d5-1e29-4112-8fed-529caffa8f24%3aea597d4b%3bOpenCities.CustomControls%3aen-US%3a8875e443-f2ef-457b-94fb-857d92f72782%3a8e1d32bf" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Dgt4HF_ft_aJ1oNhpkWrMiNDmBLKt_DsvWnSAz2w6tEELqoI6U0la4w2SXOqY6aKSQopJdYQ7QqurDo6luOWtmOtc0ilepv84Pn5KcIhMMrgeTsEf5EuV8_Sa3cCDWfG--Hnf94oO4VdVbckSgJaVhayxbZ7XIfk_l5vwX8rf1j3PHHLVdsirYnSQi7H-FBaAoI8vrsBRaLWZaSMhQbjtYYKqDWglhIGGk6W571YqSk-uulGq2FPvDWIH4jcRJViiV9xArPU8giGtZPgZuzgazGDA9l8J7QQlNhfdKhxD-RT-xq7lTMNzZtN4P2818X2kcTOPsVXuC5sJXLwZ_95djU3-fBGudmoTPxL2612tOyiZZah_zDS4uE2zWSOvuEiX7jWqffsB-AvNOYbMeUCVMkDWwxm4SnM9P_FzJ7I9RNhaF2SxAANL2e2AV_KOoQt0" type="text/javascript"></script>
+    
+<script type="text/javascript">
+    try{
+        function SeamlessEndRequestHandler(sender, args) {
+            try {
+                var dataItems = args.get_dataItems();
+                if(dataItems.ctl04_seamless_script_manager)
+                    document.getElementById('__SEAMLESSVIEWSTATE').value = dataItems.ctl04_seamless_script_manager;
+            }
+            catch (e) { }
+        }
+
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(SeamlessEndRequestHandler);
+    }
+    catch (e) { }
+</script>
+
+    <div class="unsupported-browser-warning js-element"></div>
+    
+    <div hidden>
+        <span id="new-window-0">opens in new tab or window </span>
+    </div>
+    <div class="overlay-container"></div>
+    
+    <div class="background-container">
+        <div class="page-container">
+            <!-- OC Layout Element GROUP TEMPLATE -->
+            <!--groupTemplateStart--><header><div class="print-header-outer-container print-element">
+<img src="/files/assets/public/templateimages/print-header.png" alt="City of Kirkland - Logo" />
+</div>
+            <div class="toolbar-outer-container">
+  <div class="toolbar-inner-container clearfix">
+    <div class="toolbar-item toolbar-quicklinks toolbar-display-dropdown">
+	<button type="button" aria-controls="toolbar-quicklinks-drop-down" aria-expanded="false" class="toolbar-button toolbar-button-quicklinks js-element"><span>Quick Links</span><i aria-hidden="true"></i></button>	
+	<div id="toolbar-quicklinks-drop-down" class="toolbar-drop-down toolbar-quicklinks-drop-down clearfix">
+		<ul>
+		  <li><a href="https://www.kirklandwa.gov/Government/Contact-Us" class="oc-icon-b oc-i-phone link-type-internal"><span>Contact Us</span></a></li><li><a href="https://www.facebook.com/kirklandwa.gov/" class="oc-icon-b oc-i-facebook link-type-external"><span>Facebook</span></a></li><li><a href="https://x.com/kirklandgov" class="oc-icon-b oc-i-x link-type-external"><span>X</span></a></li><li><a href="https://www.kirklandwa.gov/Government/City-Managers-Office/Local-Land-Acknowledgement" class="oc-icon-b oc-i-information link-type-internal"><span>Land Acknowledgement</span></a></li>
+		</ul>
+	</div>
+</div><div class="toolbar-item toolbar-language notranslate toolbar-display-dropdown"><div class="no-js-element">
+		  <ul>
+		    <li id="toolbar-language-option-en-us-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English (United States)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-es-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-zh-cn-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ru-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-vi-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-fa-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=fa" class="lang-item lang-fa" data-translate-to="fa" lang="en">Persian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-pt-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=pt" class="lang-item lang-pt" data-translate-to="pt" lang="en">Portuguese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-hi-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=hi" class="lang-item lang-hi" data-translate-to="hi" lang="en">Hindi<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-te-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=te" class="lang-item lang-te" data-translate-to="te" lang="en">Telugu<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ko-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=ko" class="lang-item lang-ko" data-translate-to="ko" lang="en">Korean<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+          </ul>
+		</div>
+	<button type="button" role="combobox" aria-controls="toolbar-language-drop-down" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="none" aria-labelledby="toolbar-language-label" class="toolbar-button toolbar-button-language js-element">  
+        <span class="toolbar-language-globe-icon" aria-hidden="true"></span>
+        <span id="toolbar-language-label" class="current-language">
+            Select a language to translate to
+		</span>
+		<i aria-hidden="true"></i>
+	</button>
+	<div id="toolbar-language-drop-down" role="listbox" aria-label="Available languages" class="toolbar-drop-down toolbar-language-drop-down js-element clearfix">
+		<ul role="group">
+		    <li role="presentation"><a id="toolbar-language-option-en-us" role="option" aria-selected="true" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English (United States)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-es" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-zh-cn" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ru" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-vi" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-fa" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=fa" class="lang-item lang-fa" data-translate-to="fa" lang="en">Persian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-pt" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=pt" class="lang-item lang-pt" data-translate-to="pt" lang="en">Portuguese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-hi" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=hi" class="lang-item lang-hi" data-translate-to="hi" lang="en">Hindi<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-te" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=te" class="lang-item lang-te" data-translate-to="te" lang="en">Telugu<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ko" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball?oc_lang=ko" class="lang-item lang-ko" data-translate-to="ko" lang="en">Korean<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+        </ul>
+	</div></div>
+  </div>
+</div>
+            <div class="header-outer-container">
+    <div class="header-container header-layout-3  clearfix">
+			<div class="header-site-logo">
+				<a href="https://www.kirklandwa.gov/Home" lang="en-US" aria-label="City of Kirkland - Home - Logo">
+				</a>
+			</div>
+      
+		    <div class="mobile-search-btn js-element">
+		        <button><i aria-hidden="true"></i><span class="mobile-search-btn-text"><span class="visuallyhidden">Open </span>Search</span></button>
+		    </div>
+		    <div class="header-website-settings">
+                <button id="btn-mob-nav" type="button" aria-expanded="false" aria-controls="nav">
+                    <i aria-hidden="true"></i><span class="side-menu-btn-text">Menu</span>
+                </button>
+        	</div>
+          <div class="navigation-outer-container">
+	<div id="nav" role="navigation" class="navigation-container  navigation-container-option-7" data-menu-type="horizontal" aria-label="primary">
+        <div class="grid">
+            <div class="col-xs-12">              
+                <ul class="sf-menu" id="sc-main-menu" ><li  class="nav-section-quarters-1   first-item nav-item-seq-1">
+<a href="https://www.kirklandwa.gov/Resident" class="nav-level-1"  target="">
+	<i class="item-icon" aria-hidden="true"></i><span class="item-text">Resident</span>
+</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-1" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-1" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Resident/Utilities" class=""  target="">Utilities</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Garbage-Recycling-and-Compost" class=""  target="">Garbage, Recycling and Compost</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/My-Property" class=""  target="">My Property</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Neighborhoods" class=""  target="">Neighborhoods</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Parks-Trails-and-Beaches" class=""  target="">Parks, Trails, and Beaches</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Getting-Around" class=""  target="">Getting Around</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Senior-Resources" class=""  target="_self">Senior Resources</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Pets" class=""  target="">Pets</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Human-and-Social-Services" class=""  target="">Human and Social Services​</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Public-Safety" class=""  target="">Public Safety</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Volunteer" class=""  target="">Volunteer​</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Sustainability" class=""  target="">Sustainability</a></li></ul></li>
+          
+          <li class="nav-section-quarters-1   nav-item-seq-2">
+<a href="https://www.kirklandwa.gov/Whats-Happening" class="nav-level-1 nav-has-children"  target="">What's Happening</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-2" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-2" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/News" class=""  target="">News & Info</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Community-Events" class=""  target="">Community Events</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Council-Meetings" class=""  target="">Council Meetings</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/This-Week-in-Kirkland-Podcast" class=""  target="_self">This Week in Kirkland Podcast</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Subscribe-to-Kirkland-Email-Lists" class=""  target="_self">Subscribe to Kirkland Email Lists</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Explore-Kirkland" class=""  target="_self">Explore Kirkland</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Community-Engagement-Opportunities" class=""  target="">Community Engagement Opportunities</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Construction-Projects" class=""  target="">Construction Projects</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Conversations-with-Council" class=""  target="_self">Conversations with Council</a></li></ul></li>
+          
+          <li class="nav-section-quarters-2   nav-item-seq-3">
+<a href="https://www.kirklandwa.gov/Business" class="nav-level-1 nav-has-children"  target="">Business</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-3" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-3" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Business/Doing-Business-with-the-City" class=""  target="_self">Doing Business with the City</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Economic-Development" class=""  target="">Economic Development in Kirkland</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Business-Licenses-and-Fees" class=""  target="">Business Licenses and Fees</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Apply-for-a-Permit" class=""  target="">Apply for a Permit</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Trash-Recycling-and-Compost​" class=""  target="">Business Trash, Recycling, and Compost​</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Business-Resources" class=""  target="">Business Resources</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Parking" class=""  target="">Parking</a></li></ul></li>
+          
+          <li class="nav-section-quarters-2 nav-active-path  nav-item-seq-4">
+<a href="https://www.kirklandwa.gov/Government" class="nav-level-1 nav-has-children"  target="">Government</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-4" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-4" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Government/City-Council" class=""  target="">City Council</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/City-Managers-Office" class=""  target="">City Manager's Office</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Municipal-Court" class=""  target="_self">Municipal Court</a></li><li class="nav-active-path "><a href="https://www.kirklandwa.gov/Government/Departments" class=""  target="">Departments</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Boards-and-Commissions" class=""  target="">Boards and Commissions</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Codes-and-Laws" class=""  target="">Codes and Laws</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Work-at-the-City" class=""  target="">Work at the City</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Contact-Us" class=""  target="">Contact Us</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Subscribe-to-Kirkland-Email-Lists" class=""  target="">Subscribe to Kirkland Email Lists</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Staff-Directory" class=""  target="_self">Staff Directory</a></li></ul></li>
+          
+          <li class="nav-section-quarters-3   nav-item-seq-5">
+<a href="https://www.kirklandwa.gov/Services" class="nav-level-1 nav-has-children"  target="">Services</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-5" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-5" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Services/Pay-a-Utility-Bill" class=""  target="">Pay a Utility Bill</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Register-for-a-Recreation-Program" class=""  target="_self">Register for a Recreation Program</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/License-Your-Pet" class=""  target="">License Your Pet</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Rent-a-Parks-Facility-or-Athletic-Field" class=""  target="_self">Rent a Parks Facility or Athletic Field</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Request-Public-Records" class=""  target="">Request Public Records</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Report-a-Crime" class=""  target="">File an Online Police Report</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Apply-for-a-Development-Permit" class=""  target="_self">Apply for a Development Permit</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Services-A-Z" class=""  target="_self">Services A-Z</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Our-Kirkland" class=""  target="_self">Our Kirkland</a></li></ul></li>
+          
+          </ul>
+            </div>
+        </div>
+    </div>
+</div>
+			
+			<div class="header-search-control-container" id="header-search">
+				<div class="search-inner-container">
+					<div class="sc-search-panel">
+	<label for="ctl08_txtSearch" id="ctl08_lblSearch" class="sc-search-label">Search</label><input name="ctl08$txtSearch" type="text" id="ctl08_txtSearch" class="sc-search-text" placeholder="How can we help you?" /><input type="submit" name="ctl08$btnSearch" value="Search" id="ctl08_btnSearch" class="sc-search-button" />
+</div>
+					<div role="status" id="predictiveResults"></div>
+				</div>
+			</div>
+    </div>
+</div>
+
+            </header>
+            <div class="content-outer-container">
+                <div id="main" role="main" class="main-outer-container clearfix">
+                        
+                        <div class="content-main-container">
+                            <div class="grid">
+					            <div class="col-xs-12">
+						            <nav id="breadcrumbs-container" aria-label="You Are Here :">
+							            <span role="list">
+<span role="listitem">
+	<a href="https://www.kirklandwa.gov/Home"  lang="en-US">Home</a>
+	<span class="nav-separator" aria-hidden="true" role="presentation">/</span>
+</span>
+          <span role="listitem"><a href="https://www.kirklandwa.gov/Government" >Government</a><span class='nav-separator' aria-hidden="true" role="presentation">/</span></span><span role="listitem">
+	<a href="https://www.kirklandwa.gov/Government/Departments" >
+		Departments
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services" >
+		Parks and Community Services
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services" >
+		Register for a Recreation Program
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span class="current-page" role="listitem" aria-current="page" >Pickleball in Kirkland</span>
+          
+          
+          </span>
+						            </nav>
+					            </div>
+                      
+					            <div class="col-xs-12">
+						            <div class="main-inner-container">
+							            <div id="main-content" class="main-container clearfix">
+							              
+                            <!-- OC Layout Element Conent Template -->
+							              <!--normalTemplateStart--><div class="grid">
+    <div class="col-xs-12 col-m-8">
+        <h1 class='oc-page-title '>Pickleball in Kirkland</h1>
+        
+        
+       <picture>
+  <source media="(min-width: 992px)" srcset="/files/sharedassets/public/v/2/parks-amp-comm-services/recreation/images/pickleball-league-2019.png?dimension=pageimage&w=480">
+  <source media="(min-width: 768px)" srcset="/files/sharedassets/public/v/2/parks-amp-comm-services/recreation/images/pickleball-league-2019.png?dimension=pageimage&w=480">
+  <source srcset="/files/sharedassets/public/v/2/parks-amp-comm-services/recreation/images/pickleball-league-2019.png?dimension=pageimage&w=480">
+  <img class="main-page-image" src="/files/sharedassets/public/v/2/parks-amp-comm-services/recreation/images/pickleball-league-2019.png?dimension=pageimage&w=480" alt="Pickleball game at Everest Park" />
+</picture> 
+      
+        <p>Discover pickleball opportunities in Kirkland, including where to play, court guidelines, and ways to enjoy this growing sport in our community.</p>
+<div data-type="0" data-title-level="2" class="oc-wysiwyg-container">
+<div class="oc-wysiwyg-container-panel">
+<h2>Where to Play</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<table border="1" cellspacing="10" cellpadding="10" class="">
+<thead>
+<tr>
+<th style="">
+<p><strong>Park &amp; Location</strong></p>
+</th>
+<th style="">
+<p><strong>Hours</strong></p>
+</th>
+<th style="">
+<p><strong>Number &amp; Type of Courts</strong></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top" style="padding: 2px;">
+<p><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park">Everest Park</a></p>
+</td>
+<td class="" style="padding: 2px;">
+<p>8 AM to dusk</p>
+</td>
+<td valign="top" style="padding: 2px;">
+<p>3 pickleball courts</p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="padding: 2px;">
+<p><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Feriton-Spur-Park">Feriton Spur Park</a></p>
+</td>
+<td valign="top" style="padding: 2px;">
+<p>8 AM to dusk</p>
+</td>
+<td valign="top" style="padding: 2px;">
+<p>1 pickleball court</p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="padding: 2px;"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Peter-Kirk-Park">Peter Kirk Park</a><br /></td>
+<td valign="top" style="padding: 2px;">8 AM to dusk</td>
+<td valign="top" style="padding: 2px;">
+<p>6 pickleball courts</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-family: inherit; font-size: 1.4em;">Nearby Places to Play</span></p>
+<ul>
+<li><a href="https://bellevuewa.gov/city-government/departments/parks" target="_blank">Bellevue Parks and Community Services</a></li>
+<li><a href="https://www.bothellwa.gov/249/Parks-Recreation" target="_blank">Bothell Parks and Recreation</a></li>
+<li><a href="https://www.cityofmillcreek.com/city_government/communications___marketing/recreation/pickleball" target="_blank">Mill Creek Recreation</a></li>
+<li><a href="https://www.redmond.gov/1787/Pickleball" target="_blank">Redmond Parks and Recreation</a></li>
+<li><a href="https://www.seattle.gov/parks/recreation/sports/pickleball" target="_blank">Seattle Parks and Recreation</a></li>
+</ul>
+</div>
+</div>
+<div class="oc-wysiwyg-container-panel">
+<h2>Classes</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<p>The City of Kirkland offers pickleball classes and leagues during the summer. Visit <a href="http://kirklandparks.net">kirklandparks.net</a> to find and register for our pickleball programs.</p>
+<p><br /></p>
+</div>
+</div>
+<div class="oc-wysiwyg-container-panel">
+<h2>Rules</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<h3>City of Kirkland Pickleball Court Rules</h3>
+<ol>
+<li>All City of Kirkland pickleball courts are available on a first-come, first-served basis.</li>
+<li>The use of pickleball courts for business purposes is not allowed, including lessons, leagues, or tournaments.</li>
+<li>Outdoor pickleball courts are available from 8 AM to dusk.</li>
+<li>Players must wear athletic or tennis shoes.</li>
+<li>No pets allowed on the court.</li>
+<li>No bicycles, scooters, skate boards, rollerblades, or skates allowed.</li>
+<li>No glass of any kind allowed on the court.</li>
+</ol>
+<h4>Everest Park Court Details</h4>
+<ul>
+<li>All Everest Park courts are open play courts. If the courts are full and there are players waiting, limit play to one game to 11 points and rotate.</li>
+</ul>
+<h4>Peter Kirk Park Court Details</h4>
+<ul>
+<li>The three courts close to the skate park are open play courts. If all three courts are full and there are players waiting, limit play to one game to 11 points and rotate.</li>
+<li>The three courts close to the street are timed courts. If all three timed courts are full and there are players waiting, limit play to 30 minutes and rotate.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>Rules of the Game</h4>
+<p><a href="https://usapickleball.org/rules/" target="_blank">Basic Rules of Play</a> - a summary from USAPickleball.org</p>
+</div>
+</div>
+<div class="oc-wysiwyg-container-panel">
+<h2>History</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<p>Pickleball was started in Washington on Bainbridge Island in 1965 by Joel Pritchard, Barney McCallum and Bill Bell. The name came from Pritchard's wife, Joan. &nbsp;She named it after the pickle boat in a crew race where the crew is chosen from the leftovers of other boats in the same manner that pickleball was pieced together with elements from other racket sports. The Pritchard's originally played on a badminton court with ping-pong paddles and a whiffle ball. Pickleball was named the official state sport of Washington in 2022.</p>
+</div>
+</div>
+</div>
+
+
+      
+        
+    </div>
+    
+        <div class="col-xs-12 col-m-4">
+            <div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Contact Us
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p><strong>Parks and Community Services</strong><br>
+<a href="tel:4255873300">425-587-3300</a><r>
+<br>
+<a href="mailto:eParks@kirklandwa.gov">eParks@kirklandwa.gov</a><br>
+<a href="https://www.kirklandwa.gov/Government/Departments/Finance-and-Administration/Our-Kirkland" target="_blank">Submit a Service Request</a><br>
+</r></p>
+			</div>
+		</div>
+		
+	</div><div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Stay Informed
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<ul>
+<li><a href="http://service.govdelivery.com/service/subscribe.html?code=WAKIRK_40">Sign up for our Recreation Newsletter</a>&nbsp;- receive news about new classes and programs.</li>
+<li>Follow us on social:&nbsp;<a href="https://www.facebook.com/kirklandparks" target="blank" re_target="_self" style="font-family: inherit; font-size: 1em;"><img alt="facebook logo" src="/files/sharedassets/public/v/2/parks-amp-comm-services/images/facebook_icon.png?w=50&amp;h=50" /></a> <a href="https://www.instagram.com/kirklandparks" target="blank" style="font-family: inherit; font-size: 1em;"><img alt="Instagram logo glyph" src="/files/sharedassets/public/v/2/parks-amp-comm-services/images/instagram-logo-black.png" style="width: 47px; height: 47px;" /></a></li>
+</ul>
+
+
+			</div>
+		</div>
+		
+	</div><div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Key Links
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p><a href="http://kirklandparks.net">Kirklandparks.net</a> - browse and register for recreation programs and classes</p>
+
+
+			</div>
+		</div>
+		
+	</div>
+            
+        </div>
+    
+    
+</div><!--normalTemplateEnd-->
+                            
+                            
+                            
+							            </div>
+						            </div>
+					            </div>
+                        <div class="col-xs-12">
+					            	<div class="share-page-container share-page-link-right share-page-link-small share-page-link-rounded share-page-link-no-labels" data-item-id="9437c627-ec3f-44f5-ba7c-ede59bfa694e" id="share-page-container clearfix">
+                                        <section aria-labelledby="share-page-info-label">
+                                            <span id="share-page-info-label" class="share-page-info">Share</span><ul class="share-page-links no-translate"><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.kirklandwa.gov%2fGovernment%2fDepartments%2fParks-and-Community-Services%2fRecreation-Programs-Services%2fPickleball" target="{ShareTarget}" class="share-page-link share-page-link-facebook" data-channel="facebook" data-channel-id="1"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-facebook">Facebook</span></a></li><li><a href="https://twitter.com/share?url=https%3a%2f%2fwww.kirklandwa.gov%2fGovernment%2fDepartments%2fParks-and-Community-Services%2fRecreation-Programs-Services%2fPickleball" target="_blank" class="share-page-link share-page-link-x" data-channel="x" data-channel-id="2"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-x">X</span></a></li><li><a href="mailto:?Body=https%3a%2f%2fwww.kirklandwa.gov%2fGovernment%2fDepartments%2fParks-and-Community-Services%2fRecreation-Programs-Services%2fPickleball" target="_self" class="share-page-link share-page-link-email" data-channel="email" data-channel-id="3"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-email">Email</span></a></li><li><a href="#" target="_self" class="share-page-link share-page-link-print" data-channel="print" data-channel-id="5"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-print">Print</span></a></li></ul>
+                                        </section>
+                                    </div></div>
+                            </div>
+                        </div>
+                        <div class="back-to-top-container text-center">
+                            <a href="#body-top" id="back-to-top"><i aria-hidden="true"></i><span class="js-visuallyhidden">Back to top</span></a>
+                        </div>
+                </div>
+            </div><!--groupTemplateEnd-->
+            <footer>
+                
+                    <div class="footer-outer-container footer-first-row">
+                        <div class="footer-container clearfix">
+                            <div class="grid grid-pad">
+                                <div class="col-xs-12 col-s-6 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Contact Us</h3>
+			
+	<p><strong>CITY HALL</strong><br />
+123 5th Ave<br />
+Kirkland, Washington 98033<br />
+<a href="tel:425-587-3000" title="Kirkland Phone Number">425-587-3000</a></p>
+<p><strong>POLICE DEPARTMENT<br /></strong>11750 NE 118th Street<br />
+Kirkland, Washington 98034<br />
+<span style="font-family: inherit; font-size: 1em;"><a href="tel:4255873400">425-587-3400</a></span></p>
+<p><strong>MUNICIPAL COURT<br /></strong>11740 NE 118th Street<br />
+Kirkland, Washington 98034<br />
+<a href="tel:425-587-3160">425-587-3160</a></p>
+<p>TTY Relay: 711</p>
+
+
+	
+	<p><a href="https://www.kirklandwa.gov/Government/Contact-Us" target="_self">More ways to contact us.</a></p>
+<p>Report an issue to the City through <a href="https://www.kirklandwa.gov/Government/Departments/Finance-and-Administration/Our-Kirkland" style="font-family: inherit; font-size: 1em;">Our Kirkland</a></p>
+<div><script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+	var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+	sz.src = '//siteimproveanalytics.com/js/siteanalyze_15203570.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script></div>
+
+
+</div><div class="col-xs-12 col-s-6 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Connect With Us</h3>
+			
+	
+	<ul class="footer-links with-icons social-media-links">  <li class="footer-link-facebook">
+	<a href="https://www.facebook.com/kirklandwa.gov" target="_blank"  >
+<i aria-hidden="true"></i>Facebook
+</a>
+</li>
+          <li class="footer-link-instagram">
+	<a href="https://www.instagram.com/kirklandgov/?hl=en" target="_blank"  >
+<i aria-hidden="true"></i>Instagram
+</a>
+</li>
+          <li class="footer-link-x">
+	<a href="https://x.com/kirklandgov" target="_blank"  >
+<i aria-hidden="true"></i>X
+</a>
+</li>
+          <li class="footer-link-youtube">
+	<a href="http://www.youtube.com/user/KirklandTelevision" target="_blank"  >
+<i aria-hidden="true"></i>YouTube
+</a>
+</li>
+          <li class="footer-link-kirkland-vod">
+	<a href="https://www.kirklandwa.gov/Government/Departments/Information-Technology/Kirkland-Television/On-Demand-Videos" target="_blank"  >
+<i aria-hidden="true"></i>Kirkland Video
+</a>
+</li>
+           </ul>
+	
+</div><div class="col-xs-12 col-s-6 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Hours</h3>
+			
+	<p>Monday &ndash; Friday: 8:00 AM &ndash; 5:00 PM<br />
+City Hall is closed on Washington State holidays.</p>
+
+
+	
+	
+</div><div class="col-xs-12 col-s-12 col-m-4 col-lg-4" >
+	
+	<p>&nbsp;</p>
+
+
+	
+	
+</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="footer-outer-container footer-second-row">
+                    <div class="footer-container clearfix">
+                        <div class="grid grid-pad footer-secondary-links">
+                            <div class="col-xs-12 col-m-7">
+                                
+                                    <div><a href="https://www.kirklandwa.gov/Site-Footer/Website-Disclaimer" target="_self"  >Website Disclaimer</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Site-Privacy-and-Security-Notice" target="_self"  >Privacy & Security</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Translation-Disclaimer" target="_self"  >Translation Disclaimer</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Americans-with-Disabilities-Act-ADA-Notice" target="_self"  >Kirkland ADA Information</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Linking-Policy" target="_self"  >Linking Policy</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Title-VI-Non-Discrimination" target="_self"  >Title VI: Non-Discrimination</a></div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-m-5 powered-by">
+                                <div class="right">
+                                    &copy; 2026 City of Kirkland&nbsp;|&nbsp;<span class="powered-by">Powered by <a href="https://granicus.com/solution/govaccess/opencities/" target="_blank">Granicus</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/files/oc-resources/b9015858-988c-48a4-9473-7c193df083e4/JsTextSnippets.js?ocsvclang=en-US" type="text/javascript"></script><script></script>
+    
+    
+
+<div id="COVID_TEMP-messages" style="display:none;">
+<div class="item">
+	<div class="title">Swim Areas Closed: Houghton Beach Park</div>
+	<div class="description">August 25, 2026: The swimming areas at Houghton Beach Park is closed for at least one week due to elevated bacteria levels.  People and pets should not swim, drink lake water, or engage in other water activities at these parks. The rest of the park is open. For more information visit:</div>
+	<div class="link"><p class="view-page-link"><a href="https://kingcounty.gov/en/dept/dnrp/nature-recreation/parks-recreation/king-county-parks/water-recreation/swimming-beach-bacteria-temperature"  target="_blank">King County Lake Swimming Beach Data Program</a></p></div>
+	<div class="type">Announcement</div>
+	<div class="conditions"></div>	
+</div><div class="item">
+	<div class="title">CKC Section Closure</div>
+	<div class="description">As early as Sept. 8, 2026, King County will close a portion of the CKC trail between NE 52nd Street and 108th Avenue NE to repair a damaged culvert that runs under the County’s Eastside Interceptor Section 14 sewer pipe, build a retaining wall, and stabilize the stream nearby. Repair work will last three months. A detour route will be available. Please stay out of the work area.</div>
+	<div class="link"><p class="view-page-link"><a href="https://kingcounty.gov/en/dept/dnrp/waste-services/wastewater-treatment/capital-projects/esi-14-rehab"  target="_blank">King County Project Page</a></p></div>
+	<div class="type">Temporary Closure</div>
+	<div class="conditions"><a href="/Government/Departments/Public-Works-Department/Cross-Kirkland-Corridor"  target="_self" >equals</a><a href="/Government/Departments/Public-Works-Department/Cross-Kirkland-Corridor"  target="_self" >startswith</a></div>	
+</div>
+</div>
+<script>
+	$('#COVID_TEMP-messages').children('.item').each(function(){
+		var $message = $(this);
+		var isMatch = false;
+		$message.find('.conditions a').each(function(){
+			var $a = $(this);
+			var mode = $a.text().split(' ')[0].toLowerCase();
+			var value = $a.attr('href').replace(/^https?:\/\//g, '');
+			
+			switch(mode)
+			{
+				case 'startswith':
+					if(document.location.pathname.toLowerCase().startsWith(value.toLowerCase()))
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+					
+				case 'contains':
+					if(document.location.pathname.toLowerCase().indexOf(value.toLowerCase()) !== -1)
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+					
+				case 'regex':
+					var re = new RegExp(value);
+					if(new RegExp(value).test(document.location.pathname))
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+					
+				default:
+					if(document.location.pathname.toLowerCase() === value.toLowerCase())
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+			}
+		});
+		if(isMatch)
+		{
+			var $main = $('#main-content');
+			if($main.length === 0) return false;
+			var $h1 = $main.find('h1').first();
+			
+			var title = $message.find('.title').text().trim();
+			var type = $message.find('.type').text().trim();
+			var description = $message.find('.description').html();
+			var link = $message.find('.link').html();
+			
+			var $content = $('<section>').addClass('obj-venue');//class is a hack to inherit styling
+			var $sideBox = $('<div>').addClass('side-box message-box message-type-'+type).appendTo($content);
+			
+			if(title !== '')
+			{
+				$('<h2>').addClass('side-box-title').text(title).appendTo($sideBox);
+			}
+			
+			var descriptionBox = ''
+			
+			if(description.trim() !== '')
+			{
+				//If the description contains no html tags, wrap the text in p tags
+				var noBrDesc = description.split('<br>').join('\r\n');
+				if (!/<[^>]+>/.test(noBrDesc)) {
+					description = '<p>' + noBrDesc.replace(/(\r\n|\r|\n){2}((\r\n|\r|\n)+)?/g, '$2</p><p>') + '</p>';
+					description = description.replace(/(\r\n|\r|\n)/g, '<br>');
+					description = description.replace('</p><p></p>', '</p>');					
+				}
+				descriptionBox += description;
+			}
+			
+			var hasLink = false;
+			if(link.trim() !== '')
+			{
+				hasLink = true;
+				descriptionBox += link;
+			}
+			
+			var $descriptionBox = null;
+			if(descriptionBox.trim() !== '')
+			{
+				$descriptionBox = $(descriptionBox);
+				$('<div>').addClass('side-box-content').html(descriptionBox).appendTo($sideBox);
+			}
+			
+			if($h1.length === 1)
+			{
+				$content.insertAfter($h1);
+			} 
+			else
+			{
+				$content.appendTo($main);
+			}
+			
+			if(hasLink)
+			{
+				var color = ($content.find('p').first() || $content.find('.side-box-content').first()).css('color');
+				$content.find('a').css('color', color);
+			}
+			
+			 return false;
+		}
+	});
+</script>
+
+
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K2VHBLSRL8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K2VHBLSRL8');
+</script>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl04_seamless_script_manager_TSM');//]]>
+</script>
+</form>
+</body>
+</html>

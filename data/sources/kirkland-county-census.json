@@ -1,0 +1,44 @@
+{
+  "peter-kirk-park": {
+    "matched": "202 3RD ST, KIRKLAND, WA, 98033",
+    "resolver": "census",
+    "lat": 47.677674416769,
+    "lon": -122.203544224288,
+    "county": "King",
+    "state_fips": "53",
+    "county_fips": "033",
+    "place": "Kirkland city",
+    "place_matches_city": true,
+    "postal_code": "98033",
+    "basis": "Census address geocoder matched \"202 3RD ST, KIRKLAND, WA, 98033\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"202 3RD ST, KIRKLAND, WA, 98033\"."
+  },
+  "everest-park": {
+    "matched": "500 8TH ST S, KIRKLAND, WA, 98033",
+    "resolver": "census",
+    "lat": 47.671600838109,
+    "lon": -122.193551551339,
+    "county": "King",
+    "state_fips": "53",
+    "county_fips": "033",
+    "place": "Kirkland city",
+    "place_matches_city": true,
+    "postal_code": "98033",
+    "basis": "Census address geocoder matched \"500 8TH ST S, KIRKLAND, WA, 98033\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"500 8TH ST S, KIRKLAND, WA, 98033\"."
+  },
+  "feriton-spur-park": {
+    "matched": "509 6TH ST S, KIRKLAND, WA, 98033",
+    "resolver": "census",
+    "lat": 47.67141512473,
+    "lon": -122.196390720042,
+    "county": "King",
+    "state_fips": "53",
+    "county_fips": "033",
+    "place": "Kirkland city",
+    "place_matches_city": true,
+    "postal_code": "98033",
+    "basis": "Census address geocoder matched \"509 6TH ST S, KIRKLAND, WA, 98033\".",
+    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"509 6TH ST S, KIRKLAND, WA, 98033\"."
+  }
+}

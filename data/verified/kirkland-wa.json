@@ -1,0 +1,427 @@
+{
+  "city": "Kirkland",
+  "state": "WA",
+  "retrieved_at": "2026-09-04",
+  "method_note": "Kirkland states its court counts in a table on one page, under a column heading that names the kind of court: \"Number & Type of Courts\", then \"6 pickleball courts\", \"3 pickleball courts\", \"1 pickleball court\". That heading is why this city needed no inference about whether a number counts pickleball courts or tennis courts wearing pickleball lines. Peter Kirk Park's six are the newest courts in this directory: the City closed its tennis courts on 13 April 2026 \"for conversion to six dedicated pickleball courts\" and opened them on 2 July 2026, which is also why no imported row exists for that park and it is minted here. Everest Park's three rest on the pickleball page alone - the park's own page names its pickleball courts repeatedly and never counts them - and the venue page says so. Feriton Spur's one is counted twice, as \"1 pickleball court\" on the pickleball page and \"a 44-foot pickleball court\" on the park's own, forty-four feet being the regulation length of one. Van Aalst Park is refused: it has \"half-basketball court with lines drawn for pickleball\" and no number, and it is missing from the pickleball page entirely, which makes Kirkland the third city here whose operator keeps two records of its courts that disagree. Every court closes at dusk and none is stated to be lit, so Kirkland publishes no lights filter page; no fee is stated for pickleball anywhere, so it publishes no free page either. The \"Free Play\" schedule on Everest Park's page is field time on grass and turf, not a statement about the courts, and is not read as one. All three venues are drop-in only and first-come first-served, and the City prohibits lessons, leagues and tournaments on every one of its pickleball courts.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+      "publisher": "City of Kirkland Parks and Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/kirkland/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Peter-Kirk-Park",
+      "publisher": "City of Kirkland Parks and Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/kirkland/peter-kirk-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park",
+      "publisher": "City of Kirkland Parks and Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/kirkland/everest-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Feriton-Spur-Park",
+      "publisher": "City of Kirkland Parks and Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/kirkland/feriton-spur-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Van-Aalst-Park",
+      "publisher": "City of Kirkland Parks and Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/kirkland/van-aalst-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/kirkland-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 3,
+    "courts": 10,
+    "outdoor": null,
+    "indoor": null,
+    "dedicated_courts": 6
+  },
+  "excluded": [
+    {
+      "name": "Van Aalst Park",
+      "why": [
+        "The City states no court count. Its page reads \"Van Aalst Park has half-basketball court with lines drawn for pickleball\", which describes a surface rather than counting courts, and Page Gate 1 requires a stated count.",
+        "It is also absent from the City's own pickleball page, whose \"Where to Play\" table is a closed list of three parks. So Kirkland is the third city in this directory whose operator keeps two records of its own courts that do not agree, after Saint Paul and Lincoln. Neither of Kirkland's two records states a number for Van Aalst, so unlike those cities there is nothing here to publish.",
+        "The park page adds that \"For pickleball use, players must bring their own nets\", so this is a half-basketball court you may play pickleball on rather than a pickleball court. That is context for the refusal rather than a ground of its own."
+      ]
+    }
+  ],
+  "venues": {
+    "peter-kirk-park": {
+      "minted": true,
+      "identity": {
+        "name": "Peter Kirk Park",
+        "city": "Kirkland",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98033",
+        "latitude": 47.677674416769,
+        "longitude": -122.203544224288,
+        "imported_slug": null,
+        "canonical_slug": "peter-kirk-park"
+      },
+      "match": {
+        "source_page": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+        "quote": "6 pickleball courts",
+        "basis": "No imported row exists for this park, and that is the expected consequence of its history rather than a gap: it held six TENNIS courts until 13 April 2026 and reopened as six dedicated pickleball courts on 2 July 2026, after the import was taken. Minted here from the City's own pages."
+      },
+      "patch": {
+        "name": "Peter Kirk Park",
+        "total_courts": 6,
+        "street_address": "202 3rd St",
+        "venue_type": "public_park",
+        "play_format": [
+          "open_play"
+        ],
+        "hours_of_operation": "Open 8 a.m. to dusk, daily.",
+        "court_availability": "Six dedicated pickleball courts, and they are the newest courts in this directory: the City closed the Peter Kirk tennis courts on 13 April 2026 for \"conversion to six dedicated pickleball courts\", and reopened them as pickleball courts on 2 July 2026 at 3 p.m. Dedicated means what it says here - these are not tennis courts wearing a second set of lines, they are courts that used to be tennis courts and are now not. The City splits them in two and posts a different rule on each half: three courts nearest the skate park are open play, where a full court with players waiting means one game to 11 points and then rotate off, and three courts nearest the street are timed courts, where a full court with players waiting means a 30-minute limit. They are drop-in only, first-come first-served, and open 8 a.m. to dusk daily. The park sits next to downtown Kirkland with a year-round restroom on its west side, public Wi-Fi, a skate park, a seasonal pool and the Kirkland Performance Center, library and transit centre next door.",
+        "county": "King",
+        "postal_code": "98033",
+        "restroom": true,
+        "parking": "Parking is available in the Municipal Parking Garage or along Central Way."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Peter Kirk Park\" by the City of Kirkland Parks and Community Services in the \"Where to Play\" table on its pickleball page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page, from a table column headed \"Number & Type of Courts\": \"6 pickleball courts\". The heading is what makes this a count of pickleball courts rather than of tennis courts striped for pickleball. The park's own page states it again: \"Peter Kirk Park has six pickleball courts and one basketball court.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Peter-Kirk-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"202 3rd St, Kirkland 98033\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Kirkland Parks and Community Services among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states \"All City of Kirkland pickleball courts are available on a first-come, first-served basis.\" and \"The use of pickleball courts for business purposes is not allowed, including lessons, leagues, or tournaments.\" Drop-in play is not merely the norm here, it is the only permitted use: lessons, leagues and tournaments are prohibited on every Kirkland pickleball court."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's pickleball page gives \"8 AM to dusk\" for this venue in its \"Where to Play\" table, and states the rule city-wide: \"Outdoor pickleball courts are available from 8 AM to dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"6 pickleball courts\") and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"202 3RD ST, KIRKLAND, WA, 98033\". The resolver also places it in the incorporated place \"Kirkland city\", which is what allows it to be published under Kirkland."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"202 3RD ST, KIRKLAND, WA, 98033\"."
+        },
+        "restroom": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Peter-Kirk-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed among the park's amenities on its own page as a year-round restroom."
+        },
+        "parking": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Peter-Kirk-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the park's own page: \"Parking is available in the Municipal Parking Garage or along Central Way.\" Kirkland is one of very few operators in this directory that publishes anything about parking at all."
+        }
+      },
+      "record": {
+        "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "everest-park": {
+      "minted": false,
+      "identity": {
+        "name": "Everest Park",
+        "city": "Kirkland",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98033",
+        "latitude": 47.671600838109,
+        "longitude": -122.193551551339,
+        "imported_slug": "everest-park-pickleball-courts",
+        "canonical_slug": "everest-park"
+      },
+      "match": {
+        "source_page": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+        "quote": "3 pickleball courts",
+        "basis": "Matched to the imported everest-park-pickleball-courts row in Kirkland, WA, published under the canonical slug everest-park."
+      },
+      "patch": {
+        "name": "Everest Park",
+        "total_courts": 3,
+        "street_address": "500 8th St S",
+        "venue_type": "public_park",
+        "play_format": [
+          "open_play"
+        ],
+        "hours_of_operation": "Open 8 a.m. to dusk, daily.",
+        "court_availability": "Three pickleball courts in a community park south-east of downtown, open 8 a.m. to dusk and drop-in only - the park's own page says so in as many words: \"The pickleball courts are available for drop in use only.\" All three are open play courts, and the City's rule for them is the one it posts city-wide: if the courts are full and players are waiting, play one game to 11 points and rotate off. Parking is the best-documented of any venue on this site - the City states \"There are two parking lots at Everest with space for up to 100 vehicles\" - and there are year-round restrooms, replaced in 2026, plus ballfields, a playground and a picnic shelter. One caveat belongs here rather than buried: the count of three comes from the City's pickleball page alone. The park's own page names the pickleball courts repeatedly and never says how many there are.",
+        "county": "King",
+        "postal_code": "98033",
+        "restroom": true,
+        "parking": "There are two parking lots at Everest with space for up to 100 vehicles."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Everest Park\" by the City of Kirkland Parks and Community Services in the \"Where to Play\" table on its pickleball page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page, from a table column headed \"Number & Type of Courts\": \"3 pickleball courts\". The heading is what makes this a count of pickleball courts rather than of tennis courts striped for pickleball. The park's own page names the pickleball courts and states no number, so this count has no second City source."
+        },
+        "street_address": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"500 8th St S, Kirkland 98033\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Kirkland Parks and Community Services among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states \"All City of Kirkland pickleball courts are available on a first-come, first-served basis.\" and \"The use of pickleball courts for business purposes is not allowed, including lessons, leagues, or tournaments.\" Drop-in play is not merely the norm here, it is the only permitted use: lessons, leagues and tournaments are prohibited on every Kirkland pickleball court."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's pickleball page gives \"8 AM to dusk\" for this venue in its \"Where to Play\" table, and states the rule city-wide: \"Outdoor pickleball courts are available from 8 AM to dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"3 pickleball courts\") and the park's own page. The absence of a count on the park page is asserted by the run, so the caveat cannot outlive its truth."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"500 8TH ST S, KIRKLAND, WA, 98033\". The resolver also places it in the incorporated place \"Kirkland city\", which is what allows it to be published under Kirkland."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"500 8TH ST S, KIRKLAND, WA, 98033\"."
+        },
+        "restroom": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed among the park's amenities on its own page as a year-round restroom."
+        },
+        "parking": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the park's own page: \"There are two parking lots at Everest with space for up to 100 vehicles.\" Kirkland is one of very few operators in this directory that publishes anything about parking at all."
+        }
+      },
+      "record": {
+        "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "feriton-spur-park": {
+      "minted": false,
+      "identity": {
+        "name": "Feriton Spur Park",
+        "city": "Kirkland",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98033",
+        "latitude": 47.67141512473,
+        "longitude": -122.196390720042,
+        "imported_slug": "kirkland-feriton-spur-park-kirkland-wa",
+        "canonical_slug": "feriton-spur-park"
+      },
+      "match": {
+        "source_page": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+        "quote": "1 pickleball court",
+        "basis": "Matched to the imported kirkland-feriton-spur-park-kirkland-wa row in Kirkland, WA, published under the canonical slug feriton-spur-park."
+      },
+      "patch": {
+        "name": "Feriton Spur Park",
+        "total_courts": 1,
+        "street_address": "509 6th Street South",
+        "venue_type": "public_park",
+        "play_format": [
+          "open_play"
+        ],
+        "hours_of_operation": "Open 8 a.m. to dusk, daily.",
+        "court_availability": "One pickleball court, counted twice by the City in two different vocabularies: its pickleball page lists \"1 pickleball court\", and the park's own page describes \"a 44-foot pickleball court\" - forty-four feet being the regulation length of one. Open 8 a.m. to dusk, drop-in and first-come first-served like every Kirkland court. The park itself is newer than most: it was renovated and expanded by Google and SRM Development in 2021-2022, and alongside the court it carries a 16-foot-wide paved trail, an urban farm growing vegetables for Hopelink, a splash area, a zip-line, a sand volleyball court, a basketball court, a grass amphitheatre and year-round bathrooms. One court is one court, so this is a place to hit rather than a place to run a rotation.",
+        "county": "King",
+        "postal_code": "98033",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Feriton Spur Park\" by the City of Kirkland Parks and Community Services in the \"Where to Play\" table on its pickleball page, and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page, from a table column headed \"Number & Type of Courts\": \"1 pickleball court\". The heading is what makes this a count of pickleball courts rather than of tennis courts striped for pickleball. The park's own page states it again: \"a 44-foot pickleball court\"."
+        },
+        "street_address": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Feriton-Spur-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"509 6th Street South, Kirkland 98033\" is the address published on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Kirkland Parks and Community Services among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City states \"All City of Kirkland pickleball courts are available on a first-come, first-served basis.\" and \"The use of pickleball courts for business purposes is not allowed, including lessons, leagues, or tournaments.\" Drop-in play is not merely the norm here, it is the only permitted use: lessons, leagues and tournaments are prohibited on every Kirkland pickleball court."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's pickleball page gives \"8 AM to dusk\" for this venue in its \"Where to Play\" table, and states the rule city-wide: \"Outdoor pickleball courts are available from 8 AM to dusk.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"1 pickleball court\") and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"509 6TH ST S, KIRKLAND, WA, 98033\". The resolver also places it in the incorporated place \"Kirkland city\", which is what allows it to be published under Kirkland."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"509 6TH ST S, KIRKLAND, WA, 98033\"."
+        },
+        "restroom": {
+          "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Feriton-Spur-Park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed among the park's amenities on its own page as a year-round restroom."
+        }
+      },
+      "record": {
+        "source_url": "https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

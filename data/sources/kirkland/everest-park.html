@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+<head>
+	<!-- Published by OpenCities, 1.37.6.1 -->
+
+    
+        
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="theme-color" content="#FFFFFF"/>
+    <title>Everest Park – City of Kirkland</title>
+	<meta name="generator" content="OpenCities - https://granicus.com/product/opencities" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using mobile-web-app-capable for now to enable full-screen experience on supported platforms -->
+    <!-- Note: This tag works mainly on Android Chrome. It does NOT enable full-screen mode on iOS Safari. -->
+    <!-- For iOS, the correct tag is: <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <!-- TODO: Monitor for updated meta tag standards from Apple or other browser vendors -->
+    <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="description" content="Everest Park is a community park with many amenities, including pickleball courts, ballfields, a playground and a picnic shelter. This park is located in Kirkland&#39;s Everest neighborhood." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park" />
+    <meta property="og:title" content="Everest Park" />
+    <meta property="og:description" content="Everest Park is a community park with many amenities, including pickleball courts, ballfields, a playground and a picnic shelter. This park is located in Kirkland&#39;s Everest neighborhood." />
+    <meta property="og:image" content="https://www.kirklandwa.gov/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg?w=1200" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Everest Park" />
+    <meta property="twitter:description" content="Everest Park is a community park with many amenities, including pickleball courts, ballfields, a playground and a picnic shelter. This park is located in Kirkland&#39;s Everest neighborhood." />
+    <meta property="twitter:image" content="https://www.kirklandwa.gov/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg?w=1080" />
+    <meta name="google-site-verification" content="cNzxR1q1lx3T03D4MR5BZJklPX7Omls_g2S0Xr8ME90" />
+    <meta name="id" content="237e0823-1872-452c-99a7-be2056963ee5" />
+    <link rel="canonical" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park" />
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/files/ocfavicon/Public/apple-touch-icon.png?V=637413249530223392">
+<link rel="icon" type="image/png" sizes="32x32" href="/files/ocfavicon/Public/favicon-32x32.png?V=637413249530223392">
+<link rel="icon" type="image/png" sizes="16x16" href="/files/ocfavicon/Public/favicon-16x16.png?V=637413249530223392">
+<link rel="manifest" href="/files/ocfavicon/Public/site.webmanifest?V=637413249530223392">
+<link rel="shortcut icon" href="/files/ocfavicon/Public/favicon.ico?V=637413249530223392">
+<meta name="msapplication-TileColor" content="#2B4E72">
+<meta name="msapplication-config" content="/files/ocfavicon/Public/browserconfig.xml?V=637413249530223392">
+    <script>
+        (function () {
+            if (window.__UNLOAD_LAZY_PATCH__) return;
+            window.__UNLOAD_LAZY_PATCH__ = true;
+
+            var supportsPageHide = ("onpagehide" in window);
+            var mappedType = supportsPageHide ? "pagehide" : "beforeunload";
+            var nativeAdd = window.addEventListener;
+            var nativeRemove = window.removeEventListener;
+            var unloadMap = null;
+            var patched = false;
+
+            function ensurePatched() {
+                if (patched) return;
+                unloadMap = new WeakMap();
+
+                window.addEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = function (evt) {
+                            if (supportsPageHide && evt.persisted) return;
+                            listener.call(this, evt);
+                        };
+                        unloadMap.set(listener, wrapped);
+                        return nativeAdd.call(this, mappedType, wrapped, options);
+                    }
+                    return nativeAdd.call(this, type, listener, options);
+                };
+
+                window.removeEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = unloadMap.get(listener);
+                        if (wrapped) {
+                            nativeRemove.call(this, mappedType, wrapped, options);
+                            unloadMap.delete(listener);
+                        }
+                        return;
+                    }
+                    return nativeRemove.call(this, type, listener, options);
+                };
+
+                var orig = null;
+                Object.defineProperty(window, "onunload", {
+                    configurable: true, enumerable: true,
+                    get: function () { return orig; },
+                    set: function (h) {
+                        orig = h;
+                        if (typeof h === "function") window.addEventListener("unload", h);
+                    }
+                });
+                patched = true;
+            }
+
+            window.addEventListener = function (type, listener, options) {
+                if (type === "unload") {
+                    ensurePatched();
+                    return window.addEventListener(type, listener, options);
+                }
+                return nativeAdd.call(this, type, listener, options);
+            };
+
+            window.removeEventListener = function (type, listener, options) {
+                if (type === "unload" && !patched) {
+                    return;
+                }
+                return nativeRemove.call(this, type, listener, options);
+            };
+
+            function patchTelerik() {
+                ensurePatched();
+                var ns = window.RadAjaxNamespace;
+                if (!ns || !ns.EventManager || !ns.EventManager.Add || ns.EventManager.__UnloadPatched) return;
+                var origAdd = ns.EventManager.Add;
+                ns.EventManager.Add = function (el, evtName, handler, clientId) {
+                    if (el === window && evtName === "unload") {
+                        return window.addEventListener("unload", handler);
+                    }
+                    return origAdd.call(this, el, evtName, handler, clientId);
+                };
+                ns.EventManager.__UnloadPatched = true;
+            }
+
+            if (window.RadAjaxNamespace)
+                patchTelerik();
+            else (window.requestIdleCallback || function (cb)
+            {
+                setTimeout(cb, 120);
+            })(patchTelerik);
+        })();
+    </script>
+    <!-- Preconnecting to Google Fonts servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Defer Roboto font loading to avoid render-blocking -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const robotoLink = document.createElement('link');
+            robotoLink.rel = 'stylesheet';
+            robotoLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap';
+            document.head.appendChild(robotoLink);
+        });
+    </script>
+
+    <style>
+        .gm-style, .gm-style * {
+            font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Arial, sans-serif !important;
+        }
+    </style>
+
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, "js");
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+        
+            <script type="text/javascript">
+                window.__oc_flags_ImprovedBreakpointEventHandling = true;
+            </script>
+            
+        
+    
+    
+    
+        <script type="text/javascript">
+            var __metaQueryBreakpoints = {
+                'sc-size-4': '(max-width: 480px)',
+                'sc-size-3': '(min-width: 480px) and (max-width: 768px)',
+                'sc-size-2': '(min-width: 768px) and (max-width: 992px)',
+                'sc-size-1': '(min-width: 992px)'
+            }
+
+            var __ocSizePoints = [
+                { min: 0, name: 'sc-size-4' },
+                { min: 480, name: 'sc-size-3' },
+                { min: 768, name: 'sc-size-2' },
+                { min: 992, name: 'sc-size-1' }
+            ];
+
+        </script>
+    
+
+    <!-- Framework Section -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/jquery-3.7.1.min.js?seamlessts=639233009142124117" ><\/script>')</script>
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/jquery-migrate-3.4.0.js?seamlessts=639233009142124117"></script>
+
+    <!--Google Maps API Loader – Improved Version to avoid Warning
+    This script loads the Google Maps JavaScript API using a dynamic and async method.
+    It replaces the old static <script> tag to avoid performance warnings from Google.
+
+    Dynamically creates the <script> tag with loading = async for better performance
+    Builds the API URL with required libraries(places, geometry, marker, geocoding)
+    Uses a Promise and callback(google.maps.__ib__) to confirm when the script is ready
+
+    It Avoids Google’s warning about direct script loading
+    Improves page load speed by loading the API asynchronously-->
+
+    
+        <script>
+            (function (root) {
+                root.OpenCities = root.OpenCities || {};
+                if (!root.OpenCities.GoogleMapsLoader) {
+                    root.OpenCities.GoogleMapsLoader = {
+                        _cbs: [],
+                        _ready: false,
+                        onReady: function (cb) {
+                            if (this._ready) { try { cb(); } catch (e) { console.error(e); } }
+                            else if (typeof cb === 'function') this._cbs.push(cb);
+                        },
+                        _fire: function () {
+                            if (this._ready) return;
+                            this._ready = true;
+                            var q = this._cbs.splice(0);
+                            for (var i = 0; i < q.length; i++) {
+                                try { q[i](); } catch (e) { console.error(e); }
+                            }
+                        }
+                    };
+                }
+            })(window);
+
+            (g => {
+                var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__",
+                    m = document, b = window;
+                b = b[c] || (b[c] = {});
+                var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+                    u = () => h || (h = new Promise(async (resolve, reject) => {
+                        a = m.createElement("script");
+                        e.set("libraries", [...r] + "");
+                        for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+                        e.set("callback", c + ".maps." + q);
+                        a.src = "https://maps." + c + "apis.com/maps/api/js?" + e.toString();
+                        a.loading = "async";
+                        a.async = true;
+                        a.defer = true;
+                        d[q] = resolve;
+                        a.onerror = () => reject(Error(p + " could not load."));
+                        a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                        m.head.append(a);
+                    }));
+                if (d[l]) {
+                    console.warn(p + " only loads once. Ignoring duplicate load.");
+                } else {
+                    d[l] = (f, ...n) => (r.add(f), u().then(() => d[l](f, ...n)));
+                }
+            })({
+                key: "AIzaSyAwAUpp9CwhCgb4B2ppUs_m_tES9UPPla8",
+                v: "3.65"
+            });
+
+            (async () => {
+                try {
+                    if (!google?.maps?.importLibrary) return;
+
+                    if (!window.OpenCities.__mapsLibsPromise) {
+                        window.OpenCities.__mapsLibsPromise = Promise.all([
+                            google.maps.importLibrary('maps'),
+                            google.maps.importLibrary('places'),
+                            google.maps.importLibrary('geocoding'),
+                            google.maps.importLibrary('marker'),
+                            google.maps.importLibrary('geometry')
+                        ]);
+                    }
+                    await window.OpenCities.__mapsLibsPromise;
+
+                    if (window.OpenCities?.GoogleMapsLoader) {
+                        window.OpenCities.GoogleMapsLoader._fire();
+                    }
+                } catch (err) {
+                    console.error('Google Maps failed to initialise', err);
+                }
+            })();
+        </script>
+    
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/modernizr.custom.710f3bf.js?seamlessts=639233009142124117" defer></script>
+    
+    <!--// End Framework Section -->
+    <!-- OpenCities Section -->
+    <script>
+        var OpenCities = OpenCities || {};
+        OpenCities.Paths = {
+            SiteTemplate: '/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/',
+            ThemePath: '/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/'
+        };
+    </script>
+    <script src='/ocapi/237e0823-1872-452c-99a7-be2056963ee5/en-US/websitesettings.js'></script>
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/oc_head.js?applied=20250311064812"></script>
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/oc_grid.css~oc_style.css~oc_wizard_style.css~oc_main.css~oc_forms.css~oc_wizard.css~oc_wizard_menu.css~oc_main_s1.css~oc_wizard_s1.css~oc_wizard_menu_s1.css~oc_grid_s1.css~OcScriptCombine_Minify0?uniqueid=20250311064812" rel="stylesheet" type="text/css">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/client_style.css~client.css~client_menu.css~client_s1.css~client_menu_s1.css~client_forms.css~OcScriptCombine_Minify0?uniqueid=20250311064812" rel="stylesheet" type="text/css">
+    <script>
+(function (BackgroundSettings, $, undefined) {
+    BackgroundSettings.initialise = function () {
+        this.Application = {"CSSSelector":".background-container","EnableFade":false};
+    };
+} (OpenCities.BackgroundSettings = OpenCities.BackgroundSettings || {}, jQuery));
+OpenCities.BackgroundSettings.initialise();
+</script>
+    
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/oc_print.css~client_print.css~OcScriptCombine_Minify0?uniqueid=20250311064812" rel="stylesheet" type="text/css" media="print">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<script src="/files/oc-templates/00000000-0000-0000-0000-000000000000/466bf74e-7307-4005-88f3-e8dcb92250a6/v/367/external_plugins.js~oc_form_helper.js~oc_main.js~plugins.js~oc_main_init.js~OcScriptCombine_Minify0?uniqueid=20250311064812" defer="true"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3DNLC3');</script>
+<!-- End Google Tag Manager -->
+<!-- GreenRubino Tag -->
+<script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+    ttd_dom_ready( function() {
+        if (typeof TTDUniversalPixelApi === 'function') {
+            var universalPixelApi = new TTDUniversalPixelApi();
+            universalPixelApi.init("tlbv843", ["em2xhf7"], "https://insight.adsrvr.org/track/up");
+        }
+    });
+</script>
+<!-- End GreenRubino Tag -->
+
+<script src="https://api.repd.us/video-guide-embed/282.js" async crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="DYTCK-JM9C8-ED4EP-C3GGK-Z575H",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"DYTCK-JM9C8-ED4EP-C3GGK-Z575H";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eaauiuqby7cqajqacqlqabaaabvjvcez-f-5a8d92de6-clienttons-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"41","ak.cp":"1699383","ak.ai":parseInt("1075935",10),"ak.ol":"0","ak.cr":18,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"5b21a089","ak.r":52240,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.cport":39483,"ak.gh":"122.2.208.215","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1788512409","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==t5JZLnG4uYGN0G7uHCmF+ZBqVEJJSJzNLiMukNoa72yTYN6jFB+9pLBcp5CiFDHpNhddpIl8wHt+Amo/w6pF0Jt1XDK03BpuzR0YshJ1JMZTZa1//82gFbPj4QLFBNcXjkyRN1vrs2r8h3+/fvd5JjF7tAYb+2ZZnA+HJ64H8zQmOMOclnJl6deIsqqsRf/699n0oUAtBRjaJ88ll8K/KuqtI+YiwyLLqN2pTi8qEqj8y5eohCLtQ1He9pfE4bp4ZAd0sxltLN9eJ5vykCBm0VTzK2ru2RF82JUAD1/SqJi60mW0/O9sdNsHsOHZSPdrbOLlESJ+jbB4BKhYUbwZ3xpqYC347d9HnAAHFjvi9roNnf0VQGuKDEmXC2QN6ckxsCIQo/Obwbt6pI4dScnLH+zes5FuWQV52CWvHICHMrg=","ak.pv":"333","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body class="body layout-modern oc-two-level-menu site-search-always-visble  content-type-oc-park content-template-oc-with-full-width-image group-template-oc-full-width-with-default-header page-name-everest-park page-sequence-1 page-depth-5 page-section-7 website-type-primary device-desktop " id="body-top">
+    <div id="skip-to-content-container">
+        <a href="#main-content" class="visuallyhidden focusable" id="skip-to-content-link">Skip to main content</a>
+    </div>
+    <script>
+        // OCNOW-11988 (Cursor): Proactively focus skip link when returning from browser chrome.
+        // Must run inline (not deferred oc_main.js) so focus is intercepted before NVDA speaks footer.
+        (function () {
+            var awaitingReentry = false;
+            var inertSupported = 'inert' in HTMLElement.prototype;
+
+            function isExplicitlyOutsideDocument(node) {
+                return node != null && !document.documentElement.contains(node);
+            }
+
+            function getSkipContainer() {
+                return document.getElementById('skip-to-content-container');
+            }
+
+            function getSkipLink() {
+                return document.getElementById('skip-to-content-link');
+            }
+
+            function applyGuard() {
+                awaitingReentry = true;
+                if (!inertSupported) {
+                    return;
+                }
+                var skipContainer = getSkipContainer();
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    if (children[i] !== skipContainer) {
+                        children[i].setAttribute('inert', '');
+                    }
+                }
+            }
+
+            function clearGuard() {
+                awaitingReentry = false;
+                if (!inertSupported) {
+                    return;
+                }
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].removeAttribute('inert');
+                }
+            }
+
+            function isSkipLinkElement(target) {
+                if (!target) {
+                    return false;
+                }
+                var skipContainer = getSkipContainer();
+                return target.id === 'skip-to-content-link' ||
+                    (skipContainer && skipContainer.contains(target));
+            }
+
+            function focusSkipLink() {
+                var skipLink = getSkipLink();
+                if (!skipLink) {
+                    return;
+                }
+                if (window.scrollY > 0) {
+                    window.scrollTo(0, 0);
+                }
+                skipLink.focus({ preventScroll: true });
+            }
+
+            function scheduleGuardIfDocumentLostFocus() {
+                window.setTimeout(function () {
+                    if (!document.hasFocus()) {
+                        applyGuard();
+                    }
+                }, 0);
+            }
+
+            document.addEventListener('focusout', function (e) {
+                if (isExplicitlyOutsideDocument(e.relatedTarget)) {
+                    applyGuard();
+                }
+            }, true);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Tab') {
+                    scheduleGuardIfDocumentLostFocus();
+                } else if (e.key === 'F6' || (e.key === 'l' && e.ctrlKey)) {
+                    scheduleGuardIfDocumentLostFocus();
+                }
+            }, true);
+
+            window.addEventListener('focus', function () {
+                if (!awaitingReentry) {
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+            }, true);
+
+            document.addEventListener('focusin', function (e) {
+                var reentryFromChrome = awaitingReentry || isExplicitlyOutsideDocument(e.relatedTarget);
+                if (!reentryFromChrome) {
+                    return;
+                }
+                if (isSkipLinkElement(e.target)) {
+                    clearGuard();
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+                clearGuard();
+            }, true);
+        })();
+    </script>
+    <form name="mainForm" method="post" action="/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park" id="mainForm">
+<input type="hidden" name="ctl04_seamless_script_manager_TSM" id="ctl04_seamless_script_manager_TSM" value="" />
+<input type="hidden" name="__SEAMLESSVIEWSTATE" id="__SEAMLESSVIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl04_seamless_script_manager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3add3ac3d5-1e29-4112-8fed-529caffa8f24%3aea597d4b%3bOpenCities.CustomControls%3aen-US%3a8875e443-f2ef-457b-94fb-857d92f72782%3a8e1d32bf" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Dgt4HF_ft_aJ1oNhpkWrMiNDmBLKt_DsvWnSAz2w6tEELqoI6U0la4w2SXOqY6aKSQopJdYQ7QqurDo6luOWtmOtc0ilepv84Pn5KcIhMMrgeTsEf5EuV8_Sa3cCDWfG--Hnf94oO4VdVbckSgJaVhayxbZ7XIfk_l5vwX8rf1j3PHHLVdsirYnSQi7H-FBaAoI8vrsBRaLWZaSMhQbjtYYKqDWglhIGGk6W571YqSk-uulGq2FPvDWIH4jcRJViiV9xArPU8giGtZPgZuzgazGDA9l8J7QQlNhfdKhxD-RT-xq7lTMNzZtN4P2818X2kcTOPsVXuC5sJXLwZ_95djU3-fBGudmoTPxL2612tOyiZZah_zDS4uE2zWSOvuEiX7jWqffsB-AvNOYbMeUCVMkDWwxm4SnM9P_FzJ7I9RNhaF2SxAANL2e2AV_KOoQt0" type="text/javascript"></script>
+    
+<script type="text/javascript">
+    try{
+        function SeamlessEndRequestHandler(sender, args) {
+            try {
+                var dataItems = args.get_dataItems();
+                if(dataItems.ctl04_seamless_script_manager)
+                    document.getElementById('__SEAMLESSVIEWSTATE').value = dataItems.ctl04_seamless_script_manager;
+            }
+            catch (e) { }
+        }
+
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(SeamlessEndRequestHandler);
+    }
+    catch (e) { }
+</script>
+
+    <div class="unsupported-browser-warning js-element"></div>
+    
+    <div hidden>
+        <span id="new-window-0">opens in new tab or window </span>
+    </div>
+    <div class="overlay-container"></div>
+    
+    <div class="background-container">
+        <div class="page-container">
+            <!-- OC Layout Element GROUP TEMPLATE -->
+            <!--groupTemplateStart--><header><div class="print-header-outer-container print-element">
+<img src="/files/assets/public/templateimages/print-header.png" alt="City of Kirkland - Logo" />
+</div>
+            <div class="toolbar-outer-container">
+  <div class="toolbar-inner-container clearfix">
+    <div class="toolbar-item toolbar-quicklinks toolbar-display-dropdown">
+	<button type="button" aria-controls="toolbar-quicklinks-drop-down" aria-expanded="false" class="toolbar-button toolbar-button-quicklinks js-element"><span>Quick Links</span><i aria-hidden="true"></i></button>	
+	<div id="toolbar-quicklinks-drop-down" class="toolbar-drop-down toolbar-quicklinks-drop-down clearfix">
+		<ul>
+		  <li><a href="https://www.kirklandwa.gov/Government/Contact-Us" class="oc-icon-b oc-i-phone link-type-internal"><span>Contact Us</span></a></li><li><a href="https://www.facebook.com/kirklandwa.gov/" class="oc-icon-b oc-i-facebook link-type-external"><span>Facebook</span></a></li><li><a href="https://x.com/kirklandgov" class="oc-icon-b oc-i-x link-type-external"><span>X</span></a></li><li><a href="https://www.kirklandwa.gov/Government/City-Managers-Office/Local-Land-Acknowledgement" class="oc-icon-b oc-i-information link-type-internal"><span>Land Acknowledgement</span></a></li>
+		</ul>
+	</div>
+</div><div class="toolbar-item toolbar-language notranslate toolbar-display-dropdown"><div class="no-js-element">
+		  <ul>
+		    <li id="toolbar-language-option-en-us-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English (United States)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-es-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-zh-cn-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ru-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-vi-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-fa-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=fa" class="lang-item lang-fa" data-translate-to="fa" lang="en">Persian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-pt-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=pt" class="lang-item lang-pt" data-translate-to="pt" lang="en">Portuguese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-hi-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=hi" class="lang-item lang-hi" data-translate-to="hi" lang="en">Hindi<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-te-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=te" class="lang-item lang-te" data-translate-to="te" lang="en">Telugu<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ko-noscript"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=ko" class="lang-item lang-ko" data-translate-to="ko" lang="en">Korean<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+          </ul>
+		</div>
+	<button type="button" role="combobox" aria-controls="toolbar-language-drop-down" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="none" aria-labelledby="toolbar-language-label" class="toolbar-button toolbar-button-language js-element">  
+        <span class="toolbar-language-globe-icon" aria-hidden="true"></span>
+        <span id="toolbar-language-label" class="current-language">
+            Select a language to translate to
+		</span>
+		<i aria-hidden="true"></i>
+	</button>
+	<div id="toolbar-language-drop-down" role="listbox" aria-label="Available languages" class="toolbar-drop-down toolbar-language-drop-down js-element clearfix">
+		<ul role="group">
+		    <li role="presentation"><a id="toolbar-language-option-en-us" role="option" aria-selected="true" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English (United States)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-es" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-zh-cn" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ru" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-vi" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-fa" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=fa" class="lang-item lang-fa" data-translate-to="fa" lang="en">Persian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-pt" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=pt" class="lang-item lang-pt" data-translate-to="pt" lang="en">Portuguese<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-hi" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=hi" class="lang-item lang-hi" data-translate-to="hi" lang="en">Hindi<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-te" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=te" class="lang-item lang-te" data-translate-to="te" lang="en">Telugu<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ko" role="option" aria-selected="false" href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Everest-Park?oc_lang=ko" class="lang-item lang-ko" data-translate-to="ko" lang="en">Korean<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+        </ul>
+	</div></div>
+  </div>
+</div>
+            <div class="header-outer-container">
+    <div class="header-container header-layout-3  clearfix">
+			<div class="header-site-logo">
+				<a href="https://www.kirklandwa.gov/Home" lang="en-US" aria-label="City of Kirkland - Home - Logo">
+				</a>
+			</div>
+      
+		    <div class="mobile-search-btn js-element">
+		        <button><i aria-hidden="true"></i><span class="mobile-search-btn-text"><span class="visuallyhidden">Open </span>Search</span></button>
+		    </div>
+		    <div class="header-website-settings">
+                <button id="btn-mob-nav" type="button" aria-expanded="false" aria-controls="nav">
+                    <i aria-hidden="true"></i><span class="side-menu-btn-text">Menu</span>
+                </button>
+        	</div>
+          <div class="navigation-outer-container">
+	<div id="nav" role="navigation" class="navigation-container  navigation-container-option-7" data-menu-type="horizontal" aria-label="primary">
+        <div class="grid">
+            <div class="col-xs-12">              
+                <ul class="sf-menu" id="sc-main-menu" ><li  class="nav-section-quarters-1   first-item nav-item-seq-1">
+<a href="https://www.kirklandwa.gov/Resident" class="nav-level-1"  target="">
+	<i class="item-icon" aria-hidden="true"></i><span class="item-text">Resident</span>
+</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-1" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-1" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Resident/Utilities" class=""  target="">Utilities</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Garbage-Recycling-and-Compost" class=""  target="">Garbage, Recycling and Compost</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/My-Property" class=""  target="">My Property</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Neighborhoods" class=""  target="">Neighborhoods</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Parks-Trails-and-Beaches" class=""  target="">Parks, Trails, and Beaches</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Getting-Around" class=""  target="">Getting Around</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Senior-Resources" class=""  target="_self">Senior Resources</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Pets" class=""  target="">Pets</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Human-and-Social-Services" class=""  target="">Human and Social Services​</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Public-Safety" class=""  target="">Public Safety</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Volunteer" class=""  target="">Volunteer​</a></li><li class=" "><a href="https://www.kirklandwa.gov/Resident/Sustainability" class=""  target="">Sustainability</a></li></ul></li>
+          
+          <li class="nav-section-quarters-1   nav-item-seq-2">
+<a href="https://www.kirklandwa.gov/Whats-Happening" class="nav-level-1 nav-has-children"  target="">What's Happening</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-2" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-2" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/News" class=""  target="">News & Info</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Community-Events" class=""  target="">Community Events</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Council-Meetings" class=""  target="">Council Meetings</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/This-Week-in-Kirkland-Podcast" class=""  target="_self">This Week in Kirkland Podcast</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Subscribe-to-Kirkland-Email-Lists" class=""  target="_self">Subscribe to Kirkland Email Lists</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Explore-Kirkland" class=""  target="_self">Explore Kirkland</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Community-Engagement-Opportunities" class=""  target="">Community Engagement Opportunities</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Construction-Projects" class=""  target="">Construction Projects</a></li><li class=" "><a href="https://www.kirklandwa.gov/Whats-Happening/Conversations-with-Council" class=""  target="_self">Conversations with Council</a></li></ul></li>
+          
+          <li class="nav-section-quarters-2   nav-item-seq-3">
+<a href="https://www.kirklandwa.gov/Business" class="nav-level-1 nav-has-children"  target="">Business</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-3" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-3" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Business/Doing-Business-with-the-City" class=""  target="_self">Doing Business with the City</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Economic-Development" class=""  target="">Economic Development in Kirkland</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Business-Licenses-and-Fees" class=""  target="">Business Licenses and Fees</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Apply-for-a-Permit" class=""  target="">Apply for a Permit</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Trash-Recycling-and-Compost​" class=""  target="">Business Trash, Recycling, and Compost​</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Business-Resources" class=""  target="">Business Resources</a></li><li class=" "><a href="https://www.kirklandwa.gov/Business/Parking" class=""  target="">Parking</a></li></ul></li>
+          
+          <li class="nav-section-quarters-2 nav-active-path  nav-item-seq-4">
+<a href="https://www.kirklandwa.gov/Government" class="nav-level-1 nav-has-children"  target="">Government</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-4" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-4" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Government/City-Council" class=""  target="">City Council</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/City-Managers-Office" class=""  target="">City Manager's Office</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Municipal-Court" class=""  target="_self">Municipal Court</a></li><li class="nav-active-path "><a href="https://www.kirklandwa.gov/Government/Departments" class=""  target="">Departments</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Boards-and-Commissions" class=""  target="">Boards and Commissions</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Codes-and-Laws" class=""  target="">Codes and Laws</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Work-at-the-City" class=""  target="">Work at the City</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Contact-Us" class=""  target="">Contact Us</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Subscribe-to-Kirkland-Email-Lists" class=""  target="">Subscribe to Kirkland Email Lists</a></li><li class=" "><a href="https://www.kirklandwa.gov/Government/Staff-Directory" class=""  target="_self">Staff Directory</a></li></ul></li>
+          
+          <li class="nav-section-quarters-3   nav-item-seq-5">
+<a href="https://www.kirklandwa.gov/Services" class="nav-level-1 nav-has-children"  target="">Services</a>
+<button aria-label="Expand" aria-controls="sc-menu-second-level-nav-item-seq-5" aria-haspopup="true" class="mobnav-subarrow"><i aria-hidden="true"></i>
+            </button>
+<ul id="sc-menu-second-level-nav-item-seq-5" >
+
+          
+          <li class=" "><a href="https://www.kirklandwa.gov/Services/Pay-a-Utility-Bill" class=""  target="">Pay a Utility Bill</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Register-for-a-Recreation-Program" class=""  target="_self">Register for a Recreation Program</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/License-Your-Pet" class=""  target="">License Your Pet</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Rent-a-Parks-Facility-or-Athletic-Field" class=""  target="_self">Rent a Parks Facility or Athletic Field</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Request-Public-Records" class=""  target="">Request Public Records</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Report-a-Crime" class=""  target="">File an Online Police Report</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Apply-for-a-Development-Permit" class=""  target="_self">Apply for a Development Permit</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Services-A-Z" class=""  target="_self">Services A-Z</a></li><li class=" "><a href="https://www.kirklandwa.gov/Services/Our-Kirkland" class=""  target="_self">Our Kirkland</a></li></ul></li>
+          
+          </ul>
+            </div>
+        </div>
+    </div>
+</div>
+			
+			<div class="header-search-control-container" id="header-search">
+				<div class="search-inner-container">
+					<div class="sc-search-panel">
+	<label for="ctl08_txtSearch" id="ctl08_lblSearch" class="sc-search-label">Search</label><input name="ctl08$txtSearch" type="text" id="ctl08_txtSearch" class="sc-search-text" placeholder="How can we help you?" /><input type="submit" name="ctl08$btnSearch" value="Search" id="ctl08_btnSearch" class="sc-search-button" />
+</div>
+					<div role="status" id="predictiveResults"></div>
+				</div>
+			</div>
+    </div>
+</div>
+
+            </header>
+            <div class="content-outer-container">
+                <div id="main" role="main" class="main-outer-container clearfix">
+                        
+                        <div class="content-main-container">
+                            <div class="grid">
+					            <div class="col-xs-12">
+						            <nav id="breadcrumbs-container" aria-label="You Are Here :">
+							            <span role="list">
+<span role="listitem">
+	<a href="https://www.kirklandwa.gov/Home"  lang="en-US">Home</a>
+	<span class="nav-separator" aria-hidden="true" role="presentation">/</span>
+</span>
+          <span role="listitem"><a href="https://www.kirklandwa.gov/Government" >Government</a><span class='nav-separator' aria-hidden="true" role="presentation">/</span></span><span role="listitem">
+	<a href="https://www.kirklandwa.gov/Government/Departments" >
+		Departments
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services" >
+		Parks and Community Services
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park" >
+		Find a Park
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span class="current-page" role="listitem" aria-current="page" >Everest Park</span>
+          
+          
+          </span>
+						            </nav>
+					            </div>
+                      
+					            <div class="col-xs-12">
+						            <div class="main-inner-container">
+							            <div id="main-content" class="main-container clearfix">
+							              
+                            <!-- OC Layout Element Conent Template -->
+							              <!--normalTemplateStart--><div class="grid obj-parks">
+	<div class="col-xs-12 col-m-8">
+		<h1 class='oc-page-title '>Everest Park</h1>
+		
+		
+       <picture>
+  <source media="(min-width: 992px)" srcset="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg?dimension=pageimagefullwidth&w=1140">
+  <source media="(min-width: 768px)" srcset="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg?dimension=pageimagefullwidth&w=992">
+  <source srcset="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg?dimension=pageimagefullwidth&w=768">
+  <img class="main-page-image full-width" src="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg?dimension=pageimagefullwidth&w=1140" alt="Freshly mown outfield at Everest Park" title="Freshly mown outfield at Everest Park"/>
+</picture> 
+		<p>Everest Park is a community park with many amenities, including pickleball courts, ballfields, a playground, a picnic shelter, and restrooms. The Everest Park restroom was replaced in 2026. <a href="https://www.kirklandwa.gov/Government/Departments/Public-Works-Department/Construction-Projects/Everest-Park-Restroom-Replacement">Learn more about this project</a>.</p>
+<p><span style="font-family: inherit;">Everest Park hosts the Junior League Softball World Series annually in August. Teams from around the world come to compete and the games air on national television.&nbsp;</span></p>
+<p>There are two parking lots at Everest with space for up to 100 vehicles.</p>
+<div data-type="0" data-title-level="2" class="oc-wysiwyg-container">
+<div class="oc-wysiwyg-container-panel">
+<h2>Athletic Fields and Courts</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<p>There are four ball fields suitable for baseball or softball available. A permit may be required for use, please see our <a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Park-Facility-Field-Rentals/Rent-an-Athletic-Field">Rent an Athletic Field</a> webpage for more information.</p>
+<p style="text-align: center;"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Park-Facility-Field-Rentals/Rent-an-Athletic-Field" target="_self" class="styled-button">View rates and policies, or learn how to reserve a field</a></p>
+<h4>Free Play</h4>
+<p>Free Play is field time set aside for the community to enjoy passive, drop-in, and informal play outdoors. The program is offered from March through October for natural grass, and year-round for synthetic turf. Learn more at <a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Rent-a-Parks-Facility-or-Athletic-Field/Rent-an-Athletic-Field#FreePlay">www.kirklandwa.gov/FreePlay</a></p>
+<p style="text-align: center;"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Rent-a-Parks-Facility-or-Athletic-Field/Rent-an-Athletic-Field#FreePlay" class="styled-button">Check the Free Play schedule for this park</a></p>
+<h4>Pickleball</h4>
+<p>The pickleball courts are available for drop in use only.</p>
+<p style="text-align: center;"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Recreation-Programs-Services/Pickleball" class="styled-button">Learn more about pickleball in Kirkland</a></p>
+</div>
+</div>
+<div class="oc-wysiwyg-container-panel">
+<h2>Automated External Defibrillator</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<div><img alt="AED in Everest Park Fall 2024" src="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/aed-everest-park-2024-09-24.jpg" style="width: 450px; height: 338px;"></div>
+<p>The City of Kirkland has installed automated external defibrillators (AEDs) in several parks including Everest Park.&nbsp;<font style="font-size: 1em;" face="inherit">The AED at this park is located on the concession stand at field one.</font></p>
+<p><font style="font-size: 1em;" face="inherit">If someone experiences a sudden cardiac arrest, an AED can be used to restart their heart.&nbsp;</font><strong style="font-family: inherit; font-size: 1em;">In the event of a cardiac emergency, always call 911 before attempting to find an AED.</strong></p>
+<p><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/AEDs-in-Parks" class="styled-button">Learn more about AEDs in Kirkland Parks</a></p>
+</div>
+</div>
+<div class="oc-wysiwyg-container-panel">
+<h2>Park Donations</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<p>Donating funds to a park is a wonderful way to show appreciation for Kirkland, to honor someone special, or to commemorate a milestone. Park benches and tables are the most popular items to donate, however other donations are possible as well, like those for trees or landscape, for general park maintenance, towards public art or other site amenities (i.e. water fountains), and even towards the tools and equipment needed to keep Kirkland&rsquo;s parks beautiful.</p>
+<p style="text-align: center;"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Parks-Trails-and-Beaches/Park-Donations" target="_self">Learn more about park donations</a></p>
+</div>
+</div>
+<div class="oc-wysiwyg-container-panel">
+<h2>Picnic Area Rental</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<p style="text-align: center;"><img alt="Everest Park picnic shelter" src="/files/sharedassets/public/v/3/parks-amp-comm-services/online-parks-guide/images/everest-picnic-shelter-800x600.jpg?w=800&amp;h=600" style="width: 400px; height: 300px; vertical-align: top;"></p>
+<p>Everest Park has a picnic area&nbsp;available for rent. It includes a covered shelter with a total of four picnic tables. There are BBQs available for use in the picnic area. When the picnic area is not being rented, it is available for use on a first-come, first-serve basis.</p>
+<p>There are additional picnic tables throughout the park that are not part of the picnic area. They are available for first-come, first-serve use.</p>
+<p style="text-align: center;"><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Park-Facility-Field-Rentals/Rent-an-Outdoor-Parks-Facility" target="_self" class="styled-button">Learn more about renting the picnic shelter at Everest Park</a></p>
+</div>
+</div>
+<div class="oc-wysiwyg-container-panel">
+<h2>Playground</h2>
+<div class="oc-wysiwyg-container-panel-content">
+<p><img alt="Everest Playground 2025" src="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-playground-2025-resized.jpg?w=1600&amp;h=1199" style="width: 800px; height: 600px;"></p>
+<p>The Everest Park playground was updated in 2025. It was expanded from 3,850 square feet to 6,000 square feet to include more accessible and diverse play features, ensuring it meets the needs of all visitors.&nbsp;</p>
+<p>This new playground was supported in part by the voter-approved 2020&ndash;2025 King County Parks Levy.&nbsp;</p>
+</div>
+</div>
+</div>
+<h2>Photos from Everest Park</h2>
+<p><div class="image-gallery-container masonry-theme" data-theme="masonry">
+   <div class="grid">
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/parks-amp-comm-services/online-parks-guide/images/everest-picnic-shelter-800x600.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/parks-amp-comm-services/online-parks-guide/images/everest-picnic-shelter-800x600.jpg?w=375" alt="Picnic shelter at Everest Park">
+         </div>
+         <figcaption>
+            <p class="caption">Reservable picnic shelter at Everest Park</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;260KB)</span></a>
+</div>
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-playground-2025-resized.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-playground-2025-resized.jpg?w=375" alt="Everest Playground 2025">
+         </div>
+         <figcaption>
+            <p class="caption">New playground at Everest Park</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;597KB)</span></a>
+</div>
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/aed-everest-park-2024-09-24.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/aed-everest-park-2024-09-24.jpg?w=375" alt="AED at Everest Park">
+         </div>
+         <figcaption>
+            <p class="caption">AED on the concession stand at Everest Park</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;249KB)</span></a>
+</div>
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/parks-amp-comm-services/online-parks-guide/images/everest-softball-game-may2021.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/parks-amp-comm-services/online-parks-guide/images/everest-softball-game-may2021.jpg?w=375" alt="A softball game at Everest Park">
+         </div>
+         <figcaption>
+            <p class="caption">A softball game at Everest Park</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;242KB)</span></a>
+</div>
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/parks-amp-comm-services/online-parks-guide/images/everest-outfield-grass-800.jpg?w=375" alt="Outfield at Everest Park">
+         </div>
+         <figcaption>
+            <p class="caption">Outfield at Everest Park</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;219KB)</span></a>
+</div>
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-pickleball-courts-resurfaced-2025-square2.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/v/1/parks-amp-comm-services/online-parks-guide/images/everest-pickleball-courts-resurfaced-2025-square2.jpg?w=375" alt="Everest Park pickleball courts 2025">
+         </div>
+         <figcaption>
+            <p class="caption">Pickleball courts at Everest Park</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;401KB)</span></a>
+</div>
+          </div>
+</div>
+          
+</p>
+		<div class="clearfix"></div>
+		<h2 class="sub-title">Location</h2><p>500 8th St S,&nbsp;Kirkland&nbsp;98033 &nbsp;<a href="https://maps.google.com?q=%20500%208th%20St%20S%20Kirkland%2098033" target="_blank">View Map</a>
+      </p>
+		<div id="skip-map-container-top" class="skip-map-container rs_skip">
+    <a href='#map-bottom' class="visuallyhidden focusable skip-map-link" id="map-top">Skip to below map</a>
+</div>
+<div class="gmap rs_skip" data-params='{"zoom" : 14, "autoOpenInfoWindow" : false, "hideControls" : true, "autoBounds" : true, "centerPoint" : "47.6718698,-122.1935845"}'>
+    <div class="gmap-marker hidden">
+        <div class="gmap-latlong">
+          47.6718698,-122.1935845
+        </div>
+        <div class="gmap-address">
+          500 8th St S&nbsp;,
+          Kirkland&nbsp;98033
+        </div>
+        <div class="gmap-info">
+            
+            <p>
+          500 8th St S&nbsp;,
+          Kirkland&nbsp;98033</p>
+        </div>
+		<div class="gmap-title">
+	        Everest Park
+        </div>
+    </div>
+    <div class="map-canvas gmap-container">
+        <div class="gmap-target">
+           <img src="https://maps.google.com/maps/api/staticmap?center=500 8th St S,Kirkland,98033&amp;zoom=14&amp;size=340x202&amp;maptype=road&amp;markers=color:red|47.6718698,-122.1935845&amp;key=AIzaSyAwAUpp9CwhCgb4B2ppUs_m_tES9UPPla8" alt="Google Map" />
+        </div>
+    </div>
+</div>
+<div id="skip-map-container-bottom" class="skip-map-container rs_skip">
+    <a href='#map-top' class="visuallyhidden focusable skip-map-link" id="map-bottom">Skip to above map</a>
+</div>
+		
+		<div class="categories-list-container"><span role="heading" aria-level="2">Tagged as:</span><ul class="categories-list clearfix">
+	<li><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park?dlv_OC CL Public Parks Reserves Listing=(dd_OC Park Categories=Regional%20Parks)">Regional Parks</a></li></ul></div>
+	</div>
+	<div class="col-xs-12 col-m-4">
+		
+		<div class="side-box park-snapshot">
+			<h2 class="side-box-title">
+				Facility Snapshot
+			</h2>
+			<div class="side-box-content">
+				<div class="side-box-section park-features">
+<h3>Features</h3>
+<ul class="park-feature-list"><li>AED</li><li>Baseball/Softball</li><li>Basketball </li><li>Drinking Fountain (Seasonal)</li><li>Pickleball</li><li>Picnic Area/Shelter – Reservable</li><li>Picnic Tables</li><li>Playground</li><li>Parking Lot</li><li>Restoration Area</li><li>Restrooms (Year-round)</li><li>Trail</li><li>Wildlife Viewing</li></ul></div>
+			    
+                
+                    <div class="side-box-section hours-details">
+                        <h3>Hours</h3>
+                        
+                        <p>5 AM to 10 PM</p>
+                    </div>
+                
+
+			</div>
+		</div>
+        <div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Contact Us
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p><span style="font-size: 1em; font-family: inherit;">Report an issue at this park:</span></p>
+<p><span style="font-size: 1em; font-family: inherit;"><a href="https://www.kirklandwa.gov/Government/Departments/Finance-and-Administration/Our-Kirkland" class="styled-button">Our Kirkland</a></span></p>
+<p><strong style="font-family: inherit; font-size: 1em;">Parks and Community Services</strong></p>
+<p><a href="tel:425-587-3300">425-587-3300</a></p>
+<p><a href="mailto:eparks@kirklandwa.gov" title="eparks@kirklandwa.gov">eparks@kirklandwa.gov</a></p>
+
+
+			</div>
+		</div>
+		
+	</div><div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Park Acreage
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p>23.2 acres</p>
+
+
+			</div>
+		</div>
+		
+	</div><div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Park Rules and Guide
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/About-PCS/Kirkland-Park-Rules">Kirkland Park Rules</a></p>
+<p><a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Find-a-Park/Parks-Facilities-and-Trail-Guide" target="_self">Park Guide</a>&nbsp;-&nbsp;<span style="font-size: 1em; font-family: inherit;">Please see the Park Guide for a list of accessible amenities in our parks.</span></p>
+
+
+			</div>
+		</div>
+		
+	</div><div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				What's Happening at this Park?
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p><strong>Green Kirkland Partnership</strong><br />
+<a href="https://www.kirklandwa.gov/Government/Departments/Parks-and-Community-Services/Green-Kirkland-Partnership">Learn about volunteer stewardship opportunities</a> in natural areas at this park.</p>
+<p>&nbsp;</p>
+<p><strong>Volunteer Opportunities</strong><br />
+<a href="https://www.kirklandwa.gov/Government/City-Managers-Office/Volunteer-Opportunities">Learn about volunteer opportunities at this park</a>.</p>
+<p>&nbsp;</p>
+<p><strong>Park Projects</strong><br />
+<a href="https://www.kirklandwa.gov/Government/Departments/Public-Works-Department/Construction-Projects/Everest-Park-Restroom-Replacement">Everest Park 2026 Restroom Replacement</a>.</p>
+
+
+			</div>
+		</div>
+		
+	</div><div class="side-box consultation-snapshot">
+		
+			<h2 class="side-box-title">
+				Connect With Us
+			</h2>
+		
+		
+		<div class="side-box-content">
+			<div class="side-box-section body-content">
+				<p><a href="https://www.facebook.com/kirklandparks" target="blank" re_target="_self"><img alt="facebook logo" src="/files/sharedassets/public/v/2/parks-amp-comm-services/images/facebook_icon.png?w=45&amp;h=45" /></a> <a href="https://www.instagram.com/kirklandparks" target="blank"><img alt="Instagram logo glyph" src="/files/sharedassets/public/v/2/parks-amp-comm-services/images/instagram-logo-black.png" style="width: 42px; height: 42px;" /></a></p>
+
+
+			</div>
+		</div>
+		
+	</div>
+			
+	</div>
+	<div class="col-xs-12 col-m-8">
+        <div class="grid" >
+            
+            
+             
+            
+        </div>
+	</div>
+</div><!--normalTemplateEnd-->
+                            
+                            
+                            
+							            </div>
+						            </div>
+					            </div>
+                        <div class="col-xs-12">
+					            	<div class="share-page-container share-page-link-right share-page-link-small share-page-link-rounded share-page-link-no-labels" data-item-id="237e0823-1872-452c-99a7-be2056963ee5" id="share-page-container clearfix">
+                                        <section aria-labelledby="share-page-info-label">
+                                            <span id="share-page-info-label" class="share-page-info">Share</span><ul class="share-page-links no-translate"><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.kirklandwa.gov%2fGovernment%2fDepartments%2fParks-and-Community-Services%2fFind-a-Park%2fEverest-Park" target="{ShareTarget}" class="share-page-link share-page-link-facebook" data-channel="facebook" data-channel-id="1"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-facebook">Facebook</span></a></li><li><a href="https://twitter.com/share?url=https%3a%2f%2fwww.kirklandwa.gov%2fGovernment%2fDepartments%2fParks-and-Community-Services%2fFind-a-Park%2fEverest-Park" target="_blank" class="share-page-link share-page-link-x" data-channel="x" data-channel-id="2"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-x">X</span></a></li><li><a href="mailto:?Body=https%3a%2f%2fwww.kirklandwa.gov%2fGovernment%2fDepartments%2fParks-and-Community-Services%2fFind-a-Park%2fEverest-Park" target="_self" class="share-page-link share-page-link-email" data-channel="email" data-channel-id="3"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-email">Email</span></a></li><li><a href="#" target="_self" class="share-page-link share-page-link-print" data-channel="print" data-channel-id="5"><i aria-hidden="true"></i><span class="share-page-link-name share-page-link-name-print">Print</span></a></li></ul>
+                                        </section>
+                                    </div></div>
+                            </div>
+                        </div>
+                        <div class="back-to-top-container text-center">
+                            <a href="#body-top" id="back-to-top"><i aria-hidden="true"></i><span class="js-visuallyhidden">Back to top</span></a>
+                        </div>
+                </div>
+            </div><!--groupTemplateEnd-->
+            <footer>
+                
+                    <div class="footer-outer-container footer-first-row">
+                        <div class="footer-container clearfix">
+                            <div class="grid grid-pad">
+                                <div class="col-xs-12 col-s-6 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Contact Us</h3>
+			
+	<p><strong>CITY HALL</strong><br />
+123 5th Ave<br />
+Kirkland, Washington 98033<br />
+<a href="tel:425-587-3000" title="Kirkland Phone Number">425-587-3000</a></p>
+<p><strong>POLICE DEPARTMENT<br /></strong>11750 NE 118th Street<br />
+Kirkland, Washington 98034<br />
+<span style="font-family: inherit; font-size: 1em;"><a href="tel:4255873400">425-587-3400</a></span></p>
+<p><strong>MUNICIPAL COURT<br /></strong>11740 NE 118th Street<br />
+Kirkland, Washington 98034<br />
+<a href="tel:425-587-3160">425-587-3160</a></p>
+<p>TTY Relay: 711</p>
+
+
+	
+	<p><a href="https://www.kirklandwa.gov/Government/Contact-Us" target="_self">More ways to contact us.</a></p>
+<p>Report an issue to the City through <a href="https://www.kirklandwa.gov/Government/Departments/Finance-and-Administration/Our-Kirkland" style="font-family: inherit; font-size: 1em;">Our Kirkland</a></p>
+<div><script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+	var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+	sz.src = '//siteimproveanalytics.com/js/siteanalyze_15203570.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script></div>
+
+
+</div><div class="col-xs-12 col-s-6 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Connect With Us</h3>
+			
+	
+	<ul class="footer-links with-icons social-media-links">  <li class="footer-link-facebook">
+	<a href="https://www.facebook.com/kirklandwa.gov" target="_blank"  >
+<i aria-hidden="true"></i>Facebook
+</a>
+</li>
+          <li class="footer-link-instagram">
+	<a href="https://www.instagram.com/kirklandgov/?hl=en" target="_blank"  >
+<i aria-hidden="true"></i>Instagram
+</a>
+</li>
+          <li class="footer-link-x">
+	<a href="https://x.com/kirklandgov" target="_blank"  >
+<i aria-hidden="true"></i>X
+</a>
+</li>
+          <li class="footer-link-youtube">
+	<a href="http://www.youtube.com/user/KirklandTelevision" target="_blank"  >
+<i aria-hidden="true"></i>YouTube
+</a>
+</li>
+          <li class="footer-link-kirkland-vod">
+	<a href="https://www.kirklandwa.gov/Government/Departments/Information-Technology/Kirkland-Television/On-Demand-Videos" target="_blank"  >
+<i aria-hidden="true"></i>Kirkland Video
+</a>
+</li>
+           </ul>
+	
+</div><div class="col-xs-12 col-s-6 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Hours</h3>
+			
+	<p>Monday &ndash; Friday: 8:00 AM &ndash; 5:00 PM<br />
+City Hall is closed on Washington State holidays.</p>
+
+
+	
+	
+</div><div class="col-xs-12 col-s-12 col-m-4 col-lg-4" >
+	
+	<p>&nbsp;</p>
+
+
+	
+	
+</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="footer-outer-container footer-second-row">
+                    <div class="footer-container clearfix">
+                        <div class="grid grid-pad footer-secondary-links">
+                            <div class="col-xs-12 col-m-7">
+                                
+                                    <div><a href="https://www.kirklandwa.gov/Site-Footer/Website-Disclaimer" target="_self"  >Website Disclaimer</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Site-Privacy-and-Security-Notice" target="_self"  >Privacy & Security</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Translation-Disclaimer" target="_self"  >Translation Disclaimer</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Americans-with-Disabilities-Act-ADA-Notice" target="_self"  >Kirkland ADA Information</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Linking-Policy" target="_self"  >Linking Policy</a>&nbsp;| <a href="https://www.kirklandwa.gov/Site-Footer/Title-VI-Non-Discrimination" target="_self"  >Title VI: Non-Discrimination</a></div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-m-5 powered-by">
+                                <div class="right">
+                                    &copy; 2026 City of Kirkland&nbsp;|&nbsp;<span class="powered-by">Powered by <a href="https://granicus.com/solution/govaccess/opencities/" target="_blank">Granicus</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/files/oc-resources/b9015858-988c-48a4-9473-7c193df083e4/JsTextSnippets.js?ocsvclang=en-US" type="text/javascript"></script><script></script>
+    
+    
+
+<div id="COVID_TEMP-messages" style="display:none;">
+<div class="item">
+	<div class="title">Swim Areas Closed: Houghton Beach Park</div>
+	<div class="description">August 25, 2026: The swimming areas at Houghton Beach Park is closed for at least one week due to elevated bacteria levels.  People and pets should not swim, drink lake water, or engage in other water activities at these parks. The rest of the park is open. For more information visit:</div>
+	<div class="link"><p class="view-page-link"><a href="https://kingcounty.gov/en/dept/dnrp/nature-recreation/parks-recreation/king-county-parks/water-recreation/swimming-beach-bacteria-temperature"  target="_blank">King County Lake Swimming Beach Data Program</a></p></div>
+	<div class="type">Announcement</div>
+	<div class="conditions"></div>	
+</div><div class="item">
+	<div class="title">CKC Section Closure</div>
+	<div class="description">As early as Sept. 8, 2026, King County will close a portion of the CKC trail between NE 52nd Street and 108th Avenue NE to repair a damaged culvert that runs under the County’s Eastside Interceptor Section 14 sewer pipe, build a retaining wall, and stabilize the stream nearby. Repair work will last three months. A detour route will be available. Please stay out of the work area.</div>
+	<div class="link"><p class="view-page-link"><a href="https://kingcounty.gov/en/dept/dnrp/waste-services/wastewater-treatment/capital-projects/esi-14-rehab"  target="_blank">King County Project Page</a></p></div>
+	<div class="type">Temporary Closure</div>
+	<div class="conditions"><a href="/Government/Departments/Public-Works-Department/Cross-Kirkland-Corridor"  target="_self" >equals</a><a href="/Government/Departments/Public-Works-Department/Cross-Kirkland-Corridor"  target="_self" >startswith</a></div>	
+</div>
+</div>
+<script>
+	$('#COVID_TEMP-messages').children('.item').each(function(){
+		var $message = $(this);
+		var isMatch = false;
+		$message.find('.conditions a').each(function(){
+			var $a = $(this);
+			var mode = $a.text().split(' ')[0].toLowerCase();
+			var value = $a.attr('href').replace(/^https?:\/\//g, '');
+			
+			switch(mode)
+			{
+				case 'startswith':
+					if(document.location.pathname.toLowerCase().startsWith(value.toLowerCase()))
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+					
+				case 'contains':
+					if(document.location.pathname.toLowerCase().indexOf(value.toLowerCase()) !== -1)
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+					
+				case 'regex':
+					var re = new RegExp(value);
+					if(new RegExp(value).test(document.location.pathname))
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+					
+				default:
+					if(document.location.pathname.toLowerCase() === value.toLowerCase())
+					{
+						isMatch = true;
+						return false;//stop jquery each
+					}
+					break;
+			}
+		});
+		if(isMatch)
+		{
+			var $main = $('#main-content');
+			if($main.length === 0) return false;
+			var $h1 = $main.find('h1').first();
+			
+			var title = $message.find('.title').text().trim();
+			var type = $message.find('.type').text().trim();
+			var description = $message.find('.description').html();
+			var link = $message.find('.link').html();
+			
+			var $content = $('<section>').addClass('obj-venue');//class is a hack to inherit styling
+			var $sideBox = $('<div>').addClass('side-box message-box message-type-'+type).appendTo($content);
+			
+			if(title !== '')
+			{
+				$('<h2>').addClass('side-box-title').text(title).appendTo($sideBox);
+			}
+			
+			var descriptionBox = ''
+			
+			if(description.trim() !== '')
+			{
+				//If the description contains no html tags, wrap the text in p tags
+				var noBrDesc = description.split('<br>').join('\r\n');
+				if (!/<[^>]+>/.test(noBrDesc)) {
+					description = '<p>' + noBrDesc.replace(/(\r\n|\r|\n){2}((\r\n|\r|\n)+)?/g, '$2</p><p>') + '</p>';
+					description = description.replace(/(\r\n|\r|\n)/g, '<br>');
+					description = description.replace('</p><p></p>', '</p>');					
+				}
+				descriptionBox += description;
+			}
+			
+			var hasLink = false;
+			if(link.trim() !== '')
+			{
+				hasLink = true;
+				descriptionBox += link;
+			}
+			
+			var $descriptionBox = null;
+			if(descriptionBox.trim() !== '')
+			{
+				$descriptionBox = $(descriptionBox);
+				$('<div>').addClass('side-box-content').html(descriptionBox).appendTo($sideBox);
+			}
+			
+			if($h1.length === 1)
+			{
+				$content.insertAfter($h1);
+			} 
+			else
+			{
+				$content.appendTo($main);
+			}
+			
+			if(hasLink)
+			{
+				var color = ($content.find('p').first() || $content.find('.side-box-content').first()).css('color');
+				$content.find('a').css('color', color);
+			}
+			
+			 return false;
+		}
+	});
+</script>
+
+
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K2VHBLSRL8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K2VHBLSRL8');
+</script>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl04_seamless_script_manager_TSM');//]]>
+</script>
+</form>
+</body>
+</html>

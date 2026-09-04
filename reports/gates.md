@@ -28,7 +28,7 @@ COUNTY  —  10/10 publishable
   PASS  /pickleball/us/wa/clark-county/
         923 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  14/14 publishable
+CITY  —  15/15 publishable
   PASS  /pickleball/us/wa/seattle/
         1574 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/madison/
@@ -51,6 +51,8 @@ CITY  —  14/14 publishable
         1905 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/
         1809 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/wa/kirkland/
+        1647 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ne/lincoln/
         1778 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/mesa/
@@ -100,7 +102,7 @@ FILTER  —  20/20 publishable
   PASS  /pickleball/us/ne/lincoln/outdoor/
         770 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  135/135 publishable
+VENUE  —  138/138 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -353,6 +355,12 @@ VENUE  —  135/135 publishable
         728 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/cary/mccrimmon-park/
         831 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wa/kirkland/everest-park/
+        842 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wa/kirkland/feriton-spur-park/
+        717 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wa/kirkland/peter-kirk-park/
+        925 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/ne/lincoln/ballard-park/
         873 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/ne/lincoln/peterson-park/
@@ -398,6 +406,6 @@ VENUE  —  135/135 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 181/181 pages pass all six gates.
+TOTAL: 185/185 pages pass all six gates.
 
 ```
