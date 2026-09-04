@@ -56,6 +56,13 @@ export type HomeView = {
 export type StateCard = {
   key: string
   mark: string
+  /*
+    The state's own outline, from the US Census 20m cartographic boundary
+    file (public domain), built by scripts/build-state-outlines.mjs. Null
+    only if that data file is missing, in which case the card falls back to
+    the postal abbreviation and still renders.
+  */
+  outline: {viewBox: string; d: string} | null
   stateName: string
   rank: string
   venues: string

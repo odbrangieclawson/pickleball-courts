@@ -144,7 +144,25 @@ export default function Home() {
           {v.states.map(s => (
             <li className="state-card" key={s.key}>
               <span className="state-rank">{s.rank}</span>
-              <span className="state-mark" aria-hidden="true">{s.mark}</span>
+              {/*
+                The state's own outline, US Census public-domain geometry.
+                Decorative: the state NAME below is the real content, so
+                this is hidden from assistive technology rather than given
+                a title that would be read out twice.
+              */}
+              {s.outline ? (
+                <svg
+                  className="state-shape"
+                  viewBox={s.outline.viewBox}
+                  aria-hidden="true"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path d={s.outline.d} />
+                </svg>
+              ) : (
+                <span className="state-mark" aria-hidden="true">{s.mark}</span>
+              )}
               <h3>
                 {s.href ? <a href={s.href}>{s.stateName}</a> : s.stateName}
               </h3>

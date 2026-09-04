@@ -1421,7 +1421,31 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
               inset 3px 0 0 var(--accent);
 }
 
-/* The mark. Decorative and aria-hidden; the state name is the real text. */
+/*
+  The state's outline, from US Census public-domain boundary data. This is
+  the "image" on the card. It sits bottom-right, filled at low opacity so
+  it reads as a watermark behind the text rather than competing with it,
+  and it is aria-hidden because the state name beside it is the content.
+
+  Height is fixed and width is auto, so a wide state (Washington) and a
+  tall one (Arizona) both occupy a sensible corner instead of one being
+  letterboxed to match the other.
+*/
+.state-shape {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  height: 62px;
+  width: auto;
+  max-width: 40%;
+  fill: var(--ink);
+  opacity: .06;
+  pointer-events: none;
+}
+.state-card:first-child .state-shape { height: 112px; right: 24px; bottom: 14px; opacity: .07; }
+@media (max-width: 560px) { .state-shape { height: 50px; } }
+
+/* Fallback mark, used only if the outline data file is absent. */
 .state-mark {
   position: absolute;
   right: -6px;
@@ -1493,6 +1517,9 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
 
 @media (prefers-color-scheme: dark) {
   .state-mark { opacity: .085; }
+  /* The outline is a filled shape rather than type, so it needs a touch
+     more presence against dark paper to read at all. */
+  .state-shape { opacity: .1; }
 }
 
 /* Print: this is a reference document, so it should print like one. */
