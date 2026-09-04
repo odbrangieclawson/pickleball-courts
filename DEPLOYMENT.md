@@ -21,7 +21,18 @@ builder finds it.
 
 | Variable | Type | Environment | Notes |
 | --- | --- | --- | --- |
-| `SITE_ORIGIN` | Config | Production | Scheme and host, e.g. `https://example.com` |
+| `SITE_ORIGIN` | Config | Production | Scheme and host, no trailing slash. Currently `https://pickleball-courts-cyan.vercel.app` |
+
+**The live origin is `https://pickleball-courts-cyan.vercel.app`,** verified
+against the deployed site on 2026-09-04: it is what the canonical tags, the
+sitemap and every URL inside the JSON-LD carry, and `example.invalid` appears
+nowhere in the output. It is recorded here because it was previously written
+down nowhere in this repository — it lived only in a dashboard setting, so
+confirming the site was configured at all meant asking a human.
+
+That is the Vercel-generated production domain for this project. If a custom
+domain is attached later, `SITE_ORIGIN` must be changed to it and the site
+rebuilt, because the value is baked into every prerendered page — see below.
 
 `SITE_ORIGIN` is read at **build time** — every page is prerendered, so it is
 baked into canonical tags, the sitemap and every URL in the JSON-LD. Saving it

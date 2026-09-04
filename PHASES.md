@@ -424,19 +424,19 @@ every other verified court is first come, first served.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and eight cities are published. What stands
+Phases 0 through 6 are complete and nine cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered eight times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers, six web pages. No general method has been found and none is likely — the next city is another search. |
-| **O10** — canonical hostname | `decisions.md` §9 | `SITE_ORIGIN` is set in the Vercel project and the placeholder no longer reaches the output. The decision is not formally closed in §9 because the hostname is not recorded in this repository; it lives in a dashboard setting. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered nine times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and seven sets of municipal web pages. No general method has been found and none is likely — the next city is another search, and the last one took five refusals before Madison. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
 Resolved since Phase 0: **§8** (the eight decisions, supplied and locked
-2026-09-03), **O8** (word-band checker and its counting definition) and
-**O12** (CSS and design system, `app/globals.css`).
+2026-09-03), **O8** (word-band checker and its counting definition), **O12**
+(CSS and design system, `app/globals.css`) and **O10** (canonical hostname,
+closed 2026-09-04 and recorded in `DEPLOYMENT.md`).
 
 ## The sequencing rules that bound every phase
 
