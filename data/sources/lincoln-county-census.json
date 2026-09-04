@@ -1,0 +1,49 @@
+{
+  "ballard-park": {
+    "matched": "3901 N 66TH ST, LINCOLN, NE, 68507",
+    "resolver": "census",
+    "lat": 40.851815338882,
+    "lon": -96.630493338553,
+    "county": "Lancaster",
+    "state_fips": "31",
+    "county_fips": "109",
+    "place": "Lincoln city",
+    "place_matches_city": true,
+    "postal_code": "68507",
+    "basis": "Census address geocoder matched \"3901 N 66TH ST, LINCOLN, NE, 68507\".",
+    "county_citation": "Lancaster County, NE (FIPS 31109). Census address geocoder matched \"3901 N 66TH ST, LINCOLN, NE, 68507\"."
+  },
+  "densmore-park": {
+    "matched": "6701 S 14TH ST, LINCOLN, NE, 68512",
+    "resolver": "census",
+    "lat": 40.746868372668,
+    "lon": -96.701651681953,
+    "county": "Lancaster",
+    "state_fips": "31",
+    "county_fips": "109",
+    "place": "Lincoln city",
+    "place_matches_city": true,
+    "postal_code": "68512",
+    "basis": "Census address geocoder matched \"6701 S 14TH ST, LINCOLN, NE, 68512\".",
+    "county_citation": "Lancaster County, NE (FIPS 31109). Census address geocoder matched \"6701 S 14TH ST, LINCOLN, NE, 68512\"."
+  },
+  "eden-park": {
+    "matched": false,
+    "query": "46 Antelope Creek Rd, Lincoln, NE",
+    "resolver": null
+  },
+  "peterson-park": {
+    "matched": "4400 SOUTHWOOD DR, LINCOLN, NE, 68512",
+    "resolver": "census",
+    "lat": 40.769035165658,
+    "lon": -96.689622098549,
+    "county": "Lancaster",
+    "state_fips": "31",
+    "county_fips": "109",
+    "place": "Lincoln city",
+    "place_matches_city": true,
+    "postal_code": "68512",
+    "basis": "Census address geocoder matched \"4400 SOUTHWOOD DR, LINCOLN, NE, 68512\".",
+    "county_citation": "Lancaster County, NE (FIPS 31109). Census address geocoder matched \"4400 SOUTHWOOD DR, LINCOLN, NE, 68512\"."
+  }
+}

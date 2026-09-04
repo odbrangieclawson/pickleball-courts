@@ -1,0 +1,67 @@
+{
+  "county": "Lancaster",
+  "state": "NE",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world — how many courts a park has, whether they are dedicated to pickleball, when the gates open — come from the City of Lincoln's own pages and are cited. Claims about our own coverage are facts about this dataset rather than about Lancaster County, and they are the reason this page is shorter than the county deserves.",
+  "slots": {
+    "coverage": "One city in Lancaster County is published here: Lincoln, with three venues and twenty-two courts verified against the City of Lincoln Parks and Recreation's own pages. Lincoln is the county seat and holds the great majority of its population, so a Lancaster County page is close to a Lincoln page by definition — but the county also contains Waverly, Hickman, Firth, Bennet, Roca, Malcolm, Raymond and a dozen other villages, and none of those has been checked against a named source. Within Lincoln itself the coverage is incomplete in a way worth naming precisely: the City lists eleven parks with pickleball on one page, and only four of them carry a court count. Seven dual-striped parks are named with no number at all. A fourth counted park, Eden, with six courts dedicated to pickleball, could not be published because the address the City prints for it does not resolve. Four indoor sites are listed with a phone number and no count.",
+    "distribution": "The twenty-two verified courts sit in three parks spread across the city rather than clustered: Ballard in the north-east near Havelock with six, Peterson in the south off Southwood Drive with ten, and Densmore in the south on S 14th with six. What distinguishes this county from most others on this site is not where the courts are but what they are. Sixteen of the twenty-two are dedicated to pickleball rather than striped onto tennis — the City sorts its own parks into a \"Dedicated Pickleball Courts\" section and a \"Dual Striped\" one — and that is a higher proportion of dedicated courts than any other city in this directory reaches. Peterson's ten dedicated courts are the single largest set. None of the twenty-two has a published lighting statement, and none has a published price, which in a county at this latitude means the season is long in daylight and the evenings are unverified.",
+    "gaps": "This is a Lincoln page wearing a county heading, and it will stay that way until someone verifies a second Lancaster County municipality — Waverly and Hickman are the obvious candidates and neither has been read. But the more interesting gap is inside Lincoln and it belongs to the City rather than to us. Eight of the eleven parks the City names as having pickleball carry no court count, so a directory that publishes stated counts only will keep showing twenty-two courts in a city that plainly has more. Two of the three we do publish rest on a single City page, because the parks' own pages in Parks A to Z never mention pickleball. And the most frustrating gap is one line of data: Eden Park's six dedicated courts are unpublishable because \"46 Antelope Creek Rd\" is not an address any resolver can find, while the City's own description of the park places it at 46th and Antelope Creek Road. Somebody at the City could close most of this hole by adding numbers to seven park entries and fixing one address field."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Lancaster County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 22 courts across three venues, all in Lincoln, each with a source and a date you can see. The City itself names eleven parks with pickleball and puts a number to only four of them."
+    },
+    {
+      "q": "Why is only Lincoln listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Waverly, Hickman, Firth, Bennet and the rest have not been read."
+    },
+    {
+      "q": "What makes Lincoln unusual?",
+      "a": "Two things. Sixteen of its twenty-two published courts are dedicated to pickleball rather than shared with tennis, the highest proportion of any city on this site. And the City hands scheduling to a named outside organisation and says so in public: \"Pickleball Lincoln, Inc. organizes and schedules pickleball programming\" at seven of its parks, with the public welcome to participate. No other operator in this directory publishes an arrangement like that."
+    },
+    {
+      "q": "What is the largest venue?",
+      "a": "Peterson (Erwin) Park, with ten courts dedicated to pickleball at 4400 Southwood Drive. It is also the only Lincoln venue whose count appears on two separate City pages."
+    },
+    {
+      "q": "Are the courts free, or lit?",
+      "a": "Not confirmed on either count. Lincoln publishes no cost for any outdoor court and no lighting statement for any court. The courts are municipal and very likely free; this site does not publish \"very likely\". All three parks are open 5:00 a.m. to 11:00 p.m. daily, which is a gate hour rather than a promise of light."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "These pages were read on 4 September 2026 and each one is snapshotted into the repository that builds this site, then re-asserted on every build. That includes two absences: our build checks that Ballard's and Densmore's own park pages still fail to mention pickleball, and that Eden Park's address still does not resolve. If any of those changes, the build fails rather than serving a caveat that has expired — and in Eden's case, six more courts publish."
+    }
+  ],
+  "sources": [
+    {
+      "id": "C1",
+      "url": "https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Tennis-and-Pickleball",
+      "publisher": "City of Lincoln Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's Tennis and Pickleball page, which names eleven parks with pickleball and states a court count for four: \"Includes six courts dedicated to pickleball play.\" at Ballard and Eden, \"Includes ten courts dedicated to pickleball play.\" at Peterson, and \"two dedicated pickleball courts; 2 dual striped (can be used as 4 pickleball courts)\" at Densmore. Also the programming statement: \"Pickleball Lincoln, Inc. organizes and schedules pickleball programming at Peterson Park, Ballard Park, Eden Park, Henry Park, Roberts Park, Densmore Park, and Seng Park at University Place.\" Snapshot: data/sources/lincoln/pickleball.html"
+    },
+    {
+      "id": "C2",
+      "url": "https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Eden-Park",
+      "publisher": "City of Lincoln Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Eden Park's own page, the best-corroborated venue in the city and the one refused: \"A neighborhood park located along Antelope creek near 46th and Antelope Creek Road\", a Location field reading \"46 Antelope Creek Rd, Lincoln 68506\", and \"Pickleball\" in its Features list. The prose and the Location field do not agree. Snapshot: data/sources/lincoln/eden-park.html"
+    },
+    {
+      "id": "C3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "distribution"],
+      "evidence": "The three published addresses were matched and placed in the incorporated place \"Lincoln city\", Lancaster County, NE. \"46 Antelope Creek Rd\" returned no match, and OpenStreetMap returned nothing at house-number level for it either, which is why Eden Park is not published. Snapshot: data/sources/lincoln-county-census.json"
+    }
+  ]
+}

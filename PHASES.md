@@ -333,8 +333,9 @@ passes all six gates against the built HTML; the totals are the ones
 | 10 | Austin, TX | 21 | 60 | Austin PARD pickleball page, count + hours + lighting per venue | 2026-09-04 |
 | 11 | Scottsdale, AZ | 4 | 29 | Scottsdale pickleball page + park pages; count, lighting, price, etiquette | 2026-09-04 |
 | 12 | Saint Paul, MN | 6 | 13 | Saint Paul facility pages, assembled from the City's own pickleball map layer | 2026-09-04 |
+| 13 | Lincoln, NE | 3 | 22 | Lincoln Tennis and Pickleball page + Parks A to Z; dedicated counts and park hours | 2026-09-04 |
 
-**171 published pages:** 12 city, 129 venue, 19 filter, 9 county, 2 state.
+**177 published pages:** 13 city, 132 venue, 20 filter, 10 county, 2 state.
 
 **Six of those venues publish on a second address resolver,** added 2026-09-04:
 Bellevue's Highland Park, Madison's Door Creek and Rennebohm, and Scottsdale's
@@ -552,11 +553,52 @@ page as an open gap rather than left as a silence.
   and in the run that generates them, with the correction left on the record
   rather than quietly removed.
 
+
+**Lincoln, NE is city #13, and the most dedicated courts on the site.** The
+City sorts its own parks into "Dedicated Pickleball Courts" and "Dual Striped"
+and counts them in prose — "Includes ten courts dedicated to pickleball play."
+Sixteen of the twenty-two published courts are dedicated rather than striped
+onto tennis, a higher proportion than any other city here, and Peterson
+(Erwin) Park's ten are the largest dedicated set in the directory. All three
+parks publish hours, 5:00 a.m. to 11:00 p.m. daily.
+
+**Its operator keeps two records that disagree, and Saint Paul's rule settled
+it.** The Tennis and Pickleball page counts four venues; the parks' own pages
+in Parks A to Z mention pickleball at only two. The record that states a
+number publishes, and the disagreement goes on the page: Ballard and Densmore
+say on their own venue pages that the count rests on one City page alone. The
+run asserts that ABSENCE, so the day a park page starts naming pickleball the
+build fails rather than serving a caveat that has expired.
+
+**Densmore's six is the City's arithmetic, not ours** — "two dedicated
+pickleball courts; 2 dual striped (can be used as 4 pickleball courts)". Two
+plus four, both figures written by the City. Tyrrell Park's "one dedicated
+tennis court; one dual striped" counts TENNIS courts and yields no pickleball
+number, so Tyrrell does not publish.
+
+**Eden Park refused, and it is the expensive one.** Six dedicated courts, and
+the only Lincoln park whose own page lists Pickleball among its features.
+Neither resolver finds "46 Antelope Creek Rd", and the City's own description
+places the park "near 46th and Antelope Creek Road" — an intersection. Same
+shape as Vancouver's Fisher Basin. Its park page publishes coordinates and
+they are deliberately not used as a substitute: swapping a latitude in for an
+address the day the rule costs six courts would be a rule rewritten to reach a
+wanted answer.
+
+**The nearest miss on lighting yet.** Densmore's page reads "Lights: MUSCO
+(2000). Tournament quality" — under a heading describing the four ballfields
+the City rents out. No Lincoln venue publishes a lighting answer.
+
+**First city behind a bot wall.** www.lincoln.ne.gov sits behind Akamai, which
+answers a bare curl with a 488-byte deny page. `scripts/verify/fetch/lincoln.sh`
+sends the header set a browser sends and gets the real document. The snapshots
+are committed and every assertion reads those rather than the network.
+
 ---
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and twelve cities are published. What stands
+Phases 0 through 6 are complete and thirteen cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
@@ -620,6 +662,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-12-saint-paul`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-13-lincoln`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

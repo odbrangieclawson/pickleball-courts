@@ -1,7 +1,7 @@
 {
   "metros": 100,
-  "venues": 2685,
-  "ready": 8,
+  "venues": 2688,
+  "ready": 9,
   "metro_detail": [
     {
       "metro": "Seattle, WA",
@@ -76,17 +76,17 @@
       "metro": "Lincoln, NE",
       "city": "Lincoln",
       "state": "NE",
-      "venues": 51,
-      "passing_all_four": 0,
+      "venues": 54,
+      "passing_all_four": 3,
       "blocked_by": {
         "I1": 1,
         "I2": 51,
         "I3": 2,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 55,
       "top_reasons": [
         "I2: source_url points to CourtSource, a competitor directory, which is not a source (51)",

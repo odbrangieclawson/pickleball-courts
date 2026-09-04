@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+<head>
+	<!-- Published by OpenCities, 1.37.6.1 -->
+
+    
+        
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="theme-color" content="#003E62"/>
+    <title>Peterson Park – City of Lincoln, NE</title>
+	<meta name="generator" content="OpenCities - https://granicus.com/product/opencities" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using mobile-web-app-capable for now to enable full-screen experience on supported platforms -->
+    <!-- Note: This tag works mainly on Android Chrome. It does NOT enable full-screen mode on iOS Safari. -->
+    <!-- For iOS, the correct tag is: <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <!-- TODO: Monitor for updated meta tag standards from Apple or other browser vendors -->
+    <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="description" content="A community park located near South 27th street and Highway 2 includes pickleball courts, open shelter, and playground." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park" />
+    <meta property="og:title" content="Peterson Park" />
+    <meta property="og:description" content="A community park located near South 27th street and Highway 2 includes pickleball courts, open shelter, and playground." />
+    <meta property="og:image" content="https://www.lincoln.ne.gov/files/sharedassets/public/v/2/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peterson-signcourt.jpg?w=1200" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Peterson Park" />
+    <meta property="twitter:description" content="A community park located near South 27th street and Highway 2 includes pickleball courts, open shelter, and playground." />
+    <meta property="twitter:image" content="https://www.lincoln.ne.gov/files/sharedassets/public/v/2/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peterson-signcourt.jpg?w=1080" />
+    <meta property="fb:app_id" content="700470017205471" />
+    <link rel="canonical" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park" />
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/files/ocfavicon/Public/apple-touch-icon.png?V=638473077543944745">
+<link rel="icon" type="image/png" sizes="32x32" href="/files/ocfavicon/Public/favicon-32x32.png?V=638473077543944745">
+<link rel="icon" type="image/png" sizes="16x16" href="/files/ocfavicon/Public/favicon-16x16.png?V=638473077543944745">
+<link rel="manifest" href="/files/ocfavicon/Public/site.webmanifest?V=638473077543944745">
+<link rel="shortcut icon" href="/files/ocfavicon/Public/favicon.ico?V=638473077543944745">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-config" content="/files/ocfavicon/Public/browserconfig.xml?V=638473077543944745">
+    <script>
+        (function () {
+            if (window.__UNLOAD_LAZY_PATCH__) return;
+            window.__UNLOAD_LAZY_PATCH__ = true;
+
+            var supportsPageHide = ("onpagehide" in window);
+            var mappedType = supportsPageHide ? "pagehide" : "beforeunload";
+            var nativeAdd = window.addEventListener;
+            var nativeRemove = window.removeEventListener;
+            var unloadMap = null;
+            var patched = false;
+
+            function ensurePatched() {
+                if (patched) return;
+                unloadMap = new WeakMap();
+
+                window.addEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = function (evt) {
+                            if (supportsPageHide && evt.persisted) return;
+                            listener.call(this, evt);
+                        };
+                        unloadMap.set(listener, wrapped);
+                        return nativeAdd.call(this, mappedType, wrapped, options);
+                    }
+                    return nativeAdd.call(this, type, listener, options);
+                };
+
+                window.removeEventListener = function (type, listener, options) {
+                    if (type === "unload") {
+                        var wrapped = unloadMap.get(listener);
+                        if (wrapped) {
+                            nativeRemove.call(this, mappedType, wrapped, options);
+                            unloadMap.delete(listener);
+                        }
+                        return;
+                    }
+                    return nativeRemove.call(this, type, listener, options);
+                };
+
+                var orig = null;
+                Object.defineProperty(window, "onunload", {
+                    configurable: true, enumerable: true,
+                    get: function () { return orig; },
+                    set: function (h) {
+                        orig = h;
+                        if (typeof h === "function") window.addEventListener("unload", h);
+                    }
+                });
+                patched = true;
+            }
+
+            window.addEventListener = function (type, listener, options) {
+                if (type === "unload") {
+                    ensurePatched();
+                    return window.addEventListener(type, listener, options);
+                }
+                return nativeAdd.call(this, type, listener, options);
+            };
+
+            window.removeEventListener = function (type, listener, options) {
+                if (type === "unload" && !patched) {
+                    return;
+                }
+                return nativeRemove.call(this, type, listener, options);
+            };
+
+            function patchTelerik() {
+                ensurePatched();
+                var ns = window.RadAjaxNamespace;
+                if (!ns || !ns.EventManager || !ns.EventManager.Add || ns.EventManager.__UnloadPatched) return;
+                var origAdd = ns.EventManager.Add;
+                ns.EventManager.Add = function (el, evtName, handler, clientId) {
+                    if (el === window && evtName === "unload") {
+                        return window.addEventListener("unload", handler);
+                    }
+                    return origAdd.call(this, el, evtName, handler, clientId);
+                };
+                ns.EventManager.__UnloadPatched = true;
+            }
+
+            if (window.RadAjaxNamespace)
+                patchTelerik();
+            else (window.requestIdleCallback || function (cb)
+            {
+                setTimeout(cb, 120);
+            })(patchTelerik);
+        })();
+    </script>
+    <!-- Preconnecting to Google Fonts servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Defer Roboto font loading to avoid render-blocking -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const robotoLink = document.createElement('link');
+            robotoLink.rel = 'stylesheet';
+            robotoLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap';
+            document.head.appendChild(robotoLink);
+        });
+    </script>
+
+    <style>
+        .gm-style, .gm-style * {
+            font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Arial, sans-serif !important;
+        }
+    </style>
+
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, "js");
+    </script>
+    
+    
+        
+            <script type="text/javascript">
+                window.__oc_flags_ImprovedBreakpointEventHandling = true;
+            </script>
+            
+        
+    
+    
+    
+        <script type="text/javascript">
+            var __metaQueryBreakpoints = {
+                'sc-size-4': '(max-width: 480px)',
+                'sc-size-3': '(min-width: 480px) and (max-width: 768px)',
+                'sc-size-2': '(min-width: 768px) and (max-width: 992px)',
+                'sc-size-1': '(min-width: 992px)'
+            }
+
+            var __ocSizePoints = [
+                { min: 0, name: 'sc-size-4' },
+                { min: 480, name: 'sc-size-3' },
+                { min: 768, name: 'sc-size-2' },
+                { min: 992, name: 'sc-size-1' }
+            ];
+
+        </script>
+    
+
+    <!-- Framework Section -->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/files/templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/jquery-1.12.4.min.js?seamlessts=639233004153779798" ><\/script>')</script>
+
+    <!--Google Maps API Loader – Improved Version to avoid Warning
+    This script loads the Google Maps JavaScript API using a dynamic and async method.
+    It replaces the old static <script> tag to avoid performance warnings from Google.
+
+    Dynamically creates the <script> tag with loading = async for better performance
+    Builds the API URL with required libraries(places, geometry, marker, geocoding)
+    Uses a Promise and callback(google.maps.__ib__) to confirm when the script is ready
+
+    It Avoids Google’s warning about direct script loading
+    Improves page load speed by loading the API asynchronously-->
+
+    
+        <script>
+            (function (root) {
+                root.OpenCities = root.OpenCities || {};
+                if (!root.OpenCities.GoogleMapsLoader) {
+                    root.OpenCities.GoogleMapsLoader = {
+                        _cbs: [],
+                        _ready: false,
+                        onReady: function (cb) {
+                            if (this._ready) { try { cb(); } catch (e) { console.error(e); } }
+                            else if (typeof cb === 'function') this._cbs.push(cb);
+                        },
+                        _fire: function () {
+                            if (this._ready) return;
+                            this._ready = true;
+                            var q = this._cbs.splice(0);
+                            for (var i = 0; i < q.length; i++) {
+                                try { q[i](); } catch (e) { console.error(e); }
+                            }
+                        }
+                    };
+                }
+            })(window);
+
+            (g => {
+                var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__",
+                    m = document, b = window;
+                b = b[c] || (b[c] = {});
+                var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+                    u = () => h || (h = new Promise(async (resolve, reject) => {
+                        a = m.createElement("script");
+                        e.set("libraries", [...r] + "");
+                        for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+                        e.set("callback", c + ".maps." + q);
+                        a.src = "https://maps." + c + "apis.com/maps/api/js?" + e.toString();
+                        a.loading = "async";
+                        a.async = true;
+                        a.defer = true;
+                        d[q] = resolve;
+                        a.onerror = () => reject(Error(p + " could not load."));
+                        a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                        m.head.append(a);
+                    }));
+                if (d[l]) {
+                    console.warn(p + " only loads once. Ignoring duplicate load.");
+                } else {
+                    d[l] = (f, ...n) => (r.add(f), u().then(() => d[l](f, ...n)));
+                }
+            })({
+                key: "AIzaSyCM0FVcuOTQ68EqhoTGrP2bdIrXahzsWjs",
+                v: "3.65"
+            });
+
+            (async () => {
+                try {
+                    if (!google?.maps?.importLibrary) return;
+
+                    if (!window.OpenCities.__mapsLibsPromise) {
+                        window.OpenCities.__mapsLibsPromise = Promise.all([
+                            google.maps.importLibrary('maps'),
+                            google.maps.importLibrary('places'),
+                            google.maps.importLibrary('geocoding'),
+                            google.maps.importLibrary('marker'),
+                            google.maps.importLibrary('geometry')
+                        ]);
+                    }
+                    await window.OpenCities.__mapsLibsPromise;
+
+                    if (window.OpenCities?.GoogleMapsLoader) {
+                        window.OpenCities.GoogleMapsLoader._fire();
+                    }
+                } catch (err) {
+                    console.error('Google Maps failed to initialise', err);
+                }
+            })();
+        </script>
+    
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/modernizr.custom.710f3bf.js?seamlessts=639233004153779798" defer></script>
+    
+    <!--// End Framework Section -->
+    <!-- OpenCities Section -->
+    <script>
+        var OpenCities = OpenCities || {};
+        OpenCities.Paths = {
+            SiteTemplate: '/files/templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/',
+            ThemePath: '/files/templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/'
+        };
+    </script>
+    <script src='/ocapi/3ca94d6c-0e39-4a56-939b-d1f6c715c002/en-US/websitesettings.js'></script>
+    <script src="/files/templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/oc_head.js?applied=20260121032136"></script>
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/oc_grid.css~oc_style.css~oc_wizard_style.css~oc_main.css~oc_forms.css~oc_wizard.css~oc_wizard_menu.css~oc_main_s1.css~oc_wizard_s1.css~oc_wizard_menu_s1.css~oc_grid_s1.css~OcScriptCombine_Minify0?uniqueid=20260121032136" rel="stylesheet" type="text/css">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/client_style.css~client.css~client_menu.css~client_s1.css~client_menu_s1.css~client_forms.css~OcScriptCombine_Minify0?uniqueid=20260121032136" rel="stylesheet" type="text/css">
+    <style type="text/css">.background-container
+{
+    background-image:url('/files/sharedassets/public/v/1/parks-amp-rec/background-images/unionplaza-sept2021-web.jpg?w=480');
+    background-color:#FFFFFF;
+}
+
+@media (min-width: 480px)
+{
+    .background-container
+    {
+      background-image:url('/files/sharedassets/public/v/1/parks-amp-rec/background-images/unionplaza-sept2021-web.jpg?w=768');
+    }
+}
+@media (min-width: 768px)
+{
+    .background-container
+    {
+      background-image:url('/files/sharedassets/public/v/1/parks-amp-rec/background-images/unionplaza-sept2021-web.jpg?w=992');
+    }
+}
+@media (min-width: 992px)
+{
+    .background-container
+    {
+      background-image:url('/files/sharedassets/public/v/1/parks-amp-rec/background-images/unionplaza-sept2021-web.jpg');
+    }
+}
+@media (min-width: 1280px)
+{
+    .background-container
+    {
+      background-image:url('/files/sharedassets/public/v/1/parks-amp-rec/background-images/unionplaza-sept2021-web.jpg');
+    }
+}
+@media (min-width: 1920px)
+{
+    .background-container
+    {
+      background-image:url('/files/sharedassets/public/v/1/parks-amp-rec/background-images/unionplaza-sept2021-web.jpg');
+    }
+}
+        </style><script>
+(function (BackgroundSettings, $, undefined) {
+    BackgroundSettings.initialise = function () {
+        this.Application = {"CSSSelector":".background-container","EnableFade":true};
+    };
+} (OpenCities.BackgroundSettings = OpenCities.BackgroundSettings || {}, jQuery));
+OpenCities.BackgroundSettings.initialise();
+</script>
+    
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<link href="/files/oc-templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/oc_print.css~client_print.css~OcScriptCombine_Minify0?uniqueid=20260121032136" rel="stylesheet" type="text/css" media="print">
+    <!-- Script Combine. To enter debug mode for this browser session, enter OcScriptCombineDebug=true as a querystring -->
+<script src="/files/oc-templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/612/external_plugins.js~oc_form_helper.js~oc_main.js~plugins.js~oc_main_init.js~OcScriptCombine_Minify0?uniqueid=20260121032136" defer="true"></script>
+    <link href="/files/sharedassets/public/v/1/styles-and-scripts/style-override.css" rel="stylesheet" type="text/css">
+
+<script async src="https://docaccess.com/docbox.js"></script>
+    
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="DYTCK-JM9C8-ED4EP-C3GGK-Z575H",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"DYTCK-JM9C8-ED4EP-C3GGK-Z575H";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eaauiuqby7cqajqacqlqabaaabvju62n-f-23ca798d6-clienttons-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"41","ak.cp":"1700624","ak.ai":parseInt("1075935",10),"ak.ol":"0","ak.cr":18,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"5a7c787f","ak.r":52240,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.cport":41973,"ak.gh":"122.2.208.215","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1788509005","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==nKPUhng5VXi2WRzQKbw3mPApCbmBzhtV4C9k66JrzmYx78krOEEEaYk5rxqz78Q9qnEzfTYaGxudDN8dXs3n53M/xxaRHzG45vZJn5jz4ogonYu2UTYnqKH7S59q1QCakrgM06RKgnRLDasVAgL0HtwgeFcOvkxKt/3ZC8m2p2mIOiXd8XRHGgVo5xnMZoPeJGp6xTZ/X7MtDMKXSMXSDebgK0Tb8ua6VdRKZSqSQvFaoL0B3b5kIAnhDDrrHNg3zT4zLUpnTkkfw/fCTspPw80v1ZckyEDFxfwlDkvFeMzG9yLKG8p2U6sabI/4cnE/83eYLrM39vrFDAQdwc5I7vVQe2ZLCff79bCcJvM9qgwrcDBrpCg4KOMEI7Bbydy7vVx4WAIttFYAnnWKlP3Z5bNjrIsw2DwNS2rarhdNkeQ=","ak.pv":"333","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body class="body layout-modern  site-search-always-visble header-full-width content-type-oc-park content-template-oc-default group-template-oc-full-width-with-default-header page-name-peterson-park page-sequence-84 page-depth-6 page-section-3 website-type-primary device-desktop " id="body-top">
+    <div id="skip-to-content-container">
+        <a href="#main-content" class="visuallyhidden focusable" id="skip-to-content-link">Skip to main content</a>
+    </div>
+    <script>
+        // OCNOW-11988 (Cursor): Proactively focus skip link when returning from browser chrome.
+        // Must run inline (not deferred oc_main.js) so focus is intercepted before NVDA speaks footer.
+        (function () {
+            var awaitingReentry = false;
+            var inertSupported = 'inert' in HTMLElement.prototype;
+
+            function isExplicitlyOutsideDocument(node) {
+                return node != null && !document.documentElement.contains(node);
+            }
+
+            function getSkipContainer() {
+                return document.getElementById('skip-to-content-container');
+            }
+
+            function getSkipLink() {
+                return document.getElementById('skip-to-content-link');
+            }
+
+            function applyGuard() {
+                awaitingReentry = true;
+                if (!inertSupported) {
+                    return;
+                }
+                var skipContainer = getSkipContainer();
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    if (children[i] !== skipContainer) {
+                        children[i].setAttribute('inert', '');
+                    }
+                }
+            }
+
+            function clearGuard() {
+                awaitingReentry = false;
+                if (!inertSupported) {
+                    return;
+                }
+                var children = document.body.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].removeAttribute('inert');
+                }
+            }
+
+            function isSkipLinkElement(target) {
+                if (!target) {
+                    return false;
+                }
+                var skipContainer = getSkipContainer();
+                return target.id === 'skip-to-content-link' ||
+                    (skipContainer && skipContainer.contains(target));
+            }
+
+            function focusSkipLink() {
+                var skipLink = getSkipLink();
+                if (!skipLink) {
+                    return;
+                }
+                if (window.scrollY > 0) {
+                    window.scrollTo(0, 0);
+                }
+                skipLink.focus({ preventScroll: true });
+            }
+
+            function scheduleGuardIfDocumentLostFocus() {
+                window.setTimeout(function () {
+                    if (!document.hasFocus()) {
+                        applyGuard();
+                    }
+                }, 0);
+            }
+
+            document.addEventListener('focusout', function (e) {
+                if (isExplicitlyOutsideDocument(e.relatedTarget)) {
+                    applyGuard();
+                }
+            }, true);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Tab') {
+                    scheduleGuardIfDocumentLostFocus();
+                } else if (e.key === 'F6' || (e.key === 'l' && e.ctrlKey)) {
+                    scheduleGuardIfDocumentLostFocus();
+                }
+            }, true);
+
+            window.addEventListener('focus', function () {
+                if (!awaitingReentry) {
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+            }, true);
+
+            document.addEventListener('focusin', function (e) {
+                var reentryFromChrome = awaitingReentry || isExplicitlyOutsideDocument(e.relatedTarget);
+                if (!reentryFromChrome) {
+                    return;
+                }
+                if (isSkipLinkElement(e.target)) {
+                    clearGuard();
+                    return;
+                }
+                applyGuard();
+                focusSkipLink();
+                clearGuard();
+            }, true);
+        })();
+    </script>
+    <form name="mainForm" method="post" action="/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park" id="mainForm">
+<div>
+<input type="hidden" name="ctl04_seamless_script_manager_TSM" id="ctl04_seamless_script_manager_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__SEAMLESSVIEWSTATE" id="__SEAMLESSVIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mainForm'];
+if (!theForm) {
+    theForm = document.mainForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZEwxevNHYVPiVa1Imd_CfwV7Ab8FE1aS0qMo2VVt5LKJo2QwSrlAqlF7-BPzzVxibA2&amp;t=639190653332169432" type="text/javascript"></script>
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl04_seamless_script_manager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-GB%3add3ac3d5-1e29-4112-8fed-529caffa8f24%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Dgt4HF_ft_aJ1oNhpkWrMiNDmBLKt_DsvWnSAz2w6tEELqoI6U0la4w2SXOqY6aKSQopJdYQ7QqurDo6luOWtmOtc0ilepv84Pn5KcIhMMrgeTsEf5EuV8_Sa3cCDWfG--Hnf94oO4VdVbckSgJaVhayxbZ7XIfk_l5vwX8rf1j3PHHLVdsirYnSQi7H-FBaAoI8vrsBRaLWZaSMhQbjtYYKqDWglhIGGk6W571YqSk-uulGq2FPvDWIH4jcRJViiV9xArPU8giGtZPgZuzgazGDA9l8J7QQlNhfdKhxD-RT-xq7lTMNzZtN4P2818X2kcTOPsVXuC5sJXLwZ_95djU3-fBGudmoTPxL2612tOyiZZah_zDS4uE2zWSOvuEiX7jWqffsB-AvNOYbMeUCVMkDWwxm4SnM9P_FzJ7I9RNhaF2SxAANL2e2AV_KOoQt0" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl04_seamless_script_manager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bOpenCities.CustomControls%3aen-GB%3a8875e443-f2ef-457b-94fb-857d92f72782%3a8e1d32bf" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl04$seamless_script_manager', 'mainForm', [], [], [], 90, '');
+//]]>
+</script>
+
+<script type="text/javascript">
+    try{
+        function SeamlessEndRequestHandler(sender, args) {
+            try {
+                var dataItems = args.get_dataItems();
+                if(dataItems.ctl04_seamless_script_manager)
+                    document.getElementById('__SEAMLESSVIEWSTATE').value = dataItems.ctl04_seamless_script_manager;
+            }
+            catch (e) { }
+        }
+
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(SeamlessEndRequestHandler);
+    }
+    catch (e) { }
+</script>
+
+    <div class="unsupported-browser-warning js-element"></div>
+    
+    <div hidden>
+        <span id="new-window-0">opens in new tab or window </span>
+    </div>
+    <div class="overlay-container"></div>
+    
+    <div class="background-container">
+        <div class="page-container">
+            <!-- OC Layout Element GROUP TEMPLATE -->
+            <!--groupTemplateStart--><header><div class="print-header-outer-container print-element">
+<img src="/files/templates/00000000-0000-0000-0000-000000000000/d2117b67-e6ec-4733-98cb-24a85386799b/v/611/COL-website-logo-print.svg" alt="City of Lincoln - Logo" />
+</div>
+            <div class="toolbar-outer-container">
+  <div class="toolbar-inner-container clearfix">
+    <div class="toolbar-item toolbar-quicklinks toolbar-display-dropdown">
+	<button type="button" aria-controls="toolbar-quicklinks-drop-down" aria-expanded="false" class="toolbar-button toolbar-button-quicklinks js-element"><span>Quick Links</span><i aria-hidden="true"></i></button>	
+	<div id="toolbar-quicklinks-drop-down" class="toolbar-drop-down toolbar-quicklinks-drop-down clearfix">
+		<ul>
+		  <li><a href="https://www.lincoln.ne.gov/Payments-Services/UPLNK" class="oc-icon-b oc-i-uplnk-icon-col link-type-internal"><span>UPLNK</span></a></li><li><a href="https://www.youtube.com/lnktvcity" class="oc-icon-b oc-i-youtube-icon-col link-type-external" target="_blank"><span>LNKTV City</span></a></li><li><a href="https://www.facebook.com/lincolnnebraska/" class="oc-icon-b oc-i-facebook-icon-col link-type-external" target="_blank"><span>Facebook</span></a></li><li><a href="https://twitter.com/cityoflincoln" class="oc-icon-b oc-i-twitter-icon-col link-type-external"><span>X</span></a></li><li><a href="https://www.instagram.com/city_of_lincoln/" class="oc-icon-b oc-i-instagram-icon-col link-type-external" target="_blank"><span>Instagram</span></a></li>
+		</ul>
+	</div>
+</div><div class="toolbar-item toolbar-language notranslate toolbar-display-dropdown"><div class="no-js-element">
+		  <ul>
+		    <li id="toolbar-language-option-en-us-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-sq-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=sq" class="lang-item lang-sq" data-translate-to="sq" lang="en">Albanian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ar-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ar" class="lang-item lang-ar" data-translate-to="ar" lang="en-US">Arabic<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-zh-cn-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en-US">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-fr-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=fr" class="lang-item lang-fr" data-translate-to="fr" lang="en">French<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-de-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=de" class="lang-item lang-de" data-translate-to="de" lang="en">German<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ku-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ku" class="lang-item lang-ku" data-translate-to="ku" lang="en">Kurdish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ps-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ps" class="lang-item lang-ps" data-translate-to="ps" lang="en">Pashto<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ru-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-es-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en-US">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-uk-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=uk" class="lang-item lang-uk" data-translate-to="uk" lang="en-US">Ukrainian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-ur-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ur" class="lang-item lang-ur" data-translate-to="ur" lang="en">Urdu<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li id="toolbar-language-option-vi-noscript"><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en-US">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+          </ul>
+		</div>
+	<button type="button" role="combobox" aria-controls="toolbar-language-drop-down" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="none" aria-labelledby="toolbar-language-label" class="toolbar-button toolbar-button-language js-element">  
+        <span class="toolbar-language-globe-icon" aria-hidden="true"></span>
+        <span id="toolbar-language-label" class="current-language">
+            Select a language to translate to
+		</span>
+		<i aria-hidden="true"></i>
+	</button>
+	<div id="toolbar-language-drop-down" role="listbox" aria-label="Available languages" class="toolbar-drop-down toolbar-language-drop-down js-element clearfix">
+		<ul role="group">
+		    <li role="presentation"><a id="toolbar-language-option-en-us" role="option" aria-selected="true" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=en-US" class="lang-item lang-en-us" data-translate-to="en-us" lang="en-US">English<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-sq" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=sq" class="lang-item lang-sq" data-translate-to="sq" lang="en">Albanian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ar" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ar" class="lang-item lang-ar" data-translate-to="ar" lang="en-US">Arabic<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-zh-cn" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=zh-CN" class="lang-item lang-zh-cn" data-translate-to="zh-cn" lang="en-US">Chinese (Simplified)<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-fr" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=fr" class="lang-item lang-fr" data-translate-to="fr" lang="en">French<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-de" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=de" class="lang-item lang-de" data-translate-to="de" lang="en">German<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ku" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ku" class="lang-item lang-ku" data-translate-to="ku" lang="en">Kurdish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ps" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ps" class="lang-item lang-ps" data-translate-to="ps" lang="en">Pashto<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ru" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ru" class="lang-item lang-ru" data-translate-to="ru" lang="en">Russian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-es" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=es" class="lang-item lang-es" data-translate-to="es" lang="en-US">Spanish<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-uk" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=uk" class="lang-item lang-uk" data-translate-to="uk" lang="en-US">Ukrainian<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-ur" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=ur" class="lang-item lang-ur" data-translate-to="ur" lang="en">Urdu<span class="visuallyhidden"> Select this as your preferred language</span></a></li><li role="presentation"><a id="toolbar-language-option-vi" role="option" aria-selected="false" href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park?oc_lang=vi" class="lang-item lang-vi" data-translate-to="vi" lang="en-US">Vietnamese<span class="visuallyhidden"> Select this as your preferred language</span></a></li>
+        </ul>
+	</div></div>
+  </div>
+</div>
+            <div class="header-outer-container">
+    <div class="header-container header-layout-4  clearfix">
+			<div class="header-site-logo">
+				<a href="https://www.lincoln.ne.gov/Home" lang="en-US" aria-label="City of Lincoln - Home - Logo">
+				</a>
+			</div>
+      
+		    <div class="mobile-search-btn js-element">
+		        <button><i aria-hidden="true"></i><span class="mobile-search-btn-text"><span class="visuallyhidden">Open </span>Search</span></button>
+		    </div>
+		    <div class="header-website-settings">
+                <button id="btn-mob-nav" type="button" aria-expanded="false" aria-controls="nav">
+                    <i aria-hidden="true"></i><span class="side-menu-btn-text">Menu</span>
+                </button>
+        	</div>
+          <div class="navigation-outer-container">
+	<div id="nav" role="navigation" class="navigation-container  navigation-container-option-8" data-menu-type="horizontal" aria-label="primary">
+        <div class="grid">
+            <div class="col-xs-12">              
+                <ul class="sf-menu" id="sc-main-menu"><li class="nav-section-quarters-1 nav-active-path  first-item nav-item-seq-1">
+<a href="https://www.lincoln.ne.gov/City" class="nav-level-1 nav-has-children"  target="">
+	<i class="item-icon" aria-hidden="true"></i><span class="item-text">City Information</span>
+</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-1">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-1">
+
+          
+            <li class=" "><a  href="https://www.lincoln.ne.gov/City/City-Council" class="nav-has-children"  target="">City Council</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-1-nav-item-seq-1"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-1-nav-item-seq-1">
+          
+            <li  class=" "><a href="https://www.lincoln.ne.gov/City/City-Council/Council-Members"  target="">Council Members</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/City-Council/Minutes-Agendas"  target="">Minutes & Agendas</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/City-Council/Past-Minutes-Agendas"  target="_self">Past Minutes & Agendas</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/City-Council/Common-Minutes-Agendas"  target="_self">Common Minutes & Agendas</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/City-Council/Directors-Minutes-Agendas"  target="">Directors Minutes & Agendas</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/City-Council/FAQ"  target="">Frequently Asked Questions</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/City-Council/Comment"  target="">Submit a Comment</a></li></ul></li><li class=" "><a  href="https://www.lincoln.ne.gov/City/Mayor" class="nav-has-children"  target="">Mayor's Office</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-1-nav-item-seq-2"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-1-nav-item-seq-2">
+          
+            <li  class=" "><a href="https://www.lincoln.ne.gov/City/Mayor/Mayoral-Event-and-Proclamation-Requests"  target="">Mayoral Event and Proclamation Requests</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Mayor/City-Communications"  target="">City Communications</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Mayor/American-Rescue-Plan"  target="">American Rescue Plan</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Mayor/State-of-the-City-2025"  target="">State of the City 2025</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Mayor/Lincoln-Wrapped-2025"  target="">Lincoln Wrapped 2025</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Mayor/LINCOLN-LOGS"  target="">LINCOLN LOGS</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Mayor/America-250"  target="">America 250</a></li></ul></li><li class="nav-active-path "><a  href="https://www.lincoln.ne.gov/City/Departments" class="nav-has-children"  target="">Departments</a><button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow-child" aria-controls="sc-menu-third-level-nav-item-seq-1-nav-item-seq-3"><i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-third-level-nav-item-seq-1-nav-item-seq-3">
+          
+            <li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Aging-Partners"  target="">Aging Partners</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/City-Attorneys-Office"  target="">City Attorney's Office</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Fire"  target="">Lincoln Fire & Rescue</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Finance"  target="">Finance</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Health-Department"  target="">Health Department</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/HR"  target="">Human Resources</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Information-Services"  target="">Information Services</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Libraries"  target="_self">Lincoln City Libraries</a></li><li  class="nav-active-path "><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation"  target="">Parks and Recreation</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Police"  target="">Police</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/PDS"  target="">Planning and Development Services</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/LTU"  target="">Transportation and Utilities</a></li><li  class=" "><a href="https://www.lincoln.ne.gov/City/Departments/Urban-Development"  target="">Urban Development</a></li></ul></li><li class=" "><a  href="https://www.lincoln.ne.gov/City/News" class=""  target="_self">News</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/City/Boards-Commissions" class=""  target="">Boards & Commissions</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/City/Contact-Us" class=""  target="">Contact Us</a></li></ul></li>
+          
+            <li class="nav-section-quarters-1   nav-item-seq-2">
+<a href="https://www.lincoln.ne.gov/Payments-Services" class="nav-level-1 nav-has-children"  target="">Payments & Services</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-2">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-2">
+
+          
+            <li class=" "><a  href="https://www.lincoln.ne.gov/Payments-Services/Payments" class=""  target="">Online Payments</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Payments-Services/GIS-and-Maps" class=""  target="_self">GIS and Maps</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Payments-Services/Open-Data" class=""  target="_self">Open Data</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Payments-Services/Permits" class=""  target="_self">Permits</a></li></ul></li>
+          
+            <li class="nav-section-quarters-2   nav-item-seq-3">
+<a href="https://www.lincoln.ne.gov/Transit-Parking" class="nav-level-1 nav-has-children"  target="">Transit & Parking</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-3">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-3">
+
+          
+            <li class=" "><a  href="https://www.lincoln.ne.gov/Transit-Parking/Event-Parking" class=""  target="_self">Event Parking</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Transit-Parking/Parking-Cards" class=""  target="_self">Parking Cards</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Transit-Parking/Parking-Citations" class=""  target="_self">Parking Citations</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Transit-Parking/Park-and-Go" class=""  target="_self">Park & Go</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Transit-Parking/StarTran" class=""  target="_self">StarTran Bus Service</a></li></ul></li>
+          
+            <li class="nav-section-quarters-2   nav-item-seq-4">
+<a href="https://www.lincoln.ne.gov/Community-Activities" class="nav-level-1 nav-has-children"  target="">Community & Activities</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-4">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-4">
+
+          
+            <li class=" "><a  href="https://www.lincoln.ne.gov/Community-Activities/Venues" class=""  target="">Venues</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Community-Activities/Events-directory" class=""  target="">Events listing</a></li><li class=" "><a  href="https://www.lincoln.ne.gov/Community-Activities/My-Neighborhood" class=""  target="">My Neighborhood</a></li></ul></li>
+          
+            <li class="nav-section-quarters-3   nav-item-seq-5">
+<a href="https://www.lincoln.ne.gov/Business-Development" class="nav-level-1 nav-has-children"  target="">Business & Development</a>
+<button aria-label="Expand" aria-haspopup="true" class="mobnav-subarrow" aria-controls="sc-menu-second-level-nav-item-seq-5">
+              <i aria-hidden="true"></i>
+              </button>
+<ul id="sc-menu-second-level-nav-item-seq-5">
+
+          
+            <li class=" "><a  href="https://www.lincoln.ne.gov/Business-Development/PDS-redirect" class=""  target="_self">Planning and Development Services</a></li></ul></li>
+          
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+			
+			<div class="header-search-control-container" id="header-search">
+				<div class="search-inner-container">
+					<div class="sc-search-panel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl08_btnSearch&#39;)">
+	<label for="ctl08_txtSearch" id="ctl08_lblSearch" class="sc-search-label">Search</label><input name="ctl08$txtSearch" type="text" id="ctl08_txtSearch" class="sc-search-text" placeholder="Search.  Find.  Transact." /><input type="submit" name="ctl08$btnSearch" value="Search" id="ctl08_btnSearch" class="sc-search-button" />
+</div>
+					<div role="status" id="predictiveResults"></div>
+				</div>
+			</div>
+    </div>
+</div>
+
+            
+            </header>
+            <div class="content-outer-container">
+                <div id="main" role="main" class="main-outer-container clearfix">
+                        
+                        <div class="content-main-container">
+                            <div class="grid">
+					            <div class="col-xs-12">
+						            <nav id="breadcrumbs-container" aria-label="You Are Here :">
+							            <span role="list">
+<span role="listitem">
+	<a href="https://www.lincoln.ne.gov/Home"  lang="en-US">Home</a>
+	<span class="nav-separator" aria-hidden="true" role="presentation">/</span>
+</span>
+          <span role="listitem"><a href="https://www.lincoln.ne.gov/City" >City Information</a><span class='nav-separator' aria-hidden="true" role="presentation">/</span></span><span role="listitem">
+	<a href="https://www.lincoln.ne.gov/City/Departments" >
+		Departments
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation" >
+		Parks and Recreation
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities" >
+		Parks & Facilities
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span role="listitem">
+	<a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z" >
+		Parks A to Z
+	</a>
+	<span class='nav-separator' aria-hidden="true" role="presentation">/</span>
+</span>
+<span class="current-page" role="listitem" aria-current="page" >Peterson Park</span>
+          
+          
+          
+          </span>
+						            </nav>
+					            </div>
+                      
+					            <div class="col-xs-12">
+						            <div class="main-inner-container">
+							            <div id="main-content" class="main-container clearfix">
+							              
+                            <!-- OC Layout Element Conent Template -->
+							              <!--normalTemplateStart--><div class="grid obj-parks">
+	<div class="col-xs-12 col-m-8">
+		<h1 class='oc-page-title '>Peterson Park</h1>
+		
+		
+       <picture>
+  <source media="(min-width: 992px)" srcset="/files/sharedassets/public/v/2/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peterson-signcourt.jpg?dimension=pageimage&w=480">
+  <source media="(min-width: 768px)" srcset="/files/sharedassets/public/v/2/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peterson-signcourt.jpg?dimension=pageimage&w=480">
+  <source srcset="/files/sharedassets/public/v/2/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peterson-signcourt.jpg?dimension=pageimage&w=480">
+  <img class="main-page-image" src="/files/sharedassets/public/v/2/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peterson-signcourt.jpg?dimension=pageimage&w=480" alt="Parks sign reads "Peterson Park", behind it are tennis courts." />
+</picture> 
+      
+		<p>A community park located near South 27th street and Highway 2 includes ten <a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Tennis-and-Pickleball">pickleball courts</a>, an open shelter, and playground area.</p>
+<p><span style="font-size: 0.95em; font-family: inherit;">Acres: 35.28</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 0.95em; font-family: inherit;"></span></p>
+<p><span style="font-size: 0.95em; font-family: inherit;"></span></p>
+<p><div class="oc-quick-list oc-quick-list-grid oc-quick-list-grid-2 landing-page-list-container clearfix"><h2>Peterson Park Reservations</h2><div class="grid" role="list"><div class="col-xs-12 col-m-4" role="listitem">
+	<div class="list-item-container small-panel" >		
+		<article>
+			<a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Peterson-Park/Peterson-Park-Ballfields"   target="">
+				
+       <picture>
+  <source media="(min-width: 992px)" srcset="/files/sharedassets/public/v/1/parks-amp-rec/parks-amp-facilities/parks/lpr-parks-peterson_balldiamond.jpg?dimension=largethumbnail&w=380&h=250">
+  <source media="(min-width: 768px)" srcset="/files/sharedassets/public/v/1/parks-amp-rec/parks-amp-facilities/parks/lpr-parks-peterson_balldiamond.jpg?dimension=largethumbnail&w=330&h=218">
+  <source srcset="/files/sharedassets/public/v/1/parks-amp-rec/parks-amp-facilities/parks/lpr-parks-peterson_balldiamond.jpg?dimension=largethumbnail&w=480&h=316">
+  <img class="large-thumbnail-image" src="/files/sharedassets/public/v/1/parks-amp-rec/parks-amp-facilities/parks/lpr-parks-peterson_balldiamond.jpg?dimension=largethumbnail&w=480&h=316"  alt=""/>
+  </picture>
+				<H3 class="list-item-title">
+					Peterson Park Ballfields
+				</H3>
+				<p>		
+					These ballfields are located inside Peterson Park, and are available for reservations.
+				</p>
+			</a>
+		</article>
+	</div>
+</div></div></div></p>
+<p><img alt="A Golden Retriever and a black dog with white markings, lead their two humans on a stroll through Stransky’s concrete walking paths." src="/files/sharedassets/public/v/3/parks-amp-rec/parks-amp-facilities/parks/dog-runs/lpr-dogrun-stransky.jpg?w=800&amp;h=531"></p>
+<h3><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z/Stransky-Dog-Run-at-Peterson-Park">Stransky Dog Run at Peterson Park</a></h3>
+<p>The Stranksy Dog Run at Peterson Park includes a 2.55 acre space for large dogs and a one-acre area for small dogs. Located in Peterson Park, on the west side of Southwood Drive.</p>
+<h3>&nbsp;<strong>Amenities</strong></h3>
+<ul>
+    <li>2.5 acres of large dog off- leash play area</li>
+    <li>1 acres of small dog off-leash play area</li>
+    <li>Covered restroom near run entrance</li>
+    <li>Ample Parking</li>
+    <li>Water fountain (Seasonal) for Humans and Dogs</li>
+    <li>Improved walking trails</li>
+    <li>Wide open flat spaces for dogs to run and stay in sight</li>
+    <li>ADA Accessible and Handicap concrete parking space</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+		<div class="clearfix"></div>
+		<h2 class="sub-title">Location</h2><p>4400 Southwood Drive,&nbsp;Lincoln&nbsp;68512 &nbsp;<a href="https://maps.google.com?q=%204400%20Southwood%20Drive%20Lincoln%2068512" target="_blank">View Map</a>
+      </p>
+		<div id="skip-map-container-top" class="skip-map-container rs_skip">
+    <a href='#map-bottom' class="visuallyhidden focusable skip-map-link" id="map-top">Skip to below map</a>
+</div>
+<div class="gmap rs_skip" data-params='{"zoom" : 14, "autoOpenInfoWindow" : false, "hideControls" : true, "autoBounds" : true, "centerPoint" : "40.767284, -96.686131"}'>
+    <div class="gmap-marker hidden">
+        <div class="gmap-latlong">
+          40.767284, -96.686131
+        </div>
+        <div class="gmap-address">
+          4400 Southwood Drive&nbsp;,
+          Lincoln&nbsp;68512
+        </div>
+        <div class="gmap-info">
+            
+            <p>
+          4400 Southwood Drive&nbsp;,
+          Lincoln&nbsp;68512</p>
+        </div>
+		<div class="gmap-title">
+	        Peterson Park
+        </div>
+    </div>
+    <div class="map-canvas gmap-container">
+        <div class="gmap-target">
+           <img src="https://maps.google.com/maps/api/staticmap?center=4400 Southwood Drive,Lincoln,68512&amp;zoom=14&amp;size=340x202&amp;maptype=road&amp;markers=color:red|40.767284, -96.686131&amp;key=AIzaSyCM0FVcuOTQ68EqhoTGrP2bdIrXahzsWjs" alt="Google Map" />
+        </div>
+    </div>
+</div>
+<div id="skip-map-container-bottom" class="skip-map-container rs_skip">
+    <a href='#map-top' class="visuallyhidden focusable skip-map-link" id="map-bottom">Skip to above map</a>
+</div>
+		<div class="clearfix"></div>
+        <h2 class="photo-gallery-heading">Photo Gallery</h2>
+<div class="image-gallery-container masonry-theme" data-theme="masonry">
+   <div class="grid">
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peters-pickleb2.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peters-pickleb2.jpg?w=375" alt="Peterson Park is home to several pickleball courts.">
+         </div>
+         <figcaption>
+            <p class="caption">LPR-PARK-PETERS-pickleb2.jpg</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;126KB)</span></a>
+</div>
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peters-pickleb4.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/lpr-park-peters-pickleb4.jpg?w=375" alt="Folks enjoy a local favorite game of pickleball.">
+         </div>
+         <figcaption>
+            <p class="caption">LPR-PARK-PETERS-pickleb4.jpg</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;143KB)</span></a>
+</div>
+          <div class="image-gallery-item col-xs-12 col-m-6 col-lg-4">
+   <a href="/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/lpr-parks-peterson_playground.jpg" target="_self" class="document ext-jpg"><i aria-hidden="true"></i>
+      <figure>
+         <div class="image-container">
+            <img src="/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/lpr-parks-peterson_playground.jpg?w=375" alt="Peterson Park’s playground features a multi platform structure, see saw, spring riders, tire swing, bucket swings, and belt swings on rubber tiles. There are benches, large shade trees, and Beal Slough nearby.">
+         </div>
+         <figcaption>
+            <p class="caption">LPR-Parks-Peterson_Playground.jpg</p>
+         </figcaption>
+      </figure>
+   <span class="file-info">(JPG,&nbsp;205KB)</span></a>
+</div>
+          </div>
+</div>
+          
+<div class="clearfix"></div>
+		<div class="categories-list-container"><span role="heading" aria-level="2">Tagged as:</span><ul class="categories-list clearfix">
+	<li><a href="https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Parks-A-to-Z?dlv_OC CL Public Parks Reserves Listing=(dd_OC Park Categories=Community)">Community</a></li></ul></div>
+	</div>
+	<div class="col-xs-12 col-m-4">
+		
+		<div class="side-box park-snapshot">
+			<h2 class="side-box-title">
+				Facility Snapshot
+			</h2>
+			<div class="side-box-content">
+				<div class="side-box-section park-features">
+<h3>Features</h3>
+<ul class="park-feature-list"><li>Ball Diamond</li><li>Ball Diamond Rentable</li><li>Drinking Fountain</li><li>Pickleball</li><li>Picnic Tables</li><li>Playground Equipment</li><li>Shelters Open</li></ul></div>
+			    
+			        <div class="side-box-section contact-details">
+			            <h3>Contact</h3>
+			            <div class="contact-name">Lincoln Parks & Recreation</div>
+			            <div class="contact-phone">402-441-7847</div>
+			            
+			            <div class="contact-email"><a href="mailto:parks@lincoln.ne.gov">parks@lincoln.ne.gov</a></div>
+			            
+			        </div>
+			    
+			    
+			        <div class="side-box-section hours-details">
+			            <h3>Hours</h3>
+			            
+<ul class="hours-list">
+      <li class='current-day-item-no'>
+<span class='hours-day'> Sunday </span>
+<ul class="hours-time-list"><li>05:00 AM–11:00 PM
+</li>
+      </ul>
+      <li class='current-day-item-no'>
+<span class='hours-day'> Monday </span>
+<ul class="hours-time-list"><li>05:00 AM–11:00 PM
+</li>
+      </ul>
+      <li class='current-day-item-no'>
+<span class='hours-day'> Tuesday </span>
+<ul class="hours-time-list"><li>05:00 AM–11:00 PM
+</li>
+      </ul>
+      <li class='current-day-item-no'>
+<span class='hours-day'> Wednesday </span>
+<ul class="hours-time-list"><li>05:00 AM–11:00 PM
+</li>
+      </ul>
+      <li class='current-day-item-no'>
+<span class='hours-day'> Thursday </span>
+<ul class="hours-time-list"><li>05:00 AM–11:00 PM
+</li>
+      </ul>
+      <li class='current-day-item-yes'>
+<span class='hours-day'> Friday </span>
+<ul class="hours-time-list"><li>05:00 AM–11:00 PM
+</li>
+      </ul>
+      <li class='current-day-item-no'>
+<span class='hours-day'> Saturday </span>
+<ul class="hours-time-list"><li>05:00 AM–11:00 PM
+</li>
+      </ul>
+      </ul>
+                        
+			        </div>
+			    
+			</div>
+		</div>
+        
+			
+	</div>
+	<div class="col-xs-12 col-m-8">
+        <div class="grid">
+            
+            
+             
+            
+        </div>
+	</div>
+</div><!--normalTemplateEnd-->
+                            
+                            
+                            
+							            </div>
+						            </div>
+					            </div>
+                        
+                            </div>
+                        </div>
+                        <div class="back-to-top-container text-center">
+                            <a href="#body-top" id="back-to-top"><i aria-hidden="true"></i><span class="js-visuallyhidden">Back to top</span></a>
+                        </div>
+                </div>
+            </div><!--groupTemplateEnd-->
+            <footer>
+                
+                    <div class="footer-outer-container footer-first-row">
+                        <div class="footer-container clearfix">
+                            <div class="grid grid-pad">
+                                <div class="col-xs-12 col-s-12 col-m-4 col-lg-4" >
+	
+	<p><img alt="City of Lincoln logo" src="/files/assets/public/v/1/templateimages/col-website-logo-footer.svg" /></p>
+
+
+	<ul class="footer-links with-icons ">   </ul>
+	
+</div><div class="col-xs-12 col-s-12 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Contact Us</h3>
+			
+	<p>555 South 10th Street<br />
+Lincoln, NE 68508</p>
+
+
+	
+	
+</div><div class="col-xs-12 col-s-6 col-m-4 col-lg-4" >
+	
+			<h2 class="visuallyhidden">Site Footer</h2>
+			<h3 class="footer-title">Connect With Us</h3>
+			
+	
+	<ul class="footer-links with-icons social-media-links">  <li class="footer-link-facebook">
+	<a href="https://www.facebook.com/lincolnnebraska" target="_blank"  >
+<i aria-hidden="true"></i>Like us on Facebook
+</a>
+</li>
+          <li class="footer-link-twitter">
+	<a href="https://twitter.com/cityoflincoln" target="_blank"  >
+<i aria-hidden="true"></i>Follow us on X
+</a>
+</li>
+          <li class="footer-link-instagram">
+	<a href="https://www.instagram.com/city_of_lincoln/" target="_self"  >
+<i aria-hidden="true"></i>Follow us on Instagram
+</a>
+</li>
+          <li class="footer-link-youtube">
+	<a href="https://www.youtube.com/lnktvcity" target="_blank"  >
+<i aria-hidden="true"></i>Watch us on YouTube
+</a>
+</li>
+           </ul>
+	
+</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="footer-outer-container footer-second-row">
+                    <div class="footer-container clearfix">
+                        <div class="grid grid-pad footer-secondary-links">
+                            <div class="col-xs-12 col-m-7">
+                                
+                                    <div><a href="https://www.lincoln.ne.gov/City/About-Us#SiteDisclaimer" target="_self"  >Site Disclaimer</a>&nbsp;| <a href="https://www.lincoln.ne.gov/City/About-Us#PrivacyPolicy" target="_self"  >Privacy/Security Policy</a></div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-m-5 powered-by">
+                                <div class="right">
+                                    &copy; 2026 City of Lincoln&nbsp;|&nbsp;<span class="powered-by">Powered by <a href="https://granicus.com/solution/govaccess/opencities/" target="_blank">Granicus</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/files/oc-resources/b9015858-988c-48a4-9473-7c193df083e4/JsTextSnippets.js?ocsvclang=en-US" type="text/javascript"></script><script></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F4VSK9Z7FE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F4VSK9Z7FE');
+  
+  $('#toolbar-language-drop-down').find('.lang-item').each(function() {
+	const langName = this.childNodes[0].nodeValue ? this.childNodes[0].nodeValue : '';
+	
+	
+	if (langName) {
+		 $(this).on('click', function() {
+			   gtag('event', 'translate_widget', {
+					'translate_language': langName,
+					'translated_page': window.location.href
+			   });
+		 });
+	}
+});
+  
+</script>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl04_seamless_script_manager_TSM');//]]>
+</script>
+</form>
+</body>
+</html>
