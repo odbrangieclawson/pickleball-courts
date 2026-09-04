@@ -48,7 +48,8 @@
     "verify:charlotte": "node scripts/verify/apply-charlotte-parks.mjs",
     "verify:portland": "node scripts/verify/apply-portland-parks.mjs",
     "verify:vancouver": "node scripts/verify/apply-vancouver-parks.mjs",
-    "verify:bellevue": "node scripts/verify/apply-bellevue-parks.mjs"
+    "verify:bellevue": "node scripts/verify/apply-bellevue-parks.mjs",
+    "verify:madison": "node scripts/verify/apply-madison-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

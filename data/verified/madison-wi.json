@@ -1,0 +1,2428 @@
+{
+  "city": "Madison",
+  "state": "WI",
+  "retrieved_at": "2026-09-04",
+  "method_note": "Madison Parks states a court count AND a surface for every pickleball venue it lists, in a structured block on each park's own page: \"Tennis & Pickleball / Courts: 2, asphalt\". Surface is the field this directory has been worst at — five verified surfaces across the seventy-four venues published before this city — and Madison supplies twenty in one reading. An unqualified count under a \"Tennis & Pickleball\" heading is a count of courts you can play pickleball on, and we know that because Reindahl Park is the exception that says so: \"Courts: 8, asphalt; 4 striped for pickleball\". Three venues the City lists are excluded because the Census address geocoder does not resolve their addresses, which costs eighteen courts including the city's largest outdoor count. Warner Park and the Warner Park Community Recreation Center share a street address and are published as two venues, because the City runs them as two facilities with different access, different booking and different cost — unlike Bellevue's Hidden Valley, where one park page carried both and neither had rules of its own. No fee is claimed at any outdoor court: Madison never calls them free.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/bordner-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/brittingham.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/elver.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/garner.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/heritage-heights.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/huegel-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/kennedy.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/nakoma-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/norman-clayton-park.html"
+    },
+    {
+      "id": "S11",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/northland-manor-park.html"
+    },
+    {
+      "id": "S12",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/olbrich.html"
+    },
+    {
+      "id": "S13",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/reynolds-park.html"
+    },
+    {
+      "id": "S14",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/richmond-hill-park.html"
+    },
+    {
+      "id": "S15",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/tenney.html"
+    },
+    {
+      "id": "S16",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/walnut-grove.html"
+    },
+    {
+      "id": "S17",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/warner.html"
+    },
+    {
+      "id": "S18",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/waunona-park.html"
+    },
+    {
+      "id": "S19",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/westhaven-trails-park.html"
+    },
+    {
+      "id": "S20",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/westmorland.html"
+    },
+    {
+      "id": "S21",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/wexford.html"
+    },
+    {
+      "id": "S22",
+      "url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/wpcrc-fitness-center-pickleball-membership.html"
+    },
+    {
+      "id": "S23",
+      "url": "https://www.cityofmadison.com/parks/wpcrc",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/wpcrc-wpcrc.html"
+    },
+    {
+      "id": "S24",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/door-creek",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/door-creek.html"
+    },
+    {
+      "id": "S25",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/reindahl",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/reindahl.html"
+    },
+    {
+      "id": "S26",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/rennebohm",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/madison/rennebohm.html"
+    },
+    {
+      "id": "S27",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/madison-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 21,
+    "courts": 53,
+    "outdoor": 48,
+    "indoor": 5
+  },
+  "excluded": [
+    {
+      "name": "Door Creek Park",
+      "why": [
+        "The Census address geocoder returns no match for \"7035 Littlemore Dr.\", the address the City prints, or for the spelling variants tried. Import Gate I1 requires a street address that resolves.",
+        "The City does state its courts — \"Courts: 8, asphalt\" — so this is an identity failure, not a data one. It publishes the moment the address resolves."
+      ]
+    },
+    {
+      "name": "Reindahl (Amund) Park",
+      "why": [
+        "The Census address geocoder returns no match for \"1818 Portage Rd.\", the address the City prints, or for the spelling variants tried. Import Gate I1 requires a street address that resolves.",
+        "The City does state its courts — \"Courts: 8, asphalt; 4 striped for pickleball\" — so this is an identity failure, not a data one. It publishes the moment the address resolves."
+      ]
+    },
+    {
+      "name": "Rennebohm Park",
+      "why": [
+        "The Census address geocoder returns no match for \"115 N. Eau Claire Ave.\", the address the City prints, or for the spelling variants tried. Import Gate I1 requires a street address that resolves.",
+        "The City does state its courts — \"Courts: 6, asphalt\" — so this is an identity failure, not a data one. It publishes the moment the address resolves."
+      ]
+    }
+  ],
+  "venues": {
+    "bordner-park": {
+      "minted": true,
+      "identity": {
+        "name": "Bordner Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53705",
+        "latitude": 43.071323381107,
+        "longitude": -89.478354549683,
+        "imported_slug": null,
+        "canonical_slug": "bordner-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Bordner Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "5610 Elder Pl",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53705"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Bordner Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Bordner Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Bordner Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5610 Elder Pl\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Bordner Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5610 ELDER PL, MADISON, WI, 53705\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5610 ELDER PL, MADISON, WI, 53705\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "brittingham-park": {
+      "minted": true,
+      "identity": {
+        "name": "Brittingham Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53703",
+        "latitude": 43.067472005211,
+        "longitude": -89.387317608933,
+        "imported_slug": null,
+        "canonical_slug": "brittingham-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 4, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Brittingham Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "388 S. Bassett St.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53703"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Brittingham Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Brittingham Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 4, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Brittingham Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 4, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"388 S. Bassett St.\" is the address the City gives for these courts specifically. The park itself is listed at a different address, 829 W. Washington Ave., and the park page prints the court address separately under its \"Tennis & Pickleball\" block."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Brittingham Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 4, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"388 S BASSETT ST, MADISON, WI, 53703\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"388 S BASSETT ST, MADISON, WI, 53703\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "elver-park": {
+      "minted": true,
+      "identity": {
+        "name": "Elver Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53719",
+        "latitude": 43.041020667252,
+        "longitude": -89.505059843816,
+        "imported_slug": null,
+        "canonical_slug": "elver-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 3, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Elver Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "1250 McKenna Blvd.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53719"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Elver Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Elver Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Elver Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1250 McKenna Blvd.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Elver Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1250 MCKENNA BLVD, MADISON, WI, 53719\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1250 MCKENNA BLVD, MADISON, WI, 53719\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "garner-park": {
+      "minted": false,
+      "identity": {
+        "name": "Garner Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53705",
+        "latitude": 43.062848955931,
+        "longitude": -89.478361520264,
+        "imported_slug": "garner-park",
+        "canonical_slug": "garner-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 6, asphalt",
+        "basis": "Matched to the imported garner-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Garner Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "333 S. Rosa Rd.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "Madison's only dedicated outdoor pickleball courts — the City says so itself, and these are the only outdoor courts in the city not shared with tennis. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53705"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Garner Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Garner Park's page on cityofmadison.com, under the \"Pickleball\" heading: \"Courts: 6, asphalt\". The heading is \"Pickleball\" rather than \"Tennis & Pickleball\": these are the only dedicated outdoor pickleball courts in Madison, and the City says so on its pickleball page."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Garner Park's page on cityofmadison.com, under the \"Pickleball\" heading: \"Courts: 6, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"333 S. Rosa Rd.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Garner Park's page on cityofmadison.com, under the \"Pickleball\" heading: \"Courts: 6, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"333 S ROSA RD, MADISON, WI, 53705\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"333 S ROSA RD, MADISON, WI, 53705\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "heritage-heights-park": {
+      "minted": false,
+      "identity": {
+        "name": "Heritage Heights Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53714",
+        "latitude": 43.087528821228,
+        "longitude": -89.296883541568,
+        "imported_slug": "heritage-heights-park",
+        "canonical_slug": "heritage-heights-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "Matched to the imported heritage-heights-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Heritage Heights Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "701 Meadowlark Dr.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53714"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Heritage Heights Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Heritage Heights Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Heritage Heights Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"701 Meadowlark Dr.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Heritage Heights Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"701 MEADOWLARK DR, MADISON, WI, 53714\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"701 MEADOWLARK DR, MADISON, WI, 53714\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "huegel-park": {
+      "minted": true,
+      "identity": {
+        "name": "Huegel Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53719",
+        "latitude": 43.023526375745,
+        "longitude": -89.484656042015,
+        "imported_slug": null,
+        "canonical_slug": "huegel-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Huegel Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "5902 Williamsburg Way",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53719"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Huegel Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Huegel Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Huegel Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5902 Williamsburg Way\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Huegel Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5902 WILLIAMSBURG WAY, MADISON, WI, 53719\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5902 WILLIAMSBURG WAY, MADISON, WI, 53719\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "kennedy-park": {
+      "minted": true,
+      "identity": {
+        "name": "Kennedy Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53714",
+        "latitude": 43.092203856461,
+        "longitude": -89.292136364689,
+        "imported_slug": null,
+        "canonical_slug": "kennedy-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Kennedy Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "5202 Retana Dr.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53714"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Kennedy Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Kennedy Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Kennedy Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5202 Retana Dr.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Kennedy Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5202 RETANA DR, MADISON, WI, 53714\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5202 RETANA DR, MADISON, WI, 53714\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "nakoma-park": {
+      "minted": true,
+      "identity": {
+        "name": "Nakoma Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53711",
+        "latitude": 43.047984768407,
+        "longitude": -89.439139581878,
+        "imported_slug": null,
+        "canonical_slug": "nakoma-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 1, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Nakoma Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "3801 Cherokee Dr.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53711"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Nakoma Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Nakoma Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 1, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Nakoma Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 1, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3801 Cherokee Dr.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Nakoma Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 1, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3801 CHEROKEE DR, MADISON, WI, 53711\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3801 CHEROKEE DR, MADISON, WI, 53711\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "norman-clayton-park": {
+      "minted": false,
+      "identity": {
+        "name": "Norman Clayton Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53711",
+        "latitude": 43.04392876394,
+        "longitude": -89.490942646631,
+        "imported_slug": "norman-clayton-park",
+        "canonical_slug": "norman-clayton-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "Matched to the imported norman-clayton-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Norman Clayton Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "6401 Shoreham Dr.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53711"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Norman Clayton Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Norman Clayton Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Norman Clayton Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"6401 Shoreham Dr.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Norman Clayton Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6401 SHOREHAM DR, MADISON, WI, 53711\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6401 SHOREHAM DR, MADISON, WI, 53711\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "surface"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "northland-manor-park": {
+      "minted": false,
+      "identity": {
+        "name": "Northland Manor Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53704",
+        "latitude": 43.146011872607,
+        "longitude": -89.381385597621,
+        "imported_slug": "northland-manor-park",
+        "canonical_slug": "northland-manor-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "Matched to the imported northland-manor-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Northland Manor Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "902 Northland Dr.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53704"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Northland Manor Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Northland Manor Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Northland Manor Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"902 Northland Dr.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Northland Manor Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"902 NORTHLAND DR, MADISON, WI, 53704\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"902 NORTHLAND DR, MADISON, WI, 53704\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "olbrich-park": {
+      "minted": true,
+      "identity": {
+        "name": "Olbrich Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53714",
+        "latitude": 43.089893658798,
+        "longitude": -89.330818237661,
+        "imported_slug": null,
+        "canonical_slug": "olbrich-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Olbrich Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "3527 Atwood Ave.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53714"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Olbrich Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Olbrich Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Olbrich Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3527 Atwood Ave.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Olbrich Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3527 ATWOOD AVE, MADISON, WI, 53714\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3527 ATWOOD AVE, MADISON, WI, 53714\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "reynolds-park": {
+      "minted": true,
+      "identity": {
+        "name": "Reynolds Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53703",
+        "latitude": 43.082095114616,
+        "longitude": -89.376110392665,
+        "imported_slug": null,
+        "canonical_slug": "reynolds-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, sport court tile",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Reynolds Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "810 E. Mifflin St.",
+        "surface": "modular_tile",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53703"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Reynolds Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Reynolds Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, sport court tile\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Reynolds Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, sport court tile\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"810 E. Mifflin St.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Reynolds Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, sport court tile\". The City states the surface in the same line as the count. Its words are \"sport court tile\", recorded here under the controlled value modular_tile."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"810 E MIFFLIN ST, MADISON, WI, 53703\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"810 E MIFFLIN ST, MADISON, WI, 53703\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "richmond-hill-park": {
+      "minted": true,
+      "identity": {
+        "name": "Richmond Hill Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53718",
+        "latitude": 43.078454758625,
+        "longitude": -89.274854142932,
+        "imported_slug": null,
+        "canonical_slug": "richmond-hill-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Richmond Hill Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "6117 Cottontail Trl.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53718"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Richmond Hill Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Richmond Hill Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Richmond Hill Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"6117 Cottontail Trl.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Richmond Hill Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"6117 COTTONTAIL TRL, MADISON, WI, 53718\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6117 COTTONTAIL TRL, MADISON, WI, 53718\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "tenney-park": {
+      "minted": false,
+      "identity": {
+        "name": "Tenney Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53703",
+        "latitude": 43.090998773454,
+        "longitude": -89.367044096243,
+        "imported_slug": "tenney-park",
+        "canonical_slug": "tenney-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 3, asphalt, lighted",
+        "basis": "Matched to the imported tenney-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Tenney Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "1414 E. Johnson St.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53703",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Tenney Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Tenney Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt, lighted\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Tenney Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt, lighted\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1414 E. Johnson St.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Tenney Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt, lighted\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1414 E JOHNSON ST, MADISON, WI, 53703\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1414 E JOHNSON ST, MADISON, WI, 53703\"."
+        },
+        "light": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Tenney Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt, lighted\". Madison marks the lit courts rather than the unlit ones, and Tenney is the only venue on its pickleball list whose line ends in \"lighted\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "walnut-grove-park": {
+      "minted": false,
+      "identity": {
+        "name": "Walnut Grove Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53717",
+        "latitude": 43.069466309846,
+        "longitude": -89.509571126804,
+        "imported_slug": "walnut-grove-park",
+        "canonical_slug": "walnut-grove-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "Matched to the imported walnut-grove-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Walnut Grove Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "202 N. Westfield Rd.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53717"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Walnut Grove Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Walnut Grove Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Walnut Grove Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"202 N. Westfield Rd.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Walnut Grove Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"202 N WESTFIELD RD, MADISON, WI, 53717\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"202 N WESTFIELD RD, MADISON, WI, 53717\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "warner-park": {
+      "minted": true,
+      "identity": {
+        "name": "Warner Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53704",
+        "latitude": 43.128475401467,
+        "longitude": -89.363605353914,
+        "imported_slug": null,
+        "canonical_slug": "warner-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 3, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Warner Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "2930 N. Sherman Ave.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53704"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Warner Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Warner Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Warner Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2930 N. Sherman Ave.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Warner Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 3, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "waunona-park": {
+      "minted": false,
+      "identity": {
+        "name": "Waunona Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53713",
+        "latitude": 43.048756437168,
+        "longitude": -89.354496355962,
+        "imported_slug": "waunona-park",
+        "canonical_slug": "waunona-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "Matched to the imported waunona-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Waunona Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "5323 Raywood Rd.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53713"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Waunona Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Waunona Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Waunona Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5323 Raywood Rd.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Waunona Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"5323 RAYWOOD RD, MADISON, WI, 53713\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5323 RAYWOOD RD, MADISON, WI, 53713\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "westhaven-trails-park": {
+      "minted": false,
+      "identity": {
+        "name": "Westhaven Trails Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53719",
+        "latitude": 43.019686739388,
+        "longitude": -89.509091915615,
+        "imported_slug": "westhaven-trails-park",
+        "canonical_slug": "westhaven-trails-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "Matched to the imported westhaven-trails-park row in Madison, WI."
+      },
+      "patch": {
+        "name": "Westhaven Trails Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "3020 Cimarron Trl.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53719"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Westhaven Trails Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Westhaven Trails Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Westhaven Trails Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3020 Cimarron Trl.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Westhaven Trails Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"3020 CIMARRON TRL, MADISON, WI, 53719\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3020 CIMARRON TRL, MADISON, WI, 53719\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "westmorland-park": {
+      "minted": true,
+      "identity": {
+        "name": "Westmorland Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53711",
+        "latitude": 43.05352035098,
+        "longitude": -89.444541375832,
+        "imported_slug": null,
+        "canonical_slug": "westmorland-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, sport court tile",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Westmorland Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "4114 Tokay Blvd.",
+        "surface": "modular_tile",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53711"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Westmorland Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Westmorland Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, sport court tile\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Westmorland Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, sport court tile\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4114 Tokay Blvd.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Westmorland Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, sport court tile\". The City states the surface in the same line as the count. Its words are \"sport court tile\", recorded here under the controlled value modular_tile."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"4114 TOKAY BLVD, MADISON, WI, 53711\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4114 TOKAY BLVD, MADISON, WI, 53711\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "wexford-park": {
+      "minted": true,
+      "identity": {
+        "name": "Wexford Park",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53717",
+        "latitude": 43.082255250874,
+        "longitude": -89.510456377424,
+        "imported_slug": null,
+        "canonical_slug": "wexford-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Courts: 2, asphalt",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division pickleball courts list, which states the address, and the park's own page, which states the count and the surface."
+      },
+      "patch": {
+        "name": "Wexford Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1201 N. Westfield Rd.",
+        "surface": "asphalt",
+        "venue_type": "public_park",
+        "court_availability": "A tennis court striped for pickleball. Madison states that its dual-striped courts \"use a tennis net which is about 2\" taller than a standard pickleball net\", so the net you play over here is a tennis net at tennis height. Individuals play first come, first served; leagues and lessons must reserve in advance.",
+        "county": "Dane",
+        "postal_code": "53717"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Wexford Park\" by the City of Madison Parks Division on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Wexford Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An unqualified count under this heading is a count of courts you can play pickleball on: where only some of a park's courts are striped, Madison says so — Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Wexford Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". An outdoor park court. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1201 N. Westfield Rd.\" is the address the City prints beside this venue on its pickleball courts list."
+        },
+        "surface": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from Wexford Park's page on cityofmadison.com, under the \"Tennis & Pickleball\" heading: \"Courts: 2, asphalt\". The City states the surface in the same line as the count."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Madison Parks Division among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"1201 N WESTFIELD RD, MADISON, WI, 53717\". The geocoder also places it in the incorporated place \"Madison city\", which is what allows it to be published under Madison rather than an adjoining town with a Madison postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1201 N WESTFIELD RD, MADISON, WI, 53717\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "warner-park-community-recreation-center": {
+      "minted": true,
+      "identity": {
+        "name": "Warner Park Community Recreation Center",
+        "city": "Madison",
+        "state": "WI",
+        "county": "Dane",
+        "postal_code": "53704",
+        "latitude": 43.128475401467,
+        "longitude": -89.363605353914,
+        "imported_slug": null,
+        "canonical_slug": "warner-park-community-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+        "quote": "Blue Gym: 2 courts - 20ft x 44ft",
+        "basis": "No imported row under this slug. Minted from the City of Madison Parks Division's Warner Park Community Recreation Center pages, which state the court counts, the access rules and the address."
+      },
+      "patch": {
+        "name": "Warner Park Community Recreation Center",
+        "total_courts": 5,
+        "indoor_courts": 5,
+        "street_address": "2930 N. Sherman Ave.",
+        "venue_type": "community_center",
+        "fee_type": "drop_in_fee",
+        "pricing_notes": "Play requires either a Fitness Center/Pickleball membership or a Daily Admission, and an active WPCRC ID card either way. The City does not publish the price of either on this page. Annual and 6-month memberships and 20-visit passes are available and include the fitness center as well as the courts.",
+        "court_availability": "Five indoor courts across two gyms — Blue Gym has two and Green Gym three, each 20ft by 44ft. Unlike every outdoor court in Madison, these are reservable: the City runs bookings through its WebTrac account system, and an active WPCRC ID is required to play whether you hold a membership or pay daily admission.",
+        "county": "Dane",
+        "postal_code": "53704"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Warner Park Community Recreation Center\" by the City of Madison Parks Division, which runs it as a facility with its own pages rather than as an amenity of Warner Park."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Warner Park Community Recreation Center's pickleball page: \"Blue Gym: 2 courts - 20ft x 44ft\" and \"Green Gym: 3 courts - 20ft x 44ft\". Two gyms, five courts."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Warner Park Community Recreation Center's pickleball page: \"Blue Gym: 2 courts - 20ft x 44ft\" and \"Green Gym: 3 courts - 20ft x 44ft\". Both gyms are indoor. The outdoor count is left unverified rather than set to zero; the three outdoor courts at the same address are published separately as Warner Park, which is how the City organises them."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2930 N. Sherman Ave.\" is the address the City prints for the recreation center. It is also Warner Park's address: the centre stands in the park, and the two are published as separate venues because the City runs them as separate facilities with different access rules."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City runs this as a community recreation center with its own membership, ID card and booking system."
+        },
+        "fee_type": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the centre's pickleball page: \"If you don't have a Fitness Center Membership, you're welcome to play by paying a Daily Admission and an active WPCRC ID is still required.\" A membership is the other route and neither is priced on this page, so under the O4 precedence rule the drop-in admission is what is recorded and drop_in_fee_usd is left null."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the centre's pickleball page: \"If you don't have a Fitness Center Membership, you're welcome to play by paying a Daily Admission and an active WPCRC ID is still required.\" and \"Annual and 6-month membership and 20-visit passes are available and include use of the fitness center and pickleball courts.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the centre's pickleball page: \"Blue Gym: 2 courts - 20ft x 44ft\", \"Green Gym: 3 courts - 20ft x 44ft\", the \"Reserve Indoor Pickleball Court\" booking route and its WebTrac checklist, and \"To play pickleball, an active WPCRC ID and Fitness Center/Pickleball Membership is required.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Dane County, WI (FIPS 55025). Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\". The geocoder also places it in the incorporated place \"Madison city\"."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2930 N SHERMAN AVE, MADISON, WI, 53704\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

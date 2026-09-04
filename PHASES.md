@@ -329,8 +329,9 @@ passes all six gates against the built HTML; the totals are the ones
 | 6 | Portland, OR | 11 | 59 | Portland Parks pickleball page | 2026-09-03 |
 | 7 | Vancouver, WA | 3 | 14 | City of Vancouver pickleball page | 2026-09-03 |
 | 8 | Bellevue, WA | 12 | 38 | City of Bellevue pickleball page + park pages | 2026-09-04 |
+| 9 | Madison, WI | 21 | 53 | City of Madison park pages, count and surface per venue | 2026-09-04 |
 
-**101 published pages:** 8 city, 74 venue, 12 filter, 5 county, 2 state.
+**125 published pages:** 9 city, 95 venue, 13 filter, 6 county, 2 state.
 
 **Two state pages exist because two states have three published cities.**
 North Carolina since Apex; Washington since Bellevue. `STATE_MIN_CITIES = 3`
@@ -346,6 +347,49 @@ walking onto. It also produced the first venue in the directory with a
 non-zero count on both sides — Hidden Valley Park, three indoor and two
 outdoor at one address, which the City lists as two entries and which is
 published as one place.
+
+**Madison is the first city that states its surfaces.** Across the seventy-four
+venues published before it, five carried a verified playing surface; Madison
+states one for all twenty of its outdoor venues in the same line as the count
+— "Tennis & Pickleball / Courts: 2, asphalt" — eighteen asphalt and two sport
+court tile. It is also the first city where an operator explains what a
+dual-striped court costs you: "Dual-striped courts use a tennis net which is
+about 2" taller than a standard pickleball net."
+
+**What "Courts: 8" means was settled by the City's own exception.** Reindahl
+Park reads "Courts: 8, asphalt; 4 striped for pickleball", so where only some
+courts carry pickleball lines Madison says so, and an unqualified count is a
+count of courts you can play on. Reindahl is not published — its address does
+not resolve — but its snapshot is committed and the run asserts that line
+still exists, because every other count in the city rests on it.
+
+**Three venues refused, eighteen courts lost.** Door Creek, Reindahl and
+Rennebohm are all on the City's pickleball list with counts and surfaces, and
+the Census geocoder resolves none of their addresses. That includes Door
+Creek's eight, the largest outdoor count in Madison. Same rule as Bellevue's
+Highland Community Park.
+
+**Warner Park is two venues where Bellevue's Hidden Valley was one,** and the
+difference is the operator rather than convenience: the Warner Park Community
+Recreation Center has its own pages, ID card, membership and booking system,
+and the outdoor courts have none of those. Its five indoor courts are also the
+first bookable pickleball courts anywhere in this directory — nine cities in,
+every other verified court is first come, first served.
+
+**Two more things Madison broke:**
+
+- **The identity quarantine caught a second sourced venue,** exactly as it had
+  in Bellevue: two imported rows claimed `tenney-park`, 301 metres apart on
+  one 38-acre park. `data/identity/resolutions.json`, built the same day for
+  Hillaire Park, took the second entry without modification — which is the
+  first evidence that the mechanism generalises.
+- **`venuePagePublishes()` said yes about a venue that did not exist.** It
+  asked only whether editorial notes were complete, so a venue held by the
+  identity pass still read as publishable; the city page's best-for block
+  trusted it and rendered a link to a URL with no page behind it. No build
+  step failed. The crawl report caught it by reading the built HTML, which is
+  why that report reads files instead of asking the code. The predicate now
+  checks the venue is in the city's published set as well.
 
 **Three things Bellevue broke, and what each cost:**
 
@@ -408,10 +452,10 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**8 of 50.** The sequencing rule above is the whole plan, and this is the
+**9 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last eight were: find a parks
+The next city is chosen the same way the last nine were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
 never a qualification. Spokane, WA is first in the queue on both counts and
@@ -427,6 +471,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-8-bellevue`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-9-madison`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

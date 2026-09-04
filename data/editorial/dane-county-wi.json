@@ -1,0 +1,63 @@
+{
+  "county": "Dane",
+  "state": "WI",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world — how many courts a park has, what it is surfaced with — come from the City of Madison Parks Division and are cited. Claims about our own inventory — how many rows we hold, how many are unverified — are facts about this dataset rather than about Dane County, and are worded so a reader cannot mistake one for the other. \"We hold 37 imported records for Madison\" is true and checkable; \"Madison has 37 pickleball venues\" would be neither.",
+  "slots": {
+    "coverage": "One city in Dane County is published here: Madison, with twenty-one venues verified against the City of Madison Parks Division's own park pages. That is the whole of it, and the county is considerably larger — Dane County holds Madison plus more than fifty other cities, villages and towns, including Fitchburg, Middleton, Sun Prairie, Verona and Waunakee, none of which has been checked against a named source and none of which therefore appears anywhere on this site. Within Madison itself the coverage is not complete either: the City lists three further parks with pickleball courts — Door Creek, Reindahl and Rennebohm, eighteen courts between them — whose street addresses the Census geocoder cannot resolve, so they fail the identity gate and are named on the city page rather than published.",
+    "distribution": "The verified courts are spread across Madison rather than concentrated, which is unusual in this directory: eleven of the twenty outdoor venues carry exactly two courts, and only three carry more than three. Garner Park's six dedicated courts on the west side are the largest single site, followed by Brittingham Park's four beside Monona Bay. Everything else is a neighbourhood park with a pair of tennis courts striped for pickleball, from Nakoma Park's single court on 5.2 acres to Elver Park's three on 250. The one concentration is indoors and it is recent: five courts across two gyms at the Warner Park Community Recreation Center on the north side, which are also the only courts in the county — and the only ones anywhere on this site — that can be booked in advance.",
+    "gaps": "The honest position is that this is a Madison page wearing a county heading, and it will stay that way until someone verifies a second Dane County municipality. Two specific gaps are worth naming rather than leaving as a silence. The first is inside Madison: three parks the City itself lists are missing because their addresses do not resolve, which is our gate doing its job and still a loss of eighteen courts. The second is everything outside the city limits — Fitchburg, Middleton, Sun Prairie, Verona — where we hold imported rows and no sources at all. Our own dataset also holds Madison records for private clubs, YMCAs, schools and commercial pickleball venues, and not one of those is published, because none carries a source we could read. Whether those operators publish court counts at all is an open question this project has not yet answered anywhere in the country."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Dane County?",
+      "a": "We do not know, and no honest page can tell you. What we can tell you is what we have checked: 53 courts across twenty-one venues, all of them in Madison, every one confirmed against the City of Madison's own park pages with a source and a date you can see. Dane County has more than fifty other municipalities and we have verified none of them."
+    },
+    {
+      "q": "Why is only Madison listed?",
+      "a": "Because it is the only municipality in the county whose courts we have been able to confirm against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Fitchburg, Middleton, Sun Prairie and Verona all appear in our imported data; none of those rows carries a source, so none of them is published."
+    },
+    {
+      "q": "What made Madison possible?",
+      "a": "Structure. Madison Parks publishes a block on each park page reading, for example, \"Tennis & Pickleball / Courts: 2, asphalt\" — a count and a surface in one line, for every venue on its pickleball list. Most cities publish a park name and leave you to guess. It is the only source read for this directory that has stated a playing surface for every venue it lists."
+    },
+    {
+      "q": "Are the courts on this page free to use?",
+      "a": "Not confirmed. Madison publishes counts, surfaces and access rules but says nothing about cost at its outdoor park courts, so every one of them shows cost as not verified rather than free. They are municipal park courts and are very likely free; \"very likely\" is not a fact. The one venue that does charge says so: the Warner Park Community Recreation Center requires a membership or a daily admission."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "Madison's park pages are ordinary web pages that change without notice, so each one is snapshotted into the repository that builds this site and re-asserted on every build — if a court count or a surface changes, the build fails and someone re-reads the page. These were read on 4 September 2026, and that date appears on every venue."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's pickleball page, listing every venue it runs with a street address, plus \"Garner Park offers Madison's only dedicated outdoor pickleball courts\" and the first-come rule. The per-park pages linked from it carry the counts and surfaces quoted above. Snapshot: data/sources/madison/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["distribution"],
+      "evidence": "Warner Park Community Recreation Center: \"Blue Gym: 2 courts - 20ft x 44ft\", \"Green Gym: 3 courts - 20ft x 44ft\", the WebTrac reservation route, and the membership-or-daily-admission requirement. Snapshot: data/sources/madison/wpcrc-fitness-center-pickleball-membership.html"
+    },
+    {
+      "id": "D1",
+      "url": "https://github.com/odbrangieclawson/pickleball-courts/blob/main/reports/city-triage.md",
+      "publisher": "Find Pickleball Courts (this project)",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Our own triage of the imported dataset: 37 imported rows for Madison, WI, of which the published venues are those that could be matched to a City source. The remainder — private clubs, YMCAs, schools and commercial venues among them — carry no source_url and no date_checked and are therefore status=pending. This is a claim about our dataset, not about Dane County."
+    }
+  ]
+}

@@ -1,0 +1,1095 @@
+{
+  "city": "Madison",
+  "state": "WI",
+  "kind": "venues",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Every court count and every surface below comes from that park's own page on cityofmadison.com, in the block the City heads \"Tennis & Pickleball\" or, at Garner Park, \"Pickleball\". Every address comes from the City's pickleball courts list. Where a park page says nothing about its courts beyond that block — and several say very little about the park at all — this page says nothing either. Nobody working on this has played on these courts.",
+  "venues": {
+    "bordner-park": {
+      "slots": {
+        "description": "Two courts on asphalt, on a 6.47-acre neighbourhood park on Madison's west side. The City describes Bordner as \"the perfect location for nearby residents, families, and people of all ages\", with basketball courts, an open field for a pick-up game of soccer, a playground, and the tennis courts that carry the pickleball lines. That last detail is the one to hold on to: like nineteen of Madison's twenty outdoor pickleball venues, this is a tennis court with pickleball markings on it rather than a pickleball court, and the City is explicit about what that means in practice.\n\nBordner sits in the largest group in Madison's pickleball inventory: fourteen of the city's twenty outdoor venues carry exactly two courts, and this is one of them. That distribution is the real shape of pickleball here — not a few big complexes but a two-court pair painted onto tennis courts in park after park, spread across every side of the city. It is why the interesting question in Madison is rarely how many courts a venue has and usually what it is made of and whether it is shared, both of which the City answers.",
+        "getting_there": "5610 Elder Pl., Madison, WI 53705, which the Census geocoder matched cleanly to Madison city, Dane County. The City publishes nothing about parking at any of its pickleball venues, and on a park of this size — under seven acres, in a residential street grid — the realistic expectation is street parking rather than a lot. Nothing on the park page contradicts that, and nothing on it confirms it either.",
+        "what_to_expect": "Two courts, shared with tennis, played over a tennis net that Madison notes is \"about 2\\\" taller than a standard pickleball net\". Individuals play first come, first served; the City's one caveat citywide is that leagues and lessons must reserve in advance, and it does not publish where those bookings appear. Lighting is not verified here — Madison marks its one lit venue and says nothing about the rest — so plan for daylight. With two courts and a neighbourhood catchment, this is a venue for a pair or two rather than a group. What the City does not publish for Bordner is as telling as what it does: no restrooms, no shelter, no parking, no hours. The record here is a court count, a surface, an address and an acreage, and this page will not turn that into a description of what a Tuesday evening feels like."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt. The City states it in one line on the park's own page, under the heading \"Tennis & Pickleball\": \"Courts: 2, asphalt\"."
+        },
+        {
+          "q": "Are they dedicated pickleball courts?",
+          "a": "No. They are tennis courts striped for pickleball, which is how nineteen of Madison's twenty outdoor venues work. Garner Park has the city's only dedicated outdoor pickleball courts."
+        },
+        {
+          "q": "Is there lighting?",
+          "a": "Not verified. Only Tenney Park's courts are marked lighted on Madison's pickleball list; every other venue including this one is unknown rather than confirmed dark."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "The City lists basketball courts, an open field suitable for pick-up soccer, a playground and the tennis courts, on 6.47 acres."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count. Eighteen of Madison's twenty outdoor pickleball venues are asphalt; only Reynolds Park and Westmorland Park are anything else."
+        },
+        {
+          "q": "How does this compare to other Madison venues?",
+          "a": "Two courts is the most common count in the city — fourteen of the twenty outdoor venues have exactly two. Garner Park's six and Brittingham Park's four are the only larger sets published here."
+        },
+        {
+          "q": "Is it shared with tennis?",
+          "a": "Yes. The block on the park's page is headed \"Tennis & Pickleball\", which in Madison means tennis courts striped for pickleball. Only Garner Park's six courts are dedicated."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
+    "brittingham-park": {
+      "slots": {
+        "description": "Four courts on asphalt — the largest shared-court count in Madison — on a 25.81-acre park stretching along Monona Bay just west of downtown. Brittingham is one of the busier public spaces in the city: the City's page lists the Jenni and Kyle Foundation Accessible Playground, a reservable shelter, multipurpose fields, a nature nook, a beach house with Madison Boats running watercraft rentals, an off-leash dog park and a sand volleyball court. After three larger pickleball sites in the city fell out of this directory on address checks, Brittingham's four courts are the second-largest count published in Madison, behind Garner's six.",
+        "getting_there": "388 S. Bassett St., Madison, WI 53703 — and that address is worth reading carefully, because it is not the park's. The City lists Brittingham's main entrance at 829 W. Washington Ave. and prints the courts separately at S. Bassett St., which is a different street on a park that runs along a bay. If you navigate to the park's headline address you will be at the playground and shelters, not the courts.",
+        "what_to_expect": "Four tennis courts striped for pickleball, played over a tennis net about two inches higher than a pickleball net, first come first served for individuals. The park page also carries a note the City has left standing since the courts reopened: \"Update November 5, 2025: Fencing work is nearly complete and courts are open again!\" — which tells you the courts were closed for work, and that the City updates these pages when they are. Lighting is not verified. Four courts is enough for a group of eight to rotate, which is not true of most Madison venues. One more thing the split address implies: the courts sit on the Bassett Street side of a park that stretches along a bay, so the beach, the boats and the dog park the City lists are a walk away rather than beside you. Restrooms are not published for the court end specifically."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Four, on asphalt: \"Tennis & Pickleball / 388 S. Bassett St. / Courts: 4, asphalt\" on the park's own page. That is the largest shared-court count published in Madison."
+        },
+        {
+          "q": "Which address should I use?",
+          "a": "388 S. Bassett St. for the courts. The park's general address, 829 W. Washington Ave., is where the playground, shelter and multipurpose fields are — the City prints the two separately, and this is the only Madison venue where the court address differs from the park address."
+        },
+        {
+          "q": "Were the courts closed recently?",
+          "a": "They were. The City's page carries an update dated 5 November 2025 saying fencing work was nearly complete and the courts were open again. We publish that because it tells you the page is maintained, not because there is any current closure."
+        },
+        {
+          "q": "What else is at the park?",
+          "a": "A beach and beach house with watercraft rentals, an accessible playground, a reservable shelter, multipurpose fields, sand volleyball, a nature nook and an off-leash dog park, along Monona Bay."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt. The City states it in the same line as the count, at the court's own address rather than the park's."
+        },
+        {
+          "q": "Is four courts enough for a group?",
+          "a": "It is the largest shared-court set published in Madison, and enough for eight players to rotate. Only Garner Park, with six dedicated courts, is larger."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M4",
+        "M3"
+      ]
+    },
+    "elver-park": {
+      "slots": {
+        "description": "Three courts on asphalt in the largest community park Madison Parks runs — 250.82 acres in the south-west corner of the city. The City's own summary gives the scale: \"The largest community park in Madison Parks, Elver Park spans an impressive 250 acres in the southwest corner of the city. Elver features two reservable shelters, a splash park, athletic fields, a disc golf course and more.\" The pickleball is three courts of that, striped onto tennis courts, which is a fair illustration of how the sport sits in Madison: distributed across the park system rather than concentrated in a facility.\n\nElver is the outlier that shows how little park size predicts court count. At 250.82 acres it is the largest community park Madison Parks runs, and its three courts put it level with Tenney and Warner and behind Brittingham's four and Garner's six — two parks a fraction of its size. Across the city, twenty outdoor venues hold forty-eight courts between them, an average of just under two and a half each, and Elver is almost exactly average on a park more than forty times the median size.",
+        "getting_there": "1250 McKenna Blvd., Madison, WI 53719, matched by the Census geocoder to Madison city, Dane County. On a 250-acre park the address is the entrance rather than the court, and the City publishes no guidance on where within the park to head or where to leave a car. Budget time to find them.",
+        "what_to_expect": "Three courts shared with tennis, on asphalt, played over a tennis net at tennis height. First come, first served for individuals; leagues and lessons reserve in advance. Three is an awkward number for rotation but a good one for arriving in a group of four with a spare. Lighting is not verified. The park around the courts is busy with other uses — splash park, disc golf, athletic fields, two reservable shelters — which is worth knowing on a summer weekend even though it says nothing directly about court demand. Two practical unknowns worth stating plainly: the City publishes no map reference for where in 250 acres the courts sit, and no restroom or parking information for them. On a park this size that is a real gap, and guessing at it would be worse than saying so."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Three, on asphalt, stated on Elver Park's page as \"Tennis & Pickleball / Courts: 3, asphalt\"."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "250.82 acres — the largest community park in the Madison Parks system, by the City's own description. The courts are one amenity among many."
+        },
+        {
+          "q": "Is there anything else to do there?",
+          "a": "A splash park, a disc golf course, athletic fields and two reservable shelters, per the City's page. Elver is a destination park rather than a neighbourhood one."
+        },
+        {
+          "q": "Can I book a court here?",
+          "a": "Not as an individual. Madison's outdoor courts are first come, first served; only leagues and lessons reserve. The one bookable pickleball venue in the city is indoors, at the Warner Park Community Recreation Center."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated alongside the count on the park's page."
+        },
+        {
+          "q": "Is this the biggest pickleball site in Madison?",
+          "a": "No — the park is the biggest, at 250.82 acres, but its three courts are fewer than Garner Park's six or Brittingham Park's four. Park size and court count are unrelated in this city."
+        },
+        {
+          "q": "Are there restrooms at the courts?",
+          "a": "Not verified. On a 250-acre park with shelters and a splash park there are certainly facilities somewhere; the City does not say where relative to the courts, so we do not either."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M5",
+        "M3"
+      ]
+    },
+    "garner-park": {
+      "slots": {
+        "description": "Six dedicated pickleball courts on asphalt — the only dedicated outdoor pickleball courts in Madison, and the city's first. The City states both facts itself: its pickleball page says \"Garner Park offers Madison's only dedicated outdoor pickleball courts\", and the park's own page dates them — \"Madison's first dedicated pickleball courts, located in Garner Park, opened in 2016.\" Everything else outdoors in this city is a tennis court with lines added. Garner is 41.83 acres on the west side, most of it rising along a knoll to an overlook where the award-winning park shelter sits, and it is the home of Opera in the Park.",
+        "getting_there": "333 S. Rosa Rd., Madison, WI 53705, matched by the Census geocoder to Madison city, Dane County. The park's shelter is reservable for picnics and gatherings, which implies vehicle access, but the City publishes nothing about parking here or at any other Madison pickleball venue. Note the park is on a knoll: the courts and the overlook are not at the same elevation.",
+        "what_to_expect": "The only place in Madison where you are playing on a pickleball court rather than a tennis court — a proper net at the proper height, no tennis lines to read through, and six courts, which is enough for a genuine rotation. Individuals play first come, first served; leagues and lessons must reserve in advance, and with six dedicated courts this is the likeliest venue in the city to have one of those running. Lighting is not verified. On a summer evening, note that Opera in the Park draws crowds to this park specifically. Two things the City still does not say, even here: whether the courts are lit, and whether nets are provided. Dedicated courts usually imply permanent nets, and this directory does not publish what a thing usually implies — so bring a paddle and check before assuming a net."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Six, on asphalt, under the heading \"Pickleball\" rather than \"Tennis & Pickleball\" — the only park page in Madison where that heading appears alone."
+        },
+        {
+          "q": "Are these really dedicated courts?",
+          "a": "Yes, and the City says so twice. Its pickleball page states that \"Garner Park offers Madison's only dedicated outdoor pickleball courts\", and the park page records them as Madison's first, opened in 2016."
+        },
+        {
+          "q": "Why does that matter?",
+          "a": "Because a dual-striped court uses a tennis net, which Madison notes is \"about 2\\\" taller than a standard pickleball net\". At Garner the net is the right height and the lines are the only lines. Nineteen of the city's twenty outdoor venues are the other kind."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "42 acres rising to an overlook with an award-winning reservable shelter, and Opera in the Park, which the City names on the same page."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count. The City gives no resurfacing date and no condition note, here or anywhere else in Madison."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not verified. Even Madison's flagship pickleball site carries no lighting statement — only Tenney Park's line ends in \"lighted\"."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M6",
+        "M3"
+      ]
+    },
+    "heritage-heights-park": {
+      "slots": {
+        "description": "Two courts on asphalt at an 8.11-acre park on Madison's east side, which the City describes as \"a beautiful park on Madison's east side, near Kennedy Elementary School and adjacent to Heritage Sanctuary\". The sanctuary is the distinguishing feature — this is a neighbourhood park backing onto conservation land rather than a sports site — and the pickleball is two tennis courts carrying pickleball lines, the most common arrangement in the city.\n\nTwo courts puts Heritage Heights in the commonest category in Madison — fourteen of twenty outdoor venues have exactly two — and its east-side position puts it in the denser half of the city's inventory. Kennedy Park, Olbrich Park and Richmond Hill Park are all two-court venues on the same side, with Tenney's three the nearest larger set. For a group of more than four, none of those is really the answer; Garner Park across the city is.",
+        "getting_there": "701 Meadowlark Dr., Madison, WI 53714, matched by the Census geocoder to Madison city, Dane County. Kennedy Park, another two-court venue in this directory, is a short distance away on the same side of the city and shares the same elementary school as a landmark — if one is busy, the other is the nearest alternative.",
+        "what_to_expect": "Two shared courts, first come first served, over a tennis net about two inches too high for pickleball. No lighting is verified, so daylight. On an eight-acre neighbourhood park adjacent to a conservation area there is nowhere to wait but courtside, which makes this a venue for one group rather than several. The City publishes nothing about restrooms or parking here. The City publishes no restrooms, parking, shelter or hours for this park, so the verifiable record is the count, the surface, the acreage, the address and the two landmarks it names. That is a thinner picture than the park probably deserves, and it is the picture the source supports."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt: \"Tennis & Pickleball / Courts: 2, asphalt\" on the park's page."
+        },
+        {
+          "q": "Where exactly is it?",
+          "a": "701 Meadowlark Dr. on the east side, near Kennedy Elementary School and adjacent to Heritage Sanctuary, which is how the City locates it."
+        },
+        {
+          "q": "Is there a nearby alternative if the courts are busy?",
+          "a": "Kennedy Park, also two courts on asphalt, is the closest published venue on the same side of the city. Beyond that, Olbrich Park has two and Tenney three."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not verified. The City's page for this park does not list them, which means it has not said rather than that there are none."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count on the park's own page."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "8.11 acres, which puts it in the middle of Madison's published set — larger than Norman Clayton's 3.44 and much smaller than Elver's 250."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. Tenney Park is the only Madison venue whose court line ends in \"lighted\", and Madison marks the lit ones rather than the unlit ones."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M7",
+        "M3"
+      ]
+    },
+    "huegel-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 13-acre park on Madison's south-west side. The City notes that Huegel is \"jointly developed and maintained by the City of Madison\" together with a partner body, which is a shared-stewardship arrangement more common in Madison than in most city park systems and does not change who publishes the court count: the Parks Division does, in the same structured line as everywhere else. Two tennis courts, striped for pickleball, on asphalt.\n\nHuegel is one of three published venues in Madison's south-west quadrant, with Westhaven Trails Park's two courts and Elver Park's three. Seven courts between three parks is thin cover for that part of the city, and it is worth being clear that this reflects what the City has published rather than a survey of what exists — our imported dataset holds Madison rows for clubs, gyms and schools that carry no source and so appear nowhere on this site.",
+        "getting_there": "5902 Williamsburg Way, Madison, WI 53719, matched by the Census geocoder to Madison city, Dane County. Westhaven Trails Park, also two courts, is the nearest published alternative on the same side of the city, and Elver Park's three are a short distance further south-west.",
+        "what_to_expect": "Two shared courts, first come first served for individuals, played over a tennis net Madison notes is about two inches taller than a pickleball net. Lighting is not verified. This is a neighbourhood park rather than a destination, so the realistic expectation is a quiet court on a weekday and a queue of one on a weekend evening — though the City publishes no demand figures anywhere, and that sentence is inference rather than fact. Nothing is published about restrooms, parking or hours here, and nothing about lighting. What the City does confirm is the joint stewardship arrangement, the acreage and the court block — and on a shared-maintenance park it is worth knowing that the court count still comes from the Parks Division rather than from a partner."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt, stated on the park's own page as \"Tennis & Pickleball / Courts: 2, asphalt\"."
+        },
+        {
+          "q": "Who runs the park?",
+          "a": "The City of Madison Parks Division publishes and maintains the record, and describes the park as jointly developed and maintained with a partner. The court count and surface here are the City's own."
+        },
+        {
+          "q": "What is the surface like?",
+          "a": "Asphalt, which is what eighteen of Madison's twenty outdoor pickleball venues are. The City states the material but publishes nothing about its condition — no resurfacing dates, no crack notes."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. Tenney Park is the only Madison venue whose courts the City marks as lighted."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "13 acres, on Madison's south-west side."
+        },
+        {
+          "q": "Where else can I play on this side of the city?",
+          "a": "Westhaven Trails Park has two courts and Elver Park three, both in the south-west. Those three sites are the whole of the verified inventory for this corner of Madison."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not verified. The City's page for this park lists none, which means it has not said rather than that there are none."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M8",
+        "M3"
+      ]
+    },
+    "kennedy-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 22.72-acre east-side park that the City describes as \"a popular location for youth soccer leagues and neighborhood children playing on the play equipment or riding their bikes on the trail going through the park and to Kennedy Elementary School\". That is a fair warning about the character of the place on a Saturday morning: the pickleball is two tennis courts striped for the sport, on a site whose main business is youth sport and a school route.\n\nKennedy is one of a cluster of two-court east-side venues — Heritage Heights, Olbrich and Richmond Hill are the others — in a city where fourteen of twenty outdoor venues carry exactly two courts. What distinguishes them from one another in the record is almost nothing: all four are asphalt, none is lit, none publishes restrooms or parking. On this side of Madison the meaningful choice is between two courts near you and Tenney Park's three lit ones on the isthmus.",
+        "getting_there": "5202 Retana Dr., Madison, WI 53714, matched by the Census geocoder to Madison city, Dane County. The park has a trail running through it and on to Kennedy Elementary School, which the City mentions, so arriving on foot or by bike from the surrounding neighbourhood is a normal way to get here. Nothing is published about parking.",
+        "what_to_expect": "Two shared courts, first come first served, tennis net at tennis height. Lighting is not verified. The soccer leagues the City names do not compete for the courts, but they compete for the park, so expect the site to be busy in youth-sport season even when the courts are free. Heritage Heights Park, also two courts, is the nearest published alternative if they are not. The City publishes no restrooms, parking or hours for the park, and no lighting for the courts. What it does publish — the trail, the school, the soccer leagues — describes a park that is busy for reasons unconnected to pickleball, which is context rather than a court-availability claim."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt: \"Tennis & Pickleball / Courts: 2, asphalt\"."
+        },
+        {
+          "q": "Is the park busy?",
+          "a": "The City calls it a popular location for youth soccer leagues and for children on the play equipment and the trail through to Kennedy Elementary. It publishes no figures, and none of that is specifically about the courts."
+        },
+        {
+          "q": "Can I walk or cycle there?",
+          "a": "The City describes a trail running through the park and on to the elementary school, so yes from the surrounding neighbourhood. It publishes nothing about parking for those arriving by car."
+        },
+        {
+          "q": "Are the courts shared with tennis?",
+          "a": "Yes, like nineteen of Madison's twenty outdoor venues. You play over the tennis net, which Madison notes is about two inches taller than a pickleball net."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "22.72 acres on the east side, which the City calls a large eastside park."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not verified — the City's page for this park does not list them."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M9",
+        "M3"
+      ]
+    },
+    "nakoma-park": {
+      "slots": {
+        "description": "One court on asphalt — the smallest verified pickleball venue in Madison — at a 5.21-acre park on the near west side. The City's page focuses on an arrangement rather than the sport: the playground between Thoreau Elementary School and Nakoma Park is jointly used under an agreement between the City and the school district. The pickleball is a single court striped onto the park's tennis court, which means that when someone is playing tennis, there is no pickleball here at all.\n\nOne court makes Nakoma unique in Madison's published set, and it sits at the far end of a narrow distribution: fourteen venues have two courts, three have three, one has four, one has six. Forty-eight outdoor courts across twenty parks, and this is the only place with a single one. That is worth knowing before you drive: a one-court overlay venue is the least reliable proposition in the city, because a single tennis match closes it completely.",
+        "getting_there": "3801 Cherokee Dr., Madison, WI 53711, matched by the Census geocoder to Madison city, Dane County. It is a residential pocket of the near west side, adjacent to an elementary school, and the City publishes nothing about parking — on a five-acre neighbourhood park beside a school, treat that as street parking and expect school-run traffic at the obvious hours.",
+        "what_to_expect": "One court, shared with tennis, over a tennis net about two inches taller than a pickleball net. That is the whole venue. It is fine for a single game of doubles by arrangement and unsuitable for a group, and if the tennis court is in use there is no second court to fall back on. Norman Clayton Park and Westmorland Park, each with two, are the nearest published alternatives on this side of the city. No restrooms, parking, lighting or hours are published for Nakoma. On a single-court venue that matters less than it might: the decisive fact is that there is one court, and the record for it is complete — a count, a surface, an address that resolves, and a county."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "One, on asphalt: \"Tennis & Pickleball / Courts: 1, asphalt\". It is the only single-court venue published in Madison."
+        },
+        {
+          "q": "What happens if someone is playing tennis?",
+          "a": "Then the court is taken. With one court and no dedicated pickleball surface, tennis and pickleball cannot both happen here — which is the practical reason a single-court overlay venue is worth reading carefully rather than counting as \"has pickleball\"."
+        },
+        {
+          "q": "Is the playground public?",
+          "a": "The City describes the playground between Thoreau Elementary School and Nakoma Park as jointly used under an agreement, so it serves both the school and the park."
+        },
+        {
+          "q": "Where else can I play nearby?",
+          "a": "Westmorland Park has two courts on sport court tile and Norman Clayton Park two on asphalt, both on the same side of the city."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count on the park's own page."
+        },
+        {
+          "q": "Is one court unusual?",
+          "a": "In Madison, yes — it is the only single-court venue published here. Eleven of the twenty outdoor venues have two, and the largest is Garner Park with six."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified, like every Madison venue except Tenney Park. On a single court with no lighting statement, daylight is the safe assumption."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M10",
+        "M3"
+      ]
+    },
+    "norman-clayton-park": {
+      "slots": {
+        "description": "Two courts on asphalt at one of the smallest parks in this set — 3.44 acres on Madison's west side. The City's page is unusually sparse about the park itself; what it does record is a second way in, noting access at \"6402 Piping Rock Road, also path between 6410 & 6502 Piping Rock Road\", which is the kind of detail that matters at a pocket park where the obvious frontage may not be the one nearest the courts. The pickleball is two tennis courts carrying pickleball lines.\n\nAt 3.44 acres this is the smallest park published in Madison, and its two courts are the same count fourteen of the city's twenty outdoor venues carry. The near-west side around it is thinly served — Nakoma Park's single court and Westmorland Park's two on tile are the nearest published alternatives — so the practical catchment here is the immediate neighbourhood rather than the quarter of the city.",
+        "getting_there": "6401 Shoreham Dr., Madison, WI 53711 is the address the City lists for the courts, and the Census geocoder matched it to Madison city, Dane County. The park page also names access from Piping Rock Road, including a path between two house numbers, so on a 3.44-acre site it is worth knowing which side you are approaching from. No parking guidance is published.",
+        "what_to_expect": "Two shared courts, first come first served, tennis net at tennis height, no verified lighting. On three and a half acres there is very little else here — the City lists no shelter, no restroom and no other courts — so this is a venue you go to in order to play and not to spend an afternoon. Nakoma Park is a mile or so away with a single court; Westmorland Park has two on tile. No lighting, hours, shelter or parking is published for this park. The alternate access the City names is the most specific thing on the page, and it is the sort of detail that only appears when the obvious entrance is not the useful one."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt: \"Tennis & Pickleball / Courts: 2, asphalt\" on the park's own page."
+        },
+        {
+          "q": "How do I get in?",
+          "a": "The courts are listed at 6401 Shoreham Dr. The City's page also names access at 6402 Piping Rock Road and a path between 6410 and 6502 Piping Rock Road, which on a park this small can be the difference between a short walk and a long one."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not verified. The City's page for this park lists none, which means it has not said rather than that there are none."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "3.44 acres, the smallest park published in Madison — smaller than Reynolds Park's 3.58 and Waunona's 5.13."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count."
+        },
+        {
+          "q": "Is it worth the trip?",
+          "a": "If you live nearby, yes. If you are crossing the city, Garner Park's six dedicated courts or Brittingham Park's four give a group somewhere to rotate, which two courts on three acres does not."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. Only Tenney Park carries a lighting statement in Madison."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M11",
+        "M3"
+      ]
+    },
+    "northland-manor-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 10.3-acre park on Madison's north side. This is one of the venues where the City's record is a court count and very little else: the park page carries the structured \"Tennis & Pickleball / Courts: 2, asphalt\" block and no descriptive text about the park at all. So this page can tell you what is there and what it is made of, and nothing about what it is like — which is a gap in the source rather than something we have chosen not to write.\n\nTwo courts on the north side, in a city where fourteen of twenty outdoor venues carry exactly two. The north side is also where Madison's only indoor courts are: five at the Warner Park Community Recreation Center, about a mile and a half away, which are the only bookable pickleball courts in this directory. That makes this corner of the city the one place in Madison with a genuine wet-weather fallback, even if using it costs a membership or a daily admission.",
+        "getting_there": "902 Northland Dr., Madison, WI 53704, matched by the Census geocoder to Madison city, Dane County. Warner Park, with three outdoor courts and the city's only indoor ones at the recreation center, is the nearest larger site on the same side of the city, so if two courts are not enough this is the direction to head.",
+        "what_to_expect": "Two shared courts, first come first served, over a tennis net that Madison notes is about two inches taller than a standard pickleball net. Lighting is not verified. Beyond that, the honest answer is that we do not know: no restrooms, parking, shelter or amenities are published for this park, and this directory does not fill that kind of silence with a guess about what a ten-acre neighbourhood park probably has. To be concrete about the silence: the City's page for this park lists no restrooms, no shelter, no parking, no playground, no hours and no lighting. It records 10.3 acres and two asphalt courts. Everything else you might want to know about this venue is unpublished, and that is the honest state of the record."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt, from the structured block on the park's own page: \"Tennis & Pickleball / Courts: 2, asphalt\"."
+        },
+        {
+          "q": "Why is there so little information about this park?",
+          "a": "Because the City's page for it carries the court block and no park description. Several Madison park pages are like this. We publish what is stated and leave the rest unverified rather than describing a park nobody has described to us."
+        },
+        {
+          "q": "Are there restrooms or parking?",
+          "a": "Not verified — the page lists neither."
+        },
+        {
+          "q": "Where is the nearest larger venue?",
+          "a": "Warner Park, on the same side of the city, with three outdoor courts and five indoor ones at the Warner Park Community Recreation Center."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, from the same line as the count."
+        },
+        {
+          "q": "Is the park worth visiting for anything else?",
+          "a": "We cannot say. The City publishes no description or amenity list for it, and this directory does not describe parks it has only read a court count for."
+        },
+        {
+          "q": "Is there anywhere indoors nearby?",
+          "a": "The Warner Park Community Recreation Center, on the same side of the city, has five indoor courts — the only bookable pickleball courts in this directory. It requires an active WPCRC ID and either a membership or a daily admission."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M12",
+        "M3"
+      ]
+    },
+    "olbrich-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 90-acre park on the shore of Lake Monona, adjacent to the Olbrich Botanical Gardens — the City's own description calls it a place for \"a day of leisure, a picnic with your family, or just a great place to revitalize\". It is one of the more attractive settings for a pickleball court in this directory and one of the smaller counts on a park of that size: two courts on 90 acres, striped onto tennis courts. Our own imported dataset recorded four courts here; the City says two, and the City runs the park.\n\nTwo courts on ninety acres is the widest gap between park size and court count in Madison after Elver Park, and the record for it changed when a source was read: the imported row this directory started from claimed four courts here, and the City says two. That correction is the ordinary business of this project. An operator's own page beats an unsourced dataset every time, and the difference is logged rather than quietly applied.",
+        "getting_there": "3527 Atwood Ave., Madison, WI 53714, on the east side along the lake shore, matched by the Census geocoder to Madison city, Dane County. The botanical gardens next door draw their own visitors, so the area is busier than the court count suggests. As everywhere in Madison, no parking guidance is published for the courts themselves.",
+        "what_to_expect": "Two shared courts, first come first served, tennis net at tennis height, no verified lighting. The setting is the reason to come — Lake Monona on one side, the botanical gardens on the other — rather than the facilities, and with only two courts a group of eight will be waiting. Tenney Park, three courts and the only lit venue in the city, is the nearest larger alternative on this side of town. No lighting, restrooms or parking is published for the courts themselves, which on a 90-acre lakeside park with a botanical garden next door is a notable omission. The setting is documented; the facilities around the courts are not."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt: \"Tennis & Pickleball / Courts: 2, asphalt\" on the park's own page."
+        },
+        {
+          "q": "Didn't this park have four courts?",
+          "a": "The imported record this directory started from said four. The City of Madison's own page says two, so two is what we publish — an operator beats an unsourced dataset every time, and the change is logged in our conflicts report for this city."
+        },
+        {
+          "q": "What is nearby?",
+          "a": "The Olbrich Botanical Gardens are adjacent, and the park runs along the shore of Lake Monona on Madison's east side."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. Only Tenney Park's courts are marked lighted anywhere on Madison's pickleball list."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count on the park's own page."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "90.01 acres along the shore of Lake Monona on Madison's east side, adjacent to the Olbrich Botanical Gardens."
+        },
+        {
+          "q": "Are they shared with tennis?",
+          "a": "Yes, like nineteen of Madison's twenty outdoor venues. The block is headed \"Tennis & Pickleball\" and you play over the tennis net."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M13",
+        "M3"
+      ]
+    },
+    "reynolds-park": {
+      "slots": {
+        "description": "Two courts on \"sport court tile\" — one of only two venues in Madison, and two in this entire directory, whose surface is not asphalt or concrete. Reynolds is a 3.58-acre park on the near east side, a few blocks from the Capitol, and the surface is the reason to know about it: modular tile is laid in panels over a base rather than poured, and it plays faster and drains differently from asphalt. Madison states it in the same line as the count, which is why we can tell you at all.\n\nReynolds is one of exactly two Madison venues — and two venues in this entire directory of ninety-five — whose surface is neither asphalt nor unrecorded. Across the eight cities published before Madison, five venues out of seventy-four carried any verified surface at all. Madison states one for all twenty of its outdoor venues, and at eighteen of them the answer is asphalt. Here and at Westmorland Park it is sport court tile, which is the only real surface choice a Madison player has.",
+        "getting_there": "810 E. Mifflin St., Madison, WI 53703, matched by the Census geocoder to Madison city, Dane County. This is dense near-east-side street grid a short distance from the Capitol square, so the practical expectation is on-street parking; the City publishes no guidance. Tenney Park, three lit courts, is the nearest other venue on this side of the isthmus.",
+        "what_to_expect": "Two courts on tile, shared with tennis, played over a tennis net that Madison notes is about two inches taller than a pickleball net. First come, first served for individuals. Lighting is not verified. On a 3.58-acre park in a dense neighbourhood there is little space to wait, so this is a venue for a pair or two — and worth a trip specifically if you want to feel the difference between tile and asphalt, since Westmorland Park across the city is the only other place in Madison to do that. Nothing is published about restrooms, parking, lighting or hours at Reynolds. The surface is the whole of what makes this venue distinctive in the record, and it is stated rather than inferred — which is more than can be said for the surface of seventy-four venues published on this site before Madison."
+      },
+      "faqs": [
+        {
+          "q": "What are the courts made of?",
+          "a": "\"Sport court tile\", in the City's words — recorded here under the controlled value modular_tile. Reynolds and Westmorland are the only two Madison venues that are not asphalt."
+        },
+        {
+          "q": "How many courts are there?",
+          "a": "Two: \"Tennis & Pickleball / Courts: 2, sport court tile\"."
+        },
+        {
+          "q": "Does the surface actually play differently?",
+          "a": "Modular tile is laid in panels over a base rather than poured flat, and it drains and rebounds differently from asphalt. The City states the material and says nothing about how it plays or what condition it is in, so that is as far as the record goes."
+        },
+        {
+          "q": "Is there lighting?",
+          "a": "Not verified. Tenney Park is the only Madison venue marked lighted."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "3.58 acres, one of the smallest published in Madison — only Norman Clayton Park, at 3.44, is smaller."
+        },
+        {
+          "q": "Where is the other tile court?",
+          "a": "Westmorland Park, on the near west side at 4114 Tokay Blvd. Those two venues are the only non-asphalt surfaces published anywhere on this site."
+        },
+        {
+          "q": "Is it shared with tennis?",
+          "a": "Yes — the tile courts are tennis courts striped for pickleball, so the net is a tennis net at tennis height. Only Garner Park's courts are dedicated pickleball in this city."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M14",
+        "M3"
+      ]
+    },
+    "richmond-hill-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 10.25-acre park on Madison's far east side. Like several parks in this set, the City's page carries the structured court block — \"Tennis & Pickleball / Courts: 2, asphalt\" — without a description of the park itself, so what is verifiable here is the count, the surface, the address and the county, and not much else. Two tennis courts striped for pickleball is the standard Madison arrangement, and this is a standard example of it.\n\nTwo courts on the far east side, the commonest configuration in a city where fourteen of twenty outdoor venues have exactly two. Richmond Hill is among the most easterly published venues in Madison, which matters mainly for what it is near: Door Creek Park, with the city's largest outdoor count at eight courts, is in the same part of town and is not published here because its address does not resolve in the Census geocoder.",
+        "getting_there": "6117 Cottontail Trl., Madison, WI 53718, matched by the Census geocoder to Madison city, Dane County — one of the eastern-most published venues in the city. Nothing is published about parking. Heritage Heights Park and Kennedy Park, each two courts, are the nearest published alternatives heading back towards the centre.",
+        "what_to_expect": "Two shared courts, first come first served, tennis net at tennis height, lighting not verified. The City publishes no restrooms, shelter or amenities for this park, which means it has not said rather than that there are none. Treat it as a neighbourhood court: fine for a game arranged in advance with three friends, not a venue to bring a group to on spec. The unpublished list for this venue is long: no restrooms, no parking, no shelter, no hours, no lighting, no park description. What is verified is the count, the surface, the acreage, the address and the Census placement inside Madison city — which is enough to publish a venue page and not enough to describe a park."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt, from the court block on the park's own page."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "Not verified. The City's page for Richmond Hill carries the court information and no park description or amenity list, so we publish neither."
+        },
+        {
+          "q": "Are they shared with tennis?",
+          "a": "Yes. The block is headed \"Tennis & Pickleball\", which in Madison means tennis courts striped for pickleball — you play over the tennis net."
+        },
+        {
+          "q": "How far east is it?",
+          "a": "Cottontail Trl. is on Madison's far east side, in the 53718 postcode, which the Census geocoder confirmed sits inside Madison city rather than an adjoining town."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "10.25 acres, on the far east side of the city."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. Tenney Park is the only Madison venue with a lighting statement."
+        },
+        {
+          "q": "How was this venue verified?",
+          "a": "From the City of Madison Parks Division's own page for Richmond Hill Park, read and snapshotted on 4 September 2026, and from the Census address geocoder, which matched 6117 Cottontail Trl. to the incorporated place \"Madison city\" in Dane County. Both are cited on this page. The court count and surface are re-checked against that snapshot every time this site is built, so if the City edits the line, the build fails rather than leaving a stale number here."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M15",
+        "M3"
+      ]
+    },
+    "tenney-park": {
+      "slots": {
+        "description": "Three courts on asphalt, and the only outdoor venue in Madison the City marks as lit: the line on the park's page reads \"Courts: 3, asphalt, lighted\". Tenney is 38.12 acres on the near east side along the Yahara River, and the City's description is unusually lyrical for a parks page — \"With its friendly atmosphere and impressive display of storybook scenery Tenney Park serves as a place to socialize, a peaceful recluse, and a place to just be. It's an excellent place to watch boats launch, seagulls flock, let the children play at the park, or just catch up on some reading.\"\n\nThree courts places Tenney level with Elver and Warner and behind Brittingham's four and Garner's six, but the count is not why it stands out. It is the only one of Madison's twenty outdoor venues with a lighting statement, in a city at 43 degrees north where the December sun sets before half past four. Nineteen venues offer daylight pickleball and one offers the possibility of an evening game — that is the whole of what the record supports about playing after dark outdoors in this city.",
+        "getting_there": "1414 E. Johnson St., Madison, WI 53703, matched by the Census geocoder to Madison city, Dane County. The park sits on the isthmus between Lake Mendota and the Yahara River locks, a short distance from the Capitol, so it is reachable on foot and by bike from much of the near east side. The City publishes nothing about parking here or anywhere else in its pickleball listings.",
+        "what_to_expect": "Three courts shared with tennis, played over a tennis net about two inches taller than a pickleball net, first come first served. The difference from every other outdoor court in this city is the lights: Madison marks the lit courts rather than the unlit ones, and Tenney's is the only line that ends in \"lighted\". That makes it the one verified answer in Madison to the question of where to play after dark outdoors — though the City publishes no hours, so how late the lights run is not something we can tell you. Nothing is published about restrooms or parking at the courts, and the lighting statement comes without hours. Worth noting for anyone planning around it: the City marks lighting at the level of the whole court block, so all three courts are covered by that one word."
+      },
+      "faqs": [
+        {
+          "q": "Are the courts lit?",
+          "a": "Yes — and Tenney is the only Madison venue where we can say so. The City's line reads \"Courts: 3, asphalt, lighted\", and no other park's does. Madison marks the lit courts rather than the unlit ones, so everywhere else is unknown rather than dark."
+        },
+        {
+          "q": "How late can I play?",
+          "a": "Not published. The City states that the courts are lit and says nothing about hours, so we cannot tell you when the lights go off."
+        },
+        {
+          "q": "How many courts are there?",
+          "a": "Three, on asphalt, shared with tennis."
+        },
+        {
+          "q": "What is the park like?",
+          "a": "38 acres on the isthmus along the Yahara River, which the City describes for its \"storybook scenery\", boat-watching and play areas. It is one of the older and better-known parks in Madison."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count and the lighting: \"Courts: 3, asphalt, lighted\"."
+        },
+        {
+          "q": "Is this the only lit pickleball in Madison?",
+          "a": "It is the only one we can verify. Nineteen other outdoor venues in the city carry no lighting statement either way, and this directory does not read a silence as a no."
+        },
+        {
+          "q": "Are the courts shared with tennis?",
+          "a": "Yes. Even Madison's only lit pickleball is on tennis courts striped for the sport, so you are playing over a tennis net about two inches taller than a pickleball net."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M16",
+        "M3"
+      ]
+    },
+    "walnut-grove-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 20.25-acre west-side park that the City describes as \"a popular place for families in the neighborhood to play\", with \"expansive play equipment, soccer fields and lots of open space to spark your imagination\". The pickleball is the usual Madison arrangement — two tennis courts carrying pickleball lines — on a park whose main draw is clearly the playground and the open ground rather than the courts.\n\nWalnut Grove and Wexford Park are the closest pair of published pickleball venues in Madison, two courts each on the same road, and together they are the densest bit of provision on the west side outside Garner Park. In a city where fourteen of twenty outdoor venues carry exactly two courts, a second venue within reach is worth more than a third court would be — it doubles your chance of finding one free without doubling the drive.",
+        "getting_there": "202 N. Westfield Rd., Madison, WI 53717, matched by the Census geocoder to Madison city, Dane County. Wexford Park, also two courts, is on the same road a short distance south at 1201 N. Westfield Rd., which makes these two the closest pair of published pickleball venues in Madison — a useful thing to know if you arrive and find the courts taken.",
+        "what_to_expect": "Two shared courts, first come first served for individuals, over a tennis net at tennis height. Lighting is not verified. The City publishes no restroom or parking information for this park. With family use of the playground and soccer fields alongside, expect the park to be busy at weekends without that telling you anything definite about the courts themselves. No restrooms, parking, hours or lighting are published for this park. The City's description covers the playground, the soccer fields and the open space, and stops there — so the court-side facilities are unknown rather than absent."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt: \"Tennis & Pickleball / Courts: 2, asphalt\"."
+        },
+        {
+          "q": "What if the courts are busy?",
+          "a": "Wexford Park is on the same road — 1201 N. Westfield Rd. — with two more courts on asphalt. They are the closest pair of published venues in the city."
+        },
+        {
+          "q": "Is it good for children?",
+          "a": "The City describes expansive play equipment, soccer fields and open space, so the park is set up for families. It says nothing about junior pickleball specifically."
+        },
+        {
+          "q": "Are there lights?",
+          "a": "Not verified. Only Tenney Park's courts are marked lighted in Madison."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "20.25 acres on Madison's west side."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified, like every Madison venue except Tenney Park."
+        },
+        {
+          "q": "How was this venue verified?",
+          "a": "From the City of Madison Parks Division's own page for Walnut Grove Park, snapshotted on 4 September 2026, and from the Census address geocoder, which placed 202 N. Westfield Rd. inside Madison city, Dane County. The count and surface are asserted against that snapshot on every build. Nothing here comes from a competitor directory, a review site, or an assumption about what a twenty-acre west-side park probably has."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M17",
+        "M3"
+      ]
+    },
+    "warner-park": {
+      "slots": {
+        "description": "Three outdoor courts on asphalt at a 213-acre park on Madison's north side, which the City calls \"distinctive for its natural beauty and expansive tracts of land\" and a host of charity runs and community festivals. What makes Warner unusual in this directory is what else is on the site: the Warner Park Community Recreation Center stands in this park at the same street address and holds five indoor courts, published here as a separate venue because the City runs it as a separate facility with its own membership, ID card and booking system. So one address, two very different propositions.\n\nThree outdoor courts is mid-table for Madison, level with Elver and Tenney. What is not mid-table is the site: 213 acres, the second-largest park published here, and the only address in the city with both outdoor and indoor pickleball on it. Across this whole directory only one other place manages that — Bellevue's Hidden Valley Park — and there the City ran both as one facility, so we published one venue. Madison runs them as two, so there are two pages.",
+        "getting_there": "2930 N. Sherman Ave., Madison, WI 53704, matched by the Census geocoder to Madison city, Dane County. The recreation center shares that address, so if you are meeting someone, say whether you mean the outdoor courts or the gyms — they are different entrances to different things, and only one of them can be booked.",
+        "what_to_expect": "Three courts shared with tennis, on asphalt, first come first served, played over a tennis net about two inches taller than a pickleball net. Lighting is not verified outdoors. The genuine advantage here is the fallback: if the weather turns or the courts are taken, the recreation center in the same park has five indoor courts — though you will need a WPCRC ID and either a membership or a daily admission to use them, and ideally a booking, which is not true of anywhere else in the city. Nothing is published about restrooms or parking at the outdoor courts, and no lighting is stated. The recreation center in the same park does publish its own rules in detail, which is a useful reminder that these are two records of different quality at one address rather than one record about one place."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Three outdoor, on asphalt. The five indoor courts at the same address belong to the Warner Park Community Recreation Center and are published separately."
+        },
+        {
+          "q": "Why are the indoor courts a different venue?",
+          "a": "Because the City runs them as a different facility: the recreation center has its own pages, its own ID card, its own membership or daily admission, and a booking system, while the outdoor courts have none of those and are simply first come, first served."
+        },
+        {
+          "q": "Is the park lit?",
+          "a": "Not verified. Tenney Park is the only Madison venue whose courts the City marks as lighted."
+        },
+        {
+          "q": "What else happens at Warner Park?",
+          "a": "The City describes charity fun run and walk events and community festivals across 213 acres, alongside the recreation center."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt outdoors. The gym floors at the recreation center are not described anywhere the City publishes, so that venue reads \"not verified yet\" on surface."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "213.49 acres, the second-largest published in Madison after Elver Park's 250.82."
+        },
+        {
+          "q": "Can I book the outdoor courts?",
+          "a": "No. Only the recreation center's five indoor courts take bookings; the three outdoor ones are first come, first served for individuals, with leagues and lessons reserving in advance."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M18",
+        "M19",
+        "M3"
+      ]
+    },
+    "waunona-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 5.13-acre park on Madison's south side, near the Lake Monona shore. The City's page is brief and its one notable line is a rule rather than a description: \"Alcohol is prohibited in this park.\" That is worth publishing because it is specific, checkable and the kind of thing a group organising an evening game would want to know in advance. The pickleball itself is the standard Madison arrangement — two tennis courts striped for the sport.\n\nTwo courts on the south side, in the commonest Madison configuration. The south side is the thinnest-served quadrant in this city's published set: Waunona's two and Nakoma Park's single court are the nearest verified pickleball to Lake Monona's southern shore, and the next nearest are the near-west-side pairs at Westmorland and Norman Clayton. For a group, the honest answer is that this side of Madison does not have a venue for you.",
+        "getting_there": "5323 Raywood Rd., Madison, WI 53713, matched by the Census geocoder to Madison city, Dane County. This is a residential pocket on the south side; the City publishes no parking guidance, and on a five-acre park the realistic expectation is the street.",
+        "what_to_expect": "Two shared courts, first come first served, tennis net at tennis height, lighting not verified. Alcohol is prohibited in the park, which the City states outright. Beyond that the record is thin: no restrooms, shelter or other amenities are published for this park, and we would rather say so than describe a park we have only read a court count for. Beyond the alcohol rule, the City publishes no restrooms, parking, lighting, hours or amenity list for Waunona. The court block and the acreage are the substance of the record, and the rest of this venue is unknown rather than described."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt: \"Tennis & Pickleball / Courts: 2, asphalt\"."
+        },
+        {
+          "q": "Can we bring drinks?",
+          "a": "Not alcohol. The City states plainly that \"Alcohol is prohibited in this park\", which is one of very few venue-specific rules published anywhere in Madison's pickleball listings."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not verified — the City's page lists none for this park."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "5.13 acres, which makes it one of the smaller published venues in the city, alongside Nakoma at 5.21 and Westhaven Trails at 5.55."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count."
+        },
+        {
+          "q": "Where is it?",
+          "a": "5323 Raywood Rd. on Madison's south side, in the 53713 postcode, which the Census geocoder confirmed sits inside Madison city rather than an adjoining town."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. Tenney Park is the only Madison venue whose courts the City marks as lighted."
+        },
+        {
+          "q": "How was this venue verified?",
+          "a": "From the City of Madison Parks Division's page for Waunona Park, snapshotted on 4 September 2026, and from the Census address geocoder, which matched 5323 Raywood Rd. to Madison city, Dane County. The court count, the surface and the alcohol rule are all quoted from that page, and the count is re-asserted against the snapshot every time this site is rebuilt."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M20",
+        "M3"
+      ]
+    },
+    "westhaven-trails-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 5.55-acre park on Madison's south-west side. The City gives a full amenity sentence for this one: \"This southwest side park features a reservable picnic shelter, playground, ballfield, tennis courts, basketball court, and an open field with soccer goals.\" The tennis courts in that list are the pickleball courts — two of them, striped — which is the arrangement at nineteen of the city's twenty outdoor venues.\n\nTwo courts on 5.55 acres, in the commonest Madison configuration, and one of only three published venues serving the city's south-west — the others being Huegel Park's two and Elver Park's three. What sets this one apart in a thin field is the amenity list: a reservable picnic shelter, a playground, a ballfield, a basketball court and an open field with soccer goals, which is more than most parks twice its size publish here.",
+        "getting_there": "3020 Cimarron Trl., Madison, WI 53719, matched by the Census geocoder to Madison city, Dane County. Huegel Park, also two courts, is the nearest published venue on the same side of the city, and Elver Park's three are a short distance away — for this corner of Madison, those three sites are the whole of the verified inventory.",
+        "what_to_expect": "Two shared courts, first come first served, over a tennis net about two inches too high for pickleball. Lighting is not verified. The picnic shelter is reservable, which is a real advantage if you are organising a group session and want somewhere to sit between games — though the shelter is bookable and the courts are not, which is a peculiarity worth noting when planning. The City publishes no restroom information for the park. No restrooms, parking, hours or lighting are published for the park, though the amenity list is fuller than most in this set. The shelter reservation is handled through the City's park rental route rather than anything court-specific."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt, from the court block on the park's own page."
+        },
+        {
+          "q": "Can I reserve anything here?",
+          "a": "The picnic shelter, yes — the City lists it as reservable. The courts, no: outdoor pickleball courts in Madison are first come, first served for individuals, and only leagues and lessons reserve."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "A playground, a ballfield, a basketball court and an open field with soccer goals, alongside the tennis courts that carry the pickleball lines."
+        },
+        {
+          "q": "Where else can I play nearby?",
+          "a": "Huegel Park has two courts and Elver Park three, both on the south-west side."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count on the park's page."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "5.55 acres on the south-west side — a small park with a fuller amenity list than several larger ones in this city."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified — Tenney Park is the only Madison venue with a lighting statement."
+        },
+        {
+          "q": "How was this venue verified?",
+          "a": "From the City of Madison Parks Division's page for Westhaven Trails Park, snapshotted on 4 September 2026, and from the Census address geocoder, which placed 3020 Cimarron Trl. inside Madison city, Dane County. The amenity list, the court count and the asphalt surface are all the City's own words, re-checked against the committed snapshot on every build."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M21",
+        "M3"
+      ]
+    },
+    "westmorland-park": {
+      "slots": {
+        "description": "Two courts on \"sport court tile\", one of only two non-asphalt surfaces in Madison and in this directory. Westmorland is 11.69 acres on the near west side, and the City's description is one of the fuller ones: \"Westmorland Park features a rock garden, basketball court, large playground, volleyball court, tennis courts and softball field. The shelter is reservable April - October and features a working fireplace.\" The tennis courts there are the pickleball courts, and the tile underfoot is what distinguishes them from eighteen other Madison venues.\n\nWestmorland is one of two Madison venues surfaced in sport court tile rather than asphalt, and one of only two anywhere in this directory. That matters more than the count: across the seventy-four venues published before this city, five had a verified surface of any kind, and Madison states one for every venue it lists. Here the answer is tile, at Reynolds Park it is tile, and at the other eighteen it is asphalt.",
+        "getting_there": "4114 Tokay Blvd., Madison, WI 53711, matched by the Census geocoder to Madison city, Dane County. It is a settled near-west-side neighbourhood; the City publishes no parking guidance. Nakoma Park, with the city's only single court, is the nearest other published venue, and Norman Clayton Park's two are also close by.",
+        "what_to_expect": "Two courts on modular tile, shared with tennis, played over a tennis net Madison notes is about two inches taller than a pickleball net. First come, first served. Lighting is not verified. If you have only ever played on asphalt, this and Reynolds Park are the two places in the city to find out what tile feels like. The shelter with its working fireplace is reservable from April to October, which makes this a plausible venue for an organised group in shoulder season. No restrooms, parking, lighting or hours are published for the courts. What is on the record is the surface, which is the reason to single this venue out at all, plus an amenity list and a shelter season that make it one of the better-documented small parks in Madison."
+      },
+      "faqs": [
+        {
+          "q": "What are the courts made of?",
+          "a": "\"Sport court tile\" in the City's words, recorded here as modular_tile. Only Reynolds Park shares that surface in Madison; the other eighteen outdoor venues are asphalt."
+        },
+        {
+          "q": "How many courts are there?",
+          "a": "Two: \"Tennis & Pickleball / Courts: 2, sport court tile\"."
+        },
+        {
+          "q": "Is there somewhere to sit?",
+          "a": "A reservable shelter, available April to October, with a working fireplace, per the City's page. It is bookable; the courts are not."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "A rock garden, a basketball court, a large playground, a volleyball court and a softball field on 11.69 acres."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "11.69 acres on Madison's near west side."
+        },
+        {
+          "q": "Where is the other tile court?",
+          "a": "Reynolds Park, at 810 E. Mifflin St. on the near east side. Those two are the only non-asphalt pickleball surfaces published anywhere on this site."
+        },
+        {
+          "q": "Is it shared with tennis?",
+          "a": "Yes. The tile courts are the park's tennis courts, striped for pickleball, so the net is a tennis net."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M22",
+        "M3"
+      ]
+    },
+    "wexford-park": {
+      "slots": {
+        "description": "Two courts on asphalt at a 20.6-acre west-side park, which the City describes as featuring \"a shelter, adjacent woods, and unique playground equipment\", popular for youth soccer and for ice skating in winter, with \"extensive flower gardens maintained by neighborhood volunteers\". The pickleball is two tennis courts carrying pickleball lines. The ice skating is worth noting for what it implies about the season: this is a park that changes use in winter, and the courts are not lit.\n\nWexford and Walnut Grove Park sit on the same road with two courts each — the closest pair of published venues in Madison, and the west side's answer to not having a large site outside Garner Park. Four courts across two parks a short drive apart is not the same as four courts at one, but in a city where fourteen of twenty outdoor venues carry exactly two, it is the nearest thing to a choice most neighbourhoods get.",
+        "getting_there": "1201 N. Westfield Rd., Madison, WI 53717, matched by the Census geocoder to Madison city, Dane County. Walnut Grove Park is on the same road at number 202 with two more courts — the two closest published pickleball venues in Madison — so this corner of the west side has four courts between two parks a short drive apart.",
+        "what_to_expect": "Two shared courts, first come first served, tennis net at tennis height, no verified lighting. In a Wisconsin winter that combination means daylight only, on asphalt, at a park the City itself associates with skating rather than racket sport. The volunteer-maintained flower gardens and the adjacent woods make it a pleasant place to be in summer; the realistic read is a quiet neighbourhood venue for a pair or two. Nothing is published about restrooms, parking, hours or lighting here. The park description is one of the fuller ones in this set, and none of it is about the courts — which is a fair summary of how pickleball sits in Madison's park system generally."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on asphalt: \"Tennis & Pickleball / Courts: 2, asphalt\"."
+        },
+        {
+          "q": "What is nearby?",
+          "a": "Walnut Grove Park, at 202 N. Westfield Rd. on the same road, with two more courts. They are the closest pair of published venues in the city."
+        },
+        {
+          "q": "What is the park known for?",
+          "a": "The City names youth soccer, winter ice skating, a shelter, adjacent woods, unique playground equipment and extensive flower gardens maintained by neighbourhood volunteers."
+        },
+        {
+          "q": "Can I play in winter?",
+          "a": "Nothing is published either way. The courts are outdoor asphalt with no verified lighting, in a park the City associates with ice skating in winter, so draw your own conclusion — we are not going to state one as a fact."
+        },
+        {
+          "q": "What is the surface?",
+          "a": "Asphalt, stated in the same line as the count."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "20.60 acres on Madison's west side, with adjacent woods and volunteer-maintained flower gardens."
+        },
+        {
+          "q": "Is it lit?",
+          "a": "Not verified. Tenney Park's three courts are the only ones in Madison the City marks as lighted."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M23",
+        "M3"
+      ]
+    },
+    "warner-park-community-recreation-center": {
+      "slots": {
+        "description": "Five indoor courts across two gyms — Blue Gym has two and Green Gym three, each 20ft by 44ft — and the only pickleball courts in this entire directory that can be reserved in advance. The centre stands inside Warner Park on Madison's north side and was expanded to include, in the City's words, \"two gymnasiums, a fully equipped fitness center, pickleball courts, flexible studio space, atrium and dry and wet craft rooms\". It is published separately from Warner Park's three outdoor courts because the City runs it as a separate facility with its own rules, its own cost and its own booking system.",
+        "getting_there": "2930 N. Sherman Ave., Madison, WI 53704 — the same address as Warner Park, matched by the Census geocoder to Madison city, Dane County. If you are meeting someone here, be specific about which you mean: the outdoor courts and the recreation center share a street number and nothing else. The City publishes no parking guidance for either.",
+        "what_to_expect": "Book first. The City runs reservations through its WebTrac account system and asks that you confirm household members on the account before booking. To play you need an active WPCRC ID card and either a Fitness Center/Pickleball membership or a Daily Admission — annual and six-month memberships and 20-visit passes are available, and all of them include the fitness centre as well as the courts. Neither the membership nor the daily admission price appears on the page we read, so confirm the cost before travelling. Wear non-marking rubber-soled shoes; the City asks for them explicitly to protect the gym floors. One genuine unknown remains after all that detail: the price. The City documents the ID card, the membership types, the passes, the booking route and the footwear, and does not publish a figure for either the membership or the daily admission on the page we read. So the one thing you cannot find out from this record is what an hour of pickleball here costs."
+      },
+      "faqs": [
+        {
+          "q": "Can I really book a court?",
+          "a": "Yes, and this is the only venue on this entire site where that is true. Reservations run through the City's WebTrac account system; every other verified court in the directory, across nine cities, is first come, first served."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "Not published on the page we read. Play requires either a Fitness Center/Pickleball membership or a Daily Admission, plus an active WPCRC ID card. Annual and 6-month memberships and 20-visit passes exist and include the fitness centre. We do not publish a price we have not read."
+        },
+        {
+          "q": "How many courts are there?",
+          "a": "Five: \"Blue Gym: 2 courts - 20ft x 44ft\" and \"Green Gym: 3 courts - 20ft x 44ft\". Both are indoor."
+        },
+        {
+          "q": "Do I need special shoes?",
+          "a": "The City asks for non-marking rubber-soled shoes with soft, flat soles that will not scuff or damage the gym floors. It also states that youth aged 12 to 17 must be accompanied by an adult, and that under-12s are not allowed in the fitness centre at any time."
+        },
+        {
+          "q": "What is the floor made of?",
+          "a": "Not verified. The City states the court dimensions and the shoe requirement but never names the surface, so this venue reads \"not verified yet\" where the twenty outdoor ones state asphalt or tile."
+        },
+        {
+          "q": "Can children play?",
+          "a": "Youth aged 12 to 17 must be accompanied by an adult, and children under 12 are not allowed in the fitness centre at any time, per the City's rules for the facility."
+        },
+        {
+          "q": "Is there outdoor pickleball at the same park?",
+          "a": "Yes — Warner Park has three outdoor courts on asphalt at this same address, published here as a separate venue because the City runs them under entirely different rules: first come, first served, no membership, no booking."
+        }
+      ],
+      "sources": [
+        "M19",
+        "M24",
+        "M3"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "M1",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "The City's pickleball page, carrying every venue's street address and the statements each venue note is read against: \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\\\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\". Snapshot: data/sources/madison/pickleball.html"
+    },
+    {
+      "id": "M2",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/bordner-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 6.47\"; the west-side description naming basketball courts, an open field, a playground and tennis courts. Snapshot: data/sources/madison/bordner-park.html"
+    },
+    {
+      "id": "M3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Every address above was matched by the Census address geocoder and placed in the incorporated place \"Madison city\", Dane County, WI, with the postal code the geocoder returned. Snapshot: data/sources/madison-county-census.json"
+    },
+    {
+      "id": "M4",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/brittingham",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / 388 S. Bassett St. / Courts: 4, asphalt\"; \"Update November 5, 2025: Fencing work is nearly complete and courts are open again!\"; \"Acres: 25.81\"; the Monona Bay description and the amenity addresses. Snapshot: data/sources/madison/brittingham.html"
+    },
+    {
+      "id": "M5",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/elver",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 3, asphalt\"; \"Acres: 250.82\"; \"The largest community park in Madison Parks, Elver Park spans an impressive 250 acres in the southwest corner of the city.\" Snapshot: data/sources/madison/elver.html"
+    },
+    {
+      "id": "M6",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/garner",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Pickleball / Courts: 6, asphalt\"; \"Madison's first dedicated pickleball courts, located in Garner Park, opened in 2016.\"; \"Acres: 41.83\"; the knoll, overlook and Opera in the Park. Snapshot: data/sources/madison/garner.html"
+    },
+    {
+      "id": "M7",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/heritage-heights",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 8.11\"; \"A beautiful park on Madison's east side, near Kennedy Elementary School and adjacent to Heritage Sanctuary.\" Snapshot: data/sources/madison/heritage-heights.html"
+    },
+    {
+      "id": "M8",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/huegel-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 13\"; \"This park is jointly developed and maintained by the City of Madison and the\" a partner body. Snapshot: data/sources/madison/huegel-park.html"
+    },
+    {
+      "id": "M9",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/kennedy",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 22.72\"; \"This large eastside park is a popular location for youth soccer leagues and neighborhood children playing on the play equipment or riding their bikes on the trail going through the park and to Kennedy Elementary School.\" Snapshot: data/sources/madison/kennedy.html"
+    },
+    {
+      "id": "M10",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/nakoma-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 1, asphalt\"; \"Acres: 5.21\"; the note that the playground between Thoreau Elementary School and Nakoma Park is jointly used. Snapshot: data/sources/madison/nakoma-park.html"
+    },
+    {
+      "id": "M11",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/norman-clayton-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 3.44\"; \"6402 Piping Rock Road, also path between 6410 & 6502 Piping Rock Road.\" Snapshot: data/sources/madison/norman-clayton-park.html"
+    },
+    {
+      "id": "M12",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/northland-manor-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 10.30\". The page carries no park description, which is why this venue's note says so. Snapshot: data/sources/madison/northland-manor-park.html"
+    },
+    {
+      "id": "M13",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/olbrich",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 90.01\"; the Lake Monona shore and Olbrich Botanical Gardens description. The imported record this project started from held four courts here; the City says two. Snapshot: data/sources/madison/olbrich.html"
+    },
+    {
+      "id": "M14",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/reynolds-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, sport court tile\"; \"Acres: 3.58\". Snapshot: data/sources/madison/reynolds-park.html"
+    },
+    {
+      "id": "M15",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/richmond-hill-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 10.25\". The page carries no park description. Snapshot: data/sources/madison/richmond-hill-park.html"
+    },
+    {
+      "id": "M16",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 3, asphalt, lighted\" — the only lit court line on Madison's pickleball list; \"Acres: 38.12\"; the storybook-scenery description. Snapshot: data/sources/madison/tenney.html"
+    },
+    {
+      "id": "M17",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/walnut-grove",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 20.25\"; \"Located on Madison's westside, Walnut Grove Park is a popular place for families in the neighborhood to play.\" Snapshot: data/sources/madison/walnut-grove.html"
+    },
+    {
+      "id": "M18",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/warner",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 3, asphalt\"; \"Acres: 213.49\"; \"Distinctive for its natural beauty and expansive tracts of land, Warner Park hosts a variety of social happenings such as charity fun run/walk events and community festivals.\" Snapshot: data/sources/madison/warner.html"
+    },
+    {
+      "id": "M19",
+      "url": "https://www.cityofmadison.com/parks/wpcrc",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"2930 N. Sherman Ave.\"; \"The expanded facility includes two gymnasiums, a fully equipped fitness center, pickleball courts, flexible studio space, atrium and dry and wet craft rooms.\" Snapshot: data/sources/madison/wpcrc-wpcrc.html"
+    },
+    {
+      "id": "M20",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/waunona-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 5.13\"; \"Alcohol is prohibited in this park.\" Snapshot: data/sources/madison/waunona-park.html"
+    },
+    {
+      "id": "M21",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/westhaven-trails-park",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 5.55\"; \"This southwest side park features a reservable picnic shelter, playground, ballfield, tennis courts, basketball court, and an open field with soccer goals.\" Snapshot: data/sources/madison/westhaven-trails-park.html"
+    },
+    {
+      "id": "M22",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/westmorland",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, sport court tile\"; \"Acres: 11.69\"; \"Westmorland Park features a rock garden, basketball court, large playground, volleyball court, tennis courts and softball field. The shelter is reservable April - October and features a working fireplace.\" Snapshot: data/sources/madison/westmorland.html"
+    },
+    {
+      "id": "M23",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/wexford",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Tennis & Pickleball / Courts: 2, asphalt\"; \"Acres: 20.60\"; \"Wexford Park, located on Madison's west side, features a shelter, adjacent woods, and unique playground equipment. The park is a popular location for youth soccer and ice skating in the winter.\" Snapshot: data/sources/madison/wexford.html"
+    },
+    {
+      "id": "M24",
+      "url": "https://www.cityofmadison.com/parks/wpcrc/wpcrc-id/fitness-center-pickleball-membership",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"Blue Gym: 2 courts - 20ft x 44ft\"; \"Green Gym: 3 courts - 20ft x 44ft\"; \"To play pickleball, an active WPCRC ID and Fitness Center/Pickleball Membership is required.\"; \"If you don't have a Fitness Center Membership, you're welcome to play by paying a Daily Admission and an active WPCRC ID is still required.\"; \"Annual and 6-month membership and 20-visit passes are available and include use of the fitness center and pickleball courts.\"; the WebTrac reservation checklist; the non-marking shoe rule; and the youth age rules. Snapshot: data/sources/madison/wpcrc-fitness-center-pickleball-membership.html"
+    }
+  ]
+}

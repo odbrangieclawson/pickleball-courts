@@ -6,9 +6,11 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  5/5 publishable
+COUNTY  —  6/6 publishable
   PASS  /pickleball/us/wa/king-county/
         937 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/wi/dane-county/
+        926 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/multnomah-county/
         922 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/wake-county/
@@ -18,9 +20,11 @@ COUNTY  —  5/5 publishable
   PASS  /pickleball/us/wa/clark-county/
         923 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  8/8 publishable
+CITY  —  9/9 publishable
   PASS  /pickleball/us/wa/seattle/
         1574 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/wi/madison/
+        1798 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/
         1873 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/portland/
@@ -36,11 +40,13 @@ CITY  —  8/8 publishable
   PASS  /pickleball/us/wa/vancouver/
         1731 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  12/12 publishable
+FILTER  —  13/13 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
         694 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/wi/madison/outdoor/
+        639 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/indoor/
         662 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/outdoor/
@@ -62,7 +68,7 @@ FILTER  —  12/12 publishable
   PASS  /pickleball/us/nc/cary/outdoor/
         662 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  74/74 publishable
+VENUE  —  94/94 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -111,6 +117,46 @@ VENUE  —  74/74 publishable
         718 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/greenwood-park-pickleball-courts-seattle/
         709 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/brittingham-park/
+        751 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/garner-park/
+        712 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/heritage-heights-park/
+        707 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/kennedy-park/
+        712 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/norman-clayton-park/
+        727 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/northland-manor-park/
+        771 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/olbrich-park/
+        723 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/reynolds-park/
+        784 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/richmond-hill-park/
+        764 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/walnut-grove-park/
+        717 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/waunona-park/
+        717 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/westhaven-trails-park/
+        745 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/westmorland-park/
+        717 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/wexford-park/
+        704 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/bordner-park/
+        835 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/elver-park/
+        798 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/huegel-park/
+        721 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/nakoma-park/
+        751 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/warner-park/
+        791 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/wi/madison/warner-park-community-recreation-center/
+        829 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/bellevue/crossroads-community-center/
         718 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/bellevue/eastgate-park/
@@ -214,7 +260,7 @@ VENUE  —  74/74 publishable
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, lights, outdoor
+  built for Seattle: outdoor, lights, outdoor, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, lights, outdoor
   public: not published — no lawful data driver or fewer than 3 matches
 
 === NOINDEX QUERY PARAMETERS ===
@@ -238,6 +284,6 @@ VENUE  —  74/74 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 100/101 pages pass all six gates.
+TOTAL: 124/124 pages pass all six gates.
 
 ```

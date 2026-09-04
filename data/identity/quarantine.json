@@ -4873,21 +4873,15 @@
         "mcdonough-park"
       ]
     },
-    "tenney-park": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in WI/madison claim the slug \"tenney-park\"",
-      "wanted_slug": "tenney-park",
-      "peers": [
-        "tenney-park-madison-madison-wi"
-      ]
-    },
     "tenney-park-madison-madison-wi": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in WI/madison claim the slug \"tenney-park\"",
+      "reason": "in_city_slug_collision_resolved_against",
+      "detail": "\"tenney-park\" keeps the slug \"tenney-park\" in WI/madison. The City of Madison publishes one Tenney Park. Its pickleball courts list gives the address as 1414 E. Johnson St., which is the kept row's address and the one the Census geocoder matched to Madison city, Dane County. The held row carries 402 N Thornton Ave, 301 metres away on the far side of the same 38-acre park, and no City record names a second Tenney Park there. Two records of one park, distinguished only by which edge of it somebody stood on. The held row stays quarantined and status=pending; nothing is published from it and nothing is lost from data.csv.",
       "wanted_slug": "tenney-park",
       "peers": [
         "tenney-park"
-      ]
+      ],
+      "resolved_on": "2026-09-04",
+      "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney"
     },
     "wakanda-park": {
       "reason": "in_city_slug_collision",

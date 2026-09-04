@@ -1,0 +1,55 @@
+{
+  "city": "Madison",
+  "state": "WI",
+  "kind": "filters",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "One of the five filter slugs has a lawful data driver in Madison. Outdoor does: the City states an outdoor court count for twenty venues. Indoor and lights each have exactly one qualifying venue against a three-venue threshold, so neither page exists. Free has no driver because Madison never calls a court free, and public has none because access_type has no controlled vocabulary yet.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Forty-eight of Madison's fifty-three verified courts are outdoor, across twenty venues, and in a city at this latitude that is a statement about the calendar as much as the geography. The five indoor courts at the Warner Park Community Recreation Center are the whole of the alternative when the asphalt is under snow, and they require a membership or a daily admission and a booking. Everything on this list is the opposite proposition: turn up, first come, first served, no stated charge. What makes the list worth reading rather than counting is that Madison states what each court is made of — asphalt at eighteen venues, sport court tile at two — and whether it is shared with tennis, which nineteen of the twenty are.",
+        "what_qualifies": "A venue appears here when the City of Madison states an outdoor court count for it on that park's own page, in the block headed \"Tennis & Pickleball\" or, at Garner Park alone, \"Pickleball\". Twenty qualify, from Nakoma Park's single court to Garner's six. An unqualified count is a count of courts you can play pickleball on, and we know that because Madison marks the exception: Reindahl Park reads \"Courts: 8, asphalt; 4 striped for pickleball\". What does not qualify is a venue whose address we cannot resolve — Door Creek, Reindahl and Rennebohm are all on the City's pickleball list with counts and surfaces, and all three are absent from this page because the Census geocoder does not recognise their street addresses. That is eighteen courts refused on identity rather than on data."
+      },
+      "faqs": [
+        {
+          "q": "Will I be playing over a tennis net?",
+          "a": "At nineteen of the twenty, yes, and Madison is unusually honest about what that means: dual-striped courts \"use a tennis net which is about 2\\\" taller than a standard pickleball net\". Garner Park is the exception — six dedicated pickleball courts, Madison's only ones, with a net at the right height."
+        },
+        {
+          "q": "Which of these are lit?",
+          "a": "Tenney Park's three, and no others we can confirm. Madison marks the lit courts rather than the unlit ones, so the other nineteen venues read \"not verified yet\" — nobody has told us either way. There is no /lights/ page for Madison because one venue does not meet the three-venue threshold this site requires before a filter page may exist."
+        },
+        {
+          "q": "What is \"sport court tile\"?",
+          "a": "The City's own term for the surface at Reynolds Park and Westmorland Park, recorded here under the controlled value modular_tile — a modular surface laid in panels over a base, rather than asphalt poured flat. It plays and drains differently. The other eighteen outdoor venues in Madison are asphalt, and the City states which is which in the same line as the court count."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "Madison never says, at any venue, indoors or out. Nineteen of these are tennis courts, so a net of some height is generally there; what the City does not tell you is whether a pickleball net is available at any of them. Treat it as unknown, which is what the venue pages say."
+        }
+      ],
+      "sources": ["F1", "F2"]
+    }
+  },
+  "sources": [
+    {
+      "id": "F1",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/athletics/courts/pickleball",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "The City's pickleball page, listing every venue with its address, and stating \"Among the nearly 100 tennis courts in Madison, many are dual-striped for pickleball. Dual-striped courts use a tennis net which is about 2\\\" taller than a standard pickleball net. Garner Park offers Madison's only dedicated outdoor pickleball courts.\" and \"While the courts are available for individuals on a first-come, first-served basis, all leagues and lessons must reserve in advance\". Snapshot: data/sources/madison/pickleball.html"
+    },
+    {
+      "id": "F2",
+      "url": "https://www.cityofmadison.com/parks/find-a-park/reindahl",
+      "publisher": "City of Madison Parks Division",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": ["what_qualifies"],
+      "evidence": "Reindahl Park's page: \"Tennis & Pickleball / Courts: 8, asphalt; 4 striped for pickleball\" — the exception that establishes what an unqualified count means at every other Madison venue. Reindahl is not published; its address does not resolve in the Census geocoder. Snapshot: data/sources/madison/reindahl.html"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "metros": 100,
-  "venues": 2649,
-  "ready": 5,
+  "venues": 2662,
+  "ready": 6,
   "metro_detail": [
     {
       "metro": "Seattle, WA",
@@ -489,23 +489,23 @@
       "metro": "Madison, WI",
       "city": "Madison",
       "state": "WI",
-      "venues": 37,
-      "passing_all_four": 0,
+      "venues": 50,
+      "passing_all_four": 18,
       "blocked_by": {
-        "I1": 1,
-        "I2": 37,
-        "I3": 4,
+        "I1": 4,
+        "I2": 29,
+        "I3": 3,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 37,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (37)",
-        "I2: no date_checked (37)",
-        "I2: no verified_by (37)",
-        "I3: county not derived above confidence threshold (4)"
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (29)",
+        "I2: no date_checked (29)",
+        "I2: no verified_by (29)",
+        "I3: county not derived above confidence threshold (3)"
       ]
     },
     {

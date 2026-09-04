@@ -1,15 +1,15 @@
 # Completeness dashboard
 
-100 metros in the verification queue, 2,649 venues.
+100 metros in the verification queue, 2,662 venues.
 
 ## The hard rule
 
 > A metro is not done until it has at least 3 venues passing all four import
 > gates. A partially verified metro does not publish partially — it waits.
 
-**Metros ready to publish: 5 of 100.**
+**Metros ready to publish: 6 of 100.**
 
-**Published on the site: 8 cities.** 5 of them are in
+**Published on the site: 9 cities.** 6 of them are in
 this queue and 3 are not — Apex, NC, Bellevue, WA, Cary, NC.
 
 The queue is ordered by how many pages a metro would unlock, and cities are
@@ -45,7 +45,7 @@ asks for, not the whole city.
 | 19 | Colorado Springs, CO | 34 | 0 | 2 | 34 | 1 | 0 | blocked | 37 |
 | 20 | Dallas, TX | 43 | 0 | 2 | 43 | 10 | 0 | blocked | 37 |
 | 21 | Naples, FL | 38 | 0 | 1 | 38 | 5 | 0 | blocked | 37 |
-| 22 | Madison, WI | 37 | 0 | 1 | 37 | 4 | 0 | blocked | 37 |
+| 22 | Madison, WI | 50 | 18 | 4 | 29 | 3 | 0 | **ready** | 37 |
 | 23 | Knoxville, TN | 34 | 0 | 1 | 34 | 4 | 0 | blocked | 35 |
 | 24 | Phoenix, AZ | 31 | 0 | 0 | 31 | 3 | 0 | blocked | 34 |
 | 25 | Spokane, WA | 30 | 0 | 0 | 30 | 2 | 0 | blocked | 34 |
@@ -129,10 +129,10 @@ asks for, not the whole city.
 
 | blocker | venue-occurrences |
 | --- | ---: |
-| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,595 |
-| I2: no date_checked | 2,595 |
-| I2: no verified_by | 2,595 |
-| I3: county not derived above confidence threshold | 281 |
+| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,587 |
+| I2: no date_checked | 2,587 |
+| I2: no verified_by | 2,587 |
+| I3: county not derived above confidence threshold | 280 |
 | I1: slug has a numeric suffix (Rule 10) | 32 |
 | I3: no postal_code | 31 |
 | I3: missing lat/lng | 7 |
