@@ -2,7 +2,7 @@
   "city": "Vancouver",
   "state": "WA",
   "retrieved_at": "2026-09-03",
-  "method_note": "Court counts, addresses and attributes are STATED by the City of Vancouver on one pickleball page, and this run asserts the exact sentence is still present in the committed snapshot before publishing anything read from it. Oakbrook Community Park carries the first stated NEGATIVE on lighting in this directory — \"The courts do not have lighting\" — so it reads No rather than \"not verified yet\". Fisher Basin Community Park is listed by the City and excluded here for three independent reasons, chief among them that the pickleball page gives it Oakbrook's address while the City's own park page for it gives a different street and postcode; both snapshots are committed and the run asserts the contradiction still exists rather than assuming it. No fee is claimed for the park courts: the City never calls them free, and this directory does not promote an assumption to a fact.",
+  "method_note": "Court counts, addresses and attributes are STATED by the City of Vancouver on one pickleball page, and this run asserts the exact sentence is still present in the committed snapshot before publishing anything read from it. Oakbrook Community Park is the only Vancouver venue whose lighting is on the record — \"The courts do not have lighting\" — so it reads No rather than \"not verified yet\"; Seattle's ArcGIS layer states the same answer in a field for nineteen of its own venues, and an earlier version of this note wrongly called Oakbrook the first anywhere. Fisher Basin Community Park is listed by the City and excluded here for three independent reasons, chief among them that the pickleball page gives it Oakbrook's address while the City's own park page for it gives a different street and postcode; both snapshots are committed and the run asserts the contradiction still exists rather than assuming it. No fee is claimed for the park courts: the City never calls them free, and this directory does not promote an assumption to a fact.",
   "sources": [
     {
       "id": "S1",
@@ -147,7 +147,7 @@
           "date_checked": "2026-09-03",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Quoted from the City of Vancouver's pickleball page: \"Nets and poles are permanently installed. The courts do not have lighting.\". The City states this outright — \"The courts do not have lighting\" — which is why this reads \"No\" rather than \"not verified yet\". It is the only stated negative on lighting anywhere in this directory."
+          "evidence": "Quoted from the City of Vancouver's pickleball page: \"Nets and poles are permanently installed. The courts do not have lighting.\". The City states this outright — \"The courts do not have lighting\" — which is why this reads \"No\" rather than \"not verified yet\". Seattle's parks dataset answers the same question in a LIGHTED field for all twenty-four of its venues; Vancouver is unusual for answering it in a sentence, and this is the only Vancouver venue where the answer is on the record."
         },
         "hours_of_operation": {
           "source_url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",

@@ -1,0 +1,13 @@
+{
+  "note": "Answers to in-city slug collisions that scripts/identity/audit.mjs refuses to guess at. The audit holds every member of a collision until a resolution here names which row keeps the slug and which are held. A resolution is a citation, not an opinion: it needs a basis and, where the answer comes from an operator, the source that states it. A stale entry is an error, not a no-op — the audit throws if a resolution names a slug that is not in the collision it claims to settle, or leaves a member of that collision unaccounted for.",
+  "resolutions": {
+    "WA/bellevue/hillaire-park": {
+      "keep": "hillaire-park",
+      "hold": ["hillaire-park-4484"],
+      "decided_on": "2026-09-04",
+      "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park",
+      "basis": "The City of Bellevue publishes exactly one Hillaire Park. Its A-Z park index, which appears in the navigation of every Bellevue park page, carries the name once, and the park's own page gives 15803 NE 6th St, Bellevue, WA 98008 — an address the Census geocoder matched to Bellevue city, King County. The kept row carries that address. The held row's street_address is \"East Lake Hills\", a neighbourhood rather than an address, with no house number to resolve, and its coordinates sit 4.7 km west of the park the City documents. It is a second record of the same park with a worse location, not a second park: the City's inventory has nowhere to put it. It stays quarantined and status=pending, so nothing is published from it and nothing is lost from data.csv.",
+      "snapshot": "data/sources/bellevue/hillaire-park.html"
+    }
+  }
+}

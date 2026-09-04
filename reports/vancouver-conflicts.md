@@ -30,11 +30,17 @@ rather than continuing to make the accusation.
 2. The pickleball page gives its address as "3103 NE 99th Ave.", which is Oakbrook Community Park's address, printed two paragraphs above. The City's own park page for Fisher Basin says "SE 192nd Ave. Vancouver, WA 98607".
 3. No published address for it carries a house number, and the Census address geocoder returns no match, so Import Gate I1 could not be satisfied even if a count appeared.
 
-## The first stated negative in the directory
+## A stated negative, and a correction to what this file used to claim
 
-Oakbrook Community Park: "The courts do not have lighting." Every other venue across seven cities
-has `light` as null, because no operator had said either way. Unknown is not unlit — and now, for
-exactly one venue, we can say unlit and mean it.
+Oakbrook Community Park: "The courts do not have lighting." The other two Vancouver venues have
+`light` as null, because the City says nothing either way about an indoor room. Unknown is not
+unlit, and here we can say unlit and mean it.
+
+This section originally called it the FIRST stated negative on lighting in the directory. It was
+not, and the error is worth leaving on the record. Seattle shipped a day earlier from an ArcGIS
+layer with a LIGHTED field, and that field reads "No" for nineteen of its twenty-four venues -
+stated, sourced and dated. The claim came from reading the cities whose sources are prose and
+forgetting the one whose source is a table. Corrected 2026-09-04, while publishing Bellevue.
 
 ## Values a source changed
 

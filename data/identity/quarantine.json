@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03",
+  "generated": "2026-09-04",
   "note": "Rows held back from publication on identity grounds. Not a data-quality opinion — an unresolved question about which venue this is or where it is.",
   "rows": {
     "fish-creek-park": {
@@ -4607,21 +4607,15 @@
         "auburn-shaughnessy-park-auburn-wa"
       ]
     },
-    "hillaire-park": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in WA/bellevue claim the slug \"hillaire-park\"",
-      "wanted_slug": "hillaire-park",
-      "peers": [
-        "hillaire-park-4484"
-      ]
-    },
     "hillaire-park-4484": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in WA/bellevue claim the slug \"hillaire-park\"",
+      "reason": "in_city_slug_collision_resolved_against",
+      "detail": "\"hillaire-park\" keeps the slug \"hillaire-park\" in WA/bellevue. The City of Bellevue publishes exactly one Hillaire Park. Its A-Z park index, which appears in the navigation of every Bellevue park page, carries the name once, and the park's own page gives 15803 NE 6th St, Bellevue, WA 98008 — an address the Census geocoder matched to Bellevue city, King County. The kept row carries that address. The held row's street_address is \"East Lake Hills\", a neighbourhood rather than an address, with no house number to resolve, and its coordinates sit 4.7 km west of the park the City documents. It is a second record of the same park with a worse location, not a second park: the City's inventory has nowhere to put it. It stays quarantined and status=pending, so nothing is published from it and nothing is lost from data.csv.",
       "wanted_slug": "hillaire-park",
       "peers": [
         "hillaire-park"
-      ]
+      ],
+      "resolved_on": "2026-09-04",
+      "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park"
     },
     "bremerton-lions-park-bremerton-wa": {
       "reason": "in_city_slug_collision",

@@ -17,11 +17,20 @@
     Firstenburg Community Ctr "six courts open during scheduled play on a
                               wood gymnasium floor"
 
-  "The courts do not have lighting" is the first time any operator in this
-  directory has stated a NEGATIVE. Five cities of parks departments have
-  said nothing at all about lights, and every one of those venues renders
-  "not verified yet" — correctly, because unknown is not unlit. Oakbrook is
-  the first venue that can honestly say no.
+  "The courts do not have lighting" is a stated NEGATIVE, which is a
+  different thing from a silence. Five cities of parks departments have said
+  nothing at all about lights, and every one of those venues renders "not
+  verified yet" — correctly, because unknown is not unlit. Oakbrook is the
+  one City of Vancouver venue that can say no.
+
+  CORRECTED 2026-09-04. This header originally called Oakbrook the first
+  stated negative on lighting anywhere in the directory. It was not. Seattle
+  shipped a day earlier from an ArcGIS layer carrying a LIGHTED field, and
+  that field reads "No" for nineteen of its twenty-four venues — stated,
+  sourced and dated. The claim was written by looking at the cities whose
+  sources were prose and forgetting the one whose source was a table. What
+  is true, and all that was ever true, is that Oakbrook is the only Vancouver
+  venue whose lighting is on the record.
 
   ============================================================
   THE SOURCE CONTRADICTS ITSELF ABOUT AN ADDRESS
@@ -112,7 +121,7 @@ const VENUES = [
     courts: 4, where: 'outdoor',
     venueType: 'public_park',
     nets: true,
-    /* The only stated FALSE anywhere in this directory. */
+    /* Stated FALSE. Seattle's dataset states it for nineteen venues too. */
     light: false,
     hours: '7 a.m. to 10 p.m. daily',
     availability: 'Open play for all skill levels; cannot be reserved. First come, first served, with players rotating in using the paddle rack system.',
@@ -287,7 +296,7 @@ for (const p of VENUES) {
   }
   if (p.light === false) {
     facts.push(doc.fact('light', false, {
-      evidence: `${quoted}. The City states this outright — "The courts do not have lighting" — which is why this reads "No" rather than "not verified yet". It is the only stated negative on lighting anywhere in this directory.`,
+      evidence: `${quoted}. The City states this outright — "The courts do not have lighting" — which is why this reads "No" rather than "not verified yet". Seattle's parks dataset answers the same question in a LIGHTED field for all twenty-four of its venues; Vancouver is unusual for answering it in a sentence, and this is the only Vancouver venue where the answer is on the record.`,
     }))
   }
   if (p.surface) {
@@ -357,7 +366,7 @@ mkdirSync(join(REPO_ROOT, 'data/verified'), {recursive: true})
 writeFileSync(join(REPO_ROOT, 'data/verified/vancouver-wa.json'), JSON.stringify({
   city: 'Vancouver', state: 'WA', retrieved_at: RETRIEVED_AT,
   method_note:
-    'Court counts, addresses and attributes are STATED by the City of Vancouver on one pickleball page, and this run asserts the exact sentence is still present in the committed snapshot before publishing anything read from it. Oakbrook Community Park carries the first stated NEGATIVE on lighting in this directory — "The courts do not have lighting" — so it reads No rather than "not verified yet". Fisher Basin Community Park is listed by the City and excluded here for three independent reasons, chief among them that the pickleball page gives it Oakbrook\'s address while the City\'s own park page for it gives a different street and postcode; both snapshots are committed and the run asserts the contradiction still exists rather than assuming it. No fee is claimed for the park courts: the City never calls them free, and this directory does not promote an assumption to a fact.',
+    'Court counts, addresses and attributes are STATED by the City of Vancouver on one pickleball page, and this run asserts the exact sentence is still present in the committed snapshot before publishing anything read from it. Oakbrook Community Park is the only Vancouver venue whose lighting is on the record — "The courts do not have lighting" — so it reads No rather than "not verified yet"; Seattle\'s ArcGIS layer states the same answer in a field for nineteen of its own venues, and an earlier version of this note wrongly called Oakbrook the first anywhere. Fisher Basin Community Park is listed by the City and excluded here for three independent reasons, chief among them that the pickleball page gives it Oakbrook\'s address while the City\'s own park page for it gives a different street and postcode; both snapshots are committed and the run asserts the contradiction still exists rather than assuming it. No fee is claimed for the park courts: the City never calls them free, and this directory does not promote an assumption to a fact.',
   sources: [
     {id: 'S1', url: PAGE, publisher: CITY, tier: 1, format: 'html', snapshot: SNAPSHOTS.pickleball},
     {id: 'S2', url: OAKBROOK_PAGE, publisher: CITY, tier: 1, format: 'html', snapshot: SNAPSHOTS.oakbrook},
@@ -396,10 +405,16 @@ writeFileSync(join(REPO_ROOT, 'reports', 'vancouver-conflicts.md'), [
   `**${EXCLUDED.name}** — three independent reasons:`, '',
   ...EXCLUDED.reasons.map((r, i) => `${i + 1}. ${r}`),
   '',
-  '## The first stated negative in the directory', '',
-  'Oakbrook Community Park: "The courts do not have lighting." Every other venue across seven cities',
-  'has `light` as null, because no operator had said either way. Unknown is not unlit — and now, for',
-  'exactly one venue, we can say unlit and mean it.',
+  '## A stated negative, and a correction to what this file used to claim', '',
+  'Oakbrook Community Park: "The courts do not have lighting." The other two Vancouver venues have',
+  '`light` as null, because the City says nothing either way about an indoor room. Unknown is not',
+  'unlit, and here we can say unlit and mean it.',
+  '',
+  'This section originally called it the FIRST stated negative on lighting in the directory. It was',
+  'not, and the error is worth leaving on the record. Seattle shipped a day earlier from an ArcGIS',
+  'layer with a LIGHTED field, and that field reads "No" for nineteen of its twenty-four venues -',
+  'stated, sourced and dated. The claim came from reading the cities whose sources are prose and',
+  'forgetting the one whose source is a table. Corrected 2026-09-04, while publishing Bellevue.',
   '',
   changed.length ? '## Values a source changed' : '_No imported row was overwritten: none of these venues was in the import._',
   ...(changed.length ? [

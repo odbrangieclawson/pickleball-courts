@@ -1,29 +1,29 @@
 {
   "metros": 100,
-  "venues": 2620,
-  "ready": 0,
+  "venues": 2649,
+  "ready": 5,
   "metro_detail": [
     {
       "metro": "Seattle, WA",
       "city": "Seattle",
       "state": "WA",
-      "venues": 63,
-      "passing_all_four": 0,
+      "venues": 67,
+      "passing_all_four": 19,
       "blocked_by": {
         "I1": 0,
-        "I2": 63,
-        "I3": 10,
+        "I2": 43,
+        "I3": 14,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 59,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (63)",
-        "I2: no date_checked (63)",
-        "I2: no verified_by (63)",
-        "I3: county not derived above confidence threshold (10)"
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (43)",
+        "I2: no date_checked (43)",
+        "I2: no verified_by (43)",
+        "I3: no postal_code (12)"
       ]
     },
     {
@@ -79,7 +79,7 @@
       "venues": 51,
       "passing_all_four": 0,
       "blocked_by": {
-        "I1": 0,
+        "I1": 1,
         "I2": 51,
         "I3": 2,
         "I4": 0
@@ -236,22 +236,22 @@
       "metro": "Charlotte, NC",
       "city": "Charlotte",
       "state": "NC",
-      "venues": 50,
-      "passing_all_four": 0,
+      "venues": 54,
+      "passing_all_four": 3,
       "blocked_by": {
-        "I1": 2,
-        "I2": 50,
+        "I1": 4,
+        "I2": 49,
         "I3": 13,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 41,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (50)",
-        "I2: no date_checked (50)",
-        "I2: no verified_by (50)",
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (49)",
+        "I2: no date_checked (49)",
+        "I2: no verified_by (49)",
         "I3: county not derived above confidence threshold (12)"
       ]
     },
@@ -374,22 +374,22 @@
       "metro": "Portland, OR",
       "city": "Portland",
       "state": "OR",
-      "venues": 51,
-      "passing_all_four": 0,
+      "venues": 61,
+      "passing_all_four": 8,
       "blocked_by": {
-        "I1": 0,
-        "I2": 51,
+        "I1": 3,
+        "I2": 50,
         "I3": 18,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 38,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (51)",
-        "I2: no date_checked (51)",
-        "I2: no verified_by (51)",
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (50)",
+        "I2: no date_checked (50)",
+        "I2: no verified_by (50)",
         "I3: county not derived above confidence threshold (18)"
       ]
     },
@@ -741,22 +741,22 @@
       "metro": "Raleigh, NC",
       "city": "Raleigh",
       "state": "NC",
-      "venues": 24,
-      "passing_all_four": 0,
+      "venues": 33,
+      "passing_all_four": 9,
       "blocked_by": {
-        "I1": 0,
-        "I2": 24,
+        "I1": 2,
+        "I2": 22,
         "I3": 4,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 26,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (24)",
-        "I2: no date_checked (24)",
-        "I2: no verified_by (24)",
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (22)",
+        "I2: no date_checked (22)",
+        "I2: no verified_by (22)",
         "I3: county not derived above confidence threshold (4)"
       ]
     },
@@ -790,7 +790,7 @@
       "venues": 28,
       "passing_all_four": 0,
       "blocked_by": {
-        "I1": 0,
+        "I1": 1,
         "I2": 28,
         "I3": 7,
         "I4": 0
@@ -1083,7 +1083,7 @@
       "venues": 20,
       "passing_all_four": 0,
       "blocked_by": {
-        "I1": 1,
+        "I1": 2,
         "I2": 20,
         "I3": 1,
         "I4": 0
@@ -1401,22 +1401,22 @@
       "metro": "Vancouver, WA",
       "city": "Vancouver",
       "state": "WA",
-      "venues": 24,
-      "passing_all_four": 0,
+      "venues": 26,
+      "passing_all_four": 3,
       "blocked_by": {
         "I1": 0,
-        "I2": 24,
+        "I2": 23,
         "I3": 7,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 22,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (24)",
-        "I2: no date_checked (24)",
-        "I2: no verified_by (24)",
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (23)",
+        "I2: no date_checked (23)",
+        "I2: no verified_by (23)",
         "I3: county not derived above confidence threshold (7)"
       ]
     },

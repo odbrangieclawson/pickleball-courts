@@ -2,7 +2,7 @@
   "city": "Vancouver",
   "state": "WA",
   "kind": "venues",
-  "date_checked": "2026-09-03",
+  "date_checked": "2026-09-04",
   "written_by": "staff_research",
   "note_on_method": "Nobody working on this has played on these courts. All three venues are described from the City of Vancouver's own pickleball page, with Oakbrook's address corroborated by the City's park page for it and every address confirmed against the Census address geocoder, which also places all three inside Vancouver's city limits rather than merely inside a Vancouver postal address. Where the City is silent — parking everywhere, surface at two of the three, the amount of the drop-in fee — these pages say so.",
   "venues": {
@@ -19,7 +19,7 @@
         },
         {
           "q": "Do the courts have lights?",
-          "a": "No. The City states it plainly: \"The courts do not have lighting.\" This is the only venue anywhere in this directory whose lighting reads No rather than \"not verified yet\", because it is the only one whose operator has said so. Every other venue across seven cities is unverified on lights, which means nobody has told us either way."
+          "a": "No. The City states it plainly: \"The courts do not have lighting.\" That is a statement rather than a silence, which is why this reads No instead of \"not verified yet\" — the two are different answers and this directory does not merge them. Seattle Parks answers the same question in its own dataset, marking five of its venues lit and nineteen unlit; Vancouver is unusual for answering it in a sentence on a web page rather than in a field, and for being the only City of Vancouver venue where the answer is on the record at all."
         },
         {
           "q": "Do I need to bring a net?",
@@ -34,7 +34,11 @@
           "a": "Unverified. It is a City park with open-play courts and it is very likely free, but the City never says so, and this directory does not print a likelihood as a fact. Compare Portland, ten miles south, where six park sites carry a verified free because Portland Parks & Recreation put the word in writing next to the court count."
         }
       ],
-      "sources": ["M1", "M2", "M3"]
+      "sources": [
+        "M1",
+        "M2",
+        "M3"
+      ]
     },
     "firstenburg-community-center": {
       "slots": {
@@ -60,7 +64,10 @@
           "a": "Yes — this is where all of them are. Adult recreational and competitive leagues are open to ages 14 and up, and there is a youth league for ages 10 to 14 with beginner and intermediate teams. Every City of Vancouver pickleball league plays at Firstenburg. Clinics, at beginner and Level 2, run here and at Marshall."
         }
       ],
-      "sources": ["M1", "M3"]
+      "sources": [
+        "M1",
+        "M3"
+      ]
     },
     "marshall-community-center": {
       "slots": {
@@ -86,7 +93,10 @@
           "a": "Smaller and quieter on the evidence available. Firstenburg has six courts to Marshall's four, a stated wood floor where Marshall's surface is unstated, and it hosts every one of the City's leagues along with a detailed sign-in, wristband and queue system that Marshall's entry does not describe. Both run clinics."
         }
       ],
-      "sources": ["M1", "M3"]
+      "sources": [
+        "M1",
+        "M3"
+      ]
     }
   },
   "sources": [

@@ -22,6 +22,7 @@
     "import:all": "npm run import:mapping && npm run import:quality && npm run import:county && npm run import:triage",
     "verify:build": "node scripts/verify/build-queue.mjs",
     "verify:selftest": "node scripts/verify/selftest.mjs",
+    "verify:geocode": "node scripts/verify/geocode.mjs",
     "verify:all": "npm run verify:selftest && npm run verify:build",
     "test": "node --test \"scripts/test/**/*.test.mjs\"",
     "validate:data": "node scripts/validate-data.mjs",
@@ -46,7 +47,8 @@
     "verify:apex": "node scripts/verify/apply-apex-parks.mjs",
     "verify:charlotte": "node scripts/verify/apply-charlotte-parks.mjs",
     "verify:portland": "node scripts/verify/apply-portland-parks.mjs",
-    "verify:vancouver": "node scripts/verify/apply-vancouver-parks.mjs"
+    "verify:vancouver": "node scripts/verify/apply-vancouver-parks.mjs",
+    "verify:bellevue": "node scripts/verify/apply-bellevue-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

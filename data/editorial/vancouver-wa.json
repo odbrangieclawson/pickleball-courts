@@ -1,7 +1,7 @@
 {
   "city": "Vancouver",
   "state": "WA",
-  "date_checked": "2026-09-03",
+  "date_checked": "2026-09-04",
   "written_by": "staff_research",
   "note_on_method": "Nobody working on this has played on these courts. Everything below comes from the City of Vancouver's own pickleball page and, for one address, from the City's park page that corroborates it. This is a small set — three venues — and it is small because the City lists a fourth without a court count and with an address that its own park page contradicts. Publishing three and explaining the fourth is the honest shape of what Vancouver has written down.",
   "slots": {
@@ -16,21 +16,27 @@
       "heading": "Best if you want to turn up and play outdoors",
       "venue_slug": "oakbrook-community-park",
       "text": "Oakbrook Community Park is the only outdoor pickleball in this set and it asks nothing of you: four dedicated courts, nets and poles permanently installed, open play for all skill levels, 7 a.m. to 10 p.m. daily, no reservations taken or possible. Bring a paddle. The one caveat is in the City's own words — the courts do not have lighting — so those 10 p.m. hours are theoretical for much of a Pacific Northwest year.",
-      "supports": ["E1"]
+      "supports": [
+        "E1"
+      ]
     },
     {
       "key": "indoor",
       "heading": "Best if you want the most courts under a roof",
       "venue_slug": "firstenburg-community-center",
       "text": "Firstenburg Community Center has six courts on a wood gymnasium floor, the largest pickleball room in the city and the home of every one of Vancouver's leagues. Play is free if you are a member of the community centre and costs a daily drop-in fee if you are not — the City states that the fee exists and never states what it is, so we have not printed a number. Sessions run Monday to Friday for ages 12 and up and they do fill.",
-      "supports": ["E1"]
+      "supports": [
+        "E1"
+      ]
     },
     {
       "key": "early",
       "heading": "Best if you are up before work",
       "venue_slug": "marshall-community-center",
       "text": "Marshall Community Center runs four indoor courts, and in high summer it runs them early: from 22 June to 22 August its pickleball hours move to 6 to 7:45 a.m., which the City explains is to keep dedicated court time without colliding with summer programming, in a cooler gym. It is a smaller room than Firstenburg and the same membership-or-drop-in arrangement applies.",
-      "supports": ["E1"]
+      "supports": [
+        "E1"
+      ]
     }
   ],
   "faqs": [
@@ -44,7 +50,7 @@
     },
     {
       "q": "Do any Vancouver courts have lights?",
-      "a": "No — and this is the one place in this entire directory where that answer means what it says. The City writes that Oakbrook's courts \"do not have lighting\", which is a stated negative rather than a silence, so Oakbrook reads No. Firstenburg and Marshall are indoor rooms where the question does not arise and the City says nothing, so both read \"not verified yet\". Across the other six cities we publish, every single venue's lighting is unverified, because unknown is not the same as unlit."
+      "a": "No, and the City says so rather than leaving it blank. It writes that Oakbrook's courts \"do not have lighting\", which is a stated negative, so Oakbrook reads No. Firstenburg and Marshall are indoor rooms where the question does not arise and the City says nothing, so both read \"not verified yet\". Seattle's parks dataset answers the same question for twenty-four venues, five of which are lit and nineteen of which are not, so a No here is not unusual in this directory — what is unusual is that Vancouver answered it in a sentence rather than a field."
     },
     {
       "q": "Are the courts free?",
@@ -74,7 +80,15 @@
       "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["parking", "peak_hours", "surface_condition", "local_scene", "dedicated", "indoor", "early"],
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene",
+        "dedicated",
+        "indoor",
+        "early"
+      ],
       "evidence": "\"Oakbrook Community Park (3103 NE 99th Ave.) has four dedicated pickleball courts that are open daily from 7 a.m. to 10 p.m.\"; \"Nets and poles are permanently installed. The courts do not have lighting.\"; \"There are six courts open during scheduled play on a wood gymnasium floor.\"; \"The earlier time slot will use all four courts and provide capacity for up to 24 players\"; \"Play is free for community center members; visitors must pay a daily drop-in fee.\"; the Firstenburg sign-in and queue rules; \"City of Vancouver courts are first come, first served\"; \"All players may rotate in using the paddle rack system.\"; the Columbia River Pickleball Club lockbox note; maintenance line 360-487-8177. Snapshot: data/sources/vancouver/pickleball.html"
     },
     {
@@ -83,7 +97,9 @@
       "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["local_scene"],
+      "supports": [
+        "local_scene"
+      ],
       "evidence": "The City's own park page for Fisher Basin Community Park gives its address as \"SE 192nd Ave. Vancouver, WA 98607\", contradicting the pickleball page's \"3103 NE 99th Ave.\" It also states \"Pickleball nets are not provided. Players may bring their own nets to use on the courts. Columbia River Pickleball Club members may access club nets using their lockbox code.\" Snapshot: data/sources/vancouver/fisher-basin-park.html"
     },
     {
@@ -92,7 +108,9 @@
       "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["parking"],
+      "supports": [
+        "parking"
+      ],
       "evidence": "The park's own page gives \"3103 NE 99th Ave. Vancouver, WA 98662\", corroborating the pickleball page's address for Oakbrook and identifying the Fisher Basin entry as the erroneous one. Snapshot: data/sources/vancouver/oakbrook-park.html"
     },
     {
@@ -101,7 +119,9 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["parking"],
+      "supports": [
+        "parking"
+      ],
       "evidence": "All three published addresses matched and resolved to Clark County, WA (FIPS 53011) and to the incorporated place \"Vancouver city\". \"SE 192nd Ave\" returns no match, carrying no house number. Snapshot: data/sources/vancouver-county-census.json"
     }
   ]

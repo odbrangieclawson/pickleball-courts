@@ -1,0 +1,135 @@
+{
+  "state": "WA",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "This is a state page, so most of it is a claim about coverage rather than about a court. Where it describes a place, the source is that operator's own publication — Seattle Parks and Recreation's GIS layer, the City of Bellevue's pages, the City of Vancouver's pickleball page. Where it describes what is missing, it names the city we looked at and says why it is not here, because 'not listed' and 'does not exist' are different things and a reader deserves to know which one they are reading. This page exists because Bellevue was published on 4 September 2026, making Washington the second state with three verified cities. Nobody working on this has played on any court in Washington.",
+  "slots": {
+    "coverage": "Washington has thirty-nine counties. This page covers three cities in two of them.\n\nThirty-nine sites, 144 courts, three municipal operators of quite different kinds. King County holds thirty-six of those sites and 130 of the courts: Seattle with twenty-four parks and 92 courts, and Bellevue with twelve venues and 38. Clark County holds the other three, all inside Vancouver, with 14 courts between them. Everything on this page is run by a city parks department. Not one private club, church gym, school or commercial facility appears, and that is a statement about what we have been able to verify rather than about where pickleball in Washington actually happens — our unverified import holds 653 rows across 169 Washington cities, and the great majority of the ones we have not checked are not municipal.\n\nThe three cities arrived by three different routes, and the difference matters more than the total. Seattle publishes a dedicated pickleball dataset through its GIS portal, refreshed weekly, listing court counts, indoor/outdoor, lighting and nets per location — twenty-four venues confirmed from one authoritative file. Bellevue publishes no dataset at all, but it publishes one page stating a court count for every pickleball venue it runs, indoor and outdoor, each linked to a park page carrying the address. Vancouver publishes one pickleball page that states a count for three of the four venues on it. Fifty-three other Washington cities in our import hold three or more rows that would clear the venue threshold on volume alone; not one of those rows carries a source, so none of them is published anywhere on this site.\n\nWhat that leaves is a page that is honest about its shape: two thirds of the verified courts in Washington are in one city, and the state's third-largest city, Spokane, is not here at all.\n\nThe threshold that produces that shape is worth stating, because it is the reason this page is short rather than a judgement about Washington. A city appears here when three or more of its venues carry a source_url and a date_checked; a venue appears when an operator has stated its court count and an address that resolves. Nothing else qualifies a place — not the number of rows we hold for it, not how large the city is, not how obviously the courts exist. Two venues in this state cleared everything except that bar and are named on their city pages rather than quietly dropped: Highland Community Park in Bellevue, whose stated address does not resolve in the Census geocoder and whose own park page never mentions pickleball, and Fisher Basin Community Park in Vancouver, for which the City states no court count and prints another park's address. Both are real places. Neither is a verified venue, and the difference is the whole point of the exercise.\n\nWhat this page cannot tell you is how much of Washington's pickleball is municipal at all. Every venue here is city-run because city parks departments are the operators that publish; clubs, gyms, schools and commercial facilities generally do not, and the ones in our import arrived with no source attached. So read the coverage as a map of who writes things down, not a map of where the courts are.",
+    "seasonality": "Washington is the state where the indoor question is not a preference, and the numbers here answer it badly.\n\nOf 144 verified courts, 24 are indoor — one court in six. All twenty-four are in Bellevue and Vancouver: fourteen across three Bellevue community centres and the Hidden Valley Fieldhouse, and ten in Vancouver's Firstenburg and Marshall community centres. Seattle, the city with two thirds of the verified courts in the state and the wettest reputation in the country, has no verified indoor pickleball at all. Its parks dataset marks every one of its ninety-two courts outdoor. Indoor courts certainly exist in Seattle inside community centres and private clubs — several appear in our unverified import — but none has been checked against a named source, so none is listed.\n\nThe lighting picture is better recorded than in any other state we publish, because Seattle's dataset has a field for it. Five Seattle venues are lit: Bitter Lake Playfield, Rainier Beach Playfield, Miller Playfield, Alki Playground and Mt. Baker Park. Nineteen more are stated unlit, which is a different answer from unknown and is why those pages read No. Vancouver's Oakbrook Community Park is stated unlit too, in a sentence rather than a field: \"The courts do not have lighting.\" Bellevue states nothing about lighting anywhere, so all twelve of its venues read \"not verified yet\". Put together: of thirty-nine venues, five are known lit, twenty are known unlit and fourteen are unknown — and in a state where it is dark by half past four in December, that first number is the one that decides whether an evening game is possible outdoors.\n\nSo the practical shape of a Washington winter, on what we can verify: five lit outdoor venues, all in Seattle, and twenty-four indoor courts, none of them in it.\n\nThe indoor courts come with conditions that a court count does not convey, and in this state they are the difference between a plan and a wasted drive. Every indoor venue in Washington that we have verified runs drop-in sessions on a published schedule, and not one of the six takes a booking. South Bellevue Community Center states it flatly — \"All Drop-In Sports times are strictly drop-in only\", with reservations, saved spots and signing in for another player all specifically disallowed — and asks you to check in at the front desk first. Crossroads Community Center says \"No registration required: first-come, first-served. Space is limited.\" Vancouver's Firstenburg and Marshall centres run scheduled play for ages 12 and up. A gym is a pickleball venue only during the hours it is one, so the schedule matters more than the court count, and only one of these operators publishes a schedule we could read as anything other than a PDF dated two years ago.\n\nTwo further caveats belong to winter specifically. Bellevue's North Bellevue Community Center carries the only warning about a room rather than a court anywhere in this state — the City counts it as \"2 courts (with low ceiling)\" — and Vancouver's Firstenburg is the only indoor venue whose floor is on the record, a wood gymnasium floor rather than an unnamed hard surface. Everywhere else you are turning up to a surface nobody has described.",
+    "notable": "The biggest verified sites in Washington are all in Seattle, and there are four of them at exactly the same size: Bitter Lake Playfield, Green Lake Park's east courts, Rainier Beach Playfield and West Magnolia Playfield each hold eight courts. Two are lit and two are stated unlit, which between them is a fair summary of what Seattle Parks records: excellent coverage of the questions it chose to answer, and complete silence on cost and surface.\n\nThe largest indoor rooms are a tie at six courts — South Bellevue Community Center and Vancouver's Firstenburg Community Center — and they are worth reading beside each other, because they are the two venues in Washington that answer questions nobody else does. South Bellevue is the only venue in the state that publishes a price: $4 for Bellevue residents, $5 for everyone else, per adult drop-in session, with family sessions free for an adult and a child under 18 from the same household. It is also the only one that says who supplies the equipment — \"We provide pickleball balls, nets, and poles\". Firstenburg is the only venue in Washington with a verified playing surface of any kind, because Vancouver wrote down that its six courts are \"on a wood gymnasium floor\", and a gymnasium floor is a material rather than a category. Across the other thirty-eight venues in this state, surface is unverified everywhere.\n\nFor dedicated courts — pickleball and nothing else, no tennis lines, no portable net — Washington has two places on the record. Eastgate Park in Bellevue has four, permanently so since 1 September 2026. Oakbrook Community Park in Vancouver has four, open 7 a.m. to 10 p.m. daily with nets and poles permanently installed, which is as close to turn-up-and-play as this state gets outdoors. Everything else verified in Washington is a shared court: tennis lines at thirty-odd venues, a basketball court at Bellevue's Lewis Creek Park, and a tennis net you play over at two more.\n\nA few venues are notable for what they answer rather than for their size. Hidden Valley Park in Bellevue is the only venue anywhere in this directory with a court count above zero on both sides of the indoor/outdoor line: three courts in its fieldhouse and two in the park outside, at one address, listed by the City as two separate entries and published here as one place. Hillaire Park is the only venue in the state whose operator splits its own count by type — \"3 courts (1 dedicated, 2 portable nets)\" — so you know before you go which of the three is reliably pickleball. Lewis Creek Park is the only one in Washington whose pickleball shares with basketball rather than tennis, and the only one where a city has said what the overlay is drawn on. At the other end, Cherry Crest Mini Park has a single court over a tennis net, which is worth knowing precisely because \"has pickleball\" and \"has a court free for you\" are not the same sentence at a one-court venue.\n\nThe most useful sentence published by any Washington operator is not about a venue at all. It is Bellevue's: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\" A city that writes down its own default has told you what every unmarked entry on its list means, and it is the reason twelve Bellevue venues carry a sourced note about what kind of court you are walking onto while ninety-two courts in Seattle carry none.",
+    "growth": "The clearest evidence of what is happening to pickleball in Washington is six days old at the time of writing, and it is a City press release.\n\nOn 28 August 2026 Bellevue Parks & Community Services announced that, \"responding to increasing community demand\", it would convert the two dual-use outdoor sport courts at Eastgate Park into \"a dedicated pickleball-only facility\". From 1 September the tennis nets came off and the four pickleball courts marked on those courts became permanent, with a resurfacing to pickleball lines only planned to follow. The City cited \"multiple recreation planning assessments and high interest in the sport expressed through community feedback\", and named four nearby parks — Silver Leaf, Lakemont, Spiritridge and Sunset — where displaced tennis players could go, two of which are pickleball venues on this site.\n\nThe same notice contains the sentence that makes it useful rather than merely cheerful: the department \"does not currently have conversions planned at any other dual-use courts in Bellevue\". That is a stated negative, and it bounds the story. One park converted, none scheduled to follow, in a city with thirty-eight verified courts. Our build asserts that sentence is still present on the City's page, so if another conversion is announced this page fails rather than going on quietly claiming nothing is coming.\n\nAgainst that, the shape of provision across the state has not moved. Most of what is verified in this state is still a shared court rather than a built one. Bellevue states the arrangement outright — shared use with tennis unless otherwise noted — and only two venues in Washington, Eastgate Park and Oakbrook Community Park, are dedicated pickleball on the record. That is what growth looks like almost everywhere before it looks like construction: lines painted on tennis courts, portable nets, and a dedicated facility every so often when a city decides the demand has settled. What we cannot tell you is whether this is representative, because three cities is three cities. Seattle's dataset is refreshed weekly by the city, so if its counts move we will see it; Bellevue's and Vancouver's are web pages that change without telling anyone, which is why both are snapshotted and asserted on every build.\n\nThe other thing changing here is the record rather than the courts. Seattle's dataset is maintained as infrastructure — refreshed weekly, last edited on 31 August 2026 — which makes it the only Washington source that will tell us when a count moves. Bellevue's and Vancouver's are web pages maintained by people with other jobs, so both are snapshotted into this repository and re-asserted on every build: if the City of Bellevue quietly edits the sentence stating that no further conversions are planned, or Vancouver fixes the address it prints twice, the build fails and someone reads the page again. That is the only defence a directory has against a fact that was true when it was written.\n\nWhat would change this page most is not another conversion but another city. Spokane is the obvious one, and the blocker there is our access rather than their records. After that the queue runs Redmond, Bellingham, Kent, Tacoma — cities where we hold enough rows to clear the venue threshold and no source to publish any of them. Each one is a parks department's web page away from being here, which is a small distance and, on the evidence of the eight cities published so far, a completely unpredictable one."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Washington?",
+      "a": "Nobody can tell you honestly, and this page will not pretend to. What we can tell you is what has been checked: 144 courts across thirty-nine venues in three cities, each with a named source and a date. Our unverified import holds 653 rows across 169 Washington cities, which is a measure of how much is unchecked rather than a count of anything."
+    },
+    {
+      "q": "Why only three cities?",
+      "a": "Because three is how many have a source we can show you. A city appears here once three or more of its venues carry a source_url and a date_checked. Fifty-three other Washington cities in our import already hold three or more rows that would clear the threshold on volume — Spokane, Redmond, Bellingham, Kent, Tacoma, Marysville, Auburn, Kennewick, Olympia — and not one of those rows carries a source, so none of them is published."
+    },
+    {
+      "q": "Why isn't Spokane here? It is the state's second-largest city.",
+      "a": "It is the obvious next candidate: our import holds thirty rows for Spokane, twenty-eight of which pass every gate except provenance, which is the best unverified position of any Washington city. The City of Spokane does publish a pickleball page. Our fetcher was refused with an HTTP 403 when it tried to read it on 4 September 2026, and this project does not publish from a page it cannot snapshot and re-check. That is a problem with our access, not with Spokane's records, and it is the next thing to solve in this state."
+    },
+    {
+      "q": "Where can I play indoors in Washington?",
+      "a": "Bellevue and Vancouver, and nowhere else on this site. Fourteen indoor courts across South Bellevue Community Center (six), Crossroads Community Center (three), the Hidden Valley Fieldhouse (three) and North Bellevue Community Center (two, and the City warns of a low ceiling); ten more at Vancouver's Firstenburg Community Center (six, on a wood floor) and Marshall Community Center (four). All six are drop-in on published schedules and none can be booked."
+    },
+    {
+      "q": "Is it free to play in Washington?",
+      "a": "Not verified anywhere in this state, and that is not the same as no. Three venues state that a fee applies — South Bellevue Community Center at $4 for residents and $5 for others, and Vancouver's Firstenburg and Marshall centres, which say a daily drop-in fee applies to non-members without publishing the amount. The other thirty-six venues, including every outdoor park court in Seattle and Bellevue, say nothing about cost at all. They are municipal park courts and are very likely free; \"very likely\" is not a fact and does not go in a field."
+    },
+    {
+      "q": "Which courts are actually lit?",
+      "a": "Five, all in Seattle: Bitter Lake Playfield, Rainier Beach Playfield, Miller Playfield, Alki Playground and Mt. Baker Park. Nineteen more Seattle venues are stated unlit, and so is Oakbrook Community Park in Vancouver. Bellevue states nothing either way about any of its twelve venues, so they read \"not verified yet\" — which means nobody has told us, not that the courts are dark."
+    },
+    {
+      "q": "What is the biggest pickleball site in the state?",
+      "a": "Four sites tie at eight courts, and all four are Seattle parks: Bitter Lake Playfield, Green Lake Park's east courts, Rainier Beach Playfield and West Magnolia Playfield. Indoors, South Bellevue Community Center and Vancouver's Firstenburg Community Center tie at six."
+    },
+    {
+      "q": "Can I book a court anywhere in Washington?",
+      "a": "Not on anything we have verified. Bellevue's indoor sessions are explicitly drop-in only, with reservations and saved spots specifically disallowed at South Bellevue; its outdoor courts take no bookings; Vancouver states its courts \"cannot be reserved\" and are first come, first served with a paddle-rack rotation; and Seattle Parks publishes no reservation system in the dataset we read. If a booking route exists somewhere in these three cities, its operator has not published it where we could read it."
+    },
+    {
+      "q": "How do you decide which Washington city to add next?",
+      "a": "By whether its operator has written the courts down. Volume in our import is a tiebreak, not a qualification — the question is always whether a parks department publishes a court count we can quote, snapshot and re-check. Spokane is first in the queue on both counts, once we can read its page. Redmond, Bellingham, Kent and Tacoma follow. A city with fifty rows and no municipal source stays unpublished behind a city with four rows and a page that states them."
+    },
+    {
+      "q": "What does \"not verified yet\" mean on these pages?",
+      "a": "That the operator has not stated it, and that we refuse to guess. It is not a claim the thing is absent. Surface is unverified at thirty-eight of Washington’s thirty-nine venues; cost at thirty-six; lighting at fourteen. Those courts have surfaces, and most of the park ones are almost certainly free to play on. The moment a city writes either down, the field fills in and the source and date appear beside it — which is why the empty fields are left visible rather than hidden. A directory that quietly renders an unknown as a \"no\", or worse as a confident \"free\", is telling you something nobody told it."
+    },
+    {
+      "q": "How often is Washington re-checked?",
+      "a": "Seattle’s dataset is refreshed weekly by the city and was last edited on 31 August 2026; we read it on 3 September. Bellevue was read on 4 September and Vancouver on 3 September, and both are static web pages that change without notice, which is why each is snapshotted into the repository and re-asserted on every build. A re-check cadence per field — an address changes rarely, a drop-in fee often — is a decision this project has recorded as open rather than quietly assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Pickleball_Courts/FeatureServer/0",
+      "publisher": "Seattle Parks and Recreation (SeattleParks_SeattleCityGIS)",
+      "tier": 2,
+      "retrieved": "2026-09-03",
+      "supports": [
+        "coverage",
+        "seasonality",
+        "notable",
+        "growth"
+      ],
+      "evidence": "Seattle's dedicated Pickleball Courts feature layer, carrying NUMBEROFCOURTS, INDOOROUTDOOR, LIGHTED and NETS per location for twenty-four venues and ninety-two courts, all marked Outdoor, five marked LIGHTED=\"Yes\" and nineteen LIGHTED=\"No\". Refreshed weekly by the city; last edited 31 August 2026. Snapshot: data/sources/seattle-parks-pickleball-courts.arcgis.json"
+    },
+    {
+      "id": "S2",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": [
+        "coverage",
+        "seasonality",
+        "notable"
+      ],
+      "evidence": "The City of Bellevue's pickleball courts page, stating an indoor or outdoor court count for every venue it lists, and the city-wide default \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\" Snapshot: data/sources/bellevue/pickleball.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/sbcc/drop-sports",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": [
+        "notable"
+      ],
+      "evidence": "\"All Adult Drop-In Sports / Bellevue Residents- $4 / Non-Residents- $5 / All Family Sports-FREE\"; \"We provide pickleball balls, nets, and poles.\"; \"All Drop-In Sports times are strictly drop-in only.\" Snapshot: data/sources/bellevue/sbcc-drop-in-sports.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://bellevuewa.gov/city-news/eastgate-park-pickleball",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": [
+        "growth",
+        "notable"
+      ],
+      "evidence": "City news item of 28 August 2026: the Eastgate Park conversion from 1 September, \"responding to increasing community demand\", the removal of the tennis nets, the planned resurfacing with pickleball lines only, the Silver Leaf/Lakemont/Spiritridge/Sunset alternatives, and \"Bellevue's Parks & Community Services Department does not currently have conversions planned at any other dual-use courts in Bellevue.\" Snapshot: data/sources/bellevue/eastgate-conversion-news.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.cityofvancouver.us/government/department/parks-recreation-and-cultural-services/recreation-activities/pickleball/",
+      "publisher": "City of Vancouver Parks, Recreation and Cultural Services",
+      "tier": 1,
+      "retrieved": "2026-09-03",
+      "supports": [
+        "coverage",
+        "seasonality",
+        "notable"
+      ],
+      "evidence": "\"Oakbrook Community Park (3103 NE 99th Ave.) has four dedicated pickleball courts that are open daily from 7 a.m. to 10 p.m.\"; \"Nets and poles are permanently installed. The courts do not have lighting.\"; \"There are six courts open during scheduled play on a wood gymnasium floor.\"; \"Play is free for community center members; visitors must pay a daily drop-in fee.\" Snapshot: data/sources/vancouver/pickleball.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://github.com/odbrangieclawson/pickleball-courts/blob/main/reports/city-triage.md",
+      "publisher": "Find Pickleball Courts (this project)",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "supports": [
+        "coverage",
+        "growth"
+      ],
+      "evidence": "Our own triage of the imported dataset: 653 rows across 169 Washington cities, of which fifty-six clear the three-venue threshold on volume alone. Spokane holds thirty rows with twenty-eight passing every gate but provenance; Redmond twelve, Bellingham twelve, Kent nine, Marysville eight, Tacoma eight. Every one of those rows is status=pending because none carries a source_url or a date_checked. These are claims about our dataset, not about Washington."
+    }
+  ]
+}

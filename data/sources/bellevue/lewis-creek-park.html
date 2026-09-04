@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"1402444c6f",applicationID:"523464041",browserID:"594315289"};;/*! For license information please see nr-loader-rum-1.321.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,1e6,"KC",0,i,"qh",0,"SESSION_ERROR"])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.321.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.321.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.321.0.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-auOJN989wXoxmQeiyRE/ZlrR6yqeuq5/WjLH1btsNQ6Iqm/RK+IqmjTuvad7oOBZyozPaWg6y2Uu2qAZy3e0cQ=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.321.0.PROD"]=self["webpackChunk:NRBA-1.321.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,8391));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+<meta name="description" content="The Lewis Creek Park and Visitor Center serve as community gathering places for environmental education and recreation. More than 80% of the 55-acre park is preserved as an undeveloped natural area. The park is situated at the headwaters of Lewis Creek and offers three diverse habitats to explore - wetland, meadow and forest – all accessed by boardwalks and soft-surface trails." />
+<meta name="geo.position" content="47.605131; -122.1655305" />
+<link rel="canonical" href="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park" />
+<meta name="robots" content="index, follow" />
+<meta property="og:site_name" content="City of Bellevue" />
+<meta property="og:url" content="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park" />
+<meta property="og:title" content="Lewis Creek Park" />
+<meta property="og:description" content="The Lewis Creek Park and Visitor Center serve as community gathering places for environmental education and recreation. More than 80% of the 55-acre park is preserved as an undeveloped natural area. The park is situated at the headwaters of Lewis Creek and offers three diverse habitats to explore - wetland, meadow and forest – all accessed by boardwalks and soft-surface trails." />
+<meta property="og:image" content="https://bellevuewa.gov/sites/default/files/styles/header_image/public/media/header_image/migrated/lewis-creek-park-fog-10-27-17.jpg?itok=mK0qvwrD" />
+<meta property="og:updated_time" content="2025-10-22T17:15:12-0700" />
+<meta property="article:modified_time" content="2025-10-22T17:15:12-0700" />
+<meta name="twitter:title" content="Lewis Creek Park" />
+<meta name="twitter:description" content="The Lewis Creek Park and Visitor Center serve as community gathering places for environmental education and recreation. More than 80% of the 55-acre park is preserved as an undeveloped natural area. The park is situated at the headwaters of Lewis Creek and offers three diverse habitats to explore - wetland, meadow and forest – all accessed by boardwalks and soft-surface trails." />
+<meta name="twitter:image" content="https://bellevuewa.gov/sites/default/files/styles/header_image/public/media/header_image/migrated/lewis-creek-park-fog-10-27-17.jpg?itok=mK0qvwrD" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/bellevue/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park" />
+
+    <title>Lewis Creek Park | City of Bellevue</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_XJbAUQZl2xWRdwM8dG9EqtRGpIjh59JEIaeOLaY4u20.css?delta=0&amp;language=en&amp;theme=bellevue&amp;include=eJxdkFFywyAMRC9EzJEYAbJDLZCLRBzn9MWx3Wb6g_atBmm0IILqUvnCoFxtEBm-WwqzG9MTxXhUxeqEQwJycoeayuR8U-UiVnSjzsYTvDZLDHGnQCCyWQ-Cl84oAlOfd3Lh2HtcsauagdKrYxPl7DLHRmghPqAEvPX587_WROyBbtdyLJp0c5g9Rhtg0cTF4FP3nzbWtgANJ5qRi8KKwhnthx5W9DuKmZCJA-wz7IceMixmXoHIemYVrb8ccYRGetJI-BRKEetpdAjzp-MINm7aw0vazzvAHNXFJIEfWDfLBQOTWaDC1Jfd5TrlzxlaWZqnJHeM5r3nyFw2UcyHfiRcxb7f4YjvB-Hvw-U" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_4n5G1IXguuwISapOrJzvKZO1uvYIhXI3xwda1GSsgEw.css?delta=1&amp;language=en&amp;theme=bellevue&amp;include=eJxdkFFywyAMRC9EzJEYAbJDLZCLRBzn9MWx3Wb6g_atBmm0IILqUvnCoFxtEBm-WwqzG9MTxXhUxeqEQwJycoeayuR8U-UiVnSjzsYTvDZLDHGnQCCyWQ-Cl84oAlOfd3Lh2HtcsauagdKrYxPl7DLHRmghPqAEvPX587_WROyBbtdyLJp0c5g9Rhtg0cTF4FP3nzbWtgANJ5qRi8KKwhnthx5W9DuKmZCJA-wz7IceMixmXoHIemYVrb8ccYRGetJI-BRKEetpdAjzp-MINm7aw0vazzvAHNXFJIEfWDfLBQOTWaDC1Jfd5TrlzxlaWZqnJHeM5r3nyFw2UcyHfiRcxb7f4YjvB-Hvw-U" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_E_u_baRrsMXGdqvTbRGVsV7kolKypcxKE2YKnpEhFp0.css?delta=3&amp;language=en&amp;theme=bellevue&amp;include=eJxdkFFywyAMRC9EzJEYAbJDLZCLRBzn9MWx3Wb6g_atBmm0IILqUvnCoFxtEBm-WwqzG9MTxXhUxeqEQwJycoeayuR8U-UiVnSjzsYTvDZLDHGnQCCyWQ-Cl84oAlOfd3Lh2HtcsauagdKrYxPl7DLHRmghPqAEvPX587_WROyBbtdyLJp0c5g9Rhtg0cTF4FP3nzbWtgANJ5qRi8KKwhnthx5W9DuKmZCJA-wz7IceMixmXoHIemYVrb8ccYRGetJI-BRKEetpdAjzp-MINm7aw0vazzvAHNXFJIEfWDfLBQOTWaDC1Jfd5TrlzxlaWZqnJHeM5r3nyFw2UcyHfiRcxb7f4YjvB-Hvw-U" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_51DHhLcv_LIywlaD4HXbB1IEqtX36IQ8T3ByBRffuu8.css?delta=4&amp;language=en&amp;theme=bellevue&amp;include=eJxdkFFywyAMRC9EzJEYAbJDLZCLRBzn9MWx3Wb6g_atBmm0IILqUvnCoFxtEBm-WwqzG9MTxXhUxeqEQwJycoeayuR8U-UiVnSjzsYTvDZLDHGnQCCyWQ-Cl84oAlOfd3Lh2HtcsauagdKrYxPl7DLHRmghPqAEvPX587_WROyBbtdyLJp0c5g9Rhtg0cTF4FP3nzbWtgANJ5qRi8KKwhnthx5W9DuKmZCJA-wz7IceMixmXoHIemYVrb8ccYRGetJI-BRKEetpdAjzp-MINm7aw0vazzvAHNXFJIEfWDfLBQOTWaDC1Jfd5TrlzxlaWZqnJHeM5r3nyFw2UcyHfiRcxb7f4YjvB-Hvw-U" />
+<link rel="stylesheet" media="all" href="//customer.cludo.com/templates/rich-inline/v1.0/dist/styles/cludo-search-results.css" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/jquery-bootstrap-scrolling-tabs@2.6.1/dist/jquery.scrolling-tabs.min.css" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_vV-gn1ito9aWwXUJnSPyZMJDxRd7qAa0UQZdnxZii0s.css?delta=7&amp;language=en&amp;theme=bellevue&amp;include=eJxdkFFywyAMRC9EzJEYAbJDLZCLRBzn9MWx3Wb6g_atBmm0IILqUvnCoFxtEBm-WwqzG9MTxXhUxeqEQwJycoeayuR8U-UiVnSjzsYTvDZLDHGnQCCyWQ-Cl84oAlOfd3Lh2HtcsauagdKrYxPl7DLHRmghPqAEvPX587_WROyBbtdyLJp0c5g9Rhtg0cTF4FP3nzbWtgANJ5qRi8KKwhnthx5W9DuKmZCJA-wz7IceMixmXoHIemYVrb8ccYRGetJI-BRKEetpdAjzp-MINm7aw0vazzvAHNXFJIEfWDfLBQOTWaDC1Jfd5TrlzxlaWZqnJHeM5r3nyFw2UcyHfiRcxb7f4YjvB-Hvw-U" />
+
+      <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/67516","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","themeUrl":"themes\/custom\/bellevue"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJyFkuGS4yAIx1_IxkdyiBLrFoMn2Db79GsTM-3tzM19wf8PHAQERFBdWr_QK1frRaY_LfmbW9ITxcyoitUJ-wTk5Ao1rdHNTZVXsZ7LdvGtVlz10ir957roRp3NTPC92d0O7QlEKIkOJoYwZGHalkR0YuWcBAdVWIZ64FzMnqZnhn5h6IwiEHsng1cOPcYVu6oZKH13bKKcXebQCC2EO6weL73U269QJJ6BLuJrKir_CI4m-0iSbg7zjMF6KJp4NfjUV1obaitA00Cz8KrwQOGM9kNPvakXionIxB5eOeyHnjIUE5kjoVOINnbzmyf4guffzmxuDyCyM7OK1p7j4IALNNJBC-Gz_0nAejrelQ1PrCm840lYuZyxPiQmyhCTPz3U9-ozoyPYuGlfjKR93geY43Qhiec71s3yip7JFKgQe7FXOcf39kxtLW3uC3TFYPZ3jtemfZFkE8V8rMU94UPsbqfj434AQhQuPw","theme":"bellevue","theme_token":null},"ajaxTrustedUrl":[],"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-TGCVQBR"],"hostnames":{"GTM-TGCVQBR":"www.googletagmanager.com"}},"data":{"extlink":{"extTarget":true,"extTargetAppendNewWindowDisplay":true,"extTargetAppendNewWindowLabel":"(opens in a new window)","extTargetNoOverride":true,"extNofollow":true,"extTitleNoOverride":false,"extNoreferrer":false,"extFollowNoOverride":true,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":".*\\.(pdf|doc|docx)$","extCssExclude":"","extCssInclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","extHideIcons":false,"mailtoClass":"0","telClass":"","mailtoLabel":"(link sends email)","telLabel":"(link is a phone number)","extUseFontAwesome":false,"extIconPlacement":"append","extPreventOrphan":false,"extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","extAdditionalLinkClasses":"","extAdditionalMailtoClasses":"","extAdditionalTelClasses":"","extFaTelClasses":"fa fa-phone","allowedDomains":null,"extExcludeNoreferrer":""}},"geolocation":{"maps":{"map-6a9a1d37c6e84":{"mapCenter":{"fit_bounds":{"weight":-101,"settings":{"min_zoom":16},"import_path":"\/modules\/contrib\/geolocation\/js\/MapCenter\/FitElements.js"}},"features":{"leaflet_control_zoom":{"import_path":"\/modules\/contrib\/geolocation\/modules\/geolocation_leaflet\/js\/MapFeature\/LeafletControlZoom.js","settings":{"position":"topleft"},"scripts":[],"stylesheets":[]}},"data_layers":{"geolocation_default_layer_default":{"import_path":"\/modules\/contrib\/geolocation\/js\/DataLayerProvider\/DefaultLayer.js","settings":[],"label":"Default"}},"conditional_initialization":"viewport","conditional_description":"Clicking this button will embed a map.","conditional_label":"Show map","conditional_viewport_threshold":0.80000000000000004,"zoom":"0","height":"400px","width":"100%","minZoom":"0","maxZoom":"20","crs":"EPSG3857","preferCanvas":false,"zoomSnap":1,"zoomDelta":1,"trackResize":true,"boxZoom":true,"doubleClickZoom":true,"dragging":true,"zoomAnimation":true,"zoomAnimationThreshold":4,"fadeAnimation":true,"markerZoomAnimation":true,"inertia":false,"inertiaDeceleration":3000,"easeLinearity":0.20000000000000001,"worldCopyJump":false,"maxBoundsViscosity":0,"keyboard":true,"keyboardPanDelta":80,"scrollWheelZoom":true,"wheelDebounceTime":40,"wheelPxPerZoomLevel":60,"tap":true,"tapTolerance":15,"touchZoom":true,"bounceAtZoomLimits":true,"import_path":"\/modules\/contrib\/geolocation\/modules\/geolocation_leaflet\/js\/MapProvider\/Leaflet.js","scripts":["https:\/\/unpkg.com\/leaflet@1.9.3\/dist\/leaflet.js"],"stylesheets":["https:\/\/unpkg.com\/leaflet@1.9.3\/dist\/leaflet.css","\/modules\/contrib\/geolocation\/modules\/geolocation_leaflet\/css\/MapProvider\/Leaflet.css"]}}},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50,"validateDelay":25,"container":"","loader":true,"unblazy":false,"visibleClass":false},"blazyIo":{"disconnect":false,"rootMargin":"0px","threshold":[0,0.25,0.5,0.75,1]},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"pauseOnHover":true,"pauseOnDotsHover":false,"pauseOnFocus":true,"autoplaySpeed":3000,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.34999999999999998,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"user":{"uid":0,"permissionsHash":"18639c24e2a5f0f091b2118915dc2ac365b21ec90812ffc16f2c5f97c5372bc0"}}</script>
+<script src="/sites/default/files/js/js_Bdp-Y_Y1cUlxh9IaQNIeet8TS95j6tmCzuJSmJo8F_k.js?scope=header&amp;delta=0&amp;language=en&amp;theme=bellevue&amp;include=eJxdkOFuwyAMhF-IhEeKHHCYFxMjbNZkT7-0oWrXP9Z9x9lCN6MZ1kklEPCkX1BpS9PczGRTH6QcQ2i14mZDq-xmht_DP2bXgUGVSa0zC8Qui_CxED-3SpVMip0qLF3dcC4uNDXJU5bYGD3EH9gCDkzb-vGUWGbgQUOlYupwt3vIx9oK8NjRJRSWAEay-Tc9ZiguiSTGySD5dI5PHuEb9v9mdusNmP0sYmr1vHFxxAUaW6eFcT-biFi7kSrFF5GKScFO5_-FOUOi8HSYwvq-PzEc0ky9kp1VXOAesSs83rv-A3XFry4"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?tiymes"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?tiymes"></script>
+
+        
+        </head>
+<body class="role-anonymous page-node-page page-node-67516 department-parks--community-services path-node page-node-type-page lang-en">
+<a href="#main-content" class="visually-hidden focusable" tabindex="1">
+  Skip to main content
+</a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGCVQBR"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+        <div class="region region-site-alerts">
+    <div class="views-element-container block-site-alerts block block-views block-views-blockalerts-block-global" id="block-views-block-alerts-block-global">
+  
+    
+      <div><div class="site-alert view--blazy js-view-dom-id-35fcfa6e33f9a5364815fbba76ddb86a363d91d8710dc320a282b1683eb28256">
+  
+  
+  
+
+  
+  
+  
+
+  
+  <div class="slick blazy slick--view slick--view--alerts slick--view--alerts--block-global slick--view--alerts-block-block-global unslick slick--optionset--default slick--less" data-blazy="">  <div class="slick__slide slide slide--0">
+
+
+  
+<div
+    class="alert alert-info alert-dismissible fade show"
+    role="alert"
+    data-nid="219436">
+  
+  <h2 class="alert-heading h4" tabindex="2+"><span class="field field--name-title field--type-string field--label-hidden">Fall Into Fun</span>
+</h2>
+  
+  <div class="node__content">
+    
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><span>Fall Into Fun is a month-long celebration of connection, belonging and community. Free and low-cost activities activities for all ages and abilities include dance, swimming, karaoke, cultural experiences and more! Browse the </span><a href="/city-government/departments/parks/programs/fall-fun" data-entity-type="node" data-entity-uuid="a025c8e7-9ee2-4fb5-b586-69d5e2629f57" data-entity-substitution="canonical" title="Fall Into Fun"><span>Fall Into Fun webpage</span></a><span> or </span><a href="https://online.flipbuilder.com/BellevueWAParks/ncfp/"><span>event calendar</span></a><span> to plan your activities throughout September.&nbsp;</span></p></div>
+      
+  </div>
+  <button type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label=Close
+          data-nid="219436">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</div>
+</div>
+
+  
+
+  
+  
+  
+
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+  
+      <aside class="global-navigation" >
+        <div class="region region-global-navigation">
+    <nav role="navigation" aria-labelledby="block-pushnavigation-menu" id="block-pushnavigation" class="push-nav-menu block block-menu navigation menu--push-navigation-toggle">
+      
+  <div id="block-pushnavigation-menu">Bellevue home</div>
+  
+
+        
+    
+          <ul class="menu nav menu-level-0" role="menu">
+      
+          
+              <li class="menu__item">
+        <a href="/" class="menu__link" data-drupal-link-system-path="&lt;front&gt;">Bellevue Home</a>
+      
+      
+      </li>
+          
+            <li class="expanded dropdown-item menu__item" role="listitem">
+                  <a href="/city-government" class="dropdown-toggle menu__link" data-drupal-link-system-path="node/61956">City Government</a>
+                <span class="fa fa-angle-right" data-toggle=".menu-level-1" tabindex="0" title="City Government"></span>
+      
+                  
+          <div class="dropdown-menu-list menu-level-1">
+    <ul class="menu-list-1">
+
+  
+          
+              <li class="menu__item">
+        <a href="/city-government/boards-commissions-and-committees" class="menu__link">Boards, Commissions and Committees</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/development/codes-and-guidelines" class="menu__link" data-drupal-link-system-path="node/65431">City Code, Resolutions and Ordinances</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/city-council" class="menu__link" data-drupal-link-system-path="node/61966">City Council</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-managers-office/communications" class="menu__link" data-drupal-link-system-path="node/70876">Communications</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments" class="menu__link" data-drupal-link-system-path="node/85">Departments</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/east-bellevue-community-council" class="menu__link" data-drupal-link-system-path="node/65081">East Bellevue Community Council</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/discover-bellevue/about-us/hot-topics-initiatives" class="menu__link" data-drupal-link-system-path="node/65206">Hot Topics and Initiatives</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/Public-Records-Requests" class="menu__link">Public Records Requests</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/sister-cities" class="menu__link" data-drupal-link-system-path="node/65166">Sister Cities</a>
+      
+      
+      </li>
+          </ul>
+    </div>
+  
+    
+  
+      
+      </li>
+          
+            <li class="expanded dropdown-item menu__item" role="listitem">
+                  <a href="/city-government/departments" class="dropdown-toggle menu__link" data-drupal-link-system-path="node/85">Departments</a>
+                <span class="fa fa-angle-right" data-toggle=".menu-level-1" tabindex="0" title="Departments"></span>
+      
+                  
+          <div class="dropdown-menu-list menu-level-1">
+    <ul class="menu-list-1">
+
+  
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-attorneys-office" class="menu__link" data-drupal-link-system-path="node/70851">City Attorney&#039;s Office</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-clerks-office" class="menu__link" data-drupal-link-system-path="node/70861">City Clerk&#039;s Office</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-managers-office" class="menu__link" data-drupal-link-system-path="node/70871">City Manager&#039;s Office</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-managers-office/communications" class="menu__link" data-drupal-link-system-path="node/70876">Communications</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/community-development" class="menu__link" data-drupal-link-system-path="node/70886">Community Development</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/development" class="menu__link" data-drupal-link-system-path="node/70891">Development Services</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/fire/emergency-management" class="menu__link" data-drupal-link-system-path="node/70901">Emergency Management</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/finance" class="menu__link" data-drupal-link-system-path="node/70911">Finance &amp; Asset Management</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/fire" class="menu__link" data-drupal-link-system-path="node/70921">Fire</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/human-resources" class="menu__link" data-drupal-link-system-path="node/70931">Human Resources</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/ITD" class="menu__link" data-drupal-link-system-path="node/70941">Information Technology</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/parks" class="menu__link" data-drupal-link-system-path="node/214601">Parks and Community Services</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/police" class="menu__link" data-drupal-link-system-path="node/70951">Police</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/transportation" class="menu__link" data-drupal-link-system-path="node/70961">Transportation</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/utilities" class="menu__link" data-drupal-link-system-path="node/70971">Utilities</a>
+      
+      
+      </li>
+          </ul>
+    </div>
+  
+    
+  
+      
+      </li>
+          
+            <li class="expanded dropdown-item menu__item" role="listitem">
+                  <a href="/discover-bellevue" class="dropdown-toggle menu__link" data-drupal-link-system-path="node/65186">Discover Bellevue</a>
+                <span class="fa fa-angle-right" data-toggle=".menu-level-1" tabindex="0" title="Discover Bellevue"></span>
+      
+                  
+          <div class="dropdown-menu-list menu-level-1">
+    <ul class="menu-list-1">
+
+  
+          
+              <li class="menu__item">
+        <a href="/discover-bellevue/about-us" class="menu__link" data-drupal-link-system-path="node/65191">About Us</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-managers-office/communications/bellevue-television" class="menu__link" data-drupal-link-system-path="node/63726">Bellevue Television</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-news" class="menu__link" data-drupal-link-system-path="node/107">City News</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/discover-bellevue/things-to-do" class="menu__link" data-drupal-link-system-path="node/65316">Things to Do</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/discover-bellevue/arts-in-bellevue" class="menu__link" data-drupal-link-system-path="node/65311">Arts in Bellevue</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/parks/parks-and-trails" class="menu__link" data-drupal-link-system-path="node/67131">Parks and Trails</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/community-development/economic-development" class="menu__link" data-drupal-link-system-path="node/196511">Economic Development</a>
+      
+      
+      </li>
+          </ul>
+    </div>
+  
+    
+  
+      
+      </li>
+          
+            <li class="expanded dropdown-item menu__item" role="listitem">
+                  <a href="/doing-business" class="dropdown-toggle menu__link" data-drupal-link-system-path="node/65321">Doing Business</a>
+                <span class="fa fa-angle-right" data-toggle=".menu-level-1" tabindex="0" title="Doing Business"></span>
+      
+                  
+          <div class="dropdown-menu-list menu-level-1">
+    <ul class="menu-list-1">
+
+  
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/development" class="menu__link" data-drupal-link-system-path="node/70891">Building and Zoning</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/community-development/economic-development" class="menu__link" data-drupal-link-system-path="node/196511">Doing Business in Bellevue</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/doing-business/doing-business-with-bellevue" class="menu__link" data-drupal-link-system-path="node/65326">Doing Business with Bellevue</a>
+      
+      
+      </li>
+          </ul>
+    </div>
+  
+    
+  
+      
+      </li>
+          
+            <li class="expanded dropdown-item menu__item" role="listitem">
+                  <a href="/public-safety" class="dropdown-toggle menu__link" data-drupal-link-system-path="node/65346">Public Safety</a>
+                <span class="fa fa-angle-right" data-toggle=".menu-level-1" tabindex="0" title="Public Safety"></span>
+      
+                  
+          <div class="dropdown-menu-list menu-level-1">
+    <ul class="menu-list-1">
+
+  
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/police" class="menu__link" data-drupal-link-system-path="node/70951">Police</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/fire" class="menu__link" data-drupal-link-system-path="node/70921">Fire</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-managers-office/communications/emergencies-and-extreme-weather" class="menu__link">Emergencies and Extreme Weather</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/public-safety/emergency-preparedness" class="menu__link">Emergency Preparedness</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/public-safety/municipal-court" class="menu__link">Municipal Court</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/public-safety/neighborhood-traffic-safety" class="menu__link">Neighborhood Traffic Safety</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/public-safety/probation" class="menu__link">Probation</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-attorneys-office/apply-for-a-public-defender" class="menu__link" data-drupal-link-system-path="node/62136">Public Defenders</a>
+      
+      
+      </li>
+          </ul>
+    </div>
+  
+    
+  
+      
+      </li>
+          
+            <li class="expanded dropdown-item menu__item" role="listitem">
+                  <a href="/resident-resources" class="dropdown-toggle menu__link" data-drupal-link-system-path="node/65351">Resident Resources</a>
+                <span class="fa fa-angle-right" data-toggle=".menu-level-1" tabindex="0" title="Resident Resources"></span>
+      
+                  
+          <div class="dropdown-menu-list menu-level-1">
+    <ul class="menu-list-1">
+
+  
+          
+              <li class="menu__item">
+        <a href="/resident-resources/adatitle-vi-resources" class="menu__link" data-drupal-link-system-path="node/204941">ADA and Language Access Resources</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/finance/mybellevue/customer-assistance" class="menu__link">Customer Assistance</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/community-development/conflict-assistance" class="menu__link">Conflict Assistance</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/city-managers-office/diversity" class="menu__link">Diversity Advantage</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/city-government/departments/community-development" class="menu__link" data-drupal-link-system-path="node/70886">Neighborhoods</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/resident-resources/newcomers-guide" class="menu__link" data-drupal-link-system-path="node/65371">Newcomers Guide</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/resident-resources/permits-parking-utilities" class="menu__link" data-drupal-link-system-path="node/65376">Permits, Parking and Utilities</a>
+      
+      
+      </li>
+          
+              <li class="menu__item">
+        <a href="/volunteering" class="menu__link" data-drupal-link-system-path="node/65401">Volunteering</a>
+      
+      
+      </li>
+          </ul>
+    </div>
+  
+    
+  
+      
+      </li>
+      
+          </ul>
+    
+  
+
+
+  </nav>
+
+  </div>
+
+    </aside>
+  
+     <div class="main-container no-padding js-quickedit-main-content">
+  
+        <div class="header-wrapper" role="region" aria-label="Navigational Header">
+      <div class="container header" >
+        <div class="row">
+          <div class="col col-sm-12">
+            <nav class="navbar navbar-light" >
+              <div class="navbar-brand mr-auto d-flex">
+                <a tabindex="1" href="/">City of Bellevue, WA</a>
+                                                      <a href="/city-government/departments/parks" class="department-title">Parks &amp; Community Services</a>
+                                                </div>
+
+                  <div class="navbar-navi" tabindex="1">
+                                                                    <div class="region region-header">
+    <div id="block-temporarysearchblock" class="block-inline block block-block-content block-block-content13818835-e6d1-4a99-a2c5-a8ccca43763e">
+  
+    
+        <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div id="cludo-search-form" role="search" class="input-group">
+<input name="searchrequest" id="cludo-search-form-input" tabindex="1" type="search" placeholder="Search" value="" title="Type search term" autocomplete="off" aria-autocomplete="list" aria-haspopup="true"  class="form-control" ></input>
+<div class="input-group-append">
+<button type="button" title="Search" tabindex="1" class="btn btn-outline-light btn-outline-bg"  aria-label="Go to Search Results"><i class="fas fa-search"></i> Go!</button>
+</div>
+</div></div>
+      
+    </div>
+  </div>
+
+  </div>
+  
+    <div class="btn-group align-top">
+        <button id="navbar-dropdown" class="btn btn-outline-light btn-outline-bg dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button" tabindex="1">
+            <i class="fas fa-language"></i> <span class="navbar-toggler-text">Language </span>
+        </button>
+
+        <nav role="navigation" aria-labelledby="block-headerlanguages-menu" id="block-headerlanguages" class="block block-menu navigation dropdown-menu menu--header-languages">
+                    
+                                    
+                <a href="https://bellevuewa.gov" class="dropdown-item">English</a>
+            <a href="https://bellevuewa.gov/es/welcome" class="dropdown-item">Español</a>
+            <a href="https://bellevuewa.gov/zh-hans/welcome" class="dropdown-item">简体中文</a>
+            <a href="https://bellevuewa.gov/zh-hant/welcome" class="dropdown-item">繁體中文</a>
+            <a href="https://bellevuewa.gov/ja/welcome" class="dropdown-item">日本語</a>
+            <a href="https://bellevuewa.gov/ko/welcome" class="dropdown-item">한국어</a>
+            <a href="https://bellevuewa.gov/ru/welcome" class="dropdown-item">Pусский</a>
+            <a href="https://bellevuewa.gov/vi/welcome" class="dropdown-item">Tiếng Việt</a>
+      
+
+
+
+
+                    </nav>
+    </div>
+  
+  </div>
+
+                                          
+                                        <button id="navbar-toggler" class="btn btn-outline-light btn-outline-bg" type="button" tabindex="1">
+                      <i class="fas fa-bars"></i> <span class="navbar-toggler-text">Menu </span>
+                    </button>
+                                    </div>
+
+
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div role="main" >
+
+  <div class="header-image-wrapper" role="banner" >
+    <section class="header-overlay">
+      <div class="align-items-end">
+        <div class="container">
+
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 header-box">
+              <div class="mt-5 mb-5 pt-3 pb-3">
+
+             <div class="order-12">
+                                                                          <div class="region region-titles">
+    <div id="block-bellevue-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 role="heading" aria-level="1"><span class="field field--name-title field--type-string field--label-hidden">Lewis Creek Park</span>
+</h1>
+
+
+  </div>
+
+  </div>
+
+                                                </div>
+
+                                                      <div class="region region-breadcrumbs">
+    <div id="block-bellevue-breadcrumbs" class="block-inline block block-system block-system-breadcrumb-block">
+  
+    
+        <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <ol>
+          <li>
+                  <a href="/">Home</a>
+              </li>
+          <li>
+                  <a href="/city-government">City Government</a>
+              </li>
+          <li>
+                  <a href="/city-government/departments">Departments</a>
+              </li>
+          <li>
+                  <a href="/city-government/departments/parks">Parks &amp; Community Services</a>
+              </li>
+          <li>
+                  <a href="/city-government/departments/parks/parks-and-trails">Parks and Trails</a>
+              </li>
+          <li>
+                  <a href="/city-government/departments/parks/parks-and-trails/parks">Parks</a>
+              </li>
+            <li> Lewis Creek Park</li>
+    </ol>
+  </nav>
+
+  </div>
+
+  </div>
+
+                              
+              </div>
+          </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 header-grid">
+              
+                   <div class="region region-featured">
+    <div class="views-element-container block block-views block-views-blockheader-banner-block-1" id="block-views-block-header-banner-block-1">
+  
+    
+      <div><div class="js-view-dom-id-b1b550cbb38a776397e599647e2f536b4591a4ddcb20bc63598fa93a13b81e63">
+  
+  
+  
+
+  
+  
+  
+
+  
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="header-img">  <img loading="lazy" src="/sites/default/files/styles/header_image/public/media/header_image/migrated/lewis-creek-park-fog-10-27-17.jpg?itok=mK0qvwrD" width="1600" height="400" alt="lewis-creek-park-fog-10-27-17.jpg" title="lewis-creek-park-fog-10-27-17.jpg" typeof="Image" class="image-style-header-image" />
+
+
+</div></span></div></div>
+
+  
+
+  
+  
+  
+
+  
+</div>
+</div>
+
+  </div>
+<div id="block-pvachatbot" class="block block-block-content block-block-contenta1165b41-5f20-494e-8e6e-c283d4ff1c8f">
+  
+    
+        <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><button class="btn btn-primary btn-float-bottom-right" id="chatbot-launcher" data-toggle="modal"
+  data-target=".chatbot">How may I help you?</button>
+
+<div class="modal fade chatbot" tabindex="-1" role="dialog" aria-labelledby="chat-window" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg right-align" role="document">
+    <div class="modal-content ">
+
+      <div class="modal-header">
+        <h3 class="sr-only">How may I help you?</h3>
+            <p class="text-small">This is an artificial-intelligence (AI) chatbot designed to provide general
+                information about various city topics. If you are having an emergency of any kind, please call 911
+                immediately. The chatbot is still learning about all of our services and may occasionally provide an
+                incorrect answer.</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body ">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+            
+            </div>
+          </div>
+        </div>
+        <div class="chat-content">
+          <!-- chatbot code -->
+          <div id="webchat">
+            <iframe
+              src="https://gcc.powerva.microsoft.us/environments/Default-222d2edd-8255-45bd-8597-52141b82f713/bots/cr6a5_bellevuewaGovAssistant20/webchat?__version__=2"
+              frameborder="0" style="width: 100%; height: 100%; min-height: 45vh; min-width: 33vw;" loading="lazy"></iframe>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <a href="https://bellevuewa.gov/mybellevue-chatbot-feedback"" type=" button" class="btn btn-primary">Give
+          Feedback</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div></div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+
+                          </div>
+            
+          </div>
+
+        </div>
+                         <div class="container">
+                    <div class="mid-header-wrapper col-xs-12" role="navigation" aria-label="Translations Available">
+           
+                                   <div class="region region-language">
+    
+  </div>
+
+              
+            </div>
+                      </div>
+                </div>
+    </section>
+  </div>
+
+    <div class="container content-wrapper">
+           <div class="row align-items-end justify-content-end" >
+
+                    <div class="region region-sub-header">
+    <div id="block-fontsizeandprintelements" class="block-inline block block-block-content block-block-content72f78921-35ed-4ba8-9d66-86440d6eeee1">
+  
+    
+        <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><ul class="list-inline" role="region" aria-label="Text Controls">
+<li class="list-inline-item" role="region" aria-label="Text Effects">
+<a href="#" class="fs-plus" title="Increase Text Size"><em class="fa fa-font"></em><span class="sr-only sr-only-focusable">Increase Text Size</span></a>
+</li>
+<li class="list-inline-item">
+<a href="#" class="fs-minus" title="Decrease Text Size"><em class="fa fa-font"></em><span class="sr-only sr-only-focusable">Decrease Text Size</span></a>
+</li>
+<li class="list-inline-item">
+<a href="#" onclick="javascript:window.print(); return false;" class="print"><em class="fa fa-print"></em><span class="sr-only sr-only-focusable">Print</span></a>
+</li>
+</ul></div>
+      
+    </div>
+  </div>
+
+  </div>
+<div id="block-bettersocialsharingbuttons" class="block block-better-social-sharing-buttons block-social-sharing-buttons-block">
+  
+    
+      
+<div style="display: none"><link href="/modules/contrib/better_social_sharing_buttons/assets/dist/sprites/social-icons--no-color.svg" as="image" type="image/svg+xml" crossorigin="anonymous" /></div>
+
+<div class="social-sharing-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park&amp;title=Lewis%20Creek%20Park"
+   target="_blank"
+   title="Share to Facebook"
+   aria-label="Share to Facebook (opens in a new window)"
+   class="social-sharing-buttons-button share-facebook"
+   rel="noopener">
+  <svg aria-hidden="true" width="22px" height="22px" style="border-radius:3px;">
+    <use href="/modules/contrib/better_social_sharing_buttons/assets/dist/sprites/social-icons--no-color.svg#facebook" />
+  </svg>
+  <span class="social-sharing-buttons-visually-hidden">
+    Opens in a new window
+  </span>
+</a>
+                <a href="https://twitter.com/intent/tweet?text=Lewis%20Creek%20Park+https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park"
+   target="_blank"
+   title="Share to X"
+   aria-label="Share to X (opens in a new window)"
+   class="social-sharing-buttons-button share-x"
+   rel="noopener">
+  <svg aria-hidden="true" width="22px" height="22px" style="border-radius:3px;">
+    <use href="/modules/contrib/better_social_sharing_buttons/assets/dist/sprites/social-icons--no-color.svg#x" />
+  </svg>
+  <span class="social-sharing-buttons-visually-hidden">
+    Opens in a new window
+  </span>
+</a>
+                            <a href="mailto:?subject=Lewis%20Creek%20Park&amp;body=https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park"
+   title="Share by email"
+   aria-label="Share by email"
+   class="social-sharing-buttons-button share-email"
+   target="_blank"
+   rel="noopener">
+  <svg aria-hidden="true" width="22px" height="22px" style="border-radius:3px;">
+    <use href="/modules/contrib/better_social_sharing_buttons/assets/dist/sprites/social-icons--no-color.svg#email" />
+  </svg>
+</a>
+                      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park"
+   target="_blank"
+   title="Share to LinkedIn"
+   aria-label="Share to LinkedIn (opens in a new window)"
+   class="social-sharing-buttons-button share-linkedin"
+   rel="noopener">
+  <svg aria-hidden="true" width="22px" height="22px" style="border-radius:3px;">
+    <use href="/modules/contrib/better_social_sharing_buttons/assets/dist/sprites/social-icons--no-color.svg#linkedin" />
+  </svg>
+  <span class="social-sharing-buttons-visually-hidden">
+    Opens in a new window
+  </span>
+</a>
+                                                          
+<div class="social-sharing-buttons-wrapper">
+  <a href="#"
+     class="btn-copy social-sharing-buttons-button share-copy"
+     role="button"
+     title="Copy link"
+     aria-label="Copy link"
+     data-page-url="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park">
+    <svg aria-hidden="true" width="22px" height="22px" style="border-radius:3px;">
+      <use href="/modules/contrib/better_social_sharing_buttons/assets/dist/sprites/social-icons--no-color.svg#copy" />
+    </svg>
+  </a>
+  <div class="social-sharing-buttons-popup" role="alert" aria-live="assertive">
+    Copied to clipboard
+  </div>
+</div>
+      </div>
+
+  </div>
+
+  </div>
+
+        
+      </div>
+
+      
+      <div class="row">
+
+
+                                      <aside class="col-sm-3 sidebar-left order-last order-sm-first" role="complementary">
+                <div class="region region-sidebar-left">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="main-navigation block block-menu navigation menu--main">
+      
+  <h2 id="block-mainnavigation-menu"><a href="/city-government/departments/parks/parks-and-trails/parks" class="menu-item--active-trail" data-drupal-link-system-path="node/67286">Parks</a></h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/Ardmore-Park" data-drupal-link-system-path="node/67291">Ardmore Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/ashwood-playfield" data-drupal-link-system-path="node/67296">Ashwood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/bannerwood-sports-park" data-drupal-link-system-path="node/67301">Bannerwood Sports Park</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/beach-parks-lifeguards" data-drupal-link-system-path="node/67141">Beach Parks with Lifeguards</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/park-guidelines/beach-park-rules" data-drupal-link-system-path="node/67271">Beach Park Rules</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/nature-and-environment/farms-gardens/blueberry-farms" data-drupal-link-system-path="node/66941">Bellevue Blueberry Farms</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/bellevue-botanical-garden" data-drupal-link-system-path="node/67321">Bellevue Botanical Garden</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/bellevue-downtown-park" data-drupal-link-system-path="node/67326">Bellevue Downtown Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.bellevuewa.gov/city-government/departments/parks/rentals/bellevue-marina-meydenbauer-bay">Bellevue Marina at Meydenbauer Bay</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/rentals/bellevue-marina-meydenbauer-bay/visitor-moorage-meydenbauer-bay" data-drupal-link-system-path="node/210436">Bellevue Marina Visitor Moorage</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/sports-and-athletics/skate-parks" data-drupal-link-system-path="node/68581">Bellevue Skate Parks</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/bel-red-mini-park" data-drupal-link-system-path="node/67306">Bel-Red Mini Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/bridle-trails-corner-park" data-drupal-link-system-path="node/67341">Bridle Trails Corner Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/bridle-trails-valley-creek-park" data-drupal-link-system-path="node/208006">Bridle Trails Valley Creek Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/burrows-landing" data-drupal-link-system-path="node/67346">Burrows Landing</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/chandler-neighborhood-park" data-drupal-link-system-path="node/67351">Chandler Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/cherry-crest-mini-park" data-drupal-link-system-path="node/67356">Cherry Crest Mini Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/cherry-crest-park" data-drupal-link-system-path="node/67361">Cherry Crest Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/chesterfield-beach-park" data-drupal-link-system-path="node/67366">Chesterfield Beach Park</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/chism-beach-park" data-drupal-link-system-path="node/67371">Chism Beach Park</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/chism-beach-park/burrows-cabin" data-drupal-link-system-path="node/67376">Burrows Cabin</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/clyde-beach-park" data-drupal-link-system-path="node/67381">Clyde Beach Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/coal-creek-natural-area" data-drupal-link-system-path="node/67386">Coal Creek Natural Area</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/collingwood-mini-park" data-drupal-link-system-path="node/67391">Collingwood Mini Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/commissioners-waterway" data-drupal-link-system-path="node/67396">Commissioner&#039;s Waterway Mini Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/crossroads-park" data-drupal-link-system-path="node/67401">Crossroads Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/deer-run-park" data-drupal-link-system-path="node/67411">Deer Run Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/park-guidelines/dogs-bellevue-parks">Dog Parks</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/eastgate-park" data-drupal-link-system-path="node/67416">Eastgate Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/enatai-beach-park" data-drupal-link-system-path="node/67421">Enatai Beach Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/enatai-neighborhood-park" data-drupal-link-system-path="node/67426">Enatai Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/evergreen-park" data-drupal-link-system-path="node/67431">Evergreen Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/forest-glen-neighborhood-park" data-drupal-link-system-path="node/67436">Forest Glen Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/forest-hill-neighborhood-park" data-drupal-link-system-path="node/67441">Forest Hill Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/forest-ridge-mini-park" data-drupal-link-system-path="node/67446">Forest Ridge Mini Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/goddard-mini-park" data-drupal-link-system-path="node/67451">Goddard Mini Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/goldsmith-neighborhood-park" data-drupal-link-system-path="node/67456">Goldsmith Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/hidden-valley-park" data-drupal-link-system-path="node/67461">Hidden Valley Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/highland-park" data-drupal-link-system-path="node/67466">Highland Park, Community Center and Bellevue Skate Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/hillaire-park" data-drupal-link-system-path="node/67471">Hillaire Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/isan-park" data-drupal-link-system-path="node/219226">Isan Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/ivanhoe-park" data-drupal-link-system-path="node/67476">Ivanhoe Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/keeney-park" data-drupal-link-system-path="node/67481">Keeney Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/city-government/departments/parks/community-centers/kelsey-creek-farm">Kelsey Creek Farm</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/rentals/outdoor-rentals/kelsey-creek-park" data-drupal-link-system-path="node/68356">Kelsey Creek Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/killarney-glen-park" data-drupal-link-system-path="node/67486">Killarney Glen Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/lake-hills-community-park" data-drupal-link-system-path="node/67491">Lake Hills Community Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/lake-hills-greenbelt" data-drupal-link-system-path="node/67496">Lake Hills Greenbelt</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/nature-and-environment/farms-gardens/lake-hills-greenbelt-produce-stand" data-drupal-link-system-path="node/66951">Lake Hills Greenbelt Produce Stand</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/lake-sammamish-landing" data-drupal-link-system-path="node/214706">Lake Sammamish Landing</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/lakemont-community-park" data-drupal-link-system-path="node/67501">Lakemont Community Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/lakemont-highlands-neighborhood-park" data-drupal-link-system-path="node/67506">Lakemont Highlands Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/lattawood-park" data-drupal-link-system-path="node/67511">Lattawood Park</a>
+              </li>
+                <li class="menu-item menu-item--active-trail">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park" data-drupal-link-system-path="node/67516" class="is-active" aria-current="page">Lewis Creek Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/marymoor-park-fields" data-drupal-link-system-path="node/67521">Marymoor Park Fields</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/mc-cormick-park" data-drupal-link-system-path="node/67526">McCormick Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/meadow-wood-park" data-drupal-link-system-path="node/67531">Meadow Wood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/mercer-slough-nature-park" data-drupal-link-system-path="node/67536">Mercer Slough Nature Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/meydenbauer-beach-park" data-drupal-link-system-path="node/67541">Meydenbauer Bay Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/newcastle-beach-park" data-drupal-link-system-path="node/67546">Newcastle Beach Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/newport-hills-park" data-drupal-link-system-path="node/67551">Newport Hills Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/newport-hills-woodlawn-park" data-drupal-link-system-path="node/202076">Newport Hills Woodlawn Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/northtowne-neighborhood-park" data-drupal-link-system-path="node/67556">Northtowne Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/norwood-village-neighborhood-park" data-drupal-link-system-path="node/67561">Norwood Village Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/phantom-lake-loop" data-drupal-link-system-path="node/67566">Phantom Lake Loop</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/pike-s-peak-greenbelt" data-drupal-link-system-path="node/67571">Pike&#039;s Peak Greenbelt</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/robinsglen-nature-park" data-drupal-link-system-path="node/67576">Robinsglen Nature Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/robinswood-community-park" data-drupal-link-system-path="node/67581">Robinswood Community Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/robinswood-off-leash-dog-corral" data-drupal-link-system-path="node/67586">Robinswood Off-Leash Dog Corral</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/robinswood-sportsfield-north" data-drupal-link-system-path="node/67591">Robinswood Sportsfield North</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/saddleback-mini-park" data-drupal-link-system-path="node/67596">Saddleback Mini Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/se-40th-street-boat-launch" data-drupal-link-system-path="node/67606">SE 40th Street Boat Launch</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/silverleaf-park" data-drupal-link-system-path="node/67611">Silverleaf Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/sixth-street-park" data-drupal-link-system-path="node/67616">Sixth Street Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/skyridge-park" data-drupal-link-system-path="node/67621">Skyridge Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/somerset-greenbelts" data-drupal-link-system-path="node/67626">Somerset Greenbelts</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/spiritridge-park" data-drupal-link-system-path="node/67631">Spiritridge Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/spiritwood-park" data-drupal-link-system-path="node/67636">Spiritwood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/sunrise-neighborhood-park" data-drupal-link-system-path="node/67641">Sunrise Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/sunset-park" data-drupal-link-system-path="node/67646">Sunset Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/sunset-ravine-greenbelt" data-drupal-link-system-path="node/67651">Sunset Ravine Greenbelt</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/surrey-downs-park" data-drupal-link-system-path="node/67656">Surrey Downs Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/sweyolocken-boat-launch" data-drupal-link-system-path="node/67661">Sweyolocken Boat Launch</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/tam-o-shanter-park" data-drupal-link-system-path="node/67666">Tam O&#039;Shanter Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/tyee-community-gym" data-drupal-link-system-path="node/67671">Tyee Community Gym</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/viewpoint-park" data-drupal-link-system-path="node/67676">Viewpoint Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/weowna-park" data-drupal-link-system-path="node/67681">Weowna Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/westwood-highlands-neighborhood-park" data-drupal-link-system-path="node/67686">Westwood Highlands Neighborhood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/wilburton-hill-park" data-drupal-link-system-path="node/67691">Wilburton Hill Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/wildwood-park" data-drupal-link-system-path="node/67696">Wildwood Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/winters-house" data-drupal-link-system-path="node/67701">Winters House</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/woodridge-water-tower-park" data-drupal-link-system-path="node/67706">Woodridge Water Tower Park</a>
+              </li>
+                <li class="menu-item">
+        <a href="/city-government/departments/parks/parks-and-trails/parks/zumdieck-park" data-drupal-link-system-path="node/67711">Zumdieck Park</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            </aside>
+                  
+                
+                
+        <section class="col-sm-9 content-outer order-first order-sm-last">
+
+          <a id="main-content"></a>
+
+          
+
+
+                    
+          <div class="row">
+
+            <section class="col-sm-9 content-outer order-first order-sm-last col-sm-12">
+
+
+                                                                <div class="region region-help">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+                              
+                                                                <div class="region region-content">
+    <div id="block-bellevue-content" class="block block-system block-system-main-block">
+  
+    
+      
+
+
+<article about="/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park" class="node node--type-page node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+  <div class="layout layout--site--default">
+
+          <div class="row">
+        <div  class="layout__region layout__region--top col-sm-12">
+          
+
+  <div class="field field--name-field-header-image field--type-entity-reference field--label-above">
+    <div class="field__label">Header Image</div>
+                  <div class="field__item">    <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/styles/header_image/public/media/header_image/migrated/lewis-creek-park-fog-10-27-17.jpg?itok=mK0qvwrD" width="1600" height="400" alt="lewis-creek-park-fog-10-27-17.jpg" title="lewis-creek-park-fog-10-27-17.jpg" typeof="foaf:Image" class="image-style-header-image" />
+
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+              </div>
+
+        </div>
+      </div>
+    
+        
+          <div class="row">
+        <div  class="layout__region layout__region--content col-sm-8">
+          
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>The Lewis Creek Park and Visitor Center serve as community gathering places for environmental education and recreation. More than 80% of the 55-acre park is preserved as an undeveloped natural area. The park is situated at the headwaters of Lewis Creek and offers three diverse habitats to explore - wetland, meadow and forest – all accessed by boardwalks and soft-surface trails.&nbsp;</p><p>Our easily-accessible headwater wetland provides considerable benefits to the community by cooling the waters of Lewis Creek, providing filtration of pollutants, slowing run-off to reduce downstream erosion and providing valuable wildlife habitat. In addition to the nearly three-mile trail system, the site includes a visitor center, separate play areas for younger and older children, basketball court, soccer/baseball fields that can be reserved for practices and games, and restrooms that are open from dawn until dusk, seven days per week.</p><p><strong>Explore Lewis Creek Park with our self-guided&nbsp;</strong><a href="https://bellevuewa.gov/sites/default/files/media/pdf_document/lewis-creek-scavenger-hunt.pdf" target="_blank" title="Link to Lewis Creek Scavenger Hunt flyer" rel="noopener nofollow"><strong>scavenger hunt</strong></a><strong>!</strong>&nbsp;</p></div>
+      
+
+      <div class="field field--name-field-content-main field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">
+  
+  <div class="paragraph paragraph--type--bootstrap-media-object paragraph--view-mode--default">
+          <div class="media">
+        
+
+            <div class="align-self-start mr-3 img-responsive img-thumbnail field field--name-field-image field--type-entity-reference field--label-hidden field__item">    <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/styles/paragraph_listing/public/inline-images/2025-10/lewis-creek-park-map.png?itok=gg7GbxhR" width="300" height="200" alt="section of map of Lewis Creek Park" typeof="foaf:Image" class="image-style-paragraph-listing" />
+
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+      
+        <div class="media-body">
+          <h2 class="h4">Map of Lewis Creek Park </h2>
+          <p><p>View map for trails, picnic area, visitor center, playground and athletic fields found at Lewis Creek Park</p></p>
+          
+
+      <div class="field field--name-field-link field--type-link field--label-hidden field__items">
+              <div class="field__item"><a href="https://bellevuewa.gov/sites/default/files/media/pdf_document/lewis_creek_park_map.pdf" class="btn btn-primary">View Map</a></div>
+          </div>
+  
+        </div>
+      </div>
+      </div>
+</div>
+              <div class="field__item">
+  <div class="paragraph paragraph--type--card-decks paragraph--view-mode--default">
+            <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+<div class="card-deck">
+      
+  
+
+        <a href="/city-government/departments/parks/rentals/indoor-rentals/lewis-creek-visitor-center"  class="card card-link">
+    <div class="paragraph paragraph--type--linked-card-with-font-icon paragraph--view-mode--default">
+              <div class="card-header d-flex align-items-center justify-content-center">
+          <h3 class="h4 text-center">
+                      <div class="icon">
+                              <span
+                    class="icon-bellevue indoor-rentals"></span>
+                          </div>
+                    
+
+  <div class="card-title field field--name-field-title field--type-string field--label-visually_hidden">
+    <div class="field__label visually-hidden">Title</div>
+                  <div class="field__item">Visitor Center Rentals</div>
+              </div>
+
+        </h3>
+        </div>
+        <div class="card-body">
+          
+
+  <div class="card-text field field--name-field-body-unformatted field--type-string-long field--label-visually_hidden">
+    <div class="field__label visually-hidden">Body</div>
+                  <div class="field__item">Reserve the visitor center for private use during non-open hours.</div>
+              </div>
+
+        </div>
+          </div>
+  </a>
+
+      
+  
+
+        <a href="/city-government/departments/parks/rentals/outdoor-rentals/lewis-creek-park-picnic-shelters"  class="card card-link">
+    <div class="paragraph paragraph--type--linked-card-with-font-icon paragraph--view-mode--default">
+              <div class="card-header d-flex align-items-center justify-content-center">
+          <h3 class="h4 text-center">
+                      <div class="icon">
+                              <span
+                    class="icon-bellevue outdoor-rentals"></span>
+                          </div>
+                    
+
+  <div class="card-title field field--name-field-title field--type-string field--label-visually_hidden">
+    <div class="field__label visually-hidden">Title</div>
+                  <div class="field__item">Picnic Shelter Rentals</div>
+              </div>
+
+        </h3>
+        </div>
+        <div class="card-body">
+          
+
+  <div class="card-text field field--name-field-body-unformatted field--type-string-long field--label-visually_hidden">
+    <div class="field__label visually-hidden">Body</div>
+                  <div class="field__item">Reserve a picnic shelter at Lewis Creek Park.</div>
+              </div>
+
+        </div>
+          </div>
+  </a>
+
+  </div>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+              <div class="field__item">
+  <div class="paragraph paragraph--type--card-decks paragraph--view-mode--default">
+            <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+<div class="card-deck">
+      
+  
+
+        <a href="/city-government/departments/parks/nature-and-environment/visitor-centers-environmental-programs/lewis-creek-park-visitor-center"  class="card card-link">
+    <div class="paragraph paragraph--type--linked-card-with-font-icon paragraph--view-mode--default">
+              <div class="card-header d-flex align-items-center justify-content-center">
+          <h3 class="h4 text-center">
+                      <div class="icon">
+                              
+
+  <div class="field field--name-field-font-awesome-icon field--type-fontawesome-icon field--label-visually_hidden">
+    <div class="field__label visually-hidden">Font Awesome Icon</div>
+                  <div class="field__item"><div class="fontawesome-icons">
+      <div class="fontawesome-icon">
+  <span class="fas fa-house-flag" data-fa-transform="" data-fa-mask="" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></span>
+</div>
+
+  </div>
+</div>
+              </div>
+
+                          </div>
+                    
+
+  <div class="card-title field field--name-field-title field--type-string field--label-visually_hidden">
+    <div class="field__label visually-hidden">Title</div>
+                  <div class="field__item">Visitor Center Programs</div>
+              </div>
+
+        </h3>
+        </div>
+        <div class="card-body">
+          
+
+  <div class="card-text field field--name-field-body-unformatted field--type-string-long field--label-visually_hidden">
+    <div class="field__label visually-hidden">Body</div>
+                  <div class="field__item">Environmental education programs and ranger-led guided tours. </div>
+              </div>
+
+        </div>
+          </div>
+  </a>
+
+      
+  
+
+        <a href="/city-government/departments/parks/parks-and-trails/nature-trails/lewis-creek-park-trails"  class="card card-link">
+    <div class="paragraph paragraph--type--linked-card-with-font-icon paragraph--view-mode--default">
+              <div class="card-header d-flex align-items-center justify-content-center">
+          <h3 class="h4 text-center">
+                      <div class="icon">
+                              
+
+  <div class="field field--name-field-font-awesome-icon field--type-fontawesome-icon field--label-visually_hidden">
+    <div class="field__label visually-hidden">Font Awesome Icon</div>
+                  <div class="field__item"><div class="fontawesome-icons">
+      <div class="fontawesome-icon">
+  <span class="fas fa-person-hiking" data-fa-transform="" data-fa-mask="" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></span>
+</div>
+
+  </div>
+</div>
+              </div>
+
+                          </div>
+                    
+
+  <div class="card-title field field--name-field-title field--type-string field--label-visually_hidden">
+    <div class="field__label visually-hidden">Title</div>
+                  <div class="field__item">Nature Trails</div>
+              </div>
+
+        </h3>
+        </div>
+        <div class="card-body">
+          
+
+  <div class="card-text field field--name-field-body-unformatted field--type-string-long field--label-visually_hidden">
+    <div class="field__label visually-hidden">Body</div>
+                  <div class="field__item">View maps, directions and guidelines for Lewis Creek Park trails.</div>
+              </div>
+
+        </div>
+          </div>
+  </a>
+
+  </div>
+
+    </div>
+  </div>
+
+      </div>
+</div>
+              <div class="field__item">
+  <div class="paragraph paragraph--type--wysiwyg paragraph--view-mode--default">
+            <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="clearfix text-formatted field field--name-field-body-formatted field--type-text-long field--label-hidden field__item"><p>&nbsp;</p>
+
+<ul class="unstyled list-inline">
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="12d24300-ad99-414b-9436-5826d19b9498" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Accessibility-Ramp.gif" width="200" height="200" alt="Accessibility - Ramp" title="Accessibility - Ramp" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Accessible Ramp</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="d187e2e7-4004-4dcc-a7d1-7dc438c121d5" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Accessible.gif" width="200" height="200" alt="Accessible" title="Accessible" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Accessible</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="5c080239-265c-4e1d-8d27-754dd4f51db2" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Baseball.gif" width="200" height="200" alt="Baseball Field" title="Baseball Field" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Baseball Field</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="85a83e87-8d27-4b5b-88a8-69402932743d" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Basketball.gif" width="200" height="200" alt="Basketball Court" title="Basketball Court" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Basketball Court</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="3d9c3c49-04a7-49b6-9c93-85f86d2bd399" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Birding-Wildlife-Viewing.gif" width="200" height="200" alt="Wildlife Viewing" title="Wildlife Viewing" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Wildlife Viewing</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="2422cdb0-9cf8-4aef-906e-7b0f60b8cf6d" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Classroom-Meeting-Room.gif" width="200" height="200" alt="Classroom/Meeting Room" title="Classroom/Meeting Room" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Meeting Room</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="27ce5a67-4ab7-4ace-ac89-a25dd15f78f0" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Hiking.gif" width="200" height="200" alt="Hiking" title="Hiking" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Hiking</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="5d3ecbbf-29b9-4ab4-9002-ba035faf1d02" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Information.gif" width="200" height="200" alt="Information" title="Information" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Information</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="701f0c18-3d29-4137-b2fd-c730e01d5f81" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Interpretive-Exhibit.gif" width="200" height="200" alt="Interpretive Exhibit" title="Interpretive Exhibit" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Interpretive Exhibit</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="dfbc262d-d412-4c98-b8c4-dccc3bc20bea" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Maps.gif" width="200" height="200" alt="Maps" title="Maps" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Maps</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="93a063f2-ac51-4b9a-8bce-71d72d3d0fc4" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Parking.gif" width="200" height="200" alt="Parking" title="Parking" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Parking</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="73481439-54e0-4ffa-b18c-b2fa865326e6" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Pets-On-Leash.gif" width="200" height="200" alt="Pets on Leash" title="Pets on Leash" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Pets On Leash</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="9a78d4ec-b766-4843-8819-f34471698e73" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Picnic-Area.gif" width="200" height="200" alt="Picnic Area" title="Picnic Area" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Picnic Tables</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="7b14833c-4f49-4b14-8365-c55d72d41f90" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Picnic-Shelter.gif" width="200" height="200" alt="Picnic Shelter" title="Picnic Shelter" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Picnic Shelter</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="06c5c32b-f887-49fe-8043-ef403982708b" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Playground-5-12-year.gif" width="200" height="200" alt="Playground 5-12 yr" title="Playground 5-12 yr" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Playground (5-12 yr.)</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="687f53dc-71e1-4818-9597-0869baff093d" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Playground-2-5-year.gif" width="200" height="200" alt="Playground 2-5 Yr" title="Playground 2-5 Yr" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Tot Lot (2-5 yr.)</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="581cc9a3-ca14-4932-a3a0-6cd5d386aa7d" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Ranger-Led-Events.gif" width="200" height="200" alt="Ranger-Led Events" title="Ranger-Led Events" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Ranger-Led Events</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="6dc36558-1acb-4bb2-95ee-b50567fd6d37" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Ranger-Station-Visitor-Center.gif" width="200" height="200" alt="Ranger Station/Visitor Center" title="Ranger Station/Visitor Center" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Ranger Station/Visitor Center</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="55d45b7e-b2d6-4341-8477-6124152c4988" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Restrooms.gif" width="200" height="200" alt="Restrooms" title="Restrooms" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Restrooms</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="041f8577-496b-4206-abaa-6f3c3a00eb74" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Scenic-Viewpoint.gif" width="200" height="200" alt="Scenic Viewpoint" title="Scenic Viewpoint" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Scenic Viewpoint</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="42ffc46e-854e-450c-82d4-975faa855aec" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Self-Guided-Trail.gif" width="200" height="200" alt="Self-Guided Trail" title="Self-Guided Trail" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Self-Guided Trail</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="64429044-f262-4bcc-bfb9-c78f48c01ab7" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Trail-Information-Kiosk.gif" width="200" height="200" alt="Trail Information Kiosk" title="Trail Information Kiosk" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Informational Kiosk</li>
+	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6 list-group-item">
+	<div class="img-wrapper">
+	<div data-embed-button="media_entity_embed" data-entity-embed-display="view_mode:media.full" data-entity-embed-display-settings="{&quot;link_url&quot;:&quot;&quot;,&quot;link_url_target&quot;:0}" data-entity-type="media" data-entity-uuid="610e7e6f-25c3-4e5f-bb14-e2a3f3592305" data-langcode="en" class="embedded-entity">    <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-media-image-10 field--type-image field--label-hidden field__item">  <img loading="lazy" src="/sites/default/files/inline-images/Walking.gif" width="200" height="200" alt="Walking" title="Walking" typeof="foaf:Image">
+
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+	</div>
+	Walking</li>
+</ul></div>
+      
+    </div>
+  </div>
+
+      </div>
+</div>
+          </div>
+  
+        </div>
+                  <div  class="layout__region layout__region--sidebar col-sm-4">
+            
+
+      <div class="field field--name-field-sidebar-content field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">
+  <div class="paragraph paragraph--type--map paragraph--view-mode--default">
+            <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-location field--type-entity-reference field--label-hidden field__item">
+
+
+  
+<article about="/node/97986" class="node node--type-location node--view-mode-map">
+  
+  
+  <div class="node__content">
+    <div class="thumbnail">
+      
+
+            <div class="field field--name-field-geolocation field--type-geolocation field--label-hidden field__item"><div  class="geolocation-map-wrapper" id="map-6a9a1d37c6e84" data-map-type="leaflet">
+    <div class="geolocation-map-controls">
+          </div>
+
+    <div class="geolocation-map-container js-show"></div>
+
+            <div  class="geolocation-location js-hide" id="location-6a9a1d37cb04e" data-lat="47.550434556053" data-lng="-122.12555958495" data-set-marker="true" typeof="Place">
+  <span property="geo" typeof="GeoCoordinates">
+    <meta property="latitude" content="47.550434556053" />
+    <meta property="longitude" content="-122.12555958495" />
+  </span>
+
+      <h2 class="location-title" property="name">47.550434556053, -122.12555958495</h2>
+  
+  </div>
+    </div>
+</div>
+       
+
+      <p class="text-center mt-0  m-1">
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=47.550434556053,-122.12555958495" target="GoogleMap Directions">Get directions via GoogleMaps</a>
+      </p>
+    </div>
+
+  </div>
+
+</article>
+</div>
+      
+    </div>
+  </div>
+
+      </div>
+</div>
+              <div class="field__item">
+  <div class="paragraph paragraph--type--department-contact paragraph--view-mode--default">
+            <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="field field--name-field-department-location field--type-entity-reference field--label-hidden field__item">
+
+
+  
+<article about="/node/97986" class="node node--type-location node--view-mode-default">
+
+  
+      <h2 class="h4">
+              Contact
+          </h2>
+    
+
+  <div class="node__content">
+          
+
+            <div class="clearfix text-formatted field field--name-field-block-description field--type-text-long field--label-hidden field__item"><p><strong>Lewis Creek Park</strong></p></div>
+      
+
+            <div class="field field--name-field-address field--type-address field--label-hidden field__item"><p class="address" translate="no"><span class="address-line1">5808 Lakemont Blvd SE</span><br>
+<span class="locality">Bellevue</span>, <span class="administrative-area">WA</span> <span class="postal-code">98006</span><br>
+<span class="country">United States</span></p></div>
+      
+
+  <div class="field field--name-field-telephone field--type-telephone field--label-above">
+    <div class="field__label">Telephone</div>
+                  <div class="field__item"><a href="tel:425-452-6885">425-452-6885</a></div>
+              </div>
+
+
+  <div class="field field--name-field-customer-assistance field--type-link field--label-above">
+    <div class="field__label">Customer Assistance</div>
+                  <div class="field__item"><a href="https://bellevuewa.gov/city-government/departments/civic-services/mybellevue/customer-assistance/">MyBellevue App</a></div>
+              </div>
+
+
+  <div class="field field--name-field-hours field--type-string-long field--label-above">
+    <div class="field__label">Hours</div>
+                  <div class="field__item">Park is open from dawn to dusk.</div>
+              </div>
+
+
+  <div class="field field--name-field-social-media field--type-entity-reference-revisions field--label-above">
+    <div class="field__label">Social Media</div>
+                  <div class="field__item">
+  <div class="paragraph paragraph--type--social-media paragraph--view-mode--default">
+            <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+      <div class="field field--name-field-item field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">
+  
+      <div class="paragraph paragraph--type--social-media-item paragraph--view-mode--default">
+
+                                      <a href="https://www.facebook.com/bellevueparks"  class="social-media external">
+          
+
+            <div class="field field--name-field-font-awesome-icon field--type-fontawesome-icon field--label-hidden field__item"><div class="fontawesome-icons">
+      <div class="fontawesome-icon">
+  <span class="fab fa-facebook" data-fa-transform="" data-fa-mask="" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></span>
+</div>
+
+  </div>
+</div>
+      
+        </a>
+          </div>
+  </div>
+              <div class="field__item">
+  
+      <div class="paragraph paragraph--type--social-media-item paragraph--view-mode--default">
+
+                                      <a href="https://twitter.com/bvueparks"  class="social-media external">
+          
+
+            <div class="field field--name-field-font-awesome-icon field--type-fontawesome-icon field--label-hidden field__item"><div class="fontawesome-icons">
+      <div class="fontawesome-icon">
+  <span class="fab fa-twitter" data-fa-transform="" data-fa-mask="" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></span>
+</div>
+
+  </div>
+</div>
+      
+        </a>
+          </div>
+  </div>
+          </div>
+  
+    </div>
+  </div>
+
+      </div>
+</div>
+              </div>
+
+      </div>
+
+</article>
+</div>
+      
+    </div>
+  </div>
+
+      </div>
+</div>
+          </div>
+  
+          </div>
+              </div>
+    
+          <div class="row">
+        <div  class="layout__region layout__region--bottom col-sm-12">
+          
+        </div>
+      </div>
+    
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+                              
+            </section>
+
+                        
+          </div>
+
+                                <aside class="row" role="complementary">
+              <div class="col-sm-12">
+                  <div class="region region-content-bottom">
+    <div class="views-element-container block block-views block-views-blockada-language-block-bottom-page-block-1" id="block-bellevue-views-block-ada-language-block-bottom-page-block-1">
+  
+    
+      <div><div class="js-view-dom-id-1a597dc167382de651a0396154d29f1576ee76bf117443a8afab160efc5d0bda">
+  
+  
+  
+
+  
+  
+  
+
+  
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><h3 class="h4">Reasonable Accommodation</h3>
+<p>For alternate formats, interpreters, or reasonable modification requests please phone at least 48 hours in advance <a href="tel:4254526800">425-452-6800</a> (voice) or email <a href="mailto:servicefirst@bellevuewa.gov?subject=Lewis Creek Park Webpage">servicefirst@bellevuewa.gov</a>. For complaints regarding modifications, contact the City of Bellevue ADA, Title VI, and Equal Opportunity Officer at <a href="mailto:ADATitleVI@bellevuewa.gov">ADATitleVI@bellevuewa.gov</a>.</p></span></div></div>
+
+  
+
+  
+  
+  
+
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+              </div>
+            </aside>
+          
+          
+        </section>
+
+      </div>
+    </div>
+
+
+        
+          </div>
+  </div>
+
+
+  
+  
+  
+  
+  
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+              <div class="row">
+          <aside  class="col-sm-3">
+                            <div class="region region-footer-first">
+    <div id="block-footercontacts" class="block block-block-content block-block-contenta1bd97ac-6760-410c-b751-48631c59011b">
+  
+    
+        <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><h3><a href="/"><img alt="City of Bellevue seal" src="/themes/custom/bellevue/images/logo.png" / aria-hidden="true" loading="lazy"><span>City of Bellevue, WA</span></a></h3>
+
+<ul class="list-unstyled ml-1">
+	<li><em class="fa fa-location-dot mr-2"></em>450 110th Avenue NE</li>
+	<li class="ml-4">Bellevue, WA 98004</li>
+	<li><a href="https://www.google.com/maps/place/Bellevue+City+Hall/@47.6144305,-122.1929512,18z"><em class="fa fa-route mr-2"></em>Directions to City Hall</a></li>
+<li><em class="fa-solid fa-phone mr-2"></em><a href="tel:4254526800">425-452-6800</a></li>
+<li><em class="fa-solid fa-envelope mr-2"></em><a href="mailto:servicefirst@bellevuewa.gov">servicefirst@bellevuewa.gov</a></li>
+<li><em class="fa-solid fa-address-book mr-2"></em><a href="/contact-us">Contact Us / City Directory</a></li>
+	<li><em class="fa-solid fa-clock mr-2"></em>Monday - Friday 8 a.m. - 4 p.m.
+</ul>
+</div>
+      
+    </div>
+  </div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-footermenucontacts-menu" id="block-footermenucontacts" class="block block-menu navigation menu--footer-menu-contacts">
+            
+  <h2 class="visually-hidden" id="block-footermenucontacts-menu">Footer Menu Contacts</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/city-government/departments/civic-services/mybellevue/customer-assistance/" class="main">MyBellevue Customer Assistance</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.governmentjobs.com/careers/bellevuewa" class="briefcase"><i class="fa fas fa-briefcase" aria-hidden="true"></i> <span class="link-text">Careers</span></a>
+              </li>
+                <li class="menu-item">
+        <a href="/resident-resources/adatitle-vi-resources" data-drupal-link-system-path="node/204941"><i class="fab fa-accessible-icon" aria-hidden="true"></i> <span class="link-text">ADA/Title VI Notices</span></a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+                      </aside>
+          <aside  class="col-sm-3">
+                            <div class="region region-footer-second">
+    <nav role="navigation" aria-labelledby="block-footermenulanguages-menu" id="block-footermenulanguages" class="block block-menu navigation menu--footer-menu-languages">
+      
+  <h2 id="block-footermenulanguages-menu">Languages</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://bellevuewa.gov">English</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/es/welcome">Español</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/zh-hans/welcome">简体中文</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/zh-hant/welcome">繁體中文</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ja/welcome">日本語</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ko/welcome">한국어</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ru/welcome">Pусский</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/vi/welcome">Tiếng Việt</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+                      </aside>
+          <aside  class="col-sm-3">
+                            <div class="region region-footer-third">
+    <nav role="navigation" aria-labelledby="block-footerrequesttranslation-2-menu" id="block-footerrequesttranslation-2" class="block block-menu navigation menu--footer-request-translation">
+      
+  <h2 id="block-footerrequesttranslation-2-menu">Request a Translation</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://bellevuewa.gov/request-translation">Request a Translation</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ar/atlb-trjmt">اطلب ترجمة</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/zh-hans/shenqingfanyi">申请翻译</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/zh-hant/yaoqiufanyi">要求翻譯</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/hi/anauvaada-kaa-anauraodha-karaen">अनुवाद का अनुरोध करें</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ja/fanyiworikuesutosuru">翻訳をリクエストする</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ko/beonyeog-yocheong">번역 요청</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/fa/drkhwast-trjmh">درخواست ترجمه</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/pa/anauvaada-dai-baeenatai-karaoo">ਅਨੁਵਾਦ ਦੀ ਬੇਨਤੀ ਕਰੋ</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ru/zapros-na-perevod">Запрос на перевод</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/es/solicitud-de-traduccion">Solicitud de traducción</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/te/anauvaaadam-adagamdai">అనువాదం అడగండి</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/ur/trjmyky-lyy-ayk-drkhwast">ترجمےکے لئے ایک درخواست</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/vi/yeu-cau-ban-dich">Yêu cầu bản dịch</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://bellevuewa.gov/am/teregume-mathayaqe">ትርጉም መጠየቅ</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+                      </aside>
+          <aside  class="col-sm-3">
+                            <div class="region region-footer-fourth">
+    <nav role="navigation" aria-labelledby="block-footermenusocialmedia-menu" id="block-footermenusocialmedia" class="block block-menu navigation menu--footer-menu-social-media">
+      
+  <h2 id="block-footermenusocialmedia-menu">Social Media</h2>
+  
+
+        
+              <ul class="menu">
+                    <li aria-label="Bluesky" class="menu-item">
+        <a href="https://bsky.app/profile/cityofbellevuewa.bsky.social" target="_blank"><i class="fa-brands fa-bluesky fab" aria-hidden="true"></i></a>
+              </li>
+                <li aria-label="Facebook" class="menu-item">
+        <a href="https://www.facebook.com/bellevuewashington" target="_blank" class="facebook" title="Facebook"><i class="fab fab fa-facebook" aria-hidden="true"></i></a>
+              </li>
+                <li aria-label="Instagram" class="menu-item">
+        <a href="https://www.instagram.com/cityofbellevuewa/" title="Instagram"><i class="fa fab fa-instagram" aria-hidden="true"></i></a>
+              </li>
+                <li aria-label="X or Twitter" class="menu-item">
+        <a href="https://twitter.com/bellevuewa" target="_blank" class="twitter" title="X/Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              </li>
+                <li aria-label="Youtube" class="menu-item">
+        <a href="https://www.youtube.com/channel/UCW22suSoHWumwarCbu3NkOg" target="_blank" class="youtube" title="YouTube"><i class="fa fab fa-youtube" aria-hidden="true"></i></a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+                      </aside>
+        </div>
+                    <div class="row">
+          <aside  class="col-sm-3 col-sm-12">
+                            <div class="region region-footer-full">
+    <div id="block-footerallrightsreserved" class="block block-block-content block-block-content285fd330-7bd4-4460-b9e3-ade5d724295a">
+  
+    
+        <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>© 2024&nbsp;City of Bellevue | All Rights Reserved. | <a href="/resident-resources/adatitle-vi-resources" data-entity-type="node" data-entity-uuid="ee01fe91-e790-4a5e-b76a-e9c8dca6f8c3" data-entity-substitution="canonical" title="ADA/Title VI Resources">ADA/Title VI Notices</a> | <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-security">Privacy Policy</a> | <a href="/sitemap">Site Map</a> | <a href="/ai-policy">AI Policy</a></p></div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+                      </aside>
+        </div>
+          </div>
+  </footer>
+
+  </div>
+
+
+
+<script src="/sites/default/files/js/js_5tHCzJGwXfuW3SKF8eh7PKU-fmoHYwuyqj_-rJZAP38.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=bellevue&amp;include=eJxdkOFuwyAMhF-IhEeKHHCYFxMjbNZkT7-0oWrXP9Z9x9lCN6MZ1kklEPCkX1BpS9PczGRTH6QcQ2i14mZDq-xmht_DP2bXgUGVSa0zC8Qui_CxED-3SpVMip0qLF3dcC4uNDXJU5bYGD3EH9gCDkzb-vGUWGbgQUOlYupwt3vIx9oK8NjRJRSWAEay-Tc9ZiguiSTGySD5dI5PHuEb9v9mdusNmP0sYmr1vHFxxAUaW6eFcT-biFi7kSrFF5GKScFO5_-FOUOi8HSYwvq-PzEc0ky9kp1VXOAesSs83rv-A3XFry4"></script>
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"></script>
+<script src="/sites/default/files/js/js_iEDvNe8nFlsSfU_Q8xiIpPQvQfQrCSX2HUKZpP0_11k.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=bellevue&amp;include=eJxdkOFuwyAMhF-IhEeKHHCYFxMjbNZkT7-0oWrXP9Z9x9lCN6MZ1kklEPCkX1BpS9PczGRTH6QcQ2i14mZDq-xmht_DP2bXgUGVSa0zC8Qui_CxED-3SpVMip0qLF3dcC4uNDXJU5bYGD3EH9gCDkzb-vGUWGbgQUOlYupwt3vIx9oK8NjRJRSWAEay-Tc9ZiguiSTGySD5dI5PHuEb9v9mdusNmP0sYmr1vHFxxAUaW6eFcT-biFi7kSrFF5GKScFO5_-FOUOi8HSYwvq-PzEc0ky9kp1VXOAesSs83rv-A3XFry4"></script>
+<script src="//customer.cludo.com/scripts/bundles/search-script.min.js"></script>
+<script src="//customer.cludo.com/templates/rich-inline/v1.0/dist/js/cludo-search-results.js"></script>
+<script src="/sites/default/files/js/js_6geCVZyhA4E_0o610GN2a2NqHs3G7EZz3tKL91abZsw.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=bellevue&amp;include=eJxdkOFuwyAMhF-IhEeKHHCYFxMjbNZkT7-0oWrXP9Z9x9lCN6MZ1kklEPCkX1BpS9PczGRTH6QcQ2i14mZDq-xmht_DP2bXgUGVSa0zC8Qui_CxED-3SpVMip0qLF3dcC4uNDXJU5bYGD3EH9gCDkzb-vGUWGbgQUOlYupwt3vIx9oK8NjRJRSWAEay-Tc9ZiguiSTGySD5dI5PHuEb9v9mdusNmP0sYmr1vHFxxAUaW6eFcT-biFi7kSrFF5GKScFO5_-FOUOi8HSYwvq-PzEc0ky9kp1VXOAesSs83rv-A3XFry4"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery-bootstrap-scrolling-tabs@2.6.1/dist/jquery.scrolling-tabs.min.js" crossorigin="anonymous"></script>
+<script src="/sites/default/files/js/js_wk1Y-dRb7sEBOHrwbpLDebbQyjtOy9UEdn8EyPJGhio.js?scope=footer&amp;delta=7&amp;language=en&amp;theme=bellevue&amp;include=eJxdkOFuwyAMhF-IhEeKHHCYFxMjbNZkT7-0oWrXP9Z9x9lCN6MZ1kklEPCkX1BpS9PczGRTH6QcQ2i14mZDq-xmht_DP2bXgUGVSa0zC8Qui_CxED-3SpVMip0qLF3dcC4uNDXJU5bYGD3EH9gCDkzb-vGUWGbgQUOlYupwt3vIx9oK8NjRJRSWAEay-Tc9ZiguiSTGySD5dI5PHuEb9v9mdusNmP0sYmr1vHFxxAUaW6eFcT-biFi7kSrFF5GKScFO5_-FOUOi8HSYwvq-PzEc0ky9kp1VXOAesSs83rv-A3XFry4"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1402444c6f","applicationID":"523464041","transactionName":"MgdRMkQCVhADVkZdVwtNcgVCClcNTXFAQUgEDm8IWQddPyFaXEBKCg5fA0Q\/dgwGUGRdXRIhXAhCEVcPDlBAGQYTC1YR","queueTime":8,"applicationTime":2399,"atts":"HkBGRAwYRU9AVBAOQxgf","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1409 @@
+{
+  "city": "Bellevue",
+  "state": "WA",
+  "retrieved_at": "2026-09-04",
+  "method_note": "The City of Bellevue states a court count for every pickleball venue it lists, on one page, indoor and outdoor together, and states its own default for the ones it does not mark: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\" That sentence is why these venues carry a sourced note on what kind of court you are turning up to rather than a bare number. Addresses come from each venue's own City page, which the pickleball page links to by name. Eastgate Park's four courts became pickleball-only on 1 September 2026, three days before this check, and the City's notice of it also states that no other dual-use court in Bellevue is scheduled to convert — both sentences are asserted by the run rather than taken on trust. Hidden Valley Park is listed by the City twice — a fieldhouse under Indoor and a sports park under Outdoor — with both entries linking to one park page at one address; it is published as one venue carrying 3 indoor and 2 outdoor courts, and that merge is a judgement recorded as one. Highland Community Park is listed by the City and excluded here on three independent grounds, chief among them that its stated address does not resolve in the Census geocoder. Lights, surface and parking are published nowhere in this city: the City states none of them, one snapshot's \"lighted tennis court\" is not a statement about a pickleball court, and the word \"Parking\" appears on every page as a navigation menu item.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/cherry-crest-mini-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/cherry-crest-mini-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/crossroads-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/crossroads-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/eastgate-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/eastgate-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hidden-valley-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/hidden-valley-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/hillaire-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lakemont-community-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/lakemont-community-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/lewis-creek-park.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/norwood-village-neighborhood-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/norwood-village-neighborhood-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/spiritridge-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/spiritridge-park.html"
+    },
+    {
+      "id": "S11",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/crossroads-community-center.html"
+    },
+    {
+      "id": "S12",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/north-bellevue-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/north-bellevue-community-center.html"
+    },
+    {
+      "id": "S13",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/south-bellevue-community-center.html"
+    },
+    {
+      "id": "S14",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/sbcc/drop-sports",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/sbcc-drop-in-sports.html"
+    },
+    {
+      "id": "S15",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads/crossroads-community-center-programs",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/ccc-programs.html"
+    },
+    {
+      "id": "S16",
+      "url": "https://bellevuewa.gov/city-news/eastgate-park-pickleball",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/eastgate-conversion-news.html"
+    },
+    {
+      "id": "S17",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/highland-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/bellevue/highland-park.html"
+    },
+    {
+      "id": "S18",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/bellevue-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 12,
+    "courts": 38,
+    "outdoor": 24,
+    "indoor": 14
+  },
+  "excluded": [
+    {
+      "name": "Highland Community Park",
+      "why": [
+        "The Census address geocoder returns no match for \"14224 Bel-Red Road\", the address the City's own park page gives, and no match for four spelling variants of it. Import Gate I1 requires a street address that resolves.",
+        "The park's own page never mentions pickleball: its description lists \"two tennis courts\" and its amenity list carries \"Tennis Courts\", with no pickleball anywhere. The court count has no corroboration on the City's record card for the park.",
+        "The City's two pages disagree on its name. The pickleball page says \"Highland Community Park\"; the park page says \"Highland Park\"."
+      ]
+    }
+  ],
+  "venues": {
+    "cherry-crest-mini-park": {
+      "minted": true,
+      "identity": {
+        "name": "Cherry Crest Mini Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98005",
+        "latitude": 47.632880169681,
+        "longitude": -122.170347651803,
+        "imported_slug": null,
+        "canonical_slug": "cherry-crest-mini-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Cherry Crest Mini Park: 1 court (over tennis net)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Cherry Crest Mini Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "2532 127th Ave NE",
+        "venue_type": "public_park",
+        "court_availability": "One court, played over the tennis net on the park's single tennis court. The City marks it \"over tennis net\" rather than listing a portable net, and the park page describes the same thing from the other direction: \"a tennis court with a pickleball overlay\".",
+        "county": "King",
+        "postal_code": "98005"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Cherry Crest Mini Park\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Cherry Crest Mini Park: 1 court (over tennis net)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Cherry Crest Mini Park: 1 court (over tennis net)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/cherry-crest-mini-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2532 127th Ave NE\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Cherry Crest Mini Park: 1 court (over tennis net)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"2532 127TH AVE NE, BELLEVUE, WA, 98005\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2532 127TH AVE NE, BELLEVUE, WA, 98005\"."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "crossroads-park": {
+      "minted": true,
+      "identity": {
+        "name": "Crossroads Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98008",
+        "latitude": 47.618322220369,
+        "longitude": -122.121785637315,
+        "imported_slug": null,
+        "canonical_slug": "crossroads-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Crossroads Community Park: 4 courts (portable nets)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Crossroads Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "999 164th Ave NE",
+        "venue_type": "public_park",
+        "court_availability": "Four courts on shared-use tennis courts, played with portable nets. Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.",
+        "county": "King",
+        "postal_code": "98008",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this venue two ways. Its pickleball page says \"Crossroads Community Park\"; the venue's own page — the one the pickleball page links to — says \"Crossroads Park\", which is the name published here."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Crossroads Community Park: 4 courts (portable nets)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Crossroads Community Park: 4 courts (portable nets)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/crossroads-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"999 164th Ave NE\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Crossroads Community Park: 4 courts (portable nets)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"999 164TH AVE NE, BELLEVUE, WA, 98008\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"999 164TH AVE NE, BELLEVUE, WA, 98008\"."
+        },
+        "restroom": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/crossroads-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among its amenities."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "eastgate-park": {
+      "minted": true,
+      "identity": {
+        "name": "Eastgate Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98006",
+        "latitude": 47.570034388313,
+        "longitude": -122.144719462502,
+        "imported_slug": null,
+        "canonical_slug": "eastgate-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Eastgate Park: 4 courts (dedicated)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Eastgate Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "14500 SE Newport Way",
+        "venue_type": "public_park",
+        "court_availability": "Four dedicated pickleball courts, and the only venue in Bellevue where every court is pickleball and nothing else. It became that on 1 September 2026, three days before this page was checked: the City removed the tennis nets from two dual-use sport courts and made the change permanent. The courts \"will remain first-come, first-serve and will be open during posted park hours\", and a follow-up project is planned to resurface them with pickleball lines only.",
+        "county": "King",
+        "postal_code": "98006"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Eastgate Park\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Eastgate Park: 4 courts (dedicated)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Eastgate Park: 4 courts (dedicated)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/eastgate-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"14500 SE Newport Way\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, \"Eastgate Park: 4 courts (dedicated)\", together with the City's news item of 28 August 2026 announcing the conversion: \"will remain first-come, first-serve and will be open during posted park hours\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"14500 SE NEWPORT WAY, BELLEVUE, WA, 98006\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"14500 SE NEWPORT WAY, BELLEVUE, WA, 98006\"."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "hidden-valley-park": {
+      "minted": true,
+      "identity": {
+        "name": "Hidden Valley Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98004",
+        "latitude": 47.627588805837,
+        "longitude": -122.191038103294,
+        "imported_slug": null,
+        "canonical_slug": "hidden-valley-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Hidden Valley Sports Park: 2 courts (portable nets)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Hidden Valley Park",
+        "total_courts": 5,
+        "outdoor_courts": 2,
+        "indoor_courts": 3,
+        "street_address": "1903 112th Ave NE",
+        "venue_type": "public_park",
+        "court_availability": "Two outdoor courts on shared-use tennis courts with portable nets, plus three indoor courts in the Hidden Valley Fieldhouse, which the City lists as a separate entry at the same park. Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.",
+        "county": "King",
+        "postal_code": "98004",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this venue two ways. Its pickleball page says \"Hidden Valley Fieldhouse, and Hidden Valley Sports Park\"; the venue's own page — the one the pickleball page links to — says \"Hidden Valley Park\", which is the name published here."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Hidden Valley Sports Park: 2 courts (portable nets)\" and \"Hidden Valley Fieldhouse: 3 courts\". The City lists this park twice — once under Outdoor and once under Indoor — and links both entries to the same park page at one address, so the two counts are published as one venue of 5 courts rather than two venues sharing a street."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Hidden Valley Sports Park: 2 courts (portable nets)\". Listed under the page's \"Outdoor\" heading."
+        },
+        "indoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the same page, under its \"Indoor\" heading: \"Hidden Valley Fieldhouse: 3 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hidden-valley-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1903 112th Ave NE\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Hidden Valley Sports Park: 2 courts (portable nets)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"1903 112TH AVE NE, BELLEVUE, WA, 98004\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1903 112TH AVE NE, BELLEVUE, WA, 98004\"."
+        },
+        "restroom": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hidden-valley-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among its amenities."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "hillaire-park": {
+      "minted": false,
+      "identity": {
+        "name": "Hillaire Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98008",
+        "latitude": 47.615139908232,
+        "longitude": -122.129638497866,
+        "imported_slug": "hillaire-park",
+        "canonical_slug": "hillaire-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Hillaire Park: 3 courts (1 dedicated, 2 portable nets)",
+        "basis": "Matched to the imported hillaire-park row in Bellevue, WA."
+      },
+      "patch": {
+        "name": "Hillaire Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "15803 NE 6th St",
+        "venue_type": "public_park",
+        "court_availability": "Three courts, of which one is dedicated pickleball and two are portable nets on the park's two tennis courts. The park page words the same split as \"three pickleball courts (one dedicated, two overlay)\".",
+        "county": "King",
+        "postal_code": "98008",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Hillaire Park\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Hillaire Park: 3 courts (1 dedicated, 2 portable nets)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Hillaire Park: 3 courts (1 dedicated, 2 portable nets)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"15803 NE 6th St\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Hillaire Park: 3 courts (1 dedicated, 2 portable nets)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"15803 NE 6TH ST, BELLEVUE, WA, 98008\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"15803 NE 6TH ST, BELLEVUE, WA, 98008\"."
+        },
+        "restroom": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page says the park includes \"seasonal restrooms\"."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "lakemont-community-park": {
+      "minted": true,
+      "identity": {
+        "name": "Lakemont Community Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98006",
+        "latitude": 47.556870450747,
+        "longitude": -122.116455580365,
+        "imported_slug": null,
+        "canonical_slug": "lakemont-community-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Lakemont Community Park: 4 courts (portable nets)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Lakemont Community Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "5170 Village Park Drive SE",
+        "venue_type": "public_park",
+        "court_availability": "Four courts overlaid on the park's two tennis courts, played with portable nets — the park page spells out the arithmetic, \"four pickleball courts (overlay on the two tennis courts)\". Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.",
+        "county": "King",
+        "postal_code": "98006",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Lakemont Community Park\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Lakemont Community Park: 4 courts (portable nets)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Lakemont Community Park: 4 courts (portable nets)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lakemont-community-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5170 Village Park Drive SE\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Lakemont Community Park: 4 courts (portable nets)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"5170 VILLAGE PARK DR SE, BELLEVUE, WA, 98006\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5170 VILLAGE PARK DR SE, BELLEVUE, WA, 98006\"."
+        },
+        "restroom": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lakemont-community-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among its amenities."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "lewis-creek-park": {
+      "minted": true,
+      "identity": {
+        "name": "Lewis Creek Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98006",
+        "latitude": 47.553867504494,
+        "longitude": -122.124115032604,
+        "imported_slug": null,
+        "canonical_slug": "lewis-creek-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Lewis Creek Park: 2 courts (basketball court overlay, portable nets)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Lewis Creek Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "5808 Lakemont Blvd SE",
+        "venue_type": "public_park",
+        "court_availability": "Two courts marked out on the basketball court, played with portable nets. This is the only venue in Bellevue whose pickleball shares with basketball rather than tennis, and the only one where the City names what the overlay is on.",
+        "county": "King",
+        "postal_code": "98006",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Lewis Creek Park\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Lewis Creek Park: 2 courts (basketball court overlay, portable nets)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Lewis Creek Park: 2 courts (basketball court overlay, portable nets)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5808 Lakemont Blvd SE\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Lewis Creek Park: 2 courts (basketball court overlay, portable nets)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"5808 LAKEMONT BLVD SE, BELLEVUE, WA, 98006\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5808 LAKEMONT BLVD SE, BELLEVUE, WA, 98006\"."
+        },
+        "restroom": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The park's own page lists \"Restrooms\" among its amenities."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "norwood-village-neighborhood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Norwood Village Neighborhood Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98005",
+        "latitude": 47.589849182157,
+        "longitude": -122.173271678664,
+        "imported_slug": null,
+        "canonical_slug": "norwood-village-neighborhood-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Norwood Village Park: 2 courts (over tennis net)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Norwood Village Neighborhood Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "12309 SE 23rd Place",
+        "venue_type": "public_park",
+        "court_availability": "Two courts played over the tennis nets on the park's two tennis courts. The park page confirms the overlay from its own side: \"2 tennis courts with pickleball overlay\".",
+        "county": "King",
+        "postal_code": "98005"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this venue two ways. Its pickleball page says \"Norwood Village Park\"; the venue's own page — the one the pickleball page links to — says \"Norwood Village Neighborhood Park\", which is the name published here."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Norwood Village Park: 2 courts (over tennis net)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Norwood Village Park: 2 courts (over tennis net)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/norwood-village-neighborhood-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"12309 SE 23rd Place\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Norwood Village Park: 2 courts (over tennis net)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"12309 SE 23RD PL, BELLEVUE, WA, 98005\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"12309 SE 23RD PL, BELLEVUE, WA, 98005\"."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "spiritridge-park": {
+      "minted": true,
+      "identity": {
+        "name": "Spiritridge Park",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98008",
+        "latitude": 47.58054065795,
+        "longitude": -122.1265555843,
+        "imported_slug": null,
+        "canonical_slug": "spiritridge-park"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Spiritridge Park: 2 courts (portable nets)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Spiritridge Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "16100 SE 33rd Place",
+        "venue_type": "public_park",
+        "court_availability": "Two courts on shared-use tennis courts, played with portable nets. Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.",
+        "county": "King",
+        "postal_code": "98008"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Spiritridge Park\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Spiritridge Park: 2 courts (portable nets)\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Spiritridge Park: 2 courts (portable nets)\". Listed under the page's \"Outdoor\" heading. The indoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/spiritridge-park",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"16100 SE 33rd Place\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Bellevue Parks & Community Services among its parks, and linked from the pickleball page to its park page."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Spiritridge Park: 2 courts (portable nets)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"16100 SE 33RD PL, BELLEVUE, WA, 98008\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"16100 SE 33RD PL, BELLEVUE, WA, 98008\"."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "crossroads-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "Crossroads Community Center",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98008",
+        "latitude": 47.60180401173,
+        "longitude": -122.126469361799,
+        "imported_slug": null,
+        "canonical_slug": "crossroads-community-center"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "Crossroads Community Center: 3 courts",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "Crossroads Community Center",
+        "total_courts": 3,
+        "indoor_courts": 3,
+        "street_address": "16000 NE 10th St",
+        "venue_type": "community_center",
+        "court_availability": "Three indoor courts, run as drop-in sessions on a published schedule. The centre's own programme page says of its drop-in activities: \"No registration required: first-come, first-served. Space is limited.\"",
+        "county": "King",
+        "postal_code": "98008",
+        "pricing_notes": "The City does not publish a price for pickleball here. It says: \"Pickleball schedules and fees can be viewed on our registration site, or on a community center's drop-in schedule.\" The drop-in schedules it links are PDFs dated 2023 and 2024."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Crossroads Community Center\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Crossroads Community Center: 3 courts\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"Crossroads Community Center: 3 courts\". Listed under the page's \"Indoor\" heading. The outdoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads-community-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"16000 NE 10th St\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this a community center and runs its pickleball as scheduled indoor drop-in sessions."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, \"Crossroads Community Center: 3 courts\", together with the venue's own page: \"No registration required: first-come, first-served. Space is limited.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball courts page: \"Pickleball schedules and fees can be viewed on our registration site, or on a community center's drop-in schedule.\" No price is stated for pickleball at this centre, so fee_type is left unverified and the reader is told where the City says to look."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "north-bellevue-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "North Bellevue Community Center",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98007",
+        "latitude": 47.648011827768,
+        "longitude": -122.143225821039,
+        "imported_slug": null,
+        "canonical_slug": "north-bellevue-community-center"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "North Bellevue Community Center: 2 courts (with low ceiling)",
+        "basis": "No imported row under this slug. Minted from the City of Bellevue Parks & Community Services pickleball courts page, which states the count, and from the venue's own page, which states the address."
+      },
+      "patch": {
+        "name": "North Bellevue Community Center",
+        "total_courts": 2,
+        "indoor_courts": 2,
+        "street_address": "4063 148th Ave NE",
+        "venue_type": "community_center",
+        "court_availability": "Two indoor courts, and the City warns about them in the same breath as it counts them: \"2 courts (with low ceiling)\". It is the only venue on Bellevue's list carrying a caveat about the room rather than about the court.",
+        "county": "King",
+        "postal_code": "98007",
+        "pricing_notes": "The City does not publish a price for pickleball here. It says: \"Pickleball schedules and fees can be viewed on our registration site, or on a community center's drop-in schedule.\" The drop-in schedules it links are PDFs dated 2023 and 2024."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"North Bellevue Community Center\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"North Bellevue Community Center: 2 courts (with low ceiling)\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"North Bellevue Community Center: 2 courts (with low ceiling)\". Listed under the page's \"Indoor\" heading. The outdoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/north-bellevue-community-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4063 148th Ave NE\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this a community center and runs its pickleball as scheduled indoor drop-in sessions."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"North Bellevue Community Center: 2 courts (with low ceiling)\", read against the City's stated default for every unmarked entry: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"4063 148TH AVE NE, BELLEVUE, WA, 98007\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4063 148TH AVE NE, BELLEVUE, WA, 98007\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball courts page: \"Pickleball schedules and fees can be viewed on our registration site, or on a community center's drop-in schedule.\" No price is stated for pickleball at this centre, so fee_type is left unverified and the reader is told where the City says to look."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "south-bellevue-community-center": {
+      "minted": false,
+      "identity": {
+        "name": "South Bellevue Community Center",
+        "city": "Bellevue",
+        "state": "WA",
+        "county": "King",
+        "postal_code": "98006",
+        "latitude": 47.571391967846,
+        "longitude": -122.157116378101,
+        "imported_slug": "south-bellevue-community-center",
+        "canonical_slug": "south-bellevue-community-center"
+      },
+      "match": {
+        "source_page": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "quote": "South Bellevue Community Center: 6 courts",
+        "basis": "Matched to the imported south-bellevue-community-center row in Bellevue, WA."
+      },
+      "patch": {
+        "name": "South Bellevue Community Center",
+        "total_courts": 6,
+        "indoor_courts": 6,
+        "street_address": "14509 SE Newport Way",
+        "venue_type": "community_center",
+        "court_availability": "Six indoor courts — the largest single count in Bellevue — run as adult and family drop-in sessions on a published schedule. The centre asks participants to check in at the front desk before playing, and takes no reservations: \"All Drop-In Sports times are strictly drop-in only.\"",
+        "county": "King",
+        "postal_code": "98006",
+        "nets_provided": true,
+        "fee_type": "drop_in_fee",
+        "drop_in_fee_usd": 5,
+        "pricing_notes": "Adult drop-in sessions cost $4 for Bellevue residents and $5 for non-residents. Family drop-in sessions are free, but require an adult and a child under 18 from the same household to be on court together."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"South Bellevue Community Center\" by the City of Bellevue Parks & Community Services on its pickleball courts page and on the venue's own page."
+        },
+        "total_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"South Bellevue Community Center: 6 courts\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City of Bellevue's pickleball courts page: \"South Bellevue Community Center: 6 courts\". Listed under the page's \"Indoor\" heading. The outdoor count is left unverified rather than set to zero."
+        },
+        "street_address": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"14509 SE Newport Way\" is the address the City prints in the contact block of this venue's own page, which the pickleball page links to by name."
+        },
+        "venue_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City names this a community center and runs its pickleball as scheduled indoor drop-in sessions."
+        },
+        "court_availability": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, \"South Bellevue Community Center: 6 courts\", together with the venue's own page: \"All Drop-In Sports times are strictly drop-in only.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"14509 SE NEWPORT WAY, BELLEVUE, WA, 98006\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"14509 SE NEWPORT WAY, BELLEVUE, WA, 98006\"."
+        },
+        "nets_provided": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the centre's drop-in sports page: \"We provide pickleball balls, nets, and poles.\" This is the only venue in Bellevue where the City says who supplies the net."
+        },
+        "fee_type": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the centre's drop-in sports page, under \"Pricing Information\": \"All Adult Drop-In Sports\" — Bellevue Residents $4, Non-Residents $5. Family drop-in sessions are free but require an adult and a child under 18 from one household on court together, which is not a route two adults can use, so under the O4 precedence rule the drop-in fee is what is recorded."
+        },
+        "drop_in_fee_usd": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The undiscounted adult rate. $4 is the Bellevue resident price and $5 is what everyone else pays; the field holds what someone with no local standing pays to play once, and the discount is recorded in the pricing note beside it."
+        },
+        "pricing_notes": {
+          "source_url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+          "date_checked": "2026-09-04",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the centre's drop-in sports page, under \"Pricing Information\"."
+        }
+      },
+      "record": {
+        "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+        "date_checked": "2026-09-04",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "drop_in_fee_usd"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    }
+  }
+}

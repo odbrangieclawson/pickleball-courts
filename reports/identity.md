@@ -1,6 +1,6 @@
 # Identity audit
 
-Run 2026-09-03 over 18,037 imported rows.
+Run 2026-09-04 over 18,037 imported rows.
 
 Identity is which venue a row is and what its URL will be. No source settles
 it, so verification never fixes any of it — and `decisions.md` §3 makes
@@ -13,9 +13,9 @@ still free to change. That is why it goes first.
 | --- | ---: |
 | Slugs carrying a numeric row-id suffix | 628 |
 | **Renamed automatically** | **8678** |
-| Held back — two rows want one URL in one city | 620 |
+| Held back — two rows want one URL in one city | 618 |
 | Held back — state, coordinates and postal code disagree | 30 |
-| **Total held back** | **650** |
+| **Total held back** | **649** |
 
 ## Numeric suffixes: 628 in, 602 stripped, 26 kept
 
@@ -34,7 +34,7 @@ question this URL pattern does not ask, so it comes off wherever nothing in
 the same city claims the same slug. Rule 10 is satisfied by the hierarchy
 rather than by inventing a disambiguator.
 
-## Held back: 620 rows still collide inside one city
+## Held back: 618 rows still collide inside one city
 
 Strip the suffixes and these rows still land on the same slug in the same
 city. Each pair is either one park recorded twice or two parks sharing a
@@ -46,7 +46,7 @@ name, and the two cases need opposite treatment:
   exists to beat
 
 Proximity is a hint, not an answer. 204 of these rows sit within 250 m of
-their twin, which usually means one park recorded twice. 189 sit 2 km or
+their twin, which usually means one park recorded twice. 187 sit 2 km or
 more apart, which usually means two different places.
 
 Worked example, both real:

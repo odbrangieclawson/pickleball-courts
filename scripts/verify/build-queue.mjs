@@ -21,6 +21,7 @@ import {mapRow} from '../import/mapper.mjs'
 import {isOutsideState, zipDisagreesWithState} from '../lib/us-geo.mjs'
 import {passesI2} from './provenance.mjs'
 import {ladderFor, orderVenues, writeWorksheet} from './source-ladder.mjs'
+import {loadVerifiedOverlay, applyVerifiedOverlay} from '../../lib/data/verified.mjs'
 
 const OUT_REPORTS = join(REPO_ROOT, 'reports')
 const OUT_VERIFY = join(REPO_ROOT, 'verification')
@@ -30,18 +31,63 @@ mkdirSync(OUT_VERIFY, {recursive: true})
 const METRO_LIMIT = Number(process.env.METRO_LIMIT ?? 100)
 
 const src = loadRows()
-const venues = src.map(r => mapRow(r).venue)
+/*
+  THE OVERLAY IS APPLIED HERE, AND WAS NOT UNTIL 2026-09-04.
 
-// County, from Phase 1. I3 needs it.
+  This dashboard reads data.csv, and data.csv is the record of what ARRIVED.
+  Verified facts live in an overlay under data/verified/ and are laid over
+  those rows everywhere else in the project — so for eight published cities
+  this report was reading the pre-verification version of rows that had been
+  verified, and reporting them as blocked on provenance they now carry.
+
+  The number it printed was "Metros ready to publish: 0 of 100", on the day
+  the site published thirty-nine venues in Washington alone. PHASES.md calls
+  this dashboard "the one to watch", which is precisely why a stale zero here
+  is worse than no dashboard: it is a green light pointing the wrong way.
+*/
+const imported = src.map(r => mapRow(r).venue)
+
+/*
+  ORDER MATTERS HERE, AND GETTING IT WRONG IS SILENT.
+
+  The Phase 1 county derivation is indexed by CSV ROW POSITION — county[i]
+  belongs to imported[i] and to nothing else. The overlay does not preserve
+  that indexing: applyVerifiedOverlay() APPENDS the venues that were minted
+  from a source rather than matched to a row, so its output is longer than
+  data.csv (18,080 against 18,037 today).
+
+  The first version of this fix applied the overlay first and then compared
+  lengths, which no longer matched, so the guard fell through to "no county
+  derived for any row" and every venue in the country failed Import Gate I3.
+  The dashboard still printed a number. It was just a different wrong number
+  than before.
+
+  So: derive county onto the imported rows while the indexes still line up,
+  THEN lay the verified facts over them.
+*/
 const countyPath = join(OUT_REPORTS, 'county-per-row.json')
 const county = existsSync(countyPath) ? JSON.parse(readFileSync(countyPath, 'utf8')) : null
-if (county && county.length === venues.length) {
-  venues.forEach((v, i) => {
+if (county && county.length === imported.length) {
+  imported.forEach((v, i) => {
     v.county = county[i].needs_review ? null : county[i].county
     v._county_ok = !county[i].needs_review && county[i].county !== null
   })
 } else {
-  venues.forEach(v => { v._county_ok = false })
+  imported.forEach(v => { v._county_ok = false })
+}
+
+const {byKey: verifiedByKey} = loadVerifiedOverlay(REPO_ROOT)
+const venues = applyVerifiedOverlay(imported, verifiedByKey).venues
+
+/*
+  A county from a verify run beats the derivation, and a minted venue has no
+  derivation at all. Both came from the Census geocoder matching a street
+  address; the Phase 1 backfill is a ZCTA lookup with a confidence score and
+  a 16.7% review rate. Where a row carries a source, its county is verified.
+*/
+for (const v of venues) {
+  if (v.county && v.source_url) v._county_ok = true
+  else if (v._county_ok === undefined) v._county_ok = false
 }
 
 const slugCounts = new Map()
@@ -191,6 +237,35 @@ if (!ready.length) {
   say('the one to watch.')
   say('')
 }
+
+/*
+  THE QUEUE IS NOT THE SITE.
+
+  This dashboard walks the top 100 metros of the Phase 1 work queue, which is
+  ordered by how many pages a metro would unlock. Cities have been published
+  by finding a municipal source, not by working down that list, so the two
+  sets overlap without matching — and a reader comparing "5 of 100 ready"
+  against eight published cities deserves to be told why rather than left to
+  wonder which number is broken.
+*/
+const publishedCities = new Set(
+  [...verifiedByKey.values()]
+    .map(e => `${e.identity?.city}, ${e.identity?.state}`)
+    .filter(k => !k.includes('undefined')))
+const inQueue = [...publishedCities].filter(c => dash.some(m => m.metro === c))
+const outsideQueue = [...publishedCities].filter(c => !inQueue.includes(c)).sort()
+
+say(`**Published on the site: ${publishedCities.size} cities.** ${inQueue.length} of them are in`)
+say(`this queue${outsideQueue.length ? ` and ${outsideQueue.length} are not — ${outsideQueue.join(', ')}` : ''}.`)
+say('')
+say('The queue is ordered by how many pages a metro would unlock, and cities are')
+say('published by finding an operator that states its court counts. Those are')
+say('different orderings and they are meant to be: a city with forty rows and no')
+say('municipal source is worth less than a city with four rows and a page that')
+say('states them. A metro can also read "ready" here on three verified venues')
+say('while most of its rows stay unverified — the three are what the threshold')
+say('asks for, not the whole city.')
+say('')
 
 say('## Per metro')
 say('')

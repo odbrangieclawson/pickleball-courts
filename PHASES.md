@@ -294,27 +294,99 @@ for. A 301 counts as a pass — §3 permits exactly that one response.
 
 ---
 
-## Phase 7 — Proof checkpoint 🔴 BLOCKED, AND NOT BY CODE
+## Phase 7 — Proof checkpoint 🟡 OPEN, AND NOW ADVANCING
 
 This is the one gate in the whole document that cannot be passed by building.
-It needs the site on a real hostname (**O10** — everything currently says
-`example.invalid`) and then time in the index. Nothing in this repository
-advances it.
+It needs the site on a real hostname and then time in the index.
+
+**What changed since that was written:** the site is deployed and building
+from `main`, `SITE_ORIGIN` is set in the Vercel project, and the placeholder
+no longer reaches the output. Eight cities are published. So the phase is no
+longer blocked on code or on a domain — it is waiting on the index, and the
+only thing that moves it is more verified inventory and more time.
+
+**What advances it:** city verification runs, one at a time, to the standard
+the sequencing rules set out below. Nothing else in this repository does.
 
 Per the sequencing rules below, phases 8 through 12 do not start until it
 passes.
 
 ---
 
+## The published set
+
+Eight cities, three states, five counties, two state pages. Every page below
+passes all six gates against the built HTML; the totals are the ones
+`getCounts()` returns, not a hand count.
+
+| # | City | Venues | Courts | Source | Shipped |
+| ---: | --- | ---: | ---: | --- | --- |
+| 1 | Seattle, WA | 24 | 92 | Seattle Parks ArcGIS, two feature services | 2026-09-03 |
+| 2 | Raleigh, NC | 11 | 44 | Raleigh Parks, ArcGIS + pickleball page | 2026-09-03 |
+| 3 | Cary, NC | 3 | 12 | Town of Cary parks pages | 2026-09-03 |
+| 4 | Apex, NC | 5 | 21 | Town of Apex parks pages | 2026-09-03 |
+| 5 | Charlotte, NC | 5 | 29 | Mecklenburg County park pages | 2026-09-03 |
+| 6 | Portland, OR | 11 | 59 | Portland Parks pickleball page | 2026-09-03 |
+| 7 | Vancouver, WA | 3 | 14 | City of Vancouver pickleball page | 2026-09-03 |
+| 8 | Bellevue, WA | 12 | 38 | City of Bellevue pickleball page + park pages | 2026-09-04 |
+
+**101 published pages:** 8 city, 74 venue, 12 filter, 5 county, 2 state.
+
+**Two state pages exist because two states have three published cities.**
+North Carolina since Apex; Washington since Bellevue. `STATE_MIN_CITIES = 3`
+and a state with no written note does not publish at all — it is removed from
+the link graph so nothing can link to it (**O13**).
+
+**Bellevue is the richest municipal source read so far.** One City page states
+a court count for all fourteen venues it lists, indoor and outdoor, and states
+its own default for the ones it does not mark: "Bellevue's pickleball courts
+are shared use with tennis courts, unless otherwise noted." That sentence is
+why twelve Bellevue venues carry a sourced note on what kind of court you are
+walking onto. It also produced the first venue in the directory with a
+non-zero count on both sides — Hidden Valley Park, three indoor and two
+outdoor at one address, which the City lists as two entries and which is
+published as one place.
+
+**Three things Bellevue broke, and what each cost:**
+
+- **The identity quarantine refused a sourced venue.** Two imported rows
+  claimed the slug `hillaire-park`, so the identity pass held both — and
+  Hillaire Park could not publish despite the City stating three courts at an
+  address that geocodes. The audit's own header said such collisions "go to a
+  review queue", and the queue had nowhere to send an answer back to.
+  `data/identity/resolutions.json` is now that place: a resolution names which
+  row keeps the slug, with a basis and a source, and the audit throws if it
+  names a row that is not in the collision, leaves a member unaccounted for,
+  or settles a collision that no longer exists.
+- **The completeness dashboard was reading the pre-verification dataset.** It
+  printed "Metros ready to publish: 0 of 100" on a day the site published 39
+  venues in Washington alone, because it read `data.csv` and never applied the
+  verified overlay. It now applies it — and the first attempt at that fix was
+  worse than the bug: the overlay appends minted venues, so the array grew
+  past the county derivation it is indexed against, the length guard fell
+  through, and every venue in the country failed Import Gate I3. It still
+  printed a number. Fixed properly, it reads **5 of 100 ready**, and says
+  which published cities are outside the queue and why.
+- **A published claim was false.** Vancouver shipped with "the first stated
+  NEGATIVE on lighting in this directory" on a live venue page. Seattle had
+  shipped a day earlier from an ArcGIS layer whose `LIGHTED` field reads "No"
+  for nineteen of its twenty-four venues — stated, sourced and dated. The
+  claim came from reading the cities whose sources are prose and forgetting
+  the one whose source is a table. Corrected on the venue page, the city page
+  and in the run that generates them, with the correction left on the record
+  rather than quietly removed.
+
+---
+
 ## Blockers still open
 
-Phases 0 through 2 are complete. What stops Phase 3 from publishing is not
-missing code.
+Phases 0 through 6 are complete and eight cities are published. What stands
+between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered for Seattle**, still open everywhere else. Municipal open data worked; 24 venues verified. 1,475 cities still wait on provenance. |
-| **O10** — canonical hostname | `decisions.md` §9 | Schema `@id`, canonicals, breadcrumb `item` and the sitemap still emit `example.invalid`. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered eight times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers, six web pages. No general method has been found and none is likely — the next city is another search. |
+| **O10** — canonical hostname | `decisions.md` §9 | `SITE_ORIGIN` is set in the Vercel project and the placeholder no longer reaches the output. The decision is not formally closed in §9 because the hostname is not recorded in this repository; it lives in a dashboard setting. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -334,9 +406,27 @@ Reproduced from `decisions.md`. These are not scheduling advice.
    lowering the 3-venue threshold, or putting an imported row count where a
    verified count belongs is refused, not negotiated.
 
+## Where the 50-100 metro target stands
+
+**8 of 50.** The sequencing rule above is the whole plan, and this is the
+progress bar for it. Nothing else in this document is a schedule.
+
+The next city is chosen the same way the last eight were: find a parks
+department that publishes a court count on a page a browser with JavaScript
+off can read, then verify it. Volume in the imported dataset is a tiebreak,
+never a qualification. Spokane, WA is first in the queue on both counts and
+is blocked on something small and specific — the City's pickleball page
+refused our fetcher with an HTTP 403 on 2026-09-04, and this project does not
+publish from a page it cannot snapshot and re-check.
+
 ## Tagging convention
 
 One annotated tag per completed phase: `phase-0`, `phase-1`, … The tag lands
 on the commit where that phase's work and its documentation are both present,
 so checking out a tag gives a coherent snapshot rather than code without its
 record.
+
+Cities and state pages carry their own tags in the same spirit —
+`city-2-raleigh` through `city-8-bellevue`, `state-1-nc`, `state-2-wa` — so a
+publication can be diffed on its own. Cities 6 and 7 shipped without tags;
+that is a gap in the record, not a different convention.

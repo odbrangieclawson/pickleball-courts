@@ -1,43 +1,46 @@
 # Completeness dashboard
 
-100 metros in the verification queue, 2,620 venues.
+100 metros in the verification queue, 2,649 venues.
 
 ## The hard rule
 
 > A metro is not done until it has at least 3 venues passing all four import
 > gates. A partially verified metro does not publish partially — it waits.
 
-**Metros ready to publish: 0 of 100.**
+**Metros ready to publish: 5 of 100.**
 
-None, and the reason is the same for every metro: **Import Gate I2**. No
-venue anywhere in the dataset has a qualifying `source_url` or any
-`date_checked`. Until source attachment work happens, every metro sits at
-0 of 3 regardless of how clean its other fields are.
+**Published on the site: 8 cities.** 5 of them are in
+this queue and 3 are not — Apex, NC, Bellevue, WA, Cary, NC.
 
-This dashboard exists to be re-run as that work lands. The number above is
-the one to watch.
+The queue is ordered by how many pages a metro would unlock, and cities are
+published by finding an operator that states its court counts. Those are
+different orderings and they are meant to be: a city with forty rows and no
+municipal source is worth less than a city with four rows and a page that
+states them. A metro can also read "ready" here on three verified venues
+while most of its rows stay unverified — the three are what the threshold
+asks for, not the whole city.
 
 ## Per metro
 
 | # | metro | venues | pass 4/4 | I1 ✗ | I2 ✗ | I3 ✗ | I4 ✗ | status | pages when ready |
 | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
-| 1 | Seattle, WA | 63 | 0 | 0 | 63 | 10 | 0 | blocked | 59 |
+| 1 | Seattle, WA | 67 | 19 | 0 | 43 | 14 | 0 | **ready** | 59 |
 | 2 | Jacksonville, FL | 55 | 0 | 1 | 55 | 2 | 0 | blocked | 58 |
 | 3 | Sacramento, CA | 55 | 0 | 4 | 55 | 0 | 0 | blocked | 56 |
-| 4 | Lincoln, NE | 51 | 0 | 0 | 51 | 2 | 0 | blocked | 55 |
+| 4 | Lincoln, NE | 51 | 0 | 1 | 51 | 2 | 0 | blocked | 55 |
 | 5 | Honolulu, HI | 43 | 0 | 0 | 43 | 1 | 0 | blocked | 48 |
 | 6 | Houston, TX | 54 | 0 | 3 | 54 | 12 | 0 | blocked | 45 |
 | 7 | Wichita, KS | 46 | 0 | 3 | 46 | 3 | 0 | blocked | 45 |
 | 8 | San Diego, CA | 39 | 0 | 0 | 39 | 2 | 0 | blocked | 43 |
 | 9 | San Francisco, CA | 39 | 0 | 0 | 39 | 2 | 0 | blocked | 43 |
 | 10 | Washington, DC | 36 | 0 | 0 | 36 | 0 | 0 | blocked | 42 |
-| 11 | Charlotte, NC | 50 | 0 | 2 | 50 | 13 | 0 | blocked | 41 |
+| 11 | Charlotte, NC | 54 | 3 | 4 | 49 | 13 | 0 | **ready** | 41 |
 | 12 | Tucson, AZ | 37 | 0 | 1 | 37 | 2 | 0 | blocked | 40 |
 | 13 | Omaha, NE | 41 | 0 | 2 | 41 | 5 | 0 | blocked | 40 |
 | 14 | Las Vegas, NV | 41 | 0 | 1 | 41 | 6 | 0 | blocked | 40 |
 | 15 | Austin, TX | 45 | 0 | 4 | 45 | 12 | 0 | blocked | 38 |
 | 16 | Denver, CO | 45 | 0 | 2 | 45 | 10 | 0 | blocked | 38 |
-| 17 | Portland, OR | 51 | 0 | 0 | 51 | 18 | 0 | blocked | 38 |
+| 17 | Portland, OR | 61 | 8 | 3 | 50 | 18 | 0 | **ready** | 38 |
 | 18 | Boise, ID | 36 | 0 | 1 | 36 | 1 | 0 | blocked | 38 |
 | 19 | Colorado Springs, CO | 34 | 0 | 2 | 34 | 1 | 0 | blocked | 37 |
 | 20 | Dallas, TX | 43 | 0 | 2 | 43 | 10 | 0 | blocked | 37 |
@@ -53,9 +56,9 @@ the one to watch.
 | 30 | Alexandria, VA | 31 | 0 | 1 | 31 | 8 | 0 | blocked | 28 |
 | 31 | Marietta, GA | 24 | 0 | 0 | 24 | 0 | 0 | blocked | 28 |
 | 32 | St. Petersburg, FL | 22 | 0 | 1 | 22 | 1 | 0 | blocked | 26 |
-| 33 | Raleigh, NC | 24 | 0 | 0 | 24 | 4 | 0 | blocked | 26 |
+| 33 | Raleigh, NC | 33 | 9 | 2 | 22 | 4 | 0 | **ready** | 26 |
 | 34 | Atlanta, GA | 55 | 0 | 3 | 55 | 31 | 0 | blocked | 26 |
-| 35 | Fort Worth, TX | 28 | 0 | 0 | 28 | 7 | 0 | blocked | 26 |
+| 35 | Fort Worth, TX | 28 | 0 | 1 | 28 | 7 | 0 | blocked | 26 |
 | 36 | Lewes, DE | 22 | 0 | 0 | 22 | 0 | 0 | blocked | 26 |
 | 37 | Des Moines, IA | 25 | 0 | 1 | 25 | 2 | 0 | blocked | 26 |
 | 38 | Frederick, MD | 24 | 0 | 0 | 24 | 2 | 0 | blocked | 26 |
@@ -68,7 +71,7 @@ the one to watch.
 | 45 | Reno, NV | 20 | 0 | 0 | 20 | 0 | 0 | blocked | 25 |
 | 46 | Asheville, NC | 18 | 0 | 0 | 18 | 0 | 0 | blocked | 24 |
 | 47 | Albuquerque, NM | 21 | 0 | 1 | 21 | 2 | 0 | blocked | 24 |
-| 48 | Palm Desert, CA | 20 | 0 | 1 | 20 | 1 | 0 | blocked | 24 |
+| 48 | Palm Desert, CA | 20 | 0 | 2 | 20 | 1 | 0 | blocked | 24 |
 | 49 | Tulsa, OK | 20 | 0 | 0 | 20 | 1 | 0 | blocked | 24 |
 | 50 | Tampa, FL | 17 | 0 | 0 | 17 | 0 | 0 | blocked | 23 |
 | 51 | Fort Wayne, IN | 26 | 0 | 3 | 26 | 6 | 0 | blocked | 23 |
@@ -82,7 +85,7 @@ the one to watch.
 | 59 | Bradenton, FL | 19 | 0 | 1 | 19 | 1 | 0 | blocked | 22 |
 | 60 | Orlando, FL | 23 | 0 | 0 | 23 | 6 | 0 | blocked | 22 |
 | 61 | Philadelphia, PA | 20 | 0 | 0 | 20 | 3 | 0 | blocked | 22 |
-| 62 | Vancouver, WA | 24 | 0 | 0 | 24 | 7 | 0 | blocked | 22 |
+| 62 | Vancouver, WA | 26 | 3 | 0 | 23 | 7 | 0 | **ready** | 22 |
 | 63 | Wilmington, DE | 19 | 0 | 0 | 19 | 1 | 0 | blocked | 22 |
 | 64 | Boston, MA | 21 | 0 | 0 | 21 | 3 | 0 | blocked | 22 |
 | 65 | Charleston, SC | 17 | 0 | 0 | 17 | 2 | 0 | blocked | 21 |
@@ -126,12 +129,12 @@ the one to watch.
 
 | blocker | venue-occurrences |
 | --- | ---: |
-| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,620 |
-| I2: no date_checked | 2,620 |
-| I2: no verified_by | 2,620 |
-| I3: county not derived above confidence threshold | 291 |
+| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,595 |
+| I2: no date_checked | 2,595 |
+| I2: no verified_by | 2,595 |
+| I3: county not derived above confidence threshold | 281 |
 | I1: slug has a numeric suffix (Rule 10) | 32 |
-| I3: no postal_code | 19 |
+| I3: no postal_code | 31 |
 | I3: missing lat/lng | 7 |
 | I3: total_courts 4 != indoor 4 + outdoor 4 | 1 |
 | I3: total_courts 3 != indoor 2 + outdoor 0 | 1 |

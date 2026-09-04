@@ -66,7 +66,7 @@
   before anyone notices they are wrong.
 */
 
-import {writeFileSync, mkdirSync} from 'node:fs'
+import {writeFileSync, mkdirSync, readFileSync, existsSync} from 'node:fs'
 import {join} from 'node:path'
 import {loadRows, REPO_ROOT} from '../lib/load-csv.mjs'
 import {mapRow} from '../import/mapper.mjs'
@@ -80,6 +80,43 @@ const citySlug = c => String(c ?? '').toLowerCase().trim().replace(/[^a-z0-9]+/g
 const cityKey = v => `${String(v.state).toUpperCase()}/${citySlug(v.city)}`
 
 const rows = loadRows().map(r => mapRow(r).venue)
+
+/*
+  ============================================================
+  RESOLVED COLLISIONS
+  ============================================================
+
+  This file used to say in-city collisions "go to a review queue", and the
+  queue — reports/identity-duplicates.csv — had nowhere to send an answer
+  back to. So an answer could be found and could not be applied.
+
+  Bellevue found one. The City states three pickleball courts at Hillaire
+  Park, 15803 NE 6th St, and two imported rows claim the slug hillaire-park:
+  the one at that address, and one whose street_address is "East Lake Hills"
+  — a neighbourhood, not an address — sitting 4.7 km away. Both were held, so
+  a venue with a municipal source and a geocoded address could not publish
+  because an unsourced row shares its name.
+
+  That is the quarantine doing the wrong thing for the right reason. It
+  exists to stop a GUESS hardening into a permanent URL, and this is not a
+  guess: the City's own park index lists Hillaire Park exactly once.
+
+  data/identity/resolutions.json is where such an answer is recorded, with a
+  basis and the source that states it. It is deliberately narrow — it settles
+  only the collisions it names, one at a time, and every other colliding row
+  in the dataset stays held.
+
+  A STALE RESOLUTION IS AN ERROR. If a resolution names a slug that is not in
+  the collision it claims to settle, or leaves a member of that collision
+  unaccounted for, this script throws. The alternative — ignoring it quietly
+  — would let a resolution written against last month's data keep publishing
+  a row nobody has looked at since.
+*/
+const resolutions = (() => {
+  const p = join(REPO_ROOT, 'data/identity/resolutions.json')
+  return existsSync(p) ? (JSON.parse(readFileSync(p, 'utf8')).resolutions ?? {}) : {}
+})()
+const resolutionsUsed = new Set()
 
 /*
   Names a source has stated. Where one exists it is a better identity than
@@ -172,7 +209,55 @@ for (const [key, members] of groups) {
   const collision = members.length > 1
 
   if (collision) {
-    /* Two or more rows want one URL inside one city. Neither publishes. */
+    /* Two or more rows want one URL inside one city. Neither publishes,
+       unless data/identity/resolutions.json says which one should. */
+    const resolved = resolutions[key]
+    if (resolved) {
+      resolutionsUsed.add(key)
+      const slugs = new Set(members.map(m => m.slug))
+      const named = [resolved.keep, ...(resolved.hold ?? [])]
+      for (const s of named) {
+        if (!slugs.has(s)) {
+          throw new Error(
+            `data/identity/resolutions.json: the resolution for "${key}" names "${s}", ` +
+            'which is not one of the rows colliding there. The data has moved under it; re-read the collision.')
+        }
+      }
+      for (const m of members) {
+        if (!named.includes(m.slug)) {
+          throw new Error(
+            `data/identity/resolutions.json: the resolution for "${key}" accounts for ${named.length} rows, ` +
+            `but "${m.slug}" also claims that slug and the resolution does not mention it. ` +
+            'Every member of a collision must be either kept or held.')
+        }
+      }
+      if (!resolved.basis) {
+        throw new Error(`data/identity/resolutions.json: the resolution for "${key}" has no basis. A resolution is a citation, not an opinion.`)
+      }
+
+      for (const m of members) {
+        if (m.slug === resolved.keep) {
+          /* The kept row takes the contested slug and carries why. */
+          if (m.slug !== m._candidate) {
+            registry[m.slug] = {
+              canonical: m._candidate,
+              basis: `${m._steps.join('; ')}; collision resolved: ${resolved.basis}`,
+            }
+          }
+          continue
+        }
+        quarantine[m.slug] = {
+          reason: 'in_city_slug_collision_resolved_against',
+          detail: `"${resolved.keep}" keeps the slug "${m._candidate}" in ${key.split('/').slice(0, 2).join('/')}. ${resolved.basis}`,
+          wanted_slug: m._candidate,
+          peers: members.filter(x => x.slug !== m.slug).map(x => x.slug),
+          resolved_on: resolved.decided_on ?? null,
+          source_url: resolved.source_url ?? null,
+        }
+      }
+      continue
+    }
+
     const coords = members.filter(m => m.latitude !== null && m.longitude !== null)
     let apartKm = null
     if (coords.length > 1) {
@@ -218,6 +303,20 @@ for (const [key, members] of groups) {
 
 /* Rows that are fine but sit in a city where something else collided:
    they keep their own slug and are unaffected. Nothing to record. */
+
+/*
+  A resolution for a collision that no longer exists is not harmless. It
+  means the data changed and nobody re-read the decision, and the next
+  collision in that city would be settled by reasoning written about rows
+  that have since moved.
+*/
+for (const key of Object.keys(resolutions)) {
+  if (!resolutionsUsed.has(key)) {
+    throw new Error(
+      `data/identity/resolutions.json: the resolution for "${key}" settles a collision that no longer exists. ` +
+      'Either the rows changed or the key is wrong; re-read it rather than leaving it in place.')
+  }
+}
 
 /* ---------------------------------------------------------------- */
 /* 3b. City names that look like misspellings of a bigger neighbour.  */

@@ -1,0 +1,565 @@
+{
+  "city": "Bellevue",
+  "state": "WA",
+  "kind": "venues",
+  "date_checked": "2026-09-04",
+  "written_by": "staff_research",
+  "note_on_method": "Every court count below is the City of Bellevue's own, from the one page where it lists them all. Every address is from that venue's own City page, which the pickleball page links to by name. Where the two pages say different things — and for three venues they do — both are quoted rather than reconciled silently. Nobody working on this has played on these courts.",
+  "venues": {
+    "cherry-crest-mini-park": {
+      "slots": {
+        "description": "One court, and the City is precise about what kind: \"1 court (over tennis net)\". This is a five-acre neighbourhood park in Cherry Crest, north-east Bellevue, with a basketball court, picnic areas, a playground and a single tennis court that has pickleball lines painted on it. The park's own page describes the same arrangement from the other side — \"a tennis court with a pickleball overlay\" — and the singular matters: there is one court here, not one court each. It is the smallest verified pickleball venue in Bellevue, and on a directory that publishes twelve venues in this city, it is the one where a doubles game and a tennis match cannot both happen.",
+        "getting_there": "2532 127th Ave NE, Bellevue, WA 98005, which the Census geocoder matched cleanly to Bellevue city, King County. The City publishes nothing about parking here and this is a residential street park, not a facility with a lot — the amenity list on its page does not include parking, where four other Bellevue park pages do. Treat it as street parking of unknown availability rather than assuming a space.",
+        "what_to_expect": "You play over the tennis net, which means the net is already there and its height is a tennis net's. Whether the court is free is a question of who arrived first, and the City publishes no schedule, no rotation rule and no booking system for any outdoor court in Bellevue. Lighting is not verified — nowhere in this city is — so plan around daylight. No restroom is listed on the park's page. The realistic read: fine for a casual hit with one other pair, not somewhere to bring a group of eight. Around the court the park page lists a playground, a tot lot for two- to five-year-olds, picnic tables and an interpretive exhibit, which is a fair description of who else is likely to be there on a weekday morning. What it does not list is parking, restrooms or lighting, and on a five-acre site those three absences are probably real rather than merely unrecorded — but the City has not said so, and this directory does not convert a silence into a no."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "One, over the tennis net. The City states it as \"1 court (over tennis net)\" and the park's own page corroborates it as \"a tennis court with a pickleball overlay\"."
+        },
+        {
+          "q": "Is there a net?",
+          "a": "Yes, in the sense that there is a tennis net. The City marks this venue \"over tennis net\" rather than \"portable nets\", so what you are playing over is the tennis net at its tennis height, not a pickleball net someone has set up."
+        },
+        {
+          "q": "Can I play if someone is playing tennis?",
+          "a": "Not on this court. There is one court and it is the tennis court. That is the practical consequence of a single-court overlay venue, and it is why the count here is worth reading carefully rather than counting the park as \"has pickleball\"."
+        },
+        {
+          "q": "Are there restrooms or lights?",
+          "a": "Neither is verified. The park page lists neither restrooms nor lighting among its amenities, and unlisted is not the same as absent — it means the City has not said."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "The City's page lists a basketball court, a playground, a tot lot for ages two to five, picnic tables and an interpretive exhibit on five acres. It is a neighbourhood park with a tennis court in it, not a sports complex, and the pickleball is one overlay on that one tennis court."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M6",
+        "M2"
+      ]
+    },
+    "crossroads-park": {
+      "slots": {
+        "description": "Four courts with portable nets on the shared tennis courts of a 34-acre park that is one of the busiest public spaces in Bellevue. The City describes Crossroads Park as sitting \"in one of the most culturally diverse neighborhoods in Bellevue\", where \"you will likely hear dozens of languages being spoken, but the common language is play\", and the park carries a water spray playground, a par-3 golf course with foot golf, the Bellevue Youth Theatre, community gardens and a skate bowl. It is also home to Crossroads Community Center, which has three indoor pickleball courts of its own — published separately here, because the City gives the centre its own street address.",
+        "getting_there": "999 164th Ave NE, Bellevue, WA 98008. This is one of the four Bellevue park pages that does list parking among its amenities, which tells you a car park exists and nothing about whether it is full on a Saturday. The community centre in the same park has a different published address, 16000 NE 10th St, so if you are meeting someone, agree which of the two you mean.",
+        "what_to_expect": "Portable nets and shared tennis courts, under the City's stated default: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\" Four courts is the joint-largest outdoor count in the city, alongside Eastgate and Lakemont, so this is one of the few Bellevue venues where a group can plausibly rotate. Restrooms are listed. Lighting is not verified. If the outdoor courts are taken, the indoor drop-in at the community centre in the same park is the obvious fallback, on a published schedule and first-come. The wider park is unusually well equipped for a public site: the City lists an AED, electric vehicle charging, community P-patch gardens, picnic shelters, public Wi-Fi and an accessible designation alongside the tennis and basketball courts. None of that is a pickleball fact, and all of it changes what an afternoon here looks like if you are bringing people who are not playing."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Four outdoor, with portable nets, on the park's shared-use tennis courts. The City's pickleball page lists them as \"Crossroads Community Park: 4 courts (portable nets)\"."
+        },
+        {
+          "q": "Why is it called Crossroads Park here and Crossroads Community Park on the City's list?",
+          "a": "Because the City uses both names. Its pickleball page says \"Crossroads Community Park\"; the park's own page — the one that pickleball page links to — is headed \"Crossroads Park\" and gives that name in its contact block. We publish the name from the park's own record and note the other."
+        },
+        {
+          "q": "Is the community centre the same place?",
+          "a": "Same park, different address, and published separately. Crossroads Community Center has three indoor courts at 16000 NE 10th St; the outdoor courts are at 999 164th Ave NE. The park page confirms the park is home to the centre."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "Probably. \"Portable nets\" describes the nets, not who supplies them, and the City does not say elsewhere. The only Bellevue venue that states it provides nets is South Bellevue Community Center."
+        },
+        {
+          "q": "Is there anything to do between games?",
+          "a": "A great deal, which is unusual for a court venue. The City lists a water spray playground, a par-3 golf course that also does foot golf, the Bellevue Youth Theatre, community gardens, a skate bowl, picnic shelters, public Wi-Fi and electric vehicle charging, all in the same 34-acre park."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M7",
+        "M2"
+      ]
+    },
+    "eastgate-park": {
+      "slots": {
+        "description": "The only venue in Bellevue where every court is pickleball and nothing else, and it has been that way since 1 September 2026. On 28 August the City announced that \"responding to increasing community demand\", it would convert the two dual-use outdoor sport courts at Eastgate Park into \"a dedicated pickleball-only facility\" — tennis nets removed, the four pickleball courts marked on those two courts made permanent. The park around them has a ballfield, picnic tables, a play area and nature trails, and its own page already describes \"four dedicated pickleball courts\" as a feature. A follow-up project is planned to resurface the courts \"with only pickleball lines, creating durable and consistent play conditions\".",
+        "getting_there": "14500 SE Newport Way, Bellevue, WA 98006, in the Eastgate neighbourhood in the south-east of the city. Nine street numbers along the same road, at 14509 SE Newport Way, is South Bellevue Community Center and its six indoor courts — the only place in Bellevue where dedicated outdoor courts and the city's largest indoor set are on the same street. The City publishes nothing about parking at the park.",
+        "what_to_expect": "Four dedicated courts, no booking, and no published hours beyond the City's own phrasing: the courts \"will remain first-come, first-serve and will be open during posted park hours\". Two things are genuinely open questions. The City does not say what, if anything, replaced the tennis nets it removed, so whether a net is waiting for you is unverified — bring one if you have one. And the resurfacing is announced rather than done, so the lines you find may still be the old dual-use markings. Lighting is not verified here or anywhere else in Bellevue. Worth knowing if you are meeting a mixed group: the tennis players who used these courts have been directed elsewhere by the City, to Silver Leaf, Lakemont, Spiritridge and Sunset, \"all within approximately three miles of Eastgate Park\". Two of those four are pickleball venues in this directory too, which means the conversion has quietly concentrated tennis onto courts that pickleball also shares."
+      },
+      "faqs": [
+        {
+          "q": "Are these really pickleball-only courts?",
+          "a": "Yes, as of 1 September 2026. The City removed the tennis nets from two dual-use sport courts and said the transition to pickleball-only use is permanent. Its pickleball page marks the venue \"4 courts (dedicated)\", which is the only such marking on the whole list apart from one court at Hillaire Park."
+        },
+        {
+          "q": "Where did the tennis players go?",
+          "a": "The City named the alternatives in the same announcement: Silver Leaf, Lakemont, Spiritridge and Sunset, \"all within approximately three miles of Eastgate Park\". Two of those, Lakemont and Spiritridge, are pickleball venues in this directory as well."
+        },
+        {
+          "q": "Will more Bellevue courts be converted?",
+          "a": "Not according to the City. The same notice says the department \"does not currently have conversions planned at any other dual-use courts in Bellevue\". That is a stated negative rather than a silence, which is rare enough to be worth quoting — and if it changes, our build fails rather than leaving this answer standing."
+        },
+        {
+          "q": "Is there a net?",
+          "a": "Not verified. The tennis nets came off; the City does not say what is there now for pickleball. This is the one question the conversion announcement leaves open, and we are not going to guess at it."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "The City's park page lists a ballfield, picnic tables, a play area and nature trails alongside the four dedicated pickleball courts. It does not list restrooms or parking, which means the City has not said either way rather than that there are none."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M8",
+        "M5",
+        "M2"
+      ]
+    },
+    "hidden-valley-park": {
+      "slots": {
+        "description": "The only venue in this entire directory with a court count above zero on both sides: three indoor and two outdoor, at one address. The City lists them as two entries on its pickleball page — \"Hidden Valley Fieldhouse: 3 courts\" under Indoor and \"Hidden Valley Sports Park: 2 courts (portable nets)\" under Outdoor — and links both names to the same park page, so they are published here as one place rather than two pages competing for the same search. The park itself is 17.31 acres with three softball fields, a lighted tennis court, a sports court and restrooms at both the north and south ends.",
+        "getting_there": "1903 112th Ave NE, Bellevue, WA 98004, in the north-west of the city near the Bellevue-Kirkland line. The park page lists parking among its amenities. Note that the fieldhouse is a building inside the park rather than a separate site: one address gets you both the indoor courts and the outdoor ones, which is exactly why the two City entries are published as a single venue.",
+        "what_to_expect": "Two outdoor courts with portable nets on shared tennis courts, and three indoor courts in the fieldhouse on whatever schedule the fieldhouse is running. The City publishes no price for the indoor courts here, pointing instead at its registration site and at drop-in schedule PDFs dated 2023 and 2024. One detail worth not over-reading: the park page mentions \"a lighted tennis court\", singular, alongside a separate sports court, and nothing says the pickleball is played on the lit one — so lighting stays unverified, as it does everywhere in Bellevue. The park is 17.31 acres and busy with other sport: three softball fields, a basketball court, an exercise area and gym, public Wi-Fi and — a detail worth having if you are coming with children or staying a while — \"restrooms at the north and south end of the park\", which is more specific than most park pages manage."
+      },
+      "faqs": [
+        {
+          "q": "Is this one venue or two?",
+          "a": "The City lists it twice and we publish it once. \"Hidden Valley Fieldhouse\" and \"Hidden Valley Sports Park\" are both links to the same park page at 1903 112th Ave NE, and there is one imported record for the place. Publishing two venue pages at one street address would have split five courts for no reason a visitor would recognise."
+        },
+        {
+          "q": "How many courts are there in total?",
+          "a": "Five: three indoor in the fieldhouse and two outdoor in the park. That makes it the only venue anywhere in this directory offering both, which is a statement about what has been verified, not a claim that no other venue in America does."
+        },
+        {
+          "q": "Are the outdoor courts lit?",
+          "a": "Not verified. The park has \"a lighted tennis court\" according to its own page, but it also has a separate sports court, and the City never says which surface the two pickleball courts are on. Unknown is not unlit."
+        },
+        {
+          "q": "What does the indoor session cost?",
+          "a": "The City does not publish a price for the fieldhouse. It says \"Pickleball schedules and fees can be viewed on our registration site, or on a community center's drop-in schedule\" — so a fee may well apply, and we have not read what it is."
+        },
+        {
+          "q": "What else is at Hidden Valley Park?",
+          "a": "Three softball fields, a basketball court, a lighted tennis court, a sports court, an exercise area and gym, play and picnic areas, public Wi-Fi and restrooms at both the north and south ends. The fieldhouse holding the three indoor courts is part of the same site."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M9",
+        "M2"
+      ]
+    },
+    "hillaire-park": {
+      "slots": {
+        "description": "Three courts on a 4.2-acre park just south of Crossroads, and the only venue in Bellevue where the City splits its own count: \"3 courts (1 dedicated, 2 portable nets)\". So one court here is pickleball and nothing else, and two are portable nets on the park's two tennis courts. The park page words the same arrangement slightly differently — \"three pickleball courts (one dedicated, two overlay)\" — alongside paved trails, a basketball court, a play area, a picnic area and seasonal restrooms. It is a small park doing an unusually specific job.",
+        "getting_there": "15803 NE 6th St, Bellevue, WA 98008, a few blocks south of Crossroads Park and its four outdoor courts, which makes this corner of Bellevue the densest cluster of verified courts in the city. The park's amenity list does not include parking; the City publishes nothing about where to leave a car.",
+        "what_to_expect": "One dedicated court and two shared, which in practice means one court you can rely on and two that depend on whether anyone wants to play tennis. Restrooms are on the park page and described as seasonal, so do not count on them in February. This venue is also a small lesson in why we publish counts from operators rather than from imported data: the row for Hillaire Park in our source dataset said one court. The City says three, and the City is the one that owns the park. The park runs to paved trails, a basketball court, a play area and a tot lot on its 4.2 acres, and sits within a few blocks of Crossroads Park, which has four more courts. If the dedicated court here is taken, that is the shortest walk to an alternative anywhere in Bellevue."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Three — one dedicated pickleball court and two portable-net courts on the park's tennis courts. Both the City's pickleball page and the park's own page state the same split in different words."
+        },
+        {
+          "q": "Why did the count change?",
+          "a": "Because a source overrode an import. The imported row this directory started from recorded one court at Hillaire Park; the City of Bellevue's own pages say three, with the breakdown. Where an operator and an unsourced dataset disagree, the operator wins and the change is recorded in our conflicts report."
+        },
+        {
+          "q": "Are the restrooms open all year?",
+          "a": "The park page calls them \"seasonal restrooms\", which is the City's word rather than ours. It does not publish the season."
+        },
+        {
+          "q": "Is the dedicated court bookable?",
+          "a": "No. No outdoor pickleball court anywhere in Bellevue can be reserved, and the City publishes no rotation rule for them either. It is first come, and after that it is whatever the people on court are doing."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "Paved trails, two tennis courts, a basketball court, a play area, a tot lot, a picnic area and seasonal restrooms, on 4.2 acres. The City describes the park as \"located just south of Crossroads\", which is the four-court venue in this directory nearest to it."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M10",
+        "M2"
+      ]
+    },
+    "lakemont-community-park": {
+      "slots": {
+        "description": "Four courts overlaid on two tennis courts, in a 16-acre park in the Lakemont neighbourhood in Bellevue's south-east corner. The park page does the arithmetic for you — \"four pickleball courts (overlay on the two tennis courts)\" — which is the clearest statement of the two-for-one geometry that most cities leave you to infer. Around the courts: a play area, two picnic shelters, a basketball court, a skate bowl, restrooms, a softball field, and more than three miles of trails that connect through to Lewis Creek Park, whose two courts are the next nearest in this directory.",
+        "getting_there": "5170 Village Park Drive SE, Bellevue, WA 98006. Parking is listed among the park's amenities. The park sits above the Lewis Creek valley, and the City warns that portions of the trail down are steep or use stairs — relevant if you were thinking of walking between the two venues rather than driving.",
+        "what_to_expect": "Four courts sharing two tennis courts with portable nets, under the City's default of shared use unless marked otherwise. Lakemont is one of the four parks the City pointed tennis players toward when it converted Eastgate to pickleball-only, so demand on those tennis courts may not be going down. Restrooms are listed. Lighting is not verified. This is the largest outdoor count in south-east Bellevue and the natural first stop if you are playing on that side of I-90. The park has a second life as infrastructure, which the City is candid about: \"Lakemont Park's distinguishing feature is a large stormwater management system\" that \"reduces flooding and helps protect Lewis Creek and Lake Sammamish from pollution\". The two picnic shelters behind the courts, near the skate park, can each be rented for up to 25 guests."
+      },
+      "faqs": [
+        {
+          "q": "How can there be four courts on two courts?",
+          "a": "Because pickleball courts are smaller. The park page states it directly — \"four pickleball courts (overlay on the two tennis courts)\" — so the four is a count of pickleball courts marked out, not of separate court structures."
+        },
+        {
+          "q": "Is it busy?",
+          "a": "The City publishes no demand figures. What it does publish is that Lakemont is one of the alternatives it named for tennis players displaced by the Eastgate conversion, which is a reason to expect the tennis courts here to be in demand, and these are the same courts."
+        },
+        {
+          "q": "Can I walk to Lewis Creek Park from here?",
+          "a": "There are trails between the two — the City describes more than three miles of multiple-use trails connecting Lakemont and Lewis Creek — but it also warns that parts are steep or use stairs. It is a walk in the woods, not a shortcut between courts."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Yes. The park's own page lists restrooms among its amenities, along with two picnic shelters that can be rented."
+        },
+        {
+          "q": "Can I book a shelter for a group?",
+          "a": "Yes, though not a court. The City rents two picnic shelters here, each accommodating up to 25 guests, and points to its park rental page for the details. The pickleball courts themselves cannot be reserved — no outdoor court in Bellevue can."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M11",
+        "M5",
+        "M2"
+      ]
+    },
+    "lewis-creek-park": {
+      "slots": {
+        "description": "Two courts, and the only ones in Bellevue that are not sharing with tennis: the City lists them as \"2 courts (basketball court overlay, portable nets)\". That single parenthesis is the most specific thing any operator in this directory has said about what a pickleball court is drawn on top of. Lewis Creek Park itself is the most facility-like of Bellevue's park sites — a ranger station and visitor centre, interpretive exhibits, maps, ranger-led events, hiking trails through the creek valley, a baseball field and restrooms — and the pickleball is a small part of a park people visit for other reasons.",
+        "getting_there": "5808 Lakemont Blvd SE, Bellevue, WA 98006, below and west of Lakemont Community Park, to which it is connected by trail. Parking is listed among the amenities, and this is one of the few Bellevue park pages that also lists an information kiosk and a visitor centre, so the site is set up for people arriving who have not been before.",
+        "what_to_expect": "Two courts marked on a basketball court, with portable nets — so the surface is a basketball surface, the lines are shared with basketball lines, and whether the court is free depends on a different sport than at every other Bellevue venue. The park's own page does not mention pickleball at all; the count comes from the City's pickleball page. Restrooms are listed. Lighting is not verified. Come for the park, and treat the pickleball as a bonus rather than a plan. The rest of the site is a genuine destination: the City lists a ranger station and visitor centre, ranger-led events, interpretive exhibits, maps and an informational kiosk, wildlife viewing, a scenic viewpoint, self-guided and hiking trails, a baseball field and picnic shelters. Two pickleball courts on a basketball court is a small part of what this park is for."
+      },
+      "faqs": [
+        {
+          "q": "What are the courts drawn on?",
+          "a": "A basketball court. The City marks this venue \"2 courts (basketball court overlay, portable nets)\", the only basketball overlay on its list — every other shared court in Bellevue shares with tennis."
+        },
+        {
+          "q": "Does the park's own page mention pickleball?",
+          "a": "No. The court count comes from the City's pickleball courts page; the park page lists a basketball court and says nothing about pickleball. Both are City of Bellevue pages, and we have quoted which fact came from which."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "Assume so. \"Portable nets\" tells you the nets are portable and not who brings them, and a basketball court has no net at the right height to borrow."
+        },
+        {
+          "q": "Is there anything else there?",
+          "a": "A good deal: a ranger station and visitor centre, interpretive exhibits, ranger-led events, hiking and self-guided trails, a baseball field, picnic shelters and restrooms. It is a destination park with two pickleball courts in it."
+        },
+        {
+          "q": "Is this a good park to bring people who do not play?",
+          "a": "Probably the best of the twelve for that. The City lists a ranger station and visitor centre, ranger-led events, wildlife viewing, a scenic viewpoint, interpretive exhibits and trails through the Lewis Creek valley, with restrooms and parking on site."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M12",
+        "M2"
+      ]
+    },
+    "norwood-village-neighborhood-park": {
+      "slots": {
+        "description": "Two courts played over the tennis nets on a 1.65-acre neighbourhood park — the smallest park in Bellevue's verified set, and one of only two venues in the city where the City marks the courts \"over tennis net\" rather than giving them portable nets. The park page describes it as having \"2 tennis courts with pickleball overlay, playground, picnic area, and a basketball/multi-purpose sport court\", which corroborates the count from the other direction. As with Cherry Crest, the arrangement means the tennis net's height is the net's height, and a tennis match is a pickleball closure.",
+        "getting_there": "12309 SE 23rd Place, Bellevue, WA 98005, in the Norwood Village neighbourhood south of I-90 and west of Eastgate. Parking is not among the amenities on the park's page and the City publishes nothing about it — this is a residential pocket park, so plan on the street.",
+        "what_to_expect": "Two courts, no nets to set up, no booking, and no lighting verified. On a park of under two acres there is nowhere to wait but the side of the court, so this is a venue for a pair or two rather than a group. The City names it \"Norwood Village Park\" on its pickleball list and \"Norwood Village Neighborhood Park\" on the park's own page; we publish the longer name because it is the one in the park's own record, and both are the City's. Besides the two tennis courts carrying the pickleball lines, the park page lists a playground, a picnic area and a \"basketball/multi-purpose sport court\" — the whole of a 1.65-acre site. There is no parking amenity listed and no restroom, which on a park this size is what you would expect, though the City has not said so and neither will we."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, played over the tennis nets on the park's two tennis courts. The City states \"2 courts (over tennis net)\" and the park page states \"2 tennis courts with pickleball overlay\"."
+        },
+        {
+          "q": "Which name is right?",
+          "a": "Both are the City's. The pickleball page says \"Norwood Village Park\"; the park's own page says \"Norwood Village Neighborhood Park\" and prints that name in its contact block, so that is what we publish."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not verified. The park page lists a playground, picnic area and a basketball/multi-purpose sport court, and does not list restrooms — which means the City has not said, not that there are none."
+        },
+        {
+          "q": "Is it worth the trip?",
+          "a": "If you live nearby, yes. If you are driving across Bellevue, the four-court venues at Crossroads, Eastgate and Lakemont give a group somewhere to rotate, and this one does not."
+        },
+        {
+          "q": "How big is the park?",
+          "a": "1.65 acres, which makes it the smallest park in Bellevue's verified set — smaller than Cherry Crest Mini Park, despite the name. It holds two tennis courts with the pickleball overlay, a playground, a picnic area and a basketball/multi-purpose sport court."
+        },
+        {
+          "q": "Do the courts share with anything besides tennis?",
+          "a": "No. The two pickleball courts here are lines on the park's two tennis courts and nothing else, and you play over the tennis net. The separate basketball/multi-purpose sport court on the same site carries no pickleball markings the City mentions, which is worth knowing because Lewis Creek Park, on the other side of Bellevue, is exactly the opposite arrangement."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M13",
+        "M2"
+      ]
+    },
+    "spiritridge-park": {
+      "slots": {
+        "description": "Two courts with portable nets on shared tennis courts, in the Spiritridge neighbourhood of south Bellevue. This is the thinnest record of the twelve: the City states the count on its pickleball page, the park's own page gives the address and says nothing about pickleball at all, and nothing else about the venue is published anywhere we can read. What is on the record elsewhere is that Spiritridge is one of the four parks the City named as a tennis alternative when it converted Eastgate Park to pickleball-only in September 2026 — so its tennis courts are being pointed at, and its tennis courts are its pickleball courts.",
+        "getting_there": "16100 SE 33rd Place, Bellevue, WA 98008, which the Census geocoder matched to Bellevue city, King County. The park page lists no parking amenity and the City publishes no guidance, so treat it as a residential street park.",
+        "what_to_expect": "Two courts under the City's stated default: shared use with tennis, portable nets, first come. No restrooms are listed, no lighting is verified, and no surface is stated. The one thing this venue's record does tell you clearly is what it shares with — and after the Eastgate conversion, the City has actively directed tennis players here. That is the most useful thing anyone can honestly say about turning up on a weekend. It is worth being explicit about what a thin record means here, because a directory that hides it is more useful-looking and less useful. We can tell you the count, the address, the county and the postcode, all from City pages, and that the courts are shared with tennis and played with portable nets. We cannot tell you the park's size, its amenities, whether there is a restroom, or what the surface is, because the City's page for this park says none of it."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Two, with portable nets, on the park's shared tennis courts: \"Spiritridge Park: 2 courts (portable nets)\" on the City's pickleball page."
+        },
+        {
+          "q": "Why is so little published about this venue?",
+          "a": "Because the park's own page does not mention pickleball. It gives the address and the neighbourhood and nothing else relevant, so everything else here would be a guess. Six of Bellevue's nine outdoor venues are corroborated on their own park pages; this is one of the three that are not."
+        },
+        {
+          "q": "Will it be busy with tennis?",
+          "a": "Possibly more than it was. When the City converted Eastgate Park's dual-use courts to pickleball-only on 1 September 2026, it named Spiritridge among the nearby parks that \"continue to offer public tennis courts\". These are the same courts pickleball shares."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "Assume so. \"Portable nets\" describes the net, not who carries it, and nothing on either City page says the park supplies one."
+        },
+        {
+          "q": "Are there restrooms or parking?",
+          "a": "Not verified. Spiritridge Park's page gives the address and little else, and lists no amenities we can publish. That is a gap in the City's record rather than a statement that the park lacks them."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M14",
+        "M5",
+        "M2"
+      ]
+    },
+    "crossroads-community-center": {
+      "slots": {
+        "description": "Three indoor courts in a full-service community centre inside Crossroads Park, running as drop-in sessions alongside table tennis, basketball, volleyball and — the City's list, not ours — indoor kite flying. The centre's programme page states the rule that matters more than any schedule: \"No registration required: first-come, first-served. Space is limited.\" It is one of four indoor pickleball venues in Bellevue, in a city whose neighbour Seattle has, on the records we have verified, no indoor pickleball at all.",
+        "getting_there": "16000 NE 10th St, Bellevue, WA 98008. This is inside Crossroads Park, whose own four outdoor pickleball courts are published under a different address, 999 164th Ave NE — the same park, two City addresses, two venues in this directory. If you are meeting someone for a game, say which one you mean.",
+        "what_to_expect": "Three courts, no booking, and a capacity you cannot see from outside: \"Space is limited\" is the City's phrase and it does not publish a number. What it also does not publish is the price. The pickleball page says \"Pickleball schedules and fees can be viewed on our registration site, or on a community center's drop-in schedule\", and the drop-in schedule it links for this centre is a PDF dated 2023. If cost matters to your plans, ring ahead; if the outdoor courts in the same park are free and open, they are in the same park. The pickleball shares a gym with the rest of a busy drop-in programme — the City's own list runs to \"table tennis, pickleball, basketball, volleyball, or indoor kite flying\" — so the schedule is what decides whether the courts exist on the day you turn up. That is the real difference between an indoor venue and an outdoor one here: outdoors the courts are always there and possibly occupied, indoors they are only there during the session."
+      },
+      "faqs": [
+        {
+          "q": "How many courts are there?",
+          "a": "Three indoor, listed under the Indoor heading of the City's pickleball page as \"Crossroads Community Center: 3 courts\"."
+        },
+        {
+          "q": "Do I need to register?",
+          "a": "No. The centre's programme page says of its drop-in activities: \"No registration required: first-come, first-served. Space is limited.\" There is no booking system for pickleball at any Bellevue venue, indoor or outdoor."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "Not verified. The City states no price for pickleball here, pointing instead at its registration site and at a drop-in schedule PDF dated 2023. The only Bellevue venue that publishes a price is South Bellevue Community Center, at $4 for residents and $5 for non-residents."
+        },
+        {
+          "q": "Is this the same as Crossroads Park?",
+          "a": "Same park, different address, different entry. The centre is at 16000 NE 10th St with three indoor courts; the park's four outdoor courts are at 999 164th Ave NE. The park's own page confirms it is home to the community centre."
+        },
+        {
+          "q": "What else runs at the centre?",
+          "a": "The City calls it a full-service community centre and lists drop-in table tennis, basketball, volleyball and indoor kite flying alongside the pickleball, plus registered classes. The gym is shared, so the pickleball courts exist during scheduled sessions rather than all day."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M15",
+        "M4",
+        "M2"
+      ]
+    },
+    "north-bellevue-community-center": {
+      "slots": {
+        "description": "Two indoor courts, and the only venue on Bellevue's entire pickleball list that comes with a warning attached to the count: \"2 courts (with low ceiling)\". The centre is Bellevue's hub for older adults — health and wellness, cultural and performing arts, human services, community dining and trips — and it also runs drop-in sports and fitness for adults 18 and up, which is where the pickleball sits. It is the smallest indoor count in the city and, thanks to that parenthesis, the one whose limitation is on the public record rather than discovered on arrival.",
+        "getting_there": "4063 148th Ave NE, Bellevue, WA 98007, in the north-east of the city. Worth noting for anyone checking against other directories: the imported record this project started from had this centre's address ending in Redmond. The City's own page places it in Bellevue, and the Census geocoder matched it to Bellevue city, King County — which is the sort of thing an operator source is for.",
+        "what_to_expect": "Two courts, indoors, on a published drop-in schedule, in a room the City itself describes as having a low ceiling. Lobs are the obvious casualty. The City publishes no price for pickleball here and the drop-in schedule it links is a PDF dated 2024, so treat both the timetable and the cost as things to confirm before you drive. If a low ceiling is a problem, South Bellevue's six courts are the alternative on the other side of the city. The centre's main business is older adults — health and wellness, cultural and performing arts, human services, community dining and trips — and the City also describes partnerships with community organisations including IACS and CISC serving Bellevue's multi-generational and multilingual families. Pickleball sits inside a drop-in sports and fitness programme for adults 18 and up, on evenings and weekends as well as during the day."
+      },
+      "faqs": [
+        {
+          "q": "What does \"low ceiling\" mean in practice?",
+          "a": "The City does not say how low. What it does say is that this is the one venue on its list where the room, rather than the court, needs a caveat — so treat overhead shots as unreliable and expect a flatter game."
+        },
+        {
+          "q": "How many courts are there?",
+          "a": "Two, indoor. It is the smallest indoor count of Bellevue's four indoor venues, against three at Crossroads, three at the Hidden Valley Fieldhouse and six at South Bellevue."
+        },
+        {
+          "q": "Is this centre only for older adults?",
+          "a": "No. The City describes a comprehensive programme of senior services and also states that the centre \"offers a variety of drop-in sports & fitness activities for adults 18 and up\", with services for youth and adults of all ages on evenings and weekends."
+        },
+        {
+          "q": "Is it in Bellevue or Redmond?",
+          "a": "Bellevue. The address is 4063 148th Ave NE, Bellevue, WA 98007 on the City's own page, and the Census geocoder places it in the incorporated place \"Bellevue city\". An imported record we started from had it in Redmond; that record was wrong and has been overwritten."
+        },
+        {
+          "q": "When can adults play here?",
+          "a": "The City states that the centre \"offers a variety of drop-in sports & fitness activities for adults 18 and up\" and that services for youth and adults of all ages run on evenings and weekends. The specific pickleball times are on a drop-in schedule PDF the City dates to 2024, so confirm before travelling."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M16",
+        "M2"
+      ]
+    },
+    "south-bellevue-community-center": {
+      "slots": {
+        "description": "Six indoor courts, the largest single count anywhere in Bellevue, and the only venue in the city that publishes what it costs to play. Adult drop-in sessions are $4 for Bellevue residents and $5 for everyone else; family sessions are free, with the condition that an adult and a child under 18 from the same household must be on court together. It is also the only Bellevue venue that says who supplies the equipment: \"We provide pickleball balls, nets, and poles. Participants should plan to bring their own paddles, but a few extras are available to borrow if needed.\"",
+        "getting_there": "14509 SE Newport Way, Bellevue, WA 98006, in Eastgate. Nine street numbers away, at 14500 SE Newport Way, is Eastgate Park and its four dedicated outdoor courts — the only address pair in this directory putting a city's largest indoor venue and its only pickleball-only outdoor courts on one road. If the weather turns while you are at one, the other is close by, though the City publishes no parking guidance for either.",
+        "what_to_expect": "Turn up with a paddle, check in at the front desk, and pay at the door. The centre is emphatic that nothing can be held: \"All Drop-In Sports times are strictly drop-in only\", and \"reservations, saving spots and/or signing in for another participant is not allowed\". Capacity varies by session and by how much of the gym is available that day, which the City says is published on the schedule rather than on the page. Coaching is not permitted at drop-in sessions — the centre gives its reason, that it is a publicly owned facility — and pickleball clinics and classes are separate, registered and priced by session. The gym is shared with badminton, basketball and volleyball drop-ins, and the centre also runs a fitness centre, an indoor climbing wall, a preschool and rentals, so how many of the six courts are up depends on the session: \"Each program has a different maximum capacity depending on the time/day and how much space there is available in the gym(s) that day.\" If you play often, the City mentions play passes — \"Play passes are now available for purchase\" — with details at the front desk rather than on the page."
+      },
+      "faqs": [
+        {
+          "q": "What does it cost?",
+          "a": "$4 for Bellevue residents and $5 for non-residents, per adult drop-in session, under the centre's \"Pricing Information\" heading. Family drop-in sports are free, but a family session requires an adult and a child under 18 from the same household playing together — it is not a route for two adults."
+        },
+        {
+          "q": "Do I need to bring a net or a paddle?",
+          "a": "A paddle, ideally. The centre provides pickleball balls, nets and poles, and keeps a limited supply of paddles to lend at no cost. It is the only venue in Bellevue that states any of this."
+        },
+        {
+          "q": "Can I book a court?",
+          "a": "No. \"All Drop-In Sports times are strictly drop-in only\", and saving spots or signing in for someone else is specifically not allowed. Check in at the front desk before you play."
+        },
+        {
+          "q": "Can I bring a coach?",
+          "a": "Not to a drop-in session. The centre states that as a publicly owned facility it \"cannot allow coaching of any kind at any of the Adult and/or Family Drop-In Sports Programs\". Clinics and classes are the route for that, and they require registration."
+        },
+        {
+          "q": "Will all six courts be up?",
+          "a": "Not necessarily. The City says capacity varies \"depending on the time/day and how much space there is available in the gym(s) that day\", and the same gym hosts badminton, basketball and volleyball drop-ins. Six is the count of courts the space can hold, not a promise about a given session."
+        }
+      ],
+      "sources": [
+        "M1",
+        "M17",
+        "M3",
+        "M2"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "M1",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "The City's pickleball courts page, which states a court count for every venue above and the city-wide default \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\" Snapshot: data/sources/bellevue/pickleball.html"
+    },
+    {
+      "id": "M2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Every address above was matched by the Census address geocoder and placed in the incorporated place \"Bellevue city\", King County, WA, with the postal code the geocoder returned. Snapshot: data/sources/bellevue-county-census.json"
+    },
+    {
+      "id": "M3",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/sbcc/drop-sports",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "South Bellevue Community Center drop-in sports: \"All Adult Drop-In Sports / Bellevue Residents- $4 / Non-Residents- $5 / All Family Sports-FREE\"; \"We provide pickleball balls, nets, and poles.\"; \"All Drop-In Sports times are strictly drop-in only.\"; the front-desk check-in and the no-coaching rule. Snapshot: data/sources/bellevue/sbcc-drop-in-sports.html"
+    },
+    {
+      "id": "M4",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads/crossroads-community-center-programs",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "Crossroads Community Center programmes: \"Join us for table tennis, pickleball, basketball, volleyball, or indoor kite flying!\" and \"No registration required: first-come, first-served. Space is limited.\" Snapshot: data/sources/bellevue/ccc-programs.html"
+    },
+    {
+      "id": "M5",
+      "url": "https://bellevuewa.gov/city-news/eastgate-park-pickleball",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "City news item of 28 August 2026 announcing the Eastgate Park conversion from 1 September, the removal of the tennis nets, the planned resurfacing with pickleball lines only, the Silver Leaf/Lakemont/Spiritridge/Sunset tennis alternatives, and that no other dual-use court conversions are planned. Snapshot: data/sources/bellevue/eastgate-conversion-news.html"
+    },
+    {
+      "id": "M6",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/cherry-crest-mini-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"2532 127th Ave NE\"; \"This 5-acre park also features a basketball court and a tennis court with a pickleball overlay.\" Snapshot: data/sources/bellevue/cherry-crest-mini-park.html"
+    },
+    {
+      "id": "M7",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/crossroads-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"999 164th Ave NE\"; the 34+ acre description, the community centre, water spray playground, par-3 golf course and Bellevue Youth Theatre; \"one of the most culturally diverse neighborhoods in Bellevue\"; Pickleball, Parking and Restrooms among its amenities. Snapshot: data/sources/bellevue/crossroads-park.html"
+    },
+    {
+      "id": "M8",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/eastgate-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"14500 SE Newport Way\"; \"this park's recreational features include a ballfield, four dedicated pickleball courts, picnic tables, play area and nature trails.\" Snapshot: data/sources/bellevue/eastgate-park.html"
+    },
+    {
+      "id": "M9",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hidden-valley-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"1903 112th Ave NE\"; \"This 17.31 acre park features three softball fields, play and picnic areas, a lighted tennis court, a sports court, and restrooms at the north and south end of the park.\"; Pickleball and Parking among its amenities. Snapshot: data/sources/bellevue/hidden-valley-park.html"
+    },
+    {
+      "id": "M10",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/hillaire-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"15803 NE 6th St\"; \"Hillaire Park, located just south of Crossroads, is 4.2 acres and includes paved trails, two tennis courts, a basketball court, three pickleball courts (one dedicated, two overlay), a play area, a picnic area and seasonal restrooms.\" Snapshot: data/sources/bellevue/hillaire-park.html"
+    },
+    {
+      "id": "M11",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lakemont-community-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"5170 Village Park Drive SE\"; \"Lakemont Community Park is 16 acres and features a play area, two picnic shelters, a basketball court, two tennis courts, four pickleball courts (overlay on the two tennis courts), a skate bowl, trails, restrooms, and a softball field.\"; the trail connection to Lewis Creek Park and the warning that portions are steep or use stairs. Snapshot: data/sources/bellevue/lakemont-community-park.html"
+    },
+    {
+      "id": "M12",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/lewis-creek-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"5808 Lakemont Blvd SE\"; the amenity list carrying a ranger station and visitor centre, interpretive exhibits, maps, ranger-led events, hiking and self-guided trails, a baseball field, a basketball court, picnic shelters, parking and restrooms — and no mention of pickleball anywhere on the page. Snapshot: data/sources/bellevue/lewis-creek-park.html"
+    },
+    {
+      "id": "M13",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/norwood-village-neighborhood-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"12309 SE 23rd Place\"; \"Norwood Village Neighborhood Park is 1.65 acres large and has 2 tennis courts with pickleball overlay, playground, picnic area, and a basketball/multi-purpose sport court.\" Snapshot: data/sources/bellevue/norwood-village-neighborhood-park.html"
+    },
+    {
+      "id": "M14",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/parks-and-trails/parks/spiritridge-park",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"16100 SE 33rd Place\" in the park's contact block, on a page that does not mention pickleball anywhere. Snapshot: data/sources/bellevue/spiritridge-park.html"
+    },
+    {
+      "id": "M15",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/crossroads-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"16000 NE 10th St\", Bellevue, WA 98008, in the centre's contact block. Snapshot: data/sources/bellevue/crossroads-community-center.html"
+    },
+    {
+      "id": "M16",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/north-bellevue-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"4063 148th Ave NE\", \"Bellevue, WA 98007\"; the senior services description and \"North Bellevue Community Center offers a variety of drop-in sports & fitness activities for adults 18 and up.\" Snapshot: data/sources/bellevue/north-bellevue-community-center.html"
+    },
+    {
+      "id": "M17",
+      "url": "https://bellevuewa.gov/city-government/departments/parks/community-centers/south-bellevue-community-center",
+      "publisher": "City of Bellevue Parks & Community Services",
+      "tier": 1,
+      "retrieved": "2026-09-04",
+      "evidence": "\"14509 SE Newport Way\", Bellevue, WA 98006, in the centre's contact block. Snapshot: data/sources/bellevue/south-bellevue-community-center.html"
+    }
+  ]
+}
