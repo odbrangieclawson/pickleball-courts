@@ -183,11 +183,12 @@ main { display: block; }
 */
 .page { padding: 40px 0 24px; }
 /* The measure applies to PROSE lists, not to layout lists. .cards, .filters,
-   .results and .quicklinks are grids and rows; capping them at reading width
-   is what was holding the venue grid to two columns. */
+   .results, .quicklinks and .states are grids and rows; capping them at
+   reading width is what was holding the venue grid to two columns, and it
+   held the state grid to two the same way until .states was added here. */
 .page > h1, .page > h2, .page > h3,
 .page > p, .page > ol,
-.page > ul:not(.cards):not(.filters):not(.results):not(.quicklinks),
+.page > ul:not(.cards):not(.filters):not(.results):not(.quicklinks):not(.states),
 .page > section > p, .page > section > h2, .page > section > h3,
 .page > .note { max-width: var(--measure); }
 .page > .lede { max-width: 60ch; }
@@ -1377,6 +1378,121 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
   .card { box-shadow: 0 1px 0 var(--rule-2); }
   .card:hover { box-shadow: 0 1px 0 var(--rule-2), inset 3px 0 0 var(--accent); }
   h2 { margin-top: 40px; }
+}
+
+/* ================================================================
+   STATE CARDS ON THE HOME PAGE
+
+   The competitor pattern this follows puts a photograph of a court
+   behind each state name. There are no photographs here, for the
+   reason venue pages give when they say "No photo yet": we have not
+   seen these places. So the mark on each card is the state's postal
+   abbreviation, set large and low-contrast behind the text — a fact
+   rather than a stock image, and it costs no request and no bytes.
+
+   The first card spans two columns where there is room. It is the
+   state we have verified most, and giving it the space says so
+   without any extra words.
+   ================================================================ */
+.states {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  max-width: none;
+  gap: 0;
+  margin: 20px 0 34px;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--rule);
+  overflow: hidden;
+}
+.state-card {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 20px 18px;
+  background: none;
+  box-shadow: 1px 0 0 var(--rule-2), 0 1px 0 var(--rule-2);
+  transition: background .18s ease, box-shadow .18s ease;
+}
+.state-card:first-child { grid-column: span 2; background: var(--paper-2); }
+@media (max-width: 560px) { .state-card:first-child { grid-column: span 1; } }
+.state-card:hover {
+  background: var(--paper-2);
+  box-shadow: 1px 0 0 var(--rule-2), 0 1px 0 var(--rule-2),
+              inset 3px 0 0 var(--accent);
+}
+
+/* The mark. Decorative and aria-hidden; the state name is the real text. */
+.state-mark {
+  position: absolute;
+  right: -6px;
+  bottom: -26px;
+  font-family: var(--serif);
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: var(--ink);
+  opacity: .055;
+  pointer-events: none;
+  user-select: none;
+}
+.state-card:first-child .state-mark { font-size: 138px; bottom: -34px; }
+
+.state-rank {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 1px 7px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.state-card h3 {
+  position: relative;
+  margin: 0 0 4px;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -.008em;
+}
+.state-card h3 a { text-decoration: none; color: var(--ink); }
+.state-card h3 a:hover { color: var(--accent-ink); text-decoration: underline; }
+.state-card .meta {
+  position: relative;
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--ink-2);
+  max-width: none;
+}
+
+/*
+  The cities. On a state with no state page these ARE the navigation,
+  so they are links and not decoration.
+*/
+.state-cities {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 0;
+  max-width: none;
+  font-size: 13px;
+}
+.state-cities-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+}
+.state-cities a { color: var(--accent-ink); text-decoration: none; }
+.state-cities a:hover { text-decoration: underline; }
+
+@media (prefers-color-scheme: dark) {
+  .state-mark { opacity: .085; }
 }
 
 /* Print: this is a reference document, so it should print like one. */

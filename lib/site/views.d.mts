@@ -42,6 +42,28 @@ export type HomeView = {
   filterButtons: {filter: string; label: string; href: string}[]
   jsonLd: string
   cities: CardLink[]
+  statesHeading: string
+  statesNote: string
+  states: StateCard[]
+}
+
+/*
+  A state card on the home page. `href` is null where the state publishes
+  no state page — seven of the nine do not, because STATE_MIN_CITIES is 3 —
+  and the template renders the name as plain text rather than minting a
+  link to a page that was never built.
+*/
+export type StateCard = {
+  key: string
+  mark: string
+  stateName: string
+  rank: string
+  venues: string
+  courts: string
+  meta: string
+  href: string | null
+  cityLabel: string
+  cities: {href: string; label: string}[]
 }
 
 export type StateView = {

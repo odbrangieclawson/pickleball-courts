@@ -138,6 +138,27 @@ export default function Home() {
           ))}
         </ul>
 
+        <h2>{v.statesHeading}</h2>
+        <p className="lede">{v.statesNote}</p>
+        <ul className="states">
+          {v.states.map(s => (
+            <li className="state-card" key={s.key}>
+              <span className="state-rank">{s.rank}</span>
+              <span className="state-mark" aria-hidden="true">{s.mark}</span>
+              <h3>
+                {s.href ? <a href={s.href}>{s.stateName}</a> : s.stateName}
+              </h3>
+              <p className="meta">{s.meta}</p>
+              <p className="state-cities">
+                <span className="state-cities-label">{s.cityLabel}</span>
+                {s.cities.map(c => (
+                  <a href={c.href} key={c.href}>{c.label}</a>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ul>
+
         <h2>What makes this different</h2>
         <p>
           Not one of the large pickleball directories tells you where a court
