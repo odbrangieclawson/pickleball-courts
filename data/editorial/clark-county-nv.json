@@ -1,0 +1,94 @@
+{
+  "county": "Clark",
+  "state": "NV",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a park has, when the gates open - come from the City of Las Vegas's own pages and are cited. Claims about our own coverage are facts about this dataset rather than about Clark County, and are worded so a reader cannot mistake one for the other. This is the first county in Nevada this directory has published in, and one city of it is on this page.",
+  "slots": {
+    "coverage": "One city in Clark County is published here: Las Vegas, with five venues and nineteen courts verified against the City's own pages. Nothing else in the county has been read. Henderson's parks site answers this site's fetcher with a 403 and has not been read; North Las Vegas has not been read; Clark County's own parks department has not been read. None of the three appears on any page here, and this page does not characterise what any of them has; the only honest thing to say about a page that has not been loaded is that it has not been loaded. What is published is five City of Las Vegas parks whose court counts, addresses and park hours the City states and this site has read: Durango Hills with seven courts, Aloha Shores and Lorenzi with four each, Centennial Hills and Patriot with two each. Three venues inside Las Vegas itself are absent and named on the city page rather than dropped, and between them they hold sixteen courts. Police Memorial Park has eight, the largest count in the city, stated twice by the City, at an address neither address resolver can find. Bill Briare Family Park has four, stated twice, at an address neither resolver finds either. Justice Myron Leavitt & Jaycee Community Park has four on the City's post and no address on its own page. Each is one missing fact away from being here.",
+    "distribution": "What is verified in this county is concentrated in one city and, within it, spread across five parks rather than gathered into a complex. Durango Hills Park is the largest with seven courts at a park built around an 18-hole executive golf course; Aloha Shores and Lorenzi hold four each; Centennial Hills, a 120-acre regional park, and Patriot hold two each. Nothing here is a destination facility, and that is partly a fact about what publishes: the largest count the City states, Police Memorial's eight, is absent for want of an address that resolves. The useful pattern in the published five is not lighting or price, because the City states neither, but how each count is held. Three venues - Aloha Shores, Centennial Hills and Durango Hills - are counted on two City records that agree, a parenthesis in the park page's amenity list and a line in the City's pickleball post of 11 March 2026. Two - Lorenzi and Patriot - are counted on the post alone, and their park pages do not mention pickleball; they publish under the rule that the record stating a number publishes, and each venue page says so. Thirteen of the nineteen courts are therefore stated twice and six once. What the City does state at every venue is park hours, 7 a.m. to 11 p.m., which many operators here do not, so the window is known even where the lighting inside it is not. Whether any of the nineteen is lit, dedicated, indoor or outdoor, or free is not stated anywhere.",
+    "gaps": "The honest position is that this is a Las Vegas page wearing the heading of a county, and the gap will not close by accident. Henderson is the obvious next city, and its parks site refuses this site's fetcher with a 403, which is a fact about one day and one request rather than about Henderson's courts; it has not been read. North Las Vegas has not been read. Clark County's own parks have not been read. The threshold has not moved - three venues with a named source and a date - and none of those three operators has been given the chance to clear it yet. What this county does supply is a clear example of the difference between a court existing and a court being publishable. The City of Las Vegas counts thirty-five courts at eight parks on one post, and nineteen of them are here. The missing sixteen fail on boring facts - two addresses that no resolver finds, one address the City never prints - and none of them is about the courts being real; the City states each count plainly, twice in two cases. The second gap is inside the published five. Lighting, price, surface and indoor or outdoor are not stated for any Las Vegas court, so a reader gets a count, an address and a clock and nothing else. Nothing outside a municipal parks department appears on this page. Clubs, commercial venues and homeowners' associations may hold courts in this county; none publishes a source this site has read, so none is listed, and that absence is about who writes things down rather than about where the game is played."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Clark County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 19 courts across five venues, all in the City of Las Vegas, each with a source and a date you can see. The City alone counts 35 at eight parks, and 16 of those are at addresses this site cannot resolve or the City does not print."
+    },
+    {
+      "q": "Why is only Las Vegas listed?",
+      "a": "Because it is the only operator in the county whose courts have been checked against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Henderson's parks site refuses this site's fetcher with a 403, and North Las Vegas and Clark County's own parks have not been read."
+    },
+    {
+      "q": "Which venues here have lights?",
+      "a": "None that the operator states. The City of Las Vegas says nothing about lighting at any pickleball court on any park page or on its pickleball post, so all 19 courts are recorded as unknown. Park hours of 7 a.m. to 11 p.m. are a fact about the gate, not the lamps, and daylight is the safe plan."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Not stated. The City publishes no price for any court either way. \"Drop in for a pop-up game\" on its post is a play format rather than a fee, and this site does not call a venue free unless the operator writes it down, so no Las Vegas venue is called free."
+    },
+    {
+      "q": "What is Police Memorial Park, and why is it not listed?",
+      "a": "A City of Las Vegas park with \"Pickleball courts (8)\" in its amenity list and \"Eight at Police Memorial Park\" on the City's post - the largest count in the city - with restrooms, two tennis courts, a dog park and a skate bowl. Its address, \"3250 Metro Academy Way\", is found by neither the US Census address file nor OpenStreetMap, and it fails on that alone."
+    },
+    {
+      "q": "Why do two venues rest on one record?",
+      "a": "Lorenzi Park and Patriot Community Park are counted on the City's pickleball post and not on their own park pages, which list tennis, basketball and other amenities without pickleball. The record that states a number publishes; each venue page says it rests on one record; and the build asserts on every run that the park page still says nothing."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "These pages were read on 7 September 2026, and every quoted sentence is snapshotted into the repository that builds this site and re-asserted on every build. If the City changes a count, adds a pickleball line to Lorenzi's or Patriot's page, or prints an address for Justice Myron Leavitt & Jaycee Community Park, the build fails and someone reads the page again."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://www.lasvegasnevada.gov/News/Blog/Detail/play-pickleball-in-las-vegas",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's blog post \"Play Pickleball in Las Vegas\", dated March 11, 2026. \"Drop in for a pop-up game or sign up to be a part of a league and play in matches.\" Under \"Where you can play\": \"The city's current pickleball court locations include: Two at Centennial Hills Park, Seven at Durango Hills Park, Eight at Police Memorial Park, Four at Bill Briare Park, Four at Lorenzi Park, Two at Patriot Park, Four at Justice Myron Leavitt & Jaycee Community Park, Four at Aloha Shores Park.\" Thirty-five courts at eight parks. Snapshot: data/sources/las-vegas/play-pickleball-in-las-vegas.html",
+      "not_stated": "Any address, any hours, any lighting, any price, any surface, whether any court is indoor or outdoor, and anything about any other operator in Clark County."
+    },
+    {
+      "id": "L2",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Durango-Hills-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["distribution"],
+      "evidence": "Durango Hills Park's page, the largest published venue in the county. Header: \"3521 N. Durango Dr, 89129\" and \"7 a.m. - 11 p.m.\". \"This park features the 18-hole executive golf course Durango Hills Golf Club.\" Amenities: \"Basketball courts\", \"Skate park\", \"Walking/jogging track\", \"Pickleball courts (7)\", \"Picnic area\", \"Playground\", \"Open space\". Snapshot: data/sources/las-vegas/durango-hills-park.html",
+      "not_stated": "Parking, restrooms, lighting, price, surface, and whether the courts are indoor or outdoor."
+    },
+    {
+      "id": "L3",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Lorenzi-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["distribution"],
+      "evidence": "Lorenzi Park's page, which does not mention pickleball. Header: \"3333 W. Washington Ave., 89107\" and \"7 a.m. - 11 p.m.\". Amenities: \"Children's play areas with water play feature\", \"Picnic and shade structures\", \"Tennis courts, managed by No Quit Tennis Academy\", \"Soccer and softball fields, which are reservable\", \"Basketball courts\", \"Band shell\", \"Spring-fed fishing pond\", \"Sammy Davis Jr. Festival Plaza\", \"Reservable picnic area\". The four-court count comes from the City's post alone. Snapshot: data/sources/las-vegas/lorenzi-park.html",
+      "not_stated": "Pickleball in any form, parking, restrooms, lighting, price and surface."
+    },
+    {
+      "id": "L4",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Police-Memorial-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Police Memorial Park's page, a venue not published here. Header: \"3250 Metro Academy Way, 89129\" and \"7 a.m. to 11 p.m.\". Amenities: \"Playgrounds\", \"Dog park with three dog runs (closed Wednesdays 11 a.m.-3 p.m. for maintenance)\", \"Basketball court\", \"Reservable picnic area\", \"Jogging/walking path\", \"Pickleball courts (8)\", \"Tennis courts (2)\", \"Skate bowl\", \"Open space\", \"Canine Memorial\", \"Barbecue grills\", \"Restrooms\". Snapshot: data/sources/las-vegas/police-memorial-park.html",
+      "not_stated": "Parking, lighting, price, surface, and an address that either the US Census address file or OpenStreetMap can find."
+    },
+    {
+      "id": "L5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "All five published addresses matched at house-number level through the US Census address file and were placed in Clark County, NV (FIPS 32003) and the incorporated place \"Las Vegas city\": \"7550 SAUER\", \"7101 N BUFFALO DR\", \"3521 N DURANGO DR\", \"3333 W WASHINGTON AVE\" and \"4050 THOM BLVD\". \"3250 Metro Academy Way\" (Police Memorial Park) and \"650 N. Tenaya Way\" (Bill Briare Family Park), the addresses the City publishes, are found by neither the Census address file nor OpenStreetMap. Snapshot: data/sources/las-vegas-county-census.json",
+      "not_stated": "Anything about the courts themselves, and anything about any address outside the City of Las Vegas."
+    }
+  ]
+}

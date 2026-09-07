@@ -2,6 +2,26 @@
   "note": "Every sentence in data/editorial that makes a directory-wide claim must be registered here. scripts/check-claims.mjs enforces it and, where a metric is named, recomputes the claim from the published data on every build. See the header of that script.",
   "claims": [
     {
+      "file": "albuquerque-nm.json",
+      "contains": "Albuquerque is the first New Mexico city on this site and the first in Bernalillo County.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "albuquerque-nm.json",
+      "contains": "Manzano Mesa Pickleball Complex's thirty-three courts is the largest single-venue count",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 33
+    },
+    {
+      "file": "albuquerque-nm.json",
+      "contains": "Eighty-six is one of the largest court totals on the site, second to Seattle's",
+      "metric": "largest_city_by_courts",
+      "op": "==",
+      "value": "Seattle"
+    },
+    {
       "file": "apex-nc.json",
       "contains": "Apex is the best-documented town in this directory so far: it publishes a court table",
       "metric": null,
@@ -58,13 +78,6 @@
     },
     {
       "file": "austin-tx.json",
-      "contains": "At Brentwood, Rosewood and Springwoods, yes — the City says so in words: \"bring your own",
-      "metric": "cities_with_nets_not_provided",
-      "op": "==",
-      "value": 4
-    },
-    {
-      "file": "austin-tx.json",
       "contains": "Across the whole of this directory only a handful of other venues take bookings, so an",
       "metric": "venues_bookable",
       "op": ">=",
@@ -72,10 +85,10 @@
     },
     {
       "file": "bellevue-wa.json",
-      "contains": "Hidden Valley Park is one of only two venues in this entire directory carrying a non-zero",
+      "contains": "Hidden Valley Park is one of only six venues in this entire directory carrying a non-zero",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 2
+      "value": 6
     },
     {
       "file": "bellevue-wa.json",
@@ -91,6 +104,19 @@
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
+      "file": "bernalillo-county-nm.json",
+      "contains": "Albuquerque is the first New Mexico city on this site and the first in Bernalillo County.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "bernalillo-county-nm.json",
+      "contains": "Manzano Mesa alone holds more than a third of the county's verified courts, and its",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 33
+    },
+    {
       "file": "bexar-county-tx.json",
       "contains": "It is the first city in Bexar County on this site and the second in Texas, after Austin.",
       "metric": null,
@@ -99,9 +125,33 @@
     {
       "file": "bexar-county-tx.json",
       "contains": "Fairchild Park's eighteen lighted outdoor courts are eighteen of the county's forty-three",
-      "metric": "max_venue_courts",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "boulder-co.json",
+      "contains": "Boulder is the first Colorado city on this site.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "boulder-co.json",
+      "contains": "It is one of six cities on this site with a verified free court, and, with Cape Coral,",
+      "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 21
+      "value": 6
+    },
+    {
+      "file": "boulder-co.json",
+      "contains": "It is also one of the few operators on this site that publishes a written drop-in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "boulder-county-co.json",
+      "contains": "This is the first county in Colorado this directory has published in, and one city of it",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "capecoral-fl.json",
@@ -114,7 +164,7 @@
       "contains": "That last part is rarer than it should be: this directory records a price only when an",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 3
+      "value": 6
     },
     {
       "file": "capecoral-fl.json",
@@ -124,10 +174,10 @@
     },
     {
       "file": "capecoral-fl.json",
-      "contains": "Cape Coral is one of only three cities on this site with a verified free court, with",
+      "contains": "Cape Coral is one of only six cities on this site with a verified free court, with",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 3
+      "value": 6
     },
     {
       "file": "capecoral-fl.json",
@@ -162,6 +212,12 @@
     {
       "file": "charlotte-nc.json",
       "contains": "What makes Charlotte distinctive in this directory is not scale but bookkeeping: it is",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "clark-county-nv.json",
+      "contains": "This is the first county in Nevada this directory has published in, and one city of it is",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -259,17 +315,30 @@
     },
     {
       "file": "filters-bellevue-wa.json",
-      "contains": "Bellevue is one of only three cities in this directory where an indoor page is worth its",
+      "contains": "Bellevue is one of only four cities in this directory where an indoor page is worth its",
       "metric": "cities_with_indoor_page",
       "op": "==",
-      "value": 3
+      "value": 4
     },
     {
       "file": "filters-bellevue-wa.json",
-      "contains": "Hidden Valley Park is on both this list and the outdoor one, which only one other venue",
+      "contains": "Hidden Valley Park is on both this list and the outdoor one, which only five other venues",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 2
+      "value": 6
+    },
+    {
+      "file": "filters-boulder-co.json",
+      "contains": "It is one of six cities on this site with a verified free court, and, with Cape Coral,",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 6
+    },
+    {
+      "file": "filters-boulder-co.json",
+      "contains": "Boulder is one of the few operators on this site that publishes a written drop-in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "filters-capecoral-fl.json",
@@ -279,17 +348,16 @@
     },
     {
       "file": "filters-capecoral-fl.json",
-      "contains": "That makes Cape Coral one of only three cities on this whole site with a verified free",
-      "metric": "cities_with_free_venue",
-      "op": "==",
-      "value": 3
+      "contains": "That makes Cape Coral one of only six cities on this whole site with a verified free",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "filters-capecoral-fl.json",
       "contains": "This site does not describe a venue as free unless an operator publishes it, which is why",
       "metric": "cities_with_free_page",
       "op": "==",
-      "value": 3
+      "value": 4
     },
     {
       "file": "filters-capecoral-fl.json",
@@ -341,10 +409,10 @@
     },
     {
       "file": "filters-portland-or.json",
-      "contains": "Six of the seven are free, which few other cities in this directory can say of a single",
+      "contains": "Six of the seven are free, which only a handful of other cities in this directory can say",
       "metric": "cities_with_free_venue",
       "op": "<=",
-      "value": 5
+      "value": 8
     },
     {
       "file": "filters-portland-or.json",
@@ -406,7 +474,7 @@
       "contains": "That single sentence is why this page exists at all, and why Scottsdale is one of only",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 3
+      "value": 6
     },
     {
       "file": "filters-scottsdale-az.json",
@@ -456,6 +524,32 @@
       "metric": "largest_city_by_indoor_venues",
       "op": "==",
       "value": "Tampa"
+    },
+    {
+      "file": "fl-state.json",
+      "contains": "Florida is the third state on this site to have a page of its own; North Carolina and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "fl-state.json",
+      "contains": "Tampa has more published indoor venues than any city on this site, though Bellevue has",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Tampa"
+    },
+    {
+      "file": "fl-state.json",
+      "contains": "The City of Cape Coral lists The Courts with \"32 dedicated pickleball courts and 12",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "fl-state.json",
+      "contains": "Few cities on this site carry a verified free court, six at the time of writing, and two",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 6
     },
     {
       "file": "hillsborough-county-fl.json",
@@ -543,6 +637,12 @@
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
+      "file": "las-vegas-nv.json",
+      "contains": "Las Vegas is the first Nevada city on this site and the first in Clark County.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
       "file": "lee-county-fl.json",
       "contains": "This is the first county in Florida this directory has published in, and one city of it",
       "metric": null,
@@ -556,10 +656,10 @@
     },
     {
       "file": "lee-county-fl.json",
-      "contains": "That makes Cape Coral one of only three cities on this site with a verified free court.",
+      "contains": "That makes Cape Coral one of only six cities on this site with a verified free court.",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 3
+      "value": 6
     },
     {
       "file": "lincoln-ne.json",
@@ -686,24 +786,39 @@
     },
     {
       "file": "mesa-az.json",
-      "contains": "The Mesa Tennis & Pickleball Center holds the largest single-venue pickleball count",
-      "metric": "max_venue_courts",
-      "op": "==",
-      "value": 21
+      "contains": "The Mesa Tennis & Pickleball Center holds one of the largest single-venue pickleball",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "mesa-az.json",
-      "contains": "The Mesa Tennis & Pickleball Center has twenty-one lighted pickleball courts, the largest",
-      "metric": "max_venue_courts",
-      "op": "==",
-      "value": 21
+      "contains": "The Mesa Tennis & Pickleball Center has twenty-one lighted pickleball courts, one of the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "mesa-az.json",
-      "contains": "That is the largest single-venue count anywhere in this directory.",
-      "metric": "max_venue_courts",
-      "op": "==",
-      "value": 21
+      "contains": "That is one of the largest single-venue counts anywhere in this directory.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "naperville-il.json",
+      "contains": "Ranchview Park is one of very few venues on this site with a stated surface, and the only",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "naperville-il.json",
+      "contains": "Naperville is the first city in Illinois on this site and the first whose operator is a",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "naperville-il.json",
+      "contains": "At every published venue it says something about nets - \"participants must provide their",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "nc-state.json",
@@ -749,10 +864,9 @@
     },
     {
       "file": "san-antonio-tx.json",
-      "contains": "Fairchild's eighteen lit outdoor courts are the second-largest single-venue count on this",
-      "metric": "max_venue_courts",
-      "op": "==",
-      "value": 21
+      "contains": "Fairchild's eighteen lit outdoor courts are one of the largest single-venue counts on",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "san-antonio-tx.json",
@@ -786,10 +900,10 @@
     },
     {
       "file": "scottsdale-az.json",
-      "contains": "Across this whole directory only two other cities have a verified free court — Portland",
+      "contains": "Across this whole directory only five other cities have a verified free court, and only",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 3
+      "value": 6
     },
     {
       "file": "scottsdale-az.json",
@@ -801,6 +915,48 @@
     {
       "file": "seattle-wa.json",
       "contains": "Nobody working on this directory has inspected a court surface in Seattle, and Seattle",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "st-george-ut.json",
+      "contains": "A place whose courts have numbers on a timetable is a pickleball facility rather than a",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "st-george-ut.json",
+      "contains": "George is the first Utah city on this site and the first in Washington County, and it",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "st-george-ut.json",
+      "contains": "The City's page is unlike most on this site because it is a programme page rather than an",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "st-george-ut.json",
+      "contains": "Little Valley Pickleball Complex has thirty-three courts, the largest count in Utah on",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "st-george-ut.json",
+      "contains": "The City never uses the word on its pickleball page, and this site publishes lighting",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "tallahassee-fl.json",
+      "contains": "Tallahassee is the third Florida city on this site after Cape Coral and Tampa, the first",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "tallahassee-fl.json",
+      "contains": "It is the first operator on this site to publish a written open-play rotation rule - the",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -840,6 +996,13 @@
       "contains": "Portland's own eleven pickleball venues are a few miles away over the bridge and are",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-albuquerque-nm.json",
+      "contains": "Manzano Mesa Pickleball Complex's thirty-three is the largest single-venue count on this",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 33
     },
     {
       "file": "venues-apex-nc.json",
@@ -907,7 +1070,7 @@
       "contains": "The City's entry says \"bring your own portable net\" — one of only three Austin venues,",
       "metric": "venues_nets_not_provided",
       "op": "==",
-      "value": 10
+      "value": 12
     },
     {
       "file": "venues-austin-tx.json",
@@ -941,31 +1104,24 @@
     },
     {
       "file": "venues-austin-tx.json",
-      "contains": "The City's entry says \"Nets not included.\" Austin is one of four cities in this directory",
-      "metric": "cities_with_nets_not_provided",
-      "op": "==",
-      "value": 4
-    },
-    {
-      "file": "venues-austin-tx.json",
       "contains": "Two pickleball courts striped onto one multi-purpose outdoor court at the far north-west",
       "metric": "venues_nets_not_provided",
       "op": "==",
-      "value": 10
+      "value": 12
     },
     {
       "file": "venues-bellevue-wa.json",
-      "contains": "One of only two venues in this entire directory with a court count above zero on both",
+      "contains": "One of only six venues in this entire directory with a court count above zero on both",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 2
+      "value": 6
     },
     {
       "file": "venues-bellevue-wa.json",
-      "contains": "That makes it one of only two venues anywhere in this directory offering both, which is a",
+      "contains": "That makes it one of only six venues anywhere in this directory offering both, which is a",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 2
+      "value": 6
     },
     {
       "file": "venues-bellevue-wa.json",
@@ -1103,10 +1259,10 @@
     },
     {
       "file": "venues-madison-wi.json",
-      "contains": "Across this whole directory only two other places manage that — Bellevue's Hidden Valley",
+      "contains": "Across this whole directory only five other places manage that, and at each of them the",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 2
+      "value": 6
     },
     {
       "file": "venues-madison-wi.json",
@@ -1134,10 +1290,9 @@
     },
     {
       "file": "venues-mesa-az.json",
-      "contains": "Twenty-one lighted pickleball courts, which is the largest count at any single venue in",
-      "metric": "max_venue_courts",
-      "op": "==",
-      "value": 21
+      "contains": "Twenty-one lighted pickleball courts, which is one of the largest counts at any single",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "venues-mesa-az.json",
@@ -1154,6 +1309,12 @@
     {
       "file": "venues-mesa-az.json",
       "contains": "It also never says they are free, so this site does not describe them as free - only as",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-naperville-il.json",
+      "contains": "These tennis courts have a history of traditional tennis court color coatings failing",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1250,9 +1411,8 @@
     {
       "file": "venues-san-antonio-tx.json",
       "contains": "Eighteen lighted outdoor pickleball courts on the east side of San Antonio, stated in one",
-      "metric": "max_venue_courts",
-      "op": "==",
-      "value": 21
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "venues-scottsdale-az.json",
@@ -1330,6 +1490,19 @@
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
+      "file": "venues-st-george-ut.json",
+      "contains": "Thirty-three pickleball courts at the City's Little Valley complex, tied for the largest",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 33
+    },
+    {
+      "file": "venues-st-george-ut.json",
+      "contains": "on winter evenings but never uses the word lights, and this site records lighting only",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
       "file": "venues-vancouver-wa.json",
       "contains": "And then the sentence that makes this venue unusual in this entire directory — \"The",
       "metric": null,
@@ -1349,10 +1522,10 @@
     },
     {
       "file": "wa-state.json",
-      "contains": "Hidden Valley Park in Bellevue is one of only two venues anywhere in this directory with",
+      "contains": "Hidden Valley Park in Bellevue is one of only six venues anywhere in this directory with",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 2
+      "value": 6
     },
     {
       "file": "wake-county-nc.json",
@@ -1371,6 +1544,25 @@
       "contains": "Brown Community Center in Apex has four indoor courts, the first verified indoor",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "washington-county-ut.json",
+      "contains": "This is the first county in Utah this directory has published in, and one city of it is",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "washington-county-ut.json",
+      "contains": "George is the first Utah city on this site, and Little Valley's thirty-three ties",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "washington-county-ut.json",
+      "contains": "It ties Albuquerque's Manzano Mesa Pickleball Complex as the largest single venue on this",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 33
     }
   ]
 }

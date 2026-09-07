@@ -90,6 +90,7 @@ const METRICS = {
     cities.filter(c => 'indoor' in qualifyingFilters(c.venues)).length,
   cities_with_free_page: () =>
     cities.filter(c => 'free' in qualifyingFilters(c.venues)).length,
+  cities_all_venues_free: () => cities.filter(c => c.venues.every(v => v.fee_type === 'free')).length,
   cities_with_free_venue: () =>
     cities.filter(c => c.venues.some(v => v.fee_type === 'free')).length,
   venues_light_false: () => venues.filter(v => v.light === false).length,

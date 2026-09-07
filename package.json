@@ -61,7 +61,13 @@
     "verify:tampa": "node scripts/verify/apply-tampa-parks.mjs",
     "verify:san-antonio": "node scripts/verify/apply-san-antonio-parks.mjs",
     "verify:lincoln": "node scripts/verify/apply-lincoln-parks.mjs",
-    "check:claims": "node scripts/check-claims.mjs"
+    "check:claims": "node scripts/check-claims.mjs",
+    "verify:tallahassee": "node scripts/verify/apply-tallahassee-parks.mjs",
+    "verify:albuquerque": "node scripts/verify/apply-albuquerque-parks.mjs",
+    "verify:las-vegas": "node scripts/verify/apply-las-vegas-parks.mjs",
+    "verify:boulder": "node scripts/verify/apply-boulder-parks.mjs",
+    "verify:naperville": "node scripts/verify/apply-naperville-parks.mjs",
+    "verify:st-george": "node scripts/verify/apply-st-george-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

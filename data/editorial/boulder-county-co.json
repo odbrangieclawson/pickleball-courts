@@ -1,0 +1,94 @@
+{
+  "county": "Boulder",
+  "state": "CO",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a site has, what it costs, when the gymnasium is open - come from the City of Boulder and are cited. Claims about our own coverage are facts about this dataset rather than about Boulder County, and are worded so a reader cannot mistake one for the other. This is the first county in Colorado this directory has published in, and one city of it is on this page.",
+  "slots": {
+    "coverage": "One city in Boulder County is published here: Boulder, with five venues and twenty-nine courts verified against the City's own pages - twenty outdoor and nine indoor. Boulder County also contains Longmont, Louisville, Lafayette and Erie, and the County runs a parks and open space department of its own, and not one of those has been read against a named source, so none appears anywhere on this site. This page is therefore a Boulder page under a county heading, and it says so rather than implying the county has been covered. What it reports is five sites whose court counts, addresses, prices and schedules the City of Boulder publishes: three recreation centres, each with outdoor courts on the tennis courts beside it and three indoor courts in the gymnasium at drop-in times, and two parks, one of them a hockey rink lined for pickleball in the mornings. Two sites inside Boulder itself are named on the city page rather than dropped. Tom Watson Park appears on the City's Racket Sports page with a tennis figure only, and the City says new courts are scheduled to open there in spring 2026. East Boulder Community Park appears as a lighting note and a project, with courts planned for spring 2027, and no count. Both are one stated number away from publishing, and both have a date attached, which is more than most refused venues can say.",
+    "distribution": "What is verified in this county is concentrated in one city, and within it the courts cluster at the recreation centres. South Boulder Recreation Center is the largest with eleven - eight outdoor and three indoor - and North Boulder Recreation Center has seven and East Boulder Community Center five, so twenty-three of the twenty-nine are at a building with a gymnasium and a front desk. The two parks hold the other six: four at Foothills Community Park on an inline hockey rink that is a pickleball venue from 7 a.m. to noon, and two at Chautauqua Park on one tennis court in a park open 5:00 am to 11:00 pm. The useful pattern is the split between the two kinds. All twenty outdoor courts are lines on something else - sixteen on tennis courts, four on a rink - and the City's nets column reads \"Rolling\" on every row, with Foothills the one venue where it says in words that you bring your own. All nine indoor courts exist only at the drop-in times the City prints, three in each gymnasium, included with the centre's daily entry fee or pass. Price does not split the set: every venue is free to walk onto, and a reservation costs $10 an hour everywhere. Lighting does not split it either; \"Lights are not guaranteed for use of courts after sunset\" is the City's only sentence on the subject. Condition did, on the day this was read: South Boulder's eight outdoor courts were closed for resurfacing and restriping, tentatively until September 11, and the City's FAQ names \"the poor condition of courts across the system\" as a reason for its court plan.",
+    "gaps": "The honest position is that this is a page about one city wearing the heading of a county, and the gap will not close by accident. Longmont is the obvious next city and it has not been read. Neither have Louisville, Lafayette or Erie, and neither has Boulder County's own parks department. The threshold has not moved - three venues with a named source and a date - and nothing about Colorado makes that easier or harder until a parks page has actually been loaded. Inside Boulder the gaps are smaller and better dated than usual. Tom Watson Park has a tennis figure and no pickleball figure today, and a City statement that new courts open there in spring 2026; East Boulder Community Park has a lighting note, a project page and a spring 2027 completion date, and no count. The imported dataset carried twelve pickleball courts for Tom Watson, and that number is not published because the City has not stated it. The City also lists five more tennis sites - Arapahoe Ridge, Columbine Park, Knollwood, Martin Park and North Palo Park, with two courts each - and none of them carries a pickleball count, so none of them is a venue here. Two things the City is silent on everywhere are worth naming because they are the two most asked. Lighting is stated for no venue, and surface is stated for none. Nothing outside the City of Boulder appears on this page: no club, no school, no HOA, no commercial venue, because none of them publishes a source we have read. That absence is about who writes things down, not about where the game is played."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Boulder County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 29 courts across five venues, all in the City of Boulder, each with a source and a date you can see: twenty outdoor from the City's court table and nine indoor from its drop-in schedule. Longmont, Louisville, Lafayette, Erie and the County's own parks have not been read."
+    },
+    {
+      "q": "Why is only Boulder listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. No other Boulder County operator's pages have been loaded, so nothing about them is asserted, including their absence of courts."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Yes, and confirmed rather than assumed: \"Courts are first come and free to all park visitors, a reserved court is available to secure your date and time.\" A reservation costs $10 an hour. Indoor drop-in at the three recreation centres is included with the daily entry fee or a pass, so those nine courts cost whatever the door costs."
+    },
+    {
+      "q": "Which venues here have lights?",
+      "a": "None carries a lighting answer. The City's only sentence on the subject is \"Lights are not guaranteed for use of courts after sunset\", plus notes about light timers at North Boulder and token-operated lights at East Boulder Community Park, an unpublished site. Every published venue is recorded as unverified, and Boulder has no lights page."
+    },
+    {
+      "q": "Why is Tom Watson Park not listed?",
+      "a": "The City's Racket Sports page gives it a figure of 4 under \"Additional Tennis Courts\" and no pickleball count anywhere. The imported dataset carried twelve pickleball courts for it, and an imported number is not a stated one. The City's FAQ says new courts are scheduled to open there in spring 2026, so it may publish after a re-read."
+    },
+    {
+      "q": "Where can I play indoors in Boulder County?",
+      "a": "At the three City of Boulder recreation centres, three courts each, at the drop-in times the City prints: Monday, Wednesday and Friday mornings at North Boulder, Monday afternoon and evening and Sunday afternoon at East Boulder, and Sunday morning and Tuesday and Thursday afternoons at South Boulder, with none there from June through October."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "These pages were read on 7 September 2026, and every one of them is snapshotted into the repository that builds this site and re-asserted on every build. If the City changes a count, removes the South Boulder closure notice, or publishes a pickleball figure for Tom Watson Park, the build fails and someone reads the page again."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://bouldercolorado.gov/services/racket-sports",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's Racket Sports page. \"Courts are first come and free to all park visitors, a reserved court is available to secure your date and time.\" \"Lights are not guaranteed for use of courts after sunset\". \"Court rental fees are increasing to $10 per hour.\" Under \"Outdoor court layout and location\": \"Pickleball play is on tennis courts with pickleball lines. Except for Foothills Community Park which is a designated inline hockey rink.\" The table: \"4 pickleball / 4 tennis / Rolling / North Boulder Recreation Center\", \"2 pickleball / Rolling / East Boulder Community Center\", \"8 pickleball / 4 tennis / Rolling / South Boulder Recreation Center\", \"2 pickleball / 1 tennis / Rolling / Chautauqua Park\", \"4 pickleball / Rolling / Foothills Community Park\". \"Additional Tennis Courts\": \"2 / Arapahoe Ridge\", \"2 / Columbine Park\", \"2 / Knollwood\", \"2 / Martin Park\", \"2 / North Palo Park\", \"4 / Tom Watson Park\". \"East Boulder Community Park Court Lights\": \"Courts need to be reserved in order to use lights\". Snapshot: data/sources/boulder/racket-sports.html",
+      "not_stated": "Anything about any other municipality in Boulder County, any per-venue lighting answer, or surface."
+    },
+    {
+      "id": "L2",
+      "url": "https://bouldercolorado.gov/services/pickleball",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution"],
+      "evidence": "The City's pickleball page. \"Drop-in pickleball is offered inside our recreation center basketball gymnasiums.\" East Boulder Recreation Center: \"Monday: 1 to 3 pm and 6 to 8 pm on 3 indoor courts\", \"Sunday: 2 to 4 pm on 3 indoor courts\". South Boulder Recreation Center: \"Sunday: 9 to 11 am on 3 indoor courts*\", \"Tuesday, Thursday: 1:30 to 3:30 pm on 3 indoor courts*\", \"*There is no indoor Pickleball at South Boulder Recreation Center from June through October\". North Boulder Recreation Center: \"Monday, Wednesday, Friday: 7:30 to 10:30 am on 3 indoor courts\". \"Indoor drop-in pickleball is included with your daily entry fee or pass.\" Snapshot: data/sources/boulder/pickleball.html",
+      "not_stated": "The daily entry fee, surface, lighting, and anything about any other municipality."
+    },
+    {
+      "id": "L3",
+      "url": "https://bouldercolorado.gov/racket-sports-faqs",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's Racket Sports FAQs. \"New courts are scheduled to open at Tom Watson Park in Spring of 2026. Additional courts are planned for East Boulder Community Park to be complete by spring 2027. These facility investments are part of a long-term plan to support rising demand for court space while also ensuring we address the poor condition of courts across the system.\" \"Court rental fees are increasing from $5 per hour to $10 per hour.\" \"Unreserved courts remain free to use on a first-come, first-play basis.\" Snapshot: data/sources/boulder/racket-sports-faqs.html",
+      "not_stated": "Any court count for Tom Watson Park or East Boulder Community Park, and anything about any other municipality."
+    },
+    {
+      "id": "L4",
+      "url": "https://bouldercolorado.gov/locations/south-boulder-recreation-center",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["distribution"],
+      "evidence": "South Boulder Recreation Center's page, the largest published venue in the county: \"Aug. 17 - tentatively scheduled to reopen Sept. 11: All SBRC Outdoor Racket Courts closed for court resurfacing and restriping.\" Address \"1360 Gillaspie / Boulder, CO 80305\". Amenities: \"Basketball Court\", \"Pickleball\", \"Pool\", \"Restroom\", \"RTD Access\", \"Volleyball Court\". Snapshot: data/sources/boulder/south-boulder-recreation-center.html",
+      "not_stated": "Any court count, surface or lighting."
+    },
+    {
+      "id": "L5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Four of the five published addresses were matched at house-number level by the Census address file and placed in Boulder County, CO (FIPS 08013) and in the incorporated place \"Boulder city\": \"3170 BROADWAY, BOULDER, CO, 80304\", \"5660 SIOUX DR, BOULDER, CO, 80303\", \"1360 GILLASPIE DR, BOULDER, CO, 80305\" and \"900 BASELINE RD, BOULDER, CO, 80302\". The Census file holds no record of 800 Cherry Ave; OpenStreetMap matched \"Foothills Community Park, 800, Cherry Avenue, Promontory North, Boulder, Boulder County, Colorado, 80304\" at house-number level. Snapshot: data/sources/boulder-county-census.json",
+      "not_stated": "Anything about the courts themselves, or about any address outside the City of Boulder."
+    }
+  ]
+}

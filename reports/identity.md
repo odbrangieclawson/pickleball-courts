@@ -12,10 +12,10 @@ still free to change. That is why it goes first.
 | | rows |
 | --- | ---: |
 | Slugs carrying a numeric row-id suffix | 628 |
-| **Renamed automatically** | **8680** |
-| Held back — two rows want one URL in one city | 616 |
+| **Renamed automatically** | **8683** |
+| Held back — two rows want one URL in one city | 614 |
 | Held back — state, coordinates and postal code disagree | 30 |
-| **Total held back** | **648** |
+| **Total held back** | **647** |
 
 ## Numeric suffixes: 628 in, 602 stripped, 26 kept
 
@@ -34,7 +34,7 @@ question this URL pattern does not ask, so it comes off wherever nothing in
 the same city claims the same slug. Rule 10 is satisfied by the hierarchy
 rather than by inventing a disambiguator.
 
-## Held back: 616 rows still collide inside one city
+## Held back: 614 rows still collide inside one city
 
 Strip the suffixes and these rows still land on the same slug in the same
 city. Each pair is either one park recorded twice or two parks sharing a

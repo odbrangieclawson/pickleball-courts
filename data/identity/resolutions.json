@@ -20,6 +20,16 @@
       "source_url": "https://www.cityofmadison.com/parks/find-a-park/tenney",
       "basis": "The City of Madison publishes one Tenney Park. Its pickleball courts list gives the address as 1414 E. Johnson St., which is the kept row's address and the one the Census geocoder matched to Madison city, Dane County. The held row carries 402 N Thornton Ave, 301 metres away on the far side of the same 38-acre park, and no City record names a second Tenney Park there. Two records of one park, distinguished only by which edge of it somebody stood on. The held row stays quarantined and status=pending; nothing is published from it and nothing is lost from data.csv.",
       "snapshot": "data/sources/madison/tenney.html"
+    },
+    "FL/tallahassee/tom-brown-park": {
+      "keep": "tom-brown-park",
+      "hold": [
+        "tom-brown-park-pickleball-courts"
+      ],
+      "decided_on": "2026-09-07",
+      "source_url": "https://www.talgov.com/parks/sports-pickleball",
+      "basis": "The City of Tallahassee publishes one Tom Brown Park, at 501 Easterwood Avenue, with \"4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)\". The kept row carries 501 EASTERWOOD DR, the address the Census geocoder matched to Tallahassee city, Leon County. The held row's street_address is \"Easterwood Dr & Access Rd 16\", an intersection with no house number to resolve; it is a second record of the same courts with a worse location, not a second park. It stays quarantined and status=pending.",
+      "snapshot": "data/sources/tallahassee/pickleball.html"
     }
   }
 }

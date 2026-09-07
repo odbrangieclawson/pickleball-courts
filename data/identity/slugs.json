@@ -3282,9 +3282,17 @@
       "canonical": "county-family-ymca",
       "basis": "dropped trailing \"-5974\" (an import row id, not part of the name \"Boone County Family YMCA\"); dropped leading \"boone-\" (already in the path)"
     },
+    "east-boulder-recreation-center": {
+      "canonical": "east-boulder-community-center",
+      "basis": "built from the verified name \"East Boulder Community Center\""
+    },
     "foothills-park-pickleball-courts": {
       "canonical": "foothills-park",
       "basis": "dropped trailing \"-pickleball-courts\" (this is a pickleball directory)"
+    },
+    "north-boulder-rec-center": {
+      "canonical": "north-boulder-recreation-center",
+      "basis": "built from the verified name \"North Boulder Recreation Center\""
     },
     "tom-watson-park-pickleball-courts-boulder": {
       "canonical": "tom-watson-park",
@@ -28769,6 +28777,10 @@
     "sun-river-st-george": {
       "canonical": "sun-river",
       "basis": "dropped trailing \"-st-george\" (already in the path)"
+    },
+    "worthen-park": {
+      "canonical": "vernon-worthen-park",
+      "basis": "built from the verified name \"Vernon Worthen Park\""
     },
     "porter-way-park-stansbury-park-ut": {
       "canonical": "porter-way-park",

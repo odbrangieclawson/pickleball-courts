@@ -36,13 +36,15 @@
   first-served basis". So hours and play format are stated for every venue.
 
   ============================================================
-  FAIRCHILD PARK IS THE SECOND-LARGEST VENUE IN THE DIRECTORY
+  FAIRCHILD PARK IS AMONG THE LARGEST VENUES IN THE DIRECTORY
   ============================================================
 
-  Eighteen lighted outdoor courts, stated in one sentence. Only Mesa's
-  Tennis & Pickleball Center (21) is larger among published venues, and
-  Fairchild is the largest venue anywhere on this site where the City
-  states that every court is lit and outdoor.
+  Eighteen lighted outdoor courts, stated in one sentence. It was the
+  second-largest published venue on the day it shipped, behind Mesa's
+  Tennis & Pickleball Center (21); Albuquerque's Manzano Mesa and St.
+  George's Little Valley (33 each) passed both the same week. It remains
+  the largest venue anywhere on this site where the City states that every
+  court is lit and outdoor.
 
   ============================================================
   WHAT IS REFUSED
@@ -111,7 +113,7 @@ const VENUES = [
     spec: 'There are 18 lighted, outdoor pickleball courts.',
     address: '1214 E Crockett St', listLine: '1214 E Crockett St, San Antonio, TX 78202', cityZip: '78202',
     extra: 'All tennis courts and pickleball courts are open during park hours.',
-    availability: 'Eighteen lighted outdoor pickleball courts on the east side of the city, stated in one sentence on the park\'s own page: "There are 18 lighted, outdoor pickleball courts." That is the second-largest single-venue count on this site after Mesa\'s Tennis & Pickleball Center, and the largest anywhere here where the operator states that every court is both lit and outdoor. The same page carries ten lighted outdoor tennis courts and its own hours rule - "All tennis courts and pickleball courts are open during park hours" - and the City\'s directory gives the park hours as 5 a.m. to 11 p.m. every day. First come, first served, in the City\'s words on both pages. Eighteen courts under lights until eleven at night is a rotation that can absorb almost any number of players; nothing else in San Antonio is in the same class. The pool on the site is closed until the 2027 season, which the City states on the directory page. Price and surface are not stated.',
+    availability: 'Eighteen lighted outdoor pickleball courts on the east side of the city, stated in one sentence on the park\'s own page: "There are 18 lighted, outdoor pickleball courts." That is one of the largest single-venue counts on this site, and the largest anywhere here where the operator states that every court is both lit and outdoor. The same page carries ten lighted outdoor tennis courts and its own hours rule - "All tennis courts and pickleball courts are open during park hours" - and the City\'s directory gives the park hours as 5 a.m. to 11 p.m. every day. First come, first served, in the City\'s words on both pages. Eighteen courts under lights until eleven at night is a rotation that can absorb almost any number of players; nothing else in San Antonio is in the same class. The pool on the site is closed until the 2027 season, which the City states on the directory page. Price and surface are not stated.',
   },
   {
     slug: 'garza-park', importedSlug: null, name: 'Garza Park', page: 'garza-park',
@@ -402,7 +404,7 @@ for (const [slug, entry] of Object.entries(overlay)) {
 }
 
 const METHOD_NOTE =
-  'San Antonio states its count in a sentence on each park\'s own page, and the sentence carries the words that matter: "There are 18 lighted, outdoor pickleball courts." at Fairchild Park, "There are 2 indoor pickleball courts." at Palm Heights, "There are eight outdoor pickleball courts." at Monterrey. Outdoor or indoor is the City\'s own word at eight of nine venues, lighting at two, and the directory page states park hours of 5 a.m. to 11 p.m. daily for every park and that the courts are first come, first served. Tejeda Park says "6 lighted, pickleball courts" without "outdoor", so its breakdown stays null. The directory\'s own caveat, "Some courts are not lighted.", is why the seven parks that say nothing about pickleball lighting are recorded as unknown, and a park page saying "The tennis court is not lighted" is about tennis. Fairchild\'s eighteen lit outdoor courts are the second-largest single-venue count on this site after Mesa. Two refusals: Piazza Italia Park\'s "500 Columbus" is found by neither resolver, and Hamilton Community Center is listed with an address, hours and a Saturday pickleball window and never a count. The City answered a bare curl with 200 and then, twenty minutes later, with 403; the pages were fetched with the browser header set in scripts/verify/fetch/san-antonio.sh. The directory says eleven results and serves ten; its pager returns the same page for page two, which is stated here rather than hidden.'
+  'San Antonio states its count in a sentence on each park\'s own page, and the sentence carries the words that matter: "There are 18 lighted, outdoor pickleball courts." at Fairchild Park, "There are 2 indoor pickleball courts." at Palm Heights, "There are eight outdoor pickleball courts." at Monterrey. Outdoor or indoor is the City\'s own word at eight of nine venues, lighting at two, and the directory page states park hours of 5 a.m. to 11 p.m. daily for every park and that the courts are first come, first served. Tejeda Park says "6 lighted, pickleball courts" without "outdoor", so its breakdown stays null. The directory\'s own caveat, "Some courts are not lighted.", is why the seven parks that say nothing about pickleball lighting are recorded as unknown, and a park page saying "The tennis court is not lighted" is about tennis. Fairchild\'s eighteen lit outdoor courts are among the largest single-venue counts on this site. Two refusals: Piazza Italia Park\'s "500 Columbus" is found by neither resolver, and Hamilton Community Center is listed with an address, hours and a Saturday pickleball window and never a count. The City answered a bare curl with 200 and then, twenty minutes later, with 403; the pages were fetched with the browser header set in scripts/verify/fetch/san-antonio.sh. The directory says eleven results and serves ten; its pager returns the same page for page two, which is stated here rather than hidden.'
 
 mkdirSync(join(REPO_ROOT, 'data/verified'), {recursive: true})
 writeFileSync(join(REPO_ROOT, 'data/verified/san-antonio-tx.json'), JSON.stringify({

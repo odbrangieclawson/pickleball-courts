@@ -1,0 +1,324 @@
+{
+  "city": "St. George",
+  "state": "UT",
+  "retrieved_at": "2026-09-07",
+  "method_note": "St. George states a name, a street address and a court count on one line per venue under the heading \"City of St. George Pickleball Courts\", and the block is asserted as a whole so a line moving or a count changing fails the build. Three venues publish, 46 courts, and Little Valley's thirty-three is the largest single-venue count in this directory. Ledges is refused because the City prints \"?\" where its address goes. The same page carries an article dated 19 August 2020 saying the complex had twenty-four courts and that the programme began in 2012 on four permanent and two temporary courts at Vernon Worthen Park; a dated record that describes itself as history does not contradict an undated current list the way Irvine's two current Los Olivos counts contradicted each other, so the list publishes and the article's figures are printed as what the venues were. The article also states that Little Valley's courts are free of charge when vacant, which publishes as a stated free with the City's check-in rule beside it; the other two venues carry no price. Nothing is stated about lighting, surface, indoor or outdoor, or hours at any venue. The imported dataset spells the city three ways across these three venues, so only the row spelled as the City spells it is matched.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+      "publisher": "City of St. George Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/st-george/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/st-george-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 3,
+    "courts": 46,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": null,
+    "free_venues": 1
+  },
+  "excluded": [
+    {
+      "name": "Ledges",
+      "why": [
+        "The City publishes no address: its own list prints \"?\" where the other three lines carry a street address. Import Gate I1 requires a street address that resolves, and the operator has stated that it has none to give.",
+        "Four courts, stated. The venue fails on the one fact it is missing, and the run asserts the question mark so that the day the City fills it in, the build stops and Ledges is re-read."
+      ]
+    }
+  ],
+  "venues": {
+    "little-valley-pickleball-complex": {
+      "minted": true,
+      "identity": {
+        "name": "Little Valley Pickleball Complex",
+        "city": "St. George",
+        "state": "UT",
+        "county": "Washington",
+        "postal_code": "84790",
+        "latitude": 37.053703487284,
+        "longitude": -113.538954863716,
+        "imported_slug": null,
+        "canonical_slug": "little-valley-pickleball-complex"
+      },
+      "match": {
+        "source_page": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+        "quote": "Little Valley / 2149 Horseman Park Drive / Courts:  33",
+        "basis": "Minted here. The import holds a row for this complex, little-valley-pickleball-court-complex, with the city written \"St George\" and twenty-four courts; the overlay matches on the city as the City writes it, \"St. George\", so that row is not matched and stays pending."
+      },
+      "patch": {
+        "name": "Little Valley Pickleball Complex",
+        "total_courts": 33,
+        "street_address": "2149 Horseman Park Drive",
+        "venue_type": "dedicated_pickleball_facility",
+        "court_availability": "Thirty-three pickleball courts at the City's Little Valley complex, the largest single-venue count published anywhere in this directory, in the City's own list: \"Little Valley / 2149 Horseman Park Drive / Courts:  33\". This is a programmed facility rather than a park with lines on it: the same page carries the year's programme schedule of leagues, clinics, learn-to-play classes and tournaments with courts reserved for each, a \"Reserve a Pickleball Court\" link, and an attendant - \"Players, please check in with the attendant or instructor to determine if courts are available during the St. George Pickleball programs\". Outside those times the City states the price in a 2020 article on the same page: \"When courts are vacant the public readily takes advantage of them - free of charge.\" That article also describes the complex as \"home to 24 well-maintained courts\"; it is dated August 2020, and the City's undated current list says thirty-three, which is what publishes. Lighting, surface, hours and whether any court is covered are not stated.",
+        "county": "Washington",
+        "postal_code": "84790",
+        "fee_type": "free",
+        "pricing_notes": "Free of charge when courts are vacant, in the City's words. Courts are reserved for the City's leagues, clinics, classes and tournaments on the schedule published on its pickleball page; players check in with the attendant or instructor during programme times, and the City also offers online court reservations."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Headed \"Little Valley Pickleball Complex\" on the City's pickleball page, and listed as \"Little Valley\" in its court list: \"Little Valley / 2149 Horseman Park Drive / Courts:  33\"."
+        },
+        "total_courts": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page, under the heading \"City of St. George Pickleball Courts\": \"Little Valley / 2149 Horseman Park Drive / Courts:  33\". The City's article on the same page, dated \"St. George, UT, August 19, 2020\", says \"The Little Valley Pickleball complex is home to 24 well-maintained courts.\" That figure is six years old and describes itself as history; the undated current list says thirty-three, and that is what publishes."
+        },
+        "street_address": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Little Valley / 2149 Horseman Park Drive / Courts:  33\" on the City's pickleball page. The Census address file spells the street \"HORESMAN PARK DR\" - a transposition in the file, same number, same type, no direction, and the only Horseman Park Drive in the city; the City's spelling publishes."
+        },
+        "venue_type": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City heads it \"Little Valley Pickleball Complex\", lists thirty-three courts, publishes a programme schedule with courts reserved for each session, a court-reservation link and an attendant to check in with. A City complex built for one sport is the controlled vocabulary's \"purpose-built club or complex where pickleball is the primary sport\"."
+        },
+        "court_availability": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Little Valley / 2149 Horseman Park Drive / Courts:  33\", \"When courts are vacant the public readily takes advantage of them - free of charge.\", \"Players, please check in with the attendant or instructor to determine if courts are available during the St. George Pickleball programs\", and \"The Little Valley Pickleball complex is home to 24 well-maintained courts.\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Washington County, UT (FIPS 49053). Census address geocoder matched \"2149 HORESMAN PARK DR, ST GEORGE, UT, 84790\". The resolver also places it in the incorporated place \"St. George city\", which is what allows it to be published under St. George."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2149 HORESMAN PARK DR, ST GEORGE, UT, 84790\"."
+        },
+        "fee_type": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated price, in the City's own article on its pickleball page: \"When courts are vacant the public readily takes advantage of them - free of charge.\" It applies to the courts when they are vacant; when the City's programmes have them, \"Players, please check in with the attendant or instructor to determine if courts are available during the St. George Pickleball programs\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"When courts are vacant the public readily takes advantage of them - free of charge.\" and \"Players, please check in with the attendant or instructor to determine if courts are available during the St. George Pickleball programs\", plus the \"Reserve a Pickleball Court\" link and the programme schedule on the same page."
+        }
+      },
+      "record": {
+        "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "worthen-park": {
+      "minted": false,
+      "identity": {
+        "name": "Vernon Worthen Park",
+        "city": "St. George",
+        "state": "UT",
+        "county": "Washington",
+        "postal_code": "84770",
+        "latitude": 37.103021596133,
+        "longitude": -113.574884428952,
+        "imported_slug": "worthen-park",
+        "canonical_slug": "worthen-park"
+      },
+      "match": {
+        "source_page": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+        "quote": "Vernon Worthen / 300 S. 400 E. / Courts: 6",
+        "basis": "Matched to the imported worthen-park row in St. George, UT, which carried the address \"200 South 400 East\" and seven courts; the City's own line, 300 S. 400 E. and six courts, replaces both, and the changes are in the changelog."
+      },
+      "patch": {
+        "name": "Vernon Worthen Park",
+        "total_courts": 6,
+        "street_address": "300 S. 400 E.",
+        "venue_type": "public_park",
+        "court_availability": "Six pickleball courts at Vernon Worthen Park near the centre of St. George, from the City's list: \"Vernon Worthen / 300 S. 400 E. / Courts: 6\". The address is a Utah grid address - 300 South, 400 East - and the Census address file resolves it as written, inside the city. This is where the City's pickleball programme began: its own 2020 article says that \"In 2012, Wayne Bullock established the first pickleball program for the City of St. George on four permanent and two temporary courts at Vernon Worthen Park\", and the ladder-league format devised here was later adopted by USA Pickleball. Six is the current list's figure; four-plus-two is the 2012 one. The City states no price, no lighting, no surface and no hours for this park, and this page records each as unknown.",
+        "county": "Washington",
+        "postal_code": "84770"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Vernon Worthen\" in the City's court list (\"Vernon Worthen / 300 S. 400 E. / Courts: 6\") and named \"Vernon Worthen Park\" in the City's own article on the same page."
+        },
+        "total_courts": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page, under the heading \"City of St. George Pickleball Courts\": \"Vernon Worthen / 300 S. 400 E. / Courts: 6\". The City's article on the same page, dated \"St. George, UT, August 19, 2020\", says \"In 2012, Wayne Bullock established the first pickleball program for the City of St. George on four permanent and two temporary courts at Vernon Worthen Park.\" That is the 2012 origin; the undated current list says six."
+        },
+        "street_address": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Vernon Worthen / 300 S. 400 E. / Courts: 6\" on the City's pickleball page. A Utah grid address - 300 South, 400 East - which the Census address file resolves as written."
+        },
+        "venue_type": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of St. George Parks and Recreation among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Vernon Worthen / 300 S. 400 E. / Courts: 6\", and \"In 2012, Wayne Bullock established the first pickleball program for the City of St. George on four permanent and two temporary courts at Vernon Worthen Park.\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Washington County, UT (FIPS 49053). Census address geocoder matched \"300 S 400 E, ST GEORGE, UT, 84770\". The resolver also places it in the incorporated place \"St. George city\", which is what allows it to be published under St. George."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"300 S 400 E, ST GEORGE, UT, 84770\"."
+        }
+      },
+      "record": {
+        "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "bloomington-park": {
+      "minted": true,
+      "identity": {
+        "name": "Bloomington Park",
+        "city": "St. George",
+        "state": "UT",
+        "county": "Washington",
+        "postal_code": "84790",
+        "latitude": 37.052232809214,
+        "longitude": -113.597576059948,
+        "imported_slug": null,
+        "canonical_slug": "bloomington-park"
+      },
+      "match": {
+        "source_page": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+        "quote": "Bloomington Park / 650 Man O War Road / Courts: 7",
+        "basis": "Minted here. The import holds a row for this park, bloomington-park-saint-george-ut, with the city written \"Saint George\"; the overlay matches on the city as the City writes it, \"St. George\", so that row is not matched and stays pending."
+      },
+      "patch": {
+        "name": "Bloomington Park",
+        "total_courts": 7,
+        "street_address": "650 Man O War Road",
+        "venue_type": "public_park",
+        "court_availability": "Seven pickleball courts at Bloomington Park in the south-west of the city, from the City's list: \"Bloomington Park / 650 Man O War Road / Courts: 7\". Seven is an odd number for a court block and the City does not say how the courts are laid out or whether any of them share a slab with tennis. It states nothing else about this venue on its pickleball page - no price, no lighting, no surface, no hours - so this page records each of those as unknown rather than guessing from the two City venues that do carry more detail.",
+        "county": "Washington",
+        "postal_code": "84790"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Bloomington Park\" in the City's court list: \"Bloomington Park / 650 Man O War Road / Courts: 7\"."
+        },
+        "total_courts": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page, under the heading \"City of St. George Pickleball Courts\": \"Bloomington Park / 650 Man O War Road / Courts: 7\"."
+        },
+        "street_address": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Bloomington Park / 650 Man O War Road / Courts: 7\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of St. George Parks and Recreation among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Bloomington Park / 650 Man O War Road / Courts: 7\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Washington County, UT (FIPS 49053). Census address geocoder matched \"650 MAN O WAR RD, ST GEORGE, UT, 84790\". The resolver also places it in the incorporated place \"St. George city\", which is what allows it to be published under St. George."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"650 MAN O WAR RD, ST GEORGE, UT, 84790\"."
+        }
+      },
+      "record": {
+        "source_url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

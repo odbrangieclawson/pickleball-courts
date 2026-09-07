@@ -6,7 +6,7 @@ Generated from the built HTML.
 
 === SIX-GATE REPORT BY PAGE TYPE ===
 
-COUNTY  —  14/14 publishable
+COUNTY  —  19/19 publishable
   PASS  /pickleball/us/wa/king-county/
         1097 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/dane-county/
@@ -14,57 +14,75 @@ COUNTY  —  14/14 publishable
   PASS  /pickleball/us/tx/travis-county/
         965 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/fl/hillsborough-county/
-        1422 words · BreadcrumbList, FAQPage, ItemList
+        1384 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nm/bernalillo-county/
+        1377 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/multnomah-county/
         922 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/wake-county/
         1264 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/tx/bexar-county/
-        1330 words · BreadcrumbList, FAQPage, ItemList
+        1327 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/fl/leon-county/
+        1221 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/mn/ramsey-county/
         938 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/co/boulder-county/
+        1438 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/fl/lee-county/
-        1264 words · BreadcrumbList, FAQPage, ItemList
+        1226 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/mecklenburg-county/
         1284 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nv/clark-county/
+        1398 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ca/orange-county/
         1373 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/maricopa-county/
         1176 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ne/lancaster-county/
         1025 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/ut/washington-county/
+        1353 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/clark-county/
         931 words · BreadcrumbList, FAQPage, ItemList
 
-CITY  —  20/20 publishable
+CITY  —  26/26 publishable
   PASS  /pickleball/us/wa/seattle/
         1574 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wi/madison/
-        1877 words · BreadcrumbList, FAQPage, ItemList
+        1841 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/tx/austin/
         1782 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/fl/tampa/
-        1956 words · BreadcrumbList, FAQPage, ItemList
+        1925 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nm/albuquerque/
+        1991 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/
-        1971 words · BreadcrumbList, FAQPage, ItemList
+        1969 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/portland/
         1860 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/
         1857 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/tx/san-antonio/
-        1947 words · BreadcrumbList, FAQPage, ItemList
+        1944 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/fl/tallahassee/
+        1957 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/mn/saint-paul/
         1623 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/apex/
         1782 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/co/boulder/
+        1976 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/fl/cape-coral/
-        1915 words · BreadcrumbList, FAQPage, ItemList
+        1888 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/charlotte/
         1816 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/nv/las-vegas/
+        1945 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ca/huntington-beach/
         1976 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/
-        1908 words · BreadcrumbList, FAQPage, ItemList
+        1904 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/
         1819 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ca/irvine/
@@ -74,11 +92,15 @@ CITY  —  20/20 publishable
   PASS  /pickleball/us/ne/lincoln/
         1781 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/mesa/
-        1936 words · BreadcrumbList, FAQPage, ItemList
+        1941 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/il/naperville/
+        1990 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/ut/st-george/
+        1990 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/vancouver/
         1731 words · BreadcrumbList, FAQPage, ItemList
 
-FILTER  —  26/26 publishable
+FILTER  —  31/31 publishable
   PASS  /pickleball/us/wa/seattle/outdoor/
         688 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/seattle/lights/
@@ -94,13 +116,13 @@ FILTER  —  26/26 publishable
   PASS  /pickleball/us/fl/tampa/outdoor/
         889 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/indoor/
-        667 words · BreadcrumbList, FAQPage, ItemList
+        664 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/wa/bellevue/outdoor/
         729 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/portland/indoor/
         648 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/portland/outdoor/
-        681 words · BreadcrumbList, FAQPage, ItemList
+        684 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/or/portland/free/
         714 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/raleigh/outdoor/
@@ -109,20 +131,28 @@ FILTER  —  26/26 publishable
         680 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/tx/san-antonio/outdoor/
         858 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/fl/tallahassee/outdoor/
+        884 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/mn/saint-paul/outdoor/
         650 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/apex/outdoor/
         631 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/apex/lights/
         670 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/co/boulder/indoor/
+        900 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/co/boulder/outdoor/
+        882 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/co/boulder/free/
+        898 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/fl/cape-coral/free/
-        884 words · BreadcrumbList, FAQPage, ItemList
+        880 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/fl/cape-coral/lights/
         857 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/outdoor/
         692 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/free/
-        837 words · BreadcrumbList, FAQPage, ItemList
+        832 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/az/scottsdale/lights/
         732 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/nc/cary/outdoor/
@@ -131,8 +161,10 @@ FILTER  —  26/26 publishable
         884 words · BreadcrumbList, FAQPage, ItemList
   PASS  /pickleball/us/ne/lincoln/outdoor/
         775 words · BreadcrumbList, FAQPage, ItemList
+  PASS  /pickleball/us/il/naperville/outdoor/
+        904 words · BreadcrumbList, FAQPage, ItemList
 
-VENUE  —  172/172 publishable
+VENUE  —  203/203 publishable
   PASS  /pickleball/us/wa/seattle/bitter-lake-playfield/
         761 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/seattle/delridge-playfield/
@@ -224,7 +256,7 @@ VENUE  —  172/172 publishable
   PASS  /pickleball/us/wi/madison/nakoma-park/
         751 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wi/madison/warner-park/
-        795 words · BreadcrumbList, SportsActivityLocation, FAQPage
+        790 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wi/madison/warner-park-community-recreation-center/
         835 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/tx/austin/beverly-s-sheffield-northwest-district-park/
@@ -299,12 +331,38 @@ VENUE  —  172/172 publishable
         779 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/fl/tampa/loretta-ingraham-center/
         772 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/manzano-mesa-park/
+        867 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/villela-park/
+        828 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/sierra-vista-tennis-complex/
+        876 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/hoffman-park/
+        779 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/rinconada-park/
+        826 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/montgomery-park/
+        794 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/columbus-park/
+        799 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/eagle-ranch-park/
+        834 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/loma-del-norte-park/
+        797 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/lynnewood-park/
+        781 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/lauren-c-bolles/
+        807 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/quintessence-park/
+        776 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nm/albuquerque/wells-park/
+        829 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/bellevue/crossroads-community-center/
         718 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/bellevue/eastgate-park/
         798 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/bellevue/hidden-valley-park/
-        800 words · BreadcrumbList, SportsActivityLocation, FAQPage
+        797 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/bellevue/highland-park/
         1053 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/bellevue/lakemont-community-park/
@@ -374,7 +432,7 @@ VENUE  —  172/172 publishable
   PASS  /pickleball/us/tx/san-antonio/monterrey-park/
         779 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/tx/san-antonio/fairchild-park/
-        806 words · BreadcrumbList, SportsActivityLocation, FAQPage
+        803 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/tx/san-antonio/normoyle-park/
         784 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/tx/san-antonio/oak-haven-park/
@@ -385,6 +443,20 @@ VENUE  —  172/172 publishable
         772 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/tx/san-antonio/tejeda-park/
         764 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/tallahassee/jack-l-mclean-jr-community-center/
+        844 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/tallahassee/tom-brown-park/
+        849 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/tallahassee/walker-ford-community-center/
+        811 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/tallahassee/winthrop-park/
+        833 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/tallahassee/leverne-payne-community-center/
+        827 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/tallahassee/jake-gaither-community-center/
+        810 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/fl/tallahassee/lafayette-park/
+        848 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/mn/saint-paul/arlington-arkwright-park/
         797 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/mn/saint-paul/clayland-park/
@@ -407,6 +479,12 @@ VENUE  —  172/172 publishable
         753 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/apex/apex-community-park/
         721 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/co/boulder/chautauqua-park/
+        884 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/co/boulder/south-boulder-recreation-center/
+        871 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/co/boulder/foothills-community-park/
+        864 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/fl/cape-coral/camelot-park/
         770 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/fl/cape-coral/giuffrida-park/
@@ -427,6 +505,16 @@ VENUE  —  172/172 publishable
         821 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/nc/charlotte/clarks-creek-park/
         846 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nv/las-vegas/aloha-shores-park/
+        855 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nv/las-vegas/centennial-hills-park/
+        863 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nv/las-vegas/durango-hills-park/
+        834 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nv/las-vegas/lorenzi-park/
+        901 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/nv/las-vegas/patriot-park/
+        835 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/ca/huntington-beach/edison-park/
         819 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/ca/huntington-beach/worthy-park/
@@ -468,9 +556,15 @@ VENUE  —  172/172 publishable
   PASS  /pickleball/us/az/mesa/kleinman-park/
         849 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/az/mesa/tennis-center-at-gene-autry-park/
-        1001 words · BreadcrumbList, SportsActivityLocation, FAQPage
+        992 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/az/mesa/chaparral-park/
         842 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/il/naperville/nike-sports-complex/
+        853 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/il/naperville/ranchview-park/
+        866 words · BreadcrumbList, SportsActivityLocation, FAQPage
+  PASS  /pickleball/us/il/naperville/ashbury-park/
+        851 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/vancouver/firstenburg-community-center/
         780 words · BreadcrumbList, SportsActivityLocation, FAQPage
   PASS  /pickleball/us/wa/vancouver/oakbrook-community-park/
@@ -480,7 +574,7 @@ VENUE  —  172/172 publishable
 
 === INDEXABLE FILTERS (D4) ===
   the five: indoor, outdoor, free, public, lights
-  built for Seattle: outdoor, lights, outdoor, outdoor, lights, indoor, outdoor, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, outdoor, outdoor, lights, free, lights, outdoor, free, lights, outdoor, lights, outdoor
+  built for Seattle: outdoor, lights, outdoor, outdoor, lights, indoor, outdoor, indoor, outdoor, indoor, outdoor, free, outdoor, lights, outdoor, outdoor, outdoor, outdoor, lights, indoor, outdoor, free, free, lights, outdoor, free, lights, outdoor, lights, outdoor, outdoor
   public: not published — no lawful data driver or fewer than 3 matches
 
 === NOINDEX QUERY PARAMETERS ===
@@ -504,6 +598,6 @@ VENUE  —  172/172 publishable
     Disallow: /*?page=
     ... plus the same 14 again in "&" position
 
-TOTAL: 234/234 pages pass all six gates.
+TOTAL: 282/282 pages pass all six gates.
 
 ```

@@ -1,0 +1,82 @@
+{
+  "aloha-shores-park": {
+    "matched": "7550 SAUER, LAS VEGAS, NV, 89128",
+    "resolver": "census",
+    "lat": 36.215629015246,
+    "lon": -115.259323233801,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Las Vegas city",
+    "place_matches_city": true,
+    "postal_code": "89128",
+    "basis": "Census address geocoder matched \"7550 SAUER, LAS VEGAS, NV, 89128\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"7550 SAUER, LAS VEGAS, NV, 89128\"."
+  },
+  "centennial-hills-park": {
+    "matched": "7101 N BUFFALO DR, LAS VEGAS, NV, 89131",
+    "resolver": "census",
+    "lat": 36.289011442516,
+    "lon": -115.260340303946,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Las Vegas city",
+    "place_matches_city": true,
+    "postal_code": "89131",
+    "basis": "Census address geocoder matched \"7101 N BUFFALO DR, LAS VEGAS, NV, 89131\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"7101 N BUFFALO DR, LAS VEGAS, NV, 89131\"."
+  },
+  "durango-hills-park": {
+    "matched": "3521 N DURANGO DR, LAS VEGAS, NV, 89129",
+    "resolver": "census",
+    "lat": 36.22523275394,
+    "lon": -115.279007162546,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Las Vegas city",
+    "place_matches_city": true,
+    "postal_code": "89129",
+    "basis": "Census address geocoder matched \"3521 N DURANGO DR, LAS VEGAS, NV, 89129\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"3521 N DURANGO DR, LAS VEGAS, NV, 89129\"."
+  },
+  "police-memorial-park": {
+    "matched": false,
+    "query": "3250 Metro Academy Way, Las Vegas, NV",
+    "resolver": null
+  },
+  "bill-briare-family-park": {
+    "matched": false,
+    "query": "650 N Tenaya Way, Las Vegas, NV",
+    "resolver": null
+  },
+  "lorenzi-park": {
+    "matched": "3333 W WASHINGTON AVE, LAS VEGAS, NV, 89107",
+    "resolver": "census",
+    "lat": 36.181119201237,
+    "lon": -115.185193074674,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Las Vegas city",
+    "place_matches_city": true,
+    "postal_code": "89107",
+    "basis": "Census address geocoder matched \"3333 W WASHINGTON AVE, LAS VEGAS, NV, 89107\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"3333 W WASHINGTON AVE, LAS VEGAS, NV, 89107\"."
+  },
+  "patriot-park": {
+    "matched": "4050 THOM BLVD, LAS VEGAS, NV, 89130",
+    "resolver": "census",
+    "lat": 36.233167537523,
+    "lon": -115.212000298409,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Las Vegas city",
+    "place_matches_city": true,
+    "postal_code": "89130",
+    "basis": "Census address geocoder matched \"4050 THOM BLVD, LAS VEGAS, NV, 89130\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"4050 THOM BLVD, LAS VEGAS, NV, 89130\"."
+  }
+}

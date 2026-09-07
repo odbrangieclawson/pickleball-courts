@@ -1,0 +1,191 @@
+{
+  "city": "Las Vegas",
+  "state": "NV",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every count, address and opening time below comes from the City of Las Vegas's own pages: a parenthesis in each park page's amenity list - \"Pickleball courts (4)\" - beneath a header that carries the address, the postcode and the park hours, and a City blog post of 11 March 2026 that names eight parks with a count each. Three of the five venues are counted on both records and the numbers agree. Two, Lorenzi and Patriot, are counted only on the post, and their own park pages never mention pickleball; this page says so rather than picking the tidier answer. The City states no lighting, no price, no surface and no indoor or outdoor for any venue, and where it is silent this page says so instead of guessing.",
+  "slots": {
+    "parking": "The City of Las Vegas publishes nothing about parking at any of these five parks. The word does not appear on any of the five park pages - not a lot, not a capacity, not a fee, not a permit - and this site does not fill the gap from a map. The same is true of restrooms. None of the five published pages lists them, and the one park page in the City's pickleball set that does is Police Memorial Park's, which is not published here because its address resolves nowhere. That is recorded as a silence rather than as a no; an amenity list that names bocce and horseshoe courts, as Aloha Shores' does, is not obviously a complete list. What the City does write is the size and shape of the sites. Centennial Hills is \"a 120-acre state-of-the-art regional park\" with soccer fields, a dog park, concession stands and an amphitheatre \"with grass seating for more than 3,000\", and nothing on its page says where the two pickleball courts sit inside it. Durango Hills is built around an 18-hole executive golf course. Lorenzi has twin lakes, reservable soccer and softball fields and the Sammy Davis Jr. Festival Plaza. Aloha Shores is, in the City's phrase, a neighbourhood park, and the whole of Patriot's description is one sentence naming a basketball court, tennis courts, a playground and picnic areas. Four of the five pages carry a pavilion reservation link and a special event application; Patriot's carries neither.",
+    "peak_hours": "Las Vegas publishes one clock for every venue and it is a long one. Each of the five park pages carries \"7 a.m. - 11 p.m.\" in its header, directly under the address, so the window is sixteen hours a day at all five parks. The City states park hours for every venue, which many operators here do not. How much of that window is usable after dark is the question the City does not answer. Not one of the five pages, and not the pickleball post, says whether any pickleball court is lit. An 11 p.m. closing time is a fact about the gate, not about the lamps, and this site does not read one as the other; lighting at all nineteen courts is recorded as unknown, and no Las Vegas venue appears on a lights page. What the City does publish about timing is programme prose rather than a schedule. Its post of 11 March 2026 says that \"All ages can find their game by joining a league, dropping in or take skills classes at city courts this spring\", that you can \"Drop in for a pop-up game or sign up to be a part of a league and play in matches\", and that there are youth sports in spring and fall and adult leagues to join. It gives no day, no time and no location for any of it, and this site does not attach it to a court. No page names a busy period, a rotation rule or a reservation for the courts; the reservations the pages do offer are for pavilions and sports fields. The nearest thing to a timing fact is the count itself: two courts at Centennial Hills or Patriot is one game, and seven at Durango Hills is a rotation.",
+    "surface_condition": "The City of Las Vegas names a surface for a pickleball court nowhere. No page among the nine read for this city says what any court is made of, and so all nineteen verified courts read as not stated on surface. That is a gap in what the City writes rather than a choice of this site's. The pages are also silent on two things the site would otherwise print alongside a surface. None says whether a court is indoor or outdoor: the City's count is a parenthesis in an amenity list - \"Pickleball courts (4)\" - between \"Volleyball courts\" and \"Playground\", and the list does not say where anything is. The indoor and outdoor breakdowns for Las Vegas therefore stay empty, and the city has no indoor page and no outdoor page even though a park with a walk/jog track and a barbecue grill leaves little doubt. And none says whether a court is dedicated to pickleball or lined onto a tennis court. Aloha Shores, Lorenzi and Patriot list tennis courts beside the pickleball; Centennial Hills and Durango Hills list none, so their courts are at least not sharing a tennis slab the page admits to. Lorenzi's tennis courts are \"managed by No Quit Tennis Academy\", which is a fact about tennis and is not carried across to the four pickleball courts the post counts there. What a player can rely on is the number and the address, both checked against the City's own text on every build.",
+    "local_scene": "Nineteen verified courts across five City parks: seven at Durango Hills, four each at Aloha Shores and Lorenzi, and two each at Centennial Hills and Patriot. Las Vegas is the first Nevada city on this site and the first in Clark County. The City's post of 11 March 2026 counts thirty-five courts at eight parks, so the published nineteen are a little over half of what the City says it has, and the missing sixteen are named here rather than hidden. Police Memorial Park has eight courts, the largest count in the city, stated twice - \"Pickleball courts (8)\" on the park page and \"Eight at Police Memorial Park\" on the post - with restrooms and two tennis courts beside them, and neither the US Census address file nor OpenStreetMap can find \"3250 Metro Academy Way\". Bill Briare Family Park has four courts stated twice, on a ten-acre park the City names for a former mayor, and its address, \"650 N. Tenaya Way\", is found by neither resolver. Justice Myron Leavitt & Jaycee Community Park has four courts on the post and no address and no count on its own page. Each fails on one fact, and none of the facts is about the courts being real. The other thing to know is how the City keeps its records. It has two: the park pages, which count courts in a parenthesis, and the post, which counts them in a sentence. Where both count, they agree. At Lorenzi and Patriot only the post counts, and the park pages do not mention pickleball. Las Vegas is the second city here, after Lincoln, whose operator keeps two records that disagree by silence, and the rule is the same: the record that states a number publishes, the venue page says it rests on one record, and the build asserts that the other page still says nothing. The City states no price. \"Drop in for a pop-up game\" is a play format, and nothing on any page says a court is free or charges for one, so no Las Vegas venue is called free."
+  },
+  "best_for": [
+    {
+      "key": "biggest",
+      "heading": "Best if you want the most courts",
+      "venue_slug": "durango-hills-park",
+      "text": "Durango Hills Park has seven pickleball courts, the largest published count in Las Vegas, stated twice by the City - \"Pickleball courts (7)\" on the park page and \"Seven at Durango Hills Park\" on its post. The park is built around the 18-hole executive Durango Hills Golf Club, with basketball courts and a skate park. Park hours are 7 a.m. to 11 p.m. Seven is a rotation; lighting is not stated.",
+      "supports": [
+        "C1",
+        "C4"
+      ]
+    },
+    {
+      "key": "described",
+      "heading": "Best if you want a park the City describes by its pickleball",
+      "venue_slug": "aloha-shores-park",
+      "text": "Aloha Shores Park is the one Las Vegas park page whose description names the game: \"This neighborhood park features pickleball courts.\" Four courts, counted twice by the City, beside tennis, bocce, horseshoe and volleyball courts, a playground and a walk/jog track, at 7550 Sauer St. Park hours are 7 a.m. to 11 p.m. Four courts is two games at once. Lighting and price are not stated.",
+      "supports": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "key": "historic",
+      "heading": "Best if you want to play in a historic park",
+      "venue_slug": "lorenzi-park",
+      "text": "Lorenzi Park has four courts on the City's post and a park page that never mentions them, so this venue rests on one City record and says so. The park is on the City's Historic Property Register and the Nevada State Register of Historic Places: David G. Lorenzi's 80 acres, opened as Lorenzi's Lake Park in 1926, with twin lakes, a band shell and the Sammy Davis Jr. Festival Plaza.",
+      "supports": [
+        "C1",
+        "C5"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does Las Vegas have?",
+      "a": "We have verified 19 across five City parks: 7 at Durango Hills, 4 at Aloha Shores, 4 at Lorenzi, 2 at Centennial Hills and 2 at Patriot. The City's own post of 11 March 2026 counts 35 at eight parks. The other 16 - eight at Police Memorial, four at Bill Briare and four at Justice Myron Leavitt & Jaycee - are at addresses this site cannot resolve or that the City does not publish."
+    },
+    {
+      "q": "Which Las Vegas courts have lights?",
+      "a": "None that the City states. No park page and not the pickleball post says a word about lighting at any pickleball court, and park hours of 7 a.m. to 11 p.m. are a fact about the gate rather than the lamps. Lighting at all 19 courts is recorded as unknown, no Las Vegas venue appears on a lights page, and daylight is the safe plan until the City says otherwise."
+    },
+    {
+      "q": "Why is Police Memorial Park not listed?",
+      "a": "It has eight courts, the largest count in the city, stated twice by the City, with restrooms and two tennis courts beside them. Its address, \"3250 Metro Academy Way\", is found by neither the US Census address file nor OpenStreetMap, and a venue at an address nobody can locate does not publish here. It is the most expensive refusal in Las Vegas, and it fails on that one fact."
+    },
+    {
+      "q": "Why does Lorenzi Park's page not mention pickleball?",
+      "a": "The City does not say. Its post of 11 March 2026 counts \"Four at Lorenzi Park\"; the park's own page lists tennis courts managed by No Quit Tennis Academy, basketball courts, a band shell and a fishing pond, without pickleball. The record that states a number publishes, the venue page says it rests on one record, and the build checks on every run that the park page still says nothing. Patriot Community Park is the same case."
+    }
+  ],
+  "sources": [
+    {
+      "id": "C1",
+      "url": "https://www.lasvegasnevada.gov/News/Blog/Detail/play-pickleball-in-las-vegas",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "The City's blog post \"Play Pickleball in Las Vegas\", dated March 11, 2026. \"All ages can find their game by joining a league, dropping in or take skills classes at city courts this spring.\" \"The city of Las Vegas has multiple courts to play on, and the spring season is here and ready for you.\" \"Drop in for a pop-up game or sign up to be a part of a league and play in matches.\" Youth sports \"offered in spring and fall\" and adult sports leagues. Under \"Where you can play\": \"The city's current pickleball court locations include: Two at Centennial Hills Park, Seven at Durango Hills Park, Eight at Police Memorial Park, Four at Bill Briare Park, Four at Lorenzi Park, Two at Patriot Park, Four at Justice Myron Leavitt & Jaycee Community Park, Four at Aloha Shores Park.\" Snapshot: data/sources/las-vegas/play-pickleball-in-las-vegas.html",
+      "not_stated": "Any address, any hours, any lighting, any price, any surface, whether any court is indoor or outdoor, and any day, time or venue for the leagues, classes and pop-up games."
+    },
+    {
+      "id": "C2",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Aloha-Shores-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Aloha Shores Park's page. Header: \"7550 Sauer St, 89128\" and \"7 a.m. - 11 p.m.\". Description: \"This neighborhood park features pickleball courts. It is also a great place to have a birthday party or special event.\" Amenities: \"Bocce and horseshoe courts\", \"Tennis courts\", \"Volleyball courts\", \"Pickleball courts (4)\", \"Playground\", \"Walk/Jog Track\", \"Reservable picnic area\", \"Barbecue grill\", \"Plenty of open space\". A Special Event Application and \"Pavilion Reservations Available\". Snapshot: data/sources/las-vegas/aloha-shores-park.html",
+      "not_stated": "Parking, restrooms, lighting, price, surface, whether the courts are indoor or outdoor, and whether they are dedicated or share ground with the tennis courts."
+    },
+    {
+      "id": "C3",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Centennial-Hills-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Centennial Hills Park's page. Header: \"7101 N. Buffalo Drive, 89131\" and \"7 a.m. - 11 p.m.\". Description: \"This 120-acre state-of-the-art regional park features a playground with ramps and features for all abilities. It is also built around an historic inverted riverbed thought to be the last remaining remnant of a large network of such channels that once covered this area.\" Amenities: \"Reservable picnic areas\", \"Dog park\", \"Sand volleyball courts\", \"Pickleball courts (2)\", \"Soccer fields\", \"Water play areas\", \"Jogging/walking path with interpretive signage describing the historical significance of the area\", \"Amphitheatre with grass seating for more than 3,000\", \"Concession stands\", \"Plenty of open space\", \"BBQ grill\", \"Reservable Sports Fields\". A Field Use Permit Application, a Special Event Application and Policy, and \"Pavilion Reservations Available\". Snapshot: data/sources/las-vegas/centennial-hills-park.html",
+      "not_stated": "Parking, restrooms, lighting, price, surface, whether the courts are indoor or outdoor, and where the two courts sit within the 120 acres."
+    },
+    {
+      "id": "C4",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Durango-Hills-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Durango Hills Park's page. Header: \"3521 N. Durango Dr, 89129\" and \"7 a.m. - 11 p.m.\". Description: \"This park features the 18-hole executive golf course Durango Hills Golf Club. It is also a great place to have a birthday party or special event.\" Amenities: \"Basketball courts\", \"Skate park\", \"Walking/jogging track\", \"Pickleball courts (7)\", \"Picnic area\", \"Playground\", \"Open space\". A Special Event Application and Policy, and \"Pavilion Reservations Available\". Snapshot: data/sources/las-vegas/durango-hills-park.html",
+      "not_stated": "Parking, restrooms, lighting, price, surface, whether the courts are indoor or outdoor, and why the count is seven."
+    },
+    {
+      "id": "C5",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Lorenzi-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Lorenzi Park's page, which does not mention pickleball. Header: \"3333 W. Washington Ave., 89107\" and \"7 a.m. - 11 p.m.\". \"The centerpiece of this park is twin lakes with fishing, which requires a license from the Nevada Department of Wildlife.\" \"The park is also home to the Nevada Garden Clubs, Inc.\" History: \"Lorenzi Park was the vision of David G. Lorenzi, a French immigrant who purchased 80 acres of property about two miles west of the original townsite in 1912. The park opened as Lorenzi's Lake Park in 1926 with a pool, dance pavilion, lakes and orchards.\" \"The property sold in 1940 and became Twin Lakes Lodge, a resort getaway with a 48-room hotel. In the 1950s, Twin Lakes hosted scientists and their families working at the Nevada Test Site.\" \"Lorenzi Park is listed on the city's Historic Property Register as an historic district and on the Nevada State Register of Historic places.\" Amenities: \"Children's play areas with water play feature\", \"Picnic and shade structures\", \"Tennis courts, managed by No Quit Tennis Academy\", \"Soccer and softball fields, which are reservable\", \"Basketball courts\", \"Band shell\", \"Spring-fed fishing pond\", \"Sammy Davis Jr. Festival Plaza\", \"Reservable picnic area\". Snapshot: data/sources/las-vegas/lorenzi-park.html",
+      "not_stated": "Pickleball, in any form - the count comes from the City's post alone. Also parking, restrooms, lighting, price and surface."
+    },
+    {
+      "id": "C6",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Patriot-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Patriot Park's page, which does not mention pickleball. Header: \"Patriot Community Park\", \"4050 Thom Blvd., 89130\" and \"7 a.m. - 11 p.m.\". The whole description: \"This park features a basketball court, tennis courts, playground and picnic areas.\" No amenity list, no reservation link and no special event link. Snapshot: data/sources/las-vegas/patriot-park.html",
+      "not_stated": "Pickleball, in any form - the count comes from the City's post alone. Also parking, restrooms, lighting, price and surface."
+    },
+    {
+      "id": "C7",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Police-Memorial-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "local_scene"
+      ],
+      "evidence": "Police Memorial Park's page, a venue not published here. Header: \"3250 Metro Academy Way, 89129\" and \"7 a.m. to 11 p.m.\". Amenities: \"Playgrounds\", \"Dog park with three dog runs (closed Wednesdays 11 a.m.-3 p.m. for maintenance)\", \"Basketball court\", \"Reservable picnic area\", \"Jogging/walking path\", \"Pickleball courts (8)\", \"Tennis courts (2)\", \"Skate bowl\", \"Open space\", \"Canine Memorial\", \"Barbecue grills\", \"Restrooms\". The only park page among the nine read for this city that lists restrooms. Snapshot: data/sources/las-vegas/police-memorial-park.html",
+      "not_stated": "Parking, lighting, price, surface, and an address that either the US Census address file or OpenStreetMap can find."
+    },
+    {
+      "id": "C8",
+      "url": "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Bill-Briare-Park",
+      "publisher": "City of Las Vegas Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "local_scene"
+      ],
+      "evidence": "Bill Briare Park's page, a venue not published here. Header: \"Bill Briare Family Park\", \"650 N. Tenaya Way, 89128\" and \"7 a.m. - 11 p.m.\". \"This park features 10 acres of open space, along with a walking/jogging path and playground. This park also connects to the Bonanza Trail and is named after former Las Vegas Mayor Bill Briare.\" \"We are the 100th partner to join the acclaimed National Fitness Campaign, and this park features the city's first Fitness Court.\" Amenities include \"Pickleball Courts (4)\". Snapshot: data/sources/las-vegas/bill-briare-park.html",
+      "not_stated": "Parking, restrooms, lighting, price, surface, and an address that either resolver can find."
+    },
+    {
+      "id": "C9",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "local_scene"
+      ],
+      "evidence": "All five published addresses matched at house-number level through the US Census address file and were placed in Clark County, NV (FIPS 32003) and the incorporated place \"Las Vegas city\": \"7550 SAUER\", \"7101 N BUFFALO DR\", \"3521 N DURANGO DR\", \"3333 W WASHINGTON AVE\" and \"4050 THOM BLVD\". \"3250 Metro Academy Way\", the address the City publishes for Police Memorial Park, and \"650 N. Tenaya Way\", the address it publishes for Bill Briare Family Park, are found by neither the Census address file nor OpenStreetMap. Snapshot: data/sources/las-vegas-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

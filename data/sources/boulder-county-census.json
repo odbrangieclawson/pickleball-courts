@@ -1,0 +1,72 @@
+{
+  "north-boulder-recreation-center": {
+    "matched": "3170 BROADWAY, BOULDER, CO, 80304",
+    "resolver": "census",
+    "lat": 40.032585551212,
+    "lon": -105.281996844335,
+    "county": "Boulder",
+    "state_fips": "08",
+    "county_fips": "013",
+    "place": "Boulder city",
+    "place_matches_city": true,
+    "postal_code": "80304",
+    "basis": "Census address geocoder matched \"3170 BROADWAY, BOULDER, CO, 80304\".",
+    "county_citation": "Boulder County, CO (FIPS 08013). Census address geocoder matched \"3170 BROADWAY, BOULDER, CO, 80304\"."
+  },
+  "east-boulder-community-center": {
+    "matched": "5660 SIOUX DR, BOULDER, CO, 80303",
+    "resolver": "census",
+    "lat": 39.993101267357,
+    "lon": -105.230039708702,
+    "county": "Boulder",
+    "state_fips": "08",
+    "county_fips": "013",
+    "place": "Boulder city",
+    "place_matches_city": true,
+    "postal_code": "80303",
+    "basis": "Census address geocoder matched \"5660 SIOUX DR, BOULDER, CO, 80303\".",
+    "county_citation": "Boulder County, CO (FIPS 08013). Census address geocoder matched \"5660 SIOUX DR, BOULDER, CO, 80303\"."
+  },
+  "south-boulder-recreation-center": {
+    "matched": "1360 GILLASPIE DR, BOULDER, CO, 80305",
+    "resolver": "census",
+    "lat": 39.974976194369,
+    "lon": -105.249402635905,
+    "county": "Boulder",
+    "state_fips": "08",
+    "county_fips": "013",
+    "place": "Boulder city",
+    "place_matches_city": true,
+    "postal_code": "80305",
+    "basis": "Census address geocoder matched \"1360 GILLASPIE DR, BOULDER, CO, 80305\".",
+    "county_citation": "Boulder County, CO (FIPS 08013). Census address geocoder matched \"1360 GILLASPIE DR, BOULDER, CO, 80305\"."
+  },
+  "chautauqua-park": {
+    "matched": "900 BASELINE RD, BOULDER, CO, 80302",
+    "resolver": "census",
+    "lat": 40.000013270063,
+    "lon": -105.281860999167,
+    "county": "Boulder",
+    "state_fips": "08",
+    "county_fips": "013",
+    "place": "Boulder city",
+    "place_matches_city": true,
+    "postal_code": "80302",
+    "basis": "Census address geocoder matched \"900 BASELINE RD, BOULDER, CO, 80302\".",
+    "county_citation": "Boulder County, CO (FIPS 08013). Census address geocoder matched \"900 BASELINE RD, BOULDER, CO, 80302\"."
+  },
+  "foothills-community-park": {
+    "matched": "Foothills Community Park, 800, Cherry Avenue, Promontory North, Boulder, Boulder County, Colorado, 80304, United States",
+    "resolver": "osm",
+    "lat": 40.0573451,
+    "lon": -105.2882896,
+    "county": "Boulder",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Boulder",
+    "place_matches_city": true,
+    "postal_code": "80304",
+    "basis": "OpenStreetMap (Nominatim) matched \"Foothills Community Park, 800, Cherry Avenue, Promontory North, Boulder, Boulder County, Colorado, 80304, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Boulder County, CO. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Boulder County."
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "city": "Boulder",
+  "state": "CO",
+  "kind": "venues",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Each venue page rests on the City of Boulder's Racket Sports page, which counts the outdoor courts in one table and prices them in one sentence, its pickleball page, which counts the indoor courts through the drop-in schedule and sets the outdoor drop-in windows, and the location's own page, which gives the address, the hours, the amenities and any closure notice - plus the US Census address geocoder, with OpenStreetMap as the second resolver, for the county and the postcode. Where the City is silent, these pages record the silence; where the City prints two figures for the same courts, both are printed.",
+  "venues": {
+    "north-boulder-rec-center": {
+      "slots": {
+        "description": "Seven pickleball courts at one address, in two places: four outdoor courts on the tennis courts beside the recreation centre, and three indoor courts in the gymnasium at scheduled drop-in times.\n\nThe four is the City's table figure - \"4 pickleball / 4 tennis / Rolling / North Boulder Recreation Center\" - under the heading \"Outdoor court layout and location\", and the City's own drop-in schedule calls them outdoor: \"7:30 to 10:30 am on 4 outdoor courts\". The three is the pickleball page's indoor line for this centre, \"Monday, Wednesday, Friday: 7:30 to 10:30 am on 3 indoor courts\". Seven is the sum of those two City figures and nothing else is added. The Racket Sports page also mentions \"Two platform tennis courts with pickleball lines\" for overflow at NBRC, the City's abbreviation for this building, and those are not counted here because they are platform tennis courts.\n\nThe centre's amenity list runs to a basketball court, a pool, a volleyball court, restrooms and RTD Access. When this was read the lap pool and hot tub were shut for repairs until a tentative November 1, and the whole building had a shutdown scheduled for August 15 to 23.",
+        "getting_there": "3170 Broadway, Boulder, CO 80304, as the City's location page prints it, with a phone number of 303-413-7260. The US Census address geocoder matched \"3170 BROADWAY, BOULDER, CO, 80304\" at house-number level, placed it in Boulder County and in the incorporated place Boulder city, which is what lets it publish under Boulder. The City's postcode and the Census postcode agree.\n\nThe centre's page answers \"Parking\" with \"Yes\" under its ADA Accessibility heading and says no more about it. Restrooms and drinking fountains are listed. The building is open Monday to Friday 5:45 am-9:00 pm and Saturday and Sunday 6:45 am-6:00 pm; the outdoor courts are not given hours of their own.",
+        "what_to_expect": "Two different games at one address. Outdoors, four courts that are \"first come and free to all park visitors\" whenever nobody has reserved them, with a reservation at $10 an hour available up to 7.5 days ahead for anyone who wants a guaranteed slot, and two scheduled drop-in windows: Tuesday and Thursday 7:30 to 10:30 am, and Wednesday and Friday 6 to 9 pm. That evening session is the only one the City schedules outdoors anywhere in Boulder. This is also the centre where the City writes that \"Complimentary light timers are located against the North Boulder Recreation Center near Tennis Court 1\", which is not a lighting answer for the pickleball courts, and the City's rule stands: \"Lights are not guaranteed for use of courts after sunset\".\n\nIndoors, three courts in the basketball gymnasium on Monday, Wednesday and Friday mornings, 7:30 to 10:30 am, \"included with your daily entry fee or pass\", and at no other time, because \"pickleball nets are not available outside listed drop-in hours\". The City's adult league plays its matches here and at South Boulder. No surface is stated, and nothing about how busy the courts get."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Seven: four outdoor, from the City's table line \"4 pickleball / 4 tennis\", and three indoor, from the drop-in line \"7:30 to 10:30 am on 3 indoor courts\". The two platform tennis courts with pickleball lines are not counted."},
+        {"q": "Is it free?", "a": "Outdoors, yes: \"Courts are first come and free to all park visitors\", with a $10 an hour reservation optional. Indoor drop-in is \"included with your daily entry fee or pass\", so it costs whatever the door costs."},
+        {"q": "When is outdoor drop-in?", "a": "Tuesdays and Thursdays 7:30 to 10:30 am and Wednesdays and Fridays 6 to 9 pm, on four outdoor courts. The evening session is the only one the City schedules outdoors in Boulder."},
+        {"q": "Are the courts lit?", "a": "Not stated. The City places complimentary light timers near Tennis Court 1 here and says lights are not guaranteed after sunset, which is not a lighting answer for the pickleball courts."},
+        {"q": "Are there restrooms?", "a": "Yes, listed under both ADA Accessibility and Amenities on the centre's page, with drinking fountains and a pool."}
+      ],
+      "sources": ["C1", "C2", "C4", "C9"]
+    },
+    "east-boulder-recreation-center": {
+      "slots": {
+        "description": "Five pickleball courts: two outdoor, on tennis courts with pickleball lines, and three indoor in the gymnasium at drop-in times.\n\nThe two is the City's table line, \"2 pickleball / Rolling / East Boulder Community Center\", the smallest outdoor set in Boulder and the one row with no tennis figure printed beside it - the City's general statement that \"Pickleball play is on tennis courts with pickleball lines\" is what says these are tennis courts. The three is the pickleball page's indoor schedule for this building: \"Monday: 1 to 3 pm and 6 to 8 pm on 3 indoor courts\" and \"Sunday: 2 to 4 pm on 3 indoor courts\".\n\nThe name needs a sentence. The City's location page and its Racket Sports table call this building the East Boulder Community Center; its pickleball page calls the same building the East Boulder Recreation Center; the location page's name is used here. It is not East Boulder Community Park, a separate site with a lighting note and courts planned for spring 2027, which does not publish. The centre has a pool with 25-yard lap lanes, a basketball court, a volleyball court and restrooms, and a renovations project.",
+        "getting_there": "5660 Sioux Dr., Boulder, CO 80303, as the City prints it, phone 303-441-4400. The US Census address geocoder matched \"5660 SIOUX DR, BOULDER, CO, 80303\" at house-number level, in Boulder County, in the incorporated place Boulder city. The City's postcode and the Census postcode agree.\n\nThe page answers \"Parking\" with \"Yes\" under ADA Accessibility and says nothing further. Restrooms and drinking fountains are listed. This is the only one of the five published Boulder venues whose amenity list does not include RTD Access. The building is open Monday to Friday 5:45 am-9:30 pm and Saturday and Sunday 7:45 am-4:00 pm; no separate hours are given for the outdoor courts.",
+        "what_to_expect": "Two outdoor courts is a game rather than a rotation, and the City schedules no outdoor drop-in session here - the two published outdoor sessions are at South Boulder and North Boulder. What the two courts offer is the City's standing rule: \"first come and free to all park visitors\", or reserved at $10 an hour, one reservation per person per day, two hours at most.\n\nIndoors is where this centre is distinctive. Its Monday 6 to 8 pm slot is the only evening indoor session the City prints anywhere in Boulder, alongside Monday 1 to 3 pm and Sunday 2 to 4 pm, all on three courts in the basketball gymnasium and all \"included with your daily entry fee or pass\". Nets go up at those times and not otherwise.\n\nThe Racket Sports page's \"East Boulder\" lighting note - reserve to use the lights, tokens from the centre, a thirty-minute cool-down - is about East Boulder Community Park, the separate site, so no lighting is published for this venue. No surface, no peak times, and no hours of its own for the outdoor courts."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Five: two outdoor, from the City's table line \"2 pickleball / Rolling / East Boulder Community Center\", and three indoor from the drop-in schedule."},
+        {"q": "Is this the same place as East Boulder Community Park?", "a": "No. The park is a separate site with a court-lights note and courts planned for spring 2027, and no stated count. This venue is the community centre at 5660 Sioux Dr."},
+        {"q": "When can I play indoors?", "a": "Monday 1 to 3 pm and 6 to 8 pm, and Sunday 2 to 4 pm, on three courts in the gymnasium, included with the daily entry fee or a pass. The Monday evening slot is Boulder's only evening indoor session."},
+        {"q": "Is it free?", "a": "The outdoor courts are, on the City's sentence \"Courts are first come and free to all park visitors\". Indoor drop-in requires the centre's daily entry fee or a pass."},
+        {"q": "Are the courts lit?", "a": "Not stated. The City's lighting note headed East Boulder concerns the Community Park, not this centre, and its general rule is that lights are not guaranteed after sunset."}
+      ],
+      "sources": ["C1", "C2", "C5", "C9"]
+    },
+    "south-boulder-recreation-center": {
+      "slots": {
+        "description": "Eleven pickleball courts, the largest published set in Boulder: eight outdoor courts on tennis courts with pickleball lines, and three indoor courts in the gymnasium at drop-in times.\n\nThe eight is the City's table line, \"8 pickleball / 4 tennis / Rolling / South Boulder Recreation Center\". The City's outdoor drop-in schedule for the same centre reads \"Monday through Sunday: 8:30 to 11:30 am on 6 outdoor courts\", six rather than eight, and both figures are printed rather than reconciled: the table is the inventory and the drop-in line is what the City sets aside for the morning session. The three is the pickleball page's indoor schedule, \"Sunday: 9 to 11 am on 3 indoor courts\" and \"Tuesday, Thursday: 1:30 to 3:30 pm on 3 indoor courts\", with the City's own footnote that \"There is no indoor Pickleball at South Boulder Recreation Center from June through October\".\n\nWhen this was read the outdoor courts were shut. The centre's page said: \"Aug. 17 - tentatively scheduled to reopen Sept. 11: All SBRC Outdoor Racket Courts closed for court resurfacing and restriping.\" That notice is published as printed, and the build fails the day the City takes it down.",
+        "getting_there": "1360 Gillaspie, Boulder, CO 80305, as the City's location page prints it, phone 303-441-3448. The US Census address geocoder matched \"1360 GILLASPIE DR, BOULDER, CO, 80305\" at house-number level - the Census adds a street type the City leaves off - and placed it in Boulder County, in the incorporated place Boulder city. The postcodes agree.\n\nThe page answers \"Parking\" with \"Yes\" under ADA Accessibility and says no more. Restrooms, drinking fountains and RTD Access are listed. The building is open Monday to Friday 5:45 am-9:00 pm and Saturday and Sunday 8:45 am-4:00 pm; the outdoor courts have no hours of their own.",
+        "what_to_expect": "Eight outdoor courts is enough for a rotation, and the City runs one: every day of the week, 8:30 to 11:30 am, on six of them. Outside that window the courts are \"first come and free to all park visitors\", or reserved at $10 an hour up to 7.5 days ahead. The City's adult league plays its matches here and at North Boulder.\n\nExpect to check first. On the day this was read every outdoor racket court here was closed for resurfacing and restriping, with a reopening the City called tentative, and the City's own FAQ speaks of \"the poor condition of courts across the system\" as the reason for its long-term court plan. The resurfacing is the City acting on that.\n\nIndoors, three courts on Sunday mornings and Tuesday and Thursday afternoons with the daily entry fee or a pass, and none at all from June through October, which makes this the one Boulder gymnasium with a stated off-season. Lighting is not stated - the City's rule is that lights are not guaranteed after sunset - and neither is surface, beyond its being redone."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Eleven: eight outdoor from the City's table line \"8 pickleball / 4 tennis\", and three indoor from the drop-in schedule. The outdoor drop-in line sets aside six of the eight."},
+        {"q": "Are the outdoor courts open?", "a": "They were closed when read: \"Aug. 17 - tentatively scheduled to reopen Sept. 11: All SBRC Outdoor Racket Courts closed for court resurfacing and restriping.\" The reopening date is the City's word tentative."},
+        {"q": "When is outdoor drop-in?", "a": "Monday through Sunday, 8:30 to 11:30 am, on six outdoor courts, in the City's schedule. Outside that window the courts are first come and free, or reservable at $10 an hour."},
+        {"q": "Is there indoor pickleball in summer?", "a": "No. The City's footnote reads \"There is no indoor Pickleball at South Boulder Recreation Center from June through October\". The rest of the year: Sunday 9 to 11 am and Tuesday and Thursday 1:30 to 3:30 pm."},
+        {"q": "Is it free?", "a": "Outdoors, yes, on the City's sentence \"Courts are first come and free to all park visitors\". Indoor drop-in is included with the daily entry fee or a pass."}
+      ],
+      "sources": ["C1", "C2", "C3", "C6", "C9"]
+    },
+    "chautauqua-park": {
+      "slots": {
+        "description": "Two pickleball courts on a single tennis court with pickleball lines - \"2 pickleball / 1 tennis / Rolling / Chautauqua Park\" in the City's table - in a park open 5:00 am to 11:00 pm every day.\n\nThat is the whole pickleball statement, and it is enough: a count, a location and the City's blanket \"first come and free to all park visitors\". No drop-in session is scheduled here; the City's outdoor drop-in windows are at the two recreation centres.\n\nThe park itself gets more words from the City than the courts do. It describes Chautauqua Park as \"a portion of an iconic historic landmark dating back to when the City of Boulder began preserving wild lands over 100 years ago\", bought after Boulder residents approved a bond in 1898 to purchase 80 acres for a Chautauqua, and now adjacent to Open Space and Mountain Parks trails, the Chautauqua Dining Hall and Auditorium and the Ranger Cottage. The amenity list runs to open turf, a playground, a basketball court, a tennis court, a demonstration garden, natural lands, restrooms and RTD Access, with what the City calls \"an iconic view of the Flatirons\" from the turf.",
+        "getting_there": "900 Baseline Rd, Boulder, CO 80302, as the City prints it; the page's phone number, 303-413-7200, is the Parks and Recreation department's. The US Census address geocoder matched \"900 BASELINE RD, BOULDER, CO, 80302\" at house-number level, in Boulder County, in the incorporated place Boulder city, and the postcodes agree.\n\nParking is the thing to plan around, and the City says so. Its page is headed \"Paid Parking in effect Memorial weekend to Labor Day\": paid parking \"on summer weekends and holidays at Chautauqua and nearby neighborhood streets to help pay for the shuttles, as well as ambassadors to assist visitors\", with the City's Park-to-Park service providing \"free satellite parking and shuttle service\". Restrooms, benches and sidewalks are listed under accessibility, and RTD Access among the amenities.",
+        "what_to_expect": "One tennis court's worth of pickleball, which is a game rather than a rotation: two courts, eight players at most, and no scheduled session to organise a queue. The park's hours, 5:00 am to 11:00 pm daily, are the longest the City states for any Boulder venue, but nothing is said about lights, and the City's standing rule is that \"Lights are not guaranteed for use of courts after sunset\", so the usable window is daylight until the City says otherwise.\n\nPlay is free and first come. A reservation at $10 an hour is available up to 7.5 days ahead, one per person per day, two hours at most, no refunds for weather - and on a two-court venue a reservation is the only way to be sure of a court. The table's nets column reads \"Rolling\", and the City's rule is that \"Pickleball nets should be rolled off tennis courts after completion of play and when not in use\"; it does not say in words whether a net is provided here, so nothing is claimed.\n\nOn a summer weekend or holiday, arriving means paying to park or using the free satellite lot and shuttle. Surface is not stated."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Two, on one tennis court with pickleball lines: \"2 pickleball / 1 tennis / Rolling / Chautauqua Park\" in the City's table."},
+        {"q": "What are the hours?", "a": "5:00 am to 11:00 pm, Sunday to Saturday, on the park's own page - the longest stated hours of any Boulder venue. Lighting is not stated, and the City says lights are not guaranteed after sunset."},
+        {"q": "Is it free?", "a": "Yes, on the City's sentence \"Courts are first come and free to all park visitors\". A reservation costs $10 an hour."},
+        {"q": "Where do I park?", "a": "The City states paid parking at and near the park on summer weekends and holidays, Memorial Day weekend to Labor Day, and a free satellite lot with a shuttle through its Park-to-Park service. Outside summer it says nothing."},
+        {"q": "Is there a drop-in session?", "a": "No. The City's scheduled outdoor drop-in play is at South Boulder and North Boulder recreation centres. Here the courts are first come, or reserved."}
+      ],
+      "sources": ["C1", "C7", "C9"]
+    },
+    "foothills-community-park": {
+      "slots": {
+        "description": "Four pickleball courts on an inline hockey rink, the one Boulder venue that is not a tennis court with pickleball lines, in a 65.2-acre park in North Boulder.\n\nThe count is stated twice. The City's table reads \"4 pickleball / Rolling / Foothills Community Park\", and the park's own page says the City \"added pickleball courts to the large rink for four pickleball courts\" in response to feedback. The Racket Sports page singles the site out in its general statement: \"Pickleball play is on tennis courts with pickleball lines. Except for Foothills Community Park which is a designated inline hockey rink.\"\n\nThis is a minted venue: no imported row carried this name at this address, and the two imported rows that describe these courts - at 800 and 700 Cherry Ave - are left pending while the venue publishes under the City's own name from the City's own pages. The park has three picnic shelters, a dog park, playgrounds, sports fields, a basketball court, a multi-use path and the Growing Gardens community gardens, and the City says restrooms are open year-round with limited hours in fall and winter.",
+        "getting_there": "800 Cherry Ave, Boulder, CO 80304, as the City's page prints it, phone 303-413-7200. The US Census address file holds no record of this address, so it resolved through the second resolver: OpenStreetMap matched \"Foothills Community Park, 800, Cherry Avenue, Promontory North, Boulder, Boulder County, Colorado, 80304\" at house-number level and placed it in the incorporated place Boulder, which is what lets it publish here.\n\nThe City publishes nothing about parking at this park. Restrooms, drinking fountains, shade structures and sidewalks are listed under accessibility, and RTD Access among the amenities. The page gives no park hours; the only hours it states are the pickleball window.",
+        "what_to_expect": "A morning venue. The City states the arrangement in full: the courts \"are available for reservation and use from 7 a.m. to noon, seven days a week\", and \"The rink is available for general public use and all sports from noon to close.\" The Racket Sports page adds the other half of the rule - if a court is not reserved, \"the use is designated as inline hockey court\" - so a reservation, at $10 an hour, is what makes the rink a pickleball court in the morning, and after noon it is a rink.\n\nBring a net. This is the only Boulder venue where the City says so in words: \"Please bring your own portable pickleball nets. Nets are not available onsite.\" Everywhere else the table's \"Rolling\" column stands in for a statement.\n\nInside the window, play is \"first come and free to all park visitors\", like every other court in the city. Four courts is two games at once. There is no scheduled drop-in session, no lighting statement, no surface statement, and no word on how busy the rink gets. It is a different proposition from Boulder's tennis courts, and the City is unusually clear about it."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Four, on the park's large inline hockey rink. The City's table reads \"4 pickleball / Rolling / Foothills Community Park\", and the park page says the rink was lined for four courts."},
+        {"q": "When can I play?", "a": "From 7 a.m. to noon, seven days a week, by reservation or first come. From noon to close the rink is for general public use and all sports."},
+        {"q": "Are nets provided?", "a": "No, and the City states it: \"Please bring your own portable pickleball nets. Nets are not available onsite.\" This is the only Boulder venue with a stated nets answer."},
+        {"q": "Is it free?", "a": "Yes, within the morning window, on the City's sentence \"Courts are first come and free to all park visitors\". Reserving a court costs $10 an hour."},
+        {"q": "Why did this address need a second resolver?", "a": "The US Census address file has no record of 800 Cherry Ave. OpenStreetMap matched it at house-number level in Boulder, Boulder County, 80304, and that is the resolution published."}
+      ],
+      "sources": ["C1", "C8", "C9"]
+    }
+  },
+  "sources": [
+    {
+      "id": "C1",
+      "url": "https://bouldercolorado.gov/services/racket-sports",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "what_to_expect"],
+      "evidence": "The City's Racket Sports page. Under \"Outdoor court layout and location\": \"Pickleball play is on tennis courts with pickleball lines. Except for Foothills Community Park which is a designated inline hockey rink. Foothills Community inline courts have limited reservations: available for reservation and use from 7 a.m. to noon: however if not reserved then the use is designated as inline hockey court.\" The table: \"4 pickleball / 4 tennis / Rolling / North Boulder Recreation Center\", \"2 pickleball / Rolling / East Boulder Community Center\", \"8 pickleball / 4 tennis / Rolling / South Boulder Recreation Center\", \"2 pickleball / 1 tennis / Rolling / Chautauqua Park\", \"4 pickleball / Rolling / Foothills Community Park\". \"Courts are first come and free to all park visitors, a reserved court is available to secure your date and time.\" \"Lights are not guaranteed for use of courts after sunset\". Reservations \"7.5 days in advance (181 rolling hours)\", \"Only one court reservation per person per day for a maximum time of 2 hours daily\", \"Refunds will not be given due to adverse weather conditions\". \"Court rental fees are increasing to $10 per hour.\" \"Complimentary light timers are located against the North Boulder Recreation Center near Tennis Court 1.\" \"Two platform tennis courts with pickleball lines are available for overflow at NBRC.\" \"Pickleball nets should be rolled off tennis courts after completion of play and when not in use.\" East Boulder Community Park Court Lights: \"Courts need to be reserved in order to use lights\", tokens, a 30-minute cool-down. Snapshot: data/sources/boulder/racket-sports.html",
+      "not_stated": "Surface, any per-venue lighting answer, parking, peak times, and whether a net is provided at any venue other than Foothills."
+    },
+    {
+      "id": "C2",
+      "url": "https://bouldercolorado.gov/services/pickleball",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "what_to_expect"],
+      "evidence": "The City's pickleball page. \"Drop-in pickleball is offered inside our recreation center basketball gymnasiums. Indoor play is only available during the designated drop-in pickleball times, listed below, and pickleball nets are not available outside listed drop-in hours.\" East Boulder Recreation Center: \"Monday: 1 to 3 pm and 6 to 8 pm on 3 indoor courts\", \"Sunday: 2 to 4 pm on 3 indoor courts\". South Boulder Recreation Center: \"Sunday: 9 to 11 am on 3 indoor courts*\", \"Tuesday, Thursday: 1:30 to 3:30 pm on 3 indoor courts*\", \"*There is no indoor Pickleball at South Boulder Recreation Center from June through October\". North Boulder Recreation Center: \"Monday, Wednesday, Friday: 7:30 to 10:30 am on 3 indoor courts\". \"Indoor drop-in pickleball is included with your daily entry fee or pass.\" Outdoor drop-in: South Boulder \"Monday through Sunday: 8:30 to 11:30 am on 6 outdoor courts\"; North Boulder \"Tuesdays and Thursdays: 7:30 to 10:30 am on 4 outdoor courts\", \"Wednesdays and Fridays: 6 to 9 pm on 4 outdoor courts\". Leagues: \"Teams will play 1 match per night, for up to 1 hour.\", \"Matches played at the SBRC or NBRC.\" Snapshot: data/sources/boulder/pickleball.html",
+      "not_stated": "Surface, lighting, parking, the price of the daily entry fee, and any drop-in session at Chautauqua, Foothills or the East Boulder outdoor courts."
+    },
+    {
+      "id": "C3",
+      "url": "https://bouldercolorado.gov/racket-sports-faqs",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["what_to_expect"],
+      "evidence": "The City's Racket Sports FAQs. \"Court rental fees are increasing from $5 per hour to $10 per hour.\" \"Unreserved courts remain free to use on a first-come, first-play basis.\" The planned new courts \"are part of a long-term plan to support rising demand for court space while also ensuring we address the poor condition of courts across the system.\" Snapshot: data/sources/boulder/racket-sports-faqs.html",
+      "not_stated": "Any court count, surface, lighting or parking."
+    },
+    {
+      "id": "C4",
+      "url": "https://bouldercolorado.gov/locations/north-boulder-recreation-center",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there"],
+      "evidence": "North Boulder Recreation Center's page. Address \"3170 Broadway / Boulder, CO 80304\", phone 303-413-7260. Hours: \"Sunday: 6:45 am-6:00 pm\", \"Monday - Friday: 5:45 am-9:00 pm\", \"Saturday: 6:45 am-6:00 pm\". ADA Accessibility: \"Restrooms\", \"Sidewalks/Paths\", \"Drinking Fountains\", \"Parking / Yes\". Amenities: \"Basketball Court\", \"Pickleball\", \"Pool\", \"Restroom\", \"RTD Access\", \"Volleyball Court\". \"Begins Aug. 1 and tentatively scheduled to reopen Nov. 1: Lap Pool and Hot Tub\", \"Aug. 15 - 23: Annual Facility Shutdown\". Snapshot: data/sources/boulder/north-boulder-recreation-center.html",
+      "not_stated": "Any court count, surface, lighting, or hours for the outdoor courts."
+    },
+    {
+      "id": "C5",
+      "url": "https://bouldercolorado.gov/locations/east-boulder-community-center",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there"],
+      "evidence": "East Boulder Community Center's page. Address \"5660 Sioux Dr. / Boulder, CO 80303\", phone 303-441-4400. Hours: \"Sunday: 7:45 am-4:00 pm\", \"Monday - Friday: 5:45 am-9:30 pm\", \"Saturday: 7:45 am-4:00 pm\". ADA Accessibility: \"Restrooms\", \"Sidewalks/Paths\", \"Drinking Fountains\", \"Parking / Yes\". Amenities: \"Basketball Court\", \"Volleyball Court\", \"Pickleball\", \"Pool\", \"Restroom\". \"Indoor lap lanes: 25 yards\". Related projects: \"East Boulder Community Center Renovations\", \"East Boulder Community Park - Racket Courts\". Snapshot: data/sources/boulder/east-boulder-community-center.html",
+      "not_stated": "Any court count, surface, lighting, RTD Access, or hours for the outdoor courts."
+    },
+    {
+      "id": "C6",
+      "url": "https://bouldercolorado.gov/locations/south-boulder-recreation-center",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there", "what_to_expect"],
+      "evidence": "South Boulder Recreation Center's page. Address \"1360 Gillaspie / Boulder, CO 80305\", phone 303-441-3448. Hours: \"Sunday: 8:45 am-4:00 pm\", \"Monday - Friday: 5:45 am-9:00 pm\", \"Saturday: 8:45 am-4:00 pm\". ADA Accessibility: \"Restrooms\", \"Sidewalks/Paths\", \"Drinking Fountains\", \"Parking / Yes\". Amenities: \"Basketball Court\", \"Pickleball\", \"Pool\", \"Restroom\", \"RTD Access\", \"Volleyball Court\". \"Aug. 29 - Sept. 7: Planned, annual maintenance shutdown.\" \"Aug. 17 - tentatively scheduled to reopen Sept. 11: All SBRC Outdoor Racket Courts closed for court resurfacing and restriping.\" Snapshot: data/sources/boulder/south-boulder-recreation-center.html",
+      "not_stated": "Any court count, surface, lighting, or hours for the outdoor courts."
+    },
+    {
+      "id": "C7",
+      "url": "https://bouldercolorado.gov/locations/chautauqua-park",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there", "what_to_expect"],
+      "evidence": "Chautauqua Park's page. Address \"900 Baseline Rd / Boulder, CO 80302\", phone 303-413-7200. Hours: \"Sunday - Saturday: 5:00 am-11:00 pm\". ADA Accessibility: \"Sidewalks/Paths\", \"Restrooms\", \"Benches\". Amenities: \"RTD Access\", \"Restroom\", \"Open Turf\", \"Playground\", \"Basketball Court\", \"Pickleball\", \"Tennis Court\", \"Nature Play Opportunity\", \"Demonstration Garden\", \"Natural Lands\". \"Paid Parking in effect Memorial weekend to Labor Day\": \"Paid parking is in effect at/near Chautauqua Park- paid parking on summer weekends and holidays at Chautauqua and nearby neighborhood streets to help pay for the shuttles, as well as ambassadors to assist visitors. Park-to-Park provides free satellite parking and shuttle service.\" \"Chautauqua Park is a portion of an iconic historic landmark dating back to when the City of Boulder began preserving wild lands over 100 years ago. In 1898, Boulder residents approved a bond issue to purchase 80 acres to be used as a Chautauqua.\" Adjacent to OSMP trails, the Chautauqua Dining Hall and Auditorium and the Ranger Cottage. \"an iconic view of the Flatirons\". Snapshot: data/sources/boulder/chautauqua-park.html",
+      "not_stated": "Any court count, surface, lighting, nets, or a drop-in schedule."
+    },
+    {
+      "id": "C8",
+      "url": "https://bouldercolorado.gov/locations/foothills-community-park",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there", "what_to_expect"],
+      "evidence": "Foothills Community Park's page. Address \"800 Cherry Ave / Boulder, CO 80304\", phone 303-413-7200. \"Foothills Community Park is an 65.2 acre park located in North Boulder featuring a wide range of facilities and recreational amenities unique playgrounds, inline hockey and pickleball rink, and fields for programmed sports.\" \"Restrooms are open year-round with limited hours in fall and winter.\" ADA Accessibility: \"Shade Structures\", \"Drinking Fountains\", \"Restrooms\", \"Sidewalks/Paths\". Amenities: \"RTD Access\", \"Playground\", \"Shelter\", \"Restroom\", \"Basketball Court\", \"Inline Hockey Rink\", \"Multi-use Field\", \"Soccer Field\", \"Dog Park\", \"Pickleball\", \"Nature Play Opportunity\", \"Multi-use Path\". Three shelters, A, B and C; \"home to Community Gardens/Growing Gardens\". \"We heard your feedback and added pickleball courts to the large rink for four pickleball courts. Please bring your own portable pickleball nets. Nets are not available onsite. The courts are available for reservation and use from 7 a.m. to noon, seven days a week. The rink is available for general public use and all sports from noon to close.\" Snapshot: data/sources/boulder/foothills-community-park.html",
+      "not_stated": "Parking, surface, lighting, and park hours other than the pickleball window."
+    },
+    {
+      "id": "C9",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["getting_there"],
+      "evidence": "Four of the five published addresses were matched at house-number level by the Census address file and placed in Boulder County, CO (FIPS 08013) and in the incorporated place \"Boulder city\": \"3170 BROADWAY, BOULDER, CO, 80304\", \"5660 SIOUX DR, BOULDER, CO, 80303\", \"1360 GILLASPIE DR, BOULDER, CO, 80305\" and \"900 BASELINE RD, BOULDER, CO, 80302\". The Census file holds no record of 800 Cherry Ave; OpenStreetMap (Nominatim) matched \"Foothills Community Park, 800, Cherry Avenue, Promontory North, Boulder, Boulder County, Colorado, 80304, United States\" at house-number level and placed it in the incorporated place Boulder. Snapshot: data/sources/boulder-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

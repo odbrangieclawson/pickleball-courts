@@ -1,0 +1,45 @@
+{
+  "wolfs-crossing-community-park": {
+    "matched": false,
+    "query": "3252 Wolf's Crossing Road, Naperville, IL",
+    "resolver": null
+  },
+  "nike-sports-complex": {
+    "matched": "288, West Diehl Road, Naperville, Naperville Township, DuPage County, Illinois, 60563, United States",
+    "resolver": "osm",
+    "lat": 41.8013061,
+    "lon": -88.1507082,
+    "county": "DuPage",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Naperville",
+    "place_matches_city": true,
+    "postal_code": "60563",
+    "basis": "OpenStreetMap (Nominatim) matched \"288, West Diehl Road, Naperville, Naperville Township, DuPage County, Illinois, 60563, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "DuPage County, IL. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in DuPage County."
+  },
+  "ranchview-park": {
+    "matched": "1727 RANCHVIEW DR, NAPERVILLE, IL, 60565",
+    "resolver": "census",
+    "lat": 41.739128677529,
+    "lon": -88.095471078636,
+    "county": "DuPage",
+    "state_fips": "17",
+    "county_fips": "043",
+    "place": "Naperville city",
+    "place_matches_city": true,
+    "postal_code": "60565",
+    "basis": "Census address geocoder matched \"1727 RANCHVIEW DR, NAPERVILLE, IL, 60565\".",
+    "county_citation": "DuPage County, IL (FIPS 17043). Census address geocoder matched \"1727 RANCHVIEW DR, NAPERVILLE, IL, 60565\"."
+  },
+  "dupage-river-sports-complex": {
+    "matched": false,
+    "query": "2807 S Washington Street, Naperville, IL",
+    "resolver": null
+  },
+  "frontier-sports-complex": {
+    "matched": false,
+    "query": "3380 Cedar Glade Drive, Naperville, IL",
+    "resolver": null
+  }
+}

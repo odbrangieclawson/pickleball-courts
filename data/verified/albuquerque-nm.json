@@ -1,0 +1,1319 @@
+{
+  "city": "Albuquerque",
+  "state": "NM",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Albuquerque states name, address and count in three cells of one table on its pickleball page, and the description cell says what kind of court it is counting - \"Pickleball Complex\" for the two dedicated complexes, \"Tennis Courts with Pickleball Lines\" for the rest - and marks lighting where it applies. Thirteen of the sixteen rows publish; Pat Hurley, Alamosa and Ventana Ranch are refused because neither resolver finds the address the City writes, which costs twenty-eight courts, twenty of them lit. Manzano Mesa Pickleball Complex's \"33 Courts (21 Lighted)\" is the largest single-venue count on this site. The page source also holds two older tables inside an HTML comment that disagree with the visible table at four venues and name three parks it does not; a comment is not a published record, so those numbers do not invoke the two-records rule that refused Irvine's Los Olivos, but the run asserts that the residue is still present and still hidden, so the build fails the day the City puts it back in front of readers. The only statement about nets (\"Players need to bring pickleball nets.\") is inside that comment and is not published. Hours are stated for the two complexes and Pat Hurley; play is first come, first served with a ninety-minute limit when others are waiting; Sierra Vista's courts can be reserved by phone at no stated price. Indoor/outdoor, fee and surface are never stated.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+      "publisher": "City of Albuquerque Parks & Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/albuquerque/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/albuquerque-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 13,
+    "courts": 86,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": 21,
+    "dedicated_courts": 41,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Pat Hurley Park",
+      "why": [
+        "Neither address resolver finds \"3828 Rincon Rd NW\": the US Census address file returns no match and OpenStreetMap returns nothing at house-number level. Import Gate I1 requires a street address that resolves.",
+        "The City states eight courts (\"4 Courts and 4 Lined Courts\", \"4 dedicated and 4 blended lines\") and hours of 6 a.m. to 10 p.m. daily for it - more than it states for most venues that do publish. It fails on its address alone."
+      ]
+    },
+    {
+      "name": "Alamosa Park",
+      "why": [
+        "Neither address resolver finds \"1100 Bataan SW\". Import Gate I1.",
+        "Eight lighted lined courts, one of only three lighting statements the City makes. It fails on its address alone."
+      ]
+    },
+    {
+      "name": "Ventana Ranch Park",
+      "why": [
+        "Neither address resolver finds \"10000 Universe NW\". Import Gate I1. The imported dataset carries this park with no house number at all (\"Universe Blvd, Nw, Universe And Paradise Blvd.\"), and the commented-out older list on the City's own page also gives it without one.",
+        "Twelve lighted lined courts, the largest lined set the City lists and the most expensive refusal in the city. It fails on its address alone."
+      ]
+    }
+  ],
+  "venues": {
+    "manzano-mesa-park": {
+      "minted": false,
+      "identity": {
+        "name": "Manzano Mesa Pickleball Complex",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87123",
+        "latitude": 35.064328269298,
+        "longitude": -106.525286623981,
+        "imported_slug": "manzano-mesa-park-pickleball-courts",
+        "canonical_slug": "manzano-mesa-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "33 Courts (21 Lighted)",
+        "basis": "Matched to the imported manzano-mesa-park-pickleball-courts row in Albuquerque, NM, at the same street address, and published under its canonical slug manzano-mesa-park."
+      },
+      "patch": {
+        "name": "Manzano Mesa Pickleball Complex",
+        "total_courts": 33,
+        "street_address": "501 Elizabeth SE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Thirty-three pickleball courts, twenty-one of them lit, in the City's own cell: \"Pickleball Complex / 33 Courts (21 Lighted)\". That is the largest single-venue count on this site, ahead of Mesa's twenty-one, and the City calls it one of its \"two dedicated pickleball complexes\", so these are pickleball courts rather than tennis courts wearing lines. The \"Lighted\" belongs to twenty-one of the thirty-three; the other twelve carry no lighting statement. Open 6 a.m. to 10 p.m. daily, in the City's sentence naming this complex, Villella and Pat Hurley. Play is first come, first served and limited to an hour and a half when others are waiting. The City runs lessons and programmes here and reserves the complex for special events through its Sports Office. The imported dataset carried this venue at eighteen courts; the City's table now says thirty-three, and the page source still holds the old eighteen inside a comment nobody sees. Price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87123",
+        "light": true,
+        "hours_of_operation": "6 a.m. to 10 p.m. daily"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Manzano Mesa Pickleball Complex\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Pickleball Complex / 33 Courts (21 Lighted)\". The City calls this one of its \"two dedicated pickleball complexes\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"501 Elizabeth SE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Pickleball Complex / 33 Courts (21 Lighted)\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"501 ELIZABETH ST SE, ALBUQUERQUE, NM, 87123\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"501 ELIZABETH ST SE, ALBUQUERQUE, NM, 87123\"."
+        },
+        "light": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"33 Courts (21 Lighted)\" in the City's cell. The \"Lighted\" attaches to 21 of the 33 courts; the venue page prints both figures."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Manzano Mesa, Villella, and Pat Hurley are open from 6 a.m. to 10 p.m. daily.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "villela-park": {
+      "minted": false,
+      "identity": {
+        "name": "Villela Pickleball Courts",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87110",
+        "latitude": 35.121699623033,
+        "longitude": -106.5908252455,
+        "imported_slug": "villela-park-pickleball-courts",
+        "canonical_slug": "villela-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "6 Courts",
+        "basis": "Matched to the imported villela-park-pickleball-courts row in Albuquerque, NM, at the same street address, and published under its canonical slug villela-park."
+      },
+      "patch": {
+        "name": "Villela Pickleball Courts",
+        "total_courts": 6,
+        "street_address": "4800 Cherokee NE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Six dedicated pickleball courts at the second of the City's \"two dedicated pickleball complexes\", in the north-east of the city. The table reads \"Pickleball Complex / 6 Courts\". Open 6 a.m. to 10 p.m. daily in the City's sentence, which spells the name \"Villella\" where the table has \"Villela\". First come, first served, with play limited to an hour and a half when others are waiting. Lighting is not stated for these courts; the City marks it in the description cell where it applies and this cell carries no such mark. Price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87110",
+        "hours_of_operation": "6 a.m. to 10 p.m. daily"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Villela Pickleball Courts\" in the Name column of the City's \"Pickleball Court Locations\" table. The prose beneath the table spells it \"Villella\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Pickleball Complex / 6 Courts\". The City calls this one of its \"two dedicated pickleball complexes\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4800 Cherokee NE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Pickleball Complex / 6 Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"4800 CHEROKEE RD NE, ALBUQUERQUE, NM, 87110\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4800 CHEROKEE RD NE, ALBUQUERQUE, NM, 87110\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Manzano Mesa, Villella, and Pat Hurley are open from 6 a.m. to 10 p.m. daily.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "sierra-vista-tennis-complex": {
+      "minted": true,
+      "identity": {
+        "name": "Sierra Vista Tennis Complex",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87120",
+        "latitude": 35.15261323501,
+        "longitude": -106.695740762414,
+        "imported_slug": null,
+        "canonical_slug": "sierra-vista-tennis-complex"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "2 Courts and 4 Lined Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Sierra Vista Tennis Complex",
+        "total_courts": 6,
+        "street_address": "5001 Montano Rd. NW",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Six pickleball courts of two kinds, and the six is the City's own arithmetic: \"2 Courts and 4 Lined Courts\" in the table, and in the prose beneath it \"Sierra Vista Courts with 2 permanent pickleball courts, and 4 lined pickleball courts\". Two courts stand as pickleball courts; four are lines on tennis courts. This is the one Albuquerque venue whose courts the City says can be booked: \"Courts at Sierra Vista can be reserved in advanced by calling 505-767-5445.\" No price is stated for that. Otherwise first come, first served with a ninety-minute limit when others are waiting. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87120",
+        "pricing_notes": "Courts can be reserved in advance by calling 505-767-5445. No price is stated."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Sierra Vista Tennis Complex\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis/Pickleball Courts / 2 Courts and 4 Lined Courts\". Six is the City's own sum of \"2 Courts and 4 Lined Courts\", confirmed in its prose: \"Sierra Vista Courts with 2 permanent pickleball courts, and 4 lined pickleball courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5001 Montano Rd. NW\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis/Pickleball Courts / 2 Courts and 4 Lined Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"5001 MONTANO RD NW, ALBUQUERQUE, NM, 87120\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5001 MONTANO RD NW, ALBUQUERQUE, NM, 87120\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts at Sierra Vista can be reserved in advanced by calling 505-767-5445.\" The City states no price for a reservation."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "hoffman-park": {
+      "minted": true,
+      "identity": {
+        "name": "Hoffman Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87112",
+        "latitude": 35.111968196773,
+        "longitude": -106.544981189548,
+        "imported_slug": null,
+        "canonical_slug": "hoffman-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "2 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Hoffman Park",
+        "total_courts": 2,
+        "street_address": "2480 Mesa Linda NE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Two pickleball courts lined onto the tennis courts at Hoffman Park in the north-east heights, in the City's cell \"Tennis Courts with Pickleball Lines / 2 Pickleball Courts\". Lined courts share the slab with tennis and carry a tennis net; the City says nothing on its visible page about who brings a pickleball net. First come, first served, an hour and a half when others are waiting. Two courts is a game rather than a rotation. Lighting, hours, price, surface and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87112"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Hoffman Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 2 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2480 Mesa Linda NE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 2 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"2480 MESA LINDA DR NE, ALBUQUERQUE, NM, 87112\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2480 MESA LINDA DR NE, ALBUQUERQUE, NM, 87112\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "rinconada-park": {
+      "minted": true,
+      "identity": {
+        "name": "Rinconada Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87120",
+        "latitude": 35.118908757567,
+        "longitude": -106.725695436626,
+        "imported_slug": null,
+        "canonical_slug": "rinconada-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "2 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Rinconada Park",
+        "total_courts": 2,
+        "street_address": "3125 Painted Rock NW",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Two pickleball courts lined onto the tennis courts at Rinconada Park on the west side, \"Tennis Courts with Pickleball Lines / 2 Pickleball Courts\" in the City's table. Shared with tennis, first come, first served, ninety minutes when others are waiting. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87120"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Rinconada Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 2 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3125 Painted Rock NW\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 2 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"3125 PAINTED ROCK DR NW, ALBUQUERQUE, NM, 87120\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3125 PAINTED ROCK DR NW, ALBUQUERQUE, NM, 87120\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "montgomery-park": {
+      "minted": true,
+      "identity": {
+        "name": "Montgomery Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87110",
+        "latitude": 35.12638203712,
+        "longitude": -106.582574522297,
+        "imported_slug": null,
+        "canonical_slug": "montgomery-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "6 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Montgomery Park",
+        "total_courts": 6,
+        "street_address": "5510 Ponderosa NE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Six pickleball courts lined onto the tennis courts at Montgomery Park in the north-east, \"Tennis Courts with Pickleball Lines / 6 Pickleball Courts\" in the City's table - the largest lined set that publishes here, since Ventana Ranch's twelve and Alamosa's eight are refused on their addresses. Shared with tennis, first come, first served, ninety minutes when others are waiting. The page source carries an older figure of four for this park inside a comment a reader never sees; the visible table says six. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87110"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Montgomery Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 6 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5510 Ponderosa NE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 6 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"5510 PONDEROSA AVE NE, ALBUQUERQUE, NM, 87110\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5510 PONDEROSA AVE NE, ALBUQUERQUE, NM, 87110\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "columbus-park": {
+      "minted": true,
+      "identity": {
+        "name": "Columbus Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87107",
+        "latitude": 35.138357667244,
+        "longitude": -106.654550338633,
+        "imported_slug": null,
+        "canonical_slug": "columbus-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "4 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Columbus Park",
+        "total_courts": 4,
+        "street_address": "5301 Guadalupe Trail NW",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Four pickleball courts lined onto the tennis courts at Columbus Park in the North Valley, \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" in the City's table. Shared with tennis, first come, first served, ninety minutes when others are waiting. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87107"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Columbus Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5301 Guadalupe Trail NW\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"5301 GUADALUPE TRL NW, ALBUQUERQUE, NM, 87107\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5301 GUADALUPE TRL NW, ALBUQUERQUE, NM, 87107\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "eagle-ranch-park": {
+      "minted": true,
+      "identity": {
+        "name": "Eagle Ranch Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87114",
+        "latitude": 35.189147953788,
+        "longitude": -106.667343099193,
+        "imported_slug": null,
+        "canonical_slug": "eagle-ranch-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "4 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Eagle Ranch Park",
+        "total_courts": 4,
+        "street_address": "3500 1/2 Congress NW",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Four pickleball courts lined onto the tennis courts at Eagle Ranch Park on the west side, \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" in the City's table, at an address the City writes with a half: 3500 1/2 Congress NW. Shared with tennis, first come, first served, ninety minutes when others are waiting. The page source holds an older figure of two for this park inside a comment; the visible table says four. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87114"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Eagle Ranch Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3500 1/2 Congress NW\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"3500 1/2 CONGRESS AVE NW, ALBUQUERQUE, NM, 87114\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3500 1/2 CONGRESS AVE NW, ALBUQUERQUE, NM, 87114\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "loma-del-norte-park": {
+      "minted": true,
+      "identity": {
+        "name": "Loma Del Norte Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87109",
+        "latitude": 35.164971917578,
+        "longitude": -106.561554721124,
+        "imported_slug": null,
+        "canonical_slug": "loma-del-norte-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "4 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Loma Del Norte Park",
+        "total_courts": 4,
+        "street_address": "7511 Burke NE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Four pickleball courts lined onto the tennis courts at Loma Del Norte Park in the north-east, \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" in the City's table. Shared with tennis, first come, first served, ninety minutes when others are waiting. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87109"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Loma Del Norte Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"7511 Burke NE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"7511 BURKE ST NE, ALBUQUERQUE, NM, 87109\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"7511 BURKE ST NE, ALBUQUERQUE, NM, 87109\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "lynnewood-park": {
+      "minted": true,
+      "identity": {
+        "name": "Lynnewood Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87112",
+        "latitude": 35.113090051835,
+        "longitude": -106.49961479481,
+        "imported_slug": null,
+        "canonical_slug": "lynnewood-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "4 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Lynnewood Park",
+        "total_courts": 4,
+        "street_address": "2721 Marie Park NE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Four pickleball courts lined onto the tennis courts at Lynnewood Park in the north-east heights, \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" in the City's table. Shared with tennis, first come, first served, ninety minutes when others are waiting. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87112"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Lynnewood Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2721 Marie Park NE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"2721 MARIE PARK DR NE, ALBUQUERQUE, NM, 87112\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2721 MARIE PARK DR NE, ALBUQUERQUE, NM, 87112\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "lauren-c-bolles": {
+      "minted": true,
+      "identity": {
+        "name": "Lauren C. Bolles",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87123",
+        "latitude": 35.074689396215,
+        "longitude": -106.501591708266,
+        "imported_slug": null,
+        "canonical_slug": "lauren-c-bolles"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "8 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Lauren C. Bolles",
+        "total_courts": 8,
+        "street_address": "13121 Skyview NE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Eight pickleball courts lined onto the tennis courts at the park the City's table names simply \"Lauren C. Bolles\", in the far north-east, \"Tennis Courts with Pickleball Lines / 8 Pickleball Courts\". That is the joint-largest lined set that publishes in Albuquerque, with Montgomery Park's six behind it. Shared with tennis, first come, first served, ninety minutes when others are waiting. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87123"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Lauren C. Bolles\" in the Name column of the City's \"Pickleball Court Locations\" table. The City writes the name without \"Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 8 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"13121 Skyview NE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 8 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"13121 SKYVIEW AVE NE, ALBUQUERQUE, NM, 87123\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"13121 SKYVIEW AVE NE, ALBUQUERQUE, NM, 87123\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "quintessence-park": {
+      "minted": true,
+      "identity": {
+        "name": "Quintessence Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87122",
+        "latitude": 35.1629298395,
+        "longitude": -106.532646652018,
+        "imported_slug": null,
+        "canonical_slug": "quintessence-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "4 Pickleball Courts",
+        "basis": "No imported row for this park. Minted here from the City's own table, which states the count and the address."
+      },
+      "patch": {
+        "name": "Quintessence Park",
+        "total_courts": 4,
+        "street_address": "9801 Quintessence NE",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Four pickleball courts lined onto the tennis courts at Quintessence Park in the far north-east, \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" in the City's table. Shared with tennis, first come, first served, ninety minutes when others are waiting. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87122"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Quintessence Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\". The City states in the same cell that these are tennis courts with pickleball lines."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"9801 Quintessence NE\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"Tennis Courts with Pickleball Lines / 4 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"9801 QUINTESSENCE RD NE, ALBUQUERQUE, NM, 87122\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"9801 QUINTESSENCE RD NE, ALBUQUERQUE, NM, 87122\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "wells-park": {
+      "minted": true,
+      "identity": {
+        "name": "Wells Park",
+        "city": "Albuquerque",
+        "state": "NM",
+        "county": "Bernalillo",
+        "postal_code": "87102",
+        "latitude": 35.095237808959,
+        "longitude": -106.650855839939,
+        "imported_slug": null,
+        "canonical_slug": "wells-park"
+      },
+      "match": {
+        "source_page": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "quote": "3 Pickleball Courts",
+        "basis": "No imported row under this name. The imported dataset holds \"Johnny Tapia Community Center at Wells Park\" with three courts at this address; the City's table names the park, so the park is minted here and that row is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Wells Park",
+        "total_courts": 3,
+        "street_address": "500 Mountain NW",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Three pickleball courts at Wells Park near downtown, \"3 Pickleball Courts\" in the City's table - the one row whose description cell carries no kind, so whether these are dedicated courts or lines on tennis is not stated. First come, first served, ninety minutes when others are waiting. The imported dataset lists the Johnny Tapia Community Center at this address with three courts; the City's table names the park, and the park is what publishes. Lighting, hours, price, surface, nets and indoor/outdoor are not stated.",
+        "county": "Bernalillo",
+        "postal_code": "87102"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Wells Park\" in the Name column of the City's \"Pickleball Court Locations\" table."
+        },
+        "total_courts": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Description cell of the City's table: \"3 Pickleball Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"500 Mountain NW\" in the Address column of the City's table, written as the City writes it."
+        },
+        "venue_type": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Albuquerque Parks & Recreation among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" under \"Availability & Reservations\" on the City's page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row \"3 Pickleball Courts\" and the sentences beneath it."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Bernalillo County, NM (FIPS 35001). Census address geocoder matched \"500 MOUNTAIN RD NW, ALBUQUERQUE, NM, 87102\". The resolver also places it in the incorporated place \"Albuquerque city\", which is what allows it to be published under Albuquerque."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"500 MOUNTAIN RD NW, ALBUQUERQUE, NM, 87102\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

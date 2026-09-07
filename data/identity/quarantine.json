@@ -925,21 +925,15 @@
         "veterans-park-st-johns"
       ]
     },
-    "tom-brown-park": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in FL/tallahassee claim the slug \"tom-brown-park\"",
-      "wanted_slug": "tom-brown-park",
-      "peers": [
-        "tom-brown-park-pickleball-courts"
-      ]
-    },
     "tom-brown-park-pickleball-courts": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in FL/tallahassee claim the slug \"tom-brown-park\"",
+      "reason": "in_city_slug_collision_resolved_against",
+      "detail": "\"tom-brown-park\" keeps the slug \"tom-brown-park\" in FL/tallahassee. The City of Tallahassee publishes one Tom Brown Park, at 501 Easterwood Avenue, with \"4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)\". The kept row carries 501 EASTERWOOD DR, the address the Census geocoder matched to Tallahassee city, Leon County. The held row's street_address is \"Easterwood Dr & Access Rd 16\", an intersection with no house number to resolve; it is a second record of the same courts with a worse location, not a second park. It stays quarantined and status=pending.",
       "wanted_slug": "tom-brown-park",
       "peers": [
         "tom-brown-park"
-      ]
+      ],
+      "resolved_on": "2026-09-07",
+      "source_url": "https://www.talgov.com/parks/sports-pickleball"
     },
     "okeeheelee-park": {
       "reason": "in_city_slug_collision",

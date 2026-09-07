@@ -1,0 +1,64 @@
+{
+  "county": "Washington",
+  "state": "UT",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a venue has, what it costs, where it is - come from the City of St. George and are cited. Claims about our own coverage are facts about this dataset rather than about Washington County, and are worded so a reader cannot mistake one for the other. This is the first county in Utah this directory has published in, and one city of it is on this page.",
+  "slots": {
+    "coverage": "One city in Washington County is published here: St. George, with three venues and forty-six courts verified against the City's own pickleball page. Washington County also contains Washington City, Hurricane, Santa Clara and Ivins, and the County itself runs parks, and not one of those operators has been read against a named source, so none appears anywhere on this site. That is a statement about this dataset and not about where pickleball is played in the county. What has been read is one page, and it gives St. George's inventory in four lines: Little Valley with thirty-three courts, Bloomington Park with seven, Vernon Worthen with six, and Ledges with four and a question mark where its address should be. The first three publish. Ledges does not, because this site requires a street address that resolves and the City has printed \"?\" in its place; it is named here rather than dropped, and the question mark is asserted on every build so that the day the City supplies an address, the build stops and the venue is read again. So the City's own count for its pickleball courts is fifty, and this site can place forty-six of them on a map. St. George is the first Utah city on this site, and Little Valley's thirty-three ties Albuquerque's Manzano Mesa Pickleball Complex as the largest single venue anywhere here.",
+    "distribution": "What is verified in this county is concentrated in one city, and within that city it is concentrated in one place. Thirty-three of the forty-six published courts are at Little Valley Pickleball Complex on Horseman Park Drive, which is the City's programmed facility: a numbered court plan, a 2025 schedule of leagues, youth sessions, clinics and tournaments with courts reserved for each, an attendant to check in with, and a court-reservation line at the Parks Department. The remaining thirteen are in two parks - seven at Bloomington Park on Man O War Road in the south-west of the city and six at Vernon Worthen Park at 300 S. 400 E. near the centre - and the City states nothing about either beyond a name, an address and a count. Two of the three published venues share the 84790 postcode; Vernon Worthen is in 84770. Lighting is not stated anywhere in the county's published record, and neither is surface, hours, or whether any court is indoor, so the usual ways of splitting an inventory - lit against unlit, indoor against outdoor - cannot be applied here. Price splits it once: Little Valley's courts are free of charge when vacant, in the City's own 2020 words, and the other two venues carry no price at all. The distribution this page can show, then, is a single dedicated complex holding more than seventy per cent of the verified courts, two parks holding the rest, and one four-court venue the City cannot place.",
+    "gaps": "The honest position is that this is a St. George page wearing the heading of a county, and the gap will not close by accident. Washington City, Hurricane, Santa Clara and Ivins have not been read, and neither has Washington County's own parks department; each would need a page that states a court count and an address for three or more venues before it could appear. The threshold has not moved. Inside St. George the gap is narrower and stranger. The City has stated fifty courts and this site can publish forty-six, and the missing four are missing for a punctuation mark: \"Ledges / ? / Courts: 4\". Nothing about the courts being real is in doubt; the City simply has not written down where they are. The other gap is inside the published record. The City's page is a programme page, built to tell league players when their courts are reserved, and it is silent on almost everything a first-time visitor would ask: lighting at every venue, surface at every venue, opening hours at every venue, parking, restrooms, and price at two venues out of three. Vernon Worthen's court count also carries a recheck, because the City's six replaced an imported seven and a count that has changed once is watched. Nothing outside the City's parks department appears on this page at all. Whatever pickleball exists in Washington County at schools, clubs or private communities has published no source we could read, and that absence is about who writes things down rather than about where the game is played."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Washington County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 46 courts across three venues, all in St. George, each with a source and a date you can see. The City of St. George itself states fifty, the extra four being at Ledges, which it lists without an address."
+    },
+    {
+      "q": "Why is only St. George listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source and a date. Washington City, Hurricane, Santa Clara, Ivins and the County's own parks have not been read."
+    },
+    {
+      "q": "What is Little Valley?",
+      "a": "The City of St. George's pickleball complex at 2149 Horseman Park Drive, with thirty-three courts on the City's current list, a published programme schedule, an attendant, and free play when courts are vacant. It ties Albuquerque's Manzano Mesa Pickleball Complex as the largest single venue on this site, and is the first published here as a dedicated pickleball facility."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Stated at one venue only. The City's 2020 article says of Little Valley that \"When courts are vacant the public readily takes advantage of them - free of charge\". Vernon Worthen Park and Bloomington Park carry no price either way, so they are recorded as unknown, and St. George has no free filter page."
+    },
+    {
+      "q": "Which venues here have lights?",
+      "a": "None that the City states. Its pickleball page never mentions lighting at any venue, so every court in this county is recorded as lighting not verified. Little Valley's schedule runs evening sessions to 9:30 p.m. in winter, which is a timetable fact and not a lighting answer."
+    },
+    {
+      "q": "Why does Little Valley show 33 courts when the City's article says 24?",
+      "a": "Because the two figures are different kinds of record. The article is dated 19 August 2020 and describes the complex as it was then; the court list is the City's undated present inventory. A dated history does not contradict a current list, so thirty-three publishes and twenty-four is printed as what the venue was."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "These pages were read on 7 September 2026, and the City's page is snapshotted into the repository that builds this site and re-asserted on every build. If the City changes a count, supplies an address for Ledges, or removes the free-of-charge sentence, the build fails and someone reads the page again."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://sgcityutah.gov/activity/recreation/sports___programs/pickleball/index.php",
+      "publisher": "City of St. George Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's Pickleball page. Under \"City of St. George Pickleball Courts\" exactly four lines: \"Little Valley / 2149 Horseman Park Drive / Courts:  33\", \"Vernon Worthen / 300 S. 400 E. / Courts: 6\", \"Bloomington Park / 650 Man O War Road / Courts: 7\", \"Ledges / ? / Courts: 4\". The \"St. George Pickleball Program Schedule / 2025\" for Little Valley, reserving \"9-32 (24 courts)\" for league sessions and \"All 33 Courts\" for two tournaments; \"Players, please check in with the attendant or instructor to determine if courts are available during the St. George Pickleball programs\"; \"Please contact Parks to make a court reservation at 435-627-4530\". The article dated \"St. George, UT, August 19, 2020\": \"The Little Valley Pickleball complex is home to 24 well-maintained courts.\" and \"When courts are vacant the public readily takes advantage of them - free of charge.\" Snapshot: data/sources/st-george/pickleball.html",
+      "not_stated": "Anything about any other municipality in Washington County; lighting, surface, hours, parking and restrooms at every venue; price at Vernon Worthen and Bloomington; any address for Ledges."
+    },
+    {
+      "id": "L2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution"],
+      "evidence": "All three published addresses matched at house-number level and were placed in Washington County, UT (FIPS 49053) and in the incorporated place \"St. George city\": \"2149 HORESMAN PARK DR, ST GEORGE, UT, 84790\", \"300 S 400 E, ST GEORGE, UT, 84770\", \"650 MAN O WAR RD, ST GEORGE, UT, 84790\". Snapshot: data/sources/st-george-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "city": "Boulder",
+  "state": "CO",
+  "kind": "filters",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Three of the five filter slugs have a lawful data driver in Boulder. Free does, because the City prices every outdoor court in one sentence - \"Courts are first come and free to all park visitors\" - and repeats it in its FAQ. Outdoor does, because the City's court table sits under the heading \"Outdoor court layout and location\" and its drop-in schedule says \"outdoor courts\" in words. Indoor does, because the City counts \"3 indoor courts\" in each recreation centre gymnasium on its pickleball page. Lights has no driver: \"Lights are not guaranteed for use of courts after sunset\" is a rule rather than a per-venue answer, and no venue carries one. Public has none anywhere on this site, because access_type has no controlled vocabulary yet.",
+  "filters": {
+    "free": {
+      "slots": {
+        "why_this_filter": "Every verified pickleball court in Boulder is free to walk onto, so this page holds the same five venues as the city page: North Boulder Recreation Center, East Boulder Community Center, South Boulder Recreation Center, Chautauqua Park and Foothills Community Park, twenty outdoor courts between them. The City says so in one sentence on its Racket Sports page - \"Courts are first come and free to all park visitors, a reserved court is available to secure your date and time\" - and again in its FAQ, where unreserved courts \"remain free to use on a first-come, first-play basis\". This directory records a price only when an operator publishes one. Most parks departments that have never charged for a court never think to write down that it is free. Boulder wrote it down. It is one of six cities on this site with a verified free court, and, with Cape Coral, one of only two where every published venue is free. What free means here has two edges, and the City states both. Free is the walk-up price; a reservation, which the City calls \"exclusive use\" of a court, costs $10 an hour, doubled from $5 on November 14, 2025, and no longer included in recreation memberships. And free applies to the outdoor courts. The nine indoor courts are \"included with your daily entry fee or pass\", so at the three recreation centres an indoor session costs whatever the door costs, a figure the City does not print on the pages read. The City's own data on who reserves suggests the free option is the one nearly everyone uses: in 2024, 59% of renters reserved only once or twice all year.",
+        "what_qualifies": "A venue appears here when the City of Boulder states that playing on it costs nothing, and all five published venues qualify under the same sentence. The sentence sits under \"Outdoor Court Reservations\" on the Racket Sports page and covers every row of the court table beneath it: \"Courts are first come and free to all park visitors\". At the two parks, Chautauqua and Foothills, that is the whole of the price. At the three recreation centres it is the price of the outdoor courts, and the City draws the indoor line itself: \"all recreation center drop-in times (indoor and outdoor) remain free. To play indoor drop-in pickleball, recreation center daily admission fee or membership is required.\" So each centre is on this page because its outdoor courts are free, and its venue page says what the indoor courts cost instead. What does not qualify is a court you have reserved. A reservation costs $10 an hour per court, one per person per day, two hours at most, up to 7.5 days out, with no refunds for weather. At Foothills that distinction matters more than elsewhere, because a court not reserved between 7 a.m. and noon \"is designated as inline hockey court\"; free play there is first come inside the window, on a rink that is otherwise not a pickleball court. Two sites the City names are absent because they are absent from the whole site: Tom Watson Park, listed with a tennis count and no pickleball count, and East Boulder Community Park, listed with a lighting note and no count."
+      },
+      "faqs": [
+        {
+          "q": "Are these courts really free?",
+          "a": "Yes, on the City's own sentence: \"Courts are first come and free to all park visitors\". Its FAQ repeats it, saying unreserved courts \"remain free to use on a first-come, first-play basis\". This site describes a venue as free only when the operator writes it."
+        },
+        {
+          "q": "What does a reservation cost?",
+          "a": "$10 an hour per court, for tennis and pickleball alike, since November 14, 2025, when the fee doubled from $5 and reservations stopped being included in recreation memberships. One reservation per person per day, two hours at most."
+        },
+        {
+          "q": "Are the indoor courts free?",
+          "a": "Not on their own. Indoor drop-in is \"included with your daily entry fee or pass\" at the three recreation centres, so the price is the door. The City does not print that fee on the pages read."
+        },
+        {
+          "q": "Do I have to reserve?",
+          "a": "No. Unreserved courts are first come and free, and the City's own figures show most renters reserved only once or twice in 2024. A reservation is the way to guarantee a court, not the way to get one."
+        },
+        {
+          "q": "Is Foothills free?",
+          "a": "Yes, within its window: the courts exist from 7 a.m. to noon, seven days a week, first come or reserved at $10 an hour. Bring a net; the City says none are available onsite."
+        }
+      ],
+      "sources": ["F1", "F2", "F3", "F5"]
+    },
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Twenty of Boulder's twenty-nine verified courts are outdoors, at all five published venues, and the City states it in the plainest way an operator can: the table that counts them sits under a heading that reads \"Outdoor court layout and location\", and the drop-in schedule says \"outdoor courts\" in words. This site publishes an indoor-or-outdoor answer only when an operator states one, and Boulder states it for every court. What makes the page worth reading is that outdoor means something specific here. \"Pickleball play is on tennis courts with pickleball lines\", the City says, \"Except for Foothills Community Park which is a designated inline hockey rink.\" Sixteen of the twenty are lines on tennis courts - four at North Boulder beside four tennis courts, eight at South Boulder beside four, two at East Boulder, and two at Chautauqua on one tennis court - and the nets column of the table reads \"Rolling\" on every row, with the rule that \"Pickleball nets should be rolled off tennis courts after completion of play and when not in use\". The other four are on a rink, mornings only, bring your own net. The outdoor courts are also where the free sentence lives, where the reservation system runs, and where the City's two scheduled outdoor sessions happen: daily mornings at South Boulder on six courts, and Tuesday and Thursday mornings plus Wednesday and Friday evenings at North Boulder on four. What the City does not say about any of them is whether they are lit - \"Lights are not guaranteed for use of courts after sunset\" is its only sentence on the subject - or what they are surfaced with, beyond South Boulder's eight being closed for resurfacing and restriping when this was read.",
+        "what_qualifies": "A venue appears here when the City of Boulder's court table lists it under \"Outdoor court layout and location\" with a pickleball count, and this site records that count as outdoor courts. Five qualify: South Boulder Recreation Center with eight, North Boulder Recreation Center with four, Foothills Community Park with four, East Boulder Community Center with two and Chautauqua Park with two. Three of them need a word. South Boulder qualifies on eight, the table figure, while the City's drop-in line for the same courts reads \"8:30 to 11:30 am on 6 outdoor courts\"; eight is the inventory and six is the morning allocation, and the venue page prints both. East Boulder qualifies on a row that prints no tennis figure beside its \"2 pickleball\"; the City's general statement that pickleball is played on tennis courts with pickleball lines is what makes them tennis courts. Foothills qualifies on four courts that are pickleball courts from 7 a.m. to noon; outside that window the rink \"is designated as inline hockey court\", and the four publish because the City counts them in the same table as everything else. The nine indoor courts at the three recreation centres do not qualify for this page and are not subtracted from these venues either; each centre carries a count on both sides of the line and appears on the indoor page too. Tom Watson Park is not here because its only figure, 4, is under \"Additional Tennis Courts\". East Boulder Community Park is not here because the City states no count for it at all."
+      },
+      "faqs": [
+        {
+          "q": "Which outdoor courts in Boulder have lights?",
+          "a": "The City does not say, for any venue. Its one sentence on the subject is \"Lights are not guaranteed for use of courts after sunset\", so every venue here is recorded as unverified and Boulder has no lights page."
+        },
+        {
+          "q": "Are the outdoor courts free?",
+          "a": "Yes, all twenty: \"Courts are first come and free to all park visitors\". A reservation, which gives exclusive use of a court, costs $10 an hour."
+        },
+        {
+          "q": "Do I need to bring a net?",
+          "a": "At Foothills, yes: \"Nets are not available onsite.\" Elsewhere the table's nets column reads \"Rolling\" and the City asks that nets be rolled off tennis courts after play, without saying in words whether one is provided."
+        },
+        {
+          "q": "Which outdoor venues have a drop-in session?",
+          "a": "Two. South Boulder, Monday through Sunday 8:30 to 11:30 am on six courts, and North Boulder, Tuesday and Thursday 7:30 to 10:30 am and Wednesday and Friday 6 to 9 pm on four."
+        },
+        {
+          "q": "Why does South Boulder say eight courts and six courts?",
+          "a": "The City's table lists \"8 pickleball\"; its drop-in line sets aside \"6 outdoor courts\" for the morning session. Eight is the inventory and publishes; both figures are printed on the venue page."
+        }
+      ],
+      "sources": ["F1", "F2", "F4", "F5"]
+    },
+    "indoor": {
+      "slots": {
+        "why_this_filter": "Three Boulder venues hold indoor pickleball courts, nine courts between them, and the City counts every one of them in words: \"3 indoor courts\" at North Boulder Recreation Center, \"3 indoor courts\" at East Boulder Community Center and \"3 indoor courts\" at South Boulder Recreation Center, on its pickleball page. The count is not read off a floor plan; it is the number the City prints beside each drop-in line, and it publishes on the same footing as Tampa's community-centre courts, where a gym count at scheduled times was taken as a stated count. What indoor means in Boulder is specific and the City is exact about it. \"Drop-in pickleball is offered inside our recreation center basketball gymnasiums. Indoor play is only available during the designated drop-in pickleball times, listed below, and pickleball nets are not available outside listed drop-in hours.\" So an indoor court here exists for a listed window and not otherwise: Monday, Wednesday and Friday mornings at North Boulder; Monday afternoon, Monday evening and Sunday afternoon at East Boulder; Sunday morning and Tuesday and Thursday afternoons at South Boulder, and nothing at South Boulder from June through October. Between them the three gymnasiums cover six days of the week; only Monday has an evening. The price is the door: \"Indoor drop-in pickleball is included with your daily entry fee or pass\", and the City does not print that fee on the pages read. The reason to want this page is a court that does not depend on daylight or weather. Boulder is one of the few operators on this site that publishes a written drop-in schedule for both its indoor and its outdoor courts, so the window is known before you go.",
+        "what_qualifies": "A venue appears here when the City of Boulder's pickleball page counts indoor courts at it, and this site records that count as indoor courts. Three qualify, with three courts each: North Boulder Recreation Center, whose line reads \"Monday, Wednesday, Friday: 7:30 to 10:30 am on 3 indoor courts\"; East Boulder Community Center, listed on that page as East Boulder Recreation Center, with \"Monday: 1 to 3 pm and 6 to 8 pm on 3 indoor courts\" and \"Sunday: 2 to 4 pm on 3 indoor courts\"; and South Boulder Recreation Center, with \"Sunday: 9 to 11 am on 3 indoor courts\" and \"Tuesday, Thursday: 1:30 to 3:30 pm on 3 indoor courts\", carrying the City's asterisk: \"There is no indoor Pickleball at South Boulder Recreation Center from June through October\". South Boulder qualifies through the off-season because the count is stated and the closure is printed beside it. All three venues also hold outdoor courts and appear on the outdoor page; the indoor three are added to the outdoor figure to make each venue's total. What does not qualify is any court the City does not call indoor. Chautauqua Park and Foothills Community Park have no gymnasium and no indoor line. The \"Two platform tennis courts with pickleball lines\" the City offers for overflow at North Boulder are not counted at all. And a gymnasium is not an indoor court until the operator counts one in it: each of these three counts rests on the City's own \"3 indoor courts\", not on the presence of a basketball court in the amenity list."
+      },
+      "faqs": [
+        {
+          "q": "When can I play indoors in Boulder?",
+          "a": "At the drop-in times: Monday, Wednesday and Friday 7:30 to 10:30 am at North Boulder; Monday 1 to 3 and 6 to 8 pm and Sunday 2 to 4 pm at East Boulder; Sunday 9 to 11 am and Tuesday and Thursday 1:30 to 3:30 pm at South Boulder."
+        },
+        {
+          "q": "Are the indoor sessions free?",
+          "a": "They are \"included with your daily entry fee or pass\", so the price is the recreation centre's door charge, which the City does not print on the pages read. The outdoor courts at the same centres are free."
+        },
+        {
+          "q": "Is there indoor pickleball in summer?",
+          "a": "Not at South Boulder: \"There is no indoor Pickleball at South Boulder Recreation Center from June through October\". North Boulder's and East Boulder's schedules carry no such note."
+        },
+        {
+          "q": "Can I bring my own net outside drop-in hours?",
+          "a": "The City says indoor play \"is only available during the designated drop-in pickleball times\" and that nets are not available outside them. It does not describe any other route onto the gymnasium floor."
+        },
+        {
+          "q": "Which indoor venue has an evening session?",
+          "a": "East Boulder Community Center, Monday 6 to 8 pm on three courts. It is the only evening indoor session the City prints. The other indoor windows are mornings and afternoons."
+        }
+      ],
+      "sources": ["F1", "F2", "F3"]
+    }
+  },
+  "sources": [
+    {
+      "id": "F1",
+      "url": "https://bouldercolorado.gov/services/racket-sports",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "The City's Racket Sports page. Under \"Outdoor Court Reservations\": \"Courts are first come and free to all park visitors, a reserved court is available to secure your date and time.\" \"Lights are not guaranteed for use of courts after sunset\". \"7.5 days in advance (181 rolling hours)\", \"Only one court reservation per person per day for a maximum time of 2 hours daily\", \"Reservations must be made at least one hour in advance\", \"Refunds will not be given due to adverse weather conditions\". \"Court rental fees are increasing to $10 per hour.\" \"Free drop-in play and walk-up use of unreserved courts will continue as usual.\" Under \"Outdoor court layout and location\": \"Pickleball play is on tennis courts with pickleball lines. Except for Foothills Community Park which is a designated inline hockey rink. Foothills Community inline courts have limited reservations: available for reservation and use from 7 a.m. to noon: however if not reserved then the use is designated as inline hockey court.\" The table: \"4 pickleball / 4 tennis / Rolling / North Boulder Recreation Center\", \"2 pickleball / Rolling / East Boulder Community Center\", \"8 pickleball / 4 tennis / Rolling / South Boulder Recreation Center\", \"2 pickleball / 1 tennis / Rolling / Chautauqua Park\", \"4 pickleball / Rolling / Foothills Community Park\". \"Additional Tennis Courts\": \"4 / Tom Watson Park\". \"Two platform tennis courts with pickleball lines are available for overflow at NBRC.\" \"Pickleball nets should be rolled off tennis courts after completion of play and when not in use.\" Snapshot: data/sources/boulder/racket-sports.html",
+      "not_stated": "Surface, any per-venue lighting answer, and whether a net is provided at any venue other than Foothills."
+    },
+    {
+      "id": "F2",
+      "url": "https://bouldercolorado.gov/services/pickleball",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "The City's pickleball page. \"Drop-in pickleball is offered inside our recreation center basketball gymnasiums. Indoor play is only available during the designated drop-in pickleball times, listed below, and pickleball nets are not available outside listed drop-in hours.\" East Boulder Recreation Center: \"Monday: 1 to 3 pm and 6 to 8 pm on 3 indoor courts\", \"Sunday: 2 to 4 pm on 3 indoor courts\". South Boulder Recreation Center: \"Sunday: 9 to 11 am on 3 indoor courts*\", \"Tuesday, Thursday: 1:30 to 3:30 pm on 3 indoor courts*\", \"*There is no indoor Pickleball at South Boulder Recreation Center from June through October\". North Boulder Recreation Center: \"Monday, Wednesday, Friday: 7:30 to 10:30 am on 3 indoor courts\". \"Indoor drop-in pickleball is included with your daily entry fee or pass.\" Outdoor drop-in: South Boulder \"Monday through Sunday: 8:30 to 11:30 am on 6 outdoor courts\"; North Boulder \"Tuesdays and Thursdays: 7:30 to 10:30 am on 4 outdoor courts\", \"Wednesdays and Fridays: 6 to 9 pm on 4 outdoor courts\". Snapshot: data/sources/boulder/pickleball.html",
+      "not_stated": "The price of the daily entry fee, surface, lighting, and any drop-in session at Chautauqua or Foothills."
+    },
+    {
+      "id": "F3",
+      "url": "https://bouldercolorado.gov/racket-sports-faqs",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "The City's Racket Sports FAQs. \"Beginning November 14, 2025, tennis and pickleball court reservations at locations adjacent to recreation centers will no longer be included in recreation memberships. Court rental fees are increasing from $5 per hour to $10 per hour.\" \"$10 per hour, per court (both tennis and pickleball).\" \"Court reservations provide exclusive use of a court at a specific time.\" \"Unreserved courts remain free to use on a first-come, first-play basis. Additionally, all recreation center drop-in times (indoor and outdoor) remain free. To play indoor drop-in pickleball, recreation center daily admission fee or membership is required.\" \"In 2024: 59% of renters made only 1 to 2 court reservations all year. Fewer than 1% booked two or more reservations per week.\" Snapshot: data/sources/boulder/racket-sports-faqs.html",
+      "not_stated": "Any court count, the daily admission fee, surface or lighting."
+    },
+    {
+      "id": "F4",
+      "url": "https://bouldercolorado.gov/locations/south-boulder-recreation-center",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["why_this_filter"],
+      "evidence": "South Boulder Recreation Center's page: \"Aug. 17 - tentatively scheduled to reopen Sept. 11: All SBRC Outdoor Racket Courts closed for court resurfacing and restriping.\" Address \"1360 Gillaspie / Boulder, CO 80305\". Snapshot: data/sources/boulder/south-boulder-recreation-center.html",
+      "not_stated": "Any court count, surface or lighting."
+    },
+    {
+      "id": "F5",
+      "url": "https://bouldercolorado.gov/locations/foothills-community-park",
+      "publisher": "City of Boulder Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "Foothills Community Park's page: \"We heard your feedback and added pickleball courts to the large rink for four pickleball courts. Please bring your own portable pickleball nets. Nets are not available onsite. The courts are available for reservation and use from 7 a.m. to noon, seven days a week. The rink is available for general public use and all sports from noon to close.\" Address \"800 Cherry Ave / Boulder, CO 80304\". Snapshot: data/sources/boulder/foothills-community-park.html",
+      "not_stated": "Parking, surface, lighting and park hours."
+    }
+  ]
+}

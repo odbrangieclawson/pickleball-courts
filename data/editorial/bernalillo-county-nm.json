@@ -1,0 +1,64 @@
+{
+  "county": "Bernalillo",
+  "state": "NM",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a park has, what kind they are, whether they are lit, when the gate opens - come from the City of Albuquerque's pickleball page and are cited. Claims about our own coverage are facts about this dataset rather than about Bernalillo County, and are worded so a reader cannot mistake one for the other. Albuquerque is the first New Mexico city to be published, and it is the one city of this county on this page.",
+  "slots": {
+    "coverage": "One city in Bernalillo County is published here: Albuquerque, with thirteen venues and eighty-six courts verified against the City's own pickleball page. Albuquerque is the first New Mexico city on this site and the first in Bernalillo County. Nothing else in the county has been read. Los Ranchos de Albuquerque has not been checked against a named source, the County's own parks have not been read, and Rio Rancho - the city most people would name next - is in Sandoval County and would not appear on this page even if it were published. What is here is thirteen City venues whose names, addresses, counts and court kinds appear in one table, plus the sentences beneath it on hours, reservations and the ninety-minute rule. Three further City venues are named on the city page rather than dropped: Pat Hurley Park, Alamosa Park and Ventana Ranch Park, twenty-eight courts between them, twenty of them lit, all refused because neither the US Census address file nor OpenStreetMap finds the address the City writes. Two of the City's three lighting statements belong to those refused parks, which is why a city with forty-one stated lit courts publishes twenty-one. Every fact on this page is a fact about what the City of Albuquerque writes down, and the county total is not something anyone can yet state.",
+    "distribution": "What is verified in this county sits in one city and, inside it, is lopsided in a way the City's own table makes plain. Thirty-nine of the eighty-six courts are at the two venues the City calls its \"dedicated pickleball complexes\" - thirty-three at Manzano Mesa Pickleball Complex in the south-east and six at Villela Pickleball Courts in the north-east - and the other forty-seven are spread across eleven parks, none larger than eight. Manzano Mesa alone holds more than a third of the county's verified courts, and its thirty-three is the largest single-venue count on this site. Court kind splits the set a second way. Forty-one courts are dedicated or permanent in the City's words - the two complexes and Sierra Vista's two - and forty-two are pickleball lines on tennis courts, at Sierra Vista and nine parks the City labels \"Tennis Courts with Pickleball Lines\"; Wells Park's three are of unstated kind. Lighting is a third split and a sharper one: twenty-one courts, all at Manzano Mesa, are stated lit, and the other sixty-five carry no lighting answer at all. Hours follow the same line - stated at the two complexes, 6 a.m. to 10 p.m. daily, and at nothing else. By quadrant, the City's addresses put seven published venues in the NE, five in the NW, one in the SE and none in the SW; the one SW venue the City lists, Alamosa Park, is refused on its address. That is a fact about the City's addressing rather than about where people play, but it is the only geography the record supports, and it means the south-west of the city has no published court.",
+    "gaps": "The honest position is that this is an Albuquerque page under a county heading, and the gap will not close by accident. The County's own parks have not been read; Los Ranchos de Albuquerque has not been read; and Rio Rancho is Sandoval County's. Within the City, three venues are missing for the same reason: an address that does not resolve. Pat Hurley Park's \"3828 Rincon Rd NW\", Alamosa Park's \"1100 Bataan SW\" and Ventana Ranch Park's \"10000 Universe NW\" are found by neither the US Census address file nor OpenStreetMap, and the imported dataset carried Ventana Ranch with no house number at all. Those three are worth twenty-eight courts, twenty of them lit - nearly half the lit courts the City states anywhere in Albuquerque. The City's page carries a second gap of its own making: an older version of its table inside an HTML comment, invisible in a browser, that disagrees with the visible one at four venues and names three parks - Barelas, Los Altos and Zuni - the visible table does not. Nothing in it is published, so nothing in it is treated as a fact here, but the build asserts on every run that the residue is still hidden, and the day the City puts it back in front of readers the build fails and the city is re-read. Beyond that, the silences are the ordinary ones. No price anywhere, no surface, no indoor or outdoor, no nets on the visible page, no parking, and lighting at one venue in thirteen. Nothing outside the City's parks department appears on this page at all - no club, no school, no private facility - because none publishes a source that has been read."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Bernalillo County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 86 courts across thirteen venues, all in Albuquerque, each with a source and a date you can see. The City of Albuquerque alone names three further parks with 28 courts we cannot publish, and the County's own parks and Los Ranchos have not been read."
+    },
+    {
+      "q": "Why is only Albuquerque listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Los Ranchos de Albuquerque and the County's own parks have not been read, and Rio Rancho is in Sandoval County."
+    },
+    {
+      "q": "Is Rio Rancho in Bernalillo County?",
+      "a": "No. Rio Rancho is in Sandoval County, so if it were ever published it would appear on a Sandoval County page rather than this one. It has not been read against a named source either way, and nothing about its courts is stated here."
+    },
+    {
+      "q": "What is the largest venue in the county?",
+      "a": "Manzano Mesa Pickleball Complex, at 501 Elizabeth SE in Albuquerque: \"33 Courts (21 Lighted)\" in the City's own cell, open 6 a.m. to 10 p.m. daily, and the venue where the City runs its lessons. No other published venue in the county has more than eight courts; the next largest is Lauren C. Bolles, with eight lined courts."
+    },
+    {
+      "q": "Which venues here have lights?",
+      "a": "One: Manzano Mesa Pickleball Complex, where twenty-one of thirty-three courts are stated lit. No other published venue carries a lighting answer. The City's other two lighting statements - eight lit courts at Alamosa Park and twelve at Ventana Ranch Park - belong to venues whose addresses cannot be resolved, so they are not published."
+    },
+    {
+      "q": "Why are Pat Hurley, Alamosa and Ventana Ranch not listed?",
+      "a": "Because neither the US Census address file nor OpenStreetMap finds the address the City writes for any of them. Pat Hurley has eight courts and stated hours; Alamosa has eight lit courts; Ventana Ranch has twelve lit courts, the largest lined set the City lists. Each fails on its address alone, and each is named rather than hidden."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "The City's page was read on 7 September 2026, and it is snapshotted into the repository that builds this site and re-asserted on every build. If the City changes a count, adds a lighting mark, or moves its older table out of the HTML comment and back in front of readers, the build fails and someone reads the page again."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://www.cabq.gov/parksandrecreation/recreation/pickleball",
+      "publisher": "City of Albuquerque Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's pickleball page, whose \"Pickleball Court Locations\" table states a name, an address and a description cell for sixteen venues, thirteen of which publish: \"Manzano Mesa Pickleball Complex / 501 Elizabeth SE / Pickleball Complex / 33 Courts (21 Lighted)\", \"Villela Pickleball Courts / 4800 Cherokee NE / Pickleball Complex / 6 Courts\", \"Sierra Vista Tennis Complex / 5001 Montano Rd. NW / Tennis/Pickleball Courts / 2 Courts and 4 Lined Courts\", nine parks labelled \"Tennis Courts with Pickleball Lines\" (Hoffman 2, Rinconada 2, Montgomery 6, Columbus 4, Eagle Ranch 4, Loma Del Norte 4, Lynnewood 4, Lauren C. Bolles 8, Quintessence 4) and \"Wells Park / 500 Mountain NW / 3 Pickleball Courts\" with no kind stated. The refused rows: \"Pat Hurley Park / 3828 Rincon Rd NW / 4 Courts and 4 Lined Courts\", \"Alamosa Park / 1100 Bataan SW / 8 Lighted Pickleball Courts\", \"Ventana Ranch Park / 10000 Universe NW / 12 Lighted Pickleball Courts\". Prose: \"The City of Albuquerque has two dedicated pickleball complexes: Manzano Mesa Pickleball Complex, and Villella Pickleball Courts.\" \"Manzano Mesa, Villella, and Pat Hurley are open from 6 a.m. to 10 p.m. daily.\" \"Courts are typically available on a first come, first serve basis and play is limited to 1.5 hours when others are waiting.\" \"Pickleball lessons for juniors and adults will take place at Manzano Mesa Pickleball Complex.\" The page source holds two older tables inside an HTML comment, not rendered by a browser, naming Barelas Park, Los Altos Park and Zuni Park and giving different counts at Manzano Mesa, Eagle Ranch, Montgomery and Ventana Ranch. Snapshot: data/sources/albuquerque/pickleball.html",
+      "not_stated": "Anything about any other municipality in Bernalillo County, the County's own parks, price, surface, parking, indoor or outdoor, or lighting at any published venue but Manzano Mesa."
+    },
+    {
+      "id": "L2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "All thirteen published addresses matched at house-number level through the Census address file and were placed in Bernalillo County, NM (FIPS 35001), inside the incorporated place \"Albuquerque city\"; the City writes most addresses without a street type and the Census supplied one, and no second resolver was needed. Seven published addresses carry the City's NE quadrant, five NW and one SE. \"3828 Rincon Rd NW\" (Pat Hurley Park), \"1100 Bataan SW\" (Alamosa Park) and \"10000 Universe NW\" (Ventana Ranch Park) are found by neither the Census address file nor OpenStreetMap. Snapshot: data/sources/albuquerque-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

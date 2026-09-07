@@ -10,14 +10,14 @@ page type   pages   clean   nodes emitted
 ---------   -----   -----   -------------
 home            1       1   WebSite, BreadcrumbList
 editorial       1       1   BreadcrumbList
-state           2       2   BreadcrumbList, Dataset, FAQPage
-county         14      14   BreadcrumbList, FAQPage, ItemList
-city           20      20   BreadcrumbList, FAQPage, ItemList
-filter         26      26   BreadcrumbList, FAQPage, ItemList
-venue         172     172   BreadcrumbList, SportsActivityLocation, FAQPage
+state           3       3   BreadcrumbList, Dataset, FAQPage
+county         19      19   BreadcrumbList, FAQPage, ItemList
+city           26      26   BreadcrumbList, FAQPage, ItemList
+filter         31      31   BreadcrumbList, FAQPage, ItemList
+venue         203     203   BreadcrumbList, SportsActivityLocation, FAQPage
 
 === NEGATIVE TEST: AggregateRating ===
-  venue pages checked:            172
+  venue pages checked:            203
   AggregateRating nodes emitted:  0
   first-party ratings in dataset: 0 (rating and user_rating are QUARANTINED, decisions.md O2)
   PASS — no venue emits AggregateRating, and none has first-party ratings to justify one.

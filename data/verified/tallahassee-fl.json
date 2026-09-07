@@ -1,0 +1,923 @@
+{
+  "city": "Tallahassee",
+  "state": "FL",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Tallahassee states a count, a price and the rules of play on one City page. Its outdoor section gives each venue an address, a count line in the City's own words and a weekly schedule of Open Play, Reserved Play and First-Come First-Play; beneath it the City defines the three - Open Play \"sessions do not require a fee\" and are \"drop-in and free\", Reserved Play costs $4.25 to $5.75 a session, First-Come First-Play \"just means that the court is open\" with a 90-minute limit when others are waiting. Seven venues publish, 34 courts, two of them by the City's own two-figure arithmetic: LeVerne Payne's \"2 courts with adjustable net straps, 4 courts with portable nets\" and Tom Brown's \"4 pickleball courts | 8 pickleball courts on multi-purpose courts\". Free is published only where the City schedules Open Play (LeVerne Payne, Tom Brown); an unpriced first-come court is not called free. Walker-Ford's \"night play is available\" publishes as lighting on that phrase. Four Oaks Park - six courts \"used for pickleball only\", the flagship - is refused because \"5151 Four Oaks Boulevard\" is found by neither resolver, and four indoor centres are refused for stating no count. McLean's resurfacing notice, dated December 2025 and still on the page in September 2026, is published as the City prints it and asserted. Tom Brown Park is two imported rows that canonicalise to one slug and needs an identity resolution before it can promote.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.talgov.com/parks/sports-pickleball",
+      "publisher": "City of Tallahassee Parks, Recreation and Neighborhood Affairs",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/tallahassee/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.talgov.com/parks/centers-walker",
+      "publisher": "City of Tallahassee Parks, Recreation and Neighborhood Affairs",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/tallahassee/centers-walker.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.talgov.com/parks/centers-mclean",
+      "publisher": "City of Tallahassee Parks, Recreation and Neighborhood Affairs",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/tallahassee/centers-mclean.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.talgov.com/parks/centers-mccollum",
+      "publisher": "City of Tallahassee Parks, Recreation and Neighborhood Affairs",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/tallahassee/centers-mccollum.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/tallahassee-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 7,
+    "courts": 34,
+    "outdoor": 33,
+    "indoor": 1,
+    "lit_courts": 3,
+    "free_venues": 2
+  },
+  "excluded": [
+    {
+      "name": "Four Oaks Park",
+      "why": [
+        "Neither address resolver finds \"5151 Four Oaks Boulevard\": the US Census address file returns no match and OpenStreetMap returns nothing at house-number level. Import Gate I1 requires a street address that resolves.",
+        "This is the most expensive refusal in the city. Six courts \"used for pickleball only\", an Open Play and Reserved Play schedule seven days a week running to 10:00pm, and online reservations - the flagship of the City's programme. It fails on its address alone, and the run throws the day the address resolves."
+      ]
+    },
+    {
+      "name": "Lawrence-Gregory Community Center at Dade Street",
+      "why": [
+        "Listed on the City's indoor schedule with an address and a Saturday Open Play session, and never a court count. Page Gate 1 requires a stated count."
+      ]
+    },
+    {
+      "name": "Lincoln Neighborhood Center",
+      "why": [
+        "Listed on the City's indoor schedule as \"No Pickleball (renovations in progress)\" for every day, with no court count."
+      ]
+    },
+    {
+      "name": "Sue Herndon McCollum Community Center",
+      "why": [
+        "Listed on the City's indoor schedule with Open Play and Reserved Play sessions and never a court count. Its outdoor courts are Lafayette Park's, which publish."
+      ]
+    },
+    {
+      "name": "Tallahassee Senior Center",
+      "why": [
+        "Listed on the City's indoor schedule with Open Play sessions, lessons and \"$3 Donation Encouraged\", and never a court count."
+      ]
+    }
+  ],
+  "venues": {
+    "leverne-payne-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "LeVerne Payne Community Center",
+        "city": "Tallahassee",
+        "state": "FL",
+        "county": "Leon",
+        "postal_code": "32303",
+        "latitude": 30.453684586639,
+        "longitude": -84.287208946276,
+        "imported_slug": null,
+        "canonical_slug": "leverne-payne-community-center"
+      },
+      "match": {
+        "source_page": "https://www.talgov.com/parks/sports-pickleball",
+        "quote": "2 courts with adjustable net straps, 4 courts with portable nets if needed and all have painted lines",
+        "basis": "No imported row under this slug. Minted from the City's pickleball page, which states the count and the address. The imported row leverne-payne-community-center-outdoor-courts describes the same courts and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "LeVerne Payne Community Center",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "450 West 4th Avenue",
+        "venue_type": "community_center",
+        "play_format": "open_play",
+        "court_availability": "Six outdoor pickleball courts, and the six is the City's own arithmetic on one line: \"2 courts with adjustable net straps, 4 courts with portable nets if needed and all have painted lines\". Two courts carry their nets permanently; four more are painted and take portable nets. The City schedules Open Play here on Tuesday, Thursday and Saturday mornings, 8:00am-12:00pm, split \"Beginner & Adv. Beginner Open Play\", and \"Intermed. Open Play\" on Saturday afternoons 2:00pm-5:00pm, with Monday, Wednesday and Friday marked \"No Open Play or Reserved Play - FCFP Only\". Open Play is free in the City's words - \"all Open Play sessions are drop-in and free\" - and outside those sessions the courts are first come, first play with a 90-minute limit when others are waiting. The City's beginner clinics run here on Wednesday mornings. Lighting and surface are not stated.",
+        "county": "Leon",
+        "postal_code": "32303",
+        "fee_type": "free",
+        "pricing_notes": "Open Play sessions are drop-in and free. Reserved Play sessions require a fee: Singles $5.75, Singles Senior $4.75, Doubles $4.25, Doubles Senior $3.50 (senior rate from age 62).",
+        "nets_provided": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"LeVerne Payne Community Center\" in the outdoor section of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line: \"2 courts with adjustable net straps, 4 courts with portable nets if needed and all have painted lines\". Six is the sum of the City's two figures - two courts with their own nets and four painted courts that take portable nets."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Outdoor Pickleball Courts & Schedules\" on the City's page: \"2 courts with adjustable net straps, 4 courts with portable nets if needed and all have painted lines\"."
+        },
+        "street_address": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"450 West 4th Avenue | 850-891-3930\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A City community centre with outdoor courts, listed on the City's pickleball page."
+        },
+        "play_format": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City schedules Open Play here - \"Beginner Open Play\" - which it defines as \"a Drop-In session in which players simply drop-in, without advanced reservations\"; outside sessions, \"All Outdoor Courts are First-Come First-Play except during the times noted below\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"2 courts with adjustable net straps, 4 courts with portable nets if needed and all have painted lines\", the venue's schedule, and the City's definitions of Open Play, Reserved Play and First-Come First-Play."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Leon County, FL (FIPS 12073). Census address geocoder matched \"450 W 4TH AVE, TALLAHASSEE, FL, 32303\". The resolver also places it in the incorporated place \"Tallahassee city\", which is what allows it to be published under Tallahassee."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"450 W 4TH AVE, TALLAHASSEE, FL, 32303\". The City prints no postcode for this venue."
+        },
+        "fee_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City schedules Open Play here and prices it at nothing: \"Court reservations can only be made for Reserved Play sessions, as all Open Play sessions are drop-in and free.\" and Open Play \"is a Drop-In session in which players simply drop-in, without advanced reservations, to play other drop-in players. These sessions do not require a fee.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"is a court reservation that must be scheduled for a specific time and can be used for both casual and competitive play. All Reserved Play sessions require a fee payment.\" \"Court Reservations and Fees Singles - $5.75 Singles Senior* - $4.75 Doubles - $4.25 Doubles Senior* - $3.50\" \"To qualify for the senior rate, you must be at least 62 years of age\""
+        },
+        "nets_provided": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's own line: \"2 courts with adjustable net straps, 4 courts with portable nets if needed and all have painted lines\" - adjustable net straps are nets, and the City adds that the other four courts take \"portable nets if needed\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.talgov.com/parks/sports-pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "tom-brown-park": {
+      "minted": false,
+      "identity": {
+        "name": "Tom Brown Park",
+        "city": "Tallahassee",
+        "state": "FL",
+        "county": "Leon",
+        "postal_code": "32311",
+        "latitude": 30.445483434256,
+        "longitude": -84.216014686814,
+        "imported_slug": "tom-brown-park",
+        "canonical_slug": "tom-brown-park"
+      },
+      "match": {
+        "source_page": "https://www.talgov.com/parks/sports-pickleball",
+        "quote": "4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)",
+        "basis": "Matched to the imported tom-brown-park row (501 EASTERWOOD DR). A second imported row, tom-brown-park-pickleball-courts, describes the same courts at \"Easterwood Dr & Access Rd 16\" and canonicalises to the same slug; the identity pass holds both until data/identity/resolutions.json names this row as the keeper. The City publishes one Tom Brown Park."
+      },
+      "patch": {
+        "name": "Tom Brown Park",
+        "total_courts": 12,
+        "outdoor_courts": 12,
+        "street_address": "501 Easterwood Avenue",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Twelve outdoor pickleball courts, the largest published set in Tallahassee, in two kinds: \"4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)\". Four are standalone pickleball courts and eight are lined onto tennis courts 1 to 4; twelve is the sum of the City's two figures. The City states that its \"pickleball professionals have priority to use courts 1A/1B for teaching purposes during non-monitored hours\" and that the \"Open Play schedule includes combo courts 4A-4B and the four standalone pickleball courts\". Open Play - free, drop-in - runs Monday and Wednesday 8:00am-12:00pm and Sunday 8:00am-12:00pm and 5:00pm-8:30pm; Reserved Play, which costs $4.25 to $5.75 a session, fills the weekday evenings, Tuesday and Thursday and Saturday mornings; Friday is first come, first play only. Tom Brown is one of the three venues the City takes online reservations for. Lighting and surface are not stated.",
+        "county": "Leon",
+        "postal_code": "32311",
+        "fee_type": "free",
+        "pricing_notes": "Open Play sessions are drop-in and free. Reserved Play sessions require a fee: Singles $5.75, Singles Senior $4.75, Doubles $4.25, Doubles Senior $3.50 (senior rate from age 62). Reservations online or by phone on 850-891-4940."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Tom Brown Park\" in the outdoor section of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line: \"4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)\". Twelve is the sum of the City's two figures - four standalone pickleball courts and eight lined onto tennis courts 1 to 4; \"City of Tallahassee pickleball professionals have priority to use courts 1A/1B for teaching purposes during non-monitored hours. Open Play schedule includes combo courts 4A-4B and the four standalone pickleball courts.\""
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Outdoor Pickleball Courts & Schedules\" on the City's page: \"4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)\"."
+        },
+        "street_address": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"501 Easterwood Avenue\" on the City's pickleball page. The Census address geocoder matched \"501 EASTERWOOD DR, TALLAHASSEE, FL, 32311\". The Census changed the street type from AVE to DR from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands."
+        },
+        "venue_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tallahassee Parks, Recreation and Neighborhood Affairs among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City schedules Open Play here - \"Open Play\" - which it defines as \"a Drop-In session in which players simply drop-in, without advanced reservations\"; outside sessions, \"All Outdoor Courts are First-Come First-Play except during the times noted below\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)\", the venue's schedule, and the City's definitions of Open Play, Reserved Play and First-Come First-Play."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Leon County, FL (FIPS 12073). Census address geocoder matched \"501 EASTERWOOD DR, TALLAHASSEE, FL, 32311\". The Census changed the street type from AVE to DR from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands. The resolver also places it in the incorporated place \"Tallahassee city\", which is what allows it to be published under Tallahassee."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"501 EASTERWOOD DR, TALLAHASSEE, FL, 32311\". The Census changed the street type from AVE to DR from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands. The City prints no postcode for this venue."
+        },
+        "fee_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City schedules Open Play here and prices it at nothing: \"Court reservations can only be made for Reserved Play sessions, as all Open Play sessions are drop-in and free.\" and Open Play \"is a Drop-In session in which players simply drop-in, without advanced reservations, to play other drop-in players. These sessions do not require a fee.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"is a court reservation that must be scheduled for a specific time and can be used for both casual and competitive play. All Reserved Play sessions require a fee payment.\" \"Court Reservations and Fees Singles - $5.75 Singles Senior* - $4.75 Doubles - $4.25 Doubles Senior* - $3.50\" \"To qualify for the senior rate, you must be at least 62 years of age\" \"Make a reservation online for Four Oaks Park, Tom Brown Park or Winthrop Park - or make a phone reservation by calling 850-891-4940\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.talgov.com/parks/sports-pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "winthrop-park": {
+      "minted": false,
+      "identity": {
+        "name": "Winthrop Park",
+        "city": "Tallahassee",
+        "state": "FL",
+        "county": "Leon",
+        "postal_code": "32303",
+        "latitude": 30.463522345941,
+        "longitude": -84.267865514209,
+        "imported_slug": "winthrop-park",
+        "canonical_slug": "winthrop-park"
+      },
+      "match": {
+        "source_page": "https://www.talgov.com/parks/sports-pickleball",
+        "quote": "6 courts",
+        "basis": "Matched to the imported winthrop-park row in Tallahassee, FL, at the same street address."
+      },
+      "patch": {
+        "name": "Winthrop Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "1601 Mitchell Avenue",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Six outdoor courts that the City describes as shared: \"Winthrop Park tennis courts are multi-purpose courts used for tennis, pickleball and any other sports that will not damage the surface or nets of the courts\". The count is \"6 courts\" and nothing about them is called dedicated. The schedule here is Reserved Play only - Monday to Thursday 5:30pm-8:30pm and Saturday 8:30am-1:00pm, at $4.25 to $5.75 a session - with Friday \"FCFP Only\" and every other hour first come, first play; there is no Open Play session at Winthrop, so no free session is stated and no fee answer is published. Two competing uses are stated by the City: \"the GA/FL A and B league will be utilizing 5 courts on Tuesdays and 6 courts on Thursdays from 9:00am-12:00pm (September through April)\", and \"local school teams will be using the courts from 3:30-5:00pm (January through April)\". Winthrop is one of the three venues the City takes online reservations for. Lighting and surface are not stated.",
+        "county": "Leon",
+        "postal_code": "32303",
+        "pricing_notes": "No Open Play session is scheduled and no price is stated for first-come play. Reserved Play sessions require a fee: Singles $5.75, Singles Senior $4.75, Doubles $4.25, Doubles Senior $3.50 (senior rate from age 62). Reservations online or by phone on 850-891-4940."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Winthrop Park\" in the outdoor section of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line for this venue: \"6 courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Outdoor Pickleball Courts & Schedules\" on the City's page: \"6 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1601 Mitchell Avenue\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tallahassee Parks, Recreation and Neighborhood Affairs among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"All Outdoor Courts are First-Come First-Play except during the times noted below\" - and First Come First Play \"just means that the court is open and people can play any way they would like. If other players are waiting to use the court, there is a 90 minute court time limit.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"6 courts\", the venue's schedule, and the City's definitions of Open Play, Reserved Play and First-Come First-Play."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Leon County, FL (FIPS 12073). Census address geocoder matched \"1601 MITCHELL AVE, TALLAHASSEE, FL, 32303\". The resolver also places it in the incorporated place \"Tallahassee city\", which is what allows it to be published under Tallahassee."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1601 MITCHELL AVE, TALLAHASSEE, FL, 32303\". The City prints no postcode for this venue."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"is a court reservation that must be scheduled for a specific time and can be used for both casual and competitive play. All Reserved Play sessions require a fee payment.\" \"Court Reservations and Fees Singles - $5.75 Singles Senior* - $4.75 Doubles - $4.25 Doubles Senior* - $3.50\" \"To qualify for the senior rate, you must be at least 62 years of age\" \"Make a reservation online for Four Oaks Park, Tom Brown Park or Winthrop Park - or make a phone reservation by calling 850-891-4940\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.talgov.com/parks/sports-pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "jack-l-mclean-jr-community-center": {
+      "minted": false,
+      "identity": {
+        "name": "Jack L. McLean Jr. Community Center",
+        "city": "Tallahassee",
+        "state": "FL",
+        "county": "Leon",
+        "postal_code": "32301",
+        "latitude": 30.405375476577,
+        "longitude": -84.272380845329,
+        "imported_slug": "jack-l-mclean-jr-community-center",
+        "canonical_slug": "jack-l-mclean-jr-community-center"
+      },
+      "match": {
+        "source_page": "https://www.talgov.com/parks/sports-pickleball",
+        "quote": "2 courts with adjustable net straps and painted lines",
+        "basis": "Matched to the imported jack-l-mclean-jr-community-center row in Tallahassee, FL, at the same street address."
+      },
+      "patch": {
+        "name": "Jack L. McLean Jr. Community Center",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "700 Paul Russell Road",
+        "venue_type": "community_center",
+        "play_format": "open_play",
+        "court_availability": "Two outdoor pickleball courts with their own nets - \"2 courts with adjustable net straps and painted lines\" - at a community centre in the south of the city, marked \"No Open or Reserved Play - FCFP Only\": first come, first play at all hours, with the City's 90-minute limit when others are waiting. The City also prints a closure on the same line, and this page prints it as the City does: \"Due to scheduled resurfacing, both the outdoor tennis and pickleball courts at jack mclean will be unavailable for use until december 5, 2025.\" That date had passed when this page was read on 7 September 2026 and the notice was still on the City's page; the run that builds this page fails if the City removes it. The centre's indoor court is scheduled for Open Play on Monday, Tuesday, Thursday and Saturday mornings, but the City states no indoor count, so nothing indoor is published here. Lighting and surface are not stated.",
+        "county": "Leon",
+        "postal_code": "32301",
+        "nets_provided": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Jack L. McLean Jr. Community Center\" in the outdoor section of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line for this venue: \"2 courts with adjustable net straps and painted lines\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Outdoor Pickleball Courts & Schedules\" on the City's page: \"2 courts with adjustable net straps and painted lines\"."
+        },
+        "street_address": {
+          "source_url": "https://www.talgov.com/parks/centers-mclean",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"700 Paul Russell Road\" on the City's pickleball page. The Jack L. McLean Jr. Community Center's own page prints the same address."
+        },
+        "venue_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A City community centre with outdoor courts, listed on the City's pickleball page."
+        },
+        "play_format": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"No Open or Reserved Play - FCFP Only\" - and First Come First Play \"just means that the court is open and people can play any way they would like. If other players are waiting to use the court, there is a 90 minute court time limit.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"2 courts with adjustable net straps and painted lines\", the venue's schedule, and the City's definitions of Open Play, Reserved Play and First-Come First-Play."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Leon County, FL (FIPS 12073). Census address geocoder matched \"700 PAUL RUSSELL RD, TALLAHASSEE, FL, 32301\". The resolver also places it in the incorporated place \"Tallahassee city\", which is what allows it to be published under Tallahassee."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"700 PAUL RUSSELL RD, TALLAHASSEE, FL, 32301\". The City prints no postcode for this venue."
+        },
+        "nets_provided": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's own line: \"2 courts with adjustable net straps and painted lines\" - adjustable net straps are nets."
+        }
+      },
+      "record": {
+        "source_url": "https://www.talgov.com/parks/sports-pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "jake-gaither-community-center": {
+      "minted": true,
+      "identity": {
+        "name": "Jake Gaither Community Center",
+        "city": "Tallahassee",
+        "state": "FL",
+        "county": "Leon",
+        "postal_code": "32305",
+        "latitude": 30.405186006522,
+        "longitude": -84.294134413326,
+        "imported_slug": null,
+        "canonical_slug": "jake-gaither-community-center"
+      },
+      "match": {
+        "source_page": "https://www.talgov.com/parks/sports-pickleball",
+        "quote": "1 indoor court, 2 outdoor courts",
+        "basis": "No imported row under this slug. Minted from the City's pickleball page, which states the count and the address. The imported row jake-gaither-community-center-outdoor-courts describes the same courts and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Jake Gaither Community Center",
+        "total_courts": 3,
+        "outdoor_courts": 2,
+        "street_address": "801 Bragg Drive",
+        "venue_type": "community_center",
+        "play_format": "open_play",
+        "court_availability": "Three courts in two places, in the City's own split: \"1 indoor court, 2 outdoor courts\". The two outdoor courts are first come, first play, with hours the City states as \"Outdoor FCFP: 8:00am - 9:00pm Daily, Closed on Sunday\" - printed here as the City prints it, \"Daily\" and \"Closed on Sunday\" together. The single indoor court appears on the City's indoor schedule for Friday 12:00pm-2:00pm as \"Rerseve Play Only\", the City's spelling, which means a Reserved Play session at the reserved-play fee; indoor courts have no first-come play. No price is stated for the outdoor courts, so no fee answer is published. Lighting and surface are not stated.",
+        "county": "Leon",
+        "postal_code": "32305",
+        "indoor_courts": 1,
+        "pricing_notes": "No price is stated for the outdoor first-come courts. Reserved Play sessions require a fee: Singles $5.75, Singles Senior $4.75, Doubles $4.25, Doubles Senior $3.50 (senior rate from age 62). The indoor court is Reserved Play only.",
+        "hours_of_operation": "Outdoor FCFP: 8:00am - 9:00pm Daily, Closed on Sunday"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Jake Gaither Community Center\" in the outdoor section of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line: \"1 indoor court, 2 outdoor courts\". Three is the sum of the City's two figures."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1 indoor court, 2 outdoor courts\" - the word is the City's."
+        },
+        "street_address": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"801 Bragg Drive\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A City community centre with outdoor courts, listed on the City's pickleball page."
+        },
+        "play_format": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"All Outdoor Courts are First-Come First-Play except during the times noted below\" - and First Come First Play \"just means that the court is open and people can play any way they would like. If other players are waiting to use the court, there is a 90 minute court time limit.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"1 indoor court, 2 outdoor courts\", the venue's schedule, and the City's definitions of Open Play, Reserved Play and First-Come First-Play."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Leon County, FL (FIPS 12073). Census address geocoder matched \"801 BRAGG DR, TALLAHASSEE, FL, 32305\". The resolver also places it in the incorporated place \"Tallahassee city\", which is what allows it to be published under Tallahassee."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"801 BRAGG DR, TALLAHASSEE, FL, 32305\". The City prints no postcode for this venue."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1 indoor court, 2 outdoor courts\" - the word is the City's."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"is a court reservation that must be scheduled for a specific time and can be used for both casual and competitive play. All Reserved Play sessions require a fee payment.\" \"Court Reservations and Fees Singles - $5.75 Singles Senior* - $4.75 Doubles - $4.25 Doubles Senior* - $3.50\" \"To qualify for the senior rate, you must be at least 62 years of age\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Printed on the City's page for this venue exactly as \"Outdoor FCFP: 8:00am - 9:00pm Daily, Closed on Sunday\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.talgov.com/parks/sports-pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "lafayette-park": {
+      "minted": true,
+      "identity": {
+        "name": "Lafayette Park",
+        "city": "Tallahassee",
+        "state": "FL",
+        "county": "Leon",
+        "postal_code": "32303",
+        "latitude": 30.454461548894,
+        "longitude": -84.274857881864,
+        "imported_slug": null,
+        "canonical_slug": "lafayette-park"
+      },
+      "match": {
+        "source_page": "https://www.talgov.com/parks/sports-pickleball",
+        "quote": "2 courts with net tie-downs - paddles and balls available inside the Sue McCollum Community Center only during regular office hours",
+        "basis": "No imported row under this slug. Minted from the City's pickleball page, which states the count and the address. The imported row lafayette-park-outdoor-courts describes the same courts at an intersection with no house number and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Lafayette Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "501 Ingleside Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "court_availability": "Two outdoor pickleball courts with nets - \"2 courts with net tie-downs\" - at the park that shares its site with the Sue McCollum Community Center, where the City says \"paddles and balls available inside the Sue McCollum Community Center only during regular office hours\". The courts are \"No Open or Reserved Play - FCFP Only\": first come, first play, 90-minute limit when others are waiting, and no price stated. The City writes the address two ways on one page - \"501 Ingleside Drive\" on the pickleball line, \"501 Ingleside Avenue\" for the community centre - and the Census address file resolves it as Avenue; the same house number, one site. The community centre's indoor court runs Open Play on Wednesdays and Reserved Play on Monday and Friday mornings, but the City states no indoor count, so only the outdoor courts publish. Lighting and surface are not stated.",
+        "county": "Leon",
+        "postal_code": "32303",
+        "nets_provided": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Lafayette Park\" in the outdoor section of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line for this venue: \"2 courts with net tie-downs - paddles and balls available inside the Sue McCollum Community Center only during regular office hours\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Outdoor Pickleball Courts & Schedules\" on the City's page: \"2 courts with net tie-downs - paddles and balls available inside the Sue McCollum Community Center only during regular office hours\"."
+        },
+        "street_address": {
+          "source_url": "https://www.talgov.com/parks/centers-mccollum",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"501 Ingleside Drive\" on the City's pickleball page. The Sue McCollum Community Center's own page prints \"501 Ingleside Avenue\". The City writes the shared site two ways - \"501 Ingleside Drive\" on the pickleball line and \"501 Ingleside Avenue\" for the community centre - and the Census address file resolves it as Avenue. Same house number, one site; the count-bearing line's spelling is published and the resolver's is stated."
+        },
+        "venue_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tallahassee Parks, Recreation and Neighborhood Affairs among its parks."
+        },
+        "play_format": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"No Open or Reserved Play - FCFP Only\" - and First Come First Play \"just means that the court is open and people can play any way they would like. If other players are waiting to use the court, there is a 90 minute court time limit.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"2 courts with net tie-downs - paddles and balls available inside the Sue McCollum Community Center only during regular office hours\", the venue's schedule, and the City's definitions of Open Play, Reserved Play and First-Come First-Play."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Leon County, FL (FIPS 12073). Census address geocoder matched \"501 INGLESIDE AVE, TALLAHASSEE, FL, 32303\". The Census changed the street type from DR to AVE from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands. The resolver also places it in the incorporated place \"Tallahassee city\", which is what allows it to be published under Tallahassee."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"501 INGLESIDE AVE, TALLAHASSEE, FL, 32303\". The Census changed the street type from DR to AVE from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands. The City prints no postcode for this venue."
+        },
+        "nets_provided": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's own line: \"2 courts with net tie-downs - paddles and balls available inside the Sue McCollum Community Center only during regular office hours\" - net tie-downs are nets."
+        }
+      },
+      "record": {
+        "source_url": "https://www.talgov.com/parks/sports-pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "walker-ford-community-center": {
+      "minted": false,
+      "identity": {
+        "name": "Walker-Ford Community Center",
+        "city": "Tallahassee",
+        "state": "FL",
+        "county": "Leon",
+        "postal_code": "32310",
+        "latitude": 30.41801100359,
+        "longitude": -84.293970039491,
+        "imported_slug": "walker-ford-community-center",
+        "canonical_slug": "walker-ford-community-center"
+      },
+      "match": {
+        "source_page": "https://www.talgov.com/parks/sports-pickleball",
+        "quote": "3 courts - night play is available",
+        "basis": "Matched to the imported walker-ford-community-center row in Tallahassee, FL, at the same street address."
+      },
+      "patch": {
+        "name": "Walker-Ford Community Center",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "2301 Pasco Street",
+        "venue_type": "community_center",
+        "play_format": "open_play",
+        "court_availability": "Three outdoor pickleball courts near Florida A&M, and the one place in Tallahassee where the City says the courts can be used after dark: \"3 courts - night play is available\". The City's word is \"night play\", not \"lighted\", and it is published here as a lighting answer on that phrase. The courts are \"No Open or Reserved Play - FCFP Only\": first come, first play, 90-minute limit when others are waiting, no price stated. The centre's indoor court has Open Play on Tuesday and Friday mornings and Thursday evenings, but the City states no indoor count, so nothing indoor is published. The imported dataset carried this centre as six courts, three indoor and three outdoor; the City's page says three, outdoors, and that is what publishes. Surface is not stated.",
+        "county": "Leon",
+        "postal_code": "32310",
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Walker-Ford Community Center\" in the outdoor section of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line for this venue: \"3 courts - night play is available\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Outdoor Pickleball Courts & Schedules\" on the City's page: \"3 courts - night play is available\"."
+        },
+        "street_address": {
+          "source_url": "https://www.talgov.com/parks/centers-walker",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2301 Pasco Street\" on the City's pickleball page. The Walker-Ford Community Center's own page prints the same address."
+        },
+        "venue_type": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A City community centre with outdoor courts, listed on the City's pickleball page."
+        },
+        "play_format": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"No Open or Reserved Play - FCFP Only\" - and First Come First Play \"just means that the court is open and people can play any way they would like. If other players are waiting to use the court, there is a 90 minute court time limit.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"3 courts - night play is available\", the venue's schedule, and the City's definitions of Open Play, Reserved Play and First-Come First-Play."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Leon County, FL (FIPS 12073). Census address geocoder matched \"2301 PASCO ST, TALLAHASSEE, FL, 32310\". The resolver also places it in the incorporated place \"Tallahassee city\", which is what allows it to be published under Tallahassee."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2301 PASCO ST, TALLAHASSEE, FL, 32310\". The City prints no postcode for this venue."
+        },
+        "light": {
+          "source_url": "https://www.talgov.com/parks/sports-pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's line is \"3 courts - night play is available\". Its words are \"night play is available\", not \"lighted\"; outdoor courts that can be played at night are lit courts, and that phrase is the whole basis of this answer."
+        }
+      },
+      "record": {
+        "source_url": "https://www.talgov.com/parks/sports-pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    }
+  }
+}
