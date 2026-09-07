@@ -165,6 +165,8 @@ export type VenueFact = {
   key: string
   label: string
   value: string
+  /** Prose rather than a word or number: rendered full-width, after the short rows. */
+  wide: boolean
   verified: boolean
   source: string | null
   checked: string | null

@@ -1260,6 +1260,27 @@ table td a:hover { border-bottom-color: var(--accent); }
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+/*
+  A fact that is a sentence, not a word. Court availability, hours, pricing
+  notes and the like are prose an operator wrote, and prose cannot sit on a
+  leader line beside "Lights · · · Not verified yet" — it ran clean across
+  the neighbouring columns. These rows span the grid, lose the leader, and
+  wrap.
+*/
+.facts > div.wide {
+  grid-column: 1 / -1;
+  display: block;
+}
+.facts > div.wide::after { display: none; }
+.facts > div.wide .k { margin-bottom: 3px; }
+.facts > div.wide .v {
+  text-align: left;
+  white-space: normal;
+  font-weight: 450;
+  font-size: 14.5px;
+  line-height: 1.55;
+  max-width: 72ch;
+}
 
 /* ================================================================
    PROVENANCE — set as a footnote, because that is what it is

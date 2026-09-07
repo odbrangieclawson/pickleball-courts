@@ -112,7 +112,7 @@ export default async function LeafPage({params}: Params) {
       <h2 data-prose>The facts</h2>
       <div className="facts">
         {v.facts.map(x => (
-          <div key={x.key}>
+          <div key={x.key} className={x.wide ? 'wide' : undefined}>
             <div className="k">{x.label}</div>
             <div className="v">
               {x.value === 'Not verified yet'
