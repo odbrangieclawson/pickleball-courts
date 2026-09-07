@@ -1,0 +1,811 @@
+{
+  "city": "Henderson",
+  "state": "NV",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Henderson's pickleball page states a count for every facility it lists, in five small tables headed \"OUTDOOR PICKLEBALL COURTS\", \"PICKLEBALL & TENNIS COMBINED\", \"INDOOR PICKLEBALL COURTS\", \"INDOOR PICKLEWALL COURTS\" and \"PICKLEBALL COURTS\", and states no addresses; the addresses come from the City's own Park Locations and Features directory and, for the recreation centres, from each centre's page in the City's facility directory (Saint Paul's rule: counts on one operator page, addresses on another). None of the pages could be fetched by a script - cityofhenderson.com answers a bare request and a full browser header set with HTTP 403 - so they were read in a browser and saved as text with a header stating the method, as Cary's, Wichita's and Spokane's pages were; this run asserts the headers, every table marker, every count row line-for-line in order and every address block against those files. Outdoor and indoor publish only where the City's heading says the word: Black Mountain's eighteen are outdoor, Silver Springs' three are indoor. The five \"PICKLEBALL & TENNIS COMBINED\" venues are shared with tennis and carry no side, so indoor and outdoor stay null on them. Silver Springs is printed twice, \"3\" under the indoor heading and \"1\" under a heading that says only \"PICKLEBALL COURTS\"; the two City counts at one address publish as one venue of four (Mount Pleasant's Park West rule), and the venue is flagged for re-check because the fifth heading does not say where the fourth court is. Six facilities with a City count - Blooming Cactus, Dundee Jones, Montagna, Whitney Mesa, Weston Hills and Downtown Recreation Center - are refused on their addresses alone, which resolve in neither resolver as the City writes them; Whitney Ranch is refused because a \"PICKLEWALL\" is not a court. Fee, lighting, surface, hours, nets and play format stay null: the City writes no price, never writes \"free\", and says only that courts can be reserved by calling the Sports Office, which publishes as a pricing note with no price. No venue is published as free.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+      "publisher": "City of Henderson Parks and Recreation",
+      "tier": 1,
+      "format": "text",
+      "snapshot": "data/sources/henderson/pickleball.txt",
+      "method": "Read in a browser on 2026-09-07 because cityofhenderson.com answers scripted fetches with HTTP 403; the five Court Locations tables were captured as rendered, one facility per line. See data/sources/henderson/README.md."
+    },
+    {
+      "id": "S2",
+      "url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/park-locations-and-features",
+      "publisher": "City of Henderson Parks and Recreation",
+      "tier": 1,
+      "format": "text",
+      "snapshot": "data/sources/henderson/park-locations.txt",
+      "method": "Read in a browser on 2026-09-07, four pages of 25 parks; the entries for the facilities on the pickleball page were captured with their ADDRESS blocks as printed. See data/sources/henderson/README.md."
+    },
+    {
+      "id": "S3",
+      "url": "https://www.cityofhenderson.com/Home/Components/FacilityDirectory/FacilityDirectory/156/783",
+      "publisher": "City of Henderson Parks and Recreation",
+      "tier": 1,
+      "format": "text",
+      "snapshot": "data/sources/henderson/recreation-centers.txt",
+      "method": "Read in a browser on 2026-09-07 with the Downtown (158/783) and Silver Springs (166/783) facility pages; each centre's address block and amenities captured as printed. See data/sources/henderson/README.md."
+    },
+    {
+      "id": "S4",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/henderson-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 7,
+    "courts": 33,
+    "outdoor": 18,
+    "indoor": 3,
+    "unsided": 12,
+    "combined_with_tennis": 11,
+    "lit_courts": 0,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Blooming Cactus Park",
+      "why": [
+        "The City states a count, \"Blooming Cactus Park 2\" under \"OUTDOOR PICKLEBALL COURTS\", and an address, \"410 Grand Cadence Drive\", and the address does not resolve. The Census address geocoder returns no match for it in Henderson, NV, and OpenStreetMap has no house number for it. Import Gate I1 requires an address that resolves as written at house-number level; this project has never published one that does not, and has never taken an address from outside the operator (the Foster Park rule).",
+        "The count is real and the refusal is on the address alone. This run throws the day either resolver matches it, so the venue cannot stay refused once it is publishable."
+      ]
+    },
+    {
+      "name": "Dundee Jones Park",
+      "why": [
+        "The City states a count, \"Dundee Jones Park 2\" under \"OUTDOOR PICKLEBALL COURTS\", and an address, \"10550 Jeffreys St\", and the address does not resolve. The Census address geocoder returns no match for it in Henderson, NV, and OpenStreetMap has no house number for it. Import Gate I1 requires an address that resolves as written at house-number level; this project has never published one that does not, and has never taken an address from outside the operator (the Foster Park rule).",
+        "The count is real and the refusal is on the address alone. This run throws the day either resolver matches it, so the venue cannot stay refused once it is publishable."
+      ]
+    },
+    {
+      "name": "Montagna Park",
+      "why": [
+        "The City states a count, \"Montagna Park 4\" under \"OUTDOOR PICKLEBALL COURTS\", and an address, \"3495 Via Altamira\", and the address does not resolve. The Census address geocoder returns no match for it in Henderson, NV, and OpenStreetMap has no house number for it. Import Gate I1 requires an address that resolves as written at house-number level; this project has never published one that does not, and has never taken an address from outside the operator (the Foster Park rule).",
+        "The count is real and the refusal is on the address alone. This run throws the day either resolver matches it, so the venue cannot stay refused once it is publishable."
+      ]
+    },
+    {
+      "name": "Whitney Mesa",
+      "why": [
+        "The City states a count, \"Whitney Mesa 4\" under \"OUTDOOR PICKLEBALL COURTS\", and an address, \"1990 Patrick Ln.\", and the address does not resolve. The Census address geocoder returns no match for it in Henderson, NV, and OpenStreetMap has no house number for it. Import Gate I1 requires an address that resolves as written at house-number level; this project has never published one that does not, and has never taken an address from outside the operator (the Foster Park rule).",
+        "The count is real and the refusal is on the address alone. This run throws the day either resolver matches it, so the venue cannot stay refused once it is publishable."
+      ]
+    },
+    {
+      "name": "Weston Hills Park",
+      "why": [
+        "The City states a count, \"Weston Hills Park 2\" under \"PICKLEBALL & TENNIS COMBINED\", and an address, \"950 Weston Ridge St.\", and the address does not resolve. The Census address geocoder returns no match for it in Henderson, NV, and OpenStreetMap has no house number for it. Import Gate I1 requires an address that resolves as written at house-number level; this project has never published one that does not, and has never taken an address from outside the operator (the Foster Park rule).",
+        "The count is real and the refusal is on the address alone. This run throws the day either resolver matches it, so the venue cannot stay refused once it is publishable."
+      ]
+    },
+    {
+      "name": "Downtown Recreation Center",
+      "why": [
+        "The City states a count, \"Downtown Recreation Center 3\" under \"INDOOR PICKLEBALL COURTS\", and an address, \"50 Van Wagenen St.\", and the address does not resolve. The Census address geocoder returns no match for it in Henderson, NV, and OpenStreetMap has no house number for it. Import Gate I1 requires an address that resolves as written at house-number level; this project has never published one that does not, and has never taken an address from outside the operator (the Foster Park rule).",
+        "The count is real and the refusal is on the address alone. This run throws the day either resolver matches it, so the venue cannot stay refused once it is publishable."
+      ]
+    },
+    {
+      "name": "Whitney Ranch Recreation Center",
+      "why": [
+        "The City prints \"Whitney Ranch Recreation Center 1\" under the heading \"INDOOR PICKLEWALL COURTS\", a heading of its own, separate from \"INDOOR PICKLEBALL COURTS\". A pickle wall is a practice wall, not a court, and this directory counts courts. Nothing on the page states a pickleball court at Whitney Ranch.",
+        "This run asserts that heading and that row, so the day the City moves Whitney Ranch under a pickleball heading the run fails and the venue is reconsidered."
+      ]
+    }
+  ],
+  "venues": {
+    "black-mountain-recreation-center": {
+      "minted": false,
+      "identity": {
+        "name": "Black Mountain Recreation Center",
+        "city": "Henderson",
+        "state": "NV",
+        "county": "Clark",
+        "postal_code": "89015",
+        "latitude": 36.01448911326,
+        "longitude": -114.976516256105,
+        "imported_slug": "black-mountain-recreation-center-pickleball-courts",
+        "canonical_slug": "black-mountain-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "quote": "Black Mountain Recreation Center 18",
+        "basis": "Matched to the imported black-mountain-recreation-center-pickleball-courts row in Henderson, NV (which carried \"599 Greenway Road\" and six courts), published under the canonical slug black-mountain-recreation-center; the identity pass dropped the trailing \"-pickleball-courts\". Same street, same number; the City's count of eighteen replaces six. The park directory's \"Black Mountain Pickleball Park\" entry is the same address and folds into this venue."
+      },
+      "patch": {
+        "name": "Black Mountain Recreation Center",
+        "total_courts": 18,
+        "street_address": "599 Greenway Rd.",
+        "venue_type": "community_center",
+        "pricing_notes": "Courts can be reserved by calling the City's Sports Office; the City publishes no price for a reservation and does not say the courts are free.",
+        "court_availability": "Eighteen outdoor pickleball courts at Black Mountain Recreation Center, 599 Greenway Rd., the largest set in Henderson and the only Henderson venue on the City's \"OUTDOOR PICKLEBALL COURTS\" table with more than four. The City's pickleball page prints the row \"Black Mountain Recreation Center 18\" under that heading, so all eighteen publish as outdoor in the City's own word. The City's park directory lists the same address a second time as \"Black Mountain Pickleball Park\", with pickleball, parking, a picnic ramada, picnic tables, a playground and restrooms among its amenities; one address, one venue. Courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\". The City states no hours, no lighting, no surface and no price for these courts.",
+        "county": "Clark",
+        "postal_code": "89015",
+        "outdoor_courts": 18
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Black Mountain Recreation Center\" on the Court Locations tables of the City's pickleball page: \"Black Mountain Recreation Center 18\" under \"OUTDOOR PICKLEBALL COURTS\". The park directory lists the same address a second time as \"Black Mountain Pickleball Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Black Mountain Recreation Center 18\" under \"OUTDOOR PICKLEBALL COURTS\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofhenderson.com/Home/Components/FacilityDirectory/FacilityDirectory/156/783",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Black Mountain Recreation Center / ADDRESS: / 599 Greenway Rd. / Henderson, NV 89015\" in the centre's own page in the City's facility directory; the City's pickleball page states counts and no addresses. The park directory prints the same street under \"Black Mountain Pickleball Park\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by the City's facility directory under \"Recreation Centers\"; counted on the City's pickleball page as \"Black Mountain Recreation Center 18\" under \"OUTDOOR PICKLEBALL COURTS\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" No fee or price appears anywhere on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Black Mountain Recreation Center 18\" under \"OUTDOOR PICKLEBALL COURTS\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, NV (FIPS 32003). Census address geocoder matched \"599 GREENWAY RD, HENDERSON, NV, 89015\". The resolver also places it in the incorporated place \"Henderson city\", which is what allows it to be published under Henderson."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"599 GREENWAY RD, HENDERSON, NV, 89015\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The row sits under the City's own heading \"OUTDOOR PICKLEBALL COURTS\": \"Black Mountain Recreation Center 18\". The word is the City's."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "aventura-park": {
+      "minted": true,
+      "identity": {
+        "name": "Aventura Park",
+        "city": "Henderson",
+        "state": "NV",
+        "county": "Clark",
+        "postal_code": "89044",
+        "latitude": 35.958246269439,
+        "longitude": -115.125860568663,
+        "imported_slug": null,
+        "canonical_slug": "aventura-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "quote": "Aventura Park 2",
+        "basis": "Minted from the City's page. The imported dataset holds no row for Aventura Park in Henderson, NV."
+      },
+      "patch": {
+        "name": "Aventura Park",
+        "total_courts": 2,
+        "street_address": "2525 Via Firenze",
+        "venue_type": "public_park",
+        "pricing_notes": "Courts can be reserved by calling the City's Sports Office; the City publishes no price for a reservation and does not say the courts are free.",
+        "court_availability": "Two pickleball courts shared with tennis at Aventura Park, 2525 Via Firenze, in the Inspirada area of south-west Henderson. The City's pickleball page prints \"Aventura Park 2\" under its \"PICKLEBALL & TENNIS COMBINED\" heading, which is the City's way of saying the pickleball lines are on the tennis courts and the courts are shared; the park directory lists tennis courts among the park's amenities. That heading says nothing about indoor or outdoor, so neither is claimed here. Courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\". No hours, lighting, surface or price are stated for these courts.",
+        "county": "Clark",
+        "postal_code": "89044"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Aventura Park\" on the Court Locations tables of the City's pickleball page: \"Aventura Park 2\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Aventura Park 2\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/park-locations-and-features",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Aventura Park / ADDRESS: / 2525 Via Firenze / Henderson, NV 89044\" in the City's Park Locations and Features directory; the City's pickleball page states counts and no addresses."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Henderson Parks and Recreation in its Park Locations and Features directory, among the City's parks."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" No fee or price appears anywhere on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Aventura Park 2\" under \"PICKLEBALL & TENNIS COMBINED\". The heading \"PICKLEBALL & TENNIS COMBINED\" is the City's word for courts shared with tennis."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, NV (FIPS 32003). Census address geocoder matched \"2525 VIA FIRENZE, HENDERSON, NV, 89044\". The resolver also places it in the incorporated place \"Henderson city\", which is what allows it to be published under Henderson."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2525 VIA FIRENZE, HENDERSON, NV, 89044\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "mission-hills-park": {
+      "minted": false,
+      "identity": {
+        "name": "Mission Hills Park",
+        "city": "Henderson",
+        "state": "NV",
+        "county": "Clark",
+        "postal_code": "89002",
+        "latitude": 35.9980475,
+        "longitude": -114.9696109,
+        "imported_slug": "mission-hills-park",
+        "canonical_slug": "mission-hills-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "quote": "Mission Hills Park 3",
+        "basis": "Matched to the imported mission-hills-park row in Henderson, NV, at the same street address (which carried eight courts); the City's three replaces it."
+      },
+      "patch": {
+        "name": "Mission Hills Park",
+        "total_courts": 3,
+        "street_address": "551 E. Mission Dr.",
+        "venue_type": "public_park",
+        "pricing_notes": "Courts can be reserved by calling the City's Sports Office; the City publishes no price for a reservation and does not say the courts are free.",
+        "court_availability": "Three pickleball courts shared with tennis at Mission Hills Park, 551 E. Mission Dr., in the older east side of Henderson. The City's pickleball page prints \"Mission Hills Park 3\" under its \"PICKLEBALL & TENNIS COMBINED\" heading, so the pickleball lines are on the tennis courts and the courts are shared; the park directory lists both pickleball and tennis courts among the park's amenities. That heading says nothing about indoor or outdoor, so neither is claimed here. Courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\". No hours, lighting, surface or price are stated for these courts. The imported dataset held this park at eight courts; the City's three replaces it.",
+        "county": "Clark",
+        "postal_code": "89002"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Mission Hills Park\" on the Court Locations tables of the City's pickleball page: \"Mission Hills Park 3\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Mission Hills Park 3\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/park-locations-and-features",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Mission Hills Park / ADDRESS: / 551 E. Mission Dr. / Henderson, NV 89002\" in the City's Park Locations and Features directory; the City's pickleball page states counts and no addresses."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Henderson Parks and Recreation in its Park Locations and Features directory, among the City's parks."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" No fee or price appears anywhere on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Mission Hills Park 3\" under \"PICKLEBALL & TENNIS COMBINED\". The heading \"PICKLEBALL & TENNIS COMBINED\" is the City's word for courts shared with tennis."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, NV. OpenStreetMap (Nominatim) matched \"551, East Mission Drive, Mission Hills, Henderson, Clark County, Nevada, 89002, United States\" at house-number level. The Census address geocoder answered \"551 MISSION DR, HENDERSON, NV, 89002\", changing the direction from E to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Henderson\", which is what allows it to be published under Henderson."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"551, East Mission Drive, Mission Hills, Henderson, Clark County, Nevada, 89002, United States\" at house-number level. The Census address geocoder answered \"551 MISSION DR, HENDERSON, NV, 89002\", changing the direction from E to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "siena-heights-trailhead": {
+      "minted": false,
+      "identity": {
+        "name": "Siena Heights Trailhead",
+        "city": "Henderson",
+        "state": "NV",
+        "county": "Clark",
+        "postal_code": "89052",
+        "latitude": 36.012613381552,
+        "longitude": -115.104118609869,
+        "imported_slug": "siena-heights-trailhead",
+        "canonical_slug": "siena-heights-trailhead"
+      },
+      "match": {
+        "source_page": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "quote": "Siena Heights Trailhead 2",
+        "basis": "Matched to the imported siena-heights-trailhead row in Henderson, NV, at the same street address (which carried three courts); the City's two replaces it."
+      },
+      "patch": {
+        "name": "Siena Heights Trailhead",
+        "total_courts": 2,
+        "street_address": "2570 Siena Heights Dr.",
+        "venue_type": "public_park",
+        "pricing_notes": "Courts can be reserved by calling the City's Sports Office; the City publishes no price for a reservation and does not say the courts are free.",
+        "court_availability": "Two pickleball courts shared with tennis at the Siena Heights Trailhead, 2570 Siena Heights Dr., where the Amargosa Trail meets Seven Hills. The City's pickleball page prints \"Siena Heights Trailhead 2\" under its \"PICKLEBALL & TENNIS COMBINED\" heading, so the pickleball lines are on the tennis courts and the courts are shared; the park directory, which names the site \"Siena Heights/Amargosa Trailhead\", lists pickleball and tennis courts among its amenities. That heading says nothing about indoor or outdoor, so neither is claimed here. Courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\". No hours, lighting, surface or price are stated for these courts. The imported dataset held three courts here; the City's two replaces it.",
+        "county": "Clark",
+        "postal_code": "89052"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Siena Heights Trailhead\" on the Court Locations tables of the City's pickleball page: \"Siena Heights Trailhead 2\" under \"PICKLEBALL & TENNIS COMBINED\". The park directory names the same site \"Siena Heights/Amargosa Trailhead\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Siena Heights Trailhead 2\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/park-locations-and-features",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Siena Heights/Amargosa Trailhead / ADDRESS: / 2570 Siena Heights Dr. / Henderson, NV 89044\" in the City's Park Locations and Features directory; the City's pickleball page states counts and no addresses."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Henderson Parks and Recreation in its Park Locations and Features directory, among the City's parks."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" No fee or price appears anywhere on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Siena Heights Trailhead 2\" under \"PICKLEBALL & TENNIS COMBINED\". The heading \"PICKLEBALL & TENNIS COMBINED\" is the City's word for courts shared with tennis."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, NV (FIPS 32003). Census address geocoder matched \"2570 SIENA HEIGHTS DR, HENDERSON, NV, 89052\". The resolver also places it in the incorporated place \"Henderson city\", which is what allows it to be published under Henderson."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2570 SIENA HEIGHTS DR, HENDERSON, NV, 89052\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "sonata-park": {
+      "minted": true,
+      "identity": {
+        "name": "Sonata Park",
+        "city": "Henderson",
+        "state": "NV",
+        "county": "Clark",
+        "postal_code": "89052",
+        "latitude": 35.973550543315,
+        "longitude": -115.12245451202,
+        "imported_slug": null,
+        "canonical_slug": "sonata-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "quote": "Sonata Park 2",
+        "basis": "Minted from the City's page. The imported dataset holds no row for Sonata Park in Henderson, NV."
+      },
+      "patch": {
+        "name": "Sonata Park",
+        "total_courts": 2,
+        "street_address": "1550 Seven Hills Dr.",
+        "venue_type": "public_park",
+        "pricing_notes": "Courts can be reserved by calling the City's Sports Office; the City publishes no price for a reservation and does not say the courts are free.",
+        "court_availability": "Two pickleball courts shared with tennis at Sonata Park, 1550 Seven Hills Dr., in the Seven Hills neighbourhood. The City's pickleball page prints \"Sonata Park 2\" under its \"PICKLEBALL & TENNIS COMBINED\" heading, so the pickleball lines are on the tennis courts and the courts are shared; the park directory lists pickleball and tennis courts among the park's amenities. That heading says nothing about indoor or outdoor, so neither is claimed here. Courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\". No hours, lighting, surface or price are stated for these courts.",
+        "county": "Clark",
+        "postal_code": "89052"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Sonata Park\" on the Court Locations tables of the City's pickleball page: \"Sonata Park 2\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Sonata Park 2\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/park-locations-and-features",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Sonata Park / ADDRESS: / 1550 Seven Hills Dr. / Henderson, NV 89052\" in the City's Park Locations and Features directory; the City's pickleball page states counts and no addresses."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Henderson Parks and Recreation in its Park Locations and Features directory, among the City's parks."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" No fee or price appears anywhere on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Sonata Park 2\" under \"PICKLEBALL & TENNIS COMBINED\". The heading \"PICKLEBALL & TENNIS COMBINED\" is the City's word for courts shared with tennis."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, NV (FIPS 32003). Census address geocoder matched \"1550 SEVEN HILLS DR, HENDERSON, NV, 89052\". The resolver also places it in the incorporated place \"Henderson city\", which is what allows it to be published under Henderson."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1550 SEVEN HILLS DR, HENDERSON, NV, 89052\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "sunridge-park": {
+      "minted": true,
+      "identity": {
+        "name": "Sunridge Park",
+        "city": "Henderson",
+        "state": "NV",
+        "county": "Clark",
+        "postal_code": "89052",
+        "latitude": 35.992635347669,
+        "longitude": -115.092634780839,
+        "imported_slug": null,
+        "canonical_slug": "sunridge-park"
+      },
+      "match": {
+        "source_page": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "quote": "Sunridge Park 2",
+        "basis": "Minted from the City's page. The imported dataset holds no row for Sunridge Park in Henderson, NV."
+      },
+      "patch": {
+        "name": "Sunridge Park",
+        "total_courts": 2,
+        "street_address": "1010 Sandy Ridge Ave.",
+        "venue_type": "public_park",
+        "pricing_notes": "Courts can be reserved by calling the City's Sports Office; the City publishes no price for a reservation and does not say the courts are free.",
+        "court_availability": "Two pickleball courts shared with tennis at Sunridge Park, 1010 Sandy Ridge Ave., in the MacDonald Ranch area. The City's pickleball page prints \"Sunridge Park 2\" under its \"PICKLEBALL & TENNIS COMBINED\" heading, so the pickleball lines are on the tennis courts and the courts are shared; the park directory lists tennis courts among the park's amenities. That heading says nothing about indoor or outdoor, so neither is claimed here. Courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\". No hours, lighting, surface or price are stated for these courts.",
+        "county": "Clark",
+        "postal_code": "89052"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Sunridge Park\" on the Court Locations tables of the City's pickleball page: \"Sunridge Park 2\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Sunridge Park 2\" under \"PICKLEBALL & TENNIS COMBINED\"."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/park-locations-and-features",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Sunridge Park / ADDRESS: / 1010 Sandy Ridge Ave. / Henderson, NV 89052\" in the City's Park Locations and Features directory; the City's pickleball page states counts and no addresses."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Henderson Parks and Recreation in its Park Locations and Features directory, among the City's parks."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" No fee or price appears anywhere on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Sunridge Park 2\" under \"PICKLEBALL & TENNIS COMBINED\". The heading \"PICKLEBALL & TENNIS COMBINED\" is the City's word for courts shared with tennis."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, NV (FIPS 32003). Census address geocoder matched \"1010 SANDY RIDGE AVE, HENDERSON, NV, 89052\". The resolver also places it in the incorporated place \"Henderson city\", which is what allows it to be published under Henderson."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1010 SANDY RIDGE AVE, HENDERSON, NV, 89052\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "silver-springs-recreation-center": {
+      "minted": true,
+      "identity": {
+        "name": "Silver Springs Recreation Center",
+        "city": "Henderson",
+        "state": "NV",
+        "county": "Clark",
+        "postal_code": "89074",
+        "latitude": 36.045738149835,
+        "longitude": -115.074734369043,
+        "imported_slug": null,
+        "canonical_slug": "silver-springs-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "quote": "Silver Springs Recreation Center 3 / Silver Springs Recreation Center 1",
+        "basis": "Minted from the City's page. The imported dataset holds no row for Silver Springs Recreation Center in Henderson, NV."
+      },
+      "patch": {
+        "name": "Silver Springs Recreation Center",
+        "total_courts": 4,
+        "street_address": "1951 Silver Springs Pkwy.",
+        "venue_type": "community_center",
+        "pricing_notes": "Courts can be reserved by calling the City's Sports Office; the City publishes no price for a reservation and does not say the courts are free.",
+        "court_availability": "Four pickleball courts at Silver Springs Recreation Center, 1951 Silver Springs Pkwy., three of them indoor. The City's pickleball page prints the centre twice: \"Silver Springs Recreation Center 3\" under \"INDOOR PICKLEBALL COURTS\", and \"Silver Springs Recreation Center 1\" under a fifth heading that reads only \"PICKLEBALL COURTS\" and says nothing about where that court is. Two City counts at one address publish as one venue with four courts, three of them indoor in the City's word and the fourth on no stated side. The centre's own facility page lists a gymnasium and tennis courts among its amenities. Courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\". No hours, lighting, surface or price are stated for these courts.",
+        "county": "Clark",
+        "postal_code": "89074",
+        "indoor_courts": 3
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Silver Springs Recreation Center\" on the Court Locations tables of the City's pickleball page: \"Silver Springs Recreation Center 3\" under \"INDOOR PICKLEBALL COURTS\" and \"Silver Springs Recreation Center 1\" under \"PICKLEBALL COURTS\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Two City rows at one address: \"Silver Springs Recreation Center 3\" under \"INDOOR PICKLEBALL COURTS\" and \"Silver Springs Recreation Center 1\" under \"PICKLEBALL COURTS\". Four is their sum; the fifth heading, \"PICKLEBALL COURTS\", does not say where its one court is."
+        },
+        "street_address": {
+          "source_url": "https://www.cityofhenderson.com/Home/Components/FacilityDirectory/FacilityDirectory/166/783",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Silver Springs Recreation Center / ADDRESS: / 1951 Silver Springs Pkwy. / Henderson, NV 89074\" in the centre's own page in the City's facility directory; the City's pickleball page states counts and no addresses."
+        },
+        "venue_type": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed by the City's facility directory under \"Recreation Centers\"; counted on the City's pickleball page as \"Silver Springs Recreation Center 3\" under \"INDOOR PICKLEBALL COURTS\" and \"Silver Springs Recreation Center 1\" under \"PICKLEBALL COURTS\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" No fee or price appears anywhere on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Silver Springs Recreation Center 3\" under \"INDOOR PICKLEBALL COURTS\" and \"Silver Springs Recreation Center 1\" under \"PICKLEBALL COURTS\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Clark County, NV (FIPS 32003). Census address geocoder matched \"1951 SILVER SPRINGS PKWY, HENDERSON, NV, 89074\". The resolver also places it in the incorporated place \"Henderson city\", which is what allows it to be published under Henderson."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1951 SILVER SPRINGS PKWY, HENDERSON, NV, 89074\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The row sits under the City's own heading \"INDOOR PICKLEBALL COURTS\": \"Silver Springs Recreation Center 3\". The word is the City's. The centre's other row, \"Silver Springs Recreation Center 1\" under \"PICKLEBALL COURTS\", states no side and is counted in the total only."
+        }
+      },
+      "record": {
+        "source_url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "The City prints this centre under two headings and the second, \"PICKLEBALL COURTS\", does not say whether its one court is indoor or outdoor; re-read the page for a heading that does.",
+        "fields": [
+          "total_courts",
+          "indoor_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    }
+  }
+}

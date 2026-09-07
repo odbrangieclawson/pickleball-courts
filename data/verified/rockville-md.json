@@ -1,0 +1,1766 @@
+{
+  "city": "Rockville",
+  "state": "MD",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Rockville publishes one table under the heading \"Outdoor Pickleball Courts\" on its Pickleball Courts and Programs page - Park, Number of Courts, Lighted - and every count here is that table's cell in the City's own words, which separates \"Dedicated Pickleball Courts\" from \"pickleball lines on N tennis courts\". Every row is asserted in order, with its count lines and its Lighted cell, so an added, dropped, renumbered or re-lit row fails the build. Three rows carry two count lines; they sum into one venue and both lines are quoted. Addresses come from each park's place page under its \"Address\" heading, and twelve of the fourteen resolve in the Census address file as written, inside Rockville city, Montgomery County. Twinbrook Park (\"12920 Twinbrook Parkway\") resolves nowhere and Glenora Park (\"Dundee Road and Wootton Parkway\") is an intersection, so neither publishes; the run throws if either changes. Dogwood, Rockcrest and Rockville Civic Center Park resolve as written in a postcode other than the one the City prints, and the Census value publishes with the disagreement stated. Every court is outdoor by the heading. The Lighted column publishes as stated - \"Yes\" lit, \"No\" a stated negative - so nothing about lighting is left unknown. \"bring your own net\" publishes as nets not provided; Dogwood, whose two lines say use the tennis net and bring your own, stays null. \"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" publishes as open play and as hours, and \"Lighted courts close at 10 p.m.\" adds a closing time at the five lit venues. No price and no \"free\" appear, so fee_type is null and the first-come and program-priority sentences publish as pricing notes. Surface and indoor are not stated. Three community centres are named for drop-in gym pickleball with no count and are not published.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/pickleball-courts-and-programs.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.rockvillemd.gov/places/broome-athletic-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/broome-athletic-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.rockvillemd.gov/places/calvin-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/calvin-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.rockvillemd.gov/places/dogwood-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/dogwood-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.rockvillemd.gov/places/fallsgrove-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/fallsgrove-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.rockvillemd.gov/places/hillcrest-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/hillcrest-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.rockvillemd.gov/places/isreal-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/isreal-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.rockvillemd.gov/places/mattie-j-t-stepanek-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/mattie-j-t-stepanek-park.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.rockvillemd.gov/places/north-farm-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/north-farm-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.rockvillemd.gov/places/potomac-woods-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/potomac-woods-park.html"
+    },
+    {
+      "id": "S11",
+      "url": "https://www.rockvillemd.gov/places/rockcrest-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/rockcrest-park.html"
+    },
+    {
+      "id": "S12",
+      "url": "https://www.rockvillemd.gov/places/rockville-civic-center-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/rockville-civic-center-park.html"
+    },
+    {
+      "id": "S13",
+      "url": "https://www.rockvillemd.gov/places/welsh-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/welsh-park.html"
+    },
+    {
+      "id": "S14",
+      "url": "https://www.rockvillemd.gov/places/glenora-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/glenora-park.html"
+    },
+    {
+      "id": "S15",
+      "url": "https://www.rockvillemd.gov/places/twinbrook-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/rockville/twinbrook-park.html"
+    },
+    {
+      "id": "S16",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/rockville-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 12,
+    "courts": 46,
+    "outdoor": 46,
+    "indoor": null,
+    "dedicated": 12,
+    "striped_on_tennis": 31,
+    "unsplit": 3,
+    "lit_courts": 19,
+    "lit_venues": 4,
+    "unlit_venues": 8,
+    "nets_not_provided_venues": 9,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Twinbrook Park",
+      "why": [
+        "The City's place page puts the park at \"12920 Twinbrook Parkway\", and neither the Census address file nor OpenStreetMap has a record of that house number. Foster Park's rule: a count-bearing address that does not resolve as the operator writes it is not published.",
+        "The run throws if the address ever resolves, so the venue is re-read and published rather than left refused by habit."
+      ]
+    },
+    {
+      "name": "Glenora Park",
+      "why": [
+        "The City's place page gives the address as \"Dundee Road and Wootton Parkway\", an intersection with no house number. Import Gate I1 needs a house number to resolve, and an intersection is the shape of the held Tom Brown Park row in Tallahassee.",
+        "The run throws if the City ever prints a house number for the park."
+      ]
+    },
+    {
+      "name": "Lincoln Park Community Center, Thomas Farm Community Center, Twinbrook Community Recreation Center",
+      "why": [
+        "Named on the City's pickleball page as offering open gym schedules featuring pickleball, with no court count. Named, not counted; a venue needs a stated count to exist here."
+      ]
+    }
+  ],
+  "venues": {
+    "broome-athletic-park": {
+      "minted": false,
+      "identity": {
+        "name": "Broome Athletic Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "latitude": 39.075123326951,
+        "longitude": -77.111210122596,
+        "imported_slug": "broome-athletic-park",
+        "canonical_slug": "broome-athletic-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "4 Dedicated Pickleball Courts",
+        "basis": "Matched to the imported broome-athletic-park row in Rockville, MD, at the same address and the same count."
+      },
+      "patch": {
+        "name": "Broome Athletic Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "751 Twinbrook Parkway",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": true,
+        "hours_of_operation": "Dawn to dusk; lighted courts close at 10 p.m.",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Four dedicated pickleball courts at Broome Athletic Park in Twinbrook, lit, from the City's outdoor-courts table: \"4 Dedicated Pickleball Courts\", Lighted \"Yes\". The park's own page says the same thing another way - \"Four accessible pickleball courts.\" - beside two tennis courts and a futsal court, on 7.5 acres next to the site of the former Broome Junior High. Dedicated means courts built for pickleball, not lines on a tennis court, and the City's row says nothing about nets, so whether a net is on the court is not stated. Open dawn to dusk, first come, and because the courts are lit they close at 10 p.m. City programs have priority and can close a court for class use. No price is stated. The imported dataset carried the same address and the same four courts.",
+        "county": "Montgomery",
+        "postal_code": "20851"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Broome Athletic Park\", and the place page is titled \"Broome Athletic Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"4 Dedicated Pickleball Courts\". 4 dedicated and 0 on tennis-court lines, by the City's own wording. The park's own page: \"Four accessible pickleball courts.\""
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/broome-athletic-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"751 Twinbrook Parkway\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20851\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/broome-athletic-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Lighted cell of the City's row is \"Yes\": Broome Athletic Park | 4 Dedicated Pickleball Courts | Lighted: Yes. \"Lighted courts close at 10 p.m.\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" and, because the row's Lighted cell is \"Yes\", \"Lighted courts close at 10 p.m.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Broome Athletic Park | 4 Dedicated Pickleball Courts | Lighted: Yes; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"751 TWINBROOK PKWY, ROCKVILLE, MD, 20851\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"751 TWINBROOK PKWY, ROCKVILLE, MD, 20851\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "calvin-park": {
+      "minted": true,
+      "identity": {
+        "name": "Calvin Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "latitude": 39.082405188682,
+        "longitude": -77.12758949879,
+        "imported_slug": null,
+        "canonical_slug": "calvin-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net)",
+        "basis": "Minted here. The import holds no row for Calvin Park in Rockville, MD."
+      },
+      "patch": {
+        "name": "Calvin Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1248 Gladstone Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Two pickleball courts at Calvin Park in Twinbrook, both painted on one tennis court: the City's row reads \"2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net)\", Lighted \"No\". So two games can run on the tennis court at once, with the players' own nets, and the lighting answer is a stated no rather than silence. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page puts the park at 1248 Gladstone Drive.",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Calvin Park\", and the place page is titled \"Calvin Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"2 Pickleball Courts\" and \"(pickleball lines on 1 tennis court; bring your own net)\". 0 dedicated and 2 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/calvin-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1248 Gladstone Drive\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20851\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/calvin-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": Calvin Park | 2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Calvin Park | 2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"1248 GLADSTONE DR, ROCKVILLE, MD, 20851\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1248 GLADSTONE DR, ROCKVILLE, MD, 20851\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 1 tennis court; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "dogwood-park": {
+      "minted": false,
+      "identity": {
+        "name": "Dogwood Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "latitude": 39.072436157883,
+        "longitude": -77.154685735257,
+        "imported_slug": "dogwood-park",
+        "canonical_slug": "dogwood-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "1 Pickleball Court (pickleball lines on 1 tennis court; use tennis net) 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)",
+        "basis": "Matched to the imported dogwood-park row in Rockville, MD, at the same address; it carried four courts, and the City's two count lines make five."
+      },
+      "patch": {
+        "name": "Dogwood Park",
+        "total_courts": 5,
+        "outdoor_courts": 5,
+        "street_address": "800 Monroe St.",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": true,
+        "hours_of_operation": "Dawn to dusk; lighted courts close at 10 p.m.",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Five pickleball courts at Dogwood Park, all painted on tennis courts, lit, from two lines in the City's row: \"1 Pickleball Court (pickleball lines on 1 tennis court; use tennis net)\" and \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\", Lighted \"Yes\". The two lines are two arrangements on three tennis courts - one court lined for a single pickleball game played over the tennis net, two courts lined for two games each with the players' own nets - and they sum to five. Because one line says use the tennis net and the other says bring your own, whether a net is provided is left unstated here. Open dawn to dusk, first come, closing at 10 p.m. under the lights; City programs have priority. No price is stated. The City's place page prints the park at 800 Monroe St. in 20852; the Census address file places the same house number in 20850, and the Census value is the one published. The imported dataset carried four courts at this address; the City's two lines replace that with five.",
+        "county": "Montgomery",
+        "postal_code": "20850"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Dogwood Park\", and the place page is titled \"Dogwood Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"1 Pickleball Court\" and \"(pickleball lines on 1 tennis court; use tennis net)\" and \"4 Pickleball Courts\" and \"(pickleball lines on 2 tennis courts; bring your own net)\". Two count lines in one row sum into one venue, as Mount Pleasant's Park West and Henderson's Silver Springs do. 0 dedicated and 5 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/dogwood-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"800 Monroe St.\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20852\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/dogwood-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Lighted cell of the City's row is \"Yes\": Dogwood Park | 1 Pickleball Court (pickleball lines on 1 tennis court; use tennis net) 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: Yes. \"Lighted courts close at 10 p.m.\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" and, because the row's Lighted cell is \"Yes\", \"Lighted courts close at 10 p.m.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Dogwood Park | 1 Pickleball Court (pickleball lines on 1 tennis court; use tennis net) 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: Yes; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"800 MONROE ST, ROCKVILLE, MD, 20850\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"800 MONROE ST, ROCKVILLE, MD, 20850\". The City's own place page prints 20852; the Census address file returns 20850 for the same house number and street. The Census value publishes, as at Mesa's Chaparral Park, and the disagreement is stated on the venue page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "fallsgrove-park": {
+      "minted": true,
+      "identity": {
+        "name": "Fallsgrove Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "latitude": 39.099695578932,
+        "longitude": -77.1873746486,
+        "imported_slug": null,
+        "canonical_slug": "fallsgrove-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)",
+        "basis": "Minted here. The import holds no row for Fallsgrove Park in Rockville, MD."
+      },
+      "patch": {
+        "name": "Fallsgrove Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "700 Fallsgrove Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Four pickleball courts at Fallsgrove Park in the west of the city, painted on two tennis courts: \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\", Lighted \"No\". Two games per tennis court, the players' own nets, and a stated no on lighting. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page puts the park at 700 Fallsgrove Drive, the same address as the Thomas Farm Community Center, which the City names for drop-in gym pickleball without a count.",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Fallsgrove Park\", and the place page is titled \"Fallsgrove Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"4 Pickleball Courts\" and \"(pickleball lines on 2 tennis courts; bring your own net)\". 0 dedicated and 4 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/fallsgrove-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"700 Fallsgrove Drive\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20850\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/fallsgrove-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": Fallsgrove Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Fallsgrove Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"700 FALLSGROVE DR, ROCKVILLE, MD, 20850\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"700 FALLSGROVE DR, ROCKVILLE, MD, 20850\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 2 tennis courts; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "hillcrest-park": {
+      "minted": true,
+      "identity": {
+        "name": "Hillcrest Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "latitude": 39.078042679448,
+        "longitude": -77.13290381605,
+        "imported_slug": null,
+        "canonical_slug": "hillcrest-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net)",
+        "basis": "Minted here. The import holds no row for Hillcrest Park in Rockville, MD."
+      },
+      "patch": {
+        "name": "Hillcrest Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1150 Crawford Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Two pickleball courts at Hillcrest Park, painted on one tennis court: \"2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net)\", Lighted \"No\". Players bring a net, and the lighting answer is a stated no. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page puts the park at 1150 Crawford Drive.",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Hillcrest Park\", and the place page is titled \"Hillcrest Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"2 Pickleball Courts\" and \"(pickleball lines on 1 tennis court; bring your own net)\". 0 dedicated and 2 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1150 Crawford Drive\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20851\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": Hillcrest Park | 2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Hillcrest Park | 2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"1150 CRAWFORD DR, ROCKVILLE, MD, 20851\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1150 CRAWFORD DR, ROCKVILLE, MD, 20851\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 1 tennis court; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "isreal-park": {
+      "minted": true,
+      "identity": {
+        "name": "Isreal Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "latitude": 39.094873003045,
+        "longitude": -77.144837930365,
+        "imported_slug": null,
+        "canonical_slug": "isreal-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "2 Dedicated Pickleball Courts 2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net)",
+        "basis": "Minted here. The import holds no row for Isreal Park in Rockville, MD."
+      },
+      "patch": {
+        "name": "Isreal Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "357 Frederick Avenue",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Four pickleball courts at Isreal Park - the City spells it that way - from two lines in its row: \"2 Dedicated Pickleball Courts\" and \"2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net)\", Lighted \"No\". Two courts built for pickleball and two more painted on a tennis court, four in all, unlit by the City's own answer. The bring-your-own-net note is on the striped pair; the dedicated pair carries no note, and the venue publishes the stated negative. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page puts the park at 357 Frederick Avenue, across the street from the Lincoln Park Community Center it names for drop-in gym pickleball.",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Isreal Park\", and the place page is titled \"Isreal Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"2 Dedicated Pickleball Courts\" and \"2 Pickleball Courts\" and \"(pickleball lines on 1 tennis court; bring your own net)\". Two count lines in one row sum into one venue, as Mount Pleasant's Park West and Henderson's Silver Springs do. 2 dedicated and 2 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/isreal-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"357 Frederick Avenue\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20850\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/isreal-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": Isreal Park | 2 Dedicated Pickleball Courts 2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Isreal Park | 2 Dedicated Pickleball Courts 2 Pickleball Courts (pickleball lines on 1 tennis court; bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"357 FREDERICK AVE, ROCKVILLE, MD, 20850\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"357 FREDERICK AVE, ROCKVILLE, MD, 20850\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 1 tennis court; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "mattie-j-t-stepanek-park": {
+      "minted": false,
+      "identity": {
+        "name": "Mattie J.T. Stepanek Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "latitude": 39.115225089086,
+        "longitude": -77.178387215248,
+        "imported_slug": "king-farm-mattie-j-t-stepanek-park",
+        "canonical_slug": "mattie-j-t-stepanek-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "4 Dedicated Pickleball Courts",
+        "basis": "Matched to the imported king-farm-mattie-j-t-stepanek-park row in Rockville, MD, at the same address and the same four courts, and published under the name the City prints, \"Mattie J.T. Stepanek Park\". A second imported row, king-farm, describes the same courts at \"Pleasant Drive , Mattie Stepanek Park\" with a free price the City does not state; it stays pending."
+      },
+      "patch": {
+        "name": "Mattie J.T. Stepanek Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "1800 Piccard Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": true,
+        "hours_of_operation": "Dawn to dusk; lighted courts close at 10 p.m.",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Four dedicated pickleball courts at Mattie J.T. Stepanek Park in King Farm, lit: \"4 Dedicated Pickleball Courts\", Lighted \"Yes\". Courts built for pickleball rather than lines on tennis courts, and the City's row says nothing about nets. Open dawn to dusk, first come, closing at 10 p.m. under the lights; City programs have priority. No price is stated. The City's place page puts the park at 1800 Piccard Drive. The imported dataset carried the park under a King Farm name at the same address with the same four courts, and a second row for the same courts at \"Pleasant Drive\" with a free price the City does not state; the first is matched and the second stays pending.",
+        "county": "Montgomery",
+        "postal_code": "20850"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Mattie J.T. Stepanek Park\", and the place page is titled \"Mattie J.T. Stepanek Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"4 Dedicated Pickleball Courts\". 4 dedicated and 0 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/mattie-j-t-stepanek-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1800 Piccard Drive\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20850\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/mattie-j-t-stepanek-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Lighted cell of the City's row is \"Yes\": Mattie J.T. Stepanek Park | 4 Dedicated Pickleball Courts | Lighted: Yes. \"Lighted courts close at 10 p.m.\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" and, because the row's Lighted cell is \"Yes\", \"Lighted courts close at 10 p.m.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Mattie J.T. Stepanek Park | 4 Dedicated Pickleball Courts | Lighted: Yes; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"1800 PICCARD DR, ROCKVILLE, MD, 20850\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1800 PICCARD DR, ROCKVILLE, MD, 20850\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "north-farm-park": {
+      "minted": true,
+      "identity": {
+        "name": "North Farm Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20852",
+        "latitude": 39.055617596949,
+        "longitude": -77.147094050074,
+        "imported_slug": null,
+        "canonical_slug": "north-farm-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)",
+        "basis": "Minted here. The import holds no row for North Farm Park in Rockville, MD; its \"North Farm Courts\" row at 916 Farm Haven Dr is a different address and stays pending."
+      },
+      "patch": {
+        "name": "North Farm Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "601 Farm Pond Lane",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Four pickleball courts at North Farm Park, painted on two tennis courts: \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\", Lighted \"No\". Two games per tennis court, the players' own nets, and a stated no on lighting. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page puts the park at 601 Farm Pond Lane. The imported dataset holds a \"North Farm Courts\" row at 916 Farm Haven Dr, a different address; it is not this park and stays pending.",
+        "county": "Montgomery",
+        "postal_code": "20852",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"North Farm Park\", and the place page is titled \"North Farm Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"4 Pickleball Courts\" and \"(pickleball lines on 2 tennis courts; bring your own net)\". 0 dedicated and 4 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/north-farm-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"601 Farm Pond Lane\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20852\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/north-farm-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": North Farm Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: North Farm Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"601 FARM POND LN, ROCKVILLE, MD, 20852\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"601 FARM POND LN, ROCKVILLE, MD, 20852\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 2 tennis courts; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "potomac-woods-park": {
+      "minted": true,
+      "identity": {
+        "name": "Potomac Woods Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20854",
+        "latitude": 39.061328583256,
+        "longitude": -77.166657992467,
+        "imported_slug": null,
+        "canonical_slug": "potomac-woods-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)",
+        "basis": "Minted here. The import holds no row for Potomac Woods Park in Rockville, MD."
+      },
+      "patch": {
+        "name": "Potomac Woods Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "2276 Dunster Lane",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Four pickleball courts at Potomac Woods Park in the south-west of the city, painted on two tennis courts: \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\", Lighted \"No\". Two games per tennis court, the players' own nets, and a stated no on lighting. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page puts the park at 2276 Dunster Lane.",
+        "county": "Montgomery",
+        "postal_code": "20854",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Potomac Woods Park\", and the place page is titled \"Potomac Woods Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"4 Pickleball Courts\" and \"(pickleball lines on 2 tennis courts; bring your own net)\". 0 dedicated and 4 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/potomac-woods-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2276 Dunster Lane\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20854\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/potomac-woods-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": Potomac Woods Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Potomac Woods Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"2276 DUNSTER LN, ROCKVILLE, MD, 20854\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2276 DUNSTER LN, ROCKVILLE, MD, 20854\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 2 tennis courts; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "rockcrest-park": {
+      "minted": true,
+      "identity": {
+        "name": "Rockcrest Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "latitude": 39.075346220692,
+        "longitude": -77.12581375584,
+        "imported_slug": null,
+        "canonical_slug": "rockcrest-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "3 Pickleball Courts (bring your own net)",
+        "basis": "Minted here. The import holds no row for Rockcrest Park in Rockville, MD."
+      },
+      "patch": {
+        "name": "Rockcrest Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "1331 Broadwood Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Three pickleball courts at Rockcrest Park: \"3 Pickleball Courts (bring your own net)\", Lighted \"No\". The City's row does not say whether these are dedicated courts or lines on a tennis court - it is the one row in the table with neither word - so the three are counted and left unsplit. Players bring a net, and the lighting answer is a stated no. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page puts the park at 1331 Broadwood Drive.",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Rockcrest Park\", and the place page is titled \"Rockcrest Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"3 Pickleball Courts\" and \"(bring your own net)\". The City's row says neither \"Dedicated\" nor \"pickleball lines on\", so the three are counted and not split."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/rockcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1331 Broadwood Drive\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20850\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/rockcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": Rockcrest Park | 3 Pickleball Courts (bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Rockcrest Park | 3 Pickleball Courts (bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"1331 BROADWOOD DR, ROCKVILLE, MD, 20851\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1331 BROADWOOD DR, ROCKVILLE, MD, 20851\". The City's own place page prints 20850; the Census address file returns 20851 for the same house number and street. The Census value publishes, as at Mesa's Chaparral Park, and the disagreement is stated on the venue page."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "rockville-civic-center-park": {
+      "minted": true,
+      "identity": {
+        "name": "Rockville Civic Center Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "latitude": 39.084436588184,
+        "longitude": -77.130568864561,
+        "imported_slug": null,
+        "canonical_slug": "rockville-civic-center-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)",
+        "basis": "Minted here. The import holds no row for Rockville Civic Center Park in Rockville, MD."
+      },
+      "patch": {
+        "name": "Rockville Civic Center Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "603 Edmonston Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": false,
+        "hours_of_operation": "Dawn to dusk",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Four pickleball courts at Rockville Civic Center Park, painted on two tennis courts: \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\", Lighted \"No\". Two games per tennis court, the players' own nets, and a stated no on lighting. Open dawn to dusk, first come; City programs have priority. No price is stated. The City's place page prints the park at 603 Edmonston Drive in 20850; the Census address file places the same house number in 20851, and the Census value is the one published.",
+        "county": "Montgomery",
+        "postal_code": "20851",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Rockville Civic Center Park\", and the place page is titled \"Rockville Civic Center Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"4 Pickleball Courts\" and \"(pickleball lines on 2 tennis courts; bring your own net)\". 0 dedicated and 4 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/rockville-civic-center-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"603 Edmonston Drive\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20850\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/rockville-civic-center-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative: the Lighted cell of the City's row is \"No\": Rockville Civic Center Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Rockville Civic Center Park | 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: No; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"603 EDMONSTON DR, ROCKVILLE, MD, 20851\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"603 EDMONSTON DR, ROCKVILLE, MD, 20851\". The City's own place page prints 20850; the Census address file returns 20851 for the same house number and street. The Census value publishes, as at Mesa's Chaparral Park, and the disagreement is stated on the venue page."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 2 tennis courts; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "welsh-park": {
+      "minted": false,
+      "identity": {
+        "name": "Welsh Park",
+        "city": "Rockville",
+        "state": "MD",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "latitude": 39.092691626798,
+        "longitude": -77.15963761892,
+        "imported_slug": "welsh-park",
+        "canonical_slug": "welsh-park"
+      },
+      "match": {
+        "source_page": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "quote": "2 Dedicated Pickleball Courts 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)",
+        "basis": "Matched to the imported welsh-park row in Rockville, MD, at the same address and the same count."
+      },
+      "patch": {
+        "name": "Welsh Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "344 Martins Lane",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "light": true,
+        "hours_of_operation": "Dawn to dusk; lighted courts close at 10 p.m.",
+        "pricing_notes": "The City states no price and does not write the word \"free\". Its rule for every outdoor court: \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\"",
+        "court_availability": "Six pickleball courts at Welsh Park, lit, from two lines in the City's row: \"2 Dedicated Pickleball Courts\" and \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\", Lighted \"Yes\". Two courts built for pickleball and four more painted on two tennis courts, six in all, the largest set in the city. The bring-your-own-net note is on the striped four; the venue publishes the stated negative. Open dawn to dusk, first come, closing at 10 p.m. under the lights; City programs have priority. No price is stated. The City's place page puts the park at 344 Martins Lane. The imported dataset carried the same address and the same six courts.",
+        "county": "Montgomery",
+        "postal_code": "20850",
+        "nets_provided": false
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Park cell of the City's outdoor-courts table reads \"Welsh Park\", and the place page is titled \"Welsh Park | City of Rockville\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Number of Courts cell of the City's table, under the heading \"Outdoor Pickleball Courts\": \"2 Dedicated Pickleball Courts\" and \"4 Pickleball Courts\" and \"(pickleball lines on 2 tennis courts; bring your own net)\". Two count lines in one row sum into one venue, as Mount Pleasant's Park West and Henderson's Silver Springs do. 2 dedicated and 4 on tennis-court lines, by the City's own wording."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The table sits under the City's heading \"Outdoor Pickleball Courts\"; the heading is the operator's word, and every court in the table is outdoor by it. Indoor is not stated and stays null."
+        },
+        "street_address": {
+          "source_url": "https://www.rockvillemd.gov/places/welsh-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"344 Martins Lane\" under the \"Address\" heading on the park's place page, followed by \"Rockville, MD 20850\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.rockvillemd.gov/places/welsh-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Rockville Recreation and Parks among its parks and places."
+        },
+        "play_format": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" - the City's own sentence for every row of the table, qualified by \"City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\""
+        },
+        "light": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Lighted cell of the City's row is \"Yes\": Welsh Park | 2 Dedicated Pickleball Courts 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: Yes. \"Lighted courts close at 10 p.m.\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis.\" and, because the row's Lighted cell is \"Yes\", \"Lighted courts close at 10 p.m.\""
+        },
+        "pricing_notes": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public.\" No price and no \"free\" appear on the page."
+        },
+        "court_availability": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's table row: Welsh Park | 2 Dedicated Pickleball Courts 4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net) | Lighted: Yes; the three rule sentences under \"Outdoor Pickleball Courts\"; and the address on the park's place page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Montgomery County, MD (FIPS 24031). Census address geocoder matched \"344 MARTINS LN, ROCKVILLE, MD, 20850\". The resolver also places it in the incorporated place \"Rockville city\", which is what allows it to be published under Rockville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"344 MARTINS LN, ROCKVILLE, MD, 20850\"."
+        },
+        "nets_provided": {
+          "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's count cell: \"(pickleball lines on 2 tennis courts; bring your own net)\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

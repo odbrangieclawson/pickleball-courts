@@ -81,7 +81,7 @@
       "contains": "At Brentwood, Rosewood and Springwoods, yes — the City says so in words: \"bring your own",
       "metric": "cities_with_nets_not_provided",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "austin-tx.json",
@@ -877,6 +877,12 @@
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
+      "file": "montgomery-county-md.json",
+      "contains": "Rockville is the first city in Maryland and the first in Montgomery County on this site.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
       "file": "mount-pleasant-sc.json",
       "contains": "Mount Pleasant is the first South Carolina city on this site and the first in Charleston",
       "metric": null,
@@ -940,6 +946,12 @@
     {
       "file": "ramsey-county-mn.json",
       "contains": "This site publishes stated counts only, so the difference between thirteen and whatever",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "rockville-md.json",
+      "contains": "Rockville is the first city in Maryland and the first in Montgomery County on this site.",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1179,13 +1191,6 @@
     },
     {
       "file": "venues-austin-tx.json",
-      "contains": "Two pickleball courts striped onto a single multi-purpose court in the Brentwood",
-      "metric": "venues_nets_not_provided",
-      "op": "==",
-      "value": 12
-    },
-    {
-      "file": "venues-austin-tx.json",
       "contains": "Most other operators have simply not said, which this site renders as unknown rather than",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
@@ -1195,7 +1200,7 @@
       "contains": "The City's entry says \"bring your own portable net\" — one of only three Austin venues,",
       "metric": "venues_nets_not_provided",
       "op": "==",
-      "value": 12
+      "value": 21
     },
     {
       "file": "venues-austin-tx.json",
@@ -1229,24 +1234,17 @@
     },
     {
       "file": "venues-austin-tx.json",
-      "contains": "Four courts in east Austin — two dedicated outdoor pickleball courts plus one",
-      "metric": "venues_nets_not_provided",
-      "op": "==",
-      "value": 12
-    },
-    {
-      "file": "venues-austin-tx.json",
-      "contains": "The City's entry says \"Nets not included.\" Austin is one of six cities in this directory",
+      "contains": "The City's entry says \"Nets not included.\" Austin is one of seven cities in this",
       "metric": "cities_with_nets_not_provided",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "venues-austin-tx.json",
       "contains": "Two pickleball courts striped onto one multi-purpose outdoor court at the far north-west",
       "metric": "venues_nets_not_provided",
       "op": "==",
-      "value": 12
+      "value": 21
     },
     {
       "file": "venues-bellevue-wa.json",
@@ -1698,12 +1696,6 @@
     {
       "file": "venues-vancouver-wa.json",
       "contains": "It is a City park with open-play courts and it is very likely free, but the City never",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "wa-state.json",
-      "contains": "Kirkland publishes the clearest document of the four: a table whose column is headed",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },

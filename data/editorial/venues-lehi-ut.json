@@ -1,0 +1,162 @@
+{
+  "city": "Lehi",
+  "state": "UT",
+  "kind": "venues",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Each venue page rests on the City's parks page, where every park has an \"Address:\" line and an amenity sentence that counts the courts, plus the park's own page where one exists (Allred, Holbrook Farms, Olympic and Watercress have one; Centennial and Stagecoach Large do not), plus the US Census address geocoder and OpenStreetMap for the county and the postcode. Where the City is silent, these pages record the silence.",
+  "venues": {
+    "allred-park": {
+      "slots": {
+        "description": "Two pickleball courts in a neighbourhood park in north-east Lehi, counted by the City in one sentence on its parks page: \"Playground, restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\"\n\nThe park has a page of its own that repeats the sentence almost to the letter - \"Playground,restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\" - so the count rests on two City records rather than one. Both pages separate what can be reserved from what cannot. The reservable part is a \"Pavilion with 8 tables, 2 trash cans, 2 grills, and 1 electrical outlet\"; the courts are among the \"Additional amenities\" listed after it.\n\nThat split is the most useful thing the City says about playing here. The entry ends \"Reservations are for pavilion use only. All other amenities are open to the public.\", and a court that cannot be reserved and is open to the public is first come, first served. The two half basketball courts, the soccer fields and the fire pit share the park; the City describes none of them further, and does not say how many soccer fields there are.",
+        "getting_there": "485 N. Allred Park Rd., Lehi, UT 84043, as the City writes it on its parks page. The park's own page shortens it to \"485 N Allred Park Rd, UT 84043\" - the same number, street and postcode - and the list page's spelling is the one published.\n\nThe address needed a second opinion. The US Census address geocoder answered \"485 ALLRED PARK RD\" and dropped the \"N.\", which this site treats as a different address rather than a formatting detail. OpenStreetMap finds the address as the City writes it, at house-number level, and places it in Lehi, Utah County. The City says nothing about parking at this park. It does list \"restrooms\".",
+        "what_to_expect": "Two courts, which is a game rather than a rotation: four players on court and everyone else waiting. Nothing can be booked, so there is no way to hold a court in advance and no schedule to check before leaving the house.\n\nWhat the City does not say is most of what a player would want to know. It states no price and does not call the courts free - \"open to the public\" is a rule about access, not a cost. It states no hours, so this site publishes none. It states nothing about lighting, and the entry contains no word that could be mistaken for it. It names no surface, and it does not say whether the courts are indoor or outdoor, so this site does not either.\n\nWhat is stated is the company the courts keep: a playground, two half basketball courts, soccer fields, a fire pit, restrooms, and a pavilion with eight tables and two grills that somebody else may have reserved for the afternoon."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Two. The City's parks page counts \"2 pickleball courts\" in the park's amenity sentence, and the park's own page repeats the same count."},
+        {"q": "Is it free?", "a": "Not stated. The City prices nothing and calls nothing free; its sentence is \"All other amenities are open to the public\", which is about access rather than cost."},
+        {"q": "Are the courts lit?", "a": "Not stated. Nothing in the City's entry for Allred Park mentions lighting, so it is recorded here as not verified rather than as a yes or a no."},
+        {"q": "Can I reserve a court?", "a": "No. The City says \"Reservations are for pavilion use only. All other amenities are open to the public.\" Only the pavilion can be booked."},
+        {"q": "Are there restrooms?", "a": "Yes, listed in the park's amenity sentence on both the parks page and the park's own page. Parking is not mentioned on either."}
+      ],
+      "sources": ["C1", "C2", "C6"]
+    },
+    "holbrook-farms-park": {
+      "slots": {
+        "description": "Six pickleball courts in north-west Lehi, the largest count the City states at any of its parks, in the City's own sentence: \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables)\".\n\nThe park's own page repeats the sentence word for word, so the six rests on two City records. What sets the park apart on the list is its pavilion. The reservable amenity is a \"Large Pavilion/Food Truck Alley with 14 tables, food court string lights, pavilion lighting, 2 electrical outlets (120V, 15amp max.) and 2 trash cans\", the one entry on the page the City describes that way, and a second, small pavilion with two tables is marked non-reservable.\n\nThe courts belong to neither pavilion. They are listed among the additional amenities, and the entry ends \"Reservations are for pavilion use only. All other amenities are open to the public.\" So the Food Truck Alley may be booked out for an evening while the six courts beside it stay first come, first served.",
+        "getting_there": "2504 N. Drexler Drive, Lehi UT 84043, as the City writes it on both its parks page and the park's own page.\n\nThe US Census address file holds no record of this address at all, so it resolved through OpenStreetMap instead, which matched \"2504, Drexler Drive, Lehi, Utah County, Utah, 84043\" at house-number level and placed it in Lehi. The City says nothing about parking here. It does list \"Restrooms\", a \"water fountain\" - the one published Lehi park with a fountain in its sentence - and a \"walking path(w/benches)\".",
+        "what_to_expect": "Six courts is enough for a rotation, which makes Holbrook Farms the one park in Lehi where turning up alone and waiting for a game is a reasonable plan rather than a hope. Nothing can be booked, and nothing is priced: the City states no fee and does not call the courts free.\n\nThe two lighting phrases in the entry are about the pavilion. \"Food court string lights\" and \"pavilion lighting\" belong to the Food Truck Alley, and neither says anything about the courts, so lighting here is recorded as not verified and nobody should plan an evening game on the strength of those words. Hours are not stated. Surface is not stated. Indoor or outdoor is not stated, and this site does not decide it from the word \"park\".\n\nExpect a playground with swings, a water fountain and a walking path with benches alongside the courts, and on some evenings a reserved pavilion with fourteen tables full of other people and their food."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Six, the most the City counts at any park in Lehi. Both the parks page and the park's own page read \"6 pickleball courts\"."},
+        {"q": "Are the courts lit?", "a": "Not stated. The \"food court string lights\" and \"pavilion lighting\" in the entry belong to the reservable Food Truck Alley, not to the courts, so lighting is recorded as not verified."},
+        {"q": "Is it free?", "a": "Not stated. The City prices nothing on the page and calls nothing free; \"open to the public\" is its only word on the subject."},
+        {"q": "Can I reserve a court?", "a": "No. \"Reservations are for pavilion use only. All other amenities are open to the public.\" The large pavilion can be booked; the small one and the courts cannot."},
+        {"q": "Is there water?", "a": "Yes. The City lists a \"water fountain\" in the park's amenity sentence, along with restrooms, a playground with swings and a walking path with benches."}
+      ],
+      "sources": ["C1", "C3", "C6"]
+    },
+    "olympic-park": {
+      "slots": {
+        "description": "Three pickleball courts on the west side of Lehi, in a park the City lists with three soccer fields, a fire pit and a path onto the Jordan River Trail: \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\"\n\nThe park's own page repeats the sentence exactly, so the count rests on two City records. The reservable part of the park is \"1 Large pavilion with 16 tables, 3 BBQ grills, electrical outlets (120V, 15amp max), manual lights and 6 trash cans\", and Olympic is the one park among the six published here whose entry also carries a \"Field Reservations\" link, so the soccer fields can be booked as well as the pavilion.\n\nThe courts cannot. The entry ends \"Reservations are for pavilion use only. All other amenities are open to the public.\", and three courts open to the public are three first-come, first-served games. Three is an odd number for a block and the City does not say how they are laid out.",
+        "getting_there": "2700 W. Parkside Dr., Lehi, UT 84043, on the City's parks page; the park's own page writes \"2700 W. Parkside Dr, Lehi, UT 84043\", the same address without the final full stop.\n\nThis is one of two published Lehi addresses the US Census address geocoder resolved as written, matching \"2700 W PARKSIDE DR, LEHI, UT, 84043\" and placing it in Lehi city, Utah County. It is also one of two Lehi parks where the City names parking: \"designated parking\" is in the amenity sentence, with no capacity, fee or hours attached. There is a \"Restroom\", singular, and the walking path connects to the Jordan River Trail.",
+        "what_to_expect": "Three courts, no booking, no price stated, and a park built around soccer. With three fields in the park and a field-reservation link on the entry, the evenings when the fields are booked will be the evenings the park is fullest, whether or not anyone is on the courts.\n\nThe \"manual lights\" in the entry belong to the large pavilion, not to the courts, and this site does not read them as court lighting. So lighting is not verified here, hours are not stated, surface is not stated, and whether the courts are indoor or outdoor is not stated. Nothing on the page calls the courts free; \"open to the public\" is about access.\n\nWhat the City does give a visitor is a designated place to park, a restroom, a fire pit, a playground with swings and a path onto a regional trail, which is more of the trip than most of Lehi's park entries describe. With an odd number of courts, one game will always have a court to itself."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Three. The City's parks page and the park's own page both read \"3 pickleball courts\". How the three are laid out is not stated."},
+        {"q": "Is there parking?", "a": "Yes, in the City's words: \"designated parking\" is in the amenity sentence. It says nothing about capacity, fees or hours."},
+        {"q": "Are the courts lit?", "a": "Not stated. The \"manual lights\" in the entry belong to the reservable pavilion, not the courts, so lighting is recorded as not verified."},
+        {"q": "Can I reserve a court?", "a": "No. The pavilion and the soccer fields can be reserved; the courts are among the amenities the City says are \"open to the public\"."},
+        {"q": "Is it free?", "a": "Not stated. The City prices nothing on its parks page and does not use the word free for any court."}
+      ],
+      "sources": ["C1", "C4", "C6"]
+    },
+    "centennial-park": {
+      "slots": {
+        "description": "One pickleball court in north Lehi, a digit in the City's amenity sentence: \"1 Large pavilion with 11 tables, 1 trash can, electrical outlets (120V, 15amp max), pavilion lighting, 2 large BBQ grills, 1 pickleball court, walking path with benches, 2 half basketball courts, playground, and designated parking.\"\n\nThe park has no page of its own, so the list page is the whole record, and it is enough, because the list page is where the City states the number. The digit matters. Northridge Park, further down the same list, ends its sentence \"and a pickleball court\", and this site reads \"a\" as a label rather than a count and refuses it; Centennial's \"1\" is a count and publishes.\n\nThe park sits under \"NON-RESERVABLE PARKS\". Its large pavilion, with eleven tables and two grills, cannot be booked, and neither can the court - nothing in the park can - so the court is first come, first served in the plainest sense. Two half basketball courts, a playground and a walking path with benches make up the rest of the list.",
+        "getting_there": "2250 North 600 West, Lehi UT 84043. That is a Utah grid address - the street is 600 West, and 2250 North is the position along it - and the US Census address geocoder resolved it as written, matching \"2250 N 600 W, LEHI, UT, 84043\" and placing it in Lehi city, Utah County.\n\nThe City names parking here: \"designated parking\" is the last item in the amenity sentence, one of two published Lehi parks where the word appears. No capacity, fee or hours are attached. Restrooms are not listed, and this site records nothing rather than reading that as a no.",
+        "what_to_expect": "One court. That is four players at a time and everyone else waiting, with no rotation possible and no way to book. If the court is taken when you arrive, the walking path with benches, the two half basketball courts and the playground are what the City lists to wait beside.\n\nThe \"pavilion lighting\" in the sentence lights the pavilion. It sits between the electrical outlets and the BBQ grills, several items before the court, and this site does not publish it as a lit court; lighting here is not verified, and the court is not recorded as unlit either. The City states no hours, no price and no surface, and never says whether the court is indoor or outdoor.\n\nNothing is called free. Centennial is a non-reservable park, which means nothing in it is booked and nothing in it is priced on the page, and that is as much as the City's sentence allows anyone to say."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "One. The City's amenity sentence reads \"1 pickleball court\", a digit, which is what lets it publish."},
+        {"q": "Why does this publish when Northridge Park does not?", "a": "Because \"1 pickleball court\" is a number and Northridge's \"a pickleball court\" is a label. Northridge's address also resolves nowhere; Centennial's does."},
+        {"q": "Is the court lit?", "a": "Not stated. The \"pavilion lighting\" in the sentence lights the pavilion, not the court, so lighting is recorded as not verified."},
+        {"q": "Is there parking?", "a": "Yes, in the City's words: the sentence ends \"and designated parking.\" Capacity, fees and hours are not stated."},
+        {"q": "Can I reserve the court?", "a": "No. Centennial is listed under \"NON-RESERVABLE PARKS\", so nothing in it can be booked, the pavilion included."}
+      ],
+      "sources": ["C1", "C6"]
+    },
+    "stagecoach-large-park": {
+      "slots": {
+        "description": "Two pickleball courts in west Lehi, in the City's sentence: \"1 Small pavilion with 6 tables, a large BBQ grill and a trash can, 2 pickleball courts, 1 full basketball court, playground with swings, 2 soccer goals and benches.\"\n\nThe name is the City's. Lehi lists two Stagecoach parks, Large and Small, one after the other under \"NON-RESERVABLE PARKS\", and only the Large one carries courts; Stagecoach Small Park, at 1497 West 650 South, has a different sentence with no pickleball in it. Stagecoach Large has no page of its own, so the list page is the record, and it is the page that states the number in any case.\n\nThis is the one park of the six published here with \"1 full basketball court\" rather than half courts, and the one that lists soccer goals rather than fields. The City describes the goals no further - it names no pitch and counts none - so they are recorded as two goals and nothing more. The small pavilion, six tables and one grill, cannot be reserved - nothing in a non-reservable park can - and the courts are first come, first served.",
+        "getting_there": "484 South 1915 West, Lehi UT 84043, a Utah grid address: the street is 1915 West and 484 South is the position along it.\n\nThe US Census address file holds no record of this address, so it resolved through OpenStreetMap, which matched \"484, South 1915 West, Lehi, Utah County, Utah, 84043\" at house-number level and placed it in Lehi. The City says nothing about parking at this park and lists no restrooms; this site records nothing on either rather than guessing. What the sentence does list beside the courts is a playground with swings, benches and a full basketball court.",
+        "what_to_expect": "Two courts, a game rather than a rotation, and no way to hold one in advance. The park sits under \"NON-RESERVABLE PARKS\", so the pavilion, the courts and everything else are first come, first served.\n\nThe City states nothing else about the courts. No price, and nothing calling them free. No hours. No lighting - the sentence contains no word for it, which is cleaner than the pavilion-lighting entries elsewhere in Lehi but no more informative about the courts. No surface, and no statement of indoor or outdoor, so both stay empty here.\n\nExpect a small neighbourhood park: a pavilion with six tables, one grill, a playground with swings, two soccer goals, a full basketball court and benches. Whoever is second onto the pickleball courts waits on those benches, and whoever wants a full-court basketball game in Lehi's published parks comes here."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Two. The City's parks page counts \"2 pickleball courts\" in the amenity sentence for Stagecoach Large Park."},
+        {"q": "Which Stagecoach park is this?", "a": "The Large one, at 484 South 1915 West. The City lists a Stagecoach Small Park separately at 1497 West 650 South, and its sentence has no pickleball in it."},
+        {"q": "Is it free?", "a": "Not stated. The park is non-reservable, which means nothing can be booked; it does not mean the City has called anything free, and it has not."},
+        {"q": "Are the courts lit?", "a": "Not stated. Nothing in the City's sentence mentions lighting, so it is recorded as not verified."},
+        {"q": "Can I reserve a court?", "a": "No. The park is listed under \"NON-RESERVABLE PARKS\", so nothing in it, the small pavilion included, can be booked."}
+      ],
+      "sources": ["C1", "C6"]
+    },
+    "watercress-park": {
+      "slots": {
+        "description": "Two pickleball courts in south Lehi, counted by the City beside a tennis court and eight horseshoe pits: \"1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\"\n\nThe park's own page repeats the sentence exactly, so the count rests on two City records. The wording settles something the count alone would not: the pickleball courts and the tennis court are listed as separate items, so the two here are courts in their own right and not lines painted on the tennis court. The City does not say whether the two share a slab with each other, and this site does not guess.\n\nWatercress sits under \"NON-RESERVABLE PARKS\", so the large pavilion with its eleven tables cannot be booked and neither can the courts. It is the one venue among the six published here that this site already carried from an earlier import, under a different address and a longer name; the City's own address and name replace both.",
+        "getting_there": "151 East 1500 South, Lehi UT 84043, a Utah grid address: the street is 1500 South and 151 East is the position along it.\n\nThe US Census address geocoder answered \"151 E 1500 N\", changing South to North and therefore naming a different street, so its answer was not used. OpenStreetMap finds the address as the City writes it, at house-number level, in Lehi, Utah County, and that is the one published. The imported row for this park carried \"1500 S Center St\" and the name \"Watercress Park (Lehi)\"; both were replaced by what the City writes. The City says nothing about parking here and lists no restrooms.",
+        "what_to_expect": "Two courts, first come, first served, in a park whose other listed uses are horseshoes, tennis and open grass. Two courts is a game, and with no rotation possible, the eight horseshoe pits and the tennis court are the City's answer to what you do while you wait.\n\nThe City states no price and calls nothing free. It states no hours. It says nothing about lighting - no word in the sentence could be mistaken for it - so lighting is not verified and the courts are not recorded as unlit. Surface is not stated, and neither is indoor or outdoor.\n\nThe \"large open grass area\" is the only item on the list without a number attached. Everything else is counted, which is the habit that makes Lehi's page usable at all: eleven tables, one trash can, eight pits, two pickleball courts, one tennis court. A count written down is a count that can be checked, and this one is checked on every build."
+      },
+      "faqs": [
+        {"q": "How many courts are there?", "a": "Two pickleball courts, plus one tennis court counted separately. Both the parks page and the park's own page read \"2 pickleball courts, 1 tennis court\"."},
+        {"q": "Are these lines on the tennis court?", "a": "No. The City lists \"2 pickleball courts\" and \"1 tennis court\" as separate items in the same sentence, so the two are counted as pickleball courts in their own right."},
+        {"q": "Why does the address differ from older listings?", "a": "Older data carried \"1500 S Center St\". The City writes \"151 East 1500 South\", which OpenStreetMap resolves as written, and the City's address is the one published."},
+        {"q": "Is it free?", "a": "Not stated. The park is non-reservable, so nothing can be booked, but the City prices nothing and calls nothing free."},
+        {"q": "Can I reserve a court?", "a": "No. Watercress is listed under \"NON-RESERVABLE PARKS\", so nothing in it can be booked, the large pavilion included."}
+      ],
+      "sources": ["C1", "C5", "C6"]
+    }
+  },
+  "sources": [
+    {
+      "id": "C1",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there", "what_to_expect"],
+      "evidence": "The City's parks page, listing every park under \"RESERVABLE PAVILIONS\" and \"NON-RESERVABLE PARKS\" with an \"Address:\" line and an amenity sentence. Allred Park, \"485 N. Allred Park Rd., Lehi, UT 84043\": \"Playground, restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\" Holbrook Farms Park, \"2504 N. Drexler Drive, Lehi UT 84043\": \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables)\", with a reservable \"Large Pavilion/Food Truck Alley with 14 tables, food court string lights, pavilion lighting, 2 electrical outlets (120V, 15amp max.) and 2 trash cans\". Olympic Park, \"2700 W. Parkside Dr., Lehi, UT 84043\": \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\", with a reservable \"1 Large pavilion with 16 tables, 3 BBQ grills, electrical outlets (120V, 15amp max), manual lights and 6 trash cans\" and a \"Field Reservations\" link. Each of those three ends \"Reservations are for pavilion use only. All other amenities are open to the public.\" Centennial Park, \"2250 North 600 West, Lehi UT 84043\": \"1 Large pavilion with 11 tables, 1 trash can, electrical outlets (120V, 15amp max), pavilion lighting, 2 large BBQ grills, 1 pickleball court, walking path with benches, 2 half basketball courts, playground, and designated parking.\" Stagecoach Large Park, \"484 South 1915 West, Lehi UT 84043\": \"1 Small pavilion with 6 tables, a large BBQ grill and a trash can, 2 pickleball courts, 1 full basketball court, playground with swings, 2 soccer goals and benches.\" Stagecoach Small Park, \"1497 West 650 South\", has no pickleball in its sentence. Watercress Park, \"151 East 1500 South, Lehi UT 84043\": \"1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\" Northridge Park's sentence ends \"and a pickleball court.\" Snapshot: data/sources/lehi/parks.html",
+      "not_stated": "Any price or the word free; any court lighting; surface; indoor or outdoor; hours for any pickleball court; parking at Allred, Holbrook Farms, Stagecoach Large or Watercress; restrooms at Centennial, Stagecoach Large or Watercress; how Olympic's three courts are laid out."
+    },
+    {
+      "id": "C2",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/allred-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there"],
+      "evidence": "\"Address: 485 N Allred Park Rd, UT 84043\". Reservable amenities: \"Pavilion with 8 tables, 2 trash cans, 2 grills, and 1 electrical outlet.\" Additional amenities: \"Playground,restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\" \"Reservations are for pavilion use only. All other amenities are open to the public.\" Snapshot: data/sources/lehi/allred-park.html",
+      "not_stated": "Parking, price, lighting, surface, hours, indoor or outdoor."
+    },
+    {
+      "id": "C3",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/holbrook-farms-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there"],
+      "evidence": "\"Address: 2504 N. Drexler Drive, Lehi UT 84043\". Reservable amenities: \"Large Pavilion/Food Truck Alley with 14 tables, food court string lights, pavilion lighting, 2 electrical outlets (120V, 15amp max.) and 2 trash cans.\" Additional amenities: \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables).\" \"Reservations are for pavilion use only. All other amenities are open to the public.\" Snapshot: data/sources/lehi/holbrook-farms-park.html",
+      "not_stated": "Parking, price, court lighting, surface, hours, indoor or outdoor."
+    },
+    {
+      "id": "C4",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/olympic-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there"],
+      "evidence": "\"Address: 2700 W. Parkside Dr, Lehi, UT 84043\". Reservable amenities: \"1 Large pavilion with 16 tables, 3 BBQ grills, electrical outlets (120V, 15amp max), manual lights and 6 trash cans.\" Additional amenities: \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\" \"Reservations are for pavilion use only. All other amenities are open to the public.\" Links: \"Reserve Olympic Park Pavilion\", \"Field Reservations\". Snapshot: data/sources/lehi/olympic-park.html",
+      "not_stated": "Price, court lighting, surface, hours, indoor or outdoor, and how the three courts are laid out."
+    },
+    {
+      "id": "C5",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/watercress-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["description", "getting_there"],
+      "evidence": "\"Address: 151 East 1500 South, Lehi UT 84043\". Amenities: \"1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\" Snapshot: data/sources/lehi/watercress-park.html",
+      "not_stated": "Parking, restrooms, price, lighting, surface, hours, indoor or outdoor."
+    },
+    {
+      "id": "C6",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["getting_there"],
+      "evidence": "All six published addresses matched at house-number level and placed in Lehi, Utah County, UT. Olympic Park (\"2700 W PARKSIDE DR, LEHI, UT, 84043\") and Centennial Park (\"2250 N 600 W, LEHI, UT, 84043\") resolved through the Census address file. Holbrook Farms Park (\"2504, Drexler Drive\") and Stagecoach Large Park (\"484, South 1915 West\") resolved through OpenStreetMap because the Census file holds no record of them. Allred Park resolved through OpenStreetMap (\"485, North Allred Park Road\") because the Census answered \"485 ALLRED PARK RD\" without the \"N.\"; Watercress Park (\"151, East 1500 South\") because the Census answered \"151 E 1500 N\". The imported Watercress row carried \"1500 S Center St\" and the name \"Watercress Park (Lehi)\". Snapshot: data/sources/lehi-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

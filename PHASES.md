@@ -315,7 +315,7 @@ passes.
 
 ## The published set
 
-Thirty cities, eighteen states, twenty-three counties, three state pages. Every page below
+Thirty-five cities, twenty states, twenty-six counties, five state pages. Every page below
 passes all six gates against the built HTML; the totals are the ones
 `getCounts()` returns, not a hand count.
 
@@ -351,8 +351,13 @@ passes all six gates against the built HTML; the totals are the ones
 | 28 | Mount Pleasant, SC | 4 | 19 | Town pickleball page: Indoor and Outdoor sections with count, address, fee and session times per venue | 2026-09-07 |
 | 29 | Long Beach, CA | 8 | 48 | City pickleball page, one line per park with address and "dedicated" or "dual-striped" count | 2026-09-07 |
 | 30 | Wichita, KS | 10 | 53 | City pickleball page, three tabs (parks, recreation centres, Riverside Tennis Center), read in a browser | 2026-09-07 |
+| 31 | Spokane, WA | 6 | 36 | City fields-and-sports page, "Tennis Courts Striped for Pickleball" and "Dedicated Pickleball Courts" lists, read in a browser | 2026-09-07 |
+| 32 | Henderson, NV | 7 | 33 | City pickleball page, five count tables by heading, plus park and recreation-centre directory pages for addresses, read in a browser | 2026-09-07 |
+| 33 | Lehi, UT | 6 | 16 | City parks page, one amenity sentence per park with the count and an address line | 2026-09-07 |
+| 34 | Orem, UT | 3 | 22 | City park pages, count stated twice on each ("12 Pickleball Courts", "Four Lighted Pickleball Courts", "6 Pickleball Courts") | 2026-09-07 |
+| 35 | Rockville, MD | 12 | 46 | City pickleball page, one table with a Number of Courts and a Lighted column, plus a place page per park for the address | 2026-09-07 |
 
-**333 published pages:** 30 city, 241 venue, 36 filter, 23 county, 3 state.
+**379 published pages:** 35 city, 275 venue, 38 filter, 26 county, 5 state.
 
 **Six of those venues publish on a second address resolver,** added 2026-09-04:
 Bellevue's Highland Park, Madison's Door Creek and Rennebohm, and Scottsdale's
@@ -643,7 +648,7 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**30 of 50.** The sequencing rule above is the whole plan, and this is the
+**35 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
 The next city is chosen the same way the last twenty-nine were: find a parks
@@ -689,6 +694,15 @@ so nobody re-treads them:
 | Huntsville AL, Ankeny IA, Sugar Land TX | Two countable venues each against a three-venue threshold (Huntsville: John Hunt Park "24 outdoor covered and lit competitive-play pickleball courts" and West Huntsville "four lighted outdoor pickleball courts"; Ankeny: Rally Complex "12 stand-alone, lighted pickleball courts" and Albaugh "three pickleball courts in the gym"). |
 | Virginia Beach VA, Georgetown TX, Pflugerville TX | Unreachable, a wrong TLS certificate, and a JavaScript-only facilities app respectively. |
 | Bloomington MN | One hundred park pages read; one states a count (Dred Scott, "6 pickleball courts"). The June 2020 PDF map would qualify if a PDF were a re-checkable source here. |
+| Overland Park KS, Tucson AZ | **Read in a browser at last, and refused on the data.** Both sites still 403 every scripted fetch; both loaded in Chrome. Overland Park's pickleball page names four parks with addresses and states no count — only Maple Hills' prose says the City "added two pickleball courts" — and each park page carries a "Pickleball Court" amenity flag. Tucson's park pages carry "Pickleball Courts" in a features list and nothing else; the only per-park numbers found (Udall 12, Gollob 4, Palo Verde 6) sit in a proposed fee-schedule PDF. A flag is not a number, twice over. |
+| St. Petersburg FL, Plano TX, Greensboro NC | Block scripts, open in a browser. St. Petersburg's courts directory lists eleven sites with a pickleball flag and an address; the counts would have to come from eleven park pages read one at a time in a browser, and they were not read once Henderson qualified. Plano and Greensboro were not read in the browser this session. Leads, not refusals. |
+| Meridian ID | Reachable, and one venue short after the addresses. Homecourt states "We currently have 14 pickleball courts" indoors at 936 Taylor Ave., Discovery Park "has 6 Pickleball Courts" at 2121 E. Lake Hazel Road, and both resolve; Reta Huskey Park's "Three Non-Reservable Pickleball Courts" at "2887 Tubac Drive" resolve in neither resolver. Settlers Park's "Courts 1-6 and 8-10 are lined for pickleball" is a court-number enumeration that needs arithmetic to become nine, which this project has not ruled on. Two clean venues against a three-venue threshold; held, with its snapshots in `data/sources/meridian/`. |
+| Chesapeake VA, Pembroke Pines FL | **Qualified and held**, both scouted on 2026-09-07 and neither yet run. Chesapeake's tennis-and-pickleball page states four park venues as "N courts with Pickleball lines - Lighted/No lights" with a lighting sentence for the whole system and house numbers on each facility page. Pembroke Pines states "4 Pickleball Courts Available", "8 Pickle Ball Courts Available" and "4 Pickle Ball Courts Available" with addresses and hours on one page — exactly three venues, so one geocoder miss would sink it. The next batch's first two leads. |
+| Columbia SC, Palm Beach Gardens FL | Two venues with a stated count and a house number each (Columbia: Finlay Park "four Pickleball Courts" priced by the hour, Southeast Park "4 pickleball courts"; Palm Beach Gardens: the Tennis & Pickleball Center "10 Pickleball Courts", Lilac Park "24 Pickleball Courts"). Palm Beach Gardens fails on addresses rather than counts: "4404 Burns Road" on every park page is the City's own footer, Lilac's street address exists only inside a map iframe, and Russo's only on a youth-camp page. |
+| Ogden UT, Chattanooga TN, Memphis TN, Birmingham AL, Richmond VA, Roanoke VA | Reachable and no per-venue count: Ogden's fifty-five park pages say "Pickleball Court"; Chattanooga states one (Batters Place, "four pickleball courts") and lists its community centres without a number; Memphis says "courts for pickleball"; Birmingham, Richmond and Roanoke publish no pickleball court page at all. |
+| Nampa ID, Port St. Lucie, Boca Raton, Delray Beach, Coral Springs, Ocala FL, Baton Rouge LA | HTTP 403 to a bare curl and to the full browser header set, 2026-09-07. Lakeland FL and Savannah GA did not answer TCP at all. |
+| Draper UT, Lakeland FL, Savannah GA and the rest of the East list (Pittsburgh, Rochester, Syracuse, Providence, Worcester, Manchester, Burlington, Cincinnati, Cleveland, Dayton, Fort Wayne, Lansing) and West list (West Jordan onward) | Not tried; both scouts stopped at three qualifiers. |
+| **Sky Prairie Park, Spokane; six Henderson venues; five Lehi parks; Twinbrook and Glenora, Rockville** | Refused inside published cities, all on addresses: Sky Prairie's "8501 N. Nettleton Ct.", Henderson's Blooming Cactus, Dundee Jones, Montagna, Whitney Mesa, Weston Hills and the Downtown Recreation Center, Lehi's Shadow Ridge, Salix, South Creek and Spring Creek (Northridge also fell to the Chandler label rule, "a pickleball court"), and Rockville's Twinbrook Park resolve in neither resolver; Rockville's Glenora Park is "Dundee Road and Wootton Parkway", an intersection. Henderson's Whitney Ranch Recreation Center is listed under "PICKLEWALL", a wall, not a court. Every one is asserted unresolved in its run, so a resolver that learns the address fails the build and reopens the venue. |
 
 **The six leads recorded on 2026-09-07 all published the same day as cities
 #21 to #26** — Tallahassee, Albuquerque, Las Vegas, Boulder, Naperville and
@@ -724,7 +738,8 @@ and the whole bucket has now been retested.
 | result | cities |
 | --- | --- |
 | **reachable now** | Mesa, Durham, Kirkland, Fort Collins |
-| still refusing | Spokane, Greensboro, Redmond, Wichita, Eugene, Olympia, Overland Park, Minneapolis, Tucson |
+| still refusing scripts, since read in a browser | Spokane (published as #31), Wichita (#30), Overland Park and Tucson (refused on the data) |
+| still refusing, not yet read | Greensboro, Redmond, Eugene, Olympia, Minneapolis |
 
 Four of sixteen, and two of the four published: **Mesa as city #14 and
 Kirkland as city #15**. Durham was reachable and then refused on its data
@@ -760,6 +775,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-30-wichita`, `state-1-nc`, `state-2-wa`, `state-3-fl` — so a
+`city-2-raleigh` through `city-35-rockville`, `state-1-nc`, `state-2-wa`, `state-3-fl`, `state-4-ca`, `state-5-ut` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

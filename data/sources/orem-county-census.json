@@ -1,0 +1,44 @@
+{
+  "hillcrest-park": {
+    "matched": "650 E 1400 S, OREM, UT, 84097",
+    "resolver": "census",
+    "lat": 40.2714329868,
+    "lon": -111.679492946523,
+    "county": "Utah",
+    "state_fips": "49",
+    "county_fips": "049",
+    "place": "Orem city",
+    "place_matches_city": true,
+    "postal_code": "84097",
+    "basis": "Census address geocoder matched \"650 E 1400 S, OREM, UT, 84097\".",
+    "county_citation": "Utah County, UT (FIPS 49049). Census address geocoder matched \"650 E 1400 S, OREM, UT, 84097\"."
+  },
+  "bonneville-park": {
+    "matched": "1450 N 800 W, OREM, UT, 84057",
+    "resolver": "census",
+    "lat": 40.323106158936,
+    "lon": -111.715124581217,
+    "county": "Utah",
+    "state_fips": "49",
+    "county_fips": "049",
+    "place": "Orem city",
+    "place_matches_city": true,
+    "postal_code": "84057",
+    "basis": "Census address geocoder matched \"1450 N 800 W, OREM, UT, 84057\".",
+    "county_citation": "Utah County, UT (FIPS 49049). Census address geocoder matched \"1450 N 800 W, OREM, UT, 84057\"."
+  },
+  "sharon-park": {
+    "matched": "600 N 300 E, OREM, UT, 84057",
+    "resolver": "census",
+    "lat": 40.308216398801,
+    "lon": -111.688527368958,
+    "county": "Utah",
+    "state_fips": "49",
+    "county_fips": "049",
+    "place": "Orem city",
+    "place_matches_city": true,
+    "postal_code": "84057",
+    "basis": "Census address geocoder matched \"600 N 300 E, OREM, UT, 84057\".",
+    "county_citation": "Utah County, UT (FIPS 49049). Census address geocoder matched \"600 N 300 E, OREM, UT, 84057\"."
+  }
+}

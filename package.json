@@ -72,7 +72,13 @@
     "verify:mount-pleasant": "node scripts/verify/apply-mount-pleasant-parks.mjs",
     "verify:long-beach": "node scripts/verify/apply-long-beach-parks.mjs",
     "verify:wichita": "node scripts/verify/apply-wichita-parks.mjs",
-    "verify:chandler": "node scripts/verify/apply-chandler-parks.mjs"
+    "verify:chandler": "node scripts/verify/apply-chandler-parks.mjs",
+    "verify:spokane": "node scripts/verify/apply-spokane-parks.mjs",
+    "verify:henderson": "node scripts/verify/apply-henderson-parks.mjs",
+    "verify:lehi": "node scripts/verify/apply-lehi-parks.mjs",
+    "verify:orem": "node scripts/verify/apply-orem-parks.mjs",
+    "verify:meridian": "node scripts/verify/apply-meridian-parks.mjs",
+    "verify:rockville": "node scripts/verify/apply-rockville-parks.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

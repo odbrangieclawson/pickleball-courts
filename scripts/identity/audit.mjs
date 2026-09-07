@@ -134,8 +134,29 @@ const verifiedName = v => overlay.byKey.get(overlayKey(v.state, v.city, v.slug))
 /* 1. Candidate slug.                                                */
 /* ---------------------------------------------------------------- */
 
+/*
+  A verified row is a PUBLISHED row, and §3 freezes a URL at launch. Its slug
+  is therefore whatever the previous registry said it was — the rename that
+  built its page — or its own slug if the registry never renamed it. It is
+  never re-derived from the verified name, because the name can be longer or
+  shorter than the slug the page went live under: on 2026-09-07 a re-run
+  after Long Beach and Wichita shipped rebuilt "el-dorado-park-tennis-center"
+  as "el-dorado-park-tennis-pickleball-center" and
+  "orchard-park-recreation-center" as "orchard-recreation-center", and the
+  404 monitor caught both live URLs breaking before the build was committed.
+*/
+const priorRenames = (() => {
+  const p = join(REPO_ROOT, 'data/identity/slugs.json')
+  return existsSync(p) ? (JSON.parse(readFileSync(p, 'utf8')).renames ?? {}) : {}
+})()
+
 for (const v of rows) {
-  const {slug, steps} = canonicalise(v, verifiedName(v))
+  const name = verifiedName(v)
+  const frozen = name !== null
+  const {slug, steps} = frozen
+    ? {slug: priorRenames[v.slug]?.canonical ?? v.slug,
+       steps: [`published URL kept as is (§3); verified name "${name}" is not re-derived`]}
+    : canonicalise(v, name)
   v._candidate = slug
   v._steps = steps
   v._hadSuffix = NUMERIC_SUFFIX.test(String(v.slug ?? ''))

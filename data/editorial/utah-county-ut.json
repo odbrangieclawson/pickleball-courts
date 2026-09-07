@@ -1,0 +1,114 @@
+{
+  "county": "Utah",
+  "state": "UT",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a park has, whether it is lit, where it is - come from Lehi City Parks and the City of Orem Parks and are cited. Claims about our own coverage are facts about this dataset rather than about Utah County, and are worded so a reader cannot mistake one for the other. Two cities of the county are on this page, both read on 7 September 2026, and nobody working on this has played on any court in either.",
+  "slots": {
+    "coverage": "Two cities in Utah County are published here: Lehi, with six venues and sixteen courts, and Orem, with three venues and twenty-two courts - nine parks and thirty-eight courts between them, every one run by a city parks department. Lehi's counts come from one page, \"Welcome to Lehi City Parks\", where each park has an \"Address:\" line and an amenity sentence in which the City counts what it has: \"2 pickleball courts\", \"6 pickleball courts\", \"1 pickleball court\". Orem's come from one page per park with a \"Location:\" line and an amenity list - \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\" at Hillcrest, \"6 Pickleball Courts\" at Sharon, \"Four Lighted Pickleball Courts\" at Bonneville - and each count is stated twice on its page. Provo, American Fork, Pleasant Grove, Springville, Spanish Fork and the County's own parks have no verified file behind this page, so none appears anywhere on this site; that is a statement about this dataset and not about where pickleball is played in the county. Both Cities name more courts than publish. Lehi counts courts at eleven parks and this site can place six of them: Shadow Ridge, Salix, South Creek and Spring Creek hold twelve stated courts between them at addresses that neither the Census address file nor OpenStreetMap resolves as the City writes them, and Northridge's \"a pickleball court\" is a label rather than a number. Orem's Cascade Park carries \"Pickleball/Tennis Courts\" and no number at all.",
+    "distribution": "Thirty-eight verified courts in nine parks, and the split between the two cities runs the opposite way to the split between their venue counts. Orem holds three of the nine venues and twenty-two of the courts; Lehi holds six venues and sixteen. Hillcrest Park's twelve, at 650 E 1400 S in south-east Orem, is the largest set in the county and nearly a third of everything published here, and the City divides it on purpose: \"6 Pickleball courts can be reserved for private use\" through its online link, and six are held for the public on its \"Paddle Rotation System\". Two venues have six - Sharon Park at 600 N 300 E in north-east Orem, and Holbrook Farms Park on Drexler Drive in north-west Lehi, the largest count Lehi states at any of its parks. Bonneville Park in Orem has four, Olympic Park in west Lehi three, and the other four Lehi parks - Allred, Stagecoach Large, Watercress and Centennial - have two, two, two and one. Two courts is one game rather than a rotation, and Lehi's sixteen are spread thinly enough that four of its six venues offer exactly that or less. Lighting splits the county once: Bonneville's \"Four Lighted Pickleball Courts\" are the only lit courts either City states, and the other thirty-four carry no lighting answer either way. Nothing splits it by price, because no page in either city states one or writes the word free. Nothing splits it by indoor or outdoor, surface or hours, since neither City states any of those for a court. Every Lehi venue shares the 84043 postcode; Orem's three sit in 84097 and 84057.",
+    "gaps": "The largest gap is inside Lehi, and it is an address problem rather than a court problem. The City counts courts at eleven parks and prints an address for each, but five of those addresses - \"3050 W. Traverse Mountain Blvd\" for Shadow Ridge Park, \"3109 W. Allred Dr.\" for Salix Park, \"1987 West 1450 South\" for South Creek Park, \"2108 S Bullrush Pkwy\" for Spring Creek Park and \"2333 W. Northridge Dr\" for Northridge Park - resolve in neither the Census address file nor OpenStreetMap as written, and this site requires an address that does. Twelve stated courts wait behind the first four; Northridge would be refused in any case, because \"a pickleball court\" is an article and not a number. Gateway Park says \"pickleball\" with no count, and Eagle Summit Park is named on the City's page with a tennis court and no pickleball at all, listed only because a scout named it. In Orem the gap is one park: Cascade carries \"Pickleball/Tennis Courts\" and no number, and its page answered 404 on the day it was read. Inside the published record the silence is broad. Neither City states a surface, a court's hours, or whether any court is indoor or outdoor. Lehi states no lighting for any court - its \"pavilion lighting\" at Centennial lights a pavilion - and Hillcrest's \"Hours of Operations: Monday-Saturday from 10:00am-8:00pm\" sits under the heading \"Splash Pad Hours\", so it is not read as court hours. Nothing outside two parks departments appears here, and a second imported Sharon Park row waits on a written resolution before it can be retired."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Utah County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 38 courts across nine parks in two cities - 22 in Orem and 16 in Lehi - each with a source and a date you can see. Lehi's own page states twelve more at four parks whose addresses do not resolve, and both Cities list parks with pickleball and no number."
+    },
+    {
+      "q": "Why are only Lehi and Orem listed?",
+      "a": "Because they are the two municipalities in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a stated count and an address that resolves. Provo, American Fork, Pleasant Grove, Springville, Spanish Fork and the County's own parks have no verified file behind this page."
+    },
+    {
+      "q": "Which venues in Utah County have lights?",
+      "a": "One that the operator states: Bonneville Park in Orem, whose amenity line reads \"Four Lighted Pickleball Courts\". Every other court in the county is recorded as lighting not verified. Lehi's \"pavilion lighting\" at Centennial Park lights the pavilion, and the \"lighting\" at South Creek Park sits at a refused park and names no court."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Not stated anywhere. No Lehi or Orem page prints a price or the word free. Lehi's sentence that \"All other amenities are open to the public\" is about access rather than cost, and Orem's reservation rules say who may book a court, not what it costs. All nine venues are recorded as price unknown, and neither city has a free filter page."
+    },
+    {
+      "q": "Can I book a court anywhere in the county?",
+      "a": "At Hillcrest Park in Orem, where \"6 Pickleball courts can be reserved for private use\" through the City's online link and the other six run on its paddle rotation. Sharon Park's courts are reserved \"ONLY\" for the City's tournaments. In Lehi, \"Reservations are for pavilion use only\", so no court can be booked. Bonneville states no rule either way."
+    },
+    {
+      "q": "Why are Shadow Ridge and Salix not listed?",
+      "a": "Because their addresses do not resolve. Lehi states four courts at each, but \"3050 W. Traverse Mountain Blvd\" and \"3109 W. Allred Dr.\" are found by neither the Census address file nor OpenStreetMap as the City writes them, and a count-bearing address has to resolve as written. Both entries are asserted on every build, so a corrected address is a re-read away."
+    },
+    {
+      "q": "What is Hillcrest's Paddle Rotation System?",
+      "a": "The City of Orem's rule for its six public courts there: \"waiting player place a paddle for each player on the paddle racks on the next open rack. When a game is finished players announce 'Open Court' and the court vacated for the players with paddles on the rack.\" It is the one written rotation rule in the county."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's parks page, \"Welcome to Lehi City Parks\", listing every park under \"RESERVABLE PAVILIONS\" or \"NON-RESERVABLE PARKS\" with an \"Address:\" line and an amenity sentence. Published: Allred Park, \"485 N. Allred Park Rd.\", \"Playground, restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\"; Holbrook Farms Park, \"2504 N. Drexler Drive\", \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables)\"; Olympic Park, \"2700 W. Parkside Dr.\", \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\"; Centennial Park, \"2250 North 600 West\", \"... pavilion lighting, 2 large BBQ grills, 1 pickleball court ...\"; Stagecoach Large Park, \"484 South 1915 West\", \"... 2 pickleball courts, 1 full basketball court ...\"; Watercress Park, \"151 East 1500 South\", \"... 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\" Every reservable-pavilion entry ends \"Reservations are for pavilion use only. All other amenities are open to the public.\" Refused: Shadow Ridge Park \"3050 W. Traverse Mountain Blvd\" with \"4 pickleball courts\"; Salix Park \"3109 W. Allred Dr.\" with \"4 pickleball courts\"; South Creek Park \"1987 West 1450 South\" with \"1 pickleball court, lighting, and open space\"; Spring Creek Park \"2108 S Bullrush Pkwy\" with \"3 pickleball courts\"; Northridge Park \"2333 W. Northridge Dr\" with \"and a pickleball court\"; Gateway Park with \"pickleball\" and no number; Eagle Summit Park with \"a tennis court\" and no pickleball. Snapshot: data/sources/lehi/parks.html",
+      "not_stated": "Price at any park; lighting, surface, hours, and indoor or outdoor for any court; anything about any other municipality in Utah County."
+    },
+    {
+      "id": "L2",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/holbrook-farms-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["distribution"],
+      "evidence": "The park's own page repeats the count: \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables).\" Its reservable amenity is a \"Large Pavilion/Food Truck Alley with 14 tables, food court string lights, pavilion lighting, 2 electrical outlets (120V, 15amp max.) and 2 trash cans.\" and the page ends \"Reservations are for pavilion use only. All other amenities are open to the public.\" Snapshot: data/sources/lehi/holbrook-farms-park.html",
+      "not_stated": "Price, lighting, surface or hours for the courts."
+    },
+    {
+      "id": "L3",
+      "url": "https://orem.gov/hillcrest-park/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "\"Location: 650 E 1400 S\". Amenity list: \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\". Below it: \"6 Pickleball courts can be reserved for private use\", \"Courts can be reserved on this link\", and \"6 of the other courts are for public use and will be held to the standard of using the \\\"Paddle Rotation System.\\\" This means that waiting player place a paddle for each player on the paddle racks on the next open rack. When a game is finished players announce \\\"Open Court\\\" and the court vacated for the players with paddles on the rack.\" Under the heading \"Splash Pad Hours\": \"Hours of Operations: Monday-Saturday from 10:00am-8:00pm\", then \"The Splash Pad is open seasonally from Memorial Day at 10:00am to Labor Day at 8pm.\" Tournaments: \"Please contact us at: (801) 229-7154\". Snapshot: data/sources/orem/hillcrest-park.html",
+      "not_stated": "Price, lighting, surface, court hours, and indoor or outdoor."
+    },
+    {
+      "id": "L4",
+      "url": "https://orem.gov/sharon-park/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution"],
+      "evidence": "\"Location: 600 N 300 E\". \"The park has a large playground and six pickleball courts.\" Amenity list: \"6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).\" and \"Restrooms\". Snapshot: data/sources/orem/sharon-park.html",
+      "not_stated": "Price, lighting, surface, hours, and indoor or outdoor."
+    },
+    {
+      "id": "L5",
+      "url": "https://orem.gov/bonneville/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution"],
+      "evidence": "\"Location: 1450 N 800 W\". Amenity list: \"Four Lighted Pickleball Courts\", with \"Tennis Court\", \"Full-size Basketball Court\" and \"Restrooms\". Description: \"or enjoy a game of Pickleball on one of the four new Pickleball courts.\" Snapshot: data/sources/orem/bonneville.html",
+      "not_stated": "Price, any reservation rule, surface, hours, and indoor or outdoor."
+    },
+    {
+      "id": "L6",
+      "url": "https://orem.gov/parks-guide/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "The City's parks guide lists Bonneville Park, Cascade Park, Hillcrest Park and Sharon Park by name. Cascade Park's own page, which carries \"Pickleball/Tennis Courts\" and no number, answered 404 on 7 September 2026 and is not snapshotted. Snapshot: data/sources/orem/parks-guide.html",
+      "not_stated": "Any court count; the guide names parks and does not count courts."
+    },
+    {
+      "id": "L7",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "All three Orem addresses matched in the Census address file as written and were placed in Utah County, UT (FIPS 49049) inside \"Orem city\": \"650 E 1400 S, OREM, UT, 84097\", \"600 N 300 E, OREM, UT, 84057\", \"1450 N 800 W, OREM, UT, 84057\". Olympic Park and Centennial Park in Lehi matched the same way, \"2700 W PARKSIDE DR, LEHI, UT, 84043\" and \"2250 N 600 W, LEHI, UT, 84043\", inside \"Lehi city\". Four Lehi addresses resolved through OpenStreetMap at house-number level because the Census file holds no record of Holbrook Farms or Stagecoach Large, drops the \"N.\" from Allred Park Rd., and answers 1500 N for Watercress's 1500 South. Shadow Ridge, Salix, South Creek, Spring Creek and Northridge resolved in neither. Snapshots: data/sources/lehi-county-census.json, data/sources/orem-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

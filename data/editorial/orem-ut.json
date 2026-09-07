@@ -1,0 +1,110 @@
+{
+  "city": "Orem",
+  "state": "UT",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every count, address and reservation rule below comes from the City of Orem's own park pages - one page per park, each with a Location line and an amenity list - and from the City's parks guide, which names the parks. Where the City is silent, on price everywhere, on lighting at two of the three parks, and on surface, hours and parking at all three, this page says so instead of guessing.",
+  "slots": {
+    "parking": "Orem publishes nothing about parking at any of these three parks. The word does not appear on the Hillcrest, Sharon or Bonneville page, and the City's parks guide, which is mostly about reserving pavilions, does not mention it either. This site does not fill that gap from a map. What the City does publish about the parks is enough to shape the trip. Sharon Park and Bonneville Park both list \"Restrooms\" among their amenities; Hillcrest Park's list does not mention them, and that absence is recorded as unknown rather than as a no. Bonneville and Sharon are each stated as 5.2 acres, each with a large pavilion - Bonneville's \"Will seat 100\", Sharon's \"Seats 120\" - and a walking path, Sharon's measured at 0.42 miles. Hillcrest's page gives no acreage but lists three playgrounds, a splash pad, a rentable big pavilion with a capacity of 75, a nature leisure walk and hammock and slack-line timber poles. The addresses are Utah grid lines, written by the City without a city or postcode - 650 E 1400 S is 650 East on 1400 South - and the US Census address file resolves all three as written, inside Orem city, Utah County.",
+    "peak_hours": "The City publishes no opening hours and no closing time for any of its pickleball courts. The one hours line on any of the three pages is at Hillcrest - \"Hours of Operations: Monday-Saturday from 10:00am-8:00pm\" - and it sits under the heading \"Splash Pad Hours\", beside the concession season and the note that the splash pad runs from Memorial Day to Labor Day. Those are the splash pad's hours, not the courts', so court hours at Hillcrest are recorded as not stated. What the City does publish about timing is who gets a court and how. At Hillcrest, six of the twelve courts \"can be reserved for private use\" through the City's reservation link, and the other six \"are for public use and will be held to the standard of using the 'Paddle Rotation System'\": waiting players put a paddle per player on the next open rack, and when a game ends the players announce \"Open Court\" and hand it to the paddles on the rack. That is the closest thing to a peak-hours statement in Orem - the City expects waiting players at Hillcrest and has written down what they do. At Sharon Park the City reserves its six courts \"ONLY\" for \"the city's tournaments, not for any other private use\", so on a tournament day the courts are the City's and on any other day they are walk-on. Bonneville states no reservation rule at all. Lighting is stated at Bonneville alone - \"Four Lighted Pickleball Courts\" - so a game after dark is a published possibility there and an open question at the other two.",
+    "surface_condition": "The City names no surface at any of the three parks. Hillcrest's amenity line is \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\", Sharon's is \"6 Pickleball Courts\" and Bonneville's is \"Four Lighted Pickleball Courts\", and none of the three pages says what the courts are made of, whether any is covered, or whether they are indoor or outdoor. A lighted court is not the word \"outdoor\", so the indoor and outdoor breakdowns for Orem stay empty. Nothing is said about nets. What the City does say about the state of the courts is a single word at Bonneville: the description invites visitors to \"enjoy a game of Pickleball on one of the four new Pickleball courts\". \"New\" is the City's word and it is undated, so it is printed as written rather than turned into a year. All three pages count pickleball courts as pickleball courts, in their own amenity line; Bonneville lists a \"Tennis Court\" separately from its four, and neither Hillcrest's page nor Sharon's mentions tennis at all. Cascade Park is the counter-example: its amenity list carried \"Pickleball/Tennis Courts\" with no number, and a label is not a count, so it is not published.",
+    "local_scene": "Twenty-two verified courts across three City parks: twelve at Hillcrest Park, six at Sharon Park and four at Bonneville Park. Orem is the third Utah city on this site, after St. George and Lehi, and the second in Utah County. Every count comes from the park's own page, where the City states it twice - once in the amenity list and once in the description or the reservation text - and both statements are re-read on every build. The City is specific about who may use which courts, and that is the shape of pickleball in Orem. Hillcrest is the largest set in the city and the one the City manages hardest: six courts reservable for private use, six kept for the public on a paddle rotation, and a phone number, (801) 229-7154, for anyone \"interested in hosting a tournament or an event specifically geared toward pickleball\". Sharon Park's six courts are reserved for the City's own tournaments and for nothing else - six walk-on courts, on every other day, in a park the City describes as a sledding hill in winter and \"a nice shady retreat for families\" in summer. Bonneville's four are the ones the City calls new, and the lit ones. No page states a price, and no page uses the word free; the reservation sentences are about who may book a court, not what it costs, so no Orem venue is recorded as free and there is no free filter page. One park is refused. Cascade Park appears in the City's parks guide, and its park page carried \"Pickleball/Tennis Courts\" in its amenity list with no number; a label is not a count, and the page could not be re-fetched for this run - orem.gov/cascade-park/ answers 404 - so the refusal rests on the count it lacks. The guide names twenty parks; the three whose pages state a pickleball count are the three published here."
+  },
+  "best_for": [
+    {
+      "key": "biggest",
+      "heading": "Best if you want the most courts and a queue that runs itself",
+      "venue_slug": "hillcrest-park",
+      "text": "Hillcrest Park has twelve courts, the largest set in Orem, and the City splits them on purpose: six can be reserved for private use through its reservation link, and six are held for the public on the \"Paddle Rotation System\", a paddle per player on the next open rack. Price, hours, lighting and surface are not stated.",
+      "supports": ["C2"]
+    },
+    {
+      "key": "lights",
+      "heading": "Best if you want to play after dark",
+      "venue_slug": "bonneville-park",
+      "text": "Bonneville Park is the one Orem venue where the City states lighting - \"Four Lighted Pickleball Courts\", which its description calls new - in a 5.2-acre park with restrooms, a full-size basketball court, a separate tennis court and two pavilions. No reservation rule, price or hours are stated, so how late the lights run is not published.",
+      "supports": ["C4"]
+    },
+    {
+      "key": "walk_on",
+      "heading": "Best if you want courts nobody else can book",
+      "venue_slug": "sharon-park",
+      "text": "Sharon Park's six courts cannot be reserved for private use: the City writes that it currently reserves them \"ONLY\" for its own tournaments. Outside those, six walk-on courts in a 5.2-acre park with restrooms, a playground, a 0.42-mile walking path and a large pavilion seating 120. Price, hours, lighting and surface are not stated.",
+      "supports": ["C3"]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does Orem have?",
+      "a": "Twenty-two verified across three City parks: twelve at Hillcrest Park, six at Sharon Park and four at Bonneville Park, each count stated twice on the park's own page. Cascade Park also has pickleball on its amenity list, as \"Pickleball/Tennis Courts\" with no number, so it is not counted."
+    },
+    {
+      "q": "Is it free to play in Orem?",
+      "a": "Not stated at any of the three parks. No City page prints a price and none uses the word free. The City publishes reservation rules - six bookable courts at Hillcrest, Sharon reserved for City tournaments alone - and those say who may book a court, not what it costs, so no Orem venue is recorded as free."
+    },
+    {
+      "q": "Which Orem courts have lights?",
+      "a": "Bonneville Park's four, in the City's words \"Four Lighted Pickleball Courts\". Hillcrest and Sharon say nothing about lighting either way, so their courts are recorded as not verified rather than as unlit. The City states no closing time at Bonneville, so how late the lights run is not published."
+    },
+    {
+      "q": "Can I reserve a court, and when are the courts open?",
+      "a": "At Hillcrest, six of the twelve courts can be reserved for private use through the City's link, and the other six run on a paddle rotation. Sharon's courts are reserved for the City's tournaments and nothing else, and Bonneville states no rule. No page gives court hours; Hillcrest's \"10:00am-8:00pm\" line belongs to the splash pad."
+    },
+    {
+      "q": "Why is Cascade Park not listed?",
+      "a": "Because the City's page for it carried \"Pickleball/Tennis Courts\" and no number, and a label is not a count. The page could not be re-fetched for this run either - orem.gov/cascade-park/ answers 404 - so no snapshot of it is asserted, and the parks guide, which is, lists the park by name."
+    }
+  ],
+  "sources": [
+    {
+      "id": "C1",
+      "url": "https://orem.gov/parks-guide/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["parking", "local_scene"],
+      "evidence": "The City's parks guide, headed \"Parks\", which names twenty parks including Bonneville Park, Cascade Park, Hillcrest Park and Sharon Park, and carries the City's pavilion-reservation notes: \"you will need to make reservations at least 72 hours prior to your reservation to give the Parks Department notice to clean and maintain the pavilion\". Snapshot: data/sources/orem/parks-guide.html",
+      "not_stated": "Anything about pickleball, parking, hours, price or lighting at any park."
+    },
+    {
+      "id": "C2",
+      "url": "https://orem.gov/hillcrest-park/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["parking", "peak_hours", "surface_condition", "local_scene"],
+      "evidence": "Hillcrest Park's page: \"Location: 650 E 1400 S\". Amenities: \"Playgrounds: Nature Playground, Three Tier Playground, Toddler Playground.\", \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\", \"Small Pavilions for temporary seating\", \"Pavilion-Rentable Big Pavilion for Gatherings (Capacity: 75) 10 tables\", \"Nature Leisure Walk\", \"Splash Pad\", \"Hammock/Slack Line Timber Poles\". Under \"Splash Pad Hours\": \"Hours of Operations: Monday-Saturday from 10:00am-8:00pm\", \"Concession will start June 10th from 10:00am-8:00pm\", and \"The Splash Pad is open seasonally from Memorial Day at 10:00am to Labor Day at 8pm.\" Under \"Pickleball Reservations\": \"6 Pickleball courts can be reserved for private use\", \"6 of the other courts are for public use and will be held to the standard of using the 'Paddle Rotation System.' This means that waiting player place a paddle for each player on the paddle racks on the next open rack. When a game is finished players announce 'Open Court' and the court vacated for the players with paddles on the rack.\", \"Courts can be reserved on this link\", and \"If you are interested in hosting a tournament or an event specifically geared toward pickleball. Please contact us at: (801) 229-7154\". Snapshot: data/sources/orem/hillcrest-park.html",
+      "not_stated": "Price, court hours, lighting, surface, indoor or outdoor, nets, parking, restrooms and acreage."
+    },
+    {
+      "id": "C3",
+      "url": "https://orem.gov/sharon-park/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["parking", "peak_hours", "surface_condition", "local_scene"],
+      "evidence": "Sharon Park's page: \"Location: 600 N 300 E\". \"In the winter, Sharon Park is often used for tubing and sledding. In the summer, it's a nice shady retreat for families. The park has a large playground and six pickleball courts.\" Amenities: \"5.2 Acres\", \"Playground\", \"Restrooms\", \"Walking Path - 0.42 miles\", \"6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).\", \"1 Large Pavilion with BBQ Braziers - (Seats 120)\". Snapshot: data/sources/orem/sharon-park.html",
+      "not_stated": "Price, hours, lighting, surface, indoor or outdoor, nets, parking, and any tournament dates."
+    },
+    {
+      "id": "C4",
+      "url": "https://orem.gov/bonneville/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["parking", "peak_hours", "surface_condition", "local_scene"],
+      "evidence": "Bonneville Park's page: \"Location: 1450 N 800 W\". \"Located on the Northeast corner of Orem, Bonneville park offers park-goers wide open spaces and a number of amenities. Watch the kids play on the excitingly large playground, relax under the shade of the many mature trees, or enjoy a game of Pickleball on one of the four new Pickleball courts.\" Amenities: \"5.2 Acres\", \"One Large Pavilion (Will seat 100)\", \"One Small pavilion (Will seat 16)\", \"Four (4) Barbeque Braziers\", \"Full-size Basketball Court\", \"Tennis Court\", \"Four Lighted Pickleball Courts\", \"Shade Covered Playground\", \"Walking Path\", \"Restrooms\". Snapshot: data/sources/orem/bonneville.html",
+      "not_stated": "Price, hours, how late the lights run, surface, indoor or outdoor, nets, parking, and any reservation rule."
+    },
+    {
+      "id": "C5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["parking", "local_scene"],
+      "evidence": "The three published addresses, written by the City as Utah grid lines without a city or postcode, were matched by the Census address geocoder as written and placed in the incorporated place \"Orem city\", Utah County, UT (FIPS 49049): \"650 E 1400 S, OREM, UT, 84097\" for Hillcrest Park, \"600 N 300 E, OREM, UT, 84057\" for Sharon Park and \"1450 N 800 W, OREM, UT, 84057\" for Bonneville Park. Snapshot: data/sources/orem-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

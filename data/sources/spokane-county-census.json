@@ -1,0 +1,91 @@
+{
+  "am-cannon-park": {
+    "matched": "1511 N ELM ST, SPOKANE, WA, 99201",
+    "resolver": "census",
+    "lat": 47.671018151316,
+    "lon": -117.44000002698,
+    "county": "Spokane",
+    "state_fips": "53",
+    "county_fips": "063",
+    "place": "Spokane city",
+    "place_matches_city": true,
+    "postal_code": "99201",
+    "basis": "Census address geocoder matched \"1511 N ELM ST, SPOKANE, WA, 99201\".",
+    "county_citation": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"1511 N ELM ST, SPOKANE, WA, 99201\"."
+  },
+  "comstock-park": {
+    "matched": "601 W 29TH AVE, SPOKANE, WA, 99203",
+    "resolver": "census",
+    "lat": 47.628148099888,
+    "lon": -117.42152636028,
+    "county": "Spokane",
+    "state_fips": "53",
+    "county_fips": "063",
+    "place": "Spokane city",
+    "place_matches_city": true,
+    "postal_code": "99203",
+    "basis": "Census address geocoder matched \"601 W 29TH AVE, SPOKANE, WA, 99203\".",
+    "county_citation": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"601 W 29TH AVE, SPOKANE, WA, 99203\"."
+  },
+  "mission-park": {
+    "matched": "1208 E MISSION AVE, SPOKANE, WA, 99202",
+    "resolver": "census",
+    "lat": 47.671617009497,
+    "lon": -117.391805990346,
+    "county": "Spokane",
+    "state_fips": "53",
+    "county_fips": "063",
+    "place": "Spokane city",
+    "place_matches_city": true,
+    "postal_code": "99202",
+    "basis": "Census address geocoder matched \"1208 E MISSION AVE, SPOKANE, WA, 99202\".",
+    "county_citation": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"1208 E MISSION AVE, SPOKANE, WA, 99202\"."
+  },
+  "peaceful-valley-park": {
+    "matched": "1602 W WATER AVE, SPOKANE, WA, 99201",
+    "resolver": "census",
+    "lat": 47.65974223101,
+    "lon": -117.435136386626,
+    "county": "Spokane",
+    "state_fips": "53",
+    "county_fips": "063",
+    "place": "Spokane city",
+    "place_matches_city": true,
+    "postal_code": "99201",
+    "basis": "Census address geocoder matched \"1602 W WATER AVE, SPOKANE, WA, 99201\".",
+    "county_citation": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"1602 W WATER AVE, SPOKANE, WA, 99201\"."
+  },
+  "sky-prairie-park": {
+    "matched": false,
+    "query": "8501 N Nettleton Ct, Spokane, WA",
+    "resolver": null
+  },
+  "corbin-park": {
+    "matched": "2914 N WEST OVAL ST, SPOKANE, WA, 99205",
+    "resolver": "census",
+    "lat": 47.684618569157,
+    "lon": -117.42218520766,
+    "county": "Spokane",
+    "state_fips": "53",
+    "county_fips": "063",
+    "place": "Spokane city",
+    "place_matches_city": true,
+    "postal_code": "99205",
+    "basis": "Census address geocoder matched \"2914 N WEST OVAL ST, SPOKANE, WA, 99205\".",
+    "county_citation": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"2914 N WEST OVAL ST, SPOKANE, WA, 99205\"."
+  },
+  "underhill-park": {
+    "matched": "2910 E HARTSON AVE, SPOKANE, WA, 99202",
+    "resolver": "census",
+    "lat": 47.649977550181,
+    "lon": -117.368138938675,
+    "county": "Spokane",
+    "state_fips": "53",
+    "county_fips": "063",
+    "place": "Spokane city",
+    "place_matches_city": true,
+    "postal_code": "99202",
+    "basis": "Census address geocoder matched \"2910 E HARTSON AVE, SPOKANE, WA, 99202\".",
+    "county_citation": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"2910 E HARTSON AVE, SPOKANE, WA, 99202\"."
+  }
+}

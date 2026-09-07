@@ -1,0 +1,130 @@
+{
+  "black-mountain-recreation-center": {
+    "matched": "599 GREENWAY RD, HENDERSON, NV, 89015",
+    "resolver": "census",
+    "lat": 36.01448911326,
+    "lon": -114.976516256105,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Henderson city",
+    "place_matches_city": true,
+    "postal_code": "89015",
+    "basis": "Census address geocoder matched \"599 GREENWAY RD, HENDERSON, NV, 89015\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"599 GREENWAY RD, HENDERSON, NV, 89015\"."
+  },
+  "blooming-cactus-park": {
+    "matched": false,
+    "query": "410 Grand Cadence Drive, Henderson, NV",
+    "resolver": null
+  },
+  "dundee-jones-park": {
+    "matched": false,
+    "query": "10550 Jeffreys St, Henderson, NV",
+    "resolver": null
+  },
+  "montagna-park": {
+    "matched": false,
+    "query": "3495 Via Altamira, Henderson, NV",
+    "resolver": null
+  },
+  "whitney-mesa": {
+    "matched": false,
+    "query": "1990 Patrick Ln., Henderson, NV",
+    "resolver": null
+  },
+  "aventura-park": {
+    "matched": "2525 VIA FIRENZE, HENDERSON, NV, 89044",
+    "resolver": "census",
+    "lat": 35.958246269439,
+    "lon": -115.125860568663,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Henderson city",
+    "place_matches_city": true,
+    "postal_code": "89044",
+    "basis": "Census address geocoder matched \"2525 VIA FIRENZE, HENDERSON, NV, 89044\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"2525 VIA FIRENZE, HENDERSON, NV, 89044\"."
+  },
+  "mission-hills-park": {
+    "matched": "551, East Mission Drive, Mission Hills, Henderson, Clark County, Nevada, 89002, United States",
+    "resolver": "osm",
+    "lat": 35.9980475,
+    "lon": -114.9696109,
+    "county": "Clark",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Henderson",
+    "place_matches_city": true,
+    "postal_code": "89002",
+    "basis": "OpenStreetMap (Nominatim) matched \"551, East Mission Drive, Mission Hills, Henderson, Clark County, Nevada, 89002, United States\" at house-number level. The Census address geocoder answered \"551 MISSION DR, HENDERSON, NV, 89002\", changing the direction from E to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details.",
+    "county_citation": "Clark County, NV. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Clark County."
+  },
+  "siena-heights-trailhead": {
+    "matched": "2570 SIENA HEIGHTS DR, HENDERSON, NV, 89052",
+    "resolver": "census",
+    "lat": 36.012613381552,
+    "lon": -115.104118609869,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Henderson city",
+    "place_matches_city": true,
+    "postal_code": "89052",
+    "basis": "Census address geocoder matched \"2570 SIENA HEIGHTS DR, HENDERSON, NV, 89052\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"2570 SIENA HEIGHTS DR, HENDERSON, NV, 89052\"."
+  },
+  "sonata-park": {
+    "matched": "1550 SEVEN HILLS DR, HENDERSON, NV, 89052",
+    "resolver": "census",
+    "lat": 35.973550543315,
+    "lon": -115.12245451202,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Henderson city",
+    "place_matches_city": true,
+    "postal_code": "89052",
+    "basis": "Census address geocoder matched \"1550 SEVEN HILLS DR, HENDERSON, NV, 89052\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"1550 SEVEN HILLS DR, HENDERSON, NV, 89052\"."
+  },
+  "sunridge-park": {
+    "matched": "1010 SANDY RIDGE AVE, HENDERSON, NV, 89052",
+    "resolver": "census",
+    "lat": 35.992635347669,
+    "lon": -115.092634780839,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Henderson city",
+    "place_matches_city": true,
+    "postal_code": "89052",
+    "basis": "Census address geocoder matched \"1010 SANDY RIDGE AVE, HENDERSON, NV, 89052\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"1010 SANDY RIDGE AVE, HENDERSON, NV, 89052\"."
+  },
+  "weston-hills-park": {
+    "matched": false,
+    "query": "950 Weston Ridge St., Henderson, NV",
+    "resolver": null
+  },
+  "downtown-recreation-center": {
+    "matched": false,
+    "query": "50 Van Wagenen St., Henderson, NV",
+    "resolver": null
+  },
+  "silver-springs-recreation-center": {
+    "matched": "1951 SILVER SPRINGS PKWY, HENDERSON, NV, 89074",
+    "resolver": "census",
+    "lat": 36.045738149835,
+    "lon": -115.074734369043,
+    "county": "Clark",
+    "state_fips": "32",
+    "county_fips": "003",
+    "place": "Henderson city",
+    "place_matches_city": true,
+    "postal_code": "89074",
+    "basis": "Census address geocoder matched \"1951 SILVER SPRINGS PKWY, HENDERSON, NV, 89074\".",
+    "county_citation": "Clark County, NV (FIPS 32003). Census address geocoder matched \"1951 SILVER SPRINGS PKWY, HENDERSON, NV, 89074\"."
+  }
+}

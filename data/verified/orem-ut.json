@@ -1,0 +1,397 @@
+{
+  "city": "Orem",
+  "state": "UT",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Orem publishes one page per park with a \"Location:\" line and an amenity list, and three of those lists state a pickleball count in the City's own words: \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\" at Hillcrest, \"6 Pickleball Courts\" at Sharon and \"Four Lighted Pickleball Courts\" at Bonneville. Each count is stated twice on its page and both statements are asserted, as are the title, the Location line and the parks guide entry, so a revision to any of them fails the build. Three venues is exactly the threshold: the run collects every gate failure and throws before writing a verified file if fewer than three survive, as Chandler's does. The addresses are Utah grid lines written without a city or postcode, and the Census address file resolves all three as written inside Orem city, Utah County. Hillcrest's \"Hours of Operations: Monday-Saturday from 10:00am-8:00pm\" sits under the heading \"Splash Pad Hours\" beside the concession season, so it is the splash pad's and hours stay null; the ordering of those lines is asserted. Lighting publishes at Bonneville only, from the word \"Lighted\". No page states a price or the word \"free\", so fee_type is null everywhere and the City's reservation rules - six of Hillcrest's courts reservable and six on a paddle rotation, Sharon's reserved only for City tournaments, nothing at Bonneville - publish as pricing notes with no price. All three publish as open play, Bonneville on the thinnest basis. Surface, indoor or outdoor, nets and hours are not stated and stay null. Cascade Park is refused for carrying a label and no number. The import holds two Sharon Park rows that claim one slug; the row at the same grid corner is matched and the other stays held pending a resolution.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://orem.gov/parks-guide/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/orem/parks-guide.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://orem.gov/hillcrest-park/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/orem/hillcrest-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://orem.gov/sharon-park/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/orem/sharon-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://orem.gov/bonneville/",
+      "publisher": "City of Orem Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/orem/bonneville.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/orem-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 3,
+    "courts": 22,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": 4,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Cascade Park",
+      "why": [
+        "The City's park page carries \"Pickleball/Tennis Courts\" in its amenity list and no number. A label is not a count, and a venue needs a stated count to exist here.",
+        "The page could not be re-fetched for this run - orem.gov/cascade-park/ answers 404 - so no snapshot of it is asserted; the refusal rests on the count it lacks, and the parks guide, which is asserted, lists the park by name."
+      ]
+    }
+  ],
+  "venues": {
+    "hillcrest-park": {
+      "minted": true,
+      "identity": {
+        "name": "Hillcrest Park",
+        "city": "Orem",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84097",
+        "latitude": 40.2714329868,
+        "longitude": -111.679492946523,
+        "imported_slug": null,
+        "canonical_slug": "hillcrest-park"
+      },
+      "match": {
+        "source_page": "https://orem.gov/hillcrest-park/",
+        "quote": "12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)",
+        "basis": "Minted here. The import holds no row for Hillcrest Park in Orem, UT."
+      },
+      "patch": {
+        "name": "Hillcrest Park",
+        "total_courts": 12,
+        "street_address": "650 E 1400 S",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price. Six of the twelve courts can be reserved for private use through the City's online reservation link; the other six are held for public use on the \"Paddle Rotation System\": waiting players rack a paddle per player, and the finishing game announces \"Open Court\". Tournaments and pickleball events are arranged through the City at (801) 229-7154.",
+        "court_availability": "Twelve pickleball courts at Hillcrest Park, the largest set in the city, from the City's own amenity list: \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\". The City splits them on purpose: \"6 Pickleball courts can be reserved for private use\" through its online reservation link, and \"6 of the other courts are for public use and will be held to the standard of using the 'Paddle Rotation System.'\" - waiting players rack one paddle per player on the next open rack, and when a game ends the players announce \"Open Court\" and hand the court to the paddles on the rack. Tournaments and pickleball events go through the City at (801) 229-7154. The page also prints \"Hours of Operations: Monday-Saturday from 10:00am-8:00pm\", but under the heading \"Splash Pad Hours\" and beside the concession season, so those are the splash pad's hours and not the courts'; no court hours are stated. Nothing is stated about lighting, surface, price or whether any court is covered.",
+        "county": "Utah",
+        "postal_code": "84097"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://orem.gov/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's park page is titled \"Hillcrest Park - City of Orem\" and headed \"Hillcrest Park\"; the parks guide lists it under the same name."
+        },
+        "total_courts": {
+          "source_url": "https://orem.gov/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the amenity list on the City's park page: \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\". Stated a second time on the same page: \"6 Pickleball courts can be reserved for private use\""
+        },
+        "street_address": {
+          "source_url": "https://orem.gov/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Location: 650 E 1400 S\" on the City's park page. A Utah grid address, written by the City without a city, state or postcode, which the Census address file resolves as written."
+        },
+        "venue_type": {
+          "source_url": "https://orem.gov/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Orem Parks in its parks guide and on its own park page."
+        },
+        "play_format": {
+          "source_url": "https://orem.gov/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"6 Pickleball courts can be reserved for private use\" and \"6 of the other courts are for public use and will be held to the standard of using the \"Paddle Rotation System.\" This means that waiting player place a paddle for each player on the paddle racks on the next open rack. When a game is finished players announce \"Open Court\" and the court vacated for the players with paddles on the rack.\" Six of the twelve are public, first come, on the City's own paddle-rack rotation."
+        },
+        "pricing_notes": {
+          "source_url": "https://orem.gov/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"6 Pickleball courts can be reserved for private use\", \"6 of the other courts are for public use and will be held to the standard of using the \"Paddle Rotation System.\" This means that waiting player place a paddle for each player on the paddle racks on the next open rack. When a game is finished players announce \"Open Court\" and the court vacated for the players with paddles on the rack.\", \"Courts can be reserved on this link\", and \"If you are interested in hosting a tournament or an event specifically geared toward pickleball. Please contact us at: (801) 229-7154\". No price appears on the page."
+        },
+        "court_availability": {
+          "source_url": "https://orem.gov/hillcrest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's park page: \"12 Pickleball Courts (6 Courts reservable, 6 Courts open for public use)\" and \"6 Pickleball courts can be reserved for private use\", with \"6 Pickleball courts can be reserved for private use\", \"6 of the other courts are for public use and will be held to the standard of using the \"Paddle Rotation System.\" This means that waiting player place a paddle for each player on the paddle racks on the next open rack. When a game is finished players announce \"Open Court\" and the court vacated for the players with paddles on the rack.\", and the splash-pad hours block."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT (FIPS 49049). Census address geocoder matched \"650 E 1400 S, OREM, UT, 84097\". The resolver also places it in the incorporated place \"Orem city\", which is what allows it to be published under Orem."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"650 E 1400 S, OREM, UT, 84097\"."
+        }
+      },
+      "record": {
+        "source_url": "https://orem.gov/hillcrest-park/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "sharon-park": {
+      "minted": false,
+      "identity": {
+        "name": "Sharon Park",
+        "city": "Orem",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84057",
+        "latitude": 40.308216398801,
+        "longitude": -111.688527368958,
+        "imported_slug": "sharon-park",
+        "canonical_slug": "sharon-park"
+      },
+      "match": {
+        "source_page": "https://orem.gov/sharon-park/",
+        "quote": "6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).",
+        "basis": "Matched to the imported sharon-park row in Orem, UT, which carried \"500 N 300 E\" and six courts; the City's line, 600 N 300 E, replaces the address, and the count agrees. A second imported row, sharon-park-orem-orem-ut, describes the same park at \"285 500 N\" and canonicalises to the same slug; the identity pass holds both until data/identity/resolutions.json names this row as the keeper. The City publishes one Sharon Park."
+      },
+      "patch": {
+        "name": "Sharon Park",
+        "total_courts": 6,
+        "street_address": "600 N 300 E",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price. Its courts here cannot be reserved for private use: \"we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use\".",
+        "court_availability": "Six pickleball courts at Sharon Park, stated twice on the City's park page - \"The park has a large playground and six pickleball courts.\" in the description and \"6 Pickleball Courts\" in the amenity list. The bracket on that line is the whole reservation policy: \"(we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use)\", so outside the City's own tournaments the courts are walk-on. The City describes the park as a sledding hill in winter and \"a nice shady retreat for families\" in summer, 5.2 acres with a playground, restrooms, a 0.42-mile walking path and a large pavilion. It states no price, no lighting, no surface and no hours for the courts. The imported dataset had this park at 500 N 300 E; the City's line, 600 N 300 E, replaces it.",
+        "county": "Utah",
+        "postal_code": "84057",
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's park page is titled \"Sharon Park - City of Orem\" and headed \"Sharon Park\"; the parks guide lists it under the same name."
+        },
+        "total_courts": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the amenity list on the City's park page: \"6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).\". Stated a second time on the same page: \"The park has a large playground and six pickleball courts.\""
+        },
+        "street_address": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Location: 600 N 300 E\" on the City's park page. A Utah grid address, written by the City without a city, state or postcode, which the Census address file resolves as written."
+        },
+        "venue_type": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Orem Parks in its parks guide and on its own park page."
+        },
+        "play_format": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's amenity line reads \"6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).\" A court that cannot be booked for private use is a court the public walks onto."
+        },
+        "pricing_notes": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The bracketed clause of the City's amenity line: \"(we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use)\". No price appears on the page."
+        },
+        "court_availability": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's park page: \"6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).\" and \"The park has a large playground and six pickleball courts.\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT (FIPS 49049). Census address geocoder matched \"600 N 300 E, OREM, UT, 84057\". The resolver also places it in the incorporated place \"Orem city\", which is what allows it to be published under Orem."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"600 N 300 E, OREM, UT, 84057\"."
+        },
+        "restroom": {
+          "source_url": "https://orem.gov/sharon-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Restrooms\" in the amenity list on the City's park page."
+        }
+      },
+      "record": {
+        "source_url": "https://orem.gov/sharon-park/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "bonneville-park": {
+      "minted": false,
+      "identity": {
+        "name": "Bonneville Park",
+        "city": "Orem",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84057",
+        "latitude": 40.323106158936,
+        "longitude": -111.715124581217,
+        "imported_slug": "bonneville-park-orem-orem-ut",
+        "canonical_slug": "bonneville-park"
+      },
+      "match": {
+        "source_page": "https://orem.gov/bonneville/",
+        "quote": "Four Lighted Pickleball Courts",
+        "basis": "Matched to the imported bonneville-park-orem-orem-ut row in Orem, UT, at the same address and the same four courts, published under the canonical slug bonneville-park; the identity pass dropped the trailing \"-orem-orem-ut\", which is already in the path."
+      },
+      "patch": {
+        "name": "Bonneville Park",
+        "total_courts": 4,
+        "street_address": "1450 N 800 W",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price and no reservation rule for Bonneville's courts; its park page lists \"Four Lighted Pickleball Courts\" among the amenities and invites visitors to \"enjoy a game of Pickleball on one of the four new Pickleball courts\".",
+        "court_availability": "Four lighted pickleball courts at Bonneville Park, \"Located on the Northeast corner of Orem\" in the City's words, and the one Orem venue where the City states lighting: \"Four Lighted Pickleball Courts\" in the amenity list, and in the description \"enjoy a game of Pickleball on one of the four new Pickleball courts\". The City describes 5.2 acres with a large pavilion seating a hundred, a small one seating sixteen, four barbecue braziers, a full-size basketball court, a tennis court, a shade-covered playground, a walking path and restrooms. It states no reservation rule, no price, no surface and no hours for the courts. The imported dataset carried the same address and the same four courts.",
+        "county": "Utah",
+        "postal_code": "84057",
+        "light": true,
+        "restroom": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's park page is titled \"Bonneville Park - City of Orem\" and headed \"Bonneville Park\"; the parks guide lists it under the same name."
+        },
+        "total_courts": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the amenity list on the City's park page: \"Four Lighted Pickleball Courts\". Stated a second time on the same page: \"or enjoy a game of Pickleball on one of the four new Pickleball courts.\""
+        },
+        "street_address": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Location: 1450 N 800 W\" on the City's park page. A Utah grid address, written by the City without a city, state or postcode, which the Census address file resolves as written."
+        },
+        "venue_type": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Orem Parks in its parks guide and on its own park page."
+        },
+        "play_format": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's description: \"Watch the kids play on the excitingly large playground, relax under the shade of the many mature trees, or enjoy a game of Pickleball on one of the four new Pickleball courts.\" No reservation rule is stated for this park, unlike Hillcrest and Sharon. This is the thinnest basis of the three Orem venues: an invitation to play and the absence of any booking rule."
+        },
+        "pricing_notes": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The amenity line \"Four Lighted Pickleball Courts\" and the description sentence ending \"enjoy a game of Pickleball on one of the four new Pickleball courts.\" Nothing on the page prices or books the courts."
+        },
+        "court_availability": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's park page: \"Four Lighted Pickleball Courts\" and \"or enjoy a game of Pickleball on one of the four new Pickleball courts.\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT (FIPS 49049). Census address geocoder matched \"1450 N 800 W, OREM, UT, 84057\". The resolver also places it in the incorporated place \"Orem city\", which is what allows it to be published under Orem."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1450 N 800 W, OREM, UT, 84057\"."
+        },
+        "light": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's amenity line is \"Four Lighted Pickleball Courts\" - its word is \"Lighted\"."
+        },
+        "restroom": {
+          "source_url": "https://orem.gov/bonneville/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Restrooms\" in the amenity list on the City's park page."
+        }
+      },
+      "record": {
+        "source_url": "https://orem.gov/bonneville/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

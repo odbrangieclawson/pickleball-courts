@@ -1,0 +1,665 @@
+{
+  "city": "Spokane",
+  "state": "WA",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Spokane's Tennis and Pickleball Courts section states a count for every park it lists, in three lists: tennis courts, tennis courts striped for pickleball, and dedicated pickleball courts. The page could not be fetched by any script - my.spokanecity.org answers a bare request, a full browser header set and the web fetcher with a 302 into a \"Checking Your Browser\" interstitial - so it was read in a browser and saved as text with a header stating the method, as Cary's and Wichita's pages were; this run asserts the header, the section markers and every line of all three lists against that file. The striped and dedicated lists publish; the tennis list is asserted for context only, and Corbin Park's one tennis court is not counted. Comstock (twelve on six tennis courts) and Mission (sixteen on eight) publish the City's pickleball number as stated. Sky Prairie Park is refused because \"8501 N. Nettleton Ct.\" resolves at no house number in either resolver. Indoor and outdoor stay null: the City never writes \"outdoor\" on this page. Surface, lighting, hours and nets stay null for the same reason. \"Tennis & Pickleball courts are first-come-first-served\" publishes as open play; the reservation permit publishes as a pricing note with no price, because none is stated, and no venue is published as free.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+      "publisher": "City of Spokane Parks & Recreation",
+      "tier": 1,
+      "format": "text",
+      "snapshot": "data/sources/spokane/fields-and-sports.txt",
+      "method": "Read in a browser on 2026-09-07 because my.spokanecity.org answers scripted fetches with a 302 into a \"Checking Your Browser\" interstitial; the collapsed \"Tennis and Pickleball Courts\" section was captured from the rendered DOM. See data/sources/spokane/README.md."
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/spokane-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 6,
+    "courts": 36,
+    "outdoor": null,
+    "indoor": null,
+    "striped_on_tennis": 32,
+    "dedicated": 4,
+    "lit_courts": 0,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Sky Prairie Park",
+      "why": [
+        "The City states two pickleball courts and an address, \"Sky Prairie Park, 8501 N. Nettleton Ct., 2 Courts\", and the address does not resolve. The Census address geocoder returns no match for 8501 N Nettleton Ct, Spokane, WA, and OpenStreetMap has no house number for it. Import Gate I1 requires an address that resolves as written at house-number level; this project has never published one that does not, and has never taken an address from outside the operator.",
+        "The count is real and the refusal is on the address alone. This run throws the day either resolver matches it, so the venue cannot stay refused once it is publishable."
+      ]
+    }
+  ],
+  "venues": {
+    "am-cannon-park": {
+      "minted": true,
+      "identity": {
+        "name": "A.M. Cannon Park",
+        "city": "Spokane",
+        "state": "WA",
+        "county": "Spokane",
+        "postal_code": "99201",
+        "latitude": 47.671018151316,
+        "longitude": -117.44000002698,
+        "imported_slug": null,
+        "canonical_slug": "am-cannon-park"
+      },
+      "match": {
+        "source_page": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "quote": "A.M. Cannon Park, 1511 N. Elm St., 2 Courts",
+        "basis": "Minted from the City's page. The imported dataset holds no row for A.M. Cannon Park in Spokane, WA."
+      },
+      "patch": {
+        "name": "A.M. Cannon Park",
+        "total_courts": 2,
+        "street_address": "1511 N Elm St",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "Courts are first-come-first-served. A court can be officially reserved with a reservation permit by online form; the City publishes no price for the permit and does not say the courts are free.",
+        "court_availability": "Two pickleball courts striped on the two tennis courts at A.M. Cannon Park, in the West Central neighbourhood north of the river. The City's \"Tennis Courts Striped for Pickleball\" list reads \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\", and its \"Tennis Courts\" list reads the same park with \"2 Courts\" - so this is one pickleball court to a tennis court, and the courts are shared with tennis. City-wide, \"Tennis & Pickleball courts are first-come-first-served\", with a reservation permit available by online form. The City states no hours, no lighting, no surface and no price for this park, and does not write the word \"outdoor\" anywhere on the page.",
+        "county": "Spokane",
+        "postal_code": "99201"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"A.M. Cannon Park\" on the \"Tennis Courts Striped for Pickleball\" list of the City's Tennis and Pickleball Courts section."
+        },
+        "total_courts": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Tennis Courts Striped for Pickleball\" list: \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\". The same park's tennis line reads \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\"; the pickleball count is the one published."
+        },
+        "street_address": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\" on the \"Tennis Courts Striped for Pickleball\" list; the City writes the street with a full stop after the type."
+        },
+        "venue_type": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Spokane Parks & Recreation among the parks of the city parks system."
+        },
+        "play_format": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" - the rule is stated for every tennis and pickleball court in the section, this park included."
+        },
+        "pricing_notes": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" No fee or price appears anywhere in the section."
+        },
+        "court_availability": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the \"Tennis Courts Striped for Pickleball\" list: \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\". Tennis Courts list: \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"1511 N ELM ST, SPOKANE, WA, 99201\". The resolver also places it in the incorporated place \"Spokane city\", which is what allows it to be published under Spokane."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1511 N ELM ST, SPOKANE, WA, 99201\"."
+        }
+      },
+      "record": {
+        "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "comstock-park": {
+      "minted": false,
+      "identity": {
+        "name": "Comstock Park",
+        "city": "Spokane",
+        "state": "WA",
+        "county": "Spokane",
+        "postal_code": "99203",
+        "latitude": 47.628148099888,
+        "longitude": -117.42152636028,
+        "imported_slug": "comstock-park",
+        "canonical_slug": "comstock-park"
+      },
+      "match": {
+        "source_page": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "quote": "Comstock Park, 601 W. 29th Ave., 12 Courts",
+        "basis": "Matched to the imported comstock-park row in Spokane, WA (which carried \"3012 S Howard St\" and four courts). Howard Street and 29th Avenue bound the same park; the City's address and count publish."
+      },
+      "patch": {
+        "name": "Comstock Park",
+        "total_courts": 12,
+        "street_address": "601 W 29th Ave",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "Courts are first-come-first-served. A court can be officially reserved with a reservation permit by online form; the City publishes no price for the permit and does not say the courts are free.",
+        "court_availability": "Twelve pickleball courts striped on the six tennis courts at Comstock Park on the South Hill, the second-largest set in Spokane. The City's \"Tennis Courts Striped for Pickleball\" list reads \"Comstock Park, 601 W. 29th Ave., 12 Courts\", and its \"Tennis Courts\" list reads \"Comstock Park, 601 W. 29th Ave., 6 Courts\" - two pickleball courts to a tennis court, and what you find depends on whether tennis is being played. Twelve is the City's number and publishes as stated. City-wide, \"Tennis & Pickleball courts are first-come-first-served\", with a reservation permit available by online form. No hours, lighting, surface or price are stated for this park. The imported dataset held Comstock at \"3012 S Howard St\" with four courts; the City's address and count replace both.",
+        "county": "Spokane",
+        "postal_code": "99203"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Comstock Park\" on the \"Tennis Courts Striped for Pickleball\" list of the City's Tennis and Pickleball Courts section."
+        },
+        "total_courts": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Tennis Courts Striped for Pickleball\" list: \"Comstock Park, 601 W. 29th Ave., 12 Courts\". The same park's tennis line reads \"Comstock Park, 601 W. 29th Ave., 6 Courts\"; the pickleball count is the one published."
+        },
+        "street_address": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Comstock Park, 601 W. 29th Ave., 12 Courts\" on the \"Tennis Courts Striped for Pickleball\" list; the City writes the street with a full stop after the type."
+        },
+        "venue_type": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Spokane Parks & Recreation among the parks of the city parks system."
+        },
+        "play_format": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" - the rule is stated for every tennis and pickleball court in the section, this park included."
+        },
+        "pricing_notes": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" No fee or price appears anywhere in the section."
+        },
+        "court_availability": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the \"Tennis Courts Striped for Pickleball\" list: \"Comstock Park, 601 W. 29th Ave., 12 Courts\". Tennis Courts list: \"Comstock Park, 601 W. 29th Ave., 6 Courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"601 W 29TH AVE, SPOKANE, WA, 99203\". The resolver also places it in the incorporated place \"Spokane city\", which is what allows it to be published under Spokane."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"601 W 29TH AVE, SPOKANE, WA, 99203\"."
+        }
+      },
+      "record": {
+        "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "mission-park": {
+      "minted": false,
+      "identity": {
+        "name": "Mission Park",
+        "city": "Spokane",
+        "state": "WA",
+        "county": "Spokane",
+        "postal_code": "99202",
+        "latitude": 47.671617009497,
+        "longitude": -117.391805990346,
+        "imported_slug": "mission-park",
+        "canonical_slug": "mission-park"
+      },
+      "match": {
+        "source_page": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "quote": "Mission Park, 1208 E. Mission Ave., 16 Courts",
+        "basis": "Matched to the imported mission-park row in Spokane, WA, at the same street address."
+      },
+      "patch": {
+        "name": "Mission Park",
+        "total_courts": 16,
+        "street_address": "1208 E Mission Ave",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "Courts are first-come-first-served. A court can be officially reserved with a reservation permit by online form; the City publishes no price for the permit and does not say the courts are free.",
+        "court_availability": "Sixteen pickleball courts striped on the eight tennis courts at Mission Park in the Logan neighbourhood, the largest set in Spokane. The City's \"Tennis Courts Striped for Pickleball\" list reads \"Mission Park, 1208 E. Mission Ave., 16 Courts\", and its \"Tennis Courts\" list reads \"Mission Park, 1208 E. Mission Ave., 8 Courts\" - two pickleball courts to a tennis court, shared with tennis. Sixteen is the City's number and publishes as stated. City-wide, \"Tennis & Pickleball courts are first-come-first-served\", with a reservation permit available by online form. No hours, lighting, surface or price are stated for this park. The imported dataset held the same address and the same count.",
+        "county": "Spokane",
+        "postal_code": "99202"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Mission Park\" on the \"Tennis Courts Striped for Pickleball\" list of the City's Tennis and Pickleball Courts section."
+        },
+        "total_courts": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Tennis Courts Striped for Pickleball\" list: \"Mission Park, 1208 E. Mission Ave., 16 Courts\". The same park's tennis line reads \"Mission Park, 1208 E. Mission Ave., 8 Courts\"; the pickleball count is the one published."
+        },
+        "street_address": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Mission Park, 1208 E. Mission Ave., 16 Courts\" on the \"Tennis Courts Striped for Pickleball\" list; the City writes the street with a full stop after the type."
+        },
+        "venue_type": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Spokane Parks & Recreation among the parks of the city parks system."
+        },
+        "play_format": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" - the rule is stated for every tennis and pickleball court in the section, this park included."
+        },
+        "pricing_notes": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" No fee or price appears anywhere in the section."
+        },
+        "court_availability": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the \"Tennis Courts Striped for Pickleball\" list: \"Mission Park, 1208 E. Mission Ave., 16 Courts\". Tennis Courts list: \"Mission Park, 1208 E. Mission Ave., 8 Courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"1208 E MISSION AVE, SPOKANE, WA, 99202\". The resolver also places it in the incorporated place \"Spokane city\", which is what allows it to be published under Spokane."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1208 E MISSION AVE, SPOKANE, WA, 99202\"."
+        }
+      },
+      "record": {
+        "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "peaceful-valley-park": {
+      "minted": false,
+      "identity": {
+        "name": "Peaceful Valley Park",
+        "city": "Spokane",
+        "state": "WA",
+        "county": "Spokane",
+        "postal_code": "99201",
+        "latitude": 47.65974223101,
+        "longitude": -117.435136386626,
+        "imported_slug": "peaceful-valley-park",
+        "canonical_slug": "peaceful-valley-park"
+      },
+      "match": {
+        "source_page": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "quote": "Peaceful Valley Park, 1602 W. Water Ave., 2 Courts",
+        "basis": "Matched to the imported peaceful-valley-park row in Spokane, WA (which carried the street range \"100-198 N Maple St\"). The City's house number publishes."
+      },
+      "patch": {
+        "name": "Peaceful Valley Park",
+        "total_courts": 2,
+        "street_address": "1602 W Water Ave",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "Courts are first-come-first-served. A court can be officially reserved with a reservation permit by online form; the City publishes no price for the permit and does not say the courts are free.",
+        "court_availability": "Two pickleball courts striped on the one tennis court at Peaceful Valley Park, below the bluff west of downtown. The City's \"Tennis Courts Striped for Pickleball\" list reads \"Peaceful Valley Park, 1602 W. Water Ave., 2 Courts\", and its \"Tennis Courts\" list reads \"Peaceful Valley Park, 1602 W. Water Ave., 1 Court\" - two pickleball courts on one tennis court, shared with tennis. City-wide, \"Tennis & Pickleball courts are first-come-first-served\", with a reservation permit available by online form. No hours, lighting, surface or price are stated for this park. The imported dataset held this park at \"100-198 N Maple St\", a street range rather than an address; the City's house number replaces it.",
+        "county": "Spokane",
+        "postal_code": "99201"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Peaceful Valley Park\" on the \"Tennis Courts Striped for Pickleball\" list of the City's Tennis and Pickleball Courts section."
+        },
+        "total_courts": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Tennis Courts Striped for Pickleball\" list: \"Peaceful Valley Park, 1602 W. Water Ave., 2 Courts\". The same park's tennis line reads \"Peaceful Valley Park, 1602 W. Water Ave., 1 Court\"; the pickleball count is the one published."
+        },
+        "street_address": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Peaceful Valley Park, 1602 W. Water Ave., 2 Courts\" on the \"Tennis Courts Striped for Pickleball\" list; the City writes the street with a full stop after the type."
+        },
+        "venue_type": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Spokane Parks & Recreation among the parks of the city parks system."
+        },
+        "play_format": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" - the rule is stated for every tennis and pickleball court in the section, this park included."
+        },
+        "pricing_notes": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" No fee or price appears anywhere in the section."
+        },
+        "court_availability": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the \"Tennis Courts Striped for Pickleball\" list: \"Peaceful Valley Park, 1602 W. Water Ave., 2 Courts\". Tennis Courts list: \"Peaceful Valley Park, 1602 W. Water Ave., 1 Court\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"1602 W WATER AVE, SPOKANE, WA, 99201\". The resolver also places it in the incorporated place \"Spokane city\", which is what allows it to be published under Spokane."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1602 W WATER AVE, SPOKANE, WA, 99201\"."
+        }
+      },
+      "record": {
+        "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "corbin-park": {
+      "minted": false,
+      "identity": {
+        "name": "Corbin Park",
+        "city": "Spokane",
+        "state": "WA",
+        "county": "Spokane",
+        "postal_code": "99205",
+        "latitude": 47.684618569157,
+        "longitude": -117.42218520766,
+        "imported_slug": "corbin-park-spokane-wa",
+        "canonical_slug": "corbin-park"
+      },
+      "match": {
+        "source_page": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "quote": "Corbin Park, 2914 N. West Oval St, 2 Courts",
+        "basis": "Matched to the imported corbin-park-spokane-wa row in Spokane, WA (which carried \"501 West Park Place\", another side of the same oval), published under the canonical slug corbin-park; the identity pass dropped the trailing \"-spokane-wa\", which is already in the path."
+      },
+      "patch": {
+        "name": "Corbin Park",
+        "total_courts": 2,
+        "street_address": "2914 N West Oval St",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "Courts are first-come-first-served. A court can be officially reserved with a reservation permit by online form; the City publishes no price for the permit and does not say the courts are free.",
+        "court_availability": "Two dedicated pickleball courts at Corbin Park, the oval park in the Emerson-Garfield neighbourhood north of downtown. The City's \"Dedicated Pickleball Courts\" list reads \"Corbin Park, 2914 N. West Oval St, 2 Courts\" - courts built for pickleball, not lines on a tennis court. The park also has one tennis court on the City's \"Tennis Courts\" list, which is a different sport and is not counted here. City-wide, \"Tennis & Pickleball courts are first-come-first-served\", with a reservation permit available by online form. No hours, lighting, surface or price are stated for this park. The imported dataset held Corbin at \"501 West Park Place\", another side of the same oval; the City's address replaces it.",
+        "county": "Spokane",
+        "postal_code": "99205"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Corbin Park\" on the \"Dedicated Pickleball Courts\" list of the City's Tennis and Pickleball Courts section."
+        },
+        "total_courts": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Dedicated Pickleball Courts\" list: \"Corbin Park, 2914 N. West Oval St, 2 Courts\". The park's \"Corbin Park, 2914 N. West Oval St, 1 Court\" on the Tennis Courts list is a tennis court, not counted."
+        },
+        "street_address": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Corbin Park, 2914 N. West Oval St, 2 Courts\" on the \"Dedicated Pickleball Courts\" list; the City writes the street with a full stop after the type."
+        },
+        "venue_type": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Spokane Parks & Recreation among the parks of the city parks system."
+        },
+        "play_format": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" - the rule is stated for every tennis and pickleball court in the section, this park included."
+        },
+        "pricing_notes": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" No fee or price appears anywhere in the section."
+        },
+        "court_availability": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the \"Dedicated Pickleball Courts\" list: \"Corbin Park, 2914 N. West Oval St, 2 Courts\". Tennis Courts list: \"Corbin Park, 2914 N. West Oval St, 1 Court\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"2914 N WEST OVAL ST, SPOKANE, WA, 99205\". The resolver also places it in the incorporated place \"Spokane city\", which is what allows it to be published under Spokane."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2914 N WEST OVAL ST, SPOKANE, WA, 99205\"."
+        }
+      },
+      "record": {
+        "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "underhill-park": {
+      "minted": false,
+      "identity": {
+        "name": "Underhill Park",
+        "city": "Spokane",
+        "state": "WA",
+        "county": "Spokane",
+        "postal_code": "99202",
+        "latitude": 47.649977550181,
+        "longitude": -117.368138938675,
+        "imported_slug": "underhill-park-spokane-wa",
+        "canonical_slug": "underhill-park"
+      },
+      "match": {
+        "source_page": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "quote": "Underhill Park, 2910 E. Hartson Ave., 2 Courts",
+        "basis": "Matched to the imported underhill-park-spokane-wa row in Spokane, WA at the same street address, published under the canonical slug underhill-park."
+      },
+      "patch": {
+        "name": "Underhill Park",
+        "total_courts": 2,
+        "street_address": "2910 E Hartson Ave",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "Courts are first-come-first-served. A court can be officially reserved with a reservation permit by online form; the City publishes no price for the permit and does not say the courts are free.",
+        "court_availability": "Two dedicated pickleball courts at Underhill Park in the East Central neighbourhood. The City's \"Dedicated Pickleball Courts\" list reads \"Underhill Park, 2910 E. Hartson Ave., 2 Courts\" - courts built for pickleball, and the only pickleball venue in Spokane with no tennis court beside it, since the park does not appear on the City's \"Tennis Courts\" list. City-wide, \"Tennis & Pickleball courts are first-come-first-served\", with a reservation permit available by online form. No hours, lighting, surface or price are stated for this park. The imported dataset held the same address and the same count.",
+        "county": "Spokane",
+        "postal_code": "99202"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Underhill Park\" on the \"Dedicated Pickleball Courts\" list of the City's Tennis and Pickleball Courts section."
+        },
+        "total_courts": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Dedicated Pickleball Courts\" list: \"Underhill Park, 2910 E. Hartson Ave., 2 Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Underhill Park, 2910 E. Hartson Ave., 2 Courts\" on the \"Dedicated Pickleball Courts\" list; the City writes the street with a full stop after the type."
+        },
+        "venue_type": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by City of Spokane Parks & Recreation among the parks of the city parks system."
+        },
+        "play_format": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" - the rule is stated for every tennis and pickleball court in the section, this park included."
+        },
+        "pricing_notes": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" No fee or price appears anywhere in the section."
+        },
+        "court_availability": {
+          "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the \"Dedicated Pickleball Courts\" list: \"Underhill Park, 2910 E. Hartson Ave., 2 Courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Spokane County, WA (FIPS 53063). Census address geocoder matched \"2910 E HARTSON AVE, SPOKANE, WA, 99202\". The resolver also places it in the incorporated place \"Spokane city\", which is what allows it to be published under Spokane."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2910 E HARTSON AVE, SPOKANE, WA, 99202\"."
+        }
+      },
+      "record": {
+        "source_url": "https://my.spokanecity.org/recreation/facilities/fields-and-sports/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

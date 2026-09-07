@@ -1,0 +1,49 @@
+{
+  "discovery-park": {
+    "matched": "2121 E LAKE HAZEL RD, MERIDIAN, ID, 83642",
+    "resolver": "census",
+    "lat": 43.546429827907,
+    "lon": -116.367894653494,
+    "county": "Ada",
+    "state_fips": "16",
+    "county_fips": "001",
+    "place": "Meridian city",
+    "place_matches_city": true,
+    "postal_code": "83642",
+    "basis": "Census address geocoder matched \"2121 E LAKE HAZEL RD, MERIDIAN, ID, 83642\".",
+    "county_citation": "Ada County, ID (FIPS 16001). Census address geocoder matched \"2121 E LAKE HAZEL RD, MERIDIAN, ID, 83642\"."
+  },
+  "reta-huskey-park": {
+    "matched": false,
+    "query": "2887 Tubac Drive, Meridian, ID",
+    "resolver": null
+  },
+  "meridian-homecourt": {
+    "matched": "936 TAYLOR AVE, MERIDIAN, ID, 83642",
+    "resolver": "census",
+    "lat": 43.60700934209,
+    "lon": -116.405130592756,
+    "county": "Ada",
+    "state_fips": "16",
+    "county_fips": "001",
+    "place": "Meridian city",
+    "place_matches_city": true,
+    "postal_code": "83642",
+    "basis": "Census address geocoder matched \"936 TAYLOR AVE, MERIDIAN, ID, 83642\".",
+    "county_citation": "Ada County, ID (FIPS 16001). Census address geocoder matched \"936 TAYLOR AVE, MERIDIAN, ID, 83642\"."
+  },
+  "settlers-park": {
+    "matched": "3245 N MERIDIAN RD, MERIDIAN, ID, 83646",
+    "resolver": "census",
+    "lat": 43.634202647488,
+    "lon": -116.393684924384,
+    "county": "Ada",
+    "state_fips": "16",
+    "county_fips": "001",
+    "place": "Meridian city",
+    "place_matches_city": true,
+    "postal_code": "83646",
+    "basis": "Census address geocoder matched \"3245 N MERIDIAN RD, MERIDIAN, ID, 83646\".",
+    "county_citation": "Ada County, ID (FIPS 16001). Census address geocoder matched \"3245 N MERIDIAN RD, MERIDIAN, ID, 83646\"."
+  }
+}

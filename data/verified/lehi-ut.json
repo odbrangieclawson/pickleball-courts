@@ -1,0 +1,724 @@
+{
+  "city": "Lehi",
+  "state": "UT",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Lehi City Parks lists every park in the city on one page, each with an \"Address:\" line and an amenity sentence in which the City counts its courts - \"2 pickleball courts\", \"6 pickleball courts\", \"1 pickleball court\". Each published entry is asserted as a block (name, \"Address:\", address line, amenity sentence) under the heading the City puts it under, and four of the six venues also have a park page of their own that repeats the sentence and is asserted too. Six venues publish, sixteen courts. The City states a number at eleven parks; five of them - Shadow Ridge, Salix, South Creek, Spring Creek and Northridge - write addresses that neither the Census address file nor OpenStreetMap resolves as written, and they are refused on their addresses under the Foster Park rule; Northridge's \"a pickleball court\" is also a label rather than a number. Four of the six published addresses resolve through OpenStreetMap at house-number level because the Census file has no record of them or rewrites their direction. Play is open at every venue: the reservable-pavilion entries say \"Reservations are for pavilion use only. All other amenities are open to the public.\" and the others sit under \"NON-RESERVABLE PARKS\". Nothing is priced and nothing is called free, so fee stays null with the City's sentence quoted; indoor or outdoor, lighting, surface and hours are not stated for any court and are null. One imported row is matched (Watercress Park, whose import address the City's replaces); the other five venues are minted.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/lehi/parks.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/allred-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/lehi/allred-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/holbrook-farms-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/lehi/holbrook-farms-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/olympic-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/lehi/olympic-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.lehi-ut.gov/recreation-community/parks/watercress-park/",
+      "publisher": "Lehi City Parks",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/lehi/watercress-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/lehi-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 6,
+    "courts": 16,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": null,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Shadow Ridge Park",
+      "why": [
+        "Four courts, stated. The address the City writes, \"3050 W. Traverse Mountain Blvd\", is unresolved by the Census address file and by OpenStreetMap. The count-bearing address must resolve as written (the Foster Park rule), and this one does not."
+      ]
+    },
+    {
+      "name": "Salix Park",
+      "why": [
+        "Four courts, stated. \"3109 W. Allred Dr.\" is unresolved by both resolvers."
+      ]
+    },
+    {
+      "name": "South Creek Park",
+      "why": [
+        "One court, stated as a digit. \"1987 West 1450 South\" is unresolved by both resolvers.",
+        "The sentence also says \"lighting\", which is a park amenity between a court and \"open space\" and does not say what is lit; had the address resolved, that word would not have published as a lit court."
+      ]
+    },
+    {
+      "name": "Spring Creek Park",
+      "why": [
+        "Three courts, stated. \"2108 S Bullrush Pkwy\" is unresolved by both resolvers. The imported dataset carries this park as spring-creek-park-lehi-lehi-ut at \"2100 S Bullrush Pkwy\" with three courts; that row stays pending, because the City's own address is the one that has to resolve, and the import's house number is not the City's."
+      ]
+    },
+    {
+      "name": "Northridge Park",
+      "why": [
+        "\"a pickleball court\" is an article, not a number. Chandler's ruling: \"This single pickleball court\" is a count of one; \"the pickleball court\" is a label. \"a pickleball court\" is a label.",
+        "\"2333 W. Northridge Dr\" is unresolved by both resolvers in any case."
+      ]
+    },
+    {
+      "name": "Gateway Park",
+      "why": [
+        "\"pickleball\" with no number. A flag is not a count."
+      ]
+    },
+    {
+      "name": "Eagle Summit Park",
+      "why": [
+        "The City's sentence for this park names a tennis court and no pickleball at all. It is listed here because a scout named it; the assertion below fails the build if the City ever adds pickleball to the sentence, so the park is re-read rather than missed."
+      ]
+    }
+  ],
+  "venues": {
+    "allred-park": {
+      "minted": true,
+      "identity": {
+        "name": "Allred Park",
+        "city": "Lehi",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84043",
+        "latitude": 40.3928343,
+        "longitude": -111.8615948,
+        "imported_slug": null,
+        "canonical_slug": "allred-park"
+      },
+      "match": {
+        "source_page": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "quote": "Playground, restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.",
+        "basis": "Minted here. The imported dataset holds no row for this park in Lehi, UT."
+      },
+      "patch": {
+        "name": "Allred Park",
+        "total_courts": 2,
+        "street_address": "485 N. Allred Park Rd.",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price for the courts. Its parks page says of this park: \"Reservations are for pavilion use only. All other amenities are open to the public.\" - open to the public is not a price, and nothing on the page says free.",
+        "court_availability": "Two pickleball courts at Allred Park in north-east Lehi, counted in the City's own amenity sentence on its parks page: \"Playground, restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\" The park's pavilion can be reserved; the courts cannot, and the City says so in one sentence that applies to every reservable-pavilion park: \"Reservations are for pavilion use only. All other amenities are open to the public.\" That is open play. The City does not price the courts, does not say whether they are lit, does not name the surface and publishes no hours for them, so each of those is recorded here as unknown.",
+        "county": "Utah",
+        "postal_code": "84043"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Headed \"Allred Park\" on the City's parks page and on the park's own page at https://www.lehi-ut.gov/recreation-community/parks/allred-park/."
+        },
+        "total_courts": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Counted in the City's amenity sentence for the park: \"Playground, restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\". The park's own page repeats it: \"Playground,restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Address: 485 N. Allred Park Rd., Lehi, UT 84043\" on the City's parks page. The park's own page writes it \"485 N Allred Park Rd, UT 84043\" - the same number, street and postcode with punctuation and the city name dropped; the list page's spelling publishes. OpenStreetMap (Nominatim) matched \"485, North Allred Park Road, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"485 ALLRED PARK RD, LEHI, UT, 84043\", changing the direction from N to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "venue_type": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Lehi City Parks among the city's parks."
+        },
+        "play_format": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"RESERVABLE PAVILIONS\" and ends \"Reservations are for pavilion use only. All other amenities are open to the public.\". A court that cannot be reserved and is open to the public is open play."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"RESERVABLE PAVILIONS\" and ends \"Reservations are for pavilion use only. All other amenities are open to the public.\". No fee or price appears anywhere on the parks page."
+        },
+        "court_availability": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's parks page: \"Playground, restrooms, 2 pickleball courts, 2 half basketball courts, soccer fields, and a fire pit.\", under \"RESERVABLE PAVILIONS\". \"Reservations are for pavilion use only. All other amenities are open to the public.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT. OpenStreetMap (Nominatim) matched \"485, North Allred Park Road, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"485 ALLRED PARK RD, LEHI, UT, 84043\", changing the direction from N to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in \"Lehi\", which is what allows it to be published under Lehi."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"485, North Allred Park Road, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"485 ALLRED PARK RD, LEHI, UT, 84043\", changing the direction from N to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        }
+      },
+      "record": {
+        "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "holbrook-farms-park": {
+      "minted": true,
+      "identity": {
+        "name": "Holbrook Farms Park",
+        "city": "Lehi",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84043",
+        "latitude": 40.4184793,
+        "longitude": -111.9162692,
+        "imported_slug": null,
+        "canonical_slug": "holbrook-farms-park"
+      },
+      "match": {
+        "source_page": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "quote": "Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables)",
+        "basis": "Minted here. The imported dataset holds no row for this park in Lehi, UT."
+      },
+      "patch": {
+        "name": "Holbrook Farms Park",
+        "total_courts": 6,
+        "street_address": "2504 N. Drexler Drive",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price for the courts. Its parks page says of this park: \"Reservations are for pavilion use only. All other amenities are open to the public.\" - open to the public is not a price, and nothing on the page says free.",
+        "court_availability": "Six pickleball courts at Holbrook Farms Park in north-west Lehi, the largest set the City counts at any of its parks, in the City's own words: \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables)\". The park's large pavilion, which the City calls a \"Food Truck Alley\", is reservable; the courts are not - \"Reservations are for pavilion use only. All other amenities are open to the public.\" - so play is open. Whether the courts are lit, what they are surfaced with, what they cost and when they open are not stated anywhere on the City's pages, and each is recorded as unknown.",
+        "county": "Utah",
+        "postal_code": "84043"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Headed \"Holbrook Farms Park\" on the City's parks page and on the park's own page at https://www.lehi-ut.gov/recreation-community/parks/holbrook-farms-park/."
+        },
+        "total_courts": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Counted in the City's amenity sentence for the park: \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables)\". The park's own page repeats it: \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables).\"."
+        },
+        "street_address": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Address: 2504 N. Drexler Drive, Lehi UT 84043\" on the City's parks page. OpenStreetMap (Nominatim) matched \"2504, Drexler Drive, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        },
+        "venue_type": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Lehi City Parks among the city's parks."
+        },
+        "play_format": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"RESERVABLE PAVILIONS\" and ends \"Reservations are for pavilion use only. All other amenities are open to the public.\". A court that cannot be reserved and is open to the public is open play."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"RESERVABLE PAVILIONS\" and ends \"Reservations are for pavilion use only. All other amenities are open to the public.\". No fee or price appears anywhere on the parks page."
+        },
+        "court_availability": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's parks page: \"Restrooms, playground with swings, 6 pickleball courts, water fountain, walking path(w/benches), small pavilion (non-reservable w/2 tables)\", under \"RESERVABLE PAVILIONS\". \"Reservations are for pavilion use only. All other amenities are open to the public.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT. OpenStreetMap (Nominatim) matched \"2504, Drexler Drive, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in \"Lehi\", which is what allows it to be published under Lehi."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"2504, Drexler Drive, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        }
+      },
+      "record": {
+        "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "olympic-park": {
+      "minted": true,
+      "identity": {
+        "name": "Olympic Park",
+        "city": "Lehi",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84043",
+        "latitude": 40.408267229676,
+        "longitude": -111.891931678896,
+        "imported_slug": null,
+        "canonical_slug": "olympic-park"
+      },
+      "match": {
+        "source_page": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "quote": "Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.",
+        "basis": "Minted here. The imported dataset holds no row for this park in Lehi, UT."
+      },
+      "patch": {
+        "name": "Olympic Park",
+        "total_courts": 3,
+        "street_address": "2700 W. Parkside Dr.",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price for the courts. Its parks page says of this park: \"Reservations are for pavilion use only. All other amenities are open to the public.\" - open to the public is not a price, and nothing on the page says free.",
+        "court_availability": "Three pickleball courts at Olympic Park on the west side of Lehi, beside the Jordan River Trail, counted by the City: \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\" The pavilion and the soccer fields can be reserved; the courts cannot - \"Reservations are for pavilion use only. All other amenities are open to the public.\" - which is open play. Three is an odd number for a court block and the City does not say how they are laid out. It states no price, no lighting, no surface and no hours for the courts, and this page records each as unknown.",
+        "county": "Utah",
+        "postal_code": "84043"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Headed \"Olympic Park\" on the City's parks page and on the park's own page at https://www.lehi-ut.gov/recreation-community/parks/olympic-park/."
+        },
+        "total_courts": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Counted in the City's amenity sentence for the park: \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\". The park's own page repeats it: \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Address: 2700 W. Parkside Dr., Lehi, UT 84043\" on the City's parks page. The park's own page writes it \"2700 W. Parkside Dr, Lehi, UT 84043\" - the same number, street and postcode with punctuation and the city name dropped; the list page's spelling publishes. Census address geocoder matched \"2700 W PARKSIDE DR, LEHI, UT, 84043\". A Utah grid address, which the Census address file resolves as written."
+        },
+        "venue_type": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Lehi City Parks among the city's parks."
+        },
+        "play_format": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"RESERVABLE PAVILIONS\" and ends \"Reservations are for pavilion use only. All other amenities are open to the public.\". A court that cannot be reserved and is open to the public is open play."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"RESERVABLE PAVILIONS\" and ends \"Reservations are for pavilion use only. All other amenities are open to the public.\". No fee or price appears anywhere on the parks page."
+        },
+        "court_availability": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's parks page: \"Restroom, playground with swings, 3 pickleball courts, fire pit, 3 soccer fields, designated parking, walking path that connects to the Jordan River Trail.\", under \"RESERVABLE PAVILIONS\". \"Reservations are for pavilion use only. All other amenities are open to the public.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT (FIPS 49049). Census address geocoder matched \"2700 W PARKSIDE DR, LEHI, UT, 84043\". The resolver also places it in \"Lehi city\", which is what allows it to be published under Lehi."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2700 W PARKSIDE DR, LEHI, UT, 84043\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "centennial-park": {
+      "minted": true,
+      "identity": {
+        "name": "Centennial Park",
+        "city": "Lehi",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84043",
+        "latitude": 40.415672705541,
+        "longitude": -111.859088392004,
+        "imported_slug": null,
+        "canonical_slug": "centennial-park"
+      },
+      "match": {
+        "source_page": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "quote": "1 Large pavilion with 11 tables, 1 trash can, electrical outlets (120V, 15amp max), pavilion lighting, 2 large BBQ grills, 1 pickleball court, walking path with benches, 2 half basketball courts, playground, and designated parking.",
+        "basis": "Minted here. The imported dataset holds no row for this park in Lehi, UT."
+      },
+      "patch": {
+        "name": "Centennial Park",
+        "total_courts": 1,
+        "street_address": "2250 North 600 West",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price for the courts. It lists this park under \"NON-RESERVABLE PARKS\": the courts cannot be booked, and nothing on the page prices them or says they are free.",
+        "court_availability": "One pickleball court at Centennial Park in north Lehi, a digit in the City's amenity sentence: \"1 Large pavilion with 11 tables, 1 trash can, electrical outlets (120V, 15amp max), pavilion lighting, 2 large BBQ grills, 1 pickleball court, walking path with benches, 2 half basketball courts, playground, and designated parking.\" The City lists this park under \"NON-RESERVABLE PARKS\": nothing here can be booked, the court included, so play is open. The \"pavilion lighting\" in that sentence lights the pavilion, not the court, and this page does not read it as a lit court. Price, surface and hours for the court are not stated and are recorded as unknown. The address is a Utah grid address, 2250 North on 600 West, which the Census address file resolves as written.",
+        "county": "Utah",
+        "postal_code": "84043"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Headed \"Centennial Park\" on the City's parks page."
+        },
+        "total_courts": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Counted in the City's amenity sentence for the park: \"1 Large pavilion with 11 tables, 1 trash can, electrical outlets (120V, 15amp max), pavilion lighting, 2 large BBQ grills, 1 pickleball court, walking path with benches, 2 half basketball courts, playground, and designated parking.\". The park has no page of its own; the list page is the record that states the number."
+        },
+        "street_address": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Address: 2250 North 600 West, Lehi UT 84043\" on the City's parks page. Census address geocoder matched \"2250 N 600 W, LEHI, UT, 84043\". A Utah grid address, which the Census address file resolves as written."
+        },
+        "venue_type": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Lehi City Parks among the city's parks."
+        },
+        "play_format": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"NON-RESERVABLE PARKS\", so nothing in the park, the courts included, can be booked. A court that cannot be reserved and is open to the public is open play."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"NON-RESERVABLE PARKS\", so nothing in the park, the courts included, can be booked. No fee or price appears anywhere on the parks page."
+        },
+        "court_availability": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's parks page: \"1 Large pavilion with 11 tables, 1 trash can, electrical outlets (120V, 15amp max), pavilion lighting, 2 large BBQ grills, 1 pickleball court, walking path with benches, 2 half basketball courts, playground, and designated parking.\", under \"NON-RESERVABLE PARKS\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT (FIPS 49049). Census address geocoder matched \"2250 N 600 W, LEHI, UT, 84043\". The resolver also places it in \"Lehi city\", which is what allows it to be published under Lehi."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2250 N 600 W, LEHI, UT, 84043\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "stagecoach-large-park": {
+      "minted": true,
+      "identity": {
+        "name": "Stagecoach Large Park",
+        "city": "Lehi",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84043",
+        "latitude": 40.3828199,
+        "longitude": -111.8800954,
+        "imported_slug": null,
+        "canonical_slug": "stagecoach-large-park"
+      },
+      "match": {
+        "source_page": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "quote": "1 Small pavilion with 6 tables, a large BBQ grill and a trash can, 2 pickleball courts, 1 full basketball court, playground with swings, 2 soccer goals and benches.",
+        "basis": "Minted here. The imported dataset holds no row for this park in Lehi, UT."
+      },
+      "patch": {
+        "name": "Stagecoach Large Park",
+        "total_courts": 2,
+        "street_address": "484 South 1915 West",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price for the courts. It lists this park under \"NON-RESERVABLE PARKS\": the courts cannot be booked, and nothing on the page prices them or says they are free.",
+        "court_availability": "Two pickleball courts at Stagecoach Large Park in west Lehi, counted by the City: \"1 Small pavilion with 6 tables, a large BBQ grill and a trash can, 2 pickleball courts, 1 full basketball court, playground with swings, 2 soccer goals and benches.\" The City names two Stagecoach parks, Large and Small, and only the Large one carries courts; the name is the City's. It sits under \"NON-RESERVABLE PARKS\", so the courts cannot be booked and play is open. The address is a Utah grid address, 484 South on 1915 West, which OpenStreetMap resolves to the house number as written. Price, lighting, surface and hours are not stated and are recorded as unknown.",
+        "county": "Utah",
+        "postal_code": "84043"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Headed \"Stagecoach Large Park\" on the City's parks page."
+        },
+        "total_courts": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Counted in the City's amenity sentence for the park: \"1 Small pavilion with 6 tables, a large BBQ grill and a trash can, 2 pickleball courts, 1 full basketball court, playground with swings, 2 soccer goals and benches.\". The park has no page of its own; the list page is the record that states the number."
+        },
+        "street_address": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Address: 484 South 1915 West, Lehi UT 84043\" on the City's parks page. OpenStreetMap (Nominatim) matched \"484, South 1915 West, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        },
+        "venue_type": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Lehi City Parks among the city's parks."
+        },
+        "play_format": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"NON-RESERVABLE PARKS\", so nothing in the park, the courts included, can be booked. A court that cannot be reserved and is open to the public is open play."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"NON-RESERVABLE PARKS\", so nothing in the park, the courts included, can be booked. No fee or price appears anywhere on the parks page."
+        },
+        "court_availability": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's parks page: \"1 Small pavilion with 6 tables, a large BBQ grill and a trash can, 2 pickleball courts, 1 full basketball court, playground with swings, 2 soccer goals and benches.\", under \"NON-RESERVABLE PARKS\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT. OpenStreetMap (Nominatim) matched \"484, South 1915 West, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in \"Lehi\", which is what allows it to be published under Lehi."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"484, South 1915 West, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        }
+      },
+      "record": {
+        "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "watercress-park": {
+      "minted": false,
+      "identity": {
+        "name": "Watercress Park",
+        "city": "Lehi",
+        "state": "UT",
+        "county": "Utah",
+        "postal_code": "84043",
+        "latitude": 40.369626,
+        "longitude": -111.846507,
+        "imported_slug": "watercress-park-lehi-lehi-ut",
+        "canonical_slug": "watercress-park"
+      },
+      "match": {
+        "source_page": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "quote": "1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.",
+        "basis": "Matched to the imported watercress-park-lehi-lehi-ut row in Lehi, UT (renamed watercress-park by the identity registry), which carried the address \"1500 S Center St\" and two courts; the City's own address, 151 East 1500 South, replaces it, the count holds, and the changes are in the changelog."
+      },
+      "patch": {
+        "name": "Watercress Park",
+        "total_courts": 2,
+        "street_address": "151 East 1500 South",
+        "venue_type": "public_park",
+        "play_format": "open_play",
+        "pricing_notes": "The City states no price for the courts. It lists this park under \"NON-RESERVABLE PARKS\": the courts cannot be booked, and nothing on the page prices them or says they are free.",
+        "court_availability": "Two pickleball courts at Watercress Park in south Lehi, counted by the City beside a tennis court and eight horseshoe pits: \"1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\" The pickleball courts and the tennis court are counted separately, so the two here are not lines on the tennis court. The park sits under \"NON-RESERVABLE PARKS\", so the courts cannot be booked and play is open. The address is a Utah grid address, 151 East on 1500 South; the Census file answers with 1500 North, a different street, and OpenStreetMap resolves the address as the City writes it. Price, lighting, surface and hours are not stated and are recorded as unknown.",
+        "county": "Utah",
+        "postal_code": "84043"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Headed \"Watercress Park\" on the City's parks page and on the park's own page at https://www.lehi-ut.gov/recreation-community/parks/watercress-park/."
+        },
+        "total_courts": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Counted in the City's amenity sentence for the park: \"1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\". The park's own page repeats it: \"1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\"."
+        },
+        "street_address": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Address: 151 East 1500 South, Lehi UT 84043\" on the City's parks page. OpenStreetMap (Nominatim) matched \"151, East 1500 South, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"151 E 1500 N, LEHI, UT, 84043\", changing the direction from E+S to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "venue_type": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Lehi City Parks among the city's parks."
+        },
+        "play_format": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"NON-RESERVABLE PARKS\", so nothing in the park, the courts included, can be booked. A court that cannot be reserved and is open to the public is open play."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The entry sits under \"NON-RESERVABLE PARKS\", so nothing in the park, the courts included, can be booked. No fee or price appears anywhere on the parks page."
+        },
+        "court_availability": {
+          "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's parks page: \"1 Large pavilion with 11 tables with 1 trash can, 8 Horseshoe pits, 2 pickleball courts, 1 tennis court, and a large open grass area.\", under \"NON-RESERVABLE PARKS\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Utah County, UT. OpenStreetMap (Nominatim) matched \"151, East 1500 South, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"151 E 1500 N, LEHI, UT, 84043\", changing the direction from E+S to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in \"Lehi\", which is what allows it to be published under Lehi."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"151, East 1500 South, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"151 E 1500 N, LEHI, UT, 84043\", changing the direction from E+S to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        }
+      },
+      "record": {
+        "source_url": "https://www.lehi-ut.gov/recreation-community/parks/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

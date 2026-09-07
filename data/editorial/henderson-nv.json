@@ -1,0 +1,123 @@
+{
+  "city": "Henderson",
+  "state": "NV",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every count below comes from one City of Henderson page, whose Court Locations section is five small tables - a heading, a \"NUMBER OF COURTS\" column and one facility per row - and every address comes from the City's own Park Locations and Features directory or from a recreation centre's page in the City's facility directory. None of the three pages could be fetched by a script: cityofhenderson.com answered HTTP 403 to a bare request and to a full browser header set on 2026-09-07, so each page was read in a browser and saved as text with a header stating that method, and the build re-asserts every heading, every count row and every address block against those files. A court is called outdoor or indoor only where the City's heading uses the word. The City states no hours, no lighting, no surface and no price for any court, and where it is silent this page says so.",
+  "slots": {
+    "parking": "The City of Henderson's park directory lists \"Parking\" as an amenity at exactly one of the seven published venues: the entry it calls \"Black Mountain Pickleball Park\", at 599 Greenway Rd., whose amenity list reads \"Parking, Pickleball, Picnic Ramada, Picnic Tables, Playground, Restrooms\". That is the whole of what the City writes about parking for pickleball in Henderson. The directory entries for Aventura, Mission Hills, Siena Heights/Amargosa Trailhead, Sonata and Sunridge carry no parking line, and the facility page for Silver Springs Recreation Center lists a gymnasium, tennis courts and a vending area without one. Those six are recorded as not stated rather than as no parking, because the directory's amenity lists are plainly selective: Aventura's and Sunridge's do not mention pickleball at all, though the City counts two courts at each, so an absence from a list is not a checked absence on the ground. Restrooms are better covered. All six park-directory entries list \"Restrooms\", so a player at any of those parks has the City's word for them; Silver Springs' facility page does not list restrooms, and they are left unknown there. Two venues carry a City phone number on their facility pages, (702) 267-4070 for Black Mountain and (702) 267-5720 for Silver Springs, which is the nearest thing to a parking enquiry line the City publishes.",
+    "peak_hours": "Henderson publishes no hours for any pickleball court and no park hours for any of the seven venues. The pickleball page carries no clock, the park directory's entries are an address and an amenity list, and the two facility pages give a phone number and a description without an opening time. That leaves the window at every venue unknown, and lighting is unknown with it: the word does not appear on any of the three pages read, so none of the 33 courts is recorded as lit and none as unlit, and daylight is the only plan the City's text supports. What the City does publish about timing is a reservation route. \"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\", and \"Reservation forms are available at the City of Henderson Sports Office, 298 N. Arroyo Grande Blvd. Or you may call the Sports Office and ask for a form to be emailed.\" The page does not say which facilities can be reserved, whether a reservation costs anything, or what happens to walk-up players when a court is booked, so play format is recorded as not stated at all seven venues rather than as open play. The page also links to pickleball classes, tournaments and adaptive sports and points to HendersonHappenings.com for sign-up, without a day, a time or a venue for any of them. The counts are the nearest thing to a timing fact: eighteen courts at Black Mountain is a rotation whatever the hour; two shared courts at Aventura, Siena Heights, Sonata or Sunridge is one game each, and a tennis player may already be on it.",
+    "surface_condition": "The City of Henderson names no surface for any pickleball court. Nothing on the pickleball page, the park directory or the two facility pages says what any of the 33 courts is made of, so surface reads as not stated at all seven venues. What the City does state is which side of a roof 21 of the 33 are on. The pickleball page opens by calling the game \"an indoor or outdoor racket/paddle sport\", and its Court Locations section sorts facilities under headings that use those words: \"OUTDOOR PICKLEBALL COURTS\", where Black Mountain Recreation Center's 18 sit, and \"INDOOR PICKLEBALL COURTS\", where three of Silver Springs Recreation Center's four sit. Those 21 courts are outdoor or indoor in the City's own word. The other twelve are not. Eleven - two at Aventura, three at Mission Hills, two at Siena Heights Trailhead, two at Sonata and two at Sunridge - are under \"PICKLEBALL & TENNIS COMBINED\", a heading that says the courts are shared with tennis and nothing about a roof, and the twelfth is Silver Springs' one court under a heading that reads only \"PICKLEBALL COURTS\". All twelve stay unsided here, though a court shared with tennis in a park with a splash pad leaves little doubt. Sharing is the one fact about the playing surface the page gives: at those five parks pickleball and tennis are on the same courts, and the directory lists \"Tennis Courts\" at each. Whether Black Mountain's 18 or Silver Springs' four are dedicated is not stated, and nets are not mentioned anywhere.",
+    "local_scene": "Thirty-three verified courts at seven City venues: 18 outdoor at Black Mountain Recreation Center, four at Silver Springs Recreation Center of which three are indoor, three shared with tennis at Mission Hills Park, and two shared with tennis at each of Aventura Park, Siena Heights Trailhead, Sonata Park and Sunridge Park. Henderson is the second Nevada city published here, after Las Vegas, and the second in Clark County. Black Mountain holds more than half of the city's verified courts at one address; the park directory lists that address a second time as \"Black Mountain Pickleball Park\", and one address is one venue here. The City counts more than this page shows, and the rest is named rather than hidden. Its pickleball page counts 50 courts at thirteen facilities, and 17 of them are at six facilities whose City addresses resolve nowhere: Blooming Cactus Park (two, \"410 Grand Cadence Drive\"), Dundee Jones Park (two, \"10550 Jeffreys St\"), Montagna Park (four, \"3495 Via Altamira\"), Whitney Mesa (four, \"1990 Patrick Ln.\"), Weston Hills Park (two, \"950 Weston Ridge St.\") and Downtown Recreation Center (three indoor, \"50 Van Wagenen St.\"). Neither the US Census address file nor OpenStreetMap finds any of the six as the City writes it, and a venue at an address nobody can locate does not publish, however real the count. A seventh facility, Whitney Ranch Recreation Center, is refused because the City lists it under \"INDOOR PICKLEWALL COURTS\", and a pickle wall is a practice wall rather than a court. The City states no price anywhere and never writes the word \"free\"; courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\", which publishes as a pricing note without a price, and no Henderson venue is called free. The three City pages behind all of this were read in a browser because cityofhenderson.com answers scripted requests with HTTP 403, and every count row and address block is re-asserted against the saved text on every build."
+  },
+  "best_for": [
+    {
+      "key": "biggest",
+      "heading": "Best if you want the most courts",
+      "venue_slug": "black-mountain-recreation-center",
+      "text": "Black Mountain Recreation Center has 18 outdoor pickleball courts, the largest count in Henderson and the one row on the City's \"OUTDOOR PICKLEBALL COURTS\" table above four. The park directory lists the same address as \"Black Mountain Pickleball Park\" with parking, restrooms, a picnic ramada and a playground. Eighteen is a rotation at any hour. Hours, lighting and price are not stated.",
+      "supports": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "key": "indoor",
+      "heading": "Best if you want a roof",
+      "venue_slug": "silver-springs-recreation-center",
+      "text": "Silver Springs Recreation Center has four courts, three of them under the City's \"INDOOR PICKLEBALL COURTS\" heading and the fourth under a heading that says only \"PICKLEBALL COURTS\". They are the only indoor courts published in Henderson. The centre's facility page describes 36,000 square feet with a gymnasium, a seasonal pool and tennis courts. Hours and price are not stated.",
+      "supports": [
+        "C1",
+        "C3"
+      ]
+    },
+    {
+      "key": "shared",
+      "heading": "Best if you want a third court on a shared park",
+      "venue_slug": "mission-hills-park",
+      "text": "Mission Hills Park has three courts under \"PICKLEBALL & TENNIS COMBINED\", the largest count among Henderson's five shared parks, where the others have two. The directory lists both \"Pickleball\" and \"Tennis Courts\" among its amenities, with restrooms, a splash pad, barbecues and a walking course. Three shared courts is a game and a half when the tennis players are elsewhere.",
+      "supports": [
+        "C1",
+        "C2"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does Henderson have?",
+      "a": "We have verified 33 across seven City venues: 18 at Black Mountain Recreation Center, 4 at Silver Springs Recreation Center, 3 at Mission Hills Park and 2 each at Aventura, Siena Heights Trailhead, Sonata and Sunridge. The City's own page counts 50 at thirteen facilities; the other 17 are at six facilities whose addresses neither resolver can find."
+    },
+    {
+      "q": "Which Henderson courts have lights?",
+      "a": "None that the City states. Lighting does not appear on the pickleball page, in the park directory or on either facility page, and the City publishes no hours for any court either. Lighting at all 33 courts is recorded as unknown, and daylight is the safe plan until the City says otherwise."
+    },
+    {
+      "q": "Are Henderson's courts free, and can they be reserved?",
+      "a": "Free is not stated; the City writes no price anywhere and never uses the word. It does say courts \"can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717\", with forms at 298 N. Arroyo Grande Blvd. or by email. That publishes as a pricing note without a price."
+    },
+    {
+      "q": "Why are Montagna Park and Whitney Mesa not listed?",
+      "a": "The City counts four outdoor courts at each, and two at Blooming Cactus, two at Dundee Jones, two at Weston Hills and three indoor at the Downtown Recreation Center, 17 in all. Each of those six addresses, as the City writes it, is found by neither the US Census address file nor OpenStreetMap, and a count at an address nobody can locate does not publish."
+    },
+    {
+      "q": "What is Whitney Ranch Recreation Center's pickle wall?",
+      "a": "The City lists \"Whitney Ranch Recreation Center 1\" under its own heading, \"INDOOR PICKLEWALL COURTS\", separate from \"INDOOR PICKLEBALL COURTS\". A pickle wall is a practice wall rather than a court, and this directory counts courts. If the City moves the row under a pickleball heading, the build fails and the venue is reconsidered."
+    }
+  ],
+  "sources": [
+    {
+      "id": "C1",
+      "url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/pickleball",
+      "publisher": "City of Henderson Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "The City's Pickleball page, read in a browser on 2026-09-07 because cityofhenderson.com answers scripted requests with HTTP 403. \"Pickleball is an indoor or outdoor racket/paddle sport where two players, or four players, hit a perforated hollow plastic ball over a 36-inch-high net using solid-faced paddles.\" \"Pickleball courts can be reserved for a friendly game of pickleball, a tournament or event by calling the Sports Office at 702-267-5717.\" \"Reservation forms are available at the City of Henderson Sports Office, 298 N. Arroyo Grande Blvd. Or you may call the Sports Office and ask for a form to be emailed.\" Court Locations, five tables with a \"NUMBER OF COURTS\" column: \"OUTDOOR PICKLEBALL COURTS\" - Black Mountain Recreation Center 18, Blooming Cactus Park 2, Dundee Jones Park 2, Montagna Park 4, Whitney Mesa 4; \"PICKLEBALL & TENNIS COMBINED\" - Aventura Park 2, Mission Hills Park 3, Siena Heights Trailhead 2, Sonata Park 2, Sunridge Park 2, Weston Hills Park 2; \"INDOOR PICKLEBALL COURTS\" - Downtown Recreation Center 3, Silver Springs Recreation Center 3; \"INDOOR PICKLEWALL COURTS\" - Whitney Ranch Recreation Center 1; \"PICKLEBALL COURTS\" - Silver Springs Recreation Center 1. Links to Pickleball Classes, Tournaments and Adaptive Sports, and \"To sign up for additional programs and events, visit HendersonHappenings.com.\" Snapshot: data/sources/henderson/pickleball.txt",
+      "not_stated": "Any address, any hours, any lighting, any price or the word free, any surface, any net, whether the combined courts are indoor or outdoor, where Silver Springs' fourth court is, and any day, time or venue for the classes and tournaments."
+    },
+    {
+      "id": "C2",
+      "url": "https://www.cityofhenderson.com/government/departments/parks-and-recreation/parks-and-trails/park-locations-and-features",
+      "publisher": "City of Henderson Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "The City's Park Locations and Features directory, four pages of 25 parks, read in a browser on 2026-09-07. Each entry is a name, an ADDRESS block and an AMENITIES list. \"Aventura Park / 2525 Via Firenze / Henderson, NV 89044\" - Ball Field, Basketball Court, Dog Park, Multi-Purpose Fields, Picnic Ramada, Playground, Restrooms, Shade Structures, Splash Pad, Tennis Courts, Volleyball Courts. \"Black Mountain Pickleball Park / 599 Greenway Rd. / Henderson, NV 89015\" - Parking, Pickleball, Picnic Ramada, Picnic Tables, Playground, Restrooms. \"Mission Hills Park / 551 E. Mission Dr. / Henderson, NV 89002\" - Ball Field, Barbecues, Basketball Court, Multi-Purpose Fields, Open Grass Area, Pickleball, Picnic Shelters, Picnic Tables, Playground, Restrooms, Splash Pad, Tennis Courts, Walking Course/Trails. \"Siena Heights/Amargosa Trailhead / 2570 Siena Heights Dr. / Henderson, NV 89044\" - Open Grass Area, Pickleball, Picnic Shelters, Picnic Tables, Playground, Restrooms, Tennis Courts. \"Sonata Park / 1550 Seven Hills Dr. / Henderson, NV 89052\" - Barbecues, Basketball Court, Multi-Purpose Fields, Open Grass Area, Pickleball, Picnic Shelters, Picnic Tables, Playground, Restrooms, Tennis Courts, Unpaved Trails. \"Sunridge Park / 1010 Sandy Ridge Ave. / Henderson, NV 89052\" - Ball Field, Barbecues, Basketball Court, Multi-Purpose Fields, Open Grass Area, Picnic Shelters, Picnic Tables, Playground, Restrooms, Tennis Courts, Volleyball Courts. Also the refused parks' addresses: Blooming Cactus Park \"410 Grand Cadence Drive\", Dundee Jones Park \"10550 Jeffreys St\", Montagna Park \"3495 Via Altamira\", Weston Hills Park \"950 Weston Ridge St.\", and \"Whitney Mesa Recreation Area and Nature Preserve\" \"1990 Patrick Ln.\". Snapshot: data/sources/henderson/park-locations.txt",
+      "not_stated": "Any court count, any hours, any lighting, any price, any surface, and parking at any published park other than Black Mountain Pickleball Park."
+    },
+    {
+      "id": "C3",
+      "url": "https://www.cityofhenderson.com/Home/Components/FacilityDirectory/FacilityDirectory/156/783",
+      "publisher": "City of Henderson Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition"
+      ],
+      "evidence": "The City's facility directory pages for its recreation centres, read in a browser on 2026-09-07; the snapshot holds Black Mountain (156/783), Downtown (158/783) and Silver Springs (166/783). \"Black Mountain Recreation Center / ADDRESS: / 599 Greenway Rd. / Henderson, NV 89015 / PHONE: / (702) 267-4070\", amenities Aquatic Complex (Seasonal), Covered Patio, Fitness Center, Gymnasium, Indoor Cycling Area, Meeting/Classrooms, Multi-use Room, Racquetball/Wallyball Courts, Tennis Courts, Vending Area; \"Black Mountain Recreation Center/Aquatic Complex is a 41,000 square foot facility\". \"Silver Springs Recreation Center / ADDRESS: / 1951 Silver Springs Pkwy. / Henderson, NV 89074 / PHONE: / (702) 267-5720\", amenities Aerobics/Fitness Room, Amphitheater, Dance Room, Gymnasium, Meeting/Classrooms, Multi-use Room, Racquetball/Wallyball Courts, Swimming Pool (Seasonal), Tennis Courts, Vending Area; \"Located within walking distance of many Henderson neighborhoods\"; Center Features include \"36,000 square feet\" and \"Adjacent to Silver Springs Park\". \"Downtown Recreation Center / ADDRESS: / 50 Van Wagenen St. / Henderson, NV 89015\", with \"Pickleball\" among its amenities. Snapshot: data/sources/henderson/recreation-centers.txt",
+      "not_stated": "Pickleball at Black Mountain or Silver Springs in any form - the counts come from the pickleball page alone - and any hours, lighting, price, surface, parking or restrooms at either centre."
+    },
+    {
+      "id": "C4",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "local_scene"
+      ],
+      "evidence": "Six of the seven published addresses matched at house-number level through the US Census address file and were placed in Clark County, NV (FIPS 32003) and the incorporated place \"Henderson city\": \"599 GREENWAY RD\", \"2525 VIA FIRENZE\", \"2570 SIENA HEIGHTS DR\", \"1550 SEVEN HILLS DR\", \"1010 SANDY RIDGE AVE\" and \"1951 SILVER SPRINGS PKWY\". \"551 E. Mission Dr.\" was matched at house-number level by OpenStreetMap as the City writes it, the Census file having dropped the \"E\". \"410 Grand Cadence Drive\", \"10550 Jeffreys St\", \"3495 Via Altamira\", \"1990 Patrick Ln.\", \"950 Weston Ridge St.\" and \"50 Van Wagenen St.\", the addresses the City publishes for the six refused facilities, are found by neither the Census address file nor OpenStreetMap. Snapshot: data/sources/henderson-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

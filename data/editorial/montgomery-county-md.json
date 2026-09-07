@@ -1,0 +1,84 @@
+{
+  "county": "Montgomery",
+  "state": "MD",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a venue has, whether it is lit, where it stands - come from the City of Rockville's Pickleball Courts and Programs page, its park place pages and the US Census address geocoder, and are cited. Claims about our own coverage are facts about this dataset rather than about Montgomery County, and are worded so a reader cannot mistake one for the other. One city of the county is on this page, and every count on it is a cell of one City table that is re-asserted on every build.",
+  "slots": {
+    "coverage": "One city in Montgomery County is published here: Rockville, with twelve venues and forty-six courts verified against one City table and twelve City park pages. Rockville is the first city in Maryland and the first in Montgomery County on this site. Montgomery County contains other municipalities and the County runs parks of its own, and none of those has been checked against a named source, so none appears anywhere on this site. That is not a judgement about where the county's pickleball is; it is a statement about what has been read. What has been read is one operator, the City of Rockville, whose Pickleball Courts and Programs page carries a table of fourteen parks under the heading \"Outdoor Pickleball Courts\" with a count and a Lighted answer on every row, and whose place pages carry an address for each. Twelve of the fourteen resolve as written in the Census address file, inside Rockville city, Montgomery County, and publish. Two are named on the city page rather than dropped: Twinbrook Park, whose \"12920 Twinbrook Parkway\" resolves in neither address file, and Glenora Park, whose Address block is an intersection. The import behind this site holds further Montgomery County rows - commercial clubs, community centres, a second record of Stepanek Park at \"Pleasant Drive\" with a free price the City does not state - and none has a named source read for it, so none publishes.",
+    "distribution": "What is verified in this county is in one city, and within it the courts are spread thin rather than concentrated. No Rockville venue holds more than six courts. Welsh Park has six, Dogwood Park five, seven parks have four each - Broome Athletic, Fallsgrove, Isreal, Mattie J.T. Stepanek, North Farm, Potomac Woods and Rockville Civic Center - Rockcrest has three, and Calvin and Hillcrest have two. The split that matters most is not indoor against outdoor, because every court is outdoor by the City's heading and no indoor count exists, but dedicated against striped. Twelve of the forty-six are \"Dedicated Pickleball Courts\" in the City's words, at four venues; thirty-one are \"pickleball lines on\" tennis courts, at nine; three at Rockcrest are not described either way. A striped court is a court a tennis player can take first, and the City says \"bring your own net\" on every striped line but one. Lighting is the best-documented layer in the county, because the City's table has a Lighted column and fills it: four venues Yes, nineteen courts, closing at 10 p.m.; eight venues No, twenty-seven courts, closing at dusk; none blank. Price is the thinnest: no venue in the county carries one, because the City prints none and does not write the word free. Hours are one sentence for every court, \"open from dawn to dusk and are available on a first-come, first-served basis\", with the City's programmes taking priority and the row-by-row schedules unread.",
+    "gaps": "The honest position is that this is a Rockville page wearing the heading of a whole county, and the gap will not close by accident. No other municipality in Montgomery County has been read, and neither has whatever the County itself operates. The threshold has not moved - three venues with a named source and a date - and nothing about Maryland makes it easier or harder than anywhere else until another parks department's page has actually been loaded. Inside the published city the gaps are specific and they are the City's to close. Twinbrook Park has four lit courts and an address, \"12920 Twinbrook Parkway\", that neither resolver can find; Glenora Park has four courts and an intersection where a house number should be. Both publish the day the City prints an address that resolves, and the build throws if that happens without anyone noticing. Three community centres - Lincoln Park, Thomas Farm and Twinbrook - are named for drop-in gym pickleball with no court count, so Rockville's indoor pickleball is zero on this site not because there is none but because the City has not counted it. Price is stated nowhere. Surface is stated nowhere. Nets are unstated at the two dedicated-only venues and at Dogwood, where the City's two lines disagree. Each row of the City's table links to a court schedule this site has not read, so which hours are closed for class is unknown at every venue. And three postcodes disagree between the City and the Census, at Dogwood, Rockcrest and Rockville Civic Center Park; the Census value publishes with the disagreement stated."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Montgomery County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 46 courts across twelve venues, all in Rockville, all outdoor by the City's heading, each with a source and a date: 12 dedicated, 31 on tennis-court lines, 3 unsplit. The City's own table lists two more parks, with four courts each, that we cannot publish."
+    },
+    {
+      "q": "Why is only Rockville listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. No other city in Montgomery County has been read, and neither have the parks the County itself runs."
+    },
+    {
+      "q": "Which venues here have lights?",
+      "a": "Broome Athletic Park, Dogwood Park, Mattie J.T. Stepanek Park and Welsh Park - nineteen courts, closing at 10 p.m. The other eight Rockville venues are marked No in the City's Lighted column, a stated answer, so twenty-seven courts end at dusk. Twinbrook Park is marked Yes too, but its address does not resolve."
+    },
+    {
+      "q": "Are there indoor courts in the county?",
+      "a": "None verified. The City names Lincoln Park Community Center, Thomas Farm Community Center and Twinbrook Community Recreation Center for \"open gym schedules during drop-in hours featuring pickleball\" and states no court count at any of them. Named, not counted; a venue needs a stated count to exist here."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Not stated, at any venue. The City prints no price on its pickleball page or on any park page and does not write the word free. What it writes is the access rule: first-come, first-served, with City programmes taking priority and some courts closed for class use. A park court is not assumed to be free here."
+    },
+    {
+      "q": "Why are Twinbrook Park and Glenora Park missing?",
+      "a": "Both are rows in the City's table with four courts each. Twinbrook's page gives \"12920 Twinbrook Parkway\", which neither the Census address file nor OpenStreetMap can find. Glenora's Address block reads \"Dundee Road and Wootton Parkway\", an intersection with no house number. A venue at an address that does not resolve is not published, and both are re-read every build."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "The City's pages were read on 7 September 2026 and snapshotted into the repository that builds this site. Every quoted count, Lighted cell and address is re-asserted against the saved page on every build; if the City changes a row, adds one, or prints a new address for Twinbrook or Glenora, the build fails and the page is re-read."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://www.rockvillemd.gov/services/pickleball-courts-and-programs/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's Pickleball Courts and Programs page. Under \"Outdoor Pickleball Courts\": \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public. Lighted courts close at 10 p.m.\" Then a table with columns Park, Number of Courts, Lighted, Court Schedule, fourteen rows: Broome Athletic Park \"4 Dedicated Pickleball Courts\" Yes; Calvin Park 2 on 1 tennis court No; Dogwood Park \"1 Pickleball Court (pickleball lines on 1 tennis court; use tennis net)\" and \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\" Yes; Fallsgrove Park 4 on 2 No; Glenora Park 4 on 2 No; Hillcrest Park 2 on 1 No; Isreal Park \"2 Dedicated Pickleball Courts\" and 2 on 1 No; Mattie J.T. Stepanek Park \"4 Dedicated Pickleball Courts\" Yes; North Farm Park 4 on 2 No; Potomac Woods Park 4 on 2 No; Rockcrest Park \"3 Pickleball Courts (bring your own net)\" No; Rockville Civic Center Park 4 on 2 No; Twinbrook Park 4 on 2 Yes; Welsh Park \"2 Dedicated Pickleball Courts\" and 4 on 2 Yes; each row with a \"View Schedule\" link. Also \"The Lincoln Park Community Center, Thomas Farm Community Center, and Twinbrook Community Recreation Center offer open gym schedules during drop-in hours featuring pickleball and many other sports.\" Snapshot: data/sources/rockville/pickleball-courts-and-programs.html",
+      "not_stated": "Anything about any other municipality in Montgomery County or about the County's own parks; any price or the word free; any surface; the word indoor; a court count at any community centre; any address; the contents of the View Schedule links."
+    },
+    {
+      "id": "L2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "The twelve published addresses were matched at house-number level in the Census address file, as the City writes them, and placed in Montgomery County, MD (FIPS 24031) inside the incorporated place Rockville city. Three returned a postcode other than the one the City prints: Dogwood Park 20850 against the City's 20852, Rockcrest Park 20851 against 20850, Rockville Civic Center Park 20851 against 20850. \"12920 Twinbrook Parkway\" matched nothing in the Census address file or OpenStreetMap; \"Dundee Road and Wootton Parkway\" has no house number to match. Snapshot: data/sources/rockville-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    },
+    {
+      "id": "L3",
+      "url": "https://www.rockvillemd.gov/places/twinbrook-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Twinbrook Park's page: \"contains the Twinbrook Community Recreation Center and Annex within its property\", \"two lighted tennis courts with pickleball lines\". Address block \"12920 Twinbrook Parkway / Rockville, MD 20851\". Snapshot: data/sources/rockville/twinbrook-park.html",
+      "not_stated": "Anything that would make the house number resolve."
+    },
+    {
+      "id": "L4",
+      "url": "https://www.rockvillemd.gov/places/glenora-park/",
+      "publisher": "City of Rockville Recreation and Parks",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Glenora Park's page: \"a 5.9-acre retreat\", \"two tennis courts with a volley wall (complete with pickleball lines—bring your own net!)\". Address block \"Dundee Road and Wootton Parkway / Rockville, MD 20850\"; the banner line above prints \"2026 Dundee Road\". Snapshot: data/sources/rockville/glenora-park.html",
+      "not_stated": "A house number in the Address block."
+    }
+  ]
+}

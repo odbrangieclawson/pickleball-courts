@@ -4336,21 +4336,15 @@
         "foothill-park"
       ]
     },
-    "sharon-park": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in UT/orem claim the slug \"sharon-park\"",
-      "wanted_slug": "sharon-park",
-      "peers": [
-        "sharon-park-orem-orem-ut"
-      ]
-    },
     "sharon-park-orem-orem-ut": {
-      "reason": "in_city_slug_collision",
-      "detail": "2 rows in UT/orem claim the slug \"sharon-park\"",
+      "reason": "in_city_slug_collision_resolved_against",
+      "detail": "\"sharon-park\" keeps the slug \"sharon-park\" in UT/orem. The City of Orem publishes one Sharon Park, at \"Location: 600 N 300 E\", with \"6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).\" The kept row carries 500 N 300 E, one block off along the same street, and is overridden to the City's address in the verification run; the held row's street_address is \"285 500 N\", which names a different street and matches no City record for the park. Two records of one park; the held row stays quarantined and status=pending.",
       "wanted_slug": "sharon-park",
       "peers": [
         "sharon-park"
-      ]
+      ],
+      "resolved_on": "2026-09-07",
+      "source_url": "https://orem.gov/sharon-park/"
     },
     "park-city-willow-creek-park-park-city-ut": {
       "reason": "in_city_slug_collision",

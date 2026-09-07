@@ -1,0 +1,111 @@
+{
+  "allred-park": {
+    "matched": "485, North Allred Park Road, Lehi, Utah County, Utah, 84043, United States",
+    "resolver": "osm",
+    "lat": 40.3928343,
+    "lon": -111.8615948,
+    "county": "Utah",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Lehi",
+    "place_matches_city": true,
+    "postal_code": "84043",
+    "basis": "OpenStreetMap (Nominatim) matched \"485, North Allred Park Road, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"485 ALLRED PARK RD, LEHI, UT, 84043\", changing the direction from N to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details.",
+    "county_citation": "Utah County, UT. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Utah County."
+  },
+  "holbrook-farms-park": {
+    "matched": "2504, Drexler Drive, Lehi, Utah County, Utah, 84043, United States",
+    "resolver": "osm",
+    "lat": 40.4184793,
+    "lon": -111.9162692,
+    "county": "Utah",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Lehi",
+    "place_matches_city": true,
+    "postal_code": "84043",
+    "basis": "OpenStreetMap (Nominatim) matched \"2504, Drexler Drive, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Utah County, UT. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Utah County."
+  },
+  "olympic-park": {
+    "matched": "2700 W PARKSIDE DR, LEHI, UT, 84043",
+    "resolver": "census",
+    "lat": 40.408267229676,
+    "lon": -111.891931678896,
+    "county": "Utah",
+    "state_fips": "49",
+    "county_fips": "049",
+    "place": "Lehi city",
+    "place_matches_city": true,
+    "postal_code": "84043",
+    "basis": "Census address geocoder matched \"2700 W PARKSIDE DR, LEHI, UT, 84043\".",
+    "county_citation": "Utah County, UT (FIPS 49049). Census address geocoder matched \"2700 W PARKSIDE DR, LEHI, UT, 84043\"."
+  },
+  "shadow-ridge-park": {
+    "matched": false,
+    "query": "3050 W. Traverse Mountain Blvd, Lehi, UT",
+    "resolver": null
+  },
+  "centennial-park": {
+    "matched": "2250 N 600 W, LEHI, UT, 84043",
+    "resolver": "census",
+    "lat": 40.415672705541,
+    "lon": -111.859088392004,
+    "county": "Utah",
+    "state_fips": "49",
+    "county_fips": "049",
+    "place": "Lehi city",
+    "place_matches_city": true,
+    "postal_code": "84043",
+    "basis": "Census address geocoder matched \"2250 N 600 W, LEHI, UT, 84043\".",
+    "county_citation": "Utah County, UT (FIPS 49049). Census address geocoder matched \"2250 N 600 W, LEHI, UT, 84043\"."
+  },
+  "salix-park": {
+    "matched": false,
+    "query": "3109 W. Allred Dr., Lehi, UT",
+    "resolver": null
+  },
+  "south-creek-park": {
+    "matched": false,
+    "query": "1987 West 1450 South, Lehi, UT",
+    "resolver": null
+  },
+  "spring-creek-park": {
+    "matched": false,
+    "query": "2108 S Bullrush Pkwy, Lehi, UT",
+    "resolver": null
+  },
+  "stagecoach-large-park": {
+    "matched": "484, South 1915 West, Lehi, Utah County, Utah, 84043, United States",
+    "resolver": "osm",
+    "lat": 40.3828199,
+    "lon": -111.8800954,
+    "county": "Utah",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Lehi",
+    "place_matches_city": true,
+    "postal_code": "84043",
+    "basis": "OpenStreetMap (Nominatim) matched \"484, South 1915 West, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Utah County, UT. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Utah County."
+  },
+  "watercress-park": {
+    "matched": "151, East 1500 South, Lehi, Utah County, Utah, 84043, United States",
+    "resolver": "osm",
+    "lat": 40.369626,
+    "lon": -111.846507,
+    "county": "Utah",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Lehi",
+    "place_matches_city": true,
+    "postal_code": "84043",
+    "basis": "OpenStreetMap (Nominatim) matched \"151, East 1500 South, Lehi, Utah County, Utah, 84043, United States\" at house-number level. The Census address geocoder answered \"151 E 1500 N, LEHI, UT, 84043\", changing the direction from E+S to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details.",
+    "county_citation": "Utah County, UT. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Utah County."
+  },
+  "northridge-park": {
+    "matched": false,
+    "query": "2333 W. Northridge Dr, Lehi, UT",
+    "resolver": null
+  }
+}

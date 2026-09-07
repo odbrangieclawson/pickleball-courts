@@ -30,6 +30,16 @@
       "source_url": "https://www.talgov.com/parks/sports-pickleball",
       "basis": "The City of Tallahassee publishes one Tom Brown Park, at 501 Easterwood Avenue, with \"4 pickleball courts | 8 pickleball courts on multi-purpose courts (tennis courts 1-4)\". The kept row carries 501 EASTERWOOD DR, the address the Census geocoder matched to Tallahassee city, Leon County. The held row's street_address is \"Easterwood Dr & Access Rd 16\", an intersection with no house number to resolve; it is a second record of the same courts with a worse location, not a second park. It stays quarantined and status=pending.",
       "snapshot": "data/sources/tallahassee/pickleball.html"
+    },
+    "UT/orem/sharon-park": {
+      "keep": "sharon-park",
+      "hold": [
+        "sharon-park-orem-orem-ut"
+      ],
+      "decided_on": "2026-09-07",
+      "source_url": "https://orem.gov/sharon-park/",
+      "basis": "The City of Orem publishes one Sharon Park, at \"Location: 600 N 300 E\", with \"6 Pickleball Courts (we currently ONLY reserve pickleball courts for the city's tournaments, not for any other private use).\" The kept row carries 500 N 300 E, one block off along the same street, and is overridden to the City's address in the verification run; the held row's street_address is \"285 500 N\", which names a different street and matches no City record for the park. Two records of one park; the held row stays quarantined and status=pending.",
+      "snapshot": "data/sources/orem/sharon-park.html"
     }
   }
 }
