@@ -1,7 +1,7 @@
 import type {Metadata, Viewport} from 'next'
 import type {ReactNode} from 'react'
 import {Newsreader} from 'next/font/google'
-import {ORIGIN} from '../lib/site/origin.mjs'
+import {ORIGIN, PAGE_ROBOTS} from '../lib/site/origin.mjs'
 import './globals.css'
 
 /*
@@ -81,7 +81,31 @@ export const metadata: Metadata = {
   },
   description:
     'A US pickleball court directory that shows you where every fact came from and when it was last checked.',
-  robots: {index: false, follow: false},
+  /*
+    Indexing is one switch, SITE_INDEXABLE, read in lib/site/origin.mjs.
+    Every publishable route declares the same PAGE_ROBOTS in its own
+    generateMetadata, because a route's robots replaces this one rather
+    than merging with it; this default is what any new route inherits
+    until it says otherwise.
+  */
+  robots: PAGE_ROBOTS,
+  /*
+    Open Graph and Twitter cards. Title and description are not repeated
+    here: Next resolves each page's own title and description into the
+    og: and twitter: tags when the page does not override them, so every
+    city, venue and filter page gets its real title on a shared link. The
+    site name and locale are the only site-wide values. There is no image
+    on purpose — a generic card image would be decoration, and the venue
+    photos are the owner's open task with the operators.
+  */
+  openGraph: {
+    type: 'website',
+    siteName: 'Find Pickleball Courts',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+  },
 }
 
 export const viewport: Viewport = {

@@ -1,5 +1,5 @@
 import type {MetadataRoute} from 'next'
-import {ORIGIN} from '../lib/site/sitemap.mjs'
+import {ORIGIN, INDEXABLE} from '../lib/site/origin.mjs'
 import {NOINDEX_PARAMS} from '../lib/site/facets.mjs'
 
 /*
@@ -22,28 +22,25 @@ import {NOINDEX_PARAMS} from '../lib/site/facets.mjs'
      a URL that is disallowed but linked from elsewhere can still be indexed
      without ever being fetched. Both are needed.
 
-  THE WHOLE DEMO IS NOINDEX TODAY. This build is a demonstration and every
-  page carries noindex, so the rules below describe the shape of the live
-  policy rather than something currently in force. The moment O10 mints a
-  real hostname and the demo banner comes off, this file is the policy.
+  THE SWITCH IS SITE_INDEXABLE, read in lib/site/origin.mjs. While it is
+  off — as it was for the first thirty-five cities — the first rule below
+  disallows everything and every page also carries noindex, so the
+  parameter rules describe the shape of the live policy rather than
+  something in force. When it is on, the site is allowed and the parameter
+  disallows stay exactly as they are. Nothing else in this file changes on
+  launch day; the internal tooling stays disallowed in both states.
 */
 
 export default function robots(): MetadataRoute.Robots {
+  const params = [
+    ...NOINDEX_PARAMS.map(p => `/*?${p}=`),
+    ...NOINDEX_PARAMS.map(p => `/*&${p}=`),
+  ]
   return {
     rules: [
-      {
-        userAgent: '*',
-        /*
-          Demo build: nothing is for indexing yet. When this goes live the
-          line below becomes `allow: '/'` and the parameter disallows stay
-          exactly as they are.
-        */
-        disallow: [
-          '/',
-          ...NOINDEX_PARAMS.map(p => `/*?${p}=`),
-          ...NOINDEX_PARAMS.map(p => `/*&${p}=`),
-        ],
-      },
+      INDEXABLE
+        ? {userAgent: '*', allow: '/', disallow: ['/internal/', ...params]}
+        : {userAgent: '*', disallow: ['/', ...params]},
     ],
     sitemap: `${ORIGIN}/sitemap.xml`,
   }

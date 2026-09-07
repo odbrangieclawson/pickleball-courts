@@ -15,9 +15,44 @@ import {fileURLToPath} from 'node:url'
 
   Tracked as O6 in decisions.md > Open decisions. Reversible either way.
 */
+/*
+  THE VERCEL HOSTNAME REDIRECTS TO THE REAL ONE, ONCE THERE IS ONE.
+
+  Vercel keeps serving the project at its generated *.vercel.app hostname
+  after a custom domain is attached, which would leave a complete second
+  copy of the site answering 200 on a host the canonicals do not name. A
+  crawler that finds it has a duplicate of every page. So when SITE_ORIGIN
+  is anything other than the Vercel hostname (or the placeholder), every
+  request that arrives on the Vercel hostname is 301'd to the same path on
+  the origin. §3 permits exactly that one response for a moved URL.
+
+  While SITE_ORIGIN still IS the Vercel hostname this adds no rule at all,
+  so today's deployment is unchanged. The hostname is written here rather
+  than read from an environment variable because it is a fact about this
+  project, recorded in DEPLOYMENT.md, and a redirect rule should be
+  readable in a diff.
+*/
+const VERCEL_HOST = 'pickleball-courts-cyan.vercel.app'
+const SITE_ORIGIN = String(process.env.SITE_ORIGIN ?? '').trim().replace(/\/+$/, '')
+const originHost = SITE_ORIGIN.replace(/^https?:\/\//i, '')
+const redirectVercelHost = /^https?:\/\//i.test(SITE_ORIGIN) &&
+  originHost !== VERCEL_HOST && originHost !== 'example.invalid'
+
 const nextConfig: NextConfig = {
   // Fail the build on type errors rather than shipping a broken page.
   typescript: {ignoreBuildErrors: false},
+
+  async redirects() {
+    if (!redirectVercelHost) return []
+    return [
+      {
+        source: '/:path*',
+        has: [{type: 'host', value: VERCEL_HOST}],
+        destination: `${SITE_ORIGIN}/:path*`,
+        permanent: true,
+      },
+    ]
+  },
 
   /*
     The locked URL pattern in decisions.md section 1 is written with trailing

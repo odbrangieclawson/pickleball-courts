@@ -22,6 +22,7 @@ builder finds it.
 | Variable | Type | Environment | Notes |
 | --- | --- | --- | --- |
 | `SITE_ORIGIN` | Config | Production | Scheme and host, no trailing slash. Currently `https://pickleball-courts-cyan.vercel.app` |
+| `SITE_INDEXABLE` | Config | Production | `true` or `false`. Unset means false. **Unset today: the whole site is noindex.** Refuses to build as `true` while `SITE_ORIGIN` is unset. See "Launch day" below. |
 
 **The live origin is `https://pickleball-courts-cyan.vercel.app`,** verified
 against the deployed site on 2026-09-04: it is what the canonical tags, the
@@ -47,6 +48,66 @@ setting this and minting a real hostname.
 A trailing slash or surrounding whitespace is normalised. A path
 (`https://example.com/uk`) or a missing scheme fails the build with a message
 naming the fault — see `lib/site/origin.mjs`.
+
+## Launch day: the custom domain and the index switch
+
+The site shipped its first thirty-five cities with every page `noindex,
+nofollow` and `Disallow: /` in robots.txt, by decision: the hostname a
+crawler first sees becomes the URL set that must be redirected forever, and
+the only hostname so far is the Vercel-generated one. Everything a crawler
+needs — static HTML, canonicals, sitemap, structured data, Open Graph tags,
+the parameter disallows — is already built and tested. Two environment
+variables and a DNS record are what remain, and none of them is a code
+change.
+
+**Prepared in the repo (2026-09-07), with indexing still off:**
+
+- `SITE_INDEXABLE` — one switch in `lib/site/origin.mjs`. Off: robots
+  disallows everything and every page carries noindex. On: robots allows the
+  site (the parameter disallows and `/internal/` stay disallowed) and every
+  publishable page carries `index, follow`. The internal provenance tool,
+  the search form and 404 fallbacks keep their own literal noindex in both
+  states. `scripts/test/indexing.test.mjs` covers all three states.
+- Open Graph and Twitter card tags on every page, carrying that page's own
+  title and description (`app/layout.tsx`). No image, deliberately.
+- A host redirect in `next.config.ts`: once `SITE_ORIGIN` is anything other
+  than the Vercel hostname, every request that arrives on
+  `pickleball-courts-cyan.vercel.app` is redirected (308, permanent) to the
+  same path on the origin, so the old hostname never serves a duplicate copy.
+  While `SITE_ORIGIN` is still the Vercel hostname the rule does not exist.
+
+**On the day, in this order:**
+
+1. Buy the domain. In Vercel → Settings → Domains, add it and follow the DNS
+   instructions (an A/ALIAS record for the apex, a CNAME for `www`). Choose
+   one form as primary — apex or `www` — and let Vercel redirect the other.
+   Wait until Vercel shows the domain as valid with a certificate.
+2. In Vercel → Settings → Environment Variables (Production): set
+   `SITE_ORIGIN` to `https://<the domain>` (scheme and host only, the
+   primary form chosen above) and `SITE_INDEXABLE` to `true`.
+3. Redeploy (push to `main`, or Redeploy in the dashboard). Both variables
+   are read at build time; saving them changes nothing until a build runs.
+4. Verify against the live domain, with a plain `curl`, not a browser:
+   - `/robots.txt` starts `Allow: /` and ends with the sitemap on the domain.
+   - Any city page carries `<meta name="robots" content="index, follow">`
+     and a canonical on the domain; `/internal/provenance/` still says
+     noindex.
+   - `/sitemap.xml` lists the domain, not vercel.app.
+   - `https://pickleball-courts-cyan.vercel.app/pickleball/us/wa/seattle/`
+     answers 308 to the same path on the domain.
+   - `node scripts/monitor-404.mjs --live https://<the domain>` passes.
+5. Update this file's origin line and `ci.yml`'s `SITE_ORIGIN` repository
+   variable to the domain, so the scheduled production monitor watches the
+   right host. Record the date and the hostname in `decisions.md`.
+6. Google Search Console: add the domain property (DNS verification), submit
+   `/sitemap.xml`, and run the Rich Results test on one city page, one venue
+   page and one state page. Bing Webmaster Tools accepts a Search Console
+   import.
+7. Then wait. Indexing takes days to weeks, and that waiting is Phase 7.
+
+**Do not** turn `SITE_INDEXABLE` on while `SITE_ORIGIN` is still the Vercel
+hostname. A day of crawling there gains nothing and leaves vercel.app URLs in
+the index that the redirect then has to carry forever.
 
 ## Failures worth recognising
 

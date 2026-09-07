@@ -1,11 +1,11 @@
 import type {Metadata} from 'next'
-import {ORIGIN} from '../../lib/site/origin.mjs'
+import {ORIGIN, PAGE_ROBOTS} from '../../lib/site/origin.mjs'
 
 export const metadata: Metadata = {
   title: 'How we verify',
   description:
     'Every published fact has a named source and a date it was checked. Here is the ladder we work down, and what we refuse to do.',
-  robots: {index: false, follow: false},
+  robots: PAGE_ROBOTS,
   alternates: {canonical: '/how-we-verify/'},
 }
 

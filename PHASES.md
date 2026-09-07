@@ -308,6 +308,13 @@ only thing that moves it is more verified inventory and more time.
 **What advances it:** city verification runs, one at a time, to the standard
 the sequencing rules set out below. Nothing else in this repository does.
 
+**2026-09-07:** the site is still noindex, so no time in the index has
+started. Everything that can be prepared without the domain now is:
+`SITE_INDEXABLE` gates robots and every page's robots meta, Open Graph tags
+are on every page, and the Vercel hostname will redirect to the domain the
+moment `SITE_ORIGIN` names one. The launch sequence is in DEPLOYMENT.md;
+the clock starts when the owner attaches the domain and sets two variables.
+
 Per the sequencing rules below, phases 8 through 12 do not start until it
 passes.
 

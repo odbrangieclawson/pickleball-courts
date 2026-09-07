@@ -1,4 +1,5 @@
 import type {Metadata} from 'next'
+import {PAGE_ROBOTS} from '../lib/site/origin.mjs'
 import {homeView} from '../lib/site/views.mjs'
 
 /*
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   title: 'Find Pickleball Courts',
   description:
     'Pickleball courts with a named source and a checked date on every fact. We publish what we have verified, and we publish the gaps too.',
-  robots: {index: false, follow: false},
+  robots: PAGE_ROBOTS,
   alternates: {canonical: '/'},
 }
 

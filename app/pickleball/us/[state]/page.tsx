@@ -1,4 +1,5 @@
 import type {Metadata} from 'next'
+import {PAGE_ROBOTS} from '../../../../lib/site/origin.mjs'
 import {notFound} from 'next/navigation'
 import {stateView, allStateParams} from '../../../../lib/site/views.mjs'
 
@@ -39,7 +40,7 @@ export async function generateMetadata({params}: Params): Promise<Metadata> {
   const {state} = await params
   const v = stateView(state)
   if (!v) return {title: 'Not found', robots: {index: false, follow: false}}
-  return {title: v.title, description: v.meta, robots: {index: false, follow: false},
+  return {title: v.title, description: v.meta, robots: PAGE_ROBOTS,
     alternates: {canonical: `/pickleball/us/${state}/`}}
 }
 

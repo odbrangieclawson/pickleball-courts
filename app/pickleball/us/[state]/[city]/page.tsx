@@ -1,4 +1,5 @@
 import type {Metadata} from 'next'
+import {PAGE_ROBOTS} from '../../../../../lib/site/origin.mjs'
 import {notFound} from 'next/navigation'
 import {cityView, allCityParams, countyView, allCountyParams} from '../../../../../lib/site/views.mjs'
 import CountyPage from './CountyPage'
@@ -46,12 +47,12 @@ export async function generateMetadata({params}: Params): Promise<Metadata> {
   if (city.endsWith('-county')) {
     const co = countyView(state, city)
     if (!co) return {title: 'Not found', robots: {index: false, follow: false}}
-    return {title: co.title, description: co.meta, robots: {index: false, follow: false},
+    return {title: co.title, description: co.meta, robots: PAGE_ROBOTS,
       alternates: {canonical: `/pickleball/us/${state}/${city}/`}}
   }
   const v = cityView(state, city)
   if (!v) return {title: 'Not found', robots: {index: false, follow: false}}
-  return {title: v.title, description: v.meta, robots: {index: false, follow: false},
+  return {title: v.title, description: v.meta, robots: PAGE_ROBOTS,
     alternates: {canonical: `/pickleball/us/${state}/${city}/`}}
 }
 
