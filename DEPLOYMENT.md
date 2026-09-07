@@ -105,6 +105,19 @@ change.
    import.
 7. Then wait. Indexing takes days to weeks, and that waiting is Phase 7.
 
+**Rich Results test, run 2026-09-07 in code mode** (the URL mode cannot fetch
+a page that robots.txt disallows, which is the intended state until launch;
+the JSON-LD of three live pages was pasted instead). Venue page (Welsh Park,
+Rockville): 3 valid items — Breadcrumbs, Local businesses
+(SportsActivityLocation), Organization; the only warnings are the optional
+`priceRange`, `telephone` and `image` fields. City page (Rockville): 2 valid
+items — Breadcrumbs and Carousels (the ItemList) — no warnings. State page
+(California): 2 valid items — Breadcrumbs and Datasets — with non-critical
+warnings on optional Dataset fields. FAQPage is present on every page and
+valid, but Google no longer shows FAQ rich results for sites of this kind,
+so the test does not list it. Step 6 above repeats this in URL mode on the
+real domain, which should report the same items.
+
 **Do not** turn `SITE_INDEXABLE` on while `SITE_ORIGIN` is still the Vercel
 hostname. A day of crawling there gains nothing and leaves vercel.app URLs in
 the index that the redirect then has to carry forever.
