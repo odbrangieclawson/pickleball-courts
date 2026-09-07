@@ -1,0 +1,578 @@
+{
+  "city": "Mount Pleasant",
+  "state": "SC",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Mount Pleasant states everything on one Town page, under two headings: \"Indoor\" (the Senior Center, Park West Gym, the Deb Gym at Town Hall) and \"Outdoor\" (Miriam Brown Community Center, Park West Tennis Courts). Every entry carries a count line - \"1 Court\", \"6 Courts\", \"4 Courts\", \"4 Courts - Lighted\" - a two-line address with a postcode, and a paragraph that prices the play and says who brings the net. Indoor and outdoor are the Town's headings, asserted per entry. Park West Gym and Park West Tennis Courts share 1251 Park West Boulevard and publish as one venue with six indoor and four lighted outdoor courts, after Bellevue's Hidden Valley Park and Tampa's Forest Hills. Three venues are free in the Town's own words; the Senior Center is free for members and a $5 or $10 guest fee for everyone else, players 50 and older only, and publishes as a drop-in fee. Nets are provided at all four, with the weekday caveats the Town prints. The Deb Gym drops to two courts during volleyball season, 18 September to 31 October, which the Town states and the run asserts. No surface is stated anywhere; lighting is stated once, for the Park West tennis courts.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.tompsc.com/1120/Pickleball",
+      "publisher": "Town of Mount Pleasant Recreation Department",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/mount-pleasant/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/mount-pleasant-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 4,
+    "courts": 19,
+    "outdoor": 8,
+    "indoor": 11,
+    "lit_courts": 4,
+    "free_venues": 3
+  },
+  "excluded": [],
+  "venues": {
+    "senior-center": {
+      "minted": false,
+      "identity": {
+        "name": "Mount Pleasant Senior Center",
+        "city": "Mount Pleasant",
+        "state": "SC",
+        "county": "Charleston",
+        "postal_code": "29464",
+        "latitude": 32.821086070717,
+        "longitude": -79.853730855375,
+        "imported_slug": "mount-pleasant-senior-center",
+        "canonical_slug": "senior-center"
+      },
+      "match": {
+        "source_page": "https://www.tompsc.com/1120/Pickleball",
+        "quote": "1 Court",
+        "basis": "Matched to the imported mount-pleasant-senior-center row in Mount Pleasant, SC, at the same street address, published under the canonical slug senior-center."
+      },
+      "patch": {
+        "name": "Mount Pleasant Senior Center",
+        "total_courts": 1,
+        "street_address": "840 Von Kolnitz Road",
+        "venue_type": "community_center",
+        "fee_type": "drop_in_fee",
+        "hours_of_operation": "Pickleball sessions: Tuesday and Thursday 3:00-4:50 pm, Friday 3:00-5:50 pm",
+        "play_format": "open_play",
+        "nets_provided": true,
+        "court_availability": "One indoor pickleball court at the Town's Senior Center on Von Kolnitz Road, and the one venue in Mount Pleasant with a condition on who may play: \"Drop-in play is for anyone 50 years and older\". The Town prices it exactly - free for Senior Center members, \"a guest fee of $5 for Mt. Pleasant residents and $10 for those residing outside of Mt. Pleasant\" for non-members - and supplies everything: \"Nets, balls, and paddles are provided.\" Sessions run Tuesday and Thursday from 3:00 to 4:50 pm and Friday from 3:00 to 5:50 pm, with a Friday lesson hour beforehand. One court is one game at a time. The Town states nothing about the surface, and lighting in a gym is not something it addresses.",
+        "county": "Charleston",
+        "postal_code": "29464",
+        "indoor_courts": 1,
+        "drop_in_fee_usd": 5,
+        "pricing_notes": "Drop-in play is for players 50 and older only. Free for Senior Center members; non-members pay a guest fee of $5 for Mount Pleasant residents and $10 for non-residents."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed as \"Mount Pleasant Senior Center 50+\" on the Town's pickleball page; the \"50+\" is the Town's age condition and is published as one rather than as part of the name."
+        },
+        "total_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Town's pickleball page: \"Mount Pleasant Senior Center 50+ / 840 Von Kolnitz Road / Mount Pleasant, SC 29464 / 1 Court\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Mount Pleasant Senior Center 50+ / 840 Von Kolnitz Road / Mount Pleasant, SC 29464 / 1 Court\" on the Town's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A Town recreation building, listed under the Town's \"Indoor\" heading."
+        },
+        "fee_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is for anyone 50 years and older and is free for members of the Senior Center. Non members may join in for a guest fee of $5 for Mt. Pleasant residents and $10 for those residing outside of Mt. Pleasant. Nets, balls, and paddles are provided.\" Free for members, a guest fee for everyone else: for the public that is a drop-in fee, and the member and residency split is in the pricing notes."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Session times as printed under the entry on the Town's pickleball page: \"Tuesday/Thursday 3:00 - 4:50 pm\", \"Friday 3:00 - 5:50 pm\". These are pickleball sessions, not building hours."
+        },
+        "play_format": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is for anyone 50 years and older and is free for members of the Senior Center. Non members may join in for a guest fee of $5 for Mt. Pleasant residents and $10 for those residing outside of Mt. Pleasant. Nets, balls, and paddles are provided.\" Drop-in, first come, first served."
+        },
+        "nets_provided": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Nets, balls, and paddles are provided.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the Town's pickleball page: \"Mount Pleasant Senior Center 50+ / 840 Von Kolnitz Road / Mount Pleasant, SC 29464 / 1 Court\", and the rules printed beneath."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Charleston County, SC (FIPS 45019). Census address geocoder matched \"840 VON KOLNITZ RD, MOUNT PLEASANT, SC, 29464\". The resolver also places it in the incorporated place \"Mount Pleasant town\", which is what allows it to be published under Mount Pleasant."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"840 VON KOLNITZ RD, MOUNT PLEASANT, SC, 29464\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under the Town's \"Indoor\" heading: \"Mount Pleasant Senior Center 50+ / 1 Court\"."
+        },
+        "drop_in_fee_usd": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"a guest fee of $5 for Mt. Pleasant residents and $10 for those residing outside of Mt. Pleasant\" - the resident rate is published as the fee, the non-resident rate in the pricing notes."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is for anyone 50 years and older and is free for members of the Senior Center. Non members may join in for a guest fee of $5 for Mt. Pleasant residents and $10 for those residing outside of Mt. Pleasant. Nets, balls, and paddles are provided.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.tompsc.com/1120/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "drop_in_fee_usd"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "park-west": {
+      "minted": true,
+      "identity": {
+        "name": "Park West",
+        "city": "Mount Pleasant",
+        "state": "SC",
+        "county": "Charleston",
+        "postal_code": "29466",
+        "latitude": 32.884743192505,
+        "longitude": -79.783845667918,
+        "imported_slug": null,
+        "canonical_slug": "park-west"
+      },
+      "match": {
+        "source_page": "https://www.tompsc.com/1120/Pickleball",
+        "quote": "6 Courts + 4 Courts - Lighted",
+        "basis": "Minted as one venue from the Town's two entries at 1251 Park West Boulevard. The imported row park-west-gym-mount-pleasant-sc (six indoor courts) describes the gym half only and is left pending under its own slug rather than published as a second venue at the same address."
+      },
+      "patch": {
+        "name": "Park West",
+        "total_courts": 10,
+        "street_address": "1251 Park West Boulevard",
+        "venue_type": "public_park",
+        "fee_type": "free",
+        "hours_of_operation": "Indoor gym pickleball sessions: Tuesdays and Thursdays 8:00 am-12:00 pm, plus listed Sunday dates 8 a.m. to noon in autumn 2026. Outdoor organised open play: Monday, Tuesday and Wednesday 6:00-8:00 pm, reserved through the TeamReach app; otherwise first come, first served.",
+        "play_format": "open_play",
+        "nets_provided": true,
+        "court_availability": "Ten pickleball courts at one address in the Park West complex, on both sides of the indoor line: six in the Park West Gym and four lighted courts on the Park West tennis courts. The Town lists them as two entries, \"Park West Gym / 6 Courts\" under Indoor and \"Park West Tennis Courts / 4 Courts - Lighted\" under Outdoor, at the same 1251 Park West Boulevard, and they publish here as one venue. Both are free: \"Drop-in play is free. All players MUST sign in.\" in the gym, \"Drop-in play is first come first served and free.\" on the courts outside. Indoors the Town provides the nets and the sessions are Tuesday and Thursday mornings, 8:00 am to 12:00 pm, plus a run of Sunday mornings the Town lists by date for autumn 2026. Outdoors the nets come from the Program Building beside the courts, weekdays 8:00 a.m. to 5:00 p.m., and \"You must provide your own net if playing outside of business hours.\" The tennis courts are tennis courts first: \"Our MPRD Tennis Pros do have court priority for lessons!\" An organised open-play group meets on them Monday, Tuesday and Wednesday evenings, 6:00 to 8:00 pm, with a spot reserved through the TeamReach app. Bring your own balls and paddles everywhere on the site. Lighting is stated for the four outdoor courts only; the surface is not stated.",
+        "county": "Charleston",
+        "postal_code": "29466",
+        "indoor_courts": 6,
+        "outdoor_courts": 4,
+        "light": true
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Town lists \"Park West Gym\" under Indoor and \"Park West Tennis Courts\" under Outdoor at one address, 1251 Park West Boulevard; published as one venue under the site's shared name."
+        },
+        "total_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Two Town entries at one address: \"Park West Gym / 6 Courts\" under Indoor and \"Park West Tennis Courts / 4 Courts - Lighted\" under Outdoor. Ten is their sum."
+        },
+        "street_address": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Park West Gym / 1251 Park West Boulevard / Mount Pleasant, SC 29466 / 6 Courts\" and \"Park West Tennis Courts / 1251 Park West Boulevard / Mount Pleasant, SC 29466 / 4 Courts - Lighted\" on the Town's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A Town park site with a gym and tennis courts, listed under both the Indoor and Outdoor headings."
+        },
+        "fee_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is free.\" \"Drop-in play is first come first served and free.\" The Town's own word."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Session times as printed under the entry on the Town's pickleball page: \"Tuesdays & Thursdays: 8:00 am - 12:00 pm\", \"Sunday, September 13th - 8 a.m. to Noon\", \"Drop-in play is first come first served and free. Nets are available from the Program Building directly beside the courts Monday through Friday 8:00 a.m. - 5:00 p.m.\", \"Organized Open Play Group Meets Every Monday, Tuesday & Wednesday 6:00 - 8:00 pm.\". These are pickleball sessions, not building hours."
+        },
+        "play_format": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is free. All players MUST sign in.\" \"Drop-in play is first come first served and free. Nets are available from the Program Building directly beside the courts Monday through Friday 8:00 a.m. - 5:00 p.m.\" Drop-in, first come, first served."
+        },
+        "nets_provided": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Nets are provided for players to set up.\" in the gym; outdoors \"Nets are available from the Program Building directly beside the courts Monday through Friday 8:00 a.m. - 5:00 p.m.\" and \"You must provide your own net if playing outside of business hours.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the Town's pickleball page: \"Park West Gym / 1251 Park West Boulevard / Mount Pleasant, SC 29466 / 6 Courts\" and \"Park West Tennis Courts / 1251 Park West Boulevard / Mount Pleasant, SC 29466 / 4 Courts - Lighted\", and the rules printed beneath."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Charleston County, SC (FIPS 45019). Census address geocoder matched \"1251 PARK WEST BLVD, MOUNT PLEASANT, SC, 29466\". The resolver also places it in the incorporated place \"Mount Pleasant town\", which is what allows it to be published under Mount Pleasant."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1251 PARK WEST BLVD, MOUNT PLEASANT, SC, 29466\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under the Town's \"Indoor\" heading: \"Park West Gym / 6 Courts\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under the Town's \"Outdoor\" heading: \"Park West Tennis Courts / 4 Courts - Lighted\"."
+        },
+        "light": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4 Courts - Lighted\" is the Town's own line for the Park West tennis courts, the outdoor four. The six gym courts are indoors and the Town says nothing about lighting there."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tompsc.com/1120/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "deb-gym-at-town-hall": {
+      "minted": true,
+      "identity": {
+        "name": "The Deb Gym at Town Hall",
+        "city": "Mount Pleasant",
+        "state": "SC",
+        "county": "Charleston",
+        "postal_code": "29464",
+        "latitude": 32.801444898395,
+        "longitude": -79.890142871621,
+        "imported_slug": null,
+        "canonical_slug": "deb-gym-at-town-hall"
+      },
+      "match": {
+        "source_page": "https://www.tompsc.com/1120/Pickleball",
+        "quote": "4 Courts",
+        "basis": "No imported row for this venue. Minted here from the Town's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "The Deb Gym at Town Hall",
+        "total_courts": 4,
+        "street_address": "100 Ann Edwards Lane",
+        "venue_type": "community_center",
+        "fee_type": "free",
+        "hours_of_operation": "Pickleball sessions: Mondays 1:00-3:00 pm, Wednesdays 9:00 am-12:00 pm, Fridays 8:00 am-12:00 pm",
+        "play_format": "open_play",
+        "nets_provided": true,
+        "court_availability": "Four indoor pickleball courts in the gym at Town Hall on Ann Edwards Lane, free to drop in on three weekday sessions: Mondays 1:00 to 3:00 pm, Wednesdays 9:00 am to 12:00 pm and Fridays 8:00 am to 12:00 pm. \"Drop-in play is free. All players MUST sign in.\" The Town provides the nets (\"Nets are provided for players to set up.\") and asks players to bring their own balls and paddles, to enter at their designated time, and to break down a few minutes before the end. The Town also states a seasonal reduction: \"During volleyball season - Friday, September 18th through Saturday, October 31st all Pickleball Open Gyms will only be played on two pickleball courts.\" Four courts is the count the Town states and two is what it says to expect for six weeks of the autumn. Holiday closures are listed by date on the same page. The surface is not stated, and lighting in a gym is not something the Town addresses.",
+        "county": "Charleston",
+        "postal_code": "29464",
+        "indoor_courts": 4
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"The Deb Gym at Town Hall\" on the Town's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Town's pickleball page: \"The Deb Gym at Town Hall / 100 Ann Edwards Lane / Mount Pleasant, SC 29464 / 4 Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The Deb Gym at Town Hall / 100 Ann Edwards Lane / Mount Pleasant, SC 29464 / 4 Courts\" on the Town's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A Town recreation building, listed under the Town's \"Indoor\" heading."
+        },
+        "fee_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is free.\" The Town's own word."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Session times as printed under the entry on the Town's pickleball page: \"Mondays: 1:00 - 3:00 pm\", \"Wednesdays: 9:00 am- 12:00 pm\", \"Fridays:  8:00 am - 12:00 pm\". These are pickleball sessions, not building hours."
+        },
+        "play_format": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is free. All players MUST sign in.\" Drop-in, first come, first served."
+        },
+        "nets_provided": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Nets are provided for players to set up.\""
+        },
+        "court_availability": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the Town's pickleball page: \"The Deb Gym at Town Hall / 100 Ann Edwards Lane / Mount Pleasant, SC 29464 / 4 Courts\", and the rules printed beneath."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Charleston County, SC (FIPS 45019). Census address geocoder matched \"100 ANN EDWARDS LN, MOUNT PLEASANT, SC, 29464\". The resolver also places it in the incorporated place \"Mount Pleasant town\", which is what allows it to be published under Mount Pleasant."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"100 ANN EDWARDS LN, MOUNT PLEASANT, SC, 29464\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under the Town's \"Indoor\" heading: \"The Deb Gym at Town Hall / 4 Courts\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tompsc.com/1120/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "miriam-brown-community-center": {
+      "minted": false,
+      "identity": {
+        "name": "Miriam Brown Community Center",
+        "city": "Mount Pleasant",
+        "state": "SC",
+        "county": "Charleston",
+        "postal_code": "29464",
+        "latitude": 32.786972894214,
+        "longitude": -79.87430415751,
+        "imported_slug": "miriam-brown-community-center",
+        "canonical_slug": "miriam-brown-community-center"
+      },
+      "match": {
+        "source_page": "https://www.tompsc.com/1120/Pickleball",
+        "quote": "4 Courts",
+        "basis": "Matched to the imported miriam-brown-community-center row in Mount Pleasant, SC, at the same street address."
+      },
+      "patch": {
+        "name": "Miriam Brown Community Center",
+        "total_courts": 4,
+        "street_address": "118 Royall Avenue",
+        "venue_type": "community_center",
+        "fee_type": "free",
+        "hours_of_operation": "Open play group Monday to Sunday 7:00-11:00 am. No open pickleball play while the community centre is open: September to May, Monday to Friday 2:30-6:30 pm and Saturday 11:00 am-3:30 pm; June to August, Monday to Friday 11:30 am-3:30 pm.",
+        "play_format": "open_play",
+        "nets_provided": true,
+        "court_availability": "Four outdoor pickleball courts at the Miriam Brown Community Center on Royall Avenue in the Old Village, free and first come, first served in the Town's words: \"Drop-in play is free and first come, first served.\" Nets are supplied on weekdays - \"Nets are available weekdays from the G.M. Darby Building from 8:30 a.m. - 5:00 p.m.\" - and the Town asks you to bring your own paddles and balls. An open-play group meets every morning, \"Monday - Sunday: 7:00am - 11:00 am\", and the Town warns that \"Times may vary to accommodate MPRD activities.\" The rule that shapes the day is printed in capitals: \"NO OPEN PICKLEBALL PLAY WHEN THE COMMUNITY CENTER IS OPEN!\" - which the Town defines as Monday to Friday 2:30 to 6:30 pm and Saturday 11:00 am to 3:30 pm from September to May, and Monday to Friday 11:30 am to 3:30 pm from June to August. The Town also runs coached clinics and private lessons here at published prices. Lighting and surface are not stated.",
+        "county": "Charleston",
+        "postal_code": "29464",
+        "outdoor_courts": 4
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Miriam Brown Community Center\" on the Town's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Town's pickleball page: \"Miriam Brown Community Center / 118 Royall Avenue / Mount Pleasant, SC 29464 / 4 Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Miriam Brown Community Center / 118 Royall Avenue / Mount Pleasant, SC 29464 / 4 Courts\" on the Town's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A Town recreation building, listed under the Town's \"Indoor\" heading. Miriam Brown's four courts are outdoor, at a community centre."
+        },
+        "fee_type": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is free and first come, first served.\" The Town's own word."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Session times as printed under the entry on the Town's pickleball page: \"Drop-in play is free and first come, first served. Nets are available weekdays from the G.M. Darby Building from 8:30 a.m. - 5:00 p.m.\", \"Open Play Group Meets Monday - Sunday: 7:00am - 11:00 am\", \"Sept to May - Monday to Friday 2:30 - 6:30 pm, Saturday 11:00 am - 3:30 pm\", \"June to August - Monday to Friday 11:30 am - 3:30 pm\". These are pickleball sessions, not building hours."
+        },
+        "play_format": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Drop-in play is free and first come, first served. Nets are available weekdays from the G.M. Darby Building from 8:30 a.m. - 5:00 p.m.\" Drop-in, first come, first served."
+        },
+        "nets_provided": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Nets are available weekdays from the G.M. Darby Building from 8:30 a.m. - 5:00 p.m.\" - provided on weekdays, in the Town's words."
+        },
+        "court_availability": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the Town's pickleball page: \"Miriam Brown Community Center / 118 Royall Avenue / Mount Pleasant, SC 29464 / 4 Courts\", and the rules printed beneath."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Charleston County, SC (FIPS 45019). Census address geocoder matched \"118 ROYALL AVE, MOUNT PLEASANT, SC, 29464\". The resolver also places it in the incorporated place \"Mount Pleasant town\", which is what allows it to be published under Mount Pleasant."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"118 ROYALL AVE, MOUNT PLEASANT, SC, 29464\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tompsc.com/1120/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under the Town's \"Outdoor\" heading: \"Miriam Brown Community Center / 4 Courts\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tompsc.com/1120/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

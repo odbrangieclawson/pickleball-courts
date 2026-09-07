@@ -1,0 +1,941 @@
+{
+  "city": "Long Beach",
+  "state": "CA",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Long Beach states a count and an address on one line per park under \"Pickleball Courts at Park Locations:\", and says line by line whether a court is dedicated or striped onto tennis - \"8 dedicated courts\", \"Hybrid location: 8 pickleball courts on 1 tennis court and 4 dedicated pickleball courts\", \"1 dedicated court, 2 dual-striped\". Where a line carries two figures the sum is the City's own arithmetic. Eight venues publish, 48 courts; the El Dorado Park Tennis & Pickleball Center adds the only price in the city ($5 drop-in, $10 a court an hour to reserve) and the only stated lighting, and shares its address with El Dorado Park West's three park courts, published separately on the Madison Warner Park precedent. Three refusals: Somerset Park, whose \"1500 E. Carson\" the Census places in the neighbouring city of Carson; the Billie Jean King Tennis Center, where the City's page says four courts and the centre's page says eight; and Whaley Park, a court without a count. The City's own sentence \"Currently there are 24 dedicated pickleball courts in Long Beach\" is asserted and not used - its venue-by-venue dedicated figures sum to 23. Indoor or outdoor, price at the parks, surface and nets are never stated.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/deforest-park/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/deforest-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/silverado-park/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/silverado-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/veterans-park/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/veterans-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-park-west/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/el-dorado-park-west.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/marina-vista-park/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/marina-vista-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-tennis-center/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/el-dorado-tennis-center.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/somerset-park/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/somerset-park.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/billie-jean-king-tennis-center/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/billie-jean-king-tennis-center.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.longbeach.gov/park/park-and-facilities/directory/whaley-park/",
+      "publisher": "City of Long Beach Parks, Recreation and Marine",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/long-beach/whaley-park.html"
+    },
+    {
+      "id": "S11",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/long-beach-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 8,
+    "courts": 48,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": 8,
+    "dedicated_courts": 23,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Somerset Park",
+      "why": [
+        "The City writes \"1500 E. Carson\" on its pickleball page and \"1500 E. Carson St.\" on the park's own page, with no city on either, and the Census address geocoder places that address in \"Carson city\", postcode 90745 - the neighbouring incorporated city that shares the street's name. A city page must contain venues in that city (the test that kept Scottsdale Community College off Scottsdale's page), and this one does not resolve inside Long Beach.",
+        "The count is stated - \"Dual striping 8 pickleball on 2 tennis courts\" - and the site is a City of Long Beach park on the City's own directory. The venue fails on where the resolver puts its address, and the run fails the day the address resolves inside Long Beach, so it is re-read rather than forgotten."
+      ]
+    },
+    {
+      "name": "Billie Jean King Tennis Center",
+      "why": [
+        "Two City records, two numbers. The City's pickleball page says the centre \"offers four shared-use pickleball courts\"; the centre's own page lists \"8 Pickleball Courts, Fully Lighted\". The rule that decided Saint Paul and Lincoln - the record that states a number publishes - cannot choose between two numbers, and Irvine's Los Olivos was refused on exactly this shape. Both statements are asserted so the build fails when the City agrees with itself."
+      ]
+    },
+    {
+      "name": "Whaley Park",
+      "why": [
+        "The City states no number: \"Dual-striped pickleball and volleyball court.\" A court is not a count, and Page Gate 1 requires a stated count."
+      ]
+    }
+  ],
+  "venues": {
+    "deforest-park": {
+      "minted": true,
+      "identity": {
+        "name": "DeForest Park",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90805",
+        "latitude": 33.868682877955,
+        "longitude": -118.191157358349,
+        "imported_slug": null,
+        "canonical_slug": "deforest-park"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "DeForest Park (6255 DeForest Ave.) - 8 dedicated courts.",
+        "basis": "Minted from the City's pickleball page. The imported dataset holds a deforest-park-pickleball-center row at the same address with the same count; it is left pending rather than published under a name the City does not use."
+      },
+      "patch": {
+        "name": "DeForest Park",
+        "total_courts": 8,
+        "street_address": "6255 DeForest Ave",
+        "venue_type": "public_park",
+        "court_availability": "Eight dedicated pickleball courts in the north of the city, the largest dedicated set in Long Beach, stated on the City's pickleball page as \"DeForest Park (6255 DeForest Ave.) - 8 dedicated courts.\" Dedicated means pickleball courts, not tennis courts wearing a second set of lines. The park's own page lists \"Pickleball Courts\" among its amenities and gives the park hours as \"Dawn to Dusk\"; the park is 49.6 acres, most of it the DeForest Wetlands and nature trail, with four lighted tennis courts, two playgrounds and restrooms on the 15 City-owned acres. The City's rule for all its park courts applies here: no reservations, first come, first served, and \"court signage regarding shared use must be observed\". Price, lighting and surface are not stated for the pickleball courts.",
+        "county": "Los Angeles",
+        "postal_code": "90805",
+        "play_format": "open_play",
+        "hours_of_operation": "Dawn to dusk"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/deforest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"DeForest Park\" on the City's pickleball page and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"DeForest Park (6255 DeForest Ave.) - 8 dedicated courts.\""
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"DeForest Park (6255 DeForest Ave.) - 8 dedicated courts.\" The park's own page prints no street address."
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Long Beach Parks, Recreation and Marine among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"DeForest Park (6255 DeForest Ave.) - 8 dedicated courts.\" and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA (FIPS 06037). Census address geocoder matched \"6255 DE FOREST AVE, LONG BEACH, CA, 90805\". The resolver also places it in the incorporated place \"Long Beach city\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6255 DE FOREST AVE, LONG BEACH, CA, 90805\"."
+        },
+        "play_format": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's rule for its park courts: \"NO reservations at this time. All courts (except those at Billy Jean King and El Dorado Tennis Center) are first-come, first-served and court signage regarding shared use must be observed.\""
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/deforest-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Park Hours: Dawn to Dusk\" on the park's own page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/deforest-park/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "silverado-park": {
+      "minted": true,
+      "identity": {
+        "name": "Silverado Park",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90810",
+        "latitude": 33.814042464374,
+        "longitude": -118.212693812791,
+        "imported_slug": null,
+        "canonical_slug": "silverado-park"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "Silverado Park (1545 W. 31st St.) - 4 dedicated pickleball courts. Call 562.570.1675.",
+        "basis": "No imported row for this venue. Minted from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Silverado Park",
+        "total_courts": 4,
+        "street_address": "1545 W 31st St",
+        "venue_type": "public_park",
+        "court_availability": "Four dedicated pickleball courts on the west side, stated on the City's pickleball page as \"Silverado Park (1545 W. 31st St.) - 4 dedicated pickleball courts. Call 562.570.1675.\" The park's own page lists \"Pickleball Courts\" among a long amenity list - two baseball fields, softball fields, four tennis courts, a gymnasium with a wooden floor renovated in 2004, a pool, a roller hockey court and a community centre - but states no separate hours, price, lighting or surface for the pickleball courts. First come, first served under the City's rule for its park courts.",
+        "county": "Los Angeles",
+        "postal_code": "90810",
+        "play_format": "open_play"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/silverado-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Silverado Park\" on the City's pickleball page and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Silverado Park (1545 W. 31st St.) - 4 dedicated pickleball courts. Call 562.570.1675.\""
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Silverado Park (1545 W. 31st St.) - 4 dedicated pickleball courts. Call 562.570.1675.\" The park's own page prints no street address."
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Long Beach Parks, Recreation and Marine among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Silverado Park (1545 W. 31st St.) - 4 dedicated pickleball courts. Call 562.570.1675.\" and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA (FIPS 06037). Census address geocoder matched \"1545 W 31ST ST, LONG BEACH, CA, 90810\". The resolver also places it in the incorporated place \"Long Beach city\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1545 W 31ST ST, LONG BEACH, CA, 90810\"."
+        },
+        "play_format": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's rule for its park courts: \"NO reservations at this time. All courts (except those at Billy Jean King and El Dorado Tennis Center) are first-come, first-served and court signage regarding shared use must be observed.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/silverado-park/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "veterans-park": {
+      "minted": false,
+      "identity": {
+        "name": "Veterans Park",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90806",
+        "latitude": 33.808066463911,
+        "longitude": -118.192400885479,
+        "imported_slug": "veterans-park-14058",
+        "canonical_slug": "veterans-park"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "Veterans Park (101 E. 28th St.) - Hybrid location: 8 pickleball courts on 1 tennis court and 4 dedicated pickleball courts.",
+        "basis": "Matched to the imported veterans-park-14058 row in Long Beach, CA, at the same street address, published under the canonical slug veterans-park (the identity pass dropped the import row id)."
+      },
+      "patch": {
+        "name": "Veterans Park",
+        "total_courts": 12,
+        "street_address": "101 E 28th St",
+        "venue_type": "public_park",
+        "court_availability": "Twelve pickleball courts, and the twelve is the City's own arithmetic: \"Hybrid location: 8 pickleball courts on 1 tennis court and 4 dedicated pickleball courts.\" Eight are lines on a single tennis court, so what you find depends on who arrived first and whether a tennis game is on; four are pickleball courts in their own right. That makes Veterans the largest published pickleball venue in Long Beach by count, and the one with the most ambiguity built into the number. The park is 14.3 acres in central Long Beach with a community recreation centre, a lighted softball field, a lighted baseball field, a lighted soccer field, four basketball courts and two tennis courts on the City's history of the site; the park page does not mention the pickleball courts. Price, lighting and surface are not stated.",
+        "county": "Los Angeles",
+        "postal_code": "90806",
+        "play_format": "open_play"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/veterans-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Veterans Park\" on the City's pickleball page and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Veterans Park (101 E. 28th St.) - Hybrid location: 8 pickleball courts on 1 tennis court and 4 dedicated pickleball courts.\" Twelve is the sum of the City's own two figures, eight on one tennis court and four dedicated."
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Veterans Park (101 E. 28th St.) - Hybrid location: 8 pickleball courts on 1 tennis court and 4 dedicated pickleball courts.\" The park's own page prints no street address."
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Long Beach Parks, Recreation and Marine among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Veterans Park (101 E. 28th St.) - Hybrid location: 8 pickleball courts on 1 tennis court and 4 dedicated pickleball courts.\" and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA (FIPS 06037). Census address geocoder matched \"101 E 28TH ST, LONG BEACH, CA, 90806\". The resolver also places it in the incorporated place \"Long Beach city\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"101 E 28TH ST, LONG BEACH, CA, 90806\"."
+        },
+        "play_format": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's rule for its park courts: \"NO reservations at this time. All courts (except those at Billy Jean King and El Dorado Tennis Center) are first-come, first-served and court signage regarding shared use must be observed.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/veterans-park/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "junipero-beach": {
+      "minted": true,
+      "identity": {
+        "name": "Junipero Beach",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90803",
+        "latitude": 33.764465248638,
+        "longitude": -118.168654367887,
+        "imported_slug": null,
+        "canonical_slug": "junipero-beach"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "Junipero Beach (2100 E. Ocean Blvd.) - 2 dedicated pickleball courts on repurposed half basketball court.",
+        "basis": "No imported row for this venue. Minted from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Junipero Beach",
+        "total_courts": 2,
+        "street_address": "2100 E Ocean Blvd",
+        "venue_type": "public_park",
+        "court_availability": "Two dedicated pickleball courts on the beach at the foot of Junipero Avenue, on what the City describes as a \"repurposed half basketball court\". The line on the City's pickleball page is the only City record of these courts - there is no park page for Junipero Beach in the City's directory - and it states the count, the address and the surface's history in one breath: \"Junipero Beach (2100 E. Ocean Blvd.) - 2 dedicated pickleball courts on repurposed half basketball court.\" Two courts is a game rather than a rotation. First come, first served. Price, lighting and surface material are not stated.",
+        "county": "Los Angeles",
+        "postal_code": "90803",
+        "play_format": "open_play"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Junipero Beach\" on the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Junipero Beach (2100 E. Ocean Blvd.) - 2 dedicated pickleball courts on repurposed half basketball court.\""
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Junipero Beach (2100 E. Ocean Blvd.) - 2 dedicated pickleball courts on repurposed half basketball court.\""
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Long Beach Parks, Recreation and Marine among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Junipero Beach (2100 E. Ocean Blvd.) - 2 dedicated pickleball courts on repurposed half basketball court.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA (FIPS 06037). Census address geocoder matched \"2100 E OCEAN BLVD, LONG BEACH, CA, 90803\". The resolver also places it in the incorporated place \"Long Beach city\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2100 E OCEAN BLVD, LONG BEACH, CA, 90803\"."
+        },
+        "play_format": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's rule for its park courts: \"NO reservations at this time. All courts (except those at Billy Jean King and El Dorado Tennis Center) are first-come, first-served and court signage regarding shared use must be observed.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "el-dorado-park-west": {
+      "minted": true,
+      "identity": {
+        "name": "El Dorado Park West",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90815",
+        "latitude": 33.805772820089,
+        "longitude": -118.099117465335,
+        "imported_slug": null,
+        "canonical_slug": "el-dorado-park-west"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "El Dorado Park West (2800 N. Studebaker Rd.) - 3 pickleball courts on a shared sports court.",
+        "basis": "No imported row for the park courts. Minted from the City's pickleball page. The El Dorado Park Tennis & Pickleball Center at the same address is published as a separate venue on the Madison Warner Park precedent."
+      },
+      "patch": {
+        "name": "El Dorado Park West",
+        "total_courts": 3,
+        "street_address": "2800 N Studebaker Rd",
+        "venue_type": "public_park",
+        "court_availability": "Three pickleball courts on a shared sports court in the 272.5-acre western section of El Dorado Regional Park, home to the Parks, Recreation and Marine Department's own offices. The City's line reads \"El Dorado Park West (2800 N. Studebaker Rd.) - 3 pickleball courts on a shared sports court.\" The park page says the park has \"night-lighted basketball and multi-use courts\"; whether the shared sports court the pickleball sits on is one of those multi-use courts is not something the City says, so lighting is recorded as unknown. The same address holds the El Dorado Park Tennis & Pickleball Center, a separate facility with its own page, hours and prices, published here as its own venue. First come, first served. Price and surface are not stated.",
+        "county": "Los Angeles",
+        "postal_code": "90815",
+        "play_format": "open_play"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-park-west/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"El Dorado Park West\" on the City's pickleball page and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"El Dorado Park West (2800 N. Studebaker Rd.) - 3 pickleball courts on a shared sports court.\""
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-park-west/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2800 Studebaker Road\" on the page's address block; the City's pickleball page writes it \"2800 N. Studebaker Rd.\""
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Long Beach Parks, Recreation and Marine among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"El Dorado Park West (2800 N. Studebaker Rd.) - 3 pickleball courts on a shared sports court.\" and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA (FIPS 06037). Census address geocoder matched \"2800 N STUDEBAKER RD, LONG BEACH, CA, 90815\". The resolver also places it in the incorporated place \"Long Beach city\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2800 N STUDEBAKER RD, LONG BEACH, CA, 90815\"."
+        },
+        "play_format": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's rule for its park courts: \"NO reservations at this time. All courts (except those at Billy Jean King and El Dorado Tennis Center) are first-come, first-served and court signage regarding shared use must be observed.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-park-west/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "bayshore-park": {
+      "minted": true,
+      "identity": {
+        "name": "Bayshore Park",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90803",
+        "latitude": 33.753021163122,
+        "longitude": -118.131324333333,
+        "imported_slug": null,
+        "canonical_slug": "bayshore-park"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "Bayshore Park (5415 E. Ocean) - 1 dedicated court, 2 dual-striped.",
+        "basis": "Minted from the City's pickleball page. The imported dataset holds bayshore-playground (2 courts) and bayshore (3) rows for this site; both are left pending."
+      },
+      "patch": {
+        "name": "Bayshore Park",
+        "total_courts": 3,
+        "street_address": "5415 E Ocean",
+        "venue_type": "public_park",
+        "court_availability": "Three pickleball courts on the bay at Belmont Shore, in the City's own arithmetic: \"Bayshore Park (5415 E. Ocean) - 1 dedicated court, 2 dual-striped.\" One court is pickleball only; two are striped onto another court and shared. The City writes the address without a street type and the Census address file resolves it as 5415 E Ocean Blvd. There is no Bayshore Park page in the City's directory - the directory lists the site's handball courts, playground and roller hockey rink separately - so the line is the only City record. First come, first served. Price, lighting and surface are not stated.",
+        "county": "Los Angeles",
+        "postal_code": "90803",
+        "play_format": "open_play"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Bayshore Park\" on the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Bayshore Park (5415 E. Ocean) - 1 dedicated court, 2 dual-striped.\" Three is the sum of the City's own two figures."
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Bayshore Park (5415 E. Ocean) - 1 dedicated court, 2 dual-striped.\" The City writes the address without a street type; the Census address file resolves it as E Ocean Blvd."
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Long Beach Parks, Recreation and Marine among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Bayshore Park (5415 E. Ocean) - 1 dedicated court, 2 dual-striped.\""
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA (FIPS 06037). Census address geocoder matched \"5415 E OCEAN BLVD, LONG BEACH, CA, 90803\". The resolver also places it in the incorporated place \"Long Beach city\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5415 E OCEAN BLVD, LONG BEACH, CA, 90803\"."
+        },
+        "play_format": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's rule for its park courts: \"NO reservations at this time. All courts (except those at Billy Jean King and El Dorado Tennis Center) are first-come, first-served and court signage regarding shared use must be observed.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "marina-vista-park": {
+      "minted": false,
+      "identity": {
+        "name": "Marina Vista Park",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90814",
+        "latitude": 33.7688968,
+        "longitude": -118.1315547,
+        "imported_slug": "marina-vista-park",
+        "canonical_slug": "marina-vista-park"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "Marina Vista Park (Colorado St. & Santiago) - Hybrid location: 4 dedicated pickleball courts and 4 dual-striped courts for either tennis or pickleball.",
+        "basis": "Matched to the imported marina-vista-park row in Long Beach, CA."
+      },
+      "patch": {
+        "name": "Marina Vista Park",
+        "total_courts": 8,
+        "street_address": "5355 Eliot St",
+        "venue_type": "public_park",
+        "court_availability": "Eight pickleball courts, four of them dedicated and four dual-striped for either tennis or pickleball, in an 18.2-acre park in the south-east of the city: \"Hybrid location: 4 dedicated pickleball courts and 4 dual-striped courts for either tennis or pickleball.\" The City's pickleball page locates the park by its cross streets, \"Colorado St. & Santiago\"; the park's own page gives the street address, \"5355 Eliot St.\", and that is the address published here. On the dual-striped four, a tennis player who arrived first has the court. First come, first served. Price, lighting and surface are not stated.",
+        "county": "Los Angeles",
+        "postal_code": "90814",
+        "play_format": "open_play"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/marina-vista-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Marina Vista Park\" on the City's pickleball page and on the park's own page."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Marina Vista Park (Colorado St. & Santiago) - Hybrid location: 4 dedicated pickleball courts and 4 dual-striped courts for either tennis or pickleball.\" Eight is the sum of the City's own two figures, four dedicated and four dual-striped."
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/marina-vista-park/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5355 Eliot St.\" on the park's own page. The City's pickleball page locates the park by cross streets only, \"Colorado St. & Santiago\"; the park page's street address is the one published."
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Long Beach Parks, Recreation and Marine among its parks."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Marina Vista Park (Colorado St. & Santiago) - Hybrid location: 4 dedicated pickleball courts and 4 dual-striped courts for either tennis or pickleball.\" and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA. OpenStreetMap (Nominatim) matched \"5355, Eliot Street, Belmont Shore, Long Beach, Los Angeles County, California, 90814, United States\" at house-number level. The Census address geocoder answered \"5355 E ELIOT ST, LONG BEACH, CA, 90814\", changing the direction from none to E; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Long Beach\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"5355, Eliot Street, Belmont Shore, Long Beach, Los Angeles County, California, 90814, United States\" at house-number level. The Census address geocoder answered \"5355 E ELIOT ST, LONG BEACH, CA, 90814\", changing the direction from none to E; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "play_format": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's rule for its park courts: \"NO reservations at this time. All courts (except those at Billy Jean King and El Dorado Tennis Center) are first-come, first-served and court signage regarding shared use must be observed.\""
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/marina-vista-park/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "el-dorado-park-tennis-center": {
+      "minted": false,
+      "identity": {
+        "name": "El Dorado Park Tennis & Pickleball Center",
+        "city": "Long Beach",
+        "state": "CA",
+        "county": "Los Angeles",
+        "postal_code": "90815",
+        "latitude": 33.8057955,
+        "longitude": -118.09909,
+        "imported_slug": "el-dorado-park-tennis-center",
+        "canonical_slug": "el-dorado-park-tennis-center"
+      },
+      "match": {
+        "source_page": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+        "quote": "El Dorado Tennis Center offers eight shared-use pickleball courts with drop-in play available on Tuesday and Thursday mornings from 8 to 11 am, and Friday evenings from 6 to 9pm.",
+        "basis": "Matched to the imported el-dorado-park-tennis-center row in Long Beach, CA, at the same street address. El Dorado Park West, at the same address, is published as a separate venue on the Madison Warner Park precedent: this centre has its own page, hours and prices."
+      },
+      "patch": {
+        "name": "El Dorado Park Tennis & Pickleball Center",
+        "total_courts": 8,
+        "street_address": "2800 Studebaker Road",
+        "venue_type": "public_park",
+        "court_availability": "Eight lit pickleball courts at the City's tennis centre inside El Dorado Park, stated twice: \"El Dorado Tennis Center offers eight shared-use pickleball courts\" on the City's pickleball page and \"8 Pickleball Courts, Fully Lighted\" among the centre's own amenities. Shared-use means the courts are tennis courts in pickleball configuration at the times the centre allots to pickleball. This is the one Long Beach venue with a price: \"$5 per person for drop-in play (up to three hours), while private pickleball court reservations are $10 per court per hour\", with drop-in play \"on Tuesday and Thursday mornings from 8 to 11 am, and Friday evenings from 6 to 9pm\" as the page stood when read. The centre is open Monday to Friday 7 a.m. to 9:30 p.m. and weekends 7 a.m. to 8 p.m., has \"NO LIGHT FEES\", and shares its address with El Dorado Park West's three park courts, published as a separate venue. Surface is not stated.",
+        "county": "Los Angeles",
+        "postal_code": "90815",
+        "light": true,
+        "fee_type": "drop_in_fee",
+        "drop_in_fee_usd": 5,
+        "pricing_notes": "Drop-in play $5 per person for up to three hours; private pickleball court reservations $10 per court per hour. Drop-in pickleball on Tuesday and Thursday mornings 8 to 11 am and Friday evenings 6 to 9 pm when read. No light fees.",
+        "hours_of_operation": "Monday to Friday 7 a.m. to 9:30 p.m.; Saturday and Sunday 7 a.m. to 8 p.m."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-tennis-center/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"El Dorado Park Tennis & Pickleball Center\" on the centre's own page; the City's pickleball page calls it \"El Dorado Tennis Center\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Stated twice by the City: \"El Dorado Tennis Center offers eight shared-use pickleball courts with drop-in play available on Tuesday and Thursday mornings from 8 to 11 am, and Friday evenings from 6 to 9pm.\" on its pickleball page, and \"8 Pickleball Courts, Fully Lighted\" among the centre's own amenities."
+        },
+        "street_address": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"El Dorado Tennis Center offers eight shared-use pickleball courts with drop-in play available on Tuesday and Thursday mornings from 8 to 11 am, and Friday evenings from 6 to 9pm.\""
+        },
+        "venue_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A City tennis centre inside El Dorado Park, published by the City of Long Beach Parks, Recreation and Marine in its park directory and managed for the City under contract; the controlled vocabulary's \"racquet_club\" is a private membership club, which this is not."
+        },
+        "court_availability": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"El Dorado Tennis Center offers eight shared-use pickleball courts with drop-in play available on Tuesday and Thursday mornings from 8 to 11 am, and Friday evenings from 6 to 9pm.\" and the park's own page."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Los Angeles County, CA. OpenStreetMap (Nominatim) matched \"2800, North Studebaker Road, Long Beach, Los Angeles County, California, 90815, United States\" at house-number level. The Census address geocoder answered \"2800 N STUDEBAKER RD, LONG BEACH, CA, 90815\", changing the direction from none to N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Long Beach\", which is what allows it to be published under Long Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"2800, North Studebaker Road, Long Beach, Los Angeles County, California, 90815, United States\" at house-number level. The Census address geocoder answered \"2800 N STUDEBAKER RD, LONG BEACH, CA, 90815\", changing the direction from none to N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "light": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-tennis-center/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"8 Pickleball Courts, Fully Lighted\" among the centre's own amenities."
+        },
+        "fee_type": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The pay-to-play rates at both tennis facilities are $5 per person for drop-in play (up to three hours), while private pickleball court reservations are $10 per court per hour.\""
+        },
+        "drop_in_fee_usd": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"$5 per person for drop-in play (up to three hours)\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.longbeach.gov/park/recreation-programs/sports-and-athletics/pickleball/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"The pay-to-play rates at both tennis facilities are $5 per person for drop-in play (up to three hours), while private pickleball court reservations are $10 per court per hour.\" \"El Dorado Tennis Center offers eight shared-use pickleball courts with drop-in play available on Tuesday and Thursday mornings from 8 to 11 am, and Friday evenings from 6 to 9pm.\" \"NO LIGHT FEES\" on the centre's page."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-tennis-center/",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours of Operation: Monday through Friday: 7am- 9:30pm Saturday, & Sunday: 7am - 8pm\" on the centre's page."
+        }
+      },
+      "record": {
+        "source_url": "https://www.longbeach.gov/park/park-and-facilities/directory/el-dorado-tennis-center/",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "drop_in_fee_usd"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    }
+  }
+}

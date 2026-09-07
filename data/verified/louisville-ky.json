@@ -1,0 +1,1811 @@
+{
+  "city": "Louisville",
+  "state": "KY",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Louisville Parks and Recreation publishes a \"Pickleball Court List:\" of seventeen lines in the form \"Vettiner Park - 14\", introduced by the sentence \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", and a page per park with a \"Park Address\" block and \"Hours\" of \"6 a.m. - 11 p.m.\" The list counts and calls the set outdoor; the park pages locate and name. Sixteen of the seventeen publish. Hounz Lane Park is refused because the Census places its address in Lyndon city, a separately incorporated small city inside Jefferson County - the Scottsdale Community College ground. Louisville is a consolidated city-county, so the resolvers name the City three ways (\"Louisville city\", \"Louisville/Jefferson County metro government (balance)\", \"Louisville\"), and the run accepts all three. Fern Creek and Riverview publish on the list alone: their park pages do not mention pickleball, and the run asserts that silence. The City states no lighting, price, surface or nets anywhere. The list is asserted as a block of seventeen lines in order, and the build fails on an eighteenth.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/pickleball-courts.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://louisvilleky.gov/government/parks/park-list/charlie-vettiner-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/charlie-vettiner-park.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://louisvilleky.gov/government/parks/park-list/iroquois-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/iroquois-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://louisvilleky.gov/government/parks/park-list/mcneely-lake-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/mcneely-lake-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://louisvilleky.gov/government/parks/park-list/sun-valley-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/sun-valley-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://louisvilleky.gov/government/parks/park-list/crescent-hill-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/crescent-hill-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://louisvilleky.gov/government/parks/park-list/des-pres-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/des-pres-park.html"
+    },
+    {
+      "id": "S8",
+      "url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/fern-creek-park.html"
+    },
+    {
+      "id": "S9",
+      "url": "https://louisvilleky.gov/government/parks/park-list/george-rogers-clark-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/george-rogers-clark-park.html"
+    },
+    {
+      "id": "S10",
+      "url": "https://louisvilleky.gov/government/parks/park-list/hays-kennedy-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/hays-kennedy-park.html"
+    },
+    {
+      "id": "S11",
+      "url": "https://louisvilleky.gov/government/parks/park-list/petersburg-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/petersburg-park.html"
+    },
+    {
+      "id": "S12",
+      "url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/riverview-park.html"
+    },
+    {
+      "id": "S13",
+      "url": "https://louisvilleky.gov/government/parks/park-list/wyandotte-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/wyandotte-park.html"
+    },
+    {
+      "id": "S14",
+      "url": "https://louisvilleky.gov/government/parks/park-list/nelson-hornbeck-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/nelson-hornbeck-park.html"
+    },
+    {
+      "id": "S15",
+      "url": "https://louisvilleky.gov/government/parks/park-list/riverside-gardens-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/riverside-gardens-park.html"
+    },
+    {
+      "id": "S16",
+      "url": "https://louisvilleky.gov/government/parks/park-list/tyler-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/tyler-park.html"
+    },
+    {
+      "id": "S17",
+      "url": "https://louisvilleky.gov/government/parks/park-list/new-walnut-street-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/new-walnut-street-park.html"
+    },
+    {
+      "id": "S18",
+      "url": "https://louisvilleky.gov/government/parks/park-list/hounz-lane-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/louisville/hounz-lane-park.html"
+    },
+    {
+      "id": "S19",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/louisville-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 16,
+    "courts": 67,
+    "outdoor": 67,
+    "indoor": null,
+    "lit_courts": null,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Hounz Lane Park",
+      "why": [
+        "The Census address geocoder places \"2300 Hounz Ln.\" in the incorporated place \"Lyndon city\", one of the small cities inside Jefferson County that stayed separately incorporated when Louisville and the county merged. It is not inside the City of Louisville.",
+        "Louisville Metro runs the park and lists it with three courts, and that does not change where it is. This is the Scottsdale Community College ground: a city page must contain venues in that city, and who programmes them is a separate question. The list line and the address are asserted so the refusal is re-examined if either changes."
+      ]
+    }
+  ],
+  "venues": {
+    "charlie-vettiner-park": {
+      "minted": true,
+      "identity": {
+        "name": "Charlie Vettiner Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40299",
+        "latitude": 38.1713061,
+        "longitude": -85.5583336,
+        "imported_slug": null,
+        "canonical_slug": "charlie-vettiner-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Vettiner Park - 14",
+        "basis": "No imported row under this slug. Minted from the City's pages. The imported charlie-vettiner-metro-park row describes the same park under an older name and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Charlie Vettiner Park",
+        "total_courts": 14,
+        "outdoor_courts": 14,
+        "street_address": "5550 Charlie Vettiner Park Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Fourteen outdoor pickleball courts, the largest set in Louisville by a distance, on the City's own count: \"Vettiner Park - 14\" on its pickleball page. The park's own page gives the address, hours of 6 a.m. to 11 p.m., and lists pickleball among its amenities. The City states nothing about lighting, price, surface or nets at any of its pickleball parks, and this page records each of those as unknown. Fourteen courts is a rotation that absorbs a crowd; nothing else in the city comes close.",
+        "county": "Jefferson",
+        "postal_code": "40299"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/charlie-vettiner-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Charlie Vettiner Park\" is the park page's own title. The City's pickleball list shortens it to \"Vettiner Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Vettiner Park - 14\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/charlie-vettiner-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5550 Charlie Vettiner Park Rd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/charlie-vettiner-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/charlie-vettiner-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Vettiner Park - 14\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"5550 Charlie Vettiner Park Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY. OpenStreetMap (Nominatim) matched \"5550, Charlie Vettiner Park Road, Louisville, Jefferson County, Kentucky, 40299, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver places it in \"Louisville\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"5550, Charlie Vettiner Park Road, Louisville, Jefferson County, Kentucky, 40299, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/charlie-vettiner-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "iroquois-park": {
+      "minted": true,
+      "identity": {
+        "name": "Iroquois Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40214",
+        "latitude": 38.167672367246,
+        "longitude": -85.780731050437,
+        "imported_slug": null,
+        "canonical_slug": "iroquois-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Iroquois - 4",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Iroquois Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "5216 New Cut Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Four outdoor pickleball courts in one of Louisville's large Olmsted parks, from the City's line \"Iroquois - 4\". The park page gives 5216 New Cut Rd., hours of 6 a.m. to 11 p.m., and lists pickleball among the amenities. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40214"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/iroquois-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Iroquois Park\" is the park page's own title. The City's pickleball list shortens it to \"Iroquois\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Iroquois - 4\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/iroquois-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5216 New Cut Rd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/iroquois-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/iroquois-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Iroquois - 4\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"5216 New Cut Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"5216 NEW CUT RD, LOUISVILLE, KY, 40214\". The resolver places it in \"Louisville city\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5216 NEW CUT RD, LOUISVILLE, KY, 40214\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/iroquois-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "mcneely-lake-park": {
+      "minted": true,
+      "identity": {
+        "name": "McNeely Lake Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40229",
+        "latitude": 38.094995497139,
+        "longitude": -85.620744194955,
+        "imported_slug": null,
+        "canonical_slug": "mcneely-lake-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "McNeely Lake - 2",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "McNeely Lake Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "10500 Cedar Creek Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Two outdoor pickleball courts in a lake park in the south-east of the county, from the City's line \"McNeely Lake - 2\". The park page prints the address with a leading asterisk, \"*10500 Cedar Creek Rd.\", which this site drops; the address resolves inside the consolidated city. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated. Two courts is a game rather than a rotation.",
+        "county": "Jefferson",
+        "postal_code": "40229"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/mcneely-lake-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"McNeely Lake Park\" is the park page's own title. The City's pickleball list shortens it to \"McNeely Lake\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"McNeely Lake - 2\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/mcneely-lake-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"*10500 Cedar Creek Rd.\" under \"Park Address\" on the park's own page. The City prints a leading asterisk, which is dropped here."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/mcneely-lake-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/mcneely-lake-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"McNeely Lake - 2\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"*10500 Cedar Creek Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"10500 CEDAR CREEK RD, LOUISVILLE, KY, 40229\". The resolver places it in \"Louisville/Jefferson County metro government (balance)\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"10500 CEDAR CREEK RD, LOUISVILLE, KY, 40229\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/mcneely-lake-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "sun-valley-park": {
+      "minted": false,
+      "identity": {
+        "name": "Sun Valley Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40272",
+        "latitude": 38.109559168385,
+        "longitude": -85.888288706178,
+        "imported_slug": "sun-valley-park",
+        "canonical_slug": "sun-valley-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Sun Valley - 1",
+        "basis": "Matched to the imported sun-valley-park row in Louisville, KY, at the same street address."
+      },
+      "patch": {
+        "name": "Sun Valley Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "6616 Ashby Ln",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "One outdoor pickleball court, from the City's line \"Sun Valley - 1\", in the south-west of the county at 6616 Ashby Ln. One court is one game at a time. Hours 6 a.m. to 11 p.m.; lighting, price, surface and nets are not stated. This venue was in the imported dataset with the same count and address.",
+        "county": "Jefferson",
+        "postal_code": "40272"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/sun-valley-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Sun Valley Park\" is the park page's own title. The City's pickleball list shortens it to \"Sun Valley\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Sun Valley - 1\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/sun-valley-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"6616 Ashby Ln.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/sun-valley-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/sun-valley-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Sun Valley - 1\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"6616 Ashby Ln.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"6616 ASHBY LN, LOUISVILLE, KY, 40272\". The resolver places it in \"Louisville/Jefferson County metro government (balance)\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6616 ASHBY LN, LOUISVILLE, KY, 40272\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/sun-valley-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "crescent-hill-park": {
+      "minted": true,
+      "identity": {
+        "name": "Crescent Hill Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40206",
+        "latitude": 38.254771868084,
+        "longitude": -85.680719390131,
+        "imported_slug": null,
+        "canonical_slug": "crescent-hill-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Crescent HIll - 4",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Crescent Hill Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "201 Reservoir Avenue",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Four outdoor pickleball courts beside the Crescent Hill reservoir, from the City's line \"Crescent HIll - 4\" - the capitalisation is the City's. The park page gives 201 Reservoir Avenue and hours of 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40206"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/crescent-hill-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Crescent Hill Park\" is the park page's own title. The City's pickleball list shortens it to \"Crescent HIll\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Crescent HIll - 4\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/crescent-hill-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"201 Reservoir Avenue\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/crescent-hill-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/crescent-hill-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Crescent HIll - 4\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"201 Reservoir Avenue\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"201 RESERVOIR AVE, LOUISVILLE, KY, 40206\". The resolver places it in \"Louisville city\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"201 RESERVOIR AVE, LOUISVILLE, KY, 40206\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/crescent-hill-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "des-pres-park": {
+      "minted": false,
+      "identity": {
+        "name": "Des Pres Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40220",
+        "latitude": 38.22261598756,
+        "longitude": -85.609316362981,
+        "imported_slug": "des-pres-park",
+        "canonical_slug": "des-pres-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Des Pres - 3",
+        "basis": "Matched to the imported des-pres-park row in Louisville, KY, at the same street address."
+      },
+      "patch": {
+        "name": "Des Pres Park",
+        "total_courts": 3,
+        "outdoor_courts": 3,
+        "street_address": "4709 Lowe Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Three outdoor pickleball courts, from the City's line \"Des Pres - 3\", at 4709 Lowe Rd. in the east of the county. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated. This venue was in the imported dataset with the same count and address.",
+        "county": "Jefferson",
+        "postal_code": "40220"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/des-pres-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Des Pres Park\" is the park page's own title. The City's pickleball list shortens it to \"Des Pres\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Des Pres - 3\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/des-pres-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4709 Lowe Rd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/des-pres-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/des-pres-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Des Pres - 3\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"4709 Lowe Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"4709 LOWE RD, LOUISVILLE, KY, 40220\". The resolver places it in \"Louisville/Jefferson County metro government (balance)\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4709 LOWE RD, LOUISVILLE, KY, 40220\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/des-pres-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "fern-creek-park": {
+      "minted": true,
+      "identity": {
+        "name": "Fern Creek Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40291",
+        "latitude": 38.155485633796,
+        "longitude": -85.597809350074,
+        "imported_slug": null,
+        "canonical_slug": "fern-creek-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Fern Creek - 6",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Fern Creek Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "8703 Ferndale Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Six outdoor pickleball courts, from the City's line \"Fern Creek - 6\". The park's own page gives the address, 8703 Ferndale Rd., and hours of 6 a.m. to 11 p.m., but does not list pickleball among its amenities, so this venue rests on the pickleball page alone; the run asserts that silence, and the build fails the day the park page mentions the courts. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40291"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Fern Creek Park\" is the park page's own title. The City's pickleball list shortens it to \"Fern Creek\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Fern Creek - 6\". The park's own page does not mention pickleball; the count rests on the list, and the run asserts the park page's silence."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"8703 Ferndale Rd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Fern Creek - 6\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"8703 Ferndale Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"8703 FERNDALE RD, LOUISVILLE, KY, 40291\". The resolver places it in \"Louisville/Jefferson County metro government (balance)\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"8703 FERNDALE RD, LOUISVILLE, KY, 40291\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "george-rogers-clark-park": {
+      "minted": true,
+      "identity": {
+        "name": "George Rogers Clark Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40217",
+        "latitude": 38.215697813463,
+        "longitude": -85.730001373739,
+        "imported_slug": null,
+        "canonical_slug": "george-rogers-clark-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "George Rogers Clark - 2",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "George Rogers Clark Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1024 Thruston Ave",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Two outdoor pickleball courts, from the City's line \"George Rogers Clark - 2\", at 1024 Thruston Ave. inside the older city. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40217"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/george-rogers-clark-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"George Rogers Clark Park\" is the park page's own title. The City's pickleball list shortens it to \"George Rogers Clark\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"George Rogers Clark - 2\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/george-rogers-clark-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1024 Thruston Ave.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/george-rogers-clark-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/george-rogers-clark-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"George Rogers Clark - 2\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"1024 Thruston Ave.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"1024 THRUSTON AVE, LOUISVILLE, KY, 40217\". The resolver places it in \"Louisville city\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1024 THRUSTON AVE, LOUISVILLE, KY, 40217\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/george-rogers-clark-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "hays-kennedy-park": {
+      "minted": true,
+      "identity": {
+        "name": "Hays Kennedy Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40059",
+        "latitude": 38.3527239,
+        "longitude": -85.6337368,
+        "imported_slug": null,
+        "canonical_slug": "hays-kennedy-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Hays Kennedy - 6",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Hays Kennedy Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "7003 Beachland Beach Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Six outdoor pickleball courts, from the City's line \"Hays Kennedy - 6\", on the Ohio River in the north-east of the county at 7003 Beachland Beach Rd. The address resolves through OpenStreetMap rather than the Census address file. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40059"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/hays-kennedy-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hays Kennedy Park\" is the park page's own title. The City's pickleball list shortens it to \"Hays Kennedy\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Hays Kennedy - 6\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/hays-kennedy-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"7003 Beachland Beach Rd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/hays-kennedy-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/hays-kennedy-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Hays Kennedy - 6\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"7003 Beachland Beach Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY. OpenStreetMap (Nominatim) matched \"7003, Beachland Beach Road, Beechland Beach, Louisville, Jefferson County, Kentucky, 40059, United States\" at house-number level. The Census address geocoder answered \"7003 BEECHLAND AVE, LOUISVILLE, KY, 40258\", changing the street type from RD to AVE; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver places it in \"Louisville\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"7003, Beachland Beach Road, Beechland Beach, Louisville, Jefferson County, Kentucky, 40059, United States\" at house-number level. The Census address geocoder answered \"7003 BEECHLAND AVE, LOUISVILLE, KY, 40258\", changing the street type from RD to AVE; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/hays-kennedy-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "petersburg-park": {
+      "minted": true,
+      "identity": {
+        "name": "Petersburg Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40218",
+        "latitude": 38.181948895602,
+        "longitude": -85.670030855077,
+        "imported_slug": null,
+        "canonical_slug": "petersburg-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Petersburg - 4",
+        "basis": "No imported row under this slug. Minted from the City's pages. The imported peterburg-park row describes the same park under an older name (misspelt, and with six courts against the City's four) and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Petersburg Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "5008 E Indian Trail",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Four outdoor pickleball courts, from the City's line \"Petersburg - 4\", at 5008 E Indian Trail. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated. The imported dataset carries this park, misspelt, with six courts; the City says four and the City publishes.",
+        "county": "Jefferson",
+        "postal_code": "40218"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/petersburg-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Petersburg Park\" is the park page's own title. The City's pickleball list shortens it to \"Petersburg\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Petersburg - 4\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/petersburg-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"5008 E Indian Trail\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/petersburg-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/petersburg-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Petersburg - 4\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"5008 E Indian Trail\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"5008 E INDIAN TRL, LOUISVILLE, KY, 40218\". The resolver places it in \"Louisville/Jefferson County metro government (balance)\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5008 E INDIAN TRL, LOUISVILLE, KY, 40218\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/petersburg-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "riverview-park": {
+      "minted": true,
+      "identity": {
+        "name": "Riverview Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40258",
+        "latitude": 38.147627570743,
+        "longitude": -85.901314664505,
+        "imported_slug": null,
+        "canonical_slug": "riverview-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Riverview - 4",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Riverview Park",
+        "total_courts": 4,
+        "outdoor_courts": 4,
+        "street_address": "8202 Greenwood Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Four outdoor pickleball courts, from the City's line \"Riverview - 4\", on the river in the south-west of the county at 8202 Greenwood Rd. The park's own page does not list pickleball among its amenities, so the count rests on the pickleball page alone and the run asserts that silence. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40258"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Riverview Park\" is the park page's own title. The City's pickleball list shortens it to \"Riverview\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Riverview - 4\". The park's own page does not mention pickleball; the count rests on the list, and the run asserts the park page's silence."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"8202 Greenwood Rd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Riverview - 4\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"8202 Greenwood Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"8202 GREENWOOD RD, LOUISVILLE, KY, 40258\". The resolver places it in \"Louisville/Jefferson County metro government (balance)\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"8202 GREENWOOD RD, LOUISVILLE, KY, 40258\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "wyandotte-park": {
+      "minted": true,
+      "identity": {
+        "name": "Wyandotte Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40215",
+        "latitude": 38.191623172197,
+        "longitude": -85.779664058811,
+        "imported_slug": null,
+        "canonical_slug": "wyandotte-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Wyandotte - 6",
+        "basis": "No imported row under this slug. Minted from the City's pages. The imported wyandotte-metro-park row describes the same park under an older name and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Wyandotte Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "1104 Beecher St",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Six outdoor pickleball courts, from the City's line \"Wyandotte - 6\", at 1104 Beecher St. in the south of the older city. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40215"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/wyandotte-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Wyandotte Park\" is the park page's own title. The City's pickleball list shortens it to \"Wyandotte\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Wyandotte - 6\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/wyandotte-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1104 Beecher St.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/wyandotte-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/wyandotte-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Wyandotte - 6\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"1104 Beecher St.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"1104 BEECHER ST, LOUISVILLE, KY, 40215\". The resolver places it in \"Louisville city\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1104 BEECHER ST, LOUISVILLE, KY, 40215\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/wyandotte-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "nelson-hornbeck-park": {
+      "minted": true,
+      "identity": {
+        "name": "Nelson Hornbeck Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40118",
+        "latitude": 38.1079451,
+        "longitude": -85.755618,
+        "imported_slug": null,
+        "canonical_slug": "nelson-hornbeck-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Nelson Hornbeck - 6",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Nelson Hornbeck Park",
+        "total_courts": 6,
+        "outdoor_courts": 6,
+        "street_address": "709 Fairdale Rd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Six outdoor pickleball courts, from the City's line \"Nelson Hornbeck - 6\", at 709 Fairdale Rd. in the south of the county; the address resolves through OpenStreetMap rather than the Census address file. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40118"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/nelson-hornbeck-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Nelson Hornbeck Park\" is the park page's own title. The City's pickleball list shortens it to \"Nelson Hornbeck\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Nelson Hornbeck - 6\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/nelson-hornbeck-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"709 Fairdale Rd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/nelson-hornbeck-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/nelson-hornbeck-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Nelson Hornbeck - 6\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"709 Fairdale Rd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY. OpenStreetMap (Nominatim) matched \"709, Fairdale Road, South Park, Louisville, Jefferson County, Kentucky, 40118, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver places it in \"Louisville\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"709, Fairdale Road, South Park, Louisville, Jefferson County, Kentucky, 40118, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/nelson-hornbeck-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "riverside-gardens-park": {
+      "minted": true,
+      "identity": {
+        "name": "Riverside Gardens Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40216",
+        "latitude": 38.189735292115,
+        "longitude": -85.867518626988,
+        "imported_slug": null,
+        "canonical_slug": "riverside-gardens-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Riverside Gardens - 1",
+        "basis": "No imported row under this slug. Minted from the City's pages. The imported riverside-metro-park row describes the same park under an older name and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Riverside Gardens Park",
+        "total_courts": 1,
+        "outdoor_courts": 1,
+        "street_address": "3899 Lees Ln",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "One outdoor pickleball court, from the City's line \"Riverside Gardens - 1\", at 3899 Lees Ln. in the west of the county. One court is one game at a time. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40216"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverside-gardens-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Riverside Gardens Park\" is the park page's own title. The City's pickleball list shortens it to \"Riverside Gardens\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Riverside Gardens - 1\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverside-gardens-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3899 Lees Ln.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverside-gardens-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/riverside-gardens-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Riverside Gardens - 1\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"3899 Lees Ln.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"3899 LEES LN, LOUISVILLE, KY, 40216\". The resolver places it in \"Louisville/Jefferson County metro government (balance)\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"3899 LEES LN, LOUISVILLE, KY, 40216\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/riverside-gardens-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "tyler-park": {
+      "minted": true,
+      "identity": {
+        "name": "Tyler Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40204",
+        "latitude": 38.230757776557,
+        "longitude": -85.719169587307,
+        "imported_slug": null,
+        "canonical_slug": "tyler-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "Tyler - 2",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Tyler Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1501 Castlewood Ave",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Two outdoor pickleball courts, from the City's line \"Tyler - 2\", at 1501 Castlewood Ave. in the Highlands. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40204"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/tyler-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Tyler Park\" is the park page's own title. The City's pickleball list shortens it to \"Tyler\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"Tyler - 2\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/tyler-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1501 Castlewood Ave.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/tyler-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/tyler-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"Tyler - 2\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"1501 Castlewood Ave.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"1501 CASTLEWOOD AVE, LOUISVILLE, KY, 40204\". The resolver places it in \"Louisville city\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1501 CASTLEWOOD AVE, LOUISVILLE, KY, 40204\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/tyler-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "new-walnut-street-park": {
+      "minted": true,
+      "identity": {
+        "name": "New Walnut Street Park",
+        "city": "Louisville",
+        "state": "KY",
+        "county": "Jefferson",
+        "postal_code": "40203",
+        "latitude": 38.252934386266,
+        "longitude": -85.773341401049,
+        "imported_slug": null,
+        "canonical_slug": "new-walnut-street-park"
+      },
+      "match": {
+        "source_page": "https://louisvilleky.gov/government/parks/pickleball-courts",
+        "quote": "New Walnut Street - 2",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "New Walnut Street Park",
+        "total_courts": 2,
+        "outdoor_courts": 2,
+        "street_address": "1327 W Muhammad Ali Blvd",
+        "venue_type": "public_park",
+        "hours_of_operation": "Park hours 6 a.m. to 11 p.m.",
+        "court_availability": "Two outdoor pickleball courts, from the City's line \"New Walnut Street - 2\", at 1327 W Muhammad Ali Blvd. in the west of the older city. Hours 6 a.m. to 11 p.m. Lighting, price, surface and nets are not stated.",
+        "county": "Jefferson",
+        "postal_code": "40203"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/new-walnut-street-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"New Walnut Street Park\" is the park page's own title. The City's pickleball list shortens it to \"New Walnut Street\"."
+        },
+        "total_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the \"Pickleball Court List:\" on the City's pickleball page: \"New Walnut Street - 2\". The park's own page lists Pickleball among its amenities without a count."
+        },
+        "outdoor_courts": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City introduces the list with \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on it is an outdoor count."
+        },
+        "street_address": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/new-walnut-street-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"1327 W Muhammad Ali Blvd.\" under \"Park Address\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/new-walnut-street-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by Louisville Parks and Recreation in its park list."
+        },
+        "hours_of_operation": {
+          "source_url": "https://louisvilleky.gov/government/parks/park-list/new-walnut-street-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours\" / \"6 a.m. - 11 p.m.\" on the park's own page."
+        },
+        "court_availability": {
+          "source_url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"New Walnut Street - 2\", \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\") and the park's own page (\"1327 W Muhammad Ali Blvd.\", \"6 a.m. - 11 p.m.\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Jefferson County, KY (FIPS 21111). Census address geocoder matched \"1327 W MUHAMMAD ALI BLVD, LOUISVILLE, KY, 40203\". The resolver places it in \"Louisville city\" - one of the three names the resolvers use for the consolidated City of Louisville - which is what allows it to be published under Louisville."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1327 W MUHAMMAD ALI BLVD, LOUISVILLE, KY, 40203\"."
+        }
+      },
+      "record": {
+        "source_url": "https://louisvilleky.gov/government/parks/park-list/new-walnut-street-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

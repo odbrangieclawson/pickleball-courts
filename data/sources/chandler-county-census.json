@@ -1,0 +1,101 @@
+{
+  "tumbleweed-park": {
+    "matched": false,
+    "query": "2041 S Pioneer Parkway, Chandler, AZ",
+    "resolver": null
+  },
+  "arrowhead-meadows-park": {
+    "matched": "1475 E ERIE ST, CHANDLER, AZ, 85225",
+    "resolver": "census",
+    "lat": 33.308806315968,
+    "lon": -111.816443988988,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Chandler city",
+    "place_matches_city": true,
+    "postal_code": "85225",
+    "basis": "Census address geocoder matched \"1475 E ERIE ST, CHANDLER, AZ, 85225\". The Census changed the direction from W to E from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands.",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"1475 E ERIE ST, CHANDLER, AZ, 85225\"."
+  },
+  "arbuckle-park": {
+    "matched": false,
+    "query": "1100 S Norman Way, Chandler, AZ",
+    "resolver": null
+  },
+  "arbuckle-park-list": {
+    "matched": false,
+    "query": "110 S Norman Way, Chandler, AZ",
+    "resolver": null
+  },
+  "la-paloma-park": {
+    "matched": "6579 S AMANDA BLVD, CHANDLER, AZ, 85249",
+    "resolver": "census",
+    "lat": 33.210811194672,
+    "lon": -111.803005851492,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Chandler city",
+    "place_matches_city": true,
+    "postal_code": "85249",
+    "basis": "Census address geocoder matched \"6579 S AMANDA BLVD, CHANDLER, AZ, 85249\". The Census changed the street type from DR to BLVD from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands.",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"6579 S AMANDA BLVD, CHANDLER, AZ, 85249\"."
+  },
+  "brooks-crossing-park": {
+    "matched": "1345 W CLL DEL NORTE, CHANDLER, AZ, 85224",
+    "resolver": "census",
+    "lat": 33.32905259269,
+    "lon": -111.864090467379,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Chandler city",
+    "place_matches_city": true,
+    "postal_code": "85224",
+    "basis": "Census address geocoder matched \"1345 W CLL DEL NORTE, CHANDLER, AZ, 85224\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"1345 W CLL DEL NORTE, CHANDLER, AZ, 85224\"."
+  },
+  "homestead-north-park": {
+    "matched": "1925 W FRYE RD, CHANDLER, AZ, 85224",
+    "resolver": "census",
+    "lat": 33.298633803098,
+    "lon": -111.874541094898,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Chandler city",
+    "place_matches_city": true,
+    "postal_code": "85224",
+    "basis": "Census address geocoder matched \"1925 W FRYE RD, CHANDLER, AZ, 85224\". The Census changed the direction from E to W from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands.",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"1925 W FRYE RD, CHANDLER, AZ, 85224\"."
+  },
+  "pecos-ranch-park": {
+    "matched": "1555 W MAPLEWOOD ST, CHANDLER, AZ, 85248",
+    "resolver": "census",
+    "lat": 33.28184172897,
+    "lon": -111.868404317763,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Chandler city",
+    "place_matches_city": true,
+    "postal_code": "85248",
+    "basis": "Census address geocoder matched \"1555 W MAPLEWOOD ST, CHANDLER, AZ, 85248\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"1555 W MAPLEWOOD ST, CHANDLER, AZ, 85248\"."
+  },
+  "apache-park": {
+    "matched": "1300 N HARTFORD ST, CHANDLER, AZ, 85225",
+    "resolver": "census",
+    "lat": 33.325890908023,
+    "lon": -111.850451434275,
+    "county": "Maricopa",
+    "state_fips": "04",
+    "county_fips": "013",
+    "place": "Chandler city",
+    "place_matches_city": true,
+    "postal_code": "85225",
+    "basis": "Census address geocoder matched \"1300 N HARTFORD ST, CHANDLER, AZ, 85225\".",
+    "county_citation": "Maricopa County, AZ (FIPS 04013). Census address geocoder matched \"1300 N HARTFORD ST, CHANDLER, AZ, 85225\"."
+  }
+}

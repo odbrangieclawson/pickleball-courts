@@ -315,7 +315,7 @@ passes.
 
 ## The published set
 
-Twenty-six cities, fifteen states, nineteen counties, three state pages. Every page below
+Thirty cities, eighteen states, twenty-three counties, three state pages. Every page below
 passes all six gates against the built HTML; the totals are the ones
 `getCounts()` returns, not a hand count.
 
@@ -347,8 +347,12 @@ passes all six gates against the built HTML; the totals are the ones
 | 24 | Boulder, CO | 5 | 29 | Racket-sports table + drop-in schedules; "first come and free to all park visitors" | 2026-09-07 |
 | 25 | Naperville, IL | 3 | 25 | Naperville Park District location pages; first park-district operator | 2026-09-07 |
 | 26 | St. George, UT | 3 | 46 | City pickleball page list "Little Valley / 2149 Horseman Park Drive / Courts:  33" | 2026-09-07 |
+| 27 | Louisville, KY | 16 | 67 | Louisville Parks "Pickleball Court List:" ("Vettiner Park - 14") + park pages for addresses and hours | 2026-09-07 |
+| 28 | Mount Pleasant, SC | 4 | 19 | Town pickleball page: Indoor and Outdoor sections with count, address, fee and session times per venue | 2026-09-07 |
+| 29 | Long Beach, CA | 8 | 48 | City pickleball page, one line per park with address and "dedicated" or "dual-striped" count | 2026-09-07 |
+| 30 | Wichita, KS | 10 | 53 | City pickleball page, three tabs (parks, recreation centres, Riverside Tennis Center), read in a browser | 2026-09-07 |
 
-**282 published pages:** 26 city, 203 venue, 31 filter, 19 county, 3 state.
+**333 published pages:** 30 city, 241 venue, 36 filter, 23 county, 3 state.
 
 **Six of those venues publish on a second address resolver,** added 2026-09-04:
 Bellevue's Highland Park, Madison's Door Creek and Rennebohm, and Scottsdale's
@@ -611,12 +615,12 @@ are committed and every assertion reads those rather than the network.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and twenty-six cities are published. What stands
+Phases 0 through 6 are complete and thirty cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered twenty-five times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and twenty-three sets of operator web pages (twenty-two municipal, one park district). No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered twenty-nine times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and twenty-seven sets of operator web pages (twenty-six municipal, one park district). No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -639,10 +643,10 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**26 of 50.** The sequencing rule above is the whole plan, and this is the
+**30 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last twenty-five were: find a parks
+The next city is chosen the same way the last twenty-nine were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
 never a qualification. Thirty-four cities were refused
@@ -679,6 +683,12 @@ so nobody re-treads them:
 | Fishers IN, Sugar Land TX, Bend OR, Sammamish, Bothell WA, Gresham OR | Fewer than three venues with a stated count. Sugar Land has two good ones (City Park, "4 lighted tennis/pickleball courts, 4 dedicated pickleball courts"; Park at the Levee, two). Bend has one 24-court complex and two parks that say "a pickleball court". |
 | Rochester MN, Oklahoma City, Grand Rapids MI, Georgetown TX, Edmond OK | No readable per-venue page: a POST-filtered directory, a leagues-only page, no page at all, a dead DNS name, a 522. |
 | **Los Olivos Community Park, Irvine** | Refused inside a published city: the City's pickleball page says two courts, its park page says "3 Lighted Pickleball Courts". The record-that-states-a-number rule cannot choose between two numbers. |
+| **Chandler AZ** | Reachable, and refused on its addresses. The City states counts at five parks — "featuring six courts" at Arrowhead Meadows, "This single pickleball court" at Arbuckle, La Paloma and Brooks Crossing, and Tumbleweed's "18 outdoor courts with LED lighting" — and only two of them resolve. Tumbleweed's "2041 S. Pioneer Parkway" fails both resolvers for the third time; Arbuckle carries two City house numbers (1100 and 110 S. Norman Way) and neither resolves; and Arrowhead Meadows is Foster Park over again: the City writes "1475 W. Erie St." in 85224, the Census answers East Erie in 85225, and OpenStreetMap has no record of the address as written. Two publishable venues against a three-venue threshold. The run (`verify:chandler`) records all of it and throws below the threshold. |
+| Chapel Hill, Wilmington, Winston-Salem NC; Greenville SC; Arlington VA; Nashville, Franklin TN; Alpharetta GA; San Jose, Sunnyvale, Santa Clara, Fremont, Anaheim CA; Broken Arrow OK; Olathe, Lenexa KS | HTTP 403 or a bot challenge, 2026-09-07. |
+| Asheville NC, Charleston SC | Reachable; parks named, no per-venue count ("Courts lined for tennis and pickleball (lighted)"). |
+| Huntsville AL, Ankeny IA, Sugar Land TX | Two countable venues each against a three-venue threshold (Huntsville: John Hunt Park "24 outdoor covered and lit competitive-play pickleball courts" and West Huntsville "four lighted outdoor pickleball courts"; Ankeny: Rally Complex "12 stand-alone, lighted pickleball courts" and Albaugh "three pickleball courts in the gym"). |
+| Virginia Beach VA, Georgetown TX, Pflugerville TX | Unreachable, a wrong TLS certificate, and a JavaScript-only facilities app respectively. |
+| Bloomington MN | One hundred park pages read; one states a count (Dred Scott, "6 pickleball courts"). The June 2020 PDF map would qualify if a PDF were a re-checkable source here. |
 
 **The six leads recorded on 2026-09-07 all published the same day as cities
 #21 to #26** — Tallahassee, Albuquerque, Las Vegas, Boulder, Naperville and
@@ -689,7 +699,11 @@ its four disputed venues published from the one visible table (three
 others were refused on address); Las Vegas lost Police Memorial and Bill
 Briare on address; Naperville lost Wolf's Crossing, DuPage River and
 Frontier on address and publishes at exactly three; St. George's grid
-address resolved. There is no lead in hand for #27.
+address resolved. Cities #27 to #30 came from a fresh scout the same day
+(Louisville, Mount Pleasant, Long Beach) and, at the owner's request,
+Wichita — read in a browser on the Cary route after a second day of 403s.
+Chandler was verified in the same batch and fell to two venues on its
+addresses; see the refusals table.
 
 Honolulu was re-checked on 2026-09-04 against the City & County's own GIS
 rather than against memory, and it is **still blocked for the same reason**.
@@ -746,6 +760,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-26-st-george`, `state-1-nc`, `state-2-wa`, `state-3-fl` — so a
+`city-2-raleigh` through `city-30-wichita`, `state-1-nc`, `state-2-wa`, `state-3-fl` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

@@ -78,6 +78,13 @@
     },
     {
       "file": "austin-tx.json",
+      "contains": "At Brentwood, Rosewood and Springwoods, yes — the City says so in words: \"bring your own",
+      "metric": "cities_with_nets_not_provided",
+      "op": "==",
+      "value": 6
+    },
+    {
+      "file": "austin-tx.json",
       "contains": "Across the whole of this directory only a handful of other venues take bookings, so an",
       "metric": "venues_bookable",
       "op": ">=",
@@ -85,17 +92,10 @@
     },
     {
       "file": "bellevue-wa.json",
-      "contains": "Hidden Valley Park is one of only six venues in this entire directory carrying a non-zero",
+      "contains": "Hidden Valley Park is one of only nine venues in this entire directory carrying a",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 6
-    },
-    {
-      "file": "bellevue-wa.json",
-      "contains": "That is one of the larger sets of venues in this directory, and the largest indoor set",
-      "metric": "largest_city_by_indoor_courts",
-      "op": "==",
-      "value": "Bellevue"
+      "value": 9
     },
     {
       "file": "bellevue-wa.json",
@@ -136,10 +136,10 @@
     },
     {
       "file": "boulder-co.json",
-      "contains": "It is one of six cities on this site with a verified free court, and, with Cape Coral,",
+      "contains": "It is one of seven cities on this site with a verified free court, and, with Cape Coral,",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "boulder-co.json",
@@ -164,7 +164,7 @@
       "contains": "That last part is rarer than it should be: this directory records a price only when an",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "capecoral-fl.json",
@@ -174,10 +174,10 @@
     },
     {
       "file": "capecoral-fl.json",
-      "contains": "Cape Coral is one of only six cities on this site with a verified free court, with",
+      "contains": "Cape Coral is one of only seven cities on this site with a verified free court, with",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "capecoral-fl.json",
@@ -194,6 +194,12 @@
     {
       "file": "cary-nc.json",
       "contains": "Carpenter Park is one of only two venues in this entire directory whose operator",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "charleston-county-sc.json",
+      "contains": "This is the first county in South Carolina this directory has published in, and one town",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -315,24 +321,24 @@
     },
     {
       "file": "filters-bellevue-wa.json",
-      "contains": "Bellevue is one of only four cities in this directory where an indoor page is worth its",
+      "contains": "Bellevue is one of only six cities in this directory where an indoor page is worth its",
       "metric": "cities_with_indoor_page",
       "op": "==",
-      "value": 4
+      "value": 6
     },
     {
       "file": "filters-bellevue-wa.json",
-      "contains": "Hidden Valley Park is on both this list and the outdoor one, which only five other venues",
+      "contains": "Hidden Valley Park is on both this list and the outdoor one, which only eight other",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 6
+      "value": 9
     },
     {
       "file": "filters-boulder-co.json",
-      "contains": "It is one of six cities on this site with a verified free court, and, with Cape Coral,",
+      "contains": "It is one of seven cities on this site with a verified free court, and, with Cape Coral,",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "filters-boulder-co.json",
@@ -348,7 +354,7 @@
     },
     {
       "file": "filters-capecoral-fl.json",
-      "contains": "That makes Cape Coral one of only six cities on this whole site with a verified free",
+      "contains": "That makes Cape Coral one of only seven cities on this whole site with a verified free",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -357,7 +363,7 @@
       "contains": "This site does not describe a venue as free unless an operator publishes it, which is why",
       "metric": "cities_with_free_page",
       "op": "==",
-      "value": 4
+      "value": 5
     },
     {
       "file": "filters-capecoral-fl.json",
@@ -394,6 +400,13 @@
       "contains": "On 4 September 2026 this site added a second address resolver, consulted only where the",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-mount-pleasant-sc.json",
+      "contains": "It is one of seven cities on this site with a verified free court.",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 7
     },
     {
       "file": "filters-portland-or.json",
@@ -474,7 +487,7 @@
       "contains": "That single sentence is why this page exists at all, and why Scottsdale is one of only",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "filters-scottsdale-az.json",
@@ -520,10 +533,23 @@
     },
     {
       "file": "filters-tampa-fl.json",
-      "contains": "Tampa has more published indoor venues than any city on this site, though Bellevue has",
+      "contains": "Tampa has more published indoor venues than any city on this site except Wichita, and its",
       "metric": "largest_city_by_indoor_venues",
       "op": "==",
-      "value": "Tampa"
+      "value": "Wichita"
+    },
+    {
+      "file": "filters-wichita-ks.json",
+      "contains": "This site publishes an indoor-or-outdoor answer only when an operator states one, and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-wichita-ks.json",
+      "contains": "Seven Wichita venues hold indoor pickleball courts, twenty-two courts between them, and",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Wichita"
     },
     {
       "file": "fl-state.json",
@@ -533,10 +559,10 @@
     },
     {
       "file": "fl-state.json",
-      "contains": "Tampa has more published indoor venues than any city on this site, though Bellevue has",
+      "contains": "Tampa has more published indoor venues than any city on this site except Wichita: five",
       "metric": "largest_city_by_indoor_venues",
       "op": "==",
-      "value": "Tampa"
+      "value": "Wichita"
     },
     {
       "file": "fl-state.json",
@@ -546,17 +572,17 @@
     },
     {
       "file": "fl-state.json",
-      "contains": "Few cities on this site carry a verified free court, six at the time of writing, and two",
+      "contains": "Few cities on this site carry a verified free court, seven at the time of writing, and",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "hillsborough-county-fl.json",
       "contains": "That indoor seven is the county's distinctive number: Tampa has more published indoor",
       "metric": "largest_city_by_indoor_venues",
       "op": "==",
-      "value": "Tampa"
+      "value": "Wichita"
     },
     {
       "file": "huntington-beach-ca.json",
@@ -573,6 +599,12 @@
     {
       "file": "irvine-ca.json",
       "contains": "Irvine is the first California city on this site.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "jefferson-county-ky.json",
+      "contains": "This is the first county in Kentucky this directory has published in, and it is an",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -656,10 +688,10 @@
     },
     {
       "file": "lee-county-fl.json",
-      "contains": "That makes Cape Coral one of only six cities on this site with a verified free court.",
+      "contains": "That makes Cape Coral one of only seven cities on this site with a verified free court.",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "lincoln-ne.json",
@@ -701,6 +733,48 @@
     {
       "file": "lincoln-ne.json",
       "contains": "That is an unusual arrangement to find written down, and it is the closest thing to a",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "long-beach-ca.json",
+      "contains": "Long Beach is one of the few operators on this site that writes \"dedicated\" or",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "long-beach-ca.json",
+      "contains": "Long Beach is the third California city on this site, after Irvine and Huntington Beach,",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "long-beach-ca.json",
+      "contains": "The El Dorado centre is the first venue on this site priced per person for drop-in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "los-angeles-county-ca.json",
+      "contains": "Long Beach is the third California city on this site and the first in this county.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "louisville-ky.json",
+      "contains": "No open-play session, no league night, no rotation rule and no morning group is published",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "louisville-ky.json",
+      "contains": "Louisville is the first Kentucky city on this site and the first in Jefferson County, and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "louisville-ky.json",
+      "contains": "It is also the first consolidated city-county on the site, and that shows in the record.",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -803,6 +877,25 @@
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
+      "file": "mount-pleasant-sc.json",
+      "contains": "Mount Pleasant is the first South Carolina city on this site and the first in Charleston",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "mount-pleasant-sc.json",
+      "contains": "It is one of seven cities on this site with a verified free court, and the free ones are",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 7
+    },
+    {
+      "file": "mount-pleasant-sc.json",
+      "contains": "The Town is one of the few operators on this site that states the age restriction, the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
       "file": "naperville-il.json",
       "contains": "Ranchview Park is one of very few venues on this site with a stated surface, and the only",
       "metric": null,
@@ -900,10 +993,10 @@
     },
     {
       "file": "scottsdale-az.json",
-      "contains": "Across this whole directory only five other cities have a verified free court, and only",
+      "contains": "Across this whole directory only six other cities have a verified free court, and only",
       "metric": "cities_with_free_venue",
       "op": "==",
-      "value": 6
+      "value": 7
     },
     {
       "file": "scottsdale-az.json",
@@ -917,6 +1010,31 @@
       "contains": "Nobody working on this directory has inspected a court surface in Seattle, and Seattle",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "sedgwick-county-ks.json",
+      "contains": "This is the first county in Kansas this directory has published in, and one city of it is",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "sedgwick-county-ks.json",
+      "contains": "Wichita is the first Kansas city on this site, and the second - after Cary, North",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "sedgwick-county-ks.json",
+      "contains": "Seven indoor venues is more than any city on this site publishes.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "sedgwick-county-ks.json",
+      "contains": "That is more published indoor venues than any city on this site.",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Wichita"
     },
     {
       "file": "st-george-ut.json",
@@ -980,8 +1098,8 @@
     },
     {
       "file": "tampa-fl.json",
-      "contains": "It also has more published indoor venues than any city here, though Bellevue has more",
-      "metric": "largest_city_by_indoor_venues",
+      "contains": "It also has more published indoor venues than any city here except Wichita, which is why",
+      "metric": "second_largest_city_by_indoor_venues",
       "op": "==",
       "value": "Tampa"
     },
@@ -1061,6 +1179,13 @@
     },
     {
       "file": "venues-austin-tx.json",
+      "contains": "Two pickleball courts striped onto a single multi-purpose court in the Brentwood",
+      "metric": "venues_nets_not_provided",
+      "op": "==",
+      "value": 12
+    },
+    {
+      "file": "venues-austin-tx.json",
       "contains": "Most other operators have simply not said, which this site renders as unknown rather than",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
@@ -1104,6 +1229,20 @@
     },
     {
       "file": "venues-austin-tx.json",
+      "contains": "Four courts in east Austin — two dedicated outdoor pickleball courts plus one",
+      "metric": "venues_nets_not_provided",
+      "op": "==",
+      "value": 12
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "The City's entry says \"Nets not included.\" Austin is one of six cities in this directory",
+      "metric": "cities_with_nets_not_provided",
+      "op": "==",
+      "value": 6
+    },
+    {
+      "file": "venues-austin-tx.json",
       "contains": "Two pickleball courts striped onto one multi-purpose outdoor court at the far north-west",
       "metric": "venues_nets_not_provided",
       "op": "==",
@@ -1111,17 +1250,17 @@
     },
     {
       "file": "venues-bellevue-wa.json",
-      "contains": "One of only six venues in this entire directory with a court count above zero on both",
+      "contains": "One of only nine venues in this entire directory with a court count above zero on both",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 6
+      "value": 9
     },
     {
       "file": "venues-bellevue-wa.json",
-      "contains": "That makes it one of only six venues anywhere in this directory offering both, which is a",
+      "contains": "That makes it one of only nine venues anywhere in this directory offering both, which is",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 6
+      "value": 9
     },
     {
       "file": "venues-bellevue-wa.json",
@@ -1226,6 +1365,54 @@
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
+      "file": "venues-louisville-ky.json",
+      "contains": "Of the sixteen venues on this site's Louisville pages only Iroquois, McNeely Lake and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-louisville-ky.json",
+      "contains": "A single court is the smallest thing this site publishes, and it changes the plan: there",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-louisville-ky.json",
+      "contains": "Crescent Hill is one of three published Louisville venues whose park page does not list",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-louisville-ky.json",
+      "contains": "The practical reading is that the courts are there - the City counted them on the page it",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-louisville-ky.json",
+      "contains": "Restrooms are not on it - George Rogers Clark is one of three published Louisville venues",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-louisville-ky.json",
+      "contains": "At 10 acres the park is the second smallest on this site's Louisville pages, after New",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-louisville-ky.json",
+      "contains": "Two outdoor pickleball courts from the City's line \"New Walnut Street - 2\", in the newest",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-louisville-ky.json",
+      "contains": "Restrooms are not on the list - New Walnut Street is one of three published Louisville",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
       "file": "venues-madison-wi.json",
       "contains": "After three larger pickleball sites in the city fell out of this directory on address",
       "metric": null,
@@ -1259,10 +1446,10 @@
     },
     {
       "file": "venues-madison-wi.json",
-      "contains": "Across this whole directory only five other places manage that, and at each of them the",
+      "contains": "Across this whole directory only eight other places manage that, and at each of them the",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 6
+      "value": 9
     },
     {
       "file": "venues-madison-wi.json",
@@ -1522,10 +1709,10 @@
     },
     {
       "file": "wa-state.json",
-      "contains": "Hidden Valley Park in Bellevue is one of only six venues anywhere in this directory with",
+      "contains": "Hidden Valley Park in Bellevue is one of only nine venues anywhere in this directory with",
       "metric": "venues_with_indoor_and_outdoor",
       "op": "==",
-      "value": 6
+      "value": 9
     },
     {
       "file": "wake-county-nc.json",
@@ -1563,6 +1750,26 @@
       "metric": "max_venue_courts",
       "op": "==",
       "value": 33
+    },
+    {
+      "file": "wichita-ks.json",
+      "contains": "Wichita is the first Kansas city on this site, and the second - after Cary, North",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "wichita-ks.json",
+      "contains": "It is one of the few operators here that states, on one page, which venues are indoor and",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Wichita"
+    },
+    {
+      "file": "wichita-ks.json",
+      "contains": "Yes, 22 across seven venues, more published indoor venues than any city on this site.",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Wichita"
     }
   ]
 }

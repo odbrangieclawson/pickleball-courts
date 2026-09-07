@@ -1,0 +1,91 @@
+{
+  "city": "Louisville",
+  "state": "KY",
+  "kind": "filters",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "One of the filter slugs has a lawful data driver in Louisville, and it is the plainest kind: outdoor. The City introduces its whole pickleball list with the sentence \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\", so every count on the list is an outdoor count and all sixteen published venues qualify. Lights has no driver: the City states no lighting for any venue. Free has none: the City states no price for any court, and its one mention of rentals carries no figure. Indoor has none: the City never uses the word, and the indoor count is left empty rather than written as zero. Public has none anywhere on this site.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Every verified pickleball court in Louisville is outdoor, so this page holds the same sixteen venues and the same sixty-seven courts as the city page, and it is worth saying that plainly rather than dressing it up as a selection. What earns the page a URL of its own is that the City drew the line, in one sentence, over the whole set: \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\" That sentence introduces the \"Pickleball Court List:\", and every one of its seventeen lines - \"Vettiner Park - 14\" down to \"New Walnut Street - 2\" - sits under it. This site publishes an indoor-or-outdoor answer only when an operator states one, and Louisville states it once for everything. That is a different shape of evidence from Tampa, where the City labels each card, and it is enough. The practical reason to read the page is what outdoor means here in the absence of anything else. The City publishes no lighting at any venue, so an outdoor court in Louisville is a daylight court until the City says otherwise, whatever the park's \"6 a.m. - 11 p.m.\" hours line suggests. It publishes no surface, so whether the court is asphalt, concrete or acrylic is unknown at all sixteen. It publishes no nets, no price and no parking. What it does publish for every venue is a park page with an address, a year, a size, an hours line and an amenity list, and that is more than many operators on this site give. The largest sets are Charlie Vettiner's fourteen, then six each at Fern Creek, Hays Kennedy, Wyandotte and Nelson Hornbeck; the smallest are one each at Sun Valley and Riverside Gardens.",
+        "what_qualifies": "A venue appears here when the City of Louisville's pickleball page lists it with a court count under the sentence that calls the set outdoor, and this site records that count as outdoor courts. Sixteen qualify: Charlie Vettiner Park, Iroquois Park, McNeely Lake Park, Sun Valley Park, Crescent Hill Park, Des Pres Park, Fern Creek Park, George Rogers Clark Park, Hays Kennedy Park, Petersburg Park, Riverview Park, Wyandotte Park, Nelson Hornbeck Park, Riverside Gardens Park, Tyler Park and New Walnut Street Park. Two of them need a word. Fern Creek and Riverview qualify on the list line alone, because their park pages do not mention pickleball; the count is the City's, the silence is recorded on each venue page, and the build asserts it on every run. Nothing on either park page says the courts are indoor, and the list's sentence covers them like every other line. What does not qualify is one venue the City lists and this site cannot publish anywhere. Hounz Lane Park, \"Hounz Lane - 3\" at \"2300 Hounz Ln.\", is an outdoor venue on the same sentence, run by Louisville Metro, and refused because the Census geocoder places its address in Lyndon city, a separately incorporated small city inside Jefferson County rather than inside Louisville. It would be on this page if it were in the city. Nothing is excluded for being indoor, because the City names no indoor court; the indoor figure for Louisville is empty, not zero, and this site does not write a zero the operator did not."
+      },
+      "faqs": [
+        {
+          "q": "Which outdoor courts in Louisville have lights?",
+          "a": "The City does not say, for any venue. Nothing on the pickleball page or any park page mentions lighting, so every venue here is recorded as unverified rather than lit or unlit, and Louisville has no lights page."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "\"6 a.m. - 11 p.m.\" on every park page, the same line at all sixteen. They are park hours, not court hours, and the City does not say the courts are usable after dark."
+        },
+        {
+          "q": "Are the outdoor courts free?",
+          "a": "Not stated. The City publishes no price for any court and its pickleball page mentions rentals without a figure, so this site records no fee answer and does not assume a park court is free."
+        },
+        {
+          "q": "Are there indoor courts in Louisville?",
+          "a": "Not on the City's record. Its pickleball page calls the set outdoor and names no indoor court, so the indoor figure is left empty rather than written as zero, and there is no indoor page."
+        },
+        {
+          "q": "Why is Hounz Lane Park not here?",
+          "a": "Because the Census geocoder places \"2300 Hounz Ln.\" in Lyndon city, a separately incorporated city inside Jefferson County. It is an outdoor venue on the City's list with three courts, and it fails on its city, not its courts."
+        }
+      ],
+      "sources": ["F1", "F2", "F3", "F4", "F5"]
+    }
+  },
+  "sources": [
+    {
+      "id": "F1",
+      "url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "The City's pickleball page: \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages. They promote fun and inclusion within our communities across the city.\" \"For rentals, please click here.\" Under \"Pickleball Court List:\", seventeen lines: \"Vettiner Park - 14\", \"Iroquois - 4\", \"McNeely Lake - 2\", \"Sun Valley - 1\", \"Crescent HIll - 4\", \"Des Pres - 3\", \"Fern Creek - 6\", \"George Rogers Clark - 2\", \"Hays Kennedy - 6\", \"Hounz Lane - 3\", \"Petersburg - 4\", \"Riverview - 4\", \"Wyandotte - 6\", \"Nelson Hornbeck - 6\", \"Riverside Gardens - 1\", \"Tyler - 2\", \"New Walnut Street - 2\". Snapshot: data/sources/louisville/pickleball-courts.html",
+      "not_stated": "Lighting, price, surface or nets at any venue; the word indoor anywhere; any rental price; any address or hours."
+    },
+    {
+      "id": "F2",
+      "url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["what_qualifies"],
+      "evidence": "Fern Creek Park's page: \"Park Address\" \"8703 Ferndale Rd.\" 40291; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"30.4 acres\". Amenities: Ballfield, Grill, Hiking Trail, Multi-purpose Field, Picnic Shelter, Picnic Table, Playground, Restrooms, Tennis, Walking, WiFi. The word pickleball does not appear on the page. Snapshot: data/sources/louisville/fern-creek-park.html",
+      "not_stated": "Pickleball at all; whether any court is indoor or outdoor."
+    },
+    {
+      "id": "F3",
+      "url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["what_qualifies"],
+      "evidence": "Riverview Park's page: \"Park Address\" \"8202 Greenwood Rd.\" 40258; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"87 acres\". Amenities: Boat Ramps & Landings, Canoe Access, Fishing w/River Frontage, Grill, Louisville Loop Access, Picnic Shelter, Picnic Table, Playground, Restrooms, River Frontage, Sprayground, Walking, WiFi. Neither pickleball nor tennis appears on the page. Snapshot: data/sources/louisville/riverview-park.html",
+      "not_stated": "Pickleball at all; whether any court is indoor or outdoor."
+    },
+    {
+      "id": "F4",
+      "url": "https://louisvilleky.gov/government/parks/park-list/hounz-lane-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["what_qualifies"],
+      "evidence": "Hounz Lane Park's page: \"Park Address\" \"2300 Hounz Ln.\" Louisville KY 40223; \"Year Acquired\" 1958; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"20.52 acres\". Amenities include Pickleball and Tennis. The City prints Louisville as the address's city. Snapshot: data/sources/louisville/hounz-lane-park.html",
+      "not_stated": "That the park is in Lyndon; a pickleball court count."
+    },
+    {
+      "id": "F5",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["what_qualifies"],
+      "evidence": "All sixteen published addresses matched at house-number level in Jefferson County, KY, and were placed in the consolidated City of Louisville under one of three names: \"Louisville city\" (six), \"Louisville/Jefferson County metro government (balance)\" (seven) and, through OpenStreetMap, \"Louisville\" (three). \"2300 Hounz Ln.\" (Hounz Lane Park, 3 courts) is placed in \"Lyndon city\", which is why that venue does not appear on this page. Snapshot: data/sources/louisville-county-census.json",
+      "not_stated": "Anything about whether a court is indoor or outdoor."
+    }
+  ]
+}

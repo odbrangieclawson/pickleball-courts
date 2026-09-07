@@ -1,0 +1,64 @@
+{
+  "county": "Sedgwick",
+  "state": "KS",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a venue has, whether it is indoors, whether it is lit - come from the City of Wichita's Pickleball page and are cited. Claims about our own coverage are facts about this dataset rather than about Sedgwick County, and are worded so a reader cannot mistake one for the other. This is the first county in Kansas this directory has published in, and one city of it is on this page. That city's page had to be read in a browser, because wichita.gov refuses scripted requests, and its re-check is a browser read compared against the saved text.",
+  "slots": {
+    "coverage": "One city in Sedgwick County is published here: Wichita, with ten venues and fifty-three courts verified against one City page. Sedgwick County also contains Derby, Andover and Haysville, and the County runs parks of its own, and not one of those has been checked against a named source, so none appears anywhere on this site. Wichita is the largest of them by a distance and, on any reasonable estimate, holds most of the county's public pickleball - but that estimate is not what this page reports, and no other operator's page has been loaded to test it. What it reports is ten venues whose court counts, addresses and indoor-or-outdoor answers the City of Wichita publishes and we have read: four parks with outdoor courts, six recreation centres with temporary indoor courts, and Riverside Tennis Center with both. One venue inside Wichita itself is absent and named on the city page rather than quietly dropped. Sherwood Glen appears at the foot of the City's Parks tab as \"1 striped without net (portable net required)\" and with no street line, and a venue without an address does not publish. It is one missing fact away from being here, and the fact is the City's to supply. Wichita is the first Kansas city on this site, and the second - after Cary, North Carolina - whose source could not be fetched by any script.",
+    "distribution": "What is verified in this county is concentrated in one city and, within it, split between two large venues and eight small ones. Edgemoor Park and Riverside Tennis Center hold fifteen courts each - thirty of the county's fifty-three - and no other venue holds more than six. Edgemoor's fifteen is twelve outdoor courts on the Parks tab plus three in the recreation centre at the same address; Riverside's is nine outdoor courts \"with court lights for night play\" plus six \"double-striped over the 3 tennis courts\". Seneca Park holds six outdoor courts, Buffalo and Osage two each, and the five other recreation centres - Boston, Linwood and Orchard with three, Evergreen and Brewer with two - hold thirteen indoor courts between them. The split that matters most is indoor against outdoor, because the City documents the two in opposite ways. Thirty-one courts across five venues are outdoors, with no stated hours anywhere and a lighting answer at one venue only. Twenty-two courts across seven venues are indoors, every one at a venue with a phone number, and every one temporary in the City's word - laid out for drop-in sessions whose hours are in two PDFs this site has not read. Seven indoor venues is more than any city on this site publishes. Lighting is the thinnest layer: nine courts at one venue are stated lit, and forty-four carry no answer, because the City states lighting nowhere but Riverside. No court in the county carries a price, because the City's one sentence on cost names no venue.",
+    "gaps": "The honest position is that this is a Wichita page wearing the heading of a whole county, and the gap will not close by accident. Derby is the obvious next city and it has not been read. Neither have Andover, Haysville or the parks Sedgwick County runs itself. The threshold has not moved - three venues with a named source and a date - and nothing about Kansas makes it easier or harder than anywhere else until a parks department's page has actually been loaded, which in Wichita's case meant loading it by hand. The gaps inside the published city are gaps in what the City writes down rather than in what it has built, and they are specific. Hours are in two PDFs the City links and this site has not read, so none of the ten venues here carries a session time. Price is one sentence for the whole city - \"Some can be reserved for a small fee while others are first-come-first-serve\" - that names nobody. Surface is two headings, \"hard / concrete\" and \"wood and tile\", each covering several venues without saying which has which. Lighting is stated once. Each of those is a fact the City could publish per venue on the page it already has, and the day it does, the build fails and the page is re-read. Nothing outside a municipal parks department appears on this page at all, and nothing is said here about who else holds courts in the county, because no other operator publishes a source we have read."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Sedgwick County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 53 courts across ten venues, all in Wichita, each with a source and a date you can see: 31 outdoor and 22 indoor. The City of Wichita itself lists one more site, Sherwood Glen, with one striped court and no address."
+    },
+    {
+      "q": "Why is only Wichita listed?",
+      "a": "Because it is the only municipality in the county whose courts we have confirmed against a named source. A city appears here once three or more of its venues carry a source_url and a date_checked. Derby, Andover, Haysville and the County's own parks have not been read."
+    },
+    {
+      "q": "How was Wichita checked, if its website blocks scripts?",
+      "a": "By reading it in a browser. wichita.gov answers HTTP 403 to every scripted request this project makes, so the City's Pickleball page was opened in a browser on 7 September 2026, its three tabs opened in turn, and the text saved with a header stating the method. Every quoted line is asserted against that file on every build."
+    },
+    {
+      "q": "Are there indoor courts in the county?",
+      "a": "Yes, 22 verified, all in Wichita, across seven venues: six recreation centres the City lists under \"Temporary indoor courts with wood and tile surfaces\" and Riverside Tennis Center's six courts \"double-striped over the 3 tennis courts\". That is more published indoor venues than any city on this site. Brewer is printed \"(Closed for Improvements)\"."
+    },
+    {
+      "q": "Which venues here have lights?",
+      "a": "Riverside Tennis Center's nine outdoor courts, in the City's words \"with court lights for night play\". The four parks - Edgemoor, Buffalo, Osage and Seneca - carry no lighting answer either way, so we record them as unverified. There is no lights page, because one venue is not three."
+    },
+    {
+      "q": "Are the courts on this page free?",
+      "a": "Not stated, at any venue. The City writes one sentence for the whole city - \"Some can be reserved for a small fee while others are first-come-first-serve\" - and names no venue on either side of it. Riverside carries a reservation link and no price. This site does not assume a park court is free."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "The City's page was read on 7 September 2026 and saved as text into the repository that builds this site. Because the site refuses scripts, the re-check is a person opening the page in a browser, opening each tab, and comparing it against the saved file; if a count or a heading has changed, the build fails and the page is re-read."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://www.wichita.gov/717/Pickleball",
+      "publisher": "City of Wichita Park & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's Pickleball page, read in a browser on 2026-09-07 because wichita.gov answers HTTP 403 to scripted fetches. Introduction: \"Wichita Parks and Recreation offers indoor and outdoor pickleball courts all over the city. Some can be reserved for a small fee while others are first-come-first-serve.\" Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\", with links \"View Summer Drop-In Hours (PDF)\" and \"View Fall Drop-In Hours (PDF)\": Boston 3 courts, Edgemoor 3, Evergreen 2, Linwood 3, \"Brewer (Closed for Improvements)\" 2, Orchard 3, each with an address and a phone number. Riverside Tennis Center tab: \"551 Nims / Phone: 316-337-9257 / 9 outdoors with court lights for night play / 6 indoors (these are double-striped over the 3 tennis courts)\". Parks tab, under \"Outdoor courts with hard / concrete surfaces\": \"Edgemoor Park / 5815 E 9th / 12 courts\", \"Buffalo Park / 10201 Hardtner / 2 courts\", \"Osage Park / 2121 W 31st / 2 courts\", \"Seneca Park / 202 S Seneca / 6 courts\", \"Sherwood Glen / 1 striped without net (portable net required)\". Snapshot: data/sources/wichita/pickleball.txt",
+      "not_stated": "Anything about any other municipality in Sedgwick County, or about the County's own parks; hours, price per venue, surface per venue, and lighting anywhere but Riverside."
+    },
+    {
+      "id": "L2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "All ten published addresses were matched at house-number level and placed in Sedgwick County, KS (FIPS 20173), inside the incorporated place Wichita. Five resolved through the Census address file as the City writes them; four resolved through OpenStreetMap because the Census appended a compass direction the City does not write - for Osage Park it answered \"2121 W 31ST ST N\" in 67204 where OpenStreetMap finds \"West 31st Street South\" in 67217; Evergreen stands on a Census answer that drops the City's N. Sherwood Glen has no address to resolve. Snapshot: data/sources/wichita-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

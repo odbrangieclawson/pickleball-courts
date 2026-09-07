@@ -1,0 +1,110 @@
+{
+  "county": "Jefferson",
+  "state": "KY",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two kinds of claim appear below and they are kept apart deliberately. Claims about the world - how many courts a park has, where it is, when the park is open - come from Louisville Parks and Recreation and the US Census geocoder and are cited. Claims about our own coverage are facts about this dataset rather than about Jefferson County, and are worded so a reader cannot mistake one for the other. This is the first county in Kentucky this directory has published in, and it is an unusual one: Louisville and Jefferson County are a single consolidated government, with a handful of small cities inside it that stayed separately incorporated.",
+  "slots": {
+    "coverage": "One city in Jefferson County is published here: Louisville, with sixteen venues and sixty-seven courts verified against the City's own pages. Jefferson County is not an ordinary county for this purpose. Louisville and the county merged into one consolidated government, Louisville Metro, so the City of Louisville covers nearly all of the county and the Census geocoder names it two ways - \"Louisville city\" for addresses inside the pre-merger boundary and \"Louisville/Jefferson County metro government (balance)\" for the rest. Both are Louisville and both publish. What the merger left behind is a set of small cities inside the county that stayed separately incorporated - Lyndon, Jeffersontown, St. Matthews, Shively and others - and not one of those has been read against a named source, so none appears anywhere on this site. That is not a gap the county page can paper over: Louisville Metro's own pickleball list includes a venue in one of them. Hounz Lane Park, \"Hounz Lane - 3\" at \"2300 Hounz Ln.\", is run by the Metro parks department and placed by the Census in Lyndon city, and it is refused from the Louisville page for that reason and named here rather than dropped. So the honest count for this county is sixteen venues confirmed in Louisville, one Metro-run venue known to sit in Lyndon and unpublished, and an unknown number in the other small cities, whose own pages have not been loaded.",
+    "distribution": "What is verified in this county is spread across sixteen parks rather than gathered into a complex, and the spread runs the whole length of the consolidated city: the verified record places venues in the north-east at Hays Kennedy, the south-west at Sun Valley and Riverview, the east at Des Pres, the south at Nelson Hornbeck, and inside the older city at Iroquois, Crescent Hill, George Rogers Clark, Wyandotte, Tyler and New Walnut Street. No two published venues share a postcode. Charlie Vettiner Park's fourteen courts are the one large set, more than twice any other; four parks hold six - Fern Creek, Hays Kennedy, Wyandotte and Nelson Hornbeck - four hold four, Des Pres holds three, four hold two and two hold one. The parks themselves range from McNeely Lake's 746 acres and Iroquois's 725.85 to New Walnut Street's 5.74, and the courts are a single word on each park's amenity list, so at the large parks the address locates the park and not the courts. Every one of the sixty-seven is outdoor on the City's word, and every park is open \"6 a.m. - 11 p.m.\" on its own page - the same line at all sixteen, which is the one fact Louisville publishes uniformly and many operators on this site do not publish at all. What the City does not publish is uniform too: no lighting, no price, no surface and no nets at any venue, so nothing in this county can be sorted by light or by cost, and the only filter page Louisville has is the outdoor one, which holds everything.",
+    "gaps": "The honest position is that this is a Louisville page wearing a county heading, and in this county that is closer to the truth than usual, because the city is the county for most purposes. The gap is the small cities. Lyndon, Jeffersontown, St. Matthews, Shively and the other separately incorporated cities inside Jefferson County have not been read, and this site does not know whether any of them publishes a court count of its own; some may have no parks page to read, and their residents may play at Metro parks, which is what the Hounz Lane refusal illustrates. That venue is the clearest example on this site of a court that exists, is counted by a municipal operator, and cannot publish - not for want of a fact but because of where the address falls. The threshold has not moved: three venues with a named source and a date, in the city the address is in. Inside Louisville itself the gaps are of a different kind. Two venues, Fern Creek and Riverview, publish on the pickleball list alone because their park pages do not mention the courts, and the build asserts that silence rather than trusting it once. The City prints no postcodes, so the resolvers' publish. The City says nothing about lighting, price, surface or nets anywhere, which means sixty-seven courts and not one answer to the questions people most often ask. Nothing outside the Metro parks department appears on this page at all - no club, no school, no commercial venue - because none of them publishes a source this site has read."
+  },
+  "faqs": [
+    {
+      "q": "How many pickleball courts are there in Jefferson County?",
+      "a": "We do not know, and no honest page can tell you. What we have checked is 67 courts across sixteen venues, all in Louisville, each with a source and a date you can see. Louisville Metro's own list names a seventeenth venue, Hounz Lane Park with three courts, that sits in Lyndon and is not published, and the county's other small cities have not been read."
+    },
+    {
+      "q": "Why is only Louisville listed?",
+      "a": "Because Louisville is the only municipality in the county whose courts we have confirmed against a named source, and because the consolidated City of Louisville covers nearly all of the county. The small cities that stayed separately incorporated - Lyndon, Jeffersontown, St. Matthews, Shively and others - have not been read, so none appears here."
+    },
+    {
+      "q": "What does \"Louisville/Jefferson County metro government (balance)\" mean?",
+      "a": "It is the Census Bureau's name for the part of the consolidated city outside the pre-merger boundary of Louisville; addresses inside that boundary come back as \"Louisville city\". Seven published venues carry the first label and six the second, and OpenStreetMap says \"Louisville\" for three more. All three names are the same city and all publish."
+    },
+    {
+      "q": "Why is Hounz Lane Park not listed?",
+      "a": "Louisville Metro runs it and lists it with three courts, but the Census geocoder places \"2300 Hounz Ln.\" in Lyndon city, a separately incorporated small city inside Jefferson County. A city page holds venues in that city, and who runs them is a separate question. The list line and the address are asserted so the refusal is re-examined if either changes."
+    },
+    {
+      "q": "Which venues here have lights, and which are free?",
+      "a": "None that we can say. The City states no lighting and no price for any venue, so every Louisville court is recorded as unverified on both, and there is no lights page and no free page for the county. The only filter page is outdoor, which holds all sixteen venues on the City's one sentence calling the set outdoor."
+    },
+    {
+      "q": "How often is this checked again?",
+      "a": "These pages were read on 7 September 2026, and every one of them is snapshotted into the repository that builds this site and re-asserted on every build. If the City changes a count, adds pickleball to the Fern Creek or Riverview park page, or moves Hounz Lane Park's address, the build fails and someone reads the page again."
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1",
+      "url": "https://louisvilleky.gov/government/parks/pickleball-courts",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "The City's pickleball page: \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages.\" Under \"Pickleball Court List:\", seventeen lines: \"Vettiner Park - 14\", \"Iroquois - 4\", \"McNeely Lake - 2\", \"Sun Valley - 1\", \"Crescent HIll - 4\", \"Des Pres - 3\", \"Fern Creek - 6\", \"George Rogers Clark - 2\", \"Hays Kennedy - 6\", \"Hounz Lane - 3\", \"Petersburg - 4\", \"Riverview - 4\", \"Wyandotte - 6\", \"Nelson Hornbeck - 6\", \"Riverside Gardens - 1\", \"Tyler - 2\", \"New Walnut Street - 2\". Snapshot: data/sources/louisville/pickleball-courts.html",
+      "not_stated": "Anything about any other municipality in Jefferson County; lighting, price, surface or nets at any venue."
+    },
+    {
+      "id": "L2",
+      "url": "https://louisvilleky.gov/government/parks/park-list/hounz-lane-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "gaps"],
+      "evidence": "Hounz Lane Park's page, on the Metro parks site: \"Park Address\" \"2300 Hounz Ln.\" Louisville KY 40223; \"Year Acquired\" 1958; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"20.52 acres\". Amenities include Pickleball and Tennis. The City prints Louisville as the address's city. Snapshot: data/sources/louisville/hounz-lane-park.html",
+      "not_stated": "That the park is in Lyndon; a pickleball court count."
+    },
+    {
+      "id": "L3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["coverage", "distribution", "gaps"],
+      "evidence": "All sixteen published addresses matched at house-number level in Jefferson County, KY (FIPS 21111). Six were placed by the Census address file in \"Louisville city\" (Iroquois, Crescent Hill, George Rogers Clark, Wyandotte, Tyler, New Walnut Street) and seven in \"Louisville/Jefferson County metro government (balance)\" (McNeely Lake, Sun Valley, Des Pres, Fern Creek, Petersburg, Riverview, Riverside Gardens). Three resolved through OpenStreetMap in \"Louisville\": Charlie Vettiner and Nelson Hornbeck because the Census file holds no record of the address, Hays Kennedy because the Census answered \"7003 BEECHLAND AVE, LOUISVILLE, KY, 40258\" for \"7003 Beachland Beach Rd.\" \"2300 Hounz Ln.\" (Hounz Lane Park) is placed in \"Lyndon city\". The sixteen published postcodes are all different. Snapshot: data/sources/louisville-county-census.json",
+      "not_stated": "Anything about the courts themselves, or about any address in the other small cities."
+    },
+    {
+      "id": "L4",
+      "url": "https://louisvilleky.gov/government/parks/park-list/charlie-vettiner-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["distribution"],
+      "evidence": "Charlie Vettiner Park's page, the largest published venue in the county: \"Park Address\" \"5550 Charlie Vettiner Park Rd.\" 40299; \"Year Acquired\" 1957; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"283 acres\"; Pickleball among twenty-two amenities without a count. Snapshot: data/sources/louisville/charlie-vettiner-park.html",
+      "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
+    },
+    {
+      "id": "L5",
+      "url": "https://louisvilleky.gov/government/parks/park-list/mcneely-lake-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["distribution"],
+      "evidence": "McNeely Lake Park's page, the largest park by acreage on the county page: \"one of the largest in the Metro Parks system\"; \"Park Address\" \"*10500 Cedar Creek Rd.\" 40229; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"746 acres\"; Pickleball among its amenities without a count. Snapshot: data/sources/louisville/mcneely-lake-park.html",
+      "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
+    },
+    {
+      "id": "L6",
+      "url": "https://louisvilleky.gov/government/parks/park-list/fern-creek-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["gaps"],
+      "evidence": "Fern Creek Park's page: \"Park Address\" \"8703 Ferndale Rd.\" 40291; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"30.4 acres\"; amenities of Ballfield, Grill, Hiking Trail, Multi-purpose Field, Picnic Shelter, Picnic Table, Playground, Restrooms, Tennis, Walking, WiFi. The word pickleball does not appear on the page. Snapshot: data/sources/louisville/fern-creek-park.html",
+      "not_stated": "Pickleball at all."
+    },
+    {
+      "id": "L7",
+      "url": "https://louisvilleky.gov/government/parks/park-list/riverview-park",
+      "publisher": "Louisville Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["gaps"],
+      "evidence": "Riverview Park's page: \"Park Address\" \"8202 Greenwood Rd.\" 40258; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"87 acres\"; amenities of Boat Ramps & Landings, Canoe Access, Fishing w/River Frontage, Grill, Louisville Loop Access, Picnic Shelter, Picnic Table, Playground, Restrooms, River Frontage, Sprayground, Walking, WiFi. Neither pickleball nor tennis appears on the page. Snapshot: data/sources/louisville/riverview-park.html",
+      "not_stated": "Pickleball at all."
+    }
+  ]
+}

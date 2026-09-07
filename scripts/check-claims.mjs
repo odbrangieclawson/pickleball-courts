@@ -136,7 +136,7 @@ const OPS = {
 /* ---------------------------------------------------------------- */
 
 const SCOPE = /\b(this|the) (entire |whole )?(directory|site)\b|\banywhere (here|on this site|in this directory)\b|\bacross (this|the) (site|directory)\b/i
-const MARKER = /\b(only|first|last|largest|biggest|smallest|highest|lowest|most|fewest|rarer|rarest|no other|none other|nothing else|second-largest|joint-largest|few|one of (only )?(two|three|four|five|a few|few|the few|very few)|any (other )?(city|cities|venue|venues|operator|operators)|every other|no (city|venue|operator)|nobody|never)\b/i
+const MARKER = /\b(only|first|last|largest|biggest|smallest|highest|lowest|most|fewest|rarer|rarest|no other|none other|nothing else|second-largest|joint-largest|few|one of (only )?(two|three|four|five|six|seven|eight|nine|ten|twelve|a few|few|the few|very few)|any (other )?(city|cities|venue|venues|operator|operators)|every other|no (city|venue|operator)|nobody|never)\b/i
 /* "only when", "only if" and "only where" are conditions, not exclusivity. */
 const CONDITIONAL_ONLY = /\bonly (when|if|where|because|once|after|as|to)\b/i
 

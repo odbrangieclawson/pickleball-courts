@@ -1,0 +1,90 @@
+{
+  "city": "Wichita",
+  "state": "KS",
+  "kind": "filters",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two of the filter slugs have a lawful data driver in Wichita, and the City's own page supplies both. Its Parks tab sits under the heading \"Outdoor courts with hard / concrete surfaces\", its Recreation Centers tab under \"Temporary indoor courts with wood and tile surfaces\", and its Riverside Tennis Center tab says \"outdoors\" and \"indoors\" itself, so every one of the ten published venues carries an indoor-or-outdoor answer in the City's words. Lights has no page: the City states lighting at one venue, Riverside, and a filter page needs three. Free has none: the City prices no venue and frees none. Public has none anywhere on this site. The page was read in a browser, because wichita.gov refuses scripted requests, and every line quoted here is asserted against the saved text.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Five Wichita venues hold outdoor pickleball courts and thirty-one of the city's fifty-three verified courts are at them. What earns the page a URL of its own is that the City drew the line itself. Four of the five sit on the Parks tab under a heading that begins \"Outdoor courts\", and the fifth, Riverside Tennis Center, has its own tab that says \"9 outdoors with court lights for night play\". This site publishes an indoor-or-outdoor answer only when an operator states one, and Wichita is one of the few operators here that states it for every venue on one page. The practical reason to filter is that outdoor and indoor are documented in opposite ways in this city. The indoor courts are temporary, in the City's word - laid out in a gym for drop-in sessions whose hours are in two PDFs this site has not read - so an indoor venue is a place to play at times the City publishes elsewhere. An outdoor court is there whenever the park is open, on a record that does not say when that is: the City states no hours for any park, no lighting at four of the five, and no price anywhere. The sizes are all on this side of the line too. Edgemoor Park's twelve outdoor courts and Riverside's nine lit ones are the two largest sets in Wichita; Seneca's six is next; Buffalo and Osage hold two each. Twenty-two indoor courts are spread across seven venues, none larger than six, and the rotation-sized sets are the outdoor ones. For a player who wants to find a game rather than a session, this is the page, with one caveat: after dark, only Riverside's nine come with a published lighting answer.",
+        "what_qualifies": "A venue appears here when the City of Wichita's Pickleball page places it under a heading or a line that says its courts are outdoors, and this site records that count as outdoor courts. Five qualify. Edgemoor Park, Buffalo Park, Osage Park and Seneca Park are the four parks on the Parks tab under \"Outdoor courts with hard / concrete surfaces\", with twelve, two, two and six courts. Riverside Tennis Center qualifies on the City's own line, \"9 outdoors with court lights for night play\", and its six indoor courts put it on the indoor page as well. Edgemoor is on both pages too, because the Recreation Centers tab lists \"Edgemoor / 5815 E 9th Street / 3 courts\" at the same address as the park's twelve; the two lines publish as one venue with a count on each side of the line. What does not qualify is the five recreation centres whose courts are all indoor - Boston, Evergreen, Linwood, Orchard and Brewer - and one park the City lists that this site cannot publish at all. Sherwood Glen is the last line of the Parks tab, \"1 striped without net (portable net required)\", with no street line where every other park has one, and a venue without an address does not publish. It is refused on its address and not on its count. The word \"hard / concrete\" in the qualifying heading does not put a surface on any venue here: it is one sentence over four parks, with a slash in it, and which park has which is not stated."
+      },
+      "faqs": [
+        {
+          "q": "Which outdoor courts in Wichita have lights?",
+          "a": "Riverside Tennis Center's nine, in the City's words \"with court lights for night play\". Edgemoor, Buffalo, Osage and Seneca carry no lighting statement either way, so they are recorded as unverified, and Wichita has no lights page because one venue is not three."
+        },
+        {
+          "q": "What are the hours at the outdoor courts?",
+          "a": "Not stated. The City prints no opening or closing time for any of its four parks or for Riverside, so this site cannot say whether any of them closes at sunset."
+        },
+        {
+          "q": "Are the outdoor courts free?",
+          "a": "Not stated. The City's one sentence on cost, \"Some can be reserved for a small fee while others are first-come-first-serve\", does not name a venue. This site does not assume a park court is free."
+        },
+        {
+          "q": "What are the courts made of?",
+          "a": "The City's heading says \"hard / concrete surfaces\" for four parks at once, without saying which park has which, so no surface is published for any single venue. Riverside's outdoor surface is not stated at all."
+        },
+        {
+          "q": "Why is Sherwood Glen not here?",
+          "a": "Because the City prints no address for it - \"1 striped without net (portable net required)\" is the whole line - and a venue at no address does not publish. It is the only Wichita venue refused."
+        }
+      ],
+      "sources": ["F1", "F2"]
+    },
+    "indoor": {
+      "slots": {
+        "why_this_filter": "Seven Wichita venues hold indoor pickleball courts, twenty-two courts between them, and with seven Wichita has more published indoor venues than any city on this site. The City states every one of them in its own words: six recreation centres under the heading \"Temporary indoor courts with wood and tile surfaces\", and Riverside Tennis Center's \"6 indoors (these are double-striped over the 3 tennis courts)\". This site publishes an indoor answer only when an operator writes one, and a roof is not inferred from a building's name. What indoor means in Wichita is specific and worth knowing before choosing a venue. None of the seven is an indoor pickleball facility. Six are recreation centres whose courts the City calls temporary - laid out in a gym for drop-in sessions, not built into the floor - and the seventh is a tennis centre whose indoor pickleball is lines painted over three tennis courts. In each case the courts exist at certain times and not at others, and the City publishes those times in two PDFs, \"View Summer Drop-In Hours\" and \"View Fall Drop-In Hours\", that this site has not read. So an indoor venue here is a count and a phone number rather than a schedule: every one of the seven carries a number on the City's line, and the number is the record. One of the seven, Brewer, is printed \"(Closed for Improvements)\" with no date. That is a different proposition from the outdoor parks, where the courts are there whenever the park is open and the City prints no number at all, and it is the reason this page is separate from them. It is also why the largest indoor set, Riverside's six, is smaller than the largest outdoor one, Edgemoor's twelve.",
+        "what_qualifies": "A venue appears here when the City of Wichita's Pickleball page places it under a heading or a line that says its courts are indoors, and this site records that count as indoor courts. Seven qualify. Boston, Edgemoor, Linwood and Orchard hold three each and Evergreen and Brewer two each, all on the Recreation Centers tab under \"Temporary indoor courts with wood and tile surfaces\"; Riverside Tennis Center holds six on its own tab, \"6 indoors (these are double-striped over the 3 tennis courts)\". Twenty-two in all. Two of the seven are on the outdoor page as well. Edgemoor's three indoor courts are in the recreation centre at 5815 E 9th, the same address as the park's twelve outdoor courts on the Parks tab, and the two City lines publish as one venue. Riverside's six indoor courts sit beside its nine lit outdoor ones. Brewer qualifies although the City prints it as \"Brewer (Closed for Improvements)\": the count is stated, the closure is printed beside it on the venue page as the City printed it, and the build fails on the day the City removes the note. What does not qualify is the three parks whose courts are all outdoor - Buffalo, Osage and Seneca - and nothing else, because the City lists no other building. The heading's \"wood and tile\" puts no surface on any venue here, for the same reason \"hard / concrete\" puts none on the parks: it is one sentence over six centres, and which centre has which floor is not stated."
+      },
+      "faqs": [
+        {
+          "q": "When can I play indoors in Wichita?",
+          "a": "At the drop-in times in the City's summer and fall PDFs, which this site has not read, so no session is published here. Each of the seven venues carries a phone number on the City's line; ring it."
+        },
+        {
+          "q": "Are the indoor sessions free?",
+          "a": "Not stated. The City says some Wichita courts \"can be reserved for a small fee while others are first-come-first-serve\" and names no venue. Riverside carries a reservation link but no price."
+        },
+        {
+          "q": "Is Brewer open?",
+          "a": "Not on the City's page as read on 7 September 2026, which prints \"Brewer (Closed for Improvements)\" with no reopening date. It publishes here as closed; ring 316-337-9222 before going."
+        },
+        {
+          "q": "What does temporary mean?",
+          "a": "The City's word for the recreation-centre courts: laid out in the gym for drop-in sessions rather than built into the floor. Outside a session the gym is the centre's, not the pickleball players'."
+        },
+        {
+          "q": "Which indoor venue has the most courts?",
+          "a": "Riverside Tennis Center, with six double-striped over its three indoor tennis courts. Boston, Edgemoor, Linwood and Orchard have three each; Evergreen and Brewer two."
+        }
+      ],
+      "sources": ["F1", "F2"]
+    }
+  },
+  "sources": [
+    {
+      "id": "F1",
+      "url": "https://www.wichita.gov/717/Pickleball",
+      "publisher": "City of Wichita Park & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["why_this_filter", "what_qualifies"],
+      "evidence": "The City's Pickleball page, read in a browser on 2026-09-07 because wichita.gov answers HTTP 403 to scripted fetches. Introduction: \"Wichita Parks and Recreation offers indoor and outdoor pickleball courts all over the city. Some can be reserved for a small fee while others are first-come-first-serve.\" Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\", with links \"View Summer Drop-In Hours (PDF)\" and \"View Fall Drop-In Hours (PDF)\": \"Boston / 6655 E Zimmerly / 316-688-9301 / 3 courts\", \"Edgemoor / 5815 E 9th Street / 316-688-9392 / 3 courts\", \"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\", \"Linwood / 1901 S Kansas / 316-337-9191 / 3 courts\", \"Brewer (Closed for Improvements) / 1329 E 16th Street / 316-337-9222 / 2 courts\", \"Orchard / 4808 W 9th Street / 316-337-9244 / 3 courts\". Riverside Tennis Center tab: \"551 Nims / Phone: 316-337-9257 / 9 outdoors with court lights for night play / 6 indoors (these are double-striped over the 3 tennis courts)\", with links \"Reserve a Pickleball Court\" and \"Take Pickleball Lessons\". Parks tab, under \"Outdoor courts with hard / concrete surfaces\": \"Edgemoor Park / 5815 E 9th / 12 courts\", \"Buffalo Park / 10201 Hardtner / 2 courts\", \"Osage Park / 2121 W 31st / 2 courts\", \"Seneca Park / 202 S Seneca / 6 courts\", \"Sherwood Glen / 1 striped without net (portable net required)\". Snapshot: data/sources/wichita/pickleball.txt",
+      "not_stated": "Hours at any venue beyond Brewer's closure, lighting anywhere but Riverside, a price or a free answer for any named venue, a surface for any single venue, and any address for Sherwood Glen."
+    },
+    {
+      "id": "F2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": ["what_qualifies"],
+      "evidence": "All ten published addresses were matched at house-number level and placed in Sedgwick County, KS, inside the incorporated place Wichita - five through the Census address file as the City writes them (Buffalo Park, Seneca Park, Boston, Linwood, Riverside Tennis Center), four through OpenStreetMap because the Census appended a compass direction the City does not write (Edgemoor Park, Osage Park, Brewer, Orchard), and Evergreen on a Census answer that drops the City's N because OpenStreetMap holds nothing for the address as written. Sherwood Glen has no address to resolve. Snapshot: data/sources/wichita-county-census.json",
+      "not_stated": "Anything about whether a court is indoor or outdoor."
+    }
+  ]
+}

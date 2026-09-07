@@ -1,0 +1,1088 @@
+{
+  "city": "Wichita",
+  "state": "KS",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Wichita's pickleball page states a count for every venue it lists, in three tabs: outdoor park courts, temporary indoor courts in six recreation centres, and the Riverside Tennis Center with nine lit outdoor and six indoor courts stated separately. The page could not be fetched by any script - wichita.gov answers HTTP 403 to a bare request, a full browser header set and the web fetcher - so it was read in a browser and saved as text with a header stating the method, as Cary's pages were; this run asserts the header and every quoted line against that file. Indoor and outdoor are the tabs' own headings and Riverside's own words. Edgemoor publishes as one venue with twelve outdoor and three indoor courts at one address. Brewer publishes as closed, in the City's words \"(Closed for Improvements)\". Sherwood Glen is refused for having no address. Surface stays null: \"hard / concrete surfaces\" is one sentence over four parks with a slash in it, and \"wood and tile\" the same over six centres. The City says \"Some can be reserved for a small fee while others are first-come-first-serve\" without saying which, so no fee publishes; its drop-in hours are in PDFs not read.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.wichita.gov/717/Pickleball",
+      "publisher": "City of Wichita Park & Recreation",
+      "tier": 1,
+      "format": "text",
+      "snapshot": "data/sources/wichita/pickleball.txt",
+      "method": "Read in a browser on 2026-09-07 because wichita.gov returns HTTP 403 to scripted fetches; the three tabs of the court-locations section were opened in turn. See data/sources/wichita/README.md."
+    },
+    {
+      "id": "S2",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/wichita-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 10,
+    "courts": 53,
+    "outdoor": 31,
+    "indoor": 22,
+    "lit_courts": 9,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Sherwood Glen",
+      "why": [
+        "The City publishes no address for it. It is the last entry on the Parks tab, \"Sherwood Glen / 1 striped without net (portable net required)\", with no street line where every other park has one. Import Gate I1 requires a street address that resolves, and this project has never taken one from outside the operator.",
+        "The count is real - one striped court, no net - and the venue fails on the one fact it is missing."
+      ]
+    }
+  ],
+  "venues": {
+    "edgemoor-park": {
+      "minted": false,
+      "identity": {
+        "name": "Edgemoor Park",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67208",
+        "latitude": 37.7010156,
+        "longitude": -97.2696188,
+        "imported_slug": "edgemoor-park",
+        "canonical_slug": "edgemoor-park"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Edgemoor Park / 5815 E 9th / 12 courts",
+        "basis": "Matched to the imported edgemoor-park row (twelve outdoor courts). A second imported row, edgemoor-recreation-center at \"5815 E. Ninth Street North\", describes the indoor courts at the same address and is left pending rather than published as a second venue; the City's two entries at one address publish as one."
+      },
+      "patch": {
+        "name": "Edgemoor Park",
+        "total_courts": 15,
+        "street_address": "5815 E 9th",
+        "venue_type": "public_park",
+        "court_availability": "Fifteen pickleball courts at one address in east Wichita, and the only venue in the city with courts on both sides of the indoor line. The Parks tab of the City's pickleball page lists \"Edgemoor Park / 5815 E 9th / 12 courts\" under \"Outdoor courts with hard / concrete surfaces\", and the Recreation Centers tab lists \"Edgemoor / 5815 E 9th Street / 3 courts\" under \"Temporary indoor courts with wood and tile surfaces\". Same address, one site, published as one venue after Bellevue's Hidden Valley Park and Tampa's Forest Hills. The twelve outdoor courts are the largest outdoor set in Wichita. The City states no hours here - its drop-in hours live in two PDFs this site has not read - and no lighting, and its one sentence on cost, \"Some can be reserved for a small fee while others are first-come-first-serve\", does not say which of these Edgemoor is.",
+        "county": "Sedgwick",
+        "postal_code": "67208",
+        "outdoor_courts": 12,
+        "indoor_courts": 3,
+        "phone": "316-688-9392"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Edgemoor Park\" on the Parks tab of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Two City entries at one address: \"Edgemoor Park / 5815 E 9th / 12 courts\" on the Parks tab and \"Edgemoor / 5815 E 9th Street / 316-688-9392 / 3 courts\" on the Recreation Centers tab. Fifteen is their sum."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Edgemoor Park / 5815 E 9th / 12 courts\" on the Parks tab of the City's pickleball page. The Recreation Centers tab writes the same address as \"5815 E 9th Street\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Wichita Park & Recreation among its parks and facilities."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Parks tab: \"Edgemoor Park / 5815 E 9th / 12 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS. OpenStreetMap (Nominatim) matched \"5815, East 9th Street North, Country Side, Minneha, Wichita, Sedgwick County, Kansas, 67208, United States\" at house-number level. The Census address geocoder answered \"5815 E 9TH ST N, WICHITA, KS, 67208\", changing the direction from E to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Wichita\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"5815, East 9th Street North, Country Side, Minneha, Wichita, Sedgwick County, Kansas, 67208, United States\" at house-number level. The Census address geocoder answered \"5815 E 9TH ST N, WICHITA, KS, 67208\", changing the direction from E to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Parks tab sits under the City's own heading \"Outdoor courts with hard / concrete surfaces\": \"Edgemoor Park / 5815 E 9th / 12 courts\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\": \"Edgemoor / 5815 E 9th Street / 316-688-9392 / 3 courts\"."
+        },
+        "phone": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"316-688-9392\" on the Parks tab, printed with the venue's address."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "indoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "buffalo-park": {
+      "minted": false,
+      "identity": {
+        "name": "Buffalo Park",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67212",
+        "latitude": 37.690593532043,
+        "longitude": -97.460000276585,
+        "imported_slug": "buffalo-park",
+        "canonical_slug": "buffalo-park"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Buffalo Park / 10201 Hardtner / 2 courts",
+        "basis": "Matched to the imported buffalo-park row in Wichita, KS, at the same street address."
+      },
+      "patch": {
+        "name": "Buffalo Park",
+        "total_courts": 2,
+        "street_address": "10201 Hardtner",
+        "venue_type": "public_park",
+        "court_availability": "Two outdoor pickleball courts in west Wichita, from the Parks tab of the City's pickleball page: \"Buffalo Park / 10201 Hardtner / 2 courts\", under the tab's own heading \"Outdoor courts with hard / concrete surfaces\". Two courts is a game rather than a rotation. The City states no hours, no lighting and no price for this park; its one sentence on cost covers the whole city without naming a venue. The imported dataset held this park at \"318-500 N Maize Rd\", a street range rather than an address; the City's house number replaces it.",
+        "county": "Sedgwick",
+        "postal_code": "67212",
+        "outdoor_courts": 2
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Buffalo Park\" on the Parks tab of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Parks tab of the City's pickleball page: \"Buffalo Park / 10201 Hardtner / 2 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Buffalo Park / 10201 Hardtner / 2 courts\" on the Parks tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Wichita Park & Recreation among its parks and facilities."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Parks tab: \"Buffalo Park / 10201 Hardtner / 2 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS (FIPS 20173). Census address geocoder matched \"10201 HARDTNER ST, WICHITA, KS, 67212\". The resolver also places it in the incorporated place \"Wichita city\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"10201 HARDTNER ST, WICHITA, KS, 67212\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Parks tab sits under the City's own heading \"Outdoor courts with hard / concrete surfaces\": \"Buffalo Park / 10201 Hardtner / 2 courts\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "osage-park": {
+      "minted": false,
+      "identity": {
+        "name": "Osage Park",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67217",
+        "latitude": 37.6360905,
+        "longitude": -97.3657058,
+        "imported_slug": "osage-park-ks",
+        "canonical_slug": "osage-park"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Osage Park / 2121 W 31st / 2 courts",
+        "basis": "Matched to the imported osage-park-ks row in Wichita, KS, published under the canonical slug osage-park (the identity pass dropped the trailing \"-ks\", which is already in the path)."
+      },
+      "patch": {
+        "name": "Osage Park",
+        "total_courts": 2,
+        "street_address": "2121 W 31st",
+        "venue_type": "public_park",
+        "court_availability": "Two outdoor pickleball courts in south Wichita, from the Parks tab of the City's pickleball page: \"Osage Park / 2121 W 31st / 2 courts\", under \"Outdoor courts with hard / concrete surfaces\". The City writes the address without a street type; OpenStreetMap resolves it at house-number level as West 31st Street South, and that is the resolution published. No hours, lighting or price are stated for this park.",
+        "county": "Sedgwick",
+        "postal_code": "67217",
+        "outdoor_courts": 2
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Osage Park\" on the Parks tab of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Parks tab of the City's pickleball page: \"Osage Park / 2121 W 31st / 2 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Osage Park / 2121 W 31st / 2 courts\" on the Parks tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Wichita Park & Recreation among its parks and facilities."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Parks tab: \"Osage Park / 2121 W 31st / 2 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS. OpenStreetMap (Nominatim) matched \"2121, West 31st Street South, Wichita, Sedgwick County, Kansas, 67217, United States\" at house-number level. The Census address geocoder answered \"2121 W 31ST ST N, WICHITA, KS, 67204\", changing the direction from W to W+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Wichita\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"2121, West 31st Street South, Wichita, Sedgwick County, Kansas, 67217, United States\" at house-number level. The Census address geocoder answered \"2121 W 31ST ST N, WICHITA, KS, 67204\", changing the direction from W to W+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Parks tab sits under the City's own heading \"Outdoor courts with hard / concrete surfaces\": \"Osage Park / 2121 W 31st / 2 courts\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "seneca-park": {
+      "minted": false,
+      "identity": {
+        "name": "Seneca Park",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67213",
+        "latitude": 37.682883417338,
+        "longitude": -97.352941371115,
+        "imported_slug": "seneca-park",
+        "canonical_slug": "seneca-park"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Seneca Park / 202 S Seneca / 6 courts",
+        "basis": "Matched to the imported seneca-park row in Wichita, KS, at the same street address."
+      },
+      "patch": {
+        "name": "Seneca Park",
+        "total_courts": 6,
+        "street_address": "202 S Seneca",
+        "venue_type": "public_park",
+        "court_availability": "Six outdoor pickleball courts just south-west of downtown, from the Parks tab of the City's pickleball page: \"Seneca Park / 202 S Seneca / 6 courts\", under \"Outdoor courts with hard / concrete surfaces\". Six is enough for a rotation and makes Seneca the second-largest outdoor set in the city after Edgemoor's twelve. The City states no hours, no lighting and no price for this park.",
+        "county": "Sedgwick",
+        "postal_code": "67213",
+        "outdoor_courts": 6
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Seneca Park\" on the Parks tab of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Parks tab of the City's pickleball page: \"Seneca Park / 202 S Seneca / 6 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Seneca Park / 202 S Seneca / 6 courts\" on the Parks tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Wichita Park & Recreation among its parks and facilities."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Parks tab: \"Seneca Park / 202 S Seneca / 6 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS (FIPS 20173). Census address geocoder matched \"202 S SENECA ST, WICHITA, KS, 67213\". The resolver also places it in the incorporated place \"Wichita city\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"202 S SENECA ST, WICHITA, KS, 67213\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Parks tab sits under the City's own heading \"Outdoor courts with hard / concrete surfaces\": \"Seneca Park / 202 S Seneca / 6 courts\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "boston-recreation-center": {
+      "minted": false,
+      "identity": {
+        "name": "Boston Recreation Center",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67207",
+        "latitude": 37.667973312376,
+        "longitude": -97.258751508715,
+        "imported_slug": "boston-recreation-center",
+        "canonical_slug": "boston-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Boston / 6655 E Zimmerly / 316-688-9301 / 3 courts",
+        "basis": "Matched to the imported boston-recreation-center row in Wichita, KS, at the same street address."
+      },
+      "patch": {
+        "name": "Boston Recreation Center",
+        "total_courts": 3,
+        "street_address": "6655 E Zimmerly",
+        "venue_type": "community_center",
+        "court_availability": "Three temporary indoor pickleball courts in the gym of the Boston Recreation Center in south-east Wichita. The City's Recreation Centers tab reads \"Boston / 6655 E Zimmerly / 316-688-9301 / 3 courts\" under the heading \"Temporary indoor courts with wood and tile surfaces\" - temporary because they are laid out for drop-in sessions rather than built into the floor. The sessions are published in two PDFs, \"View Summer Drop-In Hours\" and \"View Fall Drop-In Hours\", which this site has not read, so no hours are published here and the phone number is the way to find them. The City does not say whether this centre charges.",
+        "county": "Sedgwick",
+        "postal_code": "67207",
+        "indoor_courts": 3,
+        "phone": "316-688-9301"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's Recreation Centers tab prints the centre as \"Boston\"; \"Recreation Center\" is the tab's own heading applied to the name."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Recreation Centers tab of the City's pickleball page: \"Boston / 6655 E Zimmerly / 316-688-9301 / 3 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Boston / 6655 E Zimmerly / 316-688-9301 / 3 courts\" on the Recreation Centers tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed on the Recreation Centers tab of the City's pickleball page as a City recreation centre."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Recreation Centers tab: \"Boston / 6655 E Zimmerly / 316-688-9301 / 3 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS (FIPS 20173). Census address geocoder matched \"6655 E ZIMMERLY ST, WICHITA, KS, 67207\". The resolver also places it in the incorporated place \"Wichita city\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6655 E ZIMMERLY ST, WICHITA, KS, 67207\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Recreation Centers tab sits under the City's own heading \"Temporary indoor courts with wood and tile surfaces\": \"Boston / 6655 E Zimmerly / 316-688-9301 / 3 courts\"."
+        },
+        "phone": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"316-688-9301\" on the Recreation Centers tab, printed with the venue's address."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "evergreen-recreation-center": {
+      "minted": false,
+      "identity": {
+        "name": "Evergreen Recreation Center",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67204",
+        "latitude": 37.731819967887,
+        "longitude": -97.349088346682,
+        "imported_slug": "evergreen-recreation-center",
+        "canonical_slug": "evergreen-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts",
+        "basis": "Matched to the imported evergreen-recreation-center row in Wichita, KS, at the same street address."
+      },
+      "patch": {
+        "name": "Evergreen Recreation Center",
+        "total_courts": 2,
+        "street_address": "2700 N Woodland",
+        "venue_type": "community_center",
+        "court_availability": "Two temporary indoor pickleball courts at the Evergreen Recreation Center in north Wichita: \"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\" on the City's Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\". The smallest indoor set in the city. Drop-in hours are in PDFs this site has not read; the City states no price for this centre.",
+        "county": "Sedgwick",
+        "postal_code": "67204",
+        "indoor_courts": 2,
+        "phone": "316-909-8036"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's Recreation Centers tab prints the centre as \"Evergreen\"; \"Recreation Center\" is the tab's own heading applied to the name."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Recreation Centers tab of the City's pickleball page: \"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\" on the Recreation Centers tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed on the Recreation Centers tab of the City's pickleball page as a City recreation centre."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Recreation Centers tab: \"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS (FIPS 20173). Census address geocoder matched \"2700 WOODLAND ST, WICHITA, KS, 67204\". The Census changed the direction from N to none from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands. The resolver also places it in the incorporated place \"Wichita city\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2700 WOODLAND ST, WICHITA, KS, 67204\". The Census changed the direction from N to none from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Recreation Centers tab sits under the City's own heading \"Temporary indoor courts with wood and tile surfaces\": \"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\"."
+        },
+        "phone": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"316-909-8036\" on the Recreation Centers tab, printed with the venue's address."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "linwood-recreation-center": {
+      "minted": false,
+      "identity": {
+        "name": "Linwood Recreation Center",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67211",
+        "latitude": 37.662654454691,
+        "longitude": -97.314290538385,
+        "imported_slug": "linwood-recreation-center",
+        "canonical_slug": "linwood-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Linwood / 1901 S Kansas / 316-337-9191 / 3 courts",
+        "basis": "Matched to the imported linwood-recreation-center row in Wichita, KS, at the same street address."
+      },
+      "patch": {
+        "name": "Linwood Recreation Center",
+        "total_courts": 3,
+        "street_address": "1901 S Kansas",
+        "venue_type": "community_center",
+        "court_availability": "Three temporary indoor pickleball courts at the Linwood Recreation Center in south Wichita: \"Linwood / 1901 S Kansas / 316-337-9191 / 3 courts\" on the City's Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\". Drop-in hours are in PDFs this site has not read; the City states no price for this centre.",
+        "county": "Sedgwick",
+        "postal_code": "67211",
+        "indoor_courts": 3,
+        "phone": "316-337-9191"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's Recreation Centers tab prints the centre as \"Linwood\"; \"Recreation Center\" is the tab's own heading applied to the name."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Recreation Centers tab of the City's pickleball page: \"Linwood / 1901 S Kansas / 316-337-9191 / 3 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Linwood / 1901 S Kansas / 316-337-9191 / 3 courts\" on the Recreation Centers tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed on the Recreation Centers tab of the City's pickleball page as a City recreation centre."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Recreation Centers tab: \"Linwood / 1901 S Kansas / 316-337-9191 / 3 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS (FIPS 20173). Census address geocoder matched \"1901 S KANSAS AVE, WICHITA, KS, 67211\". The resolver also places it in the incorporated place \"Wichita city\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1901 S KANSAS AVE, WICHITA, KS, 67211\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Recreation Centers tab sits under the City's own heading \"Temporary indoor courts with wood and tile surfaces\": \"Linwood / 1901 S Kansas / 316-337-9191 / 3 courts\"."
+        },
+        "phone": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"316-337-9191\" on the Recreation Centers tab, printed with the venue's address."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "brewer-recreation-center": {
+      "minted": true,
+      "identity": {
+        "name": "Brewer Recreation Center",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67214",
+        "latitude": 37.7133898,
+        "longitude": -97.3206171,
+        "imported_slug": null,
+        "canonical_slug": "brewer-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Brewer (Closed for Improvements) / 1329 E 16th Street / 316-337-9222 / 2 courts",
+        "basis": "Minted from the City's page. The imported rows nearest this address (mcadams-rec-center at 1329 E. 16th St., carl-g-brewer-community-center at 1329 E 13th St N) carry other names and are left pending."
+      },
+      "patch": {
+        "name": "Brewer Recreation Center",
+        "total_courts": 2,
+        "street_address": "1329 E 16th Street",
+        "venue_type": "community_center",
+        "court_availability": "Two temporary indoor pickleball courts at the Brewer Recreation Center in north-east Wichita - and the City lists the centre as \"Brewer (Closed for Improvements)\" on the day this page was read, so the venue is published as closed rather than omitted, as Scottsdale's Thompson Peak Park was during its resurfacing. The line reads \"Brewer (Closed for Improvements) / 1329 E 16th Street / 316-337-9222 / 2 courts\" under \"Temporary indoor courts with wood and tile surfaces\". The run that builds this page fails the day the City removes the closure note, so the notice cannot outlive the closure. No reopening date is stated. The imported dataset holds two rows near this address under other names - \"McAdams Rec. Center\" at 1329 E. 16th St. and \"Carl G Brewer Community Center\" at 1329 E 13th St N - and neither is matched here.",
+        "county": "Sedgwick",
+        "postal_code": "67214",
+        "indoor_courts": 2,
+        "phone": "316-337-9222",
+        "hours_of_operation": "Closed for Improvements - the City lists the centre as \"Brewer (Closed for Improvements)\" on its pickleball page; no reopening date is stated."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's Recreation Centers tab prints the centre as \"Brewer (Closed for Improvements)\"; \"Recreation Center\" is the tab's own heading applied to the name."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Recreation Centers tab of the City's pickleball page: \"Brewer (Closed for Improvements) / 1329 E 16th Street / 316-337-9222 / 2 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Brewer (Closed for Improvements) / 1329 E 16th Street / 316-337-9222 / 2 courts\" on the Recreation Centers tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed on the Recreation Centers tab of the City's pickleball page as a City recreation centre."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Recreation Centers tab: \"Brewer (Closed for Improvements) / 1329 E 16th Street / 316-337-9222 / 2 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS. OpenStreetMap (Nominatim) matched \"1329, East 16th Street North, Woodridge, Wichita, Sedgwick County, Kansas, 67214, United States\" at house-number level. The Census address geocoder answered \"1329 E 16TH ST N, WICHITA, KS, 67214\", changing the direction from E to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Wichita\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"1329, East 16th Street North, Woodridge, Wichita, Sedgwick County, Kansas, 67214, United States\" at house-number level. The Census address geocoder answered \"1329 E 16TH ST N, WICHITA, KS, 67214\", changing the direction from E to E+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Recreation Centers tab sits under the City's own heading \"Temporary indoor courts with wood and tile surfaces\": \"Brewer (Closed for Improvements) / 1329 E 16th Street / 316-337-9222 / 2 courts\"."
+        },
+        "phone": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"316-337-9222\" on the Recreation Centers tab, printed with the venue's address."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Brewer (Closed for Improvements)\" on the Recreation Centers tab."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "orchard-park-recreation-center": {
+      "minted": false,
+      "identity": {
+        "name": "Orchard Recreation Center",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67212",
+        "latitude": 37.7022152,
+        "longitude": -97.3994965,
+        "imported_slug": "orchard-park-recreation-center",
+        "canonical_slug": "orchard-park-recreation-center"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "Orchard / 4808 W 9th Street / 316-337-9244 / 3 courts",
+        "basis": "Matched to the imported orchard-park-recreation-center row (which carried 4804 W 9th St N; the City prints 4808). A second imported row, orchard-park-senior-center at 4808, is left pending."
+      },
+      "patch": {
+        "name": "Orchard Recreation Center",
+        "total_courts": 3,
+        "street_address": "4808 W 9th Street",
+        "venue_type": "community_center",
+        "court_availability": "Three temporary indoor pickleball courts at the Orchard Recreation Center in west Wichita: \"Orchard / 4808 W 9th Street / 316-337-9244 / 3 courts\" on the City's Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\". OpenStreetMap resolves the address to a building it names \"Orchard Park Recreation Center\", which is also the name the imported dataset used. Drop-in hours are in PDFs this site has not read; the City states no price for this centre.",
+        "county": "Sedgwick",
+        "postal_code": "67212",
+        "indoor_courts": 3,
+        "phone": "316-337-9244"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's Recreation Centers tab prints the centre as \"Orchard\"; \"Recreation Center\" is the tab's own heading applied to the name."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the Recreation Centers tab of the City's pickleball page: \"Orchard / 4808 W 9th Street / 316-337-9244 / 3 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Orchard / 4808 W 9th Street / 316-337-9244 / 3 courts\" on the Recreation Centers tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed on the Recreation Centers tab of the City's pickleball page as a City recreation centre."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Recreation Centers tab: \"Orchard / 4808 W 9th Street / 316-337-9244 / 3 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS. OpenStreetMap (Nominatim) matched \"Orchard Park Recreation Center, 4808, West 9th Street North, Wichita, Sedgwick County, Kansas, 67212, United States\" at house-number level. The Census address geocoder answered \"4808 W 9TH ST N, WICHITA, KS, 67212\", changing the direction from W to W+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Wichita\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"Orchard Park Recreation Center, 4808, West 9th Street North, Wichita, Sedgwick County, Kansas, 67212, United States\" at house-number level. The Census address geocoder answered \"4808 W 9TH ST N, WICHITA, KS, 67212\", changing the direction from W to W+N; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The Recreation Centers tab sits under the City's own heading \"Temporary indoor courts with wood and tile surfaces\": \"Orchard / 4808 W 9th Street / 316-337-9244 / 3 courts\"."
+        },
+        "phone": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"316-337-9244\" on the Recreation Centers tab, printed with the venue's address."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "riverside-tennis-center": {
+      "minted": true,
+      "identity": {
+        "name": "Riverside Tennis Center",
+        "city": "Wichita",
+        "state": "KS",
+        "county": "Sedgwick",
+        "postal_code": "67203",
+        "latitude": 37.694136736947,
+        "longitude": -97.34895579701,
+        "imported_slug": null,
+        "canonical_slug": "riverside-tennis-center"
+      },
+      "match": {
+        "source_page": "https://www.wichita.gov/717/Pickleball",
+        "quote": "551 Nims / Phone: 316-337-9257 / 9 outdoors with court lights for night play / 6 indoors (these are double-striped over the 3 tennis courts)",
+        "basis": "Minted from the City's page. The imported ralph-wulz-riverside-tennis-center row (551 Nims, thirteen courts) describes the same facility under a fuller name and is left pending; the City's own page and count publish."
+      },
+      "patch": {
+        "name": "Riverside Tennis Center",
+        "total_courts": 15,
+        "street_address": "551 Nims",
+        "venue_type": "public_park",
+        "court_availability": "Fifteen pickleball courts at the City's Riverside Tennis Center on the west bank of the Arkansas River, and the only Wichita venue where the City answers the lighting question: \"9 outdoors with court lights for night play\" and \"6 indoors (these are double-striped over the 3 tennis courts)\". Nine and six are the City's two figures; fifteen is their sum. The lights belong to the nine outdoor courts. The six indoor courts are pickleball lines painted over three indoor tennis courts, so what you find indoors depends on whether tennis is being played. This is also the venue the City links a \"Reserve a Pickleball Court\" button to, which fits its sentence that \"Some can be reserved for a small fee while others are first-come-first-serve\" - but the fee is not published anywhere on the page, so no price appears here. The imported dataset holds this venue as \"Ralph Wulz Riverside Tennis Center\" with thirteen courts; that row is left pending and the City's fifteen publishes.",
+        "county": "Sedgwick",
+        "postal_code": "67203",
+        "outdoor_courts": 9,
+        "indoor_courts": 6,
+        "light": true,
+        "pricing_notes": "The City links a \"Reserve a Pickleball Court\" button from this venue and says of its courts city-wide that \"Some can be reserved for a small fee while others are first-come-first-serve\". No price is published.",
+        "phone": "316-337-9257"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Riverside Tennis Center\" on the Riverside Tennis Center tab of the City's pickleball page."
+        },
+        "total_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's Riverside Tennis Center tab: \"9 outdoors with court lights for night play\" and \"6 indoors (these are double-striped over the 3 tennis courts)\". Fifteen is the sum of the City's two figures."
+        },
+        "street_address": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"551 Nims / Phone: 316-337-9257 / 9 outdoors with court lights for night play / 6 indoors (these are double-striped over the 3 tennis courts)\" on the Riverside Tennis Center tab of the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Wichita Park & Recreation among its parks and facilities."
+        },
+        "court_availability": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page, Riverside Tennis Center tab: \"551 Nims / Phone: 316-337-9257 / 9 outdoors with court lights for night play / 6 indoors (these are double-striped over the 3 tennis courts)\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Sedgwick County, KS (FIPS 20173). Census address geocoder matched \"551 NIMS ST, WICHITA, KS, 67203\". The resolver also places it in the incorporated place \"Wichita city\", which is what allows it to be published under Wichita."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"551 NIMS ST, WICHITA, KS, 67203\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"9 outdoors with court lights for night play\" - the word is the City's."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"6 indoors (these are double-striped over the 3 tennis courts)\" - the word is the City's."
+        },
+        "light": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"9 outdoors with court lights for night play\". The lights are stated for the nine outdoor courts; the six indoor courts are inside."
+        },
+        "pricing_notes": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Reserve a Pickleball Court\" on the Riverside Tennis Center tab; \"Some can be reserved for a small fee while others are first-come-first-serve.\" in the page's introduction."
+        },
+        "phone": {
+          "source_url": "https://www.wichita.gov/717/Pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Phone: 316-337-9257\" on the Riverside Tennis Center tab, printed with the venue's address."
+        }
+      },
+      "record": {
+        "source_url": "https://www.wichita.gov/717/Pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}
