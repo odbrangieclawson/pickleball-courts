@@ -1,0 +1,1376 @@
+{
+  "note": "Every sentence in data/editorial that makes a directory-wide claim must be registered here. scripts/check-claims.mjs enforces it and, where a metric is named, recomputes the claim from the published data on every build. See the header of that script.",
+  "claims": [
+    {
+      "file": "apex-nc.json",
+      "contains": "Apex is the best-documented town in this directory so far: it publishes a court table",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "apex-nc.json",
+      "contains": "Pleasant Park publishes a live court occupancy feed, which is the only real-time",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "apex-nc.json",
+      "contains": "No other operator in this directory does that.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "apex-nc.json",
+      "contains": "Brown Community Center has the first indoor pickleball courts verified anywhere in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "apex-nc.json",
+      "contains": "Brown Community Center, 53 Hunter Street, and they were the first verified indoor",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "apex-nc.json",
+      "contains": "It is not a town facility but a Wake County public school; the town publishes no street",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "austin-tx.json",
+      "contains": "Austin is the first city in this directory whose operator answers the lighting question",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "austin-tx.json",
+      "contains": "It is also one of the operators in this directory that states that a net is NOT provided:",
+      "metric": "cities_with_nets_not_provided",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "austin-tx.json",
+      "contains": "That makes Austin one of the largest cities in this directory by court count.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "austin-tx.json",
+      "contains": "At Brentwood, Rosewood and Springwoods, yes — the City says so in words: \"bring your own",
+      "metric": "cities_with_nets_not_provided",
+      "op": "==",
+      "value": 4
+    },
+    {
+      "file": "austin-tx.json",
+      "contains": "Across the whole of this directory only a handful of other venues take bookings, so an",
+      "metric": "venues_bookable",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "bellevue-wa.json",
+      "contains": "Hidden Valley Park is one of only two venues in this entire directory carrying a non-zero",
+      "metric": "venues_with_indoor_and_outdoor",
+      "op": "==",
+      "value": 2
+    },
+    {
+      "file": "bellevue-wa.json",
+      "contains": "That is one of the larger sets of venues in this directory, and the largest indoor set",
+      "metric": "largest_city_by_indoor_courts",
+      "op": "==",
+      "value": "Bellevue"
+    },
+    {
+      "file": "bellevue-wa.json",
+      "contains": "On 4 September 2026 this site added a second resolver, OpenStreetMap, consulted only",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "bexar-county-tx.json",
+      "contains": "It is the first city in Bexar County on this site and the second in Texas, after Austin.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "bexar-county-tx.json",
+      "contains": "Fairchild Park's eighteen lighted outdoor courts are eighteen of the county's forty-three",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 21
+    },
+    {
+      "file": "capecoral-fl.json",
+      "contains": "Cape Coral publishes more about its pickleball in one document than almost any operator",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "capecoral-fl.json",
+      "contains": "That last part is rarer than it should be: this directory records a price only when an",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "capecoral-fl.json",
+      "contains": "Cape Coral is the first Florida city in this directory and the first in Lee County.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "capecoral-fl.json",
+      "contains": "Cape Coral is one of only three cities on this site with a verified free court, with",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "capecoral-fl.json",
+      "contains": "Its address, \"3628 Garden Blvd\", is not found by either of this site's address resolvers,",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "cary-nc.json",
+      "contains": "Carpenter Park's features list states \"Parking for 30 Cars\", which is one of only two",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "cary-nc.json",
+      "contains": "Carpenter Park is one of only two venues in this entire directory whose operator",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "charlotte-nc.json",
+      "contains": "Charlotte is the first city in this directory whose operator publishes no court count at",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "charlotte-nc.json",
+      "contains": "Charlotte is the only city in this directory where the operator splits each park's courts",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "charlotte-nc.json",
+      "contains": "What makes Charlotte distinctive in this directory is not scale but bookkeeping: it is",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "clark-county-wa.json",
+      "contains": "This is the smallest county page in the directory and it is deliberately not padded:",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "clark-county-wa.json",
+      "contains": "The other thing worth knowing about the geography here is what lies immediately south:",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "clark-county-wa.json",
+      "contains": "Oakbrook is stated by the City to have no lighting — one of the few venues in this",
+      "metric": "venues_light_false",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "dane-county-wi.json",
+      "contains": "The verified courts are spread across Madison rather than concentrated, which is unusual",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "dane-county-wi.json",
+      "contains": "The one concentration is indoors and it is recent: five courts across two gyms at the",
+      "metric": "venues_bookable",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "dane-county-wi.json",
+      "contains": "It is the only source read for this directory that has stated a playing surface for every",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-apex-nc.json",
+      "contains": "There is no /indoor/ page despite Apex having had the first verified indoor courts in the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-apex-nc.json",
+      "contains": "Apex is the first city in this directory where outdoor is a stated fact rather than an",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-apex-nc.json",
+      "contains": "Brown Community Center holds the first indoor pickleball courts verified anywhere on this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-apex-nc.json",
+      "contains": "That is the town's own inventory rather than our reading of it, and it is the only place",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-apex-nc.json",
+      "contains": "Those four indoor courts were the first verified indoor pickleball courts in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-austin-tx.json",
+      "contains": "Lights does, because the City marks eleven venues \"Lighted during park hours\" — the first",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-austin-tx.json",
+      "contains": "Yes, and Austin publishes them for every venue — which few operators in this directory",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-austin-tx.json",
+      "contains": "Austin is the first city in this directory where a lighting page could be built from what",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-austin-tx.json",
+      "contains": "Austin is the first operator to state it venue by venue in prose at this scale, which is",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-bellevue-wa.json",
+      "contains": "Bellevue is one of only three cities in this directory where an indoor page is worth its",
+      "metric": "cities_with_indoor_page",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "filters-bellevue-wa.json",
+      "contains": "Hidden Valley Park is on both this list and the outdoor one, which only one other venue",
+      "metric": "venues_with_indoor_and_outdoor",
+      "op": "==",
+      "value": 2
+    },
+    {
+      "file": "filters-capecoral-fl.json",
+      "contains": "This directory records a price only when an operator publishes one, and most do not:",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-capecoral-fl.json",
+      "contains": "That makes Cape Coral one of only three cities on this whole site with a verified free",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "filters-capecoral-fl.json",
+      "contains": "This site does not describe a venue as free unless an operator publishes it, which is why",
+      "metric": "cities_with_free_page",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "filters-capecoral-fl.json",
+      "contains": "It does not appear on this site at all, because the City never states how many courts it",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-capecoral-fl.json",
+      "contains": "That is a better lighting record than most cities on this site can show; Seattle has a",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-lincoln-ne.json",
+      "contains": "That is one of the highest proportions of dedicated outdoor courts of any city on this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-lincoln-ne.json",
+      "contains": "And Eden Park, which has six dedicated courts and is the only Lincoln park whose own page",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-lincoln-ne.json",
+      "contains": "This site publishes a stated count or nothing, and seven dual-striped parks plus Eden",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-madison-wi.json",
+      "contains": "On 4 September 2026 this site added a second address resolver, consulted only where the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "Portland gets three filter pages of the five, and it is the first city in this directory",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "Outdoor is the default in most of this directory and a live decision in Portland.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "Six of the seven are free, which few other cities in this directory can say of a single",
+      "metric": "cities_with_free_venue",
+      "op": "<=",
+      "value": 5
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "This is the first indoor page in the directory, and Portland is the right city to have",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "They are also the only pickleball in the city with a published price: $6 for adults and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "That is the city's own published figure and it was the first price any operator in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "Six venues, 29 courts, and the first time this directory has been able to publish a free",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-portland-or.json",
+      "contains": "Five other cities in this directory are full of municipal courts nobody charges for, and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-san-antonio-tx.json",
+      "contains": "Most operators in this directory count courts and leave a reader to assume they are",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "Scottsdale published five locations; this site could originally verify only three of",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "Scottsdale is one of the few cities in this directory where the lighting question is",
+      "metric": "cities_lighting_answered_everywhere",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "Municipal park courts are usually free, and this directory almost never says so, because",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "That single sentence is why this page exists at all, and why Scottsdale is one of only",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "Most other municipal park courts in this directory, across several hundred courts, carry",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "Why do so few cities on this site have free courts?",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "This directory records a price only when an operator publishes one, and most parks",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-scottsdale-az.json",
+      "contains": "The /public/ filter does not exist here or in any city on this site, because access_type",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-seattle-wa.json",
+      "contains": "That is the single biggest gap in Seattle pickleball as this directory currently records",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-seattle-wa.json",
+      "contains": "Most of them are genuinely unlit rather than unchecked, but we keep the two ideas",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-tampa-fl.json",
+      "contains": "Tampa is one of the largest cities on this site where the operator states it for every",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "filters-tampa-fl.json",
+      "contains": "Tampa has more published indoor venues than any city on this site, though Bellevue has",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Tampa"
+    },
+    {
+      "file": "hillsborough-county-fl.json",
+      "contains": "That indoor seven is the county's distinctive number: Tampa has more published indoor",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Tampa"
+    },
+    {
+      "file": "huntington-beach-ca.json",
+      "contains": "Huntington Beach adds four stated negatives in one heading, more than the directory",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "huntington-beach-ca.json",
+      "contains": "Huntington Beach is the first city on this site where the operator states that no",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "irvine-ca.json",
+      "contains": "Irvine is the first California city on this site.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "kirkland-wa.json",
+      "contains": "This is the best-documented parking of any city on this site, and it is documented",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "kirkland-wa.json",
+      "contains": "Everest Park states it outright: \"There are two parking lots at Everest with space for up",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "kirkland-wa.json",
+      "contains": "The one place Kirkland describes a playing surface rather than dating it is a court this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "kirkland-wa.json",
+      "contains": "Kirkland's rule is that its pickleball courts are for drop-in play and nothing else: \"All",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "kirkland-wa.json",
+      "contains": "Six tennis courts at Peter Kirk Park became six dedicated pickleball courts this summer,",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "kirkland-wa.json",
+      "contains": "The City states no charge for any of its pickleball courts, but it also never says they",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lancaster-county-ne.json",
+      "contains": "What distinguishes this county from most others on this site is not where the courts are",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lancaster-county-ne.json",
+      "contains": "Sixteen of the twenty-two are dedicated to pickleball rather than striped onto tennis —",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lancaster-county-ne.json",
+      "contains": "Sixteen of its twenty-two published courts are dedicated to pickleball rather than shared",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lancaster-county-ne.json",
+      "contains": "No other operator in this directory publishes an arrangement like that.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lee-county-fl.json",
+      "contains": "This is the first county in Florida this directory has published in, and one city of it",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lee-county-fl.json",
+      "contains": "Only Scottsdale has previously given this directory a count, a lighting answer and a",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lee-county-fl.json",
+      "contains": "That makes Cape Coral one of only three cities on this site with a verified free court.",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "lincoln-ne.json",
+      "contains": "What the City does publish, and most operators in this directory do not, is when the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lincoln-ne.json",
+      "contains": "Not stated anywhere in Lincoln, which is the ordinary case — few cities in this directory",
+      "metric": "cities_with_any_surface",
+      "op": "<=",
+      "value": 8
+    },
+    {
+      "file": "lincoln-ne.json",
+      "contains": "That is one of the highest proportions of dedicated outdoor courts in any city on this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lincoln-ne.json",
+      "contains": "No other operator in this directory hands its courts to a named organisation and says so.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lincoln-ne.json",
+      "contains": "Sixteen of the 22 courts published here are dedicated, one of the highest proportions of",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lincoln-ne.json",
+      "contains": "Lincoln is one of the operators in this directory that publishes park hours at all, and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "lincoln-ne.json",
+      "contains": "That is an unusual arrangement to find written down, and it is the closest thing to a",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "Madison is the first city in this directory that answers the surface question at all, and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "Nobody else in this directory has mentioned it, and it is the difference between a dink",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "The second date is the expansion of the Warner Park Community Recreation Center, which",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "Nine cities in, every other verified court in the directory has been first come, first",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "The Warner Park Community Recreation Center was the first venue in this entire directory",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "That makes Madison the second-largest city in this directory by venue count, behind",
+      "metric": "second_largest_city_by_venues",
+      "op": "==",
+      "value": "Madison"
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "Madison is the only city in this directory that states a surface for every venue it lists",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "Indoors, yes — the five courts at the Warner Park Community Recreation Center are",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "madison-wi.json",
+      "contains": "This directory requires a street address that resolves before it will publish a venue,",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "maricopa-county-az.json",
+      "contains": "Maricopa is by some distance the largest county this directory has published in, and two",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "maricopa-county-az.json",
+      "contains": "It is one of the few operators in this directory that publishes court etiquette, and the",
+      "metric": "cities_with_stated_peak_hours",
+      "op": "==",
+      "value": 1
+    },
+    {
+      "file": "maricopa-county-az.json",
+      "contains": "Phoenix is the largest unread city and the least promising on current evidence - its own",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "mecklenburg-county-nc.json",
+      "contains": "Mecklenburg is at once the most precise operator in this directory about which courts",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "mesa-az.json",
+      "contains": "The Mesa Tennis & Pickleball Center holds the largest single-venue pickleball count",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 21
+    },
+    {
+      "file": "mesa-az.json",
+      "contains": "The Mesa Tennis & Pickleball Center has twenty-one lighted pickleball courts, the largest",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 21
+    },
+    {
+      "file": "mesa-az.json",
+      "contains": "That is the largest single-venue count anywhere in this directory.",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 21
+    },
+    {
+      "file": "nc-state.json",
+      "contains": "Brown Community Center in Apex holds the only verified indoor pickleball courts in North",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "orange-county-ca.json",
+      "contains": "This is the first county in California this directory has published in, and two cities of",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "portland-or.json",
+      "contains": "Portland Tennis Center, with sixteen — one of the largest single-venue counts in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "portland-or.json",
+      "contains": "Portland is the first city in this directory where we can say a venue is free rather than",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "ramsey-county-mn.json",
+      "contains": "This site publishes stated counts only, so the difference between thirteen and whatever",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "saint-paul-mn.json",
+      "contains": "Saint Paul is the first city on this site that publishes no list of its pickleball venues",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "saint-paul-mn.json",
+      "contains": "This site requires a street address that resolves before it will publish a venue, so the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "san-antonio-tx.json",
+      "contains": "Fairchild's eighteen lit outdoor courts are the second-largest single-venue count on this",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 21
+    },
+    {
+      "file": "san-antonio-tx.json",
+      "contains": "San Antonio is the second Texas city on this site after Austin and the first in Bexar",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "scottsdale-az.json",
+      "contains": "Ashler Hills Park joined this page on 4 September 2026, when this site added a second",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "scottsdale-az.json",
+      "contains": "This is the first city page in the directory where this section is written from a source",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "scottsdale-az.json",
+      "contains": "No surface is stated for any Scottsdale court, which is ordinary — few cities in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "scottsdale-az.json",
+      "contains": "Horizon Park has ten lighted courts, the largest count in Scottsdale and one of the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "scottsdale-az.json",
+      "contains": "Across this whole directory only two other cities have a verified free court — Portland",
+      "metric": "cities_with_free_venue",
+      "op": "==",
+      "value": 3
+    },
+    {
+      "file": "scottsdale-az.json",
+      "contains": "This is the only city in this directory whose operator has published a peak time, so it",
+      "metric": "cities_with_stated_peak_hours",
+      "op": "==",
+      "value": 1
+    },
+    {
+      "file": "seattle-wa.json",
+      "contains": "Nobody working on this directory has inspected a court surface in Seattle, and Seattle",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "tampa-fl.json",
+      "contains": "Al Barnes, Copeland, Davis Islands, Forest Hills, Highland Pines, Julian B Lane,",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "tampa-fl.json",
+      "contains": "Every other outdoor card just says courts, and this site does not read dedicated into",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "tampa-fl.json",
+      "contains": "Tampa is the second Florida city on this site after Cape Coral and the first in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "tampa-fl.json",
+      "contains": "It also has more published indoor venues than any city here, though Bellevue has more",
+      "metric": "largest_city_by_indoor_venues",
+      "op": "==",
+      "value": "Tampa"
+    },
+    {
+      "file": "vancouver-wa.json",
+      "contains": "On condition, Vancouver does something no other operator in this directory does: it",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "vancouver-wa.json",
+      "contains": "Portland's own eleven pickleball venues are a few miles away over the bridge and are",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-apex-nc.json",
+      "contains": "One genuinely unusual thing: the town publishes a live court occupancy feed for the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-apex-nc.json",
+      "contains": "No other venue in this directory publishes real-time availability.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-apex-nc.json",
+      "contains": "Brown Community Center holds the first indoor pickleball courts verified anywhere in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-apex-nc.json",
+      "contains": "Were these really the first verified indoor courts on this site?",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-apex-nc.json",
+      "contains": "Every other venue in this directory is outdoors.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "It is also one of eleven lit venues, and the only one in the whole directory whose",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "It is on the river just west of the centre, which makes it one of the most central venues",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "It is the only Austin venue requiring a reservation and, across the ninety-five venues",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "Across this whole directory only a handful of other venues take bookings, in other",
+      "metric": "venues_bookable",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "Most other operators have simply not said, which this site renders as unknown rather than",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "The City's entry says \"bring your own portable net\" — one of only three Austin venues,",
+      "metric": "venues_nets_not_provided",
+      "op": "==",
+      "value": 10
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "The park shares its name and its address with the Gus Garcia Recreation Center, which the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "It earns its place on this site for two reasons beyond the court itself: it is one of two",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "Because only two published venues are in it, and this site requires three verified venues",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "for roller derby practice.\" That is a genuinely useful sentence, and one no other",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "The roller derby schedule is what complicates it, and it is also what makes this entry",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "The City's entry says \"Nets not included.\" Austin is one of four cities in this directory",
+      "metric": "cities_with_nets_not_provided",
+      "op": "==",
+      "value": 4
+    },
+    {
+      "file": "venues-austin-tx.json",
+      "contains": "Two pickleball courts striped onto one multi-purpose outdoor court at the far north-west",
+      "metric": "venues_nets_not_provided",
+      "op": "==",
+      "value": 10
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "One of only two venues in this entire directory with a court count above zero on both",
+      "metric": "venues_with_indoor_and_outdoor",
+      "op": "==",
+      "value": 2
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "That makes it one of only two venues anywhere in this directory offering both, which is a",
+      "metric": "venues_with_indoor_and_outdoor",
+      "op": "==",
+      "value": 2
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "That single parenthesis is the most specific thing any operator in this directory has",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "Parking is listed among the amenities, and this is one of the few Bellevue park pages",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "Nine street numbers away, at 14500 SE Newport Way, is Eastgate Park and its four",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "The park's own page — the record card the City keeps for the site — never mentions",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "Parking and restrooms are both listed among the park's amenities, which is more than most",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-bellevue-wa.json",
+      "contains": "That is the only City page that states a pickleball count for this site.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-capecoral-fl.json",
+      "contains": "It also never describes these courts as indoor or outdoor, so this site does not either,",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-capecoral-fl.json",
+      "contains": "This is an athletic park: four lighted soccer fields and lighted basketball courts share",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-cary-nc.json",
+      "contains": "That is the only parking capacity any operator in this directory has given us, and it is",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-charlotte-nc.json",
+      "contains": "Charlotte is one of the cities in this directory where the operator publishes no lighting",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-kirkland-wa.json",
+      "contains": "Most of what this directory publishes is a tennis court carrying a second set of lines,",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-kirkland-wa.json",
+      "contains": "This is the best-documented parking of any venue on this site, and the credit belongs",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-kirkland-wa.json",
+      "contains": "to dusk, every day, free of any charge the City mentions - though note that it never",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-lincoln-ne.json",
+      "contains": "The City's Tennis and Pickleball page lists Ballard under \"Dedicated Pickleball Courts\"",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-lincoln-ne.json",
+      "contains": "to 11:00 p.m., seven days a week — Lincoln publishes park hours, which most operators in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-lincoln-ne.json",
+      "contains": "Six pickleball courts and no tennis players to negotiate with, which at most venues in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-lincoln-ne.json",
+      "contains": "Ten courts dedicated to pickleball — the largest count in Lincoln, one of the larger",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "After three larger pickleball sites in the city fell out of this directory on address",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "The north side is also where Madison's only indoor courts are: five at the Warner Park",
+      "metric": "venues_bookable",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "The City publishes no description or amenity list for it, and this directory does not",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "The Warner Park Community Recreation Center, on the same side of the city, has five",
+      "metric": "venues_bookable",
+      "op": ">=",
+      "value": 2
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "What is not mid-table is the site: 213 acres, the second-largest park published here, and",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "Across this whole directory only two other places manage that — Bellevue's Hidden Valley",
+      "metric": "venues_with_indoor_and_outdoor",
+      "op": "==",
+      "value": 2
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "Five indoor courts across two gyms — Blue Gym has two and Green Gym three, each 20ft by",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "Yes, and this was the first venue on this entire site where that was true; a handful of",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "Reservations run through the City's WebTrac account system; every other verified court in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-madison-wi.json",
+      "contains": "Madison is the only city in this directory that publishes a surface for every one of its",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-mesa-az.json",
+      "contains": "Twenty-one lighted pickleball courts, which is the largest count at any single venue in",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 21
+    },
+    {
+      "file": "venues-mesa-az.json",
+      "contains": "The City publishes a phone number for the Center directly, 480-644-3874, and an email",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-mesa-az.json",
+      "contains": "What the City never says, here or anywhere in Mesa, is whether these courts are indoor or",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-mesa-az.json",
+      "contains": "It also never says they are free, so this site does not describe them as free - only as",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "As at every other venue on this site, the parks department publishes nothing at all about",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "It makes Pier Park one of only three Portland venues in this directory with a verified",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "Southwest Community Center, the city's largest indoor site, is about 250 metres away —",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "Hillside Park is one of the smallest pickleball venues in this directory, and it is here",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "It is one of the smallest venues in this directory, and it is published for the same",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "Because the operator stated it, which is the only test this directory applies.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "Four courts indoors and a published price — $6 for adults, $5 for seniors, per drop-in",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-portland-or.json",
+      "contains": "Sixteen outdoor courts — one of the largest single venues in this directory — and the one",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-raleigh-nc.json",
+      "contains": "Baileywick Park is the only place in this directory's Raleigh set where you can play",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-raleigh-nc.json",
+      "contains": "The city's pickleball page and its GIS court inventory agree on the count, and so does",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-raleigh-nc.json",
+      "contains": "Sanderford Road Park is the largest pickleball site in Raleigh and the largest in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-raleigh-nc.json",
+      "contains": "If you are new to the city and want the best odds of getting a game, this is the site to",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-saint-paul-mn.json",
+      "contains": "It is the smallest published venue in the city, and among the smallest anywhere in this",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-saint-paul-mn.json",
+      "contains": "It is also among the smallest venues anywhere in this directory, alongside single-court",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-saint-paul-mn.json",
+      "contains": "Four courts is not many by the standards of the larger cities on this site — Austin has",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-san-antonio-tx.json",
+      "contains": "Eighteen lighted outdoor pickleball courts on the east side of San Antonio, stated in one",
+      "metric": "max_venue_courts",
+      "op": "==",
+      "value": 21
+    },
+    {
+      "file": "venues-scottsdale-az.json",
+      "contains": "The postcode here comes from OpenStreetMap rather than from the US Census address",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-scottsdale-az.json",
+      "contains": "That is why this venue was excluded when Scottsdale was first published: a venue must",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-scottsdale-az.json",
+      "contains": "What sets this venue apart from almost every other one in this directory is not the count",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-scottsdale-az.json",
+      "contains": "It then adds the sentence that no other operator in this directory has published",
+      "metric": "cities_with_stated_peak_hours",
+      "op": "==",
+      "value": 1
+    },
+    {
+      "file": "venues-scottsdale-az.json",
+      "contains": "It is the only operator in this directory to have published a peak time at all, so this",
+      "metric": "cities_with_stated_peak_hours",
+      "op": "==",
+      "value": 1
+    },
+    {
+      "file": "venues-scottsdale-az.json",
+      "contains": "Ten outdoor lighted pickleball courts — the largest count in Scottsdale, and one of the",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-scottsdale-az.json",
+      "contains": "The City states \"Mornings are typically the busiest time for pickleball play at Horizon\"",
+      "metric": "cities_with_stated_peak_hours",
+      "op": "==",
+      "value": 1
+    },
+    {
+      "file": "venues-seattle-wa.json",
+      "contains": "Nobody working on this directory has played on a Seattle court, and none of the writing",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-seattle-wa.json",
+      "contains": "That programme is what makes it different from every other entry in this directory.",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-seattle-wa.json",
+      "contains": "The city records none at this site, one of only three Seattle pickleball locations",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-seattle-wa.json",
+      "contains": "So on the city's record this is the largest dedicated pickleball venue in Seattle, which",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-seattle-wa.json",
+      "contains": "A single shared court is the smallest unit of provision in this directory, and there are",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-vancouver-wa.json",
+      "contains": "And then the sentence that makes this venue unusual in this entire directory — \"The",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "venues-vancouver-wa.json",
+      "contains": "It is a City park with open-play courts and it is very likely free, but the City never",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "wa-state.json",
+      "contains": "Kirkland publishes the clearest document of the four: a table whose column is headed",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "wa-state.json",
+      "contains": "Hidden Valley Park in Bellevue is one of only two venues anywhere in this directory with",
+      "metric": "venues_with_indoor_and_outdoor",
+      "op": "==",
+      "value": 2
+    },
+    {
+      "file": "wake-county-nc.json",
+      "contains": "Wake County is one of the most thoroughly covered counties in this directory, and one of",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "wake-county-nc.json",
+      "contains": "The county also holds the first verified indoor pickleball in this directory — four",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    },
+    {
+      "file": "wake-county-nc.json",
+      "contains": "Brown Community Center in Apex has four indoor courts, the first verified indoor",
+      "metric": null,
+      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
+    }
+  ]
+}

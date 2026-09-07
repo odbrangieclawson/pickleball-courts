@@ -1,0 +1,115 @@
+{
+  "city": "Tampa",
+  "state": "FL",
+  "kind": "filters",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Two of the filter slugs have a lawful data driver in Tampa, and the same fact drives both. The City's pickleball page labels every outdoor card \"Outdoor Pickleball\" and puts the community-centre courts under a heading that reads \"Indoor Pickleball\", so indoor and outdoor are stated, in the City's own words, for all sixteen published venues. Lights has no driver: the City states no lighting for any venue. Free has none: the City states no price for any court, and the one \"free\" on the page is a beginner lesson. Public has none anywhere on this site.",
+  "filters": {
+    "outdoor": {
+      "slots": {
+        "why_this_filter": "Twelve Tampa venues hold outdoor pickleball courts and forty-five of the city's fifty-two verified courts are at them, which makes this page most of the city. What earns it a URL of its own is not the number but the fact that the City drew the line. Every one of those twelve cards carries the label \"Outdoor Pickleball\" - or, at Davis Islands, \"Outdoor pickleball\" - and the community-centre courts sit apart under a heading that reads \"Indoor Pickleball\". This site publishes an indoor-or-outdoor answer only when an operator states one. Tampa is one of the largest cities on this site where the operator states it for every published venue, and the largest to do so in prose on a web page rather than in a data field. The practical reason to filter is that in Tampa the two kinds of venue are documented in opposite ways. The indoor courts all come with session schedules and phone numbers and, in one case, a repair closure. The outdoor courts mostly come with a count and an address and nothing else: nine of the twelve say nothing about hours, none says anything about lighting, none says anything about price or surface. So an outdoor venue in Tampa is a court you can walk to whenever the park is open, on a record that does not tell you when that is; an indoor one is a court you can use for ninety minutes on a Tuesday, on a record that tells you exactly that. The largest sets are outdoors - Macfarlane's eight, Cuscaden's six, Julian B Lane's six - and the only scheduled outdoor session in the city is Cuscaden's \"Senior open play Wed 9-11 am\". Two parks and the pavilion state hours; the rest are the City's silence, recorded as silence.",
+        "what_qualifies": "A venue appears here when the City of Tampa's pickleball page lists it under the label \"Outdoor Pickleball\" with a court count, and this site records that count as outdoor courts. Twelve qualify: Al Barnes Park, Copeland Park, Cuscaden Park, Davis Islands, Forest Hills, Highland Pines Park, Julian B Lane Riverfront Park, Macfarlane Park, Madison Street Park, New Tampa Sports Pavilion, Skyview Park and Vila Brothers Park. Three of them need a word. Forest Hills qualifies on its two outdoor courts and appears on the indoor page as well, because the City lists a second card for the same address under \"Indoor Pickleball\"; it is the second venue on this site published with a count on both sides of that line. Davis Islands qualifies with \"2 multi-purpose courts\", the City's own word, which this site keeps rather than promoting to pickleball courts. The New Tampa Sports Pavilion qualifies because the City labels its card outdoor; the word pavilion and the recreation centre at the same address do not override the label, and nothing on either City page says the courts are under a roof. What does not qualify is the four community centres whose courts are all indoor - Barksdale, Cordelia B Hunt, Loretta Ingraham and Port Tampa - and two outdoor venues the City lists that this site cannot publish: Rowlett Park, eight courts at an address neither resolver finds, and Foster Park, two courts at an address the Census flips to the other side of the city and OpenStreetMap cannot find as written."
+      },
+      "faqs": [
+        {
+          "q": "Which outdoor courts in Tampa have lights?",
+          "a": "The City does not say, for any venue. Not one outdoor card mentions lighting, so every venue on this page is recorded as unverified rather than lit or unlit, and Tampa has no lights page."
+        },
+        {
+          "q": "Which outdoor venues state their hours?",
+          "a": "Three. Madison Street Park and Vila Brothers Park are \"Open daily from sunrise to sunset\"; the New Tampa Sports Pavilion is open Monday-Friday 4:30-9 pm and Saturday-Sunday 8 am-9 pm. The other nine carry no hours."
+        },
+        {
+          "q": "Are the outdoor courts free?",
+          "a": "Not stated. The City publishes no price for any court, and this site does not assume a park court is free because no fee was written down."
+        },
+        {
+          "q": "Why is Forest Hills on both the outdoor and indoor pages?",
+          "a": "Because the City lists two cards at 724 W 109th Ave: two courts under \"Outdoor Pickleball\" and two under \"Indoor Pickleball\". This site publishes them as one venue with a count on each side."
+        },
+        {
+          "q": "Why is Rowlett Park not here, with eight courts?",
+          "a": "Because \"2401 E Yukon St.\" is found by neither the Census address file nor OpenStreetMap, and a venue at an address nobody can locate does not publish. It would otherwise tie Macfarlane for the largest outdoor set."
+        }
+      ],
+      "sources": [
+        "F1",
+        "F3"
+      ]
+    },
+    "indoor": {
+      "slots": {
+        "why_this_filter": "Five Tampa venues hold indoor pickleball courts, seven courts between them, and the City puts every one of them under a heading that reads \"Indoor Pickleball\" on its own page. That is the whole basis of this filter, and a firmer one than most cities give. Tampa has more published indoor venues than any city on this site, though Bellevue has more indoor courts, and its indoor page is one of only a few on the site. Operators rarely write the word indoor beside a court count, and a roof is not inferred here. What indoor means in Tampa is specific, and worth being clear about before choosing a venue. None of the five is an indoor pickleball facility. Four are community centres - Barksdale, Cordelia B Hunt, Loretta Ingraham and Port Tampa - and the fifth, Forest Hills, is a community centre that shares its address with a park holding two outdoor courts. In each the courts exist at the session times the City prints and, so far as the record shows, not otherwise: Monday and Friday evenings at Loretta Ingraham, weekday afternoons at Barksdale, Tuesday and Thursday evenings at Cordelia B Hunt and Port Tampa, three mornings and a Friday evening at Forest Hills. Two cards say \"Play resumes after Summer Camp ends\", one says \"Court closed for repairs through June 1\", and none of the dates carries a year on a page dated 28 October 2025. So an indoor venue here is a place to play in a known ninety-minute or three-hour window, with a phone number from the City's recreation-centres list to confirm it, rather than a place to turn up. That is a different proposition from the outdoor parks, and it is the reason this page is separate from them.",
+        "what_qualifies": "A venue appears here when the City of Tampa's pickleball page lists it under the heading \"Indoor Pickleball\" with a court count, and this site records that count as indoor courts. Five qualify: Forest Hills with two, Loretta Ingraham Center with two, and David M Barksdale Center, Cordelia B Hunt Center and Port Tampa Community Center with one each - seven indoor courts in all. Forest Hills qualifies on the \"Forest Hills Community Center\" card and is also on the outdoor page on its other card at the same address. Port Tampa qualifies although its card says the court was \"closed for repairs through June 1\": the count is stated, the closure is printed beside it on the venue page as the City printed it, and the build fails on the day the City removes the note. What does not qualify is instructive. The Dr Martin Luther King Jr. Complex is on the City's indoor list with two courts and a schedule the City marks as not yet set, and is refused from the whole site because the City prints two house numbers for it - 220 N Oregon Ave on the pickleball page, 2200 on the recreation-centres page - and the one carrying the count resolves to a postcode the City's own pages contradict. The Copeland Park Center has a gymnasium on the recreation-centres list and no indoor pickleball on the City's page, so Copeland is an outdoor venue only, as is Highland Pines. A gym is not an indoor court until the operator counts one there; every court on this page is one the City called indoor."
+      },
+      "faqs": [
+        {
+          "q": "When can I play indoors in Tampa?",
+          "a": "At the session times the City prints: weekday afternoons at Barksdale, Monday and Friday evenings at Loretta Ingraham, Tuesday and Thursday evenings at Cordelia B Hunt and Port Tampa, and Monday, Wednesday and Friday at Forest Hills. Each venue page prints its schedule as the City wrote it."
+        },
+        {
+          "q": "Are the indoor sessions free?",
+          "a": "Not stated. The City prices no court in Tampa. The Monday beginner lessons at Barksdale are stated as free, but that is a lesson, not the court."
+        },
+        {
+          "q": "Is the Port Tampa court open?",
+          "a": "The City's card says \"Court closed for repairs through June 1\" with no year, on a page dated 28 October 2025. This site prints it as written; ring 813-832-1215 before going."
+        },
+        {
+          "q": "Why is the Dr Martin Luther King Jr. Complex not here?",
+          "a": "The City lists it with two indoor courts, but prints two house numbers for it on two pages, and the one carrying the count resolves to a postcode the City's own 33607 contradicts. It is refused on its address."
+        },
+        {
+          "q": "Which indoor venue has the most courts?",
+          "a": "Forest Hills and Loretta Ingraham, with two each. Forest Hills' Wednesday session runs three hours on its two courts; Loretta Ingraham's Monday and Friday sessions run two hours on two courts in the evening."
+        }
+      ],
+      "sources": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "F1",
+      "url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+      "publisher": "City of Tampa Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
+      "evidence": "The City's pickleball page, dated \"Updated: 10/28/2025\": \"We have outdoor pickleball courts, and offer indoor pickleball at many places across Tampa.\" Twelve published cards carry the label \"Outdoor Pickleball\" (Davis Islands: \"Outdoor pickleball\"): Al Barnes Park \"4 courts\", Copeland Park \"4 courts\", Cuscaden Park \"Senior open play Wed 9-11 am / 6 courts\", Davis Islands \"2 multi-purpose courts\", Forest Hills \"2 courts\", Highland Pines Park \"4 courts\", Julian B Lane Riverfront Park \"2 permanent courts / 4 portable net courts\", Macfarlane Park \"8 courts\", Madison Street Park \"Open daily from sunrise to sunset / 1 court\", New Tampa Sports Pavilion \"Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\", Skyview Park \"2 courts\", Vila Brothers Park \"Open daily from sunrise to sunset / 2 courts\"; also Foster Park \"4700 S Clark Ave., 33611 / 2 courts\" and Rowlett Park \"2401 E Yukon St., 33604 / 8 courts\". Under the heading \"Indoor Pickleball\": David M Barksdale Center \"1 court\" with \"Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\"; Dr Martin Luther King Jr. Complex \"220 N Oregon Ave., 33607 / 2 courts / Play resumes after Summer Camp ends / Schedule TBD\"; Forest Hills Community Center \"724 W 109th Ave, 33612 / 2 courts / Play resumes after Summer Camp ends / Monday, 10 am-12:30 pm / Wednesday, 10 am-1 pm / Friday, 6-7:30 pm\"; Cordelia B Hunt Center \"1 court\" with sessions through June 1 and June 2-August 8; Loretta Ingraham Center \"2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\"; Port Tampa Community Center \"1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm / Thursday, 6-9 pm\". Snapshot: data/sources/tampa/pickleball.html",
+      "not_stated": "Lighting, price and surface at any venue; whether the pavilion's courts are covered; the year of any date on the indoor cards."
+    },
+    {
+      "id": "F2",
+      "url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/recreation-centers",
+      "publisher": "City of Tampa Parks and Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
+      "evidence": "The City's recreation-centres list, dated \"Updated: 05/21/2026\". \"Copeland Park Center 11001 N 15th St, 33612 / Features: Computer Lab, Fitness Room, Gymnasium, Pool Facility, After School, Summer Camp, Stay & Play, Contracted Instructor (Urban Line Dance)\". \"Dr. Martin Luther King Jr. Complex 2200 N Oregon Ave, 33607 / Ph: 813-259-1667 / Features: Computer Lab, Gymnasium, Pool Facility, After School, Summer Camp, Stay & Play\". \"Forest Hills Center 724 W 109th Ave, 33612 / Ph: 813-931-2105 / Features: Computer Lab, Fitness Room, Gymnasium, After School, Summer Camp, Contracted Instructor (Shotokan Karate)\". \"Highland Pines Center 4505 E 21st Ave, 33605 / Ph: 813-630-3925 / Features: Computer Lab, After School, Summer Camp\". \"Loretta Ingraham Complex 1615 N Hubert Ave, 33607 / Ph: 813-348-1175 / Features: Computer Lab, Fitness Room, Gymnasium, Pool Facility, After School, Summer Camp\". \"Port Tampa Center 4702 W McCoy St, 33616 / Ph: 813-832-1215 / Features: Computer Lab, Gymnasium, After School, Summer Camp\". \"David M Barksdale Center 1801 N Lincoln Ave, 33607 / Ph: 813-348-1180\". \"Cordelia B Hunt Center 4810 N Himes Ave, 33614 / Ph: 813-348-1172\". Snapshot: data/sources/tampa/recreation-centers.html",
+      "not_stated": "Pickleball at all - the page never uses the word - so no gymnasium on it is an indoor court count."
+    },
+    {
+      "id": "F3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "what_qualifies"
+      ],
+      "evidence": "The sixteen published addresses matched at house-number level and were placed in Hillsborough County, FL, inside the incorporated place Tampa, ten through the Census address file and four through OpenStreetMap, with two standing on Census answers that alter the City's street type or drop its direction where OpenStreetMap holds nothing for the City's spelling. \"2401 E Yukon St.\" (Rowlett Park, 8 courts) is found by neither resolver. \"4700 S Clark Ave., 33611\" (Foster Park, 2 courts) is answered by the Census as \"4700 N CLARK AVE, 33614\" and not found by OpenStreetMap. \"220 N Oregon Ave.\" (Dr Martin Luther King Jr. Complex, 2 indoor courts) resolves in 33606 against the City's 33607 on both of its pages. Snapshot: data/sources/tampa-county-census.json",
+      "not_stated": "Anything about whether a court is indoor or outdoor."
+    }
+  ]
+}

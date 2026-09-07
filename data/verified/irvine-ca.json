@@ -1,0 +1,461 @@
+{
+  "city": "Irvine",
+  "state": "CA",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Irvine states its pickleball count twice for every venue - in a sentence on the City's pickleball page and again in each park's own amenity list, where the address and the hours also sit - and the three venues where the two records agree publish here: Mike Ward Community Park (8), Portola Springs Community Park (6) and Heritage Community Park (4), every court lit in the City's own word and every park open 6 a.m. to 10 p.m. daily. Los Olivos Community Park is refused because the City disagrees with itself: two courts on the pickleball page and the regulations page, \"3 Lighted Pickleball Courts\" on the park's page, and the rule that the record stating a number publishes cannot choose between two numbers. The City's \"10 hybrid tennis and pickleball courts\" across seven parks on one page and nine across six on another is a city-wide aggregate with no per-park figure and adds nothing to any venue. Irvine also publishes how a court is shared - first come, first served, doubles limited to 60 minutes when others are waiting - and prices its two reservable courts at each of its two largest venues at $17 an hour for residents and $19 for non-residents. It never writes \"free\", so no venue here reaches the /free/ page. The City prints 92620 for Portola Springs and the Census returns 92618; the Census value publishes and both sides are asserted.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://cityofirvine.gov/racket-sports/pickleball",
+      "publisher": "City of Irvine Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/irvine/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://cityofirvine.gov/racket-sports/court-regulations-and-map",
+      "publisher": "City of Irvine Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/irvine/court-regulations-and-map.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://cityofirvine.gov/parks-facilities/mike-ward-community-park",
+      "publisher": "City of Irvine Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/irvine/mike-ward-community-park.html"
+    },
+    {
+      "id": "S4",
+      "url": "https://cityofirvine.gov/parks-facilities/portola-springs-community-park",
+      "publisher": "City of Irvine Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/irvine/portola-springs-community-park.html"
+    },
+    {
+      "id": "S5",
+      "url": "https://cityofirvine.gov/parks-facilities/heritage-community-park",
+      "publisher": "City of Irvine Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/irvine/heritage-community-park.html"
+    },
+    {
+      "id": "S6",
+      "url": "https://cityofirvine.gov/parks-facilities/los-olivos-community-park",
+      "publisher": "City of Irvine Community Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/irvine/los-olivos-community-park.html"
+    },
+    {
+      "id": "S7",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/irvine-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 3,
+    "courts": 18,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": 18,
+    "dedicated_courts": 18,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Los Olivos Community Park",
+      "why": [
+        "The City disagrees with itself about the count. Its pickleball page says \"two lit pickleball courts located at Los Olivos Community Park\", its court regulations page says \"two lit pickleball courts at Los Olivos Community Park\", and the park's own amenity list says \"3 Lighted Pickleball Courts\". Three City records, two numbers.",
+        "The rule that decided Saint Paul and Lincoln - the record that states a number publishes - cannot choose between two numbers, and Colorado Springs was refused as a city for a contradiction of exactly this shape. The address resolves and the courts are lit; the venue fails on the one fact a court page cannot do without."
+      ]
+    }
+  ],
+  "venues": {
+    "mike-ward-community-park": {
+      "minted": true,
+      "identity": {
+        "name": "Mike Ward Community Park",
+        "city": "Irvine",
+        "state": "CA",
+        "county": "Orange",
+        "postal_code": "92604",
+        "latitude": 33.676960642479,
+        "longitude": -117.803600516951,
+        "imported_slug": null,
+        "canonical_slug": "mike-ward-community-park"
+      },
+      "match": {
+        "source_page": "https://cityofirvine.gov/racket-sports/pickleball",
+        "quote": "eight lit pickleball courts located at Mike Ward Community Park",
+        "basis": "No imported row for this park. Minted here from the City's own pages, which state the count and the address."
+      },
+      "patch": {
+        "name": "Mike Ward Community Park",
+        "total_courts": 8,
+        "street_address": "20 Lake Road",
+        "venue_type": "public_park",
+        "light": true,
+        "hours_of_operation": "6 a.m. to 10 p.m., daily",
+        "restroom": true,
+        "play_format": "open_play",
+        "court_availability": "Eight lit pickleball courts, the largest set in Irvine, in a 22-acre community park that also carries two lighted basketball courts, three lighted racquetball courts and a sand volleyball court. The City states the count twice - \"eight lit pickleball courts located at Mike Ward Community Park\" on its pickleball page and \"8 Lighted Pickleball Courts\" in the park's own amenity list - and the hours once: 6 a.m. to 10 p.m., daily. Six of the eight are first come, first served under the City's court regulations, with doubles limited to 60 minutes and singles to 30 when others are waiting. Courts #3 and #4 can be reserved online at $17 an hour for residents and $19 for non-residents, in one- or two-hour blocks between 7 a.m. and noon and 4 and 10 p.m.; when nobody has booked them, the City says they are open for drop-in play until a reservation holder arrives.",
+        "county": "Orange",
+        "postal_code": "92604",
+        "pricing_notes": "Courts #3 and #4 can be reserved online: resident rate $17/hr, non-resident rate $19/hr, in one- or two-hour blocks, 7 a.m. to noon and 4 to 10 p.m. The other courts are first come, first served and the City states no price for them."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/mike-ward-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Mike Ward Community Park\" on the park's own page. The City's pickleball page uses the same name."
+        },
+        "total_courts": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Stated twice by the City: \"eight lit pickleball courts located at Mike Ward Community Park\" on its pickleball page, and \"8 Lighted Pickleball Courts\" in the park's own amenity list."
+        },
+        "street_address": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/mike-ward-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"20 Lake Road Irvine, CA 92604\" is the address under \"Location\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/mike-ward-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Irvine Community Services among its parks and facilities."
+        },
+        "light": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's own words, twice: \"eight lit pickleball courts located at Mike Ward Community Park\" and \"8 Lighted Pickleball Courts\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/mike-ward-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours: 6 a.m.-10 p.m., Daily\" on the park's own page."
+        },
+        "restroom": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/mike-ward-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"3 Restrooms\" in the park's amenity list."
+        },
+        "play_format": {
+          "source_url": "https://cityofirvine.gov/racket-sports/court-regulations-and-map",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's court regulations: \"Open courts are on a first-come, first-serve basis. Please use the waiting board where available.\" Time limits when others are waiting: doubles 60 minutes, singles 30."
+        },
+        "court_availability": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"eight lit pickleball courts located at Mike Ward Community Park\"), the park's own page (\"8 Lighted Pickleball Courts\", \"Hours: 6 a.m.-10 p.m., Daily\") and the court regulations (\"Open courts are on a first-come, first-serve basis\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Orange County, CA (FIPS 06059). Census address geocoder matched \"20 LAKE RD, IRVINE, CA, 92604\". The resolver also places it in the incorporated place \"Irvine city\", which is what allows it to be published under Irvine."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"20 LAKE RD, IRVINE, CA, 92604\"."
+        },
+        "pricing_notes": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball court reservations are now available at Portola Springs Community Park (Courts #5 and #6) and Mike Ward Community Park (Courts #3 and #4).\" \"Resident Rate: $17/hr Non-Resident Rate: $19/hr\". \"Reservations can be made in one or two hour increments, with individuals allowed to have one reservation per day.\" \"Courts can be reserved Monday through Sunday, between the hours of 7 a.m. to noon, and 4 to 10 p.m.\""
+        }
+      },
+      "record": {
+        "source_url": "https://cityofirvine.gov/parks-facilities/mike-ward-community-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "portola-springs": {
+      "minted": false,
+      "identity": {
+        "name": "Portola Springs Community Park",
+        "city": "Irvine",
+        "state": "CA",
+        "county": "Orange",
+        "postal_code": "92618",
+        "latitude": 33.696665073913,
+        "longitude": -117.701187499192,
+        "imported_slug": "portola-springs",
+        "canonical_slug": "portola-springs-community-park"
+      },
+      "match": {
+        "source_page": "https://cityofirvine.gov/racket-sports/pickleball",
+        "quote": "six lit pickleball courts located at Portola Springs Community Park",
+        "basis": "Matched to the imported portola-springs row in Irvine, CA, at the same street address, and published under that slug."
+      },
+      "patch": {
+        "name": "Portola Springs Community Park",
+        "total_courts": 6,
+        "street_address": "900 Tomato Springs",
+        "venue_type": "public_park",
+        "light": true,
+        "hours_of_operation": "6 a.m. to 10 p.m., daily",
+        "restroom": true,
+        "play_format": "open_play",
+        "court_availability": "Six lit pickleball courts beside three lighted tennis courts, two lighted softball fields and two lighted soccer fields, on a 32-acre park in the north-east of the city. The City states the count on its pickleball page - \"six lit pickleball courts located at Portola Springs Community Park\" - and again in the park's amenity list as \"6 Lighted Pickleball Courts\". Hours are 6 a.m. to 10 p.m., daily. Courts #5 and #6 are the reservable pair here, at $17 an hour for residents and $19 for non-residents; the other four are first come, first served with a 60-minute doubles limit when others are waiting. This is also the home venue of the City's Irvine Team Pickleball league, which the pickleball page lists at this address.",
+        "county": "Orange",
+        "postal_code": "92618",
+        "pricing_notes": "Courts #5 and #6 can be reserved online: resident rate $17/hr, non-resident rate $19/hr, in one- or two-hour blocks, 7 a.m. to noon and 4 to 10 p.m. The other courts are first come, first served and the City states no price for them."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/portola-springs-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Portola Springs Community Park\" on the park's own page. The City's pickleball page uses the same name."
+        },
+        "total_courts": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Stated twice by the City: \"six lit pickleball courts located at Portola Springs Community Park\" on its pickleball page, and \"6 Lighted Pickleball Courts\" in the park's own amenity list."
+        },
+        "street_address": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/portola-springs-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"900 Tomato Springs Irvine, CA 92620\" is the address under \"Location\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/portola-springs-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Irvine Community Services among its parks and facilities."
+        },
+        "light": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's own words, twice: \"six lit pickleball courts located at Portola Springs Community Park\" and \"6 Lighted Pickleball Courts\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/portola-springs-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours: 6 a.m.-10 p.m., Daily\" on the park's own page."
+        },
+        "restroom": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/portola-springs-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"2 Restrooms\" in the park's amenity list."
+        },
+        "play_format": {
+          "source_url": "https://cityofirvine.gov/racket-sports/court-regulations-and-map",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's court regulations: \"Open courts are on a first-come, first-serve basis. Please use the waiting board where available.\" Time limits when others are waiting: doubles 60 minutes, singles 30."
+        },
+        "court_availability": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"six lit pickleball courts located at Portola Springs Community Park\"), the park's own page (\"6 Lighted Pickleball Courts\", \"Hours: 6 a.m.-10 p.m., Daily\") and the court regulations (\"Open courts are on a first-come, first-serve basis\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Orange County, CA (FIPS 06059). Census address geocoder matched \"900 TOMATO SPRINGS, IRVINE, CA, 92618\". The resolver also places it in the incorporated place \"Irvine city\", which is what allows it to be published under Irvine."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"900 TOMATO SPRINGS, IRVINE, CA, 92618\". The City's own park page prints 92620; the Census address file returns 92618 for the same street address. The Census value publishes, as at Mesa's Chaparral Park, and the disagreement is stated on the venue page."
+        },
+        "pricing_notes": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Pickleball court reservations are now available at Portola Springs Community Park (Courts #5 and #6) and Mike Ward Community Park (Courts #3 and #4).\" \"Resident Rate: $17/hr Non-Resident Rate: $19/hr\". \"Reservations can be made in one or two hour increments, with individuals allowed to have one reservation per day.\" \"Courts can be reserved Monday through Sunday, between the hours of 7 a.m. to noon, and 4 to 10 p.m.\""
+        }
+      },
+      "record": {
+        "source_url": "https://cityofirvine.gov/parks-facilities/portola-springs-community-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "heritage-community-park": {
+      "minted": false,
+      "identity": {
+        "name": "Heritage Community Park",
+        "city": "Irvine",
+        "state": "CA",
+        "county": "Orange",
+        "postal_code": "92604",
+        "latitude": 33.699398650919,
+        "longitude": -117.777126362497,
+        "imported_slug": "heritage-community-park",
+        "canonical_slug": "heritage-community-park"
+      },
+      "match": {
+        "source_page": "https://cityofirvine.gov/racket-sports/pickleball",
+        "quote": "four lit pickleball courts located at Heritage Park",
+        "basis": "Matched to the imported heritage-community-park row in Irvine, CA, at the same street address, and published under that slug."
+      },
+      "patch": {
+        "name": "Heritage Community Park",
+        "total_courts": 4,
+        "street_address": "14301 Yale Ave.",
+        "venue_type": "public_park",
+        "light": true,
+        "hours_of_operation": "6 a.m. to 10 p.m., daily",
+        "restroom": true,
+        "play_format": "open_play",
+        "court_availability": "Four lit pickleball courts in the largest park of the three, 36.5 acres with twelve lighted tennis courts, three lighted soccer fields, three lighted basketball courts, a lake and a community centre. The City writes \"four lit pickleball courts located at Heritage Park\" on its pickleball page and \"4 Lighted Pickleball Courts\" in the park's own amenity list. Heritage is also one of the six parks the City names for its hybrid tennis-and-pickleball courts, and those are NOT counted here: the City gives only a city-wide total for them, ten on one page and nine on another, and never a per-park figure. The four dedicated courts are first come, first served, 6 a.m. to 10 p.m. daily, with a 60-minute doubles limit when others are waiting. None of Heritage's courts is reservable; the City's online booking covers only Mike Ward and Portola Springs.",
+        "county": "Orange",
+        "postal_code": "92604"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/heritage-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Heritage Community Park\" on the park's own page. The City's pickleball page shortens it to \"Heritage Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Stated twice by the City: \"four lit pickleball courts located at Heritage Park\" on its pickleball page, and \"4 Lighted Pickleball Courts\" in the park's own amenity list. The hybrid tennis-and-pickleball courts the City also places at Heritage are not added: it publishes only a city-wide total for those, never a per-park figure."
+        },
+        "street_address": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/heritage-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"14301 Yale Ave. Irvine, CA 92604\" is the address under \"Location\" on the park's own page."
+        },
+        "venue_type": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/heritage-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Irvine Community Services among its parks and facilities."
+        },
+        "light": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's own words, twice: \"four lit pickleball courts located at Heritage Park\" and \"4 Lighted Pickleball Courts\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/heritage-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Hours: 6 a.m.-10 p.m., Daily\" on the park's own page."
+        },
+        "restroom": {
+          "source_url": "https://cityofirvine.gov/parks-facilities/heritage-community-park",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"4 Restrooms\" in the park's amenity list."
+        },
+        "play_format": {
+          "source_url": "https://cityofirvine.gov/racket-sports/court-regulations-and-map",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's court regulations: \"Open courts are on a first-come, first-serve basis. Please use the waiting board where available.\" Time limits when others are waiting: doubles 60 minutes, singles 30."
+        },
+        "court_availability": {
+          "source_url": "https://cityofirvine.gov/racket-sports/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page (\"four lit pickleball courts located at Heritage Park\"), the park's own page (\"4 Lighted Pickleball Courts\", \"Hours: 6 a.m.-10 p.m., Daily\") and the court regulations (\"Open courts are on a first-come, first-serve basis\")."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Orange County, CA (FIPS 06059). Census address geocoder matched \"14301 YALE AVE, IRVINE, CA, 92604\". The resolver also places it in the incorporated place \"Irvine city\", which is what allows it to be published under Irvine."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"14301 YALE AVE, IRVINE, CA, 92604\"."
+        }
+      },
+      "record": {
+        "source_url": "https://cityofirvine.gov/parks-facilities/heritage-community-park",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    }
+  }
+}

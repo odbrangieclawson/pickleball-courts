@@ -1,6 +1,6 @@
 # Identity audit
 
-Run 2026-09-04 over 18,037 imported rows.
+Run 2026-09-07 over 18,037 imported rows.
 
 Identity is which venue a row is and what its URL will be. No source settles
 it, so verification never fixes any of it — and `decisions.md` §3 makes
@@ -12,7 +12,7 @@ still free to change. That is why it goes first.
 | | rows |
 | --- | ---: |
 | Slugs carrying a numeric row-id suffix | 628 |
-| **Renamed automatically** | **8678** |
+| **Renamed automatically** | **8680** |
 | Held back — two rows want one URL in one city | 616 |
 | Held back — state, coordinates and postal code disagree | 30 |
 | **Total held back** | **648** |

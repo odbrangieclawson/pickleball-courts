@@ -556,7 +556,7 @@ for (const p of VENUES) {
         : `${quoted}, read against the City's stated default for every unmarked entry: "${SHARED_USE}"`,
     }),
     docCensus.fact('county', geo.county, {
-      evidence: `${geo.county} County, WA (FIPS ${geo.state_fips}${geo.county_fips}). ${geo.basis} The geocoder also places it in the incorporated place "${geo.place}", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address.`,
+      evidence: `${geo.county} County, WA${geo.county_fips ? ` (FIPS ${geo.state_fips}${geo.county_fips})` : ''}. ${geo.basis} The geocoder also places it in the incorporated place "${geo.place}", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address.`,
     }),
     docCensus.fact('postal_code', geo.postal_code, {evidence: geo.basis}),
   )

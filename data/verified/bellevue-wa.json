@@ -642,7 +642,7 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "King County, WA (FIPS nullnull). OpenStreetMap (Nominatim) matched \"14224, Bel-Red Road, Bellevue, King County, Washington, 98007, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The geocoder also places it in the incorporated place \"Bellevue\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+          "evidence": "King County, WA. OpenStreetMap (Nominatim) matched \"14224, Bel-Red Road, Bellevue, King County, Washington, 98007, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The geocoder also places it in the incorporated place \"Bellevue\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
@@ -1177,8 +1177,8 @@
         "state": "WA",
         "county": "King",
         "postal_code": "98008",
-        "latitude": 47.60180401173,
-        "longitude": -122.126469361799,
+        "latitude": 47.6193715,
+        "longitude": -122.127787,
         "imported_slug": null,
         "canonical_slug": "crossroads-community-center"
       },
@@ -1246,14 +1246,14 @@
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "King County, WA (FIPS 53033). Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\". The geocoder also places it in the incorporated place \"Bellevue city\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
+          "evidence": "King County, WA. OpenStreetMap (Nominatim) matched \"Crossroads Community Center, 16000, Northeast 10th Street, The Madison Bellevue Apartments, Bellevue, King County, Washington, 98008, United States\" at house-number level. The Census address geocoder answered \"16000 SE 10TH ST, BELLEVUE, WA, 98008\", changing the direction from NE to SE; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The geocoder also places it in the incorporated place \"Bellevue\", which is what allows it to be published under Bellevue rather than an unincorporated area with a Bellevue postal address."
         },
         "postal_code": {
           "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
           "date_checked": "2026-09-04",
           "verified_by": "municipal_source",
           "source_tier": 1,
-          "evidence": "Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\"."
+          "evidence": "OpenStreetMap (Nominatim) matched \"Crossroads Community Center, 16000, Northeast 10th Street, The Madison Bellevue Apartments, Bellevue, King County, Washington, 98008, United States\" at house-number level. The Census address geocoder answered \"16000 SE 10TH ST, BELLEVUE, WA, 98008\", changing the direction from NE to SE; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
         },
         "pricing_notes": {
           "source_url": "https://bellevuewa.gov/city-government/departments/parks/sports-and-athletics/pickleball-courts",

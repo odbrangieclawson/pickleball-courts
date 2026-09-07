@@ -1,0 +1,58 @@
+{
+  "mike-ward-community-park": {
+    "matched": "20 LAKE RD, IRVINE, CA, 92604",
+    "resolver": "census",
+    "lat": 33.676960642479,
+    "lon": -117.803600516951,
+    "county": "Orange",
+    "state_fips": "06",
+    "county_fips": "059",
+    "place": "Irvine city",
+    "place_matches_city": true,
+    "postal_code": "92604",
+    "basis": "Census address geocoder matched \"20 LAKE RD, IRVINE, CA, 92604\".",
+    "county_citation": "Orange County, CA (FIPS 06059). Census address geocoder matched \"20 LAKE RD, IRVINE, CA, 92604\"."
+  },
+  "portola-springs-community-park": {
+    "matched": "900 TOMATO SPRINGS, IRVINE, CA, 92618",
+    "resolver": "census",
+    "lat": 33.696665073913,
+    "lon": -117.701187499192,
+    "county": "Orange",
+    "state_fips": "06",
+    "county_fips": "059",
+    "place": "Irvine city",
+    "place_matches_city": true,
+    "postal_code": "92618",
+    "basis": "Census address geocoder matched \"900 TOMATO SPRINGS, IRVINE, CA, 92618\".",
+    "county_citation": "Orange County, CA (FIPS 06059). Census address geocoder matched \"900 TOMATO SPRINGS, IRVINE, CA, 92618\"."
+  },
+  "heritage-community-park": {
+    "matched": "14301 YALE AVE, IRVINE, CA, 92604",
+    "resolver": "census",
+    "lat": 33.699398650919,
+    "lon": -117.777126362497,
+    "county": "Orange",
+    "state_fips": "06",
+    "county_fips": "059",
+    "place": "Irvine city",
+    "place_matches_city": true,
+    "postal_code": "92604",
+    "basis": "Census address geocoder matched \"14301 YALE AVE, IRVINE, CA, 92604\".",
+    "county_citation": "Orange County, CA (FIPS 06059). Census address geocoder matched \"14301 YALE AVE, IRVINE, CA, 92604\"."
+  },
+  "los-olivos-community-park": {
+    "matched": "Los Olivos Community Center, 101, Alfonso, Los Olivos, Irvine, Orange County, California, 92603, United States",
+    "resolver": "osm",
+    "lat": 33.6365196,
+    "lon": -117.7456448,
+    "county": "Orange",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Irvine",
+    "place_matches_city": true,
+    "postal_code": "92603",
+    "basis": "OpenStreetMap (Nominatim) matched \"Los Olivos Community Center, 101, Alfonso, Los Olivos, Irvine, Orange County, California, 92603, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first.",
+    "county_citation": "Orange County, CA. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in Orange County."
+  }
+}

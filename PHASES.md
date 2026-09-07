@@ -315,7 +315,7 @@ passes.
 
 ## The published set
 
-Eight cities, three states, five counties, two state pages. Every page below
+Twenty cities, ten states, fourteen counties, two state pages. Every page below
 passes all six gates against the built HTML; the totals are the ones
 `getCounts()` returns, not a hand count.
 
@@ -334,8 +334,15 @@ passes all six gates against the built HTML; the totals are the ones
 | 11 | Scottsdale, AZ | 4 | 29 | Scottsdale pickleball page + park pages; count, lighting, price, etiquette | 2026-09-04 |
 | 12 | Saint Paul, MN | 6 | 13 | Saint Paul facility pages, assembled from the City's own pickleball map layer | 2026-09-04 |
 | 13 | Lincoln, NE | 3 | 22 | Lincoln Tennis and Pickleball page + Parks A to Z; dedicated counts and park hours | 2026-09-04 |
+| 14 | Mesa, AZ | 3 | 26 | Mesa Tennis & Pickleball Center page + park pages; hourly court price | 2026-09-04 |
+| 15 | Kirkland, WA | 3 | 10 | Kirkland pickleball table, "Number & Type of Courts" | 2026-09-04 |
+| 16 | Cape Coral, FL | 5 | 20 | Cape Coral Park Sports/Games page + park pages; count, lighting and price | 2026-09-04 |
+| 17 | Irvine, CA | 3 | 18 | Irvine pickleball page + park amenity lists; every count stated twice, all lit, hours, reservation price | 2026-09-07 |
+| 18 | Huntington Beach, CA | 4 | 13 | Park Amenities page, one line per park under "CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING)" | 2026-09-07 |
+| 19 | Tampa, FL | 16 | 52 | City pickleball page, one card per venue, outdoor cards and an "Indoor Pickleball" section | 2026-09-07 |
+| 20 | San Antonio, TX | 8 | 43 | Pickleball directory page + park pages: "There are 18 lighted, outdoor pickleball courts." | 2026-09-07 |
 
-**177 published pages:** 13 city, 132 venue, 20 filter, 10 county, 2 state.
+**234 published pages:** 20 city, 172 venue, 26 filter, 14 county, 2 state.
 
 **Six of those venues publish on a second address resolver,** added 2026-09-04:
 Bellevue's Highland Park, Madison's Door Creek and Rennebohm, and Scottsdale's
@@ -397,7 +404,7 @@ operator to state it venue by venue in prose at any scale, and its /lights/
 page is the first in the directory built from sentences rather than a
 database field.
 
-**It is also the first operator anywhere to say a net is NOT provided.**
+**It is also one of the operators that says a net is NOT provided.**
 Brentwood, Rosewood and Springwoods carry "bring your own portable net" or
 "Nets not included." Every other city across nine cities has left that field
 unknown, which is a different answer from no.
@@ -598,12 +605,12 @@ are committed and every assertion reads those rather than the network.
 
 ## Blockers still open
 
-Phases 0 through 6 are complete and sixteen cities are published. What stands
+Phases 0 through 6 are complete and twenty cities are published. What stands
 between here and the 50–100 metro target is not missing code.
 
 | Blocker | Where tracked | Effect |
 | --- | --- | --- |
-| **O11** — where verification data comes from | `decisions.md` §9 | **Answered fifteen times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and thirteen sets of municipal web pages. No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
+| **O11** — where verification data comes from | `decisions.md` §9 | **Answered nineteen times, city by city, and still open as a general question.** Every published city came from its own operator publishing court counts: two ArcGIS layers and seventeen sets of municipal web pages. No general method has been found and none is likely — the next city is another search. Mesa did narrow the search in one respect, which is recorded below: a 403 in this file was a fact about one day, not a property of the operator. |
 | **O1** — controlled vocabulary for `access_type` | `decisions.md` §9 | `/public/` is a locked filter slug (D4) with no lawful data driver. The other four filters have one. |
 | **O2** — provenance of `rating` / `user_rating` | `decisions.md` §9 | All three rating fields are QUARANTINED. No `AggregateRating` may be emitted until their origin is known. |
 
@@ -626,10 +633,10 @@ Reproduced from `decisions.md`. These are not scheduling advice.
 
 ## Where the 50-100 metro target stands
 
-**16 of 50.** The sequencing rule above is the whole plan, and this is the
+**20 of 50.** The sequencing rule above is the whole plan, and this is the
 progress bar for it. Nothing else in this document is a schedule.
 
-The next city is chosen the same way the last fifteen were: find a parks
+The next city is chosen the same way the last nineteen were: find a parks
 department that publishes a court count on a page a browser with JavaScript
 off can read, then verify it. Volume in the imported dataset is a tiebreak,
 never a qualification. Thirty-four cities were refused
@@ -656,6 +663,28 @@ so nobody re-treads them:
 | Hillsboro OR, Minneapolis | HTTP 403. |
 | Fort Collins CO | **Reachable, and refused on its records.** Its Park Features page is a Telerik/ASP.NET application that paints the amenities in by script, so a snapshot of it contains no pickleball at all, and guessed park-page URLs 404. The City's own pickleball page publishes city-wide AGGREGATES — "(8) dedicated outdoor pickleball courts", "(44) striped for pickleball on outdoor multi-use courts" — and no per-venue count. A total is not a venue. |
 | Phoenix | Publishes a "Tennis Courts and Pickleball" layer: 163 rows across 36 properties, one row per court, no address field and no count field. Counting the rows is the derivation falsified for Sacramento. Would need Saint Paul's treatment and the park pages have not been read. |
+| Naples, Sarasota, St. Petersburg, Clearwater, Gainesville FL; Tempe, Peoria, Glendale, Goodyear AZ; Loveland CO; Henderson, Reno NV; Provo UT; Omaha NE; Des Moines IA; Kansas City MO; Fargo ND; Cedar Park TX; Everett, Renton, Issaquah WA; Salem, Tigard OR | HTTP 403 or a bot challenge to both a bare curl and the full browser header set, **2026-09-07**. Denver answers with an F5 block page. A 403 is a fact about one day; these are the day's. |
+| Fort Myers FL | One venue with a count (the Racquet Club, six courts); the CivicPlus facility directory serves five facilities to a fetcher and pages the rest by script. |
+| Orlando FL | Counts and addresses on different pages and only two solid venues; the third is a table row ("4 - pickleball" at "East Park") with no directory page behind it. |
+| Surprise AZ, Sandy UT | JavaScript-painted: a snapshot of the pickleball page holds the navigation and nothing else. |
+| Aurora CO, Bloomington MN, San Diego | The per-venue data exists only in a PDF. Bloomington's (June 2020) lists a count and an address for about twenty-three parks and would be the strongest source in its batch if a PDF were a re-checkable source here; it is not, yet. |
+| Columbus OH, Tulsa OK, Fort Collins CO | City-wide aggregates only ("118 pickleball courts at 35 locations", "32 new pickleball courts"). A total is not a venue. |
+| Indianapolis, Carmel IN, Sioux Falls SD, Fort Worth TX | A flag, not a number: park pages say "pickleball courts" with an address and never a count. Fort Worth lists about forty-five parks this way. |
+| Fishers IN, Sugar Land TX, Bend OR, Sammamish, Bothell WA, Gresham OR | Fewer than three venues with a stated count. Sugar Land has two good ones (City Park, "4 lighted tennis/pickleball courts, 4 dedicated pickleball courts"; Park at the Levee, two). Bend has one 24-court complex and two parks that say "a pickleball court". |
+| Rochester MN, Oklahoma City, Grand Rapids MI, Georgetown TX, Edmond OK | No readable per-venue page: a POST-filtered directory, a leagues-only page, no page at all, a dead DNS name, a 522. |
+| **Los Olivos Community Park, Irvine** | Refused inside a published city: the City's pickleball page says two courts, its park page says "3 Lighted Pickleball Courts". The record-that-states-a-number rule cannot choose between two numbers. |
+
+**Leads that qualify and are waiting for cities #21 onward**, read and
+snapshotted on 2026-09-07 but not verified, in rough order of value:
+
+| Lead | What the operator states | What stands in the way |
+| --- | --- | --- |
+| **Tallahassee, FL** | Eight outdoor venues with counts and addresses on one City page, plus a fee schedule, an open-play rule and a first-come rule; Four Oaks Park's six courts are "used for pickleball only". Seven of eight addresses resolve; Four Oaks does not. | Nothing but the work. A third Florida city would also put Florida at the state-page threshold (**O13**), which means writing `fl-state.json`. |
+| **Albuquerque, NM** | A sixteen-row table of name, address and count, with "Pickleball Complex" versus "Tennis Courts with Pickleball Lines" stated per row and lighting stated at three; Manzano Mesa alone is "33 Courts (21 Lighted)". | The same page carries two older tables that disagree with the top one at four venues (Manzano Mesa 18 vs 33, Eagle Ranch 2 vs 4, Montgomery 4 vs 6, Ventana Ranch 8 vs 12). Those four go the way of Los Olivos; the other twelve do not. |
+| **Las Vegas, NV** | Park pages state "Pickleball courts (N)" with an address and hours for five parks, and a City blog post of 11 March 2026 lists eight with counts. Aloha Shores, Centennial Hills, Durango Hills, Lorenzi and Patriot resolve. | Police Memorial (eight courts) and Bill Briare resolve with neither resolver; Lorenzi and Patriot have counts only on the blog and no pickleball on their park pages, which is Lincoln's shape and publishes with the caveat asserted. |
+| **Boulder, CO** | A racket-sports table with a pickleball count per site, "Courts are first come and free to all park visitors", and location pages with addresses; five sites. | Counts are lines on tennis courts, nets are "Rolling" (bring your own), and the South Boulder count is 8 on the table and 6 on the drop-in page. |
+| **Naperville, IL** (park district) | Location pages with a schema.org street address and sentences such as "4 dedicated pickleball courts and ... 8 lit tennis courts lined for pickleball"; a surface at Ranchview. | Four to five venues; one count lives on a news page rather than the location page. First non-municipal operator would need a note. |
+| **St. George, UT** | "Little Valley / 2149 Horseman Park Drive / Courts: 33", Vernon Worthen 6, Bloomington Park 7, all on one page; "free of charge" in prose. | Exactly three venues with addresses, one of them a Utah grid address ("300 S. 400 E.") the resolvers may refuse. |
 
 Honolulu was re-checked on 2026-09-04 against the City & County's own GIS
 rather than against memory, and it is **still blocked for the same reason**.
@@ -712,6 +741,6 @@ so checking out a tag gives a coherent snapshot rather than code without its
 record.
 
 Cities and state pages carry their own tags in the same spirit —
-`city-2-raleigh` through `city-16-cape-coral`, `state-1-nc`, `state-2-wa` — so a
+`city-2-raleigh` through `city-20-san-antonio`, `state-1-nc`, `state-2-wa` — so a
 publication can be diffed on its own. Cities 6 and 7 shipped without tags;
 that is a gap in the record, not a different convention.

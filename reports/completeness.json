@@ -1,7 +1,7 @@
 {
   "metros": 100,
-  "venues": 2690,
-  "ready": 10,
+  "venues": 2711,
+  "ready": 11,
   "metro_detail": [
     {
       "metro": "Seattle, WA",
@@ -627,13 +627,13 @@
       "metro": "San Antonio, TX",
       "city": "San Antonio",
       "state": "TX",
-      "venues": 29,
+      "venues": 37,
       "passing_all_four": 0,
       "blocked_by": {
         "I1": 0,
         "I2": 29,
         "I3": 5,
-        "I4": 0
+        "I4": 8
       },
       "status": "blocked",
       "publishable": false,
@@ -643,7 +643,7 @@
         "I2: source_url points to CourtSource, a competitor directory, which is not a source (29)",
         "I2: no date_checked (29)",
         "I2: no verified_by (29)",
-        "I3: county not derived above confidence threshold (5)"
+        "I4: play_format is not an array (8)"
       ]
     },
     {
@@ -1126,22 +1126,23 @@
       "metro": "Tampa, FL",
       "city": "Tampa",
       "state": "FL",
-      "venues": 17,
-      "passing_all_four": 0,
+      "venues": 30,
+      "passing_all_four": 15,
       "blocked_by": {
-        "I1": 0,
-        "I2": 17,
+        "I1": 1,
+        "I2": 14,
         "I3": 0,
         "I4": 0
       },
-      "status": "blocked",
-      "publishable": false,
-      "reason": "0 venue(s) pass all four gates, needs 3",
+      "status": "ready",
+      "publishable": true,
+      "reason": null,
       "pages_when_ready": 23,
       "top_reasons": [
-        "I2: source_url points to CourtSource, a competitor directory, which is not a source (17)",
-        "I2: no date_checked (17)",
-        "I2: no verified_by (17)"
+        "I2: source_url points to CourtSource, a competitor directory, which is not a source (14)",
+        "I2: no date_checked (14)",
+        "I2: no verified_by (14)",
+        "I1: slug is not unique (1)"
       ]
     },
     {

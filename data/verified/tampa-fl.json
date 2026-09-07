@@ -1,0 +1,1649 @@
+{
+  "city": "Tampa",
+  "state": "FL",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Tampa's pickleball page is a grid of cards, one per venue, each carrying a label, a name, a street address with a postcode and a count - \"4 courts\", \"8 courts\", \"2 permanent courts\" and \"4 portable net courts\" - with an \"Indoor Pickleball\" section beneath for the community-centre gyms and their session times, and the page dates itself \"Updated: 10/28/2025\". Because the label on every outdoor card and the heading over the indoor section are the City's own words, indoor and outdoor are stated for all sixteen published venues, which no city of this size had given the directory before. Each card is asserted as a block, name and lines in order. Three of nineteen count-bearing cards are refused: Rowlett Park (8 courts) at an address neither resolver finds; Foster Park, whose \"4700 S Clark Ave., 33611\" the Census answers as North Clark Avenue in a different postcode and OpenStreetMap cannot find as written; and the Dr Martin Luther King Jr. Complex, whose \"220 N Oregon Ave., 33607\" resolves to 33606 while the City's recreation-centres page gives the complex as 2200 N Oregon Ave. Two centres publish under the same two-record shape because their count-bearing addresses resolve as written in the City's postcode, with the other house number stated on the page. Forest Hills is one venue with two outdoor and two indoor courts at one address, after Bellevue's Hidden Valley. Foster Park is also why Import Gate I1's resolver check was extended in this run to cover a changed or dropped compass direction, which then moved a published Bellevue venue about two kilometres to the street the City actually prints. The City states no lighting, no price and no surface for any venue.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+      "publisher": "City of Tampa Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/tampa/pickleball.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/recreation-centers",
+      "publisher": "City of Tampa Parks and Recreation",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/tampa/recreation-centers.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/tampa-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 16,
+    "courts": 52,
+    "outdoor": 45,
+    "indoor": 7,
+    "lit_courts": null,
+    "free_venues": 0
+  },
+  "excluded": [
+    {
+      "name": "Rowlett Park",
+      "why": [
+        "Neither address resolver finds \"2401 E Yukon St\": the US Census address file returns no match and OpenStreetMap returns nothing at house-number level. Import Gate I1 requires a street address that resolves.",
+        "Eight courts, tied with Macfarlane Park for the largest count in Tampa. The most expensive refusal in the city, and it fails on its address alone."
+      ]
+    },
+    {
+      "name": "Foster Park",
+      "why": [
+        "The City writes \"4700 S Clark Ave., 33611\". The Census address geocoder answers \"4700 N CLARK AVE, 33614\" - the compass direction flipped and a different postcode - and OpenStreetMap has no record of the address as the City writes it. This is the defect the resolver check was extended for during this run, and here the second resolver cannot rescue it.",
+        "The City's own postcode, 33611, contradicts the only answer available. An address that resolves only by changing which side of the city it is on has not resolved."
+      ]
+    },
+    {
+      "name": "Dr Martin Luther King Jr. Complex",
+      "why": [
+        "The City's pickleball page gives \"220 N Oregon Ave., 33607\" and its recreation-centres page gives \"2200 N Oregon Ave, 33607\" for the same complex: two City records, two house numbers.",
+        "The count-bearing address resolves - to postcode 33606, which contradicts the City's own 33607 on both pages. The City's postcode sides with 2200, the address that carries no count. Cordelia B Hunt and Loretta Ingraham publish under the same two-record shape because their count-bearing addresses resolve as written in the postcode the City prints; this one does not."
+      ]
+    }
+  ],
+  "venues": {
+    "al-barnes-park": {
+      "minted": true,
+      "identity": {
+        "name": "Al Barnes Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33605",
+        "latitude": 27.9693431,
+        "longitude": -82.4238673,
+        "imported_slug": null,
+        "canonical_slug": "al-barnes-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "4 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Al Barnes Park",
+        "total_courts": 4,
+        "street_address": "2902 N 32nd St",
+        "venue_type": "public_park",
+        "court_availability": "Four outdoor pickleball courts in East Tampa, on the City's own count: the card reads \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\" under the label \"Outdoor Pickleball\". The City states no hours, no lighting and no price for this park, and this page records each of those as unknown rather than filling it in. The address resolves through OpenStreetMap rather than the Census address file, which holds no record of it.",
+        "county": "Hillsborough",
+        "postal_code": "33605",
+        "outdoor_courts": 4
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Al Barnes Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL. OpenStreetMap (Nominatim) matched \"2902, North 32nd Street, Vedado, East Ybor, Tampa, Hillsborough County, Florida, 33605, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in the incorporated place \"Tampa\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"2902, North 32nd Street, Vedado, East Ybor, Tampa, Hillsborough County, Florida, 33605, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "copeland-park": {
+      "minted": true,
+      "identity": {
+        "name": "Copeland Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33612",
+        "latitude": 28.051000098367,
+        "longitude": -82.442811677276,
+        "imported_slug": null,
+        "canonical_slug": "copeland-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "4 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Copeland Park",
+        "total_courts": 4,
+        "street_address": "11001 N 15th St",
+        "venue_type": "public_park",
+        "court_availability": "Four outdoor pickleball courts at one of the City's featured parks in north Tampa, stated on the pickleball page as \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\". Copeland is a large district park with its own page on the City site, but that page says nothing about pickleball, so everything here rests on the pickleball page. Hours, lighting, price and surface are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33612",
+        "outdoor_courts": 4
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Copeland Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Copeland Park / 11001 N 15th St., 33612 / 4 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"11001 N 15TH ST, TAMPA, FL, 33612\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"11001 N 15TH ST, TAMPA, FL, 33612\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "cuscaden-park": {
+      "minted": false,
+      "identity": {
+        "name": "Cuscaden Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33605",
+        "latitude": 27.969541349155,
+        "longitude": -82.443024523126,
+        "imported_slug": "cuscaden-park",
+        "canonical_slug": "cuscaden-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "6 courts",
+        "basis": "Matched to the imported cuscaden-park row in Tampa, FL, at the same street address."
+      },
+      "patch": {
+        "name": "Cuscaden Park",
+        "total_courts": 6,
+        "street_address": "2900 N 15th St",
+        "venue_type": "public_park",
+        "court_availability": "Six outdoor pickleball courts in the V.M. Ybor neighbourhood, the third-largest outdoor set in the city, and the only Tampa card that names a session: \"Senior open play Wed 9-11 am\". That is the one scheduled pickleball time the City publishes for any outdoor park, and outside it the City says nothing about when the courts are busy or who gets on. Hours, lighting and price are not stated. This venue was in the imported dataset with the same count and address, and the City's page confirms both.",
+        "county": "Hillsborough",
+        "postal_code": "33605",
+        "outdoor_courts": 6
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Cuscaden Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"2900 N 15TH ST, TAMPA, FL, 33605\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"2900 N 15TH ST, TAMPA, FL, 33605\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "davis-islands": {
+      "minted": true,
+      "identity": {
+        "name": "Davis Islands",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33606",
+        "latitude": 27.928992315958,
+        "longitude": -82.453629818026,
+        "imported_slug": null,
+        "canonical_slug": "davis-islands"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "2 multi-purpose courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Davis Islands",
+        "total_courts": 2,
+        "street_address": "155 Columbia Drive",
+        "venue_type": "public_park",
+        "court_availability": "Two outdoor courts on Davis Islands that the City calls \"2 multi-purpose courts\" rather than pickleball courts, and this page keeps the City's word. A multi-purpose court is one you may find set up for something else; the City lists it under \"Outdoor pickleball\" all the same, and the count is two. The address, 155 Columbia Drive, is a few doors from the Parks and Recreation office at 59 Columbia Drive that the page names as its contact. Hours, lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33606",
+        "outdoor_courts": 2
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Davis Islands\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Davis Islands / 155 Columbia Drive, Tampa, 33606 / 2 multi-purpose courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Davis Islands / 155 Columbia Drive, Tampa, 33606 / 2 multi-purpose courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Davis Islands / 155 Columbia Drive, Tampa, 33606 / 2 multi-purpose courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"155 COLUMBIA DR, TAMPA, FL, 33606\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"155 COLUMBIA DR, TAMPA, FL, 33606\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Davis Islands / 155 Columbia Drive, Tampa, 33606 / 2 multi-purpose courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "forest-hills": {
+      "minted": true,
+      "identity": {
+        "name": "Forest Hills",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33612",
+        "latitude": 28.047249508445,
+        "longitude": -82.465020715091,
+        "imported_slug": null,
+        "canonical_slug": "forest-hills"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "2 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Forest Hills",
+        "total_courts": 4,
+        "street_address": "724 W 109th Ave",
+        "venue_type": "public_park",
+        "court_availability": "Two outdoor courts and two indoor courts at one address in north Tampa, published as one venue. The City's pickleball page lists them as two cards: \"Forest Hills / 724 W 109th Ave., 33612 / 2 courts\" under \"Outdoor Pickleball\", and \"Forest Hills Community Center / 724 W 109th Ave, 33612 / 2 courts\" under \"Indoor Pickleball\", with the gym schedule \"Monday, 10 am-12:30 pm / Wednesday, 10 am-1 pm / Friday, 6-7:30 pm\" and the note \"Play resumes after Summer Camp ends\". Same address, one site: Bellevue's Hidden Valley Park set the precedent and this venue follows it. Four courts in all, and the only Tampa venue with a count on both sides of the indoor line. Outdoor hours, lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33612",
+        "outdoor_courts": 2,
+        "indoor_courts": 2,
+        "hours_of_operation": "Indoor courts, pickleball sessions: Monday 10 am-12:30 pm; Wednesday 10 am-1 pm; Friday 6-7:30 pm. The City's card adds \"Play resumes after Summer Camp ends\". Outdoor hours not stated."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Forest Hills\" on the City's pickleball page, dated \"Updated: 10/28/2025\". The City lists the outdoor courts as \"Forest Hills\" and the indoor ones as \"Forest Hills Community Center\" at the same address; published as one venue under the shorter name."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Two City cards at one address: \"Forest Hills / 724 W 109th Ave., 33612 / 2 courts\" under \"Outdoor Pickleball\" and \"Forest Hills Community Center / 724 W 109th Ave, 33612 / 2 courts\" under \"Indoor Pickleball\". Four is their sum."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Forest Hills / 724 W 109th Ave., 33612 / 2 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Forest Hills / 724 W 109th Ave., 33612 / 2 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"724 W 109TH AVE, TAMPA, FL, 33612\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"724 W 109TH AVE, TAMPA, FL, 33612\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The \"Forest Hills\" card sits under the label \"Outdoor Pickleball\": \"2 courts\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The \"Forest Hills Community Center\" card sits under the \"Indoor Pickleball\" heading: \"2 courts\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/recreation-centers",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The \"Forest Hills Community Center\" card: \"724 W 109th Ave, 33612 / 2 courts / Play resumes after Summer Camp ends / Monday, 10 am-12:30 pm / Wednesday, 10 am-1 pm / Friday, 6-7:30 pm\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "highland-pines-park": {
+      "minted": true,
+      "identity": {
+        "name": "Highland Pines Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33605",
+        "latitude": 27.970408566854,
+        "longitude": -82.407467520083,
+        "imported_slug": null,
+        "canonical_slug": "highland-pines-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "4 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Highland Pines Park",
+        "total_courts": 4,
+        "street_address": "4505 E 21st St",
+        "venue_type": "public_park",
+        "court_availability": "Four outdoor pickleball courts in East Tampa, stated on the City's pickleball page as \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\". The City writes the street as 21st St; the Census address file resolves it as E 21st Ave, in the same postcode, and OpenStreetMap has no record of a 21st Street at that number, so the Census answer stands as one street under one name. Hours, lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33605",
+        "outdoor_courts": 4
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Highland Pines Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"4505 E 21ST AVE, TAMPA, FL, 33605\". The Census changed the street type from ST to AVE from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands. The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4505 E 21ST AVE, TAMPA, FL, 33605\". The Census changed the street type from ST to AVE from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "julian-b-lane-park": {
+      "minted": false,
+      "identity": {
+        "name": "Julian B Lane Riverfront Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "latitude": 27.952086,
+        "longitude": -82.468365,
+        "imported_slug": "julian-b-lane-park",
+        "canonical_slug": "julian-b-lane-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "2 permanent courts",
+        "basis": "Matched to the imported julian-b-lane-park row in Tampa, FL, at the same street address."
+      },
+      "patch": {
+        "name": "Julian B Lane Riverfront Park",
+        "total_courts": 6,
+        "street_address": "1001 N Boulevard",
+        "venue_type": "public_park",
+        "court_availability": "Six outdoor pickleball courts on the west bank of the Hillsborough River opposite downtown, and the six is the City's own arithmetic: its card reads \"2 permanent courts\" and \"4 portable net courts\" on two lines. Two courts stand with their nets; four more are laid out for portable nets, and the City counts them. Both numbers are printed here so a reader can check the sum. The City prints the postcode as 33606 and the address resolves through OpenStreetMap in 33607; the resolver's value publishes and the difference is stated. Hours, lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "outdoor_courts": 6
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Julian B Lane Riverfront Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\". The imported dataset shortens it to \"Julian B Lane Park\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The City's card reads \"2 permanent courts\" and \"4 portable net courts\" on two lines. Six is the sum of the City's own two figures."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Julian B Lane Riverfront Park / 1001 N Boulevard, 33606 / 2 permanent courts / 4 portable net courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Julian B Lane Riverfront Park / 1001 N Boulevard, 33606 / 2 permanent courts / 4 portable net courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL. OpenStreetMap (Nominatim) matched \"1001, North Boulevard, Tampa Heights, Tampa, Hillsborough County, Florida, 33607, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The resolver also places it in the incorporated place \"Tampa\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"1001, North Boulevard, Tampa Heights, Tampa, Hillsborough County, Florida, 33607, United States\" at house-number level. The Census address file holds no record of this address, so this is the second resolver rather than the first. The City's pickleball page prints 33606; the resolver returns 33607. The resolver's value publishes, as at Mesa's Chaparral Park, and the difference is stated on the venue page."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Julian B Lane Riverfront Park / 1001 N Boulevard, 33606 / 2 permanent courts / 4 portable net courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": true,
+      "recheck": {
+        "reason": "conflict_with_prior_value",
+        "fields": [
+          "total_courts",
+          "outdoor_courts"
+        ],
+        "scheduled": "next_cadence",
+        "times": 1
+      }
+    },
+    "macfarlane-park": {
+      "minted": true,
+      "identity": {
+        "name": "Macfarlane Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "latitude": 27.958768121913,
+        "longitude": -82.493273954379,
+        "imported_slug": null,
+        "canonical_slug": "macfarlane-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "8 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Macfarlane Park",
+        "total_courts": 8,
+        "street_address": "1700 N MacDill Ave",
+        "venue_type": "public_park",
+        "court_availability": "Eight outdoor pickleball courts in West Tampa, the largest published set in the city alongside Rowlett Park's eight - which are not published, because Rowlett's address resolves nowhere. The City's card reads \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\". Eight courts is enough for a rotation and makes this the venue in Tampa where turning up alone is the most reasonable plan. Hours, lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "outdoor_courts": 8
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Macfarlane Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"1700 N MACDILL AVE, TAMPA, FL, 33607\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1700 N MACDILL AVE, TAMPA, FL, 33607\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "madison-street-park": {
+      "minted": true,
+      "identity": {
+        "name": "Madison Street Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33602",
+        "latitude": 27.9514918,
+        "longitude": -82.4480804,
+        "imported_slug": null,
+        "canonical_slug": "madison-street-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "1 court",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Madison Street Park",
+        "total_courts": 1,
+        "street_address": "1224 E Madison St",
+        "venue_type": "public_park",
+        "court_availability": "One outdoor pickleball court in the Channel District east of downtown, \"Open daily from sunrise to sunset\" in the City's words - one of only two outdoor Tampa cards that state hours. One court is a game, not a rotation. The Census address file resolves this address with the direction dropped, as \"1224 MADISON ST\"; OpenStreetMap finds \"1224 East Madison Street\" exactly as the City writes it, and that is the resolution published. Lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33602",
+        "outdoor_courts": 1,
+        "hours_of_operation": "Open daily from sunrise to sunset"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Madison Street Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL. OpenStreetMap (Nominatim) matched \"1224, East Madison Street, Cairo, Ybor City, Tampa, Hillsborough County, Florida, 33602, United States\" at house-number level. The Census address geocoder answered \"1224 MADISON ST, TAMPA, FL, 33602\", changing the direction from E to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Tampa\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"1224, East Madison Street, Cairo, Ybor City, Tampa, Hillsborough County, Florida, 33602, United States\" at house-number level. The Census address geocoder answered \"1224 MADISON ST, TAMPA, FL, 33602\", changing the direction from E to none; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "As printed on the City's card: \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "new-tampa-sports-pavilion": {
+      "minted": true,
+      "identity": {
+        "name": "New Tampa Sports Pavilion",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33647",
+        "latitude": 28.12719820463,
+        "longitude": -82.383176916391,
+        "imported_slug": null,
+        "canonical_slug": "new-tampa-sports-pavilion"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "4 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "New Tampa Sports Pavilion",
+        "total_courts": 4,
+        "street_address": "17302 Commerce Park Blvd",
+        "venue_type": "public_park",
+        "court_availability": "Four outdoor pickleball courts at the sports pavilion in New Tampa, the furthest-north venue in the city, with hours the City states on the card: \"Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm\". Those are a facility's hours rather than a park's, which fits a pavilion with a staffed building, and they run later into the evening than the sunrise-to-sunset parks. The City lists it under \"Outdoor Pickleball\" and this page follows the City. Lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33647",
+        "outdoor_courts": 4,
+        "hours_of_operation": "Monday-Friday, 4:30-9 pm; Saturday-Sunday, 8 am-9 pm"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"New Tampa Sports Pavilion\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"17302 COMMERCE PARK BLVD, TAMPA, FL, 33647\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"17302 COMMERCE PARK BLVD, TAMPA, FL, 33647\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "As printed on the City's card: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "skyview-park": {
+      "minted": true,
+      "identity": {
+        "name": "Skyview Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33611",
+        "latitude": 27.877954608405,
+        "longitude": -82.495128277087,
+        "imported_slug": null,
+        "canonical_slug": "skyview-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "2 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Skyview Park",
+        "total_courts": 2,
+        "street_address": "6203 S Martindale Ave",
+        "venue_type": "public_park",
+        "court_availability": "Two outdoor pickleball courts in South Tampa, from the City's card \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\". The Census address file resolves the address with the direction dropped, as \"6203 MARTINDALE AVE\" in the same postcode, and OpenStreetMap has no record of the address as written, so the Census answer stands as one street under one name. Hours, lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33611",
+        "outdoor_courts": 2
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Skyview Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"6203 MARTINDALE AVE, TAMPA, FL, 33611\". The Census changed the direction from S to none from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands. The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"6203 MARTINDALE AVE, TAMPA, FL, 33611\". The Census changed the direction from S to none from what the operator writes; OpenStreetMap has no record of the address as written, so there is one street here under one name and the Census answer stands."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "vila-brothers-park": {
+      "minted": true,
+      "identity": {
+        "name": "Vila Brothers Park",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33609",
+        "latitude": 27.949915144433,
+        "longitude": -82.485135761943,
+        "imported_slug": null,
+        "canonical_slug": "vila-brothers-park"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "2 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Vila Brothers Park",
+        "total_courts": 2,
+        "street_address": "700 N Armenia Ave",
+        "venue_type": "public_park",
+        "court_availability": "Two outdoor pickleball courts in West Tampa, \"Open daily from sunrise to sunset\" on the City's card, which makes Vila Brothers one of the two outdoor Tampa venues with stated hours. Two courts means a game rather than a rotation. Lighting and price are not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33609",
+        "outdoor_courts": 2,
+        "hours_of_operation": "Open daily from sunrise to sunset"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Vila Brothers Park\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\" on the City's pickleball page."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Tampa Parks and Recreation among its parks, under the label \"Outdoor Pickleball\"."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"700 N ARMENIA AVE, TAMPA, FL, 33609\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"700 N ARMENIA AVE, TAMPA, FL, 33609\"."
+        },
+        "outdoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card is labelled \"Outdoor Pickleball\" on the City's page: \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\". Tampa's page is divided into outdoor cards and an \"Indoor Pickleball\" section, so the label is the City's own statement of which this is."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "As printed on the City's card: \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "david-m-barksdale-center": {
+      "minted": true,
+      "identity": {
+        "name": "David M Barksdale Center",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "latitude": 27.958039122191,
+        "longitude": -82.497266220574,
+        "imported_slug": null,
+        "canonical_slug": "david-m-barksdale-center"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "1 court",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "David M Barksdale Center",
+        "total_courts": 1,
+        "street_address": "1801 N Lincoln Ave",
+        "venue_type": "community_center",
+        "court_availability": "One indoor pickleball court in the gym of the David M Barksdale Center in West Tampa, with the City's schedule printed on its card: \"Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\". The free beginner lesson on Monday afternoons is the only free thing the City states about pickleball anywhere in Tampa, and it is a lesson, not a court, so the court itself carries no price. One court is one game at a time. The City prints two postcodes for this address - 33606 on the pickleball page, 33607 on its recreation-centres page - and the Census address file agrees with the second.",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "indoor_courts": 1,
+        "hours_of_operation": "Pickleball sessions: Monday 1-3 pm (free beginner lessons) and 3-5:30 pm; Tuesday-Friday, 2-5:30 pm"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"David M Barksdale Center\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\" on the City's pickleball page. The City's recreation-centres page agrees: \"David M Barksdale Center 1801 N Lincoln Ave, 33607\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Indoor Pickleball\" on the City's pickleball page and among its recreation centres."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"1801 N LINCOLN AVE, TAMPA, FL, 33607\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1801 N LINCOLN AVE, TAMPA, FL, 33607\". The City's pickleball page prints 33606 and its recreation-centres page prints 33607; the resolver returns 33607. The resolver's value publishes, as at Mesa's Chaparral Park, and the difference is stated on the venue page."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card sits under the \"Indoor Pickleball\" heading on the City's page: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "As printed on the City's card: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "cordelia-b-hunt-center": {
+      "minted": true,
+      "identity": {
+        "name": "Cordelia B Hunt Center",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33614",
+        "latitude": 27.9879342,
+        "longitude": -82.5013168,
+        "imported_slug": null,
+        "canonical_slug": "cordelia-b-hunt-center"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "1 court",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Cordelia B Hunt Center",
+        "total_courts": 1,
+        "street_address": "4602 N Himes Ave",
+        "venue_type": "community_center",
+        "court_availability": "One indoor pickleball court at the Cordelia B Hunt Center at Al Lopez Park, played on two weekday evenings: \"Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm\" through June 1 and \"Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\" from June 2 to August 8, as the City's card has it. The page is dated 28 October 2025 and the card's dates carry no year, so a reader should treat the schedule as the City's last statement rather than a current one. The City prints two house numbers for the centre on N Himes Avenue - 4602 on the pickleball page, 4810 on the recreation-centres page, both in 33614 - and the count-bearing one resolves as written through OpenStreetMap, so it is the one published. Price is not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33614",
+        "indoor_courts": 1,
+        "hours_of_operation": "Pickleball sessions: through June 1, Tuesday 6:45-8 pm and Thursday 6-6:45 pm; June 2-August 8, Tuesday 6:45-7:45 pm and Thursday 6-7:45 pm"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Cordelia B Hunt Center\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\" on the City's pickleball page. The City's recreation-centres page gives \"Cordelia B Hunt Center 4810 N Himes Ave, 33614\"; the count-bearing address resolves as written and is the one published."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Indoor Pickleball\" on the City's pickleball page and among its recreation centres."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL. OpenStreetMap (Nominatim) matched \"4602, North Himes Avenue, Tampa, Hillsborough County, Florida, 33614, United States\" at house-number level. The Census address geocoder answered \"4602 S HIMES AVE, TAMPA, FL, 33611\", changing the direction from N to S; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details. The resolver also places it in the incorporated place \"Tampa\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "OpenStreetMap (Nominatim) matched \"4602, North Himes Avenue, Tampa, Hillsborough County, Florida, 33614, United States\" at house-number level. The Census address geocoder answered \"4602 S HIMES AVE, TAMPA, FL, 33611\", changing the direction from N to S; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card sits under the \"Indoor Pickleball\" heading on the City's page: \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "As printed on the City's card: \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "loretta-ingraham-center": {
+      "minted": true,
+      "identity": {
+        "name": "Loretta Ingraham Center",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "latitude": 27.956726976542,
+        "longitude": -82.515836428668,
+        "imported_slug": null,
+        "canonical_slug": "loretta-ingraham-center"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "2 courts",
+        "basis": "No imported row for this venue. Minted here from the City's pickleball page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Loretta Ingraham Center",
+        "total_courts": 2,
+        "street_address": "1611 N Hubert Ave",
+        "venue_type": "community_center",
+        "court_availability": "Two indoor pickleball courts in the gym of the Loretta Ingraham Center in West Tampa, on Monday and Friday evenings until the City's summer camp begins and Mondays only from June 2: \"Monday and Friday, 6:30-8:30 pm\" then \"Monday, 6:30-8:30 pm\". The City prints the centre at 1611 N Hubert Ave on its pickleball page and as the \"Loretta Ingraham Complex\" at 1615 N Hubert Ave on its recreation-centres page; the count-bearing address resolves as written and publishes, and the other is stated here. Price is not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33607",
+        "indoor_courts": 2,
+        "hours_of_operation": "Pickleball sessions: until Summer Camp begins, Monday and Friday 6:30-8:30 pm; beginning June 2, Monday 6:30-8:30 pm"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Loretta Ingraham Center\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\" on the City's pickleball page. The City's recreation-centres page gives \"Loretta Ingraham Complex 1615 N Hubert Ave, 33607\"; the count-bearing address resolves as written and is the one published."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Indoor Pickleball\" on the City's pickleball page and among its recreation centres."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"1611 N HUBERT AVE, TAMPA, FL, 33607\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1611 N HUBERT AVE, TAMPA, FL, 33607\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card sits under the \"Indoor Pickleball\" heading on the City's page: \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "As printed on the City's card: \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "port-tampa-community-center": {
+      "minted": false,
+      "identity": {
+        "name": "Port Tampa Community Center",
+        "city": "Tampa",
+        "state": "FL",
+        "county": "Hillsborough",
+        "postal_code": "33616",
+        "latitude": 27.869670319342,
+        "longitude": -82.525031533549,
+        "imported_slug": "port-tampa-community-center",
+        "canonical_slug": "port-tampa-community-center"
+      },
+      "match": {
+        "source_page": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "quote": "1 court",
+        "basis": "Matched to the imported port-tampa-community-center row in Tampa, FL, at the same street address."
+      },
+      "patch": {
+        "name": "Port Tampa Community Center",
+        "total_courts": 1,
+        "street_address": "4702 W McCoy St",
+        "venue_type": "community_center",
+        "court_availability": "One indoor pickleball court at the Port Tampa Community Center in the far south of the city, played \"Tuesday, 6-9 pm\" and \"Thursday, 6-9 pm\" on the City's card - and the card also says \"Court closed for repairs through June 1\". The page is dated 28 October 2025 and the closure carries no year; it is printed here as the City printed it, and the run that builds this page fails the day the City removes it, so a stale closure cannot outlive the City's own notice. This venue was in the imported dataset with one indoor court at the same address, and the City confirms both. Price is not stated.",
+        "county": "Hillsborough",
+        "postal_code": "33616",
+        "indoor_courts": 1,
+        "hours_of_operation": "Pickleball sessions: Tuesday 6-9 pm and Thursday 6-9 pm. The City's card states \"Court closed for repairs through June 1\"."
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Port Tampa Community Center\" on the City's pickleball page, dated \"Updated: 10/28/2025\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's pickleball page: \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm| / Thursday, 6-9 pm\"."
+        },
+        "street_address": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm| / Thursday, 6-9 pm\" on the City's pickleball page. The City's recreation-centres page agrees: \"Port Tampa Center 4702 W McCoy St, 33616\"."
+        },
+        "venue_type": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Listed under \"Indoor Pickleball\" on the City's pickleball page and among its recreation centres."
+        },
+        "court_availability": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's pickleball page: \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm| / Thursday, 6-9 pm\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Hillsborough County, FL (FIPS 12057). Census address geocoder matched \"4702 W MCCOY ST, TAMPA, FL, 33616\". The resolver also places it in the incorporated place \"Tampa city\", which is what allows it to be published under Tampa."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"4702 W MCCOY ST, TAMPA, FL, 33616\"."
+        },
+        "indoor_courts": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "The card sits under the \"Indoor Pickleball\" heading on the City's page: \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm| / Thursday, 6-9 pm\"."
+        },
+        "hours_of_operation": {
+          "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "As printed on the City's card: \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm| / Thursday, 6-9 pm\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.tampa.gov/parks-and-recreation/activities-recreation/athletics/pickleball",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

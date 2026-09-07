@@ -140,18 +140,18 @@
     "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"16100 SE 33RD PL, BELLEVUE, WA, 98008\"."
   },
   "crossroads-community-center": {
-    "matched": "16000 SE 10TH ST, BELLEVUE, WA, 98008",
-    "resolver": "census",
-    "lat": 47.60180401173,
-    "lon": -122.126469361799,
+    "matched": "Crossroads Community Center, 16000, Northeast 10th Street, The Madison Bellevue Apartments, Bellevue, King County, Washington, 98008, United States",
+    "resolver": "osm",
+    "lat": 47.6193715,
+    "lon": -122.127787,
     "county": "King",
-    "state_fips": "53",
-    "county_fips": "033",
-    "place": "Bellevue city",
+    "state_fips": null,
+    "county_fips": null,
+    "place": "Bellevue",
     "place_matches_city": true,
     "postal_code": "98008",
-    "basis": "Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\".",
-    "county_citation": "King County, WA (FIPS 53033). Census address geocoder matched \"16000 SE 10TH ST, BELLEVUE, WA, 98008\"."
+    "basis": "OpenStreetMap (Nominatim) matched \"Crossroads Community Center, 16000, Northeast 10th Street, The Madison Bellevue Apartments, Bellevue, King County, Washington, 98008, United States\" at house-number level. The Census address geocoder answered \"16000 SE 10TH ST, BELLEVUE, WA, 98008\", changing the direction from NE to SE; OpenStreetMap finds the address as the operator writes it, so that is the one published. A street type and a compass direction are part of an address, not formatting details.",
+    "county_citation": "King County, WA. The Census address file has no record of this address; OpenStreetMap resolves it to a house number and places it in King County."
   },
   "north-bellevue-community-center": {
     "matched": "4063 148TH AVE NE, BELLEVUE, WA, 98007",

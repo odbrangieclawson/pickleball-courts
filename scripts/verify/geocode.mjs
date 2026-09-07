@@ -280,31 +280,70 @@ const streetType = s => {
   return null
 }
 
+/*
+  THE DIRECTION IS PART OF THE ADDRESS TOO
+
+  Tampa found the same defect in a second form. Asked for "4700 S Clark
+  Ave", the Census geocoder answered "4700 N CLARK AVE" — a confident match
+  with the compass direction flipped and a different postcode (33614 where
+  the City prints 33611). South Clark Avenue and North Clark Avenue are
+  different streets some miles apart. The street-type check above could
+  not see it, because the type agreed. It also silently DROPS a direction:
+  "1224 E Madison St" came back as "1224 MADISON ST", which may be the same
+  street correctly normalised or may not, and the resolver had no way to
+  tell.
+
+  So the same rule now covers the directional token: a changed or dropped
+  direction is a reason to ask OpenStreetMap for the address as the
+  operator wrote it. If OSM finds it at house-number level, the operator's
+  address wins. If OSM has no record of it as written, the Census answer
+  stands and the change is recorded in the basis rather than hidden.
+*/
+const DIRECTIONALS = Object.freeze({
+  N: 'N', NORTH: 'N', S: 'S', SOUTH: 'S', E: 'E', EAST: 'E', W: 'W', WEST: 'W',
+  NE: 'NE', NORTHEAST: 'NE', NW: 'NW', NORTHWEST: 'NW', SE: 'SE', SOUTHEAST: 'SE', SW: 'SW', SOUTHWEST: 'SW',
+})
+
+/** The directional tokens in a street line, canonicalised, in order, house number excluded. */
+const directionals = s => {
+  const words = String(s ?? '').toUpperCase().replace(/[.,]/g, ' ').split(/\s+/).filter(Boolean)
+  return words.slice(1).filter(w => DIRECTIONALS[w]).map(w => DIRECTIONALS[w]).join('+') || null
+}
+
 const result = {}
 for (const [slug, street] of Object.entries(addresses)) {
   let rec = await geocode(street)
 
   if (rec.matched) {
-    const asked = streetType(street)
-    const got = streetType(String(rec.matched).split(',')[0])
-    if (asked && got && asked !== got) {
+    const first = String(rec.matched).split(',')[0]
+    const diffs = []
+    const askedType = streetType(street), gotType = streetType(first)
+    if (askedType && gotType && askedType !== gotType) {
+      diffs.push({what: 'street type', asked: askedType, got: gotType})
+    }
+    const askedDir = directionals(street), gotDir = directionals(first)
+    if (askedDir !== gotDir) {
+      diffs.push({what: 'direction', asked: askedDir ?? 'none', got: gotDir ?? 'none'})
+    }
+    if (diffs.length) {
+      const described = diffs.map(d => `the ${d.what} from ${d.asked} to ${d.got}`).join(' and ')
       const osm = await geocodeOSM(street)
       if (osm) {
-        /* The operator's own street type exists. It wins. */
+        /* The operator's own address exists. It wins. */
         rec = {
           ...osm,
           basis:
             `OpenStreetMap (Nominatim) matched "${osm.matched}" at house-number level. ` +
-            `The Census address geocoder answered "${rec.matched}", changing the street type from ` +
-            `${asked} to ${got}; OpenStreetMap finds the address as the operator writes it, so that is ` +
-            'the one published. A street type is part of an address, not a formatting detail.',
+            `The Census address geocoder answered "${rec.matched}", changing ${described}; ` +
+            'OpenStreetMap finds the address as the operator writes it, so that is the one published. ' +
+            'A street type and a compass direction are part of an address, not formatting details.',
         }
       } else {
         rec = {
           ...rec,
           basis:
-            `${rec.basis} The operator writes the street type as ${asked} and the Census normalised it ` +
-            `to ${got}; OpenStreetMap has no record of the address as written, so there is one street ` +
+            `${rec.basis} The Census changed ${described} from what the operator writes; ` +
+            'OpenStreetMap has no record of the address as written, so there is one street ' +
             'here under one name and the Census answer stands.',
         }
       }

@@ -1,0 +1,220 @@
+{
+  "city": "San Antonio",
+  "state": "TX",
+  "date_checked": "2026-09-07",
+  "written_by": "staff_research",
+  "note_on_method": "Nobody working on this has played on these courts. Every count, address, lighting answer and opening time below comes from the City of San Antonio's own pages: the Parks & Recreation pickleball directory for the addresses, the hours and the first-come, first-served rule, and each park's own page for the count sentence, which in San Antonio carries the words that matter - \"outdoor\", \"indoor\", \"lighted\". The City states no price and no surface anywhere, and where it is silent this page says so instead of guessing.",
+  "slots": {
+    "parking": "San Antonio says something about parking, which is more than most parks departments do, and still not very much. Seven of the eight park pages list \"Regular Parking Spaces\" and \"Handicapped Parking Spaces\" among their amenities - Fairchild, Garza, Monterrey, Normoyle, Oak Haven, Pittman-Sullivan and Tejeda. That is a statement that a lot exists and that accessible bays are marked, and it is the whole of it: no capacity, no fee, no permit, and no note on where the lot sits relative to the courts. Palm Heights Park's amenity list has no parking line at all, and this site records that as a silence rather than a no, since the same list omits restrooms too on a 1.72-acre park with a community centre and gymnasium. Restrooms are the other thing to plan around. The City writes \"Restrooms\" at Normoyle, Pittman-Sullivan and Tejeda, and \"Portable Toilet\" at Garza, Monterrey and Oak Haven; Fairchild and Palm Heights list neither. Four parks - Garza, Normoyle, Palm Heights and Pittman-Sullivan - list Wi-Fi. What none of the eight pages describes is the walk from the car to the courts, and at Monterrey, 51 acres with soccer fields, softball fields and a community centre, that is not a trivial omission. One address quirk to know before you drive: Oak Haven's page prints \"16400 Parkstone\" under its pickleball entry and \"2215 Rest Haven Dr.\" in its contact block. The City's directory uses Rest Haven, and so does this site.",
+    "peak_hours": "San Antonio publishes one clock for all eight venues and it is a generous one. Every park on the City's pickleball directory carries the same line, \"Park Hours: Sunday - Saturday: 5 a.m. - 11 p.m.\", and the directory states the rule that connects the two: \"All other courts are available during park hours.\" Fairchild Park's own page repeats it for its courts specifically - \"All tennis courts and pickleball courts are open during park hours.\" So the window is eighteen hours a day, seven days a week, at all eight parks. How much of that window is usable after dark is a different question, and the City answers it at only two venues. Fairchild's eighteen courts and Tejeda's six are \"lighted\" in the City's own count sentences, which is twenty-four of the forty-three verified courts. For the other six parks the directory's caveat applies: \"Some courts are not lighted.\" That sentence is why this site records their lighting as unknown rather than reading the 11 p.m. closing time as a promise. Several of those pages do say whether the tennis court is lit - Garza's are, Monterrey's, Normoyle's and Pittman-Sullivan's are not, Oak Haven's is lit until 9 p.m. under a pilot programme - but every one of those sentences is about tennis, and this site does not carry them across to the pickleball courts alongside. Two exceptions to the flat schedule are stated. Hamilton Community Center's courts, which are not published here, are \"available Saturday, 10 a.m. - 2 p.m.\" And Fairchild's page warns that \"Special events and scheduled activities may affect court usage and open hours\", with a phone number to check. Everything is first come, first served, and the City publishes no rotation rule, no league night, and nothing about when any court is busy.",
+    "surface_condition": "The City of San Antonio names a surface for a pickleball court nowhere. The word \"asphalt\" appears on these pages three times and none of them is about pickleball: Garza's trail is \"Asphalt\", Monterrey's is \"Decomposed Granite, Asphalt\", and Palm Heights' history records that \"in August 1929, a contract was signed for construction of cold rolled asphalt tennis courts\" - a tennis surface, ninety-seven years ago. So all forty-three verified courts read as not stated on surface, and that is a gap in what the City writes rather than a choice of this site's. What the City does write, unusually, is where the courts are. Its count sentences carry the word \"outdoor\" at six parks and \"indoor\" at Palm Heights, which puts thirty-five of the forty-three courts outdoors and two inside, at a park whose history records a gymnasium being added in 1977. San Antonio is one of the few operators here that writes \"outdoor\" or \"indoor\" into the count sentence itself. The exception shows how literally that sentence is read. Tejeda Park's line is \"There are 6 lighted, pickleball courts.\" - lighted, but not outdoor - and rather than complete the City's sentence for it, this site leaves Tejeda's six as neither indoor nor outdoor. Nothing on any page says whether a court is dedicated to pickleball or lined onto a tennis court; the amenity lists carry \"Pickleball Court\" and \"Tennis Court\" as separate entries and stop there.",
+    "local_scene": "Forty-three verified courts across eight City parks, and the arithmetic is lopsided: Fairchild Park holds eighteen of them, Monterrey eight, Tejeda six, and the other five parks share eleven. Fairchild's eighteen lit outdoor courts are the second-largest single-venue count on this site after Mesa's Tennis & Pickleball Center, and the largest anywhere here where the operator states that every court is both lit and outdoor. Twenty-four of the forty-three are under lights, all of them at Fairchild and Tejeda; two, at Palm Heights, are the City's only indoor count. San Antonio is the second Texas city on this site after Austin and the first in Bexar County. Austin publishes twenty-one venues and sixty courts, all outdoor, with lighting stated at eleven of them; San Antonio publishes fewer venues, more courts at the top, and a lighting answer at two. What San Antonio does not say is the price. \"These are available on a first-come, first-served basis\" is a play format, not a fee, and nothing on the City's directory page or on any park page states a charge or the absence of one, so no venue in San Antonio is called free. The City offers a way in for beginners: \"Take a Pickleball 101 class through the Fitness in the Park program, equipment provided.\" Two listed venues are not published. Piazza Italia Park has \"one outdoor pickleball court\", restrooms and park hours, and an address, \"500 Columbus\", that neither the US Census address file nor OpenStreetMap can find; the City writes it without a street type on both its pages. Hamilton Community Center, at 10700 Nacogdoches Rd., has facility hours, a Saturday pickleball window, and no court count anywhere. The directory page also says \"11 Result(s) Found\" and serves ten, and its second page returns the same ten; the eleventh is not guessed at. On the record itself: the City's site answered a plain request with 200 and, twenty minutes later, 403, so its pages are fetched with a browser header set. A 403 is a fact about one day, and every quoted sentence here is re-asserted on every build."
+  },
+  "best_for": [
+    {
+      "key": "biggest",
+      "heading": "Best if you want the most courts under lights",
+      "venue_slug": "fairchild-park",
+      "text": "Fairchild Park has eighteen lighted outdoor pickleball courts in one City sentence, alongside ten lighted outdoor tennis courts, on the east side at 1214 E Crockett St. The courts are open during park hours, 5 a.m. to 11 p.m. daily, first come, first served. Eighteen courts under lights until eleven is a rotation that absorbs almost any number of players; nothing else in San Antonio is in the same class.",
+      "supports": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "key": "lit_south",
+      "heading": "Best if you want lights on the south side",
+      "venue_slug": "tejeda-park",
+      "text": "Tejeda Park's six courts are the only other lit pickleball in the City's record: \"There are 6 lighted, pickleball courts.\" There are restrooms and lit tennis courts too, in a park of 8.76 acres on the south side that the City renamed for Congressman Frank Tejeda in 1996. Six is enough for a rotation, and 11 p.m. park hours make an after-work game a stated possibility rather than a hope.",
+      "supports": [
+        "C1",
+        "C9"
+      ]
+    },
+    {
+      "key": "indoor",
+      "heading": "Best if you want to play indoors",
+      "venue_slug": "palm-heights-park",
+      "text": "Palm Heights Park has the City's only indoor pickleball count: \"There are 2 indoor pickleball courts.\" on a 1.72-acre park on the south-west side whose history records a gymnasium added in 1977. Two courts is a game rather than a rotation, and the City publishes no separate gym schedule for pickleball, only park hours of 5 a.m. to 11 p.m.",
+      "supports": [
+        "C1",
+        "C7"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pickleball courts does San Antonio have?",
+      "a": "We have verified 43 across eight City parks: 18 at Fairchild, 8 at Monterrey, 6 at Tejeda, 4 at Normoyle, 2 each at Garza, Palm Heights and Pittman-Sullivan, and 1 at Oak Haven. The City also lists Piazza Italia Park with one court at an address nobody can resolve, and Hamilton Community Center with no count at all, so the real number is at least 44 and the City does not say how many more."
+    },
+    {
+      "q": "Which San Antonio courts have lights?",
+      "a": "Fairchild Park's 18 and Tejeda Park's 6, because \"lighted\" is in the City's own count sentence at both. At the other six parks the City says nothing about pickleball lighting and its directory warns that \"Some courts are not lighted\", so those are recorded as unknown. Sentences like \"The tennis court is not lighted\" are about tennis and are not carried across."
+    },
+    {
+      "q": "What are the opening hours?",
+      "a": "Park hours, 5 a.m. to 11 p.m. every day, at all eight venues - the City's directory prints that line for each park and states that \"All other courts are available during park hours.\" The one stated exception is Hamilton Community Center, not published here, whose courts are available Saturday, 10 a.m. to 2 p.m. Fairchild warns that special events may affect court hours."
+    },
+    {
+      "q": "Why is Piazza Italia Park not listed?",
+      "a": "The City's page says \"There is one outdoor pickleball court.\" and lists restrooms, parking and park hours, but its address, \"500 Columbus\", is written without a street type on both City pages and is found by neither the US Census address file nor OpenStreetMap. A venue at an address nobody can locate does not publish here."
+    },
+    {
+      "q": "Why is Hamilton Community Center not listed?",
+      "a": "Because the City never says how many courts it has. The directory lists it at 10700 Nacogdoches Rd. with facility hours and the sentence \"Courts at Hamilton Community Center are available Saturday, 10 a.m. - 2 p.m.\", and the number appears nowhere. Its own page answered our request with a 403. It fails on the one fact it is missing."
+    }
+  ],
+  "sources": [
+    {
+      "id": "C1",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Programs-Classes/Sports/Pickleball",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "The City's pickleball directory page. Intro: \"There are several indoor and outdoor pickleball courts at our parks across the city. These are available on a first-come, first-served basis. Some courts are not lighted.\" Then \"Courts at Hamilton Community Center are available Saturday, 10 a.m. - 2 p.m.\" and \"All other courts are available during park hours.\" and \"Want to learn how to play? Take a Pickleball 101 class through the Fitness in the Park program, equipment provided.\" Under \"Directory\" it says \"11 Result(s) Found\" and lists ten entries, each park with its address and \"Park Hours: Sunday - Saturday: 5 a.m. - 11 p.m.\"; Normoyle Park additionally \"Pool Hours: Saturday & Sunday: 1 - 8 p.m.\"; Hamilton Community Center at \"10700 Nacogdoches Rd., San Antonio, TX 78217\" with \"Facility Hours: Monday - Thursday: 10 a.m. - 8 p.m. Friday: 2 - 6 p.m. Saturday: 10 a.m. - 4 p.m.\" and no count; Piazza Italia Park at \"500 Columbus, San Antonio, TX 78207\". \"Page 1 of 2\", and page two returns the same ten. Snapshot: data/sources/san-antonio/pickleball.html",
+      "not_stated": "Any court count, any price, any surface, which courts are the unlit ones, and the eleventh result."
+    },
+    {
+      "id": "C2",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Fairchild-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Fairchild Park's page. \"Featured Amenities\": \"All amenities are first come, first served.\" \"Pickleball Courts: There are 18 lighted, outdoor pickleball courts.\" \"Tennis Courts: There are 10 lighted, outdoor tennis courts.\" \"Tennis & Pickleball Court Hours: All tennis courts and pickleball courts are open during park hours.\" \"Office Hours: Monday - Thursday: 4 - 8 p.m.\" \"NOTE: Special events and scheduled activities may affect court usage and open hours. Please call 210-226-6912 for more information.\" Swimming pool \"Closed until the 2027 pool season.\" Amenity list: Benches, Grill, Handicapped Parking Spaces, Pickleball Court, Picnic Table, Playground, Regular Parking Spaces, Swimming Pool, Tennis Court. Address \"1214 E. Crockett St. San Antonio, TX 78202\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Related facility Fairchild Community Center. Snapshot: data/sources/san-antonio/fairchild-park.html",
+      "not_stated": "Price, surface, restrooms, parking capacity, whether the courts are dedicated, and any history paragraph."
+    },
+    {
+      "id": "C3",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Garza-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition"
+      ],
+      "evidence": "Garza Park's page. Park History: \"Gilbert Garza Park, a 21.5 acre park at 1450 Mira Vista, was originally called Mira Vista for the street. Created in 1972, the park was soon re-named for Mayor Pro Tem Gilbert Garza, who died later that year.\" Garza was \"son of immigrants from Monterrey, Mexico\", \"only the third Hispanic to be elected to Mayor Pro Tem in San Antonio history\", an architect who \"worked to perfect the first modular building system in the United States\", and \"envisioned setting aside green space for citizens' use along the San Antonio River.\" Featured Amenities: \"All amenities are first come, first served with the exception of the ones available for rental.\" \"Pickleball: There are two outdoor pickleball courts.\" \"Tennis Courts: The outdoor tennis courts are lighted.\" \"Trails: Type: Asphalt / Length (Miles): 0.50\". Pool \"Closed until the 2027 pool season\" at \"5800 Hemphill Dr.\" Amenity list includes Community Center, Fitness Stations, Handicapped Parking Spaces, Portable Toilet, Regular Parking Spaces, Wi-Fi, Water Feature. Address \"1450 Mira Vista San Antonio, TX 78228\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Snapshot: data/sources/san-antonio/garza-park.html",
+      "not_stated": "Price, surface, pickleball lighting (the lighting sentence is about tennis), and parking capacity."
+    },
+    {
+      "id": "C4",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Monterrey-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Monterrey Park's page. Park History: \"Monterrey Park was established in 1962 on 51 acres purchased by the City for park purposes using funds from a 1961 bond issue. Originally named Linda Vista Park, it was re-named in October 1963 in honor of San Antonio's sister city in Mexico.\" \"In May 1997, the center was formally re-named as the Sonny Melendrez Community Center\" and \"Monterrey Park, adjacent to the center, retained its name.\" Featured Amenities: \"Pickleball: There are eight outdoor pickleball courts.\" \"Tennis Court: The tennis court is not lighted.\" \"Trails: Type: Decomposed Granite, Asphalt / Length (Miles):0.43\". Pool \"Closed until the 2027 pool season\" at \"5919 W. Commerce\". Rentals: Multi-Use Field 5, Soccer Field 1 and 2, Softball Field 1 and 2. Gallery includes \"Pickleball Courts (JPG, 252KB)\". Amenity list includes Handicapped Parking Spaces, Portable Toilet, Public Art Display, Regular Parking Spaces, Water Feature. Address \"5909 W. Commerce St. San Antonio, TX 78237\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Snapshot: data/sources/san-antonio/monterrey-park.html",
+      "not_stated": "Price, surface, pickleball lighting (the stated negative is about the tennis court), and parking capacity."
+    },
+    {
+      "id": "C5",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Normoyle-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours"
+      ],
+      "evidence": "Normoyle Park's page. No history paragraph. Featured Amenities: \"All amenities are first come, first served with the exception of the ones available for rental.\" \"Pickleball: There are four outdoor pickleball courts.\" \"Swimming Pool: Hours: Saturday & Sunday: 1 - 8 p.m.\" \"Tennis Court: The tennis court is not lighted.\" Pavilion rental: \"There is a four-hour minimum for rentals. Monday - Thursday: $15 an hour ($60 minimum) Friday - Sunday: $30 an hour ($120 minimum)\". Amenity list includes Community Center, Fitness Stations, Handicapped Parking Spaces, Regular Parking Spaces, Restrooms, Skate Park, Wi-Fi. Address \"700 Culberson Ave. San Antonio, TX 78225\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" and, under Swimming Pool, \"Saturday & Sunday: 1 - 8 p.m.\" Snapshot: data/sources/san-antonio/normoyle-park.html",
+      "not_stated": "Price for the courts, surface, pickleball lighting, and parking capacity."
+    },
+    {
+      "id": "C6",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Oak-Haven-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours"
+      ],
+      "evidence": "Oak Haven Park's page. No history paragraph. Featured Amenities: \"Pickleball: There is one outdoor pickleball court.\" followed by an address block \"16400 Parkstone San Antonio, TX 78232\". \"Tennis Court: The tennis court is lighted until 9 p.m.\" \"Trails: Type: Asphalt / Length (Miles): 0.47\". \"The lights for basketball and tennis courts turn off at 9 p.m. as part of a pilot program that was initiated with Council District 9, Oak Haven Neighborhood Association and Parks and Recreation.\" Softball Field for rental. Amenity list includes Baseball Field, Dugouts, Handicapped Parking Spaces, Portable Toilet, Regular Parking Spaces, Walking Trail. Contact address \"2215 Rest Haven Dr. San Antonio, TX 78232\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Snapshot: data/sources/san-antonio/oak-haven-park.html",
+      "not_stated": "Price, surface, pickleball lighting (both lighting sentences name tennis and basketball), parking capacity, and why the page carries two addresses."
+    },
+    {
+      "id": "C7",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Palm-Heights-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Palm Heights Park's page. Park History: the park \"takes its name from a subdivision laid out in 1910\"; streets and park transferred to the City in September 1928; \"was informally called \\\"Twin Parks\\\"\" until Marian Street closed in 1952; \"In August 1929, a contract was signed for construction of cold rolled asphalt tennis courts in Palm Heights Park.\"; community centre completed 1931, addition by Robert H. Hugman 1956; \"The building was rehabilitated in 1977 and a gymnasium was added.\"; \"Other facilities in the 1.72-acre park include tennis courts, a basketball court, volleyball courts, a junior softball diamond, and a football field.\" Featured Amenities: \"Pickleball Courts: There are 2 indoor pickleball courts.\" Fitness Stations \"near the Community Center\". Softball Field for rental. Amenity list: Basketball Goal, Benches, Bike Rack, Bleachers, Community Center, Fitness Stations, Grill, Pickleball Court, Picnic Table, Playground, Softball Field, Trash Cans, Water Fountain, Wi-Fi - no parking line and no restroom line. Address \"1201 W. Malone Ave. San Antonio, TX 78225\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Snapshot: data/sources/san-antonio/palm-heights-park.html",
+      "not_stated": "Price, surface, lighting, parking, restrooms, a gym schedule for pickleball, and which building the indoor courts are in."
+    },
+    {
+      "id": "C8",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Pittman-Sullivan-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours"
+      ],
+      "evidence": "Pittman-Sullivan Park's page. Park History: the baseball field was named in 2015 for Charles B. Shannon, who \"coached an adult team from 1974 to 1988\"; \"First Lieutenant Edward B. Sullivan (1898-1918)\" \"joined the United States Army air service to become a pilot in World War I. He was killed on July 7, 1918 during a training flight in Ardmore, Oklahoma.\"; \"Dewey Pittman (1898-1918)\" \"was killed at the battle of Soissons on July 19, 1918, just twelve days after the death of Edward Sullivan\" and was reburied at the San Antonio National Cemetery in May 1921. Featured Amenities: \"Pickleball: There are two outdoor pickleball courts.\" \"Tennis Court: The tennis court is not lighted.\" \"Trails: Type: Running Track / Length (Miles): 0.17\". Little Free Library \"at the corner of Dakota St. and S. Palmetto.\" Partner Amenities: \"Swimming Pool: The pool is managed by the Davis-Scott Family YMCA.\" Pavilion rental $15 an hour Monday to Thursday, $30 Friday to Sunday, four-hour minimum. Amenity list includes Community Center, Fitness Stations, Handicapped Parking Spaces, Regular Parking Spaces, Restrooms, Wi-Fi. Address \"1101 Iowa St. San Antonio, TX 78203\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Snapshot: data/sources/san-antonio/pittman-sullivan-park.html",
+      "not_stated": "Price for the courts, surface, pickleball lighting, parking capacity, and the pool's hours."
+    },
+    {
+      "id": "C9",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Tejeda-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene"
+      ],
+      "evidence": "Tejeda Park's page. Park History: \"The 8.7570 acres of property for this park were purchased in 1977. The park was originally called Division Park for the street on which it is located, but was renamed for Congressman Frank Tejeda by ordinance of City Council passed on Sept. 12, 1996.\" Tejeda \"was a U.S. Marine and Vietnam veteran who earned the Bronze Star for valor and the Purple Heart\", \"earned a masters from Harvard University and his law degree from Yale\", served in the Texas House from 1977, the Texas Senate from 1987, and the U.S. House for District 28 from 1993; \"He died of brain cancer on Jan. 30, 1997\". Featured Amenities: \"Pickleball Courts: There are 6 lighted, pickleball courts.\" \"Tennis Courts: The tennis courts are lighted.\" Softball Field for rental. Amenity list includes Bleachers, Dugouts, Handicapped Parking Spaces, Regular Parking Spaces, Restrooms, Tennis Court. Address \"541 Division Ave. San Antonio, TX 78214\". Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Snapshot: data/sources/san-antonio/tejeda-park.html",
+      "not_stated": "Whether the pickleball courts are outdoor or indoor, price, surface, and parking capacity."
+    },
+    {
+      "id": "C10",
+      "url": "https://www.sa.gov/Directory/Departments/Parks/Parks-Facilities/Parks/Directory/Piazza-Italia-Park",
+      "publisher": "City of San Antonio Parks & Recreation",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "local_scene"
+      ],
+      "evidence": "Piazza Italia Park's page. \"Featured Amenities: Pickleball Courts: There is one outdoor pickleball court.\" Pavilion for rental. Amenity list: Benches, Pavilion/Gazebo, Pickleball Court, Picnic Table, Regular Parking Spaces, Restrooms, Trash Cans, Water Feature, Water Fountain. Address \"500 Columbus San Antonio, TX 78207\", written without a street type. Hours \"Sunday - Saturday: 5 a.m. - 11 p.m.\" Snapshot: data/sources/san-antonio/piazza-italia-park.html",
+      "not_stated": "A street type for Columbus, lighting, price, and surface."
+    },
+    {
+      "id": "C11",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "retrieved": "2026-09-07",
+      "supports": [
+        "local_scene"
+      ],
+      "evidence": "All eight published addresses matched at house-number level through the US Census address file and were placed in Bexar County, TX (FIPS 48029) and the incorporated place \"San Antonio city\": \"1214 E CROCKETT ST\", \"1450 MIRA VIS\", \"5909 W COMMERCE ST\", \"700 CULBERSON AVE\", \"2215 REST HAVEN DR\", \"1201 W MALONE\", \"1101 IOWA ST\" and \"541 DIVISION AVE\". \"500 Columbus\", the address the City publishes for Piazza Italia Park, is found by neither the Census address file nor OpenStreetMap. Snapshot: data/sources/san-antonio-county-census.json",
+      "not_stated": "Anything about the courts themselves."
+    }
+  ]
+}

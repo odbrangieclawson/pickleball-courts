@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04",
+  "generated": "2026-09-07",
   "note": "Canonical slug per imported slug. Only rows whose slug changes appear here.",
   "renames": {
     "arctic-rec-center-anchorage": {
@@ -2181,6 +2181,10 @@
     "courtside-pickleball": {
       "canonical": "courtside",
       "basis": "dropped trailing \"-pickleball\" (this is a pickleball directory)"
+    },
+    "portola-springs": {
+      "canonical": "portola-springs-community-park",
+      "basis": "built from the verified name \"Portola Springs Community Park\""
     },
     "rci-pickleball-racquet-club-of-irvine": {
       "canonical": "rci-pickleball-racquet-club-of",
@@ -5601,6 +5605,10 @@
     "tamarac-community-center": {
       "canonical": "community-center",
       "basis": "dropped leading \"tamarac-\" (already in the path)"
+    },
+    "julian-b-lane-park": {
+      "canonical": "julian-b-lane-riverfront-park",
+      "basis": "built from the verified name \"Julian B Lane Riverfront Park\""
     },
     "sportsspace-tampa": {
       "canonical": "sportsspace",

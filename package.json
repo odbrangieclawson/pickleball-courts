@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "validate": "node scripts/validate-keyword-map.mjs && node scripts/validate-no-bypass.mjs && node scripts/validate-data.mjs",
+    "validate": "node scripts/validate-keyword-map.mjs && node scripts/validate-no-bypass.mjs && node scripts/validate-data.mjs && node scripts/check-claims.mjs",
     "check:js-off": "node scripts/check-js-off.mjs",
     "import:mapping": "node scripts/import/emit-mapping.mjs",
     "import:quality": "node scripts/import/quality-report.mjs",
@@ -55,7 +55,13 @@
     "verify:saint-paul": "node scripts/verify/apply-saint-paul-parks.mjs",
     "verify:mesa": "node scripts/verify/apply-mesa-parks.mjs",
     "verify:kirkland": "node scripts/verify/apply-kirkland-parks.mjs",
-    "verify:capecoral": "node scripts/verify/apply-capecoral-parks.mjs"
+    "verify:capecoral": "node scripts/verify/apply-capecoral-parks.mjs",
+    "verify:irvine": "node scripts/verify/apply-irvine-parks.mjs",
+    "verify:huntington-beach": "node scripts/verify/apply-huntington-beach-parks.mjs",
+    "verify:tampa": "node scripts/verify/apply-tampa-parks.mjs",
+    "verify:san-antonio": "node scripts/verify/apply-san-antonio-parks.mjs",
+    "verify:lincoln": "node scripts/verify/apply-lincoln-parks.mjs",
+    "check:claims": "node scripts/check-claims.mjs"
   },
   "dependencies": {
     "next": "16.3.4",

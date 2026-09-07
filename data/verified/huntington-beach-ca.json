@@ -1,0 +1,420 @@
+{
+  "city": "Huntington Beach",
+  "state": "CA",
+  "retrieved_at": "2026-09-07",
+  "method_note": "Huntington Beach states a name, a street address and a court count on one line per venue, under a heading that answers the lighting question for all of them at once: \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING)\". Four parks, thirteen courts, and four stated lighting negatives - more than the whole directory held in prose before this run. The block under that heading is asserted as a whole, so a line moving under a different amenity, or a fifth park appearing, fails the build. Worthy Park carries two City addresses: 1831 17th St. on the amenities page, paired with the count, and 1801 Main Street on the Tennis & Pickleball Information page among the community centres; the count-bearing address publishes and both are asserted. The City prices reserved tennis courts at $9 an hour and never prices or frees a pickleball court, so fee_type stays null; it states no hours for these courts, and the \"Dusk to 10 p.m.\" lines on the tennis page belong to lighted tennis courts that these are not.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+      "publisher": "City of Huntington Beach Community & Library Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/huntington-beach/park-amenities.html"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/tennis_information.php",
+      "publisher": "City of Huntington Beach Community & Library Services",
+      "tier": 1,
+      "format": "html",
+      "snapshot": "data/sources/huntington-beach/tennis-information.html"
+    },
+    {
+      "id": "S3",
+      "url": "https://geocoding.geo.census.gov/geocoder/geographies",
+      "publisher": "US Census Bureau",
+      "tier": 1,
+      "format": "json",
+      "snapshot": "data/sources/huntington-beach-county-census.json"
+    }
+  ],
+  "totals": {
+    "venues": 4,
+    "courts": 13,
+    "outdoor": null,
+    "indoor": null,
+    "lit_courts": 0,
+    "unlit_courts_stated": 13,
+    "free_venues": 0
+  },
+  "excluded": [],
+  "venues": {
+    "boardwalk-park": {
+      "minted": true,
+      "identity": {
+        "name": "Boardwalk Park",
+        "city": "Huntington Beach",
+        "state": "CA",
+        "county": "Orange",
+        "postal_code": "92647",
+        "latitude": 33.730262892945,
+        "longitude": -117.999029434153,
+        "imported_slug": null,
+        "canonical_slug": "boardwalk-park"
+      },
+      "match": {
+        "source_page": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "quote": "Boardwalk Park - 7441 Edinger Ave. - 1 Court",
+        "basis": "No imported row for this park. Minted here from the City's Park Amenities page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Boardwalk Park",
+        "total_courts": 1,
+        "street_address": "7441 Edinger Ave.",
+        "venue_type": "public_park",
+        "light": false,
+        "court_availability": "One pickleball court, unlit, in a small park on Edinger Avenue that the City also lists for its exercise course and fitness station. The count and the address come from a single line on the City's Park Amenities page - \"Boardwalk Park - 7441 Edinger Ave. - 1 Court\" - under a heading that settles the lighting for every pickleball court in the city: \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING)\". One court means one game at a time, no rotation, and daylight only. The City states no hours, no price and nothing about the surface, and this page records those as unknown rather than guessing.",
+        "county": "Orange",
+        "postal_code": "92647"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Boardwalk Park\" on the City's Park Amenities page: \"Boardwalk Park - 7441 Edinger Ave. - 1 Court\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Amenities page, under the heading \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\": \"Boardwalk Park - 7441 Edinger Ave. - 1 Court\"."
+        },
+        "street_address": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Boardwalk Park - 7441 Edinger Ave. - 1 Court\" on the City's Park Amenities page."
+        },
+        "venue_type": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Huntington Beach Community & Library Services among its city parks."
+        },
+        "light": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's own heading: \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\". The heading covers all four parks listed beneath it, and this is one of them."
+        },
+        "court_availability": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Amenities page: \"Boardwalk Park - 7441 Edinger Ave. - 1 Court\" under \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Orange County, CA (FIPS 06059). Census address geocoder matched \"7441 EDINGER AVE, HUNTINGTON BEACH, CA, 92647\". The resolver also places it in the incorporated place \"Huntington Beach city\", which is what allows it to be published under Huntington Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"7441 EDINGER AVE, HUNTINGTON BEACH, CA, 92647\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "edison-park": {
+      "minted": false,
+      "identity": {
+        "name": "Edison Park",
+        "city": "Huntington Beach",
+        "state": "CA",
+        "county": "Orange",
+        "postal_code": "92646",
+        "latitude": 33.652664079994,
+        "longitude": -117.971174721536,
+        "imported_slug": "edison-park",
+        "canonical_slug": "edison-park"
+      },
+      "match": {
+        "source_page": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "quote": "Edison Park - 21377 Magnolia St. - 4 Courts",
+        "basis": "Matched to the imported edison-park row in Huntington Beach, CA, at the same street address."
+      },
+      "patch": {
+        "name": "Edison Park",
+        "total_courts": 4,
+        "street_address": "21377 Magnolia St.",
+        "venue_type": "public_park",
+        "light": false,
+        "court_availability": "Four pickleball courts, unlit, at the park that shares its address with the Edison Community Center on Magnolia Street. The City's Park Amenities page gives the count and the address in one line - \"Edison Park - 21377 Magnolia St. - 4 Courts\" - under the heading \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING)\". The same address appears on the City's Tennis & Pickleball Information page for Edison Community Park's lighted TENNIS courts, which run \"Dusk to 10 p.m. nightly\"; the pickleball courts are explicitly not lit, so that evening window does not apply to them. Edison Park is also listed by the City for its handball court. No hours, price or surface are stated for the pickleball courts.",
+        "county": "Orange",
+        "postal_code": "92646"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Edison Park\" on the City's Park Amenities page: \"Edison Park - 21377 Magnolia St. - 4 Courts\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Amenities page, under the heading \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\": \"Edison Park - 21377 Magnolia St. - 4 Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Edison Park - 21377 Magnolia St. - 4 Courts\" on the City's Park Amenities page."
+        },
+        "venue_type": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Huntington Beach Community & Library Services among its city parks."
+        },
+        "light": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's own heading: \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\". The heading covers all four parks listed beneath it, and this is one of them."
+        },
+        "court_availability": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/tennis_information.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Amenities page: \"Edison Park - 21377 Magnolia St. - 4 Courts\" under \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\". The tennis page: \"Edison Community Park (ECC)* 21377 Magnolia Street Dusk to 10 p.m. nightly\" under \"Lighted Tennis Courts & Handball/Racquetball Courts\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Orange County, CA (FIPS 06059). Census address geocoder matched \"21377 MAGNOLIA ST, HUNTINGTON BEACH, CA, 92646\". The resolver also places it in the incorporated place \"Huntington Beach city\", which is what allows it to be published under Huntington Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"21377 MAGNOLIA ST, HUNTINGTON BEACH, CA, 92646\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "marina-park": {
+      "minted": true,
+      "identity": {
+        "name": "Marina Park",
+        "city": "Huntington Beach",
+        "state": "CA",
+        "county": "Orange",
+        "postal_code": "92649",
+        "latitude": 33.732331145755,
+        "longitude": -118.031804746319,
+        "imported_slug": null,
+        "canonical_slug": "marina-park"
+      },
+      "match": {
+        "source_page": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "quote": "Marina Park - 5562 Cross Dr. - 4 Courts",
+        "basis": "No imported row for this park. Minted here from the City's Park Amenities page, which states the count and the address."
+      },
+      "patch": {
+        "name": "Marina Park",
+        "total_courts": 4,
+        "street_address": "5562 Cross Dr.",
+        "venue_type": "public_park",
+        "light": false,
+        "court_availability": "Four pickleball courts, unlit, in a park in the Huntington Harbour area that the City also lists for a handball court and a horseshoe pit. The count and the address are one line on the City's Park Amenities page - \"Marina Park - 5562 Cross Dr. - 4 Courts\" - under the \"NO LIGHTING\" heading that covers all four of the city's pickleball parks. The City's tennis page gives the same address for Marina Park's lighted tennis courts and a second address, 15871 Graham Street, for the Marina Park community centre where a player registers; the courts are at Cross Drive. The tennis lights run to 10 p.m.; the pickleball courts, by the City's own statement, have none. No hours, price or surface are stated.",
+        "county": "Orange",
+        "postal_code": "92649"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Marina Park\" on the City's Park Amenities page: \"Marina Park - 5562 Cross Dr. - 4 Courts\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Amenities page, under the heading \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\": \"Marina Park - 5562 Cross Dr. - 4 Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Marina Park - 5562 Cross Dr. - 4 Courts\" on the City's Park Amenities page."
+        },
+        "venue_type": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Huntington Beach Community & Library Services among its city parks."
+        },
+        "light": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's own heading: \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\". The heading covers all four parks listed beneath it, and this is one of them."
+        },
+        "court_availability": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/tennis_information.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Amenities page: \"Marina Park - 5562 Cross Dr. - 4 Courts\" under \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\". The tennis page: \"Marina Park (MCP)* 5562 Cross Drive Dusk to 10 p.m. nightly\" and \"Marina Park 15871 Graham Street\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Orange County, CA (FIPS 06059). Census address geocoder matched \"5562 CROSS DR, HUNTINGTON BEACH, CA, 92649\". The resolver also places it in the incorporated place \"Huntington Beach city\", which is what allows it to be published under Huntington Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"5562 CROSS DR, HUNTINGTON BEACH, CA, 92649\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    },
+    "worthy-park": {
+      "minted": false,
+      "identity": {
+        "name": "Worthy Park",
+        "city": "Huntington Beach",
+        "state": "CA",
+        "county": "Orange",
+        "postal_code": "92648",
+        "latitude": 33.674056631786,
+        "longitude": -118.003057616568,
+        "imported_slug": "worthy-park",
+        "canonical_slug": "worthy-park"
+      },
+      "match": {
+        "source_page": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "quote": "Worthy Park - 1831 17th St. - 4 Courts",
+        "basis": "Matched to the imported worthy-park row in Huntington Beach, CA, which carried the City's other address for the park (1801 Main St); the City's count-bearing address replaces it. A second imported row, worthy-community-park, describes the same courts at 1831 17th Street and is left pending rather than published as a second venue."
+      },
+      "patch": {
+        "name": "Worthy Park",
+        "total_courts": 4,
+        "street_address": "1831 17th St.",
+        "venue_type": "public_park",
+        "light": false,
+        "court_availability": "Four pickleball courts, unlit, in a park near downtown Huntington Beach. The City's Park Amenities page gives the count and the address in one line - \"Worthy Park - 1831 17th St. - 4 Courts\" - under the heading \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING)\". The City publishes a second address for the park, 1801 Main Street, on its Tennis & Pickleball Information page, where Worthy Park appears among the community centres that take registrations; the park fronts both streets, and the 17th Street address is the one the City pairs with the court count, so it is the one published here. No hours, price or surface are stated for the pickleball courts.",
+        "county": "Orange",
+        "postal_code": "92648"
+      },
+      "provenance": {
+        "name": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Named \"Worthy Park\" on the City's Park Amenities page: \"Worthy Park - 1831 17th St. - 4 Courts\"."
+        },
+        "total_courts": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Quoted from the City's Park Amenities page, under the heading \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\": \"Worthy Park - 1831 17th St. - 4 Courts\"."
+        },
+        "street_address": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "\"Worthy Park - 1831 17th St. - 4 Courts\" on the City's Park Amenities page. The City's Tennis & Pickleball Information page gives \"1801 Main Street\" for the same park, among the community centres that take registrations; the amenities page is the record that pairs the count with an address, and that is the one published."
+        },
+        "venue_type": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Published by the City of Huntington Beach Community & Library Services among its city parks."
+        },
+        "light": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "A stated negative in the City's own heading: \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\". The heading covers all four parks listed beneath it, and this is one of them."
+        },
+        "court_availability": {
+          "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "From the City's Park Amenities page: \"Worthy Park - 1831 17th St. - 4 Courts\" under \"CITY PARKS WITH A PICKLEBALL COURT (NO LIGHTING):\". The tennis page: \"Worthy Park 1801 Main Street\"."
+        },
+        "county": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Orange County, CA (FIPS 06059). Census address geocoder matched \"1831 17TH ST, HUNTINGTON BEACH, CA, 92648\". The resolver also places it in the incorporated place \"Huntington Beach city\", which is what allows it to be published under Huntington Beach."
+        },
+        "postal_code": {
+          "source_url": "https://geocoding.geo.census.gov/geocoder/geographies",
+          "date_checked": "2026-09-07",
+          "verified_by": "municipal_source",
+          "source_tier": 1,
+          "evidence": "Census address geocoder matched \"1831 17TH ST, HUNTINGTON BEACH, CA, 92648\"."
+        }
+      },
+      "record": {
+        "source_url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/parks___facilities/park_amenities.php",
+        "date_checked": "2026-09-07",
+        "verified_by": "municipal_source"
+      },
+      "needs_recheck": false,
+      "recheck": null
+    }
+  }
+}

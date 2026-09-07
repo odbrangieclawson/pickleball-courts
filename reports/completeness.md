@@ -1,16 +1,16 @@
 # Completeness dashboard
 
-100 metros in the verification queue, 2,690 venues.
+100 metros in the verification queue, 2,711 venues.
 
 ## The hard rule
 
 > A metro is not done until it has at least 3 venues passing all four import
 > gates. A partially verified metro does not publish partially — it waits.
 
-**Metros ready to publish: 10 of 100.**
+**Metros ready to publish: 11 of 100.**
 
-**Published on the site: 15 cities.** 10 of them are in
-this queue and 5 are not — Apex, NC, Bellevue, WA, Cary, NC, Kirkland, WA, Saint Paul, MN.
+**Published on the site: 20 cities.** 12 of them are in
+this queue and 8 are not — Apex, NC, Bellevue, WA, Cape Coral, FL, Cary, NC, Huntington Beach, CA, Irvine, CA, Kirkland, WA, Saint Paul, MN.
 
 The queue is ordered by how many pages a metro would unlock, and cities are
 published by finding an operator that states its court counts. Those are
@@ -51,7 +51,7 @@ asks for, not the whole city.
 | 25 | Spokane, WA | 30 | 0 | 0 | 30 | 2 | 0 | blocked | 34 |
 | 26 | Mesa, AZ | 34 | 3 | 0 | 31 | 3 | 0 | **ready** | 33 |
 | 27 | Indianapolis, IN | 46 | 0 | 0 | 46 | 19 | 0 | blocked | 32 |
-| 28 | San Antonio, TX | 29 | 0 | 0 | 29 | 5 | 0 | blocked | 30 |
+| 28 | San Antonio, TX | 37 | 0 | 0 | 29 | 5 | 8 | blocked | 30 |
 | 29 | St. Louis, MO | 30 | 0 | 0 | 30 | 8 | 0 | blocked | 28 |
 | 30 | Alexandria, VA | 31 | 0 | 1 | 31 | 8 | 0 | blocked | 28 |
 | 31 | Marietta, GA | 24 | 0 | 0 | 24 | 0 | 0 | blocked | 28 |
@@ -73,7 +73,7 @@ asks for, not the whole city.
 | 47 | Albuquerque, NM | 21 | 0 | 1 | 21 | 2 | 0 | blocked | 24 |
 | 48 | Palm Desert, CA | 20 | 0 | 2 | 20 | 1 | 0 | blocked | 24 |
 | 49 | Tulsa, OK | 20 | 0 | 0 | 20 | 1 | 0 | blocked | 24 |
-| 50 | Tampa, FL | 17 | 0 | 0 | 17 | 0 | 0 | blocked | 23 |
+| 50 | Tampa, FL | 30 | 15 | 1 | 14 | 0 | 0 | **ready** | 23 |
 | 51 | Fort Wayne, IN | 26 | 0 | 3 | 26 | 6 | 0 | blocked | 23 |
 | 52 | Anchorage, AK | 23 | 0 | 4 | 23 | 1 | 0 | blocked | 23 |
 | 53 | Ocala, FL | 19 | 0 | 0 | 19 | 1 | 0 | blocked | 23 |
@@ -129,20 +129,21 @@ asks for, not the whole city.
 
 | blocker | venue-occurrences |
 | --- | ---: |
-| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,582 |
-| I2: no date_checked | 2,582 |
-| I2: no verified_by | 2,582 |
-| I3: county not derived above confidence threshold | 280 |
+| I2: source_url points to CourtSource, a competitor directory, which is not a source | 2,579 |
+| I2: no date_checked | 2,579 |
+| I2: no verified_by | 2,579 |
+| I3: county not derived above confidence threshold | 275 |
 | I1: slug has a numeric suffix (Rule 10) | 32 |
 | I3: no postal_code | 31 |
+| I4: play_format is not an array | 8 |
 | I3: missing lat/lng | 7 |
 | I3: total_courts 4 != indoor 4 + outdoor 4 | 1 |
+| I1: slug is not unique | 1 |
 | I3: total_courts 3 != indoor 2 + outdoor 0 | 1 |
 | I3: total_courts 6 != indoor 0 + outdoor 2 | 1 |
 | I3: total_courts 6 != indoor 0 + outdoor 4 | 1 |
 | I3: total_courts 19 != indoor 0 + outdoor 0 | 1 |
 | I3: total_courts 4 != indoor 15 + outdoor 16 | 1 |
-| I3: total_courts 2 != indoor 1 + outdoor 0 | 1 |
 
 ## Not checked here
 
