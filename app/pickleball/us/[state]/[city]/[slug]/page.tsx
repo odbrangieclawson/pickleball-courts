@@ -81,12 +81,26 @@ export default async function LeafPage({params}: Params) {
       <h1 data-prose>{v.name}</h1>
       <p className="lede" data-prose>
         Pickleball at {v.name} in {v.city}, {v.state}. Every fact below shows
-        where it came from and when we checked it — {v.knownFactsN} of{' '}
+        where it came from and when we checked it. {v.knownFactsN} of{' '}
         {v.totalFactsN} fields are confirmed, and the rest say so rather than
         guessing.
       </p>
 
       <p><span className="trust">{v.trust}</span></p>
+
+      {/*
+        Where it is, and one click to get there. An anchor, not a scripted
+        map: Rule 1 wants the page to work with JavaScript off, and on a
+        phone this hands off to the reader's own map app. The address beside
+        it is the operator's own wording, so what the reader reads and what
+        the button routes to are the same place.
+      */}
+      {v.directions && (
+        <p className="venue-actions" data-not-prose>
+          {v.streetAddress && <span className="venue-where">{v.streetAddress}, {v.city}, {v.state}</span>}
+          <a className="button is-quiet" href={v.directions.href}>Get directions</a>
+        </p>
+      )}
 
       <figure className="venue-shot">
         <span className="shot is-hero">
@@ -200,9 +214,12 @@ export default async function LeafPage({params}: Params) {
                 <td>{x.label}</td>
                 <td>{x.value}</td>
                 <td>{x.source
-                  ? <a href={x.source}>Seattle Parks open data</a>
+                  ? <a href={x.source} rel="nofollow">{x.sourceLabel}</a>
                   : <span className="unverified">No source yet</span>}</td>
-                <td>{x.checked ?? '—'}</td>
+                {/* Empty rather than a dash: rule 6 says a null is written
+                    out, never printed as a glyph, and the Source cell beside
+                    this one already says there is no source yet. */}
+                <td>{x.checked ?? ''}</td>
               </tr>
             ))}
           </tbody>

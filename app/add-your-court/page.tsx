@@ -57,8 +57,8 @@ export default function AddYourCourt() {
         operator&rsquo;s published page, is usually enough to confirm you.
       </p>
       <p>
-        Once a claim is confirmed, the listing says so — &ldquo;confirmed by
-        the venue&rdquo; with the date — and you have a direct line to us for
+        Once a claim is confirmed, the listing says so, &ldquo;confirmed by
+        the venue&rdquo; with the date, and you have a direct line to us for
         every future change: hours, fees, court counts, a real photograph in
         place of the stand-in.
       </p>

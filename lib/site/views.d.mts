@@ -172,6 +172,7 @@ export type VenueFact = {
   verified: boolean
   source: string | null
   checked: string | null
+  sourceLabel: string | null
 }
 
 export type VenueView = {
@@ -188,6 +189,9 @@ export type VenueView = {
   photo: Photo
   trust: string
   trustRank: number
+  /** Get directions target, or null when the venue has neither coordinates nor an address. */
+  directions: {href: string; precise: boolean} | null
+  streetAddress: string | null
   claimable: boolean
   /** mailto: links; see lib/site/contact.mjs. */
   claimHref: string

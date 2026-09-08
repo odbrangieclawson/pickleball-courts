@@ -144,8 +144,8 @@ export default async function CityOrCountyPage({params}: Params) {
           ? <>All {v.venuePagesN} have a page of their own, with the source
             behind every fact and the date it was checked. </>
           : <>{v.venuePagesN} of these have a page of their own. The rest are
-            verified to exactly the same standard — every fact above and
-            below comes from the same records — but nobody has written
+            verified to exactly the same standard, and every fact above and
+            below comes from the same records, but nobody has written
             them up yet, and a venue page here needs a couple of paragraphs
             about the actual place before it earns a URL. Their facts are
             all on this page. </>}
@@ -214,7 +214,7 @@ export default async function CityOrCountyPage({params}: Params) {
         <h3>What we have not verified</h3>
         <p>
           Anything an operator does not publish shows as &ldquo;not verified
-          yet&rdquo; rather than being guessed at — most often surface, fees
+          yet&rdquo; rather than being guessed at, most often surface, fees
           and opening hours. Many of these courts are very probably free to
           play, but a belief is not a source, so we do not print it as one.
         </p>

@@ -93,8 +93,8 @@ export default function CountyPage({v}: {v: CountyView}) {
           ? <>All {v.venuePagesN} have a page of their own, with the source
             behind every fact and the date it was checked. </>
           : <>{v.venuePagesN} of these have a page of their own. The rest are
-            verified to exactly the same standard — every fact above and
-            below comes from the same records — but nobody has written them
+            verified to exactly the same standard, and every fact above and
+            below comes from the same records, but nobody has written them
             up yet, and a venue page here needs a couple of paragraphs about
             the actual place before it earns a URL. Their facts are all on
             this page. </>}

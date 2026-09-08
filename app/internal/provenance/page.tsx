@@ -33,7 +33,7 @@ export default function ProvenanceAudit() {
       <p className="lede">
         Every published fact on the site with the source it came from, the
         date it was checked and how stale that makes it. Sorted oldest first,
-        so the top of this table is the work queue. Internal — noindex, not in
+        so the top of this table is the work queue. Internal: noindex, not in
         the sitemap, not linked from anywhere public.
       </p>
 
@@ -49,7 +49,7 @@ export default function ProvenanceAudit() {
         <h3>The staleness bands are provisional</h3>
         <p>
           <strong>O3 is still open.</strong> Nobody has decided how long a
-          checked date stays good, and it plainly differs by field — an
+          checked date stays good, and it plainly differs by field: an
           address changes rarely, fees and hours change often. The bands used
           here are a working default: {v.cadenceSummary}. Import Gate I2
           currently checks only that a date exists and is not in the future,
@@ -99,7 +99,7 @@ export default function ProvenanceAudit() {
                 <td>{r.venue}</td>
                 <td>{r.field}</td>
                 <td>{r.value ?? <span className="unverified">null</span>}</td>
-                <td>{r.date_checked ?? '—'}</td>
+                <td>{r.date_checked ?? ''}</td>
                 <td className="num">{r.age}</td>
                 <td className="num">{r.cadence}</td>
                 <td>{r.staleness}</td>

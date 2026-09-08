@@ -29,7 +29,7 @@ export default function FilterPage({f}: {f: FilterView}) {
       <p className="lede" data-prose>
         {f.n} verified {f.venueWord} in {f.city}, {f.state} {f.predicate}.
         Every one has been checked against a named source, and the count
-        above is drawn only from those — never from the imported records we
+        above is drawn only from those, never from the imported records we
         have not confirmed.
       </p>
 

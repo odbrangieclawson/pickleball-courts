@@ -1361,6 +1361,38 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
 }
 
 /*
+  The venue page's address and Get directions button, directly under the
+  provenance line. Quiet rather than loud: the claim panel below it is the
+  page's one solid button, and two competing green buttons would make the
+  reader choose between them.
+*/
+.venue-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin: 0 0 22px;
+}
+.venue-where {
+  font-family: var(--sans);
+  font-size: 14.5px;
+  color: var(--ink-2);
+}
+.button.is-quiet {
+  min-height: 38px;
+  padding: 7px 16px;
+  font-size: 13.5px;
+  color: var(--accent-ink);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
+}
+.button.is-quiet:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/*
   The 404 page's way back in: every published state, with its city count.
   A plain grid rather than the home page's state cards, because a lost
   visitor wants a list to scan, not a gallery to admire.

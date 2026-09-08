@@ -47,12 +47,12 @@ export default function HowWeVerify() {
         question. A tier-1 answer makes the rest unnecessary.
       </p>
       <ol>
-        <li><strong>Municipal parks department</strong> — the operator of most public courts, publishing about its own facilities.</li>
-        <li><strong>City or state open data</strong> — same publisher, machine-readable, so it parses cleanly and re-checks cheaply.</li>
-        <li><strong>YMCA and recreation centres</strong> — operator-published, reliable on hours and fees.</li>
-        <li><strong>Clubs and leagues</strong> — local players know the courts; good on lights and nets, weaker on official counts.</li>
-        <li><strong>The venue&rsquo;s own site</strong> — authoritative on fees, but marketing copy inflates court counts.</li>
-        <li><strong>Anything else</strong> — recorded as weak, and flagged for a better source.</li>
+        <li><strong>Municipal parks department</strong>: the operator of most public courts, publishing about its own facilities.</li>
+        <li><strong>City or state open data</strong>: same publisher, machine-readable, so it parses cleanly and re-checks cheaply.</li>
+        <li><strong>YMCA and recreation centres</strong>: operator-published, reliable on hours and fees.</li>
+        <li><strong>Clubs and leagues</strong>: local players know the courts; good on lights and nets, weaker on official counts.</li>
+        <li><strong>The venue&rsquo;s own site</strong>: authoritative on fees, but marketing copy inflates court counts.</li>
+        <li><strong>Anything else</strong>: recorded as weak, and flagged for a better source.</li>
       </ol>
 
       <h2>What we refuse to do</h2>
@@ -70,7 +70,7 @@ export default function HowWeVerify() {
           Every venue on it is real and every fact carries the name of the
           organisation that published it and the date we read it. The
           operators are city and county parks departments, and they differ by
-          city — each page names its own.
+          city, and each page names its own.
         </p>
         <p>
           What you will notice most is how much is blank. Surface, fees and
@@ -85,12 +85,12 @@ export default function HowWeVerify() {
       <h2>The six gates</h2>
       <p>Every page passes all six or it does not ship.</p>
       <ol>
-        <li><strong>Data threshold</strong> — three or more verified venues.</li>
-        <li><strong>JavaScript-off render</strong> — all content, links and schema in the raw HTML.</li>
-        <li><strong>Schema completeness</strong> — breadcrumbs everywhere, ItemList on city pages, and no fabricated ratings.</li>
-        <li><strong>Word band and specificity</strong> — inside the band, with at least three genuinely specific sentences.</li>
-        <li><strong>Count consistency</strong> — every number on the page comes from one shared query, so the title cannot disagree with the table.</li>
-        <li><strong>Source and freshness</strong> — a source URL and a checked date on every fact.</li>
+        <li><strong>Data threshold</strong>: three or more verified venues.</li>
+        <li><strong>JavaScript-off render</strong>: all content, links and schema in the raw HTML.</li>
+        <li><strong>Schema completeness</strong>: breadcrumbs everywhere, ItemList on city pages, and no fabricated ratings.</li>
+        <li><strong>Word band and specificity</strong>: inside the band, with at least three genuinely specific sentences.</li>
+        <li><strong>Count consistency</strong>: every number on the page comes from one shared query, so the title cannot disagree with the table.</li>
+        <li><strong>Source and freshness</strong>: a source URL and a checked date on every fact.</li>
       </ol>
     </div>
   )
