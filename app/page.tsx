@@ -197,7 +197,25 @@ export default function Home() {
         <h2>Every verified city</h2>
         <ul className="cards">
           {v.cities.map(c => (
-            <li className="card" key={c.href}>
+            <li className={c.photo ? 'card has-shot' : 'card'} key={c.href}>
+              {/*
+                A photograph of the city itself, licensed from Wikimedia
+                Commons. No "no photo yet" marker, because unlike the venue
+                cards this picture really is of the place named on it. The
+                credit sits on the city page rather than on every card.
+              */}
+              {c.photo && (
+                <span className="shot">
+                  <img
+                    src={c.photo.src}
+                    alt={c.photo.alt}
+                    width={c.photo.width}
+                    height={c.photo.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              )}
               <h3><a href={c.href}>{c.title}</a></h3>
               <p className="meta">{c.meta}</p>
               <p>{c.blurb}</p>

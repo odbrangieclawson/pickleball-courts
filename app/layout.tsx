@@ -187,7 +187,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
               date each fact was checked.{' '}
               <a href="/how-to-play-pickleball/">How to play pickleball</a> ·{' '}
               <a href="/about/">About this site</a> ·{' '}
-              <a href="/how-we-verify/">How we verify</a>.
+              <a href="/how-we-verify/">How we verify</a> · <a href="/image-credits/">Image credits</a>.
             </p>
             <p>
               Run a court we have wrong, or one we do not have?{' '}

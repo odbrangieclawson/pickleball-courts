@@ -1,3 +1,13 @@
+export type SitePhoto = {
+  src: string
+  width: number
+  height: number
+  alt: string
+  isPlaceholder: boolean
+  caption?: string
+  credit: {author: string | null; licence: string | null; licenceUrl: string | null; filePage: string | null} | null
+}
+
 /*
   Types for views.mjs.
 
@@ -26,6 +36,8 @@ export type CardLink = {
   meta: string
   blurb?: string
   trust?: string
+  /** Present on the home page's city cards. Null where we have no photograph. */
+  photo?: SitePhoto | null
 }
 
 export type HomeView = {
@@ -153,6 +165,7 @@ export type CityView = {
   filters: CityFilterLink[]
   venues: CityVenueRow[]
   jsonLd: string
+  photo: SitePhoto | null
 }
 
 export type FactRow = {

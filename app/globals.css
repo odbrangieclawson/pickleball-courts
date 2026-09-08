@@ -1020,6 +1020,25 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 /* 16:9 rather than 21:9: wide enough to read as a header without cutting
    the net out of the top of the frame. */
 .shot.is-hero { aspect-ratio: 16 / 9; margin: 4px 0 10px; border-radius: var(--radius); }
+/*
+  The city hero, and its credit. A city photograph is not a placeholder, so
+  it does not get the muting the venue placeholders carry: it is a real
+  picture of the place and should look like one.
+*/
+figure.city-shot { margin: 22px 0 28px; }
+figure.city-shot .shot img { filter: none; }
+figure.city-shot figcaption {
+  font-size: 12px;
+  color: var(--ink-3);
+  padding-top: 8px;
+  max-width: 62ch;
+}
+figure.city-shot figcaption a { color: var(--ink-3); text-decoration-color: var(--rule); }
+figure.city-shot figcaption a:hover { color: var(--accent-ink); }
+/* City cards on the home page carry a real photograph too, so they lose the
+   placeholder muting as well. */
+.card.has-shot .shot img { filter: saturate(.88) contrast(.98); }
+
 figure.venue-shot { margin: 24px 0 30px; }
 figure.venue-shot figcaption {
   font-size: 12.5px;
