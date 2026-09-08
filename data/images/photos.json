@@ -66,19 +66,6 @@
       "overridden": false,
       "label": "Cary, NC"
     },
-    "KY/louisville": {
-      "src": "/city/ky-louisville.jpg",
-      "width": 1400,
-      "height": 769,
-      "alt": "Louisville, KY.",
-      "author": "Charles Delano of LouisvilleUSACE - Louisville District of the US Army Corp of Engineers",
-      "licence": "CC BY 2.0",
-      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-      "filePage": "https://commons.wikimedia.org/wiki/File:Louisville_Skyline_2021_(3).jpg",
-      "file": "Louisville_Skyline_2021_(3).jpg",
-      "overridden": false,
-      "label": "Louisville, KY"
-    },
     "FL/tampa": {
       "src": "/city/fl-tampa.jpg",
       "width": 1400,
@@ -455,6 +442,20 @@
       "filePage": "https://commons.wikimedia.org/wiki/File:Rockville_MD_Town_Center_2021-11-27_11-12-19_1.jpg",
       "file": "Rockville MD Town Center 2021-11-27 11-12-19 1.jpg",
       "overridden": true
+    },
+    "KY/louisville": {
+      "src": "/city/ky-louisville.jpg",
+      "width": 1400,
+      "height": 769,
+      "label": "Louisville, KY",
+      "alt": "Louisville, KY.",
+      "author": "Charles Delano, U.S. Army Corps of Engineers Louisville District",
+      "authorRaw": "Charles Delano of LouisvilleUSACE - Louisville District of the US Army Corp of Engineers",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Louisville_Skyline_2021_(3).jpg",
+      "file": "Louisville_Skyline_2021_(3).jpg",
+      "overridden": false
     }
   },
   "courts": [

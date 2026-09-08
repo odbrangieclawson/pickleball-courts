@@ -64,6 +64,24 @@ async function metaFor(fileName) {
   }
 }
 
+/*
+  Displayed author, with the Commons string kept for the record.
+
+  Commons treats a space and an underscore in a file name as the same
+  character, and this project's own records use both: the survey stores the
+  underscored form, the overrides above are written with spaces. Matching on
+  the raw string silently missed, so the key is normalised first.
+*/
+const fileKey = f => String(f ?? '').replace(/_/g, ' ')
+const authorFor = meta => {
+  const override = Object.entries(AUTHOR_OVERRIDES)
+    .find(([k]) => fileKey(k) === fileKey(meta.file))?.[1]
+  return {
+    author: override ?? meta.author,
+    authorRaw: override ? meta.author : undefined,
+  }
+}
+
 const OK = /^(cc0|cc-by-\d|cc-by-sa-\d|pd|public domain)/i
 
 /* The binary host rate limits too, and harder than the API does. */
@@ -114,6 +132,29 @@ const CITY_OVERRIDES = {
     instead.
   */
   'MD/rockville': 'Rockville MD Town Center 2021-11-27 11-12-19 1.jpg',
+}
+
+/*
+  ATTRIBUTION TIDIED, NEVER INVENTED.
+
+  Commons stores the author as free text and some of it is malformed. This
+  file's Artist field reads, verbatim:
+
+    "Charles Delano of LouisvilleUSACE - Louisville District of the US Army
+     Corp of Engineers"
+
+  which is a photographer's name run into the Flickr account name
+  ("louisvilleusace") with no separator, plus a misspelling of Corps. It is
+  the right people, written badly, and rendering it as-is put an unreadable
+  credit and a stray dash on the Louisville page.
+
+  So the displayed credit is corrected here and the untouched Commons string
+  is kept beside it as authorRaw, which is what makes this a presentation
+  fix rather than a rewrite of somebody's attribution. Only add an entry
+  where the correct reading is not in doubt.
+*/
+const AUTHOR_OVERRIDES = {
+  'Louisville Skyline 2021 (3).jpg': 'Charles Delano, U.S. Army Corps of Engineers Louisville District',
 }
 
 /*
@@ -227,7 +268,7 @@ for (const c of data.publishedCities()) {
          printing the internal "ST/slug" key at a reader. */
       label: `${c.city}, ${c.state}`,
       alt: `${c.city}, ${c.state}.`,
-      author: meta.author, licence: meta.licence, licenceUrl: meta.licenceUrl,
+      ...authorFor(meta), licence: meta.licence, licenceUrl: meta.licenceUrl,
       filePage: meta.filePage, file: meta.file,
       overridden: Boolean(CITY_OVERRIDES[key]),
     }
@@ -254,7 +295,7 @@ for (const f of COURT_FILES) {
     const dims = await grab(meta, join(REPO_ROOT, 'public', rel.slice(1)), 1400)
     out.courts.push({
       src: rel, ...dims,
-      author: meta.author, licence: meta.licence, licenceUrl: meta.licenceUrl,
+      ...authorFor(meta), licence: meta.licence, licenceUrl: meta.licenceUrl,
       filePage: meta.filePage, file: meta.file,
     })
     console.log(`  court ${rel.padEnd(24)} ${meta.licence}`)
