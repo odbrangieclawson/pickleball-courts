@@ -4,35 +4,63 @@
   "kind": "filters",
   "date_checked": "2026-09-07",
   "written_by": "staff_research",
-  "note_on_method": "Two of the five filter slugs have a lawful data driver in Rockville, and both come from one table. Outdoor does, because the table sits under the City's heading \"Outdoor Pickleball Courts\" and every published row is outdoor by it. Lights does, because the table has a Lighted column and the City fills it with Yes or No on every row - the No is a stated negative, which is what makes the Yes trustworthy. Indoor has no driver: the three community centres the City names for gym pickleball carry no court count. Free has none, because the City prints no price and does not write the word. Public has none anywhere on this site, because access_type has no controlled vocabulary yet.",
+  "note_on_method": "Two of the five filter slugs have a lawful data driver in Rockville, and both come from one table. Outdoor does, because the table sits under the City's heading \"Outdoor Pickleball Courts\" and every published row is outdoor by it. Lights does, because the table has a Lighted column and the City fills it with Yes or No on every row. Indoor has no driver: the three community centres the City names for gym pickleball carry no court count. Free has none, because the City prints no price and does not write the word.",
   "filters": {
     "outdoor": {
       "slots": {
-        "why_this_filter": "Every verified pickleball court in Rockville is outdoor, so this page holds the same twelve venues and forty-six courts as the city page, and it is better to say that plainly than to dress it up as a filter. The outdoor answer comes from one word of the City's: its table of parks sits under the heading \"Outdoor Pickleball Courts\", and every row beneath it inherits the heading. That is a stated fact rather than an inference from the parks being parks, which is the difference between a filter page that means something and one that merely lists.\n\nWhat the page is good for is the shape of the forty-six. Twelve are \"Dedicated Pickleball Courts\" in the City's own words - four at Broome Athletic Park, four at Mattie J.T. Stepanek Park, two at Isreal Park and two at Welsh Park - courts built for the game, with no tennis lines and no tennis net. Thirty-one are \"pickleball lines on\" tennis courts, at nine venues, where a tennis player who arrives first takes a court that would otherwise hold two games and where the City says \"bring your own net\" on every line but one. Three, at Rockcrest Park, are counted without either phrase and left unsplit.\n\nAll forty-six run on the same clock, \"open from dawn to dusk and are available on a first-come, first-served basis\", with nineteen courts at four lit venues running on to 10 p.m. All forty-six sit under the same warning, that \"City recreation programs have priority over the use of the courts\". And none carries a price, because the City prints none - so no venue on this page is recorded as free, and there is no free page for Rockville.",
-        "what_qualifies": "A venue appears here when it has at least one outdoor court in the verified record, and in Rockville that means every row of the City's table that publishes, because the heading over the table is \"Outdoor Pickleball Courts\" and the heading is the operator's word. Twelve qualify: six at Welsh Park, five at Dogwood Park, four each at Broome Athletic Park, Fallsgrove Park, Isreal Park, Mattie J.T. Stepanek Park, North Farm Park, Potomac Woods Park and Rockville Civic Center Park, three at Rockcrest Park, and two each at Calvin Park and Hillcrest Park.\n\nTwo rows of the same table do not qualify, and not because they are indoors. Twinbrook Park, \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\" and Lighted Yes, is at \"12920 Twinbrook Parkway\" on the City's page, a house number that neither the Census address file nor OpenStreetMap can find. Glenora Park, four courts on two tennis courts, has \"Dundee Road and Wootton Parkway\" in its Address block, an intersection with no house number. Both are outdoor by the heading and both are refused for their addresses; both are re-read every build.\n\nThere is no indoor page to set against this one. The City names Lincoln Park Community Center, Thomas Farm Community Center and Twinbrook Community Recreation Center for \"open gym schedules during drop-in hours featuring pickleball\" and counts courts at none of them, so no Rockville venue carries an indoor count and the word indoor appears nowhere in the verified record."
+        "why_this_filter": "Every verified pickleball court in Rockville is outdoor, so this page holds the same twelve venues and forty-six courts as the city page. The answer comes from one word of the City's own: its table of parks sits under the heading \"Outdoor Pickleball Courts\", and every row beneath it inherits that heading.\n\nWhat the page is good for is the shape of the forty-six. Twelve are \"Dedicated Pickleball Courts\": four at Broome Athletic Park, four at Mattie J.T. Stepanek Park, two at Isreal Park and two at Welsh Park, built for the game, with no tennis lines and no tennis net. Thirty-one are \"pickleball lines on\" tennis courts at nine venues, where a tennis player who arrives first takes a court that would otherwise hold two games, and where the City says \"bring your own net\" on every line but one. Three, at Rockcrest Park, are counted without either phrase.",
+        "what_qualifies": "A venue appears here when it has at least one outdoor court in the verified record, and in Rockville that means every row of the City's table that publishes. Twelve qualify: six at Welsh Park, five at Dogwood Park, four each at Broome Athletic Park, Fallsgrove Park, Isreal Park, Mattie J.T. Stepanek Park, North Farm Park, Potomac Woods Park and Rockville Civic Center Park, three at Rockcrest Park, and two each at Calvin Park and Hillcrest Park.\n\nTwo rows of the same table do not qualify, and not because they are indoors. Twinbrook Park is at \"12920 Twinbrook Parkway\" on the City's page, a house number that neither the Census address file nor OpenStreetMap can find. Glenora Park has \"Dundee Road and Wootton Parkway\" in its Address block, an intersection with no house number. Both are refused for their addresses.\n\nThere is no indoor page to set against this one. The City names three community centres for \"open gym schedules during drop-in hours featuring pickleball\" and counts courts at none of them."
       },
       "faqs": [
-        {"q": "Are all of Rockville's courts outdoor?", "a": "All forty-six verified ones, by the City's heading \"Outdoor Pickleball Courts\" over the table they come from. The three community centres named for gym pickleball carry no count and are not published."},
-        {"q": "Which of these are real pickleball courts?", "a": "Twelve are dedicated in the City's words: four at Broome, four at Stepanek, two at Isreal, two at Welsh. Thirty-one are lines on tennis courts. Rockcrest's three are not described either way."},
-        {"q": "What are the hours?", "a": "\"Courts are open from dawn to dusk\" at every venue, first-come, first-served. The four lit venues run to 10 p.m. City programmes take priority and can close courts for class use."},
-        {"q": "Do I need a net?", "a": "At nine venues the City says \"bring your own net\". Dogwood has one court played over the tennis net and four that need yours. Broome and Stepanek say nothing about nets."},
-        {"q": "Why are Twinbrook Park and Glenora Park missing?", "a": "Both are outdoor rows in the City's table. Twinbrook's address, 12920 Twinbrook Parkway, resolves in neither address file; Glenora's is an intersection with no house number."}
+        {
+          "q": "Are all of Rockville's courts outdoor?",
+          "a": "All forty-six verified ones, by the City's heading \"Outdoor Pickleball Courts\" over the table they come from. The three community centres named for gym pickleball carry no count and are not published."
+        },
+        {
+          "q": "Which of these are real pickleball courts?",
+          "a": "Twelve are dedicated in the City's words: four at Broome, four at Stepanek, two at Isreal, two at Welsh. Thirty-one are lines on tennis courts. Rockcrest's three are not described either way."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "\"Courts are open from dawn to dusk\" at every venue, first-come, first-served. The four lit venues run to 10 p.m. City programmes take priority and can close courts for class use."
+        }
       ],
-      "sources": ["F1", "F3"]
+      "sources": [
+        "F1",
+        "F3"
+      ]
     },
     "lights": {
       "slots": {
-        "why_this_filter": "Four Rockville venues have lights, and nineteen of the city's forty-six verified courts are at them: six at Welsh Park, five at Dogwood Park, four at Broome Athletic Park and four at Mattie J.T. Stepanek Park. The City states one consequence in the same breath: \"Lighted courts close at 10 p.m.\" A court that ends at dusk is a court for mornings and weekends; a court that runs to ten is one you can reach after a working day, and in Rockville the City has told you which is which.\n\nWhat makes this page trustworthy is the column it comes from. The City's table has a heading, Lighted, and fills it on every row with Yes or No. The eight published venues that are not on this page - Calvin, Fallsgrove, Hillcrest, Isreal, North Farm, Potomac Woods, Rockcrest and Rockville Civic Center Park - are marked No, which is a stated negative rather than a silence. A No is published here only when the operator writes one, and Rockville wrote eight. An operator that records the absence of lights when it is true is one whose Yes can be believed.\n\nThe lit nineteen split by kind. Ten are dedicated pickleball courts - four at Broome, four at Stepanek and two at Welsh - and the Broome and Stepanek rows say nothing about nets. Nine are lines on tennis courts, five at Dogwood and four at Welsh, where the City says \"bring your own net\" for eight of them and \"use tennis net\" for one, and where a tennis game takes the court first. Welsh has both kinds, two dedicated and four striped, six under lights. None of the four venues carries a price, because the City prints none anywhere.",
-        "what_qualifies": "A venue appears here when the Lighted cell of its row in the City's outdoor-courts table reads Yes. Four published rows do: Broome Athletic Park, \"4 Dedicated Pickleball Courts\"; Dogwood Park, \"1 Pickleball Court (pickleball lines on 1 tennis court; use tennis net)\" and \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\"; Mattie J.T. Stepanek Park, \"4 Dedicated Pickleball Courts\"; and Welsh Park, \"2 Dedicated Pickleball Courts\" and \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\". The park pages agree where they speak: Stepanek's says \"four lighted pickleball courts\", Dogwood's \"three lighted tennis courts\", Welsh's \"two lighted tennis courts\". Welsh's page does not repeat the word for its dedicated pair; the table's Yes is the row's answer and it is what publishes.\n\nA fifth Yes in the same table does not qualify, and not for want of lights. Twinbrook Park, four courts on two tennis courts, Lighted Yes, with a park page that says \"two lighted tennis courts with pickleball lines\", is at \"12920 Twinbrook Parkway\", a house number that neither the Census address file nor OpenStreetMap holds. A count-bearing address that does not resolve as the operator writes it is not published, and the run throws if it ever resolves, so the venue is re-read rather than forgotten.\n\nEight venues are excluded because the City marked them No. That is the whole of the exclusion: nothing in Rockville is left off this page for silence, because the column has no blanks."
+        "why_this_filter": "Four Rockville venues have lights, and nineteen of the city's forty-six verified courts are at them: six at Welsh Park, five at Dogwood Park, four at Broome Athletic Park and four at Mattie J.T. Stepanek Park. The City states the consequence in the same breath: \"Lighted courts close at 10 p.m.\" A court that ends at dusk is a court for mornings and weekends; a court that runs to ten is one you can reach after a working day.\n\nThe lit nineteen split by kind. Ten are dedicated pickleball courts, four at Broome, four at Stepanek and two at Welsh, and the Broome and Stepanek rows say nothing about nets. Nine are lines on tennis courts, five at Dogwood and four at Welsh, where the City says \"bring your own net\" for eight of them and \"use tennis net\" for one. Welsh has both kinds, two dedicated and four striped, six under lights.",
+        "what_qualifies": "A venue appears here when the Lighted cell of its row in the City's outdoor-courts table reads Yes. Four published rows do: Broome Athletic Park, Dogwood Park, Mattie J.T. Stepanek Park and Welsh Park. The park pages agree where they speak: Stepanek's says \"four lighted pickleball courts\", Dogwood's \"three lighted tennis courts\", Welsh's \"two lighted tennis courts\". Welsh's page does not repeat the word for its dedicated pair; the table's Yes is the row's answer.\n\nA fifth Yes does not qualify, and not for want of lights. Twinbrook Park, four courts on two tennis courts, with a park page that says \"two lighted tennis courts with pickleball lines\", is at \"12920 Twinbrook Parkway\", a house number that neither the Census address file nor OpenStreetMap holds.\n\nEight venues are excluded because the City marked them No. That is the whole of the exclusion: nothing is left off this page for silence, because the column has no blanks."
       },
       "faqs": [
-        {"q": "How late can I play under lights in Rockville?", "a": "Until 10 p.m. The City writes \"Lighted courts close at 10 p.m.\" beneath its table, for the four rows marked Yes."},
-        {"q": "Which courts are lit?", "a": "Nineteen: six at Welsh, five at Dogwood, four at Broome, four at Stepanek. Ten are dedicated pickleball courts and nine are lines on tennis courts."},
-        {"q": "Are the other venues unlit or unknown?", "a": "Unlit, and stated: the Lighted column reads No for the other eight published venues. Rockville leaves no lighting answer blank."},
-        {"q": "Why is Twinbrook Park not on this page?", "a": "Its row reads Lighted Yes, but its address, 12920 Twinbrook Parkway, is found by neither the Census address file nor OpenStreetMap, so the venue is not published."},
-        {"q": "Do the lit courts cost anything?", "a": "Not stated. The City prints no price for any court and does not write the word free."}
+        {
+          "q": "How late can I play under lights in Rockville?",
+          "a": "Until 10 p.m. The City writes \"Lighted courts close at 10 p.m.\" beneath its table, for the four rows marked Yes."
+        },
+        {
+          "q": "Which courts are lit?",
+          "a": "Nineteen: six at Welsh, five at Dogwood, four at Broome, four at Stepanek. Ten are dedicated pickleball courts and nine are lines on tennis courts."
+        },
+        {
+          "q": "Are the other venues unlit or unknown?",
+          "a": "Unlit, and stated: the Lighted column reads No for the other eight published venues. Rockville leaves no lighting answer blank."
+        },
+        {
+          "q": "Do the lit courts cost anything?",
+          "a": "Not stated. The City prints no price for any court and does not write the word free."
+        }
       ],
-      "sources": ["F1", "F2", "F3", "F4", "F5", "F6"]
+      "sources": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
     }
   },
   "sources": [
@@ -42,7 +70,10 @@
       "publisher": "City of Rockville Recreation and Parks",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["why_this_filter", "what_qualifies"],
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
       "evidence": "The City's Pickleball Courts and Programs page. Under the heading \"Outdoor Pickleball Courts\": \"Courts are open from dawn to dusk and are available on a first-come, first-served basis. City recreation programs have priority over the use of the courts, so some may be reserved for class use and closed to the public. Lighted courts close at 10 p.m.\" Then a table with columns Park, Number of Courts, Lighted, Court Schedule, fourteen rows: Broome Athletic Park \"4 Dedicated Pickleball Courts\" Yes; Calvin Park 2 on 1 tennis court No; Dogwood Park \"1 Pickleball Court (pickleball lines on 1 tennis court; use tennis net)\" and \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\" Yes; Fallsgrove Park 4 on 2 No; Glenora Park 4 on 2 No; Hillcrest Park 2 on 1 No; Isreal Park \"2 Dedicated Pickleball Courts\" and 2 on 1 No; Mattie J.T. Stepanek Park \"4 Dedicated Pickleball Courts\" Yes; North Farm Park 4 on 2 No; Potomac Woods Park 4 on 2 No; Rockcrest Park \"3 Pickleball Courts (bring your own net)\" No; Rockville Civic Center Park 4 on 2 No; Twinbrook Park \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\" Yes; Welsh Park \"2 Dedicated Pickleball Courts\" and \"4 Pickleball Courts (pickleball lines on 2 tennis courts; bring your own net)\" Yes. Every striped line but Dogwood's first says \"bring your own net\". Also: \"The Lincoln Park Community Center, Thomas Farm Community Center, and Twinbrook Community Recreation Center offer open gym schedules during drop-in hours featuring pickleball and many other sports.\" Snapshot: data/sources/rockville/pickleball-courts-and-programs.html",
       "not_stated": "Any price or the word free, any surface, the word indoor, a court count at any community centre, and any address."
     },
@@ -52,7 +83,9 @@
       "publisher": "City of Rockville Recreation and Parks",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "Twinbrook Park's page: \"contains the Twinbrook Community Recreation Center and Annex within its property\", \"two lighted tennis courts with pickleball lines\", \"Two accessible parking spaces.\" Address block \"12920 Twinbrook Parkway / Rockville, MD 20851\". Snapshot: data/sources/rockville/twinbrook-park.html",
       "not_stated": "Anything that would make the house number resolve."
     },
@@ -62,7 +95,9 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "The twelve published addresses were matched at house-number level in the Census address file, as the City writes them, and placed in Montgomery County, MD (FIPS 24031) inside the incorporated place Rockville city. \"12920 Twinbrook Parkway\", the address the City publishes for Twinbrook Park and its four lit courts, matched nothing in the Census address file or OpenStreetMap. \"Dundee Road and Wootton Parkway\", Glenora Park's Address block, has no house number to match. Snapshot: data/sources/rockville-county-census.json",
       "not_stated": "Anything about lighting or about the courts themselves."
     },
@@ -72,7 +107,9 @@
       "publisher": "City of Rockville Recreation and Parks",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "Welsh Park's page: \"two lighted tennis courts with pickleball lines, as well as two dedicated pickleball courts\", in a \"33.3-acre sports park and forest preserve\" next to the Rockville Swim and Fitness Center. Address \"344 Martins Lane / Rockville, MD 20850\". Snapshot: data/sources/rockville/welsh-park.html",
       "not_stated": "Whether the two dedicated courts are lit; the table's Yes covers the row."
     },
@@ -82,7 +119,9 @@
       "publisher": "City of Rockville Recreation and Parks",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "Mattie J.T. Stepanek Park's page: \"three lighted tennis courts\" and \"four lighted pickleball courts\", with \"Four accessible pickleball courts.\" in the accessible-features table. Address block \"1800 Piccard Drive / Rockville, MD 20850\". Snapshot: data/sources/rockville/mattie-j-t-stepanek-park.html",
       "not_stated": "Nets, price, surface."
     },
@@ -92,7 +131,9 @@
       "publisher": "City of Rockville Recreation and Parks",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "Dogwood Park's page: \"three lighted tennis courts (complete with pickleball lines—just bring your own net!)\" in \"a 44.22-acre athletic park and forest preserve\". Address block \"800 Monroe St. / Rockville, MD 20852\". Snapshot: data/sources/rockville/dogwood-park.html",
       "not_stated": "The use-tennis-net line the table carries on one court; price; surface."
     }
