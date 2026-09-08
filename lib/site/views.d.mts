@@ -1,4 +1,6 @@
 export type SitePhoto = {
+  /** Names what a borrowed photograph actually shows, on county pages. */
+  depicts?: string | null
   src: string
   width: number
   height: number
@@ -90,6 +92,7 @@ export type StateCard = {
 export type StateView = {
   stateName: string
   state: string
+  photo: SitePhoto | null
   title: string
   meta: string
   venues: string
@@ -276,6 +279,7 @@ export type CountyView = {
   state: string
   stateName: string
   slug: string
+  photo: SitePhoto | null
   title: string
   meta: string
   h1: string

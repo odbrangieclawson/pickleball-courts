@@ -458,6 +458,298 @@
       "overridden": false
     }
   },
+  "counties": {
+    "WA/King": {
+      "useCity": "WA/seattle",
+      "depicts": "Seattle",
+      "label": "King County, Washington",
+      "why": "lead image is a courthouse"
+    },
+    "WI/Dane": {
+      "src": "/county/wi-dane.jpg",
+      "width": 1400,
+      "height": 1050,
+      "label": "Dane County, Wisconsin",
+      "alt": "Dane County, Wisconsin.",
+      "author": "Wikideas1",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Wisconsin_State_Capitol_Building_6.jpg",
+      "file": "Wisconsin_State_Capitol_Building_6.jpg"
+    },
+    "TX/Travis": {
+      "useCity": "TX/austin",
+      "depicts": "Austin",
+      "label": "Travis County, Texas",
+      "why": "lead image is a courthouse"
+    },
+    "KY/Jefferson": {
+      "useCity": "KY/louisville",
+      "depicts": "Louisville",
+      "label": "Jefferson County, Kentucky",
+      "why": "lead image is a courthouse"
+    },
+    "FL/Hillsborough": {
+      "src": "/county/fl-hillsborough.jpg",
+      "width": 1400,
+      "height": 804,
+      "label": "Hillsborough County, Florida",
+      "alt": "Hillsborough County, Florida.",
+      "author": "Clément Bardot",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Downtown_Tampa,_Florida.jpg",
+      "file": "Downtown_Tampa,_Florida.jpg"
+    },
+    "NM/Bernalillo": {
+      "useCity": "NM/albuquerque",
+      "depicts": "Albuquerque",
+      "label": "Bernalillo County, New Mexico",
+      "why": "lead image is a courthouse"
+    },
+    "MD/Montgomery": {
+      "src": "/county/md-montgomery.jpg",
+      "width": 1400,
+      "height": 1050,
+      "label": "Montgomery County, Maryland",
+      "alt": "Montgomery County, Maryland.",
+      "author": "Bohemian Baltimore",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Potomac_River_-_Great_Falls_25.jpg",
+      "file": "Potomac_River_-_Great_Falls_25.jpg"
+    },
+    "OR/Multnomah": {
+      "src": "/county/or-multnomah.jpg",
+      "width": 1400,
+      "height": 933,
+      "label": "Multnomah County, Oregon",
+      "alt": "Multnomah County, Oregon.",
+      "author": "Visitor7",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Portland,_Oregon_skyline_from_the_Ross_Island_Bridge.jpg",
+      "file": "Portland,_Oregon_skyline_from_the_Ross_Island_Bridge.jpg"
+    },
+    "NC/Wake": {
+      "src": "/county/nc-wake.jpg",
+      "width": 1400,
+      "height": 893,
+      "label": "Wake County, North Carolina",
+      "alt": "Wake County, North Carolina.",
+      "author": "James Willamor",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Southwest_Raleigh,_Raleigh,_NC,_USA_-_panoramio.jpg",
+      "file": "Southwest_Raleigh,_Raleigh,_NC,_USA_-_panoramio.jpg"
+    },
+    "KS/Sedgwick": {
+      "useCity": "KS/wichita",
+      "depicts": "Wichita",
+      "label": "Sedgwick County, Kansas",
+      "why": "lead image is a courthouse"
+    },
+    "CA/Los Angeles": {
+      "src": "/county/ca-los-angeles.jpg",
+      "width": 1400,
+      "height": 748,
+      "label": "Los Angeles County, California",
+      "alt": "Los Angeles County, California.",
+      "author": "mjhbower",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Good_morning_LA_(cropped).jpg",
+      "file": "Good_morning_LA_(cropped).jpg"
+    },
+    "TX/Bexar": {
+      "useCity": "TX/san-antonio",
+      "depicts": "San Antonio",
+      "label": "Bexar County, Texas",
+      "why": "lead image is a courthouse"
+    },
+    "NV/Clark": {
+      "src": "/county/nv-clark.jpg",
+      "width": 1400,
+      "height": 785,
+      "label": "Clark County, Nevada",
+      "alt": "Clark County, Nevada.",
+      "author": "Soundsfancy",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Red_Rock_in_June_2020.jpg",
+      "file": "Red_Rock_in_June_2020.jpg"
+    },
+    "FL/Leon": {
+      "useCity": "FL/tallahassee",
+      "depicts": "Tallahassee",
+      "label": "Leon County, Florida",
+      "why": "lead image is a courthouse"
+    },
+    "UT/Utah": {
+      "useCity": "UT/lehi",
+      "depicts": "Lehi",
+      "label": "Utah County, Utah",
+      "why": "lead image is a courthouse"
+    },
+    "MN/Ramsey": {
+      "src": "/county/mn-ramsey.jpg",
+      "width": 1400,
+      "height": 925,
+      "label": "Ramsey County, Minnesota",
+      "alt": "Ramsey County, Minnesota.",
+      "author": "Tony Webster from Minneapolis, Minnesota, United States",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Minnesota_State_Fair_Skyride_-_A_crowd_below_the_sky_ride_(44315264642).jpg",
+      "file": "Minnesota_State_Fair_Skyride_-_A_crowd_below_the_sky_ride_(44315264642).jpg"
+    },
+    "WA/Spokane": {
+      "useCity": "WA/spokane",
+      "depicts": "Spokane",
+      "label": "Spokane County, Washington",
+      "why": "lead image is a courthouse"
+    },
+    "CO/Boulder": {
+      "useCity": "CO/boulder",
+      "depicts": "Boulder",
+      "label": "Boulder County, Colorado",
+      "why": "lead image is a courthouse"
+    },
+    "FL/Lee": {
+      "src": "/county/fl-lee.jpg",
+      "width": 1400,
+      "height": 930,
+      "label": "Lee County, Florida",
+      "alt": "Lee County, Florida.",
+      "author": "Ecomerford",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Base_Operations_at_Page_Field.jpg",
+      "file": "Base_Operations_at_Page_Field.jpg"
+    },
+    "NC/Mecklenburg": {
+      "src": "/county/nc-mecklenburg.jpg",
+      "width": 1400,
+      "height": 808,
+      "label": "Mecklenburg County, North Carolina",
+      "alt": "Mecklenburg County, North Carolina.",
+      "author": "brandon walker",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Skyline_of_Charlotte_2016.jpg",
+      "file": "Skyline_of_Charlotte_2016.jpg"
+    },
+    "CA/Orange": {
+      "src": "/county/ca-orange.jpg",
+      "width": 1400,
+      "height": 933,
+      "label": "Orange County, California",
+      "alt": "Orange County, California.",
+      "author": "Don Ramey Logan",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:North_Laguna_Aerial_photo_by_Don_Ramey_Logan.jpg_alt.jpg",
+      "file": "North_Laguna_Aerial_photo_by_Don_Ramey_Logan.jpg_alt.jpg"
+    },
+    "SC/Charleston": {
+      "src": "/county/sc-charleston.jpg",
+      "width": 1400,
+      "height": 933,
+      "label": "Charleston County, South Carolina",
+      "alt": "Charleston County, South Carolina.",
+      "author": "Khanrak",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:BroadStreetCharleston.jpg",
+      "file": "BroadStreetCharleston.jpg"
+    },
+    "AZ/Maricopa": {
+      "useCity": "AZ/scottsdale",
+      "depicts": "Scottsdale",
+      "label": "Maricopa County, Arizona",
+      "why": "lead image is a courthouse"
+    },
+    "NE/Lancaster": {
+      "useCity": "NE/lincoln",
+      "depicts": "Lincoln",
+      "label": "Lancaster County, Nebraska",
+      "why": "lead image is a courthouse"
+    },
+    "WA/Clark": {
+      "useCity": "WA/vancouver",
+      "depicts": "Vancouver",
+      "label": "Clark County, Washington",
+      "why": "lead image is a courthouse"
+    },
+    "UT/Washington": {
+      "useCity": "UT/st-george",
+      "depicts": "St. George",
+      "label": "Washington County, Utah",
+      "why": "lead image is a courthouse"
+    }
+  },
+  "states": {
+    "WA": {
+      "src": "/state/wa.jpg",
+      "width": 1400,
+      "height": 1050,
+      "label": "Washington",
+      "alt": "Washington.",
+      "author": "Jeffhollett",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Mount_Rainier_National_Park_in_Washington_1.jpg",
+      "file": "Mount Rainier National Park in Washington 1.jpg"
+    },
+    "FL": {
+      "src": "/state/fl.jpg",
+      "width": 1400,
+      "height": 933,
+      "label": "Florida",
+      "alt": "Florida.",
+      "author": "AndrewKPepper",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Everglades_04.jpg",
+      "file": "Everglades 04.jpg"
+    },
+    "NC": {
+      "src": "/state/nc.jpg",
+      "width": 1400,
+      "height": 933,
+      "label": "North Carolina",
+      "alt": "North Carolina.",
+      "author": "Maria newengland",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Blue_Ridge_Parkway_by_maria_newengland.jpg",
+      "file": "Blue Ridge Parkway by maria newengland.jpg"
+    },
+    "CA": {
+      "src": "/state/ca.jpg",
+      "width": 1400,
+      "height": 694,
+      "label": "California",
+      "alt": "California.",
+      "author": "Diliff",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Bixby_Creek_Bridge,_California,_USA_-_May_2013.jpg",
+      "file": "Bixby Creek Bridge, California, USA - May 2013.jpg"
+    },
+    "UT": {
+      "src": "/state/ut.jpg",
+      "width": 1400,
+      "height": 1050,
+      "label": "Utah",
+      "alt": "Utah.",
+      "author": "Thomas Schoch",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:USA_Arches_NP_Delicate_Arch(1).jpg",
+      "file": "USA Arches NP Delicate Arch(1).jpg"
+    }
+  },
   "courts": [
     {
       "src": "/court/01.jpg",

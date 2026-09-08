@@ -236,6 +236,32 @@ async function findCourtFiles(want = 14) {
   return out
 }
 
+/*
+  STATES get a landscape rather than an article lead image. Every state
+  article leads with a montage, which is both ugly as a hero and produces
+  the run-on credit that had to be fixed by hand on two city pages. These
+  are the thing a person pictures when they hear the state's name.
+*/
+const STATE_PICKS = {
+  WA: 'Mount Rainier National Park in Washington 1.jpg',
+  FL: 'Everglades 04.jpg',
+  NC: 'Blue Ridge Parkway by maria newengland.jpg',
+  CA: 'Bixby Creek Bridge, California, USA - May 2013.jpg',
+  UT: 'USA Arches NP Delicate Arch(1).jpg',
+}
+
+/*
+  COUNTIES mostly lead with their courthouse. That is a real photograph of
+  the county and it is the wrong picture for a directory of pickleball
+  courts: thirteen of twenty-five were a civic building, which reads as a
+  legal notice rather than somewhere to play. Where the pick is a
+  courthouse the county borrows the photograph of its largest published
+  city instead, captioned with the city's name so it still says what it
+  shows. A photograph of Seattle is a photograph of somewhere in King
+  County; it is only dishonest if the caption pretends otherwise.
+*/
+const COUNTY_DENY = /courthouse|court.house|administration.building|justice.*center|county.city.building|municipal.building/i
+
 const CITY_DIR = join(REPO_ROOT, 'public', 'city')
 const COURT_DIR = join(REPO_ROOT, 'public', 'court')
 mkdirSync(CITY_DIR, {recursive: true})
@@ -247,7 +273,13 @@ const byCity = new Map(survey.map(r => [`${r.state}/${r.slug}`, r]))
 
 const prevPath = join(REPO_ROOT, 'data', 'images', 'photos.json')
 const prev = existsSync(prevPath) ? JSON.parse(readFileSync(prevPath, 'utf8')) : {cities: {}, courts: []}
-const out = {retrieved: new Date().toISOString().slice(0, 10), cities: {...prev.cities}, courts: [...prev.courts]}
+const out = {
+  retrieved: new Date().toISOString().slice(0, 10),
+  cities: {...prev.cities},
+  counties: {...(prev.counties ?? {})},
+  states: {...(prev.states ?? {})},
+  courts: [...prev.courts],
+}
 const failed = []
 
 /* ---- cities ---- */
@@ -277,6 +309,71 @@ for (const c of data.publishedCities()) {
     failed.push(`${key}: ${e.message}`)
   }
   await sleep(1500)
+}
+
+/* ---- states ---- */
+for (const [st, file] of Object.entries(STATE_PICKS)) {
+  if (out.states[st] && existsSync(join(REPO_ROOT, 'public', out.states[st].src.slice(1)))) { console.log(`  skip  state ${st}`); continue }
+  try {
+    const meta = await metaFor(file)
+    if (!OK.test(meta.licenceCode ?? '') && !OK.test(meta.licence ?? '')) throw new Error(`licence ${meta.licence}`)
+    const rel = `/state/${st.toLowerCase()}.jpg`
+    const dims = await grab(meta, join(REPO_ROOT, 'public', rel.slice(1)), 1400)
+    out.states[st] = {
+      src: rel, ...dims,
+      label: data.stateName(st),
+      alt: `${data.stateName(st)}.`,
+      ...authorFor(meta),
+      licence: meta.licence, licenceUrl: meta.licenceUrl,
+      filePage: meta.filePage, file: meta.file,
+    }
+    console.log(`  state ${st.padEnd(20)} ${meta.licence}`)
+  } catch (e) { failed.push(`state ${st}: ${e.message}`) }
+  await sleep(1500)
+}
+
+/* ---- counties ---- */
+const areaSurvey = existsSync(join(REPO_ROOT, 'reports', 'area-photos-survey.json'))
+  ? JSON.parse(readFileSync(join(REPO_ROOT, 'reports', 'area-photos-survey.json'), 'utf8'))
+  : []
+const byArea = new Map(areaSurvey.filter(r => r.kind === 'county').map(r => [r.key, r]))
+
+/* The published city with the most venues in each county, for the fallback. */
+const biggestCityIn = new Map()
+for (const c of data.publishedCities()) {
+  if (!c.county) continue
+  const k = `${c.state}/${c.county}`
+  const cur = biggestCityIn.get(k)
+  const n = data.city(c.state, c.slug).venues.length
+  if (!cur || n > cur.n) biggestCityIn.set(k, {n, key: `${c.state}/${c.slug}`, city: c.city})
+}
+
+for (const [key, row] of byArea) {
+  if (out.counties[key]) { console.log(`  skip  county ${key}`); continue }
+  const denied = row.file && COUNTY_DENY.test(row.file)
+  if (row.ok && !denied) {
+    try {
+      const meta = await metaFor(row.file)
+      const rel = `/county/${key.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.jpg`
+      const dims = await grab(meta, join(REPO_ROOT, 'public', rel.slice(1)), 1400)
+      out.counties[key] = {
+        src: rel, ...dims,
+        label: row.article,
+        alt: `${row.article}.`,
+        ...authorFor(meta),
+        licence: meta.licence, licenceUrl: meta.licenceUrl,
+        filePage: meta.filePage, file: meta.file,
+      }
+      console.log(`  county ${key.padEnd(28)} ${meta.licence}`)
+    } catch (e) { failed.push(`county ${key}: ${e.message}`) }
+    await sleep(1500)
+  } else {
+    const fb = biggestCityIn.get(key)
+    if (!fb) { failed.push(`county ${key}: ${denied ? 'courthouse pick refused' : row.why}, and no published city to borrow from`); continue }
+    out.counties[key] = {useCity: fb.key, depicts: fb.city, label: row.article,
+      why: denied ? 'lead image is a courthouse' : (row.why ?? 'no usable lead image')}
+    console.log(`  county ${key.padEnd(28)} borrows ${fb.city}`)
+  }
 }
 
 /* ---- courts ---- */
