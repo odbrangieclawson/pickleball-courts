@@ -110,6 +110,30 @@ export default async function LeafPage({params}: Params) {
         </figcaption>
       </figure>
 
+      {/*
+        The claim panel sits under the hero, where an operator lands, rather
+        than only in the prose at the foot of the page. It is a mailto:
+        anchor, not a form — Rule 1, and rule 11: a claim opens a
+        conversation, it does not write to the data. data-not-prose keeps it
+        out of the word band, since it says the same thing on every venue.
+        The longer explanation of what a claim does and does not do stays
+        below, in prose, where the page already had it.
+      */}
+      {v.claimable && (
+        <aside className="claim-panel" data-not-prose aria-labelledby="claim-heading">
+          <div>
+            <p className="claim-title" id="claim-heading">Do you run {v.name}?</p>
+            <p className="claim-sub">
+              Claim the listing to correct hours, fees, court counts and
+              photos. A claim identifies you; it does not mark anything
+              verified, and it buys no placement.{' '}
+              <a href="/add-your-court/">How claiming works</a>.
+            </p>
+          </div>
+          <a className="button" href={v.claimHref}>Claim this listing</a>
+        </aside>
+      )}
+
       <h2 data-prose>The facts</h2>
       <div className="facts">
         {v.facts.map(x => (
@@ -214,6 +238,9 @@ export default async function LeafPage({params}: Params) {
             bought position this would be an advertising product rather than a
             directory, and the whole promise would be gone.
           </p>
+          <p data-not-prose>
+            <a href={v.claimHref}>Claim this listing by email</a> · <a href="/add-your-court/">What a claim needs</a>
+          </p>
         </div>
       )}
 
@@ -224,6 +251,11 @@ export default async function LeafPage({params}: Params) {
           with a source and a date attached, the same as everything else, and
           a correction that changes a court count gets checked against the
           city record before it goes live.
+        </p>
+        {/* The link the paragraphs above have promised since the page was
+            written. Outside the word band: it is the same line on every venue. */}
+        <p data-not-prose>
+          <a href={v.correctionHref}>Send a correction for {v.name}</a>
         </p>
       </div>
 

@@ -1298,6 +1298,71 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
    NOTES — a sidebar remark, marked with a rule not a box
    ================================================================ */
 
+/*
+  THE CLAIM PANEL.
+
+  One quiet box under the venue hero: a question, one line of what a claim
+  is and is not, and a single solid button. The button is an anchor because
+  it navigates (to a mailto:) and Rule 1 wants it to work with scripts off.
+  Accent wash rather than a card shadow, so it reads as part of the page and
+  not as an advert dropped into it — the whole point of D7 is that claiming
+  is not a product placement.
+*/
+.claim-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin: 0 0 30px;
+  padding: 18px 22px;
+  background: var(--accent-wash);
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  border-radius: var(--radius);
+}
+.claim-panel > div { min-width: 0; }
+.claim-panel .claim-title {
+  margin: 0 0 4px;
+  font-family: var(--sans);
+  font-size: 15.5px;
+  font-weight: 640;
+  color: var(--accent-ink);
+}
+.claim-panel .claim-sub {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  max-width: 62ch;
+}
+.claim-panel .claim-sub a { color: var(--accent-ink); }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-height: 44px;
+  padding: 10px 20px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 620;
+  letter-spacing: .01em;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background .16s ease, transform .1s ease;
+}
+.button:hover { background: var(--accent-ink); color: #fff; }
+.button:active { transform: translateY(1px); }
+.button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+@media (max-width: 640px) {
+  .claim-panel { flex-direction: column; align-items: stretch; }
+  .claim-panel .button { width: 100%; }
+}
+
 .note {
   border-left: 2px solid var(--accent);
   padding: 4px 0 4px 22px;
@@ -1540,7 +1605,7 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
 
 /* Print: this is a reference document, so it should print like one. */
 @media print {
-  .demo-banner, .site-nav, .site-foot { display: none; }
+  .demo-banner, .site-nav, .site-foot, .claim-panel { display: none; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .table-scroll { overflow: visible; }
   a { text-decoration: none; color: #000; }

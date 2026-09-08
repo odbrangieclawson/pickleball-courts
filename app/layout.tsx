@@ -192,6 +192,10 @@ export default function RootLayout({children}: {children: ReactNode}) {
               date each fact was checked.{' '}
               <a href="/how-we-verify/">How we verify</a>.
             </p>
+            <p>
+              Run a court we have wrong, or one we do not have?{' '}
+              <a href="/add-your-court/">Add or claim your court</a>.
+            </p>
           </div>
         </footer>
       </body>

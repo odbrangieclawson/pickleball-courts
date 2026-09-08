@@ -187,6 +187,9 @@ export type VenueView = {
   trust: string
   trustRank: number
   claimable: boolean
+  /** mailto: links; see lib/site/contact.mjs. */
+  claimHref: string
+  correctionHref: string
   checked: string | null
   source: string | null
   facts: VenueFact[]

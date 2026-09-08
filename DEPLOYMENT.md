@@ -23,6 +23,7 @@ builder finds it.
 | --- | --- | --- | --- |
 | `SITE_ORIGIN` | Config | Production | Scheme and host, no trailing slash. Currently `https://pickleball-courts-cyan.vercel.app` |
 | `SITE_INDEXABLE` | Config | Production | `true` or `false`. Unset means false. **Unset today: the whole site is noindex.** Refuses to build as `true` while `SITE_ORIGIN` is unset. See "Launch day" below. |
+| `CONTACT_EMAIL` | Config | Production | The inbox every "Claim this listing", "Send a correction" and "Add your court" link opens. Read once, in `lib/site/contact.mjs`. Unset it falls back to `claims@example.invalid`, and the build refuses `SITE_INDEXABLE=true` until it is set. **Unset today.** |
 
 **The live origin is `https://pickleball-courts-cyan.vercel.app`,** verified
 against the deployed site on 2026-09-04: it is what the canonical tags, the
@@ -84,7 +85,8 @@ change.
    Wait until Vercel shows the domain as valid with a certificate.
 2. In Vercel → Settings → Environment Variables (Production): set
    `SITE_ORIGIN` to `https://<the domain>` (scheme and host only, the
-   primary form chosen above) and `SITE_INDEXABLE` to `true`.
+   primary form chosen above), `CONTACT_EMAIL` to the inbox that will
+   receive claims and corrections, and `SITE_INDEXABLE` to `true`.
 3. Redeploy (push to `main`, or Redeploy in the dashboard). Both variables
    are read at build time; saving them changes nothing until a build runs.
 4. Verify against the live domain, with a plain `curl`, not a browser:
