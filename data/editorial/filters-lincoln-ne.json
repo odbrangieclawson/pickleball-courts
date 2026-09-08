@@ -4,25 +4,25 @@
   "kind": "filters",
   "date_checked": "2026-09-04",
   "written_by": "staff_research",
-  "note_on_method": "One of the five filter slugs has a lawful data driver in Lincoln. Outdoor does: the City states an outdoor court count for three parks. Indoor has none — the City lists four indoor sites and publishes a pickleball count for none of them. Free has none, because Lincoln never says what an outdoor court costs. Lights has none, because no Lincoln venue carries a lighting statement. Public has none anywhere on this site, because access_type has no controlled vocabulary yet.",
+  "note_on_method": "One of the five filter slugs has a lawful data driver in Lincoln. Outdoor does: the City states an outdoor court count for three parks. Indoor has none, because the City lists four indoor sites and publishes a pickleball count for none of them. Free has none, because Lincoln never says what an outdoor court costs. Lights has none, because no Lincoln venue carries a lighting statement.",
   "filters": {
     "outdoor": {
       "slots": {
-        "why_this_filter": "Every verified pickleball court in Lincoln is outdoor, so this page and the city page hold the same three venues, and it is worth saying that plainly rather than dressing it up as a filter. Twenty-two courts across Peterson (Erwin) Park, Ballard Park and Densmore Park, all open 5:00 a.m. to 11:00 p.m. daily. What makes the list worth reading rather than counting is a distinction the City draws and most operators do not: it sorts its parks into \"Dedicated Pickleball Courts\" and \"Dual Striped\", and it puts each one in a section. Sixteen of these twenty-two courts are dedicated — pickleball courts, not tennis courts with a second set of lines and a net two inches too high. That is one of the highest proportions of dedicated outdoor courts of any city on this site, and it is the fact worth carrying away from this page. The indoor question has no page here for a reason worth stating: the City lists four indoor sites — Air Park Community Center, Calvert Recreation Center, Easterday Recreation Center and Woods Tennis Center — with an address and a phone number each, and asks you to \"Call the recreation center for court times and fees for use.\" Not one of them carries a court count, so not one of them can publish, and there is no indoor filter page for Lincoln at all.",
-        "what_qualifies": "A venue appears here when the City of Lincoln states an outdoor court count for it on its Tennis and Pickleball page. Three qualify: ten at Peterson, six at Ballard, six at Densmore. What does not qualify is the larger part of what Lincoln actually has. Seven more parks are named on that same page under \"Dual Striped\" — Cooper, Henry, Roberts, Roper (Max E.) East, Seng at University Place, Tyrrell and UPCO — with no pickleball number of any kind, and a court count is what Page Gate 1 requires. Tyrrell's line reads \"one dedicated tennis court; one dual striped\", which is a count of tennis courts and yields no pickleball figure, so reading it as one court would be an inference rather than a fact. And Eden Park, which has six dedicated courts and is the only Lincoln park whose own page lists Pickleball among its features, is absent for a different reason: neither of this site's address resolvers can find \"46 Antelope Creek Rd\", and the City's own description places the park at an intersection instead. The city page sets that out in full."
+        "why_this_filter": "Every verified pickleball court in Lincoln is outdoor, so this page and the city page hold the same three venues. Twenty-two courts across Peterson (Erwin) Park, Ballard Park and Densmore Park, all open 5:00 a.m. to 11:00 p.m. daily.\n\nWhat makes the list worth reading is a distinction the City draws and most operators do not: it sorts its parks into \"Dedicated Pickleball Courts\" and \"Dual Striped\", and it puts each one in a section. Sixteen of these twenty-two courts are dedicated: pickleball courts, not tennis courts with a second set of lines and a net two inches too high. That is one of the highest proportions of dedicated outdoor courts of any city on this site.\n\nThe City also lists four indoor sites with no court count of any kind, and asks you to \"Call the recreation center for court times and fees for use.\"",
+        "what_qualifies": "A venue appears here when the City of Lincoln states an outdoor court count for it on its Tennis and Pickleball page. Three qualify: ten at Peterson, six at Ballard, six at Densmore.\n\nSeven more parks are named on that same page under \"Dual Striped\" with no pickleball number of any kind: Cooper, Henry, Roberts, Roper (Max E.) East, Seng at University Place, Tyrrell and UPCO. And Eden Park, which has six dedicated courts and is the only Lincoln park whose own page lists Pickleball among its features, is absent for a different reason: neither address resolver can find \"46 Antelope Creek Rd\", and the City's own description places the park at an intersection instead."
       },
       "faqs": [
         {
           "q": "Are these real pickleball courts?",
-          "a": "Sixteen of the twenty-two are. The City lists Ballard and Peterson under \"Dedicated Pickleball Courts\" — six and ten respectively — and those are pickleball courts rather than tennis courts with lines added. At Densmore, two of the six are dedicated and four are a pair of dual-striped tennis courts."
+          "a": "Sixteen of the twenty-two are. The City lists Ballard's six and Peterson's ten under \"Dedicated Pickleball Courts\". At Densmore, two of the six are dedicated and four are a pair of dual-striped tennis courts."
         },
         {
           "q": "What are the hours?",
-          "a": "5:00 a.m. to 11:00 p.m., seven days a week, at all three. Each park's own page publishes the same block. Lincoln is one of the operators in this directory that states park hours at all, and many do not."
+          "a": "5:00 a.m. to 11:00 p.m., seven days a week, at all three. Each park's own page publishes the same block."
         },
         {
           "q": "Are any of them lit?",
-          "a": "Not verified at any Lincoln venue, which is why there is no lights filter page for this city. Densmore's page mentions MUSCO lights, but under a heading describing its four rentable baseball fields — a lit ballfield is not a lit court."
+          "a": "Not verified at any Lincoln venue. Densmore's page mentions MUSCO lights, but under a heading describing its four rentable baseball fields. A lit ballfield is not a lit court."
         },
         {
           "q": "Which has the most courts?",
@@ -30,7 +30,7 @@
         },
         {
           "q": "Why only three venues when the City names eleven parks?",
-          "a": "Because eight of the eleven carry no pickleball count. This site publishes a stated count or nothing, and seven dual-striped parks plus Eden Park — the last for an address that does not resolve — are named on the city page rather than quietly dropped."
+          "a": "Because eight of the eleven carry no pickleball count. This site publishes a stated count or nothing, and seven dual-striped parks plus Eden Park are named on the city page rather than quietly dropped."
         }
       ],
       "sources": ["F1", "F2", "F3"]
