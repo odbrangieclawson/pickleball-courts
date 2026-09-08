@@ -37,7 +37,6 @@ const breadcrumbLd = JSON.stringify({
 
 export default function About() {
   const v = homeView()
-  const stateCount = v.states.length
 
   return (
     <div className="wrap page">
@@ -87,7 +86,7 @@ export default function About() {
         </div>
         <div>
           <dt>States</dt>
-          <dd>{stateCount}</dd>
+          <dd>{v.stateCount}</dd>
         </div>
         <div>
           <dt>Last checked</dt>

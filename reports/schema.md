@@ -9,7 +9,7 @@ needs a public URL and this build is noindex on example.invalid.
 page type   pages   clean   nodes emitted
 ---------   -----   -----   -------------
 home            1       1   WebSite, BreadcrumbList
-editorial       2       2   BreadcrumbList
+editorial       3       3   BreadcrumbList
 state           5       5   BreadcrumbList, Dataset, FAQPage
 county         26      26   BreadcrumbList, FAQPage, ItemList
 city           35      35   BreadcrumbList, FAQPage, ItemList

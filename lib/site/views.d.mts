@@ -38,6 +38,8 @@ export type HomeView = {
   gapSentence: string
   cityWordLower: string
   sourcesPerVenue: string
+  /** Number of states with a published city, formatted. */
+  stateCount: string
   hasFilterButtons: boolean
   filterButtons: {filter: string; label: string; href: string}[]
   jsonLd: string
