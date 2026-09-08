@@ -307,6 +307,10 @@ export type NavGroup = {
   cities: {href: string; label: string}[]
   counties: {href: string; label: string}[]
   hasCounties: boolean
+  /** Where the state link in the Browse by state menu goes. */
+  browseHref: string
+  /** "3 cities", shown beside the name. */
+  cityLabel: string
 }
 
 export function navView(): {

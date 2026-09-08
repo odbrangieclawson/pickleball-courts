@@ -131,35 +131,30 @@ export default function RootLayout({children}: {children: ReactNode}) {
               free, which a div-and-CSS :hover menu does not, and :hover
               menus are unusable on touch.
 
-              Every link stays in the markup while the menu is shut, so the
-              crawl report still sees the whole site three clicks from home.
+              The menu lists STATES ONLY. It used to list every city and
+              county under each state, which was a directory index in a
+              dropdown by the thirty-fifth city — four columns, seventy
+              links, taller than the screen. Now it is one link per state,
+              with the city count beside it; the cities live on the state
+              page, or on the home page's state tiles, one click on.
+
+              The links stay in the markup while the menu is shut, so the
+              crawl report still sees every state from every page.
             */}
             <nav className="site-nav" aria-label="Main">
               <details className="nav-menu">
-                <summary>Browse</summary>
+                <summary>Browse by state</summary>
                 <div className="nav-panel">
-                  {navView().groups.map(g => (
-                    <section key={g.state}>
-                      <h2>
-                        {g.href ? <a href={g.href}>{g.label}</a> : g.label}
-                      </h2>
-                      <ul>
-                        {g.cities.map(c => (
-                          <li key={c.href}><a href={c.href}>{c.label}</a></li>
-                        ))}
-                      </ul>
-                      {g.hasCounties && (
-                        <>
-                          <p className="nav-sub">Counties</p>
-                          <ul className="nav-counties">
-                            {g.counties.map(c => (
-                              <li key={c.href}><a href={c.href}>{c.label}</a></li>
-                            ))}
-                          </ul>
-                        </>
-                      )}
-                    </section>
-                  ))}
+                  <ul className="nav-states">
+                    {navView().groups.map(g => (
+                      <li key={g.state}>
+                        <a href={g.browseHref}>
+                          {g.label}
+                          <span className="nav-count">{g.cityLabel}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </details>
               {navView().links.map(n => (
