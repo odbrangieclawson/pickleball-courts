@@ -25,6 +25,10 @@
     {
       "q": "Which venues here have lights?",
       "a": "None that the City states. Its pickleball page never mentions lighting at any venue, so every court in this county is recorded as lighting not verified. Little Valley's schedule runs evening sessions to 9:30 p.m. in winter, which is a timetable fact and not a lighting answer."
+    },
+    {
+      "q": "Why does Little Valley show 33 courts when the City's article says 24?",
+      "a": "Because the two figures are different kinds of record. The article is dated 19 August 2020 and describes the complex as it was then; the court list is the City's undated present inventory. A dated history does not contradict a current list, so thirty-three publishes and twenty-four is printed as what the venue was."
     }
   ],
   "sources": [
@@ -34,7 +38,11 @@
       "publisher": "City of St. George Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["coverage", "distribution", "gaps"],
+      "supports": [
+        "coverage",
+        "distribution",
+        "gaps"
+      ],
       "evidence": "The City's Pickleball page. Under \"City of St. George Pickleball Courts\" exactly four lines: \"Little Valley / 2149 Horseman Park Drive / Courts:  33\", \"Vernon Worthen / 300 S. 400 E. / Courts: 6\", \"Bloomington Park / 650 Man O War Road / Courts: 7\", \"Ledges / ? / Courts: 4\". The \"St. George Pickleball Program Schedule / 2025\" for Little Valley, reserving \"9-32 (24 courts)\" for league sessions and \"All 33 Courts\" for two tournaments; \"Players, please check in with the attendant or instructor to determine if courts are available during the St. George Pickleball programs\"; \"Please contact Parks to make a court reservation at 435-627-4530\". The article dated \"St. George, UT, August 19, 2020\": \"The Little Valley Pickleball complex is home to 24 well-maintained courts.\" and \"When courts are vacant the public readily takes advantage of them - free of charge.\" Snapshot: data/sources/st-george/pickleball.html",
       "not_stated": "Anything about any other municipality in Washington County; lighting, surface, hours, parking and restrooms at every venue; price at Vernon Worthen and Bloomington; any address for Ledges."
     },
@@ -44,7 +52,10 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["coverage", "distribution"],
+      "supports": [
+        "coverage",
+        "distribution"
+      ],
       "evidence": "All three published addresses matched at house-number level and were placed in Washington County, UT (FIPS 49053) and in the incorporated place \"St. George city\": \"2149 HORESMAN PARK DR, ST GEORGE, UT, 84790\", \"300 S 400 E, ST GEORGE, UT, 84770\", \"650 MAN O WAR RD, ST GEORGE, UT, 84790\". Snapshot: data/sources/st-george-county-census.json",
       "not_stated": "Anything about the courts themselves."
     }

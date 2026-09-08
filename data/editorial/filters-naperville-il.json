@@ -4,36 +4,35 @@
   "kind": "filters",
   "date_checked": "2026-09-07",
   "written_by": "staff_research",
-  "note_on_method": "One of the five filter slugs has a lawful data driver in Naperville, and it rests on a single sentence. Outdoor does, because the Park District's Park It page names six parks with outdoor pickleball courts and all three published venues are among them. Lights has none: the District states \"lit\" only for eight lined tennis courts at Nike Sports Complex, whose four dedicated courts carry no statement, and states \"unlit\" at the other two venues. Free has none, because the District never prices a court either way. Indoor has none, because the Fort Hill Activity Center's open-gym pickleball has no stated count. Public has no driver here, because access_type has no controlled vocabulary yet.",
+  "note_on_method": "Of the five filter slugs, only outdoor has a lawful data driver in Naperville, and it rests on a single sentence: the Park District's Park It page names six parks with outdoor pickleball courts, and all three published venues are among them. Lights has none, because the District states \"lit\" only for the eight lined tennis courts at Nike Sports Complex and \"unlit\" at the other two venues. Free has none, because the District never prices a court either way. Indoor has none, because the Fort Hill Activity Center's open gym pickleball has no stated count.",
   "filters": {
     "outdoor": {
       "slots": {
-        "why_this_filter": "Every verified pickleball court in Naperville is outdoor, so this page holds the same three venues as the city page - twelve courts at Nike Sports Complex, nine at Ranchview Park and four at Ashbury Park. This site does not call a court outdoor because it is in a park. It calls a court outdoor when the operator does, and the Naperville Park District does, once, on its Park It page: \"The District also has outdoor pickleball courts at Dupage River Sports Complex, Nike Sports Complex, Wolf's Crossing and at Ashbury, Knoch and Ranchview parks.\" The same paragraph opens \"Play pickleball at the Fort Hill Activity Center during an open gym time or register for a pickleball program\", under the heading \"Play Pickleball Indoors or Outdoors\", so the District itself frames its pickleball as a choice between an indoor gym and six outdoor parks. In northern Illinois that is the choice that matters, because an outdoor court is a seasonal court, and the District's pages carry the season in other ways: ice rinks in Nike's amenity list, sled hills at Wolf's Crossing, a splash pad there that opens Memorial Day weekend and closes after Labor Day. Nothing about pickleball hours or a playing season is stated for any venue, and this page does not invent one. What it can tell you is which outdoor courts are usable after dark, because the District states that too. Ranchview and Ashbury are \"unlit\" in its own word. At Nike, the eight tennis courts lined for pickleball are \"lit\" and the four dedicated courts are not described either way. So of the twenty-five outdoor courts here, eight carry a stated light, thirteen a stated absence of one, and four no answer at all.",
-        "what_qualifies": "A venue appears here when the Naperville Park District states that its pickleball courts are outdoor, and the District states it for all three published venues in one sentence on its Park It page. Nike Sports Complex, Ranchview Park and Ashbury Park are each named there among the six parks with \"outdoor pickleball courts\", so each carries an outdoor count equal to its total: twelve, nine and four. Nothing published in Naperville is excluded from this page. The same sentence names three parks that do not publish. Wolf's Crossing Community Park, with \"4 dedicated pickleball courts and there are 4 lit tennis courts lined for pickleball\", is at \"3252 Wolf's Crossing Road\", printed with the postcode 60543, which is Oswego's; DuPage River Sports Complex, with \"4 lit tennis courts lined for pickleball\", is at \"2807 S Washington Street\"; and neither the US Census address file nor OpenStreetMap finds either address at house-number level. Knoch Park is named too, and its own page lists \"Pickleball\" with no number. The Fort Hill Activity Center is the District's indoor pickleball, offered \"during an open gym time\", and it is off this page for the plainest reason - it is indoor - and off the site because no count is stated. The Park It sentence does not name Frontier Sports Complex, whose own page lists the Rothermel Family Pickleball Courts without a number and whose address, \"3380 Cedar Glade Drive\", resolves nowhere either; its six courts, stated in a District news release of May 2023, are on neither this page nor the site."
+        "why_this_filter": "Every verified pickleball court in Naperville is outdoor, so this page holds the same three venues as the city page: twelve courts at Nike Sports Complex, nine at Ranchview Park and four at Ashbury Park.\n\nA court is called outdoor here when the operator calls it outdoor, and the Naperville Park District does, once, on its Park It page: \"The District also has outdoor pickleball courts at Dupage River Sports Complex, Nike Sports Complex, Wolf's Crossing and at Ashbury, Knoch and Ranchview parks.\" That paragraph sits under the heading \"Play Pickleball Indoors or Outdoors\" and points to the Fort Hill Activity Center for open gym play.\n\nIn northern Illinois an outdoor court is a seasonal court, and no season and no court hours are stated for any venue here. What the District does state is lighting. Ranchview and Ashbury are \"unlit\" in its own word. At Nike the eight tennis courts lined for pickleball are \"lit\" and the four dedicated courts are not described either way. Of the twenty-five outdoor courts here, eight carry a stated light, thirteen a stated absence of one, and four no answer at all.",
+        "what_qualifies": "A venue appears here when the Park District states that its pickleball courts are outdoor, and it states that for all three published venues in one sentence. Nike Sports Complex, Ranchview Park and Ashbury Park are each named among the six parks with \"outdoor pickleball courts\", so each carries an outdoor count equal to its total: twelve, nine and four. Nothing published in Naperville is left off this page.\n\nThe same sentence names three parks that do not publish. Wolf's Crossing Community Park has \"4 dedicated pickleball courts and there are 4 lit tennis courts lined for pickleball\" at \"3252 Wolf's Crossing Road\", printed with the postcode 60543, which is Oswego's. DuPage River Sports Complex has \"4 lit tennis courts lined for pickleball\" at \"2807 S Washington Street\". Neither the US Census address file nor OpenStreetMap finds either address at house-number level. Knoch Park is named too, and its own page lists \"Pickleball\" with no number. The Fort Hill Activity Center is the District's indoor pickleball, so it is off this page for the plainest reason of all."
       },
       "faqs": [
         {
-          "q": "Are all of Naperville's pickleball courts outdoor?",
-          "a": "All twenty-five published courts are, on the District's own statement. The District also offers indoor pickleball at the Fort Hill Activity Center during open gym times, with no stated court count, so it is not published here."
-        },
-        {
-          "q": "Which outdoor courts can I use after dark?",
-          "a": "The eight tennis courts lined for pickleball at Nike Sports Complex are the only courts the District calls \"lit\". Its four dedicated courts carry no lighting statement, and Ranchview Park and Ashbury Park are stated \"unlit\"."
-        },
-        {
-          "q": "Is there a playing season?",
-          "a": "Not stated. The District publishes no hours and no season for any pickleball court. Its pages show winter in other ways - ice rinks at Nike, sled hills at Wolf's Crossing - but nothing about when the courts open or close."
-        },
-        {
           "q": "Do I need to bring a net to an outdoor court?",
-          "a": "At Nike Sports Complex, yes, by the District's statement. At Ashbury Park, no - the courts use the tennis nets. At Ranchview Park the page says both, so bring one and you are covered either way."
+          "a": "At Nike Sports Complex, yes, by the District's statement. At Ashbury Park, no, because the courts use the tennis nets. At Ranchview Park the page says both, so bring one and you are covered either way."
         },
         {
           "q": "Why is Wolf's Crossing Community Park not on this page?",
           "a": "It has eight courts and the District calls them outdoor, but neither address resolver finds \"3252 Wolf's Crossing Road\", which the District prints with Oswego's postcode. A venue at an address nobody can locate does not publish."
         }
       ],
-      "sources": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10"]
+      "sources": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10"
+      ]
     }
   },
   "sources": [
@@ -43,7 +42,10 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["why_this_filter", "what_qualifies"],
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
       "evidence": "The District's Park It page, under the heading \"Play Pickleball Indoors or Outdoors\", season \"Year Round\": \"Play pickleball at the Fort Hill Activity Center during an open gym time or register for a pickleball program. The District also has outdoor pickleball courts at Dupage River Sports Complex, Nike Sports Complex, Wolf's Crossing and at Ashbury, Knoch and Ranchview parks.\" Snapshot: data/sources/naperville/parkit.html",
       "not_stated": "Any count, address, hours, price, lighting, surface or playing season, and a count for the Fort Hill Activity Center."
     },
@@ -53,7 +55,10 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["why_this_filter", "what_qualifies"],
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
       "evidence": "\"Nike Sports Complex has 4 dedicated pickleball courts and there are 8 lit tennis courts lined for pickleball; participants must provide their own nets\", at \"288 W Diehl Road Naperville , IL 60563\". \"Ice Rinks\" in the amenity list. Snapshot: data/sources/naperville/nikesportscomplex.html",
       "not_stated": "Hours, price, surface, a playing season, and whether the four dedicated courts are lit."
     },
@@ -63,7 +68,10 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["why_this_filter", "what_qualifies"],
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
       "evidence": "\"Ranchview Park has 6 unlit courts using tennis nets\"; \"The tennis courts have striping for a total of 9 pickleball courts. 3 courts on the west side use the tennis nets, 6 courts on the east side require patrons to bring their own nets.\", at \"1727 Ranchview Drive Naperville , IL 60565\". Snapshot: data/sources/naperville/ranchviewpark.html",
       "not_stated": "Hours, price, a playing season, and a single consistent answer on nets."
     },
@@ -73,7 +81,10 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["why_this_filter", "what_qualifies"],
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
       "evidence": "\"Ashbury Park has 4 unlit courts using tennis nets\", at \"1740 Conan Doyle Road Naperville , IL 60564\". Snapshot: data/sources/naperville/ashburypark.html",
       "not_stated": "Hours, price, surface and a playing season."
     },
@@ -83,7 +94,10 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["why_this_filter", "what_qualifies"],
+      "supports": [
+        "why_this_filter",
+        "what_qualifies"
+      ],
       "evidence": "\"3252 Wolf's Crossing Road Naperville , IL 60543\". \"Wolf's Crossing Community Park has 4 dedicated pickleball courts and there are 4 lit tennis courts lined for pickleball; participants must provide their own nets\". \"Sled Hills\" and \"Splashpads\" in the amenity list; \"The splash pads at 95th Street Community Plaza and Wolf's Crossing Community Park are open 9:00 am-8:00 pm daily Memorial Day weekend through Labor Day.\" Snapshot: data/sources/naperville/wolfscrossingcommunitypark.html",
       "not_stated": "Hours, price, surface, and a postcode that belongs to Naperville."
     },
@@ -93,7 +107,9 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "\"2807 S Washington Street Naperville , IL 60565\". \"Dupage River Sports Complex has 4 lit tennis courts lined for pickleball; participants must provide their own nets\". Snapshot: data/sources/naperville/dupageriversportscomplex.html",
       "not_stated": "Hours, price and surface."
     },
@@ -103,7 +119,9 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "\"724 S. West Street Naperville , IL 60540\", with \"Pickleball\" among the amenities and no sentence about pickleball. Snapshot: data/sources/naperville/knochpark.html",
       "not_stated": "Any number of pickleball courts."
     },
@@ -113,7 +131,9 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "\"3380 Cedar Glade Drive Naperville , IL 60564\", \"Pickleball\" in the amenity list, and a heading \"Rothermel Family Pickleball Courts\" with no count beneath it. Snapshot: data/sources/naperville/frontiersportscomplex.html",
       "not_stated": "Any number of pickleball courts."
     },
@@ -123,7 +143,9 @@
       "publisher": "Naperville Park District",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "News release dated \"Tuesday, May 16, 2023\": \"Located on the east side of Frontier Sports Complex, the six new courts provide another place to play this popular sport.\" Snapshot: data/sources/naperville/rothermel-news.html",
       "not_stated": "Anything about the courts since May 2023."
     },
@@ -133,7 +155,9 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["what_qualifies"],
+      "supports": [
+        "what_qualifies"
+      ],
       "evidence": "Ranchview Park and Ashbury Park matched through the Census address file at house-number level, in DuPage County and Will County respectively, both in the incorporated place \"Naperville city\"; Nike Sports Complex matched through OpenStreetMap in DuPage County. \"3252 Wolf's Crossing Road\", \"2807 S Washington Street\" and \"3380 Cedar Glade Drive\" are found by neither the Census address file nor OpenStreetMap at house-number level. Snapshots: data/sources/naperville-county-census.json, data/sources/naperville-ashbury-county-census.json",
       "not_stated": "Anything about the courts themselves."
     }
