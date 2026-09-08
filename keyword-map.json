@@ -87,10 +87,10 @@
     {
       "page_type": "venue",
       "url_pattern": "/pickleball/us/{state}/{city}/{venue}/",
-      "primary": "{venue_name} pickleball courts",
+      "primary": "{venue_name} pickleball courts, {city_name}",
       "secondary": [
+        "{venue_name} pickleball courts",
         "pickleball at {venue_name}",
-        "{venue_name} {city_name} pickleball",
         "{venue_name} court hours"
       ]
     },

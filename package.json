@@ -78,7 +78,8 @@
     "verify:lehi": "node scripts/verify/apply-lehi-parks.mjs",
     "verify:orem": "node scripts/verify/apply-orem-parks.mjs",
     "verify:meridian": "node scripts/verify/apply-meridian-parks.mjs",
-    "verify:rockville": "node scripts/verify/apply-rockville-parks.mjs"
+    "verify:rockville": "node scripts/verify/apply-rockville-parks.mjs",
+    "report:keywords": "node scripts/keyword-report.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
