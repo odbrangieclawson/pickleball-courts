@@ -4,22 +4,18 @@
   "kind": "venues",
   "date_checked": "2026-09-07",
   "written_by": "staff_research",
-  "note_on_method": "Each venue page rests on one City of Spokane page - the Recreational Fields and Sports page, whose \"Tennis and Pickleball Courts\" section lists every park with a court, a street address and a count - plus the US Census address geocoder for the county and the postcode. The City's page cannot be fetched by a script, because my.spokanecity.org answers every scripted request with a redirect into a \"Checking Your Browser\" interstitial, so it was read in a browser on 7 September 2026 and saved as text, and every quoted line is asserted against that file on every build. Where the City is silent, these pages record the silence.",
+  "note_on_method": "Each venue page rests on one City of Spokane page, the Recreational Fields and Sports page, whose \"Tennis and Pickleball Courts\" section lists every park with a court, a street address and a count, plus the US Census address geocoder for the county and the postcode. The City's page cannot be fetched by a script, because my.spokanecity.org answers every scripted request with a redirect into a \"Checking Your Browser\" interstitial, so it was read in a browser on 7 September 2026 and saved as text. Where the City is silent, these pages record the silence.",
   "venues": {
     "am-cannon-park": {
       "slots": {
-        "description": "Two pickleball courts striped on the two tennis courts at A.M. Cannon Park, in the West Central neighbourhood north of the river.\n\nThe City counts this park twice, once on each of two lists, and the two counts are the same. Its \"Tennis Courts Striped for Pickleball\" list reads \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\", and its \"Tennis Courts\" list reads the same park with the same \"2 Courts\". That is one pickleball court to a tennis court - a different arrangement from Comstock, Mission and Peaceful Valley, where the City's pickleball number is twice its tennis number. So the two pickleball courts here are the two tennis courts, shared with tennis, not lined side by side across them.\n\nThis is the one Spokane venue the imported dataset this site was built from had no row for at all. The City's line minted it: a name, an address that resolves, a count. Nothing else about the park is stated on the page - no hours, no lighting, no surface, no nets, no price - and this page does not add anything the City has not written.",
-        "getting_there": "1511 N Elm St, Spokane, WA 99201.\n\nThe City writes the street with a full stop after the type, \"1511 N. Elm St.\"; the Census address geocoder matched it as written, at house-number level, and placed it in Spokane County, in the incorporated place Spokane. The park is in the West Central neighbourhood, north of the river.\n\nThe City publishes nothing about parking at this park, nothing about transit and nothing about where the courts sit inside it. There is no lot described, no capacity and no fee, and this site does not read a lot off a map.",
-        "what_to_expect": "Two courts, which is one game at a time, and a wait if a game is on when you arrive. Because the pickleball courts and the tennis courts are the same two slabs, a tennis match takes half the venue and two of them take all of it.\n\nThe rule for getting on is the City's one sentence for every court in the section: \"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" Turning up is the normal way in; a permit is the other, and the City publishes no price, no lead time and no calendar for it. The section's introduction says the City's tennis courts \"host neighborhood pick-up games, parks and recreation classes and many tennis events\", so a class or an event here is a class or an event on the pickleball courts.\n\nThe City states no hours and no lighting, so this page cannot tell you whether an evening game is possible. It names no surface and says nothing about nets, so bring your own if you can. It never writes \"outdoor\" against any court on the page, so neither indoor nor outdoor is recorded here."
+        "description": "Two pickleball courts striped on the two tennis courts at A.M. Cannon Park, in the West Central neighbourhood north of the river.\n\nThe City counts this park on two lists and the counts match. Its \"Tennis Courts Striped for Pickleball\" list reads \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\", and its \"Tennis Courts\" list gives the same park \"2 Courts\". That is one pickleball court to a tennis court, where Comstock, Mission and Peaceful Valley have two. So the two pickleball courts here are the two tennis courts, shared with tennis, not lined side by side across them.\n\nNothing else about the park is stated: no hours, no lighting, no surface, no nets, no price.",
+        "getting_there": "1511 N Elm St, Spokane, WA 99201. The City writes it \"1511 N. Elm St.\", and the Census address geocoder matched that as written, at house-number level, in Spokane County and the incorporated place Spokane. The park is in the West Central neighbourhood, north of the river.\n\nThe City publishes nothing about parking here, nothing about transit and nothing about where the courts sit inside the park.",
+        "what_to_expect": "Two courts is one game at a time, and a wait if a game is on when you arrive. The pickleball courts and the tennis courts are the same two slabs, so a tennis match takes half the venue and two of them take all of it.\n\nThe City states that the courts are \"first-come-first-served\", and that a court can be officially reserved with \"a reservation permit\" by online form. No price, lead time or calendar for permits is published. Hours, lighting, surface and nets are all unstated, and the City never writes \"outdoor\" against any court on the page."
       },
       "faqs": [
         {
           "q": "How many courts are there?",
           "a": "Two pickleball courts, striped on the park's two tennis courts. The City's striped list reads \"A.M. Cannon Park, 1511 N. Elm St., 2 Courts\", and its tennis list gives the same park two courts."
-        },
-        {
-          "q": "Are the courts dedicated to pickleball?",
-          "a": "No. They are the tennis courts, striped for pickleball and shared with tennis. One pickleball court to a tennis court here, where Comstock and Mission have two."
         },
         {
           "q": "Is it free?",
@@ -28,19 +24,15 @@
         {
           "q": "Are the courts lit, and what are the hours?",
           "a": "Neither is stated. The City's section carries no hours and no lighting for any park, so both read as not verified here."
-        },
-        {
-          "q": "Why was this park not in the original dataset?",
-          "a": "The imported dataset had no row for A.M. Cannon Park. The City's line supplied a name, an address that resolves and a count, and that is enough to publish."
         }
       ],
       "sources": ["C1", "C2"]
     },
     "comstock-park": {
       "slots": {
-        "description": "Twelve pickleball courts striped on the six tennis courts at Comstock Park on the South Hill, the second-largest set in Spokane.\n\nThe City's two lists give the two numbers that describe this venue. \"Tennis Courts Striped for Pickleball\" reads \"Comstock Park, 601 W. 29th Ave., 12 Courts\"; \"Tennis Courts\" reads \"Comstock Park, 601 W. 29th Ave., 6 Courts\". Two pickleball courts to a tennis court, on six slabs, shared with tennis. Twelve is the City's pickleball number and it publishes as stated; six is the number of courts you are sharing.\n\nThis is the venue where the City's page changed the record most. The imported dataset this site was built from held Comstock at four courts and at \"3012 S Howard St\"; the City says twelve at 601 W 29th Ave, and Howard Street and 29th Avenue bound the same park. Both the count and the address were overridden by the City's line, and because the count moved from four to twelve the venue is flagged for a re-check at the next cadence. Nothing else about the park is stated: no hours, no lighting, no surface, no nets, no price.",
-        "getting_there": "601 W 29th Ave, Spokane, WA 99203.\n\nThe City writes it \"601 W. 29th Ave.\"; the Census address geocoder matched it as written, at house-number level, in Spokane County and the incorporated place Spokane. If a map or an older listing gives the park as 3012 S Howard St, that is the address the imported dataset carried - another side of the same park - and it will still deliver you there.\n\nThe City publishes nothing about parking at Comstock Park, nothing about transit, and nothing about where in the park the six tennis courts stand.",
-        "what_to_expect": "Twelve courts if nobody is playing tennis, and fewer by two for every tennis match under way, because each tennis court carries two pickleball courts. The City publishes no schedule for either sport, so how many of the twelve are yours is decided on arrival.\n\nAccess is the City's one sentence for every court in the section: \"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" No price for the permit, no lead time and no calendar are published, so a court under permit is something you find out about when you get there. The City's introduction to the section says its tennis courts \"host neighborhood pick-up games, parks and recreation classes and many tennis events\", and with six tennis courts this is a park where that sentence is likely to matter.\n\nHours are not stated. Lighting is not stated. Surface is not stated, and nets are not mentioned for any court on the page. The City never writes \"outdoor\" against any of its courts, so neither indoor nor outdoor is recorded here, whatever six tennis courts on the South Hill suggest."
+        "description": "Twelve pickleball courts striped on the six tennis courts at Comstock Park on the South Hill, the second-largest set in Spokane.\n\nThe City's two lists give the two numbers that describe this venue. \"Tennis Courts Striped for Pickleball\" reads \"Comstock Park, 601 W. 29th Ave., 12 Courts\"; \"Tennis Courts\" reads \"Comstock Park, 601 W. 29th Ave., 6 Courts\". Two pickleball courts to a tennis court, on six slabs, shared with tennis. Six is the number of courts you are sharing.\n\nThe imported dataset held Comstock at four courts and at \"3012 S Howard St\"; the City says twelve at 601 W 29th Ave, and Howard Street and 29th Avenue bound the same park. Nothing else about the park is stated: no hours, no lighting, no surface, no nets, no price.",
+        "getting_there": "601 W 29th Ave, Spokane, WA 99203. The City writes it \"601 W. 29th Ave.\", and the Census address geocoder matched that as written, at house-number level, in Spokane County and the incorporated place Spokane. If a map or an older listing gives the park as 3012 S Howard St, that is another side of the same park and it will still deliver you there.\n\nThe City publishes nothing about parking, nothing about transit, and nothing about where in the park the six tennis courts stand.",
+        "what_to_expect": "Twelve courts if nobody is playing tennis, and two fewer for every tennis match under way, because each tennis court carries two pickleball courts. The City publishes no schedule for either sport, so how many of the twelve are yours is decided on arrival.\n\nThe City states that the courts are \"first-come-first-served\", and that a court can be officially reserved with \"a reservation permit\" by online form. No price, lead time or calendar is published. Its introduction to the section says its tennis courts \"host neighborhood pick-up games, parks and recreation classes and many tennis events\", and with six tennis courts that is likely to matter here.\n\nHours, lighting, surface and nets are all unstated."
       },
       "faqs": [
         {
@@ -54,28 +46,20 @@
         {
           "q": "Is it free?",
           "a": "Not stated. The imported dataset said \"Free public play\"; the City writes no price and never says the courts are free, so that note was removed and cost reads as unstated."
-        },
-        {
-          "q": "Can I reserve a court?",
-          "a": "The City says a court can be officially reserved with a reservation permit by filling out its online form. It publishes no price, no lead time and no calendar for permits."
-        },
-        {
-          "q": "Are the courts lit?",
-          "a": "Not stated. The City's section carries no lighting and no hours for any park, so lighting reads as not verified here."
         }
       ],
       "sources": ["C1", "C2"]
     },
     "mission-park": {
       "slots": {
-        "description": "Sixteen pickleball courts striped on the eight tennis courts at Mission Park in the Logan neighbourhood, the largest set in Spokane.\n\nThe City's striped list reads \"Mission Park, 1208 E. Mission Ave., 16 Courts\" and its tennis list \"Mission Park, 1208 E. Mission Ave., 8 Courts\": two pickleball courts to a tennis court, on eight slabs, shared with tennis. Sixteen is the City's pickleball number and it publishes as stated. It is also the largest court count at any verified venue in Washington, and it is a stripe count - the number of pickleball courts that exist when no tennis is being played on any of the eight.\n\nThe imported dataset this site was built from held the same address and the same count, so the City's line confirmed the record rather than changing it. What it did change was the note on cost: the dataset said \"Free public play\", the City says nothing about price, and nothing is what now stands. No hours, no lighting, no surface and no nets are stated for the park.",
-        "getting_there": "1208 E Mission Ave, Spokane, WA 99202.\n\nThe City writes it \"1208 E. Mission Ave.\"; the Census address geocoder matched it as written, at house-number level, in Spokane County and the incorporated place Spokane. The park is in the Logan neighbourhood, and shares its postcode with Underhill Park to the south-east.\n\nThe City publishes nothing about parking at Mission Park, nothing about transit, and nothing about where in the park the eight tennis courts stand. This site does not read a lot off a map.",
-        "what_to_expect": "Sixteen courts at most, and two fewer for every tennis match in progress. With eight tennis courts this is the park in Spokane where the City's own description of its tennis courts - they \"host neighborhood pick-up games, parks and recreation classes and many tennis events\" - has the most room to apply, and a tennis event on eight courts is sixteen pickleball courts you cannot use.\n\nThe way on is the City's one sentence for every court: \"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" Turning up is the default. A permit is the alternative, and the City publishes no price, no lead time and no calendar for it, so a reserved court is not something you can check before you leave.\n\nThe City states no hours and no lighting, so whether the sixteen are usable after work is not on the record. It names no surface, mentions no nets, and never writes \"outdoor\" against any court on the page. A count this size with nothing else stated is the shape of the whole Spokane record: a number, an address, and silence."
+        "description": "Sixteen pickleball courts striped on the eight tennis courts at Mission Park in the Logan neighbourhood, the largest set in Spokane.\n\nThe City's striped list reads \"Mission Park, 1208 E. Mission Ave., 16 Courts\" and its tennis list \"Mission Park, 1208 E. Mission Ave., 8 Courts\": two pickleball courts to a tennis court, on eight slabs, shared with tennis. Sixteen is a stripe count, the number of pickleball courts that exist when no tennis is being played on any of the eight. It is also the largest court count at any verified venue in Washington.\n\nNo hours, no lighting, no surface, no nets and no price are stated for the park.",
+        "getting_there": "1208 E Mission Ave, Spokane, WA 99202. The City writes it \"1208 E. Mission Ave.\", and the Census address geocoder matched that as written, at house-number level, in Spokane County and the incorporated place Spokane. The park is in the Logan neighbourhood and shares its postcode with Underhill Park to the south-east.\n\nThe City publishes nothing about parking, nothing about transit, and nothing about where in the park the eight tennis courts stand.",
+        "what_to_expect": "Sixteen courts at most, and two fewer for every tennis match in progress. With eight tennis courts this is the park where the City's own description of its tennis courts, which \"host neighborhood pick-up games, parks and recreation classes and many tennis events\", has the most room to apply. A tennis event on eight courts is sixteen pickleball courts you cannot use.\n\nThe City states that the courts are \"first-come-first-served\", and that a court can be officially reserved with \"a reservation permit\" by online form. No price, lead time or calendar is published, so a reserved court is not something you can check before you leave.\n\nHours, lighting, surface and nets are all unstated."
       },
       "faqs": [
         {
           "q": "How many courts are there?",
-          "a": "Sixteen pickleball courts, striped on eight tennis courts - the largest set in Spokane. The City's striped list reads \"Mission Park, 1208 E. Mission Ave., 16 Courts\"."
+          "a": "Sixteen pickleball courts, striped on eight tennis courts, the largest set in Spokane. The City's striped list reads \"Mission Park, 1208 E. Mission Ave., 16 Courts\"."
         },
         {
           "q": "Are the courts shared with tennis?",
@@ -84,23 +68,15 @@
         {
           "q": "Is it free?",
           "a": "Not stated. The City publishes no price and never says the courts are free; the imported dataset's \"Free public play\" note was removed because the operator does not say it."
-        },
-        {
-          "q": "Can I book a court?",
-          "a": "The City says a court can be officially reserved with a reservation permit by online form, otherwise first-come-first-served. No price, lead time or calendar is published."
-        },
-        {
-          "q": "Are the courts lit, and what are the hours?",
-          "a": "Neither is stated for this park or any other in the section, so both read as not verified here."
         }
       ],
       "sources": ["C1", "C2"]
     },
     "peaceful-valley-park": {
       "slots": {
-        "description": "Two pickleball courts striped on the one tennis court at Peaceful Valley Park, below the bluff west of downtown.\n\nThe City's striped list reads \"Peaceful Valley Park, 1602 W. Water Ave., 2 Courts\" and its tennis list \"Peaceful Valley Park, 1602 W. Water Ave., 1 Court\". Two pickleball courts on a single tennis court, the same two-to-one arrangement as Comstock and Mission at the smallest scale the City lists. Both courts share the one slab, so the venue is either pickleball or tennis at any moment and not both.\n\nThe imported dataset this site was built from held this park at \"100-198 N Maple St\", a street range rather than an address, and a range does not resolve at house-number level. The City's house number, 1602 W Water Ave, replaces it, and the Census geocoder matches it as written. The dataset's \"Free public play\" note was removed too, because the City writes no price. No hours, no lighting, no surface and no nets are stated for the park.",
-        "getting_there": "1602 W Water Ave, Spokane, WA 99201.\n\nThe City writes it \"1602 W. Water Ave.\"; the Census address geocoder matched it as written, at house-number level, in Spokane County and the incorporated place Spokane. It shares a postcode with A.M. Cannon Park. If an older listing gives the park on North Maple Street, that is the street range the imported dataset carried; the City's house number is the one published.\n\nThe City publishes nothing about parking here, nothing about transit and nothing about where in the park the court is.",
-        "what_to_expect": "One slab, two pickleball courts on it, and whichever sport arrived first. Two courts is a game rather than a rotation, and here a single tennis match takes both of them.\n\nThe City's rule is the same one sentence as everywhere in the section: \"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" So you turn up, or you hold a permit; the City publishes no price for the permit, no lead time and no calendar, and this page cannot tell you whether the court is reserved on a given evening. The section's introduction describes the City's tennis courts as hosting \"neighborhood pick-up games, parks and recreation classes and many tennis events\", and a class on one court is a class on the whole venue.\n\nHours are not stated, lighting is not stated, surface is not stated and nets are not mentioned. The City never writes \"outdoor\" against any court on the page, so neither indoor nor outdoor is recorded here."
+        "description": "Two pickleball courts striped on the one tennis court at Peaceful Valley Park, below the bluff west of downtown.\n\nThe City's striped list reads \"Peaceful Valley Park, 1602 W. Water Ave., 2 Courts\" and its tennis list \"Peaceful Valley Park, 1602 W. Water Ave., 1 Court\". Two pickleball courts on a single tennis court, the same two-to-one arrangement as Comstock and Mission at the smallest scale the City lists. Both courts share the one slab, so the venue is either pickleball or tennis at any moment and not both.\n\nThe imported dataset held this park at \"100-198 N Maple St\", a street range rather than an address, and a range does not resolve at house-number level. The City's house number replaces it. No hours, no lighting, no surface, no nets and no price are stated.",
+        "getting_there": "1602 W Water Ave, Spokane, WA 99201. The City writes it \"1602 W. Water Ave.\", and the Census address geocoder matched that as written, at house-number level, in Spokane County and the incorporated place Spokane. It shares a postcode with A.M. Cannon Park. If an older listing gives the park on North Maple Street, the City's house number is the one published here.\n\nThe City publishes nothing about parking, nothing about transit and nothing about where in the park the court is.",
+        "what_to_expect": "One slab, two pickleball courts on it, and whichever sport arrived first. Two courts is a game rather than a rotation, and here a single tennis match takes both of them.\n\nThe City states that the courts are \"first-come-first-served\", and that a court can be officially reserved with \"a reservation permit\" by online form. No price, lead time or calendar is published, so this page cannot tell you whether the court is reserved on a given evening. The City describes its tennis courts as hosting \"neighborhood pick-up games, parks and recreation classes and many tennis events\", and a class on one court is a class on the whole venue.\n\nHours, lighting, surface and nets are all unstated."
       },
       "faqs": [
         {
@@ -114,23 +90,15 @@
         {
           "q": "Is it free?",
           "a": "Not stated. The City publishes no price and never says the courts are free. The dataset's \"Free public play\" note was removed for that reason."
-        },
-        {
-          "q": "Can I reserve the court?",
-          "a": "The City says a court can be officially reserved with a reservation permit by online form; otherwise it is first-come-first-served. No price or lead time is published."
-        },
-        {
-          "q": "Are the courts lit?",
-          "a": "Not stated, here or at any park in the section. Lighting and hours both read as not verified."
         }
       ],
       "sources": ["C1", "C2"]
     },
     "corbin-park": {
       "slots": {
-        "description": "Two dedicated pickleball courts at Corbin Park, the oval park in the Emerson-Garfield neighbourhood north of downtown.\n\nThis park is on two of the City's lists for two different sports. Its \"Dedicated Pickleball Courts\" list reads \"Corbin Park, 2914 N. West Oval St, 2 Courts\" - courts built for pickleball, not lines on a tennis court - and its \"Tennis Courts\" list reads \"Corbin Park, 2914 N. West Oval St, 1 Court\". That one tennis court is a tennis court and is not counted here; the two published are the two the City calls pickleball. Unlike the four striped venues in Spokane, a tennis match at Corbin does not take a pickleball court away.\n\nThe imported dataset this site was built from held the park at \"501 West Park Place\", another side of the same oval; the City's address replaces it. The dataset's note on cost read \"Public\", which is not a price, and the City writes none either. No hours, no lighting, no surface and no nets are stated for the park.",
-        "getting_there": "2914 N West Oval St, Spokane, WA 99205.\n\nThe City writes it \"2914 N. West Oval St\", without the full stop it puts after other street types; the Census address geocoder matched it as written, at house-number level, in Spokane County and the incorporated place Spokane. The park is an oval, and the imported dataset's \"501 West Park Place\" is another side of it, so an older listing will still deliver you to the park.\n\nThe City publishes nothing about parking at Corbin Park, nothing about transit and nothing about where on the oval the courts are.",
-        "what_to_expect": "Two courts that are pickleball courts whenever you arrive - the City's word is \"Dedicated\" - so the question here is not whether tennis has them but whether another pair of players does. Two courts is one game at a time and a wait if both are taken.\n\nThe way on is the City's one sentence for every court in the section: \"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" The permit route is published without a price, a lead time or a calendar, so a court under permit is something you find out about at the fence.\n\nThe City states no hours and no lighting for this park, names no surface and mentions no nets for any court on the page, so whether a dedicated court here has a permanent net is not on the record. It never writes \"outdoor\" against any court, so neither indoor nor outdoor is recorded here. The one tennis court on the oval is a separate sport with its own line on the City's tennis list."
+        "description": "Two dedicated pickleball courts at Corbin Park, the oval park in the Emerson-Garfield neighbourhood north of downtown.\n\nThis park is on two of the City's lists for two different sports. Its \"Dedicated Pickleball Courts\" list reads \"Corbin Park, 2914 N. West Oval St, 2 Courts\", courts built for pickleball rather than lines on a tennis court, and its \"Tennis Courts\" list reads \"Corbin Park, 2914 N. West Oval St, 1 Court\". That one tennis court is a tennis court and is not counted here. Unlike the four striped venues in Spokane, a tennis match at Corbin does not take a pickleball court away.\n\nNo hours, no lighting, no surface, no nets and no price are stated for the park.",
+        "getting_there": "2914 N West Oval St, Spokane, WA 99205. The City writes it \"2914 N. West Oval St\", without the full stop it puts after other street types, and the Census address geocoder matched that as written, at house-number level, in Spokane County and the incorporated place Spokane. The park is an oval, and the imported dataset's \"501 West Park Place\" is another side of it, so an older listing will still deliver you to the park.\n\nThe City publishes nothing about parking, nothing about transit and nothing about where on the oval the courts are.",
+        "what_to_expect": "Two courts that are pickleball courts whenever you arrive; the City's word is \"Dedicated\". The question here is not whether tennis has them but whether another pair of players does. Two courts is one game at a time and a wait if both are taken.\n\nThe City states that the courts are \"first-come-first-served\", and that a court can be officially reserved with \"a reservation permit\" by online form. No price, lead time or calendar is published, so a court under permit is something you find out about at the fence.\n\nHours, lighting and surface are unstated, and nets are not mentioned for any court on the page, so whether a dedicated court here has a permanent net is not on the record."
       },
       "faqs": [
         {
@@ -144,23 +112,15 @@
         {
           "q": "Is it free?",
           "a": "Not stated. The City publishes no price and never says the courts are free; the imported dataset's \"Public\" note is not a price either."
-        },
-        {
-          "q": "Can I reserve a court?",
-          "a": "The City says a court can be officially reserved with a reservation permit by online form; otherwise first-come-first-served. No price, lead time or calendar is published."
-        },
-        {
-          "q": "Are the courts lit, and what are the hours?",
-          "a": "Neither is stated for this park or any other in the section, so both read as not verified here."
         }
       ],
       "sources": ["C1", "C2"]
     },
     "underhill-park": {
       "slots": {
-        "description": "Two dedicated pickleball courts at Underhill Park in the East Central neighbourhood.\n\nThe City's \"Dedicated Pickleball Courts\" list reads \"Underhill Park, 2910 E. Hartson Ave., 2 Courts\" - courts built for pickleball, not lines on a tennis court. The park is on no other list in the section: it does not appear under \"Tennis Courts\" at all, which makes it the one pickleball venue in Spokane with no tennis court beside it. At the four striped parks a tennis match takes pickleball courts away; at Corbin a tennis court stands next to the pickleball courts; here there is nothing to share with.\n\nThe imported dataset this site was built from held the same address and the same count, so the City's line confirmed both. The dataset's note on cost read \"Public - Dedicated\", which is a description rather than a price; the City writes no price, so cost reads as unstated. No hours, no lighting, no surface and no nets are stated for the park.",
-        "getting_there": "2910 E Hartson Ave, Spokane, WA 99202.\n\nThe City writes it \"2910 E. Hartson Ave.\"; the Census address geocoder matched it as written, at house-number level, in Spokane County and the incorporated place Spokane. The park is in the East Central neighbourhood and shares its postcode with Mission Park to the north-west.\n\nThe City publishes nothing about parking at Underhill Park, nothing about transit and nothing about where in the park the two courts are. This site does not read a lot off a map.",
-        "what_to_expect": "Two courts that are pickleball courts whenever you arrive, and no tennis at the park to compete for them. Two courts is one game at a time, so the only thing between you and a court is whoever got there first.\n\nThat is the City's rule too, in its one sentence for every court in the section: \"Tennis & Pickleball courts are first-come-first-served, however if you would like to officially reserve a court and receive a reservation permit please fill out the online form.\" The permit is published with no price, no lead time and no calendar, so a reserved court is something you discover on arrival rather than something you can check.\n\nThe City states no hours and no lighting, names no surface and mentions no nets for any court on the page, so whether these dedicated courts have permanent nets is not on the record. It never writes \"outdoor\" against any court, so neither indoor nor outdoor is recorded here. What the record does say, plainly, is the count and the kind: two courts, dedicated, at an address that resolves."
+        "description": "Two dedicated pickleball courts at Underhill Park in the East Central neighbourhood.\n\nThe City's \"Dedicated Pickleball Courts\" list reads \"Underhill Park, 2910 E. Hartson Ave., 2 Courts\", courts built for pickleball rather than lines on a tennis court. The park is on no other list in the section: it does not appear under \"Tennis Courts\" at all, which makes it the one pickleball venue in Spokane with no tennis court beside it. At the four striped parks a tennis match takes pickleball courts away; here there is nothing to share with.\n\nNo hours, no lighting, no surface, no nets and no price are stated for the park.",
+        "getting_there": "2910 E Hartson Ave, Spokane, WA 99202. The City writes it \"2910 E. Hartson Ave.\", and the Census address geocoder matched that as written, at house-number level, in Spokane County and the incorporated place Spokane. The park is in the East Central neighbourhood and shares its postcode with Mission Park to the north-west.\n\nThe City publishes nothing about parking, nothing about transit and nothing about where in the park the two courts are.",
+        "what_to_expect": "Two courts that are pickleball courts whenever you arrive, and no tennis at the park to compete for them. Two courts is one game at a time, so the only thing between you and a court is whoever got there first.\n\nThe City states that the courts are \"first-come-first-served\", and that a court can be officially reserved with \"a reservation permit\" by online form. No price, lead time or calendar is published.\n\nHours, lighting and surface are unstated, and nets are not mentioned for any court on the page. What the record does say plainly is the count and the kind: two courts, dedicated, at an address that resolves."
       },
       "faqs": [
         {
@@ -173,15 +133,7 @@
         },
         {
           "q": "Is it free?",
-          "a": "Not stated. The City publishes no price and never says the courts are free; the dataset's \"Public - Dedicated\" note describes the courts, not the cost."
-        },
-        {
-          "q": "Can I reserve a court?",
-          "a": "The City says a court can be officially reserved with a reservation permit by online form; otherwise first-come-first-served. No price, lead time or calendar is published."
-        },
-        {
-          "q": "Are the courts lit, and what are the hours?",
-          "a": "Neither is stated for this park or any other in the section, so both read as not verified here."
+          "a": "Not stated. The City publishes no price and never says the courts are free; the dataset's \"Public, Dedicated\" note describes the courts, not the cost."
         }
       ],
       "sources": ["C1", "C2"]
