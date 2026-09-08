@@ -87,7 +87,7 @@ change.
    `SITE_ORIGIN` to `https://<the domain>` (scheme and host only, the
    primary form chosen above), `CONTACT_EMAIL` to the inbox that will
    receive claims and corrections, and `SITE_INDEXABLE` to `true`.
-3. Redeploy (push to `main`, or Redeploy in the dashboard). Both variables
+3. Redeploy (push to `main`, or Redeploy in the dashboard). All three variables
    are read at build time; saving them changes nothing until a build runs.
 4. Verify against the live domain, with a plain `curl`, not a browser:
    - `/robots.txt` starts `Allow: /` and ends with the sitemap on the domain.
