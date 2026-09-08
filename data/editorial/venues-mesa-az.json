@@ -26,7 +26,10 @@
           "a": "The Center stands inside Gene Autry Park and shares its street address, 4125 E McKellips Rd, which is why the park is not listed separately here."
         }
       ],
-      "sources": ["M1", "M5"]
+      "sources": [
+        "M1",
+        "M5"
+      ]
     },
     "kleinman-park": {
       "slots": {
@@ -37,14 +40,17 @@
       "faqs": [
         {
           "q": "Is it free?",
-          "a": "The City publishes no price for these courts. It also never says they are free, so this site does not describe them as free - only as having no stated fee."
+          "a": "The City publishes no price for these courts. It also never says they are free, so this site does not describe them as free, only as having no stated fee."
         },
         {
           "q": "Can I reserve a court?",
           "a": "Yes. The courts are listed among the park's reservable spaces, and the City directs bookings to the Mesa Tennis & Pickleball Center rather than to the park itself."
         }
       ],
-      "sources": ["M2", "M5"]
+      "sources": [
+        "M2",
+        "M5"
+      ]
     },
     "chaparral-park": {
       "slots": {
@@ -62,7 +68,10 @@
           "a": "Because the two sources disagree. The City of Mesa prints 85213 for this park and the US Census address geocoder returns 85203 for the same street address. This site publishes the Census value and states the disagreement rather than hiding it."
         }
       ],
-      "sources": ["M3", "M5"]
+      "sources": [
+        "M3",
+        "M5"
+      ]
     }
   },
   "sources": [
@@ -72,7 +81,11 @@
       "publisher": "City of Mesa Parks, Recreation and Community Facilities",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "The Center's own page: \"16 lighted tennis courts, 21 lighted pickleball courts and 4 sand volleyball courts available for rental\"; \"Pickleball Court Daytime Fee: $9.00/court per hour\"; \"Pickleball Court Nighttime Fee: $13.00/court per hour\"; \"Court fees must be paid inside pro shop before using the facility. Unauthorized use of the facility is considered trespassing\"; \"MTPC has 1 pickleball and 2 tennis ball machines available for rent.\"; \"Tournaments, league and lesson programming, special events, or maintenance may limit court space for the general public\"; hours 05:30 AM-11:30 AM daily plus 05:00 PM-10:00 PM Monday to Friday; contact 480-644-3874; \"Additional Resources: Gene Autry Park\"; address 4125 E McKellips Rd. Snapshot: data/sources/mesa/mtpc.html",
       "not_stated": "Parking, surface, and whether the courts are indoor or outdoor."
     },
@@ -82,7 +95,11 @@
       "publisher": "City of Mesa Parks, Recreation and Community Facilities",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "Kleinman Park's page. Reservable Spaces: \"Lighted Softball Fields\", \"Lighted Tennis Courts (3)\", \"Pickleball Courts (4)\", \"Lighted Sand Volleyball Courts (4)\", with reservations directed to the Mesa Tennis & Pickleball Center on 480-644-3874. Features include \"Basketball Court - Lighted\", \"Pickleball Court\", \"Restrooms\", \"Picnic Tables\", \"Playground\", \"Ramada (non-reservable)\", \"Ramada (reservable)\", \"Softball Complex\", \"Walking Path (unpaved)\". Hours \"Sunrise to 10 PM or as posted\". Address 710 S. Extension Rd., Mesa, AZ 85210. Snapshot: data/sources/mesa/kleinman-park.html",
       "not_stated": "Parking, surface, lighting on the pickleball courts, and any fee."
     },
@@ -92,7 +109,11 @@
       "publisher": "City of Mesa Parks, Recreation and Community Facilities",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "Chaparral Park's page: \"Pickleball Court (1 lined court shared with basketball use, bring your own portable net)\". Features: \"Basketball Court - Lighted\", \"BBQ Grill\", \"Horseshoes\", \"Pickleball Court\", \"Picnic Tables\", \"Playground\", \"Ramada (non-reservable)\". Hours \"Sunrise - 10 PM\". The City prints the address as \"1635 N Gilbert Road, Mesa, AZ 85213\". Snapshot: data/sources/mesa/chaparral-park.html",
       "not_stated": "Parking, surface, lighting on the pickleball court, and any fee."
     },
@@ -102,7 +123,9 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["getting_there"],
+      "supports": [
+        "getting_there"
+      ],
       "evidence": "All three addresses matched at house-number level and were placed in the incorporated place \"Mesa city\", Maricopa County, AZ: \"4125 E MCKELLIPS RD, MESA, AZ, 85215\", \"710 S EXTENSION RD, MESA, AZ, 85210\" and \"1635 N GILBERT RD, MESA, AZ, 85203\". The last of those disagrees with the City's printed 85213 for Chaparral Park. Snapshot: data/sources/mesa-county-census.json",
       "not_stated": "Anything about the courts themselves."
     }

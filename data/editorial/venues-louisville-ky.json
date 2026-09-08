@@ -13,11 +13,24 @@
         "what_to_expect": "Fourteen courts is a rotation that absorbs a crowd, and it makes this the one Louisville venue where turning up alone is a reasonable plan on the count. Whether a rotation actually forms, and when, is not something the City publishes, so that is an inference from the number rather than a fact from the operator.\n\nThe park is open 6 a.m. to 11 p.m. on its own page. Those are park hours. Lighting is not stated, price is not stated, surface is not stated and nets are not stated. The courts are outdoor on the City's own sentence introducing the list."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Fourteen, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count. It is the largest set in Louisville."},
-        {"q": "Why did the address need a second resolver?", "a": "The US Census address file holds no record of 5550 Charlie Vettiner Park Rd. OpenStreetMap matches it at house-number level in Jefferson County and names the place Louisville."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any pickleball court in Louisville, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Fourteen, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count. It is the largest set in Louisville."
+        },
+        {
+          "q": "Why did the address need a second resolver?",
+          "a": "The US Census address file holds no record of 5550 Charlie Vettiner Park Rd. OpenStreetMap matches it at house-number level in Jefferson County and names the place Louisville."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any pickleball court in Louisville, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C2", "C18"]
+      "sources": [
+        "C1",
+        "C2",
+        "C18"
+      ]
     },
     "iroquois-park": {
       "slots": {
@@ -26,11 +39,24 @@
         "what_to_expect": "Four courts is two games at once, or a group of eight rotating without much waiting. The City publishes no session, no schedule and no rotation rule, so who is on the courts and when is not on the record. Hours are 6 a.m. to 11 p.m. on the park page, and lighting, price, surface and nets are all unstated. The courts are outdoor because the City's list introduces every count as an outdoor count.\n\nWhat is stated is the setting, and the City is unusually willing to describe it. Of the sixteen venues on this site's Louisville pages only Iroquois, McNeely Lake and Hays Kennedy get more than a line of description from the City. Expect a court that is a small part of a very large park."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."},
-        {"q": "What does the City say about the park?", "a": "That it was planned by Frederick Law Olmsted as a 'scenic reservation' of forested hillsides, has a WPA-era open-air amphitheatre for 2,366 people, was acquired in 1888 and is 725.85 acres."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."
+        },
+        {
+          "q": "What does the City say about the park?",
+          "a": "That it was planned by Frederick Law Olmsted as a 'scenic reservation' of forested hillsides, has a WPA-era open-air amphitheatre for 2,366 people, was acquired in 1888 and is 725.85 acres."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C3", "C18"]
+      "sources": [
+        "C1",
+        "C3",
+        "C18"
+      ]
     },
     "mcneely-lake-park": {
       "slots": {
@@ -39,11 +65,24 @@
         "what_to_expect": "Two courts and a very large park around them. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours. Lighting, price, surface and nets are not stated. The courts are outdoor on the City's sentence introducing its list.\n\nWith two courts and no published session, this is a venue for a pair or a four who arrive together, not for joining a game."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count. Two courts is a game, not a rotation."},
-        {"q": "Why does the City's address start with an asterisk?", "a": "The park page prints an asterisk before the street number and does not explain the mark. This site publishes the address without it, and the Census geocoder matches it as written."},
-        {"q": "What else is in the park?", "a": "On the City's page: a 46-acre fishing lake with an accessible pier and boat ramp, the Korean War Memorial, a golf course, hiking and horse riding trails, restrooms and tennis, across 746 acres."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count. Two courts is a game, not a rotation."
+        },
+        {
+          "q": "Why does the City's address start with an asterisk?",
+          "a": "The park page prints an asterisk before the street number and does not explain the mark. This site publishes the address without it, and the Census geocoder matches it as written."
+        },
+        {
+          "q": "What else is in the park?",
+          "a": "On the City's page: a 46-acre fishing lake with an accessible pier and boat ramp, the Korean War Memorial, a golf course, hiking and horse riding trails, restrooms and tennis, across 746 acres."
+        }
       ],
-      "sources": ["C1", "C4", "C18"]
+      "sources": [
+        "C1",
+        "C4",
+        "C18"
+      ]
     },
     "sun-valley-park": {
       "slots": {
@@ -52,11 +91,24 @@
         "what_to_expect": "One court, outdoors, and a City record that stops there. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated.\n\nA single court is the smallest thing this site publishes, and it changes the plan: there is no second game to wait for and no rotation to join, so this is a court for a pair or a four who arrive together and are prepared to find it in use. The City's other amenities at the address, swimming, a sprayground, a community centre and a golf course, are facts about the park rather than the court."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "One, on the City's pickleball page. One court is one game at a time, and the park page lists pickleball without a count."},
-        {"q": "Is there a community centre?", "a": "Yes, on the park's amenity list, and the City's parks navigation names a Sun Valley centre. The City does not say whether it has anything to do with pickleball."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "One, on the City's pickleball page. One court is one game at a time, and the park page lists pickleball without a count."
+        },
+        {
+          "q": "Is there a community centre?",
+          "a": "Yes, on the park's amenity list, and the City's parks navigation names a Sun Valley centre. The City does not say whether it has anything to do with pickleball."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C5", "C18"]
+      "sources": [
+        "C1",
+        "C5",
+        "C18"
+      ]
     },
     "crescent-hill-park": {
       "slots": {
@@ -65,11 +117,24 @@
         "what_to_expect": "Four outdoor courts with no stated lighting, no stated price, no stated surface and no stated nets. The park is open 6 a.m. to 11 p.m. on its page; that is the gate, not the courts.\n\nFour courts is a workable number without being a complex, enough for two games or for a group of eight to rotate, and the City publishes no session or open-play time here, so bring your own game. The one caution worth carrying is the restroom gap. The City's list at this park omits them where thirteen of the sixteen park pages include them, and a reader should plan as though the answer is unknown, because it is."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four, on the City's pickleball page, which prints the park name with its own capitalisation. The park's page lists pickleball without a count."},
-        {"q": "Are there restrooms?", "a": "Not stated. The park's amenity list does not include them, where thirteen of the sixteen Louisville park pages do. This site records that as unknown rather than as a no."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four, on the City's pickleball page, which prints the park name with its own capitalisation. The park's page lists pickleball without a count."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not stated. The park's amenity list does not include them, where thirteen of the sixteen Louisville park pages do. This site records that as unknown rather than as a no."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C6", "C18"]
+      "sources": [
+        "C1",
+        "C6",
+        "C18"
+      ]
     },
     "des-pres-park": {
       "slots": {
@@ -78,37 +143,76 @@
         "what_to_expect": "Three courts, outdoors, park hours of 6 a.m. to 11 p.m., and nothing else stated. Lighting is not stated, so an evening game is unknown rather than no. Price is not stated, and surface and nets are not stated either.\n\nThe number is the useful thing. With three courts a six can play at once and an eight can rotate with a short wait, which is a better proposition than the two-court parks and a smaller one than the six-court parks. The City publishes no session here, and nothing on its record says when the courts are busy. What it does list is a park with ballfields, soccer, volleyball and basketball beside the courts."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Three, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."},
-        {"q": "Are there restrooms?", "a": "Yes, listed among the park's amenities on its own page, along with ballfields, soccer, tennis, volleyball and basketball."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Three, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Yes, listed among the park's amenities on its own page, along with ballfields, soccer, tennis, volleyball and basketball."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C7", "C18"]
+      "sources": [
+        "C1",
+        "C7",
+        "C18"
+      ]
     },
     "fern-creek-park": {
       "slots": {
         "description": "Six outdoor pickleball courts, and the first of two Louisville venues that rest on the City's pickleball list alone. The park's own page (Fern Creek Park, 8703 Ferndale Rd., acquired 1968, 30.4 acres) lists ballfields, grills, a hiking trail, a multi-purpose field, picnic shelters, picnic tables, a playground, restrooms, tennis, walking and WiFi, and does not mention pickleball at all.\n\nThe pickleball page says six; the park page says nothing; the six publishes, because a stated count on the operator's own list is the fact this site requires, and the silence is recorded beside it. The build re-reads the park page on every run and fails the day the word pickleball appears on it.",
         "getting_there": "8703 Ferndale Rd, Louisville, KY 40291. The US Census address geocoder matched the address at house-number level and placed it in \"Louisville/Jefferson County metro government (balance)\", the Census's name for the consolidated city outside the pre-merger boundary. The City publishes nothing about parking. Restrooms are on the park's amenity list.",
-        "what_to_expect": "Six courts on the City's list and a park page that does not know about them. The practical reading is that the courts are there - the City counted them on the page it wrote for pickleball, and the park page's amenity list has not been updated to say so. The honest reading is that this site cannot tell you which.\n\nHours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated. Six courts is a rotation number, though the City publishes no session to confirm that a rotation forms. The park page lists tennis, so there are tennis courts here as well; whether the pickleball courts are those courts with a second set of lines is not something the City says."
+        "what_to_expect": "Six courts on the City's list and a park page that does not know about them. The practical reading is that the courts are there: the City counted them on the page it wrote for pickleball, and the park page's amenity list has not been updated to say so. The honest reading is that this site cannot tell you which.\n\nHours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated. Six courts is a rotation number, though the City publishes no session to confirm that a rotation forms. The park page lists tennis, so there are tennis courts here as well; whether the pickleball courts are those courts with a second set of lines is not something the City says."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Six, on the City's pickleball page. The park's own page does not mention pickleball, so the count rests on the list alone."},
-        {"q": "Why does the park page not mention pickleball?", "a": "The City does not say. Its amenity list for Fern Creek has tennis and no pickleball. The build re-checks that silence on every run and fails the day the word appears."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Six, on the City's pickleball page. The park's own page does not mention pickleball, so the count rests on the list alone."
+        },
+        {
+          "q": "Why does the park page not mention pickleball?",
+          "a": "The City does not say. Its amenity list for Fern Creek has tennis and no pickleball. The build re-checks that silence on every run and fails the day the word appears."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C8", "C18"]
+      "sources": [
+        "C1",
+        "C8",
+        "C18"
+      ]
     },
     "george-rogers-clark-park": {
       "slots": {
-        "description": "Two outdoor pickleball courts in a 46.49-acre park acquired in 1921. The park page's one line of description points at a tree: the city's oldest, a bald cypress, with a link to the City's own article about it. Two courts is a game rather than a rotation.\n\nThe amenity list is ballfields, basketball, cross country, grills, a lodge, a multi-purpose field, pickleball, picnic tables, a playground, a sprayground, tennis, volleyball and WiFi. Pickleball is on it without a number; the two is the pickleball page's. Restrooms are not on it - George Rogers Clark is one of three published Louisville venues whose page omits them, with Crescent Hill and New Walnut Street, and this site records that as unknown rather than as a no. The lodge appears at no other published Louisville venue, and the City says nothing about what it is.",
+        "description": "Two outdoor pickleball courts in a 46.49-acre park acquired in 1921. The park page's one line of description points at a tree: the city's oldest, a bald cypress, with a link to the City's own article about it. Two courts is a game rather than a rotation.\n\nThe amenity list is ballfields, basketball, cross country, grills, a lodge, a multi-purpose field, pickleball, picnic tables, a playground, a sprayground, tennis, volleyball and WiFi. Pickleball is on it without a number; the two is the pickleball page's. Restrooms are not on it. George Rogers Clark is one of three published Louisville venues whose page omits them, with Crescent Hill and New Walnut Street, and this site records that as unknown rather than as a no. The lodge appears at no other published Louisville venue, and the City says nothing about what it is.",
         "getting_there": "1024 Thruston Ave, Louisville, KY 40217. The US Census address geocoder matched the address at house-number level and placed it in \"Louisville city\", the Census's name for addresses inside the pre-merger city. The City publishes nothing about parking, and its amenity list for this park does not mention restrooms. At 46 acres the park is mid-sized for Louisville, and the City does not say where in it the courts are.",
         "what_to_expect": "Two courts, outdoors, in a park open 6 a.m. to 11 p.m. on its page. Lighting is not stated, so the closing time is the gate's and not the courts'. Price is not stated, and surface and nets are not stated.\n\nTwo courts is one game each, so a four plays and an eight waits, and there is no published session here to suggest a rotation forms. What the City lists beside the courts is a park for other sports, with ballfields, basketball, volleyball, cross country and a sprayground. Plan for the restroom question to be open, because the City's list leaves it so."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."},
-        {"q": "Are there restrooms?", "a": "Not stated. The park's amenity list does not include them, where thirteen of the sixteen Louisville park pages do. This site records that as unknown rather than as a no."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not stated. The park's amenity list does not include them, where thirteen of the sixteen Louisville park pages do. This site records that as unknown rather than as a no."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C9", "C18"]
+      "sources": [
+        "C1",
+        "C9",
+        "C18"
+      ]
     },
     "hays-kennedy-park": {
       "slots": {
@@ -117,11 +221,24 @@
         "what_to_expect": "Six courts, outdoors, in a park the City describes more fully than most. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated.\n\nSix courts is a rotation number, and Hays Kennedy shares that count with Fern Creek, Wyandotte and Nelson Hornbeck. The City publishes no session or open-play time here, so whether a rotation exists on a given morning is not on the record."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Six, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."},
-        {"q": "Why does a map search give a different street?", "a": "The Census geocoder answered \"7003 BEECHLAND AVE, 40258\", a different street and postcode. OpenStreetMap finds Beachland Beach Road in 40059 as the City writes it, and that is published."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Six, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."
+        },
+        {
+          "q": "Why does a map search give a different street?",
+          "a": "The Census geocoder answered \"7003 BEECHLAND AVE, 40258\", a different street and postcode. OpenStreetMap finds Beachland Beach Road in 40059 as the City writes it, and that is published."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C10", "C18"]
+      "sources": [
+        "C1",
+        "C10",
+        "C18"
+      ]
     },
     "petersburg-park": {
       "slots": {
@@ -130,11 +247,24 @@
         "what_to_expect": "Four courts on a small site. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours. Lighting is not stated, price is not stated, and surface and nets are not stated. The courts are outdoor on the City's introducing sentence.\n\nFour courts is enough for two games and a short wait, and the City publishes no session or open-play time to say when anyone is here. The rest of the list is the thing to expect: a skate park, a futsal court, a mini-pitch, soccer, a sprayground, two playgrounds the City describes as inclusive and wheelchair-accessible, and a community centre, which together describe a park built for a lot of people to use at once."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four, on the City's pickleball page. An older imported record said six under a misspelt name; the City's count publishes."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at any Louisville venue, so this site records it as unverified."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four, on the City's pickleball page. An older imported record said six under a misspelt name; the City's count publishes."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not stated. The City says nothing about lighting at any Louisville venue, so this site records it as unverified."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C11", "C18"]
+      "sources": [
+        "C1",
+        "C11",
+        "C18"
+      ]
     },
     "riverview-park": {
       "slots": {
@@ -143,11 +273,24 @@
         "what_to_expect": "Four courts the City counts on one page and does not mention on the other. The position is the same as at Fern Creek: the count-bearing page publishes, the park page's silence is printed beside it, and this site cannot tell you why the two disagree. Riverview's silence is the more complete of the two, because its amenity list has no tennis either.\n\nHours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated. What the City describes instead is the river: boat ramps, canoe access, fishing, river frontage and access to the Louisville Loop."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four, on the City's pickleball page. The park's own page does not mention pickleball, so the count rests on the list alone."},
-        {"q": "Why does the park page not mention pickleball?", "a": "The City does not say. Its amenity list for Riverview has no pickleball and no tennis. The build re-checks that silence on every run and fails the day the word appears."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four, on the City's pickleball page. The park's own page does not mention pickleball, so the count rests on the list alone."
+        },
+        {
+          "q": "Why does the park page not mention pickleball?",
+          "a": "The City does not say. Its amenity list for Riverview has no pickleball and no tennis. The build re-checks that silence on every run and fails the day the word appears."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C12", "C18"]
+      "sources": [
+        "C1",
+        "C12",
+        "C18"
+      ]
     },
     "wyandotte-park": {
       "slots": {
@@ -156,11 +299,24 @@
         "what_to_expect": "Six courts on 23 acres, outdoors, with park hours of 6 a.m. to 11 p.m. and nothing else stated. Lighting is not stated, so this site does not read the eleven o'clock close as a promise. Price, surface and nets are not stated.\n\nSix courts is a rotation number, which puts Wyandotte among the Louisville venues where arriving without a group is a reasonable plan on the count, though the City publishes no session or open-play time, so whether a rotation exists on a given evening is not on the record. The rest of the list is a park for team sports: ballfields and baseball, soccer, a futsal court, basketball, volleyball and a horseshoe pit."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Six, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."},
-        {"q": "Is this Wyandotte Metro Park?", "a": "The same park under an older name. The City's page calls it Wyandotte Park, and the imported row under the older name is left pending rather than published twice."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Six, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."
+        },
+        {
+          "q": "Is this Wyandotte Metro Park?",
+          "a": "The same park under an older name. The City's page calls it Wyandotte Park, and the imported row under the older name is left pending rather than published twice."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C13", "C18"]
+      "sources": [
+        "C1",
+        "C13",
+        "C18"
+      ]
     },
     "nelson-hornbeck-park": {
       "slots": {
@@ -169,11 +325,24 @@
         "what_to_expect": "Six courts on the smallest site that holds six in Louisville. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated.\n\nSix courts is a rotation number and makes this one of the Louisville venues where arriving alone is a reasonable plan on the count, though the City publishes no session or open-play time to confirm that anyone comes. The park's list is short and mostly about families: a playground, a sprayground, swimming and picnic shelters, with ballfields, basketball and tennis for sport. Whether the pickleball courts are the tennis courts with a second set of lines is not stated."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Six, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."},
-        {"q": "Why did the address need a second resolver?", "a": "The US Census address file holds no record of 709 Fairdale Rd. OpenStreetMap matches it at house-number level in South Park, Louisville, Jefferson County, and that is published."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Six, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."
+        },
+        {
+          "q": "Why did the address need a second resolver?",
+          "a": "The US Census address file holds no record of 709 Fairdale Rd. OpenStreetMap matches it at house-number level in South Park, Louisville, Jefferson County, and that is published."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C14", "C18"]
+      "sources": [
+        "C1",
+        "C14",
+        "C18"
+      ]
     },
     "riverside-gardens-park": {
       "slots": {
@@ -182,11 +351,24 @@
         "what_to_expect": "One court, outdoors, in a small park. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated.\n\nA single court means no rotation, no second game and no fallback: if a four is playing when you arrive, the City's record has nothing else at this address for you. It is a court for a pair or a four who come together, ideally at a quiet hour, though the City publishes nothing about which hours those are. For more courts the City's list has Riverview's four in 40258 and Sun Valley's one in 40272."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "One, on the City's pickleball page. One court is one game at a time, and the park page lists pickleball without a count."},
-        {"q": "Is this Riverside Metro Park?", "a": "The same park under an older name. The City's page calls it Riverside Gardens Park, and the imported row under the older name is left pending rather than published twice."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "One, on the City's pickleball page. One court is one game at a time, and the park page lists pickleball without a count."
+        },
+        {
+          "q": "Is this Riverside Metro Park?",
+          "a": "The same park under an older name. The City's page calls it Riverside Gardens Park, and the imported row under the older name is left pending rather than published twice."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C15", "C18"]
+      "sources": [
+        "C1",
+        "C15",
+        "C18"
+      ]
     },
     "tyler-park": {
       "slots": {
@@ -195,24 +377,50 @@
         "what_to_expect": "Two courts, outdoors, in a small old park. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated.\n\nTwo courts is one game each: a four plays, an eight waits, and there is no published session here to suggest a rotation forms. For a larger game the City's list has six courts at Wyandotte Park in 40215. What the City lists beside the courts is a park for a neighbourhood rather than for sport, with a tot lot, a playground, a sprayground, a path and picnic shelters, and basketball and tennis alongside. If the two courts are the tennis courts with a second set of lines, the City has not said so."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count. Two courts is a game, not a rotation."},
-        {"q": "What is the historic property?", "a": "Not stated. \"Historic Property\" is an entry on the park's amenity list, the only one in published Louisville, and the City's page does not say what it refers to."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count. Two courts is a game, not a rotation."
+        },
+        {
+          "q": "What is the historic property?",
+          "a": "Not stated. \"Historic Property\" is an entry on the park's amenity list, the only one in published Louisville, and the City's page does not say what it refers to."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Louisville pickleball court, and this site does not assume a park court is free."
+        }
       ],
-      "sources": ["C1", "C16", "C18"]
+      "sources": [
+        "C1",
+        "C16",
+        "C18"
+      ]
     },
     "new-walnut-street-park": {
       "slots": {
-        "description": "Two outdoor pickleball courts from the City's line \"New Walnut Street - 2\", in the newest and smallest park on this site's Louisville pages: \"Year Acquired\" 2023 and \"Size\" 5.74 acres on the City's page. The next newest published park is Riverside Gardens, acquired in 1976, so New Walnut Street is forty-seven years younger than anything else here. Two courts is a game rather than a rotation.\n\nThe amenity list is basketball, a multi-purpose field, pickleball, picnic shelters, picnic tables, a playground, a sprayground, tennis and WiFi. Pickleball is one word on it without a number; the two is the pickleball page's. Restrooms are not on the list - New Walnut Street is one of three published Louisville venues whose page omits them, with Crescent Hill and George Rogers Clark, and this site records that as unknown rather than as a no.",
+        "description": "Two outdoor pickleball courts from the City's line \"New Walnut Street - 2\", in the newest and smallest park on this site's Louisville pages: \"Year Acquired\" 2023 and \"Size\" 5.74 acres on the City's page. The next newest published park is Riverside Gardens, acquired in 1976, so New Walnut Street is forty-seven years younger than anything else here. Two courts is a game rather than a rotation.\n\nThe amenity list is basketball, a multi-purpose field, pickleball, picnic shelters, picnic tables, a playground, a sprayground, tennis and WiFi. Pickleball is one word on it without a number; the two is the pickleball page's. Restrooms are not on the list. New Walnut Street is one of three published Louisville venues whose page omits them, with Crescent Hill and George Rogers Clark, and this site records that as unknown rather than as a no.",
         "getting_there": "1327 W Muhammad Ali Blvd, Louisville, KY 40203. The US Census address geocoder matched the address at house-number level, keeping the West, and placed it in \"Louisville city\", the Census's name for addresses inside the pre-merger city. The City publishes nothing about parking, and its amenity list for this park does not mention restrooms. At under six acres the address is the park; there is nowhere in it far from the courts.",
         "what_to_expect": "Two courts in a park that did not exist as a City park before 2023, on the City's own year. Hours are 6 a.m. to 11 p.m. on the park page, park hours rather than court hours, and lighting, price, surface and nets are not stated.\n\nTwo courts is one game each, so a four plays and an eight waits, and the City publishes no session here. Plan for the restroom question to be open, because the City's list leaves it so. The page links a set of renderings this site has not read and does not describe."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."},
-        {"q": "How new is the park?", "a": "\"Year Acquired\" 2023 on the City's page, forty-seven years after the next newest published Louisville park. The page links renderings this site has not read."},
-        {"q": "Are there restrooms?", "a": "Not stated. The park's amenity list does not include them, where thirteen of the sixteen Louisville park pages do. This site records that as unknown rather than as a no."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on the City's pickleball page. The park's own page lists pickleball among its amenities without a count."
+        },
+        {
+          "q": "How new is the park?",
+          "a": "\"Year Acquired\" 2023 on the City's page, forty-seven years after the next newest published Louisville park. The page links renderings this site has not read."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "Not stated. The park's amenity list does not include them, where thirteen of the sixteen Louisville park pages do. This site records that as unknown rather than as a no."
+        }
       ],
-      "sources": ["C1", "C17", "C18"]
+      "sources": [
+        "C1",
+        "C17",
+        "C18"
+      ]
     }
   },
   "sources": [
@@ -222,7 +430,10 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "what_to_expect"],
+      "supports": [
+        "description",
+        "what_to_expect"
+      ],
       "evidence": "The City's pickleball page. \"Louisville Parks and Recreation provides several outdoor pickleball courts for all ages. They promote fun and inclusion within our communities across the city.\" \"For rentals, please click here.\" Under \"Pickleball Court List:\": \"Vettiner Park - 14\", \"Iroquois - 4\", \"McNeely Lake - 2\", \"Sun Valley - 1\", \"Crescent HIll - 4\", \"Des Pres - 3\", \"Fern Creek - 6\", \"George Rogers Clark - 2\", \"Hays Kennedy - 6\", \"Hounz Lane - 3\", \"Petersburg - 4\", \"Riverview - 4\", \"Wyandotte - 6\", \"Nelson Hornbeck - 6\", \"Riverside Gardens - 1\", \"Tyler - 2\", \"New Walnut Street - 2\". Snapshot: data/sources/louisville/pickleball-courts.html",
       "not_stated": "Lighting, price, surface or nets at any venue; any address; any hours; any rental price; parking; any session or open-play time."
     },
@@ -232,7 +443,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Charlie Vettiner Park\". Link: \"Guide for Model Airplane & Model Helicopter Flying\". \"Park Address\" \"5550 Charlie Vettiner Park Rd.\" Louisville KY 40299; \"Year Acquired\" 1957; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"283 acres\". Amenities: Ballfield, Baseball, Basketball, Cross Country, Disc Golf, Dog Run, Fishing, Golf, Grill, Hiking Trail, Memorial, Model Airplane Flying Fields, Multi-purpose Field, Passive Open Space, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Tennis, Walking, WiFi. Snapshot: data/sources/louisville/charlie-vettiner-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking, where in the park the courts are."
     },
@@ -242,7 +457,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Iroquois Park was planned by Frederick Law Olmsted as a 'scenic reservation' of forested hillsides and breathtaking vistas. The park features the WPA-era Iroquois Amphitheater, an open-air theater that accommodates 2,366 people.\" \"A tulip poplar tree that is believed to be the largest in Louisville's parks system is located in Iroquois Park.\" \"Park Address\" \"5216 New Cut Rd.\" 40214; \"Year Acquired\" 1888; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"725.85 acres\". Amenities: Amphitheater, Archery, Basketball, Biking - Road, Disc Golf, Futsal Court, Golf, Grill, Hiking Trail, Horse Riding Trails, Horseshoe Pit, Multi-purpose Field, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Sprayground, Tennis, Volleyball, Walking, Wheelchair-Accessible Playground, WiFi. Snapshot: data/sources/louisville/iroquois-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking, where in the park the courts are."
     },
@@ -252,7 +471,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"McNeely Lake Park, one of the largest in the Metro Parks system, features a scenic 46-acre fishing lake with an accessible pier and boat ramp which is owned by the Kentucky Department of Fish and Wildlife. The Korean War Memorial is also in the park.\" Links: \"McNeely Lake Park Map & Guide\", \"Guide to Model Airplane & Model Helicopter Flying\". \"Park Address\" \"*10500 Cedar Creek Rd.\" 40229; \"Year Acquired\" 1961; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"746 acres\". Amenities: Ballfield, Basketball, Boat Ramps & Landings, Canoe Access, Cross Country, Fishing, Golf, Grill, Hiking Trail, Horse Riding Trails, Model Airplane Flying Fields, Multi-purpose Field, Passive Open Space, Pickleball, Picnic Shelter, Picnic Table, Playground, Pond, Restrooms, Tennis, Walking. Snapshot: data/sources/louisville/mcneely-lake-park.html",
       "not_stated": "A pickleball court count, what the asterisk before the address means, lighting, price, surface, nets, parking."
     },
@@ -262,7 +485,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Sun Valley Park\". \"Park Address\" \"6616 Ashby Ln.\" 40272; \"Year Acquired\" 1968; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"204 acres\". Amenities: Ballfield, Basketball, Community Center, Golf, Grill, Multi-purpose Field, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Sprayground, Swimming, Volleyball, Walking, WiFi. The Parks and Recreation navigation lists \"Sun Valley\" under Community Centers. Snapshot: data/sources/louisville/sun-valley-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking, any connection between the community centre and the court."
     },
@@ -272,7 +499,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Crescent Hill Park\". \"Park Address\" \"201 Reservoir Avenue\" 40206; \"Year Acquired\" 1925; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"77 acres\". Amenities: Golf, Pickleball, Picnic Shelter, Picnic Table, Playground, Sprayground, Swimming, Tennis, WiFi. Snapshot: data/sources/louisville/crescent-hill-park.html",
       "not_stated": "A pickleball court count, restrooms, lighting, price, surface, nets, parking."
     },
@@ -282,7 +513,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Des Pres Park\". \"Park Address\" \"4709 Lowe Rd.\" 40220; \"Year Acquired\" 1969; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"27.09 acres\". Amenities: Ballfield, Basketball, Grill, Multi-purpose Field, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Soccer, Tennis, Volleyball, Walking. Snapshot: data/sources/louisville/des-pres-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
     },
@@ -292,7 +527,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Fern Creek Park\". \"Park Address\" \"8703 Ferndale Rd.\" 40291; \"Year Acquired\" 1968; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"30.4 acres\". Amenities: Ballfield, Grill, Hiking Trail, Multi-purpose Field, Picnic Shelter, Picnic Table, Playground, Restrooms, Tennis, Walking, WiFi. The word pickleball does not appear on the page. Snapshot: data/sources/louisville/fern-creek-park.html",
       "not_stated": "Pickleball at all; lighting, price, surface, nets, parking."
     },
@@ -302,7 +541,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"George Rogers Clark Park\". \"Read about the city's oldest tree - a bald cypress located in George Rogers Clark Park\", linking to \"Celebrating trees: the legend of the Bald Cypress tree\". \"Park Address\" \"1024 Thruston Ave.\" 40217; \"Year Acquired\" 1921; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"46.49 acres\". Amenities: Ballfield, Basketball, Cross Country, Grill, Lodge, Multi-purpose Field, Pickleball, Picnic Table, Playground, Sprayground, Tennis, Volleyball, WiFi. Snapshot: data/sources/louisville/george-rogers-clark-park.html",
       "not_stated": "A pickleball court count, restrooms, lighting, price, surface, nets, parking, what the lodge is."
     },
@@ -312,7 +555,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Hays Kennedy Park\". \"The Garvin Brown Preserve, adjacent to the east side of the park, is managed by River Fields.\" \"Hays Kennedy Park is home to the new, state of the art cricket fields that were dedicated in October 2017\". \"Park History\": \"Hays Robinson Kennedy, affectionately known as the Harrods Creek godmother, dedicated her life to uplifting and supporting young people in the Prospect and Harrods Creek area.\" \"Born in 1893\"; \"Hays Kennedy Park was dedicated in her honor in 1974.\" \"Park Address\" \"7003 Beachland Beach Rd.\" 40059; \"Year Acquired\" 1969; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"78.41 acres\". Amenities: Ballfield, Basketball, Cricket Pitch, Grill, Multi-purpose Field, Pickleball, Picnic Shelter, Playground, Restrooms, River Frontage, Tennis, Walking, WiFi. Snapshot: data/sources/louisville/hays-kennedy-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
     },
@@ -322,7 +569,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Petersburg Park\". \"Park Address\" \"5008 E Indian Trail\" 40218; \"Year Acquired\" 1971; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"28 acres\". Amenities: Ballfield, Basketball, Community Center, Futsal Court, Grill, Inclusive Playground, Mini - Pitch, Multi-purpose Field, Path, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Skate Park, Soccer, Sprayground, Tennis, Tot Lot, Walking, Wheelchair-Accessible Playground, WiFi. Snapshot: data/sources/louisville/petersburg-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
     },
@@ -332,7 +583,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Riverview Park\". \"Park Address\" \"8202 Greenwood Rd.\" 40258; \"Year Acquired\" 1966; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"87 acres\". Amenities: Boat Ramps & Landings, Canoe Access, Fishing w/River Frontage, Grill, Louisville Loop Access, Picnic Shelter, Picnic Table, Playground, Restrooms, River Frontage, Sprayground, Walking, WiFi. Neither pickleball nor tennis appears on the page. Snapshot: data/sources/louisville/riverview-park.html",
       "not_stated": "Pickleball at all; lighting, price, surface, nets, parking."
     },
@@ -342,7 +597,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Wyandotte Park\". \"Park Address\" \"1104 Beecher St.\" 40215; \"Year Acquired\" 1935; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"23.36 acres\". Amenities: Ballfield, Baseball, Basketball, Futsal Court, Grill, Horseshoe Pit, Multi-purpose Field, Path, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Soccer, Sprayground, Tennis, Volleyball, Walking, WiFi. Snapshot: data/sources/louisville/wyandotte-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
     },
@@ -352,7 +611,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Nelson Hornbeck Park\". \"Park Address\" \"709 Fairdale Rd.\" 40118; \"Year Acquired\" 1967; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"18 acres\". Amenities: Ballfield, Basketball, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Sprayground, Swimming, Tennis, Walking, WiFi. Snapshot: data/sources/louisville/nelson-hornbeck-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
     },
@@ -362,7 +625,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Riverside Gardens Park\". \"Park Address\" \"3899 Lees Ln.\" 40216; \"Year Acquired\" 1976; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"10.43 acres\". Amenities: Ballfield, Basketball, Grill, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Walking, WiFi. Snapshot: data/sources/louisville/riverside-gardens-park.html",
       "not_stated": "A pickleball court count, lighting, price, surface, nets, parking."
     },
@@ -372,7 +639,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Tyler Park\". \"Park Address\" \"1501 Castlewood Ave.\" 40204; \"Year Acquired\" 1906; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"13 acres\". Amenities: Basketball, Grill, Historic Property, Multi-purpose Field, Path, Pickleball, Picnic Shelter, Picnic Table, Playground, Restrooms, Sprayground, Tennis, Tot Lot, Walking, WiFi. Snapshot: data/sources/louisville/tyler-park.html",
       "not_stated": "A pickleball court count, what the historic property is, lighting, price, surface, nets, parking."
     },
@@ -382,7 +653,11 @@
       "publisher": "Louisville Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"New Walnut Street Park\". Link: \"New Walnut Street Park Renderings\". \"Park Address\" \"1327 W Muhammad Ali Blvd.\" 40203; \"Year Acquired\" 2023; \"Hours\" \"6 a.m. - 11 p.m.\"; \"Size\" \"5.74 acres\". Amenities: Basketball, Multi-purpose Field, Pickleball, Picnic Shelter, Picnic Table, Playground, Sprayground, Tennis, WiFi. Snapshot: data/sources/louisville/new-walnut-street-park.html",
       "not_stated": "A pickleball court count, restrooms, lighting, price, surface, nets, parking, what the renderings show."
     },
@@ -392,7 +667,10 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["getting_there", "what_to_expect"],
+      "supports": [
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "All sixteen published addresses matched at house-number level in Jefferson County, KY. Thirteen resolved through the Census address file as the City writes them: Iroquois, Crescent Hill, George Rogers Clark, Wyandotte, Tyler and New Walnut Street placed in \"Louisville city\"; McNeely Lake, Sun Valley, Des Pres, Fern Creek, Petersburg, Riverview and Riverside Gardens placed in \"Louisville/Jefferson County metro government (balance)\". Three resolved through OpenStreetMap, which names the place \"Louisville\": Charlie Vettiner (\"5550, Charlie Vettiner Park Road, Louisville, Jefferson County, Kentucky, 40299\") and Nelson Hornbeck (\"709, Fairdale Road, South Park, Louisville, Jefferson County, Kentucky, 40118\") because the Census file holds no record of the address, and Hays Kennedy (\"7003, Beachland Beach Road, Beechland Beach, Louisville, Jefferson County, Kentucky, 40059\") because the Census answered \"7003 BEECHLAND AVE, LOUISVILLE, KY, 40258\", changing the street. \"2300 Hounz Ln.\" (Hounz Lane Park) is placed in \"Lyndon city\". Snapshot: data/sources/louisville-county-census.json",
       "not_stated": "Anything about the courts themselves."
     }

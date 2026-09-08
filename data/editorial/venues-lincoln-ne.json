@@ -8,16 +8,29 @@
   "venues": {
     "ballard-park": {
       "slots": {
-        "description": "Six courts dedicated to pickleball in a community park by the Havelock neighbourhood in north-east Lincoln. The City's Tennis and Pickleball page lists Ballard under \"Dedicated Pickleball Courts\" and says, in as many words, \"Includes six courts dedicated to pickleball play.\" At Ballard the net is at pickleball height and the only lines on the court are the ones you want.\n\nThe park is 9.1 acres, a community park with a rentable ballfield and a swimming pool. It is open 5:00 a.m. to 11:00 p.m., seven days a week — Lincoln publishes park hours, which most operators in this directory do not.\n\nOne caveat. Ballard's page in Parks A to Z never mentions pickleball. Its Features list reads \"Ball Diamond Rentable, Basketball Court, Drinking Fountain, Playground Equipment, Swimming Pool, Tennis Courts\". So the six dedicated courts are stated on one City page and not on the other. Nothing contradicts the count.",
+        "description": "Six courts dedicated to pickleball in a community park by the Havelock neighbourhood in north-east Lincoln. The City's Tennis and Pickleball page lists Ballard under \"Dedicated Pickleball Courts\" and says, in as many words, \"Includes six courts dedicated to pickleball play.\" At Ballard the net is at pickleball height and the only lines on the court are the ones you want.\n\nThe park is 9.1 acres, a community park with a rentable ballfield and a swimming pool. It is open 5:00 a.m. to 11:00 p.m., seven days a week. Lincoln publishes park hours, which most operators in this directory do not.\n\nOne caveat. Ballard's page in Parks A to Z never mentions pickleball. Its Features list reads \"Ball Diamond Rentable, Basketball Court, Drinking Fountain, Playground Equipment, Swimming Pool, Tennis Courts\". So the six dedicated courts are stated on one City page and not on the other. Nothing contradicts the count.",
         "getting_there": "3901 N 66th St., Lincoln, NE 68507, matched by the Census address geocoder to Lincoln city, Lancaster County. The Tennis and Pickleball page prints the address as \"3901 N 66th\"; the park's own page gives the fuller form with the postcode.\n\nThis is a suburban park in the north-east of the city, near Havelock. The City publishes nothing about parking here, so treat it as street parking until you see otherwise.",
         "what_to_expect": "Six pickleball courts and no tennis players to negotiate with, which at most venues in this directory is not an option. Open from 5:00 a.m. until 11:00 p.m., though nothing is published about lighting, so the useful end of that window is whenever the light goes.\n\nThe City states that Pickleball Lincoln, Inc. organises and schedules pickleball programming at Ballard among six other parks, and that the public is welcome to participate. The reservation the City describes applies to dual-use courts; every court here is dedicated, so a scheduled session changes who is playing rather than whether pickleball is possible. Nets, surface and cost are not published, and neither is a restroom."
       },
       "faqs": [
-        {"q": "What are the hours?", "a": "5:00 a.m. to 11:00 p.m., all seven days, from the Hours block on the park's own page."},
-        {"q": "Are the courts lit?", "a": "Not verified. The City states hours that run to 11:00 p.m. and says nothing about lighting at any Lincoln court. Hours are not lights."},
-        {"q": "Is it free?", "a": "Not verified. The City publishes no cost for any outdoor court in Lincoln. These are municipal park courts and are very likely free, but \"very likely\" is not a published fact."}
+        {
+          "q": "What are the hours?",
+          "a": "5:00 a.m. to 11:00 p.m., all seven days, from the Hours block on the park's own page."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not verified. The City states hours that run to 11:00 p.m. and says nothing about lighting at any Lincoln court. Hours are not lights."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not verified. The City publishes no cost for any outdoor court in Lincoln. These are municipal park courts and are very likely free, but \"very likely\" is not a published fact."
+        }
       ],
-      "sources": ["L1", "L2", "L6"]
+      "sources": [
+        "L1",
+        "L2",
+        "L6"
+      ]
     },
     "densmore-park": {
       "slots": {
@@ -26,23 +39,46 @@
         "what_to_expect": "Two courts you can count on and four that depend on the day. Open 5:00 a.m. to 11:00 p.m. daily. If you are coming for a specific number of courts, this is the Lincoln venue where that plan is least safe.\n\nPickleball Lincoln, Inc. schedules programming here, and the City states that during those times the dual-use courts \"are reserved for pickleball play\", with the public welcome to join. So the scheduled hours are the hours when all six are pickleball courts.\n\nThe park's page reads \"Lights: MUSCO (2000). Tournament quality\", under the heading \"DENSMORE PARK FIELDS\", describing the four baseball fields the City rents out. Lit ballfields are not lit pickleball courts, so lighting here is not verified."
       },
       "faqs": [
-        {"q": "So will I find six courts?", "a": "You will find two for certain. The other four are two tennis courts with pickleball lines, so they are pickleball courts when nobody is playing tennis on them, and reserved for pickleball during Pickleball Lincoln's scheduled programming."},
-        {"q": "Are there restrooms?", "a": "The park's Features list includes Restrooms, and the ballfield section describes \"Permanent restroom in center of complex\". Whether that is near the courts is not stated."}
+        {
+          "q": "So will I find six courts?",
+          "a": "You will find two for certain. The other four are two tennis courts with pickleball lines, so they are pickleball courts when nobody is playing tennis on them, and reserved for pickleball during Pickleball Lincoln's scheduled programming."
+        },
+        {
+          "q": "Are there restrooms?",
+          "a": "The park's Features list includes Restrooms, and the ballfield section describes \"Permanent restroom in center of complex\". Whether that is near the courts is not stated."
+        }
       ],
-      "sources": ["L1", "L3", "L6"]
+      "sources": [
+        "L1",
+        "L3",
+        "L6"
+      ]
     },
     "peterson-park": {
       "slots": {
-        "description": "Ten courts dedicated to pickleball — the largest count in Lincoln, one of the larger dedicated sets anywhere in this directory, and the only venue in the city that two separate City pages agree about. The Tennis and Pickleball page lists Peterson (Erwin) Park under \"Dedicated Pickleball Courts\" with \"Includes ten courts dedicated to pickleball play.\" The park's own page in Parks A to Z describes a community park that \"includes ten pickleball courts, an open shelter, and playground area\", and lists Pickleball among its Features.\n\nThe park is 35.28 acres near South 27th Street and Highway 2. Besides the courts there are rentable ballfields, an open shelter, a playground, and the Stransky Dog Run, 2.5 acres of off-leash space for large dogs and one acre for small ones, on the west side of Southwood Drive.",
+        "description": "Ten courts dedicated to pickleball, the largest count in Lincoln, one of the larger dedicated sets anywhere in this directory, and the only venue in the city that two separate City pages agree about. The Tennis and Pickleball page lists Peterson (Erwin) Park under \"Dedicated Pickleball Courts\" with \"Includes ten courts dedicated to pickleball play.\" The park's own page in Parks A to Z describes a community park that \"includes ten pickleball courts, an open shelter, and playground area\", and lists Pickleball among its Features.\n\nThe park is 35.28 acres near South 27th Street and Highway 2. Besides the courts there are rentable ballfields, an open shelter, a playground, and the Stransky Dog Run, 2.5 acres of off-leash space for large dogs and one acre for small ones, on the west side of Southwood Drive.",
         "getting_there": "4400 Southwood Drive, Lincoln, NE 68512, matched by the Census address geocoder to Lincoln city, Lancaster County. Both City pages print the same address.\n\nThe City publishes no parking guidance for the courts. It describes \"Ample Parking\" and an \"ADA Accessible and Handicap concrete parking space\" for the Stransky Dog Run, a separate part of the park. That is the dog run's car park, not a statement about the courts, so parking here reads unverified.",
         "what_to_expect": "The best odds in Lincoln of getting on a court: ten courts, dedicated to pickleball, confirmed by two City pages rather than one. Open 5:00 a.m. to 11:00 p.m., seven days a week.\n\nPickleball Lincoln, Inc. organises and schedules programming here, and the City says the public is welcome to participate. The reservation the City describes applies to dual-use courts, and every court here is dedicated, so it does not take pickleball away from this park at any hour.\n\nNothing is published about lighting, surface, nets or cost. The 11:00 p.m. closing time is a gate hour, not a promise of light."
       },
       "faqs": [
-        {"q": "Is this the biggest in Lincoln?", "a": "Yes, by some way. Ballard and Densmore have six each, and Densmore's six includes four that are shared with tennis. Peterson's ten are dedicated."},
-        {"q": "Are the courts lit?", "a": "Not verified. No Lincoln venue publishes a lighting answer. The park closes at 11:00 p.m., which tells you when the gate shuts and nothing about whether you can see the ball."},
-        {"q": "Do I need to book?", "a": "No booking system is published for the courts. The City does state that Pickleball Lincoln, Inc. runs scheduled programming here and that the public is welcome to join it."}
+        {
+          "q": "Is this the biggest in Lincoln?",
+          "a": "Yes, by some way. Ballard and Densmore have six each, and Densmore's six includes four that are shared with tennis. Peterson's ten are dedicated."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not verified. No Lincoln venue publishes a lighting answer. The park closes at 11:00 p.m., which tells you when the gate shuts and nothing about whether you can see the ball."
+        },
+        {
+          "q": "Do I need to book?",
+          "a": "No booking system is published for the courts. The City does state that Pickleball Lincoln, Inc. runs scheduled programming here and that the public is welcome to join it."
+        }
       ],
-      "sources": ["L1", "L4", "L6"]
+      "sources": [
+        "L1",
+        "L4",
+        "L6"
+      ]
     }
   },
   "sources": [

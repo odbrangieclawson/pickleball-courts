@@ -23,12 +23,6 @@
     },
     {
       "file": "apex-nc.json",
-      "contains": "Apex is the best-documented town in this directory so far: it publishes a court table",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "apex-nc.json",
       "contains": "Pleasant Park publishes a live court occupancy feed, which is the only real-time",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
@@ -52,12 +46,6 @@
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
-      "file": "apex-nc.json",
-      "contains": "It is not a town facility but a Wake County public school; the town publishes no street",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
       "file": "austin-tx.json",
       "contains": "Austin is the first city in this directory whose operator answers the lighting question",
       "metric": null,
@@ -65,23 +53,9 @@
     },
     {
       "file": "austin-tx.json",
-      "contains": "It is also one of the operators in this directory that states that a net is NOT provided:",
-      "metric": "cities_with_nets_not_provided",
-      "op": ">=",
-      "value": 2
-    },
-    {
-      "file": "austin-tx.json",
       "contains": "That makes Austin one of the largest cities in this directory by court count.",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "austin-tx.json",
-      "contains": "At Brentwood, Rosewood and Springwoods, yes — the City says so in words: \"bring your own",
-      "metric": "cities_with_nets_not_provided",
-      "op": "==",
-      "value": 7
     },
     {
       "file": "austin-tx.json",
@@ -241,7 +215,7 @@
     },
     {
       "file": "clark-county-wa.json",
-      "contains": "Oakbrook is stated by the City to have no lighting — one of the few venues in this",
+      "contains": "Oakbrook is stated by the City to have no lighting, one of the few venues in this",
       "metric": "venues_light_false",
       "op": ">=",
       "value": 2
@@ -297,13 +271,13 @@
     },
     {
       "file": "filters-austin-tx.json",
-      "contains": "Lights does, because the City marks eleven venues \"Lighted during park hours\" — the first",
+      "contains": "Lights does, because the City marks eleven venues \"Lighted during park hours\", the first",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "filters-austin-tx.json",
-      "contains": "Yes, and Austin publishes them for every venue — which few operators in this directory",
+      "contains": "Yes, and Austin publishes them for every venue, which few operators in this directory",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -380,18 +354,6 @@
     {
       "file": "filters-lincoln-ne.json",
       "contains": "That is one of the highest proportions of dedicated outdoor courts of any city on this",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "filters-lincoln-ne.json",
-      "contains": "And Eden Park, which has six dedicated courts and is the only Lincoln park whose own page",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "filters-lincoln-ne.json",
-      "contains": "This site publishes a stated count or nothing, and seven dual-striped parks plus Eden",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -540,12 +502,6 @@
     },
     {
       "file": "filters-wichita-ks.json",
-      "contains": "This site publishes an indoor-or-outdoor answer only when an operator states one, and",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "filters-wichita-ks.json",
       "contains": "Seven Wichita venues hold indoor pickleball courts, twenty-two courts between them, and",
       "metric": "largest_city_by_indoor_venues",
       "op": "==",
@@ -616,19 +572,7 @@
     },
     {
       "file": "kirkland-wa.json",
-      "contains": "Everest Park states it outright: \"There are two parking lots at Everest with space for up",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "kirkland-wa.json",
       "contains": "The one place Kirkland describes a playing surface rather than dating it is a court this",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "kirkland-wa.json",
-      "contains": "Kirkland's rule is that its pickleball courts are for drop-in play and nothing else: \"All",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -652,7 +596,7 @@
     },
     {
       "file": "lancaster-county-ne.json",
-      "contains": "Sixteen of the twenty-two are dedicated to pickleball rather than striped onto tennis —",
+      "contains": "Sixteen of the twenty-two are dedicated to pickleball rather than striped onto tennis,",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -701,7 +645,7 @@
     },
     {
       "file": "lincoln-ne.json",
-      "contains": "Not stated anywhere in Lincoln, which is the ordinary case — few cities in this directory",
+      "contains": "Not stated anywhere in Lincoln, which is the ordinary case: few cities in this directory",
       "metric": "cities_with_any_surface",
       "op": "<=",
       "value": 8
@@ -823,13 +767,7 @@
     },
     {
       "file": "madison-wi.json",
-      "contains": "Indoors, yes — the five courts at the Warner Park Community Recreation Center are",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "madison-wi.json",
-      "contains": "This directory requires a street address that resolves before it will publish a venue,",
+      "contains": "Indoors, yes: the five courts at the Warner Park Community Recreation Center are",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -848,7 +786,7 @@
     },
     {
       "file": "maricopa-county-az.json",
-      "contains": "Phoenix is the largest unread city and the least promising on current evidence - its own",
+      "contains": "Phoenix is the largest unread city and the least promising on current evidence: its own",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -915,13 +853,7 @@
     },
     {
       "file": "naperville-il.json",
-      "contains": "At every published venue it says something about nets - \"participants must provide their",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "nc-state.json",
-      "contains": "Brown Community Center in Apex holds the only verified indoor pickleball courts in North",
+      "contains": "At every published venue it says something about nets: \"participants must provide their",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -933,7 +865,7 @@
     },
     {
       "file": "portland-or.json",
-      "contains": "Portland Tennis Center, with sixteen — one of the largest single-venue counts in this",
+      "contains": "Portland Tennis Center, with sixteen, one of the largest single-venue counts in this",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -993,7 +925,7 @@
     },
     {
       "file": "scottsdale-az.json",
-      "contains": "No surface is stated for any Scottsdale court, which is ordinary — few cities in this",
+      "contains": "No surface is stated for any Scottsdale court, which is ordinary: few cities in this",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1031,7 +963,7 @@
     },
     {
       "file": "sedgwick-county-ks.json",
-      "contains": "Wichita is the first Kansas city on this site, and the second - after Cary, North",
+      "contains": "Wichita is the first Kansas city on this site, and the second, after Cary, North",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1047,12 +979,6 @@
       "metric": "largest_city_by_indoor_venues",
       "op": "==",
       "value": "Wichita"
-    },
-    {
-      "file": "st-george-ut.json",
-      "contains": "A place whose courts have numbers on a timetable is a pickleball facility rather than a",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "st-george-ut.json",
@@ -1086,13 +1012,7 @@
     },
     {
       "file": "tallahassee-fl.json",
-      "contains": "It is the first operator on this site to publish a written open-play rotation rule - the",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "tampa-fl.json",
-      "contains": "Al Barnes, Copeland, Davis Islands, Forest Hills, Highland Pines, Julian B Lane,",
+      "contains": "It is the first operator on this site to publish a written open-play rotation rule: the",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1107,13 +1027,6 @@
       "contains": "Tampa is the second Florida city on this site after Cape Coral and the first in",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "tampa-fl.json",
-      "contains": "It also has more published indoor venues than any city here except Wichita, which is why",
-      "metric": "second_largest_city_by_indoor_venues",
-      "op": "==",
-      "value": "Tampa"
     },
     {
       "file": "vancouver-wa.json",
@@ -1197,7 +1110,7 @@
     },
     {
       "file": "venues-austin-tx.json",
-      "contains": "The City's entry says \"bring your own portable net\" — one of only three Austin venues,",
+      "contains": "The City's entry says \"bring your own portable net\", one of only three Austin venues,",
       "metric": "venues_nets_not_provided",
       "op": "==",
       "value": 21
@@ -1280,7 +1193,7 @@
     },
     {
       "file": "venues-bellevue-wa.json",
-      "contains": "The park's own page — the record card the City keeps for the site — never mentions",
+      "contains": "The park's own page, the record card the City keeps for the site, never mentions",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1334,19 +1247,13 @@
     },
     {
       "file": "venues-kirkland-wa.json",
-      "contains": "to dusk, every day, free of any charge the City mentions - though note that it never",
+      "contains": "to dusk, every day, free of any charge the City mentions, though note that it never",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "venues-lincoln-ne.json",
-      "contains": "The City's Tennis and Pickleball page lists Ballard under \"Dedicated Pickleball Courts\"",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "venues-lincoln-ne.json",
-      "contains": "to 11:00 p.m., seven days a week — Lincoln publishes park hours, which most operators in",
+      "contains": "Lincoln publishes park hours, which most operators in this directory do not.",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1358,7 +1265,7 @@
     },
     {
       "file": "venues-lincoln-ne.json",
-      "contains": "Ten courts dedicated to pickleball — the largest count in Lincoln, one of the larger",
+      "contains": "Ten courts dedicated to pickleball, the largest count in Lincoln, one of the larger",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1382,13 +1289,7 @@
     },
     {
       "file": "venues-louisville-ky.json",
-      "contains": "The practical reading is that the courts are there - the City counted them on the page it",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "venues-louisville-ky.json",
-      "contains": "Restrooms are not on it - George Rogers Clark is one of three published Louisville venues",
+      "contains": "George Rogers Clark is one of three published Louisville venues whose page omits them",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1406,7 +1307,7 @@
     },
     {
       "file": "venues-louisville-ky.json",
-      "contains": "Restrooms are not on the list - New Walnut Street is one of three published Louisville",
+      "contains": "New Walnut Street is one of three published Louisville venues whose page omits them",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1451,7 +1352,7 @@
     },
     {
       "file": "venues-madison-wi.json",
-      "contains": "Five indoor courts across two gyms — Blue Gym has two and Green Gym three, each 20ft by",
+      "contains": "They were the first pickleball courts in this entire directory that could be reserved in advance.",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1481,25 +1382,13 @@
     },
     {
       "file": "venues-mesa-az.json",
-      "contains": "The City publishes a phone number for the Center directly, 480-644-3874, and an email",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "venues-mesa-az.json",
       "contains": "What the City never says, here or anywhere in Mesa, is whether these courts are indoor or",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "venues-mesa-az.json",
-      "contains": "It also never says they are free, so this site does not describe them as free - only as",
-      "metric": null,
-      "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "venues-naperville-il.json",
-      "contains": "These tennis courts have a history of traditional tennis court color coatings failing",
+      "contains": "It also never says they are free, so this site does not describe them as free, only as",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1517,7 +1406,7 @@
     },
     {
       "file": "venues-portland-or.json",
-      "contains": "Southwest Community Center, the city's largest indoor site, is about 250 metres away —",
+      "contains": "Southwest Community Center, the city's largest indoor site, is about 250 metres away,",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1541,13 +1430,13 @@
     },
     {
       "file": "venues-portland-or.json",
-      "contains": "Four courts indoors and a published price — $6 for adults, $5 for seniors, per drop-in",
+      "contains": "Four courts indoors and a published price: $6 for adults, $5 for seniors, per drop-in",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "venues-portland-or.json",
-      "contains": "Sixteen outdoor courts — one of the largest single venues in this directory — and the one",
+      "contains": "Sixteen outdoor courts, one of the largest single venues in this directory, and the one",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1589,7 +1478,7 @@
     },
     {
       "file": "venues-saint-paul-mn.json",
-      "contains": "Four courts is not many by the standards of the larger cities on this site — Austin has",
+      "contains": "Four courts is not many by the standards of the larger cities on this site: Austin has",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1633,7 +1522,7 @@
     },
     {
       "file": "venues-scottsdale-az.json",
-      "contains": "Ten outdoor lighted pickleball courts — the largest count in Scottsdale, and one of the",
+      "contains": "Ten outdoor lighted pickleball courts, the largest count in Scottsdale, and one of the",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1689,7 +1578,7 @@
     },
     {
       "file": "venues-vancouver-wa.json",
-      "contains": "And then the sentence that makes this venue unusual in this entire directory — \"The",
+      "contains": "And then the sentence that makes this venue unusual in this entire directory: \"The",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1714,7 +1603,7 @@
     },
     {
       "file": "wake-county-nc.json",
-      "contains": "The county also holds the first verified indoor pickleball in this directory — four",
+      "contains": "The county also holds the first verified indoor pickleball in this directory: four",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1745,16 +1634,9 @@
     },
     {
       "file": "wichita-ks.json",
-      "contains": "Wichita is the first Kansas city on this site, and the second - after Cary, North",
+      "contains": "Wichita is the first Kansas city on this site, and the second, after Cary, North",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
-    },
-    {
-      "file": "wichita-ks.json",
-      "contains": "It is one of the few operators here that states, on one page, which venues are indoor and",
-      "metric": "largest_city_by_indoor_venues",
-      "op": "==",
-      "value": "Wichita"
     },
     {
       "file": "wichita-ks.json",

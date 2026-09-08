@@ -15,15 +15,19 @@
       "key": "space",
       "heading": "Best if you want the most courts in one place",
       "venue_slug": "portland-tennis-center",
-      "text": "Portland Tennis Center, with sixteen — one of the largest single-venue counts in this directory. The catch is in the same sentence that gives the number: pickleball there runs as a registered summer programme, \"available from mid June until early September\", through an ActiveNet account, with no court reservations. Outside that window the sixteen courts are not a pickleball answer. For eight courts on an ordinary day in November, Columbia Park and Sellwood Park each have eight, free, and open dawn to dusk.",
-      "supports": ["E1"]
+      "text": "Portland Tennis Center, with sixteen, one of the largest single-venue counts in this directory. The catch is in the same sentence that gives the number: pickleball there runs as a registered summer programme, \"available from mid June until early September\", through an ActiveNet account, with no court reservations. Outside that window the sixteen courts are not a pickleball answer. For eight courts on an ordinary day in November, Columbia Park and Sellwood Park each have eight, free, and open dawn to dusk.",
+      "supports": [
+        "E1"
+      ]
     },
     {
       "key": "dedicated",
       "heading": "Best if you want a court that is only ever a pickleball court",
       "venue_slug": "gabriel-park",
       "text": "Gabriel Park has six courts the city describes as 'pickleball only', with permanent lines and nets included, so you can turn up carrying a paddle and nothing else. Laurelhurst Park has two on the same terms and Hillside Park has one, but Gabriel is the largest of the three and one of the four sites Portland names as sanctioned pickleball parks. Everywhere else in this city, bring your own net.",
-      "supports": ["E1"]
+      "supports": [
+        "E1"
+      ]
     },
     {
       "key": "indoor",
@@ -36,7 +40,9 @@
       "heading": "Best if you do not want to pay anything",
       "venue_slug": "columbia-park",
       "text": "Twenty-nine outdoor courts across six parks are described by the city with one word: free. Columbia Park and Sellwood Park have eight each, Gabriel six, Pier four, Laurelhurst two and Hillside one. Portland is the first city in this directory where we can say a venue is free rather than saying we have not checked — five cities came before it and not one of their operators put a price, or the absence of one, in writing.",
-      "supports": ["E1"]
+      "supports": [
+        "E1"
+      ]
     }
   ],
   "faqs": [
@@ -64,7 +70,16 @@
       "publisher": "Portland Parks & Recreation",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["parking", "peak_hours", "surface_condition", "local_scene", "space", "dedicated", "indoor", "free"],
+      "supports": [
+        "parking",
+        "peak_hours",
+        "surface_condition",
+        "local_scene",
+        "space",
+        "dedicated",
+        "indoor",
+        "free"
+      ],
       "evidence": "The department's pickleball page. Court counts and addresses per venue, e.g. \"Columbia Park | 4503 N Lombard St., Portland, OR 97203 / 8 Outdoor hard courts, free, permanent lines, bring your own net. Amenities: restrooms and water.\" Indoor drop-in pricing: \"$6 for adults/$5 for seniors\". Noise policy: \"Most tennis court areas in our parks are not far enough away from homes to properly reduce the noise from pickleball play\" and \"at least 300 to 600 feet away from homes\"; sanctioned parks named as \"Columbia, Pier, Sellwood, and Gabriel Park\". Rules: \"Limit play to one hour if others are waiting\", \"No painting, taping, or chalking lines is allowed on PP&R tennis courts\", \"Be aware surface is slippery when wet\", \"Courts are open from Dawn to Dusk.\" Snapshot: data/sources/portland/pickleball.html"
     },
     {
@@ -73,7 +88,9 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-03",
-      "supports": ["parking"],
+      "supports": [
+        "parking"
+      ],
       "evidence": "All eleven published addresses matched the Census address geocoder and resolved to Multnomah County, OR (FIPS 41051). Snapshot: data/sources/portland-county-census.json"
     }
   ]

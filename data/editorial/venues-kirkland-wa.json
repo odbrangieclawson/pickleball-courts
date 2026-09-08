@@ -22,13 +22,17 @@
           "a": "No. They are drop-in use only and first-come, first-served."
         }
       ],
-      "sources": ["K1", "K2", "K6"]
+      "sources": [
+        "K1",
+        "K2",
+        "K6"
+      ]
     },
     "everest-park": {
       "slots": {
         "description": "Three pickleball courts in a community park south-east of downtown, alongside ballfields, a playground, a picnic shelter and restrooms that the City replaced in 2026.\n\nAll three courts are open play. The City states: \"The pickleball courts are available for drop in use only.\" The posted rotation rule is the simple one: if the courts are full and players are waiting, play one game to 11 points and rotate off.\n\nThe count of three comes from Kirkland's pickleball page, which lists \"3 pickleball courts\" here. The park's own page mentions its pickleball courts several times and never says how many there are. Nothing contradicts the figure, but it rests on one City record rather than two.",
         "getting_there": "500 8th St S, Kirkland, WA 98033, in King County.\n\nThis is the best-documented parking of any venue on this site, and the credit belongs entirely to the City for writing it down: \"There are two parking lots at Everest with space for up to 100 vehicles.\" The City does not say whether parking costs anything or when it fills, and a park with ballfields can fill for reasons that have nothing to do with pickleball. There are year-round restrooms.",
-        "what_to_expect": "Three open-play courts, 8 a.m. to dusk, every day, free of any charge the City mentions - though note that it never actually says the courts are free, so this site does not claim it. The \"Free Play\" heading on this park's page is field time on the grass and synthetic turf, offered March to October and year-round respectively. It is about the fields, not the courts.\n\nYou cannot book a court. Kirkland runs its classes and leagues elsewhere and prohibits business use of its pickleball courts.\n\nLighting is not stated, and with a dusk closing time there is no evening session to light. The surface is not stated, and this venue carries no renovation date to hint at its age."
+        "what_to_expect": "Three open-play courts, 8 a.m. to dusk, every day, free of any charge the City mentions, though note that it never actually says the courts are free, so this site does not claim it. The \"Free Play\" heading on this park's page is field time on the grass and synthetic turf, offered March to October and year-round respectively. It is about the fields, not the courts.\n\nYou cannot book a court. Kirkland runs its classes and leagues elsewhere and prohibits business use of its pickleball courts.\n\nLighting is not stated, and with a dusk closing time there is no evening session to light. The surface is not stated, and this venue carries no renovation date to hint at its age."
       },
       "faqs": [
         {
@@ -40,7 +44,11 @@
           "a": "8 a.m. to dusk, daily, the same as every Kirkland pickleball court."
         }
       ],
-      "sources": ["K1", "K3", "K6"]
+      "sources": [
+        "K1",
+        "K3",
+        "K6"
+      ]
     },
     "feriton-spur-park": {
       "slots": {
@@ -62,7 +70,11 @@
           "a": "8 a.m. to dusk, daily."
         }
       ],
-      "sources": ["K1", "K4", "K6"]
+      "sources": [
+        "K1",
+        "K4",
+        "K6"
+      ]
     }
   },
   "sources": [
@@ -72,7 +84,10 @@
       "publisher": "City of Kirkland Parks and Community Services",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["description", "what_to_expect"],
+      "supports": [
+        "description",
+        "what_to_expect"
+      ],
       "evidence": "The City's pickleball page. \"Where to Play\" table, column headed \"Number & Type of Courts\": Everest Park \"3 pickleball courts\", Feriton Spur Park \"1 pickleball court\", Peter Kirk Park \"6 pickleball courts\", each \"8 AM to dusk\". City-wide rules: \"All City of Kirkland pickleball courts are available on a first-come, first-served basis.\", \"The use of pickleball courts for business purposes is not allowed, including lessons, leagues, or tournaments.\", \"Outdoor pickleball courts are available from 8 AM to dusk.\" Court detail for Everest (all open play, one game to 11 and rotate) and Peter Kirk (three open play, three timed at 30 minutes). Snapshot: data/sources/kirkland/pickleball.html",
       "not_stated": "Lighting, any fee, surface, and street addresses."
     },
@@ -82,7 +97,11 @@
       "publisher": "City of Kirkland Parks and Community Services",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Peter Kirk Park has six pickleball courts and one basketball court. They are available for drop-in use only. The pickleball courts are open from 8 a.m. to dusk daily.\" \"The Peter Kirk tennis courts closed on Monday, April 13, 2026 for conversion to six dedicated pickleball courts.\" \"The new pickleball courts opened July 2, 2026 at 3 p.m.\" \"Parking is available in the Municipal Parking Garage or along Central Way.\" The park \"features a lighted baseball field, playground, skate park, basketball court, and swimming pool (seasonal)\", has a year-round restroom on the west side and public Wi-Fi, and neighbours the Kirkland Performance Center, Library, Municipal Parking Garage and Transit Center. Address 202 3rd St, Kirkland 98033. Snapshot: data/sources/kirkland/peter-kirk-park.html",
       "not_stated": "Lighting on the pickleball courts, any fee, and the surface."
     },
@@ -92,7 +111,11 @@
       "publisher": "City of Kirkland Parks and Community Services",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"Everest Park is a community park with many amenities, including pickleball courts, ballfields, a playground, a picnic shelter, and restrooms. The Everest Park restroom was replaced in 2026.\" \"The pickleball courts are available for drop in use only.\" \"There are two parking lots at Everest with space for up to 100 vehicles.\" Amenities include \"Restrooms (Year-round)\" and \"Parking Lot\". The \"Free Play\" section describes \"field time set aside for the community to enjoy passive, drop-in, and informal play outdoors\", offered March to October on natural grass and year-round on synthetic turf. Address 500 8th St S, Kirkland 98033. The page states no pickleball court count. Snapshot: data/sources/kirkland/everest-park.html",
       "not_stated": "A pickleball court count, lighting, any fee for the courts, and the surface."
     },
@@ -102,7 +125,11 @@
       "publisher": "City of Kirkland Parks and Community Services",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "\"The park was renovated and expanded by Google and SRM Development in 2021-2022. The park includes a 16-foot-wide paved trail, a 44-foot pickleball court, an urban farm growing vegetables for Hopelink, bathrooms, a splash area, a zip-line, a sand volleyball court, a basketball court, and a grass amphitheater.\" Amenities include \"Restrooms (Year-round)\" and \"Parking Lot\". Address 509 6th Street South, Kirkland 98033. Snapshot: data/sources/kirkland/feriton-spur-park.html",
       "not_stated": "Lighting, any fee, the surface, and the size of the parking lot."
     },
@@ -112,7 +139,9 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-04",
-      "supports": ["getting_there"],
+      "supports": [
+        "getting_there"
+      ],
       "evidence": "The three published addresses matched at house-number level and were placed in the incorporated place \"Kirkland city\", King County, WA: \"202 3RD ST, KIRKLAND, WA, 98033\", \"500 8TH ST S, KIRKLAND, WA, 98033\" and \"509 6TH ST S, KIRKLAND, WA, 98033\". Snapshot: data/sources/kirkland-county-census.json",
       "not_stated": "Anything about the courts themselves."
     }

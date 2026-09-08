@@ -4,7 +4,7 @@
   "kind": "filters",
   "date_checked": "2026-09-04",
   "written_by": "staff_research",
-  "note_on_method": "Two of the five filter slugs have a lawful data driver in Austin. Outdoor does, because every published venue carries a stated outdoor count. Lights does, because the City marks eleven venues \"Lighted during park hours\" — the first city in this directory where that filter clears the three-venue threshold on prose rather than on a GIS column. Indoor has no published venue yet, free has no driver because Austin never states a price, and public has none because access_type still has no controlled vocabulary.",
+  "note_on_method": "Two of the five filter slugs have a lawful data driver in Austin. Outdoor does, because every published venue carries a stated outdoor count. Lights does, because the City marks eleven venues \"Lighted during park hours\", the first city in this directory where that filter clears the three-venue threshold on prose rather than on a GIS column. Indoor has no published venue yet, free has no driver because Austin never states a price, and public has none because access_type still has no controlled vocabulary.",
   "filters": {
     "outdoor": {
       "slots": {
@@ -22,7 +22,7 @@
         },
         {
           "q": "Do the courts have set hours?",
-          "a": "Yes, and Austin publishes them for every venue — which few operators in this directory do. Fifteen run \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\" The exceptions matter: Pan American loses its courts to roller derby on Tuesday and Thursday evenings and weekend mornings from 9 a.m., Austin High follows the school calendar, Hancock closes midday in term time, and South Austin opens at 8 a.m. rather than 7."
+          "a": "Yes, and Austin publishes them for every venue, which few operators in this directory do. Fifteen run \"Open Play: 7 Days a Week, 7 a.m. to 10 p.m.\" The exceptions matter: Pan American loses its courts to roller derby on Tuesday and Thursday evenings and weekend mornings from 9 a.m., Austin High follows the school calendar, Hancock closes midday in term time, and South Austin opens at 8 a.m. rather than 7."
         },
         {
           "q": "Which venues are in Williamson County?",
