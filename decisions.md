@@ -69,11 +69,11 @@ exists to make it structurally impossible here.
 ## 4. Word bands — IMMUTABLE
 
 ```
-city    1,200 - 2,000
-venue     700 - 1,200
-county    900 - 1,500
-filter    600 - 1,000
-state   3,000 - 5,000
+city      800 - 1,350
+venue     400 -   700
+county    600 - 1,000
+filter    400 -   700
+state   1,500 - 2,500
 ```
 
 > **Enforced by:** `lib/page/words.mjs`, which holds `WORD_BANDS` and the
@@ -92,8 +92,9 @@ state   3,000 - 5,000
    needs at least three specific, non-templatable sentences.
 4. Exactly five indexable filter pages per city: indoor, outdoor, free,
    public, lights. Every other facet is a noindex query parameter.
-5. Word bands, enforced: city 1,200-2,000 | venue 700-1,200 | county
-   900-1,500 | filter 600-1,000 | state 3,000-5,000.
+5. Word bands, enforced: city 800-1,350 | venue 400-700 | county
+   600-1,000 | filter 400-700 | state 1,500-2,500 (halved 2026-09-08; see
+   the change log).
 6. Nulls render as "Not verified yet" with a help-us-verify link. Never 0,
    never "N/A", never a guess. Booleans are tri-state; never coerce null to
    false.
@@ -268,11 +269,11 @@ and the rule is the instruction.
 ### D5 — WORD BANDS, ENFORCED BY THE BUILD
 
 > ```
-> City page      1,200 - 2,000 words
-> Venue page       700 - 1,200 words
-> County page      900 - 1,500 words
-> Filter page      600 - 1,000 words
-> State page     3,000 - 5,000 words
+> City page        800 - 1,350 words   (was 1,200 - 2,000 until 2026-09-08)
+> Venue page       400 -   700 words   (was   700 - 1,200)
+> County page      600 - 1,000 words   (was   900 - 1,500)
+> Filter page      400 -   700 words   (was   600 - 1,000)
+> State page     1,500 - 2,500 words   (was 3,000 - 5,000)
 > ```
 > Under the floor means the page does not publish. Pickleheads' court pages
 > sit at 656 words; your floor of 700 is deliberately just above it.
@@ -429,3 +430,4 @@ silently.
 | 2026-09-07 | **A verified record carries the operator's location words, not ours.** The Orem run first wrote "north-west Orem" into Bonneville Park's court_availability; the City's page says "Located on the Northeast corner of Orem" and its Location line is 1450 N 800 W. The direction was removed and the City's sentence quoted instead. | Caught by the county writer comparing the verified file to the extract. A compass direction is the kind of harmless-looking derivation §6 forbids; it was wrong here, which is the point. |
 | 2026-09-07 | **The identity audit no longer re-derives a published slug.** Re-running `scripts/identity/audit.mjs` after Long Beach and Wichita had shipped rebuilt two live slugs from their verified names — "el-dorado-park-tennis-center" became "el-dorado-park-tennis-pickleball-center" and "orchard-park-recreation-center" became "orchard-recreation-center" — and the 404 monitor caught both URLs breaking in the built output before anything was committed. The audit now keeps a verified row at the slug the previous registry gave it, or its own slug, and never derives a new one from the name. | §3 freezes a URL at launch, and the audit is the one script that can move one without meaning to: a verified name is a better identity than an import, which is exactly why it must not be allowed to rename a page that is already live. The 404 monitor exists for this case and it worked. |
 | 2026-09-07 | **The index switch is one environment variable, and it is still off.** `SITE_INDEXABLE` (lib/site/origin.mjs) now decides robots.txt and every publishable page's robots meta; it refuses to be true while `SITE_ORIGIN` is unset. Open Graph and Twitter tags are on every page, and next.config.ts redirects the Vercel hostname to the origin once a custom domain is set. Nothing about today's deployment changed: the build with the variable unset is byte-for-byte the same noindex site. The launch sequence is written in DEPLOYMENT.md. | The owner is buying a domain and asked for everything that does not need it to be done first. Flipping index on used to mean editing eight files by hand on launch day; now it is two dashboard values and a redeploy, which is the right amount of code to change on the one day nobody should be editing code. Indexing on the vercel.app hostname was considered and refused — see the checklist. |
+| 2026-09-08 | **Word bands halved.** City 800-1,350, venue 400-700, county 600-1,000, filter 400-700, state 1,500-2,500 (§4, rule 5, D5 and `WORD_BANDS` all updated). The owner read the Washington state page and said the editorial was too long and used too many dashes; every editorial file is being rewritten to the new bands with no dashes, facts and registered claim sentences unchanged. The 400-word venue floor is now below Pickleheads' 656, which D5 had set the old floor to beat; the owner judged a shorter honest page better than a longer one, and the three-specific-sentences rule still holds. | The bands were set at Phase 0 before a single page had been written and read. Thirty-five cities in, the pages that meet them read as essays, and the owner, reading them as a visitor would, asked for half. Floors and ceilings both move so that the build keeps enforcing a shape rather than just a minimum. |

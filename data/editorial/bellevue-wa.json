@@ -3,19 +3,19 @@
   "state": "WA",
   "date_checked": "2026-09-04",
   "written_by": "staff_research",
-  "note_on_method": "Nobody working on this has played on these courts. Everything below comes from pages the City of Bellevue publishes: one pickleball page that states a court count for every venue it lists, the individual park and community centre pages it links to for addresses and amenities, the South Bellevue drop-in sports page for the only price in the city, and a news item of 28 August 2026 for the Eastgate conversion. Where the City says nothing — lights, surfaces, parking — this page says nothing, and says so.",
+  "note_on_method": "Nobody working on this has played on these courts. Everything below comes from pages the City of Bellevue publishes: one pickleball page that states a court count for every venue it lists, the individual park and community centre pages it links to for addresses and amenities, the South Bellevue drop-in sports page for the only price in the city, and a news item of 28 August 2026 for the Eastgate conversion. Where the City says nothing (lights, surfaces, parking), this page says nothing, and says so.",
   "slots": {
-    "parking": "Not published, anywhere, for any of the thirteen. This one is worth explaining because it was nearly got wrong: the word \"Parking\" appears in the HTML of every single Bellevue page we snapshotted, and a plausible-looking amenity match would have published a parking fact for all thirteen venues. It is a navigation item — \"Permits, Parking and Utilities\" — in the site's own menu bar. Five of the park pages do list Parking in their amenity blocks, which is a different thing from telling you how many spaces there are, when the lot fills on a Saturday, or whether the neighbours mind. Three of the thirteen are community centres with their own lots, which is a reasonable expectation and not a verified fact. So: treat parking here as unknown. If you are driving to Cherry Crest Mini Park or Norwood Village on a weekend afternoon, you are going on a residential street with no published guidance at all.",
-    "peak_hours": "Bellevue publishes no demand figures, but it publishes something more useful than most cities do — the rules that tell you what happens when a court is busy. At Crossroads Community Center, drop-in play needs \"No registration required: first-come, first-served. Space is limited.\" At South Bellevue, \"All Drop-In Sports times are strictly drop-in only\", you check in at the front desk before you play, and reservations, saving spots and signing in for someone else are all specifically not allowed. Eastgate's four dedicated courts \"will remain first-come, first-serve and will be open during posted park hours\". Nowhere in this city can you book a pickleball court in advance. What that means in practice is that the indoor sessions have a schedule you can read and a capacity you cannot see, and the outdoor courts have neither — nine of the thirteen venues share their courts with tennis or basketball, so who is on them at 6pm on a Tuesday depends on a sport this directory does not track.",
-    "surface_condition": "Not one surface is stated in the whole city, and Bellevue is unusual in the specific way it withholds it. Most operators simply say nothing; Bellevue says a great deal about what each court is shared WITH — \"over tennis net\", \"basketball court overlay\", \"portable nets\", \"dedicated\" — which describes a use rather than a material. Nine of the thirteen venues are tennis or basketball courts with pickleball lines on them, so the surface underfoot is whatever those courts are made of, and the City does not write it down. The one place a change is on the record is Eastgate Park: the City says a follow-up project is planned to resurface the courts \"with only pickleball lines, creating durable and consistent play conditions\". That is a statement about future work, not about what you will find there today, so it stays out of the surface field and sits here instead.",
-    "local_scene": "Bellevue is the city in this directory where you can watch the sport win an argument. On 28 August 2026 the City announced that from 1 September the tennis nets would come off the two dual-use sport courts at Eastgate Park and the four pickleball courts marked on them would become permanent — \"Responding to increasing community demand\", citing \"multiple recreation planning assessments and high interest in the sport expressed through community feedback\", and pointing displaced tennis players to Silver Leaf, Lakemont, Spiritridge and Sunset, all within about three miles. That is the whole national story of the last five years, happening on two specific courts, with a date. The City then bounded it in a sentence more directories should copy: it \"does not currently have conversions planned at any other dual-use courts in Bellevue\". So the rest of the city stays as it is — shared courts, portable nets, and four indoor programmes running on published drop-in schedules at three community centres and a fieldhouse."
+    "parking": "Not published for any of the thirteen venues. Five park pages (Crossroads, Hidden Valley, Lakemont, Lewis Creek and Highland) list Parking among their amenities, which says a lot exists and nothing about its size or when it fills. Cherry Crest Mini Park, Norwood Village and Spiritridge are residential street parks with no published guidance.",
+    "peak_hours": "Bellevue publishes no demand figures, but it does publish the rules that apply when a court is busy. At Crossroads Community Center, drop-in play is \"No registration required: first-come, first-served. Space is limited.\" At South Bellevue, \"All Drop-In Sports times are strictly drop-in only\", and you check in at the front desk. Eastgate's courts \"will remain first-come, first-serve and will be open during posted park hours\". No pickleball court in Bellevue can be booked in advance.",
+    "surface_condition": "No surface is stated for any court in the city. The City says what each court is shared with (\"over tennis net\", \"basketball court overlay\", \"portable nets\", \"dedicated\") but not what it is made of. Its default is \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\" The exceptions are Eastgate Park's four dedicated courts, one dedicated court at Hillaire Park, and Lewis Creek Park's two on the basketball court.",
+    "local_scene": "On 28 August 2026 the City announced that from 1 September the tennis nets would come off the two dual-use sport courts at Eastgate Park, making the four pickleball courts marked on them permanent. It was \"Responding to increasing community demand\", and it pointed tennis players to Silver Leaf, Lakemont, Spiritridge and Sunset, all within about three miles. The City also said it \"does not currently have conversions planned at any other dual-use courts in Bellevue\". So the rest of the city stays as it is: shared courts, portable nets, and four indoor drop-in programmes at three community centres and a fieldhouse."
   },
   "best_for": [
     {
       "key": "dedicated",
       "heading": "Best if you want a court that is only a pickleball court",
       "venue_slug": "eastgate-park",
-      "text": "Eastgate Park, and only Eastgate Park. Four courts, marked \"(dedicated)\" on the City's list against a city-wide default of shared use with tennis, and permanently so since 1 September 2026, when the tennis nets came off. Everywhere else in Bellevue you are playing on someone else's court with lines added — except one court at Hillaire Park, which is dedicated while its two neighbours are portable nets on tennis courts. One caveat the City leaves open: it does not say whether nets are provided at Eastgate now that the tennis nets have gone, so bring one until somebody tells us otherwise.",
+      "text": "Eastgate Park, and only Eastgate Park. Four courts, marked \"(dedicated)\" on the City's list against a city-wide default of shared use with tennis, and permanently so since 1 September 2026, when the tennis nets came off. Everywhere else in Bellevue you are playing on someone else's court with lines added, except one court at Hillaire Park, which is dedicated while its two neighbours are portable nets on tennis courts. One caveat the City leaves open: it does not say whether nets are provided at Eastgate now that the tennis nets have gone, so bring one until somebody tells us otherwise.",
       "supports": [
         "E1",
         "E4"
@@ -25,7 +25,7 @@
       "key": "indoor",
       "heading": "Best if the weather has closed the outdoor courts",
       "venue_slug": "south-bellevue-community-center",
-      "text": "South Bellevue Community Center has six indoor courts, the largest single count in the city, and it is the only venue in Bellevue that publishes what it costs: $4 for Bellevue residents, $5 for everyone else, per adult drop-in session. It is also the only one that says who supplies the equipment — \"We provide pickleball balls, nets, and poles\" — so a paddle is genuinely all you need. Check in at the front desk first; the sessions are strictly drop-in and nothing can be reserved.",
+      "text": "South Bellevue Community Center has six indoor courts, the largest single count in the city, and it is the only venue in Bellevue that publishes what it costs: $4 for Bellevue residents, $5 for everyone else, per adult drop-in session. It is also the only one that says who supplies the equipment (\"We provide pickleball balls, nets, and poles\"), so a paddle is genuinely all you need. Check in at the front desk first; the sessions are strictly drop-in and nothing can be reserved.",
       "supports": [
         "E1",
         "E2"
@@ -35,7 +35,7 @@
       "key": "both",
       "heading": "Best if you want indoor and outdoor at one address",
       "venue_slug": "hidden-valley-park",
-      "text": "Hidden Valley Park is one of only nine venues in this entire directory carrying a non-zero count on both sides, and was the first: three indoor courts in the Hidden Valley Fieldhouse and two outdoor courts in the park around it, at 1903 112th Ave NE. The City lists them as two separate entries — one under Indoor, one under Outdoor — and links both names to the same park page, which is why they are published here as one place rather than two.",
+      "text": "Hidden Valley Park is one of only nine venues in this entire directory carrying a non-zero count on both sides, and was the first: three indoor courts in the Hidden Valley Fieldhouse and two outdoor courts in the park around it, at 1903 112th Ave NE. The City lists them as two separate entries, one under Indoor and one under Outdoor, and links both names to the same park page, which is why they are published here as one place rather than two.",
       "supports": [
         "E1",
         "E5"
@@ -45,7 +45,7 @@
       "key": "no_booking",
       "heading": "Best if you want to turn up on a whim indoors",
       "venue_slug": "crossroads-community-center",
-      "text": "Crossroads Community Center runs three indoor courts on a drop-in schedule with the plainest rule in the city: \"No registration required: first-come, first-served. Space is limited.\" What it does not publish is a price for pickleball — the City points at a registration site and at drop-in schedule PDFs dated 2023 and 2024, so ring ahead if the cost matters to your plans. The centre sits inside Crossroads Park, which has four outdoor courts of its own on shared tennis courts, at a different address a mile and a half east.",
+      "text": "Crossroads Community Center runs three indoor courts on a drop-in schedule with the plainest rule in the city: \"No registration required: first-come, first-served. Space is limited.\" What it does not publish is a price for pickleball: the City points at a registration site and at drop-in schedule PDFs dated 2023 and 2024, so ring ahead if the cost matters to your plans. The centre sits inside Crossroads Park, which has four outdoor courts of its own on shared tennis courts, at a different address a mile and a half east.",
       "supports": [
         "E1",
         "E3"
@@ -55,35 +55,19 @@
   "faqs": [
     {
       "q": "How many pickleball courts does Bellevue have?",
-      "a": "We have verified 42 across thirteen City of Bellevue venues: 28 outdoor and 14 indoor. That is one of the larger sets of venues in this directory, and one of the larger indoor sets anywhere in it. Every venue the City lists is now on this page; the thirteenth, Highland Park, joined it on 4 September 2026, and why it took that long is below."
-    },
-    {
-      "q": "Are there indoor courts in Bellevue?",
-      "a": "Yes, fourteen of them, which makes Bellevue one of only two published cities where you can play indoors on a verified court. Six are at South Bellevue Community Center, three at Crossroads Community Center, three in the Hidden Valley Fieldhouse and two at North Bellevue Community Center. The City attaches a warning to the last of those, in the same breath as the count: \"2 courts (with low ceiling)\"."
+      "a": "42 across thirteen City of Bellevue venues: 28 outdoor and 14 indoor. The indoor courts are six at South Bellevue Community Center, three at Crossroads Community Center, three in the Hidden Valley Fieldhouse and two at North Bellevue Community Center, listed as \"2 courts (with low ceiling)\"."
     },
     {
       "q": "Is it free to play?",
-      "a": "Not verified, except in one direction at one venue. South Bellevue Community Center charges $4 for Bellevue residents and $5 for non-residents per adult drop-in session, and runs family sessions free — though a family session needs an adult and a child under 18 from the same household on court together, so it is no route for two adults wanting a game. For everywhere else, including all nine outdoor parks, the City never says. Public park courts in Washington usually are free; we do not publish \"usually\"."
+      "a": "Not verified, except at one venue. South Bellevue Community Center charges $4 for Bellevue residents and $5 for non-residents per adult drop-in session; its family sessions are free but need an adult and a child under 18 from the same household on court together. Everywhere else, the City does not say."
     },
     {
       "q": "Do I need to bring a net?",
-      "a": "Probably, and the City's wording is the reason we cannot be sure. Seven venues are marked \"portable nets\", which says the nets are portable and not who carries them to the court. Two are marked \"over tennis net\", which means you play over the net that is already strung. Only South Bellevue Community Center states it outright: \"We provide pickleball balls, nets, and poles.\""
-    },
-    {
-      "q": "Are any of the courts lit?",
-      "a": "Not verified anywhere in Bellevue — thirteen venues, thirteen unknowns. Hidden Valley Park's page mentions \"a lighted tennis court\", but the park also has a separate sports court and nothing says the pickleball is played on the lit one, so it would be a guess about whether you can play at 8pm in November. Highland Park's page calls its baseball and softball fields lighted and says nothing about its tennis courts, which is the same kind of guess. Unknown is not unlit; it means nobody has told us."
-    },
-    {
-      "q": "Which courts share with tennis, and which do not?",
-      "a": "Bellevue answers this itself, in a sentence worth more than most court counts: \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted.\" So the default is shared, and the exceptions are marked — Eastgate Park's four are dedicated, one of Hillaire Park's three is dedicated, and Lewis Creek Park's two are an overlay on the basketball court rather than on tennis."
+      "a": "Probably. Seven venues are marked \"portable nets\", which says the nets are portable, not who carries them. Two are marked \"over tennis net\", so you play over the net already strung. Only South Bellevue Community Center states it: \"We provide pickleball balls, nets, and poles.\""
     },
     {
       "q": "Why did Highland Park take so long to appear?",
-      "a": "It was excluded on three grounds, and one of them has gone. The Census geocoder returns no match for 14224 Bel-Red Road, the address the City's own park page gives, or for four spellings of it — so it failed the identity gate that requires an address which resolves. On 4 September 2026 this site added a second resolver, OpenStreetMap, consulted only where the Census has no record and accepted only when it returns the house number asked for; it resolves this address, and the venue publishes. The other two grounds are still true and are on the venue's own page rather than dropped: the park's page never mentions pickleball at all, listing \"two tennis courts\" instead, so the count has no corroboration; and the City's two pages disagree about the name — \"Highland Community Park\" on the pickleball page, \"Highland Park\" on the park page. Our build asserts both, so if either changes we look again."
-    },
-    {
-      "q": "How do you know all this?",
-      "a": "From the City of Bellevue's own pages, snapshotted on 4 September 2026 and committed to the repository that builds this site, so every number here can be checked against the document it came from without re-fetching anything. Each fact carries its source and the date it was checked. Nothing on this page comes from a competitor directory, a review site, or an inference about what a park probably has."
+      "a": "Its address, 14224 Bel-Red Road, returns no match from the Census geocoder on four spellings. On 4 September 2026 this site added a second resolver, OpenStreetMap, consulted only where the Census has no record and accepted only when it returns the house number asked for; it resolves this address, and the venue publishes. Two caveats stay on the venue's page: its own park page never mentions pickleball, and the City uses two names for it."
     }
   ],
   "sources": [

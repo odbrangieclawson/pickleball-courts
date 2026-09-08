@@ -8,8 +8,8 @@
   "filters": {
     "outdoor": {
       "slots": {
-        "why_this_filter": "Every verified pickleball court in Scottsdale is outdoor, so this page and the city page hold the same four venues, and it is worth saying that plainly rather than dressing it up as a filter. Twenty-nine courts across Ashler Hills Park, Cholla Park, Horizon Park and Thompson Peak Park, every one of them lit. In the Phoenix valley the outdoor question is really a timing question — nobody plays at 2 p.m. in July — which is why the fact that all four venues run from sunrise to 10:30 p.m. under lights matters more than the count does. The City runs a free public drop-in programme on six more lighted outdoor courts at Scottsdale Community College; those are not here because the Census places them outside the city limits. This page grew on 4 September 2026, and how it grew is worth knowing. Scottsdale published five locations; this site could originally verify only three of them, because a venue must have an address that resolves before it may be published, and the address the City prints for Ashler Hills Park is not in the US Census address file. That day this site added a second resolver — OpenStreetMap, consulted only where the Census has nothing — and eight lighted courts that had been sitting in the excluded column became publishable. Nothing about the park changed. What changed was our ability to confirm where it is.",
-        "what_qualifies": "A venue appears here when the City of Scottsdale states an outdoor court count for it on its pickleball page. Four qualify: ten courts at Horizon, eight each at Cholla and Ashler Hills, three at Thompson Peak. One listed location does not. Scottsdale Community College has six lighted courts, and the geocoder places its address in no incorporated place at all — it is not inside Scottsdale, whoever runs the programme on it. That is a real place with real courts, and it is not a Scottsdale venue by the test this directory uses."
+        "why_this_filter": "Every verified pickleball court in Scottsdale is outdoor, so this page and the city page hold the same four venues. Twenty-nine courts across Ashler Hills Park, Cholla Park, Horizon Park and Thompson Peak Park, every one of them lit. In the Phoenix valley the outdoor question is really a timing question, which is why the fact that all four venues run from sunrise to 10:30 p.m. under lights matters more than the count does. The City runs a free public drop-in programme on six more lighted outdoor courts at Scottsdale Community College; those are not here because the Census places them outside the city limits.\n\nThis page grew on 4 September 2026. Scottsdale published five locations; this site could originally verify only three of them, because a venue must have an address that resolves before it may be published, and the address the City prints for Ashler Hills Park is not in the US Census address file. That day a second resolver was added, OpenStreetMap, consulted only where the Census has nothing, and Ashler Hills' eight lighted courts became publishable.",
+        "what_qualifies": "A venue appears here when the City of Scottsdale states an outdoor court count for it on its pickleball page. Four qualify: ten courts at Horizon, eight each at Cholla and Ashler Hills, three at Thompson Peak. Scottsdale Community College has six lighted courts, and the geocoder places its address in no incorporated place at all, so it is not a Scottsdale venue by the test this directory uses."
       },
       "faqs": [
         {
@@ -18,7 +18,7 @@
         },
         {
           "q": "Are they all free?",
-          "a": "Three of the four say so — \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. Ashler Hills Park's page lists the courts among the park's features without ever mentioning cost, so its cost reads \"not verified yet\": not a suspected charge, just an unanswered question."
+          "a": "Three of the four say so: \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. Ashler Hills Park's page lists the courts among the park's features without mentioning cost, so its cost reads \"not verified yet\": not a suspected charge, just an unanswered question."
         },
         {
           "q": "Is one of these closed?",
@@ -26,7 +26,7 @@
         },
         {
           "q": "Where are the four venues?",
-          "a": "Spread across the north and east of the city: Horizon Park at 15444 N. 100th St. in the north-east with ten courts, Cholla Park at 11320 E. Via Linda in the east with eight, Ashler Hills Park at 32220 N. 74th Way at the far northern edge with eight, and Thompson Peak Park at 20199 N. 78th Pl. with three. All four are suburban parks rather than street-grid sites, and the City publishes no parking guidance for any of them."
+          "a": "Spread across the north and east of the city: Horizon Park at 15444 N. 100th St. in the north-east with ten courts, Cholla Park at 11320 E. Via Linda in the east with eight, Ashler Hills Park at 32220 N. 74th Way at the far northern edge with eight, and Thompson Peak Park at 20199 N. 78th Pl. with three. The City publishes no parking guidance for any of them."
         }
       ],
       "sources": [
@@ -37,8 +37,8 @@
     },
     "lights": {
       "slots": {
-        "why_this_filter": "In a city where the July average high is well over 100°F, lighting is not a convenience but the entire basis on which outdoor pickleball works — you play early or you play late, and late needs lights. Scottsdale answers it at every venue: all four published sites are \"lighted\" in the City's own court counts, and all four run from sunrise to 10:30 p.m. daily. That gives this page twenty-nine lit courts, which is more lit courts than all but a handful of cities in this directory have courts at all. It is also the reason the City's peak-time statement is worth reading against this page: mornings are busiest, evenings are lit, and the gap between them is a Phoenix-valley afternoon nobody wants. There is a second reason this page is unusually solid. Scottsdale states lighting as part of the court count itself — \"Eight outdoor lighted courts\", not a court count plus a lighting amenity somewhere else on the page — so there is no question of a lighting mark belonging to a different park than the number beside it. That sounds like a small distinction until you read a source where the two are separate, as Austin's is: there the words \"Lighted during park hours\" appear eleven times on one page and have to be tied back to the right venue by position.",
-        "what_qualifies": "A venue appears here when its entry on the City's pickleball page describes its courts as lighted. All four do — \"Eight outdoor lighted pickleball courts\" at Ashler Hills, \"Eight outdoor lighted courts\" at Cholla, \"10 outdoor lighted courts\" at Horizon, \"Three outdoor lighted courts\" at Thompson Peak — so this page carries the same four venues as the outdoor page. Scottsdale states lighting as part of the count itself rather than as a separate amenity, which is why there is no ambiguity here about whether a mark belongs to a park. The one location excluded from this site, Scottsdale Community College, is also described as lighted; it is absent because its address falls outside the city limits, not for any reason to do with lighting."
+        "why_this_filter": "In a city where the July average high is well over 100°F, lighting is not a convenience but the entire basis on which outdoor pickleball works: you play early or you play late, and late needs lights. Scottsdale answers it at every venue. All four published sites are \"lighted\" in the City's own court counts, and all four run from sunrise to 10:30 p.m. daily. That gives this page twenty-nine lit courts. The City's peak-time statement is worth reading against this page: mornings are busiest, evenings are lit, and the gap between them is a Phoenix-valley afternoon nobody wants.\n\nScottsdale states lighting as part of the court count itself (\"Eight outdoor lighted courts\") rather than as a separate amenity elsewhere on the page, so there is no question of a lighting mark belonging to a different park than the number beside it.",
+        "what_qualifies": "A venue appears here when its entry on the City's pickleball page describes its courts as lighted. All four do: \"Eight outdoor lighted pickleball courts\" at Ashler Hills, \"Eight outdoor lighted courts\" at Cholla, \"10 outdoor lighted courts\" at Horizon, \"Three outdoor lighted courts\" at Thompson Peak. This page therefore carries the same four venues as the outdoor page. The one location excluded from this site, Scottsdale Community College, is also described as lighted; it is absent because its address falls outside the city limits, not for any reason to do with lighting."
       },
       "faqs": [
         {
@@ -47,19 +47,15 @@
         },
         {
           "q": "Are there unlit courts in Scottsdale?",
-          "a": "Not among the ones the City lists. All five locations on its pickleball page — including the one this site does not publish — are described as lighted. That is unusual: across this directory, a great many venues have no lighting answer at all."
+          "a": "Not among the ones the City lists. All five locations on its pickleball page, including the one this site does not publish, are described as lighted."
         },
         {
           "q": "Which lit venue has the most courts?",
           "a": "Horizon Park, with ten. Cholla and Ashler Hills have eight each and Thompson Peak has three, and none of the four is reservable."
         },
         {
-          "q": "How does this compare with other cities?",
-          "a": "Twenty-nine lit courts at four venues is as high a proportion as anywhere on this site: every published Scottsdale venue is lit. Austin comes closest in absolute terms with eleven lit venues out of twenty-one, and Seattle has five lit and nineteen explicitly unlit. Many cities in this directory have no lighting answer at all, which is why those venues read \"not verified yet\" rather than No."
-        },
-        {
           "q": "Are the lights on a timer or a switch?",
-          "a": "Not published. The City states the courts are lighted and that they are open sunrise to 10:30 p.m., and says nothing about how the lighting is controlled or whether it runs the full period. We publish the two facts it does state and not a third one it does not."
+          "a": "Not published. The City states the courts are lighted and that they are open sunrise to 10:30 p.m., and says nothing about how the lighting is controlled or whether it runs the full period."
         }
       ],
       "sources": [
@@ -68,8 +64,8 @@
     },
     "free": {
       "slots": {
-        "why_this_filter": "Municipal park courts are usually free, and this directory almost never says so, because operators almost never write it down. Scottsdale does: \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. That single sentence is why this page exists at all, and why Scottsdale is one of only seven cities on this site with any verified free court, every one of which qualified for exactly the same reason. Everywhere else, our cost field reads \"not verified yet\" on courts that are almost certainly free, because almost certainly is not a fact and we would rather look unhelpful than be confidently wrong. This is also the one Scottsdale filter page that does not carry every venue in the city, and the reason is a good illustration of the rule. Ashler Hills Park has eight lighted courts and is a City of Scottsdale park like the other three; nobody involved believes it charges. Its park page lists \"8 lighted pickleball courts\" among the park features and says nothing further, so no sentence about cost exists to cite, and it stays off this page. Across the twelve cities published on this site, exactly two have a court whose price an operator has stated. Most other municipal park courts in this directory, across several hundred courts, carry an unverified cost. Almost all of them are free. We still will not say so, because the day this directory starts publishing what is probably true is the day its verified facts stop meaning anything.",
-        "what_qualifies": "A venue appears here when the operator states that its courts are free. Three of Scottsdale's four published venues do, on their own park pages, in the same words. What does not qualify — anywhere on this site — is a court we merely believe to be free: a public park with no stated price gets \"not verified yet\" and stays off this page, which is exactly what has happened to Ashler Hills. It is worth noting the one Scottsdale venue that is free, stated, and still not here for a different reason: the City runs a free public drop-in programme on Scottsdale Community College's six lighted courts, and the Census places that address in no incorporated place, so it is not published under Scottsdale."
+        "why_this_filter": "Municipal park courts are usually free, and this directory almost never says so, because operators almost never write it down. Scottsdale does: \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. That single sentence is why this page exists at all, and why Scottsdale is one of only seven cities on this site with any verified free court, every one of which qualified for exactly the same reason.\n\nThis is the one Scottsdale filter page that does not carry every venue in the city. Ashler Hills Park's page lists \"8 lighted pickleball courts\" among the park features and says nothing further, so no sentence about cost exists to cite, and it stays off this page. Most other municipal park courts in this directory, across several hundred courts, carry an unverified cost. Almost all of them are free.",
+        "what_qualifies": "A venue appears here when the operator states that its courts are free. Three of Scottsdale's four published venues do, on their own park pages, in the same words. A public park with no stated price reads \"not verified yet\" and stays off this page, which is what has happened to Ashler Hills. One more free venue is absent for a different reason: the City runs a free public drop-in programme on Scottsdale Community College's six lighted courts, and the Census places that address in no incorporated place, so it is not published under Scottsdale."
       },
       "faqs": [
         {
@@ -77,20 +73,16 @@
           "a": "None stated. The City says the courts are free to use at the three venues that mention cost, requires no reservation anywhere, and mentions no permit, membership or drop-in fee. What it does impose are rules rather than costs: no amplified sound, and a 30-minute rotation when players are waiting."
         },
         {
-          "q": "Why isn't Ashler Hills Park on this page?",
-          "a": "Because the City has never written down what it costs. Its park page names the courts in the park's feature list and says nothing else about them; the count, the address, the lighting and the hours come from the City's pickleball page, and neither page gives a price. An unanswered question is not a No, and it is not a Yes either, so the venue sits on the outdoor and lights pages and not on this one."
-        },
-        {
           "q": "Why do so few cities on this site have free courts?",
           "a": "Because almost none of them say so. This directory records a price only when an operator publishes one, and most parks departments publish court counts without ever mentioning cost. Scottsdale and Portland are the two that wrote it down."
         },
         {
           "q": "Do I still need to bring equipment?",
-          "a": "Assume a paddle and balls, yes. Nets are the open question: the City lists three portable nets at Thompson Peak and says nothing about nets at the other three, so those read \"not verified yet\" on the point."
+          "a": "Assume a paddle and balls, yes. The City lists three portable nets at Thompson Peak and says nothing about nets at the other three, so those read \"not verified yet\"."
         },
         {
           "q": "Does free mean anyone can play?",
-          "a": "It means no charge. Access is a separate question and this site keeps it separate: the City states the courts are for drop-in public use and not reservable, which is as close to an access statement as Scottsdale gives. The /public/ filter does not exist here or in any city on this site, because access_type has no controlled vocabulary yet — a decision recorded as open rather than quietly defaulted."
+          "a": "It means no charge. Access is a separate question: the City states the courts are for drop-in public use and not reservable, which is as close to an access statement as Scottsdale gives. The /public/ filter does not exist here or in any city on this site, because access_type has no controlled vocabulary yet — a decision recorded as open rather than quietly defaulted."
         }
       ],
       "sources": [
