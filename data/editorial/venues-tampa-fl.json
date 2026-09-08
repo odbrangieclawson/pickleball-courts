@@ -4,247 +4,416 @@
   "kind": "venues",
   "date_checked": "2026-09-07",
   "written_by": "staff_research",
-  "note_on_method": "Each venue page rests on the City of Tampa's pickleball page - one card per venue, with a label, a name, an address and a count, dated \"Updated: 10/28/2025\" - and, where the address is also a community centre, on the City's recreation-centres list for the phone number and the \"Features:\" line. The US Census address geocoder and OpenStreetMap supply the county and the postcode. Where the City is silent, these pages record the silence; where the Census changed a compass direction or a street type, they say which resolver's answer is published and why.",
+  "note_on_method": "Each venue page rests on the City of Tampa's pickleball page, one card per venue with a label, a name, an address and a count, dated \"Updated: 10/28/2025\", and, where the address is also a community centre, on the City's recreation-centres list for the phone number and the \"Features:\" line. The US Census address geocoder and OpenStreetMap supply the county and the postcode. Where the City is silent, these pages record the silence.",
   "venues": {
     "al-barnes-park": {
       "slots": {
-        "description": "Four outdoor pickleball courts in East Tampa, on a card the City writes in three lines: \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\", under the label \"Outdoor Pickleball\". That is the entire published record of pickleball at this park. The City's pickleball page is a grid of cards, and Al Barnes gets the plainest kind - no hours, no session, no note, just an address and a number - which puts it in the majority in Tampa, where nine of the twelve outdoor cards say nothing beyond the count.\n\nFour courts is a workable number: two games at once, or a group of eight rotating without much waiting. The park has no entry on the City's recreation-centres list, so unlike Copeland or Forest Hills there is no building, gym or phone number attached to the address in the City records this site has read.\n\nThe pickleball page names a contact for the whole programme rather than for this park - a Site Supervisor at 59 Columbia Drive, 813-712-0321 - and that is the nearest thing to a phone number Al Barnes has.",
-        "getting_there": "2902 N 32nd St, Tampa, FL 33605. The address is the City's, and it resolves through OpenStreetMap rather than the US Census address file, which holds no record of it; OpenStreetMap matches it at house-number level on North 32nd Street, in the East Ybor area, in Hillsborough County and inside the incorporated city of Tampa. It is one of four Tampa venues that needed the second resolver.\n\nThe City publishes nothing about parking at this park, nothing about restrooms, and nothing about how to reach it by any means. This site does not fill those in.",
-        "what_to_expect": "Four courts, outdoors, and a City record that stops there. Hours are not stated, so this site cannot tell you whether the park is a sunrise-to-sunset park like Madison Street and Vila Brothers or something else; lighting is not stated, so evening play is an open question rather than a yes or a no; price is not stated, and this site records no fee answer rather than assuming free. Surface is not stated either.\n\nWhat the City does establish, by the label on the card, is that these are outdoor courts. Cuscaden Park, in the same 33605 postcode, is the East Tampa venue with a stated session - senior open play on Wednesday mornings - and Al Barnes has none. With no published open-play time, there is nothing on the City's record to suggest a rotation forms here on its own, so bring a group. Four courts is enough for two games and a short wait, which is more than half of Tampa's outdoor venues can offer."
+        "description": "Four outdoor pickleball courts in East Tampa, on a card the City writes in three lines: \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\", under the label \"Outdoor Pickleball\". That is the entire published record of pickleball at this park: no hours, no session, no note, just an address and a number.\n\nFour courts is a workable number: two games at once, or a group of eight rotating without much waiting. The park has no entry on the City's recreation-centres list, so no building, gym or phone number is attached to the address. The pickleball page names a contact for the whole programme, a Site Supervisor at 59 Columbia Drive, 813-712-0321, and that is the nearest thing to a phone number Al Barnes has.",
+        "getting_there": "2902 N 32nd St, Tampa, FL 33605. The address is the City's, and it resolves through OpenStreetMap rather than the US Census address file, which holds no record of it. OpenStreetMap matches it at house-number level on North 32nd Street, in the East Ybor area, in Hillsborough County and inside the incorporated city of Tampa.\n\nThe City publishes nothing about parking at this park, nothing about restrooms, and nothing about how to reach it by any means.",
+        "what_to_expect": "Four courts, outdoors, and a City record that stops there. Hours are not stated, so there is no way to say whether the park closes at sunset. Lighting is not stated, so evening play is an open question rather than a yes or a no. Price and surface are not stated either.\n\nWith no published open-play time, nothing on the City's record suggests a rotation forms here on its own, so bring a group. Four courts is enough for two games and a short wait."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four, on the City's card: \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\", under the label \"Outdoor Pickleball\"."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at this or any Tampa venue, so this site records it as unverified rather than as a no."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any pickleball court in Tampa, and this site does not assume a park court is free."},
-        {"q": "What are the hours?", "a": "Not stated. Only Madison Street Park, Vila Brothers Park and the New Tampa Sports Pavilion carry hours on the City's pickleball page; Al Barnes does not."},
-        {"q": "Why did the address need a second resolver?", "a": "The US Census address file holds no record of 2902 N 32nd St. OpenStreetMap matches it at house-number level, in Hillsborough County inside Tampa, and that is the resolution published."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four, on the City's card: \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\", under the label \"Outdoor Pickleball\"."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not stated. The City says nothing about lighting at this or any Tampa venue, so it is recorded as unverified rather than as a no."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "Not stated. Only Madison Street Park, Vila Brothers Park and the New Tampa Sports Pavilion carry hours on the City's pickleball page; Al Barnes does not."
+        }
       ],
-      "sources": ["C1", "C3"]
+      "sources": [
+        "C1",
+        "C3"
+      ]
     },
     "copeland-park": {
       "slots": {
-        "description": "Four outdoor pickleball courts at Copeland Park in north Tampa, from a card that reads \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\" under \"Outdoor Pickleball\". Copeland is one of the parks the City names under \"Featured Parks\" in its own site navigation, and the same address appears a second time in City records: the recreation-centres page lists the Copeland Park Center at 11001 N 15th St, 33612, with a phone number, 813-975-2743, and a features line of \"Computer Lab, Fitness Room, Gymnasium, Pool Facility, After School, Summer Camp, Stay & Play, Contracted Instructor (Urban Line Dance)\".\n\nSo there is a building with a gymnasium at this address, and the City does not list indoor pickleball in it. The four pickleball courts are outdoor courts on the City's own label, and the gym is a fact about the building rather than about them. Four courts is two games at once, or a group of eight rotating without a long wait.",
-        "getting_there": "11001 N 15th St, Tampa, FL 33612. The US Census address geocoder matched the address exactly as the City writes it, at house-number level, and placed it in Hillsborough County inside the incorporated place Tampa city - one of the ten Tampa addresses that needed no second resolver.\n\nThe City publishes nothing about parking or restrooms at the park in either of the records this site read. The recreation-centres page does give the Copeland Park Center a phone number, 813-975-2743, which is the only published way to ask a question about this address.",
-        "what_to_expect": "Four outdoor courts with no stated hours, no stated lighting, no stated price and no stated surface - the City's card carries a count and an address and nothing else. What the City adds, through the recreation-centres page, is that the same address holds a staffed centre with a gymnasium, a fitness room and a pool, running after-school and summer-camp programmes - which tells you the site is in use for other things through the school year and the summer, without telling you anything about the courts.\n\nThis site records the pickleball courts as outdoor because the City labels them so, and records no indoor count here because the City lists none, even though there is a gym. Compare Forest Hills, where the City does list both. With four courts and no published session, expect to bring your own game; nothing on the City's record says when the courts are busy or whether anyone is there. The card is on a page the City dates 28 October 2025."
+        "description": "Four outdoor pickleball courts at Copeland Park in north Tampa, from a card that reads \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\" under \"Outdoor Pickleball\". The same address appears a second time in City records: the recreation-centres page lists the Copeland Park Center at 11001 N 15th St, 33612, with a phone number, 813-975-2743, and a features line of \"Computer Lab, Fitness Room, Gymnasium, Pool Facility, After School, Summer Camp, Stay & Play, Contracted Instructor (Urban Line Dance)\".\n\nSo there is a building with a gymnasium at this address, and the City does not list indoor pickleball in it. The four pickleball courts are outdoor courts on the City's own label, and the gym is a fact about the building rather than about them.",
+        "getting_there": "11001 N 15th St, Tampa, FL 33612. The US Census address geocoder matched the address exactly as the City writes it, at house-number level, and placed it in Hillsborough County inside the incorporated place Tampa city.\n\nThe City publishes nothing about parking or restrooms at the park. The recreation-centres page does give the Copeland Park Center a phone number, 813-975-2743, which is the only published way to ask a question about this address.",
+        "what_to_expect": "Four outdoor courts with no stated hours, no stated lighting, no stated price and no stated surface. The card carries a count and an address and nothing else.\n\nWhat the recreation-centres page adds is that the same address holds a staffed centre with a gymnasium, a fitness room and a pool, running after-school and summer-camp programmes. That tells you the site is in use for other things through the school year and the summer, without telling you anything about the courts. With four courts and no published session, expect to bring your own game."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four outdoor courts, on the City's card: \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\"."},
-        {"q": "Is there indoor pickleball at Copeland?", "a": "Not on the City's record. The Copeland Park Center at the same address has a gymnasium on the recreation-centres list, but the City lists no indoor pickleball courts there."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so this site records it as unverified."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume."},
-        {"q": "Is there a phone number?", "a": "Yes, for the Copeland Park Center at the same address: 813-975-2743, on the City's recreation-centres page."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four outdoor courts, on the City's card: \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\"."
+        },
+        {
+          "q": "Is there indoor pickleball at Copeland?",
+          "a": "Not on the City's record. The Copeland Park Center at the same address has a gymnasium on the recreation-centres list, but the City lists no indoor pickleball courts there."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so it is recorded as unverified."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "cuscaden-park": {
       "slots": {
-        "description": "Six outdoor pickleball courts, and the only outdoor card in Tampa that names a session. The City writes it as \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\" under \"Outdoor Pickleball\". That middle line is the one scheduled pickleball time the City publishes for any outdoor park in the city: two hours on a Wednesday morning, for seniors, on these courts. Outside it the City says nothing about who plays here or when.\n\nSix courts is the joint second-largest outdoor count published in Tampa, level with Julian B Lane Riverfront Park and behind only Macfarlane's eight, and it is enough for a rotation rather than a single game. This is one of three Tampa venues that were in the imported dataset before the City's page was read; the City confirmed the count and the address, and \"2900 North 15th St\" became \"2900 N 15th St\" to match how the City writes it. Cuscaden has no entry on the recreation-centres list, so there is no building or centre phone number attached to the address.",
-        "getting_there": "2900 N 15th St, Tampa, FL 33605. The US Census address geocoder matched the address as written, at house-number level, in Hillsborough County and inside Tampa city; no second resolver was needed and the City's postcode and the resolver's agree.\n\nThe City publishes nothing about parking or restrooms here. The pickleball page's contact for the whole programme is a Site Supervisor at 59 Columbia Drive, 813-712-0321, and the City attaches no further number to this park in the records read for this page.",
-        "what_to_expect": "Six outdoor courts and one published fact about their use: senior open play on Wednesday mornings, 9 to 11 am. For a senior player that is the one time in Tampa the City has put in writing that a game will be there when you arrive; for everyone else it is two hours on a Wednesday when the courts are spoken for.\n\nHours are not stated, so this site does not know whether the park closes at sunset; lighting is not stated; price is not stated; surface is not stated. The courts are outdoor on the City's label. Six courts is the number at which turning up alone starts to be reasonable, because a rotation needs more players than courts and six courts tends to draw them - but the City publishes no open-play time except the senior one, so that remains a guess about the venue rather than a fact from the operator."
+        "description": "Six outdoor pickleball courts, and the only outdoor card in Tampa that names a session. The City writes it as \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\" under \"Outdoor Pickleball\". That middle line is the one scheduled pickleball time the City publishes for any outdoor park in the city: two hours on a Wednesday morning, for seniors, on these courts. Outside it the City says nothing about who plays here or when.\n\nSix courts is the joint second-largest outdoor count published in Tampa, level with Julian B Lane Riverfront Park and behind only Macfarlane's eight, and it is enough for a rotation rather than a single game. Cuscaden has no entry on the recreation-centres list, so there is no building or centre phone number attached to the address.",
+        "getting_there": "2900 N 15th St, Tampa, FL 33605. The US Census address geocoder matched the address as written, at house-number level, in Hillsborough County and inside Tampa city, and the City's postcode and the resolver's agree.\n\nThe City publishes nothing about parking or restrooms here. The pickleball page's contact for the whole programme is a Site Supervisor at 59 Columbia Drive, 813-712-0321.",
+        "what_to_expect": "Six outdoor courts and one published fact about their use: senior open play on Wednesday mornings, 9 to 11 am. For a senior player that is the one time in Tampa the City has put in writing that a game will be there when you arrive. For everyone else it is two hours on a Wednesday when the courts are spoken for.\n\nHours are not stated, so the closing time is unknown. Lighting, price and surface are not stated. Six courts is the number at which turning up alone starts to be reasonable, though the City publishes no open-play time except the senior one."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Six, on the City's card: \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\"."},
-        {"q": "When is senior open play?", "a": "Wednesdays, 9 to 11 am, on the City's card. It is the only scheduled outdoor pickleball session the City publishes anywhere in Tampa."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at any Tampa venue, so this site records it as unverified."},
-        {"q": "What are the hours?", "a": "Not stated, apart from the senior session. The City gives no opening or closing time for this park."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Six, on the City's card: \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\"."
+        },
+        {
+          "q": "When is senior open play?",
+          "a": "Wednesdays, 9 to 11 am, on the City's card. It is the only scheduled outdoor pickleball session the City publishes anywhere in Tampa."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "Not stated, apart from the senior session. The City gives no opening or closing time for this park."
+        }
       ],
-      "sources": ["C1", "C3"]
+      "sources": [
+        "C1",
+        "C3"
+      ]
     },
     "davis-islands": {
       "slots": {
-        "description": "Two outdoor courts on Davis Islands that the City calls \"2 multi-purpose courts\", and this page keeps the City's word. The card reads \"Davis Islands / 155 Columbia Drive, Tampa, 33606 / 2 multi-purpose courts\" under the label \"Outdoor pickleball\". A multi-purpose court is one that may be lined or set up for something other than pickleball when you get there; the City lists it as a pickleball venue all the same, counts two, and says nothing about what else the courts are for.\n\nThe address is a few doors along Columbia Drive from number 59, which the pickleball page names as its contact address - the office of Site Supervisor Andrew Sheets - and which the City's recreation-centres list gives as the Sandra Freedman Complex, \"Features: Tennis Complex\". So the pickleball courts sit near the City's main tennis operation on the same street, without being part of it on any card. Two courts is a game, not a rotation.",
-        "getting_there": "155 Columbia Drive, Tampa, FL 33606, on Davis Islands. The US Census address geocoder matched \"155 COLUMBIA DR, TAMPA, FL, 33606\" at house-number level, in Hillsborough County and inside Tampa city; the City's postcode and the resolver's agree, and no second resolver was needed.\n\nThe City publishes nothing about parking or restrooms. What it does publish is two phone numbers on the same street: the pickleball page's programme contact at 59 Columbia Drive, 813-712-0321, and the Sandra Freedman Complex at the same number 59, 813-259-1664, on the recreation-centres page. Neither is described as the courts' own.",
-        "what_to_expect": "Two multi-purpose courts, outdoors, with nothing else stated. Two courts is a game, not a rotation - a group of four can play, a group of eight will wait - and \"multi-purpose\" means you should be ready to find the courts in use for something else, or lined for it. Hours are not stated, lighting is not stated, price is not stated, surface is not stated.\n\nThis is the venue in Tampa where the gap between what the City counts and what a player will find is widest, because the City's own word for the courts hedges. It is also the only outdoor card whose label is written \"Outdoor pickleball\" with a small p, which changes nothing about what it says. With the City's programme office on the same street, the sensible move before a trip for these two courts alone is to ring 813-712-0321 and ask what they are set up for this week. Two courts and a hedged word make this the venue to confirm before travelling."
+        "description": "Two outdoor courts on Davis Islands that the City calls \"2 multi-purpose courts\", and this page keeps the City's word. The card reads \"Davis Islands / 155 Columbia Drive, Tampa, 33606 / 2 multi-purpose courts\" under the label \"Outdoor pickleball\". A multi-purpose court is one that may be lined or set up for something other than pickleball when you get there. The City lists it as a pickleball venue all the same, counts two, and says nothing about what else the courts are for.\n\nThe address is a few doors along Columbia Drive from number 59, which the pickleball page names as its contact address, the office of Site Supervisor Andrew Sheets, and which the City's recreation-centres list gives as the Sandra Freedman Complex, \"Features: Tennis Complex\". Two courts is a game, not a rotation.",
+        "getting_there": "155 Columbia Drive, Tampa, FL 33606, on Davis Islands. The US Census address geocoder matched \"155 COLUMBIA DR, TAMPA, FL, 33606\" at house-number level, in Hillsborough County and inside Tampa city, and the City's postcode and the resolver's agree.\n\nThe City publishes nothing about parking or restrooms. It does publish two phone numbers on the same street: the programme contact at 59 Columbia Drive, 813-712-0321, and the Sandra Freedman Complex at the same number, 813-259-1664. Neither is described as the courts' own.",
+        "what_to_expect": "Two multi-purpose courts, outdoors, with nothing else stated. Two courts is a game, not a rotation: a group of four can play, a group of eight will wait. Multi-purpose means you should be ready to find the courts in use for something else, or lined for it. Hours, lighting, price and surface are not stated.\n\nWith the City's programme office on the same street, the sensible move before a trip for these two courts alone is to ring 813-712-0321 and ask what they are set up for this week."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two, which the City calls \"2 multi-purpose courts\" rather than pickleball courts. This site keeps the City's word."},
-        {"q": "What does multi-purpose mean here?", "a": "The City does not say. It lists the venue under outdoor pickleball and counts two courts; what else they are lined or set up for is not stated."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so this site records it as unverified."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."},
-        {"q": "Is there a phone number?", "a": "The pickleball page's contact is a Site Supervisor at 59 Columbia Drive, 813-712-0321, a few doors from the courts. It is the programme's number, not the courts' own."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two, which the City calls \"2 multi-purpose courts\" rather than pickleball courts. This page keeps the City's word."
+        },
+        {
+          "q": "What does multi-purpose mean here?",
+          "a": "The City does not say. It lists the venue under outdoor pickleball and counts two courts; what else they are lined or set up for is not stated."
+        },
+        {
+          "q": "Is there a phone number?",
+          "a": "The pickleball page's contact is a Site Supervisor at 59 Columbia Drive, 813-712-0321, a few doors from the courts. It is the programme's number, not the courts' own."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "forest-hills": {
       "slots": {
-        "description": "Two outdoor courts and two indoor courts at one address in north Tampa, published here as one venue with four. The City writes them as two cards. Under \"Outdoor Pickleball\": \"Forest Hills / 724 W 109th Ave., 33612 / 2 courts\". Under \"Indoor Pickleball\": \"Forest Hills Community Center / 724 W 109th Ave, 33612 / 2 courts / Play resumes after Summer Camp ends / Monday, 10 am-12:30 pm / Wednesday, 10 am-1 pm / Friday, 6-7:30 pm\". Same address, two counts, and this site adds them to four, printing both so the sum can be checked.\n\nForest Hills is the second venue on this site, after Bellevue's Hidden Valley Park, published with a non-zero count on both sides of the indoor line. The building is on the City's recreation-centres list as the Forest Hills Center, 813-931-2105, \"Features: Computer Lab, Fitness Room, Gymnasium, After School, Summer Camp, Contracted Instructor (Shotokan Karate)\" - so the indoor courts are in a centre with a gymnasium, and the summer camp the card mentions is a programme the City runs in that building.",
-        "getting_there": "724 W 109th Ave, Tampa, FL 33612. The US Census address geocoder matched the address as the City writes it, at house-number level, in Hillsborough County inside Tampa city. Both City cards print the same street and postcode, one with a full stop after Ave and one without, which is the only difference between them.\n\nThe City publishes nothing about parking. The centre has a phone number, 813-931-2105, on the recreation-centres page, and for a venue whose indoor sessions are suspended during summer camp that is the number to ring before an evening trip.",
-        "what_to_expect": "Two kinds of court and two kinds of record. Outdoors, two courts with no stated hours, lighting, price or surface - the plain card most Tampa parks get. Indoors, two courts in the centre with a session schedule: Monday 10 am to 12:30 pm, Wednesday 10 am to 1 pm, Friday 6 to 7:30 pm, and a note that \"Play resumes after Summer Camp ends\".\n\nThe City's page is dated 28 October 2025 and the note carries no year, so this site prints it as the City printed it and does not guess whether the camp has ended. Two indoor courts at fixed times is a session, not a drop-in facility: outside those hours the gym is the centre's, not the pickleball players'. With two outside and two inside there is a court here in daylight and, on a Friday evening, one under a roof - but which is available depends on the day, and only the indoor half comes with a schedule."
+        "description": "Two outdoor courts and two indoor courts at one address in north Tampa, published here as one venue with four. The City writes them as two cards. Under \"Outdoor Pickleball\": \"Forest Hills / 724 W 109th Ave., 33612 / 2 courts\". Under \"Indoor Pickleball\": \"Forest Hills Community Center / 724 W 109th Ave, 33612 / 2 courts / Play resumes after Summer Camp ends / Monday, 10 am-12:30 pm / Wednesday, 10 am-1 pm / Friday, 6-7:30 pm\". Same address, two counts, and both are printed so the sum can be checked.\n\nThe building is on the City's recreation-centres list as the Forest Hills Center, 813-931-2105, \"Features: Computer Lab, Fitness Room, Gymnasium, After School, Summer Camp, Contracted Instructor (Shotokan Karate)\", so the indoor courts are in a centre with a gymnasium, and the summer camp the card mentions is a programme the City runs in that building.",
+        "getting_there": "724 W 109th Ave, Tampa, FL 33612. The US Census address geocoder matched the address as the City writes it, at house-number level, in Hillsborough County inside Tampa city.\n\nThe City publishes nothing about parking. The centre has a phone number, 813-931-2105, on the recreation-centres page, and for a venue whose indoor sessions are suspended during summer camp that is the number to ring before an evening trip.",
+        "what_to_expect": "Two kinds of court and two kinds of record. Outdoors, two courts with no stated hours, lighting, price or surface. Indoors, two courts in the centre with a session schedule: Monday 10 am to 12:30 pm, Wednesday 10 am to 1 pm, Friday 6 to 7:30 pm, and a note that \"Play resumes after Summer Camp ends\".\n\nThe City's page is dated 28 October 2025 and the note carries no year, so it is printed as the City printed it. Two indoor courts at fixed times is a session, not a drop-in facility: outside those hours the gym is the centre's, not the pickleball players'."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four: two outdoor on the \"Forest Hills\" card and two indoor on the \"Forest Hills Community Center\" card, both at 724 W 109th Ave. This site adds the City's two counts."},
-        {"q": "When are the indoor sessions?", "a": "Monday 10 am-12:30 pm, Wednesday 10 am-1 pm and Friday 6-7:30 pm, with \"Play resumes after Summer Camp ends\" printed beside them. No year is given."},
-        {"q": "Are the outdoor courts lit?", "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so this site records it as unverified."},
-        {"q": "Is it free?", "a": "Not stated for either the outdoor courts or the indoor sessions. The City publishes no price."},
-        {"q": "Is there a phone number?", "a": "Yes: the Forest Hills Center, 813-931-2105, on the City's recreation-centres page, which lists a gymnasium among its features."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four: two outdoor on the \"Forest Hills\" card and two indoor on the \"Forest Hills Community Center\" card, both at 724 W 109th Ave. The City's two counts are added."
+        },
+        {
+          "q": "When are the indoor sessions?",
+          "a": "Monday 10 am-12:30 pm, Wednesday 10 am-1 pm and Friday 6-7:30 pm, with \"Play resumes after Summer Camp ends\" printed beside them. No year is given."
+        },
+        {
+          "q": "Is there a phone number?",
+          "a": "Yes: the Forest Hills Center, 813-931-2105, on the City's recreation-centres page, which lists a gymnasium among its features."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "highland-pines-park": {
       "slots": {
-        "description": "Four outdoor pickleball courts in East Tampa, from the card \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\" under \"Outdoor Pickleball\". The street name is the interesting part of this record. The pickleball page writes 21st St; the City's own recreation-centres page lists the Highland Pines Center at \"4505 E 21st Ave, 33605\", the same number in the same postcode with the street type changed; and the US Census address file agrees with the recreation-centres page, matching E 21st Ave. OpenStreetMap has no record of a 21st Street at that number. So there is one street here under two City spellings, and the Census answer stands.\n\nThe centre at that address has, on the City's list, a computer lab, after-school and summer-camp programmes, and a phone number, 813-630-3925. The City lists no indoor pickleball in it and no gymnasium among its features. Four outdoor courts is two games at once. Highland Pines and Al Barnes share the 33605 postcode with Cuscaden Park, whose six courts carry the only scheduled outdoor session in the city.",
-        "getting_there": "4505 E 21st St, Tampa, FL 33605, as the City's pickleball page writes it - or 4505 E 21st Ave, as the City's recreation-centres page and the Census geocoder write it. The Census matched \"4505 E 21ST AVE, TAMPA, FL, 33605\" at house-number level, in Hillsborough County inside Tampa city; because OpenStreetMap holds nothing for the Street spelling, this site treats the two as one address rather than two streets.\n\nParking and restrooms are not mentioned by the City. The centre's phone number is 813-630-3925. The City's postcode, 33605, and the resolver's agree.",
-        "what_to_expect": "Four outdoor courts with a count, an address and nothing more from the City: no hours, no lighting, no price, no surface. The one thing worth knowing before you go is the street name - if a map does not find 21st Street, look for 21st Avenue at the same number, which is how the City's other page and the Census both write it.\n\nThe Highland Pines Center at the address runs after-school and summer programmes, so the site is used through the year for things other than pickleball, and the City does not say whether the courts are affected. Compare Forest Hills, where the City lists indoor courts in the centre as well; here it lists only the four outside. This is a bring-your-own-game venue on the City's record, with no published session and nothing to say when it is busy. The card sits on a page the City dates 28 October 2025, read for this site on 7 September 2026."
+        "description": "Four outdoor pickleball courts in East Tampa, from the card \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\" under \"Outdoor Pickleball\". The pickleball page writes 21st St; the City's own recreation-centres page lists the Highland Pines Center at \"4505 E 21st Ave, 33605\", the same number in the same postcode with the street type changed; and the US Census address file agrees with the recreation-centres page. OpenStreetMap has no record of a 21st Street at that number, so there is one street here under two City spellings, and the Census answer stands.\n\nThe centre at that address has, on the City's list, a computer lab and after-school and summer-camp programmes. The City lists no indoor pickleball in it and no gymnasium among its features.",
+        "getting_there": "4505 E 21st St, Tampa, FL 33605, as the City's pickleball page writes it, or 4505 E 21st Ave, as the City's recreation-centres page and the Census geocoder write it. The Census matched \"4505 E 21ST AVE, TAMPA, FL, 33605\" at house-number level, in Hillsborough County inside Tampa city.\n\nParking and restrooms are not mentioned by the City. The centre's phone number is 813-630-3925.",
+        "what_to_expect": "Four outdoor courts with a count, an address and nothing more from the City: no hours, no lighting, no price, no surface. The one thing worth knowing before you go is the street name. If a map does not find 21st Street, look for 21st Avenue at the same number, which is how the City's other page and the Census both write it.\n\nThe Highland Pines Center at the address runs after-school and summer programmes, so the site is used through the year for things other than pickleball, and the City does not say whether the courts are affected. This is a bring-your-own-game venue on the City's record."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four outdoor courts, on the City's card: \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\"."},
-        {"q": "Is it 21st Street or 21st Avenue?", "a": "The pickleball page says St; the City's recreation-centres page and the Census geocoder say Ave, at the same number and postcode. OpenStreetMap finds no Street, so this site treats them as one address."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so this site records it as unverified."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."},
-        {"q": "Is there a phone number?", "a": "Yes, for the Highland Pines Center at the same address: 813-630-3925, on the City's recreation-centres page."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four outdoor courts, on the City's card: \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\"."
+        },
+        {
+          "q": "Is it 21st Street or 21st Avenue?",
+          "a": "The pickleball page says St; the City's recreation-centres page and the Census geocoder say Ave, at the same number and postcode. OpenStreetMap finds no Street, so the two are treated as one address."
+        },
+        {
+          "q": "Is there a phone number?",
+          "a": "Yes, for the Highland Pines Center at the same address: 813-630-3925, on the City's recreation-centres page."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "julian-b-lane-park": {
       "slots": {
-        "description": "Six outdoor pickleball courts at Julian B Lane Riverfront Park, and the six is the City's own arithmetic. The card reads \"Julian B Lane Riverfront Park / 1001 N Boulevard, 33606 / 2 permanent courts / 4 portable net courts\" under \"Outdoor Pickleball\". Two courts stand with their nets; four more are laid out for nets that are brought out, and the City counts them. Both figures are printed here so the sum can be checked, and the distinction matters on the ground: two courts are certain, four depend on the portable nets being there.\n\nJulian B Lane is one of the parks the City names under \"Featured Parks\" in its site navigation. It was in the imported dataset before the City's page was read, as \"Julian B Lane Park\" with two courts and the address written \"1001 North Blvd\"; the City's page overrode the name, the address and the count, and the venue is marked for a re-check at the next cadence because the count changed from two to six.",
-        "getting_there": "1001 N Boulevard, Tampa, FL 33607 - and the postcode needs a sentence. The City's pickleball page prints 33606. The US Census address file holds no record of this address at all, and OpenStreetMap, the second resolver, matches \"1001, North Boulevard, Tampa Heights, Tampa\" at house-number level in 33607. The resolver's postcode publishes and the difference is stated here rather than hidden; the street and number are the City's. Hillsborough County, inside the incorporated city of Tampa.\n\nThe City publishes nothing about parking or restrooms at this park on the pages this site read.",
-        "what_to_expect": "Six courts on paper; two you can rely on and four that need nets. That is what \"2 permanent courts / 4 portable net courts\" means for a player, and it is why this venue is not quite the equal of Cuscaden's six. If the portable nets are out, six courts is a rotation; if they are not, two courts is a game.\n\nThe City says nothing about when or whether the nets are out, nothing about hours, lighting, price or surface. The courts are outdoor on the City's label. Of the sixteen Tampa venues this is the one whose count most depends on the day, and the City's own card is honest about that in a way a bare \"6 courts\" would not have been - which is why both lines are printed here rather than the total alone. Bring a net if you have one and want the four; the City does not say who supplies them."
+        "description": "Six outdoor pickleball courts at Julian B Lane Riverfront Park, and the six is the City's own arithmetic. The card reads \"Julian B Lane Riverfront Park / 1001 N Boulevard, 33606 / 2 permanent courts / 4 portable net courts\" under \"Outdoor Pickleball\". Two courts stand with their nets; four more are laid out for nets that are brought out, and the City counts them. Both figures are printed here so the sum can be checked, and the distinction matters on the ground: two courts are certain, four depend on the portable nets being there.\n\nJulian B Lane is one of the parks the City names under \"Featured Parks\" in its site navigation. The venue is marked for a re-check at the next cadence because the count changed from two to six.",
+        "getting_there": "1001 N Boulevard, Tampa, FL 33607, and the postcode needs a sentence. The City's pickleball page prints 33606. The US Census address file holds no record of this address at all, and OpenStreetMap matches \"1001, North Boulevard, Tampa Heights, Tampa\" at house-number level in 33607. The resolver's postcode publishes and the difference is stated rather than hidden; the street and number are the City's.\n\nThe City publishes nothing about parking or restrooms at this park.",
+        "what_to_expect": "Six courts on paper: two you can rely on and four that need nets. That is what \"2 permanent courts / 4 portable net courts\" means for a player. If the portable nets are out, six courts is a rotation; if they are not, two courts is a game.\n\nThe City says nothing about when or whether the nets are out, nothing about hours, lighting, price or surface. The courts are outdoor on the City's label. Bring a net if you have one and want the four; the City does not say who supplies them."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Six: \"2 permanent courts\" and \"4 portable net courts\" on the City's card. Two always have a net; four are laid out for nets that are brought out."},
-        {"q": "Why does the postcode differ from the City's?", "a": "The City prints 33606. The Census file has no record of the address; OpenStreetMap matches it at house-number level in 33607, and the resolver's value publishes with the difference stated."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so this site records it as unverified."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."},
-        {"q": "Why is this venue marked for a re-check?", "a": "Because the imported dataset had two courts here and the City's page says six. A count that changed is re-read at the next cadence rather than trusted once."}
+        {
+          "q": "How many courts are there?",
+          "a": "Six: \"2 permanent courts\" and \"4 portable net courts\" on the City's card. Two always have a net; four are laid out for nets that are brought out."
+        },
+        {
+          "q": "Why does the postcode differ from the City's?",
+          "a": "The City prints 33606. The Census file has no record of the address; OpenStreetMap matches it at house-number level in 33607, and the resolver's value publishes with the difference stated."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so it is recorded as unverified."
+        }
       ],
-      "sources": ["C1", "C3"]
+      "sources": [
+        "C1",
+        "C3"
+      ]
     },
     "macfarlane-park": {
       "slots": {
-        "description": "Eight outdoor pickleball courts in West Tampa, the largest published set in the city, from the card \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\" under \"Outdoor Pickleball\". The City's page lists one other eight-court venue, Rowlett Park, and that one is not published here because its address, \"2401 E Yukon St.\", is found by neither the Census address file nor OpenStreetMap - so Macfarlane holds the top of Tampa's published table alone.\n\nEight courts is enough for a rotation to form and keep moving, which makes this the Tampa venue where turning up without a group is the most reasonable plan, on the count alone. The City writes nothing else on the card: no hours, no session, no note. Macfarlane has no entry on the recreation-centres list, so there is no building, gym or centre phone number attached to the address in the City records this site read. The card is on a page the City dates 28 October 2025.",
-        "getting_there": "1700 N MacDill Ave, Tampa, FL 33607. The US Census address geocoder matched \"1700 N MACDILL AVE, TAMPA, FL, 33607\" at house-number level, in Hillsborough County and inside Tampa city; the City's postcode and the resolver's agree, and no second resolver was needed.\n\nThe City publishes nothing about parking at this park, nothing about restrooms, and no phone number for it; the pickleball page's programme contact is a Site Supervisor at 59 Columbia Drive, 813-712-0321. Four published Tampa venues resolve in 33607 - Macfarlane, Julian B Lane Riverfront Park, and the Barksdale and Loretta Ingraham centres - more than any other postcode in the city.",
-        "what_to_expect": "Eight outdoor courts and the least information per court in Tampa. The City states no hours, so this site cannot say whether the park closes at sunset; no lighting, so evening play is unknown rather than no; no price; no surface. What eight courts does establish is scale: four games at once, or a rotation of sixteen or more players without a long queue.\n\nWhether that rotation exists is not something the City publishes, and the only scheduled outdoor pickleball the City prints anywhere in Tampa is Cuscaden's senior open play, not anything here. The courts are outdoor by the City's label. If you want the largest verified pickleball venue in Tampa, this is it; if you want to know when it is busy, the City has not said, and this page will not guess for it. Eight courts is also more than the whole of Tampa's published indoor inventory, which is seven courts across five centres."
+        "description": "Eight outdoor pickleball courts in West Tampa, the largest published set in the city, from the card \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\" under \"Outdoor Pickleball\". The City's page lists one other eight-court venue, Rowlett Park, and that one is not published here because its address, \"2401 E Yukon St.\", is found by neither the Census address file nor OpenStreetMap.\n\nEight courts is enough for a rotation to form and keep moving, which makes this the Tampa venue where turning up without a group is the most reasonable plan, on the count alone. The City writes nothing else on the card: no hours, no session, no note. Macfarlane has no entry on the recreation-centres list, so there is no building, gym or centre phone number attached to the address.",
+        "getting_there": "1700 N MacDill Ave, Tampa, FL 33607. The US Census address geocoder matched \"1700 N MACDILL AVE, TAMPA, FL, 33607\" at house-number level, in Hillsborough County and inside Tampa city, and the City's postcode and the resolver's agree.\n\nThe City publishes nothing about parking at this park, nothing about restrooms, and no phone number for it. The pickleball page's programme contact is a Site Supervisor at 59 Columbia Drive, 813-712-0321.",
+        "what_to_expect": "Eight outdoor courts and the least information per court in Tampa. The City states no hours, no lighting, no price and no surface. What eight courts does establish is scale: four games at once, or a rotation of sixteen or more players without a long queue.\n\nWhether that rotation exists is not something the City publishes, and the only scheduled outdoor pickleball the City prints anywhere in Tampa is Cuscaden's senior open play. If you want the largest verified pickleball venue in Tampa, this is it; if you want to know when it is busy, the City has not said."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Eight, on the City's card: \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\". It is the largest published count in Tampa."},
-        {"q": "Is this the biggest venue in Tampa?", "a": "The biggest published one. Rowlett Park also has eight on the City's page, but its address resolves nowhere, so it is not listed here."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so this site records it as unverified."},
-        {"q": "What are the hours?", "a": "Not stated. The City's card carries a count and an address and nothing else, so opening and closing times are unknown here."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Eight, on the City's card: \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\". It is the largest published count in Tampa."
+        },
+        {
+          "q": "Is this the biggest venue in Tampa?",
+          "a": "The biggest published one. Rowlett Park also has eight on the City's page, but its address resolves nowhere, so it is not listed here."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "Not stated. The City's card carries a count and an address and nothing else, so opening and closing times are unknown here."
+        }
       ],
-      "sources": ["C1", "C3"]
+      "sources": [
+        "C1",
+        "C3"
+      ]
     },
     "madison-street-park": {
       "slots": {
-        "description": "One outdoor pickleball court east of downtown, and one of only two outdoor Tampa cards that state hours. The City writes \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\" under \"Outdoor Pickleball\". One court is a game, not a rotation, and this is the smallest published venue in the city.\n\nThe hours line is worth more than it looks. Of Tampa's twelve outdoor venues, only this park and Vila Brothers Park carry \"Open daily from sunrise to sunset\", and the New Tampa Sports Pavilion carries facility hours; the other nine say nothing. So Madison Street is one of three outdoor venues in Tampa where the closing time is a published fact. OpenStreetMap places the address in the Ybor City area. The park has no entry on the City's recreation-centres list, so the card is the whole of the published record. The card is on a page the City dates 28 October 2025.",
-        "getting_there": "1224 E Madison St, Tampa, FL 33602. This is one of the Tampa addresses where the US Census geocoder changed the City's address: it answered \"1224 MADISON ST, TAMPA, FL, 33602\", dropping the East. OpenStreetMap finds \"1224, East Madison Street\" exactly as the City writes it, at house-number level, in Hillsborough County inside Tampa, so the City's version is the one published. A compass direction is part of an address, not a formatting detail, and this site's resolver check was extended during the Tampa run to treat it that way.\n\nThe City publishes nothing about parking or restrooms. The City's postcode, 33602, and OpenStreetMap's agree.",
-        "what_to_expect": "One court, open sunrise to sunset, outdoors. That is a complete description of what the City states, and it means: a single game at a time, in daylight, with no published lighting to extend it and no published price to pay. Surface is not stated.\n\nWith one court there is no rotation to join and no second game to wait for, so this is a venue for a pair or a four who arrive together, and if someone is already on it there is nowhere else at this address to go. The sunrise-to-sunset line is the City's and it is the one hard planning fact here. For a larger game the City's page lists Cuscaden Park's six courts in 33605, with the only scheduled outdoor session in the city, and Macfarlane's eight in 33607. Madison Street is the smallest of the three Tampa venues with stated hours, and the only single-court venue on the City's outdoor list."
+        "description": "One outdoor pickleball court east of downtown, and one of only two outdoor Tampa cards that state hours. The City writes \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\" under \"Outdoor Pickleball\". One court is a game, not a rotation, and this is the smallest published venue in the city.\n\nOf Tampa's twelve outdoor venues, only this park and Vila Brothers Park carry \"Open daily from sunrise to sunset\", and the New Tampa Sports Pavilion carries facility hours. The other nine say nothing. OpenStreetMap places the address in the Ybor City area. The park has no entry on the City's recreation-centres list, so the card is the whole of the published record.",
+        "getting_there": "1224 E Madison St, Tampa, FL 33602. This is one of the Tampa addresses where the US Census geocoder changed the City's address: it answered \"1224 MADISON ST, TAMPA, FL, 33602\", dropping the East. OpenStreetMap finds \"1224, East Madison Street\" exactly as the City writes it, at house-number level, in Hillsborough County inside Tampa, so the City's version is the one published. A compass direction is part of an address, not a formatting detail.\n\nThe City publishes nothing about parking or restrooms.",
+        "what_to_expect": "One court, open sunrise to sunset, outdoors. That is a complete description of what the City states, and it means a single game at a time, in daylight, with no published lighting to extend it and no published price to pay. Surface is not stated.\n\nWith one court there is no rotation to join and no second game to wait for, so this is a venue for a pair or a four who arrive together, and if someone is already on it there is nowhere else at this address to go. The sunrise-to-sunset line is the City's and it is the one hard planning fact here."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "One, on the City's card: \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\"."},
-        {"q": "What are the hours?", "a": "\"Open daily from sunrise to sunset\", in the City's words. Madison Street and Vila Brothers are the only outdoor parks in Tampa with that line."},
-        {"q": "Are the courts lit?", "a": "Not stated, and the hours close at sunset. The City says nothing about lighting at any Tampa venue."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."},
-        {"q": "Why does the Census address differ?", "a": "The Census geocoder dropped the East, answering \"1224 MADISON ST\". OpenStreetMap finds East Madison Street as the City writes it, and that is what is published."}
+        {
+          "q": "How many courts are there?",
+          "a": "One, on the City's card: \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\"."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "\"Open daily from sunrise to sunset\", in the City's words. Madison Street and Vila Brothers are the only outdoor parks in Tampa with that line."
+        },
+        {
+          "q": "Why does the Census address differ?",
+          "a": "The Census geocoder dropped the East, answering \"1224 MADISON ST\". OpenStreetMap finds East Madison Street as the City writes it, and that is what is published."
+        }
       ],
-      "sources": ["C1", "C3"]
+      "sources": [
+        "C1",
+        "C3"
+      ]
     },
     "new-tampa-sports-pavilion": {
       "slots": {
-        "description": "Four outdoor pickleball courts at the New Tampa Sports Pavilion, the furthest-north venue published in the city, with hours the City prints on the card: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\", under \"Outdoor Pickleball\". Those are a facility's hours rather than a park's - weekday afternoons and evenings, weekend days - and they are the only Tampa hours that run to a clock time rather than to sunset.\n\nThe same address is on the City's recreation-centres list as the New Tampa Recreation Center, 813-975-2794, \"Features: Fitness Room, Skate Park, Gymnastics, Dance, Summer Specialty Camp\". The City labels the pickleball courts outdoor and this site follows the label; nothing on either page says the courts are under the pavilion roof, and this site does not say so either. Four courts is two games at once. New Tampa is the only published venue in postcode 33647, and the only Tampa venue the City calls a pavilion.",
-        "getting_there": "17302 Commerce Park Blvd, Tampa, FL 33647. The US Census address geocoder matched \"17302 COMMERCE PARK BLVD, TAMPA, FL, 33647\" at house-number level, in Hillsborough County inside Tampa city, with no second resolver needed. The City's postcode, 33647, and the Census's agree.\n\nThe City publishes nothing about parking at the pavilion. It does publish a phone number for the recreation centre at the same address, 813-975-2794, and with stated hours that begin at 4:30 pm on weekdays, a call is the way to confirm the courts are open before an afternoon trip.",
-        "what_to_expect": "Four outdoor courts on a schedule: 4:30 to 9 pm Monday to Friday, 8 am to 9 pm Saturday and Sunday. For a working player the weekday window is the point - four and a half hours after the working day, every weekday, stated by the City - and no other Tampa venue prints an evening closing time for outdoor courts.\n\nWhether those evening hours are lit is not stated: the City has not written the word lights for any Tampa venue, and this site does not infer lighting from a closing time. Price is not stated. Surface is not stated. The weekday morning is closed on the City's schedule, which sets this venue apart from the sunrise-to-sunset parks: come after work or at the weekend, and ring 813-975-2794 if the schedule matters to your trip, because the page it comes from is dated 28 October 2025. Saturday and Sunday from 8 am are the only weekend morning hours stated for any outdoor venue in Tampa, since the two sunrise-to-sunset parks state no clock time."
+        "description": "Four outdoor pickleball courts at the New Tampa Sports Pavilion, the furthest-north venue published in the city, with hours the City prints on the card: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\", under \"Outdoor Pickleball\". Those are a facility's hours rather than a park's, and they are the only Tampa hours that run to a clock time rather than to sunset.\n\nThe same address is on the City's recreation-centres list as the New Tampa Recreation Center, 813-975-2794, \"Features: Fitness Room, Skate Park, Gymnastics, Dance, Summer Specialty Camp\". The City labels the pickleball courts outdoor and this page follows the label; nothing on either page says the courts are under the pavilion roof.",
+        "getting_there": "17302 Commerce Park Blvd, Tampa, FL 33647. The US Census address geocoder matched \"17302 COMMERCE PARK BLVD, TAMPA, FL, 33647\" at house-number level, in Hillsborough County inside Tampa city.\n\nThe City publishes nothing about parking at the pavilion. It does publish a phone number for the recreation centre at the same address, 813-975-2794, and with hours that begin at 4:30 pm on weekdays, a call is the way to confirm the courts are open before an afternoon trip.",
+        "what_to_expect": "Four outdoor courts on a schedule: 4:30 to 9 pm Monday to Friday, 8 am to 9 pm Saturday and Sunday. For a working player the weekday window is the point, four and a half hours after the working day, every weekday, stated by the City.\n\nWhether those evening hours are lit is not stated: the City has not written the word lights for any Tampa venue. Price and surface are not stated. The weekday morning is closed on the City's schedule, which sets this venue apart from the sunrise-to-sunset parks. Ring 813-975-2794 if the schedule matters to your trip, because the page it comes from is dated 28 October 2025."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Four outdoor courts, on the City's card: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / 4 courts\"."},
-        {"q": "What are the hours?", "a": "\"Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm\", as the City prints them. They are the only outdoor hours in Tampa that run to a clock time."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City prints hours to 9 pm but does not write the word lights, and this site does not infer lighting from a closing time."},
-        {"q": "Are the courts indoors?", "a": "No, on the City's label: the card sits under \"Outdoor Pickleball\". Nothing on either City page says the courts are under the pavilion roof."},
-        {"q": "Is there a phone number?", "a": "Yes, for the New Tampa Recreation Center at the same address: 813-975-2794, on the City's recreation-centres page."}
+        {
+          "q": "How many courts are there?",
+          "a": "Four outdoor courts, on the City's card: \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / 4 courts\"."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "\"Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm\", as the City prints them. They are the only outdoor hours in Tampa that run to a clock time."
+        },
+        {
+          "q": "Are the courts indoors?",
+          "a": "No, on the City's label: the card sits under \"Outdoor Pickleball\". Nothing on either City page says the courts are under the pavilion roof."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "skyview-park": {
       "slots": {
-        "description": "Two outdoor pickleball courts in South Tampa, from the card \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\" under \"Outdoor Pickleball\". Two courts is a game rather than a rotation. The card carries nothing else - no hours, no session, no note - and Skyview has no entry on the City's recreation-centres list, so this is the whole of the City's published record of the venue.\n\nThe address is one of the Tampa cases where the US Census geocoder answered with the compass direction dropped, \"6203 MARTINDALE AVE\", in the same postcode; OpenStreetMap has no record of the address as the City writes it, so unlike Madison Street Park there was no second opinion to prefer, and the Census answer stands as one street under one name. In postcode 33611 the City lists two pickleball venues, Skyview and Foster Park; only Skyview is published, because Foster's \"4700 S Clark Ave.\" comes back from the Census as North Clark Avenue in a different postcode and OpenStreetMap cannot find it at all.",
-        "getting_there": "6203 S Martindale Ave, Tampa, FL 33611, as the City writes it. The US Census address geocoder matched \"6203 MARTINDALE AVE, TAMPA, FL, 33611\" at house-number level - same number, same postcode, direction dropped - in Hillsborough County inside Tampa city. OpenStreetMap holds nothing for the address as written, so there is one street here under one name and the Census resolution is published. The City's postcode and the Census's agree.\n\nParking and restrooms are not mentioned by the City. The programme contact on the pickleball page is a Site Supervisor at 59 Columbia Drive, 813-712-0321.",
-        "what_to_expect": "Two outdoor courts and no stated hours, lighting, price or surface. Two courts is one game each, so a four can play and an eight will wait; there is no published session here and nothing on the City's record to suggest a rotation forms.\n\nThe address is worth checking against a map before a trip, because the City writes South Martindale and the Census file writes Martindale with no direction - the same place on the evidence available here, but a searcher typing one may be shown the other. For two outdoor courts in this part of the city, Skyview is what the City publishes; the other 33611 venue, Foster Park, is refused on its address, and the City's remaining venue in the south of the city, Port Tampa Community Center, is an indoor court with a session schedule and a repair note. The card is on a page the City dates 28 October 2025."
+        "description": "Two outdoor pickleball courts in South Tampa, from the card \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\" under \"Outdoor Pickleball\". Two courts is a game rather than a rotation. The card carries nothing else, no hours, no session, no note, and Skyview has no entry on the City's recreation-centres list, so this is the whole of the City's published record of the venue.\n\nIn postcode 33611 the City lists two pickleball venues, Skyview and Foster Park. Only Skyview is published, because Foster's \"4700 S Clark Ave.\" comes back from the Census as North Clark Avenue in a different postcode and OpenStreetMap cannot find it at all.",
+        "getting_there": "6203 S Martindale Ave, Tampa, FL 33611, as the City writes it. The US Census address geocoder matched \"6203 MARTINDALE AVE, TAMPA, FL, 33611\" at house-number level, the same number in the same postcode with the direction dropped, in Hillsborough County inside Tampa city. OpenStreetMap holds nothing for the address as written, so there is one street here under one name and the Census resolution is published.\n\nParking and restrooms are not mentioned by the City. The programme contact on the pickleball page is a Site Supervisor at 59 Columbia Drive, 813-712-0321.",
+        "what_to_expect": "Two outdoor courts and no stated hours, lighting, price or surface. Two courts is one game each, so a four can play and an eight will wait. There is no published session here and nothing on the City's record to suggest a rotation forms.\n\nThe address is worth checking against a map before a trip, because the City writes South Martindale and the Census file writes Martindale with no direction. It is the same place on the evidence available here, but a searcher typing one may be shown the other."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two outdoor courts, on the City's card: \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\"."},
-        {"q": "Why does the Census address drop the South?", "a": "The Census geocoder answered \"6203 MARTINDALE AVE\" in the same postcode. OpenStreetMap has no record of the address as written, so the Census answer stands as one street under one name."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City says nothing about lighting at this or any other Tampa venue, so this site records it as unverified."},
-        {"q": "What are the hours?", "a": "Not stated. The card carries a count and an address and nothing else, so opening and closing times are unknown here."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two outdoor courts, on the City's card: \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\"."
+        },
+        {
+          "q": "Why does the Census address drop the South?",
+          "a": "The Census geocoder answered \"6203 MARTINDALE AVE\" in the same postcode. OpenStreetMap has no record of the address as written, so the Census answer stands as one street under one name."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "Not stated. The card carries a count and an address and nothing else, so opening and closing times are unknown here."
+        }
       ],
-      "sources": ["C1", "C3"]
+      "sources": [
+        "C1",
+        "C3"
+      ]
     },
     "vila-brothers-park": {
       "slots": {
-        "description": "Two outdoor pickleball courts in West Tampa, \"Open daily from sunrise to sunset\" on the City's card, which makes Vila Brothers one of the two outdoor Tampa parks with stated hours. The card reads \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\" under \"Outdoor Pickleball\". Two courts is a game, not a rotation.\n\nThe hours line puts this small park in rare company in Tampa: of twelve outdoor venues, only Vila Brothers and Madison Street Park carry the sunrise-to-sunset line, and only the New Tampa Sports Pavilion carries any other hours. Nine outdoor parks carry none. Vila Brothers has no entry on the City's recreation-centres list, so there is no building or phone number attached to the address in City records; the card is the whole of the published record. It is the smallest kind of venue the City lists - two courts, daylight - and the City's card says exactly that. It shares West Tampa with Macfarlane Park's eight courts and with two of the indoor centres, Barksdale and Loretta Ingraham.",
-        "getting_there": "700 N Armenia Ave, Tampa, FL 33609. The US Census address geocoder matched \"700 N ARMENIA AVE, TAMPA, FL, 33609\" at house-number level, exactly as the City writes it, in Hillsborough County inside Tampa city; no second resolver was needed and the City's postcode and the resolver's agree.\n\nThe City publishes nothing about parking or restrooms at this park. Vila Brothers is the only published Tampa venue in postcode 33609. The programme contact on the pickleball page is a Site Supervisor at 59 Columbia Drive, 813-712-0321.",
-        "what_to_expect": "Two courts, sunrise to sunset, outdoors - and that is the complete City statement. It means a single game per court in daylight, with no published lighting to extend the day and no published price. Surface is not stated.\n\nTwo courts and a daylight close make this a venue for a pair or a four who arrive together, not for joining a rotation; the City publishes no session here and nothing that suggests one. What the hours line gives you that most Tampa parks do not is certainty about the close: the gate is a sunset gate, stated by the operator, rather than a guess. For a bigger game the City lists Macfarlane Park's eight courts in 33607, with no stated close at all, and the choice between them is the choice between a known close and a bigger game. The card is on a page the City dates 28 October 2025. Ring the programme number if the sunset close matters to your plan."
+        "description": "Two outdoor pickleball courts in West Tampa, \"Open daily from sunrise to sunset\" on the City's card, which makes Vila Brothers one of the two outdoor Tampa parks with stated hours. The card reads \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\" under \"Outdoor Pickleball\". Two courts is a game, not a rotation.\n\nOf twelve outdoor venues, only Vila Brothers and Madison Street Park carry the sunrise-to-sunset line, and only the New Tampa Sports Pavilion carries any other hours. Vila Brothers has no entry on the City's recreation-centres list, so there is no building or phone number attached to the address, and the card is the whole of the published record.",
+        "getting_there": "700 N Armenia Ave, Tampa, FL 33609. The US Census address geocoder matched \"700 N ARMENIA AVE, TAMPA, FL, 33609\" at house-number level, exactly as the City writes it, in Hillsborough County inside Tampa city.\n\nThe City publishes nothing about parking or restrooms at this park. The programme contact on the pickleball page is a Site Supervisor at 59 Columbia Drive, 813-712-0321.",
+        "what_to_expect": "Two courts, sunrise to sunset, outdoors, and that is the complete City statement. It means a single game per court in daylight, with no published lighting to extend the day and no published price. Surface is not stated.\n\nTwo courts and a daylight close make this a venue for a pair or a four who arrive together, not for joining a rotation, and the City publishes no session here. What the hours line gives you that most Tampa parks do not is certainty about the close: the gate is a sunset gate, stated by the operator, rather than a guess."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two, on the City's card: \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\"."},
-        {"q": "What are the hours?", "a": "\"Open daily from sunrise to sunset\", in the City's words. Only Vila Brothers and Madison Street Park carry that line among Tampa's outdoor parks."},
-        {"q": "Are the courts lit?", "a": "Not stated, and the hours close at sunset. The City says nothing about lighting at any Tampa venue."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."},
-        {"q": "Is there a phone number?", "a": "Not for the park. The pickleball page's programme contact is a Site Supervisor at 59 Columbia Drive, 813-712-0321."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two, on the City's card: \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\"."
+        },
+        {
+          "q": "What are the hours?",
+          "a": "\"Open daily from sunrise to sunset\", in the City's words. Only Vila Brothers and Madison Street Park carry that line among Tampa's outdoor parks."
+        },
+        {
+          "q": "Are the courts lit?",
+          "a": "Not stated, and the hours close at sunset. The City says nothing about lighting at any Tampa venue."
+        }
       ],
-      "sources": ["C1", "C3"]
+      "sources": [
+        "C1",
+        "C3"
+      ]
     },
     "david-m-barksdale-center": {
       "slots": {
-        "description": "One indoor pickleball court at the David M Barksdale Center in West Tampa, with the City's schedule on the card: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\", under the \"Indoor Pickleball\" heading. The Monday beginner lessons are the only thing the City calls free about pickleball anywhere in Tampa, and they price a lesson rather than a court, so the court itself carries no fee answer here. One court is one game at a time.\n\nThe City's recreation-centres list describes the centre as an \"Active Older Adult Facility\" with a computer lab, a fitness room and a contracted instructor for \"Computers/Cell Phones for Seniors\", and gives a phone number, 813-348-1180. That list does not include a gymnasium, which the Forest Hills, Loretta Ingraham and Port Tampa entries do; where inside the building the court is set up, the City does not say. The City lists the centre among its recreation centres, not its parks.",
-        "getting_there": "1801 N Lincoln Ave, Tampa, FL 33607 - and the City prints two postcodes for it. The pickleball page says 33606; the recreation-centres page says 33607; the US Census address geocoder matched \"1801 N LINCOLN AVE, TAMPA, FL, 33607\" at house-number level, in Hillsborough County inside Tampa city, and agrees with the second. The resolver's postcode publishes and the difference is stated here.\n\nThe City publishes nothing about parking. The centre's phone number, 813-348-1180, is on the recreation-centres page. Barksdale, Loretta Ingraham and Macfarlane all publish in 33607.",
-        "what_to_expect": "A weekday-afternoon venue: Monday 1 to 3 pm for beginners, then 3 to 5:30, and Tuesday to Friday 2 to 5:30 pm. No evenings, no weekends, on the City's card. With one court and a five-day schedule, this is the Tampa indoor venue with the most stated hours and the fewest courts. It is the only Tampa indoor venue with sessions on every weekday.\n\nThe City describes the building as an older-adult facility, which is a fact about the centre's programme rather than a rule about who may play - the City states no such rule on the pickleball page. Price is not stated for the court; the beginner lesson is stated as free. Surface is not stated. The page is dated 28 October 2025 and, as with every Tampa indoor schedule, the sessions are the City's last statement rather than this week's, so ring 813-348-1180 before a first visit rather than arriving on the strength of a card almost a year old."
+        "description": "One indoor pickleball court at the David M Barksdale Center in West Tampa, with the City's schedule on the card: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\", under the \"Indoor Pickleball\" heading. The Monday beginner lessons are the only thing the City calls free about pickleball anywhere in Tampa, and they price a lesson rather than a court, so the court itself carries no fee answer here.\n\nThe City's recreation-centres list describes the centre as an \"Active Older Adult Facility\" with a computer lab and a fitness room. That list does not include a gymnasium, and where inside the building the court is set up, the City does not say.",
+        "getting_there": "1801 N Lincoln Ave, Tampa, FL 33607, and the City prints two postcodes for it. The pickleball page says 33606; the recreation-centres page says 33607; the US Census address geocoder matched \"1801 N LINCOLN AVE, TAMPA, FL, 33607\" at house-number level, in Hillsborough County inside Tampa city, and agrees with the second. The resolver's postcode publishes and the difference is stated here.\n\nThe City publishes nothing about parking. The centre's phone number, 813-348-1180, is on the recreation-centres page.",
+        "what_to_expect": "A weekday-afternoon venue: Monday 1 to 3 pm for beginners, then 3 to 5:30, and Tuesday to Friday 2 to 5:30 pm. No evenings, no weekends, on the City's card. With one court and a five-day schedule, this is the Tampa indoor venue with the most stated hours and the fewest courts.\n\nThe City describes the building as an older-adult facility, which is a fact about the centre's programme rather than a rule about who may play. Price is not stated for the court; the beginner lesson is stated as free. Surface is not stated. The page is dated 28 October 2025, so ring 813-348-1180 before a first visit."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "One indoor court, under the City's \"Indoor Pickleball\" heading: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court\"."},
-        {"q": "When are the sessions?", "a": "Monday 1-3 pm (free beginner lessons) and 3-5:30 pm; Tuesday to Friday 2-5:30 pm, as the City prints them. No evenings or weekends are listed."},
-        {"q": "Is it free?", "a": "The Monday beginner lessons are stated as free. The court itself carries no stated price, and this site does not extend the lesson's price to the court."},
-        {"q": "Why does the postcode differ between City pages?", "a": "The pickleball page prints 33606 and the recreation-centres page 33607. The Census geocoder agrees with 33607, and that is what is published, with the difference noted."},
-        {"q": "Is there a phone number?", "a": "Yes: 813-348-1180, on the City's recreation-centres page, which lists the centre as an Active Older Adult Facility."}
+        {
+          "q": "How many courts are there?",
+          "a": "One indoor court, under the City's \"Indoor Pickleball\" heading: \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court\"."
+        },
+        {
+          "q": "When are the sessions?",
+          "a": "Monday 1-3 pm (free beginner lessons) and 3-5:30 pm; Tuesday to Friday 2-5:30 pm, as the City prints them. No evenings or weekends are listed."
+        },
+        {
+          "q": "Is it free?",
+          "a": "The Monday beginner lessons are stated as free. The court itself carries no stated price, and the lesson's price is not extended to the court."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "cordelia-b-hunt-center": {
       "slots": {
-        "description": "One indoor pickleball court at the Cordelia B Hunt Center, on two weekday evenings, with a schedule the City prints in two versions split at a date. The card, under \"Indoor Pickleball\", reads: \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\". The page is dated 28 October 2025 and none of those dates carries a year, so this site prints them as the City printed them and does not say which version applies today.\n\nThe City's recreation-centres list gives the centre a computer lab, a fitness room, a summer camp and a taekwondo instructor, and a phone number, 813-348-1172; it lists no gymnasium. It also gives a different house number - 4810 N Himes Ave, in the same postcode - which is the other half of this venue's address story. One court is one game at a time.",
-        "getting_there": "4602 N Himes Ave, Tampa, FL 33614, as the pickleball page writes it. This is the address that shows what the Census geocoder can do to a compass direction: asked for 4602 N Himes Ave it answered \"4602 S HIMES AVE, TAMPA, FL, 33611\" - the other side of the city, a different postcode. OpenStreetMap finds \"4602, North Himes Avenue\" at house-number level in 33614, matching the City's postcode, so the City's address publishes. The City's recreation-centres page gives the centre as 4810 N Himes Ave, also 33614; the count-bearing address resolves as written and is the one published, with the other stated here. Hillsborough County, inside Tampa. Parking is not mentioned.",
-        "what_to_expect": "One court, two evenings a week, in short sessions. Through June 1 the City gives Tuesday 6:45 to 8 pm and Thursday 6 to 6:45 pm - forty-five minutes on a Thursday; from June 2 to August 8, Tuesday 6:45 to 7:45 and Thursday 6 to 7:45. That is one game at a time in a window of an hour or so, and it is the narrowest published pickleball in Tampa.\n\nPrice is not stated. Surface is not stated. Whether either schedule is the current one is not something the page can tell you, because the dates have no year and the page was last updated in October 2025; the honest reading is that pickleball happens here on Tuesday and Thursday evenings and the exact minutes have changed at least once. Ring 813-348-1172 before going. This is a venue for a known four, not a drop-in."
+        "description": "One indoor pickleball court at the Cordelia B Hunt Center, on two weekday evenings, with a schedule the City prints in two versions split at a date. The card, under \"Indoor Pickleball\", reads: \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\". The page is dated 28 October 2025 and none of those dates carries a year, so they are printed as the City printed them.\n\nThe City's recreation-centres list gives the centre a phone number, 813-348-1172, and lists no gymnasium. One court is one game at a time.",
+        "getting_there": "4602 N Himes Ave, Tampa, FL 33614, as the pickleball page writes it. Asked for that address, the US Census geocoder answered \"4602 S HIMES AVE, TAMPA, FL, 33611\", the other side of the city in a different postcode. OpenStreetMap finds \"4602, North Himes Avenue\" at house-number level in 33614, matching the City's postcode, so the City's address publishes. The recreation-centres page gives the centre as 4810 N Himes Ave, also 33614; the count-bearing address is the one published, with the other stated here. Parking is not mentioned.",
+        "what_to_expect": "One court, two evenings a week, in short sessions. Through June 1 the City gives Tuesday 6:45 to 8 pm and Thursday 6 to 6:45 pm, forty-five minutes on a Thursday. From June 2 to August 8, Tuesday 6:45 to 7:45 and Thursday 6 to 7:45. That is one game at a time in a window of an hour or so.\n\nPrice and surface are not stated. Whether either schedule is the current one cannot be told from the card, because the dates have no year and the page was last updated in October 2025. Ring 813-348-1172 before going. This is a venue for a known four, not a drop-in."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "One indoor court, under the City's \"Indoor Pickleball\" heading: \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court\"."},
-        {"q": "When are the sessions?", "a": "Through June 1: Tuesday 6:45-8 pm, Thursday 6-6:45 pm. June 2 to August 8: Tuesday 6:45-7:45 pm, Thursday 6-7:45 pm. No year is given on the City's card."},
-        {"q": "Which house number is right, 4602 or 4810?", "a": "The City prints both, on different pages, in the same postcode. The count-bearing 4602 resolves as written through OpenStreetMap and is published; 4810 is stated here."},
-        {"q": "Why did the Census geocoder fail here?", "a": "It answered 4602 N Himes Ave with \"4602 S HIMES AVE, 33611\", flipping the direction and the postcode. OpenStreetMap finds the City's address, so that is published."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."}
+        {
+          "q": "When are the sessions?",
+          "a": "Through June 1: Tuesday 6:45-8 pm, Thursday 6-6:45 pm. June 2 to August 8: Tuesday 6:45-7:45 pm, Thursday 6-7:45 pm. No year is given on the City's card."
+        },
+        {
+          "q": "Which house number is right, 4602 or 4810?",
+          "a": "The City prints both, on different pages, in the same postcode. The count-bearing 4602 resolves as written through OpenStreetMap and is published; 4810 is stated here."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Not stated. The City publishes no price for any Tampa pickleball court."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "loretta-ingraham-center": {
       "slots": {
-        "description": "Two indoor pickleball courts at the Loretta Ingraham Center in West Tampa, on Monday and Friday evenings until the City's summer camp begins and on Mondays only from June 2. The card, under \"Indoor Pickleball\", reads \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\". Two courts is the joint-largest indoor count in Tampa, level with Forest Hills' two, and it means two games at once inside rather than one.\n\nThe City's recreation-centres page lists the building as the Loretta Ingraham Complex at 1615 N Hubert Ave, 33607 - a different house number from the pickleball page's - with a phone number, 813-348-1175, and \"Features: Computer Lab, Fitness Room, Gymnasium, Pool Facility, After School, Summer Camp\". So this is a centre with a gymnasium, and the summer camp the card refers to is a programme the City lists at the same building. Two courts for two hours is the most evening court-time the City publishes indoors.",
-        "getting_there": "1611 N Hubert Ave, Tampa, FL 33607, as the pickleball page writes it. The US Census address geocoder matched \"1611 N HUBERT AVE, TAMPA, FL, 33607\" at house-number level, in Hillsborough County inside Tampa city; no second resolver was needed. The City's recreation-centres page gives 1615 N Hubert Ave for the same complex, in the same postcode; the count-bearing address resolves as written and is the one published, with the other stated here.\n\nThe City publishes nothing about parking. The complex's phone number is 813-348-1175. Loretta Ingraham, Barksdale and Macfarlane all publish in 33607.",
-        "what_to_expect": "Two courts on two evenings, 6:30 to 8:30 pm, Monday and Friday - then Mondays alone once summer camp starts, \"Beginning June 2\" on the card. Two hours and two courts is enough for eight players to rotate, which makes this one of the two Tampa indoor venues, with Forest Hills, where a rotation is plausible on the City's record, though the City does not call it open play or say who comes.\n\nPrice is not stated. Surface is not stated. The page is dated 28 October 2025 and the June 2 date has no year, so whether the Friday session is running now is not something this site can tell you; the pattern the City describes is a two-evening schedule outside summer camp and a one-evening schedule during it. The complex has a pool and a fitness room on the City's list, which are facts about the building, not the courts. Ring 813-348-1175 before a Friday trip."
+        "description": "Two indoor pickleball courts at the Loretta Ingraham Center in West Tampa, on Monday and Friday evenings until the City's summer camp begins and on Mondays only from June 2. The card, under \"Indoor Pickleball\", reads \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\". Two courts is the joint-largest indoor count in Tampa, level with Forest Hills, and it means two games at once inside rather than one.\n\nThe City's recreation-centres page lists the building as the Loretta Ingraham Complex, with a gymnasium, a fitness room and a pool among its features, so the summer camp the card refers to is a programme the City lists at the same building.",
+        "getting_there": "1611 N Hubert Ave, Tampa, FL 33607, as the pickleball page writes it. The US Census address geocoder matched \"1611 N HUBERT AVE, TAMPA, FL, 33607\" at house-number level, in Hillsborough County inside Tampa city. The recreation-centres page gives 1615 N Hubert Ave for the same complex, in the same postcode; the count-bearing address is the one published, with the other stated here.\n\nThe City publishes nothing about parking. The complex's phone number is 813-348-1175.",
+        "what_to_expect": "Two courts on two evenings, 6:30 to 8:30 pm, Monday and Friday, then Mondays alone once summer camp starts, \"Beginning June 2\" on the card. Two hours and two courts is enough for eight players to rotate, though the City does not call it open play or say who comes.\n\nPrice and surface are not stated. The page is dated 28 October 2025 and the June 2 date has no year, so whether the Friday session is running now cannot be told from the card. Ring 813-348-1175 before a Friday trip."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "Two indoor courts, under the City's \"Indoor Pickleball\" heading: \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts\"."},
-        {"q": "When are the sessions?", "a": "Monday and Friday 6:30-8:30 pm until summer camp begins; Monday only 6:30-8:30 pm from June 2, as the City prints it. No year is given."},
-        {"q": "Which house number is right, 1611 or 1615?", "a": "The City prints 1611 on the pickleball page and 1615 on the recreation-centres page, same postcode. The count-bearing 1611 resolves as written and is published; 1615 is stated here."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."},
-        {"q": "Is there a phone number?", "a": "Yes: 813-348-1175, on the City's recreation-centres page, which lists a gymnasium and a pool among the complex's features."}
+        {
+          "q": "How many courts are there?",
+          "a": "Two indoor courts, under the City's \"Indoor Pickleball\" heading: \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts\"."
+        },
+        {
+          "q": "When are the sessions?",
+          "a": "Monday and Friday 6:30-8:30 pm until summer camp begins; Monday only 6:30-8:30 pm from June 2, as the City prints it. No year is given."
+        },
+        {
+          "q": "Which house number is right, 1611 or 1615?",
+          "a": "The City prints 1611 on the pickleball page and 1615 on the recreation-centres page, same postcode. The count-bearing 1611 resolves as written and is published; 1615 is stated here."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     },
     "port-tampa-community-center": {
       "slots": {
-        "description": "One indoor pickleball court at the Port Tampa Community Center, on Tuesday and Thursday evenings, with a closure printed on the same card. The City writes, under \"Indoor Pickleball\": \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm / Thursday, 6-9 pm\". The page is dated 28 October 2025 and the closure carries no year; it is printed here as the City printed it, and the build that makes this page fails on the day the City removes it, so a stale closure cannot outlive the City's own notice.\n\nThe centre is on the recreation-centres list as the Port Tampa Center, 813-832-1215, \"Features: Computer Lab, Gymnasium, After School, Summer Camp\". This venue was in the imported dataset before the City's page was read, with one indoor court at this address; the City confirmed both, and its card added the repair note and the session times. One court is one game at a time. Port Tampa and Forest Hills are the two indoor venues where the City's two pages print the same address in every particular.",
-        "getting_there": "4702 W McCoy St, Tampa, FL 33616. The US Census address geocoder matched \"4702 W MCCOY ST, TAMPA, FL, 33616\" at house-number level, in Hillsborough County inside Tampa city, and the City's recreation-centres page prints the same address, so every record agrees. Port Tampa is the only published venue in postcode 33616, and the southernmost venue published in Tampa.\n\nThe City publishes nothing about parking. The centre's phone number, 813-832-1215, is the thing to use here: with a repair closure of uncertain date printed on the court's own card, a call is not optional.",
-        "what_to_expect": "Three-hour sessions, 6 to 9 pm, Tuesday and Thursday - the longest evening windows the City publishes indoors, on one court. One court is one game at a time, so three hours is a rotation for a small group rather than a facility for a crowd.\n\nBefore any of that: the City's card says \"Court closed for repairs through June 1\". This page cannot tell you whether that June has passed, because the City did not write a year and dates the page October 2025; it can tell you the City had not removed the note on 7 September 2026, when the page was read. Price is not stated. Surface is not stated. The building has a gymnasium and runs after-school and summer-camp programmes on the City's list, which is context for a court that is in use for other things most of the week."
+        "description": "One indoor pickleball court at the Port Tampa Community Center, on Tuesday and Thursday evenings, with a closure printed on the same card. The City writes, under \"Indoor Pickleball\": \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm / Thursday, 6-9 pm\". The page is dated 28 October 2025 and the closure carries no year. It is printed here as the City printed it.\n\nThe centre is on the recreation-centres list as the Port Tampa Center, 813-832-1215, \"Features: Computer Lab, Gymnasium, After School, Summer Camp\". One court is one game at a time.",
+        "getting_there": "4702 W McCoy St, Tampa, FL 33616. The US Census address geocoder matched \"4702 W MCCOY ST, TAMPA, FL, 33616\" at house-number level, in Hillsborough County inside Tampa city, and the City's recreation-centres page prints the same address, so every record agrees. Port Tampa is the southernmost venue published in Tampa.\n\nThe City publishes nothing about parking. The centre's phone number, 813-832-1215, is the thing to use here: with a repair closure of uncertain date printed on the court's own card, a call is not optional.",
+        "what_to_expect": "Three-hour sessions, 6 to 9 pm, Tuesday and Thursday, the longest evening windows the City publishes indoors, on one court. One court is one game at a time, so three hours is a rotation for a small group rather than a facility for a crowd.\n\nBefore any of that: the City's card says \"Court closed for repairs through June 1\". Whether that June has passed cannot be told from the card, because the City did not write a year and dates the page October 2025. What can be said is that the City had not removed the note on 7 September 2026, when the page was read. Price and surface are not stated."
       },
       "faqs": [
-        {"q": "How many courts are there?", "a": "One indoor court, under the City's \"Indoor Pickleball\" heading: \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court\"."},
-        {"q": "Is the court open?", "a": "The City's card says \"Court closed for repairs through June 1\", with no year, on a page dated 28 October 2025. Ring 813-832-1215 before going."},
-        {"q": "When are the sessions?", "a": "Tuesday 6-9 pm and Thursday 6-9 pm, as the City prints them - the longest evening windows the City publishes indoors."},
-        {"q": "Is it free?", "a": "Not stated. The City publishes no price for any Tampa pickleball court, and this site does not assume a park court is free."},
-        {"q": "Is there a phone number?", "a": "Yes: 813-832-1215, on the City's recreation-centres page, which lists a gymnasium among the centre's features."}
+        {
+          "q": "How many courts are there?",
+          "a": "One indoor court, under the City's \"Indoor Pickleball\" heading: \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court\"."
+        },
+        {
+          "q": "Is the court open?",
+          "a": "The City's card says \"Court closed for repairs through June 1\", with no year, on a page dated 28 October 2025. Ring 813-832-1215 before going."
+        },
+        {
+          "q": "When are the sessions?",
+          "a": "Tuesday 6-9 pm and Thursday 6-9 pm, as the City prints them, the longest evening windows the City publishes indoors."
+        }
       ],
-      "sources": ["C1", "C2", "C3"]
+      "sources": [
+        "C1",
+        "C2",
+        "C3"
+      ]
     }
   },
   "sources": [
@@ -254,7 +423,11 @@
       "publisher": "City of Tampa Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "The City's pickleball page, dated \"Updated: 10/28/2025\". Outdoor cards under the label \"Outdoor Pickleball\": \"Al Barnes Park / 2902 N 32nd St, Tampa, 33605 / 4 courts\"; \"Copeland Park / 11001 N 15th St., 33612 / 4 courts\"; \"Cuscaden Park / 2900 N 15th St., 33605 / Senior open play Wed 9-11 am / 6 courts\"; \"Davis Islands / 155 Columbia Drive, Tampa, 33606 / 2 multi-purpose courts\"; \"Forest Hills / 724 W 109th Ave., 33612 / 2 courts\"; \"Foster Park / 4700 S Clark Ave., 33611 / 2 courts\"; \"Highland Pines Park / 4505 E 21st St., 33605 / 4 courts\"; \"Julian B Lane Riverfront Park / 1001 N Boulevard, 33606 / 2 permanent courts / 4 portable net courts\"; \"Macfarlane Park / 1700 N MacDill Ave., 33607 / 8 courts\"; \"Madison Street Park / 1224 E Madison St., 33602 / Open daily from sunrise to sunset / 1 court\"; \"New Tampa Sports Pavilion / 17302 Commerce Park Blvd., 33647 / Monday-Friday, 4:30-9 pm / Saturday-Sunday, 8 am-9 pm / 4 courts\"; \"Rowlett Park / 2401 E Yukon St., 33604 / 8 courts\"; \"Skyview Park / 6203 S Martindale Ave., 33611 / 2 courts\"; \"Vila Brothers Park / 700 N Armenia Ave., 33609 / Open daily from sunrise to sunset / 2 courts\". Under the heading \"Indoor Pickleball\": \"David M Barksdale Center / 1801 N Lincoln Ave., 33606 / 1 court / Monday / 1-3 pm (free beginner lessons) / 3-5:30 pm / Tuesday-Friday, 2-5:30 pm\"; \"Forest Hills Community Center / 724 W 109th Ave, 33612 / 2 courts / Play resumes after Summer Camp ends / Monday, 10 am-12:30 pm / Wednesday, 10 am-1 pm / Friday, 6-7:30 pm\"; \"Cordelia B Hunt Center / 4602 N Himes Ave., 33614 / 1 court / Schedule through June 1 / Tuesday, 6:45-8 pm / Thursday, 6-6:45 pm / June 2-August 8 / Tuesday, 6:45-7:45 pm / Thursday, 6-7:45 pm\"; \"Loretta Ingraham Center / 1611 N Hubert Ave., 33607 / 2 courts / Until Summer Camp begins / Monday and Friday, 6:30-8:30 pm / Beginning June 2 / Monday, 6:30-8:30 pm\"; \"Port Tampa Community Center / 4702 W McCoy St., 33616 / 1 court / Court closed for repairs through June 1 / Tuesday, 6-9 pm / Thursday, 6-9 pm\". The page's contact is \"Andrew Sheets / Site Supervisor / 59 Columbia Dr / Tampa, Florida 33606 / Phone 813-712-0321\", and its navigation lists Copeland Park and Julian B. Lane Riverfront Park under \"Featured Parks\". Snapshot: data/sources/tampa/pickleball.html",
       "not_stated": "Lighting, price and surface at any venue; parking and restrooms; hours at nine of the twelve outdoor venues; the year of any date on the indoor cards."
     },
@@ -264,7 +437,11 @@
       "publisher": "City of Tampa Parks and Recreation",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["description", "getting_there", "what_to_expect"],
+      "supports": [
+        "description",
+        "getting_there",
+        "what_to_expect"
+      ],
       "evidence": "The City's recreation-centres list, dated \"Updated: 05/21/2026\". \"Copeland Park Center 11001 N 15th St, 33612 / Ph: 813-975-2743 / Features: Computer Lab, Fitness Room, Gymnasium, Pool Facility, After School, Summer Camp, Stay & Play, Contracted Instructor (Urban Line Dance)\". \"Cordelia B Hunt Center 4810 N Himes Ave, 33614 / Ph: 813-348-1172 / Features: Computer Lab, Fitness Room, Summer Camp, Contracted Instructor (Taekwondo)\". \"David M Barksdale Center 1801 N Lincoln Ave, 33607 / Ph: 813-348-1180 / Features: Active Older Adult Facility, Computer Lab, Fitness Room, Contracted Instructor (Computers/Cell Phones for Seniors)\". \"Forest Hills Center 724 W 109th Ave, 33612 / Ph: 813-931-2105 / Features: Computer Lab, Fitness Room, Gymnasium, After School, Summer Camp, Contracted Instructor (Shotokan Karate)\". \"Highland Pines Center 4505 E 21st Ave, 33605 / Ph: 813-630-3925 / Features: Computer Lab, After School, Summer Camp\". \"Loretta Ingraham Complex 1615 N Hubert Ave, 33607 / Ph: 813-348-1175 / Features: Computer Lab, Fitness Room, Gymnasium, Pool Facility, After School, Summer Camp\". \"New Tampa Recreation Center 17302 Commerce Park Blvd, 33647 / Ph: 813-975-2794 / Features: Fitness Room, Skate Park, Gymnastics, Dance, Summer Specialty Camp\". \"Port Tampa Center 4702 W McCoy St, 33616 / Ph: 813-832-1215 / Features: Computer Lab, Gymnasium, After School, Summer Camp\". \"Sandra Freedman Complex 59 Columbia Dr, 33606 / Ph: 813-259-1664 / Features: Tennis Complex\". Snapshot: data/sources/tampa/recreation-centers.html",
       "not_stated": "Pickleball at all - the page never uses the word - and parking, surface or floor material at any centre. Al Barnes, Cuscaden, Macfarlane, Madison Street, Skyview and Vila Brothers have no entry on it."
     },
@@ -274,7 +451,11 @@
       "publisher": "US Census Bureau",
       "tier": 1,
       "retrieved": "2026-09-07",
-      "supports": ["getting_there", "description", "what_to_expect"],
+      "supports": [
+        "getting_there",
+        "description",
+        "what_to_expect"
+      ],
       "evidence": "All sixteen published addresses matched at house-number level and were placed in Hillsborough County, FL, inside the incorporated place Tampa. Ten resolved through the Census address file as the City writes them: Copeland, Cuscaden, Davis Islands, Forest Hills, Macfarlane, New Tampa Sports Pavilion, Vila Brothers, David M Barksdale (in 33607 against the pickleball page's 33606), Loretta Ingraham and Port Tampa. Four resolved through OpenStreetMap: Al Barnes Park and Julian B Lane Riverfront Park because the Census file holds no record of the address (Julian B Lane in 33607 against the City's 33606); Madison Street Park because the Census answered \"1224 MADISON ST\", dropping the East; Cordelia B Hunt Center because the Census answered \"4602 S HIMES AVE, TAMPA, FL, 33611\", flipping the direction and the postcode. Highland Pines Park stands on the Census answer \"4505 E 21ST AVE\" and Skyview Park on \"6203 MARTINDALE AVE\", because OpenStreetMap holds nothing for the City's spelling and there is one street under one name in each case. \"2401 E Yukon St.\" (Rowlett Park) is found by neither resolver; \"4700 S Clark Ave., 33611\" (Foster Park) is answered by the Census as \"4700 N CLARK AVE, 33614\" and not found by OpenStreetMap. Snapshot: data/sources/tampa-county-census.json",
       "not_stated": "Anything about the courts themselves."
     }
