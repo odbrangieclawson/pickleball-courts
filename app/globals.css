@@ -750,6 +750,12 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
   margin-top: 7px;
 }
 
+/* The same proof row on a light page (About): ink instead of white, and
+   the page's own rule colour for the line above it. */
+.about-proof { margin: 6px 0 22px; border-top-color: var(--rule); }
+.about-proof dd { color: var(--ink); }
+.about-proof dt { color: var(--ink-3); }
+
 @media (max-width: 640px) {
   .hero { padding-top: 40px; }
   .hero-search { flex-direction: column; gap: 10px; }
