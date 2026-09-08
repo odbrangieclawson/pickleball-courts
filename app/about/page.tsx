@@ -20,7 +20,7 @@ import {CONTACT_EMAIL} from '../../lib/site/contact.mjs'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'A US pickleball court directory where every published fact carries a named source and the date it was checked. What it is, what is on it, and what it refuses to do.',
+    'A US pickleball court directory where every fact names its source and the date it was checked. What it is, what is on it, and what it refuses to do.',
   robots: PAGE_ROBOTS,
   alternates: {canonical: '/about/'},
 }

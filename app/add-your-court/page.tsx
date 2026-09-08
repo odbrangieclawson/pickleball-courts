@@ -17,7 +17,7 @@ import {CONTACT_EMAIL, addVenueMailto} from '../../lib/site/contact.mjs'
 export const metadata: Metadata = {
   title: 'Add or claim your pickleball court',
   description:
-    'Run a court we list, or one we do not? Claim a listing to correct it, or send us a court we are missing. Here is what a claim does, what it does not, and what to send.',
+    'Claim a pickleball court listing to correct it, or send us a court we are missing. What a claim does, what it does not, and what to send.',
   robots: PAGE_ROBOTS,
   alternates: {canonical: '/add-your-court/'},
 }
