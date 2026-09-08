@@ -107,6 +107,13 @@ const CITY_OVERRIDES = {
   /* The article's lead image is 'Copyrighted free use', a non-standard tag
      this project would rather not rely on. A plain CC photograph instead. */
   'CA/long-beach': 'Downtown, Long Beach from Queen Mary (Dusk).JPG',
+  /*
+    Rockville's lead image is a montage built from several files, so Commons
+    records its author as a run-on list of contributors and filenames. The
+    credit was accurate and unreadable. One photograph by one photographer
+    instead.
+  */
+  'MD/rockville': 'Rockville MD Town Center 2021-11-27 11-12-19 1.jpg',
 }
 
 /*
@@ -216,6 +223,9 @@ for (const c of data.publishedCities()) {
     const dims = await grab(meta, join(REPO_ROOT, 'public', rel.slice(1)), 1400)
     out.cities[key] = {
       src: rel, ...dims,
+      /* The place in words, so the credits page can name it rather than
+         printing the internal "ST/slug" key at a reader. */
+      label: `${c.city}, ${c.state}`,
       alt: `${c.city}, ${c.state}.`,
       author: meta.author, licence: meta.licence, licenceUrl: meta.licenceUrl,
       filePage: meta.filePage, file: meta.file,
