@@ -27,16 +27,37 @@ import {homeView} from '../lib/site/views.mjs'
   "no photo yet" marker and every venue card does.
 */
 
+/*
+  THE HOME PAGE TITLE CARRIES THE HEAD KEYWORD, NOT THE BRAND TWICE.
+
+  It used to be the bare brand name, "Find Pickleball Courts", which is the
+  one string a searcher never types. The head terms this page can actually
+  win are "pickleball courts near me" (69,000 US searches a month, KD 2) and
+  "pickleball courts" (16,000, KD 0), and neither appeared in the title or
+  the description; the phrase "near me" appeared nowhere on the page at all.
+
+  The title now leads with the keyword and the verified count, which is the
+  same shape every city page uses. "Near You" rather than "near me" is
+  deliberate: a searcher types "near me", a page says "near you", and Google
+  resolves that intent by location rather than by matching the literal
+  string. Writing "near me" in our own copy would read as written for a
+  crawler instead of a reader, which is the opposite of this site's point.
+
+  The count comes from homeView(), which reads getCounts() — Rule 2, and D8,
+  which allows only verified counts in a title.
+*/
+const home = homeView()
+
 export const metadata: Metadata = {
-  title: 'Find Pickleball Courts',
+  title: `Pickleball Courts Near You: ${home.venues} Verified`,
   description:
-    'Pickleball courts with a named source and a checked date on every fact. We publish what we have verified, and we publish the gaps too.',
+    `Find pickleball courts near you. ${home.venues} verified venues across ${home.cityCount} ${home.cityWordLower}, with court counts, lights, nets and cost, and the source and date behind every fact.`,
   robots: PAGE_ROBOTS,
   alternates: {canonical: '/'},
 }
 
 export default function Home() {
-  const v = homeView()
+  const v = home
 
   return (
     <>
