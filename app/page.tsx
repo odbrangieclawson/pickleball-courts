@@ -127,18 +127,13 @@ export default function Home() {
       </section>
 
       <div className="wrap page">
-        <h2>Where we have verified</h2>
-        <ul className="cards">
-          {v.cities.map(c => (
-            <li className="card" key={c.href}>
-              <h3><a href={c.href}>{c.title}</a></h3>
-              <p className="meta">{c.meta}</p>
-              <p>{c.blurb}</p>
-              <span className="trust">{c.trust}</span>
-            </li>
-          ))}
-        </ul>
-
+        {/*
+          States first, cities second. With thirty-five cities the card grid
+          is nine rows deep, and a reader who has just left the search box
+          wants a map of the coverage before a list of it. The state cards
+          are that map: nineteen tiles, each naming its cities, so the whole
+          directory is one screen and one click.
+        */}
         <h2>{v.statesHeading}</h2>
         <p className="lede">{v.statesNote}</p>
         <ul className="states">
@@ -174,6 +169,18 @@ export default function Home() {
                   <a href={c.href} key={c.href}>{c.label}</a>
                 ))}
               </p>
+            </li>
+          ))}
+        </ul>
+
+        <h2>Every verified city</h2>
+        <ul className="cards">
+          {v.cities.map(c => (
+            <li className="card" key={c.href}>
+              <h3><a href={c.href}>{c.title}</a></h3>
+              <p className="meta">{c.meta}</p>
+              <p>{c.blurb}</p>
+              <span className="trust">{c.trust}</span>
             </li>
           ))}
         </ul>
