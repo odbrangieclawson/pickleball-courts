@@ -1,5 +1,6 @@
 import type {Metadata} from 'next'
-import {searchView} from '../../lib/site/views.mjs'
+import type {SearchView} from '../../lib/site/views.d.mts'
+import {searchView, searchFallbackView} from '../../lib/site/views.mjs'
 
 /*
   Search results.
@@ -33,8 +34,24 @@ type Props = {searchParams: Promise<{q?: string; filter?: string}>}
 */
 export default async function SearchPage({searchParams}: Props) {
   const {q, filter} = await searchParams
-  const v = searchView(q ?? '', filter ?? null)
-
+  /*
+    A thrown error here used to become Next's generic 500. This route is
+    the only one rendered on demand, so it is the only one that can fail
+    at request time — and a 500 on a directory is the failure mode O9
+    records a competitor losing traffic to, because a crawler keeps a
+    500'd URL and retires a 404'd one.
+  
+    The fallback is server-rendered, so it still works with JavaScript
+    off. The error is logged rather than swallowed: it stays in the
+    function log, and npm run check:search still exercises the real path.
+  */
+  let v: SearchView
+  try {
+    v = searchView(q ?? '', filter ?? null)
+  } catch (err) {
+    console.error('[search] index unavailable, serving fallback:', err)
+    v = searchFallbackView(typeof q === 'string' ? q : '')
+  }
   return (
     <div className="wrap page">
       <nav aria-label="Breadcrumb" className="crumbs">

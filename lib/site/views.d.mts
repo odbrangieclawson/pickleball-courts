@@ -492,3 +492,5 @@ export type SearchView = {
 }
 
 export function searchView(q: string, filter?: string | null): SearchView
+/** The page rendered when the search index cannot be read. Needs no data. */
+export function searchFallbackView(q?: string): SearchView
