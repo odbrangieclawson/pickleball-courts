@@ -185,11 +185,31 @@
     repaint()
   }
 
+  /*
+    THE REGION IS ONLY A READABLE NAME INSIDE THE UNITED STATES.
+
+    x-vercel-ip-country-region is a two-letter state code for a US address
+    — "Seattle, WA" — and an ISO subdivision code everywhere else, which is
+    often a number. Tested from a real address in the Philippines the
+    header came back as "01", and the panel offered "Nothing verified near
+    City of Candon, 01" to somebody who has never heard the region called
+    that and could not have guessed what it meant.
+
+    So the code is appended only where it is a name a reader recognises.
+    Everywhere else the town stands on its own, which is all the sentence
+    needed: it is naming where they are, not filing it.
+  */
+  var US_STATE_CODE = /^[A-Za-z]{2}$/
+
   /* IP tier. Coarse by nature, so it says so. */
   function locateByNetwork() {
     return loadWhere().then(function (w) {
       if (!w || !w.known || place) return
-      var name = w.city ? w.city + (w.region ? ', ' + w.region : '') : 'your area'
+      var readableRegion =
+        w.country === 'US' && w.region && US_STATE_CODE.test(w.region)
+      var name = w.city
+        ? w.city + (readableRegion ? ', ' + w.region : '')
+        : 'your area'
       setPlace({lat: w.lat, lng: w.lng, label: name, approx: true})
     })
   }
