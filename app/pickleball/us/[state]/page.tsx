@@ -116,6 +116,38 @@ export default async function StatePage({params}: Params) {
         </div>
       </section>
 
+      {/*
+        THE FILTER BAR.
+
+        Only filters this state can actually answer. A chip appears where at
+        least one of its cities publishes that filter page, so Utah shows
+        none and California shows only Lit — which is the truth about the
+        data, not a gap in the design.
+
+        The count is of CITIES and the chip says the word, because a bare
+        "2" beside "Outdoor courts" would be read as courts. Every chip is a
+        plain anchor to a noindex query parameter on /search/, which is what
+        Rule 4 prescribes for any facet that is not one of the five
+        per-city filter pages.
+      */}
+      {v.hasFilterChips && (
+        <section className="filter-bar" aria-label={`Filter courts in ${v.stateName}`}>
+          <div className="wrap filter-bar-inner">
+            <span className="filter-bar-label">Filter</span>
+            <nav className="chips is-light">
+              {v.filterChips.map(c => (
+                <a className="chip" key={c.filter} href={c.href}>
+                  {c.label}
+                  <span className="chip-n">
+                    {c.cities} {c.cities === 1 ? 'city' : 'cities'}
+                  </span>
+                </a>
+              ))}
+            </nav>
+          </div>
+        </section>
+      )}
+
     <div className="wrap page">
       <p className="lede" data-prose>{v.meta} Last checked {v.lastChecked}.</p>
 

@@ -81,10 +81,11 @@ export type HomeView = {
 }
 
 /*
-  A state card on the home page. `href` is null where the state publishes
-  no state page — seven of the nine do not, because STATE_MIN_CITIES is 3 —
-  and the template renders the name as plain text rather than minting a
-  link to a page that was never built.
+  A state card on the home page. Every card has an href since 2026-09-09:
+  a state with three published cities and a written note gets its state
+  page, and the rest get a search for the state, which resolves to their
+  published cities and counties. `hrefKind` says which, so the template can
+  announce a results page to assistive technology.
 */
 export type StateCard = {
   key: string
@@ -101,7 +102,9 @@ export type StateCard = {
   venues: string
   courts: string
   meta: string
-  href: string | null
+  href: string
+  /** 'state' = a real state page; 'search' = a search for that state. */
+  hrefKind: 'state' | 'search'
   cityLabel: string
   cities: {href: string; label: string}[]
 }
@@ -133,6 +136,13 @@ export type StateView = {
   cities: CardLink[]
   hasVenueCards: boolean
   hasCityChips: boolean
+  hasFilterChips: boolean
+  /**
+   * Only filters this state can answer: a chip exists where at least one of
+   * its cities publishes that filter page. `cities` counts CITIES, not
+   * courts, and the chip renders the word.
+   */
+  filterChips: {filter: string; label: string; cities: number; href: string}[]
   /** Every published venue in the state, biggest first. */
   venueCards: {
     key: string
@@ -459,6 +469,12 @@ export type SearchHit = {
   label: string
   href: string
   meta: string
+  /** Where it is, or what it holds. Falls back to `meta` when absent. */
+  detail: string | null
+  /** The card image: a court, marked as a stand-in. */
+  photo: Photo | null
+  /** Stated facts only — no badge where the operator publishes nothing. */
+  badges: string[]
 }
 
 export type SearchView = {

@@ -180,8 +180,21 @@ export default function Home() {
               ) : (
                 <span className="state-mark" aria-hidden="true">{s.mark}</span>
               )}
+              {/*
+                Every state name is a link now. Five go to a state page;
+                the rest go to a search for the state, which resolves to
+                its published cities and counties. Sighted readers get one
+                consistent affordance; assistive technology is told which
+                of the two it is, because "Texas" landing on a results page
+                is worth announcing.
+              */}
               <h3>
-                {s.href ? <a href={s.href}>{s.stateName}</a> : s.stateName}
+                <a
+                  href={s.href}
+                  aria-label={s.hrefKind === 'search'
+                    ? `${s.stateName}: everything we publish there`
+                    : undefined}
+                >{s.stateName}</a>
               </h3>
               <p className="meta">{s.meta}</p>
               <p className="state-cities">

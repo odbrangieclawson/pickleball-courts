@@ -1470,6 +1470,51 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
 }
 
 /*
+  THE FILTER BAR under a state hero. A light band, so it reads as a control
+  strip between the hero and the document rather than part of either.
+*/
+.filter-bar {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-2);
+}
+.filter-bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 13px 24px;
+}
+.filter-bar-label {
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 640;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+/* The chip on a light ground, rather than over the hero photograph. */
+.chips.is-light .chip {
+  color: var(--accent-ink);
+  background: var(--paper);
+  border-color: var(--rule);
+  backdrop-filter: none;
+}
+.chips.is-light .chip:hover, .chips.is-light .chip:focus-visible {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+/* The count rides inside the chip, muted, and says its own noun. */
+.chip-n {
+  margin-left: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-3);
+}
+.chips.is-light .chip:hover .chip-n,
+.chips.is-light .chip:focus-visible .chip-n { color: rgb(255 255 255 / .8); }
+
+/*
   Venue cards. The image is a link with aria-hidden and tabIndex -1: the
   heading beneath is the real, named link, so a keyboard or screen-reader
   user meets one link per card rather than two identical ones.
