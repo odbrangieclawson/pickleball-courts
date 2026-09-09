@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "validate": "node scripts/validate-keyword-map.mjs && node scripts/validate-no-bypass.mjs && node scripts/validate-data.mjs && node scripts/check-claims.mjs",
+    "validate": "node scripts/build-search-index.mjs && node scripts/validate-keyword-map.mjs && node scripts/validate-no-bypass.mjs && node scripts/validate-data.mjs && node scripts/check-claims.mjs",
     "check:js-off": "node scripts/check-js-off.mjs",
     "import:mapping": "node scripts/import/emit-mapping.mjs",
     "import:quality": "node scripts/import/quality-report.mjs",
@@ -80,7 +80,8 @@
     "verify:meridian": "node scripts/verify/apply-meridian-parks.mjs",
     "verify:rockville": "node scripts/verify/apply-rockville-parks.mjs",
     "report:keywords": "node scripts/keyword-report.mjs",
-    "map:tiles": "node scripts/maps/fetch-tiles.mjs"
+    "map:tiles": "node scripts/maps/fetch-tiles.mjs",
+    "build:search-index": "node scripts/build-search-index.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
