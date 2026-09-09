@@ -89,18 +89,63 @@ export default async function LeafPage({params}: Params) {
       <p><span className="trust">{v.trust}</span></p>
 
       {/*
-        Where it is, and one click to get there. An anchor, not a scripted
-        map: Rule 1 wants the page to work with JavaScript off, and on a
-        phone this hands off to the reader's own map app. The address beside
-        it is the operator's own wording, so what the reader reads and what
-        the button routes to are the same place.
+        THE ACTION PANEL.
+
+        The count, the cost and the hours are what a player checks before
+        leaving the house; routing, ringing and the operator's own page are
+        what they do next. Every anchor, no script: Rule 1 wants the page
+        whole with JavaScript off, and on a phone these hand off to the
+        reader's own map and dialler.
+
+        Cost and hours print "Not stated" rather than disappearing, because
+        a player who does not check is a player who turns up to a locked
+        gym. The phone and website links are the exception — an action with
+        no target is a dead button, not an honest gap — and the full fact
+        panel below still lists every field either way.
       */}
-      {v.directions && (
-        <p className="venue-actions" data-not-prose>
-          {v.streetAddress && <span className="venue-where">{v.streetAddress}, {v.city}, {v.state}</span>}
-          <a className="button is-quiet" href={v.directions.href}>Get directions</a>
+      <aside className="venue-panel" data-not-prose aria-label={`Key facts for ${v.name}`}>
+        <p className="panel-count">
+          {v.panel.courts === null ? (
+            <span className="panel-nocount">Court count not stated</span>
+          ) : (
+            <>
+              <span className="n">{v.panel.courts}</span>
+              <span className="k">{v.panel.courts === 1 ? 'court' : 'courts'}</span>
+            </>
+          )}
+          {v.panel.split && <span className="panel-split">{v.panel.split}</span>}
         </p>
-      )}
+
+        <dl className="panel-facts">
+          <div><dt>Cost</dt><dd>{v.panel.cost}</dd></div>
+          <div><dt>Hours</dt><dd>{v.panel.hours}</dd></div>
+        </dl>
+
+        {v.directions && (
+          <a className="button panel-go" href={v.directions.href}>Get directions</a>
+        )}
+
+        {(v.panel.phoneHref || v.panel.website) && (
+          <ul className="panel-links">
+            {v.panel.phoneHref && (
+              <li><a href={v.panel.phoneHref}>{v.panel.phone}</a></li>
+            )}
+            {v.panel.website && (
+              <li><a href={v.panel.website} rel="nofollow">{v.panel.websiteLabel ?? 'Visit website'}</a></li>
+            )}
+          </ul>
+        )}
+
+        {v.streetAddress && (
+          <p className="venue-where">{v.streetAddress}, {v.city}, {v.state}</p>
+        )}
+
+        {v.claimable && (
+          <p className="panel-claim">
+            Run this venue? <a href={v.claimHref}>Claim it</a>
+          </p>
+        )}
+      </aside>
 
       <figure className="venue-shot">
         <span className="shot is-hero">

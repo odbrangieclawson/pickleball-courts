@@ -102,6 +102,64 @@ export default async function CityOrCountyPage({params}: Params) {
         {v.lastChecked}.
       </p>
 
+      {/*
+        THE MAP.
+
+        Tiles we host, positioned in a grid, with a pin per venue over the
+        top. No script decides anything: Rule 1 wants the page whole with
+        JavaScript off, and a map library would leave a hole exactly where
+        the map should be. Each pin is a real anchor to that venue's page,
+        so the map is navigation and not decoration.
+
+        The caption says how many venues are on it. A map that silently
+        drops the venues we hold no geocode for would misreport coverage on
+        the one element a reader reads as complete.
+      */}
+      {v.map && (
+        <figure className="static-map" data-not-prose>
+          <div
+            className="map-frame"
+            style={{width: v.map.width, height: v.map.height}}
+            role="img"
+            aria-label={`Map of ${v.mappedN} pickleball ${v.mappedN === 1 ? 'venue' : 'venues'} in ${v.city}, ${v.state}.`}
+          >
+            {v.map.tiles.map(t => (
+              <img
+                key={t.src}
+                className="map-tile"
+                src={t.src}
+                alt=""
+                width={256}
+                height={256}
+                loading="lazy"
+                decoding="async"
+                style={{left: t.left, top: t.top}}
+              />
+            ))}
+            {v.map.pins.map(p => (
+              p.href ? (
+                <a
+                  key={p.key}
+                  className="map-pin"
+                  href={p.href}
+                  style={{left: p.left, top: p.top}}
+                >
+                  <span className="map-pin-label">{p.name}</span>
+                </a>
+              ) : (
+                <span key={p.key} className="map-pin" style={{left: p.left, top: p.top}}>
+                  <span className="map-pin-label">{p.name}</span>
+                </span>
+              )
+            ))}
+          </div>
+          <figcaption>
+            {v.mappedN} of {v.venuesN} venues have a geocode and appear here.{' '}
+            Map data <a href={v.map.attribution.href} rel="nofollow">{v.map.attribution.text}</a>.
+          </figcaption>
+        </figure>
+      )}
+
       <div className="stats">
         <div className="stat"><span className="n">{v.venuesN}</span><span className="k">Venues</span></div>
         <div className="stat"><span className="n">{v.courtsN}</span><span className="k">Courts</span></div>

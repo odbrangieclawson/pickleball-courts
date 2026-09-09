@@ -1397,6 +1397,198 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
   font-size: 14.5px;
   color: var(--ink-2);
 }
+
+/*
+  THE STATIC MAP.
+
+  A grid of tile <img> elements inside a clipped box, with pins absolutely
+  positioned over them. No script, so it survives Rule 1's JavaScript-off
+  render, and no third party, because the tiles come from our own origin.
+
+  The frame's width and height are set inline from the map spec, because
+  they are data — the viewport the tiles were chosen for — not style. Get
+  them wrong in CSS and the tiles no longer line up with the pins.
+*/
+.static-map {
+  margin: 22px 0 26px;
+  max-width: none;
+}
+.map-frame {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--paper-2);
+}
+.map-tile {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  /* A tile is decoration around the pins; it must never be a drop target
+     or catch a click meant for a venue. */
+  pointer-events: none;
+  user-select: none;
+}
+/*
+  The pin. A dot with a ring, centred on its coordinate rather than hung
+  from its top-left, which is why the translate is half its own size.
+*/
+.map-pin {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2.5px solid #fff;
+  box-shadow: 0 1px 4px rgb(0 0 0 / .38);
+  text-decoration: none;
+  z-index: 2;
+}
+a.map-pin:hover, a.map-pin:focus-visible {
+  background: var(--accent-ink);
+  transform: scale(1.28);
+  z-index: 3;
+}
+a.map-pin:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+/*
+  The venue name, shown on hover and focus. Hidden visually the rest of the
+  time but never from a screen reader, so the pin is a labelled link and
+  not a bare dot with an href.
+*/
+.map-pin-label {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1;
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: var(--paper);
+  background: var(--ink);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .12s ease;
+}
+a.map-pin:hover .map-pin-label,
+a.map-pin:focus-visible .map-pin-label { opacity: 1; }
+.static-map figcaption {
+  margin-top: 9px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.static-map figcaption a { color: var(--ink-3); text-decoration-color: var(--rule); }
+.static-map figcaption a:hover { color: var(--accent-ink); }
+
+@media (max-width: 760px) {
+  /* The frame keeps its pixel height so tiles and pins stay aligned; only
+     the visible width shrinks, cropping from the right. */
+  .map-frame { width: 100% !important; }
+}
+
+/*
+  THE VENUE ACTION PANEL.
+
+  A card, because the three things a player checks and the three things
+  they do next should sit together where the thumb lands, not be scattered
+  down a page of prose. It floats right on a wide screen so the editorial
+  keeps its measure, and stacks above the photograph on a phone.
+
+  Everything in it is an anchor. No script decides anything here, so the
+  panel is whole with JavaScript off (Rule 1) and the phone and map hand
+  off to the reader's own apps.
+*/
+.venue-panel {
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  background: var(--paper);
+  padding: 20px 22px 18px;
+  margin: 0 0 26px;
+  max-width: none;
+}
+.panel-count {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 9px;
+  margin: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule-2);
+}
+.panel-count .n {
+  font-family: var(--display);
+  font-size: 42px;
+  line-height: 1;
+  color: var(--ink);
+}
+.panel-count .k {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.panel-nocount {
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--ink-3);
+}
+.panel-split {
+  flex-basis: 100%;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--ink-3);
+  margin-top: 5px;
+}
+.panel-facts {
+  margin: 0;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid var(--rule-2);
+  font-family: var(--sans);
+  font-size: 14px;
+}
+.panel-facts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 3px 0;
+}
+.panel-facts dt { color: var(--ink-3); }
+.panel-facts dd { margin: 0; color: var(--ink-2); text-align: right; }
+.button.panel-go { width: 100%; margin: 16px 0 0; }
+.panel-links {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 14.5px;
+}
+.panel-links li { padding: 4px 0; }
+.panel-links a { color: var(--accent-ink); }
+.venue-panel .venue-where {
+  margin: 14px 0 0;
+  padding-top: 13px;
+  border-top: 1px solid var(--rule-2);
+  font-size: 14px;
+  color: var(--ink-3);
+}
+.panel-claim {
+  margin: 12px 0 0;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+@media (min-width: 900px) {
+  .venue-panel {
+    float: right;
+    width: 300px;
+    margin: 4px 0 24px 34px;
+  }
+}
 .button.is-quiet {
   min-height: 38px;
   padding: 7px 16px;

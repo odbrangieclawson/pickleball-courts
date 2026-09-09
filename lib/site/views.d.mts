@@ -1,3 +1,20 @@
+export type StaticMapPin = {
+  key: string
+  name: string | null
+  href: string | null
+  left: number
+  top: number
+}
+
+export type StaticMap = {
+  width: number
+  height: number
+  zoom: number
+  tiles: {z: number; x: number; y: number; src: string; left: number; top: number}[]
+  pins: StaticMapPin[]
+  attribution: {text: string; href: string}
+}
+
 export type SitePhoto = {
   /** Names what a borrowed photograph actually shows, on county pages. */
   depicts?: string | null
@@ -180,6 +197,10 @@ export type CityView = {
   filters: CityFilterLink[]
   venues: CityVenueRow[]
   jsonLd: string
+  /** Null when no venue in the city carries a geocode. */
+  map: StaticMap | null
+  /** How many venues the map could place, which may be fewer than all. */
+  mappedN: number
   /** Always null since 2026-09-09: city pages carry no landmark photograph. */
   photo: SitePhoto | null
   /**
@@ -229,9 +250,26 @@ export type VenueView = {
   photo: Photo
   trust: string
   trustRank: number
+  /** Off by default; see VENUE_MAPS in views.mjs for the repo-size trade-off. */
+  map: StaticMap | null
   /** Get directions target, or null when the venue has neither coordinates nor an address. */
   directions: {href: string; precise: boolean} | null
   streetAddress: string | null
+  /**
+   * The action panel: what a player checks, and what they do next. Cost and
+   * hours are always strings and say "Not stated" when the operator has not
+   * published one. The two links are null when there is nothing to link to.
+   */
+  panel: {
+    courts: number | null
+    split: string | null
+    cost: string
+    hours: string
+    phone: string | null
+    phoneHref: string | null
+    website: string | null
+    websiteLabel: string | null
+  }
   claimable: boolean
   /** mailto: links; see lib/site/contact.mjs. */
   claimHref: string
