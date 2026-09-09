@@ -214,6 +214,7 @@ main { display: block; }
   background: var(--paper);
 }
 .site-head .wrap {
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -252,6 +253,31 @@ main { display: block; }
   width: 1.5px;
   background: var(--accent);
 }
+
+/*
+  THE GUIDES SUBMENU. Three links and a line each, so it wants a single
+  column rather than the states panel's grid.
+*/
+.nav-panel.is-narrow { width: 15rem; max-width: calc(100vw - 2rem); }
+.nav-guides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  max-width: none;
+}
+.nav-guides a {
+  display: block;
+  padding: 9px 0;
+  color: var(--ink);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14.5px;
+  border-bottom: 0;
+}
+.nav-guides a:hover { color: var(--accent-ink); border-bottom: 0; }
+.nav-guides .nav-count { display: block; margin-top: 2px; }
 
 /*
   THE HAMBURGER.
@@ -362,7 +388,7 @@ main { display: block; }
 .site-nav a,
 .site-nav summary { white-space: nowrap; }
 
-.nav-menu { position: relative; }
+.nav-menu { position: static; }
 
 .nav-menu > summary {
   cursor: pointer;
@@ -403,10 +429,24 @@ main { display: block; }
   a count: how narrow a column may get, how wide the panel may get, and
   that it may never exceed the viewport.
 */
+/*
+  ANCHORED TO THE CONTENT COLUMN, NOT TO THE MENU ITEM.
+
+  This was `right: 0` on a `position: relative` .nav-menu, which was right
+  for a nav sitting at the right of the header. Once the bar grew past the
+  brand and wrapped onto its own row, "Browse by state" became the
+  leftmost item and a panel hanging from its right edge ran off the left of
+  the screen: the first column of states was cut in half.
+
+  The panel now positions against .site-head .wrap, so it opens aligned
+  with the page's content column wherever its trigger happens to sit, and
+  the max-width keeps it inside the viewport on a narrow screen.
+*/
 .nav-panel {
   position: absolute;
   top: calc(100% + 1px);
-  right: 0;
+  left: 0;
+  right: auto;
   z-index: 40;
   width: max-content;
   max-width: min(52rem, calc(100vw - 2rem));
@@ -1507,6 +1547,71 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
   font-size: 14.5px;
   color: var(--ink-2);
 }
+
+/*
+  THE SERVE DIAGRAM, AND THE NET ELEVATION.
+
+  Both reuse the court palette above so the three drawings on the site read
+  as one set. Stroke widths are in the diagram's own units, which are feet
+  for the court and inches for the net, so they are set per diagram rather
+  than shared.
+*/
+.court-svg.is-wide { max-width: 360px; }
+.serve-player { fill: var(--ink-2); }
+.serve-path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: .38;
+  stroke-linecap: round;
+  stroke-dasharray: 1.5 .9;
+}
+.serve-path.is-return { stroke: var(--ink-2); stroke-dasharray: .9 .8; }
+.serve-bounce { fill: var(--accent); }
+/* The second bounce belongs to the return, so it takes the return's ink. */
+.serve-bounce.is-return { fill: var(--ink-2); }
+.serve-num {
+  font-family: var(--sans);
+  font-size: 1.5px;
+  font-weight: 700;
+  fill: #fff;
+}
+
+/* The net seen from the side. viewBox units are inches. */
+.net-svg {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+}
+.net-ground { stroke: var(--ink-2); stroke-width: 1.1; }
+.net-post { stroke: var(--ink-2); stroke-width: 2.2; stroke-linecap: round; }
+.net-cord { fill: none; stroke: var(--ink); stroke-width: 1.6; }
+.net-mesh { fill: color-mix(in srgb, var(--accent) 12%, transparent); stroke: none; }
+.net-measure { stroke: var(--ink-3); stroke-width: .8; stroke-dasharray: 3 2.5; }
+.net-svg .court-label { font-size: 9px; }
+
+/*
+  A BLOCK OF RULES QUOTED FROM THE GOVERNING BODY.
+
+  Set apart from the page's own prose, because these are somebody else's
+  words and the reader should be able to see which is which at a glance.
+  The rule against the accent edge is the same device the blockquote uses.
+*/
+.ruleset {
+  margin: 16px 0 22px;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  list-style: none;
+  max-width: var(--measure);
+}
+.ruleset li {
+  position: relative;
+  margin: 0 0 11px;
+  padding-left: 2px;
+  line-height: 1.55;
+}
+.ruleset li:last-child { margin-bottom: 0; }
 
 /*
   THE COURT DIAGRAM.

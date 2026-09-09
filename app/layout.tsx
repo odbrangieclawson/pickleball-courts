@@ -188,6 +188,21 @@ export default function RootLayout({children}: {children: ReactNode}) {
                   </ul>
                 </div>
               </details>
+              <details className="nav-menu is-guides">
+                <summary>Guides</summary>
+                <div className="nav-panel is-narrow">
+                  <ul className="nav-guides">
+                    {navView().guides.map(g => (
+                      <li key={g.href}>
+                        <a href={g.href}>
+                          {g.label}
+                          <span className="nav-count">{g.blurb}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
               {navView().links.map(n => (
                 <a key={n.href} href={n.href}>{n.label}</a>
               ))}
@@ -217,6 +232,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
               Sources differ by city and are named on every page, beside the
               date each fact was checked.{' '}
               <a href="/how-to-play-pickleball/">How to play pickleball</a> ·{' '}
+              <a href="/pickleball-rules/">Pickleball rules</a> ·{' '}
               <a href="/pickleball-court-dimensions/">Court dimensions</a> ·{' '}
               <a href="/about/">About this site</a> ·{' '}
               <a href="/how-we-verify/">How we verify</a> · <a href="/image-credits/">Image credits</a>.

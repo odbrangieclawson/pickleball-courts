@@ -439,6 +439,8 @@ export type NavGroup = {
 
 export function navView(): {
   groups: NavGroup[]
+  /** The guide pages, as one submenu rather than three bar items. */
+  guides: {href: string; label: string; blurb: string}[]
   links: {href: string; label: string}[]
 }
 

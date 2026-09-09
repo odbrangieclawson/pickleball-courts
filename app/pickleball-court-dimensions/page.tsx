@@ -85,7 +85,7 @@ const MEASUREMENTS = [
 const FAQS = [
   {
     q: 'What are the dimensions of a pickleball court?',
-    a: 'Twenty feet wide by forty-four feet long. USA Pickleball states it in one sentence: "A pickleball court measures 20 feet wide by 44 feet long for singles and doubles." That is the playing surface inside the lines, and it is the same court for both singles and doubles — unlike tennis, the court does not narrow for singles.',
+    a: 'Twenty feet wide by forty-four feet long. USA Pickleball states it in one sentence: "A pickleball court measures 20 feet wide by 44 feet long for singles and doubles." That is the playing surface inside the lines. It is the same court for singles and doubles, which surprises people arriving from tennis, where the court narrows for singles.',
   },
   {
     q: 'Is a pickleball court the same size as a badminton court?',
@@ -93,15 +93,15 @@ const FAQS = [
   },
   {
     q: 'How high is a pickleball net?',
-    a: 'Thirty-six inches at the sidelines and thirty-four inches at the centre, as stated by USA Pickleball. The two-inch dip is deliberate and it matters: the lowest point of the net is in the middle, which is why a ball down the centre clears more easily than one hit down the line.',
+    a: 'Thirty-six inches at the sidelines and thirty-four inches at the centre, as stated by USA Pickleball. The two-inch dip is deliberate. The lowest point of the net is in the middle, which is why a ball hit down the centre clears more easily than one hit down the line.',
   },
   {
     q: 'How big is the kitchen on a pickleball court?',
-    a: 'Seven feet deep on each side of the net, running the full twenty-foot width. USA Pickleball’s rules summary puts it as "the court area within 7 feet on both sides of the net." Its proper name is the non-volley zone, and the fourteen feet of court it accounts for is where most beginner faults happen.',
+    a: 'Seven feet deep on each side of the net, running the full twenty-foot width. USA Pickleball’s rules summary puts it as "the court area within 7 feet on both sides of the net." Its proper name is the non-volley zone. The fourteen feet of court it accounts for is where most beginner faults happen.',
   },
   {
     q: 'How much space do I need to build a pickleball court?',
-    a: 'More than 20 by 44 feet, because players need room to run past the baseline and beside the sidelines. The 20 by 44 figure is the court itself, and it is the only figure USA Pickleball states in the summary this page cites. Anything we told you about the surrounding run-off would be a number we had not sourced, so we have not printed one — check the current rulebook before you pour concrete.',
+    a: 'More than 20 by 44 feet, because players need room to run past the baseline and beside the sidelines. The 20 by 44 figure is the court itself, and it is the only figure USA Pickleball states in the summary this page cites. Anything we told you about the surrounding run-off would be a number we had not sourced, so we have not printed one. Check the current rulebook before you pour concrete.',
   },
   {
     q: 'Can pickleball be played on a tennis court?',
@@ -190,6 +190,56 @@ function CourtDiagram() {
   )
 }
 
+/*
+  THE NET, FROM THE SIDE.
+
+  The court diagram is from above and cannot show a height, so the two net
+  figures had only the table to live in. This draws them: 36 inches at the
+  posts, 34 in the middle, and the sag between. The viewBox is in inches
+  for the same reason the court one is in feet, so the drawing is the
+  measurement rather than an impression of it.
+*/
+function NetDiagram() {
+  const W = 240      // 20 ft of court, in inches
+  const SIDE = 36
+  const MID = 34
+  const GROUND = 46  // a little headroom above the posts
+  const y = (h: number) => GROUND - h
+  return (
+    <svg
+      className="net-svg"
+      viewBox={`-26 -8 ${W + 52} ${GROUND + 20}`}
+      role="img"
+      aria-label="The net seen from the side: 36 inches high at each post and 34 inches at the centre, sagging between them."
+    >
+      {/* the ground */}
+      <line x1={-18} y1={GROUND} x2={W + 18} y2={GROUND} className="net-ground" />
+
+      {/* posts */}
+      <line x1="0" y1={GROUND} x2="0" y2={y(SIDE)} className="net-post" />
+      <line x1={W} y1={GROUND} x2={W} y2={y(SIDE)} className="net-post" />
+
+      {/* the net itself: a curve that dips to 34 in the middle */}
+      <path
+        d={`M 0 ${y(SIDE)} Q ${W / 2} ${y(MID) + (y(MID) - y(SIDE)) } ${W} ${y(SIDE)}`}
+        className="net-cord"
+      />
+      <path
+        d={`M 0 ${y(SIDE)} Q ${W / 2} ${y(MID) + (y(MID) - y(SIDE))} ${W} ${y(SIDE)} L ${W} ${GROUND} L 0 ${GROUND} Z`}
+        className="net-mesh"
+      />
+
+      {/* measures */}
+      <line x1={-13} y1={y(SIDE)} x2={-13} y2={GROUND} className="net-measure" />
+      <line x1={W / 2} y1={y(MID)} x2={W / 2} y2={GROUND} className="net-measure" />
+
+      <text x={-17} y={y(SIDE) + 15} className="court-label" textAnchor="end">36 in</text>
+      <text x={W / 2 + 6} y={y(MID) + 15} className="court-label">34 in</text>
+      <text x={W / 2} y={GROUND + 14} className="court-label" textAnchor="middle">20 ft of net</text>
+    </svg>
+  )
+}
+
 export default function CourtDimensionsPage() {
   return (
     <div className="wrap page">
@@ -238,8 +288,8 @@ export default function CourtDimensionsPage() {
       <p className="provenance" data-not-prose>
         The first five are stated by{' '}
         <a href={SRC_COURT} rel="nofollow">USA Pickleball</a>, checked {CHECKED}.
-        The two marked <em>derived</em> are arithmetic on those figures and are
-        not quoted from the governing body: a service court is half the
+        The two marked <em>derived</em> are arithmetic on those figures rather
+        than quotes from the governing body. A service court is half the
         20-foot width by what is left of the 22-foot half-court once the
         7-foot non-volley zone is taken off it.
       </p>
@@ -267,23 +317,34 @@ export default function CourtDimensionsPage() {
         its rules rather than paraphrasing a document we have not read.
       </p>
 
+      <h2 data-prose>How high is the net</h2>
+      <p data-prose>
+        Thirty-six inches at the posts and thirty-four in the middle. The
+        two-inch dip is deliberate. It means the lowest point of the net is
+        in the centre, which is why a ball hit down the middle clears more
+        easily than one hit down the line.
+      </p>
+      <figure className="court-figure" data-not-prose>
+        <NetDiagram />
+        <figcaption>The net from the side, drawn from the same two figures.</figcaption>
+      </figure>
+
       <h2 data-prose>The same court for singles and doubles</h2>
       <p data-prose>
-        This is the detail that surprises people arriving from tennis. A tennis
-        court narrows for singles; a pickleball court does not. The sentence
-        above says &ldquo;for singles and doubles&rdquo; and means it — 20 by 44
-        either way, the same lines, the same kitchen. What changes is how much
-        of it one player has to cover.
+        A tennis court narrows for singles. A pickleball court does not. The
+        sentence above says &ldquo;for singles and doubles&rdquo; and means
+        it: 20 by 44 either way, the same lines, the same kitchen. What
+        changes is how much of it one player has to cover.
       </p>
 
       <h2 data-prose>Where the kitchen actually is</h2>
       <p data-prose>
         Seven feet from the net on each side, running the full width of the
-        court. That is fourteen feet of the forty-four accounted for by a zone
-        you may stand in but may not volley from, which is why it decides more
+        court. That is fourteen feet of the forty-four given over to a zone you
+        may stand in but may not volley from, which is why it decides more
         rallies than any other part of the court. On the diagram it is the
         tinted band. On a real court it is usually the only area painted a
-        different colour, and if you are looking at a shared tennis court with
+        different colour. If you are looking at a shared tennis court with
         pickleball lines, it is the line to find first.
       </p>
 
@@ -295,8 +356,8 @@ export default function CourtDimensionsPage() {
         and the net is a portable one set to the heights above rather than the
         permanent tennis net, which is too high. Whether a venue has dedicated
         courts or shared ones changes what you should expect to find when you
-        arrive, so every venue page in this directory says which it is where
-        the operator states it — and says nothing where the operator does not.
+        arrive. Every venue page in this directory says which it is where the
+        operator states it, and says nothing where the operator does not.
       </p>
 
       <h2 data-prose>Questions people ask</h2>
