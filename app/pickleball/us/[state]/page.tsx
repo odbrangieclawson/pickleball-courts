@@ -229,7 +229,39 @@ export default async function StatePage({params}: Params) {
       {v.hasEditorial && v.editorial.map(e => (
         <section key={e.key} data-prose>
           <h2>{e.heading}</h2>
-          {e.text.split('\n\n').map((para, i) => <p key={i}>{para}</p>)}
+          {/*
+            A ROW PER PARAGRAPH: the words in the first column, a court
+            photograph in the gutter the measure leaves over. One picture
+            pinned to the top of a section left eight hundred words of empty
+            column underneath it, which was the complaint this was built to
+            answer, only further down the page.
+
+            A grid rather than an absolutely positioned overlay, so the
+            picture column takes whatever width is actually left and never has
+            to be told what that is: wide beside a state note, narrow inside
+            the city page's rail, gone altogether on a phone.
+
+            Decoration, marked as such twice over: aria-hidden so it is never
+            announced, an empty alt so it is never described. A paragraph too
+            short to stand one carries none; see washedParagraphs().
+          */}
+          {e.paragraphs.map((para, i) => (
+            <div className="prose-row" key={i}>
+              <p>{para.text}</p>
+              {para.wash && (
+                <span className="prose-wash" aria-hidden="true">
+                  <img
+                    src={para.wash.src}
+                    alt=""
+                    width={para.wash.width}
+                    height={para.wash.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              )}
+            </div>
+          ))}
           <p className="provenance" data-not-prose>
             {e.sources.map((s, i) => (
               <span key={s.url}>

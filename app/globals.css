@@ -949,6 +949,145 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 .searchbar.is-page { margin-top: 8px; }
 
 /* ================================================================
+   THE PROSE WASH
+   ================================================================
+   A pickleball photograph set faintly into the empty column beside a long
+   note, on the state, city and county pages.
+
+   THE PROBLEM IT SOLVES IS NOT "NO PICTURES", IT IS THE EMPTY HALF.
+   Prose is capped at the measure because that is how text is read, and the
+   container is wide because the card grids need it. The result on a laptop
+   is 600px of type and 450px of nothing, four sections deep. The picture
+   goes in the nothing.
+
+   SO IT IS NEVER UNDER A LINE OF TEXT AT FULL STRENGTH. On a wide screen
+   it occupies the gutter the measure leaves free. Only when the viewport
+   is too narrow to have a gutter does it pass behind the words, and there
+   it drops to a strength where the contrast maths still clears AA against
+   the darkest pixel a photograph can hold.
+
+   IT IS DECORATION, DECLARED. aria-hidden, empty alt, pointer-events none,
+   never focusable, and drawn from the fourteen court photographs already
+   credited on /image-credits/. It says nothing about the place the section
+   is about, which is exactly why it is allowed to be there at all.
+*/
+
+/*
+  ONE ROW PER PARAGRAPH: WORDS LEFT, PICTURE RIGHT.
+
+  A grid, not an absolutely positioned overlay. The first attempt pinned a
+  single photograph to the top of the whole section and sized it as a
+  percentage, which was wrong twice over: one picture beside eight hundred
+  words leaves most of the column as empty as it started, and 40% of a
+  section reached back under the text on any page with a rail.
+
+  Two columns settle both. The text column is the measure and no wider; the
+  picture column is whatever is left over, so it is wide beside a state
+  note, narrow inside the city page's rail, and nothing at all when there
+  is nothing left. Nobody has to tell it which page it is on.
+*/
+.prose-row {
+  display: grid;
+  grid-template-columns: minmax(0, var(--measure)) 1fr;
+  column-gap: 26px;
+  align-items: start;
+}
+
+.prose-wash {
+  /*
+    THE PICTURE TAKES ITS HEIGHT FROM THE PARAGRAPH, NEVER THE OTHER WAY
+    ROUND.
+
+    `align-self: stretch` alone was not enough. The image inside still
+    contributed its own intrinsic height to the row, so a four-line
+    paragraph next to a 342px photograph produced a 342px row and left a
+    visible hole in the text column underneath the words. The picture was
+    setting the rhythm of the prose, which is exactly backwards.
+
+    Taking the image out of flow — absolute inside a relative box — leaves
+    this element with no content height of its own, so the row is sized by
+    the paragraph and the picture is stretched to whatever that turns out
+    to be. Long paragraph, tall photograph; short one, a panoramic strip.
+    The cap is there because a paragraph can run very long and a
+    photograph does not improve by towering over the words it accompanies.
+  */
+  position: relative;
+  align-self: stretch;
+  max-height: 460px;
+  overflow: hidden;
+  pointer-events: none;
+  /*
+    Forty per cent, the owner's call on 2026-09-09, up from the twenty this
+    shipped with first.
+
+    It is a question of taste rather than of contrast, and it is only a
+    question of taste because of where the box sits: there is no text under
+    it, so the number is free to be chosen for how the page looks instead
+    of being held down by a ratio. That is the whole reason the picture
+    gets a column of its own. Were it behind a paragraph, 40% against the
+    paper would put the darkest pixel a photograph can hold at roughly
+    #a0a0a0, and body ink on that is about 3.4:1, which fails AA and would
+    make this line an accessibility bug rather than a preference.
+  */
+  opacity: .4;
+  /*
+    Dissolved rather than cropped, on the two edges that face the page: the
+    left, where it meets the text, and the bottom, where one paragraph's
+    picture would otherwise butt up against the next one's. A hard edge
+    reads as a photograph somebody forgot to finish placing; a gradient
+    reads as paper stock.
+  */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 30%),
+    linear-gradient(to bottom, #000 68%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0%, #000 30%),
+    linear-gradient(to bottom, #000 68%, transparent 100%);
+  mask-composite: intersect;
+}
+.prose-wash img {
+  /* Out of flow, so it adds no height to the row. See above. */
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Desaturated, so a blue court surface does not put a colour cast on a
+     page whose only colour is the accent green. */
+  filter: grayscale(.55) contrast(.92);
+}
+
+@media (max-width: 1100px) {
+  /*
+    Below this the text has the full column and there is no gutter to put
+    a photograph in. It could be floated behind the words instead, at some
+    opacity low enough to be safe, but a picture at 6% behind a paragraph
+    is not decoration, it is a smudge. Nothing is the better answer, and
+    the phone layout was never the plain half of the problem: it has no
+    empty column to look at.
+
+    The row goes back to being a block at the same time, so the paragraph
+    is not left as the only child of a two-column grid.
+  */
+  .prose-row { display: block; }
+  .prose-wash { display: none; }
+}
+
+/*
+  Two readers who have asked not to be given this. A high-contrast
+  preference is a direct instruction about backgrounds behind text, and
+  forced-colors takes the decision out of our hands entirely.
+*/
+@media (prefers-contrast: more) {
+  .prose-wash { display: none; }
+}
+@media (forced-colors: active) {
+  .prose-wash { display: none; }
+}
+
+/* ================================================================
    NEARBY SUGGESTIONS
    ================================================================
    The dropdown under the search field, drawn by public/search-suggest.js.

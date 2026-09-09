@@ -89,7 +89,38 @@ export default function CountyPage({v}: {v: CountyView}) {
       {v.hasEditorial && v.editorial.map(e => (
         <section key={e.key} data-prose>
           <h2>{e.heading}</h2>
-          <p>{e.text}</p>
+          {/*
+            A ROW PER PARAGRAPH: the words in the first column, a court
+            photograph in the gutter the measure leaves over. A grid rather
+            than an absolutely positioned overlay, so the picture column
+            takes whatever width is actually left and never has to be told
+            what that is.
+
+            This also restores the paragraph break the author wrote. Every
+            slot here is two paragraphs and this template was printing them
+            as one run-on block, which swallowed the break.
+
+            Decoration, marked as such twice over: aria-hidden so it is never
+            announced, an empty alt so it is never described. A paragraph too
+            short to stand one carries none; see washedParagraphs().
+          */}
+          {e.paragraphs.map((para, i) => (
+            <div className="prose-row" key={i}>
+              <p>{para.text}</p>
+              {para.wash && (
+                <span className="prose-wash" aria-hidden="true">
+                  <img
+                    src={para.wash.src}
+                    alt=""
+                    width={para.wash.width}
+                    height={para.wash.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              )}
+            </div>
+          ))}
           <p className="provenance" data-not-prose>
             {e.sources.map((s, i) => (
               <span key={s.url}>

@@ -187,6 +187,21 @@ export type EditorialNote = {
   heading: string
   text: string
   sources: {url: string; publisher: string; retrieved: string}[]
+  /*
+    The note split on the author's paragraph breaks, each paragraph with
+    the photograph that sits beside it.
+
+    The wash is purely decorative, and therefore deliberately NOT a Photo:
+    no alt, no caption, no isPlaceholder. It carries only what an <img>
+    needs to be drawn and reserved. It is null for a paragraph too short to
+    stand one, and for every paragraph if the photograph set is empty —
+    which happens before the fetch script has ever run. See proseWash() in
+    lib/site/photos.mjs and washedParagraphs() in views.mjs.
+  */
+  paragraphs: {
+    text: string
+    wash: {src: string; width: number; height: number} | null
+  }[]
 }
 
 export type CityView = {
