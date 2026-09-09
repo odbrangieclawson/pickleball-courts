@@ -98,6 +98,20 @@ change.
    - `https://pickleball-courts-cyan.vercel.app/pickleball/us/wa/seattle/`
      answers 308 to the same path on the domain.
    - `node scripts/monitor-404.mjs --live https://<the domain>` passes.
+   - **`/search/` answers 200, and `/search/?q=Seattle` returns results.**
+     This is the only route rendered on demand, so it is the only one that
+     can be broken in production while every other page is fine. It is not
+     in the sitemap and not in the 404 monitor, which is exactly how it sat
+     broken and unnoticed until 2026-09-09: `lib/data/schema.mjs` read
+     `data/schemas/*.json` at module scope, Next never traced those files
+     into the function, and every request died with ENOENT at module
+     evaluation. Check it by hand at every launch and after any change to
+     what the search route imports.
+   - A note on `curl` against the Vercel host: it can answer
+     `X-Vercel-Mitigated: challenge` to scripted requests, in which case
+     you are reading a bot-challenge page rather than the site and every
+     grep for page content silently returns nothing. If a check looks
+     inexplicably empty, confirm in a browser before believing it.
 5. Update this file's origin line and `ci.yml`'s `SITE_ORIGIN` repository
    variable to the domain, so the scheduled production monitor watches the
    right host. Record the date and the hostname in `decisions.md`.
