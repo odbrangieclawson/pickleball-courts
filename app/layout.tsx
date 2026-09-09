@@ -141,6 +141,37 @@ export default function RootLayout({children}: {children: ReactNode}) {
               The links stay in the markup while the menu is shut, so the
               crawl report still sees every state from every page.
             */}
+            {/*
+              THE NAV, AND ITS HAMBURGER.
+
+              Six items do not fit a phone, and they were wrapping into a
+              second row over the logo. So there is a <details> that holds
+              nothing but the hamburger, and the nav is its NEXT SIBLING:
+              below 720px the nav is hidden until `.nav-burger[open] +
+              .site-nav` shows it; above 720px the toggle is hidden and the
+              nav is an ordinary row.
+
+              THE NAV IS NOT INSIDE THE DETAILS, and that is the whole
+              point. It was, in the first version, and the desktop nav
+              vanished. Chrome hides a closed <details>'s content through
+              `::details-content { content-visibility: hidden }`, which a
+              `display: flex !important` on the child cannot override — the
+              element keeps a layout box, so getBoundingClientRect() still
+              reports a height and it measures as present while painting
+              nothing. checkVisibility() is the honest test. Keeping the nav
+              outside the details avoids the mechanism entirely.
+
+              <details> and not a script, for the same reason the state menu
+              is one: Rule 1 wants every page whole with JavaScript off, and
+              a scripted menu would leave a phone reader with no navigation
+              at all.
+            */}
+            <details className="nav-burger">
+              <summary aria-label="Menu">
+                <span className="burger-bars" aria-hidden="true" />
+                <span className="burger-word">Menu</span>
+              </summary>
+            </details>
             <nav className="site-nav" aria-label="Main">
               <details className="nav-menu">
                 <summary>Browse by state</summary>
@@ -186,6 +217,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
               Sources differ by city and are named on every page, beside the
               date each fact was checked.{' '}
               <a href="/how-to-play-pickleball/">How to play pickleball</a> ·{' '}
+              <a href="/pickleball-court-dimensions/">Court dimensions</a> ·{' '}
               <a href="/about/">About this site</a> ·{' '}
               <a href="/how-we-verify/">How we verify</a> · <a href="/image-credits/">Image credits</a>.
             </p>

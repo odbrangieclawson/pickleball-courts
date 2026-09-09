@@ -253,6 +253,88 @@ main { display: block; }
   background: var(--accent);
 }
 
+/*
+  THE HAMBURGER.
+
+  The <details> holds ONLY the toggle. The nav is its next sibling, shown by
+  `.nav-burger[open] + .site-nav`.
+
+  It is not inside the details on purpose. The first version wrapped the nav
+  and the desktop nav disappeared: Chrome hides a closed details' content
+  through `::details-content { content-visibility: hidden }`, and a
+  `display: flex !important` on the child does not override it. Worse, the
+  element keeps a layout box, so it measures as present — 47px tall — while
+  painting nothing, which is how it got past a check that used
+  getBoundingClientRect. A sibling never touches that mechanism.
+
+  No script, so navigation survives the JavaScript-off render Rule 1
+  requires: <details> toggling is the browser's own behaviour. The links are
+  in the HTML either way, open or closed, so a crawler always sees them.
+*/
+.nav-burger { display: none; }
+
+@media (max-width: 720px) {
+  /* The toggle takes the place the nav had; the nav drops below both. */
+  .nav-burger { display: block; }
+  .nav-burger > summary {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 2px;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--sans);
+    font-size: 12.5px;
+    font-weight: 620;
+    letter-spacing: .085em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .nav-burger > summary::-webkit-details-marker { display: none; }
+  .nav-burger > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .nav-burger[open] > summary { color: var(--accent-ink); }
+
+  /* Three bars: two from the box's borders, one from a pseudo-element. */
+  .burger-bars {
+    position: relative;
+    width: 20px;
+    height: 14px;
+    border-top: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+  }
+  .burger-bars::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background: currentColor;
+  }
+
+  /* Hidden until the toggle is open, then a full-width column below it. */
+  .site-head .site-nav { display: none; }
+  .nav-burger[open] + .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    flex-basis: 100%;
+    padding: 4px 0 12px;
+    border-top: 1px solid var(--rule-2);
+    margin-top: 4px;
+  }
+  .nav-burger[open] + .site-nav > a,
+  .nav-burger[open] + .site-nav .nav-menu > summary {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--rule-2);
+    border-top: 0;
+    white-space: normal;
+  }
+  .nav-burger[open] + .site-nav > a:last-child { border-bottom: 0; }
+}
+
 .site-nav {
   display: flex;
   gap: 26px;
@@ -1396,6 +1478,67 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
   font-family: var(--sans);
   font-size: 14.5px;
   color: var(--ink-2);
+}
+
+/*
+  THE COURT DIAGRAM.
+
+  Inline SVG whose viewBox is the court in feet, so every coordinate in the
+  markup is a real measurement and the picture cannot drift from the table
+  beside it. Sized in ch/rem here; nothing about the geometry lives in CSS.
+*/
+.court-figure {
+  margin: 24px 0 10px;
+  max-width: none;
+}
+.court-svg {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+}
+.court-surface { fill: var(--paper-2); }
+.court-kitchen { fill: color-mix(in srgb, var(--accent) 13%, transparent); }
+.court-edge { fill: none; stroke: var(--ink-2); stroke-width: .34; }
+.court-line { stroke: var(--ink-3); stroke-width: .24; }
+.court-net { stroke: var(--ink); stroke-width: .42; stroke-dasharray: .7 .45; }
+.court-label {
+  font-family: var(--sans);
+  font-size: 1.35px;
+  fill: var(--ink-3);
+  letter-spacing: .02em;
+}
+.court-label.is-in { fill: var(--accent-ink); }
+.court-figure figcaption {
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-3);
+  text-align: center;
+}
+/* A figure the governing body does not state, marked as ours. */
+.derived-mark {
+  margin-left: 7px;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+blockquote {
+  margin: 18px 0;
+  padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--accent);
+  max-width: var(--measure);
+}
+blockquote p { margin: 0 0 8px; }
+blockquote cite {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-style: normal;
+  color: var(--ink-3);
 }
 
 /*
