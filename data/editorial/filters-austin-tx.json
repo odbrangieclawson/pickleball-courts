@@ -8,7 +8,7 @@
   "filters": {
     "outdoor": {
       "slots": {
-        "why_this_filter": "Every verified pickleball court in Austin is outdoor, all sixty of them across twenty-one venues, so this page is the city's whole published inventory rather than a slice of it. Austin does run indoor pickleball inside its recreation centres, and the City lists it in a separate section of the same page; none of it has been verified yet, so none of it is listed here. Austin pickleball, as far as it can currently be vouched for, is a daylight-and-floodlight proposition, in a city where summer afternoons are not when anyone chooses to play.",
+        "why_this_filter": "Every pickleball court in Austin is outdoor, all sixty of them across twenty-one venues, so this page is the city's whole published inventory rather than a slice of it. Austin does run indoor pickleball inside its recreation centres, and the City lists it in a separate section of the same page; none of it has been checked yet, so none of it is listed here. Austin pickleball, as far as it can currently be vouched for, is a daylight-and-floodlight proposition, in a city where summer afternoons are not when anyone chooses to play.",
         "what_qualifies": "A venue appears here when the Austin Parks and Recreation Department states an outdoor court count for it on its pickleball locations page. Twenty-one qualify, from the single courts at Delta Pocket Park, Eastside Pocket Park, Mary Frances Baylor Clarksville Pocket Park and North Lake Creek up to the eight at the Austin Tennis and Pickleball Center.\n\nWhere the City gives two figures, as in \"2 Multi-purpose Outdoor Courts with striping for 4 Pickleball Courts\", the smaller is the count of physical slabs and the larger is the count of pickleball courts marked on them. The pickleball figure is what counts, so that venue is four. Publishing the slab count would understate Austin by nineteen courts; the pickleball count gives sixty across twenty-one venues, thirty-nine striped onto shared surfaces and twenty-one dedicated. Balcones District Park does not qualify: the City lists it with \"striping for Pickleball\" and no number, and the Census geocoder cannot resolve its address."
       },
       "faqs": [
@@ -18,7 +18,7 @@
         },
         {
           "q": "What are the courts made of?",
-          "a": "Not verified at any of the twenty-one. Austin describes what a court is striped for rather than what it is surfaced with, so every venue on this list reads \"not verified yet\" on surface."
+          "a": "Not stated at any of the twenty-one. Austin describes what a court is striped for rather than what it is surfaced with, so every venue on this list reads \"not stated\" on surface."
         },
         {
           "q": "Do the courts have set hours?",
@@ -46,7 +46,7 @@
         },
         {
           "q": "Are the unlisted venues unlit?",
-          "a": "Unknown. Ten Austin venues carry no lighting statement on the City's page. That reads as \"not verified yet\" rather than \"No\", because a silence is not a denial."
+          "a": "Unknown. Ten Austin venues carry no lighting statement on the City's page. That reads as \"not stated\" rather than \"No\", because a silence is not a denial."
         },
         {
           "q": "Which lit venue has the most courts?",
@@ -54,7 +54,7 @@
         },
         {
           "q": "How many courts does that cover?",
-          "a": "Forty-one of Austin's sixty verified courts, including the eight at the Austin Tennis and Pickleball Center, the five at Dick Nichols and the four each at Little Zilker, Pan American and Rosewood. The ten venues with no lighting statement hold the other nineteen courts between them."
+          "a": "Forty-one of Austin's sixty courts, including the eight at the Austin Tennis and Pickleball Center, the five at Dick Nichols and the four each at Little Zilker, Pan American and Rosewood. The ten venues with no lighting statement hold the other nineteen courts between them."
         }
       ],
       "sources": [

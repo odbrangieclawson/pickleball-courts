@@ -139,8 +139,8 @@ export default async function LeafPage({params}: Params) {
             <p className="claim-title" id="claim-heading">Do you run {v.name}?</p>
             <p className="claim-sub">
               Claim the listing to correct hours, fees, court counts and
-              photos. A claim identifies you; it does not mark anything
-              verified, and it buys no placement.{' '}
+              photos. A claim identifies you; it does not put a source
+              behind anything, and it buys no placement.{' '}
               <a href="/add-your-court/">How claiming works</a>.
             </p>
           </div>
@@ -154,8 +154,8 @@ export default async function LeafPage({params}: Params) {
           <div key={x.key} className={x.wide ? 'wide' : undefined}>
             <div className="k">{x.label}</div>
             <div className="v">
-              {x.value === 'Not verified yet'
-                ? <span className="unverified">Not verified yet</span>
+              {x.value === 'Not stated'
+                ? <span className="unverified">Not stated</span>
                 : x.value}
             </div>
           </div>

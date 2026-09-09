@@ -1,5 +1,5 @@
 import type {Metadata} from 'next'
-import {PAGE_ROBOTS} from '../../../../../lib/site/origin.mjs'
+import {PAGE_ROBOTS, ORIGIN} from '../../../../../lib/site/origin.mjs'
 import {notFound} from 'next/navigation'
 import {cityView, allCityParams, countyView, allCountyParams} from '../../../../../lib/site/views.mjs'
 import CountyPage from './CountyPage'
@@ -47,13 +47,31 @@ export async function generateMetadata({params}: Params): Promise<Metadata> {
   if (city.endsWith('-county')) {
     const co = countyView(state, city)
     if (!co) return {title: 'Not found', robots: {index: false, follow: false}}
+    const coCard = {url: `${ORIGIN}${co.cardPhoto.src}`, width: co.cardPhoto.width,
+      height: co.cardPhoto.height, alt: co.cardPhoto.alt}
     return {title: co.title, description: co.meta, robots: PAGE_ROBOTS,
-      alternates: {canonical: `/pickleball/us/${state}/${city}/`}}
+      alternates: {canonical: `/pickleball/us/${state}/${city}/`},
+      openGraph: {images: [coCard]},
+      twitter: {card: 'summary_large_image', images: [coCard]}}
   }
   const v = cityView(state, city)
   if (!v) return {title: 'Not found', robots: {index: false, follow: false}}
+  /*
+    The card image is a pickleball court, never the city's landmark. A
+    result list or a pasted link should show the thing the page is about.
+    It is not a photograph of a court in this city and the page never says
+    it is — it does not appear on the page at all, only on the card.
+  */
+  const card = {
+    url: `${ORIGIN}${v.cardPhoto.src}`,
+    width: v.cardPhoto.width,
+    height: v.cardPhoto.height,
+    alt: v.cardPhoto.alt,
+  }
   return {title: v.title, description: v.meta, robots: PAGE_ROBOTS,
-    alternates: {canonical: `/pickleball/us/${state}/${city}/`}}
+    alternates: {canonical: `/pickleball/us/${state}/${city}/`},
+    openGraph: {images: [card]},
+    twitter: {card: 'summary_large_image', images: [card]}}
 }
 
 export default async function CityOrCountyPage({params}: Params) {
@@ -77,43 +95,15 @@ export default async function CityOrCountyPage({params}: Params) {
 
       <h1 data-prose>{v.h1}</h1>
       <p className="lede" data-prose>
-        We have verified {v.venuesN} pickleball venues in {v.city}, covering{' '}
+        We list {v.venuesN} pickleball venues in {v.city}, covering{' '}
         {v.courtsN} courts. Every figure on this page comes from the parks
         records of the authority that runs them, and every venue below carries
         the source it came from and the date we checked it. Last checked{' '}
         {v.lastChecked}.
       </p>
 
-      {/*
-        A photograph of the city, licensed from Wikimedia Commons. It carries
-        no placeholder marker because it really is a picture of this city,
-        and the credit under it is the licence term rather than a courtesy.
-      */}
-      {v.photo && (
-        <figure className="city-shot">
-          <span className="shot is-hero">
-            <img
-              src={v.photo.src}
-              alt={v.photo.alt}
-              width={v.photo.width}
-              height={v.photo.height}
-              loading="eager"
-              decoding="async"
-              fetchPriority="high"
-            />
-          </span>
-          <figcaption data-not-prose>
-            {v.photo.credit?.author && <>Photograph by {v.photo.credit.author}. </>}
-            {v.photo.credit?.licenceUrl
-              ? <a href={v.photo.credit.licenceUrl} rel="nofollow">{v.photo.credit.licence}</a>
-              : v.photo.credit?.licence}
-            {v.photo.credit?.filePage && <> · <a href={v.photo.credit.filePage} rel="nofollow">Wikimedia Commons</a></>}
-          </figcaption>
-        </figure>
-      )}
-
       <div className="stats">
-        <div className="stat"><span className="n">{v.venuesN}</span><span className="k">Verified venues</span></div>
+        <div className="stat"><span className="n">{v.venuesN}</span><span className="k">Venues</span></div>
         <div className="stat"><span className="n">{v.courtsN}</span><span className="k">Courts</span></div>
         {/* Only shown where at least one venue actually reported it. A "0"
             here would be the exact thing the footer promises we never do. */}
@@ -138,7 +128,7 @@ export default async function CityOrCountyPage({params}: Params) {
         </>
       )}
 
-      <h2>Every verified venue in {v.city}</h2>
+      <h2>Every venue in {v.city}</h2>
       <div className="table-scroll">
         <table>
           <thead>
@@ -239,10 +229,10 @@ export default async function CityOrCountyPage({params}: Params) {
       )}
 
       <div className="note is-gap" data-prose>
-        <h3>What we have not verified</h3>
+        <h3>What we don&rsquo;t know yet</h3>
         <p>
-          Anything an operator does not publish shows as &ldquo;not verified
-          yet&rdquo; rather than being guessed at, most often surface, fees
+          Anything an operator does not publish shows as &ldquo;Not
+          stated&rdquo; rather than being guessed at, most often surface, fees
           and opening hours. Many of these courts are very probably free to
           play, but a belief is not a source, so we do not print it as one.
         </p>
@@ -264,10 +254,10 @@ export default async function CityOrCountyPage({params}: Params) {
       <p data-prose>
         {v.city} sits in {v.countyName} County.{' '}
         {v.countyLink
-          ? <>Every verified venue in the county, including these, is listed
+          ? <>Every venue in the county, including these, is listed
             on <a href={v.countyLink.href}>{v.countyLink.label}</a>. </>
           : <>We have not published a {v.countyName} County page: a county
-            needs three verified venues before it exists, and we are short of
+            needs three venues before it exists, and we are short of
             that outside this city. </>}
         {v.stateLink
           ? <>The <a href={v.stateLink.href}>{v.stateName}</a> page covers
@@ -285,14 +275,14 @@ export default async function CityOrCountyPage({params}: Params) {
             {v.nearbyPublished.map(n => (
               <li className="card" key={n.href}>
                 <h3><a href={n.href}>{n.label}</a></h3>
-                <p className="meta">{n.venues} verified venues · {n.kmAway} away</p>
+                <p className="meta">{n.venues} venues · {n.kmAway} away</p>
               </li>
             ))}
           </ul>
         </>
       ) : (
         <p data-prose>
-          No other city near {v.city} has three verified venues yet, so there
+          No other city near {v.city} has three venues yet, so there
           is nothing to send you across to. We would rather leave the space
           empty than link you to a page with nothing on it.
         </p>

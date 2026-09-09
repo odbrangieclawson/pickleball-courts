@@ -103,7 +103,7 @@ export default function About() {
 
       <h2>What we refuse to do</h2>
       <ul>
-        <li><strong>Print a zero for something we have not checked.</strong> &ldquo;No lights&rdquo; and &ldquo;not verified yet&rdquo; are different statements, and only one of them is true when we have not looked.</li>
+        <li><strong>Print a zero for something we have not checked.</strong> &ldquo;No lights&rdquo; and &ldquo;not stated&rdquo; are different statements, and only one of them is true when we have not looked.</li>
         <li><strong>Cite another directory.</strong> A number repeated by three sites that copied each other is still one unsourced number.</li>
         <li><strong>Sell position.</strong> A venue that claims its listing gets a direct line to us and control of its own facts. It gets no ranking, no badge and no placement over a venue that has not.</li>
         <li><strong>Publish a thin page.</strong> Fewer than three verified venues in a city means no city page, however good the keyword looks.</li>

@@ -1,5 +1,5 @@
 import type {Metadata} from 'next'
-import {PAGE_ROBOTS} from '../../../../lib/site/origin.mjs'
+import {PAGE_ROBOTS, ORIGIN} from '../../../../lib/site/origin.mjs'
 import {notFound} from 'next/navigation'
 import {stateView, allStateParams} from '../../../../lib/site/views.mjs'
 
@@ -40,8 +40,12 @@ export async function generateMetadata({params}: Params): Promise<Metadata> {
   const {state} = await params
   const v = stateView(state)
   if (!v) return {title: 'Not found', robots: {index: false, follow: false}}
+  const card = {url: `${ORIGIN}${v.cardPhoto.src}`, width: v.cardPhoto.width,
+    height: v.cardPhoto.height, alt: v.cardPhoto.alt}
   return {title: v.title, description: v.meta, robots: PAGE_ROBOTS,
-    alternates: {canonical: `/pickleball/us/${state}/`}}
+    alternates: {canonical: `/pickleball/us/${state}/`},
+    openGraph: {images: [card]},
+    twitter: {card: 'summary_large_image', images: [card]}}
 }
 
 export default async function StatePage({params}: Params) {
@@ -58,26 +62,8 @@ export default async function StatePage({params}: Params) {
       <h1 data-prose>Pickleball Courts in {v.stateName}</h1>
       <p className="lede" data-prose>{v.meta} Last checked {v.lastChecked}.</p>
 
-      {/* A landscape rather than the article's montage, which is both ugly
-          as a hero and credited to a list of people. */}
-      {v.photo && (
-        <figure className="city-shot">
-          <span className="shot is-hero">
-            <img src={v.photo.src} alt={v.photo.alt} width={v.photo.width} height={v.photo.height}
-              loading="eager" decoding="async" fetchPriority="high" />
-          </span>
-          <figcaption data-not-prose>
-            {v.photo.credit?.author && <>Photograph by {v.photo.credit.author}. </>}
-            {v.photo.credit?.licenceUrl
-              ? <a href={v.photo.credit.licenceUrl} rel="nofollow">{v.photo.credit.licence}</a>
-              : v.photo.credit?.licence}
-            {v.photo.credit?.filePage && <> · <a href={v.photo.credit.filePage} rel="nofollow">Wikimedia Commons</a></>}
-          </figcaption>
-        </figure>
-      )}
-
       <div className="stats">
-        <div className="stat"><span className="n">{v.venues}</span><span className="k">Verified venues</span></div>
+        <div className="stat"><span className="n">{v.venues}</span><span className="k">Venues</span></div>
         <div className="stat"><span className="n">{v.courts}</span><span className="k">Courts</span></div>
         <div className="stat"><span className="n">{v.cityCount}</span><span className="k">{v.cityWord}</span></div>
       </div>

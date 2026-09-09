@@ -32,31 +32,8 @@ export default function CountyPage({v}: {v: CountyView}) {
         Last checked {v.lastChecked}.
       </p>
 
-      {/*
-        Where the county's own lead image was its courthouse, this is the
-        photograph of its largest published city instead, and the caption
-        names that city. The picture is of somewhere in the county either
-        way; saying which is what keeps it honest.
-      */}
-      {v.photo && (
-        <figure className="city-shot">
-          <span className="shot is-hero">
-            <img src={v.photo.src} alt={v.photo.alt} width={v.photo.width} height={v.photo.height}
-              loading="eager" decoding="async" fetchPriority="high" />
-          </span>
-          <figcaption data-not-prose>
-            {v.photo.depicts && <>{v.photo.depicts}, in {v.county} County. </>}
-            {v.photo.credit?.author && <>Photograph by {v.photo.credit.author}. </>}
-            {v.photo.credit?.licenceUrl
-              ? <a href={v.photo.credit.licenceUrl} rel="nofollow">{v.photo.credit.licence}</a>
-              : v.photo.credit?.licence}
-            {v.photo.credit?.filePage && <> · <a href={v.photo.credit.filePage} rel="nofollow">Wikimedia Commons</a></>}
-          </figcaption>
-        </figure>
-      )}
-
       <div className="stats">
-        <div className="stat"><span className="n">{v.venuesN}</span><span className="k">Verified venues</span></div>
+        <div className="stat"><span className="n">{v.venuesN}</span><span className="k">Venues</span></div>
         <div className="stat"><span className="n">{v.courtsN}</span><span className="k">Courts</span></div>
         <div className="stat"><span className="n">{v.cityCountN}</span><span className="k">Published {v.cityWord}</span></div>
       </div>
@@ -70,7 +47,7 @@ export default function CountyPage({v}: {v: CountyView}) {
         {v.cities.map(c => (
           <li className="card" key={c.link.href}>
             <h3><a href={c.link.href}>{c.city}</a></h3>
-            <p className="meta">{c.venues} verified venues · {c.courts} courts</p>
+            <p className="meta">{c.venues} venues · {c.courts} courts</p>
           </li>
         ))}
       </ul>
@@ -90,7 +67,7 @@ export default function CountyPage({v}: {v: CountyView}) {
         </section>
       ))}
 
-      <h2 data-prose>Every verified venue in {v.county} County</h2>
+      <h2 data-prose>Every venue in {v.county} County</h2>
       <div className="table-scroll">
         <table>
           <thead>

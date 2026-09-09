@@ -170,7 +170,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
           <div className="wrap">
             <p>
               <strong>Find Pickleball Courts.</strong> Every published fact carries a
-              source and the date it was checked. Where we have not verified
+              source and the date it was checked. Where an operator has not stated
               something, we say so rather than guessing or printing a zero.
             </p>
             {/*

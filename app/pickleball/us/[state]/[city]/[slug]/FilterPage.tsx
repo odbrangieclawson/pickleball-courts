@@ -117,7 +117,7 @@ export default function FilterPage({f}: {f: FilterView}) {
       <p data-prose>
         This list exists because at least three verified {f.city} venues match
         it; below three we would not publish the page at all rather than ship
-        a list of one. See <a href={f.cityHref}>every verified venue in{' '}
+        a list of one. See <a href={f.cityHref}>every venue in{' '}
         {f.city}</a>, or <a href="/how-we-verify/">how we verify</a> for the
         source ladder behind each entry.
       </p>

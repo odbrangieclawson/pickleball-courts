@@ -75,8 +75,7 @@ export default function HowWeVerify() {
         <p>
           What you will notice most is how much is blank. Surface, fees and
           opening hours are missing far more often than not, because most
-          operators do not publish them. Those show as &ldquo;not verified
-          yet&rdquo;. We would rather show a hole than fill it, and where two
+          operators do not publish them. Those show as &ldquo;Not stated&rdquo;. We would rather show a hole than fill it, and where two
           of an operator&rsquo;s own records disagree we publish the
           disagreement rather than quietly picking one.
         </p>

@@ -10,7 +10,7 @@
 
     "peak_hours": "Three of these courts now close at night by order of the city. After noise studies run with the Seattle Department of Construction and Inspections found play exceeding the limits set in Seattle Municipal Code chapter 25.08, Gilman Playground, Laurelhurst Playfield and Mt. Baker Park moved to 7 a.m. to 10 p.m. on weekdays and 9 a.m. to 10 p.m. on Saturdays, Sundays and city-observed holidays, effective 15 September 2025. Enforcement is real: a violation captured on timestamped photo or video gets a lock fitted to the courts for at least thirty days, and repeat violations make that lock permanent, after which the courts open only when staff are on site to unlock them. Seattle Parks publishes no crowding or peak-time data for any location.",
 
-    "surface_condition": "Nobody working on this directory has inspected a court surface in Seattle, and Seattle Parks publishes no surface type, resurfacing date or condition assessment for any of these locations, which is why every venue page here shows surface as not verified rather than guessing at asphalt or acrylic. What the city does record is what each court is shared with. Of the twenty-five locations in the dataset, eighteen are striped for tennis and pickleball together, so expect tennis lines underfoot. Only four are dedicated pickleball, and three of those are a single court: Maple Leaf Reservoir Park, South Park Playground and Laurelhurst Playfield. Montlake Playfield and Greenwood Park share their court with basketball, and Lakeridge Park shares with badminton.",
+    "surface_condition": "Nobody working on this directory has inspected a court surface in Seattle, and Seattle Parks publishes no surface type, resurfacing date or condition assessment for any of these locations, which is why every venue page here shows surface as not stated rather than guessing at asphalt or acrylic. What the city does record is what each court is shared with. Of the twenty-five locations in the dataset, eighteen are striped for tennis and pickleball together, so expect tennis lines underfoot. Only four are dedicated pickleball, and three of those are a single court: Maple Leaf Reservoir Park, South Park Playground and Laurelhurst Playfield. Montlake Playfield and Greenwood Park share their court with basketball, and Lakeridge Park shares with badminton.",
 
     "local_scene": "Seattle Parks launched a one-year open-play pilot at the Green Lake East courts on 1 October 2025. It is the easiest way into a game here if you do not already have three people. Turn up in a scheduled window (Monday 8 to 10 a.m., Wednesday 1 to 3 p.m., Saturday 9 to 11 a.m., or Sunday 4 to 6 p.m.) and ambassadors on site organise games and run a paddle stacking system, so players rotate in rather than needing to arrive as a group. The pilot was scheduled to run for one year, which puts its end around autumn 2026, so confirm it is still going before planning a trip around it. Nets are the other practical detail: the city records nets provided at seventeen of the twenty-five locations and says nothing either way about the remaining eight, so a portable net is worth having in the car."
   },
@@ -27,30 +27,30 @@
       "key": "competitive",
       "heading": "Best for a serious game, or an evening one",
       "venue_slug": "bitter-lake-playfield",
-      "text": "Bitter Lake Playfield and Rainier Beach Playfield are the two biggest sites that also have lights: eight courts each, nets provided, dedicated parking, and the only pair on this list where a game can carry on after dark without falling foul of the new court hours. Only five of the twenty-four verified venues have lights at all, so on a Seattle winter evening the choice is genuinely these two, Miller Playfield, Alki Playground or Mt. Baker Park."
+      "text": "Bitter Lake Playfield and Rainier Beach Playfield are the two biggest sites that also have lights: eight courts each, nets provided, dedicated parking, and the only pair on this list where a game can carry on after dark without falling foul of the new court hours. Only five of the twenty-four venues have lights at all, so on a Seattle winter evening the choice is genuinely these two, Miller Playfield, Alki Playground or Mt. Baker Park."
     },
     {
       "key": "rain",
       "heading": "Best when it rains, and the honest answer",
       "venue_slug": null,
-      "text": "There isn't one. Every single verified pickleball court in Seattle is outdoor, none is covered, and none is climate controlled, so there is no wet-weather option on this page at all. That is a real gap in a city that rains, and we would rather say so than point you at a court that is merely sheltered. Indoor pickleball in Seattle does exist inside community centres and private clubs; none of those has been verified against a named source yet, so none of them is listed here."
+      "text": "There isn't one. Every single pickleball court in Seattle is outdoor, none is covered, and none is climate controlled, so there is no wet-weather option on this page at all. That is a real gap in a city that rains, and we would rather say so than point you at a court that is merely sheltered. Indoor pickleball in Seattle does exist inside community centres and private clubs; none of those has been checked against a named source yet, so none of them is listed here."
     }
   ],
 
   "faqs": [
     {
       "q": "Are Seattle's public pickleball courts free to play?",
-      "a": "Not verified. Seattle Parks publishes court locations, counts, lights and nets in its open data, but no fee field, and the pickleball pages on seattle.gov require JavaScript so no fee statement could be read from them. Every venue on this page therefore shows cost as not verified. These are municipal park courts and are very likely free to use, but a likelihood is not a source.",
+      "a": "Not stated. Seattle Parks publishes court locations, counts, lights and nets in its open data, but no fee field, and the pickleball pages on seattle.gov require JavaScript so no fee statement could be read from them. Every venue on this page therefore shows cost as not stated. These are municipal park courts and are very likely free to use, but a likelihood is not a source.",
       "supports": ["surface_condition"]
     },
     {
       "q": "Which Seattle courts have lights?",
-      "a": "Five of the twenty-four verified venues: Bitter Lake Playfield, Rainier Beach Playfield, Miller Playfield, Alki Playground and Mt. Baker Park. The lighted-courts page lists them. For the other nineteen the city positively records no lighting, so they are unlit rather than unknown.",
+      "a": "Five of the twenty-four venues: Bitter Lake Playfield, Rainier Beach Playfield, Miller Playfield, Alki Playground and Mt. Baker Park. The lighted-courts page lists them. For the other nineteen the city positively records no lighting, so they are unlit rather than unknown.",
       "supports": ["peak_hours"]
     },
     {
       "q": "Do I need to bring a net?",
-      "a": "Probably not, but check the venue page. Seattle Parks records nets provided at seventeen of the twenty-five court locations in its dataset and records nothing either way for the remaining eight. Where the city is silent the venue page shows nets as not verified rather than assuming there are none.",
+      "a": "Probably not, but check the venue page. Seattle Parks records nets provided at seventeen of the twenty-five court locations in its dataset and records nothing either way for the remaining eight. Where the city is silent the venue page shows nets as not stated rather than assuming there are none.",
       "supports": ["local_scene"]
     }
   ],

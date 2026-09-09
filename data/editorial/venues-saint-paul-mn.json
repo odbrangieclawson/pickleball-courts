@@ -4,7 +4,7 @@
   "kind": "venues",
   "date_checked": "2026-09-04",
   "written_by": "staff_research",
-  "note_on_method": "Every court count and address below is quoted from that venue's own facility page on stpaul.gov, in the City's amenity format. The City publishes no list of its pickleball venues, so the candidate names came from its own pickleball GIS layer and each one was then verified against a page. Where a page says nothing about lighting, cost, hours or surface, these notes say so. Nobody working on this has played on these courts.",
+  "note_on_method": "Every court count and address below is quoted from that venue's own facility page on stpaul.gov, in the City's amenity format. The City publishes no list of its pickleball venues, so the candidate names came from its own pickleball GIS layer and each one was then checked against a page. Where a page says nothing about lighting, cost, hours or surface, these notes say so. Nobody working on this has played on these courts.",
   "venues": {
     "arlington-arkwright-park": {
       "slots": {
@@ -19,7 +19,7 @@
         },
         {
           "q": "Is it lit?",
-          "a": "Not verified. No Saint Paul facility page states lighting for a pickleball court either way, so all six published venues read \"not verified yet\" on the point."
+          "a": "Not stated. No Saint Paul facility page states lighting for a pickleball court either way, so all six published venues read \"not stated\" on the point."
         },
         {
           "q": "What if someone is playing tennis?",
@@ -60,7 +60,7 @@
         },
         {
           "q": "Is it free?",
-          "a": "Not verified. Saint Paul publishes no cost for any of its pickleball venues. They are municipal park courts and are very likely free, but \"very likely\" is not a fact."
+          "a": "Not stated. Saint Paul publishes no cost for any of its pickleball venues. They are municipal park courts and are very likely free, but \"very likely\" is not a fact."
         }
       ],
       "sources": [
@@ -128,7 +128,7 @@
     },
     "homecroft-park": {
       "slots": {
-        "description": "Two pickleball courts in the Highland area of south-west Saint Paul, listed in the City's amenity inventory alongside two tennis courts and a tennis backboard. That is as clear a picture of the arrangement as an inventory can give without a sentence: the pickleball is on the tennis courts, and there is a backboard for practising against when nobody else is about.\n\nHomecroft has a short amenity list with nothing much competing for the space: open space, the courts, the backboard. Edgcumbe Recreation Center is a short distance away, which makes this quarter the best-served part of published Saint Paul: six of the city's thirteen verified courts are in those two venues. Choosing between them comes down to the count.",
+        "description": "Two pickleball courts in the Highland area of south-west Saint Paul, listed in the City's amenity inventory alongside two tennis courts and a tennis backboard. That is as clear a picture of the arrangement as an inventory can give without a sentence: the pickleball is on the tennis courts, and there is a backboard for practising against when nobody else is about.\n\nHomecroft has a short amenity list with nothing much competing for the space: open space, the courts, the backboard. Edgcumbe Recreation Center is a short distance away, which makes this quarter the best-served part of published Saint Paul: six of the city's thirteen courts are in those two venues. Choosing between them comes down to the count.",
         "getting_there": "1850 Sheridan Ave., Saint Paul, MN 55116, matched by the Census geocoder to St. Paul city, Ramsey County. Highland, in the south-west of the city, not far from Edgcumbe Recreation Center's four courts, which is the obvious alternative when two are not enough. The City publishes no parking guidance.",
         "what_to_expect": "Two courts striped on tennis courts, a tennis backboard, and open space. Nothing is published about hours, cost, lighting or surface, which is true of every Saint Paul venue on this site. The realistic read: a quiet neighbourhood venue for a pair or two, with the city's largest venue a short distance away for anything bigger."
       },
@@ -143,7 +143,7 @@
         },
         {
           "q": "Is it lit?",
-          "a": "Not verified. No Saint Paul facility page states lighting for a pickleball court."
+          "a": "Not stated. No Saint Paul facility page states lighting for a pickleball court."
         },
         {
           "q": "What is a tennis backboard?",
@@ -172,11 +172,11 @@
         },
         {
           "q": "Is it lit?",
-          "a": "Not verified. No Saint Paul venue on this site has a lighting statement either way."
+          "a": "Not stated. No Saint Paul venue on this site has a lighting statement either way."
         },
         {
           "q": "Is the North End well served for pickleball?",
-          "a": "On the published record, thinly: Orchard's two courts are the only verified pickleball in that part of the city. The City's map shows further sites nearby, including Rice Recreation Center, whose facility page states no court count."
+          "a": "On the published record, thinly: Orchard's two courts are the only pickleball in that part of the city. The City's map shows further sites nearby, including Rice Recreation Center, whose facility page states no court count."
         }
       ],
       "sources": [

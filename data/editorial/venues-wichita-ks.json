@@ -13,7 +13,7 @@
         "what_to_expect": "Outdoors, twelve courts with no stated hours, no stated lighting and no stated price. It is the one outdoor set in Wichita large enough that turning up alone is a reasonable plan on the count alone.\n\nIndoors, three courts the City calls temporary, laid out in the centre for drop-in sessions rather than built into the floor. The sessions are in the City's summer and fall drop-in PDFs, which this site has not read, so no time is published here. Nothing is said about when the outdoor courts are busy, or whether nets are provided."
       },
       "faqs": [
-        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so the twelve outdoor courts here are recorded as unverified rather than lit or unlit."},
+        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so the twelve outdoor courts here are recorded as not stated rather than lit or unlit."},
         {"q": "When are the indoor sessions?", "a": "Not published here. The City's drop-in hours are in two PDFs, summer and fall, that this site has not read. Ring 316-688-9392."},
         {"q": "Is it free?", "a": "Not stated. The City's one sentence on cost does not name a venue, and this site does not assume a park court is free."}
       ],
@@ -21,12 +21,12 @@
     },
     "buffalo-park": {
       "slots": {
-        "description": "Two outdoor pickleball courts, on one line of the City's Parks tab: \"Buffalo Park / 10201 Hardtner / 2 courts\", under the heading \"Outdoor courts with hard / concrete surfaces\". That is the whole of the City's published record of pickleball at this park. No hours, no phone number, no lighting and no price.\n\nTwo courts is a game rather than a rotation: four players fill it and a fifth waits, so this is a venue for a group that arrives together. The address is the fact verification changed most. The imported dataset held this park at \"318-500 N Maize Rd\", a range along a road rather than a house number, and the City's \"10201 Hardtner\" replaced it.",
+        "description": "Two outdoor pickleball courts, on one line of the City's Parks tab: \"Buffalo Park / 10201 Hardtner / 2 courts\", under the heading \"Outdoor courts with hard / concrete surfaces\". That is the whole of the City's published record of pickleball at this park. No hours, no phone number, no lighting and no price.\n\nTwo courts is a game rather than a rotation: four players fill it and a fifth waits, so this is a venue for a group that arrives together. The address is the fact that changed most. The imported dataset held this park at \"318-500 N Maize Rd\", a range along a road rather than a house number, and the City's \"10201 Hardtner\" replaced it.",
         "getting_there": "10201 Hardtner, Wichita, KS 67212. The US Census address geocoder matched \"10201 HARDTNER ST, WICHITA, KS, 67212\" at house-number level and placed it in Sedgwick County, inside the incorporated place Wichita city; no second resolver was needed. Buffalo Park and Orchard Recreation Center are the two published venues in 67212.\n\nThe City publishes nothing about parking or restrooms at this park, and no phone number for it; the Parks tab gives none of its four parks a number.",
         "what_to_expect": "Two courts, outdoors, and a City record that stops there. Hours are not stated, so this site cannot say when the park opens or closes. Lighting is not stated, so evening play is an open question rather than a no. Price is not stated, and the City's one sentence on cost does not name a venue. Surface is not stated for this park on its own.\n\nWith two courts and no published session, nothing on the City's record suggests a rotation forms here, so bring your four. If both courts are taken, the same tab lists Osage's two, Seneca's six and Edgemoor's twelve."
       },
       "faqs": [
-        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so this park is recorded as unverified rather than as a no."},
+        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so this park is recorded as not stated rather than as a no."},
         {"q": "Is it free?", "a": "Not stated. The City writes one sentence on cost for the whole city and names no venue, so no fee answer is published here."},
         {"q": "Why does the address differ from older listings?", "a": "The imported dataset held \"318-500 N Maize Rd\", a range rather than a house number. The City prints \"10201 Hardtner\", and the Census geocoder matches it as written."}
       ],
@@ -40,7 +40,7 @@
       },
       "faqs": [
         {"q": "Is it 31st Street North or South?", "a": "South, on OpenStreetMap's match in 67217 and the older record. The Census geocoder answered 31st Street North in 67204; the City writes neither direction."},
-        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so this park is recorded as unverified rather than as a no."},
+        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so this park is recorded as not stated rather than as a no."},
         {"q": "What are the hours?", "a": "Not stated. The City prints no opening or closing time for any of its four parks."}
       ],
       "sources": ["C1", "C2"]
@@ -52,7 +52,7 @@
         "what_to_expect": "Six courts, outdoors, with no stated hours, lighting, price or surface. Six is the number at which a rotation becomes plausible, but the City publishes no open-play time and no group here, so that stays a guess rather than a fact from the operator.\n\nWhat is certain is the count and the address. What is not is whether the park closes at sunset, whether the courts are lit, and whether they cost anything. If six courts are full, the City's own list gives Edgemoor's twelve on the same tab. There is no phone number to ring, so the count and the address are the whole of the record you travel on."
       },
       "faqs": [
-        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so this park is recorded as unverified rather than as a no."},
+        {"q": "Are the courts lit?", "a": "Not stated. The City states lighting only at Riverside Tennis Center, so this park is recorded as not stated rather than as a no."},
         {"q": "Is it free?", "a": "Not stated. The City's one sentence on cost does not name a venue, and this site does not assume a park court is free."},
         {"q": "Why did the postcode change?", "a": "The imported record carried 67215. The Census geocoder matched \"202 S SENECA ST, WICHITA, KS, 67213\", and the resolver's postcode publishes."}
       ],
@@ -73,7 +73,7 @@
     },
     "evergreen-recreation-center": {
       "slots": {
-        "description": "Two indoor pickleball courts at the Evergreen Recreation Center, from the line \"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\" on the City's Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\".\n\nTwo courts is the smallest indoor count in Wichita, shared with Brewer, and it is one game at a time. As at every centre on the tab, the courts are temporary in the City's word, laid out for the drop-in sessions whose hours are in two PDFs this site has not read. The City states no price for this centre and no surface of its own. The address is the one detail verification had to think about: the City writes \"2700 N Woodland\", the Census geocoder answered without the N, and OpenStreetMap holds nothing for the address as written.",
+        "description": "Two indoor pickleball courts at the Evergreen Recreation Center, from the line \"Evergreen / 2700 N Woodland / 316-909-8036 / 2 courts\" on the City's Recreation Centers tab, under \"Temporary indoor courts with wood and tile surfaces\".\n\nTwo courts is the smallest indoor count in Wichita, shared with Brewer, and it is one game at a time. As at every centre on the tab, the courts are temporary in the City's word, laid out for the drop-in sessions whose hours are in two PDFs this site has not read. The City states no price for this centre and no surface of its own. The address is the one detail we had to think about: the City writes \"2700 N Woodland\", the Census geocoder answered without the N, and OpenStreetMap holds nothing for the address as written.",
         "getting_there": "2700 N Woodland, Wichita, KS 67204, as the City writes it. The US Census address geocoder matched \"2700 WOODLAND ST, WICHITA, KS, 67204\" at house-number level, the same number and the same postcode with the City's N dropped, and placed it in Sedgwick County, inside the incorporated place Wichita city. OpenStreetMap has no record of the address as written, so there was no second opinion to prefer, and the Census resolution is published.\n\nThe City publishes nothing about parking or restrooms. The phone number on its line is 316-909-8036.",
         "what_to_expect": "Two courts at session times, and no session times on this page. The City's drop-in hours are in the summer and fall PDFs linked from the Recreation Centers tab, which this site has not read.\n\nTwo courts is a game rather than a rotation. Price is not stated: the City's one sentence on cost names no venue. The floor is wood or tile on the City's heading, without saying which. If a map does not find North Woodland at this number, look for Woodland Street at the same number in 67204. Ring 316-909-8036 before going."
       },

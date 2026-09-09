@@ -8,13 +8,13 @@
   "filters": {
     "outdoor": {
       "slots": {
-        "why_this_filter": "Every verified pickleball court in Raleigh is outdoor, so this page and the city page list the same eleven venues. Raleigh Parks runs its court inventory in two halves: 44 outdoor courts at 11 park locations, and a separate indoor open-play programme at thirteen community centres that costs $3 a session or $15 for a four-month pass and runs to a schedule. The department states the outdoor total in words, \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the per-location table adds up to exactly that. It does not publish a court count for any individual community centre gym, which is why there is no companion /indoor/ page here.",
+        "why_this_filter": "Every pickleball court in Raleigh is outdoor, so this page and the city page list the same eleven venues. Raleigh Parks runs its court inventory in two halves: 44 outdoor courts at 11 park locations, and a separate indoor open-play programme at thirteen community centres that costs $3 a session or $15 for a four-month pass and runs to a schedule. The department states the outdoor total in words, \"Raleigh Parks has 44 outdoor pickleball courts located at 11 locations\", and the per-location table adds up to exactly that. It does not publish a court count for any individual community centre gym, which is why there is no companion /indoor/ page here.",
         "what_qualifies": "A venue appears on this page when a source states that its courts are outdoor. For all eleven Raleigh locations that statement is explicit twice over: the department's court table is headed as its outdoor list and says \"44 outdoor pickleball courts\", and the city's GIS Athletic Courts layer records each of these court polygons as Outdoor. The number of outdoor courts is recorded as equal to the venue's total court count on that basis.\n\nZero indoor courts is not recorded at any of them. Method Community Park and Tarboro Road Park each share their address with a community centre that runs indoor sessions, so \"0 indoor\" would be a false statement about the site. Baileywick Park needs a second look. Its park page describes Court A as covered and Court B as covered centre, and pickleball is scheduled on Courts A and B, so some of Raleigh's outdoor pickleball is played under a roof. A covered court is still outdoors, still subject to wind and cold, and still listed here."
       },
       "faqs": [
         {
           "q": "Are all of Raleigh's pickleball courts outdoor?",
-          "a": "All 44 verified courts are, across eleven city parks. Raleigh Parks also runs indoor open play at thirteen community centres, but it does not publish how many courts each gym holds, so none of them is verified here."
+          "a": "All 44 courts are, across eleven city parks. Raleigh Parks also runs indoor open play at thirteen community centres, but it does not publish how many courts each gym holds, so none of them is listed here."
         },
         {
           "q": "Is there anywhere covered to play in Raleigh?",

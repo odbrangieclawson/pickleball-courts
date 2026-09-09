@@ -38,7 +38,7 @@ export type CardLink = {
   meta: string
   blurb?: string
   trust?: string
-  /** Present on the home page's city cards. Null where we have no photograph. */
+  /** The home page's city cards. A court placeholder, never a landmark. */
   photo?: SitePhoto | null
 }
 
@@ -92,7 +92,19 @@ export type StateCard = {
 export type StateView = {
   stateName: string
   state: string
+  /** Always null since 2026-09-09: no landmark hero. */
   photo: SitePhoto | null
+  /**
+   * The share and search-result image. A pickleball court, never a
+   * landmark, and never rendered on the page itself.
+   */
+  cardPhoto: {
+    src: string
+    width: number
+    height: number
+    alt: string
+    credit: {author: string | null; licence: string | null; licenceUrl: string | null; filePage: string | null} | null
+  }
   title: string
   meta: string
   venues: string
@@ -168,7 +180,19 @@ export type CityView = {
   filters: CityFilterLink[]
   venues: CityVenueRow[]
   jsonLd: string
+  /** Always null since 2026-09-09: city pages carry no landmark photograph. */
   photo: SitePhoto | null
+  /**
+   * The share and search-result image only. Never rendered on the page: it
+   * is a pickleball court, not a photograph of a court in this city.
+   */
+  cardPhoto: {
+    src: string
+    width: number
+    height: number
+    alt: string
+    credit: {author: string | null; licence: string | null; licenceUrl: string | null; filePage: string | null} | null
+  }
 }
 
 export type FactRow = {
@@ -279,7 +303,19 @@ export type CountyView = {
   state: string
   stateName: string
   slug: string
+  /** Always null since 2026-09-09: no landmark hero. */
   photo: SitePhoto | null
+  /**
+   * The share and search-result image. A pickleball court, never a
+   * landmark, and never rendered on the page itself.
+   */
+  cardPhoto: {
+    src: string
+    width: number
+    height: number
+    alt: string
+    credit: {author: string | null; licence: string | null; licenceUrl: string | null; filePage: string | null} | null
+  }
   title: string
   meta: string
   h1: string

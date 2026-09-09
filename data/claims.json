@@ -35,13 +35,13 @@
     },
     {
       "file": "apex-nc.json",
-      "contains": "Brown Community Center has the first indoor pickleball courts verified anywhere in this",
+      "contains": "Brown Community Center has the first indoor pickleball courts on record anywhere in this",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "apex-nc.json",
-      "contains": "Brown Community Center, 53 Hunter Street, and they were the first verified indoor",
+      "contains": "Brown Community Center, 53 Hunter Street, and they were the first indoor",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -85,7 +85,7 @@
     },
     {
       "file": "bernalillo-county-nm.json",
-      "contains": "Manzano Mesa alone holds more than a third of the county's verified courts, and its",
+      "contains": "Manzano Mesa alone holds more than a third of the county's courts, and its",
       "metric": "max_venue_courts",
       "op": "==",
       "value": 33
@@ -110,7 +110,7 @@
     },
     {
       "file": "boulder-co.json",
-      "contains": "It is one of seven cities on this site with a verified free court, and, with Cape Coral,",
+      "contains": "It is one of seven cities on this site with a free court, and, with Cape Coral,",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -148,7 +148,7 @@
     },
     {
       "file": "capecoral-fl.json",
-      "contains": "Cape Coral is one of only seven cities on this site with a verified free court, with",
+      "contains": "Cape Coral is one of only seven cities on this site with a free court, with",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -222,7 +222,7 @@
     },
     {
       "file": "dane-county-wi.json",
-      "contains": "The verified courts are spread across Madison rather than concentrated, which is unusual",
+      "contains": "The courts are spread across Madison rather than concentrated, which is unusual",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -241,7 +241,7 @@
     },
     {
       "file": "filters-apex-nc.json",
-      "contains": "There is no /indoor/ page despite Apex having had the first verified indoor courts in the",
+      "contains": "There is no /indoor/ page despite Apex having had the first indoor courts in the",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -253,7 +253,7 @@
     },
     {
       "file": "filters-apex-nc.json",
-      "contains": "Brown Community Center holds the first indoor pickleball courts verified anywhere on this",
+      "contains": "Brown Community Center holds the first indoor pickleball courts on record anywhere on this",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -265,7 +265,7 @@
     },
     {
       "file": "filters-apex-nc.json",
-      "contains": "Those four indoor courts were the first verified indoor pickleball courts in this",
+      "contains": "Those four indoor courts were the first indoor pickleball courts in this",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -309,7 +309,7 @@
     },
     {
       "file": "filters-boulder-co.json",
-      "contains": "It is one of seven cities on this site with a verified free court, and, with Cape Coral,",
+      "contains": "It is one of seven cities on this site with a free court, and, with Cape Coral,",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -328,7 +328,7 @@
     },
     {
       "file": "filters-capecoral-fl.json",
-      "contains": "That makes Cape Coral one of only seven cities on this whole site with a verified free",
+      "contains": "That makes Cape Coral one of only seven cities on this whole site with a free",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -365,7 +365,7 @@
     },
     {
       "file": "filters-mount-pleasant-sc.json",
-      "contains": "It is one of seven cities on this site with a verified free court.",
+      "contains": "It is one of seven cities on this site with a free court.",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -427,7 +427,7 @@
     },
     {
       "file": "filters-scottsdale-az.json",
-      "contains": "Scottsdale published five locations; this site could originally verify only three of",
+      "contains": "Scottsdale published five locations; this site could originally put a source to only three of",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -528,7 +528,7 @@
     },
     {
       "file": "fl-state.json",
-      "contains": "Few cities on this site carry a verified free court, seven at the time of writing, and",
+      "contains": "Few cities on this site carry a free court, seven at the time of writing, and",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -632,7 +632,7 @@
     },
     {
       "file": "lee-county-fl.json",
-      "contains": "That makes Cape Coral one of only seven cities on this site with a verified free court.",
+      "contains": "That makes Cape Coral one of only seven cities on this site with a free court.",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -742,7 +742,7 @@
     },
     {
       "file": "madison-wi.json",
-      "contains": "Nine cities in, every other verified court in the directory has been first come, first",
+      "contains": "Nine cities in, every other court in the directory has been first come, first",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -828,7 +828,7 @@
     },
     {
       "file": "mount-pleasant-sc.json",
-      "contains": "It is one of seven cities on this site with a verified free court, and the free ones are",
+      "contains": "It is one of seven cities on this site with a free court, and the free ones are",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -937,7 +937,7 @@
     },
     {
       "file": "scottsdale-az.json",
-      "contains": "Across this whole directory only six other cities have a verified free court, and only",
+      "contains": "Across this whole directory only six other cities have a free court, and only",
       "metric": "cities_with_free_venue",
       "op": "==",
       "value": 7
@@ -1061,13 +1061,13 @@
     },
     {
       "file": "venues-apex-nc.json",
-      "contains": "Brown Community Center holds the first indoor pickleball courts verified anywhere in this",
+      "contains": "Brown Community Center holds the first indoor pickleball courts on record anywhere in this",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "venues-apex-nc.json",
-      "contains": "Were these really the first verified indoor courts on this site?",
+      "contains": "Were these really the first indoor courts on this site?",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1129,7 +1129,7 @@
     },
     {
       "file": "venues-austin-tx.json",
-      "contains": "Because only two published venues are in it, and this site requires three verified venues",
+      "contains": "Because only two published venues are in it, and this site requires three venues",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1364,7 +1364,7 @@
     },
     {
       "file": "venues-madison-wi.json",
-      "contains": "Reservations run through the City's WebTrac account system; every other verified court in",
+      "contains": "Reservations run through the City's WebTrac account system; every other court in",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1400,7 +1400,7 @@
     },
     {
       "file": "venues-portland-or.json",
-      "contains": "It makes Pier Park one of only three Portland venues in this directory with a verified",
+      "contains": "It makes Pier Park one of only three Portland venues in this directory with a stated",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
@@ -1603,13 +1603,13 @@
     },
     {
       "file": "wake-county-nc.json",
-      "contains": "The county also holds the first verified indoor pickleball in this directory: four",
+      "contains": "The county also holds the first indoor pickleball in this directory: four",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },
     {
       "file": "wake-county-nc.json",
-      "contains": "Brown Community Center in Apex has four indoor courts, the first verified indoor",
+      "contains": "Brown Community Center in Apex has four indoor courts, the first indoor",
       "metric": null,
       "why": "Read 2026-09-07: historical (a \"first\"), policy, or not expressible as a count. Re-read when a city is published."
     },

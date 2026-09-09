@@ -965,7 +965,7 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
    The placeholder marker is not decoration. One stock photograph standing in
    for twenty-four different courts would otherwise read as a photograph of
    each of them, which is a claim we cannot source — and this site renders an
-   unknown court count as "not verified yet" rather than guessing, so it can
+   unknown court count as "not stated" rather than guessing, so it can
    hardly let an image imply what a sentence would refuse to.
 */
 
@@ -1274,7 +1274,7 @@ table td a:hover { border-bottom-color: var(--accent); }
 /*
   A fact that is a sentence, not a word. Court availability, hours, pricing
   notes and the like are prose an operator wrote, and prose cannot sit on a
-  leader line beside "Lights · · · Not verified yet" — it ran clean across
+  leader line beside "Lights · · · Not stated" — it ran clean across
   the neighbouring columns. These rows span the grid, lose the leader, and
   wrap.
 */

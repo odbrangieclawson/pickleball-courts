@@ -4,11 +4,11 @@
   "kind": "filters",
   "date_checked": "2026-09-04",
   "written_by": "staff_research",
-  "note_on_method": "Two of the five filter slugs have a lawful data driver in Bellevue and three do not. Indoor and outdoor both do, because the City states an indoor or outdoor count for every venue it lists. Lights has no driver because no lighting is verified anywhere in the city; free has none because the City never calls a court free; public has none because access_type has no controlled vocabulary yet. Those three pages do not exist rather than existing thinly.",
+  "note_on_method": "Two of the five filter slugs have a lawful data driver in Bellevue and three do not. Indoor and outdoor both do, because the City states an indoor or outdoor count for every venue it lists. Lights has no driver because no lighting is stated anywhere in the city; free has none because the City never calls a court free; public has none because access_type has no controlled vocabulary yet. Those three pages do not exist rather than existing thinly.",
   "filters": {
     "indoor": {
       "slots": {
-        "why_this_filter": "Bellevue is one of only six cities in this directory where an indoor page is worth its own URL, and the reason is regional. Seattle, across Lake Washington, has twenty-four verified venues and ninety-two verified courts, and not one of them is indoor. Bellevue has fourteen indoor courts across four venues, which between November and March is the difference between playing and not playing. Three of the four are community centre gyms running scheduled drop-in sessions; the fourth is a fieldhouse in a park. All four are city-run and first-come, and one of them is the only place in Bellevue that publishes what a session costs.",
+        "why_this_filter": "Bellevue is one of only six cities in this directory where an indoor page is worth its own URL, and the reason is regional. Seattle, across Lake Washington, has twenty-four venues and ninety-two courts, and not one of them is indoor. Bellevue has fourteen indoor courts across four venues, which between November and March is the difference between playing and not playing. Three of the four are community centre gyms running scheduled drop-in sessions; the fourth is a fieldhouse in a park. All four are city-run and first-come, and one of them is the only place in Bellevue that publishes what a session costs.",
         "what_qualifies": "A venue appears here when the City of Bellevue states an indoor court count for it on its own pickleball page under the heading Indoor. Four venues qualify: South Bellevue Community Center with six, Crossroads Community Center with three, the Hidden Valley Fieldhouse with three, and North Bellevue Community Center with two. A venue merely suspected of having a roof does not qualify; covered is not indoor, and only a stated indoor count puts a venue on this list. Hidden Valley Park is on both this list and the outdoor one, which only eight other venues in this directory are: the City lists its fieldhouse and its outdoor courts as separate entries at one address, and it is published here as one place with three indoor courts and two outdoor."
       },
       "faqs": [
@@ -32,7 +32,7 @@
     },
     "outdoor": {
       "slots": {
-        "why_this_filter": "Twenty-eight of Bellevue's forty-two verified courts are outdoor, spread across ten venues, and what makes this list worth reading is what the City says each court actually is. Bellevue publishes its own default, \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted\", and then notes the exceptions one by one. So this page can tell you, venue by venue, whether you are getting a pickleball court, a tennis court with lines on it, a basketball court with lines on it, or a tennis net you play over. That distinction decides whether you need to carry a net across a car park.",
+        "why_this_filter": "Twenty-eight of Bellevue's forty-two courts are outdoor, spread across ten venues, and what makes this list worth reading is what the City says each court actually is. Bellevue publishes its own default, \"Bellevue's pickleball courts are shared use with tennis courts, unless otherwise noted\", and then notes the exceptions one by one. So this page can tell you, venue by venue, whether you are getting a pickleball court, a tennis court with lines on it, a basketball court with lines on it, or a tennis net you play over. That distinction decides whether you need to carry a net across a car park.",
         "what_qualifies": "A venue appears here when the City states an outdoor court count for it under the Outdoor heading of its pickleball page. Ten qualify, from Cherry Crest Mini Park's single court to the four each at Crossroads Park, Eastgate Park, Highland Park and Lakemont Community Park. Hidden Valley Park appears here and on the indoor list, because the City counts two outdoor courts in the park and three indoor in its fieldhouse at the same address. A park is not treated as outdoor merely because nobody said it had a roof. Highland Park was absent from this page until 4 September 2026 because its address does not resolve through the Census geocoder; a second resolver settled that, and the venue publishes with its remaining caveats stated on its own page."
       },
       "faqs": [
@@ -42,7 +42,7 @@
         },
         {
           "q": "Will there be a net when I get there?",
-          "a": "Not verified at any outdoor venue in Bellevue. Seven are marked \"portable nets\", which tells you the nets are portable and not who brings them; two are marked \"over tennis net\", which means the tennis net is what you play over. Even at Eastgate, now that the tennis nets have been removed, the City does not say what replaced them. Carry one if you have one."
+          "a": "Not stated at any outdoor venue in Bellevue. Seven are marked \"portable nets\", which tells you the nets are portable and not who brings them; two are marked \"over tennis net\", which means the tennis net is what you play over. Even at Eastgate, now that the tennis nets have been removed, the City does not say what replaced them. Carry one if you have one."
         },
         {
           "q": "Which outdoor venues have restrooms?",

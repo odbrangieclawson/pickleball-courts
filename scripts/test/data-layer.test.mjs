@@ -158,7 +158,7 @@ test('getCounts', async t => {
     assert.equal(c.venues_lit.denominator, 3)
     assert.equal(c.venues_lit.known, 2)   // only two stated anything
     assert.equal(c.venues_lit.unknown, 1) // one is genuinely unknown
-    assert.match(renderCountOf(c.venues_lit, 'venues'), /1 of 2 venues that report it \(1 not verified yet\)/)
+    assert.match(renderCountOf(c.venues_lit, 'venues'), /1 of 2 venues that report it \(1 not stated\)/)
   })
 
   await t.test('RULE 6: a null boolean is never counted as false', () => {

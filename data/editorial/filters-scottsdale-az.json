@@ -8,7 +8,7 @@
   "filters": {
     "outdoor": {
       "slots": {
-        "why_this_filter": "Every verified pickleball court in Scottsdale is outdoor, so this page and the city page hold the same four venues. Twenty-nine courts across Ashler Hills Park, Cholla Park, Horizon Park and Thompson Peak Park, every one of them lit. In the Phoenix valley the outdoor question is really a timing question, which is why the fact that all four venues run from sunrise to 10:30 p.m. under lights matters more than the count does. The City runs a free public drop-in programme on six more lighted outdoor courts at Scottsdale Community College; those are not here because the Census places them outside the city limits.\n\nThis page grew on 4 September 2026. Scottsdale published five locations; this site could originally verify only three of them, because a venue must have an address that resolves before it may be published, and the address the City prints for Ashler Hills Park is not in the US Census address file. That day a second resolver was added, OpenStreetMap, consulted only where the Census has nothing, and Ashler Hills' eight lighted courts became publishable.",
+        "why_this_filter": "Every pickleball court in Scottsdale is outdoor, so this page and the city page hold the same four venues. Twenty-nine courts across Ashler Hills Park, Cholla Park, Horizon Park and Thompson Peak Park, every one of them lit. In the Phoenix valley the outdoor question is really a timing question, which is why the fact that all four venues run from sunrise to 10:30 p.m. under lights matters more than the count does. The City runs a free public drop-in programme on six more lighted outdoor courts at Scottsdale Community College; those are not here because the Census places them outside the city limits.\n\nThis page grew on 4 September 2026. Scottsdale published five locations; this site could originally put a source to only three of them, because a venue must have an address that resolves before it may be published, and the address the City prints for Ashler Hills Park is not in the US Census address file. That day a second resolver was added, OpenStreetMap, consulted only where the Census has nothing, and Ashler Hills' eight lighted courts became publishable.",
         "what_qualifies": "A venue appears here when the City of Scottsdale states an outdoor court count for it on its pickleball page. Four qualify: ten courts at Horizon, eight each at Cholla and Ashler Hills, three at Thompson Peak. Scottsdale Community College has six lighted courts, and the geocoder places its address in no incorporated place at all, so it is not a Scottsdale venue by the test this directory uses."
       },
       "faqs": [
@@ -18,7 +18,7 @@
         },
         {
           "q": "Are they all free?",
-          "a": "Three of the four say so: \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. Ashler Hills Park's page lists the courts among the park's features without mentioning cost, so its cost reads \"not verified yet\": not a suspected charge, just an unanswered question."
+          "a": "Three of the four say so: \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. Ashler Hills Park's page lists the courts among the park's features without mentioning cost, so its cost reads \"not stated\": not a suspected charge, just an unanswered question."
         },
         {
           "q": "Is one of these closed?",
@@ -64,8 +64,8 @@
     },
     "free": {
       "slots": {
-        "why_this_filter": "Municipal park courts are usually free, and this directory almost never says so, because operators almost never write it down. Scottsdale does: \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. That single sentence is why this page exists at all, and why Scottsdale is one of only seven cities on this site with any verified free court, every one of which qualified for exactly the same reason.\n\nThis is the one Scottsdale filter page that does not carry every venue in the city. Ashler Hills Park's page lists \"8 lighted pickleball courts\" among the park features and says nothing further, so no sentence about cost exists to cite, and it stays off this page. Most other municipal park courts in this directory, across several hundred courts, carry an unverified cost. Almost all of them are free.",
-        "what_qualifies": "A venue appears here when the operator states that its courts are free. Three of Scottsdale's four published venues do, on their own park pages, in the same words. A public park with no stated price reads \"not verified yet\" and stays off this page, which is what has happened to Ashler Hills. One more free venue is absent for a different reason: the City runs a free public drop-in programme on Scottsdale Community College's six lighted courts, and the Census places that address in no incorporated place, so it is not published under Scottsdale."
+        "why_this_filter": "Municipal park courts are usually free, and this directory almost never says so, because operators almost never write it down. Scottsdale does: \"They are free to use\" appears on the Cholla, Horizon and Thompson Peak park pages. That single sentence is why this page exists at all, and why Scottsdale is one of only seven cities on this site with any free court, every one of which qualified for exactly the same reason.\n\nThis is the one Scottsdale filter page that does not carry every venue in the city. Ashler Hills Park's page lists \"8 lighted pickleball courts\" among the park features and says nothing further, so no sentence about cost exists to cite, and it stays off this page. Most other municipal park courts in this directory, across several hundred courts, carry no stated cost. Almost all of them are free.",
+        "what_qualifies": "A venue appears here when the operator states that its courts are free. Three of Scottsdale's four published venues do, on their own park pages, in the same words. A public park with no stated price reads \"not stated\" and stays off this page, which is what has happened to Ashler Hills. One more free venue is absent for a different reason: the City runs a free public drop-in programme on Scottsdale Community College's six lighted courts, and the Census places that address in no incorporated place, so it is not published under Scottsdale."
       },
       "faqs": [
         {
@@ -78,7 +78,7 @@
         },
         {
           "q": "Do I still need to bring equipment?",
-          "a": "Assume a paddle and balls, yes. The City lists three portable nets at Thompson Peak and says nothing about nets at the other three, so those read \"not verified yet\"."
+          "a": "Assume a paddle and balls, yes. The City lists three portable nets at Thompson Peak and says nothing about nets at the other three, so those read \"not stated\"."
         },
         {
           "q": "Does free mean anyone can play?",

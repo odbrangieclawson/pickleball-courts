@@ -4,7 +4,7 @@
   "kind": "venues",
   "date_checked": "2026-09-03",
   "written_by": "staff_research",
-  "note_on_method": "Nobody working on this has played on these courts. Every venue below is described from one source, Portland Parks & Recreation's pickleball page, plus the Census geocode of the address it prints. Where the department is silent, these pages say so: no venue here has verified lighting or parking information, because the department publishes neither for any of them. Where a page reads a location out of an address, it is reading Portland's own street grid, which names the sextant (N, NE, NW, SE, SW) in the address itself.",
+  "note_on_method": "Nobody working on this has played on these courts. Every venue below is described from one source, Portland Parks & Recreation's pickleball page, plus the Census geocode of the address it prints. Where the department is silent, these pages say so: no venue here has stated lighting or parking information, because the department publishes neither for any of them. Where a page reads a location out of an address, it is reading Portland's own street grid, which names the sextant (N, NE, NW, SE, SW) in the address itself.",
   "venues": {
     "columbia-park": {
       "slots": {
@@ -34,17 +34,17 @@
     "pier-park": {
       "slots": {
         "description": "Pier Park has four pickleball courts, and it is the one outdoor site in Portland where the city names the material: \"concrete\". Everywhere else the department writes \"hard courts\", which sorts a court into a category without naming a material, so those venues carry no surface. Pier Park is also one of the four parks Portland names as sanctioned pickleball sites, under its rule that striping goes only where courts stand roughly 300 to 600 feet from homes.",
-        "getting_there": "10325 N Lombard St, Portland, OR 97203, the same street as Columbia Park and a shade under three miles further north-west along it, out towards St. Johns. The Census geocoder matched the address to Multnomah County. As at every other venue on this site, the parks department publishes nothing at all about parking here, so we have nothing verified to tell you about it.",
+        "getting_there": "10325 N Lombard St, Portland, OR 97203, the same street as Columbia Park and a shade under three miles further north-west along it, out towards St. Johns. The Census geocoder matched the address to Multnomah County. As at every other venue on this site, the parks department publishes nothing at all about parking here, so we have nothing on record to tell you about it.",
         "what_to_expect": "Four free courts on concrete, with permanent lines, open dawn to dusk on a first-come basis, and bring your own net. Four courts is a small site by the standards of Columbia and Sellwood, so the department's one-hour courtesy limit is more likely to matter on a busy afternoon. The amenities line lists restrooms and, unlike the other outdoor parks, does not mention drinking water. That is an absence in the city's list rather than a statement that there is none. Lighting is not mentioned."
       },
       "faqs": [
         {
           "q": "What surface are Pier Park's courts?",
-          "a": "Concrete. Portland Parks & Recreation writes \"4 Outdoor concrete courts\", and that is a material rather than a category, so it is published. It makes Pier Park one of only three Portland venues in this directory with a verified surface, and the other two are the wood floors at Southwest and St. Johns community centres."
+          "a": "Concrete. Portland Parks & Recreation writes \"4 Outdoor concrete courts\", and that is a material rather than a category, so it is published. It makes Pier Park one of only three Portland venues in this directory with a stated surface, and the other two are the wood floors at Southwest and St. Johns community centres."
         },
         {
           "q": "Is there drinking water?",
-          "a": "The city does not say. Its amenities line for Pier Park reads \"Amenities: restrooms\", where the other outdoor parks say \"restrooms and water\". Restrooms are recorded and water is left unverified rather than reading a silence as a no."
+          "a": "The city does not say. Its amenities line for Pier Park reads \"Amenities: restrooms\", where the other outdoor parks say \"restrooms and water\". Restrooms are recorded and water is left unstated rather than reading a silence as a no."
         },
         {
           "q": "How far is it from Columbia Park?",
@@ -69,7 +69,7 @@
         },
         {
           "q": "Why is the surface not listed?",
-          "a": "Because the city calls them \"hard courts\", which names a category rather than a material: asphalt, concrete and acrylic are all hard. The field reads \"not verified yet\" for that reason. Pier Park, which says \"concrete\", is the exception in this city."
+          "a": "Because the city calls them \"hard courts\", which names a category rather than a material: asphalt, concrete and acrylic are all hard. The field reads \"not stated\" for that reason. Pier Park, which says \"concrete\", is the exception in this city."
         },
         {
           "q": "What else is nearby on the east side?",
@@ -133,7 +133,7 @@
     },
     "hillside-park": {
       "slots": {
-        "description": "One court. Hillside Park is one of the smallest pickleball venues in this directory, and it is here for the same reason the eight-court sites are: the city states it. The single court is described as 'pickleball only', like the courts at Laurelhurst and Gabriel, and it is free. It is the only outdoor entry on Portland's pickleball page with no amenities line at all. Where the other five parks list restrooms, and four of them water, Hillside's entry ends after \"bring your own net\". That silence is recorded as unverified rather than as an absence.",
+        "description": "One court. Hillside Park is one of the smallest pickleball venues in this directory, and it is here for the same reason the eight-court sites are: the city states it. The single court is described as 'pickleball only', like the courts at Laurelhurst and Gabriel, and it is free. It is the only outdoor entry on Portland's pickleball page with no amenities line at all. Where the other five parks list restrooms, and four of them water, Hillside's entry ends after \"bring your own net\". That silence is recorded as not stated rather than as an absence.",
         "getting_there": "653 NW Culpepper Terrace, Portland, OR 97210, in the north-west sextant, up in the west hills. The Census geocoder matched the address to Multnomah County. Culpepper Terrace is a hillside residential street, and the parks department publishes no parking guidance here. A single-court site on a hill street is not somewhere to arrive with a group and no fallback.",
         "what_to_expect": "One free court, dedicated to pickleball, with your own net required, dawn to dusk, first come first served. With one court, Portland's rule about limiting play to an hour when others are waiting is the whole etiquette of the place, along with its rule that a single player may not hold a court while a partner is on the way. No restrooms are listed. No water is listed. No lighting is stated."
       },
@@ -148,7 +148,7 @@
         },
         {
           "q": "Why publish a one-court venue at all?",
-          "a": "Because the operator stated it, which is the only test this directory applies. A single court in the west hills is useful for someone who lives near it to be able to find. It is listed with the same three verified facts as everywhere else (count, address, cost) and the same honest blanks for lighting, parking and amenities."
+          "a": "Because the operator stated it, which is the only test this directory applies. A single court in the west hills is useful for someone who lives near it to be able to find. It is listed with the same three sourced facts as everywhere else (count, address, cost) and the same honest blanks for lighting, parking and amenities."
         }
       ],
       "sources": [
@@ -165,11 +165,11 @@
       "faqs": [
         {
           "q": "When is drop-in pickleball on?",
-          "a": "The city does not say on its pickleball page. It points drop-in players to the community centre's own page for schedule details, and that page is not verified here. Settle the timetable before you travel."
+          "a": "The city does not say on its pickleball page. It points drop-in players to the community centre's own page for schedule details, and that page is not stated here. Settle the timetable before you travel."
         },
         {
           "q": "Are nets provided?",
-          "a": "Unverified. The city says nothing either way for this centre. Two of the four centres do mention nets, but only when describing their registered programmes rather than drop-in play."
+          "a": "Not stated. The city says nothing either way for this centre. Two of the four centres do mention nets, but only when describing their registered programmes rather than drop-in play."
         },
         {
           "q": "What is the nearest outdoor pickleball?",
@@ -189,7 +189,7 @@
       },
       "faqs": [
         {
-          "q": "Why does it say nets are unverified when the page says 'nets provided'?",
+          "q": "Why does it say nets are not stated when the page says 'nets provided'?",
           "a": "Because that phrase appears only in the description of the centre's registered programme, not of drop-in play. It is very likely the same nets go up for both, but very likely is not a source, so the field stays empty."
         },
         {
@@ -206,7 +206,7 @@
       "slots": {
         "description": "Two indoor courts on a wood floor, the smallest of Portland's four drop-in community centres, at the same $6 adult and $5 senior rate as the others. Like Southwest Community Center it is listed twice on the city's pickleball page: once with its court count and price, once under registered activities as \"Indoor wood courts, permanent lines, nets provided\". The wood floor and the restrooms are properties of the building and are recorded. The nets describe a programme and are not.",
         "getting_there": "8427 N Central St, Portland, OR 97203, in the north sextant, matched by the Census geocoder to Multnomah County. It shares its postcode with Columbia Park and Pier Park and sits between the two of them, which puts twelve free outdoor courts and an indoor room within a short distance of each other. Nothing about parking is published.",
-        "what_to_expect": "Two courts, wood floor, permanent lines, drop-in at $6 for adults and $5 for seniors, plus a registered programme booked through ActiveNet that takes no court reservations. Two courts is small enough that the schedule matters more than the count, and the schedule is on the centre's own page rather than the city's pickleball page. Restrooms and drinking water are listed. Nets for drop-in play are unverified."
+        "what_to_expect": "Two courts, wood floor, permanent lines, drop-in at $6 for adults and $5 for seniors, plus a registered programme booked through ActiveNet that takes no court reservations. Two courts is small enough that the schedule matters more than the count, and the schedule is on the centre's own page rather than the city's pickleball page. Restrooms and drinking water are listed. Nets for drop-in play are not stated."
       },
       "faqs": [
         {
@@ -236,11 +236,11 @@
       "faqs": [
         {
           "q": "What surface are the courts?",
-          "a": "Unverified. Montavilla appears only once on the city's pickleball page, in the drop-in list, which gives a count and a price and nothing else. Southwest and St. Johns are recorded as wood because their second listings say so; there is no equivalent sentence here."
+          "a": "Not stated. Montavilla appears only once on the city's pickleball page, in the drop-in list, which gives a count and a price and nothing else. Southwest and St. Johns are recorded as wood because their second listings say so; there is no equivalent sentence here."
         },
         {
           "q": "Are there restrooms?",
-          "a": "Unverified. The city lists no amenities for this centre. That is a silence in the source, not a statement that there are none."
+          "a": "Not stated. The city lists no amenities for this centre. That is a silence in the source, not a statement that there are none."
         },
         {
           "q": "What is the nearest outdoor pickleball?",
@@ -256,7 +256,7 @@
       "slots": {
         "description": "Sixteen outdoor courts, one of the largest single venues in this directory, and the one where the number needs its sentence read to the end. Portland Parks & Recreation states \"16 outdoor hard courts, permanent lines, nets provided\", and then: \"Available from mid June until early September.\" Pickleball here is a registered summer programme, booked through an ActiveNet account, with no court reservations taken. The courts and their permanent lines are not seasonal; the access to them for pickleball is.",
         "getting_there": "324 NE 12th Ave, Portland, OR 97232, in the north-east sextant just across the river from the city centre, the most central venue in this set, matched by the Census geocoder to Multnomah County. It is about a mile and a half from Laurelhurst Park's two dedicated courts, the nearest year-round alternative on this side of the river. No parking information is published.",
-        "what_to_expect": "In season, sixteen outdoor hard courts with permanent lines and nets provided, run as mixer activities requiring an ActiveNet account and pre-registration, with no court reservations. Out of season, this is not a pickleball venue. The city does not state a price: registration goes through ActiveNet, which prices per activity, and no figure appears on the pickleball page, so the cost reads \"not verified yet\" rather than free. Restrooms and drinking water are listed. Lighting is not mentioned."
+        "what_to_expect": "In season, sixteen outdoor hard courts with permanent lines and nets provided, run as mixer activities requiring an ActiveNet account and pre-registration, with no court reservations. Out of season, this is not a pickleball venue. The city does not state a price: registration goes through ActiveNet, which prices per activity, and no figure appears on the pickleball page, so the cost reads \"not stated\" rather than free. Restrooms and drinking water are listed. Lighting is not mentioned."
       },
       "faqs": [
         {

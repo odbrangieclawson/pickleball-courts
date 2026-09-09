@@ -61,7 +61,7 @@ function Row({c}: {c: Credit}) {
 }
 
 export default function ImageCredits() {
-  const {retrieved, cities, counties, states, courts} = allPhotoCredits()
+  const {retrieved, courts} = allPhotoCredits()
 
   return (
     <div className="wrap page">
@@ -77,51 +77,14 @@ export default function ImageCredits() {
         one and what that licence is. Retrieved {retrieved ?? 'not recorded'}.
       </p>
 
-      <h2>City photographs</h2>
       <p>
-        These are photographs of the cities they appear on, so they carry no
-        placeholder marker. They show a city, not its courts.
+        Only pickleball courts are published now. Photographs of cities,
+        states and counties were removed from the site on 2026-09-09: a
+        skyline, a courthouse or a mountain range is a true picture of the
+        place and the wrong picture for a directory of places to play. The
+        files are still in the repository, and nothing on the site links to
+        them, so nothing here needs to credit them.
       </p>
-      <div className="table-scroll">
-        <table>
-          <thead>
-            <tr><th>City</th><th>Photographer</th><th>Licence</th><th>File</th></tr>
-          </thead>
-          <tbody>{cities.map(c => <Row key={c.src} c={c} />)}</tbody>
-        </table>
-      </div>
-
-      <h2>State photographs</h2>
-      <p>
-        A landscape rather than the montage each state article leads with,
-        because a montage is credited to a list of people rather than a
-        photographer.
-      </p>
-      <div className="table-scroll">
-        <table>
-          <thead>
-            <tr><th>State</th><th>Photographer</th><th>Licence</th><th>File</th></tr>
-          </thead>
-          <tbody>{states.map((c: Credit) => <Row key={c.src} c={c} />)}</tbody>
-        </table>
-      </div>
-
-      <h2>County photographs</h2>
-      <p>
-        Only the counties with a photograph of their own are listed here.
-        Most county articles lead with their courthouse, and those counties
-        show the photograph of their largest published city instead, credited
-        in the city table above and captioned on the page with the city it
-        shows.
-      </p>
-      <div className="table-scroll">
-        <table>
-          <thead>
-            <tr><th>County</th><th>Photographer</th><th>Licence</th><th>File</th></tr>
-          </thead>
-          <tbody>{counties.map((c: Credit) => <Row key={c.src} c={c} />)}</tbody>
-        </table>
-      </div>
 
       <h2>Court photographs</h2>
       <p>

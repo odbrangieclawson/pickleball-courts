@@ -100,7 +100,7 @@ export default function AddYourCourt() {
         <li><strong>The venue name and full street address.</strong> We check it against the operator&rsquo;s record, so the exact form matters less than getting the right place.</li>
         <li><strong>How many pickleball courts there are,</strong> and how many are indoor and how many outdoor. Dedicated courts and lined tennis courts both count, but say which.</li>
         <li><strong>Where that is published.</strong> A link. This is the one thing we cannot do without.</li>
-        <li><strong>Lights, fees and hours,</strong> if the operator publishes them. If they do not, say so rather than guessing; the page will read &ldquo;not verified yet&rdquo; for those, which is the truth.</li>
+        <li><strong>Lights, fees and hours,</strong> if the operator publishes them. If they do not, say so rather than guessing; the page will read &ldquo;not stated&rdquo; for those, which is the truth.</li>
         <li><strong>Who you are,</strong> and your connection to the venue if you have one.</li>
       </ul>
 

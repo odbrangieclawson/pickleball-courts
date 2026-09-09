@@ -95,9 +95,10 @@ state   1,500 - 2,500
 5. Word bands, enforced: city 800-1,350 | venue 400-700 | county
    600-1,000 | filter 400-700 | state 1,500-2,500 (halved 2026-09-08; see
    the change log).
-6. Nulls render as "Not verified yet" with a help-us-verify link. Never 0,
+6. Nulls render as "Not stated" with a help-us-verify link. Never 0,
    never "N/A", never a guess. Booleans are tri-state; never coerce null to
-   false.
+   false. (Wording amended 2026-09-09 from "Not verified yet"; the principle
+   — an honest gap, never a fake zero — is unchanged. See the change log.)
 7. Every published fact has a source_url and a date_checked, both visible.
 8. A city, county or filter page requires 3 or more VERIFIED venues to exist
    at all. Imported rows do not count toward the threshold.
@@ -284,6 +285,15 @@ and the rule is the instruction.
 > never as 0, never as "N/A", never as a guess. Every published fact carries
 > a source URL and a date-checked value, both visible on the page.
 
+**Amended 2026-09-09, by the project owner.** The blockquote above is the
+brief's original wording and is left standing as the record. The rendered
+string is now **"Not stated"**. Nothing else about D6 changes: a null still
+renders as an explicit statement that the operator has not published the
+fact, still carries the help-us-verify link, and is still never 0, never
+"N/A" and never a guess. The word "verified" was appearing so often on city
+and venue pages that it had stopped carrying meaning; the standard it names
+is explained once, on /how-we-verify/.
+
 ### D7 — CLAIMED IS NOT VERIFIED
 
 > The listing product means owners will claim venues. A claim is an
@@ -432,3 +442,5 @@ silently.
 | 2026-09-07 | **The index switch is one environment variable, and it is still off.** `SITE_INDEXABLE` (lib/site/origin.mjs) now decides robots.txt and every publishable page's robots meta; it refuses to be true while `SITE_ORIGIN` is unset. Open Graph and Twitter tags are on every page, and next.config.ts redirects the Vercel hostname to the origin once a custom domain is set. Nothing about today's deployment changed: the build with the variable unset is byte-for-byte the same noindex site. The launch sequence is written in DEPLOYMENT.md. | The owner is buying a domain and asked for everything that does not need it to be done first. Flipping index on used to mean editing eight files by hand on launch day; now it is two dashboard values and a redeploy, which is the right amount of code to change on the one day nobody should be editing code. Indexing on the vercel.app hostname was considered and refused — see the checklist. |
 | 2026-09-08 | **Word bands halved.** City 800-1,350, venue 400-700, county 600-1,000, filter 400-700, state 1,500-2,500 (§4, rule 5, D5 and `WORD_BANDS` all updated). The owner read the Washington state page and said the editorial was too long and used too many dashes; every editorial file is being rewritten to the new bands with no dashes, facts and registered claim sentences unchanged. The 400-word venue floor is now below Pickleheads' 656, which D5 had set the old floor to beat; the owner judged a shorter honest page better than a longer one, and the three-specific-sentences rule still holds. | The bands were set at Phase 0 before a single page had been written and read. Thirty-five cities in, the pages that meet them read as essays, and the owner, reading them as a visitor would, asked for half. Floors and ceilings both move so that the build keeps enforcing a shape rather than just a minimum. |
 | 2026-09-08 | **O9 closed: the 404 page.** The default Next.js 404 served a bare "This page could not be found" with no way onward, on a site whose own notes record a competitor bleeding traffic through exactly that. It now offers the search box and all nineteen published states, one click from any dead URL. | The status codes were already right (the dynamic tree was pinned to 404 rather than 500 on 2026-09-03); what was missing was anywhere to go next. Built before the domain was bought, so the first crawl of the real hostname never sees the default page. |
+| 2026-09-09 | **"Not verified yet" becomes "Not stated", and the word "verified" leaves the city, venue, county, filter and state pages.** Rule 6 (§5) and D6 (§8) both named the literal string and are amended; D6's original blockquote is left standing as the record. The word survives on /how-we-verify/, /about/ and the nav link to them, and throughout the data layer (`isVerified()`, `verified_by`, `data/verified/`, the gate names), none of which a reader sees. Titles drop it via the overflow ladder `titles.mjs` already declared. | Amending an IMMUTABLE section on the owner's instruction, 2026-09-09. The word appeared 25 times on a single city page — in the title, the stat label, two table columns, every venue card, a section heading and the closing prose — and repetition had drained it of meaning. "Not stated" says the same thing more precisely: it is the operator who has not stated the fact, not us who have not got round to checking. The standard is explained once, where someone who wants it will look for it. |
+| 2026-09-09 | **City pages carry no landmark photograph, and their share/search image is a court.** The Wikimedia city photograph is removed from the city page; it still runs on the home page cards and on the county pages that borrow their largest city’s picture. City pages now emit `og:image` and `twitter:image` (`summary_large_image`) drawn from the same court set the venue cards use, chosen by a stable hash of the city key. New `cityCourtPhoto()` in `lib/site/photos.mjs`; `CityView.photo` is now always null and `CityView.cardPhoto` is the card image. The card image is never rendered on the page, so nothing on it claims to be a court in that city. | The owner’s call: a skyline above a list of courts is decoration standing where a map should go, and somebody who meets "Pickleball Courts in Wichita" in a result list or a pasted link should see a court, not a bridge. |

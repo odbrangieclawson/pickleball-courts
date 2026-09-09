@@ -199,10 +199,10 @@ export default function Home() {
           {v.cities.map(c => (
             <li className={c.photo ? 'card has-shot' : 'card'} key={c.href}>
               {/*
-                A photograph of the city itself, licensed from Wikimedia
-                Commons. No "no photo yet" marker, because unlike the venue
-                cards this picture really is of the place named on it. The
-                credit sits on the city page rather than on every card.
+                A pickleball court, not the city. It is somebody else's
+                court, so it carries the same "No photo yet" marker the
+                venue cards carry: the picture is here to say what the page
+                is about, never to claim it shows a court in this city.
               */}
               {c.photo && (
                 <span className="shot">
@@ -214,6 +214,9 @@ export default function Home() {
                     loading="lazy"
                     decoding="async"
                   />
+                  {c.photo.isPlaceholder && (
+                    <span className="placeholder-mark">No photo yet</span>
+                  )}
                 </span>
               )}
               <h3><a href={c.href}>{c.title}</a></h3>

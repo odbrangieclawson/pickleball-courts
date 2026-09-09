@@ -73,9 +73,9 @@ export default function NotFound() {
         <button type="submit">Search</button>
       </form>
 
-      <h2>Where we have verified</h2>
+      <h2>Where we cover</h2>
       <p>
-        {v.venues} verified venues across {v.cityCount} {v.cityWordLower} in{' '}
+        {v.venues} venues across {v.cityCount} {v.cityWordLower} in{' '}
         {v.stateCount} states, each with a named source and the date it was
         checked. Every one of them is one click from here.
       </p>

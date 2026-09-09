@@ -91,7 +91,7 @@
         },
         {
           "q": "Is there indoor pickleball at Method Road?",
-          "a": "The community centre on this site is one of thirteen running Raleigh's indoor open-play programme, at $3 a session or $15 for a four-month pass, with nets and balls provided. The city does not publish how many courts the gym holds for open play, so it is not verified as a venue here."
+          "a": "The community centre on this site is one of thirteen running Raleigh's indoor open-play programme, at $3 a session or $15 for a four-month pass, with nets and balls provided. The city does not publish how many courts the gym holds for open play, so it is not stated as a venue here."
         }
       ],
       "sources": ["E1", "E2", "E3", "E4", "PM"]
@@ -99,7 +99,7 @@
     "north-hills-park": {
       "slots": {
         "description": "North Hills Park has six permanent pickleball courts in north Raleigh. With Method Community Park it is one of two locations the city marks \"Drop in only, no reservations\", so the courts cannot be booked out ahead of you. The city's pickleball page and its GIS court inventory agree on the count, and so does the commercial dataset this directory started from, which is a rarer alignment than it ought to be. The park page has a pickleball section of its own, gives pickleball@raleighnc.gov for questions, and states that court reservations are not offered during open play. The courts are lit, but Raleigh Parks began a lighting upgrade on 24 August 2026 and closed the courts. Daytime play reopened on Wednesday 2 September, with 8 September targeted for completion and night play unavailable until the work finishes.",
-        "getting_there": "100 Chowan Circle, postcode 27609, in the North Hills area north of the Beltline. No parking guidance is published for the courts. A restroom is recorded at this park in the city's amenities inventory. Do not confuse this park with the private North Hills Club nearby, which is a different venue and is not verified here.",
+        "getting_there": "100 Chowan Circle, postcode 27609, in the North Hills area north of the Beltline. No parking guidance is published for the courts. A restroom is recorded at this park in the city's amenities inventory. Do not confuse this park with the private North Hills Club nearby, which is a different venue and is not stated here.",
         "what_to_expect": "Six permanent courts, drop-in only, and once the upgrade has finished, lights on a timer to 10 p.m. The department's sign-up rules apply: sign in or place a paddle, games to 11 and win by 2, and all four players come off at the end of each game so the next four can go on. The rotation is the queueing system, so a group of four cannot hold a court indefinitely. Not published: the surface material, whether nets are provided outdoors, or any fee. Before an evening trip, check the park's status page; the lighting work was still listed as incomplete on 3 September 2026."
       },
       "faqs": [
@@ -117,7 +117,7 @@
     "powell-drive-park": {
       "slots": {
         "description": "Powell Drive Park is a neighbourhood park in south-west Raleigh with two pickleball courts, lines painted on its tennis courts, and lights. It is one of six Raleigh locations where pickleball shares a tennis surface, and one of nine that are lit. Both the department's pickleball page and its GIS court inventory record two courts here. The park page describes an outdoor basketball court with a concrete surface, but publishes no surface for the tennis courts the pickleball lines sit on, so none is stated here. The city publishes very little else about the park.",
-        "getting_there": "740 Powell Drive, postcode 27606. Raleigh Parks publishes no parking guidance for this park, and no restroom is recorded here in the city's park amenities inventory. The nearest verified restrooms in this set are at Carolina Pines Park and Jaycee Park.",
+        "getting_there": "740 Powell Drive, postcode 27606. Raleigh Parks publishes no parking guidance for this park, and no restroom is recorded here in the city's park amenities inventory. The nearest recorded restrooms in this set are at Carolina Pines Park and Jaycee Park.",
         "what_to_expect": "Two courts of pickleball lines over tennis, lit to 10 p.m. on the city's timer. A tennis player has as much claim on the surface as you do, and with two courts a queue builds quickly. Raleigh Parks' guidelines apply: sign in or place your paddle, games singles or doubles to 11 and win by 2, and all four players off at the end of each game. Groups who want to stay together are asked to skip to the next fully open quadrant. Nothing published says whether nets are provided, so take one if you can. No fee is published for the outdoor courts."
       },
       "faqs": [
@@ -127,7 +127,7 @@
         },
         {
           "q": "Is there a restroom at Powell Drive Park?",
-          "a": "None is recorded in the city's park amenities inventory for this park. That inventory records restrooms at five of the eleven Raleigh pickleball locations, so it is published as unverified rather than as a confirmed absence."
+          "a": "None is recorded in the city's park amenities inventory for this park. That inventory records restrooms at five of the eleven Raleigh pickleball locations, so it is published as not stated rather than as a confirmed absence."
         }
       ],
       "sources": ["E1", "E2", "E3", "E4", "PP"]
@@ -145,7 +145,7 @@
         },
         {
           "q": "Does it cost anything to play at Roberts Park?",
-          "a": "No fee is published for the outdoor courts, and no source states that they are free either, so cost is not verified. The prices Raleigh Parks does publish ($3 a session, $15 for four months) are for indoor open play at its community centres."
+          "a": "No fee is published for the outdoor courts, and no source states that they are free either, so cost is not stated. The prices Raleigh Parks does publish ($3 a session, $15 for four months) are for indoor open play at its community centres."
         }
       ],
       "sources": ["E1", "E2", "E3", "E4", "PR"]
@@ -163,7 +163,7 @@
         },
         {
           "q": "Is there a restroom at Sanderford Road Park?",
-          "a": "None is recorded for this park in the city's park amenities inventory. That is published as unverified rather than as a confirmed absence, but plan for it at a ten-court site where you may be there a while."
+          "a": "None is recorded for this park in the city's park amenities inventory. That is published as not stated rather than as a confirmed absence, but plan for it at a ten-court site where you may be there a while."
         }
       ],
       "sources": ["E1", "E2", "E3", "E4", "PS"]
@@ -181,7 +181,7 @@
         },
         {
           "q": "What surface are the courts at Southgate Park?",
-          "a": "Asphalt, according to the city's GIS court inventory. Southgate is the only one of the eleven Raleigh locations where that field is filled in; everywhere else it is empty, which is why every other Raleigh venue shows its surface as not verified."
+          "a": "Asphalt, according to the city's GIS court inventory. Southgate is the only one of the eleven Raleigh locations where that field is filled in; everywhere else it is empty, which is why every other Raleigh venue shows its surface as not stated."
         }
       ],
       "sources": ["E1", "E2", "E3", "E4", "PSO"]
@@ -195,7 +195,7 @@
       "faqs": [
         {
           "q": "Is Tarboro Road Park a good central option?",
-          "a": "It is one of the closest verified pickleball locations to downtown Raleigh, and it is lit, so it works after work. It has two courts shared with tennis, so it is a convenient option rather than a spacious one."
+          "a": "It is one of the closest pickleball locations to downtown Raleigh, and it is lit, so it works after work. It has two courts shared with tennis, so it is a convenient option rather than a spacious one."
         },
         {
           "q": "How many pickleball courts are at Tarboro Road Park?",
