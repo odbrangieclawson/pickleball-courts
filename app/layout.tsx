@@ -232,10 +232,15 @@ export default function RootLayout({children}: {children: ReactNode}) {
               Sources differ by city and are named on every page, beside the
               date each fact was checked.{' '}
               <a href="/how-to-play-pickleball/">How to play pickleball</a> ·{' '}
-              <a href="/pickleball-rules/">Pickleball rules</a> ·{' '}
+<a href="/pickleball-scoring/">Scoring</a> ·{' '}
+                            <a href="/pickleball-rules/">Pickleball rules</a> ·{' '}
               <a href="/pickleball-court-dimensions/">Court dimensions</a> ·{' '}
               <a href="/about/">About this site</a> ·{' '}
               <a href="/how-we-verify/">How we verify</a> · <a href="/image-credits/">Image credits</a>.
+            </p>
+            {/* Obligations rather than destinations: findable, and quiet. */}
+            <p className="foot-legal">
+              <a href="/privacy/">Privacy policy</a> · <a href="/terms/">Terms of use</a>.
             </p>
             <p>
               Run a court we have wrong, or one we do not have?{' '}

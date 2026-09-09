@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-09T06:06:04.524Z",
+  "checked_at": "2026-09-09T06:45:42.098Z",
   "mode": "built",
   "results": [
     {
@@ -53,6 +53,13 @@
     },
     {
       "path": "/pickleball-rules/",
+      "status": 200,
+      "in_sitemap": true,
+      "first_seen": "2026-09-09",
+      "last_in_sitemap": "2026-09-09"
+    },
+    {
+      "path": "/pickleball-scoring/",
       "status": 200,
       "in_sitemap": true,
       "first_seen": "2026-09-09",
@@ -2709,6 +2716,20 @@
       "status": 200,
       "in_sitemap": true,
       "first_seen": "2026-09-04",
+      "last_in_sitemap": "2026-09-09"
+    },
+    {
+      "path": "/privacy/",
+      "status": 200,
+      "in_sitemap": true,
+      "first_seen": "2026-09-09",
+      "last_in_sitemap": "2026-09-09"
+    },
+    {
+      "path": "/terms/",
+      "status": 200,
+      "in_sitemap": true,
+      "first_seen": "2026-09-09",
       "last_in_sitemap": "2026-09-09"
     }
   ]

@@ -533,6 +533,8 @@ main { display: block; }
   background: var(--paper-2);
 }
 .site-foot p { margin: 0 0 10px; max-width: 66ch; }
+/* Obligations rather than destinations: present, findable, quiet. */
+.foot-legal { font-size: 12.5px; color: var(--ink-3); }
 .site-foot strong { color: var(--ink-2); }
 
 /* ================================================================
@@ -1590,6 +1592,21 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
 .net-mesh { fill: color-mix(in srgb, var(--accent) 12%, transparent); stroke: none; }
 .net-measure { stroke: var(--ink-3); stroke-width: .8; stroke-dasharray: 3 2.5; }
 .net-svg .court-label { font-size: 9px; }
+
+/*
+  EVEN SCORE, ODD SCORE. Two half-courts side by side, with the service box
+  you serve from picked out. Same geometry and palette as the other
+  diagrams, so the four drawings on the site read as one set.
+*/
+.sides-pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin: 18px 0 22px;
+  max-width: none;
+}
+.sides-svg { flex: 1 1 160px; max-width: 210px; height: auto; }
+.sides-active { fill: color-mix(in srgb, var(--accent) 22%, transparent); }
 
 /*
   A BLOCK OF RULES QUOTED FROM THE GOVERNING BODY.
