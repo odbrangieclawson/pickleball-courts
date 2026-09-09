@@ -131,6 +131,23 @@ export type StateView = {
   litLine: string
   lastChecked: string
   cities: CardLink[]
+  hasVenueCards: boolean
+  hasCityChips: boolean
+  /** Every published venue in the state, biggest first. */
+  venueCards: {
+    key: string
+    href: string
+    name: string
+    where: string
+    /** Null where the operator publishes no count: no badge rather than a zero. */
+    courts: string | null
+    inOut: string | null
+    type: string | null
+    lit: boolean
+    photo: Photo
+  }[]
+  /** Shortcut chips under the search box: published cities, largest first. */
+  cityChips: {label: string; href: string}[]
   hasEditorial: boolean
   editorial: EditorialNote[]
   hasFaqs: boolean

@@ -25,12 +25,46 @@ export default function CountyPage({v}: {v: CountyView}) {
 
       <h1 data-prose>{v.h1}</h1>
       <p className="lede" data-prose>
-        {v.venuesN} verified pickleball venues in {v.county} County,{' '}
+        {v.venuesN} pickleball venues in {v.county} County,{' '}
         {v.state}, covering {v.courtsN} courts across {v.cityCountN}{' '}
         {v.cityWord}. Every figure here is drawn only from venues checked
         against a named source, and each one shows the source and the date.
         Last checked {v.lastChecked}.
       </p>
+
+      {/*
+        THE STICKY RAIL, same grid as the venue and city pages. A county
+        page is a hub: the numbers, then the way down to its cities and up
+        to its state. Those are what belong beside the prose rather than
+        540px of nothing.
+      */}
+      <div className="rail-layout">
+        <aside className="side-panel" data-not-prose aria-label={`${v.county} County at a glance`}>
+          <p className="panel-count">
+            <span className="n">{v.venuesN}</span>
+            <span className="k">venues</span>
+            <span className="panel-split">{v.courtsN} courts</span>
+          </p>
+
+          <dl className="panel-facts">
+            <div><dt>Published {v.cityWord}</dt><dd>{v.cityCountN}</dd></div>
+          </dl>
+
+          <ul className="panel-links">
+            {v.cities.map(c => (
+              <li key={c.link.href}><a href={c.link.href}>{c.city}</a></li>
+            ))}
+          </ul>
+
+          {v.stateLink && (
+            <p className="panel-claim">
+              <a href={v.stateLink.href}>All of {v.stateName}</a>
+            </p>
+          )}
+        </aside>
+
+        <div className="rail-main">
+
 
       <div className="stats">
         <div className="stat"><span className="n">{v.venuesN}</span><span className="k">Venues</span></div>
@@ -99,7 +133,7 @@ export default function CountyPage({v}: {v: CountyView}) {
             the actual place before it earns a URL. Their facts are all on
             this page. </>}
       </p>
-      <ul className="cards">
+      <ul className="cards is-tiles">
         {v.venues.map((x, i) => (
           <li className="card has-shot" key={`card-${x.city}-${x.name}`}>
             <span className="shot">
@@ -152,6 +186,9 @@ export default function CountyPage({v}: {v: CountyView}) {
         <a href="/how-we-verify/">how we verify</a> explains the ladder we
         work down and what we refuse to do.
       </p>
+
+        </div>{/* /.rail-main */}
+      </div>{/* /.rail-layout */}
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: v.jsonLd}} />
     </div>

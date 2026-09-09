@@ -27,7 +27,7 @@ export default function FilterPage({f}: {f: FilterView}) {
 
       <h1 data-prose>{f.h1}</h1>
       <p className="lede" data-prose>
-        {f.n} verified {f.venueWord} in {f.city}, {f.state} {f.predicate}.
+        {f.n} {f.venueWord} in {f.city}, {f.state} {f.predicate}.
         Every one has been checked against a named source, and the count
         above is drawn only from those, never from the imported records we
         have not confirmed.
@@ -71,7 +71,7 @@ export default function FilterPage({f}: {f: FilterView}) {
       )}
 
       <h2 data-prose>The {f.n} venues</h2>
-      <ul className="cards">
+      <ul className="cards is-tiles">
         {f.venues.map((x, i) => (
           <li className="card has-shot" key={x.name}>
             <span className="shot">

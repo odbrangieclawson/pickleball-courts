@@ -195,7 +195,7 @@ export default function Home() {
         </ul>
 
         <h2>Every verified city</h2>
-        <ul className="cards">
+        <ul className="cards is-tiles">
           {v.cities.map(c => (
             <li className={c.photo ? 'card has-shot' : 'card'} key={c.href}>
               {/*

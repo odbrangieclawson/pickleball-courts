@@ -103,6 +103,50 @@ export default async function CityOrCountyPage({params}: Params) {
       </p>
 
       {/*
+        THE STICKY RAIL. Same grid as the venue page (see globals.css): the
+        prose is capped at the 68ch measure and left a third of the wrap
+        empty from the first section to the last. This puts the numbers, the
+        filters and the way out of the city in that space, where they stay
+        reachable at any scroll depth instead of only at the top.
+
+        Panel first in the DOM: below 900px there is no grid and it lands
+        under the lede, which is where a phone reader wants it.
+      */}
+      <div className="rail-layout">
+        <aside className="side-panel" data-not-prose aria-label={`${v.city} at a glance`}>
+          <p className="panel-count">
+            <span className="n">{v.venuesN}</span>
+            <span className="k">venues</span>
+            <span className="panel-split">{v.courtsN} courts</span>
+          </p>
+
+          {/* Both are conditional upstream: a city with no indoor court has
+              no indoor line rather than a zero. Same guard as the stats band. */}
+          {(v.outdoorN || v.indoorN) && (
+            <dl className="panel-facts">
+              {v.outdoorN && <div><dt>Outdoor courts</dt><dd>{v.outdoorN}</dd></div>}
+              {v.indoorN && <div><dt>Indoor courts</dt><dd>{v.indoorN}</dd></div>}
+            </dl>
+          )}
+
+          {v.hasFilters && (
+            <ul className="panel-links">
+              {v.filters.map(f => (
+                <li key={f.slug}><a href={f.href}>{f.label}</a></li>
+              ))}
+            </ul>
+          )}
+
+          <p className="panel-claim">
+            {v.countyLink && <><a href={v.countyLink.href}>{v.countyLink.label}</a><br /></>}
+            {v.stateLink && <a href={v.stateLink.href}>All of {v.stateName}</a>}
+          </p>
+        </aside>
+
+        <div className="rail-main">
+
+
+      {/*
         THE MAP.
 
         Tiles we host, positioned in a grid, with a pin per venue over the
@@ -226,7 +270,7 @@ export default async function CityOrCountyPage({params}: Params) {
             about the actual place before it earns a URL. Their facts are
             all on this page. </>}
       </p>
-      <ul className="cards">
+      <ul className="cards is-tiles">
         {v.venues.map((x, i) => (
           <li className="card has-shot" key={`card-${x.name}`}>
             <span className="shot">
@@ -365,6 +409,9 @@ export default async function CityOrCountyPage({params}: Params) {
         ))}
         . <a href="/how-we-verify/">How we verify</a>.
       </p>
+
+        </div>{/* /.rail-main */}
+      </div>{/* /.rail-layout */}
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: v.jsonLd}} />
     </div>

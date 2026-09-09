@@ -54,12 +54,69 @@ export default async function StatePage({params}: Params) {
   if (!v) notFound()
 
   return (
-    <div className="wrap page">
-      <nav aria-label="Breadcrumb" className="crumbs">
-        <a href="/">Home</a> › {v.stateName}
-      </nav>
+    <>
+      {/*
+        THE STATE HERO.
 
-      <h1 data-prose>Pickleball Courts in {v.stateName}</h1>
+        A state page is the first thing somebody lands on for "pickleball
+        courts in Kansas", and it used to open with a breadcrumb and a
+        paragraph. This gives it the shape of an entry point: what is here,
+        a box to search it, and one tap to the biggest cities.
+
+        The search form is the home page's, verbatim in behaviour: a plain
+        GET to /search/, so it works with JavaScript off like everything
+        else. The chips are ordinary anchors to city pages that already
+        exist — no new URLs, so nothing here touches the locked pattern.
+      */}
+      <section className="hero is-state">
+        <img
+          className="hero-bg"
+          src="/hero-court.jpg"
+          alt=""
+          width={630}
+          height={360}
+          loading="eager"
+          fetchPriority="high"
+          decoding="sync"
+        />
+        <div className="hero-veil" />
+
+        <div className="wrap hero-inner">
+          <nav aria-label="Breadcrumb" className="crumbs is-on-hero">
+            <a href="/">Home</a> › {v.stateName}
+          </nav>
+
+          <h1 className="hero-title is-state">Pickleball Courts in {v.stateName}</h1>
+          <p className="hero-sub">
+            {v.venues} venues across {v.cityCount} {v.cityWord.toLowerCase()},
+            {' '}{v.courts} courts in all.
+          </p>
+
+          <form className="hero-search" action="/search/" method="get" role="search">
+            <label className="visually-hidden" htmlFor="q">
+              Search by city, ZIP code or court name
+            </label>
+            <input
+              id="q"
+              name="q"
+              type="search"
+              placeholder="City, ZIP code, or court name"
+              autoComplete="off"
+            />
+            <button type="submit">Search</button>
+          </form>
+
+          {v.hasCityChips && (
+            <nav className="chips" aria-label={`Cities in ${v.stateName}`}>
+              {v.cityChips.map(c => (
+                <a className="chip" key={c.href} href={c.href}>{c.label}</a>
+              ))}
+            </nav>
+          )}
+        </div>
+      </section>
+
+    <div className="wrap page">
       <p className="lede" data-prose>{v.meta} Last checked {v.lastChecked}.</p>
 
       <div className="stats">
@@ -69,6 +126,56 @@ export default async function StatePage({params}: Params) {
       </div>
 
       <p data-prose>Across {v.stateName}, {v.litLine} have lit courts for evening play.</p>
+
+      {/*
+        EVERY VENUE IN THE STATE.
+
+        Badges are stated facts or they are absent. A venue whose court
+        count nobody publishes gets no count badge rather than a zero, and
+        one whose lighting is unstated gets no Lit badge rather than an
+        unlit one. Rule 6 in badge form: here the honest gap is silence,
+        because a row of grey "unknown" chips is noise where a missing chip
+        says nothing at all.
+
+        The photograph is the same marked stand-in the city cards carry. It
+        is somebody else's court and the marker says so.
+      */}
+      {v.hasVenueCards && (
+        <>
+          <h2 data-prose>Every venue in {v.stateName}</h2>
+          <ul className="cards venue-cards is-tiles">
+            {v.venueCards.map(c => (
+              <li className="card has-shot" key={c.key}>
+                <a className="card-shot" href={c.href} tabIndex={-1} aria-hidden="true">
+                  <span className="shot">
+                    <img
+                      src={c.photo.src}
+                      alt=""
+                      width={c.photo.width}
+                      height={c.photo.height}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    {c.photo.isPlaceholder && (
+                      <span className="placeholder-mark">No photo yet</span>
+                    )}
+                  </span>
+                  {c.courts && <span className="badge is-count">{c.courts}</span>}
+                </a>
+                <div className="card-body">
+                  <h3><a href={c.href}>{c.name}</a></h3>
+                  <p className="meta">{c.where}</p>
+                  <p className="badges" data-not-prose>
+                    {c.inOut && <span className="badge">{c.inOut}</span>}
+                    {c.type && <span className="badge">{c.type}</span>}
+                    {c.lit && <span className="badge">Lit</span>}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
 
       <h2 data-prose>Cities</h2>
       <ul className="cards">
@@ -126,5 +233,6 @@ export default async function StatePage({params}: Params) {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: v.jsonLd}} />
     </div>
+    </>
   )
 }

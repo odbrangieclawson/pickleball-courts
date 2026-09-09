@@ -1399,6 +1399,167 @@ code, .provenance code { font-family: var(--mono); font-size: .9em; }
 }
 
 /*
+  THE STATE HERO, THE CHIPS AND THE VENUE CARDS.
+
+  A shorter hero than the home page's — this is an entry point, not a front
+  door, and the content below it is the point. Everything is an anchor or a
+  plain GET form, so the whole block survives the JavaScript-off render.
+*/
+.hero.is-state { min-height: 0; }
+.hero.is-state .hero-inner { padding: 30px 0 34px; }
+/*
+  ONE LINE, ALWAYS.
+
+  The `max-width: 20ch` this used to carry is what broke "Pickleball Courts
+  in Washington" across two lines. The size is now bounded by the width
+  available rather than by taste: the longest title this template can
+  produce is "Pickleball Courts in North Carolina" at 35 characters, and at
+  roughly 0.48em per character in the display face that needs about 17em,
+  so 5.4vw keeps it on one line down to the breakpoint below.
+
+  Under 620px one line would mean a sub-20px heading, which is not a
+  heading. There it wraps, which is the right answer on a phone.
+*/
+.hero-title.is-state {
+  max-width: none;
+  white-space: nowrap;
+  font-size: min(52px, 5.4vw);
+}
+@media (max-width: 620px) {
+  .hero-title.is-state {
+    white-space: normal;
+    font-size: clamp(27px, 7.4vw, 38px);
+  }
+}
+.crumbs.is-on-hero {
+  margin-bottom: 14px;
+  color: rgb(244 242 236 / .72);
+}
+.crumbs.is-on-hero a { color: rgb(244 242 236 / .92); }
+.crumbs.is-on-hero a:hover { color: #fff; }
+
+/*
+  Shortcut chips. Real anchors to city pages that already exist, so nothing
+  here mints a URL and the locked pattern is untouched.
+*/
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 5px 14px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  font-weight: 560;
+  color: #f4f2ec;
+  background: rgb(255 255 255 / .13);
+  border: 1px solid rgb(255 255 255 / .26);
+  border-radius: 999px;
+  text-decoration: none;
+  backdrop-filter: blur(2px);
+}
+.chip:hover, .chip:focus-visible {
+  color: var(--accent-ink);
+  background: #f4f2ec;
+  border-color: #f4f2ec;
+}
+
+/*
+  Venue cards. The image is a link with aria-hidden and tabIndex -1: the
+  heading beneath is the real, named link, so a keyboard or screen-reader
+  user meets one link per card rather than two identical ones.
+*/
+/*
+  SEPARATED TILES, NOT A FLUSH CATALOGUE.
+
+  The shared .cards grid is deliberately gapless: one outer border, cells
+  divided by hairline rules, like a table. That reads well for the city and
+  county cards, which are mostly words. It reads badly for a wall of
+  photographs, where the images run into each other and every venue looks
+  like part of the one before it.
+
+  So the venue grid opts out: real gaps, a border per tile, and a hover
+  that lifts the whole tile rather than tinting a cell. Scoped to
+  .venue-cards so the home, city and county grids keep the flush look.
+*/
+.cards.is-tiles {
+  gap: 20px;
+  border: 0;
+  overflow: visible;
+}
+.is-tiles .card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  /* Replaces the shared card's divider shadow, which drew rules that only
+     made sense with gap: 0. */
+  box-shadow: none;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.is-tiles .card:hover,
+.is-tiles .card:focus-within {
+  background: var(--paper);
+  border-color: var(--accent);
+  box-shadow: 0 6px 22px rgb(0 0 0 / .10);
+  transform: translateY(-3px);
+}
+/*
+  The shared rule bleeds the image out of the card's 20px padding with a
+  negative margin. These tiles have no padding, so that margin hung the
+  image 20px past the tile and `overflow: hidden` sliced the first letter
+  off the "No photo yet" marker. Flush is correct here.
+*/
+/*
+  The state grid alone drops the card's padding and carries an inner
+  .card-body, so its image must not use the shared negative-margin bleed —
+  with no padding to cancel, that margin hung the image past the tile and
+  `overflow: hidden` sliced the first letter off the "No photo yet" marker.
+
+  Every other photo grid keeps the card's 20px padding, so the shared
+  `margin: 0 -20px` lands the image exactly flush and needs no override.
+*/
+.venue-cards .card { display: flex; flex-direction: column; padding: 0; }
+.venue-cards .card.has-shot .shot { margin: 0; border-radius: 0; }
+.card-shot { position: relative; display: block; text-decoration: none; }
+.venue-cards .card-body { padding: 15px 17px 17px; }
+.venue-cards .card-body h3 { margin: 0 0 3px; }
+.venue-cards .meta { margin: 0 0 11px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .is-tiles .card { transition: none; }
+  .is-tiles .card:hover, .is-tiles .card:focus-within { transform: none; }
+}
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; max-width: none; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--ink-2);
+  background: var(--paper-2);
+  border: 1px solid var(--rule-2);
+  border-radius: 999px;
+}
+/* The count is the fact somebody scans for, so it sits on the image. */
+.badge.is-count {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  background: var(--accent);
+  border-color: transparent;
+  box-shadow: 0 1px 4px rgb(0 0 0 / .3);
+}
+
+/*
   THE STATIC MAP.
 
   A grid of tile <img> elements inside a clipped box, with pins absolutely
@@ -1492,7 +1653,7 @@ a.map-pin:focus-visible .map-pin-label { opacity: 1; }
 }
 
 /*
-  THE VENUE ACTION PANEL.
+  THE SIDE PANEL.
 
   A card, because the three things a player checks and the three things
   they do next should sit together where the thumb lands, not be scattered
@@ -1503,7 +1664,7 @@ a.map-pin:focus-visible .map-pin-label { opacity: 1; }
   panel is whole with JavaScript off (Rule 1) and the phone and map hand
   off to the reader's own apps.
 */
-.venue-panel {
+.side-panel {
   border: 1px solid var(--rule);
   border-radius: 14px;
   background: var(--paper);
@@ -1568,7 +1729,7 @@ a.map-pin:focus-visible .map-pin-label { opacity: 1; }
 }
 .panel-links li { padding: 4px 0; }
 .panel-links a { color: var(--accent-ink); }
-.venue-panel .venue-where {
+.side-panel .venue-where {
   margin: 14px 0 0;
   padding-top: 13px;
   border-top: 1px solid var(--rule-2);
@@ -1582,13 +1743,49 @@ a.map-pin:focus-visible .map-pin-label { opacity: 1; }
   color: var(--ink-3);
 }
 
+/*
+  THE TWO-COLUMN PAGE WITH A STICKY RAIL.
+
+  Shared by the venue, city and county pages. Below 900px there is no grid
+  at all: the panel renders where it sits in the DOM, directly under the
+  lede, which is where a phone reader wants it.
+
+  Above 900px both children occupy row 1 — the main column is tall, the
+  panel is short — and the panel is sticky, so it rides down beside the
+  editorial instead of scrolling away after the first screen. `align-items:
+  start` is load-bearing: the grid default of `stretch` would make the
+  panel as tall as the article, and a full-height box has nothing to stick
+  within.
+
+  minmax(0, 1fr) rather than 1fr on the text column, because a grid track
+  sized 1fr refuses to shrink below its content's min-content width and a
+  long unbroken address or URL would otherwise push the panel off-screen.
+*/
 @media (min-width: 900px) {
-  .venue-panel {
-    float: right;
-    width: 300px;
-    margin: 4px 0 24px 34px;
+  .rail-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    column-gap: 38px;
+    align-items: start;
+  }
+  .rail-main { grid-column: 1; grid-row: 1; min-width: 0; }
+  .side-panel {
+    grid-column: 2;
+    grid-row: 1;
+    position: sticky;
+    /* Clears nothing above it — the header does not stick — so this is
+       just breathing room from the top of the viewport. */
+    top: 20px;
+    margin: 4px 0 24px;
   }
 }
+
+/*
+  A very short venue page (no editorial, few facts) can be shorter than the
+  panel itself, and a sticky box taller than its row simply never moves.
+  That is correct behaviour and needs no special case; it just looks like
+  an ordinary sidebar.
+*/
 .button.is-quiet {
   min-height: 38px;
   padding: 7px 16px;
@@ -1770,7 +1967,23 @@ a.map-pin:focus-visible .map-pin-label { opacity: 1; }
 }
 .state-card:first-child { grid-column: span 2; background: var(--paper-2); }
 @media (max-width: 560px) { .state-card:first-child { grid-column: span 1; } }
-.state-card:hover {
+/*
+  ONLY A CARD THAT GOES SOMEWHERE LOOKS LIKE IT GOES SOMEWHERE.
+
+  This hover used to fire on every tile: a tint and an accent leading edge
+  on Wisconsin and Kansas exactly as on Washington. But only five states
+  have a page — a state page needs three published cities and a written
+  note — so fourteen of these nineteen tiles were advertising a destination
+  that does not exist, while the five real ones were indistinguishable from
+  them.
+
+  :has() scopes the destination hover to tiles whose heading is a link. The
+  rest still tint, because their city names ARE links and the row should
+  respond, but they lose the accent edge that says "this whole card is a
+  place you can go".
+*/
+.state-card:hover { background: var(--paper-2); }
+.state-card:has(h3 a):hover {
   background: var(--paper-2);
   box-shadow: 1px 0 0 var(--rule-2), 0 1px 0 var(--rule-2),
               inset 3px 0 0 var(--accent);
@@ -1836,8 +2049,15 @@ a.map-pin:focus-visible .map-pin-label { opacity: 1; }
   font-weight: 500;
   letter-spacing: -.008em;
 }
-.state-card h3 a { text-decoration: none; color: var(--ink); }
-.state-card h3 a:hover { color: var(--accent-ink); text-decoration: underline; }
+/*
+  A linked state name was set in --ink, the same colour as the plain text
+  of an unlinked one, with no underline until hover. So at rest the reader
+  could not tell that Washington leads somewhere and Texas does not — and
+  the city names directly beneath, in the same card, were already accent
+  coloured. The heading now matches its own cities.
+*/
+.state-card h3 a { text-decoration: none; color: var(--accent-ink); }
+.state-card h3 a:hover, .state-card h3 a:focus-visible { text-decoration: underline; }
 .state-card .meta {
   position: relative;
   margin: 0 0 10px;

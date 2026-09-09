@@ -89,6 +89,28 @@ export default async function LeafPage({params}: Params) {
       <p><span className="trust">{v.trust}</span></p>
 
       {/*
+        TWO COLUMNS, AND THE PANEL RIDES DOWN THE SECOND ONE.
+
+        The prose is capped at the 68ch measure, which on a wide screen
+        left roughly 540px of the 1140px wrap doing nothing from the first
+        section to the last. A background tint would have decorated that
+        emptiness; a sticky panel puts the most useful thing on the page
+        in it instead, so the court count, the directions and the phone
+        stay reachable at any scroll depth rather than only at the top.
+
+        Grid, not float: a floated box cannot be sticky, because its own
+        height is its content height and there is nothing to stick within.
+        Both children sit in row 1, so the panel sticks for as long as the
+        main column is tall.
+
+        The panel comes FIRST in the DOM on purpose. Below 900px the grid
+        does not apply and it renders where a phone reader wants it -
+        right under the lede - rather than stranded at the foot of the
+        page after two thousand words. No `order` juggling, and the
+        reading order a screen reader gets is the useful one.
+      */}
+      <div className="rail-layout">
+      {/*
         THE ACTION PANEL.
 
         The count, the cost and the hours are what a player checks before
@@ -103,7 +125,7 @@ export default async function LeafPage({params}: Params) {
         no target is a dead button, not an honest gap — and the full fact
         panel below still lists every field either way.
       */}
-      <aside className="venue-panel" data-not-prose aria-label={`Key facts for ${v.name}`}>
+      <aside className="side-panel" data-not-prose aria-label={`Key facts for ${v.name}`}>
         <p className="panel-count">
           {v.panel.courts === null ? (
             <span className="panel-nocount">Court count not stated</span>
@@ -146,6 +168,7 @@ export default async function LeafPage({params}: Params) {
           </p>
         )}
       </aside>
+        <div className="rail-main">
 
       <figure className="venue-shot">
         <span className="shot is-hero">
@@ -324,7 +347,7 @@ export default async function LeafPage({params}: Params) {
       {v.hasAlternatives && (
         <>
           <h2 data-prose>Other courts in {v.city}</h2>
-          <ul className="cards">
+          <ul className="cards is-tiles">
             {v.alternatives.map(a => (
               <li className="card has-shot" key={a.href}>
                 <span className="shot">
@@ -347,6 +370,9 @@ export default async function LeafPage({params}: Params) {
           </ul>
         </>
       )}
+
+        </div>{/* /.rail-main */}
+      </div>{/* /.rail-layout */}
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: v.jsonLd}} />
     </div>
