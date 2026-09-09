@@ -60,7 +60,10 @@ export default async function SearchPage({searchParams}: Props) {
 
       <h1>{v.heading}</h1>
 
-      <form className="searchbar is-page" action="/search/" method="get" role="search">
+      {/* Same enhancement as the home page: the nearby dropdown attaches
+          to this field too, so a reader who lands here from a bad query can
+          be shown what is actually near them instead of retyping. */}
+      <form className="searchbar is-page" action="/search/" method="get" role="search" data-suggest="">
         <label className="visually-hidden" htmlFor="q">
           City, state, ZIP code or court name
         </label>
@@ -177,6 +180,8 @@ export default async function SearchPage({searchParams}: Props) {
           record has to meet.
         </p>
       </div>
+
+      <script src="/search-suggest.js" defer />
     </div>
   )
 }

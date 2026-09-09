@@ -62,18 +62,31 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <img
-          className="hero-bg"
-          src="/hero-court.jpg"
-          alt=""
-          width={630}
-          height={360}
-          /* The LCP element. Never lazy, and told to jump the queue. */
-          loading="eager"
-          fetchPriority="high"
-          decoding="sync"
-        />
-        <div className="hero-veil" />
+        {/*
+          THE BACKGROUND HAS ITS OWN BOX, AND THE BOX IS WHAT CLIPS.
+
+          The photograph is scaled 1.06 and blurred, so it overflows the
+          hero and `overflow: hidden` on the section used to contain it.
+          That also clipped anything else that left the hero — including
+          the search suggestions, which drop down past the proof row. So
+          the clipping moved here, onto a wrapper that holds only the image
+          and its veil. The picture is contained exactly as before and the
+          dropdown is free to overhang the page.
+        */}
+        <div className="hero-media" aria-hidden="true">
+          <img
+            className="hero-bg"
+            src="/hero-court.jpg"
+            alt=""
+            width={630}
+            height={360}
+            /* The LCP element. Never lazy, and told to jump the queue. */
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+          />
+          <div className="hero-veil" />
+        </div>
 
         <div className="wrap hero-inner">
           <p className="hero-eyebrow">A US pickleball court directory</p>
@@ -83,7 +96,14 @@ export default function Home() {
             the source it came from and the date we checked it.
           </p>
 
-          <form className="hero-search" action="/search/" method="get" role="search">
+          {/*
+            data-suggest is the hook public/search-suggest.js looks for.
+            The attribute is inert HTML: with scripting off, or before the
+            deferred script runs, or if it 404s, this is the same plain GET
+            form it has always been. See the file's own comment for why the
+            nearby dropdown is a script rather than a client component.
+          */}
+          <form className="hero-search" action="/search/" method="get" role="search" data-suggest="">
             <label className="visually-hidden" htmlFor="q">
               Search by city, state, ZIP code or court name
             </label>
@@ -269,6 +289,20 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: v.jsonLd}}
       />
+
+      {/*
+        THE ONLY SCRIPT ON THIS SITE THAT DOES ANYTHING, AND IT IS OPTIONAL.
+
+        Deferred, so it cannot touch the LCP. Loaded on the two pages that
+        have a search field rather than from the layout, so every other page
+        on the directory ships exactly the bytes it shipped yesterday.
+
+        Page Gate 2 reads the built HTML with every <script> ignored, which
+        is the correct model of a browser with JavaScript disabled — and
+        this page still passes it, because the form below the hero is real
+        HTML and the results page it posts to is rendered on the server.
+      */}
+      <script src="/search-suggest.js" defer />
     </>
   )
 }

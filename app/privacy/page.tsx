@@ -16,13 +16,33 @@ import {CONTACT_EMAIL} from '../../lib/site/contact.mjs'
     Set-Cookie headers on / , a city page, a venue page and /search/   none
     analytics or tracking packages in package.json                     none
     third-party <script>, <img>, <iframe> or stylesheet                none
-    localStorage / sessionStorage / geolocation in shipped JS          none
+    localStorage / sessionStorage / IndexedDB in shipped JS            none
     fonts                                    self-hosted, /_next/static/media
     google.com references                    30, all <a>, none loaded
 
   The google.com references are the "Get directions" links. An anchor loads
   nothing until somebody clicks it, which is why they belong in the section
   about leaving the site rather than the section about what we collect.
+
+  RE-AUDITED 2026-09-09, WHEN THE SEARCH BOX LEARNED WHERE YOU ARE. The
+  geolocation line above used to read "none" alongside the storage line and
+  it no longer can: public/search-suggest.js calls the Geolocation API when
+  somebody presses a button asking it to. Everything else in the audit is
+  unchanged, and deliberately so —
+
+    device storage of any kind                still none
+    third-party requests                      still none
+    what /api/where/ stores                   nothing
+    where precise coordinates are sent        nowhere; ranked in the page
+
+  The two-tier design is what keeps the rest of this page true. The coarse
+  tier reads the city Vercel has already derived from the IP address it was
+  logging anyway, so it collects nothing new. The precise tier never leaves
+  the browser, so there is no server-side record of it to describe. And the
+  permission state is read back from the browser rather than remembered
+  here, which is why the storage line still says none.
+
+  The section below says all of that in words a reader can check.
 
   THE COOKIE POLICY IS THIS PAGE. There is no separate cookie policy
   because there are no cookies to have a policy about. A page that existed
@@ -99,6 +119,43 @@ export default function PrivacyPage() {
         looking at a map here does not tell any mapping company that you
         did. There is no Google Analytics, no advertising network, no social
         media widget and no embedded video.
+      </p>
+
+      <h2 data-prose>Location, and the search box</h2>
+      <p data-prose>
+        Tapping the search field offers you courts near where you are. There
+        are two ways it can know that, and they are worth separating.
+      </p>
+      <p data-prose>
+        <strong>Without asking you anything</strong>, it uses the town our
+        host reads from your IP address. Vercel works that out from a
+        request it is already handling, so nothing new is collected about
+        you and nothing is written down; the page asks for a town, gets one,
+        and forgets. Distances measured from it say &ldquo;about&rdquo;,
+        because they are measured from a town rather than from you.
+      </p>
+      <p data-prose>
+        <strong>Only if you press the button</strong> that says so does your
+        browser ask whether you want to share your exact position, and you
+        can say no. If you say yes, <em>that position is never sent to this
+        site.</em> The list of courts is downloaded to your browser and the
+        distances are worked out there, on your device. There is no address
+        on this site that accepts a location, so there is nothing here that
+        could receive, log or leak one.
+      </p>
+      <p data-prose>
+        We do not remember your answer, because we do not have to: your
+        browser already does, and we ask it. That is why the search box can
+        show you nearby courts on a later visit without asking again, and
+        also why nothing about you is stored on your device by us. If you
+        want to withdraw the permission, it lives in your browser&rsquo;s
+        site settings, not in ours.
+      </p>
+      <p data-prose>
+        None of this is required to use the site. With JavaScript disabled
+        the search box is an ordinary form that sends what you type to the
+        search page, and every one of these pages renders in full without
+        it.
       </p>
 
       <h2 data-prose>What the host records</h2>

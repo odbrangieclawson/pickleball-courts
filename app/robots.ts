@@ -38,8 +38,15 @@ export default function robots(): MetadataRoute.Robots {
   ]
   return {
     rules: [
+      /*
+        /api/ is not content. The one handler under it reports which town
+        the requesting IP resolves to, so it is per-visitor by definition
+        and would be a nonsense thing for a crawler to hold. It also carries
+        an x-robots-tag of its own, for the same belt-and-braces reason the
+        parameter URLs carry noindex as well as a Disallow.
+      */
       INDEXABLE
-        ? {userAgent: '*', allow: '/', disallow: ['/internal/', ...params]}
+        ? {userAgent: '*', allow: '/', disallow: ['/internal/', '/api/', ...params]}
         : {userAgent: '*', disallow: ['/', ...params]},
     ],
     sitemap: `${ORIGIN}/sitemap.xml`,
