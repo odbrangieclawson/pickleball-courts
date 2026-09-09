@@ -962,11 +962,37 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
   border-bottom: 1px solid var(--rule);
   margin: 30px 0 34px;
 }
+/*
+  PADDING ON BOTH SIDES, AND ROOM UNDER THE RULE.
+
+  The left padding was 0 and the right was 22px, so every cell but the
+  first set its number hard against the divider it shares with the cell
+  before it — the same mistake .card carried and had fixed, made again
+  here. And 16px under a 2px rule is not enough air for a 2.7rem numeral:
+  the digits read as if they were hanging off the line.
+
+  Symmetric 24px gives each cell the same gutter on both sides. The first
+  cell keeps a flush left edge and the last a flush right one, so the band
+  still lines up with the prose above and below it rather than floating
+  inside its own rules.
+*/
 .stat {
-  padding: 16px 22px 16px 0;
+  padding: 26px 24px 22px;
   border-right: 1px solid var(--rule-2);
 }
-.stat:last-child { border-right: 0; }
+.stat:first-child { padding-left: 0; }
+.stat:last-child { padding-right: 0; border-right: 0; }
+
+/*
+  The grid is auto-fit, so on a narrow screen these wrap to two or three
+  rows. A cell that starts a row must not draw the divider it would have
+  shown mid-row, and rows need air between them.
+*/
+@media (max-width: 620px) {
+  .stat { padding: 20px 16px 18px; }
+  .stat:nth-child(odd) { padding-left: 0; }
+  .stat:nth-child(even) { padding-right: 0; border-right: 0; }
+}
 .stat .n {
   display: block;
   font-family: var(--serif);
@@ -983,7 +1009,9 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
   color: var(--ink-3);
   text-transform: uppercase;
   letter-spacing: .09em;
-  margin-top: 8px;
+  /* The label is set small and wide; it needs more than 8px to read as a
+     caption under the numeral rather than as part of it. */
+  margin-top: 11px;
   font-weight: 580;
 }
 .stat.is-gap .n { color: var(--gap); }
